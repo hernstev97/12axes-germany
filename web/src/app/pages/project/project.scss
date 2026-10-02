@@ -1,0 +1,78 @@
+.project-page {
+  max-width: 1120px;
+  padding-block: 2.5rem 4rem;
+}
+.back-link {
+  display: inline-block;
+  padding-block: 0.4rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+.back-link span {
+  margin-right: 0.4rem;
+}
+.project-heading {
+  padding-block: 2rem 3rem;
+}
+.project-heading .eyebrow {
+  margin-bottom: 1.2rem;
+  color: var(--muted);
+}
+h1 {
+  font-size: clamp(2.8rem, 5.8vw, 4.8rem);
+}
+.lead {
+  max-width: 36rem;
+  margin: 1.5rem 0 0;
+  font-size: 1.15rem;
+}
+.project-section {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 2.5rem;
+  padding-block: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+.project-section h2 {
+  max-width: 13rem;
+  font-size: 1.8rem;
+}
+.project-section p {
+  margin: 0 0 1.1rem;
+}
+.project-section p:last-child {
+  margin-bottom: 0;
+}
+.text-link {
+  display: inline-block;
+  padding-block: 0.5rem;
+  font-weight: 500;
+}
+.text-link span {
+  margin-left: 0.4rem;
+}
+.project-page > .button-link {
+  margin-top: 1.5rem;
+}
+@media (max-width: 760px) {
+  .project-page {
+    padding-top: 1.5rem;
+  }
+  .project-heading {
+    padding-block: 1.5rem 2.5rem;
+  }
+  h1 {
+    font-size: clamp(2.35rem, 8vw, 3.5rem);
+  }
+  .project-section {
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+    padding-block: 2rem;
+  }
+  .project-section h2 {
+    max-width: none;
+  }
+}

@@ -1,0 +1,8 @@
+.agents/skills/
+pnpm-lock.yaml
+node_modules/
+dist/
+.angular/
+coverage/
+data/
+outputs/

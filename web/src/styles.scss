@@ -1,0 +1,125 @@
+@import '@fontsource-variable/fraunces/full.css';
+@import '@fontsource-variable/fraunces/full-italic.css';
+@import '@fontsource-variable/newsreader/standard.css';
+@import '@fontsource-variable/newsreader/standard-italic.css';
+:root {
+  color-scheme: light;
+  --paper: #f7f4ec;
+  --ink: #243d31;
+  --muted: #576456;
+  --accent: #516648;
+  --sage: #e7ebdf;
+  --line: #cbd0c0;
+  --font-display: 'Fraunces Variable', Georgia, serif;
+  --font-body: 'Newsreader Variable', Georgia, serif;
+  --page-padding: clamp(1.25rem, 5vw, 5rem);
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--paper);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+::selection {
+  color: var(--ink);
+  background: #d7decb;
+}
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 5px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+.page-width {
+  width: min(100% - var(--page-padding) * 2, 1360px);
+  margin-inline: auto;
+}
+.eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.button-link {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+  padding: 0.8rem 1.4rem;
+  border: 1px solid var(--ink);
+  border-radius: 99px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+.button-link.primary {
+  color: var(--paper);
+  background: var(--ink);
+}
+.button-link.primary:hover {
+  background: #36553f;
+}
+.button-link.secondary:hover {
+  background: var(--sage);
+}
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 0.5rem;
+  left: 1rem;
+  padding: 0.6rem 1rem;
+  color: var(--paper);
+  background: var(--ink);
+  transform: translateY(-180%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+[id] {
+  scroll-margin-top: 2rem;
+}
+@media (max-width: 640px) {
+  :root {
+    font-size: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

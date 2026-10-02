@@ -1,0 +1,181 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-block: 3rem 4.75rem;
+}
+.hero-copy {
+  padding-bottom: 0.5rem;
+}
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.09em;
+}
+.hero-eyebrow span {
+  width: 7px;
+  height: 7px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent);
+}
+h1 {
+  font-size: clamp(3.1rem, 6.6vw, 5.5rem);
+  line-height: 1.02;
+}
+h1 em {
+  font-weight: 550;
+}
+.hero-intro {
+  max-width: 26rem;
+  margin: 1.65rem 0 1.75rem;
+  font-size: 1.1rem;
+  line-height: 1.55;
+}
+.hero-note {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.hero-art {
+  min-width: 0;
+  margin: 0;
+}
+.art-frame {
+  overflow: hidden;
+  border-radius: 3px 3px 48% 3px / 3px 3px 15% 3px;
+  background: #dce0df;
+}
+.hero-art img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2327 / 2980;
+}
+figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+figcaption a {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+figcaption a:hover {
+  background: var(--sage);
+}
+.purpose {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding-block: 4rem;
+  border-top: 1px solid var(--line);
+}
+.purpose .eyebrow {
+  margin-bottom: 1.2rem;
+}
+.purpose h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+.purpose-copy p:first-child {
+  margin-top: 0;
+}
+.purpose-copy p {
+  margin-bottom: 1rem;
+}
+.text-link {
+  display: inline-block;
+  padding-block: 0.5rem;
+  font-weight: 500;
+}
+.text-link span {
+  margin-left: 0.4rem;
+}
+.project-note {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 4px;
+  background: var(--sage);
+}
+.note-mark {
+  align-self: start;
+  font-size: 2.3rem;
+  line-height: 1;
+}
+.project-note h2 {
+  font-size: 1.4rem;
+  letter-spacing: -0.035em;
+}
+.project-note p {
+  max-width: 33rem;
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 1050px) {
+  .project-note {
+    grid-template-columns: auto 1fr;
+  }
+  .project-note .button-link {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-block: 2.5rem 3rem;
+  }
+  h1 {
+    font-size: clamp(3rem, 11vw, 4.5rem);
+  }
+  .hero-intro {
+    max-width: 28rem;
+  }
+  .hero-art {
+    max-width: 30rem;
+  }
+  .art-frame {
+    border-radius: 3px 3px 42% 3px / 3px 3px 12% 3px;
+  }
+  .purpose {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-block: 2.5rem;
+  }
+  .purpose h2 {
+    font-size: 2.3rem;
+  }
+  .project-note {
+    gap: 1rem;
+    margin-bottom: 3rem;
+    padding: 1.3rem;
+  }
+  .project-note h2 {
+    font-size: 1.3rem;
+  }
+  .project-note .button-link {
+    grid-column: 1 / -1;
+  }
+}

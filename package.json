@@ -1,0 +1,21 @@
+{
+  "name": "12axes-germany",
+  "private": true,
+  "packageManager": "pnpm@11.23.0",
+  "engines": {
+    "node": "^24.15.0",
+    "pnpm": "11.x"
+  },
+  "scripts": {
+    "dev": "pnpm --filter politikprofil start --host 127.0.0.1 --port 4311",
+    "build": "pnpm --filter politikprofil build",
+    "typecheck": "pnpm --filter politikprofil typecheck",
+    "test": "pnpm --filter politikprofil test --watch=false",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm format:check && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "prettier": "3.8.1"
+  }
+}

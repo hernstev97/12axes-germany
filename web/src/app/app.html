@@ -1,0 +1,23 @@
+<a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+<header class="site-header page-width">
+  <a class="wordmark" routerLink="/" aria-label="Politikprofil Deutschland, Startseite">
+    <span class="wordmark-name">politikprofil<span aria-hidden="true">.</span></span>
+    <span class="wordmark-place">Deutschland</span>
+  </a>
+  <nav aria-label="Hauptnavigation">
+    <a routerLink="/" fragment="vorhaben">Das Vorhaben</a>
+    <a routerLink="/projekt" routerLinkActive="active" ariaCurrentWhenActive="page">Projektstand</a>
+  </nav>
+</header>
+<main id="main-content" tabindex="-1">
+  <router-outlet (activate)="focusPage()" />
+</main>
+<footer class="site-footer page-width">
+  <p>Politikprofil für Deutschland <span aria-hidden="true">·</span> In Vorbereitung</p>
+  <nav aria-label="Weitere Informationen">
+    <a routerLink="/projekt" fragment="bildnachweise">Bild &amp; Schrift</a>
+    <a href="https://github.com/hernstev97/12axes-germany"
+      >Quellcode <span aria-hidden="true">↗</span></a
+    >
+  </nav>
+</footer>

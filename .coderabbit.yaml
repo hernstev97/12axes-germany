@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: de-DE
+tone_instructions: 'Schreibe konkret und sachlich. Nenne Fundstelle, Auswirkung und einen prüfbaren Vorschlag.'
+reviews:
+  profile: assertive
+  high_level_summary: true
+  review_status: true
+  poem: false
+  sequence_diagrams: false
+  path_filters:
+    - '!pnpm-lock.yaml'
+    - '!.agents/skills/**'
+    - '!web/public/art/**'
+    - '!web/public/fonts/**'
+  path_instructions:
+    - path: 'web/**'
+      instructions: >-
+        Prüfe Angular- und TypeScript-Code, Tastaturbedienung, Fokusführung,
+        responsive Darstellung, Laufzeitfehler und unnötige externe Anfragen.
+        Die Website ist derzeit eine Grundlage ohne fertigen Test.
+        Beanstande erfundene Ergebnisse oder Aussagen, die einen bereits
+        validierten Politiktest suggerieren. Beachte docs/design.md und docs/project.md.
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    auto_pause_after_reviewed_commits: 0
