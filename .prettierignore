@@ -36,3 +36,8 @@ reports/loop/group-v21-access-disclosure.json
 # Ursprünglicher tatsächlicher Claude-Auftrag und Modelltext bleiben bytegleich.
 reports/loop/claude-protocol-001-result.json
 reports/loop/claude-protocol-001-auftrag.txt
+
+# Claude-Übernahme: Aufträge im Wortlaut und unveränderte Agentenberichte behalten ihre Bytes.
+reports/claude/auftraege/
+reports/claude/agenten/
+reports/claude/kontrollrechnung/
