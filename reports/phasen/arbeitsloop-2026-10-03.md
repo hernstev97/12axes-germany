@@ -1,11 +1,11 @@
-# LIFE-93: laufender Phasenbericht 2026-10-03
+# LIFE-93: laufender Phasenbericht, 3. Oktober 2026
 
-Kein Abschluss einer Forschungsphase. Dauerhafter Auftrag und Wiederaufnahme: docs/arbeitsloop.md und reports/loop/state.json.
+Stand 06:47 UTC. Keine vollständige Forschungsphase ist abgeschlossen. Auftrag und Wiederaufnahme stehen in `docs/arbeitsloop.md` und `reports/loop/state.json`.
 
-Übernahme und Sicherung: isolierter Eigenbranch, aktuelle main-UI übernommen; zwei unabhängige Integrationsberichte abgeschlossen. Regel-/UI-Korrekturen in separater Nachprüffassung, Abnahme noch offen. Commit-/Pushbelege reports/loop/push-001.json und push-002.json, remote Commitidentität jeweils tatsächlich geprüft. Keine main-Pushes/Merges.
+Die aktuelle main-UI und das Handbuch sind im isolierten Eigenbranch erhalten, ursprüngliche Änderungen gesichert. Begrenzte Integrations-/Infrastrukturkorrekturen sind unabhängig geprüft. Verifizierte eigene Commits und Pushes sind einzeln unter `reports/loop/push-*.json` dokumentiert. Kein Push auf main oder automatischer Merge.
 
-Phase 0/1: Theorie-/Themenentwurf vorhanden; Inventar und konkreter Methodenentwurf in Bearbeitung. Keine endgültige Itemauswahl, Polung, empirische Untersuchung, Rohantwortlektüre, A/B-Split oder öffentliche Plan-/Modelltags. Fehlende Claude-Erstprüfungen und Setup-Abnahme bleiben Voraussetzungen.
+Fünf Grundlagenreviewer, gezielte Nachprüfer und ein neuer unabhängiger Juror haben konkrete Quellen-/Methoden-/Provenienzkorrekturen geprüft. Die wissenschaftliche Planabnahme bleibt blockiert. A/B-Kontext- und Gegenfallkorrekturen sind nach zwei frischen Nachberichten angenommen; offene Version-/Quellen- und Itementscheidungen bleiben offen. C-Annotation ist in zwei unabhängigen Erstprüfungen. E-Annotation wird neu bearbeitet.
 
-Tatsächliche lokale Prüfungen: Paket-/Historienintegrität durch beide Integrationsreviewer; Browserlauf in reports/loop/technical-v2/browser.json grün für die existierenden Platzhalterseiten. Handbuchguard in web-check.json rot wegen Satzzeichen; Auswertung anderer Stufen in diesem Lauf nicht erreicht. Alte erfolgreiche technische Läufe gelten weiterhin nur für ihre alten Manifeste.
+Die neue synthetische ordinale Methodenkorrektur ist zweimal unabhängig gerechnet. Beide vollständigen Nachberichte werden für die begrenzte Annahmeentscheidung ausgewertet. Keine ESS-Analyse, endgültige Itemauswahl, Entblindung oder öffentliche Plan-/Modelltags. Keine fehlende Untersuchung wird als bestandene Prüfung ausgegeben.
 
-Nächster Schritt: unabhängige Nachprüfberichte vollständig sammeln und betroffene Korrekturen prüfen; vollständige Autorenpakete einfrieren und große theoretisch-methodische Fachprüfung in fünf Rollen ausführen. Kein empirischer Beginn durch technische Fortschritte.
+Aktuelle technische Prüfungen, operative Fehler, fehlende Claude-Reviews, Setup- und Menschenvoraussetzungen nennt der [Morgenbericht](../morgenbericht-2026-10-03.md). Historische Prüfläufe und Erstberichte bleiben unverändert. Der nächste Schritt ist die gemeinsame Entscheidung erst nach vollständiger Lektüre der jeweiligen unabhängigen Berichte.

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T06:28:46.160823+00:00",
+  "updatedAtUtc": "2026-10-03T06:50:55.366763+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "595ab8b77fff1a32404691b3d4d6dd8de9e3e6ab",
+  "currentHead": "3d2bdc455b7f6c503b4f5d0d7b8cca1a07f826ec",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -21,22 +21,21 @@
     }
   ],
   "openTasks": [
-    "SOFTWARE-v2: zweiten vollständigen Bericht einsammeln, erst dann Findings zusammenführen",
-    "INVENTORY-002-AB: zwei Erstberichte einsammeln, begründete Korrekturen nachprüfen",
-    "METHODS-002: technischen Autorenstand einfrieren und zweifach unabhängig prüfen",
-    "Übriges öffentliches Frageninventar und offene Methodennachweise; getrennte Claude-Forschungsbewertungen noch ausführen",
-    "AB-v2immutableAutorreport aktuellFormatcheckfehler: nach beidenNachberichten Originalarchivieren, PublicReportnurformatieren, expliziteIndexArchivebindung; keinSkip/BYPASSderPflichtprüfung."
+    "INVENTORY-003-C v1: beide unabhängigen Erstberichte sammeln; erst dann zusammenführen",
+    "Weitere öffentliche Module einschließlich E/Gender annotieren und zweifach prüfen",
+    "CLAUDE-P02: zwei abgegrenzte Metadatenprüfungen und zeitliche Versionstextkorrektur prüfen",
+    "Offene Theorie- und Methodennachweise bearbeiten; Claude-Forschungsbewertungen, reales Setup und spätere Menschenprüfungen bleiben Voraussetzungen"
   ],
   "dependencies": [
     {
       "id": "ACCESS-CLAUDE",
-      "status": "BESTANDEN",
+      "status": "BLOCKIERT",
       "evidence": ["LIFE-93 Setup/Phase1/Phase7", "docs/auftrag-life-93-2026-10-03.md"],
-      "blocks": [],
-      "actionNeeded": "Technischer Zugriff tatsächlich erfolgreich; Forschungsreviews separat ausführen.",
-      "authenticated": true,
-      "proof": "reports/loop/claude-access-20261003T0411.json",
-      "blockedBy": null,
+      "blocks": ["Getrennte Claude-Erstbewertungen und Forschungsreviews"],
+      "actionNeeded": "Aktuellen CLI/API-Zugang klären. Früherer Erfolg bleibt historischer Beleg; kein aktueller Zugang oder Forschungsreview belegt.",
+      "authenticated": null,
+      "proof": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
+      "blockedBy": "HTTP401 bei beiden neueren Read-Proben; genaue Ursache unbekannt",
       "providerReportedResetLocal": "2026-10-03T06:10:00+02:00",
       "retryNotBeforeUtc": "2026-10-03T04:10:00Z"
     },
@@ -73,7 +72,7 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "NICHT_BESTANDEN",
+    "currentLocalTechnical": "BESTANDEN",
     "currentIndependentIntegration": "NICHT_GEPRÜFT",
     "empiricalValidation": "NICHT_GEPRÜFT",
     "otherModelFamily": "NICHT_GEPRÜFT",
@@ -123,7 +122,12 @@
     "reports/loop/reviews/INVENTORY-002-AB-sources.md",
     "reports/loop/reviews/METHODS-002-statistics.md",
     "reports/loop/reviews/METHODS-002-repro.md",
-    "reports/loop/reviews/INVENTORY-002-AB-v2-sources.md"
+    "reports/loop/reviews/INVENTORY-002-AB-v2-sources.md",
+    "reports/loop/reviews/INVENTORY-002-AB-v2-repro.md",
+    "reports/loop/reviews/METHODS-002-v3-statistics.md",
+    "reports/loop/reviews/METHODS-002-v3-repro.md",
+    "reports/loop/reviews/METHODS-002-v3-repro-formatnachtrag.md",
+    "reports/loop/reviews/INVENTORY-003-C-sources.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -133,27 +137,23 @@
     "R5-F03",
     "F-P03",
     "F-P04",
-    "SW-ENV-004",
-    "AB-S01",
-    "AB-S02",
-    "M2-S01",
-    "M2-R01"
+    "SW-ENV-004"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/inventory002_ab_v2_repro",
-      "role": "independent-source-reproduction-correction-review",
+      "name": "/root/inventory003_c_repro",
+      "role": "independent-public-source-reproduction-first-review",
       "status": "RUNNING"
     },
     {
-      "name": "/root/methods002_v3_statistics",
-      "role": "independent-synthetic-method-correction-review",
+      "name": "/root/inventory004_e_author",
+      "role": "public-source-author",
       "status": "RUNNING"
     },
     {
-      "name": "/root/methods002_v3_repro",
-      "role": "independent-synthetic-reproduction-correction-review",
+      "name": "/root/claudep02_metadata",
+      "role": "independent-access-metadata-review",
       "status": "RUNNING"
     }
   ],
@@ -219,32 +219,35 @@
     },
     {
       "id": "INVENTORY-002-AB",
-      "status": "RUNNING",
+      "status": "DONE",
       "scope": "Alle52öffentlichenA/B-Frageidentitäten mitKategorien,Missing,RoutingundMetadaten;keinefinalePolung/Auswahl",
       "predefinedCriteria": "outputs/loop/inventory002-ab/plan-before-work.md; vollständiger Auftrag in Agentbericht",
       "author": "/root/inventory002_ab_author",
-      "manifest": "reports/loop/packages/INVENTORY-002-AB/v2/manifest.json",
-      "manifestSha256": "2fe41dba331a3775c9a4a254f8136ded551f54c864cb9aea21b6c375863a4bd4",
+      "manifest": "reports/loop/packages/INVENTORY-002-AB/v4/manifest.json",
+      "manifestSha256": "afe1aadc27ffb6ba5fc37fed425fea5d4aa29829bfb6bcd3de8ddc63f321af44",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "QuellennachberichtabgeschlossenBESTANDENeng; vollständigerReproNachberichtfolgt. KeineZusammenführungvoreidenvollständigenBerichten.",
-      "decision": "reports/loop/INVENTORY-002-AB-entscheidung.md",
+      "reviewStatus": "Zwei frische vollständige v2-Nachberichte, Originallektüre und eigene Gegenfälle bestätigen Runde-1-Korrekturen. Begrenzte Annotation, keine wissenschaftliche Inventarabnahme.",
+      "decision": "reports/loop/INVENTORY-002-AB-v2-entscheidung.md",
       "authorCorrectionStatus": "COMPLETED",
-      "correctionReport": "reports/loop/authors/INVENTORY-002-AB-korrektur.md"
+      "correctionReport": "reports/loop/authors/INVENTORY-002-AB-korrektur.md",
+      "contentAcceptanceManifest": "reports/loop/packages/INVENTORY-002-AB/v2/manifest.json",
+      "closureScope": "52 öffentliche Identitäten: konkrete Kontext- und Gegenfallkorrekturen; 61 Quellen-/Versionsreste offen. V3/v4 reine dokumentierte Formattransfers."
     },
     {
       "id": "METHODS-002",
-      "status": "RUNNING",
+      "status": "DONE",
       "scope": "Synthetische externe ordinale Schichtkovarianz-Schnittstelle;keinESS-Verfahren gewählt",
       "predefinedCriteria": "reports/loop/METHODS-002-vorabplan.md",
       "author": "/root",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "Beidefrischev3Nachprüferaktiv; Autoren32/33ChecksundGegenfällebelegt, unabhängigeNachprüfungsabnahmeoffen. ZweiPublicAutororiginale vorFormat archiviert, IndexOriginalPaths explizitumgebunden.",
+      "reviewStatus": "Beide vollständigen frischen Nachberichte ausgewertet; Runde-1-Korrekturen eng technisch BESTANDEN. Eigene Reviewerfehler und Formatnachtrag erhalten.",
       "technicalRecord": "outputs/loop/methods002/trial-001-command.json",
       "manifest": "reports/loop/packages/METHODS-002/v3/manifest.json",
       "manifestSha256": "a6a05b361cac1bf26975f56119b5f65934589f4d83f204177394307495f6bb80",
       "authorCorrectionStatus": "COMPLETED",
-      "decision": "reports/loop/METHODS-002-entscheidung.md",
-      "correctionReport": "reports/loop/authors/METHODS-002-korrektur.md"
+      "decision": "reports/loop/METHODS-002-v3-entscheidung.md",
+      "correctionReport": "reports/loop/authors/METHODS-002-korrektur.md",
+      "closureScope": "Synthetische Zielgrößen-/Matriximport-/Provenienzkorrektur; keine wissenschaftliche Verfahrenswahl"
     },
     {
       "id": "CLAUDE-P02",
@@ -257,7 +260,7 @@
       "report": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
       "manifest": "reports/loop/packages/CLAUDE-P02/v1/manifest.json",
       "manifestSha256": "5c4fe35d971dde4dafc6fb58bfcbe96eb848499dc09ee0b8713964ace061bef4",
-      "documentationReviewStatus": "NICHT_GEPRÜFT; zwei enge Metadaten-/CLI-Zeitkontrollen noch vorgesehen. Kein Modell-Readtest ausgeführt."
+      "documentationReviewStatus": "Erster frischer Metadatenreviewer aktiv; zweiter getrennt noch vorgesehen. Zugriff weiterhin HTTP401 blockiert, Readgrenzen nicht geprüft."
     },
     {
       "id": "INVENTORY-003-C",
@@ -265,27 +268,36 @@
       "scope": "43 öffentliche C-Frageidentitäten mit Kategorien, Kontext/Filter, Listen, Codebook; keine endgültige Auswahl/Polung",
       "author": "/root/inventory003_c_author",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "43Identitäten/1526Belege gefroren; Autorenchecks/Gegenfälle/reproduce tatsächlich; unabhängigeZweierErstprüfungwartetaufSlots. KeineItem-/Datenfreigabe.",
+      "reviewStatus": "Quellen-Erstbericht abgeschlossen und erhalten; Repro-Erstbericht läuft. Keine Zusammenführung vor beiden vollständigen Berichten.",
       "predefinedCriteria": "Vorabplan vorBearbeitung unter outputs/loop/inventory003-c/",
       "manifest": "reports/loop/packages/INVENTORY-003-C/v1/manifest.json",
       "manifestSha256": "14a87ba5148fba5e640e8164ea06d7ff34cbc2893117dc6baf3eee91f96be7cb",
       "report": "reports/loop/authors/INVENTORY-003-C.md"
+    },
+    {
+      "id": "INVENTORY-004-E",
+      "status": "RUNNING",
+      "author": "/root/inventory004_e_author",
+      "scope": "32 öffentliche E-Identitäten einschließlich Varianten, Kontext, Listen und Codebook; keine endgültige Auswahl/Polung",
+      "authorStatus": "RUNNING",
+      "predefinedCriteria": "Vorabplan unter outputs/loop/inventory004-e/ vor Bearbeitung; tatsächlicher vollständiger Auftrag im Autorenbericht",
+      "reviewStatus": "Zwei frische unabhängige Erstprüfungen nach fertigem Freeze erforderlich"
     }
   ],
-  "nextConcreteStep": "AB-v2beidevollständigenNachberichte auswerten. Methoden-v3zweiReviewsabschließen. C-v1mitzweiFRISCHENErstprüfernprüfen; danach öffentlicherE/GenderQuellenabschnitt. CLAUDE-P02engeMetadatennachprüfungnachfreienSlots; echterClaudeRead/Reviewweiter401blockiert.",
+  "nextConcreteStep": "AB- und Methodenkorrekturen committen und Push prüfen. C-Repro-Erstbericht sammeln und dann beide auswerten. E-Annotation fortführen; zweiter unabhängiger Claude-Metadatenreview sobald Slot frei.",
   "checkpoint": {
-    "lastLocalCommit": "595ab8b77fff1a32404691b3d4d6dd8de9e3e6ab",
-    "lastVerifiedRemoteCommit": "595ab8b77fff1a32404691b3d4d6dd8de9e3e6ab",
-    "lastVerifiedPushAtUtc": "2026-10-03T06:00:18.661955+00:00",
+    "lastLocalCommit": "3d2bdc455b7f6c503b4f5d0d7b8cca1a07f826ec",
+    "lastVerifiedRemoteCommit": "3d2bdc455b7f6c503b4f5d0d7b8cca1a07f826ec",
+    "lastVerifiedPushAtUtc": "2026-10-03T06:31:44.936267+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-017.json",
+    "record": "reports/loop/push-018.json",
     "intervalOverrunNote": "Checkpoint nach Kontextkompaktierung erst nach 30-Minuten-Frist begonnen (03:53:14 bis mindestens04:25UTC). Verspätung dokumentiert; eigene Änderungen sofort gesichert.",
-    "lastPushCompletedAtUtcApproximate": "2026-10-03T05:59:47+00:00"
+    "lastPushCompletedAtUtcApproximate": "2026-10-03T06:29:27+00:00"
   },
-  "scientificStatus": "296 technische Inventaridentitäten/205Restzeilen bleiben unverändert. FOUNDATION-v4 begrenzte Korrekturen durch zwei Nachprüfungen und Juror belegt; wissenschaftliche Planabnahme BLOCKIERT. AB-v1 zwei vollständig gelesene Erstberichte mit vierKontextfehlern und falschbenanntemGegenfall; Korrektur läuft. METHODS-v2 zwei Erstberichte belegen engeRechenkette und zwei fehlerhafteZielprüfungen; technischeReparatur läuft. C43öffentlicheAnnotation läuft. Keine ESS-Rohantworten/A/B/Entblindung/Endauswahl/Tags; getrennteClaudebewertungen nichtausgeführt, aktuellerZugriff401.",
-  "technicalRecord": "reports/loop/technical-new-packages.json",
+  "scientificStatus": "296 technische Identitäten/205 Restzeilen unverändert. FOUNDATION-v4 begrenzte Korrekturen durch Nachprüfer und Juror bestätigt, wissenschaftliche Planabnahme BLOCKIERT. A/B: gezielte Fehler in 52 Identitäten nach zwei tatsächlichen Nachprüfungen korrigiert, 61 Quellen-/Versionsreste offen. METHODS-v3: beide technischen Nachberichte vollständig ausgewertet, drei gezielte Korrekturen bestätigt; wissenschaftliche Verfahrens-/ESS-Abnahme bleibt offen. C: 43 öffentliche Annotationen in zwei unabhängigen Erstprüfungen. Keine ESS-Antwortdaten, A/B-Auswertung, Entblindung, endgültige Itemauswahl oder Tags; Claude-Forschungsreviews nicht ausgeführt, aktueller Zugang HTTP401.",
+  "technicalRecord": "reports/loop/technical-post-ab-correction.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
     "reports/loop/technical-v2/web-check.json",
@@ -305,7 +317,8 @@
     "reports/loop/technical-v4/status.json",
     "reports/loop/technical-v4/all.json",
     "reports/loop/technical-post-audit-decisions.json",
-    "reports/loop/technical-new-packages.json"
+    "reports/loop/technical-new-packages.json",
+    "reports/loop/technical-post-ab-correction.json"
   ],
   "independentPreparations": [
     {

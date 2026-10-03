@@ -1,0 +1,12 @@
+{
+  "id": "TECH-POST-AB-CORRECTION",
+  "startedAtUtc": "2026-10-03T06:47:27.131182+00:00",
+  "endedAtUtc": "2026-10-03T06:47:39.276469+00:00",
+  "command": ["pnpm", "check"],
+  "exitCode": 0,
+  "status": "BESTANDEN",
+  "codeCommit": "3d2bdc455b7f6c503b4f5d0d7b8cca1a07f826ec",
+  "logPath": "outputs/loop/post-ab-correction/app-check.log",
+  "logSha256": "48436638b43135c34687f684692208a565ebc2110c1b561716118c0861d0bcfc",
+  "scope": "Actual local CI checks only. No ESS, scientific, full browser or release acceptance."
+}

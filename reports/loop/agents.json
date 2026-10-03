@@ -459,33 +459,82 @@
       "returnedTaskName": "/root/inventory002_ab_v2_repro",
       "fork_turns": "none",
       "kind": "independent-correction-reproduction-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/INVENTORY-002-AB/v2/manifest.json",
       "manifestSha256": "2fe41dba331a3775c9a4a254f8136ded551f54c864cb9aea21b6c375863a4bd4",
       "report": "reports/loop/reviews/INVENTORY-002-AB-v2-repro.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext.",
+      "reportSha256": "e0c3a6bfb01b38a2e3cc4a0c70497ad412eedd86f3b1bf59a0ec4cdfb51cd719"
     },
     {
       "task_name": "methods002_v3_statistics",
       "returnedTaskName": "/root/methods002_v3_statistics",
       "fork_turns": "none",
       "kind": "independent-synthetic-correction-methods-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/METHODS-002/v3/manifest.json",
       "manifestSha256": "a6a05b361cac1bf26975f56119b5f65934589f4d83f204177394307495f6bb80",
       "report": "reports/loop/reviews/METHODS-002-v3-statistics.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext.",
+      "reportSha256": "e309340c0d65e0ce20a19b9cdc85bb122e6cc30e9756dea4809a0a9f2f5cf9af"
     },
     {
       "task_name": "methods002_v3_repro",
       "returnedTaskName": "/root/methods002_v3_repro",
       "fork_turns": "none",
       "kind": "independent-synthetic-correction-reproduction-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/METHODS-002/v3/manifest.json",
       "manifestSha256": "a6a05b361cac1bf26975f56119b5f65934589f4d83f204177394307495f6bb80",
       "report": "reports/loop/reviews/METHODS-002-v3-repro.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext.",
+      "reportSha256": "1cb221965670f781bbcd85858c7ae97b39ea280635f4781031ad755e9b997504",
+      "addendum": "reports/loop/reviews/METHODS-002-v3-repro-formatnachtrag.md"
+    },
+    {
+      "task_name": "inventory003_c_sources",
+      "returnedTaskName": "/root/inventory003_c_sources",
+      "fork_turns": "none",
+      "kind": "independent-source-first-review",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/INVENTORY-003-C/v1/manifest.json",
+      "manifestSha256": "14a87ba5148fba5e640e8164ea06d7ff34cbc2893117dc6baf3eee91f96be7cb",
+      "report": "reports/loop/reviews/INVENTORY-003-C-sources.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext.",
+      "writeScope": "Nur eigener Outputordner und eigener Bericht; absolute Patchpfade im Worktree verbindlich.",
+      "reportSha256": "56d4927b0384e1c0de9b3c6a711765c08c9f3b1fd98a84899cc0ca233adcaec5"
+    },
+    {
+      "task_name": "inventory003_c_repro",
+      "returnedTaskName": "/root/inventory003_c_repro",
+      "fork_turns": "none",
+      "kind": "independent-reproduction-first-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/INVENTORY-003-C/v1/manifest.json",
+      "manifestSha256": "14a87ba5148fba5e640e8164ea06d7ff34cbc2893117dc6baf3eee91f96be7cb",
+      "report": "reports/loop/reviews/INVENTORY-003-C-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext.",
+      "writeScope": "Nur eigener Outputordner und eigener Bericht; absolute Patchpfade im Worktree verbindlich."
+    },
+    {
+      "task_name": "inventory004_e_author",
+      "returnedTaskName": "/root/inventory004_e_author",
+      "fork_turns": "none",
+      "kind": "public-source-author",
+      "status": "RUNNING",
+      "report": "reports/loop/authors/INVENTORY-004-E.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext.",
+      "writeScope": "Eigene getrennte Outputs und Bericht; absolute Worktree-Patchpfade."
+    },
+    {
+      "task_name": "claudep02_metadata",
+      "returnedTaskName": "/root/claudep02_metadata",
+      "fork_turns": "none",
+      "kind": "independent-access-metadata-review",
+      "status": "RUNNING",
+      "report": "reports/loop/reviews/CLAUDE-P02-metadata.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext.",
+      "writeScope": "Eigene getrennte Outputs und Bericht; absolute Worktree-Patchpfade."
     }
   ],
   "activeAdditionalAuthors": [
@@ -570,5 +619,6 @@
       "report": "reports/loop/authors/INVENTORY-002-AB-korrektur.md",
       "reportSha256": "759606452a9eef5ce034bfb596723b4087d25a642fe4a8095e7689fdfa7e8b94"
     }
-  ]
+  ],
+  "updatedAtUtc": "2026-10-03T06:50:55.366763+00:00"
 }

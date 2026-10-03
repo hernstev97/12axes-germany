@@ -1,0 +1,5 @@
+# Nachtrag zur eigenen Formatprovenienz
+
+Die nach Berichtsanlage ausdrücklich gelesene .prettierignore schließt sowohl outputs/ als auch reports/loop/reviews/ aus, um Ersturteile bytegleich zu erhalten. Der gezielte Draft-Aufruf und der spätere stdin-Aufruf mit dem echten Berichtspfad endeten mit Exit 0 und identischen Bytes. Ihre Exits allein belegen deshalb keine tatsächliche Prettier-Formatprüfung des Berichts. Der Satz im unveränderten Erstbericht über eine gezielte Formatierung ist als ausgeführter Formatierungsversuch enger zu lesen. Es wurde kein belegter Formattransfer und kein positiver Formatcheck durchgeführt. Die Erstberichtsfassung wurde nie überschrieben; sie bleibt von der allgemeinen Repositoryformatierung ausdrücklich ausgeschlossen.
+
+Das betrifft nur meine Formatprovenienz. R-Resultate, technische Nachprüfungen, Quelleingaben und Status der wissenschaftlichen Grenzen ändern sich nicht. Dieser nachträgliche Befund bleibt als eigener Nachtrag sichtbar; keine Rückdatierung in den ursprünglichen Bericht.

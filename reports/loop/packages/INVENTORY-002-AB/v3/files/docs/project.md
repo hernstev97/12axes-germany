@@ -1,0 +1,52 @@
+# Projektstand und Entscheidungen
+
+Stand: 2026-10-03.
+
+## Produkt
+
+Das Vorbild für das erklärende Testerlebnis ist [12 Axes](https://12axes.vercel.app/) mit seinem [öffentlichen Repository](https://github.com/RomanCypherpunk/12axes). Dieses Projekt konzentriert sich vollständig auf Deutschland. Die erste Version soll politische Einstellungen erklären und mit der Bevölkerung sowie Wählergruppen zum Zeitpunkt einer Befragung vergleichen. Ideologie-, Länder- und Personen-Matches gehören nicht zum Umfang.
+
+[LIFE-93](https://linear.app/kiumu-app/issue/LIFE-93/politiktest-fur-deutschland-wissenschaftlich-fundieren-und-transparent) beschreibt die vorgesehene wissenschaftliche Grundlage. Zahl und Struktur der Dimensionen sind offen. Die Zahl zwölf im Repository-Namen ist keine methodische Vorgabe.
+
+## Entscheidung zur Repository-Grundlage
+
+Steven hat am 2026-10-03 Angular gewählt. Die Grundlage nutzt Angular 22 mit eigenständigen Komponenten, Router, strengen TypeScript- und Template-Prüfungen, SCSS und Vitest. Sie braucht aktuell keinen Server für Nutzerdaten. Schrift und Gemälde liegen lokal; die Seite benötigt beim Aufrufen keine externen Dienste.
+
+Die Gestaltung orientiert sich an [Contra Labs](https://contralabs.com/): große Serifentitel, ruhige Flächen und klassische deutsche Kunst, bevorzugt Romantik. Verbindliche Regeln stehen in `handbuch.md`, Nachweise in `assets.md`.
+
+## Name und überarbeitete Gestaltung
+
+Steven hat am 2026-10-03 entschieden, dass das Projekt vorerst „12 Axes Deutschland“ heißt. Der frühere Arbeitsname „Politikprofil“ entfällt in Oberfläche und Dokumentation. Intern heißen Paket, Angular-Projekt und Build-Ordner (`web/dist/politikprofil`) noch `politikprofil`. Der Name lehnt sich an [12 Axes](https://12axes.vercel.app/) an, legt aber keine zwölf Dimensionen fest. Die Projektseite erklärt das. Die Lizenz von 12 Axes behält dem Autor unter anderem das Zwölf-Achsen-Modell, Fragen, Texte und Gestaltung vor; nichts davon wird übernommen. Eine Abstimmung des Namens mit dem Autor von 12 Axes ist im Repository nicht dokumentiert; ob sie stattfinden soll, entscheidet Steven.
+
+Am selben Tag hat Steven die erste Gestaltung überarbeiten lassen. Sie soll neutraler und offizieller wirken, ohne den Stil aufzugeben: Libre Baskerville als einzige Schrift, wechselnde Gemälde der deutschen Romantik statt eines einzelnen Bildes, die Bundesflagge beim Namen und sachliche Texte ohne direkte Anrede. Die Fußzeile stellt klar, dass die Seite kein Angebot einer Behörde oder Partei ist.
+
+Alle elf Skills aus dem persönlichen Skills-Repository sind über die Skills CLI eingebunden. `skills.yaml` ist ihr Manifest.
+
+Steven richtet Claude vorerst nicht ein und möchte ausschließlich CodeRabbit nutzen. Am 2026-10-03 hat er bestätigt: Die methodische Freigabe bleibt offen; auch ein zusätzlicher Review-Auftrag an eine andere Modellfamilie wird vorerst nicht vorbereitet. CodeRabbit kann technische und inhaltliche Findings liefern. Die in LIFE-93 geforderten getrennten methodischen Erstbewertungen werden dadurch nicht ersetzt. Die ältere Claude-Setup-Vorgabe wird in diesem Arbeitsschritt nicht ausgeführt.
+
+Steven hat inzwischen einen ESS-Account und die CSV-Datei lokal bereitgestellt. Dateiname, interne globale Metadaten und Header passen zu ESS11 Ausgabe 4.2. Die Datei liegt im ausgeschlossenen Rohdatenordner; ihre Prüfsumme ist erfasst. Noch keine Antwortdaten analysiert. Downloadbedingungen und vollständiger Import werden gesondert dokumentiert. Der [Dateieingangsbericht](../reports/phasen/00-dateieingang-2026-10-03.md) nennt Umfang und Grenzen der technischen Prüfung.
+
+## Jetzt vorhanden
+
+- Startseite und Seite zum Projektstand, einschließlich Bild- und Schriftnachweisen. Die Startseite zeigt eine wechselnde Auswahl von Gemälden.
+- Lokaler Entwicklungsserver, Produktionsbuild und technische Prüfungen.
+- Technische GitHub-CI und CodeRabbit-Konfiguration für spätere PRs.
+- Ordner für die spätere Analyse sowie ein Git-Ausschluss für Rohdaten.
+- Erster Entwurf der [Prüfregeln](pruefregeln.md), [Review-Vorgaben](reviews/README.md) und [Analysevorbereitung](analyseplan.md).
+- Öffentliche [Datenrecherche](datenlage.md), [Lizenzakte](lizenzen.md), [Belegregister](belegregister.md) und Dokumentversionen mit Hashes in [quellen.json](quellen.json).
+
+Es gibt noch keinen Fragenkatalog, keine Analyse, keine Bewertung und keine Vergleichswerte. Die Startseite kennzeichnet den Test als in Vorbereitung. Die Prüfregeln liegen als Arbeitsfassung vor; fünf Codex-Subagents haben eine partielle Quellen-, Inhalts-, Methoden- und Nachprüfbarkeitsprüfung im [KI-Audit](../reports/audit-recherche/README.md) durchgeführt. Getrennte Itembewertungen anderer Modellfamilien, automatische Forschungsgates und die empirischen Abnahmen fehlen weiterhin.
+
+## Nächster Arbeitsschritt
+
+Als Nächstes können der vollständige deutsche Fragenbestand und die Literatur zu Themenabdeckung und Prüfverfahren recherchiert werden. Endgültige Auswahl und empirische Untersuchung warten auf die erforderlichen Gegenprüfungen und den vollständig begründeten, öffentlich eingefrorenen Analyseplan. Fehlende Review-Abnahmen bleiben sichtbar. Der erste Teilbericht steht unter [reports/phasen/00-recherche-2026-10-03.md](../reports/phasen/00-recherche-2026-10-03.md).
+
+Die Korrekturen und offenen Anforderungen des Audits stehen in [analyseanforderungen.md](analyseanforderungen.md). Der vollständige Fragenkatalog und Deutschland-Themenrahmen bleiben die nächste Arbeit; das Audit liefert keine fertig geprüften Dimensionen.
+
+## Dauerhafter Gesamtauftrag und Arbeitsloop
+
+Der [Auftrag vom 2026-10-03](auftrag-life-93-2026-10-03.md) umfasst nun alle Phasen. Der [Arbeitsloop](arbeitsloop.md) und [gespeicherte Zustand](../reports/loop/state.json) führen Aufgaben, abhängige Stopps, tatsächliche Reviews und verifizierte Branch-Pushes. Die alte Umfangsbegrenzung auf ausschließlich Recherche und CodeRabbit gilt für den neuen Auftrag nicht mehr. Vorgeschriebene Claude-Prüfungen werden dadurch nicht als erfüllt erklärt.
+
+Das neue main mit Claudes UI und Handbuch wurde im eigenen Worktree zusammengeführt. Die unveränderte Übernahme ist im [Integrationsbeleg](../reports/loop/000-main-integration.json) dokumentiert. Zwei unabhängige Reviews bestätigten Integrität und Erhaltung; ihre Status-/Textbefunde werden in einer eigenen Korrekturfassung bearbeitet.
+
+Claude Code ist bereits installiert und angemeldet. Der erste beschränkte Zugriffstest scheiterte am Anbieter-Sitzungslimit; [Protokoll](../reports/loop/claude-access.json). Kein Review oder Itemurteil fand dabei statt. Github-Reviewworkflow, Branchschutz und Setup-Abnahme bleiben offen. Quellenbestand, Theorie und Methodenparameter werden in getrennten Entwürfen erarbeitet. Noch keine empirische ESS-Analyse.

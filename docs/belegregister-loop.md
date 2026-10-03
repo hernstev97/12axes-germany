@@ -13,3 +13,7 @@ Diese Akte ergänzt das historische Belegregister ohne dessen frühere Fassungen
 | B-LOOP-TECH-0556       | Lokaler pnpmcheck bestand05:56:17–05:56:28UTC                                          | reports/loop/technical-post-audit-decisions.json; LogSHA195208681c189340c9592e8541310c0777aba1bfa9591afb02f045a00328ad99                                    | Technik, neunAngular-Tests/Build; keine vollständigeBrowser-/wissenschaftlicheAbnahme       |
 
 Originalfundstellen und vollständige Reviewerberichte bleiben maßgeblich. Noch geplante Reparaturen werden nicht als bestanden ausgegeben. Für die A/B- und C-Quellenabschnitte gelten ausschließlich die im konkreten Manifest erfassten Identitäten; aktueller A/B-Umfang52, C-Umfang43. Der technische296/205Bestand wird nicht um Ergänzungsumfänge vermindert.
+
+B-LOOP-AB-v2: Die vier Einleitungen und die echten 08-Gegenfälle sind in Runde 1 nachgeprüft. Maßgeblich sind das v2-Manifest und beide vollständigen Nachberichte; die neue Koordinatorentscheidung nennt Hashes, Originalfundstellen und zulässigen Umfang. 61 Restpunkte und vollständige Item-/Polungsabnahme bleiben offen. V3/v4 ändern ausschließlich ausdrücklich geprüfte Markdownformatierung und Dokumentation.
+
+B-LOOP-METHODS-v3: Echte 16 Sample-TH und 22-Moment-Reihenfolge, tatsächlicher WLS-Import und getrennte NACOV-Wirkung sind in beiden Nachberichten durch eigene 32/33-Check-Läufe und Algebra/API-Gegenläufe bestätigt. Manifest a6a05b361cac1bf26975f56119b5f65934589f4d83f204177394307495f6bb80; keine wissenschaftliche Survey-Design- oder ESS-Abnahme.

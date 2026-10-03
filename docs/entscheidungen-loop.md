@@ -12,3 +12,7 @@ Die historischen Entscheidungsakten und Erstberichte bleiben erhalten. Diese Erg
 | CLAUDE-P02          | [Zugriffsbericht](../reports/loop/CLAUDE-P02-zugriffsbericht.md), tatsächlicheMetadaten beiderVersuche                  | Nachzweimal401keineweiterenRetries/Schutzumgehungen; Ursache undReadgrenzen ungeklärt                               |
 
 Der [laufende Zustand](../reports/loop/state.json) und das [Findingregister](../reports/loop/findings.json) nennen Abhängigkeiten und Reparaturrunden. Neue Abnahmen gelten nur für ihre eigenen eingefrorenen Pakete. Ein technischer Erfolg beseitigt keine offene wissenschaftliche oder menschliche Voraussetzung.
+
+INVENTORY-002-AB v2: [Nachprüfentscheidung](../reports/loop/INVENTORY-002-AB-v2-entscheidung.md) nimmt beide ursprünglichen Fehler an und schließt ihre gezielten Korrekturen nach zwei frischen unabhängigen Nachprüfungen. Originalberichte bleiben unverändert. Die Gesamtinventar- und wissenschaftliche Freigabe bleibt offen.
+
+METHODS-002 v3: [Nachprüfentscheidung](../reports/loop/METHODS-002-v3-entscheidung.md) schließt M2-S01, M2-R01 und M2-S02 nach zwei vollständigen unabhängigen Nachberichten in Runde 1. Eigene Pfad-/Vergleichs-/Formatfehler bleiben erhalten; die enge technische Korrektur ersetzt keine wissenschaftliche Verfahrenswahl.
