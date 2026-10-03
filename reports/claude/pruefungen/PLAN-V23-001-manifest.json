@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "package": "PLAN-V23-001",
+  "commit": "23c68565c455905b8ed1e51bd76422fc0cd56d45",
+  "note": "Prüffassung des Analyseplans v2.3 (Entwurf 0.2). Öffentliche Statusdateien unter data/reference-v2.2/ sind nur für Abschnitt 8 nötig und enthalten Antwortverteilungen; Prüfer lesen dort ausschließlich die Felder status.",
+  "artifacts": [
+    {
+      "path": "docs/analyseplan-v2.3.entwurf.md",
+      "sha256": "f708729867aec9ca187fe7646b21a69d2f4b89e5cdf831d3146051e06018fd94"
+    },
+    {
+      "path": "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md",
+      "sha256": "b40c52f3bfbf0e8f5ed3ca2b7937c8d2d94b3949132273cd360c3aafba5e6de6"
+    },
+    {
+      "path": "docs/abdeckung-v2.2.md",
+      "sha256": "618012f903783c749b751cb32c8acffab1e7ca09765cd80a26a2a2c1cbeb8b70"
+    },
+    {
+      "path": "docs/quellenanfragen-v1.entwurf.md",
+      "sha256": "066be958b89b9dc198202c3599001b20d2f61c33d8b846ba8cc3e1405da708ca"
+    },
+    {
+      "path": "docs/analyseplan-v2.2.md",
+      "sha256": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8"
+    },
+    {
+      "path": "docs/profilregeln-v1.md",
+      "sha256": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23"
+    },
+    {
+      "path": "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md",
+      "sha256": "6830b4172d606b47fc6f00214fba09d776790143c85c01529b7c33256691c24b"
+    },
+    {
+      "path": "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json",
+      "sha256": "23e27dd8c2c1e359fe62ff5df058fef4de749dce95ca1e6da44cec6839e49fa2"
+    },
+    {
+      "path": "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md",
+      "sha256": "42aaa648a36557d33b6bb316aff007f5f79f92779aa4875acdc74516c70ba5c3"
+    },
+    {
+      "path": "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.json",
+      "sha256": "71e012d3b460917269153d261a4565f6bfbb34627220ee2cf14d8abf1af272d6"
+    },
+    {
+      "path": "reports/claude/agenten/R10-quellenblocker.md",
+      "sha256": "65d79b32748197923c9614c7e8e85f19b06f516fa0cff869dbb7d3cf2f228885"
+    },
+    {
+      "path": "reports/claude/agenten/R10-quellenblocker.json",
+      "sha256": "8e15381892d91f62094c68573bb32148a5df21daf24ad11415549ef94861439a"
+    },
+    {
+      "path": "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md",
+      "sha256": "15b2851d4e383a50ae064b566b1f2d6419180d3899f20007b49c07fe607295c0"
+    },
+    {
+      "path": "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json",
+      "sha256": "f563bc2f138d67a00a9cf8fbfd80580dd3e842108d17231b44efb241edbc9575"
+    },
+    {
+      "path": "reports/claude/agenten/R5-wvs.md",
+      "sha256": "a163be6d448ab5f9e14b54293f355a2e0cea3c19d37e92a4d0021e8af7afc969"
+    },
+    {
+      "path": "reports/claude/agenten/R6-eurobarometer.md",
+      "sha256": "58b08b2af20d70261e95e7d0d815d4c083d95e0879cef5ee864c6ee05e84e8bb"
+    },
+    {
+      "path": "reports/claude/agenten/R7-weitere-quellen.md",
+      "sha256": "4e795f355ccd359613949a2e307f46150f31506cf817b51f1a4e232405f6fcd5"
+    },
+    {
+      "path": "reports/claude/auftraege/R-erweiterung-gemeinsam.md",
+      "sha256": "56970a37d162e3996cace441b4f41c44d7e4e3bfd408d008c13e3f9ba0898ccd"
+    },
+    {
+      "path": "data/gruppenvertrag.v2.1.entwurf.json",
+      "sha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702"
+    }
+  ]
+}
