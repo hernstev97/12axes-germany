@@ -1,0 +1,10 @@
+{
+  "command": ["python", "pipeline/loop.py", "status"],
+  "startedAtUtc": "2026-10-03T03:06:43.310359+00:00",
+  "finishedAtUtc": "2026-10-03T03:06:43.352361+00:00",
+  "exitCode": 0,
+  "output": "reports/loop/technical-v4/status.log",
+  "outputSha256": "a06403289d70a58e23962dc6eda102b50a2a413a504a2764066f2adc1e0bef94",
+  "inputs": "reports/loop/technical-v4/inputs.json",
+  "status": "BESTANDEN"
+}

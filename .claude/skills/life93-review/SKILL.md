@@ -9,7 +9,7 @@ Diese Projekt-Skill bereitet den Review aus LIFE-93 vor. Ihre Existenz ist kein 
 
 Verlange vom aufrufenden Auftrag Modus, konkrete Urteilsaufgabe, zulässige Eingaben, Manifestpfad und außerhalb des Pakets gesicherte Manifest-Prüfsumme. Fehlt eine Voraussetzung, berichte `BLOCKIERT`. Lies nur das bezeichnete öffentliche Paket und freigegebene Originalquellen. Keine Rohantworten, Personenkennungen, `data/raw/`, `data/local/`, B oder gesperrten politischen Werte. Unbekannte Zugriffsschutzgrenzen benennen; die Skill allein ist keine technische Sandbox.
 
-Für `ERSTBEWERTUNG` dürfen Eingaben weder fremde Urteile noch vorgeschlagene Auswahlentscheidungen oder Namen enthalten. Beide Modellfamilien erhalten dieselben Kriterien und dieselbe versionierte Grundlage. Entdeckte fremde Urteile stoppen die betreffende Erstbewertung; Exposition protokollieren. Ein PR-Review kann die ursprünglichen Urteile und Autorantworten prüfen, ersetzt aber nie eine Erstbewertung.
+Für `ERSTBEWERTUNG` dürfen Eingaben keine fremden Urteile, Auswahlentscheidungen oder Namensvorschläge als Bewertungshilfe enthalten. Dieselbe vorab eingefrorene vollständige Textfassung einschließlich ihrer zu prüfenden Bezeichnungen ist als Prüfgegenstand zulässig. Bei unabhängiger Erarbeitung neuer Namen bleiben die Vorschläge des anderen ausgeschlossen. Beide Modellfamilien erhalten dieselben Kriterien und dieselbe versionierte Grundlage. Entdeckte fremde Urteile stoppen die betreffende Erstbewertung; Exposition protokollieren. Ein PR-Review kann die ursprünglichen Urteile und Autorantworten prüfen, ersetzt aber nie eine Erstbewertung.
 
 Prüfe vor jeder Bewertung den erwarteten Manifesthash und die referenzierten Eingaben. Ein Git-Commit allein genügt nicht bei weiteren Quellen, Datenversionen oder Konfigurationen. Nutze die im Paket gültige LIFE-93-Fassung und Prüfregeln; keine stillschweigende Änderung des Analyseplans. Nach Änderungen eine neue Fassung prüfen.
 
@@ -26,6 +26,8 @@ Prüfe vor jeder Bewertung den erwarteten Manifesthash und die referenzierten Ei
 ## Ergebnis
 
 Gib ein maschinenlesbares JSON-Urteil nach [references/urteil-schema.json](references/urteil-schema.json) zurück. Jede Beanstandung enthält exakte Aussage/Entscheidung, Problem, überprüfbare Fundstelle, Auswirkung, begründeten Schweregrad und Korrektur samt Nachprüfung. Unsichere Vermutungen deutlich kennzeichnen. Kein Finding erfinden, um streng zu wirken.
+
+Kennzeichne je Check `requiredInScope` und je Finding `blocksScope`/`state` ausdrücklich. BESTANDEN benötigt mindestens einen erforderlichen bestandenen Check, einen Manifesthash und gebundene Eingabehashes. Negative erforderliche Checks und offene, den Scope blockierende Findings verhindern BESTANDEN. Spätere Checks dürfen außerhalb des Umfangs offen bleiben. Die Schema-Kontrolle prüft formale Mindestangaben und Widersprüche; echte Datei-/Quellenbindung, fachliche Wahrheit und tatsächliche Workflowsteuerung müssen separat geprüft werden.
 
 `BESTANDEN` gilt nur für den tatsächlich geprüften benannten Umfang bei erfüllten zugehörigen Voraussetzungen. `NICHT_BESTANDEN` setzt einen ausgeführten negativen Check voraus; fehlende Prüfung ist `NICHT_GEPRÜFT`, fehlende Voraussetzung `BLOCKIERT`, spätere Prüfung `IN_DIESER_PHASE_NICHT_ERFORDERLICH`. Offene erhebliche Findings blockieren ihre abhängige Aussage/Funktion. Das Urteil selbst beweist keine wissenschaftliche Gültigkeit.
 

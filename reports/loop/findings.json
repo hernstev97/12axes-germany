@@ -428,11 +428,16 @@
       "evidence": "Finding G01 im Originalbericht, v2-Manifest 9ae58f200b4f559b951b95e90c713d6879284e1f31d572e0d9e17bbf9ff0ba00",
       "correctionState": "Alle Eingabepfad-Symlinks vor Erstellung abweisen; unabhängige Nachprüfung der Korrekturfassung offen",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"],
+      "status": "BESTANDEN",
+      "blocks": [],
       "verification": {
-        "scope": "Eigene Korrekturprüfung und unabhängige v3-Nachprüfung erforderlich"
-      }
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v3-guard.md",
+          "reports/loop/reviews/LOOP-000-v3-browser.md"
+        ],
+        "scope": "Benannte Gegenfälle/Originalstellen; echter Zoom bleibt BLOCKIERT"
+      },
+      "closureScope": "Begrenzter v3-Pfad-/Status-/Textcheck; keine wissenschaftliche oder vollständige Websiteabnahme"
     },
     {
       "id": "L000-G02",
@@ -445,11 +450,16 @@
       "evidence": "Finding G02 im Originalbericht, v2-Manifest 9ae58f200b4f559b951b95e90c713d6879284e1f31d572e0d9e17bbf9ff0ba00",
       "correctionState": "Paket- und Archivpfade mit echten Grenzen ohne Symlinks prüfen; unabhängige Nachprüfung der Korrekturfassung offen",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"],
+      "status": "BESTANDEN",
+      "blocks": [],
       "verification": {
-        "scope": "Eigene Korrekturprüfung und unabhängige v3-Nachprüfung erforderlich"
-      }
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v3-guard.md",
+          "reports/loop/reviews/LOOP-000-v3-browser.md"
+        ],
+        "scope": "Benannte Gegenfälle/Originalstellen; echter Zoom bleibt BLOCKIERT"
+      },
+      "closureScope": "Begrenzter v3-Pfad-/Status-/Textcheck; keine wissenschaftliche oder vollständige Websiteabnahme"
     },
     {
       "id": "L000-G03",
@@ -462,11 +472,16 @@
       "evidence": "Finding G03 im Originalbericht, v2-Manifest 9ae58f200b4f559b951b95e90c713d6879284e1f31d572e0d9e17bbf9ff0ba00",
       "correctionState": "Aktive Checks/Abhängigkeiten/Pakete/Agents gemeinsam validieren; unabhängige Nachprüfung der Korrekturfassung offen",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"],
+      "status": "BESTANDEN",
+      "blocks": [],
       "verification": {
-        "scope": "Eigene Korrekturprüfung und unabhängige v3-Nachprüfung erforderlich"
-      }
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v3-guard.md",
+          "reports/loop/reviews/LOOP-000-v3-browser.md"
+        ],
+        "scope": "Benannte Gegenfälle/Originalstellen; echter Zoom bleibt BLOCKIERT"
+      },
+      "closureScope": "Begrenzter v3-Pfad-/Status-/Textcheck; keine wissenschaftliche oder vollständige Websiteabnahme"
     },
     {
       "id": "L000-G04",
@@ -477,13 +492,18 @@
       "problem": "DONE-Hashlänge bindet keine vorhandene Fassung und Abnahme",
       "origin": "reports/loop/reviews/LOOP-000-v2-regeln-infrastruktur.md",
       "evidence": "Finding G04 im Originalbericht, v2-Manifest 9ae58f200b4f559b951b95e90c713d6879284e1f31d572e0d9e17bbf9ff0ba00",
-      "correctionState": "Echte Manifest-/Berichtshashes und Scope/Phase/Archivbytes abgleichen; unabhängige Nachprüfung der Korrekturfassung offen",
-      "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"],
+      "correctionState": "v3 nichtleerer falscher Scope passiert vollständig gebundene DONE-Fassung; v4 feste phasenspezifische Kennungen implementiert, unabhängige Nachprüfung offen",
+      "repairRounds": 2,
+      "status": "BESTANDEN",
+      "blocks": [],
       "verification": {
-        "scope": "Eigene Korrekturprüfung und unabhängige v3-Nachprüfung erforderlich"
-      }
+        "scope": "G04/B03 reparaturrunde2 formale Gegenfälle",
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v4-scope.md",
+          "reports/loop/reviews/LOOP-000-v4-binding.md"
+        ]
+      },
+      "closureScope": "Feste phasenspezifische Scope-/Dateibindung formal geprüft; Wahrheit wissenschaftlicher Abnahmen nicht automatisiert"
     },
     {
       "id": "L000-B04",
@@ -496,11 +516,16 @@
       "evidence": "Finding B04 im Originalbericht, v2-Manifest 9ae58f200b4f559b951b95e90c713d6879284e1f31d572e0d9e17bbf9ff0ba00",
       "correctionState": "Wortlaut korrekt begrenzen; tatsächlicher Pflichtzoom bleibt ungeprüft; unabhängige Nachprüfung der Korrekturfassung offen",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"],
+      "status": "BESTANDEN",
+      "blocks": [],
       "verification": {
-        "scope": "Eigene Korrekturprüfung und unabhängige v3-Nachprüfung erforderlich"
-      }
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v3-guard.md",
+          "reports/loop/reviews/LOOP-000-v3-browser.md"
+        ],
+        "scope": "Benannte Gegenfälle/Originalstellen; echter Zoom bleibt BLOCKIERT"
+      },
+      "closureScope": "Begrenzter v3-Pfad-/Status-/Textcheck; keine wissenschaftliche oder vollständige Websiteabnahme"
     },
     {
       "id": "L000-B05",
@@ -513,11 +538,16 @@
       "evidence": "Finding B05 im Originalbericht, v2-Manifest 9ae58f200b4f559b951b95e90c713d6879284e1f31d572e0d9e17bbf9ff0ba00",
       "correctionState": "Punkte und vollständiger technischer Lauf plus sichtbarer Wortlaut; unabhängige Nachprüfung der Korrekturfassung offen",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"],
+      "status": "BESTANDEN",
+      "blocks": [],
       "verification": {
-        "scope": "Eigene Korrekturprüfung und unabhängige v3-Nachprüfung erforderlich"
-      }
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v3-guard.md",
+          "reports/loop/reviews/LOOP-000-v3-browser.md"
+        ],
+        "scope": "Benannte Gegenfälle/Originalstellen; echter Zoom bleibt BLOCKIERT"
+      },
+      "closureScope": "Begrenzter v3-Pfad-/Status-/Textcheck; keine wissenschaftliche oder vollständige Websiteabnahme"
     },
     {
       "id": "L000-B01",
@@ -526,8 +556,16 @@
       "origin": "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md",
       "reason": "Unabhängig reproduzierte Beschreibung desselben Fehlers; Original-ID/Erstbericht erhalten, keine zusätzliche Reparaturrunde",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"]
+      "status": "BESTANDEN",
+      "blocks": [],
+      "closureScope": "Begrenzter v3-Pfad-/Status-/Textcheck; keine wissenschaftliche oder vollständige Websiteabnahme",
+      "verification": {
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v3-guard.md",
+          "reports/loop/reviews/LOOP-000-v3-browser.md"
+        ],
+        "scope": "Benannte Gegenfälle/Originalstellen; echter Zoom bleibt BLOCKIERT"
+      }
     },
     {
       "id": "L000-B02",
@@ -536,8 +574,16 @@
       "origin": "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md",
       "reason": "Unabhängig reproduzierte Beschreibung desselben Fehlers; Original-ID/Erstbericht erhalten, keine zusätzliche Reparaturrunde",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"]
+      "status": "BESTANDEN",
+      "blocks": [],
+      "closureScope": "Begrenzter v3-Pfad-/Status-/Textcheck; keine wissenschaftliche oder vollständige Websiteabnahme",
+      "verification": {
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v3-guard.md",
+          "reports/loop/reviews/LOOP-000-v3-browser.md"
+        ],
+        "scope": "Benannte Gegenfälle/Originalstellen; echter Zoom bleibt BLOCKIERT"
+      }
     },
     {
       "id": "L000-B03",
@@ -545,9 +591,18 @@
       "duplicateOf": ["L000-G03", "L000-G04"],
       "origin": "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md",
       "reason": "Unabhängig reproduzierte Beschreibung desselben Fehlers; Original-ID/Erstbericht erhalten, keine zusätzliche Reparaturrunde",
-      "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["LOOP-000 package acceptance"]
+      "repairRounds": 2,
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "v3 nichtleerer falscher Scope passiert vollständig gebundene DONE-Fassung; v4 feste phasenspezifische Kennungen implementiert, unabhängige Nachprüfung offen",
+      "closureScope": "Feste phasenspezifische Scope-/Dateibindung formal geprüft; Wahrheit wissenschaftlicher Abnahmen nicht automatisiert",
+      "verification": {
+        "scope": "G04/B03 reparaturrunde2 formale Gegenfälle",
+        "executionRecord": [
+          "reports/loop/reviews/LOOP-000-v4-scope.md",
+          "reports/loop/reviews/LOOP-000-v4-binding.md"
+        ]
+      }
     },
     {
       "id": "F-S01",
@@ -560,10 +615,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Quellenregister"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -577,10 +633,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["EU-Interpretation"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -594,10 +651,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["P10 politische Gruppen"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -611,10 +669,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Geschlechterkonstrukte"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -628,10 +687,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Klimanorm/Interpretation"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -645,10 +705,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["P10 politische Gruppen"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       },
       "duplicateOf": "F-P02"
     },
@@ -663,10 +724,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["synthetische Textaussage"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -680,10 +742,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventar/Itemauswahl"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -697,10 +760,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventar-Reproduktion"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -714,10 +778,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Nachprüfbarkeit"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -731,10 +796,11 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventarbeleg"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
       }
     },
     {
@@ -748,10 +814,106 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventar-Provenienz"],
-      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
       "verification": {
-        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
-        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+        "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+        "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+      }
+    },
+    {
+      "id": "PREP-M-01",
+      "reportFindingId": "PREP-M-01",
+      "origin": "reports/loop/reviews/PREP-001-methods.md",
+      "problem": "Schema lässt unbelegten Erfolg zu",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+      "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+      "blocks": ["Betroffene PREP-Abnahme"],
+      "duplicateOf": null,
+      "verification": {
+        "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+        "required": "Zwei unabhängige Nachprüfungen"
+      }
+    },
+    {
+      "id": "PREP-M-02",
+      "reportFindingId": "PREP-M-02",
+      "origin": "reports/loop/reviews/PREP-001-methods.md",
+      "problem": "Namensverbot trennt Prüfgegenstand nicht von fremdem Urteil",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+      "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+      "blocks": ["Betroffene PREP-Abnahme"],
+      "duplicateOf": null,
+      "verification": {
+        "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+        "required": "Zwei unabhängige Nachprüfungen"
+      }
+    },
+    {
+      "id": "PREP-M-03",
+      "reportFindingId": "PREP-M-03",
+      "origin": "reports/loop/reviews/PREP-001-methods.md",
+      "problem": "Wiederholungsregel echter Menschentests fehlt",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+      "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+      "blocks": ["Betroffene PREP-Abnahme"],
+      "duplicateOf": null,
+      "verification": {
+        "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+        "required": "Zwei unabhängige Nachprüfungen"
+      }
+    },
+    {
+      "id": "PREP-R-F01",
+      "reportFindingId": "R-F01",
+      "origin": "reports/loop/reviews/PREP-001-repro.md",
+      "problem": "Wiederholungsregel fehlt",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+      "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+      "blocks": ["Betroffene PREP-Abnahme"],
+      "duplicateOf": "PREP-M-03",
+      "verification": {
+        "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+        "required": "Zwei unabhängige Nachprüfungen"
+      }
+    },
+    {
+      "id": "PREP-R-F02",
+      "reportFindingId": "R-F02",
+      "origin": "reports/loop/reviews/PREP-001-repro.md",
+      "problem": "Unbelegter/widersprüchlicher Schemerfolg",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+      "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+      "blocks": ["Betroffene PREP-Abnahme"],
+      "duplicateOf": "PREP-M-01",
+      "verification": {
+        "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+        "required": "Zwei unabhängige Nachprüfungen"
       }
     }
   ],

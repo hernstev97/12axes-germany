@@ -15,9 +15,11 @@
     "format:check": "prettier --check .",
     "check:handbuch": "node scripts/check-handbuch.mjs",
     "check:browser": "node scripts/check-browser.mjs",
-    "check": "pnpm format:check && pnpm check:handbuch && pnpm typecheck && pnpm test && pnpm build"
+    "check": "pnpm format:check && pnpm check:handbuch && pnpm check:review-schema && pnpm typecheck && pnpm test && pnpm build",
+    "check:review-schema": "node scripts/check-review-schema.mjs"
   },
   "devDependencies": {
+    "ajv": "8.20.0",
     "axe-core": "4.13.0",
     "playwright-core": "1.62.1",
     "prettier": "3.8.1"

@@ -1,0 +1,7 @@
+Checking formatting...
+[ELIFECYCLE] Command failed with exit code 1.
+[ELIFECYCLE] Command failed with exit code 1.
+$ pnpm format:check && pnpm check:handbuch && pnpm check:review-schema && pnpm typecheck && pnpm test && pnpm build
+$ prettier --check .
+[warn] reports/loop/technical-v5/python-tests.json
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.

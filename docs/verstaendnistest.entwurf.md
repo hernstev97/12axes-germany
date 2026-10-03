@@ -1,6 +1,6 @@
 # Verständnistest: vorbereiteter Ablauf
 
-Entwurf 0.1 vom 2026-10-03. Phase 9 hat NICHT begonnen. Es gibt noch keine fertige Beispielergebnis-Seite, keinen Deploymentlink und keine menschlichen Antworten. Dieser Entwurf sammelt keine persönlichen politischen Antworten oder Profile. Vor Versand müssen Link, Release-/Modellversion, tatsächliche Beispielwerte und zutreffender Auswertungsschlüssel eingefroren und unabhängig geprüft sein.
+Entwurf 0.2 vom 2026-10-03. Phase 9 hat NICHT begonnen. Es gibt noch keine fertige Beispielergebnis-Seite, keinen Deploymentlink und keine menschlichen Antworten. Dieser Entwurf sammelt keine persönlichen politischen Antworten oder Profile. Vor Versand müssen Link, Release-/Modellversion, tatsächliche Beispielwerte und zutreffender Auswertungsschlüssel eingefroren und unabhängig geprüft sein.
 
 ## Gegenstand und Freigaben
 
@@ -41,6 +41,14 @@ Die fünf Antworten werden von Steven ohne Namen und persönliche Angaben überg
 Für eine spätere öffentliche Ausgabe unter reports/verstaendnistest/ werden nur anonymisierte Antworten zur Beispielseite übernommen. Personen erhalten bloß lokale Testkennungen, keine Verknüpfung mit anderen Daten. Originaleingänge können ausschließlich lokal in data/local/ bleiben. Vor Veröffentlichung wird der tatsächliche Inhalt geprüft.
 
 Der Bericht verbindet Antwort, Bewertung, betroffene Text-/Beleg-ID, Entscheidung und neue Textversion. Korrigierte Website und Interpretationen werden erneut unabhängig geprüft und von Steven freigegeben. Erst nach tatsächlicher Auswertung darf die Website sagen, dass die Verständlichkeit mit fünf Personen geprüft wurde. Das ist weiterhin keine wissenschaftliche Validierung.
+
+## Wiederholung nach Änderungen
+
+Eine bedeutende Änderung an gemessener Bedeutung, Unsicherheitsart, Beispielwerten, Wählergruppenvergleich oder zugehöriger Erklärung invalidiert den betroffenen menschlichen Verständlichkeitsbefund. Vor einer erneuten Runde werden neue Seite, Release-Manifest und Schlüssel eingefroren; fünf echte Personen beantworten die festen Fragen am neuen Beispiel. Die Runde und ihre Antworten bleiben getrennt von der alten Fassung. Ob dieselben oder andere Personen teilnehmen, wird dokumentiert; mögliche Lern-/Erinnerungseffekte bleiben eine Grenze. Keine KI-Nachprüfung ersetzt diese Wiederholung. Unveränderte Teilbefunde bleiben nur mit nachgewiesener identischer Bedeutung und Versionsverweis erhalten.
+
+Reine Schreib-, Link- oder Formatkorrekturen ohne Bedeutungs-/Bedienungsänderung benötigen keine erneute menschliche Runde, wenn zwei unabhängige Prüfungen die Unverändertheit des getesteten Gegenstands konkret begründen. Im Zweifel bleibt der betroffene Befund NICHT_GEPRÜFT. Vor Veröffentlichung enthält der Änderungsbericht Anlass, betroffene Fragen/Text-IDs, alte/neue Version, Einstufung und erforderliche Nachprüfung.
+
+Synthetische Regelgegenfälle, keine Menschenantworten: Eine korrigierte Schreibweise bei unverändertem Inhalt verlangt Gleichbedeutungsprüfung; die Umdeutung eines Referenzintervalls als persönliches Messintervall verlangt erneute echte Prüfung und korrigierten Schlüssel. Ein neuer Beispielwert verlangt eine neue an diesen Werten gebundene Runde. Alte Antworten werden nicht rückwirkend umgedeutet.
 
 ## Offene Voraussetzungen
 

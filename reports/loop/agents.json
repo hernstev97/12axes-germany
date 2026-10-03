@@ -144,20 +144,62 @@
       "returnedTaskName": "/root/prep001_review_methods",
       "fork_turns": "none",
       "kind": "independent-preparation-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/reviews/PREP-001-methods.md",
       "manifest": "reports/loop/packages/PREP-001/v1/manifest.json",
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wird wortgetreu im eigenen Bericht gesichert; keine Rekonstruktion."
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wird wortgetreu im eigenen Bericht gesichert; keine Rekonstruktion.",
+      "reportSha256": "58a47122c373af60575d436eec857ec9bc6a41c0bf87ad27447337e14e9b032f"
     },
     {
       "task_name": "prep001_review_repro",
       "returnedTaskName": "/root/prep001_review_repro",
       "fork_turns": "none",
       "kind": "independent-preparation-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/reviews/PREP-001-repro.md",
       "manifest": "reports/loop/packages/PREP-001/v1/manifest.json",
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wird wortgetreu im eigenen Bericht gesichert; keine Rekonstruktion."
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wird wortgetreu im eigenen Bericht gesichert; keine Rekonstruktion.",
+      "reportSha256": "5c12d63a093992d293adf7c8552f46208da26ddc23cc957a74a9abbee6a41d94"
+    },
+    {
+      "task_name": "foundation_repair_inventory",
+      "returnedTaskName": "/root/foundation_repair_inventory",
+      "fork_turns": "none",
+      "kind": "repair-author",
+      "status": "COMPLETED",
+      "report": "reports/loop/authors/FOUNDATION-001-inventar-korrektur.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Bericht, unverändert ab Abschluss",
+      "reportSha256": "0db0f33a37c5100cba3bd1249e8248b0a9045b5fddbd13c89287bd2c20af874e"
+    },
+    {
+      "task_name": "loop000_v4_scope",
+      "returnedTaskName": "/root/loop000_v4_scope",
+      "fork_turns": "none",
+      "kind": "independent-recheck",
+      "status": "COMPLETED",
+      "report": "reports/loop/reviews/LOOP-000-v4-scope.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Bericht, unverändert ab Abschluss",
+      "reportSha256": "5180fd06458f7407d07f426f768161b87e467741bc48456441dc0aebd2a3520d"
+    },
+    {
+      "task_name": "loop000_v4_binding",
+      "returnedTaskName": "/root/loop000_v4_binding",
+      "fork_turns": "none",
+      "kind": "independent-recheck",
+      "status": "COMPLETED",
+      "report": "reports/loop/reviews/LOOP-000-v4-binding.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Bericht, unverändert ab Abschluss",
+      "reportSha256": "3322d9f2a7d9fb71aa9b92f340e3d98219ef765b7d708a5560fbc22ba8c12a5c"
+    },
+    {
+      "task_name": "software001_author",
+      "returnedTaskName": "/root/software001_author",
+      "fork_turns": "none",
+      "kind": "software-author",
+      "status": "RUNNING",
+      "report": "reports/loop/authors/SOFTWARE-001.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Bericht, unverändert ab Abschluss",
+      "reportSha256": null
     }
   ],
   "activeAdditionalAuthors": [

@@ -1,0 +1,93 @@
+{
+  "id": "LOOP-000",
+  "version": 4,
+  "codeCommit": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
+  "overrideRule": "Eingefrorene Dateibytes haben Vorrang vor angegebenem Commit",
+  "previousManifest": "reports/loop/packages/LOOP-000/v3/manifest.json",
+  "previousManifestSha256": "82549de387004b65ddb1bb2cce2b51e95c5c0092ffc70512f819451d22ada467",
+  "analysisPlanVersion": "0.2 Entwurf",
+  "sourceDataVersion": "ESS11 Edition4.2 metadata only",
+  "rawDataSha256MetadataOnly": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+  "modelConfiguration": null,
+  "acceptanceScope": "G04/B03 zweite Reparatur: formale Vollphasen-Scopebindung; keine wissenschaftliche Abnahme",
+  "frozenAtUtc": "2026-10-03T03:07:27.251943+00:00",
+  "files": {
+    "reports/loop/LOOP-000-v4-pruefauftrag.md": {
+      "sha256": "ed7f23cdd255d585f7070768d80e10889313336bd7bbc2276e80a89ea374004f",
+      "bytes": 1484
+    },
+    "reports/loop/LOOP-000-entscheidungen.md": {
+      "sha256": "b6fa5e7732544c9b433fc9e7a5b3699efbae46aa0109e727215c5db3d28ec14b",
+      "bytes": 11974
+    },
+    "reports/loop/reviews/LOOP-000-v3-guard.md": {
+      "sha256": "af2a9b9c4b5b22e70f4a1233030dd3443ee287d0a85c0a24ac74c675c3cd59fc",
+      "bytes": 24539
+    },
+    "reports/loop/reviews/LOOP-000-v3-browser.md": {
+      "sha256": "8584def6c532468579bfa0059da898af2771a0791bcd85beedcf079402b3fe77",
+      "bytes": 28083
+    },
+    "pipeline/loop.py": {
+      "sha256": "a0ee7f1c98fa7b3ef11c797cd26289a12c1df2fb055bc7b45f4e7e0a2f9e729f",
+      "bytes": 11067
+    },
+    "pipeline/tests/test_loop.py": {
+      "sha256": "e3854830d3e5803864e945d195df98984921da7e8e780786c324fdd3fdf97564",
+      "bytes": 11362
+    },
+    "Makefile": {
+      "sha256": "88981f3092bf9d6a9a0c0042f092250acc0ac7b34f4701355492776ed58d3f30",
+      "bytes": 184
+    },
+    "reports/loop/state.json": {
+      "sha256": "12bdfc2020994562c6c0744dada28c79fca36cdc4079ea438b054e60450cffef",
+      "bytes": 8865
+    },
+    "reports/loop/findings.json": {
+      "sha256": "3c0fe66c73a4efb2036d14ec7314eb4b4c2d25091c6b43d29a61da8951727289",
+      "bytes": 45689
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "reports/loop/technical-v4/inputs.json": {
+      "sha256": "506282063f36331f84f4f3a0833601bac900255b36125443390b61abe1b462b1",
+      "bytes": 351
+    },
+    "reports/loop/technical-v4/loop-tests.log": {
+      "sha256": "e27379ad39fcb703783ff9d6c21c34a36a251d461c9cf1372d4b4dc9e04369d5",
+      "bytes": 1571
+    },
+    "reports/loop/technical-v4/loop-tests.json": {
+      "sha256": "653d5fcdecff74996654b8f71c2b0e1a8a3ee212618c1ac3df6064f2579beded",
+      "bytes": 496
+    },
+    "reports/loop/technical-v4/status.log": {
+      "sha256": "a06403289d70a58e23962dc6eda102b50a2a413a504a2764066f2adc1e0bef94",
+      "bytes": 2129
+    },
+    "reports/loop/technical-v4/status.json": {
+      "sha256": "6d767449012447c6775d0a94510349be6937b3d44793708ed039ab0b779a9fbe",
+      "bytes": 400
+    },
+    "reports/loop/technical-v4/all.log": {
+      "sha256": "bf660f2fcde0a2e8a9431a91c45094b8faf5a9d79190d3d5c1f84c106216739f",
+      "bytes": 2265
+    },
+    "reports/loop/technical-v4/all.json": {
+      "sha256": "47188d7dfb0d6ef1b0017588ec21ca31517761bcd1df4d395b7f49bfe930a3f2",
+      "bytes": 394
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

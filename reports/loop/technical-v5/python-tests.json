@@ -1,0 +1,10 @@
+{
+  "command": ["python", "-m", "unittest", "discover", "-s", "pipeline/tests", "-v"],
+  "startedAtUtc": "2026-10-03T03:23:17.358773+00:00",
+  "finishedAtUtc": "2026-10-03T03:23:17.704367+00:00",
+  "exitCode": 0,
+  "output": "reports/loop/technical-v5/python-tests.log",
+  "outputSha256": "32b519debfeac2d13fbd8e7a4b8c476c8415a174b8c640bf072089a92fef69c1",
+  "inputManifest": "reports/loop/technical-v5/inputs.json",
+  "status": "BESTANDEN"
+}

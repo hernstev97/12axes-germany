@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "pipeline/tests",
+    "-p",
+    "test_loop.py",
+    "-v"
+  ],
+  "startedAtUtc": "2026-10-03T03:06:43.009508+00:00",
+  "finishedAtUtc": "2026-10-03T03:06:43.310217+00:00",
+  "exitCode": 0,
+  "output": "reports/loop/technical-v4/loop-tests.log",
+  "outputSha256": "e27379ad39fcb703783ff9d6c21c34a36a251d461c9cf1372d4b4dc9e04369d5",
+  "inputs": "reports/loop/technical-v4/inputs.json",
+  "status": "BESTANDEN"
+}

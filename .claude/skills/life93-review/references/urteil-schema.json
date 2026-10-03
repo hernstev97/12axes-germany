@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "LIFE-93 begrenztes KI-Urteil, Entwurf 0.1",
+  "title": "LIFE-93 begrenztes KI-Urteil, Entwurf 0.2",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -16,14 +16,25 @@
     "limits"
   ],
   "properties": {
-    "schemaVersion": { "const": 1 },
+    "schemaVersion": {
+      "const": 1
+    },
     "mode": {
       "enum": ["ERSTBEWERTUNG", "PR_REVIEW", "NACHPRUEFUNG", "SYNTHETISCHE_SKILLPRUEFUNG"]
     },
-    "task": { "type": "string", "minLength": 1 },
-    "scope": { "type": "string", "minLength": 1 },
-    "manifestSha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
-    "status": { "$ref": "#/$defs/status" },
+    "task": {
+      "$ref": "#/$defs/text"
+    },
+    "scope": {
+      "$ref": "#/$defs/text"
+    },
+    "manifestSha256": {
+      "type": ["string", "null"],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "$ref": "#/$defs/status"
+    },
     "execution": {
       "type": "object",
       "required": [
@@ -37,30 +48,108 @@
         "inputHashes"
       ],
       "properties": {
-        "provider": { "type": ["string", "null"] },
-        "model": { "type": ["string", "null"] },
-        "modelEvidence": { "type": "string" },
-        "internalRevision": { "type": ["string", "null"] },
-        "internalInstructions": { "const": null },
-        "tools": { "type": "array", "items": { "type": "string" } },
-        "prompt": { "type": "string" },
+        "provider": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modelEvidence": {
+          "$ref": "#/$defs/text"
+        },
+        "internalRevision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "internalInstructions": {
+          "const": null
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "prompt": {
+          "$ref": "#/$defs/text"
+        },
         "inputHashes": {
           "type": "object",
-          "additionalProperties": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "checks": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "scope", "status", "evidence"],
+        "required": ["id", "scope", "status", "evidence", "requiredInScope"],
         "properties": {
-          "id": { "type": "string" },
-          "scope": { "type": "string" },
-          "status": { "$ref": "#/$defs/status" },
-          "evidence": { "type": "array", "items": { "type": "string" } }
-        }
+          "id": {
+            "$ref": "#/$defs/text"
+          },
+          "scope": {
+            "$ref": "#/$defs/text"
+          },
+          "status": {
+            "$ref": "#/$defs/status"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/text"
+            }
+          },
+          "requiredInScope": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "BESTANDEN"
+                }
+              },
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "evidence": {
+                  "minItems": 1,
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ]
       }
     },
     "findings": {
@@ -77,24 +166,87 @@
           "severityReason",
           "correction",
           "recheck",
-          "certainty"
+          "certainty",
+          "blocksScope",
+          "state"
         ],
         "properties": {
-          "id": { "type": "string" },
-          "claim": { "type": "string" },
-          "problem": { "type": "string" },
-          "evidence": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
-          "impact": { "type": "string" },
-          "severity": { "enum": ["niedrig", "mittel", "erheblich"] },
-          "severityReason": { "type": "string" },
-          "correction": { "type": "string" },
-          "recheck": { "type": "string" },
-          "certainty": { "enum": ["BELEGT", "VERMUTUNG", "OFFENE_FRAGE"] }
-        }
+          "id": {
+            "$ref": "#/$defs/text"
+          },
+          "claim": {
+            "$ref": "#/$defs/text"
+          },
+          "problem": {
+            "$ref": "#/$defs/text"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/text"
+            },
+            "minItems": 1
+          },
+          "impact": {
+            "$ref": "#/$defs/text"
+          },
+          "severity": {
+            "enum": ["niedrig", "mittel", "erheblich"]
+          },
+          "severityReason": {
+            "$ref": "#/$defs/text"
+          },
+          "correction": {
+            "$ref": "#/$defs/text"
+          },
+          "recheck": {
+            "$ref": "#/$defs/text"
+          },
+          "certainty": {
+            "enum": ["BELEGT", "VERMUTUNG", "OFFENE_FRAGE"]
+          },
+          "blocksScope": {
+            "type": "boolean"
+          },
+          "state": {
+            "enum": ["OFFEN", "KORRIGIERT", "AUSSERHALB_SCOPE"]
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "state": {
+                  "enum": ["KORRIGIERT", "AUSSERHALB_SCOPE"]
+                }
+              },
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "blocksScope": {
+                  "const": false
+                }
+              },
+              "type": "object"
+            }
+          }
+        ]
       }
     },
-    "ratings": { "type": "array", "items": { "type": "object" } },
-    "limits": { "type": "array", "items": { "type": "string" } }
+    "ratings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "limits": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    }
   },
   "$defs": {
     "status": {
@@ -105,6 +257,97 @@
         "BLOCKIERT",
         "IN_DIESER_PHASE_NICHT_ERFORDERLICH"
       ]
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "BESTANDEN"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "manifestSha256": {
+            "type": "string"
+          },
+          "execution": {
+            "properties": {
+              "inputHashes": {
+                "minProperties": 1,
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "checks": {
+            "minItems": 1,
+            "allOf": [
+              {
+                "contains": {
+                  "properties": {
+                    "requiredInScope": {
+                      "const": true
+                    },
+                    "status": {
+                      "const": "BESTANDEN"
+                    }
+                  },
+                  "required": ["requiredInScope", "status"],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "not": {
+                  "contains": {
+                    "properties": {
+                      "requiredInScope": {
+                        "const": true
+                      },
+                      "status": {
+                        "not": {
+                          "const": "BESTANDEN"
+                        }
+                      }
+                    },
+                    "required": ["requiredInScope", "status"],
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            ],
+            "type": "array"
+          },
+          "findings": {
+            "not": {
+              "contains": {
+                "properties": {
+                  "blocksScope": {
+                    "const": true
+                  },
+                  "state": {
+                    "const": "OFFEN"
+                  }
+                },
+                "required": ["blocksScope", "state"],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
 }

@@ -1,0 +1,7 @@
+# LOOP-000 v4: Nachprüfung der zweiten Reparaturrunde
+
+Prüfumfang ist ausschließlich G04/B03: Eine vollständig gehashte Abnahme mit falschem, fehlendem oder nur begrenztem Scope darf DONE nicht ermöglichen. Beide v3-Nachprüfberichte sind abgeschlossen und unverändert. Ihre unterschiedlichen Bewertungen werden im Entscheidungsbericht anhand des konkret ausgeführten Gegenfalls aufgelöst.
+
+Abnahmekriterien: Existenz-/Hash-/Archivbindung bleibt erhalten; Zustand und JSON-Bericht verlangen dieselbe feste Vertragskennung für die jeweils vollständige LIFE-93-Phase. Eine Kennung einer anderen Phase, ein fehlender Scope und zwei übereinstimmende Formatprüfungskennungen scheitern trotz sonst gültiger Hashes. Eine vollständige synthetische Positivfassung passiert nur die formale Kontrolle. Alle neun Autorentests erneut ausführen und zusätzlich eigene Gegenfälle entwickeln. Echtes RUNNING und `all`/Exit2 bleiben ehrlich; wissenschaftliche oder menschliche Abnahmen werden dadurch nicht erzeugt.
+
+Keine Forschungs-, UI-, Rohdaten-, Browser- oder Releaseabnahme. Websitecode und v3-Websiteprüfungen sind durch diese Infrastrukturänderung nicht betroffen. Keine Rohantworten/B/Parteien/LR lesen. Eigene synthetische Gegenfälle und Bericht getrennt schreiben; aktuelle Forschung und andere v4-Berichte nicht lesen oder verändern. Erstberichte unverändert erhalten. Tatsächlichen Auftrag, Werkzeuge, Modellangaben, Ausführung und Trennungsgrenzen dokumentieren.

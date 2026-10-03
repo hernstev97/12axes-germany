@@ -1,0 +1,10 @@
+{
+  "command": ["pnpm", "check"],
+  "startedAtUtc": "2026-10-03T03:23:17.704515+00:00",
+  "finishedAtUtc": "2026-10-03T03:23:20.262244+00:00",
+  "exitCode": 1,
+  "output": "reports/loop/technical-v5/web-check.log",
+  "outputSha256": "25a5e4baecb8da17101cd135c34bd5ddda3dbc012861c1bff5d02790b44c237f",
+  "inputManifest": "reports/loop/technical-v5/inputs.json",
+  "status": "NICHT_BESTANDEN"
+}

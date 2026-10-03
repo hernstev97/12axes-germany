@@ -1,0 +1,10 @@
+{
+  "command": ["python", "pipeline/loop.py", "all"],
+  "startedAtUtc": "2026-10-03T03:06:43.352596+00:00",
+  "finishedAtUtc": "2026-10-03T03:06:43.394357+00:00",
+  "exitCode": 2,
+  "output": "reports/loop/technical-v4/all.log",
+  "outputSha256": "bf660f2fcde0a2e8a9431a91c45094b8faf5a9d79190d3d5c1f84c106216739f",
+  "inputs": "reports/loop/technical-v4/inputs.json",
+  "status": "BLOCKIERT"
+}

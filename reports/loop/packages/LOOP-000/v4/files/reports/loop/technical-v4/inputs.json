@@ -1,0 +1,8 @@
+{
+  "createdAtUtc": "2026-10-03T03:06:43.009285+00:00",
+  "files": {
+    "pipeline/loop.py": "a0ee7f1c98fa7b3ef11c797cd26289a12c1df2fb055bc7b45f4e7e0a2f9e729f",
+    "pipeline/tests/test_loop.py": "e3854830d3e5803864e945d195df98984921da7e8e780786c324fdd3fdf97564"
+  },
+  "scope": "Nur öffentliche Protokollinfrastruktur, keine Forschungsauswertung"
+}

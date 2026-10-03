@@ -1,0 +1,15 @@
+{
+  "files": {
+    "pipeline/inventar.py": "84ff2e1c2868170ef6cf9ecdb050d2d26a802e57c7c324ae938bb8fa951c615e",
+    "pipeline/tests/test_inventar.py": "0d61d2d42ddc16f8ca8d6ff3b9155e14a0ae1c903ffc2027ad0fc23235914e85",
+    "pipeline/loop.py": "a0ee7f1c98fa7b3ef11c797cd26289a12c1df2fb055bc7b45f4e7e0a2f9e729f",
+    "pipeline/tests/test_loop.py": "e3854830d3e5803864e945d195df98984921da7e8e780786c324fdd3fdf97564",
+    "pipeline/synthetic/planvertraege.py": "144d379cd1e37f4530d325200b13c20aabf15e19ca37d281db58cf87f5e6b93d",
+    "pipeline/tests/test_planvertraege.py": "7353017e19a19fa8203b27fe255d316b37f793a20979ddce2e4a2dc352cf40b1",
+    ".claude/skills/life93-review/references/urteil-schema.json": "f86a46c805b0b07b6e73804f1e1780915fba5dbb8221504492f253884b275583",
+    "scripts/check-review-schema.mjs": "c82f89ea70b712b6048cfd1b67cd1c1c4cf653c79f6715c2b6fd9b7ae0798579",
+    "package.json": "2c8b7d9a037bdacec45ab6de11d34932872a7e32b8da4e87967f1d1a244c3cd2",
+    "pnpm-lock.yaml": "f066cb926a6fa8af4afe0994a51afb2f36e194bfd5eb29ccf4d84f283dcaa390"
+  },
+  "scope": "Zentrale technische Prüfungen der öffentlichen Arbeit; keine wissenschaftliche Abnahme"
+}

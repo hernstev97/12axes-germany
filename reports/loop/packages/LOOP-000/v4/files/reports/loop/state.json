@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "updatedAtUtc": "2026-10-03T03:06:43.007226+00:00",
+  "status": "RUNNING",
+  "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
+  "coordinator": "/root",
+  "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
+  "branch": "research/life-93-night-20261003",
+  "currentHead": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
+  "sourceIssue": {
+    "path": "reports/loop/issue-2026-10-03.json",
+    "updatedAt": "2026-10-02T22:07:24.510Z"
+  },
+  "assignment": "docs/auftrag-life-93-2026-10-03.md",
+  "completedTasks": [
+    {
+      "id": "MERGE-MAIN",
+      "proof": "reports/loop/000-main-integration.json",
+      "status": "BESTANDEN",
+      "scope": "main-Webdateien und Handbuch bytegleich; ursprüngliche Arbeit erhalten; keine umfassende Abnahme"
+    }
+  ],
+  "openTasks": [
+    "FOUNDATION-001: zwölf angenommene Findings korrigieren, eigene Läufe und unabhängige Nachprüfung/Juror",
+    "LOOP-000: v3 beide Berichte abschließen; Scopebindung G04 in Runde2 reparieren",
+    "PREP-001: zwei unabhängige Erstprüfungen sammeln; fehlende menschliche Setup-Voraussetzungen bleiben offen"
+  ],
+  "dependencies": [
+    {
+      "id": "ACCESS-CLAUDE",
+      "status": "BLOCKIERT",
+      "evidence": ["LIFE-93 Setup/Phase1/Phase7", "docs/auftrag-life-93-2026-10-03.md"],
+      "blocks": [
+        "endgültige Erstbewertungen",
+        "empirische Modellentwicklung und abhängige Freigaben"
+      ],
+      "actionNeeded": "Vorhandene Anmeldung; kein neues Konto nötig. Providerlimit abwarten, frühestens zum gemeldeten Reset einmal erneut prüfen. Keine Limitumgehung.",
+      "authenticated": true,
+      "proof": "reports/loop/claude-access.json",
+      "blockedBy": "Claude session limit",
+      "providerReportedResetLocal": "2026-10-03T06:10:00+02:00",
+      "retryNotBeforeUtc": "2026-10-03T04:10:00Z"
+    },
+    {
+      "id": "SETUP-ACCEPTANCE",
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["formale Setup-Abnahme"],
+      "actionNeeded": "Tatsächliche Branch-/Pflichtcheck-Regeln und erfolgreicher Verstoß-/sauberer Test-PR fehlen."
+    },
+    {
+      "id": "PUBLIC-TAGS",
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["empirischer Analysebeginn"],
+      "actionNeeded": "Analyseplan und Erwartungsmodell vollständig begründen und erforderliche Prüfungen erfüllen; erst dann öffentliche Tags."
+    },
+    {
+      "id": "HUMAN-RELEASE",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "blocks": ["öffentliche Freigabe"],
+      "actionNeeded": "Steven prüft konkrete Release-Fassung."
+    },
+    {
+      "id": "HUMAN-COMPREHENSION",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "blocks": ["DONE"],
+      "actionNeeded": "Fünf reale anonymisierte Antworten nach Deployment; keine Simulation."
+    }
+  ],
+  "checks": {
+    "mainIntegration": "BESTANDEN",
+    "currentLocalTechnical": "BESTANDEN",
+    "currentIndependentIntegration": "NICHT_GEPRÜFT",
+    "empiricalValidation": "NICHT_GEPRÜFT",
+    "otherModelFamily": "BLOCKIERT",
+    "currentBrowserPlaceholderPages": "BESTANDEN",
+    "currentHandbookGuard": "BESTANDEN",
+    "foundationFiveReviewers": "NICHT_BESTANDEN",
+    "currentInfrastructure": "NICHT_BESTANDEN",
+    "actual200PercentBrowserZoom": "BLOCKIERT",
+    "fullHandbookWebsiteAcceptance": "NICHT_GEPRÜFT"
+  },
+  "reviewReports": [
+    "reports/audit-recherche/README.md",
+    "reports/audit-recherche/juror-6.md",
+    "reports/loop/reviews/LOOP-000-integration.md",
+    "reports/loop/reviews/LOOP-000-provenance.md",
+    "reports/loop/reviews/LOOP-000-v2-regeln-infrastruktur.md",
+    "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md",
+    "reports/loop/reviews/FOUNDATION-001-sources.md",
+    "reports/loop/reviews/FOUNDATION-001-politics.md",
+    "reports/loop/reviews/FOUNDATION-001-methods.md",
+    "reports/loop/reviews/FOUNDATION-001-neutrality.md",
+    "reports/loop/reviews/FOUNDATION-001-repro.md",
+    "reports/loop/reviews/LOOP-000-v3-guard.md",
+    "reports/loop/reviews/LOOP-000-v3-browser.md"
+  ],
+  "blockingFindingIds": [
+    "R2-F03",
+    "R3-F01",
+    "R3-F02",
+    "R3-F04",
+    "R5-F03",
+    "L000-G04",
+    "F-P01",
+    "F-P02",
+    "F-P03",
+    "F-P04",
+    "FM-F01",
+    "N-F01",
+    "REPRO-F01",
+    "REPRO-F02"
+  ],
+  "repairRoundRegistry": "reports/loop/findings.json",
+  "activeAgents": [
+    {
+      "name": "/root/prep001_review_methods",
+      "role": "prep-first-review",
+      "status": "RUNNING"
+    },
+    {
+      "name": "/root/prep001_review_repro",
+      "role": "prep-first-review",
+      "status": "RUNNING"
+    }
+  ],
+  "workPackages": [
+    {
+      "id": "LOOP-000",
+      "status": "RUNNING",
+      "predefinedCriteria": "docs/arbeitsloop.md",
+      "artifacts": [
+        "reports/loop/000-main-integration.json",
+        "docs/auftrag-life-93-2026-10-03.md",
+        "docs/arbeitsloop.md"
+      ],
+      "manifest": "reports/loop/packages/LOOP-000/v3/manifest.json",
+      "manifestSha256": "82549de387004b65ddb1bb2cce2b51e95c5c0092ffc70512f819451d22ada467",
+      "repairStatus": "G01–04/B01–05 round1 implemented, own eight tests/full check/browser rerun, independent v3 rechecks pending; actual zoom remains blocked"
+    },
+    {
+      "id": "LOOP-001",
+      "status": "RUNNING",
+      "predefinedCriteria": "docs/arbeitsloop.md"
+    },
+    {
+      "id": "LOOP-002",
+      "status": "RUNNING",
+      "predefinedCriteria": "docs/arbeitsloop.md"
+    },
+    {
+      "id": "FOUNDATION-001",
+      "status": "RUNNING",
+      "predefinedCriteria": "reports/loop/foundation-pruefauftrag.md",
+      "manifest": "reports/loop/packages/FOUNDATION-001/v1/manifest.json",
+      "manifestSha256": "213eec2fba90ae60594323f1e52c39ed77d49af4656f3eea481c6300ecc0c5bb",
+      "reviewWaves": "Alle fünf Erstberichte abgeschlossen und unverändert erhalten; Einzelfallentscheidungen geschrieben, Reparaturrunde1 offen",
+      "decisions": "reports/loop/FOUNDATION-001-entscheidungen.md"
+    },
+    {
+      "id": "PREP-001",
+      "status": "RUNNING",
+      "predefinedCriteria": "reports/loop/preparation-pruefauftrag.md",
+      "manifest": "reports/loop/packages/PREP-001/v1/manifest.json",
+      "manifestSha256": "152785d06f322a1e95b6503b9b78ed2ff768373852899f4f027ab7f2c6add66a",
+      "reviewStatus": "Zwei frische unabhängige Reviewer aktiv; keine Claude- oder menschliche Prüfung"
+    }
+  ],
+  "nextConcreteStep": "Angenommene FOUNDATION-Korrekturen durchführen; nach beiden v3-Berichten G04-Scope reparieren; PREP-Erstberichte zunächst vollständig sammeln.",
+  "checkpoint": {
+    "lastLocalCommit": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
+    "lastVerifiedRemoteCommit": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
+    "lastVerifiedPushAtUtc": "2026-10-03T03:04:42Z",
+    "pushStatus": "BESTANDEN",
+    "intervalMinutes": 30,
+    "noPushToMain": true,
+    "record": "reports/loop/push-007.json"
+  },
+  "scientificStatus": "Drei Autorenentwürfe abgegeben und 25-Datei-Paket/36 öffentliche Quellartefakte eingefroren. Fünf Fachreviews in Wellen gestartet. Inventar mit 29 offenen Variablenzuordnungen, 70 Antwortblöcken, 23 Missingblöcken und 203 Routing-/Kontextstellen; keine Phase1-Abnahme. Kein Rohantwortimport, A/B, Modell oder öffentliche Tags.",
+  "technicalRecord": "reports/loop/000-technical.json",
+  "technicalRecords": [
+    "reports/loop/technical-v2/browser.json",
+    "reports/loop/technical-v2/web-check.json",
+    "reports/loop/technical-v3/loop-tests.json",
+    "reports/loop/technical-v3/status.json",
+    "reports/loop/technical-v3/all.json",
+    "reports/loop/technical-v3/web-check.json",
+    "reports/loop/technical-v3/web-check-2.json",
+    "reports/loop/technical-v3/browser.json",
+    "reports/loop/technical-v3/native-text-and-zoom.json"
+  ],
+  "independentPreparations": [
+    {
+      "id": "PHASE9-PROTOCOL-DRAFT",
+      "artifact": "docs/verstaendnistest.entwurf.md",
+      "status": "NICHT_GEPRÜFT",
+      "criteria": "LIFE-93 Phase9: five fixed questions for fictional example only, release key frozen before dispatch, no political answers collected, no human test invented."
+    },
+    {
+      "id": "DE-DESIGN-METADATA",
+      "artifact": "reports/loop/LOOP-003-design-metadaten.json",
+      "status": "NICHT_GEPRÜFT",
+      "criteria": "Original public German design source, claimed scope vs missing mapping, two independent checks before incorporation."
+    },
+    {
+      "id": "PREP-REVIEW-SKILL",
+      "artifacts": [".claude/skills/life93-review/SKILL.md"],
+      "status": "NICHT_GEPRÜFT",
+      "criteria": "LIFE-93 Setup/Phase7: limited manifest-bound source/method/neutrality review; machine-readable findings; first ratings separated from PR-review; raw/B held back; no active GitHub setup or false model-family claim. Skill format and independent behavioural review required."
+    }
+  ]
+}

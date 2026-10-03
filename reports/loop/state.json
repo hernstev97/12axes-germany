@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T03:03:17.455268+00:00",
+  "updatedAtUtc": "2026-10-03T03:31:34.602635+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "5c4a1ccc47e46237e75d513b6decbc9e9c42d9a2",
+  "currentHead": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -21,9 +21,10 @@
     }
   ],
   "openTasks": [
-    "FOUNDATION-001: zwölf angenommene Findings korrigieren, eigene Läufe und unabhängige Nachprüfung/Juror",
-    "LOOP-000: v3 beide Berichte abschließen; Scopebindung G04 in Runde2 reparieren",
-    "PREP-001: zwei unabhängige Erstprüfungen sammeln; fehlende menschliche Setup-Voraussetzungen bleiben offen"
+    "FOUNDATION: zwei unabhängige Korrekturprüfungen und neuer unbeteiligter Juror",
+    "PREP: korrigiertes Schema/Protokoll einfrieren und zwei Nachprüfungen",
+    "SOFTWARE-001: isolierte freie R-Kette anhand offizieller Quellen und erfundener Daten prüfen",
+    "Öffentliche Inventar-/Designmetadaten ergänzen; Claude/Persönliches Setup bleiben Voraussetzungen"
   ],
   "dependencies": [
     {
@@ -75,7 +76,7 @@
     "currentBrowserPlaceholderPages": "BESTANDEN",
     "currentHandbookGuard": "BESTANDEN",
     "foundationFiveReviewers": "NICHT_BESTANDEN",
-    "currentInfrastructure": "NICHT_GEPRÜFT",
+    "currentInfrastructure": "BESTANDEN",
     "actual200PercentBrowserZoom": "BLOCKIERT",
     "fullHandbookWebsiteAcceptance": "NICHT_GEPRÜFT"
   },
@@ -91,7 +92,12 @@
     "reports/loop/reviews/FOUNDATION-001-methods.md",
     "reports/loop/reviews/FOUNDATION-001-neutrality.md",
     "reports/loop/reviews/FOUNDATION-001-repro.md",
-    "reports/loop/reviews/LOOP-000-v3-guard.md"
+    "reports/loop/reviews/LOOP-000-v3-guard.md",
+    "reports/loop/reviews/LOOP-000-v3-browser.md",
+    "reports/loop/reviews/LOOP-000-v4-scope.md",
+    "reports/loop/reviews/LOOP-000-v4-binding.md",
+    "reports/loop/reviews/PREP-001-methods.md",
+    "reports/loop/reviews/PREP-001-repro.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -99,10 +105,6 @@
     "R3-F02",
     "R3-F04",
     "R5-F03",
-    "L000-G01",
-    "L000-G02",
-    "L000-G03",
-    "L000-G04",
     "F-P01",
     "F-P02",
     "F-P03",
@@ -115,34 +117,25 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/loop000_v3_browser",
-      "role": "browser-recheck",
-      "status": "RUNNING"
-    },
-    {
-      "name": "/root/prep001_review_methods",
-      "role": "prep-first-review",
-      "status": "RUNNING"
-    },
-    {
-      "name": "/root/prep001_review_repro",
-      "role": "prep-first-review",
+      "name": "/root/software001_author",
+      "role": "software-author",
       "status": "RUNNING"
     }
   ],
   "workPackages": [
     {
       "id": "LOOP-000",
-      "status": "RUNNING",
+      "status": "DONE",
       "predefinedCriteria": "docs/arbeitsloop.md",
       "artifacts": [
         "reports/loop/000-main-integration.json",
         "docs/auftrag-life-93-2026-10-03.md",
         "docs/arbeitsloop.md"
       ],
-      "manifest": "reports/loop/packages/LOOP-000/v3/manifest.json",
-      "manifestSha256": "82549de387004b65ddb1bb2cce2b51e95c5c0092ffc70512f819451d22ada467",
-      "repairStatus": "G01–04/B01–05 round1 implemented, own eight tests/full check/browser rerun, independent v3 rechecks pending; actual zoom remains blocked"
+      "manifest": "reports/loop/packages/LOOP-000/v4/manifest.json",
+      "manifestSha256": "d5d68311890060cd48f30ff4588f3ed512e7f238ee50457be8dee692825d9cee",
+      "repairStatus": "G04/B03 Runde2 durch zwei unabhängige Reviewer formal bestätigt; frühere G1–3/Textchecks bounded passed; echte Zoom/volle Websiteabnahme separat offen",
+      "closureScope": "Öffentliche Integration/Protokollinfrastruktur; keine Forschungs-/Browser-Gesamtabnahme"
     },
     {
       "id": "LOOP-001",
@@ -158,9 +151,9 @@
       "id": "FOUNDATION-001",
       "status": "RUNNING",
       "predefinedCriteria": "reports/loop/foundation-pruefauftrag.md",
-      "manifest": "reports/loop/packages/FOUNDATION-001/v1/manifest.json",
-      "manifestSha256": "213eec2fba90ae60594323f1e52c39ed77d49af4656f3eea481c6300ecc0c5bb",
-      "reviewWaves": "Alle fünf Erstberichte abgeschlossen und unverändert erhalten; Einzelfallentscheidungen geschrieben, Reparaturrunde1 offen",
+      "manifest": "reports/loop/packages/FOUNDATION-001/v2/manifest.json",
+      "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+      "reviewWaves": "Fünf Erstberichte entschieden; zwölf Korrekturen/Begrenzungen durchgeführt; eigene29Tests undAppcheckpassed; zwei Nachprüfungen/Juror offen",
       "decisions": "reports/loop/FOUNDATION-001-entscheidungen.md"
     },
     {
@@ -170,19 +163,25 @@
       "manifest": "reports/loop/packages/PREP-001/v1/manifest.json",
       "manifestSha256": "152785d06f322a1e95b6503b9b78ed2ff768373852899f4f027ab7f2c6add66a",
       "reviewStatus": "Zwei frische unabhängige Reviewer aktiv; keine Claude- oder menschliche Prüfung"
+    },
+    {
+      "id": "SOFTWARE-001",
+      "status": "RUNNING",
+      "predefinedCriteria": "outputs/loop/software-author/plan-before-run.md",
+      "scope": "Isolierte Laufzeit und reine synthetische ordinale Modelle; kein Rohdaten-/ESS-Modell"
     }
   ],
-  "nextConcreteStep": "Angenommene FOUNDATION-Korrekturen durchführen; nach beiden v3-Berichten G04-Scope reparieren; PREP-Erstberichte zunächst vollständig sammeln.",
+  "nextConcreteStep": "FOUNDATION-v2-Belegchronologie kontrollieren, dann zwei unabhängige Korrekturprüfer starten; PREP-v2-Nachprüfung und isolierte Softwarefähigkeit parallel.",
   "checkpoint": {
-    "lastLocalCommit": "5c4a1ccc47e46237e75d513b6decbc9e9c42d9a2",
-    "lastVerifiedRemoteCommit": "5c4a1ccc47e46237e75d513b6decbc9e9c42d9a2",
-    "lastVerifiedPushAtUtc": "2026-10-03T02:41:07.122381+00:00",
+    "lastLocalCommit": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
+    "lastVerifiedRemoteCommit": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
+    "lastVerifiedPushAtUtc": "2026-10-03T03:04:42Z",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-006.json"
+    "record": "reports/loop/push-007.json"
   },
-  "scientificStatus": "Drei Autorenentwürfe abgegeben und 25-Datei-Paket/36 öffentliche Quellartefakte eingefroren. Fünf Fachreviews in Wellen gestartet. Inventar mit 29 offenen Variablenzuordnungen, 70 Antwortblöcken, 23 Missingblöcken und 203 Routing-/Kontextstellen; keine Phase1-Abnahme. Kein Rohantwortimport, A/B, Modell oder öffentliche Tags.",
+  "scientificStatus": "FOUNDATION fünf Erstberichte abgeschlossen; zwölf Findings angenommen, korrigiert oder als ungelöste künftige Voraussetzung begrenzt. Neue42Dateien/101öffentlicheInputs eingefroren; unabhängige Nachprüfung/Juror offen. 296Inventarzeilen/205technische Restzeilen; keine Endauswahl, Rohantworten, A/B oder öffentlicheTags.",
   "technicalRecord": "reports/loop/000-technical.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -193,7 +192,15 @@
     "reports/loop/technical-v3/web-check.json",
     "reports/loop/technical-v3/web-check-2.json",
     "reports/loop/technical-v3/browser.json",
-    "reports/loop/technical-v3/native-text-and-zoom.json"
+    "reports/loop/technical-v3/native-text-and-zoom.json",
+    "reports/loop/technical-v5/inputs.json",
+    "reports/loop/technical-v5/python-tests.json",
+    "reports/loop/technical-v5/web-check.json",
+    "reports/loop/technical-v5/web-check-2.json",
+    "reports/loop/technical-v4/inputs.json",
+    "reports/loop/technical-v4/loop-tests.json",
+    "reports/loop/technical-v4/status.json",
+    "reports/loop/technical-v4/all.json"
   ],
   "independentPreparations": [
     {
