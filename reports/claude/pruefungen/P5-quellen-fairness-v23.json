@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "mode": "ERSTBEWERTUNG",
+  "task": "P5: Planentwurf v2.3, Quellen, Konstrukte, Interpretationen und politische Fairness",
+  "scope": "PLAN-V23-001, Analyseplan v2.3 Entwurf 0.2 vor Festschreibung samt gepinnter Entscheidungsvorlage, Themenabdeckung, Quellenanfragen und Recherchegrundlagen. Keine Prüfung fremder P4-Urteile, Empirie, Datenverteilungen, Software oder Release.",
+  "manifestSha256": "c2c05725351ff209af158704d0896693fd480be66f4027b22125d97066566c89",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "Explizite T3-Code-Laufzeitinformation: Codex harness, gpt-6.1-sol, high reasoning effort. Keine unabhängig nachgewiesene interne Modellrevision.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "write_stdin",
+      "web.run",
+      "apply_patch"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/P5-plan-v23-quellen-fairness.md vollständig. Arbeitsverzeichnis ist dieser Worktree. Prüffassung: Manifest reports/claude/pruefungen/PLAN-V23-001-manifest.json mit SHA-256 c2c05725351ff209af158704d0896693fd480be66f4027b22125d97066566c89; prüfe ihn und die Dateihashes vor Beginn. Stand beim Auftrag: HEAD 6e164209ac2872447c2b5353f64ba5c6b6294fb3 auf dem Branch research/life-93-claude-20261003. Lies keine Antwortverteilungen (data/reference-*, reports/phasen/02-* bis 04-*, web/src/app/policy-draft/reviewed-*) und öffne keine Ergebnistabellen externer Quellen; keine GESIS-Server. Schreibe nur die beiden im Auftrag genannten Ergebnisdateien. Keine Commits, Pushes, Tags oder Nachrichten. Nichts unter data/raw/, data/local/ oder outputs/ lesen. Am Ende fasse Gesamturteil und Findings in wenigen Sätzen zusammen.\n\nVollständiger Datei-Auftrag:\n# Auftrag P5: Prüfung des Planentwurfs v2.3 – Quellen, Konstrukte und Fairness\n\nDu bist ein frischer, getrennter Prüfagent (Codex, OpenAI) im Projekt „12 Axes Deutschland“ (Linear LIFE-93). Claude (Anthropic) hat einen Entwurf für einen Analyseplan v2.3 geschrieben: Erweiterung um Erhebungen der Jahre 2024 bis 2026, Wählergruppen nach der Bundestagswahl 2025 und Quellenentscheidungen. Der Entwurf erlaubt noch keine Auswertung. Deine Rolle: **Quellen, Konstrukte, Interpretationen und politische Fairness**. Eine zweite Rolle prüft getrennt Methoden und Reproduzierbarkeit. Du erhältst deren Urteil nicht.\n\nArbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`, Branch `research/life-93-claude-20261003`. Prüffassung: Manifest `reports/claude/pruefungen/PLAN-V23-001-manifest.json`; seinen SHA-256 nennt die Nachricht des Auftraggebers. Prüfe vor Beginn die Hashes der dort genannten Dateien. Lies `.claude/skills/life93-review/SKILL.md` und `.claude/skills/life93-review/references/urteil-schema.json` und folge ihnen (Modus: Prüfung eines Planentwurfs vor der Festschreibung).\n\nRegeln:\n- Schreibe nur `reports/claude/pruefungen/P5-quellen-fairness-v23.md` und `.json`. Keine anderen Dateien ändern, keine Commits, Tags oder Nachrichten.\n- Lies nichts unter `data/raw/`, `data/local/` oder `outputs/`. Lies keine Antwortverteilungen und öffne keine Ergebnistabellen externer Quellen. Keine Abrufe von GESIS-Servern. Primärquellen außerhalb von GESIS (Gesetze, Lizenzen, Methodendokumente) darfst du öffnen.\n- Belege jede Beanstandung mit Datei und Zeile oder Fundstelle. Kein Finding erfinden.\n\nPrüffragen:\n1. Stimmen die Rechtsaussagen (Klassen A, B, C nach R10) für die Quellen, auf die sich der Entwurf stützt, an der Primärquelle? Ist die GESIS-Sperre eingehalten?\n2. Sind Konstrukt und Geltungsbereich jedes Kandidaten in Abschnitt 11 richtig beschrieben (EU-Ebene, Entscheidung Deutschlands, Prinzip, Zahlungsbereitschaft)? Sind Prämissen, wertende Begriffe und eingeblendete Informationen erkannt? Sind die Ausschlussgründe für nicht vorgeschlagene Fragen gleich streng auf alle politischen Richtungen angewendet?\n3. Ist die Auswahl politisch ausgewogen in dem Sinn, dass keine Richtung durch die Wahl der Items, Formulierungen oder Antwortformate bevorzugt wird? Gibt es einseitige Zustimmungsaussagen ohne Gegenposition, deren Auswahl eine Richtung begünstigt? Nenne konkrete, belegte Fälle, keine allgemeinen Vermutungen.\n4. Trennen Plan, Themenabdeckung (Nachträge vom 3. und 4. Oktober 2026) und Entscheidungsvorlage geltende Rechtslage, Vorschläge und Einstellungen korrekt? Stimmen die genannten Gesetze, Daten und Stände an der Primärquelle (Stichproben genügen)?\n5. Ist die Entscheidungsvorlage fair und vollständig, sind ihre Empfehlungen begründet? Fehlt eine wesentliche Option?\n6. Was muss vor einer Festschreibung korrigiert werden, was darf als offene Grenze bleiben?\n\nAusgabe: Bericht als Markdown und Urteil als JSON nach dem Skill-Schema. Am Ende: gelesene Dateien mit Hash, ausgeführte Befehle, Modell laut Laufzeit.\n",
+    "inputHashes": {
+      "docs/analyseplan-v2.3.entwurf.md": "f708729867aec9ca187fe7646b21a69d2f4b89e5cdf831d3146051e06018fd94",
+      "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md": "b40c52f3bfbf0e8f5ed3ca2b7937c8d2d94b3949132273cd360c3aafba5e6de6",
+      "docs/abdeckung-v2.2.md": "618012f903783c749b751cb32c8acffab1e7ca09765cd80a26a2a2c1cbeb8b70",
+      "docs/quellenanfragen-v1.entwurf.md": "066be958b89b9dc198202c3599001b20d2f61c33d8b846ba8cc3e1405da708ca",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md": "6830b4172d606b47fc6f00214fba09d776790143c85c01529b7c33256691c24b",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json": "23e27dd8c2c1e359fe62ff5df058fef4de749dce95ca1e6da44cec6839e49fa2",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md": "42aaa648a36557d33b6bb316aff007f5f79f92779aa4875acdc74516c70ba5c3",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.json": "71e012d3b460917269153d261a4565f6bfbb34627220ee2cf14d8abf1af272d6",
+      "reports/claude/agenten/R10-quellenblocker.md": "65d79b32748197923c9614c7e8e85f19b06f516fa0cff869dbb7d3cf2f228885",
+      "reports/claude/agenten/R10-quellenblocker.json": "8e15381892d91f62094c68573bb32148a5df21daf24ad11415549ef94861439a",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md": "15b2851d4e383a50ae064b566b1f2d6419180d3899f20007b49c07fe607295c0",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json": "f563bc2f138d67a00a9cf8fbfd80580dd3e842108d17231b44efb241edbc9575",
+      "reports/claude/agenten/R5-wvs.md": "a163be6d448ab5f9e14b54293f355a2e0cea3c19d37e92a4d0021e8af7afc969",
+      "reports/claude/agenten/R6-eurobarometer.md": "58b08b2af20d70261e95e7d0d815d4c083d95e0879cef5ee864c6ee05e84e8bb",
+      "reports/claude/agenten/R7-weitere-quellen.md": "4e795f355ccd359613949a2e307f46150f31506cf817b51f1a4e232405f6fcd5",
+      "reports/claude/auftraege/R-erweiterung-gemeinsam.md": "56970a37d162e3996cace441b4f41c44d7e4e3bfd408d008c13e3f9ba0898ccd",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "AGENTS.md": "6d405f6baff0b692edf657dae09c933b3ef978e2f3a98d3caaf14dc7666f627f",
+      "docs/project.md": "2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "docs/lizenzen.md": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+      "reports/claude/auftraege/P5-plan-v23-quellen-fairness.md": "fc392d6199546c89eaafec41447ba5be0fdcf35bc78bcf045a0aef6868746fa1",
+      "reports/claude/pruefungen/PLAN-V23-001-manifest.json": "c2c05725351ff209af158704d0896693fd480be66f4027b22125d97066566c89",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9",
+      "/home/stevenh/.codex/memories/skills/bounded-pinned-review/SKILL.md": "0e77a5f081bc588972fddd6e848d39fe5ae05fcf4e2833c3ef704221e90536c6",
+      "git:6e164209ac2872447c2b5353f64ba5c6b6294fb3:docs/project.md": "9f827fdd40d5f9a4239043a5fb21ec84fa93805141566ac5b68e455a63d8bba6"
+    }
+  },
+  "checks": [
+    {
+      "id": "P5-C01",
+      "scope": "Identität der Prüffassung und Eingabehashes",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Manifest SHA-256 c2c05725351ff209af158704d0896693fd480be66f4027b22125d97066566c89; alle 19 artifacts vor Bewertung und vor Berichtserstellung identisch.",
+        "Start-HEAD 6e164209ac2872447c2b5353f64ba5c6b6294fb3; späterer externer HEAD 578adaed884a87fb0a6a1ee4137bf98547861f42. Paketdateien unverändert. Manifest.commit 23c68565c455905b8ed1e51bd76422fc0cd56d45 ist Paketbasis, kein abweichender Byteinhalt."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-C02",
+      "scope": "Tragender Lizenzrahmen und GESIS-Stopp",
+      "status": "BESTANDEN",
+      "evidence": [
+        "ESS-Disclaimer und CC-Legal-Codes bestätigen getrennte Daten-/Dokumentationslizenzen; COM_REUSE für STD104/105, SP564/572/557 an Primärmetadaten geprüft; Beschluss 2011/833/EU Art. 2,4,6 im EUR-Lex-PDF gelesen.",
+        "GESIS § 4 in Wayback-Originalkopie vom 30.03.2026 bestätigt; keine GESIS-Server abgerufen. UKDS 16.00 § 5 Nr. 5, SOEP-Richtlinie und EIB-Verbotsklausel bestätigen die entsprechenden begrenzten Stopps.",
+        "WVS-Formular und OECD-Archivbedingungen geprüft. Deutsche EB-Wortlaute und OECD-Mikrodaten bleiben ungeklärt; die Quellenfreigabe wird dadurch nicht ersetzt."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-C03",
+      "scope": "Konstrukt, Reichweite und Vollständigkeit der Kandidaten",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "P5-V23-F02: Sammelaussage EU-Ebene widerspricht den Konstrukten QB12/QA7.",
+        "P5-V23-F03: Q19 b/c fehlen unter demselben Stamm ohne Auswahlbegründung."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-C04",
+      "scope": "Gleiche politische Auswahlstandards",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "P5-V23-F01: nicht begründete unterschiedliche Behandlung von Anlass und Abwägung.",
+        "ST0359-ZUS/GELD, ST0350-2, SP572-QB5-6 und SP557-QA7 sind gerichtete Zustimmungsaussagen. Ablehnung bleibt möglich; kein empirischer Neutralitäts- oder Verzerrungsnachweis."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-C05",
+      "scope": "Trennung von Recht, Vorschlag und Einstellung; Primärquellenstichprobe",
+      "status": "BESTANDEN",
+      "evidence": [
+        "BMAS-FAQ vom 01.07.2026: neue Grundsicherung; BMAS-Gesetzesliste: Tariftreue 'In Kraft' 01.05.2026.",
+        "BMG: GKV-Inkrafttreten 30.07.2026; PNOG 'Laufendes Verfahren', Kabinett 30.09.2026. WPflG § 2a verlangt ein eigenes Gesetz zur Bedarfswehrpflicht; SGB VI § 35 nennt 67 Jahre; MiLoG § 1 Fußnote verweist auf Verordnung 05.11.2025 I Nr. 268.",
+        "Plan 5/11 trennt aktuelle Rechtslage und damals erhobene Einstellung. Stichprobe ist keine vollständige Prüfung aller Gesetzesstände in R8/R9."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-C06",
+      "scope": "Begründung und Vollständigkeit der Quellenentscheidung",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "P5-V23-F03 betrifft die abgewogene OECD-Option; P5-V23-F02 die EU-Reichweite; P5-V23-F04 die ESS-Terminannahme.",
+        "Die Entscheidung, Quoten vorerst nicht zuzulassen, kann mit korrigierter Kandidatenliste weiter begründet sein. Keine Pflicht, eigene Gegenfragen zu erfinden oder Stichproben zu vermischen."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-C07",
+      "scope": "Deutsche Feldwortlaute, vollständige Listen und verborgene Sondercodes aller elf EB-Items an Originalen",
+      "status": "NICHT_GEPRÜFT",
+      "evidence": [
+        "Paket R6/R8/R9 und Strukturbericht S1 gelesen; keine GESIS-Fragebögen oder externen Ergebnisanhänge geöffnet. S1 prüft nur eine deutsche Wortlautstichprobe. Plan 6.6/11.1 verlangt die vollständige spätere Bindung vor Aufnahme."
+      ],
+      "requiredInScope": false
+    },
+    {
+      "id": "P5-C08",
+      "scope": "Antwortverteilungen, Statuszählungen aus Referenzen, Ergebnisübertragung, Auswertungssoftware, UI, Empirie und Veröffentlichung",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "evidence": [
+        "Ausdrücklicher Auftrag: Planentwurf vor Festschreibung, P5 Quellen/Konstrukte/Fairness, verbotene Daten-/Ergebnispfade. Keine Tests oder Browserprüfung des Produkts, keine GESIS-Downloads, keine Quellenfreigabe."
+      ],
+      "requiredInScope": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "P5-V23-F01",
+      "claim": "Plan v2.3 schließt ST0939 wegen des Anlasses im Fragetext und OECD Q27 e wegen der Kosten-Nutzen-Vorgabe aus, behält aber ST0350 Item 2 und SP572 QB12 bei.",
+      "problem": "Abschnitt 4 Nr. 4 erlaubt gekennzeichnete Begründungen und Prämissen und schließt nur wertende Prämissen aus. Der Ausschlussgrund 'Anlass' für Gegenzölle wird weder als wertend erklärt noch von der ebenfalls reaktionsbezogenen Einleitung der ausgewählten Ukraine-Finanzierung abgegrenzt. Ebenso fehlt die Abgrenzung einer unzulässigen Kosten-Nutzen-Vorgabe (Q27 e) von den zulässigen Abwägungen in QB12 und Q19. Der Auswahlmaßstab ist damit nicht durchgängig nachvollziehbar. Die Kontexte sind verschieden; dieser Befund behauptet nicht, sie seien identisch.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:47-54,128,130,136,150",
+        "reports/claude/agenten/R6-eurobarometer.md:176-182,191,197-198",
+        "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json: kandidaten[id=R8-EB-ST0350-2].wortlautDe/kontext und kandidaten[id=R8-EB-ST0939-ZOLL].wortlautDe/kontext",
+        "OECD RTM Core Questionnaire 2024, PDF-S. 7,10; https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf; SHA-256 5672381901f57dcc2ee3e76a9b0716b6c418c3a69e1e85b804e29bb2c343ae10"
+      ],
+      "impact": "Die belegte Auswahl bietet Zustimmung zu militärischer Unterstützung an, verwirft aber die Gegenstandsfrage zu defensiven Zöllen mit einem Maßstab, dessen Anwendung auf die ausgewählte Frage unklar bleibt. Bei Arbeitszeitpolitik wird eine Kostenabwägung verworfen, bei KI und Sozialausgaben zugelassen. Das verhindert die Bestätigung gleicher Auswahlstandards; Richtung und Größe eines empirischen Framingeffekts wurden nicht geprüft.",
+      "severity": "erheblich",
+      "severityReason": "Die Gleichbehandlung politischer Gegenstände und die Regeln vor Ergebnissicht gehören zum Kern dieses Planreviews. Es geht um die Auswahlentscheidung, nicht bloß um einen fehlenden Hinweis.",
+      "correction": "Vor Festschreibung eine gemeinsame Regel für sachlichen Anlass, wertende Prämisse, bedingte Präferenz und ausdrücklich zweiseitige Abwägung festlegen. Die vier Fälle und Q19 anhand dieser Regel begründen und die Auswahl gegebenenfalls ändern. Alternativ betroffene Kandidaten zurückstellen. Ein Hinweis allein behebt einen nach der neuen Regel tatsächlich unzulässigen Frame nicht.",
+      "recheck": "Neue Planfassung und gepinnte Kandidatenliste ergebnisblind abgleichen; prüfen, ob vergleichbare Kontexte denselben Standard erhalten oder der relevante Unterschied konkret belegt ist. Keine selbst erfundenen Gegenitems und keine Umformulierung von Originalfragen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P5-V23-F02",
+      "claim": "'Diese elf Fragen verkleinern Lücken nur auf EU-Ebene'; die Entscheidungsvorlage führt die Ergänzung insgesamt als EU-Ebene.",
+      "problem": "QB12 zur KI-Regulierung und die zwei QA7-Forschungsprinzipien nennen keine Entscheidungsebene. Der Plan vermerkt das selbst in der Tabelle. Die Herkunft aus einer EU-Erhebung bestimmt nicht den Gegenstand der Frage. Auch bei der Verteidigungsausgabenfrage bleibt die Entscheidungsebene ausdrücklich mehrdeutig. Die pauschale Schlussfolgerung geht über die dokumentierten Konstrukte hinaus.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:127,130,132-133,138",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:31-33",
+        "reports/claude/agenten/R6-eurobarometer.md:198,231",
+        "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md:159,204,233-242"
+      ],
+      "impact": "Die spätere Themenmatrix und Kontextanzeige könnten allgemeine Prinzipien als Einstellungen zu EU-Entscheidungen ausgeben und dadurch den behaupteten Abdeckungsgewinn falsch beschreiben.",
+      "severity": "mittel",
+      "severityReason": "Der Fehler betrifft die Reichweite der Interpretation und ist vor der Bindung an Ergebnis- und Abdeckungstexte zu korrigieren. Die einzelnen Tabellenhinweise begrenzen ihn bereits.",
+      "correction": "Die pauschale Aussage durch eine Unterscheidung zwischen ausdrücklicher EU-Entscheidung, allgemeiner Präferenz/Prinzip ohne genannte Ebene und mehrdeutiger Ausgabenfrage ersetzen. Diese Unterscheidung auch in die Entscheidungsvorlage übernehmen; keine nationalen Kernlücken als geschlossen bezeichnen.",
+      "recheck": "Alle elf Zeilen in Abschnitt 11.1 mit der zusammenfassenden Aussage und der Entscheidungsvorlage abgleichen. Allgemeine KI- und Forschungsfragen erhalten keine nachträglich unterstellte EU-Zuständigkeit.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P5-V23-F03",
+      "claim": "Bei OECD RTM 2024 seien 'nur' Q19 g, i, j, f und e ohne Prämisse oder Begründung verfügbar; die Entscheidungsvorlage spricht von fünf verbleibenden Fragen.",
+      "problem": "Der Originalfragebogen hat für Q19 a-l denselben Stamm zur Bereitschaft, zusätzliche 2 % des Einkommens für bessere Leistungen und Zugang zu zahlen. Q19 b (Bildung) und Q19 c (Beschäftigungsunterstützung) stehen unter genau demselben Stamm und passen zu ausdrücklich benannten Lücken. Für ihren Ausschluss gibt es keine Begründung. Die Primärquelle trägt deshalb weder die Vollständigkeitsbehauptung 'nur' noch die auf fünf Fragen reduzierte Nutzenabwägung.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:21,45-54,150",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:37-41",
+        "docs/abdeckung-v2.2.md:26,36",
+        "OECD RTM Core Questionnaire 2024, PDF-S. 7, Q19 b,c und gemeinsamer Stamm a-l; https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf; SHA-256 5672381901f57dcc2ee3e76a9b0716b6c418c3a69e1e85b804e29bb2c343ae10"
+      ],
+      "impact": "Steven erhält eine unvollständige Darstellung der inhaltlichen Option für Bildung und Arbeit. Ob die erweiterte Liste die begründete Entscheidung gegen Quotenvergleiche ändert, ist offen; Alter, Quotenstichprobe und fehlender deutscher Originalwortlaut bleiben dieselben Grenzen.",
+      "severity": "mittel",
+      "severityReason": "Ein direkt nachprüfbarer Vollständigkeitsfehler betrifft Fragenauswahl und Entscheidungsvorlage. Er kann ohne Ergebniszugriff korrigiert werden.",
+      "correction": "Mindestens Q19 b und c nach denselben Auswahlregeln prüfen und als Kandidaten oder mit konkretem Ausschlussgrund dokumentieren. Die absolute Fünferbehauptung und die Nutzenabwägung berichtigen. Die fünf vorhandenen Items nicht automatisch aktivieren; bei Mehrfachauswahl 'nicht ausgewählt' nicht als Ablehnung oder fehlende Zahlungsbereitschaft für den Einzelbereich auslegen.",
+      "recheck": "Vor Festschreibung Q19 a-l im Primärfragebogen mit Kandidaten- und Ausschlussliste sowie Entscheidungsvorlage abgleichen. Prüfen, ob jeder thematisch relevante Ausschluss inhaltlich trägt. Für die spätere Integration die exklusiven Optionen m/n und Nichtauswahl getrennt binden.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P5-V23-F04",
+      "claim": "ESS12-Daten und deutscher Fragebogen seien für Januar 2027 angekündigt.",
+      "problem": "Die ESS-Mitteilung vom 30. September 2026 kündigt die erste Datenveröffentlichung voraussichtlich für Januar 2027 an. Sie verspricht weder die Aufnahme Deutschlands in diese Erstveröffentlichung noch den deutschen Fragebogen zu diesem Termin. R9 benennt diese Unsicherheit bereits.",
+      "evidence": [
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:51-53",
+        "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md:22,187,345",
+        "https://www.europeansocialsurvey.org/news/article/initial-round-12-data-release-scheduled-early-2027; Haupttext der Meldung vom 30.09.2026; SHA-256 fd1f7663ca6e3a2e5d1daacfa291b41f8804824c3e807b6c570554a793ea4b96"
+      ],
+      "impact": "Die Entscheidungsvorlage erweckt eine zu sichere Terminannahme für den deutschen Aktualisierungsweg. Die positiven Voraussetzungen in Plan 11.2 verhindern aber einen verfrühten Zugriff oder Export.",
+      "severity": "niedrig",
+      "severityReason": "Terminpräzisierung ohne Aufhebung eines Schutzgatters; kein eigenständiger Blocker des Planentwurfs.",
+      "correction": "'Erste ESS12-Datenveröffentlichung voraussichtlich Januar 2027; Deutschland und deutscher Fragebogen zu diesem Termin nicht bestätigt' schreiben. Den Beginn an die tatsächlich vorhandene deutsche Ausgabe binden.",
+      "recheck": "Entscheidungsvorlage gegen die ESS-Mitteilung und die unveränderten Veröffentlichungsbedingungen in Plan 11.2 lesen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    }
+  ],
+  "limits": [
+    "Begrenztes KI-Review eines Planentwurfs; keine juristische Freigabe, kein akademisches Peer Review, keine empirische Validierung und kein Neutralitätsnachweis.",
+    "Keine Antwortverteilungen oder externen Ergebnistabellen geöffnet; die Statuszahlen in Plan Abschnitt 8 wurden nicht gegen data/reference-* verifiziert.",
+    "Keine GESIS-Server abgerufen. Nur archivierter GESIS-Originaltext über web.archive.org, ohne Redirects; die aktuelle Livefassung bleibt ungeprüft.",
+    "Keine Roh-/Privatdaten, outputs/, fremden P4-Prüfurteile oder Reviewantworten gelesen. R5/R7 nur gehasht; R8/R9/R10/S1 und R6 gezielt als ausdrücklich gepinnte Recherche-/Strukturgrundlagen gelesen, nicht als fremdes Urteil über diesen Plan.",
+    "Der genehmigte Basisplan v2.2 enthält eingebettete historische Reviewreferenzen und Findings; sie wurden als Planhistorie gelesen und nicht als Bewertungsmaßstab für v2.3 übernommen. Kein eigenständiger historischer Review geöffnet.",
+    "Deutsche EB-Feldtexte einschließlich Einleitung und aller Sonderkategorien wurden nicht erneut an Primärdateien authentifiziert; das bleibt vor Aktivierung jedes Items erforderlich. Keine 4-stufige Skala zu Dafür/Dagegen zusammenfassen.",
+    "Quotenfrage Q19 ist Mehrfachauswahl. Nichtauswahl, exklusive generelle Ablehnung und 'Can't choose / Don't know' dürfen nicht als gleiche inhaltliche Antwort behandelt werden.",
+    "Einseitige Zustimmung ist nicht automatisch unzulässig: Gegenposition ist über Ablehnung ausdrückbar. Die gerichtete Itemhäufung bleibt ein konkretes Framingrisiko ohne geschätzte Effektgröße; keine Motive oder Parteinähe zugeschrieben.",
+    "Keine Prüfung der nicht gepinnten Textvarianten aus Entscheidung 4; kein Handbuch-/UI-Review.",
+    "HEAD wechselte extern von 6e164209ac2872447c2b5353f64ba5c6b6294fb3 zu 578adaed884a87fb0a6a1ee4137bf98547861f42; docs/project.md änderte sich außerhalb des Prüfpakets. Alle 19 Paketpins blieben gleich.",
+    "Leichter Gedächtnisabgleich nur zum Verfahren begrenzter Reviews (Isolation, Hashes, enges Urteil). Keine dortigen früheren fachlichen Urteile als Beleg genutzt.",
+    "Ein eigener JSON-Metadatenprobeaufruf war wegen zu kleiner Werkzeugausgabe abgeschnitten und scheiterte beim Parsen; mit ausreichendem Ausgabebudget wiederholt. Kein Paketdefekt."
+  ]
+}

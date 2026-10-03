@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "mode": "ERSTBEWERTUNG",
+  "task": "P4: PLAN-V23-001, Methoden und Reproduzierbarkeit",
+  "scope": "Manifestgebundener Analyseplan v2.3 Entwurf 0.2 vor Festschreibung; sechs Prüffragen des P4-Auftrags. Keine Empirie-, Produkt- oder Releasefreigabe.",
+  "manifestSha256": "c2c05725351ff209af158704d0896693fd480be66f4027b22125d97066566c89",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "T3-Code-Laufzeitmetadaten nennen Codex-Harness, gpt-6.1-sol und high reasoning effort; kein nachgewiesener interner Anbieter-Revisionsbeleg.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command: Bash, Python 3, Git (nur Metadaten), rg, cat, nl, sed, wc, sha256sum, pdftotext",
+      "web.run: direkte Originalquellenabrufe, ESS12-PDF 502, About-Seite ohne lesbaren Text"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/P4-plan-v23-methoden.md vollständig. Arbeitsverzeichnis ist dieser Worktree. Prüffassung: Manifest reports/claude/pruefungen/PLAN-V23-001-manifest.json mit SHA-256 c2c05725351ff209af158704d0896693fd480be66f4027b22125d97066566c89; prüfe ihn und die Dateihashes vor Beginn. Stand beim Auftrag: HEAD 6e164209ac2872447c2b5353f64ba5c6b6294fb3 auf dem Branch research/life-93-claude-20261003. Für Prüffrage 5 darfst du ausnahmsweise ein eigenes Skript ausführen, das aus data/reference-v2.2/*.json und den Katalogdateien nur die Felder status und die Kategorienzahl je Frage zählt und keine Anteile, Bereiche oder Fallzahlen ausgibt; sonst gilt das Leseverbot für Antwortverteilungen. Schreibe nur die beiden im Auftrag genannten Ergebnisdateien. Keine Commits, Pushes, Tags oder Nachrichten. Nichts unter data/raw/, data/local/ oder outputs/ lesen. Am Ende fasse Gesamturteil und Findings in wenigen Sätzen zusammen.\n\nVollständiger Auftrag:\n# Auftrag P4: Prüfung des Planentwurfs v2.3 – Methoden und Reproduzierbarkeit\n\nDu bist ein frischer, getrennter Prüfagent (Codex, OpenAI) im Projekt „12 Axes Deutschland“ (Linear LIFE-93). Claude (Anthropic) hat einen Entwurf für einen Analyseplan v2.3 geschrieben: Erweiterung um Erhebungen der Jahre 2024 bis 2026, Wählergruppen nach der Bundestagswahl 2025 und eine Entscheidung zur Sichtbarkeit von Gruppenvergleichen. Der Entwurf erlaubt noch keine Auswertung. Deine Rolle: **Methoden und Reproduzierbarkeit**. Eine zweite Rolle prüft getrennt Quellen, Konstrukte und politische Fairness. Du erhältst deren Urteil nicht.\n\nArbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`, Branch `research/life-93-claude-20261003`. Prüffassung: Manifest `reports/claude/pruefungen/PLAN-V23-001-manifest.json`; seinen SHA-256 nennt die Nachricht des Auftraggebers. Prüfe vor Beginn die Hashes der dort genannten Dateien. Lies `.claude/skills/life93-review/SKILL.md` und `.claude/skills/life93-review/references/urteil-schema.json` und folge ihnen (Modus: Prüfung eines Planentwurfs vor der Festschreibung).\n\nRegeln:\n- Schreibe nur `reports/claude/pruefungen/P4-methoden-v23.md` und `.json`. Keine anderen Dateien ändern, keine Commits, Tags oder Nachrichten.\n- Lies nichts unter `data/raw/`, `data/local/` oder `outputs/`. Lies keine Antwortverteilungen (`data/reference-*`, `reports/phasen/02-*` bis `04-*`, `web/src/app/policy-draft/reviewed-*`). Öffne keine Ergebnistabellen externer Quellen.\n- Belege jede Beanstandung mit Datei und Zeile oder Fundstelle. Kein Finding erfinden.\n\nPrüffragen:\n1. Sind die Quellenklassen Z, T und Q (Abschnitt 3) und ihre Anzeigeregeln (Abschnitt 6) methodisch begründet und vollständig? Ist der Verzicht auf Unsicherheitsbereiche bei Klasse T ohne veröffentlichtes Design richtig, oder gibt es ein vertretbares, vorab festlegbares Verfahren? Ist die zweifache unabhängige Übertragung der Tabellenwerte ausreichend beschrieben?\n2. Sind die Auswahlregeln (Abschnitt 4) vor Ergebnissen festgelegt, prüfbar und auf die Kandidaten in Abschnitt 11 tatsächlich angewendet? Ist die Trennung von Auswahlrolle und technischer Rolle (Abschnitte 4 und 10, Strukturprüfung S1) wirksam, oder gibt es Wege, auf denen Verteilungen die Auswahl beeinflussen?\n3. Regeln für historische und aktuelle Vergleiche und getrennte Populationen (Abschnitte 3 und 5): Verhindern sie Zusammenlegung, Trendaussagen und Verwechslung der Populationen?\n4. Wählergruppen 2025 (Abschnitt 7): Reichen die Bedingungen für ESS12 (Rückerinnerung, Modi, Codekonkordanz, Gruppenvertrag vor Einsicht)?\n5. Sichtbarkeit der Gruppenvergleiche (Abschnitt 8): Stimmen die Zählungen aus den öffentlichen Status? Ist die Bewertung der Optionen A bis C methodisch richtig, insbesondere das Rückrechnungsrisiko bei Option B?\n6. Was muss vor einer Festschreibung korrigiert werden, was darf als offene Grenze bleiben?\n\nAusgabe: Bericht als Markdown und Urteil als JSON nach dem Skill-Schema. Am Ende: gelesene Dateien mit Hash, ausgeführte Befehle, Modell laut Laufzeit.\n",
+    "inputHashes": {
+      "reports/claude/pruefungen/PLAN-V23-001-manifest.json": "c2c05725351ff209af158704d0896693fd480be66f4027b22125d97066566c89",
+      "docs/analyseplan-v2.3.entwurf.md": "f708729867aec9ca187fe7646b21a69d2f4b89e5cdf831d3146051e06018fd94",
+      "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md": "b40c52f3bfbf0e8f5ed3ca2b7937c8d2d94b3949132273cd360c3aafba5e6de6",
+      "docs/abdeckung-v2.2.md": "618012f903783c749b751cb32c8acffab1e7ca09765cd80a26a2a2c1cbeb8b70",
+      "docs/quellenanfragen-v1.entwurf.md": "066be958b89b9dc198202c3599001b20d2f61c33d8b846ba8cc3e1405da708ca",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md": "6830b4172d606b47fc6f00214fba09d776790143c85c01529b7c33256691c24b",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json": "23e27dd8c2c1e359fe62ff5df058fef4de749dce95ca1e6da44cec6839e49fa2",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md": "42aaa648a36557d33b6bb316aff007f5f79f92779aa4875acdc74516c70ba5c3",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.json": "71e012d3b460917269153d261a4565f6bfbb34627220ee2cf14d8abf1af272d6",
+      "reports/claude/agenten/R10-quellenblocker.md": "65d79b32748197923c9614c7e8e85f19b06f516fa0cff869dbb7d3cf2f228885",
+      "reports/claude/agenten/R10-quellenblocker.json": "8e15381892d91f62094c68573bb32148a5df21daf24ad11415549ef94861439a",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md": "15b2851d4e383a50ae064b566b1f2d6419180d3899f20007b49c07fe607295c0",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json": "f563bc2f138d67a00a9cf8fbfd80580dd3e842108d17231b44efb241edbc9575",
+      "reports/claude/agenten/R5-wvs.md": "a163be6d448ab5f9e14b54293f355a2e0cea3c19d37e92a4d0021e8af7afc969",
+      "reports/claude/agenten/R6-eurobarometer.md": "58b08b2af20d70261e95e7d0d815d4c083d95e0879cef5ee864c6ee05e84e8bb",
+      "reports/claude/agenten/R7-weitere-quellen.md": "4e795f355ccd359613949a2e307f46150f31506cf817b51f1a4e232405f6fcd5",
+      "reports/claude/auftraege/R-erweiterung-gemeinsam.md": "56970a37d162e3996cace441b4f41c44d7e4e3bfd408d008c13e3f9ba0898ccd",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "reports/claude/auftraege/P4-plan-v23-methoden.md": "8dc91913011c4713d86b1bbada75570307f2d446247f9d2fb5a748510b85bed2",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "docs/project.md": "2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9",
+      "data/politikprofil-v2.fragen.entwurf.json": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4",
+      "data/politikprofil-v2.2.ergaenzung.json": "c4b0d97aeaf10868001199cb3f7f135a6fb8ec28d63b58f7f222ff7e0acd71ac",
+      "data/reference-v2.2/ESS10SCe03_2.json": "43322d3d8de64b106b7b4336215c30e9575ba58654224cfba860ab97ebfa7a2a",
+      "data/reference-v2.2/ESS11e04_2.json": "a9955368600a474ca40cf71b8d58c0cdf7eccaf6c6f73c7fe724540ab82916da",
+      "data/reference-v2.2/ESS5e03_6.json": "77012bf09c1994e1414104408d01c8d132c2778c1bc18ce3b4e60ddcf520bc34",
+      "data/reference-v2.2/ESS8e02_3.json": "93191d2e37f1bd4ab114c41f25bfcc5ce77d5d2ed83a74a2cfd5a8be103e6ef4",
+      "data/reference-v2.2/ESS9e03_3.json": "ef93e28ae52592a6d90499017d6c89ab35c78d7205b1573377874774d5dbe9c7",
+      "https://www.europeansocialsurvey.org/sites/default/files/2026-01/ESS12-source-questionnaire.pdf": "d5f768fa3988bdf5ddc761175de7637905a916f1b94fbd9b3ae00297f6a430aa"
+    }
+  },
+  "checks": [
+    {
+      "id": "P4-PIN",
+      "scope": "Identität der Prüffassung",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Manifesthash c2c05725351ff209af158704d0896693fd480be66f4027b22125d97066566c89 stimmt mit Auftrag überein; alle 19 Artefakthashes stimmen vor der Bewertung.",
+        "Branch research/life-93-claude-20261003; HEAD 6e164209ac2872447c2b5353f64ba5c6b6294fb3. Manifest nennt den älteren Paketcommit 23c68565c455905b8ed1e51bd76422fc0cd56d45; Bytebindung der Prüffassung stimmt.",
+        "Nach fachlicher Prüfung HEAD 578adaed884a87fb0a6a1ee4137bf98547861f42 durch parallele Arbeit; alle 19 Manifestartefakte unverändert. Fremde P5-Datei nur als Pfad sichtbar, nicht geöffnet."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P4-Q1",
+      "scope": "Quellenklassen, Klasse-T-Anzeige und Tabellenübertragung",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "Quellenklassen trennen Zufalls-/Nichtzufallsstichproben und Tabellen-/Mikrodatenweg sinnvoll; keine Wählergruppen aus Klasse T.",
+        "Kein designbasierter 95-%-Bereich ohne hinreichende Varianz-/Designinformationen ist vertretbar; ein SRS- oder DEFF-Modellbereich wäre eine zusätzliche Annahme, keine ersetzende Messung des unbekannten Designeffekts.",
+        "P4-V23-F01 und F02: Nennergleichsetzung und nicht operationalisierte unabhängige Übertragung."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P4-Q2",
+      "scope": "Vorabregeln, Anwendung auf Kandidaten und Rollentrennung",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "Abschnitt 4 und 10 sehen eine getrennte technische Rolle und ein Formular ohne Verteilungen vor; S1 beschreibt Maskierung und unterdrückte Filterbasen.",
+        "P4-V23-F03: konkrete nicht nachvollziehbare Regelanwendung und offene Inhaltsbindung vor Tabellenübertragung.",
+        "Keine tatsächliche ergebnisabhängige Auswahl nachgewiesen. Keine technische Zugriffs-/Sandboxprüfung des S1-Skripts; es gehört nicht zum Manifest."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P4-Q3",
+      "scope": "Populationen und historische/aktuelle Vergleiche",
+      "status": "BESTANDEN",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:39-41,60-63,84: Population je Quelle; kein Zusammenlegen, Mitteln oder Verrechnen zwischen Quellen/Runden; getrennte Zeitstände, keine Veränderungen oder Signifikanztests.",
+        "docs/profilregeln-v1.md:70-81: Vergleich je Frage, keine Verrechnung über Studien, kein Gesamtwert."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P4-Q4",
+      "scope": "ESS12 und Wählergruppen 2025",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:82-85,142-145: Zweitstimmenrückerinnerung, deutsche Wahlbindung noch zu prüfen, Codes je Modus, Vertrag vor Einsicht; keine Ersatzgruppe aus Wahlabsicht oder Parteinähe.",
+        "Original ESS12-Quellfragebogen PDF-S.16-17 bestätigt A26-Filter und nationale Spezifikation von A27; keine deutsche Zweitstimmenliste geprüft.",
+        "P4-V23-F04: Bindung der späteren Modusentscheidung fehlt ausdrücklich."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P4-Q5-COUNT",
+      "scope": "Öffentliche Statuszählungen",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Alle vier Aussagen aus Abschnitt 8 exakt bestätigt: 11 Kategorien 6/43; 4 Kategorien 22/45; 5 Kategorien 58/139; 6 Kategorien 10/63.",
+        "Erlaubte reine Status-/Kategorienprojektion; keine Anteile, Bereiche, Interview- oder Zellfallzahlen aus Referenzen ausgegeben. Erster Lauf scheiterte nach den korrekten Zählungen an einer falschen Hilfsassertion; korrigierter Lauf bestand."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P4-Q5-INTERPRETATION",
+      "scope": "Interpretation der Sichtbarkeit",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "P4-V23-F06: kombinierter Status erlaubt keine Trennung der Sperrursachen oder isolierte Erklärung nach Gruppengröße/Skalenlänge.",
+        "Option A ist methodisch als unveränderte vorab gebundene Heuristik mit offener Sichtbarkeitsgrenze vertretbar. Ihre Zählanzeige ist kein Beleg für unverzerrte Sichtbarkeit."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P4-Q5-BC",
+      "scope": "Noch unbeschlossene Alternativen B/C",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "P4-V23-F05: zwei verborgene positive Zellen reichen im synthetischen Gegenbeispiel nicht; Präzision und Offenlegungsschutz brauchen getrennte Begründungen.",
+        "Keine Aktivierung oder Empfehlung zur sofortigen Umstellung; A kann bleiben. Für Festschreibung des A-Wegs nicht erforderlich, vor einer späteren Umstellung erforderlich."
+      ],
+      "requiredInScope": false
+    },
+    {
+      "id": "P4-Q6",
+      "scope": "Reife zur Festschreibung und offene Grenzen",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "F01-F04 und F06 brauchen begrenzte Plan-/Protokollkorrekturen vor Festschreibung.",
+        "B/C bleiben unbeschlossen. Deutsche ESS12-Dokumente und endgültiger Vertrag, Rechte-/Quellenfreigaben, reale Übertragung und Ergebnis-/Exportprüfung bleiben spätere ausdrücklich gesperrte Schritte."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P4-LATER",
+      "scope": "Empirische Ergebnisse, UI, Rechtefreigabe und Produktveröffentlichung",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "evidence": [
+        "Prüfauftrag P4 betrifft den Planentwurf vor Festschreibung; keine neuen Daten/Ergebnisse, UI-Implementierung oder Freigabeentscheidung autorisiert."
+      ],
+      "requiredInScope": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "P4-V23-F01",
+      "claim": "Klasse T: Die Interviewzahl gilt als ungewichtete Basis; die Anteile beziehen sich auf alle Befragten einschließlich Weiß nicht.",
+      "problem": "Die Zahl aller Interviews und das Frageuniversum belegen weder die ungewichtete auswertbare Basis dieser Frage noch den Umgang mit Verweigerungen und sonstigem Item-Missing. Der Plan leitet aus fehlender Dokumentation eine gesicherte Nennerregel ab. Die vorgesehene Beschriftung der Interviewzahl ist sinnvoll, löst diese zusätzliche Gleichsetzung aber nicht.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:68-72",
+        "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md:12-14,158-163",
+        "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json: eintraege, QB2_1 (SE037), Welle Eurobarometer 105.2, Felder offen und rundung"
+      ],
+      "impact": "Die Anzeige könnte eine unbekannte Fragebasis und einen nicht belegten Missing-Umgang als bekannt darstellen. Aus Interviewzahl und gerundeten gewichteten Anteilen dürfen auch keine Zellfallzahlen abgeleitet werden.",
+      "severity": "mittel",
+      "severityReason": "Belegbarer Fehler der vorgesehenen Metadaten und ihrer Interpretation; noch keine Übertragung oder Veröffentlichung neuer Zahlen.",
+      "correction": "Interviewzahl nur als Wellenmetadatum führen. Frageuniversum, Tabellenbasis, gewichtete Basis, ungewichtete auswertbare Basis und Missing-Regel getrennt benennen. Den Nenner nur so weit beschreiben, wie dokumentiert: publizierte Kategorien einschließlich Weiß nicht, Umgang mit weiteren fehlenden Antworten und genaue ungewichtete Fragebasis unbekannt. Die Übernahme veröffentlichter Anteile unter dieser Grenze ausdrücklich erlauben oder bis zur Klärung sperren; keine implizite Gleichsetzung.",
+      "recheck": "Den korrigierten Abschnitt 6 gegen die bereits gepinnten S1-Felder prüfen. Ein synthetischer Fall mit allen Befragten als Frageuniversum, aber Item-Verweigerungen muss die Unterscheidung erhalten.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P4-V23-F02",
+      "claim": "Die technische Rolle überträgt die Werte zweimal unabhängig; beide Übertragungen müssen übereinstimmen.",
+      "problem": "Unabhängigkeit und die Prüfeinheit sind nicht operationalisiert. Zwei Kopien derselben Extraktion würden den Wortlaut erfüllen, aber einen gemeinsamen Spalten-, Wellen- oder Kategorienfehler nicht erkennen. Nicht festgelegt sind Blindheit gegenüber der ersten Übertragung, Herkunftsbindung, Abgleich der Metadaten, Behandlung von Abweichungen und Rundung sowie das Verbot stiller Reparaturen.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:73-76,109-112",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:33",
+        "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md:30-50,158-164"
+      ],
+      "impact": "Die angekündigte Gegenkontrolle ist nicht reproduzierbar. Übereinstimmende falsch zugeordnete Werte könnten den Export erreichen.",
+      "severity": "mittel",
+      "severityReason": "Der zentrale Kontrollschritt des neuen Tabellenwegs bleibt trotz konkreter Ankündigung unbestimmt.",
+      "correction": "Vor Festschreibung ein Verfahren definieren: zwei getrennte Übertragungen aus denselben gepinnten Originaldateien, zweite ohne Einsicht in die erste; möglichst andere Extraktionsmethode. Je Zelle Quelle und Hash, Welle, Land DE, Frage/Item, Kategorie, Blatt/Seite und Originaldarstellung binden. Vollständigkeit, Basisangaben und Kategorienzuordnung mit abgleichen. Jede Abweichung blockiert die Frage bis zur belegten Auflösung mit erhaltenen Fassungen. Rundung nur nach Quellenformat; keine Normierung auf 100, keine Handkorrektur.",
+      "recheck": "Protokoll an synthetischen Tabellen mit DE/DEE-Verwechslung, vertauschten Kategorien, fehlender Weiß-nicht-Zeile und Rundungssumme ungleich 100 prüfen. Reale Tabellenübertragung erst nach den Freigaben.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P4-V23-F03",
+      "claim": "Abschnitt 11 wendet alle vorab genannten Auswahlregeln auf die Kandidaten an.",
+      "problem": "Die Ausschlussentscheidung für ST0939 wird allein mit einem Anlass im Fragetext begründet, obwohl Regel 4 nicht wertende Prämissen und Begründungen mit Kennzeichnung zulässt. Gleichzeitig wird ST0350-2 mit einer solchen Einleitung vorgeschlagen. Weitere Kriterien in den Ausschlüssen, etwa abstrakter Begriff oder zwei Gegenstände, sind in Abschnitt 4 nicht ausdrücklich definiert. Bei mehr als drei Fragen zum engen Gegenstand fehlt ein nachvollziehbarer Prioritätsentscheid. Ich bewerte hier die fehlende Regelbindung, nicht die politische Eignung der beiden Fragen.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:45-56,124-138,150",
+        "reports/claude/agenten/R6-eurobarometer.md:176-191",
+        "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md:222-242"
+      ],
+      "impact": "Ein zweiter Bearbeiter kann die Auswahl aus den genannten Regeln nicht vollständig nachvollziehen. Offene Wortlaut- und Zuordnungsfragen schaffen spätere Ermessensschritte bei einer technischen Rolle mit Ergebniszugriff.",
+      "severity": "mittel",
+      "severityReason": "Konkrete Abweichung zwischen Auswahlregel und dokumentiertem Ausschluss; tatsächliche ergebnisabhängige Auswahl ist damit nicht nachgewiesen.",
+      "correction": "Die Kriterien und begründeten Ausnahmen vor Ergebnissen präzisieren. ST0939 mit einem tatsächlich zutreffenden Kriterium begründen oder als zurückgestellt führen; ST0350-2 am selben Kriterium prüfen. Die gewählte Dreierauswahl inhaltlich begründen, ohne zwangsläufig einen automatischen Rang zu erfinden. Für die Forschungsstufen den Zustand vorgeschlagen/zurückgestellt/ausgeschlossen und offene Bedingungen eindeutig binden. Vor Übertragung ein eingefrorenes Itemregister mit Welle, Frage/Item, vollständigem deutschem Wortlaut, Einleitung, Kategorien, Kontext und Entscheidung vorsehen. Ergebnisexponierte technische Rollen dürfen nur vorab definierte Strukturfehler melden; neue Inhaltsentscheidungen brauchen eine neue blinde Prüfung.",
+      "recheck": "Die betroffenen Kandidaten und Grenzen erneut allein aus Kriterien und dokumentierten Fragewortlauten nachvollziehen; keine Verteilungen öffnen. Eindeutige Abbruchregel für fehlenden Wortlaut oder nicht passende Welle prüfen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P4-V23-F04",
+      "claim": "ESS12: Prüfung von Wortlaut, Parteiliste und Codes je Modus, danach Gruppenvertrag v2.3; Klasse Z nutzt das Verfahren v2.2.",
+      "problem": "Die Prüfung der Code-Konkordanz entscheidet nicht, ob persönlich erhobene und selbst ausgefüllte Antworten getrennte Referenzen bilden oder zusammengefasst werden. Diese Entscheidung samt Gewicht-/Designbindung fehlt als ausdrückliche Voraussetzung des späteren Gruppenvertrags. Der vererbte Vertrag v2.1 enthält historische studienspezifische Regeln, aber keine Entscheidung für das neue ESS12-Modusexperiment.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:33,67,82-85,142-145",
+        "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md:183-185,315-321",
+        "data/gruppenvertrag.v2.1.entwurf.json:3419-3455,3520-3540",
+        "ESS12-source-questionnaire.pdf, SHA-256 d5f768fa3988bdf5ddc761175de7637905a916f1b94fbd9b3ae00297f6a430aa, PDF-Seiten 16-17: A26/A27, Modusspalten und nationale Spezifikation"
+      ],
+      "impact": "Ein späterer Lauf könnte Codegleichheit als ausreichenden Grund für eine gemeinsame Referenz behandeln. Das verändert Zielgröße, Nenner und Unsicherheitsrechnung und darf nicht nach Verteilungseinsicht entschieden werden.",
+      "severity": "mittel",
+      "severityReason": "Fehlende vorab gebundene Analyseentscheidung für die ausdrücklich bekannte Änderung des Erhebungsmodus; konkrete deutsche Instrumente fehlen noch.",
+      "correction": "Jetzt in Abschnitt 7/11.2 verbindlich verlangen, dass der spätere versionierte, separat geprüfte und getaggte ESS12-Vertrag vor Einsicht in neue Antworten Modustrennung oder begründete Zusammenfassung festlegt. Dazu Zielpopulation, Design-/Poststratifikationsgewichte, Missing/Filter pro Modus, ausreichende Kategorienidentität und Ausfallregel binden. Das gilt auch für die aktualisierten Einzelreferenzen. Deutsche Codes, tatsächliche Gewichte und konkretes Verfahren dürfen bis zur Dokumentveröffentlichung offen bleiben. Kein Befund zur Effektgröße eines Moduseffekts.",
+      "recheck": "Den ergänzten Stopp im Plan prüfen. Später den ESS12-Vertrag vor jeder Antwort-/Parteiinspektion gesondert prüfen; A27 darf ohne belegte nationale Zweitstimmenfrage keinen Ersatz über Parteinähe oder Erststimme bilden.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P4-V23-F05",
+      "claim": "Option B braucht eine zweite unterdrückte Zelle oder eine Begründung der Unerheblichkeit; Option C ersetzt die Zellregel durch eine Präzisionsregel.",
+      "problem": "Eine zweite unterdrückte Zelle ist keine allgemeine Schutzgarantie. Totale, weitere Veröffentlichungen, Rundung und die Information 1 bis 4 können die verbleibenden Werte weiter eingrenzen oder bestimmen. Außerdem rekonstruiert ein Komplement gewichteter Anteile zunächst einen gewichteten Anteil, nicht zwingend die ungewichtete Fallzahl. Präzision und Offenlegungsschutz sind verschiedene Ziele; eine Intervallbreitenschwelle ersetzt kein Schutzkonzept. Öffentliche Einzeldaten sind keine automatische Begründung für jede zusätzliche Aggregatveröffentlichung.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:91-97",
+        "data/gruppenvertrag.v2.1.entwurf.json:3420-3427,3457-3471",
+        "Synthetische Gegenprobe dieses Reviews: Gesamtzahl 100, sichtbare Zelle 98, zwei unterdrückte positive Zellen jeweils 1 bis 4; einzige zulässige Lösung 1 und 1. Keine ESS-Fälle verwendet."
+      ],
+      "impact": "Bei späterer Wahl von B oder C könnte eine unzureichende Schutzregel als ausreichend gelten. A ist empfohlen, B/C sind ausdrücklich unbeschlossen; deshalb blockiert dieser Punkt den aktuellen A-Weg nicht.",
+      "severity": "mittel",
+      "severityReason": "Das Risiko betrifft eine konkret beschriebene, aber noch nicht aktivierte Alternative. Kein aktueller Datenabfluss nachgewiesen.",
+      "correction": "B als offenen Verfahrensentwurf kennzeichnen und eine Prüfung aller veröffentlichten Randinformationen und komplementären Angaben verlangen; sekundäre Unterdrückung kann dazugehören, ist allein nicht hinreichend. Anteil, Gewichtssumme und ungewichtete Fallzahl unterscheiden. C nur nach getrennt begründetem Präzisions- und Offenlegungskonzept erwägen. Vor jeder Umstellung einen eigenen eingefrorenen Plan und Exportprüfungen verlangen. A darf unverändert bleiben.",
+      "recheck": "Vor einer Aktivierung B/C mit synthetischen Gegenproben für kleine Restsummen, mehrere Tabellen, Intervalle und Rundung prüfen; bestehende öffentliche ESS-Verteilungen in dieser Nachprüfung weiterhin nicht lesen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P4-V23-F06",
+      "claim": "Die Zählungen aus öffentlichen Status zeigen, dass kleine Gruppen und lange Skalen wegen einer einzelnen kleinen Kategorie häufiger ihre Vergleiche verlieren.",
+      "problem": "Die vier Zählungen stimmen. Der verwendete Status withheld_base_or_cell_count bündelt aber die zu kleine Gesamtbasis und kleine positive Zellen. Aus Status und Kategorienzahl allein kann weder der konkrete Sperrgrund noch ein Effekt der Gruppengröße isoliert werden. Die Zählungen enthalten zudem verschiedene Fragen/Studien und keine kontrollierte Variation der Skalenlänge.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:89",
+        "data/gruppenvertrag.v2.1.entwurf.json:3457-3470",
+        "Erlaubte Projektion von data/reference-v2.2/*.json: je Gruppenpaar ausschließlich Fragekennung, status und Kategorienzahl aus den zwei Katalogen; 4 Kategorien 22/45, 5 Kategorien 58/139, 6 Kategorien 10/63, 11 Kategorien 6/43."
+      ],
+      "impact": "Eine plausible Folge der Regel würde als empirisch nachgewiesene Ursache der beobachteten Sichtbarkeit dargestellt. Dieser Review kann sie mit dem erlaubten Korpus nicht bestätigen.",
+      "severity": "mittel",
+      "severityReason": "Die Auswertung selbst ist korrekt, ihre kausale Erklärung überschreitet die Information der erlaubten Statusfelder.",
+      "correction": "Beobachtung und Regelmechanismus trennen: Die Verfügbarkeit unterscheidet sich zwischen diesen Kategorienzahlen; Regel 100/5 kann eine Referenz wegen Gesamtbasis oder einzelner positiver Zellen sperren. Gruppenstärke und Skalenlänge sind plausible Einflussgrößen, aber mit dieser Statuszählung nicht getrennt geprüft. Keine weitere Datenöffnung nötig.",
+      "recheck": "Korrigierten Absatz gegen dieselbe reine Status-/Kategorienzählung prüfen. Es dürfen keine gruppenspezifischen Größen oder konkreten Zell-Sperrgründe aus den kombinierten Status abgeleitet werden.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    }
+  ],
+  "limits": [
+    "Begrenztes KI-Review des manifestgebundenen Entwurfs 0.2, keine wissenschaftliche Validierung, Neutralitäts-, Produkt- oder Releasefreigabe.",
+    "Keine Dateien unter data/raw/, data/local/ oder outputs/ geöffnet. Keine externen Ergebnistabellen, keine lokalen Verteilungstabellen oder reviewed-* Dateien inhaltlich gelesen.",
+    "Die Ausnahme zu Prüffrage 5 wurde ausschließlich für IDs zur Verknüpfung, status und Kategorienzahl genutzt. JSON-Decoder und Hashfunktion lesen Datei-Bytes einschließlich übriger Felder; diese wurden nicht inhaltlich ausgewertet oder ausgegeben. Schemaerkundung zeigte nur Schlüssel und Typstruktur, keine Feldwerte. Keine absolute OS-Blindheit oder technische Sandbox behauptet.",
+    "Kein Urteil der parallelen Quellen-/Fairnessrolle gelesen. Manifestgebundene Rechercheberichte und historische Plantexte sind Prüfgegenstände, keine unabhängigen Urteile zu diesem Plan. Ein früher Memory-Register-Suchlauf zeigte Paketbezeichnungen/Statuslabels älterer, anderer Prüfungen; keine alten Prüfberichte geöffnet und keine Übernahme ihrer Urteile.",
+    "Originalquellenkontrolle in diesem Lauf beschränkt sich auf ESS12-Quellfragebogen PDF-Seiten 16-17. Eurobarometer-Struktur nur am gepinnten S1-Bericht/Formular geprüft; keine Originaltabellen geöffnet. Tatsächliche Blindheit der Auswahlhistorie und Maskierung des nicht manifestgebundenen S1-Skripts nicht unabhängig geprüft.",
+    "Web-Abruf des ESS12-PDF scheiterte mit 502; derselbe Originalabruf per urllib gelang und bestätigte den bekannten Hash. Die Eurobarometer-About-Seite lieferte im Webwerkzeug keinen lesbaren Text und trägt kein bestandenes Quellenurteil.",
+    "Mehrere Sammelausgaben wurden gekürzt; Hauptplan und relevante Fundstellen danach gezielt gelesen. Gruppenvertrag und Rechercheberichte selektiv gelesen. R5/R7 und R10-JSON ausschließlich gehasht.",
+    "Kein pnpm check und kein Pipeline-/Browserlauf: nur zwei Prüfberichte geschrieben; allgemeine Projektchecks würden den ausdrücklich ausgeschlossenen Lese-/Schreibumfang überschreiten können. Stattdessen JSON-Schema, Urteilslogik, Berichtskonsistenz und Hashbindung gezielt geprüft. Das ist nur formale Prüfung.",
+    "Keine Commits, Pushes, Tags, Nachrichten an Dritte oder Delegation. Kein technischer Schutz oder künftige Gate-Implementierung vorgetäuscht.",
+    "Erster Berichtserstellungsversuch brach vor jeder Schreiboperation ab, weil eine Zusatzassertion den inzwischen durch parallele Arbeit geänderten Ausgangs-HEAD verlangte. Nachprüfung bestätigte alle 19 Artefakthashes. Ein weiterer functions.exec-Aufruf hatte einen JavaScript-Syntaxfehler durch eingebettete Markdown-Codezäune und wurde gar nicht ausgeführt."
+  ]
+}
