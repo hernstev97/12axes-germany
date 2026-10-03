@@ -491,10 +491,33 @@
                               <span class="own-answer-label">(eigene Antwort)</span>
                             }
                           </dt>
-                          <dd>{{ percentage(category.share) }}</dd>
+                          <dd>
+                            {{ percentage(category.share) }}
+                            @if (category.lower !== null && category.upper !== null) {
+                              <span class="interval"
+                                >(95-%-Bereich {{ percentage(category.lower) }} bis
+                                {{ percentage(category.upper) }})</span
+                              >
+                            }
+                          </dd>
                         </div>
                       }
                     </dl>
+                    @if (reference.hasIntervals) {
+                      <p class="meta interval-note">
+                        Der 95-%-Bereich beschreibt die Unsicherheit durch die Zufallsstichprobe der
+                        damaligen Befragung unter vereinfachenden Annahmen. Er enthält keine
+                        Unsicherheit durch den zeitlichen Abstand, den anderen Befragungsmodus,
+                        Nichtteilnahme oder den neuen Fragekontext. Er ist keine Unsicherheit der
+                        eigenen Antwort. Nahe 0 und 100 % kann er die tatsächliche Unsicherheit
+                        unterschätzen.
+                      </p>
+                    } @else if (!designStudy(item.studyId)) {
+                      <p class="meta interval-missing">
+                        Für diese Befragung ist kein Unsicherheitsbereich berechnet. Die Datei mit
+                        dem Stichprobendesign liegt dem Projekt nicht vor.
+                      </p>
+                    }
                     <p class="meta">
                       Gewichtung: {{ reference.weight }}. Die Anteile beziehen sich auf die Summe
                       der Gewichte gültiger Antworten dieser Frage. Die Fallzahlen sind ungewichtet.
@@ -525,11 +548,16 @@
                       </p>
                     }
                   </div>
-                } @else if (unavailableReferenceFor(item.id)) {
+                } @else if (unavailableReferenceFor(item.id) === 'withheld') {
                   <p class="meta reference-withheld">
                     Die historische Referenz für diese Originalfrage bleibt wegen unzureichender
                     Basis oder Zellbesetzung zurückgehalten. Es werden keine Referenzzahlen
                     angezeigt.
+                  </p>
+                } @else if (unavailableReferenceFor(item.id) === 'no-valid') {
+                  <p class="meta reference-withheld reference-no-valid">
+                    Für diese Originalfrage gibt es in der historischen Befragung keine gültigen
+                    Antworten. Es werden keine Referenzzahlen angezeigt.
                   </p>
                 } @else {
                   <p class="meta">
@@ -558,7 +586,15 @@
                               <span class="own-answer-label">(eigene Antwort)</span>
                             }
                           </dt>
-                          <dd>{{ percentage(category.proportion) }}</dd>
+                          <dd>
+                            {{ percentage(category.proportion) }}
+                            @if (groupInterval(comparison.intervals, category.code); as interval) {
+                              <span class="interval"
+                                >(95-%-Bereich {{ percentage(interval.lower) }} bis
+                                {{ percentage(interval.upper) }})</span
+                              >
+                            }
+                          </dd>
                         </div>
                       }
                     </dl>

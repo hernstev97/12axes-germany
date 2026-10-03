@@ -25,9 +25,35 @@ import { PolicySourceDetails } from './policy-source-details';
 import { AREA_SCOPES, UNCOVERED_AREAS } from './profile/area-scope';
 import { buildAnswerProfile, type ProfileAnswer } from './profile/profile-engine';
 import { CROSS_REFERENCE_NOTE, MIDDLE_NOTE } from './profile/profile-structure';
+import {
+  indexReferencesV22,
+  intervalFor,
+  pairKey,
+  type EntryV22,
+  type ReferencesV22,
+} from './reference-v22';
 import { ITEM_RULES } from './profile/profile-rules';
 
 type DraftView = 'questions' | 'overview' | 'results';
+
+/** One historical single reference as displayed, from v2 or v2.2, with optional intervals. */
+interface ReferenceView {
+  readonly weight: 'pspwght';
+  readonly validUnweightedN: number;
+  readonly totalUnweightedN: number;
+  readonly missingUnweightedN: number;
+  readonly notAskedUnweightedN: number;
+  readonly categoryShares: readonly {
+    readonly code: string;
+    readonly share: number;
+    readonly lower: number | null;
+    readonly upper: number | null;
+  }[];
+  readonly hasIntervals: boolean;
+}
+
+/** Studies whose data files contain a complete sampling design (Analyseplan v2.2, 4.1). */
+const DESIGN_STUDIES = new Set(['ESS9e03_3', 'ESS10SCe03_2', 'ESS11e04_2']);
 type SkipReason = 'unspecified' | 'dont-know' | 'decline';
 
 /**
@@ -47,6 +73,8 @@ type SkipReason = 'unspecified' | 'dont-know' | 'decline';
 export class PolicyDraft {
   readonly historicalReferences = input<HistoricalReferenceInput | null>(null);
   readonly historicalGroups = input<HistoricalGroupInput | null>(null);
+  readonly referencesV22 = input<ReferencesV22 | null>(null);
+  protected readonly v22 = computed(() => indexReferencesV22(this.referencesV22()));
   private readonly injector = inject(Injector);
   private readonly pageHeading = viewChild<ElementRef<HTMLElement>>('pageHeading');
   private readonly questionHeading = viewChild<ElementRef<HTMLElement>>('questionHeading');
@@ -230,14 +258,57 @@ export class PolicyDraft {
     this.focus('page');
   }
 
-  protected referenceFor(id: string) {
+  protected referenceFor(id: string): ReferenceView | null {
     const state = this.references();
-    return state.status === 'bound' ? (state.references.get(id) ?? null) : null;
+    const v2 = state.status === 'bound' ? state.references.get(id) : undefined;
+    const entry: EntryV22 | undefined = this.v22().single.get(id);
+    if (v2) {
+      const categoryShares = v2.categoryShares.map((category) => ({
+        ...category,
+        lower: intervalFor(entry, category.code)?.lower ?? null,
+        upper: intervalFor(entry, category.code)?.upper ?? null,
+      }));
+      return {
+        weight: v2.weight,
+        validUnweightedN: v2.validUnweightedN,
+        totalUnweightedN: v2.totalUnweightedN,
+        missingUnweightedN: v2.missingUnweightedN,
+        notAskedUnweightedN: v2.notAskedUnweightedN,
+        categoryShares,
+        hasIntervals: categoryShares.some((category) => category.lower !== null),
+      };
+    }
+    const reference = entry?.reference;
+    if (!reference) return null;
+    const categoryShares = reference.categories.map((category) => ({
+      code: category.code,
+      share: category.proportion,
+      lower: category.lower,
+      upper: category.upper,
+    }));
+    return {
+      weight: 'pspwght',
+      validUnweightedN: reference.validCount,
+      totalUnweightedN: reference.totalCount,
+      missingUnweightedN: reference.missingCount,
+      notAskedUnweightedN: reference.notAskedCount,
+      categoryShares,
+      hasIntervals: categoryShares.some((category) => category.lower !== null),
+    };
   }
 
-  protected unavailableReferenceFor(id: string) {
+  /** Why no numbers are shown: withheld by the 100/5 rule or no valid answers. */
+  protected unavailableReferenceFor(id: string): 'withheld' | 'no-valid' | null {
     const state = this.references();
-    return state.status === 'bound' ? (state.unavailable.get(id) ?? null) : null;
+    if (state.status === 'bound' && state.unavailable.has(id)) return 'withheld';
+    const status = this.v22().single.get(id)?.status;
+    if (status === 'withheld_base_or_cell_count') return 'withheld';
+    if (status === 'no_valid_answers') return 'no-valid';
+    return null;
+  }
+
+  protected designStudy(studyId: string): boolean {
+    return DESIGN_STUDIES.has(studyId);
   }
 
   protected referenceLabel(item: PolicyDraftItem, code: string): string {
@@ -258,7 +329,43 @@ export class PolicyDraft {
   }
 
   protected groupComparisonFor(id: string) {
-    return groupComparison(this.groups(), this.selectedGroupStudyId(), this.selectedGroupId(), id);
+    const base = groupComparison(
+      this.groups(),
+      this.selectedGroupStudyId(),
+      this.selectedGroupId(),
+      id,
+    );
+    if (base.status !== 'available' && base.status !== 'unavailable') return base;
+    const entry = this.v22().pairs.get(pairKey(this.selectedGroupId(), id));
+    if (base.status === 'available') {
+      return { ...base, intervals: entry };
+    }
+    const reference = entry?.reference;
+    if (!reference) return base;
+    const study = this.selectedGroupStudy()!;
+    const group = this.selectedGroup()!;
+    return {
+      status: 'available' as const,
+      study,
+      group,
+      reference: {
+        weight: 'pspwght' as const,
+        validCount: reference.validCount,
+        totalCount: reference.totalCount,
+        missingCount: reference.missingCount,
+        notAskedCount: reference.notAskedCount,
+        categories: reference.categories.map((category) => ({
+          code: category.code,
+          proportion: category.proportion,
+        })),
+        uncertainty: null,
+      },
+      intervals: entry,
+    };
+  }
+
+  protected groupInterval(entry: EntryV22 | undefined, code: string) {
+    return intervalFor(entry, code);
   }
 
   protected groupDocumentLabel(id: string): string {

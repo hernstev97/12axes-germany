@@ -3,6 +3,86 @@ import { PolicyDraft } from './policy-draft';
 import { REVIEWED_HISTORICAL_REFERENCES } from './reviewed-historical-references';
 import { REVIEWED_HISTORICAL_GROUPS } from './reviewed-historical-groups';
 import { POLICY_DRAFT_ITEMS } from './policy-catalogue';
+import type { ReferencesV22 } from './reference-v22';
+
+// Synthetic v2.2 aggregates for display logic only. Not survey results.
+const SYNTHETIC_V22: ReferencesV22 = {
+  sources: {},
+  studies: [
+    {
+      study: 'ESS9e03_3',
+      designAvailable: true,
+      questions: [
+        {
+          id: 'ESS9e03_3:sofrdst',
+          status: 'reviewed_historical_reference',
+          reference: {
+            validCount: 500,
+            totalCount: 510,
+            missingCount: 10,
+            notAskedCount: 0,
+            categories: ['1', '2', '3', '4', '5'].map((code) => ({
+              code,
+              proportion: 0.2,
+              lower: 0.15,
+              upper: 0.25,
+            })),
+            interval: { degreesOfFreedom: 89, strata: 89, psus: 178 },
+          },
+        },
+      ],
+      groups: [],
+    },
+    {
+      study: 'ESS8e02_3',
+      designAvailable: false,
+      questions: [
+        {
+          id: 'ESS8e02_3:elgcoal',
+          status: 'reviewed_historical_reference',
+          reference: {
+            validCount: 400,
+            totalCount: 420,
+            missingCount: 20,
+            notAskedCount: 0,
+            categories: ['1', '2', '3', '4', '5', '55'].map((code) => ({
+              code,
+              proportion: code === '55' ? 0 : 0.2,
+              lower: null,
+              upper: null,
+            })),
+            interval: null,
+          },
+        },
+        { id: 'ESS8e02_3:elgngas', status: 'no_valid_answers', reference: null },
+      ],
+      groups: [
+        {
+          groupId: 'ESS8e02_3:second_vote:1',
+          pairs: [
+            {
+              questionId: 'ESS8e02_3:elgcoal',
+              status: 'reviewed_historical_reference',
+              reference: {
+                validCount: 150,
+                totalCount: 160,
+                missingCount: 10,
+                notAskedCount: 0,
+                categories: ['1', '2', '3', '4', '5', '55'].map((code) => ({
+                  code,
+                  proportion: code === '55' ? 0 : 0.2,
+                  lower: null,
+                  upper: null,
+                })),
+                interval: null,
+              },
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
 
 const TOTAL = POLICY_DRAFT_ITEMS.length;
 const E35_INDEX = POLICY_DRAFT_ITEMS.findIndex((item) => item.id === 'ESS8e02_3:wrkprbf') + 1;
@@ -107,6 +187,33 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     await fixture.whenStable();
   }
 
+  it('zeigt v2.2-Bereiche, neue Referenzen, fehlende gültige Antworten und neue Gruppenpaare', async () => {
+    fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
+    fixture.componentRef.setInput('historicalGroups', REVIEWED_HISTORICAL_GROUPS);
+    fixture.componentRef.setInput('referencesV22', SYNTHETIC_V22);
+    await click('Zum Ergebnisentwurf');
+    const withInterval = element.querySelector<HTMLElement>(
+      '[data-question-id="ESS9e03_3:sofrdst"]',
+    )!;
+    expect(withInterval.querySelectorAll('.interval').length).toBe(5);
+    expect(withInterval.querySelector('.interval-note')?.textContent).toContain(
+      'keine Unsicherheit der',
+    );
+    const added = element.querySelector<HTMLElement>('[data-question-id="ESS8e02_3:elgcoal"]')!;
+    expect(added.querySelector('.historical-reference')).not.toBeNull();
+    expect(added.querySelector('.interval')).toBeNull();
+    expect(added.querySelector('.interval-missing')?.textContent).toContain('Stichprobendesign');
+    const empty = element.querySelector<HTMLElement>('[data-question-id="ESS8e02_3:elgngas"]')!;
+    expect(empty.querySelector('.reference-no-valid')).not.toBeNull();
+    expect(empty.querySelector('.historical-reference')).toBeNull();
+    await selectComparison('draft-group-study', 'ESS8e02_3');
+    await selectComparison('draft-vote-group', 'ESS8e02_3:second_vote:1');
+    const pair = element.querySelector<HTMLElement>(
+      '[data-question-id="ESS8e02_3:elgcoal"] .group-reference',
+    );
+    expect(pair).not.toBeNull();
+    expect(pair!.querySelectorAll('[data-category-code]')).toHaveLength(6);
+  }, 20_000);
   it('T30: zeigt bei zurückgehaltener Referenz keine Zahlen, behält aber die eigene Aussage', async () => {
     fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
     await click('Zur Fragenübersicht');
