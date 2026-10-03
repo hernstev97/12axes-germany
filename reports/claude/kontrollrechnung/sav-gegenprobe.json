@@ -1,0 +1,87 @@
+{
+ "sav": {
+  "path": "data/raw/ess5-sddf-de/ESS5_DE_SDDF.sav",
+  "sha256": "dbd02a1e0ff891be5587c715a6c75d8d6c58ada00e2b8f7d08304704a74c2b48"
+ },
+ "readstat": {
+  "library": "pyreadstat 1.3.6",
+  "rows": 3031,
+  "columns": 6,
+  "columnNames": [
+   "CNTRY",
+   "IDNO",
+   "PSU",
+   "SAMPPOIN",
+   "STRATIFY",
+   "PROB"
+  ],
+  "fileEncoding": "UTF-8",
+  "readstatTypes": {
+   "CNTRY": "string",
+   "IDNO": "double",
+   "PSU": "double",
+   "SAMPPOIN": "double",
+   "STRATIFY": "string",
+   "PROB": "double"
+  },
+  "variableLabelsPresent": 0,
+  "valueLabelSets": 0,
+  "fileLabel": false,
+  "notes": 0
+ },
+ "decoderComparison": {
+  "rowsReadStat": 3031,
+  "rowsSavPy": 3031,
+  "fields": {
+   "CNTRY": {
+    "equal": 3031,
+    "different": 0
+   },
+   "IDNO": {
+    "equal": 3031,
+    "different": 0
+   },
+   "PSU": {
+    "equal": 3031,
+    "different": 0
+   },
+   "SAMPPOIN": {
+    "equal": 3031,
+    "different": 0
+   },
+   "STRATIFY": {
+    "equal": 3031,
+    "different": 0
+   },
+   "PROB": {
+    "equal": 3031,
+    "different": 0
+   }
+  }
+ },
+ "readstatDesign": {
+  "countries": [
+   "DE"
+  ],
+  "uniqueIdno": 3031,
+  "duplicateIdno": 0,
+  "strata": 2,
+  "psus": 168,
+  "psusInMoreThanOneStratum": 0
+ },
+ "linkage": {
+  "mainGermanRows": 3031,
+  "mainUniqueIdno": 3031,
+  "matched": 3031,
+  "onlyMain": 0,
+  "onlyDesign": 0
+ },
+ "standardErrorsWithReadStatDesign": {
+  "referenzen": 32,
+  "kategorien": 202,
+  "maxAbweichungAnteil": 1.1102230246251565e-16,
+  "maxAbweichungStandardfehler": 0.0,
+  "designfreiheitsgrade": 166
+ },
+ "designRunSha256": "821c8db3bdf783c3ecfeddf0462f39efc875953611d70ae9edbc7c92c951827c"
+}
