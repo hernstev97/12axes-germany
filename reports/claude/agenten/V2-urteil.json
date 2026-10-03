@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "Nachträgliche Prüfung von Quellen, Wortlauten, Konstrukten, Interpretationen und politischer Fairness des Codex-Stands e9898fb (Auftrag V2).",
+  "scope": "43 ESS-Angaben in data/politikprofil-v2.fragen.entwurf.json gegen sechs deutsche Original-PDFs; sichtbare Texte der Forschungsoberfläche und Projektseiten; Interpretationen, Gruppenbezeichnungen und Grenzen in Berichten 02 und 03; Planungsdokumente und Gruppenvertrag v2.1. Keine Zahlenprüfung, keine Rohdaten, keine Browserprüfung.",
+  "manifestSha256": "becc9a44d762f92f1ee6f8278b10f2ed353f8f00f47d9e588af06e65fa03e3f0",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "Anthropic",
+    "model": "Opus 5.5 (Modell-ID claude-opus-5-5[1m])",
+    "modelEvidence": "Systemangabe der Laufzeitumgebung dieses Subagenten; keine darüber hinausgehende Verifikation. Laut Auftrag: Claude (Anthropic).",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "Bash (pdftotext -layout, pdftoppm, montage, jq, sha256sum, git, node, python3, grep, awk)",
+      "Read (Text und gerenderte PDF-Seiten)",
+      "Write",
+      "Skill life93-review (gelesen als Datei)",
+      "Skill unslop (Schreibregeln)"
+    ],
+    "prompt": "Koordinatorauftrag: vollständigen Auftrag in reports/claude/auftraege/V2-quellen-konstrukte-fairness.vollstaendig.md lesen und genau ausführen (SHA-256 8cc4045d5540f75a2b269e3244efef04eb595752bc6ed516a369ad1567572ff2, gleich dem Eintrag in auftraege.sha256).",
+    "inputHashes": {
+      "data/politikprofil-v2.fragen.entwurf.json": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4",
+      "outputs/loop/breadth-data-001/sources/ess5-de-questionnaire.pdf": "24b5d2599e6d30dc02a6d835f5f80b5bcecf8f6014ee8f4670a703c25d3c3cbf",
+      "outputs/loop/breadth-data-001/sources/ess8-de-questionnaire.pdf": "977475c18d2adebea6ccb7695f377fb6ed500ef087b077086305f9a2e4a7b239",
+      "outputs/loop/breadth-data-001/sources/ess8-de-showcards.pdf": "dde02b5336b2d960c2900a8fcf5e2a0f0d254b46dcce1d9ffb785a830e096bc0",
+      "outputs/loop/breadth-data-001/sources/ess9-de-questionnaire.pdf": "ae960ebcae1b12106eb3003ced1de7c88a73c9b95736efedd93fd8b320e974a5",
+      "outputs/loop/breadth-data-001/sources/ess10-de-questionnaire.pdf": "158004a89b1821e5202e6faf3c2101eae5e56e794d7c3fdbc3dca1c9d67c8425",
+      "outputs/loop/breadth-data-001/sources/ess11-de-questionnaire.pdf": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "web/src/app/policy-draft/item-meanings.ts": "d55eb84799d1b99fc348e25a1bb2356594477e3d3c5b2f212d0764d4dcc8b4a3",
+      "web/src/app/policy-draft/policy-draft.html": "f556dbb8bf3d6a41503378fd53476356e29cd8b448f2a7e5544b5d695d8087b6",
+      "web/src/app/policy-draft/policy-draft.ts": "da3a08b61dd077c28bef3f1a38942b666bfb93afc4a1858498d9c302278aaace",
+      "web/src/app/policy-draft/policy-source-details.html": "75ee3fcd461a8831a1a678b3e3e867dde2a00f0cf4de27f201da03699b184796",
+      "web/src/app/policy-draft/public-catalogue.ts": "7a6a3a1ffeba3a976f9c1e07fb1dbd061098e5c5ea347f80303f1750a0fdf8e6",
+      "web/src/app/research/policy-profile.ts": "28906eb1533bb953b43bed75a4995c907b71398f1ffcd63271c82cfdace05998",
+      "web/src/app/pages/methodology/methodology.html": "ecf5af52c5b9e8f3d12b56cbe4516c1c38eb9e4373e4afb3025165cd920e33dc",
+      "web/src/app/pages/project/project.html": "3b8244ffa1f4e19d5b7af71cc05d25de5fc662a598e9492971123474420bdba2",
+      "web/src/app/pages/home/home.html": "b44b6d8e2741c3ef13103ea8cc6ecaaa9e2bc82eadf990e76b16c27a0a1bf4df",
+      "reports/phasen/02-politikprofil-v2-methoden-und-ergebnisse.md": "470c73eb0cb3c2fa6569773035fbe5444507a7c15fd11253b306c7120d07dc7f",
+      "reports/phasen/03-politikprofil-v21-historische-gruppen.md": "ecb731bc5caca8f554fd60be4f1176f021350b290d5dea2713fd4c0e48eed504",
+      "docs/empirie-plan-v2.entwurf.md": "2b0cd26f8fba81bbf520b9ae3411d623f9299c9ff707aacf681bde4c65a0439f",
+      "docs/messformen-v2.entwurf.md": "0536441391becb9ac84e4b9596b20e2e0e4aab1a9aef827cbc162f8d7261238b",
+      "docs/abdeckung-v2.md": "77ae3d328c4862d1396e72207e5e1401dfa4da1f57580315e973943d3dfad945",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "web/src/app/policy-draft/policy-catalogue.ts": "640f6470bddce074d034c5ed9a18174c95e4447fb2f3c3ba6e8848a36192c984",
+      "web/src/app/policy-draft/reviewed-historical-groups.ts (nur grep)": "281159b645ccfc1d254b3745f3bcdab353800607223061fd76e43dced96bd175",
+      "docs/project.md": "686fdb0c853209879abfa94b0cb94913d35e8f2099921cfbebbbb1311de80022",
+      "docs/handbuch.md (Kapitel 7)": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      "reports/claude/auftraege/V2-quellen-konstrukte-fairness.vollstaendig.md": "8cc4045d5540f75a2b269e3244efef04eb595752bc6ed516a369ad1567572ff2"
+    }
+  },
+  "checks": [
+    {
+      "id": "C1",
+      "scope": "Wortlaute, Antwortkategorien, Druck- und Exportcodes und Filter der 43 Angaben gegen deutsche Originale",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Einzelvergleich aller 43 Angaben mit ess5 S. 24–27, ess8 S. 33/36/37/42, Listenheft S. 45/49/51/54, ess9 S. 97, ess10 PAPI S. 7/10–12 und CAWI S. 93–96/135–148/162, ess11 S. 13–14/51–52",
+        "public-catalogue.ts textgleich zum Katalog (Node-Vergleich, 0 Abweichungen)"
+      ]
+    },
+    {
+      "id": "C2",
+      "scope": "Einleitungen und Originalkontext vollständig",
+      "status": "NICHT_BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "V2-F01",
+        "V2-F02"
+      ]
+    },
+    {
+      "id": "C3",
+      "scope": "Fundstellen (physische PDF-Seite, Fragenummer)",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "alle sourceRefs.pdfPages der 43 Angaben an den PDF-Seiten bestätigt"
+      ]
+    },
+    {
+      "id": "C4",
+      "scope": "Zeitabhängige Formulierungen erkannt und richtig dargestellt",
+      "status": "NICHT_BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "V2-F03",
+        "V2-F02",
+        "V2-F01",
+        "V2-F17"
+      ]
+    },
+    {
+      "id": "C5",
+      "scope": "Konstrukt und Reichweite von Rubriken, Titeln und Erklärtexten",
+      "status": "NICHT_BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "V2-F04",
+        "V2-F06",
+        "V2-F16"
+      ]
+    },
+    {
+      "id": "C6",
+      "scope": "Sachliche und symmetrische Sprache der Titel und Erklärtexte, Gruppenbegriffe",
+      "status": "NICHT_BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "V2-F05",
+        "V2-F07",
+        "V2-F08"
+      ]
+    },
+    {
+      "id": "C7",
+      "scope": "Faire Antwortmöglichkeiten einschließlich Nichtpositionskategorien",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Originalkategorien vollständig, A90-Nichtpositionskategorien als Optionen, Überspringen getrennt und nicht als Mitte (policy-draft.html Z. 91–134, 380–386)"
+      ]
+    },
+    {
+      "id": "C8",
+      "scope": "Offenlegung von Auswahl- und Auslassungsfolgen",
+      "status": "NICHT_BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "V2-F09"
+      ]
+    },
+    {
+      "id": "C9",
+      "scope": "Historische Vergleichsgruppen: Bezeichnung, Zeitbezug, Population, Grenzen, Gleichbehandlung",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Formlabels gegen ess5 S. 8, ess8 S. 9, ess9 S. 9; policy-draft.html Z. 243–272; Bericht 03 Z. 1–21",
+        "niedrige Findings V2-F13, V2-F14"
+      ]
+    },
+    {
+      "id": "C10",
+      "scope": "Ergebnisdarstellung erklärt die eigene Antwort tragfähig",
+      "status": "NICHT_BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "V2-F03",
+        "V2-F05",
+        "V2-F10",
+        "V2-F11"
+      ]
+    },
+    {
+      "id": "C11",
+      "scope": "Zahlen der historischen Referenzen und Gruppenanteile",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "requiredInScope": false,
+      "evidence": [
+        "laut Auftrag Gegenstand von V1"
+      ]
+    },
+    {
+      "id": "C12",
+      "scope": "Menschliche Verständlichkeit der Texte",
+      "status": "NICHT_GEPRÜFT",
+      "requiredInScope": false,
+      "evidence": [
+        "keine Tests mit Menschen in diesem Auftrag"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "V2-F01",
+      "claim": "Katalog, Bericht 02 und Methodikseite erklären, Einleitungen blieben erhalten (JSON Z. 7 transcriptionPolicy; Bericht 02 Z. 3391; methodology.html Z. 135).",
+      "problem": "Die ESS8-Einleitung vor E33–E35 („Als Reaktion auf veränderte wirtschaftliche und gesellschaftliche Rahmenbedingungen könnte es sein, dass Staat und Regierung in den nächsten zehn Jahren Änderungen bei den Sozialleistungen vornehmen.“) fehlt in Katalog, Website und Bericht 02. Die Website zeigt bei E33/E35 „Der Katalog enthält für diese Einzelangabe keine zusätzliche Einleitung“.",
+      "evidence": [
+        "outputs/loop/breadth-data-001/sources/ess8-de-questionnaire.pdf physische S. 41 unten (Einleitung), S. 42 (E33–E35)",
+        "data/politikprofil-v2.fragen.entwurf.json Z. 2409 (bnlwinc.introductionsDe: []), Z. 10392 (wrkprbf.introductionsDe: [])",
+        "web/src/app/policy-draft/policy-draft.html Z. 79–83",
+        "reports/phasen/02-politikprofil-v2-methoden-und-ergebnisse.md Z. 643–650, 3328–3336, 3391"
+      ],
+      "impact": "Rahmen einer möglichen Reform in den nächsten zehn Jahren fehlt; Vergleichbarkeit von drei Angaben mit ESS8-Antworten gemindert; eigene Treueerklärung an dieser Stelle falsch.",
+      "severity": "mittel",
+      "severityReason": "Sichtbare, nicht gekennzeichnete Auslassung von Originalkontext bei drei Angaben; Wortlaut und Kategorien selbst sind korrekt.",
+      "correction": "Einleitung mit Fundstelle S. 41 als introductionsDe für bnlwinc und als Blockkontext für eduunmp/wrkprbf aufnehmen; public-catalogue.ts und Bericht 02 neu erzeugen; Platzierung von E35 prüfen.",
+      "recheck": "pdftotext -f 41 -l 41 -layout auf das ESS8-PDF; jq auf introductionsDe der drei Angaben; grep -c Rahmenbedingungen in Katalog, public-catalogue.ts und Bericht 02 > 0.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F02",
+      "claim": "Website und Bericht nennen für ESS10-SC Feldzeit, Modus und Grenzen als historischen Kontext (policy-source-details.html Z. 37–72; methodology.html Z. 91–99; Bericht 02 Z. 65–75).",
+      "problem": "Die ausdrückliche Anleitung „Bitte beantworten Sie alle Fragen nach dem heutigen Stand der Dinge, auch wenn dieser durch die Pandemie anders ist als sonst“ und das vorangestellte Pandemiemodul A1–A5 sind für die 17 ESS10-SC-Angaben nirgends dokumentiert.",
+      "evidence": [
+        "outputs/loop/breadth-data-001/sources/ess10-de-questionnaire.pdf PAPI S. 1 und S. 2 (vor A6), CAWI-Bildschirm S. 48",
+        "ess10-de-questionnaire.pdf S. 4 (A25: Bundestagswahl im September 2021); Feldzeit 2021-10-05 bis 2022-01-04 laut Katalog",
+        "grep „Pandemie“ in data/politikprofil-v2.fragen.entwurf.json und Bericht 02: 0 Treffer"
+      ],
+      "impact": "Historischer Kontext für Demokratie-, EU- und Zuwanderungsangaben unvollständig; Vergleich heutiger Antworten mit 2021/2022 ohne Hinweis auf die damals angesprochene Ausnahmelage.",
+      "severity": "mittel",
+      "severityReason": "Betrifft 17 von 43 Angaben, aber ohne Änderung des Wortlauts.",
+      "correction": "Studienbezogenen Kontextvermerk für ESS10SCe03_2 mit Fundstellen aufnehmen und auf der Website unter „Historische Grenze“ sowie in Bericht 02 zeigen; keine Vermutung über Wirkungsrichtung.",
+      "recheck": "grep -c Pandemie in Katalog und Bericht 02 > 0; Browseransicht einer ESS10-Frage.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F03",
+      "claim": "„Die Auswahl bezieht sich auf wesentlich härtere Strafen als im historischen Originalkontext 2010/2011. Das Wort ‚heute‘ bezeichnet dort keinen Vergleich mit 2026.“ (item-meanings.ts Z. 100–103; ähnlich policy-catalogue.ts Z. 58–60)",
+      "problem": "Die Frage wird 2026 unverändert mit „als sie heute bestraft werden“ gestellt. Eine heutige Person vergleicht mit der Gegenwart. Die Ergebnisansicht schreibt ihrer Auswahl den Bezug 2010/2011 zu; „wesentlich härter“ ersetzt das Original „viel härter“.",
+      "evidence": [
+        "outputs/loop/breadth-data-001/sources/ess5-de-questionnaire.pdf S. 27, D33 und Einleitung „Aussagen über Deutschland heute“",
+        "web/src/app/policy-draft/item-meanings.ts Z. 100–103",
+        "web/src/app/policy-draft/policy-catalogue.ts Z. 58–60 (außerhalb Manifest gelesen)",
+        "web/src/app/policy-draft/policy-draft.html Z. 377–378"
+      ],
+      "impact": "Eigene Antwort falsch beschrieben; Vergleich mit ESS5 stellt verschiedene Bezugspunkte ohne Hinweis nebeneinander.",
+      "severity": "mittel",
+      "severityReason": "Eine Angabe, aber eine sachlich falsche Aussage über die Antwort der Nutzer.",
+      "correction": "Erklärung trennen: eigene Antwort bezieht „heute“ auf die Gegenwart; historische Befragte auf 2010/2011; verschiedene Bezugspunkte benennen. Alternativ D33 nur als historische Referenz führen (Entscheidung Steven).",
+      "recheck": "Texte lesen; Ergebnisansicht nach Antwort „Lehne stark ab“ im Browser prüfen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F04",
+      "claim": "Acht Themenrubriken: Wirtschaft und Verteilung, Sozialstaat, Demokratie und politische Autorität, Bürgerrechte und Sicherheit, Europäische Integration, Klima und Energie, Migration, Gleichstellungs- und Familienpolitik (policy-catalogue.ts Z. 6–15).",
+      "problem": "„Wirtschaft und Verteilung“ enthält nur Gerechtigkeitsprinzipien und Umverteilung; „Demokratie und politische Autorität“ keine Autoritätsfrage; „Bürgerrechte und Sicherheit“ keine Bürgerrechtsfrage, sondern Polizei- und Rechtsgehorsam sowie Strafverschärfung; die ESS11-Gleichstellungsfragen messen Zustimmung zu Pflicht- und Sanktionsmaßnahmen, nicht zum Ziel Gleichstellung.",
+      "evidence": [
+        "web/src/app/policy-draft/policy-catalogue.ts Z. 6–15",
+        "web/src/app/policy-draft/policy-draft.html Z. 66, 362–369",
+        "web/src/app/pages/methodology/methodology.html Z. 42–45",
+        "web/src/app/pages/project/project.html Z. 41–45",
+        "web/src/app/pages/home/home.html Z. 76–78",
+        "Fragenzuordnung: data/politikprofil-v2.fragen.entwurf.json primaryTheme je Angabe"
+      ],
+      "impact": "Ergebnisse unter zu breiten Titeln laden Fehldeutungen ein, etwa wenig Pflichtgefühl gegenüber der Polizei als Bürgerrechtsposition oder Ablehnung einer Quote als Ablehnung von Gleichstellung.",
+      "severity": "mittel",
+      "severityReason": "Betrifft die Deutungsrahmen aller Ergebnisse von drei bis vier Rubriken; durch Rubrikhinweis und Bericht-02-Lücken teilweise gemildert.",
+      "correction": "Beschreibende Untertitel nach tatsächlichem Inhalt (z. B. „Rechtsbefolgung, Polizei und Strafen“, „Demokratieverständnis und Responsivität“, „Verteilungsgerechtigkeit und Umverteilung“, „Gesetzliche Gleichstellungsmaßnahmen und Familienleistungen“) und je Rubrik „Erfasst/Nicht erfasst“; Auftragsbereiche als geplante Abdeckung behalten. Entscheidung Steven.",
+      "recheck": "Rubriktitel gegen Fragenliste je Rubrik lesen; Ergebnisansicht im Browser.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F05",
+      "claim": "Erklärtexte beschreiben die Auswahl je Angabe (item-meanings.ts).",
+      "problem": "13 Texte lauten unabhängig von der gewählten Kategorie „beschreibt die Zustimmung“ oder „beschreibt die Unterstützung“; im ESS9-Block hat nur die Gleichverteilungsaussage diese Form, die übrigen drei die neutrale Form „Zustimmung oder Ablehnung“.",
+      "evidence": [
+        "web/src/app/policy-draft/item-meanings.ts Z. 6, 22, 106, 110, 114, 130, 134, 138, 158, 162, 166, 170, 174 (gegen Z. 10, 14, 18)",
+        "web/src/app/policy-draft/policy-draft.html Z. 377–378"
+      ],
+      "impact": "Eigene Antwort bei 13 von 43 Angaben für eine Antwortrichtung falsch beschrieben; sprachliche Asymmetrie im Gerechtigkeitsblock.",
+      "severity": "mittel",
+      "severityReason": "Kernausgabe der Ergebnisansicht; betrifft viele Angaben, aber ohne Rechenfolge.",
+      "correction": "Einheitlich richtungsneutrale Formulierung („wie stark … befürwortet oder abgelehnt wird“); sofrdst an sofrwrk/sofrpr/sofrprv angleichen.",
+      "recheck": "grep -nE \"beschreibt die (Zustimmung|Unterstützung)\" item-meanings.ts liefert 0 Treffer.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F06",
+      "claim": "Erklärtexte der ESS10-Demokratiefragen nennen die Wichtigkeit des jeweiligen Prinzips.",
+      "problem": "Fünf Texte (medcrgv, votedir, cttresa, gptpelc, wpestop) lassen „für die Demokratie im Allgemeinen“ weg, obwohl das Original dies trägt und die CAWI-Fassung es unterstreicht.",
+      "evidence": [
+        "web/src/app/policy-draft/item-meanings.ts Z. 54, 62, 66, 70, 86",
+        "ess10-de-questionnaire.pdf PAPI S. 10 (Stamm), CAWI S. 136–148"
+      ],
+      "impact": "Niedrige Werte können als Geringschätzung des Inhalts statt als „kein Demokratiemerkmal“ gelesen werden.",
+      "severity": "niedrig",
+      "severityReason": "Rubrik und Frageanzeige liefern den Kontext teilweise mit.",
+      "correction": "Bei allen zwölf B-Angaben „für die Demokratie im Allgemeinen“ ergänzen.",
+      "recheck": "Alle democracy_norms-Texte enthalten „Demokratie im Allgemeinen“ oder „Demokratieprinzip“.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F07",
+      "claim": "Einzelne Erklärtexte tragen Vorbehalte, etwa „Daraus folgt keine allgemeine Eigenschaft der Person.“ (item-meanings.ts Z. 86).",
+      "problem": "Allgemeine Vorbehalte stehen an einzelnen Angaben (wpestop, gincdif, imdfetn, fairelc, grdfinc) und fehlen bei vergleichbaren.",
+      "evidence": [
+        "web/src/app/policy-draft/item-meanings.ts Z. 22, 46, 78, 86, 146"
+      ],
+      "impact": "Vermutung: Einzelvorbehalte wirken wie Warnhinweise an bestimmten Antworten.",
+      "severity": "niedrig",
+      "severityReason": "Ungleichheit belegt, Wirkung nur vermutet.",
+      "correction": "Allgemeinen Satz einmal für alle Angaben zeigen; Einzelvorbehalte nach schriftlicher Regel vergeben.",
+      "recheck": "Liste der Vorbehaltssätze gegen eine dokumentierte Regel prüfen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F08",
+      "claim": "„Der Gruppenbegriff bleibt als historische Originalformulierung sichtbar.“ (item-meanings.ts Z. 142); Titel „Zulassung der im Original genannten gleichen/anderen Gruppe“.",
+      "problem": "Der Begriff „Volksgruppe oder ethnische Gruppe“ stammt aus der Fassung von 2021 und ist laut API-Metadaten die Übersetzung von „race or ethnic group“; das wird nicht erklärt. Die Titel nennen die Gruppe nicht, die dritte Zulassungsfrage dagegen schon.",
+      "evidence": [
+        "web/src/app/policy-draft/item-meanings.ts Z. 140–147",
+        "ess10-de-questionnaire.pdf PAPI S. 7, CAWI S. 94–95",
+        "data/politikprofil-v2.fragen.entwurf.json Z. 9050, 9251 (apiQuestionEn)"
+      ],
+      "impact": "Belasteter Begriff ohne Einordnung; zwei Ergebnistitel ohne Quelle unverständlich; Vermutung: unterschiedliche Begriffsdeutung durch Befragte (etwa Spätaussiedler).",
+      "severity": "mittel",
+      "severityReason": "Sensibler Gruppenbegriff in einer Migrationsfrage, sichtbar in Frage und Ergebnis.",
+      "correction": "Titel mit Originalbegriff und Kennzeichnung; Einordnung als deutsche ESS-Übersetzung von „race or ethnic group“, unverändert zur Vergleichbarkeit übernommen, nicht als Projektbegriff; „historisch“ durch „von 2021“ ersetzen.",
+      "recheck": "Texte lesen; Verständnistest mit Menschen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F09",
+      "claim": "Website nennt als unvollständig erschlossen: Marktordnung, digitale Überwachung, Gesundheit (und Pflege), Außenpolitik (methodology.html Z. 46–47; project.html Z. 246–248).",
+      "problem": "Weitere dokumentierte Lücken fehlen auf der Website: Asyl-/Grenzmaßnahmen, gemeinsame EU-Politik, vielfältige Lebensformen, reproduktive Selbstbestimmung, Föderalismus. Für ESS11 B34–B36 und B38–B39, die direkt neben ausgewählten Fragen stehen, fehlt in den Manifestdateien eine Ausschlussbegründung.",
+      "evidence": [
+        "web/src/app/pages/methodology/methodology.html Z. 46–47",
+        "web/src/app/pages/project/project.html Z. 246–248",
+        "docs/empirie-plan-v2.entwurf.md Z. 9, 28, 36",
+        "docs/abdeckung-v2.md Z. 26",
+        "reports/phasen/02-politikprofil-v2-methoden-und-ergebnisse.md Z. 771, 2750, 3076",
+        "ess11-de-questionnaire.pdf S. 13 (B34–B36), S. 14 (B38–B39)"
+      ],
+      "impact": "Breite im gesellschaftspolitischen und migrationspolitischen Bereich wird überschätzt; ungleiche Offenlegung von Lücken; Rubrik „politische Autorität“ ohne Frage trotz verfügbarer Originalfragen.",
+      "severity": "mittel",
+      "severityReason": "Offenlegung von Auswahlfolgen ist Teil der Fairnessprüfung; keine Aussage über eine begünstigte Richtung möglich.",
+      "correction": "Lücken je Rubrik aus Bericht 02 auf die Methodikseite übernehmen; Ausschluss von B34–B36 und B38–B39 im Empirieplan begründen oder Aufnahme mit Steven klären.",
+      "recheck": "Lückenliste der Website gegen Bericht 02 und abdeckung-v2.md abgleichen; grep B38/B34 im Empirieplan > 0.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F10",
+      "claim": "Ergebnisansicht zeigt „Gewählte Originalkategorie“, Erklärtext und historische Anteile (policy-draft.html Z. 376–408); Empirieplan Z. 64 verlangt, die eigene Antwort mit ihrer konkreten Bedeutung zu beschreiben.",
+      "problem": "Die eigene Kategorie ist in der historischen Verteilung und im Gruppenvergleich nicht markiert; es fehlt eine Erklärung der Skalenbedeutung und eine Einordnung der gewählten Kategorie.",
+      "evidence": [
+        "web/src/app/policy-draft/policy-draft.html Z. 376–378, 393–408, 450–467",
+        "docs/empirie-plan-v2.entwurf.md Z. 64",
+        "web/src/app/pages/home/home.html Z. 39"
+      ],
+      "impact": "Geplante Erklärungen fehlen weitgehend; Nutzer ziehen Vergleiche selbst und können Nenner missverstehen.",
+      "severity": "mittel",
+      "severityReason": "Betrifft die zentrale Ergebnisfunktion, aber ohne falsche Zahl.",
+      "correction": "Eigene Kategorie in Verteilung und Gruppenvergleich textlich kennzeichnen; generierter Satz mit dem Anteil aus dem Export; je Antworttyp ein richtungssymmetrischer Satz zur Skala.",
+      "recheck": "Browserprüfung Desktop und Smartphone; Zahl im Satz gegen Export.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F11",
+      "claim": "„Fragen und Vergleichsdaten stammen aus dem European Social Survey, Dimensionen und Auswertung sind ein eigenes Modell dieses Projekts.“ (policy-draft.html Z. 172–173)",
+      "problem": "Widerspricht „Sie berechnet keine gemeinsamen Dimensionen“ (Z. 182–183). Möglicherweise LIFE-93-Pflichtwortlaut nach Handbuch 7.7 (nicht geprüft).",
+      "evidence": [
+        "web/src/app/policy-draft/policy-draft.html Z. 172–175, 182–183",
+        "docs/handbuch.md Kapitel 7.7"
+      ],
+      "impact": "Leser können annehmen, es gebe doch ein Dimensionsmodell.",
+      "severity": "niedrig",
+      "severityReason": "Durch den folgenden Absatz richtiggestellt.",
+      "correction": "Steven entscheidet über Anpassung des Pflichttexts, etwa „Auswahl, Rubriken und Auswertung sind ein eigenes Modell dieses Projekts“.",
+      "recheck": "Text lesen; mit LIFE-93-Wortlaut vergleichen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F12",
+      "claim": "Die Frageansicht zeigt „Originalfragen“ mit Originalkontext.",
+      "problem": "Nicht gekennzeichnete Anzeigezusammensetzungen: „erstens“ bei E7/E8; Stamm „Wie vielen von ihnen …“ bei A55/A56 (weder PAPI noch CAWI); „auf dieser Liste“ bei B25 (CAWI ohne); Übersicht zeigt A54 ohne Gruppenangabe.",
+      "evidence": [
+        "data/politikprofil-v2.fragen.entwurf.json Z. 1932, 2172, 9163, 9367, 6343",
+        "web/src/app/policy-draft/policy-catalogue.ts Z. 81–85",
+        "web/src/app/policy-draft/policy-draft.html Z. 156",
+        "ess10-de-questionnaire.pdf PAPI S. 7, CAWI S. 95–96, 162; ess8-de-questionnaire.pdf S. 36"
+      ],
+      "impact": "Keine Inhaltsänderung, aber unbezeichnete Anpassungen; A54 in der Übersicht unverständlich.",
+      "severity": "niedrig",
+      "severityReason": "Wortlaut der Kernfrage unverändert.",
+      "correction": "Anpassungen kennzeichnen oder CAWI-Formen nutzen; „erstens“ nur bei E6; Übersicht für A54 mit Gruppenangabe.",
+      "recheck": "Anzeige im Browser gegen PAPI/CAWI-Seiten.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F13",
+      "claim": "Gruppenauswahl zeigt deutsche Formlabels der Parteien.",
+      "problem": "Der Rest heißt englisch „Other“, das Original druckt „Andere Partei EINTRAGEN“.",
+      "evidence": [
+        "web/src/app/policy-draft/reviewed-historical-groups.ts Z. 1078, 2489, 3196 (außerhalb Manifest, grep)",
+        "reports/phasen/03-politikprofil-v21-historische-gruppen.md Z. 543, 1335, 1716",
+        "ess5-de-questionnaire.pdf S. 8; ess8-de-questionnaire.pdf S. 9; ess9-de-questionnaire.pdf S. 9"
+      ],
+      "impact": "Uneinheitliche Sprache; durch Erklärtext Z. 260–265 gemildert.",
+      "severity": "niedrig",
+      "severityReason": "Rein sprachlich.",
+      "correction": "„Andere Partei (heterogener Rest)“ anzeigen; API-Label in den Quellendetails.",
+      "recheck": "Auswahlliste im Browser.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F14",
+      "claim": "Für alle Gruppen gilt dieselbe 100/5-Darstellungsregel (gruppenvertrag displayPolicy; policy-draft.html Z. 498–503).",
+      "problem": "Die Regel erzeugt ungleiche Sichtbarkeit (ESS5: CDU/CSU sechs von sechs Paaren, FDP zwei, Die Republikaner/NPD/Other keines) und greift bei 0–10-Skalen auch bei großen Gruppen; welche Parteien zu welchem Thema erscheinen, hängt an der Studie.",
+      "evidence": [
+        "reports/phasen/03-politikprofil-v21-historische-gruppen.md Z. 149–573",
+        "data/gruppenvertrag.v2.1.entwurf.json displayPolicy"
+      ],
+      "impact": "Vermutung: fehlende Vergleiche werden als Aussage über eine Partei gedeutet.",
+      "severity": "niedrig",
+      "severityReason": "Regel ist gleich und offengelegt; Fehlen wird bereits erklärt.",
+      "correction": "Je Studie Übersicht der Angaben mit Gruppenvergleich und Satz zur Ursache der Lücken; Regelwirkung bei 11-stufigen Skalen in V1 prüfen.",
+      "recheck": "Übersicht gegen Bericht 03.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F15",
+      "claim": "ESS als „repräsentative wissenschaftliche Befragung“ (policy-draft.html Z. 21; methodology.html Z. 58–59; project.html Z. 75–76; home.html Z. 71).",
+      "problem": "Handbuch 7.3 schreibt die Formel vor; der Katalog vermerkt, dass die erreichte Abdeckung nicht geprüft ist, ESS8 erfasste München nicht.",
+      "evidence": [
+        "docs/handbuch.md Kapitel 7.3",
+        "data/politikprofil-v2.fragen.entwurf.json studies[].populationCoverageLimit"
+      ],
+      "impact": "Gütebehauptung ohne eigene Prüfung.",
+      "severity": "niedrig",
+      "severityReason": "Allgemeine Beschreibung des ESS, vom Handbuch vorgegeben.",
+      "correction": "Steven entscheidet über prüfbare Formulierung, etwa „Befragung auf Grundlage von Zufallsstichproben“.",
+      "recheck": "Texte lesen.",
+      "certainty": "OFFENE_FRAGE",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F16",
+      "claim": "„Zustimmung, Wichtigkeit und nominale Auswahl beschreiben unterschiedliche Gegenstände.“ (methodology.html Z. 35–37)",
+      "problem": "Zuständigkeit, Pflichtgefühl, Befürwortung von Maßnahmen und Zulassungsumfang fehlen in der Aufzählung; der Empirieplan nennt mindestens Zuständigkeit.",
+      "evidence": [
+        "web/src/app/pages/methodology/methodology.html Z. 35–37",
+        "docs/empirie-plan-v2.entwurf.md Z. 7"
+      ],
+      "impact": "Unvollständige Beschreibung der Antworttypen.",
+      "severity": "niedrig",
+      "severityReason": "Erklärtexte der Angaben unterscheiden die Typen.",
+      "correction": "Aufzählung vervollständigen.",
+      "recheck": "Text lesen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "V2-F17",
+      "claim": "Website behandelt den Zeitbezug nur bei D33 ausdrücklich.",
+      "problem": "Weitere Angaben hängen vom damaligen Politik- oder Integrationsstand ab (euftf „schon jetzt“, D30–D32, E6–E8, E15, E19). Konkrete Rechtsänderungen seit der Erhebung wurden nicht an Quellen geprüft.",
+      "evidence": [
+        "ess11-de-questionnaire.pdf S. 14 (B37)",
+        "ess8-de-questionnaire.pdf S. 33 (D30–D32), S. 36–37"
+      ],
+      "impact": "Vermutung: verschobene Bezugspunkte beim Vergleich mit historischen Anteilen.",
+      "severity": "niedrig",
+      "severityReason": "Vermutete Wirkung, keine geprüfte Rechtsänderung.",
+      "correction": "Liste status-quo-abhängiger Angaben mit allgemeinem Hinweis; Rechtsänderungen nur mit Quelle nennen.",
+      "recheck": "Liste gegen Katalog prüfen.",
+      "certainty": "VERMUTUNG",
+      "blocksScope": false,
+      "state": "OFFEN"
+    }
+  ],
+  "limits": [
+    "Manifest-Prüfsumme vom Prüfer selbst gebildet; keine außerhalb des Pakets gesicherte Prüfsumme vorhanden.",
+    "PDF-Dateien liegen im von Git ausgeschlossenen outputs/; Bindung nur über die im Katalog notierten Hashes, kein Abgleich mit den aktuellen Dateien auf dem ESS-Server.",
+    "Keine Zahlenprüfung (V1), keine Rohdaten, keine Browserprüfung der laufenden Website; Aussagen zur Anzeige beruhen auf Templates und Quelltext.",
+    "Nur die genannten deutschen Originale geprüft; englische Quellfragebögen nicht geöffnet; englische Begriffe nur aus den im Katalog gespeicherten API-Metadaten.",
+    "Aussagen über Verständnis und Wirkung bei Nutzern sind Vermutungen ohne Tests mit Menschen.",
+    "Rechts- und Politikänderungen seit den Erhebungen nicht an Quellen geprüft.",
+    "Ein einzelner KI-Prüfer; dieses Urteil ist keine Begutachtung durch Fachleute und kein Neutralitätsnachweis.",
+    "Während der Prüfung kamen zwei Koordinator-Commits hinzu (75dbae4, 92516a1); die Manifestdateien blieben laut git diff gegen e9898fb unverändert."
+  ]
+}
