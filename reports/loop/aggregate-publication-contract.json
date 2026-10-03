@@ -1,0 +1,43 @@
+{
+  "schema": "life93-aggregate-publication-1",
+  "status": "PREPARED_BEFORE_REAL_OUTPUT; each concrete export still checked",
+  "source": {
+    "creator": "European Social Survey ERIC; ESS Data Archive",
+    "dataset": "ESS11 integrated edition4.2",
+    "doi": "https://doi.org/10.21338/ess11e04_2",
+    "sha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+    "license": "CC BY-NC-SA4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "disclaimer": "https://www.europeansocialsurvey.org/contact/disclaimer"
+  },
+  "allowed": [
+    "fixed summary counts and missing weight mass",
+    "nine-item EFA/CFA parameters and their model-design intervals",
+    "whole-model diagnostics and deterministic selection failures",
+    "pre-fixed score/norm histograms and authorized group aggregates with precision gates",
+    "input/code/version pins and actual execution errors"
+  ],
+  "excluded": [
+    "microdata rows and response vectors",
+    "person identifiers and private answers",
+    "PSU/stratum codes and assignment lists",
+    "casewise contributions, masks, scores or fitted objects",
+    "private receipt hashes/outputlogs/RDS and credentials"
+  ],
+  "sourceTextLicense": "Original German questions/answer cards remain separatelyCC BY-SA4.0; no blanket repository license",
+  "licenseHandling": "Attach ESS citation/license/change description to each ESS-derived numerical artifact. Project use is documented as noncommercial research; commercial/product release scope is still separately pending. Do not assert all mathematical conclusions are copyright adaptations or ESS-endorsed.",
+  "changes": "Own field selection, original-pole transformations, complete-case domains, arm weighting and fixed statistical analyses; name each concrete operation in its export",
+  "requiredBeforeCopy": [
+    "positive stage gate and executable reviewed code bindings",
+    "exact whitelist and no excluded keys/arrays",
+    "nonfinite/fixed failure codes checked, no silent missing success",
+    "concrete ESS attribution/license/change note",
+    "public numerical artifact hash and private execution bindings recorded"
+  ],
+  "webLegalAccess": {
+    "atUtc": "2026-10-03T10:53:19.678786+00:00",
+    "ccLegalcode": "Webopen successful sections2–4",
+    "essDisclaimer": "Current coordinator webopen502; existing same-day independent reviewer/source GET200 evidence retained; not reclassified as current coordinator success"
+  },
+  "limits": "Artifact-level project publication review only; no general legal, model, human or release approval."
+}

@@ -201,15 +201,47 @@ def private_write(path: Path, payload: str) -> None:
         stream.write(payload)
 
 
+def private_folder_before_read() -> Path:
+    """Validate the private output boundary before any real input is opened."""
+    local = ROOT / "data/local"
+    require(local.is_dir() and local.resolve() == local and
+            local.stat().st_mode & 0o077 == 0, "PRIVATE_PARENT")
+    folder = local / "empirical-v1"
+    require(not folder.is_symlink(), "PRIVATE_FOLDER")
+    if folder.exists():
+        require(folder.is_dir() and folder.resolve() == folder and
+                folder.stat().st_mode & 0o077 == 0, "PRIVATE_FOLDER")
+    folder.mkdir(mode=0o700, exist_ok=True)
+    return folder
+
+
+def runtime_input_receipt(folder: Path) -> None:
+    """Private provenance; not an independent acceptance or public export."""
+    sha = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
+    payload = {"schema": "r-runtime-input-v1", "sourceSha256": SHA,
+               "gateSha256": sha(ROOT / "reports/loop/gates/pre-empirical.json"),
+               "empiricalAccessSha256": sha(Path(__file__)),
+               "assignment": {"path": "data/local/empirical-v1/assignment.json",
+                              "sha256": sha(folder / "assignment.json")},
+               "developmentInput": {"path": "data/local/empirical-v1/A.csv",
+                                    "sha256": sha(folder / "A.csv")}}
+    private_write(folder / "runtime-input-receipt.json", json.dumps(payload, indent=2) + "\n")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("command", choices=("prepare", "A"))
     args = parser.parse_args()
     try:
         gate(ROOT)
+        folder = private_folder_before_read()
+        target = folder / ("assignment.json" if args.command == "prepare" else "A.csv")
+        require(not target.exists() and not target.is_symlink(), "PRIVATE_PATH")
+        if args.command == "A":
+            require(not (folder / "runtime-input-receipt.json").exists() and
+                    not (folder / "runtime-input-receipt.json").is_symlink(), "PRIVATE_PATH")
         source = ROOT / "data/raw/ess11-ed4.2/ESS11e04_2.csv"
         frozen = source.read_bytes()
-        folder = ROOT / "data/local/empirical-v1"
         if args.command == "prepare":
             split = assignment(frozen)
             private_write(folder / "assignment.json", json.dumps(split, indent=2) + "\n")
@@ -222,6 +254,7 @@ def main() -> None:
             writer.writerow(header)
             writer.writerows(rows)
             private_write(folder / "A.csv", buffer.getvalue())
+            runtime_input_receipt(folder)
         print("Private stage saved. No rows, keys or answer values emitted.")
     except AccessError as error:
         print("EMPIRICAL_ACCESS_" + str(error), file=sys.stderr)

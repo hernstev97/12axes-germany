@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T10:48:38.747566+00:00",
+  "updatedAtUtc": "2026-10-03T10:59:42.529904+00:00",
   "status": "RUNNING",
-  "phase": "Phase0: Quellen-/Metadatenabschluss, ausführbarer Analysevertrag vor Übergangsprüfung; Website-Dokumentation begrenzt geprüft",
+  "phase": "Phase0: ausführbare Pre-A-Prüffassung eingefroren; zwei frische Übergangsprüfungen als nächster Schritt",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -28,7 +28,10 @@
     "ESS-SPLIT source author completed; fixed floor/ceil conditional split proposal, not plan approval",
     "Nine-item official ESS4.2 metadata/source binding complete; actual answer codes still unopened",
     "Ordinal fixed-I observed-Jacobian support completed with54/54 synthetic checks; empirical methods transition review pending",
-    "WEBSITE-METHODS-001 bounded copy review PASS; pnpm check and two pages/five widths axe/nooverflow PASS; actual200percent/focus-visible unverified"
+    "WEBSITE-METHODS-001 bounded copy review PASS; pnpm check and two pages/five widths axe/nooverflow PASS; actual200percent/focus-visible unverified",
+    "Development runner82/82 synthetic assertions with deterministic M2/M3/suppression branches",
+    "Generic pinned runtime fresh coordinator reproduction54/54; mock gate tests13/13, true private production remains unopened",
+    "Joint-group author43/43 synthetic implementation assertions; separate application review still required"
   ],
   "openTasks": [
     "Complete development/runtime software then obtain two pre-A transition judgments for fixed nine-item plan",
@@ -183,38 +186,7 @@
     "SW-ENV-004"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
-  "activeAgents": [
-    {
-      "name": "/root/ordinal_support_author",
-      "task": "new synthetic development runner only",
-      "allowedWrites": [
-        "pipeline/ordinal/develop.R",
-        "pipeline/ordinal/develop-config.R",
-        "reports/loop/authors/ESS-DEVELOPMENT-runner-proposal.md",
-        "outputs/loop/resume-development-author/"
-      ]
-    },
-    {
-      "name": "/root/joint_groups_author",
-      "task": "full joint ordinal groups synthetic implementation only",
-      "allowedWrites": [
-        "pipeline/ordinal/groups.R",
-        "pipeline/ordinal/test-groups.R",
-        "reports/loop/authors/ESS-JOINT-GROUPS-proposal.md",
-        "outputs/loop/resume-joint-groups/"
-      ]
-    },
-    {
-      "name": "/root/runtime_author",
-      "task": "new pinned runtime/reproduction wrapper; no real input",
-      "allowedWrites": [
-        "pipeline/r_runtime.py",
-        "pipeline/ordinal/reproduce-support.R",
-        "reports/loop/authors/ESS-RUNTIME-proposal.md",
-        "outputs/loop/resume-runtime-author/"
-      ]
-    }
-  ],
+  "activeAgents": [],
   "workPackages": [
     {
       "id": "LOOP-000",
@@ -428,15 +400,15 @@
       "reviewStatus": "not reviewed; no empirical access"
     }
   ],
-  "nextConcreteStep": "Entwicklungsrunner und frische Runtime-Reproduktion fertigstellen; kompakte Fassung an zwei frische Übergangsprüfer; danach Tags vor A. B/C und politische Felder geschlossen.",
+  "nextConcreteStep": "Two fresh independent pre-A transition reviews on PRE-EMPIRICAL-001/v1; correct bounded findings before any public tag/A import",
   "checkpoint": {
     "lastLocalCommit": "git:HEAD",
-    "lastVerifiedRemoteCommit": "3595c0a2e45c8ffbf4d047f7341e8761f5aa0d6d",
-    "lastVerifiedPushAtUtc": "2026-10-03T10:32:36.794553+00:00",
+    "lastVerifiedRemoteCommit": "7099ccb6a5786c335a571bc89ace09a88150bd00",
+    "lastVerifiedPushAtUtc": "2026-10-03T10:50:02.855745+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-028.json",
+    "record": "reports/loop/push-029.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
@@ -600,5 +572,6 @@
     "F-P04": "excluded climate domain remains blocked; not nine core hypothesis",
     "SW-ENV-004": "historical installer/full-locality claim remains false; no new installer",
     "META-SPLIT-001": "new conditional23strata/reserveC proposal awaits pre-empirical review"
-  }
+  },
+  "pendingTransitionReviewers": ["/root/pre_empirical_methods", "/root/pre_empirical_sources"]
 }

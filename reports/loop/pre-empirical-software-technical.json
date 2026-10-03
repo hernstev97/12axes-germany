@@ -1,0 +1,40 @@
+{
+  "atUtc": "2026-10-03T10:59:42.529904+00:00",
+  "scope": "Executable pre-A plan/code package before methodological transition judgments",
+  "accessTests": {
+    "tests": 9,
+    "passed": 9,
+    "actualEss": false
+  },
+  "coordinatorSupport": {
+    "path": "outputs/loop/r-runtime/root-support-reproduction-001/receipt.json",
+    "exitCode": 0,
+    "checks": 54,
+    "passed": 54,
+    "warnings": []
+  },
+  "developmentAuthor": {
+    "checks": 82,
+    "passed": 82,
+    "path": "outputs/loop/resume-development-author/test-003-checks.json"
+  },
+  "runtimeAuthor": {
+    "mockTests": 13,
+    "gateIsMock": true,
+    "realPrivateProduction": false
+  },
+  "jointAuthor": {
+    "checks": 43,
+    "passed": 43,
+    "applicationReview": "pending separate gate"
+  },
+  "inspectionErrors": [
+    "Coordinator extractor initially assumed fatal key present and checks a list; schema corrected, no numerical-run failure"
+  ],
+  "scientificAcceptance": false,
+  "pnpmCheck": {
+    "exitCode": 0,
+    "log": "outputs/loop/resume-checkpoint-030.log",
+    "checkedAtUtc": "2026-10-03T11:00:31.925239+00:00"
+  }
+}

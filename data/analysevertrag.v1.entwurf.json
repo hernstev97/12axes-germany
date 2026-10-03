@@ -136,7 +136,8 @@
     "M1": "diagnostic only, insufficient number of dimensions",
     "efa": "every item strongest absolute loading on expected factor and positive after content orientation; no unresolved tie/rotation contradiction",
     "cross_loadings_or_correlated_residual_repairs": false,
-    "B_item_changes": false
+    "B_item_changes": false,
+    "B": "fixed chosen CFA plus its fixed-factor-count EFA mapping/rotations; no competing-model reselection; only previously frozen scores may remain or be suppressed"
   },
   "criteria": {
     "scope": "Own preregistered requirements, not universal validity cutoffs",

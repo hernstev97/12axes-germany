@@ -63,7 +63,7 @@ Je veröffentlichter Skala:
 
 Intervallkonvention vor Dateneinsicht: RMS verwendet ausdrücklich die einseitige Normalgrenze mit`qnorm(.95)`. Alle übrigen genannten95%-Modell-/Scoregrenzen sind Grenzen zweiseitiger Normal-Delta/Taylorintervalle mit`qnorm(.975)`, beziehungsweise`qnorm(1-.05/(2*m))`für die jeweils genannten vollständigen Bonferronifamilien. Keine nachträgliche Wahl einer günstigeren einseitigen Konvention. Diese asymptotischen Bereiche bilden keine Rotations-, Auswahl-, Modus-, Nichtantwort- oder Gewichtsschätzunsicherheit ab.
 
-B prüft dieselben strukturellen und Scorekriterien einmal. Vorab ausgewählte Scores dürfen einzeln entfallen, wenn ihre Kriterien scheitern. Mindestens zwei müssen weiter tragen; globale Modellverletzung sperrt alle daraus abgeleiteten Profilbehauptungen. Keine Items werden nach B gelöscht oder neu gepolt. Weitere Kennwerte werden als Befunde ausgewiesen, nicht zur Rettung einer zuvor verfehlten Regel benutzt.
+B prüft einmal das in A festgeschriebene gemeinsame CFA-Modell und dieselben strukturellen und Scorekriterien. Seine vorab gewählte Faktorzahl erhält die festgelegte EFA-Zuordnungs-/Rotationskontrolle; keine neue Konkurrenzmodellwahl in B. Vorab ausgewählte Scores dürfen einzeln entfallen, wenn ihre Kriterien scheitern. Mindestens zwei müssen weiter tragen; globale Modellverletzung sperrt alle daraus abgeleiteten Profilbehauptungen. Keine Items werden nach B gelöscht oder neu gepolt. Weitere Kennwerte werden als Befunde ausgewiesen, nicht zur Rettung einer zuvor verfehlten Regel benutzt.
 
 ## Anwendung im ganzen deutschen Datensatz — P08/P12
 

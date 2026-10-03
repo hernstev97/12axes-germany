@@ -4,8 +4,13 @@ import csv
 import hashlib
 import io
 import json
+import contextlib
 from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
+
+from pipeline import empirical_access as access
 
 from pipeline.empirical_access import (
     AccessError, ITEM_IDS, METADATA, assignment, development_frame,
@@ -89,6 +94,54 @@ class DevelopmentAccess(unittest.TestCase):
         split["units"][0]["arm"] = "A"
         with self.assertRaisesRegex(AccessError, "SPLIT_REPRODUCTION"):
             development_frame(frozen, split, self.contract, sha)
+
+
+class PrivateCliBoundary(unittest.TestCase):
+    def test_absent_gate_stops_before_any_input_read(self):
+        with patch.object(access, "gate", side_effect=AccessError("GATE_DECISION")), \
+             patch.object(Path, "read_bytes") as read, \
+             patch("sys.argv", ["empirical_access.py", "prepare"]), \
+             contextlib.redirect_stderr(io.StringIO()), \
+             self.assertRaises(SystemExit) as caught:
+            access.main()
+        self.assertEqual(caught.exception.code, 2)
+        read.assert_not_called()
+
+    def test_bad_private_parent_stops_before_source_open(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            local = root / "data/local"
+            local.mkdir(parents=True)
+            local.chmod(0o755)
+            with patch.object(access, "ROOT", root), patch.object(access, "gate", return_value={}), \
+                 patch.object(Path, "read_bytes") as read, \
+                 patch("sys.argv", ["empirical_access.py", "prepare"]), \
+                 contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                access.main()
+            read.assert_not_called()
+            self.assertFalse((local / "empirical-v1").exists())
+
+    def test_output_alias_and_overwrite_are_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            local = root / "data/local"
+            local.mkdir(parents=True, mode=0o700)
+            local.chmod(0o700)
+            outside = root / "unrelated"
+            outside.mkdir()
+            (local / "empirical-v1").symlink_to(outside, target_is_directory=True)
+            with patch.object(access, "ROOT", root), self.assertRaisesRegex(AccessError, "PRIVATE_FOLDER"):
+                access.private_folder_before_read()
+            self.assertEqual(list(outside.iterdir()), [])
+            (local / "empirical-v1").unlink()  # Only the test's own disposable alias.
+            with patch.object(access, "ROOT", root):
+                private = access.private_folder_before_read()
+                target = private / "synthetic.json"
+                access.private_write(target, "synthetic\n")
+                self.assertEqual(target.stat().st_mode & 0o777, 0o600)
+                with self.assertRaisesRegex(AccessError, "PRIVATE_PATH"):
+                    access.private_write(target, "replacement\n")
+                self.assertEqual(target.read_text(), "synthetic\n")
 
 
 if __name__ == "__main__":

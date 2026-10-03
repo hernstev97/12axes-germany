@@ -1,0 +1,192 @@
+{
+  "package": "PRE-EMPIRICAL-001",
+  "version": 1,
+  "frozenAtUtc": "2026-10-03T10:59:42.529904+00:00",
+  "baseCommit": "7099ccb6a5786c335a571bc89ace09a88150bd00",
+  "payloadCommit": "resolve via git commit containing this manifest",
+  "scope": "Pre-A fixed nine-item analysis contract, sources and executable private development; no current transition judgments provided",
+  "files": [
+    {
+      "path": "docs/empirie-plan-v1.entwurf.md",
+      "sha256": "4ce33b438dfae5d8ce026a8cbaff982a0e39e8bb32751c63bbaff04a91d6828d"
+    },
+    {
+      "path": "data/analysevertrag.v1.entwurf.json",
+      "sha256": "ac626833454e77cef3a4ea91d93b3bd895dae9de2d201a2b7c33645cb3f32535"
+    },
+    {
+      "path": "data/item-core-v1.json",
+      "sha256": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e"
+    },
+    {
+      "path": "data/inventar.csv",
+      "sha256": "5d20a5a18ab19ff131be4aac2af83057feea6ef10736c5e19c828f73ed4ad3d7"
+    },
+    {
+      "path": "data/core-integrated-4.2-binding.json",
+      "sha256": "03232e0a8ea36114324b992518d2325f6630cd850529d7a32fc6cd5933216703"
+    },
+    {
+      "path": "data/group-source-contract.v1.entwurf.json",
+      "sha256": "df6b808c8191f42c450bfc4206863df24768d8b10f589598e84fc1f18e3ec929"
+    },
+    {
+      "path": "reports/phasen/00-designmetadaten-2026-10-03.json",
+      "sha256": "d906ac9e8f959c21153e87b69956193dc0f84f05cb03b410118d7d5ffffa08fa"
+    },
+    {
+      "path": "reports/loop/ITEM-FIRST-001-agreement.json",
+      "sha256": "777241be61a731095878a97b36220cd061976e68993f2ad429edf645223b74db"
+    },
+    {
+      "path": "reports/loop/authors/ESS-CONSTRUCTS-resume-proposal.md",
+      "sha256": "a5d22c7f12f93ccbce41af99e86bc7021a6c04d3f98cd05afde4bc82c3ce9cb6"
+    },
+    {
+      "path": "reports/loop/authors/ESS-INVENTORY-final-proposal.md",
+      "sha256": "328b9e8e52687d9c45a1572be92eaa7ece96ecacd8b24d9461e5becf2d26dfad"
+    },
+    {
+      "path": "reports/loop/authors/ESS-SPLIT-resume-proposal.md",
+      "sha256": "be37600c307f132a0e1480bcc525f49f9a6a5e70f1bd65c9a216e2493424e6f2"
+    },
+    {
+      "path": "reports/loop/authors/ESS-CORE-VERSION-binding.md",
+      "sha256": "a05b22e814d6556e75cbd7e6028adf2df2b9fbf5ab1b7c22540c92e125b8a553"
+    },
+    {
+      "path": "reports/loop/authors/ESS-GROUP-CONTRACT-proposal.md",
+      "sha256": "8ef6bb020f6debfbc0674e6b4480d0918a0c2651571b87399426c088acebe0c5"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    },
+    {
+      "path": "reports/loop/aggregate-publication-contract.json",
+      "sha256": "5697f76078548ee5620aeddbb8c2d6741a90b3032e9d8610e5137f0cf58486a2"
+    },
+    {
+      "path": "pipeline/empirical_access.py",
+      "sha256": "a21de31bd937e708681095a36673267b02578217effb185a01ae4c42a9019901"
+    },
+    {
+      "path": "pipeline/tests/test_empirical_access.py",
+      "sha256": "a4b3913d4b3b62be3811b6acf92a3de2d76184b24ac998ad325d1894f27241f4"
+    },
+    {
+      "path": "pipeline/r_runtime.py",
+      "sha256": "40168392ac69960d2b532f721aaaca4abc82317f8304f7145056537d8a901fce"
+    },
+    {
+      "path": "pipeline/ordinal/adapter_v2.R",
+      "sha256": "8786b8c1d60eadd2bd3faf88eb175e9df2e7afc952b7dbc26cb58ce15d7d038b"
+    },
+    {
+      "path": "pipeline/ordinal/support.R",
+      "sha256": "b1b986e05424e11208f9184c5159f3d628cc032b48a36c028aa6ef222c81ae22"
+    },
+    {
+      "path": "pipeline/ordinal/develop.R",
+      "sha256": "a263f93fde5d71dd169a011faf7319f10d5d578c79f87b0894756be762a9bac8"
+    },
+    {
+      "path": "pipeline/ordinal/develop-config.R",
+      "sha256": "0ad5794876b98b9a99cb3567e2d04112e241341d99597d7a011f9095c8a65a4a"
+    },
+    {
+      "path": "pipeline/ordinal/reproduce-support.R",
+      "sha256": "f7a11f2c2ed665e508402606686ea4d9c7e97c2ac9f9a49af555da3738e56b35"
+    },
+    {
+      "path": "pipeline/ordinal/test-support.R",
+      "sha256": "2083f0fff96f67477bb211b11aa50d1315987cb3a7b0e12bc73588adfcea96bd"
+    },
+    {
+      "path": "reports/loop/packages/PRE-EMPIRICAL-001/v1/methods-task.md",
+      "sha256": "764222c6236226167ee070ad2ca54547c45f7cec97488ef6af82c23918c4d25c"
+    },
+    {
+      "path": "reports/loop/packages/PRE-EMPIRICAL-001/v1/sources-task.md",
+      "sha256": "58697331f85b1f5f7b6dec7b22bf110592d69aff279416572cd882436066e87d"
+    }
+  ],
+  "syntheticEvidence": [
+    {
+      "path": "outputs/loop/resume-development-author/test-003-command.json",
+      "sha256": "38abc18dac49a01bf2929fe470323ea7b7cce5b98168e054185992a0601bfae3"
+    },
+    {
+      "path": "outputs/loop/resume-development-author/test-003-checks.json",
+      "sha256": "45685f69fe0c16f07ab30ebb8c17c5b3c5647b65616bca7646ad871a5ce7ba12"
+    },
+    {
+      "path": "outputs/loop/r-runtime/root-support-reproduction-001/receipt.json",
+      "sha256": "7fd49ab9e74c9aca8b0f68997eccc9c6044641b7407a9508ad1dc912af74c2ba"
+    },
+    {
+      "path": "outputs/loop/r-runtime/root-support-reproduction-001/test-fixed-v2-root-support-reproduction-001-result.json",
+      "sha256": "0f962fb71992d3cb46131eab684a44d0d8a34eae84da6a1bdb2ab023f220ef6c"
+    },
+    {
+      "path": "outputs/loop/r-runtime/runtime-author-development-final-002/receipt.json",
+      "sha256": "45b8b2b9549e823df549a1f46a4fc0ae458dbaebae2bd1c7e8fc1fe3f1f9e152"
+    },
+    {
+      "path": "outputs/loop/resume-runtime-author/runtime-evidence-001.json",
+      "sha256": "c011a2f53bf41f2eb96f2072767fd3771323bf1de09d76057b51df35452df658"
+    },
+    {
+      "path": "outputs/loop/resume-runtime-author/runtime-evidence-002.json",
+      "sha256": "311da53553f43c41cf0f366d50f3fcd2e84f5d08051293291c26ac232b8c4514"
+    },
+    {
+      "path": "outputs/loop/resume-runtime-author/test-runtime.py",
+      "sha256": "991623c3dbff8e0ed7fee899c14fe2cecc27f1218085d135484322ed85a6c1ff"
+    }
+  ],
+  "sourceCaches": [
+    {
+      "path": "outputs/loop/resume-constructs/sources/ESS11_questionnaires_DE.pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75"
+    },
+    {
+      "path": "outputs/loop/resume-constructs/sources/ESS11_questionnaires_DE.txt",
+      "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224"
+    },
+    {
+      "path": "outputs/loop/resume-constructs/sources/ESS11_showcards_DE.pdf",
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca"
+    },
+    {
+      "path": "outputs/loop/resume-constructs/sources/ESS11_appendix_a7_e04_1.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35"
+    }
+  ],
+  "laterGroupImplementation": {
+    "status": "author complete, separate review/application prerequisite; not permission to execute groups",
+    "files": [
+      {
+        "path": "pipeline/ordinal/groups.R",
+        "sha256": "de3d3e327d52634c10337dcc411826d84f16d32fa0ac77c572efdbbbdb90f3a4"
+      },
+      {
+        "path": "pipeline/ordinal/test-groups.R",
+        "sha256": "07e93d03dd6c969c07444adf502f6988a501693514c30bafe62c3cf1a2bb4649"
+      },
+      {
+        "path": "reports/loop/authors/ESS-JOINT-GROUPS-proposal.md",
+        "sha256": "d93ad0a8a069ac686a8286b1a92f30a866630b7a7854d4ef2b91b62fad3b08cd"
+      }
+    ]
+  },
+  "reproduction": {
+    "support": "python3 pipeline/r_runtime.py synthetic --stage support --label pre-empirical-methods-support-001",
+    "development": "python3 pipeline/r_runtime.py synthetic --stage development --label pre-empirical-methods-development-001",
+    "allowedReviewerWrites": "their report and outputs/loop/pre-empirical-<role>-review; generic synthetic wrapper outputs/loop/r-runtime/pre-empirical-<role>-* labels expressly allowed",
+    "privateProduction": "forbidden until separate gate/tags; no live A/assignment/raw find/read"
+  },
+  "family": "same Codex model family; shared unknown error sources remain",
+  "noResponses": true,
+  "noClaudePrerequisite": true
+}
