@@ -1,0 +1,9 @@
+# Auftrag R9: Erweiterungspaket 2025/26 – Arbeit und Rente, Gesundheit und Pflege, Wohnen, Aktualisierung der Wählergruppen
+
+Lies zuerst `reports/claude/auftraege/R-erweiterung-gemeinsam.md` und folge ihm.
+
+Teil 1: Suche Bevölkerungserhebungen mit Feldzeit 2024 bis 2026 und deutscher Stichprobe, die Einstellungen zu konkreten Streitfragen dieser drei Bereiche messen. Beispiele (prüfe sie und ergänze belegte): Rentenniveau und Haltelinie, Renteneintrittsalter, Aktienrente oder Generationenkapital, Mindestlohn, Arbeitszeitgesetz, Bürgergeld und neue Grundsicherung; Bürgerversicherung und Beitragsbemessung, Pflegeversicherung und Eigenanteile, Krankenhausreform; Mietpreisbremse, sozialer Wohnungsbau, Vergesellschaftung großer Wohnungsunternehmen, Grundsteuer. Prüfe mindestens: ESS Runde 12, OECD Risks that Matter 2024 und spätere Wellen, Eurobarometer 2025/26 (Fragebögen, nicht Ergebnisse), SOEP und SOEP-Innovationssample (Fragebögen, Zugang, Vertrag), Erhebungen öffentlicher Stellen (Bundesministerien, Deutsche Rentenversicherung, Statistisches Bundesamt), Zentrum für Qualität in der Pflege und weitere belegte Kandidaten.
+
+Teil 2: Aktualisierung der Wählergruppen. Welche Bevölkerungserhebungen mit Zufallsstichprobe in Deutschland enthalten eine Rückerinnerung an die Zweitstimme bei der Bundestagswahl vom 23. Februar 2025 (oder eine andere Parteifrage), und wann sind ihre Daten unter welchen Bedingungen verfügbar? Prüfe besonders ESS Runde 12: Feldzeit in Deutschland, Wortlaut und Bezugswahl der Wahlfrage im Quellfragebogen, Veröffentlichungstermin. Nenne die Unterschiede zwischen Rückerinnerung, Wahlabsicht und Parteinähe und welche Gruppenvergleiche jeweils vertretbar wären. GLES und Politbarometer nur nach R1–R7 und als gesperrt kennzeichnen.
+
+Ausgabe: `reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md` und `.json`.
