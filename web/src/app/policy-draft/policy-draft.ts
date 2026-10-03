@@ -46,6 +46,7 @@ export class PolicyDraft {
   private readonly injector = inject(Injector);
   private readonly pageHeading = viewChild<ElementRef<HTMLElement>>('pageHeading');
   private readonly questionHeading = viewChild<ElementRef<HTMLElement>>('questionHeading');
+  private readonly answerFieldset = viewChild<ElementRef<HTMLFieldSetElement>>('answerFieldset');
   private readonly session = new PolicyProfileSession(POLICY_DRAFT_QUESTIONS);
   protected readonly snapshot = signal(this.session.snapshot());
   protected readonly view = signal<DraftView>('questions');
@@ -102,6 +103,11 @@ export class PolicyDraft {
   protected answerLabel(item: PolicyDraftItem, answer: PolicyAnswer): string | null {
     if (answer.status !== 'answered') return null;
     return categoryLabel(item, item.categories.find((category) => category.code === answer.code)!);
+  }
+
+  /** Recreates the radio inputs for each question instead of reusing them. */
+  protected optionKey(code: string): string {
+    return `${this.currentItem().id}:${code}`;
   }
 
   protected isSelected(answer: PolicyAnswer, code: string): boolean {
@@ -225,6 +231,26 @@ export class PolicyDraft {
   private update(): void {
     this.snapshot.set(this.session.snapshot());
     this.skipReason.set(this.skipReasons().get(this.session.currentQuestion!.id) ?? 'unspecified');
+    this.syncRadios();
+  }
+
+  /**
+   * `[checked]` is only written when the bound value changes between renders.
+   * Input faster than one render could leave a native radio checked while the
+   * session says otherwise, so the rendered radios are aligned after each update.
+   */
+  private syncRadios(): void {
+    afterNextRender(
+      () => {
+        const fieldset = this.answerFieldset()?.nativeElement;
+        if (!fieldset) return;
+        const answer = this.currentAnswer();
+        for (const input of fieldset.querySelectorAll<HTMLInputElement>('input[type="radio"]')) {
+          input.checked = answer.status === 'answered' && answer.code === input.value;
+        }
+      },
+      { injector: this.injector },
+    );
   }
 
   private focus(target: 'page' | 'question'): void {

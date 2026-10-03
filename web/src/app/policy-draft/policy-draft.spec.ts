@@ -103,6 +103,22 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     await fixture.whenStable();
   }
 
+  it('hält native Radios bei Eingaben schneller als ein Renderzyklus am Sitzungszustand', async () => {
+    const radios = () => [...element.querySelectorAll<HTMLInputElement>('input[type="radio"]')];
+    // Select and reset before Angular renders: the session ends untouched.
+    radios()[0]!.click();
+    const reset = [...element.querySelectorAll('button')].find(
+      (button) => button.textContent?.trim() === 'Auswahl zurücksetzen',
+    )!;
+    reset.disabled = false;
+    reset.click();
+    await fixture.whenStable();
+    expect(radios().some((radio) => radio.checked)).toBe(false);
+    // Select and move on before Angular renders: the next question starts unchecked.
+    radios()[1]!.click();
+    await click('Zur nächsten Frage');
+    expect(radios().some((radio) => radio.checked)).toBe(false);
+  });
   it('Zurücksetzen führt den Fokus vom danach deaktivierten Button zur Frage', async () => {
     await choose('1');
     const reset = [...element.querySelectorAll('button')].find(

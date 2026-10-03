@@ -82,13 +82,16 @@
               </p>
             }
           </div>
-          <fieldset aria-describedby="draft-original-context draft-development-note">
+          <fieldset
+            #answerFieldset
+            aria-describedby="draft-original-context draft-development-note"
+          >
             <legend>
               @for (wording of item.displayWording; track $index) {
                 <span>{{ wording }}</span>
               }
             </legend>
-            @for (category of item.categories; track category.code) {
+            @for (category of item.categories; track optionKey(category.code)) {
               <label class="answer-option">
                 <input
                   type="radio"
