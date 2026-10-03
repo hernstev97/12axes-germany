@@ -1,0 +1,23 @@
+{
+  "schema": "life93-methods-package-1",
+  "scope": "Public methodological draft and current applicability of old rules; not empirical/selection/data authorization",
+  "baseCommit": "94f99d547026682310d81f3e3153d566ff937468",
+  "pins": [
+    {
+      "path": "docs/messformen-v2.entwurf.md",
+      "sha256": "0fd8b9b7b2e134bfa76a7b7dbecb543f9ea8378d50b9ad3e3e869c43cbd98455"
+    },
+    {
+      "path": "docs/pruefregeln.md",
+      "sha256": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233"
+    },
+    {
+      "path": "docs/analyseanforderungen.md",
+      "sha256": "e689e4c27a7454054b72592b2550c64ec1c6b0bf8d0f1e920276113280653714"
+    },
+    {
+      "path": "docs/auftrag-life-93-breite-2026-10-03.md",
+      "sha256": "d0a059efb9de65aec1be25b3c2d5fac3bcb61cb57b0d7af8e7d8f64ecb1fd5ed"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "atUtc": "2026-10-03T12:09:03.986462+00:00",
+  "localCommit": "94f99d547026682310d81f3e3153d566ff937468",
+  "remoteCommit": "94f99d547026682310d81f3e3153d566ff937468",
+  "branch": "research/life-93-night-20261003",
+  "status": "BESTANDEN",
+  "pnpmCheck": "outputs/loop/resume-checkpoint-035.log exit0",
+  "limits": "Broad product v2 unresolved; original B known and legacy followups halted; exporter/norm/group code WIP"
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T12:06:39.013985+00:00",
+  "updatedAtUtc": "2026-10-03T12:22:40.985448+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2806,10 +2806,21 @@
       "status": "NICHT_BESTANDEN",
       "reason": "Neun Fragen zu zwei engen Themen erfüllen das breite Deutschland-Politikprofil nicht",
       "blocks": ["completion as comprehensive political profile"],
-      "correctionState": "Eigenständiger v2-Quellen-/Themen-/Auswahlplan; zwei neue ergebnisblinde Autoren folgen nach Checkpoint",
+      "correctionState": "Zwei frische ergebnisblinde Autoren gestartet; Themen-Erstbericht fertig, Datenbericht laufend. Erweiterungsplan und Messformen entworfen, Breite noch nicht empirisch erschlossen.",
       "verification": {
         "order": "docs/auftrag-life-93-breite-2026-10-03.md"
       }
+    },
+    {
+      "id": "MF-01",
+      "origin": "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md",
+      "decision": "angenommen",
+      "severity": "gering",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "Methodenquellen im Entwurf noch ohne stabile projektbezogene Beleg-IDs verknüpft",
+      "correctionState": "Register-/ID-Zuordnung folgt als Dokumentationskorrektur; kein fachlicher Blocker",
+      "blocks": []
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

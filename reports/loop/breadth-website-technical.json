@@ -1,0 +1,192 @@
+{
+  "atUtc": "2026-10-03T12:19:18Z",
+  "scope": "Existing two-page copy breadth correction, no new test/calculator or numerical result claims",
+  "technical": {
+    "pnpmCheck": "outputs/loop/resume-checkpoint-036.log",
+    "exitCode": 0
+  },
+  "browser": {
+    "provider": "T3 collaborative preview tab_1",
+    "records": [
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 1425,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 1000,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 1425,
+        "url": "/",
+        "violations": [],
+        "width": 1440
+      },
+      {
+        "snapshot": {
+          "url": "http://localhost:4311/",
+          "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musczl8g-ea4fbe61.png"
+        }
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 1009,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 768,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 1009,
+        "url": "/",
+        "violations": [],
+        "width": 1024
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 753,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 1024,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 753,
+        "url": "/",
+        "violations": [],
+        "width": 768
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 375,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 844,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 375,
+        "url": "/",
+        "violations": [],
+        "width": 390
+      },
+      {
+        "snapshot": {
+          "url": "http://localhost:4311/",
+          "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musczmd6-eedc29da.png"
+        }
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 305,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 720,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 305,
+        "url": "/",
+        "violations": [],
+        "width": 320
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 1425,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 1000,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 1425,
+        "url": "/projekt",
+        "violations": [],
+        "width": 1440
+      },
+      {
+        "snapshot": {
+          "url": "http://localhost:4311/projekt",
+          "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-muscznl1-30db9e06.png"
+        }
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 1009,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 768,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 1009,
+        "url": "/projekt",
+        "violations": [],
+        "width": 1024
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 753,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 1024,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 753,
+        "url": "/projekt",
+        "violations": [],
+        "width": 768
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 375,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 844,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 375,
+        "url": "/projekt",
+        "violations": [],
+        "width": 390
+      },
+      {
+        "snapshot": {
+          "url": "http://localhost:4311/projekt",
+          "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musczotg-0bab9b27.png"
+        }
+      },
+      {
+        "axeVersion": "4.13.0",
+        "brokenFragments": [],
+        "clientWidth": 305,
+        "focused": false,
+        "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+        "h1": 1,
+        "height": 720,
+        "incomplete": [],
+        "overflow": false,
+        "scrollWidth": 305,
+        "url": "/projekt",
+        "violations": [],
+        "width": 320
+      }
+    ],
+    "visualInspection": "Four saved top-of-page screenshots: home/project at1440 and390. Paper/ink/Libre Baskerville/artwork preserved; no clipping observed.",
+    "keyboardFocus": "NOT_VERIFIED: document.hasFocus=false; unchanged CSS/interaction, no false visible-focus acceptance",
+    "actual200PercentZoom": "NOT_VERIFIED; earlier shortcut limitation retained",
+    "limits": "No full WCAG or human/design acceptance. Unchanged gallery/motion behavior not reaudited. Temporary local axe4.13.0 HTTP server4327 session73560 stopped exit0. Devserver4311 remains Root-owned."
+  },
+  "scientific": "Draft scope/status copy only; broad profile unresolved; A/B known; no numerical interpretation/release acceptance"
+}

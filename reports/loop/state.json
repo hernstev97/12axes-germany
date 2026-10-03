@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T12:06:39.013985+00:00",
+  "updatedAtUtc": "2026-10-03T12:22:40.987858+00:00",
   "status": "RUNNING",
   "phase": "Breite Forschungsgrundlage v2; altes Neunermodul historisch, B/FULL-Folge angehalten",
   "coordinator": "/root",
@@ -72,7 +72,7 @@
       "id": "PUBLIC-TAGS",
       "status": "BESTANDEN",
       "blocks": ["empirischer Analysebeginn"],
-      "actionNeeded": "analyseplan-v1 and erwartungsmodell-v1 remote/treepins verified beforeA; separate modeltag still pending"
+      "actionNeeded": "Historische analyseplan-v1/erwartungsmodell-v1 vorA und modell-v1 vorB verifiziert; keine Erweiterungs-v2-Tags oder Datenfreigabe."
     },
     {
       "id": "HUMAN-RELEASE",
@@ -97,7 +97,7 @@
     "mainIntegration": "BESTANDEN",
     "currentLocalTechnical": "BESTANDEN pnpm check035 exit0; scientific breadth/known-data limits unresolved",
     "currentIndependentIntegration": "NICHT_GEPRÜFT",
-    "empiricalValidation": "NICHT_GEPRÜFT; exploratoryA complete, B held",
+    "empiricalValidation": "Historische A/B-Kriterien berechnet; keine umfassende Produktvalidität. Breite v2 NICHT_GEPRÜFT.",
     "otherModelFamily": "NICHT_GEPRÜFT",
     "currentBrowserPlaceholderPages": "BESTANDEN",
     "currentHandbookGuard": "BESTANDEN",
@@ -115,8 +115,8 @@
     "currentEmpiricalTransition": "BESTANDEN_BEGRÄNZT_VOR_A; first reports plus correction1",
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
-    "currentWebsiteCopy": "BESTANDEN bounded",
-    "currentWebsiteBrowser": "BESTANDEN layout/axe two pages five widths; realzoom/focus-visible NICHT_GEPRÜFT",
+    "currentWebsiteCopy": "WIP breadth status copy; fresh review pending",
+    "currentWebsiteBrowser": "Bounded layout/axe two pages five widths PASS; visiblefocus/200percent NOT_VERIFIED",
     "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung",
     "currentConfirmatoryTransition": "BESTANDEN_BEGRÄNZT vorB; actual B executed pending result review",
     "currentProductBreadth": "NICHT_BESTANDEN: historical narrow module does not satisfy broad product objective",
@@ -196,7 +196,8 @@
     "reports/loop/reviews/AGGREGATE-EXPORT-001-round1.md",
     "reports/loop/reviews/PRE-CONFIRMATORY-001-methods-first.md",
     "reports/loop/reviews/PRE-CONFIRMATORY-001-sources-first.md",
-    "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md"
+    "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md",
+    "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -213,7 +214,19 @@
     "PRODUCT-BREADTH-001"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
-  "activeAgents": [],
+  "activeAgents": [
+    {
+      "name": "/root/breadth_data_instruments",
+      "status": "RUNNING_RESULT_BLIND_PUBLIC_SOURCES",
+      "report": "reports/loop/authors/BREADTH-DATA-001-first.md"
+    },
+    {
+      "name": "T3 website_breadth_review",
+      "status": "RUNNING_FIRST_REVIEW",
+      "report": "reports/loop/reviews/WEBSITE-BREADTH-002-first.md",
+      "taskId": "node:delegated-task:command%3Amcp%3Ac4ea3b31-9158-4e6e-944e-cc24189c4ff5%3Adelegate-task%3Alife93-website-breadth-002-first-20261003"
+    }
+  ],
   "workPackages": [
     {
       "id": "LOOP-000",
@@ -431,26 +444,40 @@
       "status": "RUNNING",
       "scope": "Independent source/instrument and topic/bias development without response results",
       "criteria": "docs/auftrag-life-93-breite-2026-10-03.md; separate v2 plan required"
+    },
+    {
+      "id": "MEASUREMENT-FORMS-002",
+      "status": "DONE_BOUNDED_DRAFT",
+      "manifest": "reports/loop/packages/MEASUREMENT-FORMS-002/v1/manifest.json",
+      "decision": "reports/loop/MEASUREMENT-FORMS-002-entscheidung.md",
+      "reviewStatus": "BESTANDEN begrenzt; MF-01 gering offen, keine empirische/Übergangs-/Auswahlfreigabe"
+    },
+    {
+      "id": "WEBSITE-BREADTH-002",
+      "status": "WIP_REVIEW_RUNNING",
+      "manifest": "reports/loop/packages/WEBSITE-BREADTH-002/v1/manifest.json",
+      "technical": "reports/loop/breadth-website-technical.json",
+      "scope": "Bestehende Seiten-/Statustexte; keine numerischen Ergebnisbehauptungen"
     }
   ],
-  "nextConcreteStep": "Read AE-01 round1; exactpins beforechecked A export, model-v1 tag, newB runtime package and2freshreviewers",
+  "nextConcreteStep": "Zwei laufende unabhängige Breitenautoren ohne Antwortergebnisse; beide Erstberichte lesen, Quellen-/Abdeckungsmatrix zusammenführen und v2-Kriterien vor neuer Empirie festlegen.",
   "checkpoint": {
-    "lastLocalCommit": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
-    "lastVerifiedRemoteCommit": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
-    "lastVerifiedPushAtUtc": "2026-10-03T11:47:54.993131+00:00",
+    "lastLocalCommit": "94f99d547026682310d81f3e3153d566ff937468",
+    "lastVerifiedRemoteCommit": "94f99d547026682310d81f3e3153d566ff937468",
+    "lastVerifiedPushAtUtc": "2026-10-03T12:09:03.986462+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-032.json",
+    "record": "reports/loop/push-033.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "A-Aggregate/Modellabschluss, B/FULL-Software und Vor-B-Prüffassung; Normen WIP"
+    "pendingPayload": "Breitenquellen v2 und passende Messformen; alte B/FULL-Normen/Gruppen angehalten"
   },
-  "scientificStatus": "Actual design metadata only. All9 core eligible in both independent source first judgments; selection/model still proposed. No A/B/C response interpretation, political data exposure or scientific release acceptance.",
+  "scientificStatus": "Historisches Neunermodul: A und B gerechnet, B-Antworten bekannt; kein breites Hauptprodukt, keine neue Bestätigung aus bekannten Antworten. Neue Arbeit nur öffentliche Quellen/Messformplanung, alte FULL-/Gruppen-/Normfortsetzung angehalten.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -479,7 +506,8 @@
     "reports/loop/technical-checkpoint023.json",
     "reports/loop/technical-halt.json",
     "reports/loop/resume-package-technical.json",
-    "reports/loop/resume-website-technical.json"
+    "reports/loop/resume-website-technical.json",
+    "reports/loop/breadth-website-technical.json"
   ],
   "independentPreparations": [
     {
@@ -615,7 +643,7 @@
     "publicGate": "reports/loop/gates/pre-empirical.json",
     "publicTags": "reports/loop/public-tags-v1.json",
     "candidate": "M2 H/ZF",
-    "scope": "Exploratory development only; numerical export correction pending; B/C/comparisons unopened",
+    "scope": "Explorative historische Entwicklung; öffentlicher A-Export nach begrenzter Prüfung abgeschlossen. B einmal gerechnet und bekannt; Erweiterung v2 getrennt. Gruppen/C/FULL nicht angewendet.",
     "reproduction": [
       "python3 pipeline/empirical_access.py prepare",
       "python3 pipeline/empirical_access.py A",
@@ -631,9 +659,10 @@
     "fixedModelSha256": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
     "selectedModel": "M2",
     "selectedScores": ["H", "ZF"],
-    "BOpened": false,
+    "BOpened": true,
     "comparisonFieldsOpened": false,
-    "modelTag": "reports/loop/model-tag-v1.json"
+    "modelTag": "reports/loop/model-tag-v1.json",
+    "scope": "Explorative historische Entwicklung; öffentlicher A-Export nach begrenzter Prüfung abgeschlossen. B einmal gerechnet und bekannt; Erweiterung v2 getrennt. Gruppen/C/FULL nicht angewendet."
   },
   "currentB": {
     "execution": "real-b-001 private",
@@ -680,5 +709,17 @@
       "record": "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md",
       "sessionsOrPids": []
     }
-  ]
+  ],
+  "sourceAuthorsV2": {
+    "topics": {
+      "status": "COMPLETED_FIRST_REPORT",
+      "report": "reports/loop/authors/BREADTH-TOPICS-001-first.md",
+      "sha256": "f9dfe17df6795d0a7b82918c5d956421645249036e3ee22257a88a1044d58f5b"
+    },
+    "data": {
+      "status": "RUNNING_RESULT_BLIND",
+      "report": "reports/loop/authors/BREADTH-DATA-001-first.md"
+    },
+    "firstJudgmentsShared": false
+  }
 }

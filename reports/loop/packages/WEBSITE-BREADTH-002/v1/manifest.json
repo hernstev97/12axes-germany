@@ -1,0 +1,43 @@
+{
+  "schema": "life93-website-copy-package-1",
+  "scope": "Existing-page breadth correction and factual historical access status only; no numerical result interpretation/selection/data authorization",
+  "baseCommit": "94f99d547026682310d81f3e3153d566ff937468",
+  "pins": [
+    {
+      "path": "web/src/app/pages/home/home.html",
+      "sha256": "55107959368b6fb3852b0bcfd700aa68c646983aea60d2c98ea63c03ae13860e"
+    },
+    {
+      "path": "web/src/app/pages/project/project.html",
+      "sha256": "1deaf4e4a032ec3fe7d49ca977369095fa4e9bf472629134498bc67edade814f"
+    },
+    {
+      "path": "web/src/app/pages/project/project.ts",
+      "sha256": "535fcda9e63b70d2f5bf482ef744270ca56dba9e767220d2b0c74d84af6ca830"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "docs/auftrag-life-93-breite-2026-10-03.md",
+      "sha256": "d0a059efb9de65aec1be25b3c2d5fac3bcb61cb57b0d7af8e7d8f64ecb1fd5ed"
+    },
+    {
+      "path": "reports/loop/b-access-disclosure-20261003.json",
+      "sha256": "eb0c1c2dfcffb704e8f3c060730822027b0ae8a9d7668c949b2233c20936d290"
+    },
+    {
+      "path": "data/item-core-v1.json",
+      "sha256": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e"
+    },
+    {
+      "path": "reports/loop/authors/ESS-CORE-VERSION-binding.md",
+      "sha256": "a05b22e814d6556e75cbd7e6028adf2df2b9fbf5ab1b7c22540c92e125b8a553"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    }
+  ]
+}

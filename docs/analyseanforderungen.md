@@ -2,6 +2,8 @@
 
 Arbeitsfassung vom 2026-10-03. Diese Anforderungen konkretisieren P02–P13 im [Analyseplan](analyseplan.md). Die [Erstberichte](../reports/audit-recherche/README.md) und [Autorentscheidungen](../reports/audit-recherche/finding-entscheidungen.json) bleiben erhalten. Ein hier ergänzter Vertrag ist weder ein ausgewähltes Verfahren noch eine bestandene empirische Prüfung.
 
+Nachtrag zur Erweiterung v2 vom 3. Oktober 2026: Die bisherigen Anforderungen an latente Konstrukte und deren Scores betreffen diese konkrete Messform. Sie sind keine pauschalen Ausschlüsse belegter Einzelpräferenzen oder begründeter formativer Indizes. Der [Messformenentwurf v2](messformen-v2.entwurf.md) trennt deren Ansprüche; der [Breitennachtrag](auftrag-life-93-breite-2026-10-03.md) verlangt weiterhin substantielle Themenbreite. Frühere Auditbefunde und der historische Analysevertrag bleiben erhalten. Neue Auswahl-, Referenz- und Bewertungsregeln sind vor den davon abhängigen Analysen gesondert festzulegen und zu prüfen.
+
 ## Konstrukte und Deutschlandbezug
 
 R2-F01 bleibt offen: vollständiges Inventar, datierter Deutschland-Themenrahmen und konkurrierende Erwartungsmodelle fehlen. Die von Reviewer 2 gelesenen Ansätze sind Literaturkandidaten. Untersuchungen des Parteienangebots, aggregierter Bevölkerungsmeinungen und individueller Einstellungen sind getrennte Evidenzebenen. Ältere Westeuropa-Befunde belegen keine aktuelle deutsche Personenmessung. Jede spätere Erwartung benennt Itemzuordnung, Deutschland-/Zeitbezug, Gegenbefunde und prüfbare Alternativen. Keine Theorie wird durch dieses Audit bevorzugt.

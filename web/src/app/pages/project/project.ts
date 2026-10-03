@@ -15,17 +15,20 @@ export class Project {
   protected readonly credits = ALL_ARTWORKS;
   protected readonly status = [
     { label: 'Website', value: 'Startseite und Seite zum Projektstand vorhanden' },
-    { label: 'Fragenkatalog', value: 'Neun Originalfragen vorgeschlagen. Noch nicht freigegeben.' },
+    {
+      label: 'Fragenkatalog',
+      value: 'Breiter Katalog in Entwicklung. Neun frühere ESS-Fragen bleiben ein Teilmodul.',
+    },
     { label: 'Dimensionen', value: 'Anzahl und Struktur offen' },
     {
-      label: 'Analyse der ESS-Daten',
-      value: 'Stichprobenmetadaten geprüft. Noch keine politischen Antworten ausgewertet.',
+      label: 'Analyse und Erweiterung',
+      value: 'Früheres Teilmodul untersucht. Erweiterung erhält einen eigenen Plan.',
     },
     { label: 'Auswertung', value: 'Noch nicht vorhanden' },
     { label: 'Vergleichswerte', value: 'Noch nicht berechnet' },
     {
       label: 'Methodische Prüfungen',
-      value: 'Zwei getrennte KI-Erstbewertungen liegen vor. Eine empirische Modellprüfung fehlt.',
+      value: 'Frühere Quellen- und Methodenprüfungen vorhanden. Breite Fassung noch nicht geprüft.',
     },
     { label: 'Verständlichkeit', value: 'Noch nicht mit Menschen geprüft' },
     { label: 'Methodischer Freigabeprozess', value: 'Dokumentiert. Erforderliche Abnahmen offen.' },
