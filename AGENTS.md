@@ -2,32 +2,36 @@
 
 Lies vor Änderungen `docs/project.md`. Vor jeder Arbeit an Oberfläche, Bedienung, Bildern oder sichtbaren Texten `docs/handbuch.md` vollständig lesen und befolgen; es regelt Gestaltung, Texte, Bilder, Barrierefreiheit und den Prüfablauf.
 
-Der aktuelle Auftrag umfasst Recherche, empirische Analyse, Messmodell, Methodenbericht und Website bis zum vorbereiteten Stand für die abschließende Claude-Kontrolle. Maßgeblich sind der aktuelle `docs/auftrag-life-93-breite-2026-10-03.md` und die nicht widersprechenden Regeln des vorherigen Fortsetzungsnachtrags. Lies dafür zusätzlich `docs/pruefregeln.md`, `docs/analyseplan.md`, `docs/belegregister.md` und `docs/entscheidungen.md`.
+## Aktueller Auftrag
 
-Claude entfällt als Voraussetzung der Hauptarbeit. Keine weiteren Claude-Zugriffsversuche, Authentifizierungsarbeiten oder Wartezeiten. Steven veranlasst die abschließende Kontrolle. Fehlende Claude-Prüfungen bleiben verschoben und niemals bestanden. Zwei getrennte Codex-Erstbewertungen ersetzen in diesem Durchlauf die früheren Codex-/Claude-Erstbewertungen. Gleiche Modellfamilie und gemeinsame mögliche Fehlerquellen ausdrücklich nennen.
+Maßgeblich ist [LIFE-93](https://linear.app/kiumu-app/issue/LIFE-93/politiktest-fur-deutschland-wissenschaftlich-fundieren-und-transparent) mit dem Nachtrag „Claude: Abschlussprüfung, Ergänzungen und Übernahme“ vom 3. Oktober 2026 und seinen Abschnitten 2a bis 2c. Claude hat den Codex-Stand `e9898fb` übernommen und arbeitet auf dem Branch `research/life-93-claude-20261003`. Bei Widerspruch geht der Nachtrag den älteren Aufträgen vor: [Vollauftrag](docs/auftrag-life-93-2026-10-03.md), [Fortsetzung](docs/auftrag-life-93-fortsetzung-2026-10-03.md) und [Breite](docs/auftrag-life-93-breite-2026-10-03.md). Die älteren Aufträge bleiben als Belege erhalten. Den Übernahmestand beschreibt [reports/claude/uebernahme.md](reports/claude/uebernahme.md).
 
-Keine Fragen, Dimensionen, Scores, Vergleichswerte oder wissenschaftlichen Güteaussagen erfinden. Kein sichtbarer Teststart, bevor ein tatsächlich freigegebener Test existiert. Geplante Funktionen als geplant beschreiben. CodeRabbit-Reviews und technische CI nicht als methodische Validierung ausgeben.
+Lies vor fachlicher Arbeit außerdem `docs/analyseplan-v2.2.md`, `docs/abdeckung-v2.2.md`, `docs/profilregeln-v1.md` und `docs/pruefregeln.md`.
 
-ESS-Rohdaten gehören nur nach `data/raw/`. Sie werden weder committed noch in die Webapp oder CI kopiert. Keine Rohdatenzeilen oder Personenkennungen in Agent-Aufträge, Tool-Ausgaben oder PR-Kommentare übernehmen. Auch lokale Zwischendaten bleiben außerhalb von Git, bis ihre Veröffentlichung ausdrücklich geprüft wurde. Lizenzbedingungen für Daten und Dokumentation unterscheiden; `docs/lizenzen.md` beachten.
+## Inhaltliche Regeln
 
-Öffentliche Dokumentation und Literatur dürfen recherchiert werden. Keine endgültige Item-/Modellentscheidung, ESS-Analyse, Entblindung oder Präregistrierungs-/Modell-Tags, bevor die erforderlichen Entscheidungen und Abnahmen vorliegen. Der alte Empirieplanv1 ist unverändert historische Festschreibung. Für Erweiterungen gilt `docs/erweiterungsplan-v2.entwurf.md` als Entwurf ohne Datenfreigabe. Quellenversionen, präzise Fundstellen, Zugriffe und Grenzen im Belegregister, Quellenkatalog und KI-Protokoll festhalten. Ausgefallene oder nicht durchgeführte Prüfungen bleiben offen.
+Keine Fragen, Dimensionen, Scores, Vergleichswerte oder wissenschaftlichen Güteaussagen erfinden. Kein sichtbarer Teststart, bevor ein tatsächlich freigegebener Test existiert. Geplante Funktionen als geplant beschreiben. Technische CI, KI-Reviews und CodeRabbit nicht als methodische Validierung ausgeben. KI-Reviews heißen KI-Reviews. Übereinstimmung von Agenten ist kein Neutralitätsnachweis.
+
+Das Profil bleibt ein Vektor getrennter Originalfragen. Keine Achsen, Gesamtwerte, Perzentile, Ränge oder Lagerbezeichnungen ohne eigenen Plan und Prüfung. Verschiedene Studien werden nie zu gemeinsamen Personen oder Verteilungen zusammengeführt.
+
+Regeln vor Ergebnissen: Neue Auswertungen brauchen vorher einen versionierten, geprüften Plan mit Tag. Historische Pläne, Tags, Berichte und Prüfurteile bleiben unverändert. Bekannte Daten werden nie als unberührte Bestätigung bezeichnet.
+
+## Daten und Rechte
+
+ESS-Rohdaten gehören nur nach `data/raw/`. Sie werden weder committed noch in die Webapp oder CI kopiert. Keine Rohdatenzeilen, Personenkennungen oder Einzelgewichte in Agent-Aufträge, Tool-Ausgaben, Berichte oder PR-Kommentare übernehmen. Private Laufergebnisse liegen unter `data/local/` und bleiben außerhalb von Git, bis ihre Veröffentlichung ausdrücklich geprüft wurde. Lizenzbedingungen für Daten und Dokumentation unterscheiden; `docs/lizenzen.md` beachten.
+
+GESIS-Daten (GLES, ISSP, ALLBUS) nicht herunterladen oder verarbeiten, solange die KI-Klausel der GESIS-Nutzungsbedingungen nicht geklärt ist (Stopp-Meldung in LIFE-93 vom 3. Oktober 2026).
+
+## Prüfungen
+
+Normale inhaltliche Pakete erhalten einen passenden Prüfagenten. Wesentliche Änderungen an Messmodell und Auswertung erhalten zwei getrennte Prüfungen mit unterschiedlichen Schwerpunkten, nach Möglichkeit durch frische Codex-Prüfer, wenn Claude die Änderung verfasst hat. Prüfer bekommen frischen, begrenzten Kontext, schreiben nur ihre eigenen Berichte und kennen fremde Urteile nicht. Nach höchstens zwei erfolglosen Korrekturrunden die betroffene Aussage begrenzen, als unsicher markieren oder entfernen.
+
+Nach Änderungen `pnpm check` ausführen. Für den Rechenweg v2.2 zusätzlich `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s pipeline/v22 -p 'test_*.py'`. UI-Änderungen im Browser auf Desktop- und Smartphone-Breite prüfen. Technische Checks, Browserbeobachtungen und wissenschaftliche Abnahmen getrennt berichten.
+
+## Zusammenarbeit und Sicherung
 
 `skills.yaml` und `.agents/skills/` werden durch die persönliche Skills CLI verwaltet. Synchronisierte Skills hier nicht von Hand bearbeiten. Relevante Skills vor ihrer Anwendung lesen.
 
-Nach Änderungen `pnpm check` ausführen. UI-Änderungen zusätzlich im Browser auf Desktop- und Smartphone-Breite prüfen. Technische Checks, Browserbeobachtungen und wissenschaftliche Abnahmen getrennt berichten.
+Nur ein schreibender Koordinator. Nach Paketen und spätestens alle 30 Minuten mit Änderungen committen und den eigenen Branch verifiziert pushen. WIP kennzeichnen. Kein Push auf `main`, kein Force-Push, kein automatischer Merge und kein Deployment ohne Stevens Freigabe.
 
-Änderungen an Designrichtung oder Produktumfang mit Steven abstimmen. Keine Deployment- oder Merge-Freigabe aus dem Auftrag zur lokalen Repository-Grundlage ableiten.
-
-Das historische Fünf-Agent-Audit und der Jurorbericht bleiben unverändert erhalten. Für die Fortsetzung gilt: normale inhaltliche Pakete erhalten einen passenden Codex-Prüfagenten; vor empirischer Entwicklung, vor B-Zugriff und vor Ergebnisaussagen zwei getrennte Agents für Methoden/Reproduzierbarkeit und Quellen/Konstrukte/Interpretationen/politische Fairness. Kein dauerhaftes Fünfergremium oder zusätzlicher Juror. Frischer begrenzter Kontext, gleiche Prüffassung, keine anderen Ersturteile oder vorweggenommene Verteidigung. Reviewer schreiben keine gemeinsamen Forschungsdateien. Gezielte Korrekturprüfung statt erneutem Gesamtaudit; reiner Zustand/Format/Commit/Dokumentationsabgleich löst keine fachliche Neuprüfung aus. Nach höchstens zwei erfolglosen Runden betroffene Aussage/Funktion begründet begrenzen oder entfernen, sonst genau diesen Teil blockiert lassen.
-
-Vor Fortsetzung `docs/auftrag-life-93-2026-10-03.md`, den datierten Nachtrag, `docs/arbeitsloop.md` und den Checkpoint lesen. Historische Vorgaben bleiben Belege, der Nachtrag hat bei Widerspruch Vorrang. Die Phase-0-Festschreibung darf nach den vorgesehenen Codex-Prüfungen ohne Claude oder zusätzliche persönliche Statistik-Abnahme erfolgen. Plan und Kriterien vor abhängigen Analysen fixieren. B und gesperrte Vergleichsvariablen bis zum vorgesehenen Schritt zurückhalten, auch gegenüber Subagents.
-
-Nur ein schreibender Koordinator. Eigene Änderungen im bestätigten Worktree; nach Paketen und spätestens alle 30 Minuten mit Änderungen committen und den eigenen Branch verifiziert pushen. WIP kennzeichnen. Kein Push auf main, Force-Push, automatischer Merge oder Deployment ohne Freigabe.
-
-## Aktuelle Breitenpriorität vom 3. Oktober2026
-
-Das Hauptprodukt muss ein thematisch breites Politikprofil für Deutschland tragen. Das Neunermodul erfüllt dieses Ziel nicht allein. Wirtschaft/Verteilung und Demokratie/politische Autorität ausdrücklich untersuchen; weitere unterschiedliche Gegenstände substanziell abdecken. ESS11 ist keine Produktobergrenze: GLES, weitere ESS-Runden und gegebenenfalls ISSP samt tatsächlichen Fragen/Versionen/Rechten/Eignung prüfen. Themenrubriken sind keine automatisch beschlossenen Dimensionen. Begründete Einzelpräferenzen und formative Ansätze zulassen; keine allgemeine Drei-Item-Mindestregel. Verschiedene Studien nicht zu gemeinsamen Personen oder ungeprüften Gesamtfaktoren zusammenfügen.
-
-Die Fortsetzung der alten B-/FULL-/Norm-/Gruppenfolge ist angehalten; alte Gates verleihen keine aktuelle Erlaubnis. Historische Forschungsartefakte/Tags unverändert erhalten. Neue Abdeckung, Auswahl und Bewertung bekommen einen separaten v2-Plan vor ihren abhängigen Analysen; vorherige Einsicht darf nicht als unberührt umbenannt werden. Fehlende Gesamtbreite bleibt ungelöstes Produktziel.
-
-Zunächst zwei frische getrennte Autoren für Daten/Instrumente und Themenrahmen/Auswahlverzerrungen. Sie erhalten begrenzten Quellenkontext ohne Antwortergebnisse oder vorgegebene Schlussfolgerungen; Koordinationszustand, Zugriffsbericht und frühere empirische Ergebnisse liest nur Root. Danach vereinfachten Prüfloop weiterführen. Agentenübereinstimmung ist kein Neutralitätsnachweis.
+Änderungen an Designrichtung oder Produktumfang mit Steven abstimmen. Gestaltung von Test und Ergebnis, Teststart, Rechte, Veröffentlichung und der Verständnistest mit fünf Personen bleiben Stevens Entscheidungen.

@@ -1,8 +1,22 @@
 # 12 Axes Deutschland
 
-Angular-Webapp für einen erklärenden Politiktest mit einem mehrdimensionalen Einstellungsprofil und Vergleichen zu Wählergruppen in Deutschland. „12 Axes Deutschland“ ist ein vorläufiger Name; die Zahl zwölf legt keine Dimensionen fest.
+Forschungsprototyp für einen Test zu politischen Einstellungen in Deutschland. „12 Axes Deutschland“ ist ein vorläufiger Name. Die Zahl zwölf legt keine Dimensionen fest.
 
-Aktuell steht die technische und gestalterische Grundlage. Es gibt eine Startseite und eine Seite zum Projektstand. Die öffentliche Recherche und ein erster Entwurf der wissenschaftlichen Prüfregeln liegen vor. Fragen, Auswertung und Vergleichsdaten sind noch nicht umgesetzt; die methodische Freigabe ist offen.
+## Stand
+
+Stand: 3. Oktober 2026. Auftrag ist [LIFE-93](https://linear.app/kiumu-app/issue/LIFE-93/politiktest-fur-deutschland-wissenschaftlich-fundieren-und-transparent).
+
+| Teil                        | Stand                                                                                                                                                                                                                                                                                                                         |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fragen                      | Umgesetzt: 61 unveränderte Originalfragen aus fünf Befragungen des European Social Survey (ESS5, ESS8, ESS9, ESS10 Self-completion, ESS11; 2010 bis 2023), geordnet nach acht Bereichen. 43 Fragen stammen aus Plan v2, 18 aus [Plan v2.2](docs/analyseplan-v2.2.md).                                                         |
+| Historische Vergleichswerte | Umgesetzt für die 43 v2-Fragen: gewichtete Anteile der Antwortkategorien in Deutschland je Befragung und für Wählergruppen nach erinnerter Zweitstimme (ESS5, ESS8, ESS9). Unabhängig nachgerechnet ([Kontrollrechnung](reports/claude/kontrollrechnung/bericht.md)). Für die 18 neuen Fragen in Vorbereitung nach Plan v2.2. |
+| Stichprobenunsicherheit     | Geplant nach Plan v2.2 für Befragungen mit vollständigem Stichprobendesign (ESS9, ESS10, ESS11). Für ESS5 und ESS8 fehlen die Designdateien.                                                                                                                                                                                  |
+| Erklärendes Profil          | Umgesetzt im lokalen Forschungsentwurf nach den [Profilregeln](docs/profilregeln-v1.md): Einzelaussagen, Muster innerhalb von Originalblöcken, Querbezüge. Kein Gesamtwert, keine Achsen.                                                                                                                                     |
+| Themenabdeckung             | [Matrix für 14 Bereiche](docs/abdeckung-v2.2.md). Acht Bereiche teilweise abgedeckt, sechs ohne oder fast ohne eigene Frage. Der Weg über GESIS-Daten ist gesperrt, bis die KI-Klausel der GESIS-Nutzungsbedingungen geklärt ist.                                                                                             |
+| Website                     | Öffentliche Seiten: Startseite, Projektstand, Methodik. Der Fragen- und Ergebnisentwurf läuft nur lokal mit `pnpm dev:research`. Es gibt keinen öffentlichen Teststart.                                                                                                                                                       |
+| Prüfungen                   | KI-Reviews durch Codex- und Claude-Agenten, dokumentiert unter `reports/loop/` und `reports/claude/`. Keine Begutachtung durch Fachleute, kein Verständnistest mit Menschen, keine Freigabe durch Steven.                                                                                                                     |
+
+Das Projekt ist weder validiert noch wissenschaftlich geprüft und kann keine Neutralität garantieren.
 
 ## Lokal starten
 
@@ -10,44 +24,42 @@ Node 24 und pnpm 11 sind erforderlich. Die verwendete Node-Version steht in `.no
 
 ```sh
 pnpm install --frozen-lockfile
-pnpm dev
+pnpm dev            # öffentliche Seiten, http://127.0.0.1:4311
+pnpm dev:research   # zusätzlich der lokale Forschungsentwurf unter /forschungsentwurf, Port 4314
 ```
-
-Die App läuft auf <http://127.0.0.1:4311>.
 
 ```sh
 pnpm check
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s pipeline/v22 -p 'test_*.py'
 ```
 
-Dieser Befehl prüft Formatierung, die mechanischen Regeln des Handbuchs (`scripts/check-handbuch.mjs`) und die Typen, führt die UI-Tests aus und erstellt den Produktionsbuild. Die GitHub Action heißt `CI` und führt dieselben technischen Prüfungen aus. Wissenschaftliche Freigaben sind darin noch nicht enthalten.
+`pnpm check` prüft Formatierung, die mechanischen Regeln des Handbuchs, das Review-Schema und die Typen, führt die UI-Tests aus und erstellt den Produktionsbuild. Die GitHub Action `CI` führt dieselben technischen Prüfungen aus. Wissenschaftliche Freigaben sind darin nicht enthalten.
 
-Der Stand der lokalen und visuellen Prüfung ist in [docs/validation.md](docs/validation.md) festgehalten.
+Die Auswertungen brauchen die lokal bereitgestellten ESS-Dateien unter `data/raw/`. Sie sind nicht im Repository. Die Reproduktion beschreibt [docs/reproduktion-life93-v2.md](docs/reproduktion-life93-v2.md), den Rechenweg v2.2 [docs/analyseplan-v2.2.md](docs/analyseplan-v2.2.md).
 
 ## Aufbau
 
-| Pfad              | Inhalt                                                            |
-| ----------------- | ----------------------------------------------------------------- |
-| `web/`            | Angular 22, Standalone Components, zoneless, SCSS, Vitest         |
-| `docs/`           | Projektentscheidungen, Handbuch, Asset-Nachweise und KI-Protokoll |
-| `scripts/`        | Handbuch-Prüfung und Bildverarbeitung                             |
-| `data/raw/`       | Lokale Rohdaten, von Git ausgeschlossen                           |
-| `pipeline/`       | Platz für die spätere Analyse                                     |
-| `model/`          | Platz für versionierte Modelle                                    |
-| `reports/`        | Platz für spätere Analyse- und Prüfberichte                       |
-| `.agents/skills/` | Alle Skills aus dem persönlichen Skills-Repository                |
+| Pfad              | Inhalt                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| `web/`            | Angular 22, Standalone Components, zoneless, SCSS, Vitest                             |
+| `docs/`           | Aufträge, Pläne, Themenabdeckung, Profilregeln, Handbuch, Belege, KI-Protokoll        |
+| `data/`           | Fragenkataloge, Analyseverträge, veröffentlichte zusammengefasste Vergleichswerte     |
+| `data/raw/`       | lokale ESS-Rohdaten, von Git ausgeschlossen                                           |
+| `pipeline/`       | Auswertungen in Python und R; `pipeline/v22/` für Plan v2.2                           |
+| `reports/`        | Berichte, Prüfurteile und Agentenaufträge; `reports/claude/` für die Claude-Übernahme |
+| `scripts/`        | Prüfungen, Berichtsbau und Bildverarbeitung                                           |
+| `.agents/skills/` | Skills aus dem persönlichen Skills-Repository                                         |
 
-Schrift und Gemälde werden lokal ausgeliefert. Die App bindet keine Analyse-, Tracking- oder KI-Dienste ein und speichert derzeit keine Antworten.
+Schrift und Gemälde werden lokal ausgeliefert. Die Website bindet keine Analyse-, Tracking- oder KI-Dienste ein und speichert oder überträgt keine Antworten.
 
 ## Skills und Review
 
-Alle elf verfügbaren Skills wurden mit der persönlichen Skills CLI installiert. `skills.yaml` hält die Auswahl fest. Zum erneuten Synchronisieren auf einem Rechner mit Zugang zum zentralen Repository:
+`skills.yaml` hält die Auswahl der Skills fest. Zum erneuten Synchronisieren auf einem Rechner mit Zugang zum zentralen Repository:
 
 ```sh
 SKILLS_REPO=/pfad/zum/skills-repository skills sync
 ```
 
-`.coderabbit.yaml` bereitet deutschsprachige technische und inhaltliche PR-Reviews vor. CodeRabbit muss Zugriff auf dieses Repository haben; eine lokale Konfigurationsdatei belegt noch keinen erfolgreichen Review-Lauf. Es bleibt vorerst der einzige Review-Dienst. Die vorgeschriebenen unabhängigen methodischen Erstbewertungen und Freigaben sind offen.
+`.coderabbit.yaml` bereitet deutschsprachige technische und inhaltliche PR-Reviews vor. Eine lokale Konfigurationsdatei belegt noch keinen erfolgreichen Review-Lauf.
 
-Die Arbeitsfassung steht in [docs/pruefregeln.md](docs/pruefregeln.md), das Finding-Format in [docs/reviews/README.md](docs/reviews/README.md). [docs/analyseplan.md](docs/analyseplan.md) nennt den Ablauf und die noch fehlenden Entscheidungen vor Datenanalyse. Originalquellen, Nutzungsrechte und der recherchierte Datenkandidat sind über [docs/belegregister.md](docs/belegregister.md) nachvollziehbar. Ein erfolgreicher technischer Check gibt diesen Forschungsstand nicht methodisch frei.
-
-Auftrag: [LIFE-93](https://linear.app/kiumu-app/issue/LIFE-93/politiktest-fur-deutschland-wissenschaftlich-fundieren-und-transparent). Aktuelle Entscheidungen stehen in [docs/project.md](docs/project.md). Gestaltung, Texte und Bilder regelt das [Handbuch](docs/handbuch.md).
+Aktuelle Entscheidungen stehen in [docs/project.md](docs/project.md). Gestaltung, Texte und Bilder regelt das [Handbuch](docs/handbuch.md).
