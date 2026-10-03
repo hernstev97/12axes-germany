@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 2,
+  "status": "reviewed_historical_descriptive_reference",
+  "studyId": "ESS9e03_3",
+  "edition": "3.3",
+  "sourceContractSha256": "a900f578434f0eba135fefbdec7795326ae75140cbc220b4c30edf9b0f01ce9d",
+  "candidateSha256": "93258369d2f929aa990a11d6aae7dc442eb0d8525eaf6404290c2450f22fb125",
+  "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+  "questions": [
+    {
+      "id": "ESS9e03_3:sofrdst",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2324,
+        "totalCount": 2358,
+        "missingCount": 34,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.10697031539340748
+          },
+          {
+            "code": "2",
+            "proportion": 0.3172125068663722
+          },
+          {
+            "code": "3",
+            "proportion": 0.23176265782262406
+          },
+          {
+            "code": "4",
+            "proportion": 0.28551603450194074
+          },
+          {
+            "code": "5",
+            "proportion": 0.05853848541565555
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 10,
+            "primaryWeightSum": 8.82044451
+          },
+          {
+            "reason": "Don't know",
+            "count": 24,
+            "primaryWeightSum": 33.8275278
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 42.64797231,
+        "allDEWeight": 2358.00001768,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.013967614379298499,
+          "maxAbsDweight": 0.013805427037335505
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 3.9261531525891513e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 3.0373446776421016,
+          "ratioMax": 3.037345258653259
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS9e03_3:sofrwrk",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2335,
+        "totalCount": 2358,
+        "missingCount": 23,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.23315468154683777
+          },
+          {
+            "code": "2",
+            "proportion": 0.6292204424888667
+          },
+          {
+            "code": "3",
+            "proportion": 0.09804477824442091
+          },
+          {
+            "code": "4",
+            "proportion": 0.035042434155637445
+          },
+          {
+            "code": "5",
+            "proportion": 0.004537663564237168
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 8,
+            "primaryWeightSum": 6.81390525
+          },
+          {
+            "reason": "Don't know",
+            "count": 15,
+            "primaryWeightSum": 22.5720051
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 29.38591035,
+        "allDEWeight": 2358.00001768,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.004032625872319562,
+          "maxAbsDweight": 0.004156124202168127
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 5.784882850523587e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 3.0373446776421016,
+          "ratioMax": 3.037345258653259
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS9e03_3:sofrpr",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2335,
+        "totalCount": 2358,
+        "missingCount": 23,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.20559466619541575
+          },
+          {
+            "code": "2",
+            "proportion": 0.6241049231880682
+          },
+          {
+            "code": "3",
+            "proportion": 0.11135967543584617
+          },
+          {
+            "code": "4",
+            "proportion": 0.05269174066755813
+          },
+          {
+            "code": "5",
+            "proportion": 0.0062489945131116945
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 6,
+            "primaryWeightSum": 5.51243604
+          },
+          {
+            "reason": "Don't know",
+            "count": 17,
+            "primaryWeightSum": 26.47515204
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 31.987588080000002,
+        "allDEWeight": 2358.00001768,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.004683706395590681,
+          "maxAbsDweight": 0.0048398683023991584
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 5.546943321332876e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 3.0373446776421016,
+          "ratioMax": 3.037345258653259
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS9e03_3:sofrprv",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2315,
+        "totalCount": 2358,
+        "missingCount": 43,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.009330662695119195
+          },
+          {
+            "code": "2",
+            "proportion": 0.1195614360157035
+          },
+          {
+            "code": "3",
+            "proportion": 0.21638290928488726
+          },
+          {
+            "code": "4",
+            "proportion": 0.46347250188882066
+          },
+          {
+            "code": "5",
+            "proportion": 0.1912524901154694
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 9,
+            "primaryWeightSum": 7.84344121
+          },
+          {
+            "reason": "Don't know",
+            "count": 34,
+            "primaryWeightSum": 49.197175030000004
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 57.04061624,
+        "allDEWeight": 2358.00001768,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.012553416037745235,
+          "maxAbsDweight": 0.012566449807422997
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 3.8080394393347206e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 3.0373446776421016,
+          "ratioMax": 3.037345258653259
+        },
+        "uncertainty": null
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T14:32:25.405967+00:00",
+  "updatedAtUtc": "2026-10-03T14:49:15.344151+00:00",
   "status": "RUNNING",
-  "phase": "BROAD_V2_RESULT_REVIEW_AND_WEBSITE",
+  "phase": "BROAD_V2_REPORT_WEBSITE_AND_PRE_GROUP_V21",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -65,8 +65,13 @@
     {
       "id": "ACCESS-CLAUDE",
       "status": "VERSCHOBEN_NICHT_GEPRÜFT",
-      "evidence": ["LIFE-93 Setup/Phase1/Phase7", "docs/auftrag-life-93-2026-10-03.md"],
-      "blocks": ["abschließende von Steven veranlasste Gesamtkontrolle"],
+      "evidence": [
+        "LIFE-93 Setup/Phase1/Phase7",
+        "docs/auftrag-life-93-2026-10-03.md"
+      ],
+      "blocks": [
+        "abschließende von Steven veranlasste Gesamtkontrolle"
+      ],
       "actionNeeded": "Keine eigenen Claude-Versuche. Steven führt Schlusskontrolle am vorbereiteten Stand aus.",
       "authenticated": null,
       "proof": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
@@ -77,31 +82,41 @@
     {
       "id": "SETUP-ACCEPTANCE",
       "status": "NICHT_GEPRÜFT",
-      "blocks": ["formale Setup-Abnahme"],
+      "blocks": [
+        "formale Setup-Abnahme"
+      ],
       "actionNeeded": "Tatsächliche Branch-/Pflichtcheck-Regeln und erfolgreicher Verstoß-/sauberer Test-PR fehlen."
     },
     {
       "id": "PUBLIC-TAGS",
       "status": "BESTANDEN",
-      "blocks": ["empirischer Analysebeginn"],
+      "blocks": [
+        "empirischer Analysebeginn"
+      ],
       "actionNeeded": "Historische analyseplan-v1/erwartungsmodell-v1 vorA und modell-v1 vorB verifiziert; keine Erweiterungs-v2-Tags oder Datenfreigabe."
     },
     {
       "id": "HUMAN-RELEASE",
       "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
-      "blocks": ["öffentliche Freigabe"],
+      "blocks": [
+        "öffentliche Freigabe"
+      ],
       "actionNeeded": "Steven prüft konkrete Release-Fassung."
     },
     {
       "id": "HUMAN-COMPREHENSION",
       "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
-      "blocks": ["DONE"],
+      "blocks": [
+        "DONE"
+      ],
       "actionNeeded": "Fünf reale anonymisierte Antworten nach Deployment; keine Simulation."
     },
     {
       "id": "CLAUDE-REVIEWS",
       "status": "VERSCHOBEN_NICHT_GEPRÜFT",
-      "blocks": ["abschließende von Steven veranlasste Gesamtkontrolle"],
+      "blocks": [
+        "abschließende von Steven veranlasste Gesamtkontrolle"
+      ],
       "actionNeeded": "Keine eigenen Claude-Versuche. Steven führt Schlusskontrolle am vorbereiteten Stand aus."
     }
   ],
@@ -150,7 +165,12 @@
       "status": "PP001_TARGETED_CORRECTION_PASSED",
       "decision": "reports/loop/POLICY-PROFILE-001-entscheidung.md"
     },
-    "currentMethodologyPage": "Normal first no blockers, MP001/MP002 locator-only corrections Root checked;5widths/axe0/1H1/localfont/nooverflow final; actual anchor activeId observed, visible keyboard focus/200percent unverified"
+    "currentMethodologyPage": "Normal first no blockers, MP001/MP002 locator-only corrections Root checked;5widths/axe0/1H1/localfont/nooverflow final; actual anchor activeId observed, visible keyboard focus/200percent unverified",
+    "check049": {
+      "exitCode": 0,
+      "log": "outputs/loop/check-049.log",
+      "tests": 54
+    }
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -263,6 +283,20 @@
       "sha256": "77d6e6b0fb24b760d4368e5a0ef0db3cb8d5952d166c2d32ef0fcf773d35fe5a",
       "decision": "ACCEPTED_BOUNDED",
       "scope": "targeted revision2 pre-empirical review"
+    },
+    {
+      "role": "methods_reproducibility",
+      "path": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+      "sha256": "1bb14ba2dba3d57612d66c5a50c29ce049606e8fddb062ff6b616f56b60462ee",
+      "decision": "ACCEPTED_BOUNDED",
+      "scope": "42 historical single-item exports; cttresa remains null"
+    },
+    {
+      "role": "sources_constructs_fairness",
+      "path": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+      "sha256": "7a2814359b94ab3a73dd22a090b2a10c6b51db6cc243d8586e8ae15bfdc580e8",
+      "decision": "ACCEPTED_BOUNDED",
+      "scope": "42 historical single-item exports; cttresa remains null"
     }
   ],
   "blockingFindingIds": [
@@ -282,28 +316,19 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "T3 results_v2_methods",
-      "status": "RUNNING_FRESH_FIRST"
+      "id": "/root/breadth_topic_frame",
+      "status": "RUNNING",
+      "scope": "Own pure group calculations/tests only; no raw/local access"
     },
     {
-      "name": "T3 results_v2_sources",
-      "status": "RUNNING_FRESH_FIRST"
+      "id": "/root/breadth_data_instruments",
+      "status": "RUNNING",
+      "scope": "Own gated group I/O/tests only; no actual raw/local access"
     },
     {
-      "name": "/root/angular_policy_draft",
-      "status": "RUNNING_UNROUTED_ANGULAR_AUTHOR_NO_RESPONSES"
-    },
-    {
-      "name": "/root/breadth_data_instruments",
-      "status": "RUNNING_GROUP_V21_CONTRACT_AUTHOR_NO_PARTY_RESPONSES"
-    },
-    {
-      "name": "/root/breadth_topic_frame",
-      "status": "COMPLETED_PURE_REPORT_AND_HUMAN_PROTOCOL_AUTHORS"
-    },
-    {
-      "name": "/root/breadth_topic_frame",
-      "status": "RUNNING_PURE_GROUP_V21_AUTHOR_NO_ACTUAL_RESPONSES"
+      "id": "/root/angular_policy_draft",
+      "status": "COMPLETED",
+      "scope": "Initial unrouted Angular author; follow-up actual aggregate binding after checkpoint"
     }
   ],
   "workPackages": [
@@ -554,22 +579,22 @@
       "tests": "13 synthetic Vitest tests author exit0"
     }
   ],
-  "nextConcreteStep": "Read both fresh results reviews, apply bounded targeted fixes if required then authenticated exports/report. Finish own v2.1 plan/code/reviews before party semantics; unrouted Angular draft and human protocol review in parallel.",
+  "nextConcreteStep": "Prepare reproducible thematic report and bind authenticated 42 historical references to unrouted Angular. Independently review human protocol. Complete group code then two fresh pre-party reviews before any party response access.",
   "checkpoint": {
-    "lastLocalCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
-    "lastVerifiedRemoteCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
-    "lastVerifiedPushAtUtc": "2026-10-03T14:24:39.574596+00:00",
+    "lastLocalCommit": "d025d47f38647531830b2e5ed85c834642894b93",
+    "lastVerifiedRemoteCommit": "d025d47f38647531830b2e5ed85c834642894b93",
+    "lastVerifiedPushAtUtc": "2026-10-03T14:35:59.781249+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-041.json",
+    "record": "reports/loop/push-042.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Actual freeze/gate/exposure/run receipts and corrected bounded UI package; private candidates excluded. Report/CLI/human protocol/group contract explicitly WIP."
+    "pendingPayload": "42 authenticated historical single-item exports, original result firsts, initial unrouted Angular draft and group-contract WIP; active group code excluded"
   },
   "scientificStatus": "Five private historical categorical candidates executed14:25:06–14:25:18UTC after verified new plan tag; no public numeric export. Two fresh same-family result roles running. No party semantic access.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -626,7 +651,9 @@
     },
     {
       "id": "PREP-REVIEW-SKILL",
-      "artifacts": [".claude/skills/life93-review/SKILL.md"],
+      "artifacts": [
+        ".claude/skills/life93-review/SKILL.md"
+      ],
       "status": "NICHT_GEPRÜFT",
       "criteria": "LIFE-93 Setup/Phase7: limited manifest-bound source/method/neutrality review; machine-readable findings; first ratings separated from PR-review; raw/B held back; no active GitHub setup or false model-family claim. Skill format and independent behavioural review required."
     },
@@ -652,13 +679,18 @@
       "id": "ESS-INVENTORY-final",
       "status": "author complete; transition review pending",
       "report": "reports/loop/authors/ESS-INVENTORY-final-proposal.md",
-      "files": ["data/inventar.csv", "data/item-core-v1.json"]
+      "files": [
+        "data/inventar.csv",
+        "data/item-core-v1.json"
+      ]
     },
     {
       "id": "ESS-GROUP-CONTRACT",
       "status": "source author complete; methods implementation/review pending",
       "report": "reports/loop/authors/ESS-GROUP-CONTRACT-proposal.md",
-      "files": ["data/group-source-contract.v1.entwurf.json"]
+      "files": [
+        "data/group-source-contract.v1.entwurf.json"
+      ]
     }
   ],
   "incidents": [
@@ -769,7 +801,10 @@
     "fixedModel": "data/modell-v1.json",
     "fixedModelSha256": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
     "selectedModel": "M2",
-    "selectedScores": ["H", "ZF"],
+    "selectedScores": [
+      "H",
+      "ZF"
+    ],
     "BOpened": true,
     "comparisonFieldsOpened": false,
     "modelTag": "reports/loop/model-tag-v1.json",
@@ -780,7 +815,10 @@
     "exitCode": 0,
     "probeExitCode": 0,
     "selectedModel": "M2",
-    "retainedScores": ["H", "ZF"],
+    "retainedScores": [
+      "H",
+      "ZF"
+    ],
     "criteria": "CRITERIA_PASSED_PENDING_RESULT_REVIEW",
     "publicExport": "noch nicht erfolgt: separate technische Exportprüfung",
     "comparisonFieldsOpened": false,
@@ -892,7 +930,36 @@
     "gate": "reports/loop/gates/pre-empirical-v2.json",
     "freeze": "reports/loop/packages/EMPIRICAL-V2-001/v1/freeze.json",
     "runReceipts": "reports/loop/policy-v2-run-receipts.json",
-    "accessDisclosure": "reports/loop/policy-v2-access-disclosure.json"
+    "accessDisclosure": "reports/loop/policy-v2-access-disclosure.json",
+    "resultTransition": {
+      "status": "ACCEPTED_BOUNDED",
+      "manifest": "reports/loop/packages/RESULTS-V2-001/v1/manifest.json",
+      "manifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+      "reports": [
+        {
+          "role": "methods_reproducibility",
+          "path": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+          "sha256": "1bb14ba2dba3d57612d66c5a50c29ce049606e8fddb062ff6b616f56b60462ee",
+          "decision": "ACCEPTED_BOUNDED",
+          "scope": "42 historical single-item exports; cttresa remains null"
+        },
+        {
+          "role": "sources_constructs_fairness",
+          "path": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+          "sha256": "7a2814359b94ab3a73dd22a090b2a10c6b51db6cc243d8586e8ae15bfdc580e8",
+          "decision": "ACCEPTED_BOUNDED",
+          "scope": "42 historical single-item exports; cttresa remains null"
+        }
+      ],
+      "approvedQuestionCount": 42,
+      "inventoryQuestionCount": 43,
+      "withheldQuestion": "cttresa",
+      "exportDecision": "reports/loop/policy-v2-export-decisions.json",
+      "exports": "data/reference-v2",
+      "technicalAppendix": "reports/phasen/02-politikprofil-v2-technischer-anhang.md",
+      "remainingPresentation": "RV2-M-F03 and SCF-R01: original wordings, category labels, context and eight themes in substantive report; current listing only technical appendix",
+      "rawIndependentReproduction": "NOT_PERFORMED"
+    }
   },
   "sourceCatalogV2": {
     "path": "data/politikprofil-v2.fragen.entwurf.json",
@@ -902,12 +969,15 @@
     "remaining": "B25 original CAWI postflow and new web administration remain open; no operational equivalence."
   },
   "groupPreparationV2": {
-    "status": "NEW_SEPARATE_V21_CONTRACT_IN_PREPARATION_NO_PARTY_HEADERS",
+    "status": "CONTRACT_WIP_AND_PURE_CODE_IN_DEVELOPMENT_NO_PARTY_SEMANTICS",
     "report": "reports/loop/authors/BREADTH-GROUP-SOURCES-005-WIP.md",
     "knownNewMargins": true,
     "limits": "Printed/file-code differences and alias binding need explicit limits. No party headers/answers opened; v2 gate does not permit them.",
     "bindingReport": "reports/loop/authors/BREADTH-GROUP-BINDING-006-WIP.md",
-    "knownNewMarginsScope": "Root produced fixed v2 candidates, sources author informed of access times only, no numbers; no party semantic access"
+    "knownNewMarginsScope": "Root produced fixed v2 candidates, sources author informed of access times only, no numbers; no party semantic access",
+    "contract": "data/gruppenvertrag.v2.1.entwurf.json",
+    "contractSha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+    "authorReport": "reports/loop/authors/GROUP-CONTRACT-V21-WIP.md"
   },
   "prototypeV2": {
     "status": "PUI_R1_R2_R3_CLOSED_BOUNDED_ROUND1",
@@ -920,6 +990,14 @@
     "correctionManifest": "reports/loop/packages/POLICY-UI-001/v2/manifest.json",
     "correctionManifestSha256": "b82dfe72af5e0b9182d70276138f432b2dea0ed97fa40c3acc4863dd81b2a6e8",
     "decision": "reports/loop/POLICY-UI-001-entscheidung.md",
-    "angularPreparation": "unrouted author running; no public test start"
+    "angularPreparation": {
+      "status": "UNROUTED_WIP_SYNTHETICALLY_TESTED",
+      "path": "web/src/app/policy-draft",
+      "authorReport": "reports/loop/authors/ANGULAR-POLICY-DRAFT-WIP.md",
+      "authorReportSha256": "a0f1474a8360045f7b5800c0a1b3f5dbf102dd15c7aa62cdf74bac8766a6425d",
+      "actualReferences": "NOT_YET_BOUND",
+      "tests": "23 targeted tests, typecheck, source parity passed by author; browser still pending",
+      "humanDesign": "PENDING"
+    }
   }
 }

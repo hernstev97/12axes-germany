@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 42,
+  "localCommit": "d025d47f38647531830b2e5ed85c834642894b93",
+  "verifiedRemoteCommit": "d025d47f38647531830b2e5ed85c834642894b93",
+  "verifiedAtUtc": "2026-10-03T14:35:59.781249+00:00",
+  "branch": "research/life-93-night-20261003",
+  "pushExitCode": 0,
+  "scan": "outputs/loop/breadth-checkpoint042-scan.json",
+  "technicalCheck": {
+    "command": "pnpm check",
+    "exitCode": 1,
+    "log": "outputs/loop/check-048.log",
+    "scope": "format stage only failed; unstaged ongoing Angular files and original human-protocol draft; later stages not run"
+  },
+  "scientificAcceptance": false
+}

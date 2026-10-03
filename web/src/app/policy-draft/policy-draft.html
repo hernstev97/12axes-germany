@@ -1,0 +1,293 @@
+<article class="doc">
+  <header class="page-header grid page-width">
+    <div class="area-text-wide">
+      <h1 #pageHeading class="page-title" tabindex="-1">
+        @switch (view()) {
+          @case ('questions') {
+            Fragenentwurf
+          }
+          @case ('overview') {
+            Fragenübersicht
+          }
+          @case ('results') {
+            Ergebnisentwurf
+          }
+        }
+      </h1>
+      <p class="date">Stand: <span class="nowrap">3. Oktober 2026</span></p>
+      <p class="lead">
+        43 Originalangaben aus fünf historischen Studien des
+        <a href="https://www.europeansocialsurvey.org/">European Social Survey</a> (ESS), einer
+        repräsentativen wissenschaftlichen Befragung, bilden diesen Entwurf. Neue Zusammenstellung
+        und Durchführung sind noch nicht freigegeben.
+      </p>
+      <p class="meta">
+        Antworten bleiben im Arbeitsspeicher dieser Sitzung. Beim Schließen oder Neuladen gehen sie
+        verloren. Dieser Entwurf speichert und überträgt keine Antworten.
+      </p>
+      <nav class="draft-navigation" aria-label="Ansichten des Entwurfs">
+        <button
+          type="button"
+          [attr.aria-current]="view() === 'questions' ? 'page' : null"
+          (click)="show('questions')"
+        >
+          Zu den Fragen
+        </button>
+        <button
+          type="button"
+          [attr.aria-current]="view() === 'overview' ? 'page' : null"
+          (click)="show('overview')"
+        >
+          Zur Fragenübersicht
+        </button>
+        <button
+          type="button"
+          [attr.aria-current]="view() === 'results' ? 'page' : null"
+          (click)="show('results')"
+        >
+          Zum Ergebnisentwurf
+        </button>
+      </nav>
+      <p class="meta" aria-live="polite">
+        {{ counts().answered }} beantwortet, {{ counts().skipped }} übersprungen,
+        {{ counts().untouched }} unberührt.
+      </p>
+    </div>
+  </header>
+
+  @if (view() === 'questions') {
+    @let item = currentItem();
+    <section class="section page-width" aria-labelledby="draft-question-title">
+      <div class="grid">
+        <div class="area-title">
+          <h2 #questionHeading id="draft-question-title" class="section-title" tabindex="-1">
+            Frage {{ currentIndex() + 1 }} von {{ items.length }}
+          </h2>
+          <p>{{ item.rubricTitle }}</p>
+          <p class="meta">{{ item.origin }}</p>
+          <p class="meta">{{ stateLabel(currentAnswer()) }}</p>
+        </div>
+        <div class="area-body prose">
+          <div id="draft-original-context" class="original-context">
+            <h3>Originalkontext</h3>
+            @for (introduction of item.introductionsDe; track $index) {
+              <p>{{ introduction }}</p>
+            }
+            @if (item.situationDe) {
+              <p>{{ item.situationDe }}</p>
+            }
+            @if (!item.introductionsDe.length && !item.situationDe) {
+              <p class="meta">
+                Der Katalog enthält für diese Einzelangabe keine zusätzliche Einleitung.
+              </p>
+            }
+          </div>
+          <fieldset aria-describedby="draft-original-context draft-development-note">
+            <legend>
+              @for (wording of item.displayWording; track $index) {
+                <span>{{ wording }}</span>
+              }
+            </legend>
+            @for (category of item.categories; track category.code) {
+              <label class="answer-option">
+                <input
+                  type="radio"
+                  name="draft-original-answer"
+                  [value]="category.code"
+                  [checked]="isSelected(currentAnswer(), category.code)"
+                  (change)="select(category.code)"
+                />
+                <span>{{ categoryLabel(item, category) }}</span>
+              </label>
+            }
+          </fieldset>
+          <p id="draft-development-note" class="meta">{{ item.developmentNote }}</p>
+          <div class="question-controls">
+            <button type="button" (click)="previous()" [disabled]="currentIndex() === 0">
+              Zur vorherigen Frage
+            </button>
+            <button type="button" (click)="next()">
+              {{
+                currentIndex() === items.length - 1 ? 'Zum Ergebnisentwurf' : 'Zur nächsten Frage'
+              }}
+            </button>
+            <button
+              type="button"
+              (click)="resetAnswer()"
+              [disabled]="currentAnswer().status === 'untouched'"
+            >
+              Auswahl zurücksetzen
+            </button>
+          </div>
+          <div class="skip-controls">
+            <label for="draft-skip-reason">Grund für das Überspringen in dieser Sitzung</label>
+            <select id="draft-skip-reason" [value]="skipReason()" (change)="setSkipReason($event)">
+              <option value="unspecified">Keine Angabe</option>
+              <option value="dont-know">Weiß nicht</option>
+              <option value="decline">Keine Antwort geben</option>
+            </select>
+            <button type="button" (click)="skip()">Diese Frage überspringen</button>
+          </div>
+          <p class="meta">
+            Überspringen ist keine politische Antwort und wird keinem Missing-Code der
+            Originalstudie gleichgesetzt.
+          </p>
+          <app-policy-source-details [item]="item" />
+        </div>
+      </div>
+    </section>
+  }
+
+  @if (view() === 'overview') {
+    <section class="section page-width" aria-labelledby="draft-overview-title">
+      <div class="grid">
+        <h2 id="draft-overview-title" class="section-title area-title">Alle Originalfragen</h2>
+        <div class="area-body prose">
+          <p>
+            Vor- und Zurückgehen verändert den Antwortstatus nicht. Jede Frage kann einzeln geöffnet
+            oder bearbeitet werden.
+          </p>
+          <ol class="overview-list">
+            @for (item of items; track item.id) {
+              <li>
+                <button type="button" (click)="edit(item.id)">
+                  Frage {{ $index + 1 }}: {{ item.origin }}
+                </button>
+                <p>{{ item.wordingDe }}</p>
+                <p class="meta">{{ stateLabel(answers().get(item.id)!) }}</p>
+              </li>
+            }
+          </ol>
+        </div>
+      </div>
+    </section>
+  }
+
+  @if (view() === 'results') {
+    <section class="section page-width" aria-labelledby="draft-limits-title">
+      <div class="grid">
+        <h2 id="draft-limits-title" class="section-title area-title">Status und Grenzen</h2>
+        <div class="prose area-body">
+          <p>
+            Forschungsprototyp. Fragen und Vergleichsdaten stammen aus dem European Social Survey,
+            Dimensionen und Auswertung sind ein eigenes Modell dieses Projekts. Analyse und Website
+            wurden mit KI erstellt und nicht von Fachleuten begutachtet. Code und Auswertung sind
+            öffentlich.
+          </p>
+          <p>
+            Texte und Ergebnisdarstellung wurden noch nicht mit Menschen auf Verständlichkeit
+            getestet.
+          </p>
+          <p>
+            Diese Fassung zeigt getrennte Einzelangaben unter Themenrubriken. Sie berechnet keine
+            gemeinsamen Dimensionen und keinen politischen Gesamtwert.
+          </p>
+          <p>
+            Das Projekt ist weder validiert noch wissenschaftlich geprüft und kann keine Neutralität
+            garantieren.
+          </p>
+          <p>
+            Eine Auswahl beschreibt nur die jeweilige Originalaussage. Sie ergibt keinen
+            persönlichen Unsicherheitsbereich, kein Parteimatch und keine aktuelle Bevölkerungsnorm.
+          </p>
+          @if (references().status === 'none') {
+            <p>Historische Vergleichswerte sind in dieser Fassung noch nicht eingebunden.</p>
+          }
+          @if (references().status === 'rejected') {
+            <p role="status">
+              Die übergebene historische Referenz passt nicht zu den gebundenen Originalquellen. Es
+              werden keine Vergleichswerte angezeigt.
+            </p>
+          }
+        </div>
+      </div>
+    </section>
+    @for (rubric of resultRubrics; track rubric.id) {
+      <section class="section page-width" [attr.aria-labelledby]="'draft-result-' + rubric.id">
+        <div class="grid">
+          <h2 [id]="'draft-result-' + rubric.id" class="section-title area-title">
+            {{ rubric.title }}
+          </h2>
+          <div class="prose area-body">
+            <p class="meta">
+              Diese Rubrik ordnet konkrete Originalangaben. Sie ist keine bestätigte Dimension und
+              erhält keinen gemeinsamen Wert.
+            </p>
+            @for (item of rubric.items; track item.id) {
+              @let answer = answers().get(item.id)!;
+              <article class="result-item" [attr.data-question-id]="item.id">
+                <h3>{{ item.title }}</h3>
+                <p class="meta">{{ item.origin }}</p>
+                <p class="state">{{ stateLabel(answer) }}</p>
+                @if (answer.status === 'answered') {
+                  <p>Gewählte Originalkategorie: {{ answerLabel(item, answer) }}</p>
+                  <p>{{ item.meaning }}</p>
+                } @else if (answer.status === 'skipped') {
+                  <p>
+                    Bewusst übersprungen. Grund dieser Entwurfssitzung: {{ skipLabel(item.id) }}.
+                  </p>
+                  <p>
+                    Keine politische Aussage abgeleitet. Der Grund wird keinem Missing-Code der
+                    Originalstudie gleichgesetzt.
+                  </p>
+                } @else {
+                  <p>
+                    Keine Auswahl und kein bewusstes Überspringen. Für diese Einzelangabe liegt
+                    keine eigene Antwort vor.
+                  </p>
+                }
+                @if (referenceFor(item.id); as reference) {
+                  <div class="historical-reference">
+                    <h4>Historische Kategorieanteile dieser Einzelstudie</h4>
+                    <p>{{ item.origin }}. {{ item.fieldworkLabel }}. {{ item.modesLabel }}.</p>
+                    <p>
+                      Menschen ab 15 Jahren in Privathaushalten. Keine aktuelle Bevölkerungsnorm und
+                      keine Referenz nur für Wahlberechtigte.
+                    </p>
+                    <dl class="facts">
+                      @for (category of reference.categoryShares; track category.code) {
+                        <div>
+                          <dt>{{ referenceLabel(item, category.code) }}</dt>
+                          <dd>{{ percentage(category.share) }}</dd>
+                        </div>
+                      }
+                    </dl>
+                    <p class="meta">
+                      Gewichtung: pspwght. Der Nenner umfasst nur gültige Antworten auf diese Frage.
+                      Ungewichtete Zahl gültiger Antworten: {{ reference.validUnweightedN }}.
+                      Stichproben-, Nichtantwort-, Zeit- und Modusgrenzen bleiben bestehen.
+                    </p>
+                    @if (item.studyId === 'ESS8e02_3') {
+                      <p>
+                        In München wurden keine Befragten erfasst. Gewichtung stellt die fehlenden
+                        Antworten nicht wieder her.
+                      </p>
+                    }
+                  </div>
+                } @else {
+                  <p class="meta">
+                    Historische Referenz für diese Einzelangabe noch nicht eingebunden.
+                  </p>
+                }
+                <app-policy-source-details [item]="item" [showOriginal]="true" />
+                <button
+                  type="button"
+                  (click)="edit(item.id)"
+                  [attr.aria-label]="
+                    'Originalfrage ' +
+                    item.originalQuestionId +
+                    ' in ' +
+                    item.studyId +
+                    ' bearbeiten'
+                  "
+                >
+                  Zu dieser Originalfrage
+                </button>
+              </article>
+            }
+          </div>
+        </div>
+      </section>
+    }
+  }
+</article>

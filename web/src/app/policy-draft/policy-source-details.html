@@ -1,0 +1,150 @@
+<details class="source-details prose">
+  <summary>Originalkontext, Version und Quellen</summary>
+  @if (showOriginal()) {
+    <h4>Originalkontext</h4>
+    @for (introduction of item().introductionsDe; track $index) {
+      <p>{{ introduction }}</p>
+    }
+    @if (item().situationDe) {
+      <p>{{ item().situationDe }}</p>
+    }
+    @for (wording of item().displayWording; track $index) {
+      <p>{{ wording }}</p>
+    }
+    <ul>
+      @for (category of item().categories; track category.code) {
+        <li>{{ categoryLabel(item(), category) }}</li>
+      }
+    </ul>
+    <p>{{ item().developmentNote }}</p>
+  }
+  @if (item().instructionDe) {
+    <p>Originalanweisung: {{ item().instructionDe }}</p>
+    <p class="meta">
+      Listen- und Interviewanweisungen bleiben Originalkontext. Die Bedienung dieses Entwurfs führt
+      sie nicht als ursprüngliches Feldinstrument aus.
+    </p>
+  }
+  <dl class="facts">
+    <div>
+      <dt>Urheber und Archiv</dt>
+      <dd>{{ catalogue.attribution.creator }}; {{ catalogue.attribution.archive }}</dd>
+    </div>
+    <div>
+      <dt>Quelle und Ausgabe</dt>
+      <dd>{{ item().origin }}</dd>
+    </div>
+    <div>
+      <dt>Erhebungszeit Deutschland</dt>
+      <dd>{{ item().fieldworkLabel }}</dd>
+    </div>
+    <div>
+      <dt>Originale Erhebungsmodi</dt>
+      <dd>{{ item().modesLabel }}</dd>
+    </div>
+    <div>
+      <dt>Gebundene Originalform</dt>
+      <dd>{{ item().boundOriginalForm }}</dd>
+    </div>
+    <div>
+      <dt>Deklarierte Zielpopulation</dt>
+      <dd>
+        Menschen ab 15 Jahren in Privathaushalten unabhängig von Nationalität, Staatsangehörigkeit,
+        Sprache oder rechtlichem Status. Das beschreibt die Zielpopulation und belegt keine
+        vollständige tatsächliche Abdeckung. Wahlberechtigte sind eine andere Population.
+      </dd>
+    </div>
+    @if (item().studyId === 'ESS8e02_3') {
+      <div>
+        <dt>Dokumentierte Stichprobengrenze</dt>
+        <dd>
+          In München wurden laut ESS8-Stichprobendokumentation keine Befragten erfasst. Gewichtung
+          ersetzt diese nicht erhobenen Antworten nicht.
+        </dd>
+      </div>
+    }
+    <div>
+      <dt>Historische Grenze</dt>
+      <dd>
+        Keine aktuelle Bevölkerungsnorm für 2026. Zeiten, Stichproben und Modi bleiben getrennt.
+        Neue Zusammenstellung und Webdurchführung sind nicht empirisch gleichgesetzt.
+      </dd>
+    </div>
+    <div>
+      <dt>Datenausgabe</dt>
+      <dd>
+        <a [href]="item().study.dataDoiUrl"
+          >{{ item().studyId }}, Ausgabe {{ item().study.edition }}, DOI</a
+        >
+      </dd>
+    </div>
+    <div>
+      <dt>Dokumentationszitation</dt>
+      <dd><a [href]="item().study.documentationDoiUrl">Offizielle Dokumentations-DOI</a></dd>
+    </div>
+    <div>
+      <dt>Originaldokumentation</dt>
+      <dd><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></dd>
+    </div>
+    <div>
+      <dt>Daten separat lizenziert</dt>
+      <dd><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></dd>
+    </div>
+  </dl>
+  <p class="meta">
+    Transkription und neue Zusammenstellung aus ESS-Originaldokumentation. Die Radioauswahl ist eine
+    neue Darstellung. Dokumentationsrechte und Rechte an Antwortdaten bleiben getrennt.
+  </p>
+  <ul>
+    @for (source of sources(); track $index) {
+      <li>
+        <a [href]="source.url">{{ source.label }}</a>
+      </li>
+    }
+  </ul>
+  <details>
+    <summary>Originalcodes und öffentliche Codebindung</summary>
+    <p>
+      Gedruckte Codes und API-/Exportcodes sind getrennt gebunden. Die Auswahl nutzt den
+      ausdrücklich zugeordneten API-/Exportcode und keinen Listenindex.
+    </p>
+    <dl class="facts">
+      @for (category of item().categories; track category.code) {
+        <div>
+          <dt>{{ category.labelDe }}</dt>
+          <dd>Druckcode {{ category.printedCodeDe }}; API-/Exportcode {{ category.code }}</dd>
+        </div>
+      }
+    </dl>
+    <p>
+      <a [href]="codeSource().publicUrl">Öffentliche Originalcodeliste</a>, Feldkennung
+      <code>{{ item().codeBinding.sourceFieldId }}</code
+      >, Metadatenversion {{ item().codeBinding.sourceFieldMetadataVersion }}.
+    </p>
+    <p class="meta">
+      Originale Missing-Codes sind keine politischen Antwortoptionen. Ein Überspringgrund dieser
+      Entwurfssitzung wird keinem Missing-Code der Studie gleichgesetzt.
+    </p>
+  </details>
+  <details>
+    <summary>Originale Populations- und Stichprobendokumentation</summary>
+    <p>{{ item().study.populationDeclaredEn }}</p>
+    @for (text of item().study.samplingProceduresDeclaredEn; track $index) {
+      <p class="original-text">{{ text }}</p>
+    }
+  </details>
+  <details>
+    <summary>Originale Zitationsvorgabe und Versionshinweise</summary>
+    <p class="original-text">{{ item().study.citationRequirementDeclaredEn }}</p>
+    @for (note of item().study.versionNotes; track $index) {
+      <p>{{ note }}</p>
+    }
+    @if (item().studyId === 'ESS10SCe03_2') {
+      <p>
+        Die öffentliche Katalogbindung nennt Self-completion-Ausgabe 3.2. Die überlieferte
+        Zitationsvorgabe nennt teilweise noch 3.1. Dieser Widerspruch bleibt sichtbar. Die
+        persönliche Interviewausgabe ersetzt diese Referenz nicht.
+      </p>
+    }
+  </details>
+</details>

@@ -1,0 +1,751 @@
+{
+  "schemaVersion": 2,
+  "status": "reviewed_historical_descriptive_reference",
+  "studyId": "ESS8e02_3",
+  "edition": "2.3",
+  "sourceContractSha256": "d40c4fbfbd66ee17cf066320b660210f4a0ff5b7c611915cd8785559beb2bbf0",
+  "candidateSha256": "0ca02b80692de3b04ce7733c2aca09c1a70e7d85aafc40632d39d99f07d8bca0",
+  "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+  "questions": [
+    {
+      "id": "ESS8e02_3:gvslvol",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2833,
+        "totalCount": 2852,
+        "missingCount": 19,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "0",
+            "proportion": 0.009294597277218632
+          },
+          {
+            "code": "1",
+            "proportion": 0.002622619485675395
+          },
+          {
+            "code": "2",
+            "proportion": 0.008282377125215573
+          },
+          {
+            "code": "3",
+            "proportion": 0.02211287433708376
+          },
+          {
+            "code": "4",
+            "proportion": 0.029554475810113584
+          },
+          {
+            "code": "5",
+            "proportion": 0.08854134380691252
+          },
+          {
+            "code": "6",
+            "proportion": 0.08102770320295721
+          },
+          {
+            "code": "7",
+            "proportion": 0.1722319261841502
+          },
+          {
+            "code": "8",
+            "proportion": 0.24933323042165423
+          },
+          {
+            "code": "9",
+            "proportion": 0.11950116168070059
+          },
+          {
+            "code": "10",
+            "proportion": 0.21749769066831834
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 2,
+            "primaryWeightSum": 2.7960211
+          },
+          {
+            "reason": "Don't know",
+            "count": 17,
+            "primaryWeightSum": 18.71189679
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 21.507917889999998,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.0037553682370115027,
+          "maxAbsDweight": 0.01558301592105274
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 3.84925424867788e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:gvslvue",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2821,
+        "totalCount": 2852,
+        "missingCount": 31,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "0",
+            "proportion": 0.009575293426401715
+          },
+          {
+            "code": "1",
+            "proportion": 0.0035862424348542814
+          },
+          {
+            "code": "2",
+            "proportion": 0.024704988073132057
+          },
+          {
+            "code": "3",
+            "proportion": 0.08311749342188712
+          },
+          {
+            "code": "4",
+            "proportion": 0.08785446992360701
+          },
+          {
+            "code": "5",
+            "proportion": 0.23806754865377944
+          },
+          {
+            "code": "6",
+            "proportion": 0.1402188815420084
+          },
+          {
+            "code": "7",
+            "proportion": 0.15430019826880498
+          },
+          {
+            "code": "8",
+            "proportion": 0.14344578430931212
+          },
+          {
+            "code": "9",
+            "proportion": 0.04126467493309627
+          },
+          {
+            "code": "10",
+            "proportion": 0.07386442501311669
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 4,
+            "primaryWeightSum": 4.7537503999999995
+          },
+          {
+            "reason": "Don't know",
+            "count": 27,
+            "primaryWeightSum": 28.09451124
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 32.84826164,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.004508734733676412,
+          "maxAbsDweight": 0.008295177024505773
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 2.613242122695425e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:gvcldcr",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2837,
+        "totalCount": 2852,
+        "missingCount": 15,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "0",
+            "proportion": 0.0025721778427253024
+          },
+          {
+            "code": "1",
+            "proportion": 0.0
+          },
+          {
+            "code": "2",
+            "proportion": 0.004447534241031108
+          },
+          {
+            "code": "3",
+            "proportion": 0.010430531221777341
+          },
+          {
+            "code": "4",
+            "proportion": 0.015804833153235387
+          },
+          {
+            "code": "5",
+            "proportion": 0.040181061166323764
+          },
+          {
+            "code": "6",
+            "proportion": 0.03944668273486762
+          },
+          {
+            "code": "7",
+            "proportion": 0.10212945988349073
+          },
+          {
+            "code": "8",
+            "proportion": 0.24260738786955688
+          },
+          {
+            "code": "9",
+            "proportion": 0.18271181695536406
+          },
+          {
+            "code": "10",
+            "proportion": 0.3596685149316278
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 2,
+            "primaryWeightSum": 3.1308689999999997
+          },
+          {
+            "reason": "Don't know",
+            "count": 13,
+            "primaryWeightSum": 13.68190651
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 16.812775509999998,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.027007551335555824,
+          "maxAbsDweight": 0.009206376951505613
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 3.238979084940752e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:bnlwinc",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2772,
+        "totalCount": 2852,
+        "missingCount": 80,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.15533607652447734
+          },
+          {
+            "code": "2",
+            "proportion": 0.4529573436374305
+          },
+          {
+            "code": "3",
+            "proportion": 0.3430125050445813
+          },
+          {
+            "code": "4",
+            "proportion": 0.04869407479351086
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 5,
+            "primaryWeightSum": 4.7626426
+          },
+          {
+            "reason": "Don't know",
+            "count": 75,
+            "primaryWeightSum": 76.53536747
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 81.29801007,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.017976430008506294,
+          "maxAbsDweight": 0.019674072655789965
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 7.831186255025102e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:eduunmp",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2757,
+        "totalCount": 2852,
+        "missingCount": 95,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.04376158306677813
+          },
+          {
+            "code": "2",
+            "proportion": 0.3497989437155899
+          },
+          {
+            "code": "3",
+            "proportion": 0.5198899751134263
+          },
+          {
+            "code": "4",
+            "proportion": 0.08654949810420576
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 9,
+            "primaryWeightSum": 7.81540677
+          },
+          {
+            "reason": "Don't know",
+            "count": 86,
+            "primaryWeightSum": 84.33402326
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 92.14943003,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.005946930657918514,
+          "maxAbsDweight": 0.007856029058770475
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 5.652011081380692e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:inctxff",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2814,
+        "totalCount": 2852,
+        "missingCount": 38,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.08867297657143745
+          },
+          {
+            "code": "2",
+            "proportion": 0.29388719995404394
+          },
+          {
+            "code": "3",
+            "proportion": 0.24207853263739015
+          },
+          {
+            "code": "4",
+            "proportion": 0.28445499248002964
+          },
+          {
+            "code": "5",
+            "proportion": 0.09090629835709875
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 4,
+            "primaryWeightSum": 4.40090245
+          },
+          {
+            "reason": "Don't know",
+            "count": 34,
+            "primaryWeightSum": 43.70013839
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 48.101040839999996,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.0125052155021763,
+          "maxAbsDweight": 0.009319337961434637
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 8.934770978630269e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:sbsrnen",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2826,
+        "totalCount": 2852,
+        "missingCount": 26,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.39129084752346316
+          },
+          {
+            "code": "2",
+            "proportion": 0.4629222000809957
+          },
+          {
+            "code": "3",
+            "proportion": 0.06651349433178376
+          },
+          {
+            "code": "4",
+            "proportion": 0.057789829372228915
+          },
+          {
+            "code": "5",
+            "proportion": 0.02148362869152837
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 5,
+            "primaryWeightSum": 4.97097555
+          },
+          {
+            "reason": "Don't know",
+            "count": 21,
+            "primaryWeightSum": 25.37707929
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 30.34805484,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.013371526928983302,
+          "maxAbsDweight": 0.001985669274160773
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 1.9070350854022422e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:banhhap",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2828,
+        "totalCount": 2852,
+        "missingCount": 24,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.35204944374534136
+          },
+          {
+            "code": "2",
+            "proportion": 0.3387249628398997
+          },
+          {
+            "code": "3",
+            "proportion": 0.13718260970132623
+          },
+          {
+            "code": "4",
+            "proportion": 0.1301747932814814
+          },
+          {
+            "code": "5",
+            "proportion": 0.04186819043195127
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 4,
+            "primaryWeightSum": 3.69755975
+          },
+          {
+            "reason": "Don't know",
+            "count": 20,
+            "primaryWeightSum": 23.65970939
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 27.35726914,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.003039542755242375,
+          "maxAbsDweight": 0.005406175966980287
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 5.807304637173161e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:imsclbn",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2808,
+        "totalCount": 2852,
+        "missingCount": 44,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.11162657590087964
+          },
+          {
+            "code": "2",
+            "proportion": 0.13071538451784687
+          },
+          {
+            "code": "3",
+            "proportion": 0.5020257001136811
+          },
+          {
+            "code": "4",
+            "proportion": 0.23269539761535077
+          },
+          {
+            "code": "5",
+            "proportion": 0.022936941852241693
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 11,
+            "primaryWeightSum": 10.25852
+          },
+          {
+            "reason": "Don't know",
+            "count": 33,
+            "primaryWeightSum": 36.61152132
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 46.87004132,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.0052308283188092775,
+          "maxAbsDweight": 0.008053560347209221
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 4.490400273837736e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS8e02_3:wrkprbf",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2765,
+        "totalCount": 2852,
+        "missingCount": 87,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.03370545546184924
+          },
+          {
+            "code": "2",
+            "proportion": 0.3430264445600971
+          },
+          {
+            "code": "3",
+            "proportion": 0.5415963980327134
+          },
+          {
+            "code": "4",
+            "proportion": 0.08167170194534025
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 10,
+            "primaryWeightSum": 9.22887527
+          },
+          {
+            "reason": "Don't know",
+            "count": 77,
+            "primaryWeightSum": 91.91575153
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 101.1446268,
+        "allDEWeight": 2852.00000435,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.024762430093551002,
+          "maxAbsDweight": 0.012263156708333611
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 5.073303999125756e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.499808997654146,
+          "ratioMax": 2.49980947373396
+        },
+        "uncertainty": null
+      }
+    }
+  ]
+}

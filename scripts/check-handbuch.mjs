@@ -1,6 +1,7 @@
 // Prüft die mechanisch prüfbaren Regeln aus docs/handbuch.md. Läuft in `pnpm check`.
 // Inhaltliche Regeln (Ton, Belege, Bildauswahl) ersetzt das Skript nicht.
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { join, relative } from 'node:path';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -104,6 +105,27 @@ function visibleText(file, text) {
     : text.replace(/<!--[\s\S]*?-->/g, '');
 }
 
+// Wortgetreue historische Fragen bleiben erhalten. Nur belegte Wortlaut-Literale
+// der hashgebundenen Projektion sind von der Regel zum generischen Maskulinum
+// ausgenommen. Eigene Erläuterungen und alle anderen Regeln gelten weiterhin.
+const originalCatalogueFile = join(src, 'app/policy-draft/public-catalogue.ts');
+let originalWordingLiterals = [];
+if (existsSync(originalCatalogueFile)) {
+  try {
+    execFileSync(process.execPath, [join(src, 'app/policy-draft/verify-public-catalogue.mjs')], {
+      stdio: 'pipe',
+    });
+    const catalogue = JSON.parse(
+      readFileSync(join(root, 'data/politikprofil-v2.fragen.entwurf.json'), 'utf8'),
+    );
+    originalWordingLiterals = catalogue.items.map(
+      ({ wordingDe }) => `'${wordingDe.replace(/\\/g, '\\\\').replace(/'/g, "\\'")}'`,
+    );
+  } catch {
+    report(originalCatalogueFile, 'Originalquellen-Parität nicht bestätigt');
+  }
+}
+
 for (const file of sources) {
   const text = readFileSync(file, 'utf8');
   for (const [pattern, message] of forbiddenEverywhere) {
@@ -121,7 +143,14 @@ for (const file of sources) {
   if (/\.(html|ts)$/.test(file)) {
     const visible = visibleText(file, text);
     for (const [pattern, message] of forbiddenText) {
-      const match = visible.match(pattern);
+      const checked =
+        file === originalCatalogueFile && message === 'generisches Maskulinum'
+          ? originalWordingLiterals.reduce(
+              (prose, literal) => prose.replaceAll(literal, ''),
+              visible,
+            )
+          : visible;
+      const match = checked.match(pattern);
       if (match) {
         report(file, `${message} („${match[0]}“)`);
       }

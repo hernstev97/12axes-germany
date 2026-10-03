@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "role": "sources_constructs_fairness",
+  "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+  "decision": "ACCEPTED_BOUNDED",
+  "studies": [
+    {
+      "studyId": "ESS5e03_6",
+      "candidateSha256": "d29d4acc6ff1a973d8bb920b0ba02afbadc7e7bd378e53374a9363e752945e33",
+      "approvedQuestionIds": [
+        "ESS5e03_6:bplcdc",
+        "ESS5e03_6:dpcstrb",
+        "ESS5e03_6:hrshsnta",
+        "ESS5e03_6:dbctvrd",
+        "ESS5e03_6:lwstrob",
+        "ESS5e03_6:rgbrklw"
+      ]
+    },
+    {
+      "studyId": "ESS8e02_3",
+      "candidateSha256": "0ca02b80692de3b04ce7733c2aca09c1a70e7d85aafc40632d39d99f07d8bca0",
+      "approvedQuestionIds": [
+        "ESS8e02_3:gvslvol",
+        "ESS8e02_3:gvslvue",
+        "ESS8e02_3:gvcldcr",
+        "ESS8e02_3:bnlwinc",
+        "ESS8e02_3:eduunmp",
+        "ESS8e02_3:inctxff",
+        "ESS8e02_3:sbsrnen",
+        "ESS8e02_3:banhhap",
+        "ESS8e02_3:imsclbn",
+        "ESS8e02_3:wrkprbf"
+      ]
+    },
+    {
+      "studyId": "ESS9e03_3",
+      "candidateSha256": "93258369d2f929aa990a11d6aae7dc442eb0d8525eaf6404290c2450f22fb125",
+      "approvedQuestionIds": [
+        "ESS9e03_3:sofrdst",
+        "ESS9e03_3:sofrwrk",
+        "ESS9e03_3:sofrpr",
+        "ESS9e03_3:sofrprv"
+      ]
+    },
+    {
+      "studyId": "ESS10SCe03_2",
+      "candidateSha256": "e2916511e06254185d3d0394d37fd29e68d225ca6996c16a9a4ac8b42ee5de55",
+      "approvedQuestionIds": [
+        "ESS10SCe03_2:fairelc",
+        "ESS10SCe03_2:dfprtal",
+        "ESS10SCe03_2:medcrgv",
+        "ESS10SCe03_2:rghmgpr",
+        "ESS10SCe03_2:votedir",
+        "ESS10SCe03_2:gptpelc",
+        "ESS10SCe03_2:gvctzpv",
+        "ESS10SCe03_2:grdfinc",
+        "ESS10SCe03_2:viepol",
+        "ESS10SCe03_2:wpestop",
+        "ESS10SCe03_2:scchpldm",
+        "ESS10SCe03_2:vteurmmb",
+        "ESS10SCe03_2:keydec",
+        "ESS10SCe03_2:imsmetn",
+        "ESS10SCe03_2:imdfetn",
+        "ESS10SCe03_2:impcntr"
+      ]
+    },
+    {
+      "studyId": "ESS11e04_2",
+      "candidateSha256": "f36960ab75a2ac357d92b373013f51767a88aff98759061511b86dff6c3e05c2",
+      "approvedQuestionIds": [
+        "ESS11e04_2:gincdif",
+        "ESS11e04_2:euftf",
+        "ESS11e04_2:eqparep",
+        "ESS11e04_2:eqparlv",
+        "ESS11e04_2:freinsw",
+        "ESS11e04_2:fineqpy"
+      ]
+    }
+  ]
+}

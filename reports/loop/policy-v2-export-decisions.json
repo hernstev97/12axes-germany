@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "decidedAtUtc": "2026-10-03T14:39:28.054249+00:00",
+  "decision": "ALLOW_REVIEWED_HISTORICAL_REFERENCE_V2",
+  "scope": "public research-branch aggregate export only; no current norm/instrument/design/human/legal/release acceptance",
+  "rootReadBothCompleteFirstReports": true,
+  "actualManifestAnd29Public5PrivateBytesVerified": true,
+  "studyDecisions": [
+    {
+      "schemaVersion": 1,
+      "decision": "ALLOW_REVIEWED_HISTORICAL_REFERENCE_V2",
+      "studyId": "ESS5e03_6",
+      "edition": "3.6",
+      "candidateSha256": "d29d4acc6ff1a973d8bb920b0ba02afbadc7e7bd378e53374a9363e752945e33",
+      "sourceContractSha256": "6779d181d7f42d3a76659ca0cd403960fd6fee893316dac2175542d18af77fe4",
+      "approvedQuestionIds": [
+        "ESS5e03_6:bplcdc",
+        "ESS5e03_6:dpcstrb",
+        "ESS5e03_6:hrshsnta",
+        "ESS5e03_6:dbctvrd",
+        "ESS5e03_6:lwstrob",
+        "ESS5e03_6:rgbrklw"
+      ],
+      "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+      "reviewers": [
+        {
+          "role": "methods_reproducibility",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+          "sha256": "1bb14ba2dba3d57612d66c5a50c29ce049606e8fddb062ff6b616f56b60462ee",
+          "decision": "ACCEPTED_BOUNDED"
+        },
+        {
+          "role": "sources_constructs_fairness",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+          "sha256": "7a2814359b94ab3a73dd22a090b2a10c6b51db6cc243d8586e8ae15bfdc580e8",
+          "decision": "ACCEPTED_BOUNDED"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "decision": "ALLOW_REVIEWED_HISTORICAL_REFERENCE_V2",
+      "studyId": "ESS8e02_3",
+      "edition": "2.3",
+      "candidateSha256": "0ca02b80692de3b04ce7733c2aca09c1a70e7d85aafc40632d39d99f07d8bca0",
+      "sourceContractSha256": "d40c4fbfbd66ee17cf066320b660210f4a0ff5b7c611915cd8785559beb2bbf0",
+      "approvedQuestionIds": [
+        "ESS8e02_3:gvslvol",
+        "ESS8e02_3:gvslvue",
+        "ESS8e02_3:gvcldcr",
+        "ESS8e02_3:bnlwinc",
+        "ESS8e02_3:eduunmp",
+        "ESS8e02_3:inctxff",
+        "ESS8e02_3:sbsrnen",
+        "ESS8e02_3:banhhap",
+        "ESS8e02_3:imsclbn",
+        "ESS8e02_3:wrkprbf"
+      ],
+      "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+      "reviewers": [
+        {
+          "role": "methods_reproducibility",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+          "sha256": "1bb14ba2dba3d57612d66c5a50c29ce049606e8fddb062ff6b616f56b60462ee",
+          "decision": "ACCEPTED_BOUNDED"
+        },
+        {
+          "role": "sources_constructs_fairness",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+          "sha256": "7a2814359b94ab3a73dd22a090b2a10c6b51db6cc243d8586e8ae15bfdc580e8",
+          "decision": "ACCEPTED_BOUNDED"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "decision": "ALLOW_REVIEWED_HISTORICAL_REFERENCE_V2",
+      "studyId": "ESS9e03_3",
+      "edition": "3.3",
+      "candidateSha256": "93258369d2f929aa990a11d6aae7dc442eb0d8525eaf6404290c2450f22fb125",
+      "sourceContractSha256": "a900f578434f0eba135fefbdec7795326ae75140cbc220b4c30edf9b0f01ce9d",
+      "approvedQuestionIds": [
+        "ESS9e03_3:sofrdst",
+        "ESS9e03_3:sofrwrk",
+        "ESS9e03_3:sofrpr",
+        "ESS9e03_3:sofrprv"
+      ],
+      "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+      "reviewers": [
+        {
+          "role": "methods_reproducibility",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+          "sha256": "1bb14ba2dba3d57612d66c5a50c29ce049606e8fddb062ff6b616f56b60462ee",
+          "decision": "ACCEPTED_BOUNDED"
+        },
+        {
+          "role": "sources_constructs_fairness",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+          "sha256": "7a2814359b94ab3a73dd22a090b2a10c6b51db6cc243d8586e8ae15bfdc580e8",
+          "decision": "ACCEPTED_BOUNDED"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "decision": "ALLOW_REVIEWED_HISTORICAL_REFERENCE_V2",
+      "studyId": "ESS10SCe03_2",
+      "edition": "3.2",
+      "candidateSha256": "e2916511e06254185d3d0394d37fd29e68d225ca6996c16a9a4ac8b42ee5de55",
+      "sourceContractSha256": "14875f845a20f2a048b75628ab98b13bb24863f73b51f50f95421fecc201d8ad",
+      "approvedQuestionIds": [
+        "ESS10SCe03_2:fairelc",
+        "ESS10SCe03_2:dfprtal",
+        "ESS10SCe03_2:medcrgv",
+        "ESS10SCe03_2:rghmgpr",
+        "ESS10SCe03_2:votedir",
+        "ESS10SCe03_2:gptpelc",
+        "ESS10SCe03_2:gvctzpv",
+        "ESS10SCe03_2:grdfinc",
+        "ESS10SCe03_2:viepol",
+        "ESS10SCe03_2:wpestop",
+        "ESS10SCe03_2:scchpldm",
+        "ESS10SCe03_2:vteurmmb",
+        "ESS10SCe03_2:keydec",
+        "ESS10SCe03_2:imsmetn",
+        "ESS10SCe03_2:imdfetn",
+        "ESS10SCe03_2:impcntr"
+      ],
+      "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+      "reviewers": [
+        {
+          "role": "methods_reproducibility",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+          "sha256": "1bb14ba2dba3d57612d66c5a50c29ce049606e8fddb062ff6b616f56b60462ee",
+          "decision": "ACCEPTED_BOUNDED"
+        },
+        {
+          "role": "sources_constructs_fairness",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+          "sha256": "7a2814359b94ab3a73dd22a090b2a10c6b51db6cc243d8586e8ae15bfdc580e8",
+          "decision": "ACCEPTED_BOUNDED"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "decision": "ALLOW_REVIEWED_HISTORICAL_REFERENCE_V2",
+      "studyId": "ESS11e04_2",
+      "edition": "4.2",
+      "candidateSha256": "f36960ab75a2ac357d92b373013f51767a88aff98759061511b86dff6c3e05c2",
+      "sourceContractSha256": "3f7c6c5b3ccf6415cba5a998849067cb368b0045e22189c79e9cfd5f6097c440",
+      "approvedQuestionIds": [
+        "ESS11e04_2:gincdif",
+        "ESS11e04_2:euftf",
+        "ESS11e04_2:eqparep",
+        "ESS11e04_2:eqparlv",
+        "ESS11e04_2:freinsw",
+        "ESS11e04_2:fineqpy"
+      ],
+      "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+      "reviewers": [
+        {
+          "role": "methods_reproducibility",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+          "sha256": "1bb14ba2dba3d57612d66c5a50c29ce049606e8fddb062ff6b616f56b60462ee",
+          "decision": "ACCEPTED_BOUNDED"
+        },
+        {
+          "role": "sources_constructs_fairness",
+          "reportPath": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+          "sha256": "7a2814359b94ab3a73dd22a090b2a10c6b51db6cc243d8586e8ae15bfdc580e8",
+          "decision": "ACCEPTED_BOUNDED"
+        }
+      ]
+    }
+  ],
+  "publicFiles": [
+    {
+      "path": "data/reference-v2/ESS5e03_6.json",
+      "sha256": "e489fe013d1cbd3d72b9ae816e422757ce8d34ae575d09f64df13a1750dc4bc6",
+      "studyId": "ESS5e03_6",
+      "reviewedReferenceCount": 6,
+      "questionInventoryCount": 6
+    },
+    {
+      "path": "data/reference-v2/ESS8e02_3.json",
+      "sha256": "fb720cc18049f037ed86670bd76a51c3c1770342a61f5627b7afbfb127898ad7",
+      "studyId": "ESS8e02_3",
+      "reviewedReferenceCount": 10,
+      "questionInventoryCount": 10
+    },
+    {
+      "path": "data/reference-v2/ESS9e03_3.json",
+      "sha256": "34e71b448c0c315cf9f19bda30628874c95464faf661813a65f25a3f9ad82be2",
+      "studyId": "ESS9e03_3",
+      "reviewedReferenceCount": 4,
+      "questionInventoryCount": 4
+    },
+    {
+      "path": "data/reference-v2/ESS10SCe03_2.json",
+      "sha256": "e75dfbadcf68c14dce9d13c8a8a2dd1abc6e8a6e96618f960c8cd61c54bc3184",
+      "studyId": "ESS10SCe03_2",
+      "reviewedReferenceCount": 16,
+      "questionInventoryCount": 17
+    },
+    {
+      "path": "data/reference-v2/ESS11e04_2.json",
+      "sha256": "453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721",
+      "studyId": "ESS11e04_2",
+      "reviewedReferenceCount": 6,
+      "questionInventoryCount": 6
+    }
+  ],
+  "withheldIds": ["ESS10SCe03_2:cttresa"],
+  "interpretationConditions": [
+    "Use with authenticated semantic catalog; technical appendix alone not complete themed profile",
+    "B25 static historical only; original CAWI downstream/new web administration open",
+    "No independent raw reproduction by result reviewers; no individual-weight ratio-extrema reproduction by them",
+    "Same Codex family; possible common errors; no neutrality proof"
+  ]
+}

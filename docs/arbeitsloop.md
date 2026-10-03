@@ -104,3 +104,7 @@ Beide gezielten Rollen akzeptieren die22-Pin-Revision2 begrenzt; EV2-SRC-F01 ges
 ## Tatsächliche historische v2-Läufe, 3. Oktober 2026
 
 Die neue Planfassung `6702f187` und `analyseplan-v2` sind remote verifiziert. Danach liefen fünf getrennte private Studienanalysen von 14:25:06 bis 14:25:18 UTC mit Exitcode 0. Die [Zugriffsoffenlegung](../reports/loop/policy-v2-access-disclosure.json) nennt semantischen und lexikalischen Umfang. Zwei frische Ergebnisrollen prüfen identische sichere Aggregate vor dem Zahlenexport. Keine Parteifeldinterpretation oder neue Bestätigungsbehauptung. UI-Befunde PUI-R1–R3 sind begrenzt geschlossen; Angular-Vorbereitung und Gruppenvertrag laufen unabhängig weiter.
+
+## Paketstand 2026-10-03T14:49:15.344151+00:00
+
+RESULTS-V2-001: beide frischen Erstberichte begrenzt angenommen, tatsächliche Bytes geprüft.42historische Einzelreferenzen veröffentlicht als Forschungsartefakte,43Fragenbestand/cttresa=null erhalten. Technischer Anhang bleibt für RV2-M-F03/SCF-R01 unvollständig. Angular initial unroutierter WIP; Gruppenvertrag und Gruppencode benötigen eigenes Vorabgate. Keine Parteiantwortsemantik, menschliche/Claude-Schlusskontrolle und Produktfreigabe offen. Konkrete Belege und nächste Arbeit ausschließlich in state/findings/handoff und Ergebnisentscheidung.

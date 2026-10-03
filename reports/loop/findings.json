@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T14:32:25.405967+00:00",
+  "updatedAtUtc": "2026-10-03T14:49:15.344151+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -3066,6 +3066,86 @@
         "sha256": "00bb2789b8166dad229be6d46c40a7fbc5b9b9f7d1c6b69ea758cea048ba7955",
         "technical": "reports/loop/policy-ui-correction-technical.json"
       }
+    },
+    {
+      "id": "RV2-M-F01",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+      "decision": "angenommen",
+      "severity": "limit",
+      "repairRounds": 0,
+      "status": "OPEN_LIMIT",
+      "reason": "No independent raw/origin/individual ratio-extrema reproduction; mathematical safe-aggregate checks only",
+      "blocks": []
+    },
+    {
+      "id": "RV2-M-F02",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+      "decision": "angenommen",
+      "severity": "bounded",
+      "repairRounds": 0,
+      "status": "ENFORCED",
+      "reason": "cttresa must remain null under fixed 100/5 thresholds",
+      "blocks": []
+    },
+    {
+      "id": "RV2-M-F03",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+      "decision": "angenommen",
+      "severity": "presentation",
+      "repairRounds": 0,
+      "status": "OPEN",
+      "reason": "Technical listing lacks thematic original wording/category/context presentation",
+      "blocks": ["substantive thematic report"]
+    },
+    {
+      "id": "RV2-M-F04",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+      "decision": "angenommen",
+      "severity": "boundary",
+      "repairRounds": 0,
+      "status": "VERIFIED_BOUNDED",
+      "reason": "Formal hash strings do not authenticate decisions; Root must check actual bytes",
+      "blocks": []
+    },
+    {
+      "id": "SCF-R01",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "presentation",
+      "repairRounds": 0,
+      "status": "OPEN",
+      "reason": "Technical listing lacks eight topics, full wording/category labels and B25 caveat",
+      "blocks": ["substantive thematic report"]
+    },
+    {
+      "id": "SCF-R02",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "limit",
+      "repairRounds": 0,
+      "status": "OPEN_LIMIT",
+      "reason": "B25 historical static reference allowed only bounded; new administration unvalidated",
+      "blocks": ["new administration validity claim"]
+    },
+    {
+      "id": "SCF-R03",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "bounded",
+      "repairRounds": 0,
+      "status": "ENFORCED",
+      "reason": "cttresa needs null reference without changing categories or thresholds",
+      "blocks": []
+    },
+    {
+      "id": "SCF-R04",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "limit",
+      "repairRounds": 0,
+      "status": "OPEN_LIMIT",
+      "reason": "Same-family agreement and aggregate checks are not independent raw empirical reproduction",
+      "blocks": []
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

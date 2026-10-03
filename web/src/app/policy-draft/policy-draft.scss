@@ -1,0 +1,122 @@
+:host {
+  display: block;
+  min-width: 0;
+}
+button,
+select {
+  min-height: 48px;
+  max-width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  color: var(--ink);
+  background: var(--paper);
+  font: inherit;
+  font-size: var(--size-ui);
+  line-height: 1.5;
+  text-align: left;
+  white-space: normal;
+}
+button {
+  cursor: pointer;
+}
+button:hover,
+button[aria-current='page'] {
+  text-decoration: underline;
+}
+button:disabled {
+  color: var(--muted);
+  cursor: default;
+  text-decoration: none;
+}
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
+.draft-navigation,
+.question-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1.5rem;
+}
+.meta {
+  color: var(--muted);
+  font-size: var(--size-small);
+}
+.original-context {
+  margin-bottom: 1.5rem;
+}
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+legend {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0;
+  font-weight: 700;
+}
+legend span {
+  display: block;
+}
+.answer-option {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 0.9rem;
+  padding-block: 0.65rem;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+}
+.answer-option input {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  margin: 0;
+  accent-color: var(--ink);
+}
+.skip-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+.skip-controls label {
+  flex-basis: 100%;
+  font-size: var(--size-ui);
+}
+.overview-list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+.overview-list li,
+.result-item {
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.overview-list p {
+  margin-block: 0.75rem 0;
+}
+.result-item > p {
+  margin-block: 0.75rem;
+}
+.state {
+  font-size: var(--size-small);
+  font-weight: 700;
+}
+.historical-reference {
+  margin-block: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+button,
+.area-body,
+.area-title {
+  overflow-wrap: anywhere;
+}

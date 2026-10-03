@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 2,
+  "status": "reviewed_historical_descriptive_reference",
+  "studyId": "ESS11e04_2",
+  "edition": "4.2",
+  "sourceContractSha256": "3f7c6c5b3ccf6415cba5a998849067cb368b0045e22189c79e9cfd5f6097c440",
+  "candidateSha256": "f36960ab75a2ac357d92b373013f51767a88aff98759061511b86dff6c3e05c2",
+  "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+  "questions": [
+    {
+      "id": "ESS11e04_2:gincdif",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2393,
+        "totalCount": 2420,
+        "missingCount": 27,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.20383431698363194
+          },
+          {
+            "code": "2",
+            "proportion": 0.4741396603568362
+          },
+          {
+            "code": "3",
+            "proportion": 0.17962905734378154
+          },
+          {
+            "code": "4",
+            "proportion": 0.12092408190024778
+          },
+          {
+            "code": "5",
+            "proportion": 0.02147288341550256
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 3,
+            "primaryWeightSum": 1.6082632541656494
+          },
+          {
+            "reason": "Don't know",
+            "count": 24,
+            "primaryWeightSum": 35.95343774557114
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 37.561700999736786,
+        "allDEWeight": 2419.9999693855643,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.018644466040078966,
+          "maxAbsDweight": 0.018866308351323247
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 2.7755575615628914e-17,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.9929697519999996,
+          "ratioMax": 2.9929697520000005
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS11e04_2:euftf",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2360,
+        "totalCount": 2420,
+        "missingCount": 60,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "0",
+            "proportion": 0.04842340454898487
+          },
+          {
+            "code": "1",
+            "proportion": 0.018323818020786434
+          },
+          {
+            "code": "2",
+            "proportion": 0.06131494959353985
+          },
+          {
+            "code": "3",
+            "proportion": 0.053609155879440276
+          },
+          {
+            "code": "4",
+            "proportion": 0.06232468599209014
+          },
+          {
+            "code": "5",
+            "proportion": 0.21845681190904204
+          },
+          {
+            "code": "6",
+            "proportion": 0.09458163929257861
+          },
+          {
+            "code": "7",
+            "proportion": 0.12280718545816495
+          },
+          {
+            "code": "8",
+            "proportion": 0.14932335283800496
+          },
+          {
+            "code": "9",
+            "proportion": 0.05959528631420413
+          },
+          {
+            "code": "10",
+            "proportion": 0.11123971015316374
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 6,
+            "primaryWeightSum": 3.4406717270612717
+          },
+          {
+            "reason": "Don't know",
+            "count": 54,
+            "primaryWeightSum": 77.43992929160595
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 80.88060101866722,
+        "allDEWeight": 2419.9999693855643,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.01972799834972,
+          "maxAbsDweight": 0.01949775535736875
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 1.3877787807814457e-17,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.9929697519999996,
+          "ratioMax": 2.9929697520000005
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS11e04_2:eqparep",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2367,
+        "totalCount": 2420,
+        "missingCount": 53,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.14138144806737724
+          },
+          {
+            "code": "2",
+            "proportion": 0.2575186317694882
+          },
+          {
+            "code": "3",
+            "proportion": 0.3008473162461371
+          },
+          {
+            "code": "4",
+            "proportion": 0.19203590967094164
+          },
+          {
+            "code": "5",
+            "proportion": 0.10821669424605586
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 4,
+            "primaryWeightSum": 6.526360183954239
+          },
+          {
+            "reason": "Don't know",
+            "count": 49,
+            "primaryWeightSum": 67.0130368322134
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 73.53939701616764,
+        "allDEWeight": 2419.9999693855643,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.037790875288923165,
+          "maxAbsDweight": 0.037604368802538896
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 1.3877787807814457e-17,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.9929697519999996,
+          "ratioMax": 2.9929697520000005
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS11e04_2:eqparlv",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2394,
+        "totalCount": 2420,
+        "missingCount": 26,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.1796042923308131
+          },
+          {
+            "code": "2",
+            "proportion": 0.216501158736361
+          },
+          {
+            "code": "3",
+            "proportion": 0.17477349293524475
+          },
+          {
+            "code": "4",
+            "proportion": 0.24794415766549904
+          },
+          {
+            "code": "5",
+            "proportion": 0.18117689833208211
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 3,
+            "primaryWeightSum": 5.012638434767723
+          },
+          {
+            "reason": "Don't know",
+            "count": 23,
+            "primaryWeightSum": 34.34242554008961
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 39.35506397485733,
+        "allDEWeight": 2419.9999693855643,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.03145521053251807,
+          "maxAbsDweight": 0.0315354221955971
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 2.7755575615628914e-17,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.9929697519999996,
+          "ratioMax": 2.9929697520000005
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS11e04_2:freinsw",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2383,
+        "totalCount": 2420,
+        "missingCount": 37,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.30659101775440795
+          },
+          {
+            "code": "2",
+            "proportion": 0.41451395261780044
+          },
+          {
+            "code": "3",
+            "proportion": 0.16304896046039913
+          },
+          {
+            "code": "4",
+            "proportion": 0.09619846873415573
+          },
+          {
+            "code": "5",
+            "proportion": 0.019647600433236757
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 8,
+            "primaryWeightSum": 5.071599707007408
+          },
+          {
+            "reason": "Don't know",
+            "count": 29,
+            "primaryWeightSum": 39.51014904677868
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 44.58174875378609,
+        "allDEWeight": 2419.9999693855643,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.004095278643099831,
+          "maxAbsDweight": 0.00453823447220926
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 5.551115123125783e-17,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.9929697519999996,
+          "ratioMax": 2.9929697520000005
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS11e04_2:fineqpy",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2375,
+        "totalCount": 2420,
+        "missingCount": 45,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.29414279671950916
+          },
+          {
+            "code": "2",
+            "proportion": 0.3700432285344523
+          },
+          {
+            "code": "3",
+            "proportion": 0.20112425603123657
+          },
+          {
+            "code": "4",
+            "proportion": 0.10698962718131025
+          },
+          {
+            "code": "5",
+            "proportion": 0.02770009153349175
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 13,
+            "primaryWeightSum": 15.050890788435936
+          },
+          {
+            "reason": "Don't know",
+            "count": 32,
+            "primaryWeightSum": 46.08368594944477
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 61.13457673788071,
+        "allDEWeight": 2419.9999693855643,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.019727439060768126,
+          "maxAbsDweight": 0.01962318580098915
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 1.3877787807814457e-17,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.9929697519999996,
+          "ratioMax": 2.9929697520000005
+        },
+        "uncertainty": null
+      }
+    }
+  ]
+}

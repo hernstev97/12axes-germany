@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 2,
+  "status": "reviewed_historical_descriptive_reference",
+  "studyId": "ESS5e03_6",
+  "edition": "3.6",
+  "sourceContractSha256": "6779d181d7f42d3a76659ca0cd403960fd6fee893316dac2175542d18af77fe4",
+  "candidateSha256": "d29d4acc6ff1a973d8bb920b0ba02afbadc7e7bd378e53374a9363e752945e33",
+  "reviewManifestSha256": "3299ad658cca7cbb5621c6f062d4133b831e74d8bf4ca71bcb8e67fff56c4434",
+  "questions": [
+    {
+      "id": "ESS5e03_6:bplcdc",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 3000,
+        "totalCount": 3031,
+        "missingCount": 31,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "0",
+            "proportion": 0.0519781262820292
+          },
+          {
+            "code": "1",
+            "proportion": 0.013007455064944546
+          },
+          {
+            "code": "2",
+            "proportion": 0.032010169747020215
+          },
+          {
+            "code": "3",
+            "proportion": 0.04501458705707615
+          },
+          {
+            "code": "4",
+            "proportion": 0.04687201499818479
+          },
+          {
+            "code": "5",
+            "proportion": 0.1409541958573583
+          },
+          {
+            "code": "6",
+            "proportion": 0.08072537865719762
+          },
+          {
+            "code": "7",
+            "proportion": 0.13023385808818302
+          },
+          {
+            "code": "8",
+            "proportion": 0.19221545334350099
+          },
+          {
+            "code": "9",
+            "proportion": 0.09286776687184652
+          },
+          {
+            "code": "10",
+            "proportion": 0.1741209940326586
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "Don't know",
+            "count": 31,
+            "primaryWeightSum": 41.23935771
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 41.23935771,
+        "allDEWeight": 3030.99999773,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.005132233128153488,
+          "maxAbsDweight": 0.004681627172478414
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 3.955307747993686e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.3351902929102017,
+          "ratioMax": 2.3351907828923926
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS5e03_6:dpcstrb",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2977,
+        "totalCount": 3031,
+        "missingCount": 54,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "0",
+            "proportion": 0.032724966802779705
+          },
+          {
+            "code": "1",
+            "proportion": 0.01313455009144805
+          },
+          {
+            "code": "2",
+            "proportion": 0.04044555941225951
+          },
+          {
+            "code": "3",
+            "proportion": 0.06360587755100029
+          },
+          {
+            "code": "4",
+            "proportion": 0.070646199792644
+          },
+          {
+            "code": "5",
+            "proportion": 0.16645188787593287
+          },
+          {
+            "code": "6",
+            "proportion": 0.10085152434871654
+          },
+          {
+            "code": "7",
+            "proportion": 0.14027013862353827
+          },
+          {
+            "code": "8",
+            "proportion": 0.15713556514967542
+          },
+          {
+            "code": "9",
+            "proportion": 0.08167322480110717
+          },
+          {
+            "code": "10",
+            "proportion": 0.13306050555089816
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "Don't know",
+            "count": 54,
+            "primaryWeightSum": 64.56130598
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 64.56130598,
+        "allDEWeight": 3030.99999773,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.008803299479145543,
+          "maxAbsDweight": 0.005036731205474265
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 4.1315162402355554e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.3351902929102017,
+          "ratioMax": 2.3351907828923926
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS5e03_6:hrshsnta",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2947,
+        "totalCount": 3031,
+        "missingCount": 84,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.18251231018075387
+          },
+          {
+            "code": "2",
+            "proportion": 0.4338631234347807
+          },
+          {
+            "code": "3",
+            "proportion": 0.2417021397856325
+          },
+          {
+            "code": "4",
+            "proportion": 0.11934649518690381
+          },
+          {
+            "code": "5",
+            "proportion": 0.02257593141192907
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "Don't know",
+            "count": 84,
+            "primaryWeightSum": 99.38760742
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 99.38760742,
+        "allDEWeight": 3030.99999773,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.008960086609332008,
+          "maxAbsDweight": 0.00692187465451885
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 2.2605631255778746e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.3351902929102017,
+          "ratioMax": 2.3351907828923926
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS5e03_6:dbctvrd",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2993,
+        "totalCount": 3031,
+        "missingCount": 38,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.1280467324798662
+          },
+          {
+            "code": "2",
+            "proportion": 0.4819534984016126
+          },
+          {
+            "code": "3",
+            "proportion": 0.15544836727981987
+          },
+          {
+            "code": "4",
+            "proportion": 0.1962383446382969
+          },
+          {
+            "code": "5",
+            "proportion": 0.03831305720040444
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "Don't know",
+            "count": 38,
+            "primaryWeightSum": 43.7543185
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 43.7543185,
+        "allDEWeight": 3030.99999773,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.007570542765645644,
+          "maxAbsDweight": 0.003064634948220152
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 6.272430908005333e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.3351902929102017,
+          "ratioMax": 2.3351907828923926
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS5e03_6:lwstrob",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 3013,
+        "totalCount": 3031,
+        "missingCount": 18,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.156690687147626
+          },
+          {
+            "code": "2",
+            "proportion": 0.5787274842256793
+          },
+          {
+            "code": "3",
+            "proportion": 0.15224297112789761
+          },
+          {
+            "code": "4",
+            "proportion": 0.0977378760109618
+          },
+          {
+            "code": "5",
+            "proportion": 0.01460098148783518
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "Don't know",
+            "count": 18,
+            "primaryWeightSum": 20.28924403
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 20.28924403,
+        "allDEWeight": 3030.99999773,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.005407928983746535,
+          "maxAbsDweight": 0.0068287605935451745
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 5.027724070405526e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.3351902929102017,
+          "ratioMax": 2.3351907828923926
+        },
+        "uncertainty": null
+      }
+    },
+    {
+      "id": "ESS5e03_6:rgbrklw",
+      "status": "reviewed_historical_reference",
+      "reference": {
+        "weight": "pspwght",
+        "validCount": 2922,
+        "totalCount": 3031,
+        "missingCount": 109,
+        "notAskedCount": 0,
+        "categories": [
+          {
+            "code": "1",
+            "proportion": 0.06259540581108236
+          },
+          {
+            "code": "2",
+            "proportion": 0.43377584659245527
+          },
+          {
+            "code": "3",
+            "proportion": 0.19209689056472365
+          },
+          {
+            "code": "4",
+            "proportion": 0.2424309520098991
+          },
+          {
+            "code": "5",
+            "proportion": 0.0691009050218396
+          }
+        ],
+        "missingReasons": [
+          {
+            "reason": "Refusal",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "Don't know",
+            "count": 109,
+            "primaryWeightSum": 129.49996084
+          },
+          {
+            "reason": "No answer",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          },
+          {
+            "reason": "export_blank_unclassified",
+            "count": 0,
+            "primaryWeightSum": 0.0
+          }
+        ],
+        "missingWeight": 129.49996084,
+        "allDEWeight": 3030.99999773,
+        "sensitivity": {
+          "maxAbsUnweighted": 0.008729286877770581,
+          "maxAbsDweight": 0.006100292799727236
+        },
+        "anweightEquivalenceDiagnostic": {
+          "maxAbsDifference": 4.4092657303096416e-10,
+          "ratioScope": "all_de_cases",
+          "ratioMin": 2.3351902929102017,
+          "ratioMax": 2.3351907828923926
+        },
+        "uncertainty": null
+      }
+    }
+  ]
+}
