@@ -1188,7 +1188,8 @@
         "No political answer vectors or identities"
       ],
       "groupAddendum": "docs/verstaendnistest-v2.1.entwurf.md",
-      "proposedFinalUIBinding": "reports/loop/packages/COMPREHENSION-V21-001/v1/manifest.json"
+      "proposedFinalUIBinding": "reports/loop/packages/COMPREHENSION-V21-001/v2/manifest.json",
+      "previousProposedFinalUIBinding": "reports/loop/packages/COMPREHENSION-V21-001/v1/manifest.json"
     }
   },
   "targetedCorrectionRounds": {
