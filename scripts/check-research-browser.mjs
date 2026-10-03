@@ -54,6 +54,31 @@ const worker = context.serviceWorkers()[0] ?? (await context.waitForEvent('servi
 report.browser = context.browser().version();
 const errors = [];
 page.on('pageerror', (error) => errors.push(error.message));
+// Privacy: after the page has loaded, no request and no WebSocket frame may leave the page.
+let loaded = false;
+const lateRequests = [];
+const sentFrames = [];
+page.on('request', (request) => {
+  if (loaded) lateRequests.push(`${request.method()} ${request.url()}`);
+});
+page.on('websocket', (socket) =>
+  socket.on('framesent', () => {
+    if (loaded) sentFrames.push(socket.url());
+  }),
+);
+
+async function stored() {
+  const inPage = await page.evaluate(async () => ({
+    localStorage: localStorage.length,
+    sessionStorage: sessionStorage.length,
+    cookie: document.cookie.length,
+    indexedDB: (await indexedDB.databases()).length,
+    caches: (await caches.keys()).length,
+    serviceWorkers: (await navigator.serviceWorker.getRegistrations()).length,
+    path: location.pathname + location.search + location.hash,
+  }));
+  return { ...inPage, contextCookies: (await context.cookies()).length };
+}
 
 async function zoom(factor) {
   const observed = await worker.evaluate(async (value) => {
@@ -216,6 +241,11 @@ try {
     await page.setViewportSize({ width, height });
     await page.goto(`${base}/forschungsentwurf`);
     await page.getByRole('heading', { name: 'Fragenentwurf', exact: true }).waitFor();
+    await page.waitForLoadState('networkidle');
+    loaded = true;
+    const total = Number(
+      (await page.locator('#draft-question-title').innerText()).match(/^Frage 1 von (\d+)$/)[1],
+    );
     record.zoom = await zoom(factor);
     record.measured = await layout('question 1', record);
     assert.equal(record.measured.width, width / factor);
@@ -285,19 +315,19 @@ try {
       'question view',
     );
     await page.keyboard.press('Enter');
-    for (let question = 1; question <= 43; question++) {
+    for (let question = 1; question <= total; question++) {
       await page.waitForFunction(
         (n) =>
           document.querySelector('#draft-question-title')?.textContent.trim() ===
-          `Frage ${n} von 43`,
-        question,
+          `Frage ${n[0]} von ${n[1]}`,
+        [question, total],
       );
       if (question > 1) {
         await page.waitForFunction(
           (n) =>
             document.activeElement.id === 'draft-question-title' &&
-            document.activeElement.textContent.trim() === `Frage ${n} von 43`,
-          question,
+            document.activeElement.textContent.trim() === `Frage ${n[0]} von ${n[1]}`,
+          [question, total],
         );
         assert.ok(
           await page.locator('#draft-question-title').evaluate((e) => {
@@ -322,9 +352,10 @@ try {
         );
         await page.keyboard.press('Enter');
         await page.waitForFunction(
-          () =>
+          (n) =>
             document.activeElement.id === 'draft-question-title' &&
-            document.activeElement.textContent.trim() === 'Frage 1 von 43',
+            document.activeElement.textContent.trim() === `Frage 1 von ${n}`,
+          total,
         );
         await tabTo(
           page.getByRole('button', { name: 'Zur nächsten Frage', exact: true }),
@@ -333,9 +364,10 @@ try {
         );
         await page.keyboard.press('Enter');
         await page.waitForFunction(
-          () =>
+          (n) =>
             document.activeElement.id === 'draft-question-title' &&
-            document.activeElement.textContent.trim() === 'Frage 2 von 43',
+            document.activeElement.textContent.trim() === `Frage 2 von ${n}`,
+          total,
         );
       }
       if (question === 3) {
@@ -348,24 +380,24 @@ try {
         );
       } else {
         const next = page.getByRole('button', {
-          name: question === 43 ? 'Zum Ergebnisentwurf' : 'Zur nächsten Frage',
+          name: question === total ? 'Zum Ergebnisentwurf' : 'Zur nächsten Frage',
           exact: true,
         });
-        const target = question === 43 ? next.last() : next;
+        const target = question === total ? next.last() : next;
         await tabTo(target, record, `next from question ${question}`);
       }
       await page.keyboard.press('Enter');
     }
-    record.questionsTraversed = 43;
-    record.questionFocusTransitions = 42;
+    record.questionsTraversed = total;
+    record.questionFocusTransitions = total - 1;
     await page.getByRole('heading', { name: 'Ergebnisentwurf', exact: true }).waitFor();
     await page.waitForFunction(
       () =>
         document.activeElement.tagName === 'H1' &&
         document.activeElement.textContent.trim() === 'Ergebnisentwurf',
     );
-    assert.equal(await page.locator('.result-item').count(), 43);
-    record.resultItems = 43;
+    assert.equal(await page.locator('.result-item').count(), total);
+    record.resultItems = total;
     await layout('results', record);
     await audit('results', record);
     await tabTo(page.locator('#draft-group-study'), record, 'group study');
@@ -438,9 +470,10 @@ try {
     // Pointer jump verifies the distant edit's focus/scroll target, independently of Tab checks.
     await page.locator('.overview-list li:last-child button').click();
     await page.waitForFunction(
-      () =>
+      (n) =>
         document.activeElement.id === 'draft-question-title' &&
-        document.activeElement.textContent.trim() === 'Frage 43 von 43',
+        document.activeElement.textContent.trim() === `Frage ${n} von ${n}`,
+      total,
     );
     assert.ok(
       await page.locator('#draft-question-title').evaluate((e) => {
@@ -451,8 +484,30 @@ try {
     await page.keyboard.press('Tab');
     await focus(record, 'last question radio after distant edit');
     await shot('last-question-focus', record);
+    record.privacy = {
+      requestsAfterLoad: [...lateRequests],
+      webSocketFramesSent: sentFrames.length,
+      storage: await stored(),
+    };
+    assert.deepEqual(lateRequests, [], `${record.label}: requests after load`);
+    assert.equal(sentFrames.length, 0, `${record.label}: WebSocket frames sent`);
+    assert.deepEqual(
+      record.privacy.storage,
+      {
+        localStorage: 0,
+        sessionStorage: 0,
+        cookie: 0,
+        indexedDB: 0,
+        caches: 0,
+        serviceWorkers: 0,
+        path: '/forschungsentwurf',
+        contextCookies: 0,
+      },
+      `${record.label}: nothing stored`,
+    );
+    loaded = false;
     console.log(
-      `${record.label}: 43 questions, results, overview, ${record.keyboardFocusChecks} focus checks, ${record.axe.length} axe checks PASS`,
+      `${record.label}: ${total} questions, results, overview, ${record.keyboardFocusChecks} focus checks, ${record.axe.length} axe checks, no request or storage after load PASS`,
     );
   }
   assert.deepEqual(errors, [], 'page errors');
