@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "package": "PLAN-V22-002",
+  "supersedes": "PLAN-V22-001",
+  "commit": "691271dfdc6a02e349ee5905b4a5e591f424f311",
+  "artifacts": [
+    {
+      "path": "docs/analyseplan-v2.2.md",
+      "sha256": "bd8b23339f85d78e51ca5fc4e2e14d03c2beec1324f0e27b56382626f94a1e29"
+    },
+    {
+      "path": "docs/profilregeln-v1.md",
+      "sha256": "b880088d2221c2da3baab236be61b9970561c0ef25c67a753534f6ee4905a727"
+    },
+    {
+      "path": "docs/abdeckung-v2.2.md",
+      "sha256": "f3f03912f38dc7149b73739bc18fa9bcec59c65f6cb77edfd130be3c8e2d1b10"
+    },
+    {
+      "path": "data/politikprofil-v2.2.ergaenzung.json",
+      "sha256": "c4b0d97aeaf10868001199cb3f7f135a6fb8ec28d63b58f7f222ff7e0acd71ac"
+    },
+    {
+      "path": "pipeline/v22/survey.py",
+      "sha256": "ef9011c5a9b9792373f7c9395d4e5db17a4381dab648480b2276ddac15a982bc"
+    },
+    {
+      "path": "pipeline/v22/run_v22.py",
+      "sha256": "a4c3ab0a78dcd44ae3f90b4e16df8ff07511a6e677bbaebd036cc232cd5a6ae4"
+    },
+    {
+      "path": "pipeline/v22/catalogue_v22.py",
+      "sha256": "f259365c04bdd8d783a90acbd5291838efb07b76e567b9de139197840568f2fc"
+    },
+    {
+      "path": "pipeline/v22/test_survey.py",
+      "sha256": "dacdde363044981d575636447f6e206f89a0325353c8cc7b9a7898e1ca8ed011"
+    },
+    {
+      "path": "pipeline/v22/test_run_v22.py",
+      "sha256": "74738a170672057de58ebc0e5b7cb8474ffc6f8581a8b767adffab4889c490b4"
+    },
+    {
+      "path": "pipeline/v22/fetch_ess_metadata.py",
+      "sha256": "82952e3d660b75d4540b6b5a1a136e4dc7c26899294f0d96aeb22fd600bd6da5"
+    },
+    {
+      "path": "web/src/app/policy-draft/profile/profile-rules.ts",
+      "sha256": "b07a153e0d9236c049048995a4122982df199c0c1781b44f2f8c8425b30905a2"
+    },
+    {
+      "path": "web/src/app/policy-draft/profile/profile-structure.ts",
+      "sha256": "bd17d664b5cab042ec134025e0ce0393bba7a84b2174e546d2e00b083aead5de"
+    },
+    {
+      "path": "web/src/app/policy-draft/profile/profile-engine.ts",
+      "sha256": "1b11d598a1743b611d2359fd354a03fc8bd90522293c6fa89c23c928b0b897fa"
+    },
+    {
+      "path": "web/src/app/policy-draft/profile/profile-engine.spec.ts",
+      "sha256": "901e4e1207fe9596681f70a3877e2a017b21222bf5ead063bcf205c19b1ea23b"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-catalogue.ts",
+      "sha256": "9efc5f67a66952a86c1c427c83c5b40a557104b1573e7997470fff61259745f9"
+    },
+    {
+      "path": "data/analysevertrag.v2.entwurf.json",
+      "sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+    },
+    {
+      "path": "data/gruppenvertrag.v2.1.entwurf.json",
+      "sha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702"
+    },
+    {
+      "path": "docs/empirie-plan-v2.entwurf.md",
+      "sha256": "2b0cd26f8fba81bbf520b9ae3411d623f9299c9ff707aacf681bde4c65a0439f"
+    },
+    {
+      "path": "reports/claude/agenten/R1-themen-aussen-bildung-digital.md",
+      "sha256": "0389cd71c40d89ff62fcb093825312392abee0ae206ac868124d51a4e15cfba2"
+    },
+    {
+      "path": "reports/claude/agenten/R2-themen-gesundheit-arbeit-wohnen.md",
+      "sha256": "207aa6bbae3680f7a52721f4a2f7abb82b03690c24b0e120e687a37a1564e11b"
+    },
+    {
+      "path": "reports/claude/agenten/R3-themen-reichweite.md",
+      "sha256": "1ed197088a6f215fa1cea397a6faec5a9da5f70307db3cb06dc4ec790dbf27ec"
+    },
+    {
+      "path": "reports/claude/agenten/R4-profilform.md",
+      "sha256": "8ea2b9ff837b6431d55acd051b45d5cba69eea3df1049878f748fe0655eddfa2"
+    },
+    {
+      "path": "reports/claude/kontrollrechnung/bericht.md",
+      "sha256": "f53ef3500e1d702a85fac9ca1d2186eea940fd0e0366cab22d40fdb4eaa501d1"
+    },
+    {
+      "path": "reports/claude/agenten/V2-quellen-konstrukte-fairness.md",
+      "sha256": "b7cb60fcd3f9febdd66e80ac3bf2221c8a9dcfd1af6d74a43de9f68cdc97cebb"
+    },
+    {
+      "path": "pipeline/v22/export_v22.py",
+      "sha256": "839765b1a8287141f8176ab988e86ab4deca7d712d84d53287b943c164d6eee1"
+    },
+    {
+      "path": "web/src/app/policy-draft/profile/area-scope.ts",
+      "sha256": "4ed439fd3a1d9b9d030f8ed33b9a4d55916d07cc694bcf8a3aec6f86d338a1b1"
+    },
+    {
+      "path": "reports/claude/pruefungen/P1-methoden-v22.md",
+      "sha256": "d479242f5d075b23f9379bf6dbce9cf8199f8a29f6236d446578b57c17eadb00"
+    },
+    {
+      "path": "reports/claude/pruefungen/P1-methoden-v22.json",
+      "sha256": "070af35fcb0ffc7c626e4bea40b142095ad9383ceb5f701965d94d75bd618a87"
+    },
+    {
+      "path": "reports/claude/pruefungen/P2-quellen-fairness-v22.md",
+      "sha256": "5d5efeb3819e6d163489d82b9b3a8b4b7b515a9891f750dbe9229302441a84f3"
+    },
+    {
+      "path": "reports/claude/pruefungen/P2-quellen-fairness-v22.json",
+      "sha256": "689e681c53699d104514cfbc71921818ed3ae5f8b8683e489a365e8568673012"
+    }
+  ],
+  "localPublicCaches": [
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess5-de-questionnaire.pdf",
+      "sha256": "24b5d2599e6d30dc02a6d835f5f80b5bcecf8f6014ee8f4670a703c25d3c3cbf"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess8-de-questionnaire.pdf",
+      "sha256": "977475c18d2adebea6ccb7695f377fb6ed500ef087b077086305f9a2e4a7b239"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess8-de-showcards.pdf",
+      "sha256": "dde02b5336b2d960c2900a8fcf5e2a0f0d254b46dcce1d9ffb785a830e096bc0"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess10-de-questionnaire.pdf",
+      "sha256": "158004a89b1821e5202e6faf3c2101eae5e56e794d7c3fdbc3dca1c9d67c8425"
+    },
+    {
+      "path": "outputs/loop/methods/SURVEY-MANUAL.pdf",
+      "sha256": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c"
+    },
+    {
+      "path": "outputs/claude/sources/ess8-candidates.json",
+      "sha256": "279f9c31b4236b71f4a820de7a2b519989ec796ad49ba4f2bde210c108d94168"
+    },
+    {
+      "path": "outputs/claude/sources/ess10sc-candidates.json",
+      "sha256": "2a5927d1ec1d322b2a127ff0c2c35862cbae8fc1ae39767aee410ff910ef8394"
+    },
+    {
+      "path": "outputs/claude/sources/ess10sc-candidates-2.json",
+      "sha256": "9ed9a9739dfe64b2cd8ebf2cc4cec8960ce29179b25d2013e90ff0dac53a038a"
+    },
+    {
+      "path": "outputs/claude/sources/ess5-candidates.json",
+      "sha256": "4b0247142d37697b4193e3373a37174849bcc16552d9764e34a51169170795a8"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess10sc-file-metadata.json",
+      "sha256": "d9e6d606fb3b897d33d04f3247dbe5160d11f108a76fca6547a773e2c1ba0a57"
+    }
+  ]
+}
