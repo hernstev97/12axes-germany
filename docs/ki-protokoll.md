@@ -145,3 +145,17 @@ Auf Grundlage des [aktuellen Breitennachtrags](auftrag-life-93-breite-2026-10-03
 3. Oktober2026: beide Quellen-Erstberichte unverändert, öffentliche ACCESS002/BINDING003-Folgeaufträge ergänzen Dateicodes und vollständige Fragekontexte ohne Antworten. Root änderte den Erweiterungsplan während ACCESS002, nachdem beide Ersturteile fertig waren; neue Planfassung wurde dort nicht gelesen. Kein rückwirkender Blindheitsnachweis. Normale Matrixprüfung und gezielte Korrekturen sind mit Originalfassungen gespeichert. PRV2-F01 numerisch gezielt geschlossen; synthetische Prüfungen bleiben Synthetik.
 
 Root entwickelt einen43Angabenentwurf aus acht Themen und fünf getrennten ESS-Erhebungen. Vier zusätzliche Rohdateien fehlen, Steven bietet Download an; keinerlei neuer Antwortimport. Die ursprüngliche ESS11-A/B-Einsicht bleibt bekannt. Quellenkatalog B-V2-M04 bindet ausschließlich begrenzte offizielle Manualabschnitte; kein Survey-Package installiert. Gleiche Codex-Modellfamilie begrenzt alle KI-Gegenprüfungen. Check040 Formatfehler ausdrücklich dokumentiert, Originalprüfpins als WIP88eb7db gesichert.
+
+## 2026-10-03: technischer Fokus-/Zoomabschluss
+
+Steven beauftragte im Wortlaut:
+
+> Erledige noch die offenen technischen Punkte: Prüfe sichtbaren Tastaturfokus und die Darstellung bei 200 % Zoom auf der Forschungswebsite, einschließlich Frageablauf und Ergebnissen. Behebe gefundene Fehler, führe die passenden Projektchecks aus und dokumentiere die tatsächlich geprüften Ergebnisse. Aktualisiere die Übergabeunterlagen für Claude.
+>
+> Stoppe anschließend gezielt die drei von dir gestarteten Server: `pnpm dev`, den Python-Prototypserver auf Port 4313 und `pnpm dev:research` auf Port 4314. Verwende ihre eigenen Sessions oder eindeutig zugeordneten Prozess-IDs, damit andere Prozesse unberührt bleiben.
+>
+> Committe und pushe deine Änderungen auf den aktuellen Arbeitsbranch und verifiziere den Push. Schließe mit einem kurzen Bericht über erledigte Prüfungen, verbleibende offene Punkte und den gesicherten Commit ab. Menschliche Prüfungen und Releasefreigaben bleiben offen.
+
+Root: Codex über T3 Code, Laufzeitkennung `gpt-6.1-sol`, Reasoning `ultra`. Zwei getrennte Codex-Teilagenten prüften begrenzt UI-Fokusstellen beziehungsweise den technischen Browserchecker; eigene Erstberichte und gezielte Nachberichte in `reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-*`. Gleiche Modellfamilie, keine Garantie unabhängiger Fehlerquellen oder Neutralität. Keine wissenschaftliche Gesamtprüfung.
+
+T3 meldete zunächst `document.hasFocus=false` und unveränderten Zoom trotz Shortcuts, später ausdrücklich fehlenden Automation-Host bei `preview_open`. Diese Versuche sind keine Passnachweise. Der zulässige lokale Chromium-Ersatzweg wurde zusätzlich ausdrücklich von Steven bestätigt. Keine globale Installation oder Browseränderung in einem bestehenden persönlichen Profil. Tatsächliche Browser-/Bild-/Fehlerbelege stehen einmalig im [technischen Bericht](../reports/loop/technical-focus-zoom-001.md). Eine axe-Kontrastregel bleibt automatisch unvollständig; tatsächliche gezielte Farb-/Sichtprüfung dokumentiert. Null reale Menschen, kein neuer Roh-/Antwortdatenzugriff, kein Claude-Zugang oder Deployment.

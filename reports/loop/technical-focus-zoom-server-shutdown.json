@@ -1,0 +1,72 @@
+{
+  "startedUtc": "2026-10-03T18:39:03.459230+00:00",
+  "method": "SIGINT to precisely identified listener PID after startticks/CWD/command comparison; no broad kills",
+  "targets": [
+    {
+      "port": 4311,
+      "pid": 1558378,
+      "name": "pnpm dev",
+      "start_ticks": 4924081,
+      "pgid": 1558225,
+      "cwd": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003/web",
+      "signal": "SIGINT",
+      "processGone": true,
+      "portClosed": true
+    },
+    {
+      "port": 4313,
+      "pid": 3113830,
+      "name": "Python prototype",
+      "start_ticks": 6302476,
+      "pgid": 3113830,
+      "cwd": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
+      "signal": "SIGINT",
+      "processGone": true,
+      "portClosed": true
+    },
+    {
+      "port": 4314,
+      "pid": 3296672,
+      "name": "pnpm dev:research",
+      "start_ticks": 6461456,
+      "pgid": 3296307,
+      "cwd": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003/web",
+      "signal": "SIGINT",
+      "processGone": true,
+      "portClosed": true
+    }
+  ],
+  "wrapperProcesses": [
+    {
+      "pid": 1558225,
+      "gone": true
+    },
+    {
+      "pid": 1558262,
+      "gone": true
+    },
+    {
+      "pid": 1558316,
+      "gone": true
+    },
+    {
+      "pid": 3296307,
+      "gone": true
+    },
+    {
+      "pid": 3296502,
+      "gone": true
+    },
+    {
+      "pid": 3296592,
+      "gone": true
+    }
+  ],
+  "finishedUtc": "2026-10-03T18:39:18.264629+00:00",
+  "status": "PASS",
+  "initialVerificationRecord": {
+    "path": "reports/loop/technical-focus-zoom-server-shutdown-attempt1.json",
+    "sha256": "a583b1c3815b7a46311b4d2917eadfcd72f55fc5a2c3f71ba813ea998b91b0ae",
+    "scope": "Listener exits observed before pnpm wrapper reaping; initial PARTIAL retained"
+  }
+}

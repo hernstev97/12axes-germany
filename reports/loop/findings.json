@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T16:36:47.884766+00:00",
+  "updatedAtUtc": "2026-10-03T18:37:59.818580+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -3276,7 +3276,133 @@
         "technical": "reports/loop/group-presentation-responsive-round1-technical.json",
         "rootDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md"
       }
+    },
+    {
+      "id": "TFZ-S01",
+      "origin": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static.md",
+      "decision": "angenommen",
+      "severity": "bounded technical",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "Groupsource summary lacked the handbook outline selector",
+      "correctionState": "Existing2px/4px focus style added; targetedstatic1 plus actualnativebrowser focus/capture",
+      "blocks": [],
+      "verification": {
+        "record": "reports/loop/technical-focus-zoom-001.json",
+        "report": "reports/loop/technical-focus-zoom-001.md"
+      }
+    },
+    {
+      "id": "TFZ-S04",
+      "origin": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static.md",
+      "decision": "angenommen",
+      "severity": "bounded technical",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "After render of disabled reset button native focus dropped to body",
+      "correctionState": "Existing heading focus scheduled after reset; regression and actual nextTab firstRadio",
+      "blocks": [],
+      "verification": {
+        "record": "reports/loop/technical-focus-zoom-001.json",
+        "report": "reports/loop/technical-focus-zoom-001.md"
+      }
+    },
+    {
+      "id": "TFZ-S02",
+      "origin": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static.md",
+      "decision": "angenommen",
+      "severity": "bounded technical",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "Generic normalroute checker omitted imported research route",
+      "correctionState": "Dedicated research checker added; generic script preserved",
+      "blocks": [],
+      "verification": {
+        "record": "reports/loop/technical-focus-zoom-001.json",
+        "report": "reports/loop/technical-focus-zoom-001.md"
+      }
+    },
+    {
+      "id": "TFZ-S03",
+      "origin": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static.md",
+      "decision": "angenommen",
+      "severity": "bounded technical",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "Generic reflow/deviceScaleFactor probe did not test browserzoom",
+      "correctionState": "Actual tabs.setZoom/getZoom2 measured separately from css/pinch/density",
+      "blocks": [],
+      "verification": {
+        "record": "reports/loop/technical-focus-zoom-001.json",
+        "report": "reports/loop/technical-focus-zoom-001.md"
+      }
+    },
+    {
+      "id": "TFZ-C01",
+      "origin": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-first.md",
+      "decision": "angenommen",
+      "severity": "P2 technical coverage",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "Heading transition not awaited",
+      "blocks": [],
+      "verification": {
+        "review": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1.md",
+        "addendum": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1-addendum.md",
+        "record": "reports/loop/technical-focus-zoom-001.json"
+      }
+    },
+    {
+      "id": "TFZ-C02",
+      "origin": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-first.md",
+      "decision": "angenommen",
+      "severity": "P2 technical coverage",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "Opened source state not asserted",
+      "blocks": [],
+      "verification": {
+        "review": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1.md",
+        "addendum": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1-addendum.md",
+        "record": "reports/loop/technical-focus-zoom-001.json"
+      }
+    },
+    {
+      "id": "TFZ-C03",
+      "origin": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-first.md",
+      "decision": "angenommen",
+      "severity": "P2 technical coverage",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "Selected group and rendered content not asserted",
+      "blocks": [],
+      "verification": {
+        "review": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1.md",
+        "addendum": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1-addendum.md",
+        "record": "reports/loop/technical-focus-zoom-001.json"
+      }
+    },
+    {
+      "id": "TFZ-C04",
+      "origin": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-first.md",
+      "decision": "angenommen",
+      "severity": "P2 technical coverage",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "Focus color not checked",
+      "blocks": [],
+      "verification": {
+        "review": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1.md",
+        "addendum": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1-addendum.md",
+        "record": "reports/loop/technical-focus-zoom-001.json"
+      }
     }
   ],
-  "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."
+  "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt.",
+  "technicalFollowupLimits": {
+    "axeIncomplete": 1,
+    "rule": "color-contrast/bgOverlap",
+    "scope": "Manual13.28color/screenshot/visiblehit checks documented; automatic rule stays incomplete, fullWCAG remains unclaimed",
+    "record": "reports/loop/technical-focus-zoom-001.json"
+  }
 }

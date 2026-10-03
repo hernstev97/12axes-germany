@@ -103,6 +103,19 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     await fixture.whenStable();
   }
 
+  it('Zurücksetzen führt den Fokus vom danach deaktivierten Button zur Frage', async () => {
+    await choose('1');
+    const reset = [...element.querySelectorAll('button')].find(
+      (button) => button.textContent?.trim() === 'Auswahl zurücksetzen',
+    )!;
+    reset.focus();
+    headingInteractions = [];
+    await click('Auswahl zurücksetzen');
+    expect(reset.disabled).toBe(true);
+    expect(element.querySelector('input:checked')).toBeNull();
+    expectFocusedAndScrolled(element.querySelector<HTMLElement>('#draft-question-title')!);
+  });
+
   it.each([
     ['Zur nächsten Frage', 'Frage 3 von 43'],
     ['Zur vorherigen Frage', 'Frage 1 von 43'],

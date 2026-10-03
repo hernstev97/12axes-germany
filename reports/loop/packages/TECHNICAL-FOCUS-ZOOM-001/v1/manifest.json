@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "package": "TECHNICAL-FOCUS-ZOOM-001/v1",
+  "createdUtc": "2026-10-03T18:41:38.187456+00:00",
+  "status": "PASS_BOUNDED_TECHNICAL_NOT_HUMAN_SCIENTIFIC_RELEASE",
+  "previousGroupManifest": {
+    "path": "reports/loop/packages/GROUP-PRESENTATION-V21-001/v2/manifest.json",
+    "sha256": "a96b12d423a27e3fe15f746b13f5885c882293f698c0846b4c1e76ecf3b07c99",
+    "unchangedPins": 83,
+    "changedPaths": [
+      "web/src/app/policy-draft/policy-draft.scss",
+      "web/src/app/policy-draft/policy-draft.spec.ts",
+      "web/src/app/policy-draft/policy-draft.ts"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "web/src/app/policy-draft/policy-draft.scss",
+      "sha256": "3b7e894c8b2e93029fe1da0136adf9d197adaa43a1a55e62c25b016eba2b07ce"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.ts",
+      "sha256": "da3a08b61dd077c28bef3f1a38942b666bfb93afc4a1858498d9c302278aaace"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.spec.ts",
+      "sha256": "a92b1c21d02e295154b71201f3fc864d770a69df46d5a04ec419eb9072ab031b"
+    },
+    {
+      "path": "scripts/check-research-browser.mjs",
+      "sha256": "642825797fc15b57355ad1169f19f5b25f30d17e7e58c189c0135b7836977f70"
+    },
+    {
+      "path": "reports/loop/technical-focus-zoom-001.json",
+      "sha256": "3cc2cb45283737dc84e34c5b09406672e705d8e67ce78231c4d6d0d3362d8793"
+    },
+    {
+      "path": "reports/loop/technical-focus-zoom-001.md",
+      "sha256": "03079d4a1845c93d1ef6fcbc5c50dc3c6e0679466f99a921908421ff32efc34f"
+    },
+    {
+      "path": "reports/loop/technical-focus-zoom-server-shutdown.json",
+      "sha256": "bac9b593e29eabe9354634b780620755ec285e907f3918c8433fbfa87fc3086f"
+    },
+    {
+      "path": "reports/loop/technical-focus-zoom-server-shutdown-attempt1.json",
+      "sha256": "a583b1c3815b7a46311b4d2917eadfcd72f55fc5a2c3f71ba813ea998b91b0ae"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-first.md",
+      "sha256": "365e6df7dc359a59b0d9b1147b68f31e040814842441de086d8b5c789f2803d2"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1-addendum.md",
+      "sha256": "8ecf42954aa71e654d78911b616fa61b58a336bf8b23712624e16f541076b901"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1.md",
+      "sha256": "a2234b60d9aad572ef565c676ffb748e3a029494ef4f3199ae09a96b32fdfe03"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-handoff-review.md",
+      "sha256": "a014d730f595cc2ed6cfd4e2c33b9a64efb08785d0a57769e0dd2d1638a49329"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static-round1.md",
+      "sha256": "011a29d7bae5f6888cba1fa8d25e3aa6a0563b16f006222c3ee998a6c24af4a2"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static-round2.md",
+      "sha256": "89e25077178462622f18e27c80f1f5c08db52ba86f1da0cc190167b0170d8e9a"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static.md",
+      "sha256": "60ed140f2bcfaeb69fe2d7fc8134950a0eff7f3759d6a6e3388e5db27e76401d"
+    }
+  ]
+}

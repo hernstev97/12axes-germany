@@ -138,6 +138,7 @@ export class PolicyDraft {
     this.session.resetAnswer(id);
     this.clearSkipReason(id);
     this.update();
+    this.focus('question');
   }
 
   protected previous(): void {

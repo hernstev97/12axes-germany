@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T16:42:42.638821+00:00",
+  "updatedAtUtc": "2026-10-03T18:41:38.187456+00:00",
   "status": "READY_FOR_APPROVAL",
-  "phase": "Breite Forschungsfassung v2/v2.1 vorbereitet für Stevens Claude-Schlusskontrolle; externe Menschen-/Design-/Releaseprüfungen offen",
+  "phase": "Technische Fokus-/Zoomnacharbeit abgeschlossen, check059/79Tests bestanden, drei eigene Server beendet; vorbereitet für Claude/Menschen/Release",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -56,12 +56,13 @@
     "GROUP-PRESENTATION-V21-001 original normal86pin first accepted bounded; actual26 native selections63available/111null,5widthaxe0; final responsive correction pending",
     "Positive isolatedCLI8canonical candidates exactly equal; original source/run bytes and private replicas retained, no independent download/alternative model",
     "GROUP-PRESENTATION-V21-001 responsive GBP-ROOT-01 round1 accepted and actual320/1280 browser verified; originalfirst saved in checkpoint51",
-    "Concrete Human0.2 proposed UI/controls/reference binding43pins and actualtechnicalshowing prepared; zero realpeople; Claude checklist/reproduction dates updated"
+    "Concrete Human0.2 proposed UI/controls/reference binding43pins and actualtechnicalshowing prepared; zero realpeople; Claude checklist/reproduction dates updated",
+    "TECHNICAL-FOCUS-ZOOM-001:594research/54public keyboard focus checks, realtabzoom2,9conditions43questions each; S01/S04 and4checker gaps targeted corrected; check059/79tests PASS; three ownedservers stopped. Oneaxecontrast incomplete retained; no fullWCAG/human/release."
   ],
   "openTasks": [
     "Steven initiates deferred Claude final control at saved exact version; no Claude attempt by Root",
     "Steven approves proposed UI/showing/viewport; consent and5realpeople; no humanrunsyet",
-    "Actual visible keyboardfocus and200percent browserzoom/manual device acceptance",
+    "Physical device/browser coverage and complete manual WCAG acceptance; bounded Chromium focus/zoom completed",
     "Human design/teststart and concrete rights/noncommercial use/release decisions; merge/deployment separately authorized"
   ],
   "dependencies": [
@@ -113,12 +114,14 @@
   "checks": {
     "mainIntegration": "BESTANDEN",
     "currentLocalTechnical": {
+      "status": "PASS",
       "command": "pnpm check",
       "exitCode": 0,
-      "log": "outputs/loop/check-058.log",
-      "logSha256": "681e9ac17e0cc9d5a1eeb7988dc4fd1d855dfedd73bd989ec65a695462aaeb70",
-      "tests": 78,
-      "scope": "Formatter,handbook,review-schema,typecheck,78AngularTests and production build; prior057formatfail preserved; no scientific/human/design release"
+      "log": "outputs/loop/check-059.log",
+      "logSha256": "d99accba4615f34610387a27c388198aacea49369ad403d22bca65ad38117f14",
+      "tests": 79,
+      "testFiles": 7,
+      "scope": "Formatter,handbook,review-schema,typecheck,79AngularTests,productionbuild; no scientific/human/release approval"
     },
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Fünf historische v2-Einzelstudienläufe und 42 begrenzt geprüfte Einzelreferenzen; keine gemeinsame Produktvalidität, aktuelle Norm oder neue Administrationvalidierung.",
@@ -127,8 +130,8 @@
     "currentHandbookGuard": "BESTANDEN",
     "foundationFiveReviewers": "NICHT_BESTANDEN",
     "currentInfrastructure": "BESTANDEN",
-    "actual200PercentBrowserZoom": "NICHT_GEPRÜFT; available T3 preview shortcuts have no measured zoom effect",
-    "fullHandbookWebsiteAcceptance": "PENDING_HUMAN_DESIGN_AND_ACTUAL_FOCUS_ZOOM; technical handbookguard/browser records do not grant design",
+    "actual200PercentBrowserZoom": "PASS_BOUNDED: real automatic per-tab zoom2 and geometry verified in9conditions; reports/loop/technical-focus-zoom-001.json",
+    "fullHandbookWebsiteAcceptance": "PENDING_HUMAN_DESIGN_PHYSICAL_DEVICES_FULL_WCAG; one axe contrast rule incomplete retained",
     "claudeTechnicalAccess": "NICHT_WEITER_VERFOLGT; keine Voraussetzung, abschließende Kontrolle durch Steven ausstehend",
     "foundationBoundedCorrections": "BESTANDEN",
     "foundationScientificPlanAcceptance": "BESTANDEN_BEGRÄNZT contract before A; no empirical validity",
@@ -149,7 +152,7 @@
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
     "currentWebsiteCopy": "Current four public group status files accepted bounded in GROUP-PRESENTATION-V21-001/v1; prior PUBLIC-STATUS v3 stays historical before group export; no public teststart.",
-    "currentWebsiteBrowser": "Verified exact63/111 across26historical selections; fivewidths0axe/nooverflow, same-study isolation/remount; GBP-ROOT-01 CSSround1 bounded accepted and mobile320/desktop1280 observed fixed. Actual keyboard visiblefocus/200percent unverified.",
+    "currentWebsiteBrowser": "Current technical focus/zoom scope in reports/loop/technical-focus-zoom-001.json; previous26group numeric binding and responsive reports preserved. No human/design/release approval.",
     "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung",
     "currentConfirmatoryTransition": "Historical v1 B already accessed and fixed numerical criteria met before scope steering; subsequent B/FULL/C/norm/group flow held, no fresh blind B claim. Newv2/v2.1 gates/results separate.",
     "currentProductBreadth": "PREPARED_BOUNDED:43original questions/8different substantive rubrics, economy/distribution and democracy/authority explicit; comprehensive/current product validity and human acceptance not established",
@@ -183,6 +186,25 @@
       "logSha256": "681e9ac17e0cc9d5a1eeb7988dc4fd1d855dfedd73bd989ec65a695462aaeb70",
       "tests": 78,
       "scope": "Formatter,handbook,review-schema,typecheck,78AngularTests and production build; prior057formatfail preserved; no scientific/human/design release"
+    },
+    "actualVisibleKeyboardFocus": "PASS_BOUNDED:594research+54public native checks; outline2px/offset4px/contrast; representative native captures inspected; not fullWCAG",
+    "previousTechnical058": {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "log": "outputs/loop/check-058.log",
+      "logSha256": "681e9ac17e0cc9d5a1eeb7988dc4fd1d855dfedd73bd989ec65a695462aaeb70",
+      "tests": 78,
+      "scope": "Formatter,handbook,review-schema,typecheck,78AngularTests and production build; prior057formatfail preserved; no scientific/human/design release"
+    },
+    "check059": {
+      "status": "PASS",
+      "command": "pnpm check",
+      "exitCode": 0,
+      "log": "outputs/loop/check-059.log",
+      "logSha256": "d99accba4615f34610387a27c388198aacea49369ad403d22bca65ad38117f14",
+      "tests": 79,
+      "testFiles": 7,
+      "scope": "Formatter,handbook,review-schema,typecheck,79AngularTests,productionbuild; no scientific/human/release approval"
     }
   },
   "reviewReports": [
@@ -610,7 +632,7 @@
       "decision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md"
     }
   ],
-  "nextConcreteStep": "Steven initiates Claude final control using saved public dossier; approves exact proposed UI/show-script/viewport and consent/5realpeople. Actual visiblefocus/200percent, design/rights/teststart/release and merge/deployment remain human decisions. Do not restart research or old v1B/FULL/norm flow.",
+  "nextConcreteStep": "After this technical checkpoint: Steven initiates Claude control on exact current public dossier and approves proposed UI/show-script/viewport, consent/five realpeople, design/rights/teststart/release. Physicaldevice/fullWCAG coverage remain separate. Do not restart research, old B/FULL/norm flow or servers automatically.",
   "checkpoint": {
     "lastLocalCommit": "f1c6c3bc26056206babd9d8a4c4163216db11f22",
     "lastVerifiedRemoteCommit": "f1c6c3bc26056206babd9d8a4c4163216db11f22",
@@ -1144,7 +1166,10 @@
       "scrollRecord": "reports/loop/angular-scroll-round1-technical.json",
       "scrollReview": "reports/loop/reviews/ANGULAR-REFERENCE-001-scroll-round1.md",
       "browserFinal": "reports/loop/group-presentation-responsive-round1-technical.json",
-      "groupDisplayDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md"
+      "groupDisplayDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md",
+      "currentFocusZoomRecord": "reports/loop/technical-focus-zoom-001.json",
+      "currentFocusZoomStatus": "PASS_BOUNDED_NOT_FULL_WCAG",
+      "currentServers": "STOPPED_OWN_THREE_PORTS"
     },
     "humanProtocol": {
       "status": "PLAN_ACCEPTED_BOUNDED",
@@ -1201,23 +1226,27 @@
     "docs": ["docs/reproduktion-life93-v2.md", "docs/claude-schlusskontrolle-v2.md"],
     "humanAddendum": "docs/verstaendnistest-v2.1.entwurf.md",
     "humanExampleIds": "reports/loop/packages/COMPREHENSION-V21-001/v1/show-script-ids.json",
-    "humanUIBinding": "reports/loop/packages/COMPREHENSION-V21-001/v1/manifest.json",
+    "humanUIBinding": "reports/loop/packages/COMPREHENSION-V21-001/v2/manifest.json",
     "humanRunsPerformed": 0,
     "ordinaryManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v1/manifest.json",
     "ordinaryReview": "reports/loop/reviews/FINAL-DOSSIER-HUMAN-V21-001-first.md",
     "ordinaryReviewSha256": "9d4d3c162ace76b7245b02c1e15b264bd6763f0552bbc25a2627f8019dbd401e",
     "formatTransferManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v2/manifest.json",
     "rootDecision": "reports/loop/FINAL-DOSSIER-HUMAN-V21-001-entscheidung.md",
-    "humanUIBindingSha256": "811764468402ea4cb163bb666ee1b2833e259d73cc4775f7552fac8efef329cb",
+    "humanUIBindingSha256": "5e0fb7c6258ee6bae5668ebf51bd7140e89392cbcad9cab38361afbdc0591d9c",
     "humanShowingControls": "reports/loop/packages/COMPREHENSION-V21-001/v1/showing-controls.json",
     "humanApproval": "PENDING_STEVEN_CONSENT_5REALPEOPLE",
     "cliReproduction": "reports/loop/cli-reproduction-verification.json",
     "groupPresentationDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md",
-    "currentFactManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v3/manifest.json",
-    "currentFactManifestScope": "Dated verified execution/UI/version facts only; original ordinary40pin first and human0.1/0.2rules preserved, no new scientific verdict.",
+    "currentFactManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v4/manifest.json",
+    "currentFactManifestScope": "Targeted focus fixes, actual boundedzoom/keyboard checks and documented check059/serverstop; no new scientific criteria/results/review or human/release approval",
     "finalTechnical": "reports/loop/final-preparation-technical.json",
     "finalTagVerification": "reports/loop/final-plan-tag-verification.json",
-    "currentFactManifestSha256": "3009a7a4e182d8ed42b9779970b967e9ddd312f726d2d8092e2de0e26356e3e7"
+    "currentFactManifestSha256": "7e6840d7248d1e8244701675b3b64e31afbd1ea011ea459cd60f9bc9539a0326",
+    "previousHumanUIBinding": "reports/loop/packages/COMPREHENSION-V21-001/v1/manifest.json",
+    "previousHumanUIBindingSha256": "811764468402ea4cb163bb666ee1b2833e259d73cc4775f7552fac8efef329cb",
+    "previousFactManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v3/manifest.json",
+    "previousFactManifestSha256": "3009a7a4e182d8ed42b9779970b967e9ddd312f726d2d8092e2de0e26356e3e7"
   },
   "cliReproduction": {
     "status": "PASS_EXACT8_CANONICAL_CANDIDATES",
@@ -1266,7 +1295,40 @@
   "externalPrerequisites": [
     "Steven initiates deferred Claude final control at saved exact version; no Claude attempt by Root",
     "Steven approves proposed UI/showing/viewport; consent and5realpeople; no humanrunsyet",
-    "Actual visible keyboardfocus and200percent browserzoom/manual device acceptance",
+    "Physical device/browser coverage and complete manual WCAG acceptance; bounded Chromium focus/zoom completed",
     "Human design/teststart and concrete rights/noncommercial use/release decisions; merge/deployment separately authorized"
-  ]
+  ],
+  "technicalFollowup": {
+    "assignmentUtc": "2026-10-03T18:37:59.818580+00:00",
+    "record": "reports/loop/technical-focus-zoom-001.json",
+    "report": "reports/loop/technical-focus-zoom-001.md",
+    "baseCommit": "9de6ec5a31c365c898b45f4394d2cf1ff0052476",
+    "researchConditions": 9,
+    "researchQuestionViews": 387,
+    "researchKeyboardFocusChecks": 594,
+    "publicSupplementViews": 27,
+    "axeViolations": 0,
+    "axeIncomplete": 1,
+    "rootCoordinatorOnly": true,
+    "scientificDataOrCriteriaChanged": false,
+    "realPeople": 0,
+    "claude": "NOT_PERFORMED",
+    "serverShutdown": "PASS",
+    "projectCheck": {
+      "status": "PASS",
+      "command": "pnpm check",
+      "exitCode": 0,
+      "log": "outputs/loop/check-059.log",
+      "logSha256": "d99accba4615f34610387a27c388198aacea49369ad403d22bca65ad38117f14",
+      "tests": 79,
+      "testFiles": 7,
+      "scope": "Formatter,handbook,review-schema,typecheck,79AngularTests,productionbuild; no scientific/human/release approval"
+    },
+    "finalPushReceipt": "outputs/loop/technical-followup-final-push.json",
+    "serverShutdownRecord": "reports/loop/technical-focus-zoom-server-shutdown.json",
+    "coordinatorStatus": "FINISHED_AFTER_CHECKPOINT",
+    "restartServersAutomatically": false,
+    "manifest": "reports/loop/packages/TECHNICAL-FOCUS-ZOOM-001/v1/manifest.json",
+    "manifestSha256": "095ed6bf1f18e78e1d3a13cb38b288567e619af79be6d5f511c0661b14c3d5d5"
+  }
 }

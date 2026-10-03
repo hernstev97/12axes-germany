@@ -1,0 +1,595 @@
+{
+  "schemaVersion": 1,
+  "id": "TECHNICAL-FOCUS-ZOOM-001",
+  "recordedUtc": "2026-10-03T18:36:44.715227+00:00",
+  "status": "PASS_BOUNDED_FOCUS_ZOOM_NOT_FULL_WCAG",
+  "baseCommit": "9de6ec5a31c365c898b45f4394d2cf1ff0052476",
+  "researchRun": {
+    "path": "outputs/research-browser/focus-zoom-ShySzf/report.json",
+    "sha256": "86922517e7a0e3454dec542a8cbe3c601efee67d21de1ead34c2eb9d1df503ae",
+    "startedUtc": "2026-10-03T18:27:42.474Z",
+    "finishedUtc": "2026-10-03T18:29:11.805Z",
+    "browser": "151.0.7922.34",
+    "scriptSha256": "642825797fc15b57355ad1169f19f5b25f30d17e7e58c189c0135b7836977f70"
+  },
+  "publicSupplement": {
+    "path": "outputs/research-browser/public-focus-zoom-v1kv8F/report.json",
+    "sha256": "c170facfbce2098e6e18d5c4a35f3254ca9028b30a65ae9dff19971697e409e0",
+    "routes": ["/", "/projekt", "/methodik"],
+    "conditions": 27,
+    "keyboardFocusChecks": 54,
+    "axeChecks": 27,
+    "violations": 0,
+    "incomplete": 0
+  },
+  "zoomMethod": {
+    "api": "chrome.tabs.setZoom/getZoom; automatic mode, per-tab scope",
+    "documentation": "https://developer.chrome.com/docs/extensions/reference/api/tabs#method-setZoom",
+    "capture": "Page.captureScreenshot(fromSurface=false,captureBeyondViewport=false)",
+    "headless": true,
+    "cssZoom": "1",
+    "visualViewportScale": 1,
+    "noDeviceScaleFactorOverride": true
+  },
+  "conditions": [
+    {
+      "window": {
+        "width": 1440,
+        "height": 1000
+      },
+      "zoom": {
+        "factor": 1,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 1440,
+        "height": 1000,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "dpr": 1,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "window": {
+        "width": 1024,
+        "height": 768
+      },
+      "zoom": {
+        "factor": 1,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 1024,
+        "height": 768,
+        "clientWidth": 1024,
+        "scrollWidth": 1024,
+        "dpr": 1,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "window": {
+        "width": 768,
+        "height": 1024
+      },
+      "zoom": {
+        "factor": 1,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 768,
+        "height": 1024,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "dpr": 1,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": [
+        {
+          "label": "question sources expanded",
+          "violations": [],
+          "incomplete": ["color-contrast"]
+        }
+      ]
+    },
+    {
+      "window": {
+        "width": 390,
+        "height": 844
+      },
+      "zoom": {
+        "factor": 1,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 390,
+        "height": 844,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "dpr": 1,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "window": {
+        "width": 320,
+        "height": 720
+      },
+      "zoom": {
+        "factor": 1,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 320,
+        "height": 720,
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "dpr": 1,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "window": {
+        "width": 1280,
+        "height": 900
+      },
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 640,
+        "height": 450,
+        "clientWidth": 640,
+        "scrollWidth": 640,
+        "dpr": 2,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "window": {
+        "width": 1440,
+        "height": 1000
+      },
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 720,
+        "height": 500,
+        "clientWidth": 720,
+        "scrollWidth": 720,
+        "dpr": 2,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "window": {
+        "width": 1024,
+        "height": 768
+      },
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 512,
+        "height": 384,
+        "clientWidth": 512,
+        "scrollWidth": 512,
+        "dpr": 2,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": []
+    },
+    {
+      "window": {
+        "width": 768,
+        "height": 1024
+      },
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "measured": {
+        "width": 384,
+        "height": 512,
+        "clientWidth": 384,
+        "scrollWidth": 384,
+        "dpr": 2,
+        "visualScale": 1,
+        "cssZoom": "1",
+        "heading": "Frage 1 von 43"
+      },
+      "questions": 43,
+      "focusTransitions": 42,
+      "keyboardFocusChecks": 66,
+      "minimumOutlineContrast": 13.278671574528007,
+      "nestedQuestionSourcesOpened": 3,
+      "chosenStudy": "ESS5e03_6",
+      "chosenGroup": "ESS5e03_6:second_vote:1",
+      "maxOverflow": 0,
+      "axeChecks": 5,
+      "violations": 0,
+      "incomplete": []
+    }
+  ],
+  "totals": {
+    "questionViews": 387,
+    "questionFocusTransitions": 378,
+    "keyboardFocusChecks": 594,
+    "layoutChecks": 441,
+    "axeChecks": 45,
+    "violations": 0,
+    "incomplete": 1
+  },
+  "syntheticDemonstrationOnly": true,
+  "realPeople": 0,
+  "reviews": [
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static.md",
+      "sha256": "60ed140f2bcfaeb69fe2d7fc8134950a0eff7f3759d6a6e3388e5db27e76401d"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static-round1.md",
+      "sha256": "011a29d7bae5f6888cba1fa8d25e3aa6a0563b16f006222c3ee998a6c24af4a2"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-static-round2.md",
+      "sha256": "89e25077178462622f18e27c80f1f5c08db52ba86f1da0cc190167b0170d8e9a"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-first.md",
+      "sha256": "365e6df7dc359a59b0d9b1147b68f31e040814842441de086d8b5c789f2803d2"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1.md",
+      "sha256": "a2234b60d9aad572ef565c676ffb748e3a029494ef4f3199ae09a96b32fdfe03"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-browser-check-round1-addendum.md",
+      "sha256": "8ecf42954aa71e654d78911b616fa61b58a336bf8b23712624e16f541076b901"
+    },
+    {
+      "path": "reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-handoff-review.md",
+      "sha256": "a014d730f595cc2ed6cfd4e2c33b9a64efb08785d0a57769e0dd2d1638a49329"
+    }
+  ],
+  "uiArtifacts": [
+    {
+      "path": "web/src/app/policy-draft/policy-draft.scss",
+      "sha256": "3b7e894c8b2e93029fe1da0136adf9d197adaa43a1a55e62c25b016eba2b07ce"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.ts",
+      "sha256": "da3a08b61dd077c28bef3f1a38942b666bfb93afc4a1858498d9c302278aaace"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.spec.ts",
+      "sha256": "a92b1c21d02e295154b71201f3fc864d770a69df46d5a04ec419eb9072ab031b"
+    }
+  ],
+  "visualEvidence": [
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/1024x768-zoom1-group-sources-focus.png",
+      "sha256": "09a781a36aabc3361dbba72fe198f5c624b06e4ef8f1917bf6e5e219ba863b2f",
+      "observed": "Root viewed native capture: focus frame and readable wrapping"
+    },
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/768x1024-zoom1-question-radio.png",
+      "sha256": "80cda9a3a1d2c9cd0dcaae122d6aaae9e3f6d2a27c0ce44f6136cdffa02f1167",
+      "observed": "Root viewed native capture: focus frame and readable wrapping"
+    },
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/390x844-zoom1-group-sources-expanded.png",
+      "sha256": "22fccba680e8b6193264c552a3fb50b93b88305b40882e1d3345ef7f6774bd2e",
+      "observed": "Root viewed native capture: focus frame and readable wrapping"
+    },
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/1440x1000-zoom2-result-sources-focus.png",
+      "sha256": "565de1736885ef2099f5120b7e917c2610e8adf30044070307433d024ff3da58",
+      "observed": "Root viewed native capture: focus frame and readable wrapping"
+    },
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/1024x768-zoom2-question-radio.png",
+      "sha256": "15964cf25c083b200474b99098767a5f3b15e01e61e141c24dc50f804593a4f4",
+      "observed": "Root viewed native capture: focus frame and readable wrapping"
+    },
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/768x1024-zoom2-group-sources-expanded.png",
+      "sha256": "a9f2306f15b27a026cf663dc9ca52f631de2e4605d19608bd82bd9a7fb30c32d",
+      "observed": "Root viewed native capture: focus frame and readable wrapping"
+    },
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/1280x900-zoom2-group-sources-focus.png",
+      "sha256": "c657718829dd01a1fc414058a3d5e04c130c10d779a254974b8c415f4f4004af",
+      "observed": "Root viewed native capture: focus frame and readable wrapping"
+    },
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/320x720-zoom1-question-sources.png",
+      "sha256": "cd84ffd4a6860c48394c72501f3597b798f4c43cb55f19c0d9b911ebf4e01822",
+      "observed": "Root viewed native capture: focus frame and readable wrapping"
+    },
+    {
+      "path": "outputs/research-browser/focus-zoom-ShySzf/1440x1000-zoom1-question-radio.png",
+      "sha256": "9c4ef5d5f3c9611840f14c5fd3fd098a61b06775067e37c9b90554232d19f998",
+      "observed": "Root viewed actual native image; readable content and visible focused frame where focused"
+    },
+    {
+      "path": "outputs/research-browser/contrast-review-7gleJB/viewport.png",
+      "sha256": "b77dc00574310b6ad54057bf52983dbeca9c0a1cb0fb40986b8101a5d6b2ebbd",
+      "observed": "Root viewed actual native image; readable content and visible focused frame where focused"
+    },
+    {
+      "path": "outputs/research-browser/contrast-review-7gleJB/after-scroll.png",
+      "sha256": "acaa96f72ad9745c632f8c750829b720c83140d77f6be59532a594b4ad3558a6",
+      "observed": "Root viewed actual native image; readable content and visible focused frame where focused"
+    },
+    {
+      "path": "outputs/research-browser/public-focus-zoom-v1kv8F/home-1440x1000-zoom1.png",
+      "sha256": "fdafc3fdf5cebaf02926d491cceb528be87713dfc7f67978c7564222b5ce4b54",
+      "observed": "Root viewed actual native image; readable content and visible focused frame where focused"
+    },
+    {
+      "path": "outputs/research-browser/public-focus-zoom-v1kv8F/projekt-320x720-zoom1.png",
+      "sha256": "9cb8cf44495c17e73e834097b5f3a003d0e496b3a1d49ce8c2cc99535a463677",
+      "observed": "Root viewed actual native image; readable content and visible focused frame where focused"
+    },
+    {
+      "path": "outputs/research-browser/public-focus-zoom-v1kv8F/methodik-1024x768-zoom2.png",
+      "sha256": "13a163503806305955b67f6381b6691b8c0dea8aec7d53d1d3ac1fd576a0b008",
+      "observed": "Root viewed actual native image; readable content and visible focused frame where focused"
+    },
+    {
+      "path": "outputs/research-browser/public-focus-zoom-v1kv8F/projekt-1280x900-zoom2.png",
+      "sha256": "47245b04d2c02e46ce6a6712987a8d661c659fb8ee389302c4e34df3b8f6cce0",
+      "observed": "Root viewed actual native image; readable content and visible focused frame where focused"
+    }
+  ],
+  "retainedEarlierRuns": [
+    {
+      "run": 1,
+      "status": "FAIL",
+      "report": "outputs/research-browser/focus-zoom-71dfDF/report.json",
+      "sha256": "51f8f427c49a135eb0f8faa868fa0d2f1f868ab82585221f1a248ae76b5817f9",
+      "log": "outputs/loop/technical-focus-zoom-browser-001.log",
+      "logSha256": "e2be7e79bc42eb57bd2c14c9c92a43ed1e930a1aa4184d8f6bcef26413fccb92",
+      "scope": "Ambiguous locator failure"
+    },
+    {
+      "run": 2,
+      "status": "PASS",
+      "report": "outputs/research-browser/focus-zoom-noOOTU/report.json",
+      "sha256": "29da64a855590e2ec233468de6080a7175dc3d77d166a011b021f4dd41d71594",
+      "log": "outputs/loop/technical-focus-zoom-browser-002.log",
+      "logSha256": "7f3c88f256c4403a951a47c6cf83ddc6832eeaec5de06a6f4577c8b1ce86a4c7",
+      "scope": "Early automatic PASS, blank zoom surface captures and incomplete guards; not final visual approval"
+    },
+    {
+      "run": 3,
+      "status": "PASS",
+      "report": "outputs/research-browser/focus-zoom-h9mWTF/report.json",
+      "sha256": "7e534c843f77eb7ede9513d6ac53e20c9a880dc324f40b8fd41267878ffcadd2",
+      "log": "outputs/loop/technical-focus-zoom-browser-003.log",
+      "logSha256": "d92a093e1dd2e8eeadb1e35e2df9dc36b644f2c7dee188d5cb6fdb6f5d98f326",
+      "scope": "Native capture plus focus/contrast guards PASS; later source/group guards absent"
+    },
+    {
+      "run": 4,
+      "status": "FAIL",
+      "report": "outputs/research-browser/focus-zoom-CLu41l/report.json",
+      "sha256": "464a99a58d28f8008edc7f4f9da212e53d4836d3fb102d5e7861d72d65c5d377",
+      "log": "outputs/loop/technical-focus-zoom-browser-004.log",
+      "logSha256": "1b7461ffff17cd3673cae4c1d734ea7cc19694dc77d44de1bc1fe877b95817dc",
+      "scope": "Misplaced script assertion, not website failure"
+    },
+    {
+      "run": 5,
+      "status": "FAIL",
+      "report": "outputs/research-browser/focus-zoom-EkEjAo/report.json",
+      "sha256": "28d5d9cddb79ab2e18ba259072d0ec4c13651ffd3a90884ead7c7c6386afd811",
+      "log": "outputs/loop/technical-focus-zoom-browser-005.log",
+      "logSha256": "6e09877c74f579a9b8ec4ce445113d76fc6048e2db7329f85be25fc5899840e6",
+      "scope": "Whitespace in option-label assertion timeout, not website failure"
+    },
+    {
+      "run": 6,
+      "status": "PASS",
+      "report": "outputs/research-browser/focus-zoom-ShySzf/report.json",
+      "sha256": "86922517e7a0e3454dec542a8cbe3c601efee67d21de1ead34c2eb9d1df503ae",
+      "log": "outputs/loop/technical-focus-zoom-browser-006.log",
+      "logSha256": "58d4eaa4b25a30737c77e5049eaea0873cf95641f079c2fd0a330d6b2de8a1d2",
+      "scope": "Final corrected declared scope PASS; one axe rule incomplete retained"
+    }
+  ],
+  "projectCheck": {
+    "status": "PASS",
+    "command": "pnpm check",
+    "exitCode": 0,
+    "log": "outputs/loop/check-059.log",
+    "logSha256": "d99accba4615f34610387a27c388198aacea49369ad403d22bca65ad38117f14",
+    "tests": 79,
+    "testFiles": 7,
+    "scope": "Formatter,handbook,review-schema,typecheck,79AngularTests,productionbuild; no scientific/human/release approval"
+  },
+  "serverShutdown": {
+    "status": "PASS",
+    "record": "reports/loop/technical-focus-zoom-server-shutdown.json",
+    "sha256": "bac9b593e29eabe9354634b780620755ec285e907f3918c8433fbfa87fc3086f",
+    "scope": "Three exact listener PIDs plus pnpm wrappers gone; all4311/4313/4314closed. Other processes not signalled.",
+    "noRemainingOwnedProcessGroupMembers": true
+  },
+  "contrastIncomplete": {
+    "condition": "768x1024-zoom1/question sources expanded",
+    "rule": "color-contrast",
+    "selector": "details:nth-child(9) > .original-text",
+    "reason": "axe bgOverlap, no automatic contrast conclusion",
+    "targetedRecords": [
+      {
+        "path": "outputs/research-browser/contrast-review-7gleJB/report.json",
+        "sha256": "60dbecc4df3d547e9fd6a651724ce93558d8a35987707cfc7fcc6f179a247b74"
+      },
+      {
+        "path": "outputs/research-browser/contrast-review-7gleJB/manual.json",
+        "sha256": "0125571609660ecb9b544552038bebd36ffd42d2caa0f593191682539a0cd700"
+      },
+      {
+        "path": "outputs/research-browser/contrast-review-7gleJB/after-scroll.json",
+        "sha256": "5b6c222058d9e7e6c8ff5954f74ebf4ad677e0a51a895c53e3b14aca103795da"
+      }
+    ],
+    "manualContrast": 13.278671574528007,
+    "manualObservations": "Computed ink/paper colors and opacity1 meet4.5; native screenshot before/after wheel viewed, text readable; two visible hit-test points identify the original P. Automatic incomplete retained, including after-scroll; no fabricated fullWCAG pass."
+  },
+  "limits": [
+    "One Chromium build; no physical mobile browsers, browser shortcut or pinch-zoom acceptance",
+    "Source details opened for first question including three nested sections, first result and selected ESS5 group; not every source/group variant",
+    "Nearest opaque parent contrast calculation plus representative visual inspection, not complete pixel/WCAG certification",
+    "No new raw data access, empirical analysis, real human test, Claude access, design or release approval"
+  ],
+  "productionResearchIsolation": {
+    "status": "PASS",
+    "markerMatches": [],
+    "scope": "Check059 production JS contains none of three research route/control markers"
+  }
+}
