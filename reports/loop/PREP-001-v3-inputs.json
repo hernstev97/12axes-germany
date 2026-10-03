@@ -1,0 +1,108 @@
+{
+  "paths": [
+    "reports/loop/preparation-pruefauftrag.md",
+    "reports/loop/issue-2026-10-03.md",
+    "AGENTS.md",
+    "docs/auftrag-life-93-2026-10-03.md",
+    "docs/handbuch.md",
+    "docs/verstaendnistest.entwurf.md",
+    ".claude/skills/life93-review/SKILL.md",
+    ".claude/skills/life93-review/references/urteil-schema.json",
+    "docs/reviews/setup-vorbereitung.md",
+    "reports/loop/LOOP-003-design-metadaten.json",
+    "reports/loop/setup-access.json",
+    "reports/loop/claude-access.json",
+    "reports/loop/PREP-001-v2-pruefauftrag.md",
+    "reports/loop/PREP-001-korrekturbericht.md",
+    "reports/loop/PREP-001-entscheidungen.md",
+    "reports/loop/reviews/PREP-001-methods.md",
+    "reports/loop/reviews/PREP-001-repro.md",
+    "scripts/check-review-schema.mjs",
+    "package.json",
+    "pnpm-lock.yaml",
+    "docs/ess-versionsabgleich.entwurf.md",
+    "reports/loop/PREP-001-runde2-pruefauftrag.md",
+    "reports/loop/PREP-001-runde2-korrekturbericht.md",
+    "reports/loop/reviews/PREP-001-v2-methods.md",
+    "reports/loop/reviews/PREP-001-v2-repro.md"
+  ],
+  "metadata": {
+    "id": "PREP-001",
+    "version": 3,
+    "codeCommit": "e27a69fbd4ea74179c4c52b6719d5b1351764ad6",
+    "overrideRule": "Frozen listed files are authoritative",
+    "modelConfiguration": null,
+    "sourceInputs": [
+      {
+        "path": "outputs/loop/design/portal-capture.json",
+        "sha256": "c67d91f51575396a8ac28f0b587da5c56693fc6723c86187f88c9da9e56c1f38",
+        "bytes": 6678,
+        "sourceUrl": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+        "scope": "Public Germany Country Documentation/Sampling and Universe; no answer data"
+      },
+      {
+        "path": "outputs/loop/preparation-correction/schema.log",
+        "sha256": "70462e69c066eebac6c3162ed4202f5c7a91aa9e6265f3b17ab93902458c82ae",
+        "bytes": 2170,
+        "scope": "Synthetic schema/protocol check only"
+      },
+      {
+        "path": "outputs/loop/preparation-correction/schema.json",
+        "sha256": "00ce9e665eda984cfda29b654d31a5243b425ba19eda61770db4417abca841ed",
+        "bytes": 901,
+        "scope": "Synthetic schema/protocol check only"
+      },
+      {
+        "path": "outputs/loop/preparation-correction/codex-protocol-reading.json",
+        "sha256": "8e63cedf36572c8e0a5bf674635d3e6e08671fe51b349acce27e8fc57345d41c",
+        "bytes": 2315,
+        "scope": "Synthetic schema/protocol check only"
+      },
+      {
+        "path": "outputs/loop/version/ess11-4.2-capture.json",
+        "sha256": "ad77d489d255f9f14d6b4a97631572a422d755b386f7ffbd036e1377a2c50c93",
+        "bytes": 7880,
+        "scope": "Public release metadata only"
+      },
+      {
+        "path": "outputs/loop/preparation-round2/schema.log",
+        "sha256": "b5a0640b3559d05ad8a07f35b4dad92d924d3a3728a9788c4d07591629372d6a",
+        "bytes": 2398,
+        "scope": "Purely synthetic schema or technical execution evidence"
+      },
+      {
+        "path": "outputs/loop/preparation-round2/schema-execution.json",
+        "sha256": "a582407bc22462be57ef5078bbcc0c1409b3b1a6e1135d3929cefabf126aea3f",
+        "bytes": 445,
+        "scope": "Purely synthetic schema or technical execution evidence"
+      },
+      {
+        "path": "outputs/loop/preparation-round2/app-check.json",
+        "sha256": "3bf28fbbb25ce59c8f38061de6221df8d5c7b2a70b3cb2b468a2d78fd76bc5c2",
+        "bytes": 321,
+        "scope": "Purely synthetic schema or technical execution evidence"
+      },
+      {
+        "path": "outputs/loop/preparation-round2/app-check.log",
+        "sha256": "7d74db1be3d1ec95ad048ca2e2a0ac70339f9e5e9346b754b43d7d41f052bd18",
+        "bytes": 4253,
+        "scope": "Purely synthetic schema or technical execution evidence"
+      },
+      {
+        "path": "outputs/loop/prep-v2-methods/ajv-results.json",
+        "sha256": "7c42e0530536e190bdb5882bb1333884571e4833e024526c2cfa7f50e6c1f8d2",
+        "bytes": 76492,
+        "scope": "Purely synthetic schema or technical execution evidence"
+      },
+      {
+        "path": "outputs/loop/prep-v2-repro/schema-results.json",
+        "sha256": "11a2c221e852059d3f762ac5a3ec7fd4581e74fa80861d5d8284415df4699303",
+        "bytes": 17390,
+        "scope": "Purely synthetic schema or technical execution evidence"
+      }
+    ],
+    "previousManifestSha256": "9d369a50091a81cdcb4fc4f928692d05cf3c43366eb8963bc2bfe761f49c4683",
+    "repairRound": 2,
+    "correctionScope": "PREP-M-01/PREP-R-F02 nonblank input names only; no semantic workflow/Claude/human proof"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T04:26:18.589137+00:00",
+  "updatedAtUtc": "2026-10-03T04:37:09.665143+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "edd48c36fdc434a05053721822508c19cbf64be1",
+  "currentHead": "e27a69fbd4ea74179c4c52b6719d5b1351764ad6",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -127,8 +127,18 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/foundation_v3_types",
+      "name": "/root/foundation_v3_repro",
       "role": "independent-foundation-recheck",
+      "status": "RUNNING"
+    },
+    {
+      "name": "/root/software001_correction",
+      "status": "RUNNING",
+      "role": "bounded-software-correction-author"
+    },
+    {
+      "name": "/root/prep_v3_schema",
+      "role": "independent-preparation-recheck",
       "status": "RUNNING"
     }
   ],
@@ -170,9 +180,9 @@
       "id": "PREP-001",
       "status": "RUNNING",
       "predefinedCriteria": "reports/loop/preparation-pruefauftrag.md",
-      "manifest": "reports/loop/packages/PREP-001/v2/manifest.json",
-      "manifestSha256": "9d369a50091a81cdcb4fc4f928692d05cf3c43366eb8963bc2bfe761f49c4683",
-      "reviewStatus": "Zwei v2-Berichte vollständig; mittlerer Restfehler PREP-M-01/PREP-R-F02 (leere Inputnamen), Runde2 offen."
+      "manifest": "reports/loop/packages/PREP-001/v3/manifest.json",
+      "manifestSha256": "f597f90b6419e33f24075eed5fabd057ece45a7630f56d4335a134e8a091d284",
+      "reviewStatus": "Runde2 korrigiert,20Ajv-Fälle und vollständiger Appcheck ausgeführt; erste v3-Nachprüfung läuft, zweite bei freiem Slot."
     },
     {
       "id": "SOFTWARE-001",
@@ -188,13 +198,13 @@
   ],
   "nextConcreteStep": "PREP-Runde2-Namensguard reparieren; SOFTWARE-IOCTL-Finding entscheiden; FOUNDATION-v3 zwei Berichte und danach Juror. Claude getrennte Aufträge nun technisch möglich. Keine ESS-Antwortanalyse.",
   "checkpoint": {
-    "lastLocalCommit": "edd48c36fdc434a05053721822508c19cbf64be1",
-    "lastVerifiedRemoteCommit": "edd48c36fdc434a05053721822508c19cbf64be1",
-    "lastVerifiedPushAtUtc": "2026-10-03T03:53:14Z",
+    "lastLocalCommit": "e27a69fbd4ea74179c4c52b6719d5b1351764ad6",
+    "lastVerifiedRemoteCommit": "e27a69fbd4ea74179c4c52b6719d5b1351764ad6",
+    "lastVerifiedPushAtUtc": "2026-10-03T04:27:17.321019+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-010.json",
+    "record": "reports/loop/push-011.json",
     "intervalOverrunNote": "Checkpoint nach Kontextkompaktierung erst nach 30-Minuten-Frist begonnen (03:53:14 bis mindestens04:25UTC). Verspätung dokumentiert; eigene Änderungen sofort gesichert."
   },
   "scientificStatus": "296 technische Inventarzeilen/205 offene Restzeilen. Fünf FOUNDATION-Erstberichte, zwei Nachberichte; N-F01 Runde2 korrigiert und erneut eingefroren, unabhängige Prüfung offen. Keine semantische Vollabnahme, Endauswahl, Rohantworten, A/B oder Tags.",
@@ -242,6 +252,13 @@
       "artifact": "docs/ess-versionsabgleich.entwurf.md",
       "status": "NICHT_GEPRÜFT",
       "criteria": "VERSION-001 Original-Release-Metadaten4.2/4.1 und deutsche4.0-Stratumkorrektur; zwei unabhängige Nachprüfungen am PREP-v2-Paket, keine Rohdatenvergleichsbehauptung."
+    },
+    {
+      "id": "CLAUDE-PROTOCOL-001",
+      "status": "NICHT_GEPRÜFT",
+      "scope": "Actual artificial negative prerequisite case only; no research/first rating/loader/workflow/human proof",
+      "plan": "outputs/loop/claude-protocol-001/plan-before-run.json",
+      "processSessionId": 75800
     }
   ],
   "incidents": [

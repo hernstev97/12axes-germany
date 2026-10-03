@@ -1,0 +1,22 @@
+{
+  "checkedAtUtc": "2026-10-03T01:21:34.149579+00:00",
+  "claudeCLIInstalled": true,
+  "claudeAuthenticated": true,
+  "claudeRequest": "NICHT_BESTANDEN: provider session limit until reported 06:10 Europe/Berlin",
+  "classicMainProtectionAPI": "HTTP 404: Branch not protected",
+  "repositoryActionSecretsNames": [],
+  "effectiveRulesets": "NICHT_GEPRÜFT",
+  "scope": "Nur vorhandene Anmeldung und öffentliche Repo-Metadaten geprüft; keine Einstellungen geändert, keine Secrets gelesen.",
+  "rulesetsObserved": {
+    "status": "BESTANDEN",
+    "result": [],
+    "observedAtUtc": "2026-10-03T02:16:00Z",
+    "scope": "GitHub API repo rulesets list; no effective rulesets returned, no settings changed"
+  },
+  "mainWorkflowInventoryObserved": {
+    "status": "BESTANDEN",
+    "files": ["ci.yml"],
+    "scope": "GitHub API contents .github/workflows at main; no Claude workflow observed",
+    "observedAtUtc": "2026-10-03T02:16:00Z"
+  }
+}

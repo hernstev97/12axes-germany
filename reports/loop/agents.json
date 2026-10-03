@@ -275,10 +275,40 @@
       "returnedTaskName": "/root/foundation_v3_types",
       "fork_turns": "none",
       "kind": "independent-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json",
       "report": "reports/loop/reviews/FOUNDATION-001-v3-types.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im jeweiligen Bericht; frischer begrenzter Kontext, gemeinsame FS nur durch Auftrag getrennt."
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im jeweiligen Bericht; frischer begrenzter Kontext, gemeinsame FS nur durch Auftrag getrennt.",
+      "reportSha256": "1f2b33c7d96e1b101549422526ea0a043c8bbc6f47e27417cc194fdea152a54d"
+    },
+    {
+      "task_name": "foundation_v3_repro",
+      "returnedTaskName": "/root/foundation_v3_repro",
+      "fork_turns": "none",
+      "kind": "independent-foundation-recheck",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json",
+      "report": "reports/loop/reviews/FOUNDATION-001-v3-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im eigenen Bericht, frischer begrenzter Kontext"
+    },
+    {
+      "task_name": "software001_correction",
+      "returnedTaskName": "/root/software001_correction",
+      "fork_turns": "none",
+      "kind": "bounded-correction-author",
+      "status": "RUNNING",
+      "report": "reports/loop/SOFTWARE-001-korrekturbericht.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im Bericht; kennt beide abgeschlossene Erstberichte"
+    },
+    {
+      "task_name": "prep_v3_schema",
+      "returnedTaskName": "/root/prep_v3_schema",
+      "fork_turns": "none",
+      "kind": "independent-preparation-recheck",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/PREP-001/v3/manifest.json",
+      "report": "reports/loop/reviews/PREP-001-v3-schema.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im eigenen Bericht; frischer begrenzter Kontext"
     }
   ],
   "activeAdditionalAuthors": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T03:03:17.455268+00:00",
+  "updatedAtUtc": "2026-10-03T04:30:31.485785+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -615,12 +615,40 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Quellenregister"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "F-S01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-sources.md",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "Präziser historischer Lesebereich",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Quellenregister"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "F-P01",
@@ -633,12 +661,40 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["EU-Interpretation"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "F-P01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "B37 misst keine Rücknahmepräferenz",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["EU-Interpretation"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "F-P02",
@@ -651,12 +707,40 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["P10 politische Gruppen"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "F-P02",
+            "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Feste LR-Bereiche widersprechen Terzilen",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["P10 politische Gruppen"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "F-P03",
@@ -667,14 +751,42 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
+      "status": "BLOCKIERT",
       "blocks": ["Geschlechterkonstrukte"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzungsdokumentation unabhängig bestätigt; tatsächliche Gender-/Klimadomänen vor abhängigen wissenschaftlichen Aussagen noch zu prüfen.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "F-P03",
+            "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+            "decision": "angenommen",
+            "severity": "hoch / spätere Voraussetzung",
+            "problem": "Original-Konstruktalternativen und Widerspruch fehlen",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Geschlechterkonstrukte"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "F-P04",
@@ -685,14 +797,42 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
+      "status": "BLOCKIERT",
       "blocks": ["Klimanorm/Interpretation"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzungsdokumentation unabhängig bestätigt; tatsächliche Gender-/Klimadomänen vor abhängigen wissenschaftlichen Aussagen noch zu prüfen.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "F-P04",
+            "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+            "decision": "angenommen",
+            "severity": "hoch / spätere Voraussetzung",
+            "problem": "C30=55 und Anwendbarkeitsdomäne ungeklärt",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Klimanorm/Interpretation"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "FM-F01",
@@ -705,13 +845,42 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["P10 politische Gruppen"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
       },
-      "duplicateOf": "F-P02"
+      "duplicateOf": "F-P02",
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "FM-F01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-methods.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Gleicher Terzilkonflikt wie F-P02",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["P10 politische Gruppen"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            },
+            "duplicateOf": "F-P02"
+          }
+        }
+      ]
     },
     {
       "id": "FM-F02",
@@ -724,12 +893,40 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["synthetische Textaussage"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "FM-F02",
+            "origin": "reports/loop/reviews/FOUNDATION-001-methods.md",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "Synthetischer Wert falsch gerundet",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["synthetische Textaussage"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "N-F01",
@@ -739,15 +936,44 @@
       "problem": "Antwortgegenstände durch Fallback falsch klassifiziert",
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
-      "repairRounds": 1,
+      "repairRounds": 2,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventar/Itemauswahl"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "D2–D19 Einzeltypen in Runde2 korrigiert;30Tests undZweicache-Reproduktion ausgeführt; zwei v3-Nachberichte und Juror offen.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "NICHT_BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "N-F01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-neutrality.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Antwortgegenstände durch Fallback falsch klassifiziert",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Inventar/Itemauswahl"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "REPRO-F01",
@@ -760,12 +986,40 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventar-Reproduktion"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "REPRO-F01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Wirksamer Lizenzinput nicht deterministisch gebunden",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Inventar-Reproduktion"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "REPRO-F02",
@@ -778,12 +1032,40 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Nachprüfbarkeit"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "REPRO-F02",
+            "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Aufträge/historische Protokolle nicht eingefroren",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Nachprüfbarkeit"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "REPRO-F03",
@@ -796,12 +1078,40 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventarbeleg"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "REPRO-F03",
+            "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "Liste92-Locator fehlt ohne Statusfolge",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Inventarbeleg"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "REPRO-F04",
@@ -814,12 +1124,40 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventar-Provenienz"],
-      "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
-        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
-      }
+        "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+        "independentReports": [
+          "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+          "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+        ],
+        "boundedV2CorrectionCheck": "BESTANDEN"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "REPRO-F04",
+            "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "Seitenauszug als itemexklusiver Block beschrieben",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Inventar-Provenienz"],
+            "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "PREP-M-01",
@@ -830,15 +1168,43 @@
       "decision": "angenommen",
       "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
       "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
-      "repairRounds": 1,
+      "repairRounds": 2,
       "status": "NICHT_GEPRÜFT",
-      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+      "correctionState": "Konkreter Rest leere Inputnamen voll angenommen; Namensschema korrigiert,20synthetische Fälle ausgeführt; unabhängige v3-Nachprüfung offen.",
       "blocks": ["Betroffene PREP-Abnahme"],
       "duplicateOf": null,
       "verification": {
         "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
-        "required": "Zwei unabhängige Nachprüfungen"
-      }
+        "required": "Zwei unabhängige Nachprüfungen",
+        "independentReports": [
+          "reports/loop/reviews/PREP-001-v2-methods.md",
+          "reports/loop/reviews/PREP-001-v2-repro.md"
+        ]
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "PREP-M-01",
+            "reportFindingId": "PREP-M-01",
+            "origin": "reports/loop/reviews/PREP-001-methods.md",
+            "problem": "Schema lässt unbelegten Erfolg zu",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+            "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+            "blocks": ["Betroffene PREP-Abnahme"],
+            "duplicateOf": null,
+            "verification": {
+              "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+              "required": "Zwei unabhängige Nachprüfungen"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "PREP-M-02",
@@ -850,14 +1216,43 @@
       "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
       "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
-      "blocks": ["Betroffene PREP-Abnahme"],
+      "status": "BESTANDEN",
+      "correctionState": "Beide v2-Nachberichte bestätigen vorbereitete Namens-/Menschenwiederholungsregel; keine tatsächliche Claude-/Menschenabnahme.",
+      "blocks": [],
       "duplicateOf": null,
       "verification": {
         "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
-        "required": "Zwei unabhängige Nachprüfungen"
-      }
+        "required": "Zwei unabhängige Nachprüfungen",
+        "independentReports": [
+          "reports/loop/reviews/PREP-001-v2-methods.md",
+          "reports/loop/reviews/PREP-001-v2-repro.md"
+        ]
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "PREP-M-02",
+            "reportFindingId": "PREP-M-02",
+            "origin": "reports/loop/reviews/PREP-001-methods.md",
+            "problem": "Namensverbot trennt Prüfgegenstand nicht von fremdem Urteil",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+            "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+            "blocks": ["Betroffene PREP-Abnahme"],
+            "duplicateOf": null,
+            "verification": {
+              "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+              "required": "Zwei unabhängige Nachprüfungen"
+            }
+          }
+        }
+      ],
+      "closureScope": "Vorbereitete Regel im unveränderten v2-Snapshot"
     },
     {
       "id": "PREP-M-03",
@@ -869,14 +1264,43 @@
       "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
       "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
-      "blocks": ["Betroffene PREP-Abnahme"],
+      "status": "BESTANDEN",
+      "correctionState": "Beide v2-Nachberichte bestätigen vorbereitete Namens-/Menschenwiederholungsregel; keine tatsächliche Claude-/Menschenabnahme.",
+      "blocks": [],
       "duplicateOf": null,
       "verification": {
         "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
-        "required": "Zwei unabhängige Nachprüfungen"
-      }
+        "required": "Zwei unabhängige Nachprüfungen",
+        "independentReports": [
+          "reports/loop/reviews/PREP-001-v2-methods.md",
+          "reports/loop/reviews/PREP-001-v2-repro.md"
+        ]
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "PREP-M-03",
+            "reportFindingId": "PREP-M-03",
+            "origin": "reports/loop/reviews/PREP-001-methods.md",
+            "problem": "Wiederholungsregel echter Menschentests fehlt",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+            "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+            "blocks": ["Betroffene PREP-Abnahme"],
+            "duplicateOf": null,
+            "verification": {
+              "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+              "required": "Zwei unabhängige Nachprüfungen"
+            }
+          }
+        }
+      ],
+      "closureScope": "Vorbereitete Regel im unveränderten v2-Snapshot"
     },
     {
       "id": "PREP-R-F01",
@@ -888,14 +1312,43 @@
       "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
       "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
-      "blocks": ["Betroffene PREP-Abnahme"],
+      "status": "BESTANDEN",
+      "correctionState": "Beide v2-Nachberichte bestätigen vorbereitete Namens-/Menschenwiederholungsregel; keine tatsächliche Claude-/Menschenabnahme.",
+      "blocks": [],
       "duplicateOf": "PREP-M-03",
       "verification": {
         "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
-        "required": "Zwei unabhängige Nachprüfungen"
-      }
+        "required": "Zwei unabhängige Nachprüfungen",
+        "independentReports": [
+          "reports/loop/reviews/PREP-001-v2-methods.md",
+          "reports/loop/reviews/PREP-001-v2-repro.md"
+        ]
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "PREP-R-F01",
+            "reportFindingId": "R-F01",
+            "origin": "reports/loop/reviews/PREP-001-repro.md",
+            "problem": "Wiederholungsregel fehlt",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+            "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+            "blocks": ["Betroffene PREP-Abnahme"],
+            "duplicateOf": "PREP-M-03",
+            "verification": {
+              "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+              "required": "Zwei unabhängige Nachprüfungen"
+            }
+          }
+        }
+      ],
+      "closureScope": "Vorbereitete Regel im unveränderten v2-Snapshot"
     },
     {
       "id": "PREP-R-F02",
@@ -906,15 +1359,79 @@
       "decision": "angenommen",
       "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
       "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
-      "repairRounds": 1,
+      "repairRounds": 2,
       "status": "NICHT_GEPRÜFT",
-      "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+      "correctionState": "Konkreter Rest leere Inputnamen voll angenommen; Namensschema korrigiert,20synthetische Fälle ausgeführt; unabhängige v3-Nachprüfung offen.",
       "blocks": ["Betroffene PREP-Abnahme"],
       "duplicateOf": "PREP-M-01",
       "verification": {
         "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
-        "required": "Zwei unabhängige Nachprüfungen"
-      }
+        "required": "Zwei unabhängige Nachprüfungen",
+        "independentReports": [
+          "reports/loop/reviews/PREP-001-v2-methods.md",
+          "reports/loop/reviews/PREP-001-v2-repro.md"
+        ]
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+          "previousRecord": {
+            "id": "PREP-R-F02",
+            "reportFindingId": "R-F02",
+            "origin": "reports/loop/reviews/PREP-001-repro.md",
+            "problem": "Unbelegter/widersprüchlicher Schemerfolg",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+            "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
+            "blocks": ["Betroffene PREP-Abnahme"],
+            "duplicateOf": "PREP-M-01",
+            "verification": {
+              "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+              "required": "Zwei unabhängige Nachprüfungen"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "SW-ENV-004",
+      "duplicates": ["SOFTWARE-M-01", "SOFTWARE-001-REPRO-01"],
+      "severity": "erheblich",
+      "decision": "angenommen",
+      "origin": "reports/loop/authors/SOFTWARE-001.md",
+      "status": "NICHT_BESTANDEN",
+      "repairRounds": 1,
+      "problem": "Conda erzeugte trotz projektspezifischem Präfix und deaktivierter Registrierung eine neue leere Benutzerdatei außerhalb des Projekts.",
+      "evidence": [
+        "reports/loop/reviews/SOFTWARE-001-methods.md: SOFTWARE-M-01",
+        "reports/loop/reviews/SOFTWARE-001-repro.md: SOFTWARE-001-REPRO-01"
+      ],
+      "reason": "Beide Erstberichte und gepinnter Originalcode bestätigen den dokumentierten Vorgang. Keine Außenlöschung; historische Einrichtungsabnahme bleibt negativ.",
+      "correctionState": "Weitere Conda-Aufrufe unterlassen; direktes R mit enger Kindprozess-Schreibgrenze unabhängig geprüft. Heilt ursprünglichen Fehler nicht.",
+      "blocks": [
+        "Behauptung vollständig projektlokaler ursprünglicher Einrichtung",
+        "weiterer unbeschränkter Installer"
+      ]
+    },
+    {
+      "id": "SOFTWARE-001-REPRO-02",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "origin": "reports/loop/reviews/SOFTWARE-001-repro.md",
+      "status": "NICHT_GEPRÜFT",
+      "repairRounds": 1,
+      "problem": "Launcher und Commandmetadaten behaupten IOCTL-Sperre, obwohl ioctl-dev nicht im behandelten Rechtevektor steht.",
+      "evidence": [
+        "SOFTWARE-001-repro.md: SOFTWARE-001-REPRO-02",
+        "gebundene Kernelquelle1029–1033/1363–1377; run-r-direct.py38–55"
+      ],
+      "reason": "Konkreter Rechtevektor und Originalquelle tragen die Beanstandung; keine schädliche Geräteoperation beobachtet.",
+      "correctionState": "Separater begrenzter Korrekturautor aktiv; alte Protokolle unverändert.",
+      "blocks": ["unkorrigierte IOCTL-Schutzbehauptung"]
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."
