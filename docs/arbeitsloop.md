@@ -46,3 +46,7 @@ Weitere Pakete werden konkretisiert, sobald die jeweiligen Voraussetzungen vorli
 ## Wiederaufnahme 2026-10-03
 
 Steven hat den Haltepunkt ausdrücklich beendet und den geänderten Ablauf beauftragt. Checkpoint `610543fa` lokal und auf Remote bestätigt, Arbeitsbaum sauber, keine aktiven Altaufträge im gespeicherten oder aktuellen Agentregister. Koordination übernommen; bisherige Unterbrechung bleibt historische Information. Nächster Schritt: E-v2-Berichte auswerten, verbleibende Validatoransprüche gezielt korrigieren oder begrenzen; parallel C-Nachbau prüfen und ESS-Voraussetzungen schließen. Reine Protokollupdates brauchen keinen neuen Forschungsreview.
+
+## Quellenabschluss nach Wiederaufnahme
+
+2026-10-03: C-v2 und der ergänzte feste E-v3-Regressionsguard gezielt unabhängig bestätigt. Historische Pakete/Erstberichte unverändert; Findings und Korrekturrunden im Zustand. Quellen- und synthetische Methodenautoren liefern die kompakte Phase0-Prüffassung. Noch keine ESS-Antwortanalyse, Itemauswahl- oder Messmodellfreigabe. Aktuelle nächste Schritte und Agent-Schreibgrenzen im [Handoff](../reports/loop/handoff.md).

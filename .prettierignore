@@ -23,6 +23,7 @@ reports/loop/issue-2026-10-03.json
 reports/loop/issue-2026-10-03.md
 reports/loop/packages/
 reports/loop/reviews/
+reports/loop/authors/
 
 # Ursprünglicher tatsächlicher Claude-Auftrag und Modelltext bleiben bytegleich.
 reports/loop/claude-protocol-001-result.json

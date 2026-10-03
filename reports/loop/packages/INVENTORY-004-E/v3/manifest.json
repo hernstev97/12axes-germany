@@ -1,0 +1,57 @@
+{
+  "id": "INVENTORY-004-E-v3",
+  "repairRound": 2,
+  "createdAtUtc": "2026-10-03T09:29:22.643375+00:00",
+  "baseCommit": "6f85d80c38bb4089bb9f4363a4743112be9d8e1b",
+  "versionPolicy": "Compact direct artifact references with SHA256; no directory copy",
+  "scope": "Fixed reviewed documentation regression binding; no empirical/CAPI/item acceptance",
+  "requirements": [
+    "32 correct identities pass",
+    "Padded refs/coherent evidence retargeting/type/origin/extra filter/list reference bypasses rejected",
+    "Original annotation and historical v2/pins unchanged",
+    "No universal semantic,4.2,CAPI,measurement-validity claim",
+    "Administrative status change allowed"
+  ],
+  "files": [
+    {
+      "path": "pipeline/annotations/e_source_binding_v3.py",
+      "sha256": "ca416110f31c7ec7d5374d5e72f0e06bb5354570cca7481bf07b8554f81c9277",
+      "bytes": 5217
+    },
+    {
+      "path": "pipeline/annotations/e_source_bindings_v3.json",
+      "sha256": "6264d24b85e487b03fd81a96b67c1de662099530e255e969b85fc263e66d9d28",
+      "bytes": 14846
+    },
+    {
+      "path": "pipeline/tests/test_e_source_binding.py",
+      "sha256": "b9b2f3487de4d8776b92834b051a5e4062a6dac516f2c5582f6cacbde03675f7",
+      "bytes": 2753
+    },
+    {
+      "path": "data/inventar-e.v2.ergaenzung.entwurf.json",
+      "sha256": "0c031abd7be58e14c91360db4e2a438b0b211e1116dd2f1b84ebab612931f6de",
+      "bytes": 2066030
+    },
+    {
+      "path": "pipeline/annotations/e_semantic_contract_v2.py",
+      "sha256": "740598c0f64f9a426db978bf4199f877b79ad24d9c68e7bae1eac2affa8c7c07",
+      "bytes": 8219
+    },
+    {
+      "path": "reports/loop/reviews/INVENTORY-004-E-v2-sources.md",
+      "sha256": "212ea3790b56fa73fd54e4227d90657d06592f0dae1355bd502a93ad1445154f",
+      "bytes": 36805
+    },
+    {
+      "path": "reports/loop/reviews/INVENTORY-004-E-v2-repro.md",
+      "sha256": "d3301c0f77b3d5cf9327d8efc914e2067b107ad5c7cb32c6f84207d1a8b90640",
+      "bytes": 39495
+    },
+    {
+      "path": "reports/loop/INVENTORY-004-E-v2-endauswertung.md",
+      "sha256": "e73facbbde19b4eb750b26118b5bec69f1d014c1f051f976aa22005f68819ae9",
+      "bytes": 2843
+    }
+  ]
+}

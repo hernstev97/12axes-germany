@@ -2417,13 +2417,13 @@
       "severity": "mittel",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "Kohärent vertauschte Fragebogenlabels samt Belegen sowie sichtbare Listenpole passieren Autorenvalidator.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Runde1 gefroren; Reviewer bestätigen Wortlautreparaturen, E-R02 bleibt mit kohärenten Fehlkontext-Gegenfällen offen. Root-Endentscheidung ausstehend; keine Runde2.",
+      "correctionState": "Runde1 im ursprünglichen Korrekturumfang nach vollständiger Rootlektüre beider Berichte bestätigt. E-R02 und neue Quellenreferenzlücke separat offen.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
+        "status": "BESTANDEN",
+        "scope": "Two complete historical v2 reports confirm exact original corrections; no empirical/scientific acceptance"
       },
       "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
@@ -2438,17 +2438,17 @@
       "id": "E-R02",
       "severity": "mittel",
       "decision": "angenommen",
-      "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "repairRounds": 2,
+      "status": "BESTANDEN",
       "problem": "Erforderliche Filter können entfernt und Filterwortlaut/Zuweisung kohärent falsch verändert werden, ohne Validatorfehler.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Runde1 gefroren; Reviewer bestätigen Wortlautreparaturen, E-R02 bleibt mit kohärenten Fehlkontext-Gegenfällen offen. Root-Endentscheidung ausstehend; keine Runde2.",
+      "correctionState": "Independently confirmed fixed-document context/evidence/card binding; original annotation/v2 preserved. Scope narrowed to this source-reviewed version.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
+        "status": "BESTANDEN",
+        "scope": "Targeted v3 review: baseline32,10 previously accepted relevant bypasses rejected plus own cases; no general semantics/CAPI/scientific acceptance"
       },
       "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
-      "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
+      "decisionRecord": "reports/loop/reviews/INVENTORY-004-E-v3-targeted.md",
       "history": [
         {
           "atUtc": "2026-10-03T09:10:01.398003+00:00",
@@ -2461,13 +2461,13 @@
       "severity": "niedrig",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "E12/E13 sichtbare Liste58 enthält nicht sichtbaren Schlusszeichenpunkt aus originaler Textlage.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Runde1 gefroren; Reviewer bestätigen Wortlautreparaturen, E-R02 bleibt mit kohärenten Fehlkontext-Gegenfällen offen. Root-Endentscheidung ausstehend; keine Runde2.",
+      "correctionState": "Runde1 im ursprünglichen Korrekturumfang nach vollständiger Rootlektüre beider Berichte bestätigt. E-R02 und neue Quellenreferenzlücke separat offen.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
+        "status": "BESTANDEN",
+        "scope": "Two complete historical v2 reports confirm exact original corrections; no empirical/scientific acceptance"
       },
       "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
@@ -2483,13 +2483,13 @@
       "severity": "niedrig",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "Derselbe sichtbare Schlusszeichenunterschied unabhängig bestätigt.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Runde1 gefroren; Reviewer bestätigen Wortlautreparaturen, E-R02 bleibt mit kohärenten Fehlkontext-Gegenfällen offen. Root-Endentscheidung ausstehend; keine Runde2.",
+      "correctionState": "Runde1 im ursprünglichen Korrekturumfang nach vollständiger Rootlektüre beider Berichte bestätigt. E-R02 und neue Quellenreferenzlücke separat offen.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
+        "status": "BESTANDEN",
+        "scope": "Two complete historical v2 reports confirm exact original corrections; no empirical/scientific acceptance"
       },
       "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
@@ -2506,50 +2506,53 @@
       "severity": "niedrig",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "Fehlgeschlagener tatsächlicher HTTP-Abruf im portablen C-Nachbau verlor versuchte URL und Zugriffszeiten.",
       "evidence": "reports/loop/reviews/REPRO-003-C-repro.md: realer404 und Sidecar; unveränderte v1-Fassung",
       "impact": "Positive Reproduktion belegt; Fehlerprovenienz unvollständig.",
-      "correctionState": "Runde1 korrigiert, zwei echte positive und realer404 durch Root ausgeführt, v2 gefroren. Nachprüfung angehalten/unvollständig.",
+      "correctionState": "Runde1 gezielt unabhängig bestätigt; normale Paketprüfung nach neuem Vertrag.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Beide unabhängigen gezielten Nachberichte fehlen."
+        "status": "BESTANDEN",
+        "scope": "Two fresh portable positive builds and two real404 provenance cases; no scientific acceptance"
       },
-      "decisionRecord": "reports/loop/REPRO-003-C-v1-entscheidung.md",
+      "decisionRecord": "reports/loop/reviews/REPRO-003-C-resume-recheck.md",
       "correctionReport": "reports/loop/authors/REPRO-003-C-korrektur.md",
       "history": []
     },
     {
       "id": "E2-S01",
       "severity": "niedrig",
-      "decision": "offen; Root-Endauswertung ausstehend",
-      "repairRounds": 0,
-      "status": "NICHT_GEPRÜFT",
+      "decision": "angenommen; Referenzlücke niedriger Schwere",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
       "problem": "E19 sichtbarer korrekter Listenwert kann falschen Ganzseitenbeleg tragen, echter akzeptierter Einzelfeldgegenfall.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-v2-sources.md: Kandidat und konkrete Originalseiten",
       "impact": "Späterer Quellenverweis könnte auf falsche Antwortskala führen; aktueller Wortlaut richtig.",
-      "correctionState": "Keine Reparatur; mögliche gemeinsame Ursache mit E2-R01 erst nach vollständiger Endauswertung entscheiden.",
+      "correctionState": "Independently confirmed fixed-document context/evidence/card binding; original annotation/v2 preserved. Scope narrowed to this source-reviewed version.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Entscheidung/Korrektur/Nachprüfung ausstehend"
+        "status": "BESTANDEN",
+        "scope": "Targeted v3 review: baseline32,10 previously accepted relevant bypasses rejected plus own cases; no general semantics/CAPI/scientific acceptance"
       },
-      "history": []
+      "history": [],
+      "decisionRecord": "reports/loop/reviews/INVENTORY-004-E-v3-targeted.md"
     },
     {
       "id": "E2-R01",
       "severity": "niedrig",
-      "decision": "offen; Root-Endauswertung ausstehend",
-      "repairRounds": 0,
-      "status": "NICHT_GEPRÜFT",
+      "decision": "angenommen; unabhängiges Duplikat E2-S01",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
       "problem": "E19 sichtbarer korrekter Listenwert kann falschen Ganzseitenbeleg tragen, echter akzeptierter Einzelfeldgegenfall.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-v2-repro.md: Kandidat und konkrete Originalseiten",
       "impact": "Späterer Quellenverweis könnte auf falsche Antwortskala führen; aktueller Wortlaut richtig.",
-      "correctionState": "Keine Reparatur; mögliche gemeinsame Ursache mit E2-S01 erst nach vollständiger Endauswertung entscheiden.",
+      "correctionState": "Independently confirmed fixed-document context/evidence/card binding; original annotation/v2 preserved. Scope narrowed to this source-reviewed version.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Entscheidung/Korrektur/Nachprüfung ausstehend"
+        "status": "BESTANDEN",
+        "scope": "Targeted v3 review: baseline32,10 previously accepted relevant bypasses rejected plus own cases; no general semantics/CAPI/scientific acceptance"
       },
-      "history": []
+      "history": [],
+      "duplicateOf": "E2-S01",
+      "decisionRecord": "reports/loop/reviews/INVENTORY-004-E-v3-targeted.md"
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

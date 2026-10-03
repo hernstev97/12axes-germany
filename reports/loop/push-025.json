@@ -1,0 +1,8 @@
+{
+  "commit": "6f85d80c38bb4089bb9f4363a4743112be9d8e1b",
+  "remoteCommit": "6f85d80c38bb4089bb9f4363a4743112be9d8e1b",
+  "verified": true,
+  "atUtc": "2026-10-03T09:25:26.545136+00:00",
+  "technicalCheck": "pnpm check exit0 before next E changes",
+  "scope": "dated instruction amendment and coordinator status"
+}

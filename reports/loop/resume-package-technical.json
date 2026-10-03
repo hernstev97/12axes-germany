@@ -1,0 +1,8 @@
+{
+  "initialCheck": "NICHT_BESTANDEN: formatting of newly completed author report changed while check running",
+  "log": "outputs/loop/resume-package-check.log",
+  "resolution": "Author original reports preserved and excluded from automatic formatting, same policy as review reports; no technical/method gate waived",
+  "pythonRegression": "5 portable tests exit0 plus39 actual historical mutation rejections",
+  "scientificAcceptance": "none",
+  "finalCheck": "pnpm check exit0; outputs/loop/resume-package-check-final.log; finished 2026-10-03T09:39:02Z"
+}
