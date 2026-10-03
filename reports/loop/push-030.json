@@ -1,0 +1,8 @@
+{
+  "commit": "a199581c1749a692d4610795ea98ee4850c44724",
+  "remoteCommit": "a199581c1749a692d4610795ea98ee4850c44724",
+  "verified": true,
+  "atUtc": "2026-10-03T11:02:22.398239+00:00",
+  "scope": "Executable pre-empirical v1 package frozen, all real answers withheld; transition reviewers active",
+  "technicalCheck": "pnpm check exit0 outputs/loop/resume-checkpoint-030.log; explicit21owned stage credentials/raw/diff/pins checks0"
+}

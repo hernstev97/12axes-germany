@@ -1,0 +1,50 @@
+{
+  "package": "PRE-EMPIRICAL-001",
+  "version": 2,
+  "frozenAtUtc": "2026-10-03T11:14:27.115571+00:00",
+  "baseCommit": "a199581c1749a692d4610795ea98ee4850c44724",
+  "scope": "PE-M01 targeted correction round1; unchanged prior first judgments retained; sensitivity supplement before its dependent Full-DE analysis",
+  "baselineManifest": {
+    "path": "reports/loop/packages/PRE-EMPIRICAL-001/v1/manifest.json",
+    "sha256": "924082737753d702d9d5aab727bf62a4fe6853fcdb60d79b3ca9b3022b16bd19"
+  },
+  "files": [
+    {
+      "path": "docs/empirie-plan-v1.entwurf.md",
+      "sha256": "8c0eb638dc58612922ea50e2b50018ed9e8a14109822a0b3da682f8be1840a28"
+    },
+    {
+      "path": "data/analysevertrag.v1.entwurf.json",
+      "sha256": "c21cea472e9832f254b7e03a5625ae375b935c8f004d6d8ce8251c3b549d18a1"
+    },
+    {
+      "path": "pipeline/ordinal/develop.R",
+      "sha256": "d1b725b05ba43d9a3edbe4964e05ae0d5365ef951944fe1c83284967ff800e74"
+    },
+    {
+      "path": "pipeline/ordinal/develop-config.R",
+      "sha256": "44a74f0e59645d047f2bdc4508cc0058d0dd80ffb4a67a8963ee9e84f0f429b0"
+    },
+    {
+      "path": "docs/sensitivitaeten-v1.entwurf.md",
+      "sha256": "e2a279f5a94deebe56c3066eff34cb974566a9a6b8f6e54befe85433fa101c76"
+    }
+  ],
+  "firstReport": {
+    "path": "reports/loop/reviews/PRE-EMPIRICAL-001-methods-first.md",
+    "sha256": "a6c7eb2d6fc14a6fabc85b7fc3e4def27faf66588cb4313e752784e30a416226"
+  },
+  "rootSyntheticReproduction": {
+    "path": "outputs/loop/r-runtime/root-development-correlation-round1-001/receipt.json",
+    "sha256": "5649d2da6e9c35d314d91e5442086f442eb2ca7c3c822fb3548bc1db1ca763eb"
+  },
+  "sourceMetadataOnlyErrata": {
+    "path": "reports/loop/reviews/PRE-EMPIRICAL-001-sources-errata.md",
+    "sha256": "76005a88dd620a3d2940ce319be3340fd053d8ece8f9fa737d292c8735855b6e"
+  },
+  "limits": [
+    "No actual A/B/C response import or tags",
+    "Source first judgment reused within original bounded scope; two metadata corrections recorded separately",
+    "Same Codex family; targeted recheck is not new overall audit"
+  ]
+}

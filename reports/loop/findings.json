@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T10:48:38.747566+00:00",
+  "updatedAtUtc": "2026-10-03T11:21:50.737925+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2633,13 +2633,14 @@
       "severity": "erheblich",
       "reason": "Two real strata have2PSUs; prior min4 whole-strata A/B split cannot operate in all25strata",
       "repairRounds": 0,
-      "status": "NICHT_GEPRÜFT",
+      "status": "BESTANDEN",
       "correctionState": "Author proposes reserveC4PSUs and conditional fixed floor/ceil split on23strata; included in concrete draft, awaiting transition reviews",
-      "blocks": ["full-DE-empirical-split-claim"],
+      "blocks": [],
       "verification": {
         "author": "reports/loop/authors/ESS-SPLIT-resume-proposal.md",
         "scope": "real metadata fact; synthetic contract and public sources; no answers"
-      }
+      },
+      "closureScope": "Original full25strata A/B claim replaced before responses by fixed23strata A/B+reserveC, reviewed within bounded preA contract; fullDE inference still approximate"
     },
     {
       "id": "WM-R01",
@@ -2651,6 +2652,51 @@
       "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
       "blocks": [],
       "closureScope": "Current question7link supports election year; second-vote source8 verified; no claim repair required"
+    },
+    {
+      "id": "PE-M01",
+      "origin": "reports/loop/reviews/PRE-EMPIRICAL-001-methods-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "reason": "Upper factor-correlation bound alone allowed an interval containing negative unit correlation",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "correctionState": "Targeted round1 accepted: actual negative endpoint rejected; positive M2/M3 +8 assertions pass",
+      "changedFilesOrIds": "docs/empirie-plan-v1.entwurf.md; data/analysevertrag.v1.entwurf.json; pipeline/ordinal/develop.R; pipeline/ordinal/develop-config.R",
+      "blocks": [],
+      "verification": {
+        "report": "reports/loop/reviews/PRE-EMPIRICAL-001-methods-round1.md",
+        "sha256": "22a660be9e4065fd53caea3d4f6d73e71a0d294e9252dac7ad6ed2d4bcbeb0c1",
+        "scope": "Original bounded first judgment plus specific corrected criterion; no empirical/B/group/result pass"
+      }
+    },
+    {
+      "id": "PE-S01",
+      "origin": "reports/loop/reviews/PRE-EMPIRICAL-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "gering",
+      "reason": "National B26 source page10 rather than11",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "correctionState": "Source provenance field corrected against first reviewer original proof; no category/method change",
+      "blocks": [],
+      "verification": {
+        "report": "reports/loop/reviews/PRE-EMPIRICAL-001-sources-errata.md"
+      }
+    },
+    {
+      "id": "PE-S02",
+      "origin": "reports/loop/reviews/PRE-EMPIRICAL-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "gering",
+      "reason": "PMC source is author manuscript, publisher version not compared",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "correctionState": "Source edition field corrected against first reviewer original header; no method change",
+      "blocks": [],
+      "verification": {
+        "report": "reports/loop/reviews/PRE-EMPIRICAL-001-sources-errata.md"
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

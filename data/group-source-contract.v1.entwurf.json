@@ -628,7 +628,7 @@
     ],
     "lrscale": [
       "GC-Q01 PDF59–60/print58–59 B26",
-      "GC-Q02 PDF/print11 B26",
+      "GC-Q02 PDF/print10 B26",
       "public lrscale metadata v1"
     ],
     "party": [
@@ -1280,7 +1280,7 @@
     "ESS_documentation": "ESS ERIC / ESS Data Archive; official documentation licensed CC BY-SA4.0; exact request snapshots remain in own excluded outputs.",
     "ESS_data": "CC BY-NC-SA4.0; no respondent data redistributed in this contract.",
     "own_grouping_and_methods": "Authored grouping choices/derivations labelled as proposals; artifact publication rights and attribution still reviewed per docs/lizenzen.md.",
-    "literature": "Wu/Estabrook PMC fulltext published version; Asparouhov author-hosted publisher proof contains Do Not Copy watermark. Sources linked and bounded paraphrases only; do not assume ESS license applies."
+    "literature": "Wu/Estabrook PMC author manuscript (final publication DOI10.1007/s11336-016-9506-0; publisher text not compared); Asparouhov author-hosted publisher proof contains Do Not Copy watermark. Sources linked and bounded paraphrases only; do not assume ESS license applies."
   },
   "access_disclosure": [
     "All official API calls query search metadata only, never analysis/tabulation endpoints.",

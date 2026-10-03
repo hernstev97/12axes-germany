@@ -31,3 +31,7 @@ Vier Integrationsfindings und der zusätzliche Lizenzsatzbefund wurden angenomme
 ## 2026-10-03: Fortsetzung nach dem Haltepunkt
 
 E-20261003-09: Steven ersetzt Claude als Voraussetzung der Hauptarbeit durch zwei getrennte Codex-Erstbewertungen und vereinfacht die Reviewstruktur. Der [datierte Nachtrag](auftrag-life-93-fortsetzung-2026-10-03.md) enthält den aktuellen Vertrag. Claude-Schlusskontrolle, menschliche Tests und Releasefreigaben bleiben ausstehend. Fachliche Anforderungen werden dadurch nicht als bestanden erklärt.
+
+## 2026-10-03: konkreter Vor-A-Vertrag
+
+E-20261003-10: Die getrennten Codex-Übergangsurteile und die gezielte erste Korrekturrunde tragen den begrenzten Planfreeze vor A. PE-M01 geschlossen; Quellenmetadaten PE-S01/02 korrigiert. Die [Planfestschreibung](planfestschreibung-v1.md) benennt verbindliche Artefakte, gleiche Modellfamilie und weiterhin offene empirische/menschliche/Claude-Prüfungen. Tags und tatsächliche Dateneinsicht werden erst in ihren Ausführungsbelegen als erfolgt erfasst.

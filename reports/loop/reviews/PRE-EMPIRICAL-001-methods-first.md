@@ -1,0 +1,59 @@
+# PRE-EMPIRICAL-001: unabhängige Methoden-Erstprüfung
+
+Datum: 2026-10-03. Prüfer: Codex-Subagent `pre_empirical_methods`. Urteil: **GEZIELTE_KORREKTUR_ERFORDERLICH_VOR_A**. Ein erheblicher Fehler betrifft das Unterscheidbarkeitskriterium der Faktoren. Die übrige hier geprüfte A-Entwicklung ist konkret ausführbar und in den durchgeführten synthetischen Proben nachprüfbar. Dies ist keine wissenschaftliche Gesamtabnahme, kein B-, Gruppen-, Ergebnis-, Produkt- oder Releasepass.
+
+## Prüffassung und Zugriff
+
+Worktree `/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003`, Branch `research/life-93-night-20261003`, HEAD und Manifestcommit `a199581c1749a692d4610795ea98ee4850c44724`, jeweils live überprüft. Manifest `reports/loop/packages/PRE-EMPIRICAL-001/v1/manifest.json`, SHA256 `924082737753d702d9d5aab727bf62a4fe6853fcdb60d79b3ca9b3022b16bd19`. Alle 38 Pins der Abschnitte `files`, `syntheticEvidence` und `sourceCaches` stimmten vor und nach der Prüfung. Vollständige Einzelhashes stehen in `outputs/loop/pre-empirical-methods-review/pins-before.json` und `pins-after.json`, Umgebung und Commitbindung in `review-environment.json`.
+
+Ich las AGENTS.md, Projektstand, Fortsetzungsauftrag, eigenen Methodenauftrag, den konkreten Neunervertrag, zugelassene Paketartefakte und öffentlichen Code. Keine andere aktuelle Übergangs-Erstprüfung oder vorweggenommene Verteidigung war Eingabe. Keine ESS-Rohdatei, private ESS-Datei, reale Zuteilung, reale A/B/C-Antwort, Personenkennung oder politische Antwortverteilung wurde gesucht oder geöffnet. Die als `private` bezeichneten Dateien der beiden neuen synthetischen Wrapperläufe enthalten ausschließlich vom Wrapper erfundene Antworten beziehungsweise deren Zusammenfassungen. Die spätere Gruppenimplementierung wurde nicht gelesen, ausgeführt oder angenommen. Keine Installation, Gitmutation, pnpm-Prüfung oder Claude-Anfrage erfolgte. Schreibzugriff blieb auf den eigenen Bericht und erlaubte eigene synthetische Ausgaben beschränkt.
+
+Dieser Erstprüfer und die übrigen Codex-Agents gehören derselben Modellfamilie an. Getrennter Kontext und eigene Gegenproben schließen gemeinsame Modellfehler nicht aus. Der Skill `unslop` wurde für den Bericht gelesen und angewandt.
+
+## Tatsächliche Reproduktion
+
+Alle folgenden Befehle liefen mit explizitem Worktree als Arbeitsverzeichnis. Die R-Kinder nutzten den vorhandenen gepinnten Runtime und Landlock-Schreibrechte ausschließlich im eigenen Ausgabeordner sowie `/dev/null`. HOME blieb unverändert. Keine vollständige Lese-, Netzwerk- oder Agentisolation wird daraus abgeleitet.
+
+```text
+python3 pipeline/r_runtime.py synthetic --stage support --label pre-empirical-methods-support-001
+python3 pipeline/r_runtime.py synthetic --stage development --label pre-empirical-methods-development-001
+PYTHONDONTWRITEBYTECODE=1 TMPDIR=/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003/outputs/loop/pre-empirical-methods-review/tmp python3 -m unittest pipeline.tests.test_empirical_access -v
+PYTHONDONTWRITEBYTECODE=1 python3 outputs/loop/pre-empirical-methods-review/run-probe.py
+PYTHONDONTWRITEBYTECODE=1 python3 outputs/loop/pre-empirical-methods-review/run-negative-bound.py
+```
+
+Support: Exit 0, 54 ausgeführte Prüfungen bestanden, keine Warnung oder Fatalmeldung. Entwicklung: Exit 0, tatsächlicher M3-Auswahlzweig mit H/Z/F, 87 benannte Momente, 7.520 vollständige erfundene Fälle von 7.680, alle 192 ursprünglichen PSUs einschließlich vier Null-Domänen-PSUs erhalten. Beide Runtime-Probes bestanden; die Umgebungspins nach Ausführung stimmen mit den Startpins überein. Die neuen vollständigen Receipts und Quellkopien liegen unter `outputs/loop/r-runtime/pre-empirical-methods-{support,development}-001/`. Die neun Python-Import-/Sperrtests bestanden. Sie verwenden erfundene Records und prüfen unter anderem zurückgehaltene ungültige Tokens, Armwahrscheinlichkeiten, unbekannte A-Kategorien, fehlende Antworten, Zuteilungsdrift, vorgelagerten Gatestopp sowie private Ausgabegrenzen.
+
+Meine 13 zusätzlich behaupteten Gegenproben bestanden. Der eigene Seed `2026100361` nutzt die tatsächliche Kategorienfolge 5/5/5, 4/4/4, 11/11/11 und eine einzige Neuner-Domäne. Wichtigste Zahlen aus `probe-result.json`:
+
+- Tatsächliche positive Neugewichtung und erneute Berechnung aller Schwellen/polychorischen Momente gegen deren gestapelte IF: maximale Ableitungsdifferenz `3.55e-11`. Das prüft auch die Schwellen–Korrelations-Kette.
+- Unabhängig über PSU-Summen und Stratumzentrierung aufgebaute volle Taylor-Matrix gegen Adapterkovarianz: maximale Differenz `2.17e-19`; nichtverschwindende Crossmomente und vier Null-PSUs bleiben erhalten.
+- Gemeinsame Gewichtsskalierung um Faktor 13 ändert Momente und Kovarianz nur um höchstens `3.27e-14`.
+- Beobachtete Score-Reliabilität für H/Z/F gegen bedingte eindimensionale Quadratur mit den jeweiligen Originalkategorien: Unterschiede unter `4e-16`. Tatsächliche Neugewichtung prüft außerdem die Quotienten-IF der beobachteten Itemdominanz; maximale Differenz unter `4e-13`.
+- Eine falsch geordnete Gamma-Matrix stoppt mit `ORDINAL_ADAPTER_IMPORTED_MATRIX`. Die wirklichen RMS- und Bonferroni-Quantile stimmen. Eine balancierte unabhängige ordinale Paarverteilung ergibt korrekt den inneren Wert rho=0.
+
+Diese endlichen Proben belegen Rechenpfade. Sie sind keine ESS-Ergebnisse, Coverage-Studie oder empirische Messvalidierung. Reweighting verwendet den ursprünglichen Momentschätzer als Refit; Quadratur und CDF-Rechnung teilen die angenommene Normalverteilung. Native lavaan/semTools-Orakel können gemeinsame Bibliotheksfehler haben.
+
+## PE-M01: negative Einheitskorrelation wird als unterscheidbar angenommen
+
+**Schwere:** erheblich für das feste Unterscheidbarkeitskriterium und die darauf beruhende Dimensions-/Modellauswahl. **Fundstellen:** `docs/empirie-plan-v1.entwurf.md:60`, `data/analysevertrag.v1.entwurf.json` unter `criteria.factor_correlation_upper95`, `pipeline/ordinal/develop.R:198–207`, insbesondere Zeile 203. Die tatsächliche Regel lautet ausschließlich `interval$upper < 1`. Eine untere Grenze größer als −1 fehlt.
+
+Bei rho=−1 sind die beiden Faktoren deterministische Gegenpole derselben latenten Größe. Die festgelegte positive Itempolung verhindert das nicht. Ein admissibler Punktschätzer und eine obere Grenze unter +1 reichen deshalb nicht für die im Plan behauptete Unterscheidbarkeit. Ein Intervall, das −1 einschließt, besteht die jetzige Regel.
+
+**Konkrete Gegenprobe:** `negative-bound.R`, unveränderte Produktionsfunktionen `oa_build`, `oa_fit`, `os_sandwich`, `os_standardized` und `ed_bound`; erfundene M2-Daten mit Seed `2026100371`, neun tatsächlichen Kategorienfamilien, 144 PSUs und 2.304 Fällen. Der Fit konvergiert und besteht `post.check`; kleinster Eigenwert der latenten Kovarianz `0.0036818273`, also eine positiv definite Punktlösung. Geschätzte Faktorenkorrelation `−0.99631817`, designgerechter SE `0.01049236`, festes zweiseitiges 95%-Intervall `[−1.01688282, −0.97575353]`. Die tatsächliche Produktions-Paarregel liefert `TRUE`, obwohl −1 nicht ausgeschlossen wird. `negative-bound-result.json` und `negative-bound-command.json` halten Rechnung, Befehl und Runtimepins fest. Ich behaupte damit keinen vollständigen Profilpass dieser Gegenprobe; insbesondere wurde ihre EFA-Zuordnung nicht als bestanden ausgegeben. Der isolierte Unterscheidbarkeits-Gatefehler ist bereits im admissiblen echten CFA-Fit reproduziert.
+
+**Genau blockiert:** die Annahme/Festschreibung dieses Kriteriums als Nachweis unterscheidbarer Dimensionen und die davon abhängige A-Modellwahl. Der Fehler muss vor deren Dateneinsicht und Planfreeze korrigiert werden. Unabhängige Quellenarbeit, technische Vorbereitung und später separat zu prüfende Funktionen werden dadurch nicht insgesamt verworfen.
+
+**Minimale Korrektur:** über die bereits vollständige Faktorpaare-Familie mit unverändertem Bonferroni-Quantil sowohl `lower > -1` als auch `upper < 1` verlangen. Alternativ äquivalent `abs(estimate) + critical*SE < 1`. Plan, Maschinenvertrag und Code müssen dieselbe beidseitige Regel tragen. Keine neue Faktorzahl, Items, Scoregewichte oder günstigere Intervallkonvention auswählen. Gezielte Nachprüfung des negativen Grenzfalls und der bisherigen positiven synthetischen Entwicklung genügt; ein neues Gesamtaudit ist dafür nicht erforderlich.
+
+## Tragfähige Teile und spätere Grenzen
+
+Die Versionsbindung trennt Originaldokumentation, öffentliches 4.2-Metadatencodelisting und spätere tatsächliche CSV-QA. Fragebogen-Textfundstellen S.13/15/16 bestätigen Kategorien und Polung; der Import dreht B34/B36/B40–42, erhält B35/B43–45 und behandelt dokumentierte Sondercodes getrennt. `empirical_access.py:79–112` reproduziert den einmaligen numerisch sortierten metadata-only PSU-Split mit Reserve C und `m/G`. Zeilen 132–166 wählen erst innerhalb A die neun Antworten und rechnen `anweight/(m/G)`. Der Designbericht ist ein Aggregatbeleg, keine neue Rohdatenprüfung durch diesen Reviewer.
+
+`adapter_v2.R:74–92,150–205` hält die identische Neuner-Complete-Case-Domäne, beobachtete Momentableitungen und volle ursprüngliche PSU-Unterstützung fest. `support.R:103–166` differenziert die tatsächliche Modellschätzgleichung mit Residualkrümmung; die Identitätsmetrik bleibt fest. Wirkliche EFA/CFA-Summary-Importe, 30 Geomin-Starts, zweiter Seed, Oblimin sowie Vorzeichen-/Permutationsabgleich sind vorhanden. Rotierte EFA-SE werden ausdrücklich verweigert. Reliabilität ist die des modellierten beobachteten ordinalen Scores; Roh- und Modellbeiträge werden getrennt geprüft. RMS nahe null bleibt offen. M1 kann kein Profil retten; fehlgeschlagene Modelle/Scoregrenzen liefern kein stilles Bestehen. Die genannten Genauigkeitsbudgets sind eigene Entscheidungen, keine übernommenen Gütesiegel.
+
+Der öffentliche Gate und die tatsächlichen Tags bleiben Voraussetzungen vor der privaten CLI. Eine fehlende Gate-Datei oder noch nicht gesetzte Tags in dieser Vorabfassung sind der vorgesehene Stopp, kein Finding. Ich führte keine reale private Produktions-CLI aus und stellte keinen Tagpass aus. Receipts auf dem gemeinsamen Dateisystem sind ausdrücklich keine fälschungssichere Autorität; die Prüfung beansprucht keine absolute Blindheit.
+
+Der spätere Gruppenvertrag ist für eine begrenzte modellbedingte Prüfung vertretbar: ordinal passende Identifikation, vollständige gemeinsame PSU-Crossblocks, strikte Stufen, gemeinsame Nullpunkt-Tangenten bei Restriktionstests und Zwei-Fit-Delta mit Linkparameterableitungen. Die Raster-/Präzisionsgrenzen und die unauflösbare gemeinsame affine DIF sind benannt. Öffentliche Originallektüre: [Wu/Estabrook 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC5458787/), insbesondere Transformation 4 und §5.1/5.3/5.7; [lavaan-EFA-Dokumentation](https://www.lavaan.ugent.be/tutorial/efa.html), EFA-Blocksyntax und Rotation. Eigene frische GETs waren HTTP 200, Quellhashes und Zeiten stehen in `primary-source-access.json`; der Webbrowserzugriff auf PMC zeigte zuvor reCAPTCHA und wird nicht als erfolgreiche Volltextlektüre ausgegeben. Die öffentlich per GET erhaltene Volltextfassung wurde gezielt gelesen. Kein Bestehen der späteren Gruppensoftware oder endliche ESS-Testkalibrierung wird daraus abgeleitet. Vor ihrer separaten Prüfung und zulässigem Datenzugriff bleiben genau diese Gruppenvergleiche gesperrt. Ihre offene Implementierungsabnahme ist kein zusätzlicher A-Blocker.
+
+B, Full-DE-Anwendung, Normierung, spätere Scorevarianten, Gruppenanwendung und Übertragung in Ergebnisaussagen benötigen die jeweils festgelegten Ausführungspakete und Übergangsprüfungen. Die fehlende zweite reale Erhebung, menschliche Verständnistests und Claudes Schlusskontrolle bleiben offen. Nach PE-M01 reicht eine gezielte Korrekturprüfung für das hier betroffene Vor-A-Kriterium; dieser unveränderte Erstbericht bleibt erhalten.

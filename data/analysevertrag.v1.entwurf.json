@@ -144,7 +144,7 @@
     "alpha": 0.05,
     "rms_polychoric_residual_one_sided_upper95_max": 0.1,
     "positive_loading_simultaneous_lower95": "greater than zero; Bonferroni within score",
-    "factor_correlation_upper95": "less than one",
+    "factor_correlation_upper95": "upper less than +1, together with lower greater than -1",
     "observed_equalweight_score_reliability_lower95_min_exclusive": 0.5,
     "item_variance_contribution_upper95_max": 0.5,
     "score_sensitivity_difference": 0.05,
@@ -159,7 +159,8 @@
       "other_model_score": "two-sided95 normal; Bonferroni within stated complete family",
       "factor_correlations": "all candidate factor pairs, not selected published pairs",
       "dominance": "both observed sample and model; separately fixed within-score families"
-    }
+    },
+    "factor_correlation_lower95": "greater than -1; same complete factor-pair Bonferroni family"
   },
   "score": {
     "raw": "equalweight mean of original category mappings in item contract",

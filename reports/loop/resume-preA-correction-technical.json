@@ -1,0 +1,19 @@
+{
+  "atUtc": "2026-10-03T11:21:50.737925+00:00",
+  "pnpmCheck": {
+    "initial": "exit1 format state/findings only; outputs/loop/resume-checkpoint-031.log",
+    "retry": "exit0 outputs/loop/resume-checkpoint-031-retry.log"
+  },
+  "rootSyntheticCorrection": {
+    "receipt": "outputs/loop/r-runtime/root-development-correlation-round1-001/receipt.json",
+    "exitCode": 0,
+    "model": "M3 H/Z/F, invented only"
+  },
+  "aggregateGuardSynthetic": {
+    "valid_aggregate": true,
+    "rejected": ["nested_microdata", "unit_array", "nonfinite", "unexpected_field", "long_vector"],
+    "codeSha256": "fe4a54aa13297758bb76e0933a7ae6ea6338abbc4ea953ae7ed9a5ede70d3cfb",
+    "independentReview": "pending"
+  },
+  "limits": "No actual answers, tags or empirical acceptance at time of record"
+}

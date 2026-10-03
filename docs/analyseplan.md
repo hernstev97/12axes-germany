@@ -1,6 +1,6 @@
 # Analyseplan: Vorbereitung
 
-Arbeitsfassung 0.2 vom 2026-10-03. **Nicht eingefroren, nicht methodisch freigegeben, kein Tag `analyseplan-v1`.** Noch keine ESS-Antwortdaten ausgewertet. Nach dem Dateieingang wurden ausschließlich Datei-Hash, Header und festgelegte globale Metadaten lokal geprüft; der [Dateieingangsbericht](../reports/phasen/00-dateieingang-2026-10-03.md) protokolliert diesen vorbereitenden Zugriff. Diese Datei dokumentiert den vorgesehenen Ablauf und die Entscheidungen, die vor dem Start noch fehlen.
+Historische Vorbereitung 0.2 vom 2026-10-03. Die damals offenen P01–P13 werden für den aktuellen Durchlauf durch den konkreten [Empirieplan und dessen Planfestschreibung](planfestschreibung-v1.md) ersetzt. Diese ursprüngliche Vorbereitung ist keine aktuelle Freigabe. Noch keine ESS-Antwortdaten ausgewertet. Nach dem Dateieingang wurden ausschließlich Datei-Hash, Header und festgelegte globale Metadaten lokal geprüft; der [Dateieingangsbericht](../reports/phasen/00-dateieingang-2026-10-03.md) protokolliert diesen vorbereitenden Zugriff. Diese Datei dokumentiert den vorgesehenen Ablauf und die Entscheidungen, die vor dem Start noch fehlen.
 
 ## Fragestellung und Reichweite
 

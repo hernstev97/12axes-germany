@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T10:59:42.529904+00:00",
+  "updatedAtUtc": "2026-10-03T11:21:50.737925+00:00",
   "status": "RUNNING",
-  "phase": "Phase0: ausführbare Pre-A-Prüffassung eingefroren; zwei frische Übergangsprüfungen als nächster Schritt",
+  "phase": "Phase0: bounded preA reviews accepted; public plan/expectation freeze, before real answers",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -31,10 +31,12 @@
     "WEBSITE-METHODS-001 bounded copy review PASS; pnpm check and two pages/five widths axe/nooverflow PASS; actual200percent/focus-visible unverified",
     "Development runner82/82 synthetic assertions with deterministic M2/M3/suppression branches",
     "Generic pinned runtime fresh coordinator reproduction54/54; mock gate tests13/13, true private production remains unopened",
-    "Joint-group author43/43 synthetic implementation assertions; separate application review still required"
+    "Joint-group author43/43 synthetic implementation assertions; separate application review still required",
+    "Two preA first judgments complete; PE-M01 correction1 accepted with8 targeted assertions, sources first boundedpass reused",
+    "Fixed B/FULL confirm author113/113 plusnegativeboundary probes; separate B gate outstanding"
   ],
   "openTasks": [
-    "Complete development/runtime software then obtain two pre-A transition judgments for fixed nine-item plan",
+    "Publish verified public plan/expectation tags and positive gate, then protected actual A development",
     "Freeze public plan/expectations after reviews; protected A empirical development then model freeze before B gate",
     "One-time B, whole-DE transfer, allowed comparisons and result interpretation reviews",
     "Methods/website from actual evidence; concrete design acceptance, Claude final control and real human tests remain pending"
@@ -85,7 +87,7 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "BESTANDEN",
+    "currentLocalTechnical": "BESTANDEN retry031; initial031 formattingfailure retained",
     "currentIndependentIntegration": "NICHT_GEPRÜFT",
     "empiricalValidation": "NICHT_GEPRÜFT",
     "otherModelFamily": "NICHT_GEPRÜFT",
@@ -97,12 +99,12 @@
     "fullHandbookWebsiteAcceptance": "NICHT_GEPRÜFT",
     "claudeTechnicalAccess": "BLOCKIERT",
     "foundationBoundedCorrections": "BESTANDEN",
-    "foundationScientificPlanAcceptance": "NICHT_GEPRÜFT current concrete plan awaits two transition reviewers",
+    "foundationScientificPlanAcceptance": "BESTANDEN_BEGRÄNZT contract before A; no empirical validity",
     "claudeReadBoundary": "NICHT_GEPRÜFT",
     "haltBackup": "BESTANDEN",
     "haltTechnical": "BESTANDEN",
     "currentDesignMetadataTechnical": "BESTANDEN",
-    "currentEmpiricalTransition": "NICHT_GEPRÜFT",
+    "currentEmpiricalTransition": "BESTANDEN_BEGRÄNZT_VOR_A; first reports plus correction1",
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
     "currentWebsiteCopy": "BESTANDEN bounded",
@@ -173,7 +175,11 @@
     "reports/loop/reviews/ITEM-FIRST-001-methods.md",
     "reports/loop/reviews/ITEM-FIRST-001-sources.md",
     "reports/loop/reviews/ITEM-FIRST-001-sources-errata.md",
-    "reports/loop/reviews/WEBSITE-METHODS-001-first.md"
+    "reports/loop/reviews/WEBSITE-METHODS-001-first.md",
+    "reports/loop/reviews/PRE-EMPIRICAL-001-methods-first.md",
+    "reports/loop/reviews/PRE-EMPIRICAL-001-sources-first.md",
+    "reports/loop/reviews/PRE-EMPIRICAL-001-sources-errata.md",
+    "reports/loop/reviews/PRE-EMPIRICAL-001-methods-round1.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -186,7 +192,36 @@
     "SW-ENV-004"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
-  "activeAgents": [],
+  "activeAgents": [
+    {
+      "name": "/root/ordinal_support_author",
+      "task": "New fixed Full-DE norm/sensitivity code; invented data only",
+      "allowedWrites": [
+        "pipeline/ordinal/norms.R",
+        "pipeline/ordinal/test-norms.R",
+        "reports/loop/authors/ESS-NORMS-proposal.md",
+        "outputs/loop/resume-norms-author/"
+      ]
+    },
+    {
+      "name": "/root/later_access_author",
+      "task": "New fixed B/FULL positive-access loader; invented data only",
+      "allowedWrites": [
+        "pipeline/stage_access.py",
+        "pipeline/tests/test_stage_access.py",
+        "reports/loop/authors/ESS-LATER-ACCESS-proposal.md",
+        "outputs/loop/resume-later-access-author/"
+      ]
+    },
+    {
+      "name": "/root/pre_empirical_methods",
+      "task": "Separate normal export-boundary technical review; read-only existing research",
+      "allowedWrites": [
+        "reports/loop/reviews/AGGREGATE-EXPORT-001-first.md",
+        "outputs/loop/aggregate-export-review/"
+      ]
+    }
+  ],
   "workPackages": [
     {
       "id": "LOOP-000",
@@ -403,12 +438,12 @@
   "nextConcreteStep": "Two fresh independent pre-A transition reviews on PRE-EMPIRICAL-001/v1; correct bounded findings before any public tag/A import",
   "checkpoint": {
     "lastLocalCommit": "git:HEAD",
-    "lastVerifiedRemoteCommit": "7099ccb6a5786c335a571bc89ace09a88150bd00",
-    "lastVerifiedPushAtUtc": "2026-10-03T10:50:02.855745+00:00",
+    "lastVerifiedRemoteCommit": "a199581c1749a692d4610795ea98ee4850c44724",
+    "lastVerifiedPushAtUtc": "2026-10-03T11:02:22.398239+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-029.json",
+    "record": "reports/loop/push-030.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
@@ -573,5 +608,5 @@
     "SW-ENV-004": "historical installer/full-locality claim remains false; no new installer",
     "META-SPLIT-001": "new conditional23strata/reserveC proposal awaits pre-empirical review"
   },
-  "pendingTransitionReviewers": ["/root/pre_empirical_methods", "/root/pre_empirical_sources"]
+  "pendingTransitionReviewers": []
 }

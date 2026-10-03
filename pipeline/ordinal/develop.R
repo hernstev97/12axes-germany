@@ -200,7 +200,8 @@ ed_model_evaluation <- function(adapter,groups,efa,cfg,diagnostic_only=FALSE) {
   if(nrow(pairs)>0L)for(i in seq_len(nrow(pairs))) {
     pair<-pairs[i,];id<-paste0(names(groups)[pair[2]],'~~',names(groups)[pair[1]])
     interval<-ed_bound(std$results[[id]],cfg$criteria$alpha,nrow(pairs))
-    interval$passed<-interval$upper<cfg$criteria$correlation_upper_exclusive
+    interval$passed<-interval$lower>cfg$criteria$correlation_lower_exclusive &&
+      interval$upper<cfg$criteria$correlation_upper_exclusive
     correlations[[id]]<-interval
   }
   rms_pass<-is.null(rms_bound$status)&&rms_bound$upper<=cfg$criteria$rms_one_sided_upper_max

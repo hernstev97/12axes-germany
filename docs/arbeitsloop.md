@@ -60,3 +60,7 @@ Der tatsächliche begrenzte Metadatenimport und die beiden Item-Ersturteile sind
 2026-10-03: Kern-/Gruppenquellen für Ausgabe4.2 gebunden; beobachteter fixed-I-Modellsupport54/54 synthetisch. Der konkrete Vertrag präzisiert Normalintervalle und die vollständig strikte modellbedingte Gruppenprüfung samt gemeinsamer affiner Identifikationsgrenze. Noch keine A-Antworten oder Tags. Entwicklungs- und Runtimecode werden vor zwei Übergangsprüfungen fertiggestellt.
 
 Die bestehenden Dokumentationsseiten erhielten Quellen-/Statuskorrekturen, begrenzter frischer Review PASS. Technik-/Browserumfang und ausgefallene Fokus-/Zoomprüfung stehen einmalig in `reports/loop/resume-website-technical.json`. Keine fachliche Freigabe oder sichtbare Testaktion aus diesen Prüfungen ableiten.
+
+## Planübergang vor A
+
+2026-10-03: Beide Erstberichte abgeschlossen. Methodenfehler PE-M01 in erster gezielter Korrekturrunde geschlossen; Quellenurteil weiter begrenzt gültig. Konkreter [Planfreeze](planfestschreibung-v1.md) vor tatsächlicher Antwortinterpretation. Autorentests des neuen festen B-Runners sind Vorbereitung; Normen und spätere Loader bleiben WIP. Keine weiteren Claude-Zugriffe. Ausführung beginnt erst nach verifizierten Tags und positivem Vor-A-Gate.
