@@ -1,0 +1,473 @@
+{
+  "packageId": "FOUNDATION-001-v1",
+  "codeCommit": "6a9e9e20231e4c820c74f357e7ae3c9a8280f2a1",
+  "inputNotice": "All changed/untracked author drafts are reproduced by frozen files, not codeCommit alone. No other current reviewer reports/author defence.",
+  "analysisPlanVersion": "Entwurf0.2 plus method/theory/inventory author drafts 2026-10-03",
+  "rawData": {
+    "version": "ESS11 edition4.2 CSV local, not read",
+    "sha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+    "hashVerificationScope": "Prior bytehash only, not official-download identity"
+  },
+  "metadataVersions": {
+    "questionnaire": "DE ESS11 2023",
+    "showcards": "DE ESS11 2023",
+    "codebook": "4.1",
+    "countryReport": "4.0",
+    "weightingGuide": "1.2"
+  },
+  "modelConfiguration": null,
+  "sourceInputs": [
+    {
+      "sourceId": "ESS11-DE-QUESTIONNAIRE",
+      "path": "outputs/loop/theory/ESS11_questionnaires_DE.pdf",
+      "kind": "original_pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "bytes": 1304009,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "ESS11-DE-QUESTIONNAIRE",
+      "path": "outputs/loop/theory/ESS11_questionnaires_DE.layout.txt",
+      "kind": "poppler_text",
+      "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+      "bytes": 213698,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "ESS11-CODEBOOK",
+      "path": "outputs/loop/theory/ESS11_appendix_a7_e04_1.pdf",
+      "kind": "original_pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "bytes": 2162997,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "ESS11-CODEBOOK",
+      "path": "outputs/loop/theory/ESS11_appendix_a7_e04_1.layout.txt",
+      "kind": "poppler_text",
+      "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+      "bytes": 1074155,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "THEO-GG-20261003",
+      "path": "outputs/loop/theory/GG-2026.html",
+      "kind": "original_html",
+      "sha256": "8df99989fc820e2d3f6c11be5a208fc84dc8edb79b60fd53826ab83fac8a7eca",
+      "bytes": 305445,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "8df99989fc820e2d3f6c11be5a208fc84dc8edb79b60fd53826ab83fac8a7eca",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "THEO-GG-20261003",
+      "path": "outputs/loop/theory/GG-2026.txt",
+      "kind": "decoded_iso8859_1_text",
+      "sha256": "30dfeb86c3458702021078829e778767b312b959f2409cf7f2f5e10d7ff3fe09",
+      "bytes": 192141,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "30dfeb86c3458702021078829e778767b312b959f2409cf7f2f5e10d7ff3fe09",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "GLES-RCS-2025",
+      "path": "outputs/loop/theory/GLES-RCS-2025.web-extract.json",
+      "kind": "web_tool_original_text_extract",
+      "sha256": "df0403d0314b5c960696fe7b653e16a3e56b1d2448686da1d04ef91a071b3cac",
+      "bytes": 22479,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "df0403d0314b5c960696fe7b653e16a3e56b1d2448686da1d04ef91a071b3cac",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "GLES-RCS-2025",
+      "path": "outputs/loop/theory/GLES-RCS-2025.html",
+      "kind": "failed_http_403_response",
+      "sha256": "c3bc9e0b2de1246cb4c59c48216ed9304b640e182add1ffb8115d8cb76804411",
+      "bytes": 5767,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "c3bc9e0b2de1246cb4c59c48216ed9304b640e182add1ffb8115d8cb76804411",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "KRIESI-ETAL-2006",
+      "path": "outputs/loop/theory/KRIESI-ETAL-2006.theory-web-extract.json",
+      "kind": "web_tool_original_text_extract",
+      "sha256": "cf24c9e69dbe6cc317185cf211a65fce5fccc3cb5548e354c6c513615d7a27b3",
+      "bytes": 17889,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "cf24c9e69dbe6cc317185cf211a65fce5fccc3cb5548e354c6c513615d7a27b3",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "KRIESI-ETAL-2006",
+      "path": "outputs/loop/theory/KRIESI-ETAL-2006.web-extract.json",
+      "kind": "web_tool_original_text_extract",
+      "sha256": "01825d45a3fb7608adaea768d2963d6f03fc24ee5232dfa9f17b003cb9e0e07d",
+      "bytes": 31771,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "01825d45a3fb7608adaea768d2963d6f03fc24ee5232dfa9f17b003cb9e0e07d",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "KRIESI-ETAL-2006",
+      "path": "outputs/loop/theory/KRIESI-ETAL-2006.html",
+      "kind": "failed_http_403_response",
+      "sha256": "4c7d02c6066cd8085aeee3c5c7aa6b95394d8759bbbec795d7a7c8f83e951c7e",
+      "bytes": 5686,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "4c7d02c6066cd8085aeee3c5c7aa6b95394d8759bbbec795d7a7c8f83e951c7e",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "DEVRIES-HAKHVERDIAN-LANCEE-2013",
+      "path": "outputs/loop/theory/DEVRIES-HAKHVERDIAN-LANCEE-2013.pdf",
+      "kind": "author_hosted_publisher_pdf",
+      "sha256": "92f4f928381ddb5d5f2a02b4a04206428319b061db3818fe7af6efe5588ec3d5",
+      "bytes": 368825,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "92f4f928381ddb5d5f2a02b4a04206428319b061db3818fe7af6efe5588ec3d5",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "EVANS-HEATH-LALLJEE-1996",
+      "path": "outputs/loop/theory/EVANS-HEATH-LALLJEE-1996.pdf",
+      "kind": "academic_hosted_publisher_pdf",
+      "sha256": "d683a1091150c77ba83fd1fc422c8fb9f25c1b1d37bdfe890915d65dbf53e293",
+      "bytes": 2187448,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "d683a1091150c77ba83fd1fc422c8fb9f25c1b1d37bdfe890915d65dbf53e293",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "MALKA-LELKES-SOTO-2019",
+      "path": "outputs/loop/theory/MALKA-LELKES-SOTO-2019.pdf",
+      "kind": "author_hosted_first_view_pdf",
+      "sha256": "99d1fac8556c76451d4379937c085088c27bafed8d2d9b853a31bb25d6008c1a",
+      "bytes": 1028283,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "99d1fac8556c76451d4379937c085088c27bafed8d2d9b853a31bb25d6008c1a",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "CONVERSE-1964-2006",
+      "path": "outputs/loop/theory/CONVERSE-1964-2006.pdf",
+      "kind": "university_hosted_reprint_pdf",
+      "sha256": "aa6561226163383de80f100c42c7c90775ad61e810d7de81dae63c4cb2aec994",
+      "bytes": 4213899,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "aa6561226163383de80f100c42c7c90775ad61e810d7de81dae63c4cb2aec994",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "SCHWARTZ-ESS-VALUES",
+      "path": "outputs/loop/theory/SCHWARTZ-ESS-VALUES.pdf",
+      "kind": "official_ess_pdf",
+      "sha256": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+      "bytes": 411213,
+      "publishCopy": false,
+      "actualSha256AtFreeze": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "ESS-WEIGHTS",
+      "path": "outputs/loop/methods/ESS-WEIGHTS.pdf",
+      "sha256": "6b9c04b70b8f231de1b9040e4afcfc9387fc95e4a1d15ec0496aa7638f8528e5",
+      "bytes": 200908,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "6b9c04b70b8f231de1b9040e4afcfc9387fc95e4a1d15ec0496aa7638f8528e5",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "ESS11-COUNTRY",
+      "path": "outputs/loop/methods/ESS11-COUNTRY.pdf",
+      "sha256": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+      "bytes": 2510948,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "ASPAROUHOV-2005",
+      "path": "outputs/loop/methods/ASPAROUHOV-2005.pdf",
+      "sha256": "35461f784f7a4cd58091132110df0d71faf736321b51f80c29be263132043468",
+      "bytes": 312246,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "35461f784f7a4cd58091132110df0d71faf736321b51f80c29be263132043468",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "MPLUS-15",
+      "path": "outputs/loop/methods/MPLUS-15.html",
+      "sha256": "7ccae8a2871cf5698be27096688998128909a295e0392a8c4226f39876b2fc60",
+      "bytes": 318955,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "7ccae8a2871cf5698be27096688998128909a295e0392a8c4226f39876b2fc60",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "MPLUS-16",
+      "path": "outputs/loop/methods/MPLUS-16.html",
+      "sha256": "a3ec4f2bc2821c919e18dfe6c7251e5c06f95e68c2120badab7dc29487f84117",
+      "bytes": 268595,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "a3ec4f2bc2821c919e18dfe6c7251e5c06f95e68c2120badab7dc29487f84117",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "MPLUS-1",
+      "path": "outputs/loop/methods/MPLUS-1.html",
+      "sha256": "ba483d7d0ae90b7fc0a07b5a51e55616c92c7f4fb7b5c0f657270edf4a951102",
+      "bytes": 42977,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "ba483d7d0ae90b7fc0a07b5a51e55616c92c7f4fb7b5c0f657270edf4a951102",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "LAVAAN-CATEGORICAL",
+      "path": "outputs/loop/methods/LAVAAN-CATEGORICAL.html",
+      "sha256": "a542339d7c76fee89aba243f98e149c7e4cb0253d9e93f6a95023f7c8ecb9d02",
+      "bytes": 34308,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "a542339d7c76fee89aba243f98e149c7e4cb0253d9e93f6a95023f7c8ecb9d02",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "LAVAAN-0.7",
+      "path": "outputs/loop/methods/LAVAAN-0.7.html",
+      "sha256": "f33d679703f935f10c0b1a7b153eb54c4473ddf890a0f06d1c6ff062b231c6cc",
+      "bytes": 30176,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "f33d679703f935f10c0b1a7b153eb54c4473ddf890a0f06d1c6ff062b231c6cc",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "TSE-LAI-ZHANG-HTML",
+      "path": "outputs/loop/methods/TSE-LAI-ZHANG-HTML.html",
+      "sha256": "7b4589491d934487f6bde3f8b43d40fdcbd3033dfa378c44f750f5416bed33cf",
+      "bytes": 557666,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "7b4589491d934487f6bde3f8b43d40fdcbd3033dfa378c44f750f5416bed33cf",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "WU-ESTABROOK-ORIGINAL",
+      "path": "outputs/loop/methods/WU-ESTABROOK-ORIGINAL.html",
+      "sha256": "32cf963946fa00970a18612d37c5bbc49347fd244329a1ee832b82eea9575730",
+      "bytes": 374244,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "32cf963946fa00970a18612d37c5bbc49347fd244329a1ee832b82eea9575730",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "SEMTOOLS-MANUAL",
+      "path": "outputs/loop/methods/SEMTOOLS-MANUAL.pdf",
+      "sha256": "486d54175cd873598a414a2a32e43eaf86a29c8ddb584579b8a45df15c3a8a9e",
+      "bytes": 658256,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "486d54175cd873598a414a2a32e43eaf86a29c8ddb584579b8a45df15c3a8a9e",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "GREEN-YANG-ABSTRACT",
+      "path": "outputs/loop/methods/GREEN-YANG-ABSTRACT.html",
+      "sha256": "e99ae06dbe51b1350c8550aac3c43ed14f1652cc2a6f9d9c13cf71c079d70a0e",
+      "bytes": 828075,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "e99ae06dbe51b1350c8550aac3c43ed14f1652cc2a6f9d9c13cf71c079d70a0e",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "LUMLEY",
+      "path": "outputs/loop/methods/LUMLEY.pdf",
+      "sha256": "9ad8e83a56830607ff338de5b2076c3bd25c67670d49fd663b17998eb257991a",
+      "bytes": 503960,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "9ad8e83a56830607ff338de5b2076c3bd25c67670d49fd663b17998eb257991a",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "SURVEY-MANUAL",
+      "path": "outputs/loop/methods/SURVEY-MANUAL.pdf",
+      "sha256": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c",
+      "bytes": 547598,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "RAO-WU-YUE",
+      "path": "outputs/loop/methods/RAO-WU-YUE.pdf",
+      "sha256": "0ef8606ccf283ce73cedca4e9d2062713ccd19c937c074ef496f98d947e19cc7",
+      "bytes": 526012,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "0ef8606ccf283ce73cedca4e9d2062713ccd19c937c074ef496f98d947e19cc7",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "WOLF-ETAL",
+      "path": "outputs/loop/methods/WOLF-ETAL.html",
+      "sha256": "9b42aae1b14918b7a993ab5d25f10c18bb409e8d336ba2c04efcf36b5031690e",
+      "bytes": 179741,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "9b42aae1b14918b7a993ab5d25f10c18bb409e8d336ba2c04efcf36b5031690e",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "SCHWARTZ",
+      "path": "outputs/loop/methods/SCHWARTZ.pdf",
+      "sha256": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+      "bytes": 411213,
+      "kind": "cached_public_original_or_explicit_abstract",
+      "actualSha256AtFreeze": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+      "hashMatches": true
+    },
+    {
+      "sourceId": "ESS11-DE-QUESTIONNAIRE",
+      "path": "outputs/loop/inventory/ESS11_questionnaires_DE.pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "actualSha256AtFreeze": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "hashMatches": true,
+      "kind": "official_original_document",
+      "publishCopy": false
+    },
+    {
+      "sourceId": "ESS11-DE-SHOWCARDS",
+      "path": "outputs/loop/inventory/ESS11_showcards_DE.pdf",
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "actualSha256AtFreeze": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "hashMatches": true,
+      "kind": "official_original_document",
+      "publishCopy": false
+    },
+    {
+      "sourceId": "ESS11-CODEBOOK",
+      "path": "outputs/loop/inventory/ESS11_appendix_a7_e04_1.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "actualSha256AtFreeze": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "hashMatches": true,
+      "kind": "official_original_document",
+      "publishCopy": false
+    }
+  ],
+  "software": {
+    "Python": "3.14.7",
+    "Poppler": "26.08.0",
+    "Rscript": "not installed",
+    "Mplus": "not installed"
+  },
+  "criteria": "reports/loop/foundation-pruefauftrag.md",
+  "scientificPrerequisites": "Claude initial ratings/reviews, setup, full inventory and decisive plan still open; no data access authorised by this audit.",
+  "frozenAtUtc": "2026-10-03T01:58:35.012126+00:00",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "docs/arbeitsloop.md": {
+      "sha256": "1708046381a81b85db60d99e082165e87039d83ea838c209f42604ab09b83172",
+      "bytes": 6363
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "reports/loop/foundation-pruefauftrag.md": {
+      "sha256": "bcc7b00d70c92d7b1abde00e60adc83d40c34ecb6e25e4a8ae3038542a2ec30c",
+      "bytes": 2962
+    },
+    "docs/analyseplan.md": {
+      "sha256": "7eb07ed5e8edf87970c34f1d77590f60add33a19c4a90f83b14814740a31ac47",
+      "bytes": 13766
+    },
+    "docs/analyseanforderungen.md": {
+      "sha256": "f94a4bc01c571af966e9269a674632f8a19cba3db0a5c8be0bddade27be7795b",
+      "bytes": 8485
+    },
+    "docs/pruefregeln.md": {
+      "sha256": "7f1a86187a0a2c6a39acaabab25eb75cf92ec1fc5c2c4c97bf0d12411ece2a9f",
+      "bytes": 23337
+    },
+    "docs/lizenzen.md": {
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+      "bytes": 4845
+    },
+    "docs/datenlage.md": {
+      "sha256": "873bdf18df6a7e7d549206aafb287fb80a9d42757b4375cf6e98fbf7cf1afe0d",
+      "bytes": 7366
+    },
+    "docs/quellen.json": {
+      "sha256": "f58e4556f877aeccf65707548d8aa4cdb4fa2848863b20f1a318ee783dcef41d",
+      "bytes": 11864
+    },
+    "docs/belegregister.md": {
+      "sha256": "fa93c16bf26c8b21ced068bc60c51b4fa76767ac8449a92552499b32c97e5533",
+      "bytes": 15117
+    },
+    "docs/themenabdeckung.entwurf.md": {
+      "sha256": "7b3d7f59d3ead0ff61557dac01b327032ff42a6a9d2828c949c0c25a93f1604b",
+      "bytes": 22457
+    },
+    "docs/erwartungsmodell.entwurf.md": {
+      "sha256": "e22776ec8e004e98f685c4a767b024262848cedd9043b5ad54a45ab00901fe0e",
+      "bytes": 21604
+    },
+    "docs/analyseplan-methoden.entwurf.md": {
+      "sha256": "37bcaa35d82d3db20b21fce05881b36063f5ac40ba7fa5f3300fdd3c9fb5df0c",
+      "bytes": 35821
+    },
+    "data/inventar.entwurf.csv": {
+      "sha256": "685e4c7114129d0cbd6625018c38c1a1f9900b51581d711bf24a548f10aac1c2",
+      "bytes": 2068703
+    },
+    "data/inventar.provenienz.json": {
+      "sha256": "ed989bd8c25a8bc4167045303874b163a4d14a8a338361d5c32355f0421fd9b3",
+      "bytes": 76630
+    },
+    "data/theorie-quellen.json": {
+      "sha256": "06218767ded4c3d016676f830ac941ca0b9a15aaddcdcc618b8cd49a5b348556",
+      "bytes": 37172
+    },
+    "data/methoden-quellen.json": {
+      "sha256": "1799311500570a85c31ad2f9d1d09c6402b30925fd1cc527f03e8e653d268c52",
+      "bytes": 28913
+    },
+    "pipeline/inventar.py": {
+      "sha256": "4f49a267327e72662614048de74a1fd27d0b6bb28da36823ccc0716ec5a4af3b",
+      "bytes": 43195
+    },
+    "pipeline/synthetic/methoden_kalibrierung.py": {
+      "sha256": "42349e34f5529026e2b067d9986200031110846f105860d301588d58bcc37fc3",
+      "bytes": 9762
+    },
+    "reports/loop/synthetic/LOOP-002-methoden-kalibrierung.json": {
+      "sha256": "fe5ae8294b90b3621ce91a13217e4ddd341bea557ff80011548ef73cfbd6a45b",
+      "bytes": 11785
+    },
+    "reports/loop/authors/LOOP-001-inventar.md": {
+      "sha256": "3397f334476c4edb4819243097d54c1c9b212ff85778103fe4fa426e48b53207",
+      "bytes": 14745
+    },
+    "reports/loop/authors/LOOP-001-theorie.md": {
+      "sha256": "32331627a62a1f686435647ff76eae2b2b08fed037e3304d136f71da1c9107a8",
+      "bytes": 10378
+    },
+    "reports/loop/authors/LOOP-002-methoden.md": {
+      "sha256": "efd050a592ca11444cfb8bb8a39d596690bdd74f8219fd4661f4a86e6cc3af53",
+      "bytes": 15314
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 1,
+  "artifactStatus": "METHODS_AUTHOR_DRAFT_NOT_REVIEW_OR_APPROVAL",
+  "createdAt": "2026-10-03",
+  "loop": "LOOP-002",
+  "realEssDataRead": false,
+  "rawOrPersonIdentifiersExported": false,
+  "cacheRoot": "outputs/loop/methods/",
+  "sourceReadingRule": "Only explicit readScope is asserted self-read; unavailable full text remains incomplete. Original caches ignored by Git.",
+  "sources": [
+    {
+      "id": "ESS-WEIGHTS",
+      "requestedUrl": "https://stessrelpubprodwe.blob.core.windows.net/data/methodology/ESS_weighting_data_1_2.pdf",
+      "retrievedAt": "2026-10-03T01:28:06.825588+00:00",
+      "status": 200,
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/methodology/ESS_weighting_data_1_2.pdf",
+      "bytes": 200908,
+      "sha256": "6b9c04b70b8f231de1b9040e4afcfc9387fc95e4a1d15ec0496aa7638f8528e5",
+      "cachePath": "outputs/loop/methods/ESS-WEIGHTS.pdf",
+      "textPath": "outputs/loop/methods/ESS-WEIGHTS.txt",
+      "title": "Olga Kaminska: European Social Survey weighting data, v1.2 (6 July 2023)",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Entire 15-page guide; claims especially section 3 p.4 and sections 4.1–4.3 pp.5–9 (printed numbering).",
+      "limits": "General ESS guidance, not complete ESS11 DE sampling design; weights cannot eliminate all nonresponse error."
+    },
+    {
+      "id": "ESS11-COUNTRY",
+      "requestedUrl": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_country_documentation_report_e04.pdf",
+      "retrievedAt": "2026-10-03T01:28:07.062660+00:00",
+      "status": 200,
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_country_documentation_report_e04.pdf",
+      "bytes": 2510948,
+      "sha256": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+      "cachePath": "outputs/loop/methods/ESS11-COUNTRY.pdf",
+      "textPath": "outputs/loop/methods/ESS11-COUNTRY.txt",
+      "title": "ESS Round 11 country documentation report, edition 04",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Selected German fieldwork entries pp.79–81 and sample/frame/region statements pp.82–86, especially federal-state representativity warning p.86. Not every German metadata entry or other country chapter read.",
+      "limits": "Report is not the complete German sample-design protocol and is not evidence of datafile edition 4.2 by itself."
+    },
+    {
+      "id": "ASPAROUHOV-2005",
+      "requestedUrl": "https://www.statmodel.com/download/webnotes/mplusnote72.pdf",
+      "url": "https://www.statmodel.com/download/webnotes/mplusnote72.pdf",
+      "status": 200,
+      "bytes": 312246,
+      "sha256": "35461f784f7a4cd58091132110df0d71faf736321b51f80c29be263132043468",
+      "retrievedAt": "2026-10-03T01:30:54.208910+00:00",
+      "cachePath": "outputs/loop/methods/ASPAROUHOV-2005.pdf",
+      "textPath": "outputs/loop/methods/ASPAROUHOV-2005.txt",
+      "title": "Tihomir Asparouhov: Sampling Weights in Latent Variable Modeling",
+      "doi": "10.1207/s15328007sem1203_4",
+      "classification": "primary_method_article",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Weighted Least Squares pp.421–423; Stratified Cluster Sampling pp.424–425; Factor Analysis with Cluster Sampling pp.425–426.",
+      "limits": "Selected original sections only; binary illustrative designs are not ESS validation, no ESS-specific loading/fit/sample-size cutoff established."
+    },
+    {
+      "id": "MPLUS-15",
+      "requestedUrl": "https://www.statmodel.com/HTML_UG/chapter15v8.htm",
+      "retrievedAt": "2026-10-03T01:28:07.650023+00:00",
+      "status": 200,
+      "url": "https://www.statmodel.com/HTML_UG/chapter15v8.htm",
+      "bytes": 318955,
+      "sha256": "7ccae8a2871cf5698be27096688998128909a295e0392a8c4226f39876b2fc60",
+      "cachePath": "outputs/loop/methods/MPLUS-15.html",
+      "textPath": "outputs/loop/methods/MPLUS-15.txt",
+      "title": "Mplus User Guide v8, Chapter 15: VARIABLE command",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Full STRATIFICATION, CLUSTER and WEIGHT sections; allowed estimators and normalization of sampling weights.",
+      "limits": "Documented interface only; no executable/version/license observed. No claim of exact PPS inference or replicate-weight support from this read."
+    },
+    {
+      "id": "MPLUS-16",
+      "requestedUrl": "https://www.statmodel.com/HTML_UG/chapter16V8.htm",
+      "retrievedAt": "2026-10-03T01:28:08.358046+00:00",
+      "status": 200,
+      "url": "https://www.statmodel.com/HTML_UG/chapter16V8.htm",
+      "bytes": 268595,
+      "sha256": "a3ec4f2bc2821c919e18dfe6c7251e5c06f95e68c2120badab7dc29487f84117",
+      "cachePath": "outputs/loop/methods/MPLUS-16.html",
+      "textPath": "outputs/loop/methods/MPLUS-16.txt",
+      "title": "Mplus User Guide v8, Chapter 16: ANALYSIS command",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "EFA section and available-estimator table; WLSMV estimator description; DELTA/THETA; full RSTARTS and DIFFTEST sections.",
+      "limits": "Only specified sections self-read. Combination must receive synthetic executable smoke and identification review. DIFFTEST requires appropriate nested model inputs."
+    },
+    {
+      "id": "MPLUS-1",
+      "requestedUrl": "https://www.statmodel.com/HTML_UG/chapter1V8.htm",
+      "url": "https://www.statmodel.com/HTML_UG/chapter1V8.htm",
+      "status": 200,
+      "bytes": 42977,
+      "sha256": "ba483d7d0ae90b7fc0a07b5a51e55616c92c7f4fb7b5c0f657270edf4a951102",
+      "retrievedAt": "2026-10-03T01:33:02.638196+00:00",
+      "cachePath": "outputs/loop/methods/MPLUS-1.html",
+      "textPath": "outputs/loop/methods/MPLUS-1.txt",
+      "title": "Mplus User Guide v8, Chapter 1",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Full overview, especially Modeling with Missing Data and simulation overview.",
+      "limits": "WLS missingness restriction narrower than general MAR; does not validate the proposed complete-mask estimand or any ESS missingness assumptions."
+    },
+    {
+      "id": "LAVAAN-CATEGORICAL",
+      "requestedUrl": "https://lavaan.ugent.be/tutorial/cat.html",
+      "retrievedAt": "2026-10-03T01:28:09.545283+00:00",
+      "status": 200,
+      "url": "https://lavaan.ugent.be/tutorial/cat.html",
+      "bytes": 34308,
+      "sha256": "a542339d7c76fee89aba243f98e149c7e4cb0253d9e93f6a95023f7c8ecb9d02",
+      "cachePath": "outputs/loop/methods/LAVAAN-CATEGORICAL.html",
+      "textPath": "outputs/loop/methods/LAVAAN-CATEGORICAL.txt",
+      "title": "lavaan tutorial: Categorical data",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Entire short categorical tutorial, including ordered/WLSMV and absent categorical FIML.",
+      "limits": "Does not establish complete ESS stratification plus PSU correction. No R executable found."
+    },
+    {
+      "id": "LAVAAN-0.7",
+      "requestedUrl": "https://lavaan.ugent.be/history/dot7.html",
+      "retrievedAt": "2026-10-03T01:28:09.695648+00:00",
+      "status": 200,
+      "url": "https://lavaan.ugent.be/history/dot7.html",
+      "bytes": 30176,
+      "sha256": "f33d679703f935f10c0b1a7b153eb54c4473ddf890a0f06d1c6ff062b231c6cc",
+      "cachePath": "outputs/loop/methods/LAVAAN-0.7.html",
+      "textPath": "outputs/loop/methods/LAVAAN-0.7.txt",
+      "title": "lavaan version history 0.7 series",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Full short version-history page, especially 0.7-2 release dated 16 July 2026 and WLS sampling-weight covariance support.",
+      "limits": "Current individual capabilities do not imply all needed design combinations; no runtime smoke."
+    },
+    {
+      "id": "TSE-LAI-ZHANG-HTML",
+      "requestedUrl": "https://link.springer.com/article/10.3758/s13428-023-02247-6",
+      "url": "https://link.springer.com/article/10.3758/s13428-023-02247-6",
+      "status": 200,
+      "bytes": 557666,
+      "sha256": "7b4589491d934487f6bde3f8b43d40fdcbd3033dfa378c44f750f5416bed33cf",
+      "retrievedAt": "2026-10-03T01:29:12.018209+00:00",
+      "cachePath": "outputs/loop/methods/TSE-LAI-ZHANG-HTML.html",
+      "textPath": "outputs/loop/methods/TSE-LAI-ZHANG-HTML.txt",
+      "title": "Winnie Wing-Yee Tse, Mark H. C. Lai and Yichi Zhang: Does strict invariance matter? Valid group mean comparisons with ordered-categorical items",
+      "doi": "10.3758/s13428-023-02247-6",
+      "classification": "primary_method_article",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Original full publisher HTML self-read in claimed sections: Measurement invariance testing with ordered-categorical items; Observed mean comparison; Factor mean comparison; entire empirical tutorial; entire Discussion and Limitations. Mathematical appendices not fully checked.",
+      "limits": "Claims limited to threshold-model observed-versus-latent comparisons and identification cautions. Partial scalar invariance is not automatically adequate for observed sum scores; no direct ESS complex-design implementation validated."
+    },
+    {
+      "id": "WU-ESTABROOK-ORIGINAL",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5458787/",
+      "retrievedAt": "2026-10-03T00:43:38.838623+00:00",
+      "cachePath": "outputs/loop/methods/WU-ESTABROOK-ORIGINAL.html",
+      "textPath": "outputs/loop/methods/WU-ESTABROOK-ORIGINAL.txt",
+      "sha256": "32cf963946fa00970a18612d37c5bbc49347fd244329a1ee832b82eea9575730",
+      "bytes": 374244,
+      "provenance": "Coordinator supplied dated original HTML path and hash; only this file copied, no reviewer judgement read. Live URL currently reCAPTCHA.",
+      "title": "Hao Wu and Ryne Estabrook: Identification of Confirmatory Factor Analysis Models of Different Levels of Invariance for Ordered Categorical Outcomes",
+      "doi": "10.1007/s11336-016-9506-0",
+      "classification": "primary_method_article",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Dated original HTML supplied by coordinator, SHA checked before copy; self-read sections 2.2, prose/illustration in section 4, full 5.8, full 6 and full 10. Algebraic derivations/tables are not claimed fully verified.",
+      "limits": "Live PMC retrieval returned reCAPTCHA; publisher was abstract/subscription. Only the specifically authorized original HTML was read. Paper explicitly excludes partial invariance. Model-specific mathematical identification and binary/three-category equivalences still require review."
+    },
+    {
+      "id": "SEMTOOLS-MANUAL",
+      "requestedUrl": "https://cran.r-project.org/web/packages/semTools/semTools.pdf",
+      "retrievedAt": "2026-10-03T01:28:14.124469+00:00",
+      "status": 200,
+      "url": "https://cran.r-project.org/web/packages/semTools/semTools.pdf",
+      "bytes": 658256,
+      "sha256": "486d54175cd873598a414a2a32e43eaf86a29c8ddb584579b8a45df15c3a8a9e",
+      "cachePath": "outputs/loop/methods/SEMTOOLS-MANUAL.pdf",
+      "textPath": "outputs/loop/methods/SEMTOOLS-MANUAL.txt",
+      "title": "semTools 0.5-9 manual (14 July 2026)",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "compRelSEM pp.18–23: complete arguments, general reliability formula and categorical details; measEq.syntax pp.71–75: full arguments and identification details. Multilevel/higher-order extensions outside claims.",
+      "limits": "Function expects a lavaan object, not Mplus output. Actual ordinal reliability differs from latent-response reliability. Underlying Green/Yang Eq.21 and unequal-weight extension not verified in primary full texts; body calls Lu et al. 2020 while bibliography needs reconciliation."
+    },
+    {
+      "id": "GREEN-YANG-ABSTRACT",
+      "requestedUrl": "https://www.cambridge.org/core/journals/psychometrika/article/abs/reliability-of-summed-item-scores-using-structural-equation-modeling-an-alternative-to-coefficient-alpha/ADD66755CCF95B949428F8DB97AFB1B0",
+      "retrievedAt": "2026-10-03T01:28:15.466974+00:00",
+      "status": 200,
+      "url": "https://www.cambridge.org/core/journals/psychometrika/article/abs/reliability-of-summed-item-scores-using-structural-equation-modeling-an-alternative-to-coefficient-alpha/ADD66755CCF95B949428F8DB97AFB1B0",
+      "bytes": 828075,
+      "sha256": "e99ae06dbe51b1350c8550aac3c43ed14f1652cc2a6f9d9c13cf71c079d70a0e",
+      "cachePath": "outputs/loop/methods/GREEN-YANG-ABSTRACT.html",
+      "textPath": "outputs/loop/methods/GREEN-YANG-ABSTRACT.txt",
+      "title": "Samuel B. Green and Yanyun Yang: Reliability of Summed Item Scores Using Structural Equation Modeling: An Alternative to Coefficient Alpha",
+      "doi": "10.1007/s11336-008-9099-3",
+      "classification": "primary_method_article_abstract_only",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Publisher abstract only.",
+      "limits": "FULL TEXT UNAVAILABLE: Eq.21 and derivation not self-read; abstract is not procedural verification."
+    },
+    {
+      "id": "LUMLEY",
+      "requestedUrl": "https://www.jstatsoft.org/article/view/v009i08/paper-5.pdf",
+      "retrievedAt": "2026-10-03T01:28:12.656623+00:00",
+      "status": 200,
+      "url": "https://www.jstatsoft.org/article/download/v009i08/931",
+      "bytes": 503960,
+      "sha256": "9ad8e83a56830607ff338de5b2076c3bd25c67670d49fd663b17998eb257991a",
+      "cachePath": "outputs/loop/methods/LUMLEY.pdf",
+      "textPath": "outputs/loop/methods/LUMLEY.txt",
+      "title": "Thomas Lumley: Analysis of Complex Survey Samples",
+      "doi": "10.18637/jss.v009.i08",
+      "classification": "primary_method_article",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Introduction, section 2.1, section 2.2.1 and initial section 2.2.2, pp.1–5.",
+      "limits": "Supports design-based ratios/linearization only in read scope; 2004 paper is not current software-version proof or small-domain coverage guarantee."
+    },
+    {
+      "id": "SURVEY-MANUAL",
+      "requestedUrl": "https://cran.r-project.org/web/packages/survey/survey.pdf",
+      "retrievedAt": "2026-10-03T01:28:13.487755+00:00",
+      "status": 200,
+      "url": "https://cran.r-project.org/web/packages/survey/survey.pdf",
+      "bytes": 547598,
+      "sha256": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c",
+      "cachePath": "outputs/loop/methods/SURVEY-MANUAL.pdf",
+      "textPath": "outputs/loop/methods/SURVEY-MANUAL.txt",
+      "title": "survey 4.5 manual (9 May 2026)",
+      "doi": null,
+      "classification": "official_documentation",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "as.svrepdesign pp.10–11; bootweights pp.14–15; subset.survey.design p.76; surveyoptions pp.77–78; svrepdesign degrees-of-freedom paragraph p.84; svyCprod pp.100–101; svydesign pp.103–106 and svyfactanal details pp.106–107.",
+      "limits": "Bootstrap warning excludes strict PPS justification. WR ultimate-cluster approximation without fpc is not exact PPS-WOR variance. Domain loneliness and sparse support need separate coverage scrutiny; no runtime found."
+    },
+    {
+      "id": "RAO-WU-YUE",
+      "requestedUrl": "https://www150.statcan.gc.ca/n1/pub/12-001-x/1992002/article/14486-eng.pdf",
+      "retrievedAt": "2026-10-03T01:28:11.328022+00:00",
+      "status": 200,
+      "url": "https://www150.statcan.gc.ca/n1/pub/12-001-x/1992002/article/14486-eng.pdf",
+      "bytes": 526012,
+      "sha256": "0ef8606ccf283ce73cedca4e9d2062713ccd19c937c074ef496f98d947e19cc7",
+      "cachePath": "outputs/loop/methods/RAO-WU-YUE.pdf",
+      "textPath": "outputs/loop/methods/RAO-WU-YUE.txt",
+      "title": "J. N. K. Rao, C. F. J. Wu and K. Yue: Some recent work on resampling methods for complex surveys",
+      "doi": null,
+      "classification": "primary_method_article",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Scanned original visually read using rendered pages; claims only section 2 pp.210–211 and section 3.3 pp.214–215 equations (3.4)/(3.5) and stated conditions. Pages 209–215 inspected; later simulation/conclusions not fully read.",
+      "limits": "Complete-response and simplified selection/weight assumptions; not proof of generic ESS PPS bootstrap or recalibration. Text extraction empty, so source was read visually."
+    },
+    {
+      "id": "WOLF-ETAL",
+      "requestedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4334479/",
+      "retrievedAt": "2026-10-03T01:28:14.767702+00:00",
+      "status": 200,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4334479/",
+      "bytes": 179741,
+      "sha256": "9b42aae1b14918b7a993ab5d25f10c18bb409e8d336ba2c04efcf36b5031690e",
+      "cachePath": "outputs/loop/methods/WOLF-ETAL.html",
+      "textPath": "outputs/loop/methods/WOLF-ETAL.txt",
+      "title": "Erika J. Wolf et al.: Sample Size Requirements for Structural Equation Models: An Evaluation of Power, Bias, and Solution Propriety",
+      "doi": "10.1177/0013164413495237",
+      "classification": "primary_method_article",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Original Monte Carlo motivation; Data Analysis Overview and Criteria for Evaluating Bias, Power and Solution Propriety; Lesson 3A and Limitations sections.",
+      "limits": "Original simulation uses normal continuous data and ML, with MCAR missingness scenarios; no transfer of its numeric sample-size results to ordinal weighted clustered ESS models."
+    },
+    {
+      "id": "SCHWARTZ",
+      "requestedUrl": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/ESS_core_questionnaire_human_values.pdf",
+      "retrievedAt": "2026-10-03T01:28:15.080230+00:00",
+      "status": 200,
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/ESS_core_questionnaire_human_values.pdf",
+      "bytes": 411213,
+      "sha256": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+      "cachePath": "outputs/loop/methods/SCHWARTZ.pdf",
+      "textPath": "outputs/loop/methods/SCHWARTZ.txt",
+      "title": "Shalom H. Schwartz: A Proposal for Measuring Value Orientations across Nations (ESS human values proposal)",
+      "doi": null,
+      "classification": "primary_instrument_methodology",
+      "readStatus": "read_in_claimed_scope",
+      "readScope": "Correcting for Response Tendencies p.17 and Estimation of value orientation scores p.30, full text of these sections.",
+      "limits": "Relative value priorities require response-tendency handling across values; raw uncentered subset means cannot inherit that claim. No ESS human-values responses or empirical score results read."
+    }
+  ],
+  "claims": [
+    {
+      "id": "L-METH-001",
+      "sourceIds": [
+        "ESS-WEIGHTS"
+      ],
+      "claim": "ESS recommends anweight and psu/stratum-aware standard errors; single-country pspwght differs by a constant population factor.",
+      "scopeAndCounterevidence": "P01/P07; conditional approximation and population limitations explicit."
+    },
+    {
+      "id": "L-METH-002",
+      "sourceIds": [
+        "ESS11-COUNTRY"
+      ],
+      "claim": "DE historical fieldwork dates and warning against federal-state representativity claims.",
+      "scopeAndCounterevidence": "P01/P10; no complete design or 4.2 confirmation."
+    },
+    {
+      "id": "L-METH-003",
+      "sourceIds": [
+        "ASPAROUHOV-2005"
+      ],
+      "claim": "Weighted ordinal WLS estimates and stratum/cluster correction are primary-method supported in the read scope.",
+      "scopeAndCounterevidence": "P04; no automatic ESS model validity."
+    },
+    {
+      "id": "L-METH-004",
+      "sourceIds": [
+        "MPLUS-15"
+      ],
+      "claim": "WEIGHT supports WLSMV and is not a frequency weight; STRATIFICATION and CLUSTER are documented.",
+      "scopeAndCounterevidence": "P04 software candidate only."
+    },
+    {
+      "id": "L-METH-005",
+      "sourceIds": [
+        "MPLUS-16"
+      ],
+      "claim": "EFA COMPLEX ordinal WLSMV and rotation starts are documented; WLSMV nested comparisons require DIFFTEST rather than simple chi-square subtraction.",
+      "scopeAndCounterevidence": "P04/P09; no executable smoke or identification proof."
+    },
+    {
+      "id": "L-METH-006",
+      "sourceIds": [
+        "MPLUS-1"
+      ],
+      "claim": "WLS ordinal missing-data conditions are narrower than general outcome-dependent MAR.",
+      "scopeAndCounterevidence": "P05; neither reference nor user masking is validated by a missing-data estimator."
+    },
+    {
+      "id": "L-METH-007",
+      "sourceIds": [
+        "LAVAAN-CATEGORICAL",
+        "LAVAAN-0.7"
+      ],
+      "claim": "Categorical WLSMV and current sampling-weight support exist; categorical FIML is not supported by the tutorial.",
+      "scopeAndCounterevidence": "P04/P05; joint ESS stratification+PSU path remains unproved."
+    },
+    {
+      "id": "L-METH-008",
+      "sourceIds": [
+        "TSE-LAI-ZHANG-HTML"
+      ],
+      "claim": "Observed ordinal composites and latent factor means have different invariance requirements; observed-composite interpretation calls for fully strict invariance in the discussed model.",
+      "scopeAndCounterevidence": "P09; latent or partial-scalar success does not license the exported score."
+    },
+    {
+      "id": "L-METH-009",
+      "sourceIds": [
+        "WU-ESTABROOK-ORIGINAL"
+      ],
+      "claim": "Identify each invariance model separately; some constraints/models are equivalent and thresholds precede independently testable restrictions.",
+      "scopeAndCounterevidence": "P09; category-count-specific identification and partial-invariance limitations remain."
+    },
+    {
+      "id": "L-METH-010",
+      "sourceIds": [
+        "SEMTOOLS-MANUAL"
+      ],
+      "claim": "measEq.syntax documents Wu.Estabrook.2016 identification and theta/std.lv choices.",
+      "scopeAndCounterevidence": "P09 software syntax candidate, no full COMPLEX runtime proof."
+    },
+    {
+      "id": "L-METH-011",
+      "sourceIds": [
+        "SEMTOOLS-MANUAL"
+      ],
+      "claim": "compRelSEM distinguishes actual ordinal composite reliability from latent-response reliability and accepts composite weights via W syntax.",
+      "scopeAndCounterevidence": "P06; lavaan object required, mixed continuous/categorical unsupported."
+    },
+    {
+      "id": "L-METH-012",
+      "sourceIds": [
+        "GREEN-YANG-ABSTRACT"
+      ],
+      "claim": "Only existence and abstract-level purpose of the reliability article checked.",
+      "scopeAndCounterevidence": "P06 primary procedural evidence missing; no Eq.21 claim verified from this abstract."
+    },
+    {
+      "id": "L-METH-013",
+      "sourceIds": [
+        "LUMLEY",
+        "SURVEY-MANUAL"
+      ],
+      "claim": "Survey domain linearization retains design and joint covariance; svydesign without fpc uses WR top-cluster approximation.",
+      "scopeAndCounterevidence": "P07; singleton/small-domain/weight-construction limitations explicit."
+    },
+    {
+      "id": "L-METH-014",
+      "sourceIds": [
+        "SURVEY-MANUAL"
+      ],
+      "claim": "Standard survey bootweights are strictly appropriate to SRS/stratified SRS first-stage selection, not PPS.",
+      "scopeAndCounterevidence": "P07; generic PSU bootstrap deliberately not selected."
+    },
+    {
+      "id": "L-METH-015",
+      "sourceIds": [
+        "RAO-WU-YUE"
+      ],
+      "claim": "Resampling-weight procedures have selection, response and weight-adjustment assumptions.",
+      "scopeAndCounterevidence": "P07; no unconditional ESS PPS/bootstrap endorsement."
+    },
+    {
+      "id": "L-METH-016",
+      "sourceIds": [
+        "WOLF-ETAL"
+      ],
+      "claim": "Sample-size calibration should evaluate model-dependent bias, power and solution propriety.",
+      "scopeAndCounterevidence": "P09; proposed numeric goals are own loss/MC budget, not taken from continuous-ML sample-size results."
+    },
+    {
+      "id": "L-METH-017",
+      "sourceIds": [
+        "SCHWARTZ"
+      ],
+      "claim": "Relative value priorities require accounting for response tendencies across the value battery.",
+      "scopeAndCounterevidence": "P02; possible PVQ scope limit requires separate approval, no items removed."
+    }
+  ],
+  "unusedOrFailedRetrievals": [
+    {
+      "id": "MPLUS-12",
+      "requestedUrl": "https://www.statmodel.com/HTML_UG/chapter12V8.htm",
+      "retrievedAt": "2026-10-03T01:28:08.992687+00:00",
+      "status": 200,
+      "url": "https://www.statmodel.com/HTML_UG/chapter12V8.htm",
+      "bytes": 181422,
+      "sha256": "3fa40b3e83b6c510f87bf028793430a677f775419517b9ad5be389f60cbcf7c3",
+      "cachePath": "outputs/loop/methods/MPLUS-12.html",
+      "textPath": "outputs/loop/methods/MPLUS-12.txt",
+      "readStatus": "not_used_as_procedural_evidence",
+      "reason": "Downloaded but outside claimed read scope or failed fulltext access"
+    },
+    {
+      "id": "TSE-LAI-ZHANG",
+      "requestedUrl": "https://link.springer.com/content/pdf/10.3758/s13428-023-02247-6.pdf",
+      "retrievedAt": "2026-10-03T01:28:09.784475+00:00",
+      "status": 400,
+      "url": "https://link.springer.com/content/pdf/10.3758/s13428-023-02247-6.pdf",
+      "bytes": 220,
+      "sha256": "0329d9d489d0cd199b4cafb06ece89ed67a28055b2046e03efe7ee1e803f04ec",
+      "cachePath": "outputs/loop/methods/TSE-LAI-ZHANG.pdf",
+      "textPath": "outputs/loop/methods/TSE-LAI-ZHANG.txt",
+      "readStatus": "not_used_as_procedural_evidence",
+      "reason": "Downloaded but outside claimed read scope or failed fulltext access"
+    },
+    {
+      "id": "WU-ESTABROOK-ABSTRACT",
+      "requestedUrl": "https://link.springer.com/article/10.1007/s11336-016-9506-0",
+      "retrievedAt": "2026-10-03T01:28:10.381394+00:00",
+      "status": 200,
+      "url": "https://link.springer.com/article/10.1007/s11336-016-9506-0",
+      "bytes": 303877,
+      "sha256": "8a66b15abff05d7cef1c87e6abc6a0117257720b64c80a1aaf77408ac8ef7e99",
+      "cachePath": "outputs/loop/methods/WU-ESTABROOK-ABSTRACT.html",
+      "textPath": "outputs/loop/methods/WU-ESTABROOK-ABSTRACT.txt",
+      "readStatus": "not_used_as_procedural_evidence",
+      "reason": "Downloaded but outside claimed read scope or failed fulltext access"
+    },
+    {
+      "id": "MPLUS-13",
+      "requestedUrl": "https://www.statmodel.com/HTML_UG/chapter13V8.htm",
+      "url": "https://www.statmodel.com/HTML_UG/chapter13V8.htm",
+      "status": 200,
+      "bytes": 86185,
+      "sha256": "1c9a2b4ee826658c28f6c9a8c1e5d8551d58d3f6c33a108d494b086b27c97856",
+      "retrievedAt": "2026-10-03T01:29:12.455087+00:00",
+      "cachePath": "outputs/loop/methods/MPLUS-13.html",
+      "textPath": "outputs/loop/methods/MPLUS-13.txt",
+      "readStatus": "not_used_as_procedural_evidence",
+      "reason": "Downloaded but outside claimed read scope or failed fulltext access"
+    },
+    {
+      "id": "MPLUS-RESAMPLING",
+      "requestedUrl": "https://statmodel.com/download/Resampling_Methods5.pdf",
+      "url": "https://statmodel.com/download/Resampling_Methods5.pdf",
+      "status": 200,
+      "bytes": 99760,
+      "sha256": "b588c1275551d90fc3b98e1fad8060bf030aa7299a428922b6d2c88822ff1f55",
+      "retrievedAt": "2026-10-03T01:30:54.960592+00:00",
+      "cachePath": "outputs/loop/methods/MPLUS-RESAMPLING.pdf",
+      "textPath": "outputs/loop/methods/MPLUS-RESAMPLING.txt",
+      "readStatus": "not_used_as_procedural_evidence",
+      "reason": "Downloaded but outside claimed read scope or failed fulltext access"
+    }
+  ],
+  "ownProposals": {
+    "notLiteratureCutoffs": true,
+    "scoreEffectTolerance": 0.05,
+    "percentileEffectTolerancePoints": 5,
+    "populationAverageRmsMeasurementErrorCandidate": 0.1,
+    "assignmentStabilityCandidate": 0.9,
+    "domainMinRawNAdditionalGuardCandidate": 50,
+    "simulationRepetitionsPerCriticalScenarioCandidate": 2000,
+    "simulationRunForSemInvarianceOrReliability": false,
+    "status": "Reviewable proposals, not frozen or empirically passed"
+  },
+  "syntheticCalibration": {
+    "script": "pipeline/synthetic/methoden_kalibrierung.py",
+    "aggregate": "reports/loop/synthetic/LOOP-002-methoden-kalibrierung.json",
+    "status": "SYNTHETIC_CALIBRATION_ONLY",
+    "noRealInputPathsAccepted": true,
+    "limits": "Normal clusters with independent weights, bounded numeric pseudoitems; no PPS, weight recalibration, EFA/CFA, invariance, reliability or personal error model."
+  }
+}

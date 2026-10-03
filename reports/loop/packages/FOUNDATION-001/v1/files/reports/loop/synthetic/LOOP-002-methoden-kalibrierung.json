@@ -1,0 +1,293 @@
+{
+  "status": "SYNTHETIC_CALIBRATION_ONLY",
+  "uses_real_ess_data": false,
+  "seed": 2026100302,
+  "rng": "NumPy default_rng / PCG64",
+  "repetitions_per_scenario": 1000,
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.3"
+  },
+  "script_sha256": "42349e34f5529026e2b067d9986200031110846f105860d301588d58bcc37fc3",
+  "scenario_design": {
+    "strata": 8,
+    "psus_per_stratum": 10,
+    "observations_per_psu": 20,
+    "independent_symmetric_normal_cluster_and_individual_terms": true,
+    "ordinal_category_scores": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "thresholds": [-1.0, -0.3, 0.3, 1.0],
+    "domain_latent_shift": 0.2,
+    "weights_independent_of_latent_values": true,
+    "pps_sampling_or_nonresponse_calibration": false,
+    "normal_instead_of_t_interval": true
+  },
+  "scenarios": [
+    {
+      "latent_cluster_variance_fraction": 0.0,
+      "independent_weight_cv": 0.0,
+      "population_observed_mean": 0.531052544044834,
+      "mean_estimate": 0.53105140625,
+      "empirical_variance": 6.918914908560903e-5,
+      "mean_linearised_variance": 6.64143798828125e-5,
+      "linearised_to_empirical_variance_ratio": 0.959895890620605,
+      "asymptotic_normal_interval_coverage": 0.948,
+      "coverage_mc_standard_error": 0.006892024376045111,
+      "row_split_shared_psu_fraction": 1.0,
+      "whole_psu_split_shared_psu_fraction": 0.0,
+      "row_split_means_correlation_across_samples": 0.034143551821999546,
+      "whole_psu_split_means_correlation_across_samples": 0.02584757557033906,
+      "mean_joint_covariance": [
+        [6.64143798828125e-5, 6.702541775173621e-5, 6.580334201388879e-5, -8.342499457465287e-5],
+        [
+          6.702541775173621e-5, 0.00013369845920138896, 3.5237630208333345e-7, -8.441739366319438e-5
+        ],
+        [
+          6.580334201388879e-5, 3.5237630208333345e-7, 0.00013125430772569473, -8.243259548611106e-5
+        ],
+        [-8.342499457465287e-5, -8.441739366319438e-5, -8.243259548611106e-5, 0.000117741037326389]
+      ],
+      "joint_covariance_order": [
+        "all_mean",
+        "domain_0_mean",
+        "domain_1_mean",
+        "midrank_cdf_at_0_5"
+      ],
+      "mean_domain_difference_variance_joint": 0.00026424801432291674,
+      "mean_domain_difference_variance_diagonal_only": 0.00026495276692708336,
+      "diagonal_only_to_joint_contrast_variance_ratio": 1.0026670119204961
+    },
+    {
+      "latent_cluster_variance_fraction": 0.0,
+      "independent_weight_cv": 1.0,
+      "population_observed_mean": 0.531052544044834,
+      "mean_estimate": 0.5308304027285575,
+      "empirical_variance": 0.0001304611602577213,
+      "mean_linearised_variance": 0.00013287089363689053,
+      "linearised_to_empirical_variance_ratio": 1.0184708872311796,
+      "asymptotic_normal_interval_coverage": 0.952,
+      "coverage_mc_standard_error": 0.006892024376045111,
+      "row_split_shared_psu_fraction": 1.0,
+      "whole_psu_split_shared_psu_fraction": 0.0,
+      "row_split_means_correlation_across_samples": 0.007088868410137707,
+      "whole_psu_split_means_correlation_across_samples": -0.04739680899990214,
+      "mean_joint_covariance": [
+        [
+          0.00013287089363689072, 0.00013370308613581673, 0.00013003914115821904,
+          -0.00016682467730042065
+        ],
+        [
+          0.00013370308613581673, 0.00026704537862879774, 1.753504351211361e-7,
+          -0.00016839426191594324
+        ],
+        [
+          0.00013003914115821904, 1.753504351211361e-7, 0.00025915739820786164,
+          -0.00016278811326084767
+        ],
+        [
+          -0.00016682467730042065, -0.00016839426191594324, -0.00016278811326084767,
+          0.00023514627846444035
+        ]
+      ],
+      "joint_covariance_order": [
+        "all_mean",
+        "domain_0_mean",
+        "domain_1_mean",
+        "midrank_cdf_at_0_5"
+      ],
+      "mean_domain_difference_variance_joint": 0.0005258520759664169,
+      "mean_domain_difference_variance_diagonal_only": 0.0005262027768366592,
+      "diagonal_only_to_joint_contrast_variance_ratio": 1.0006669192464397
+    },
+    {
+      "latent_cluster_variance_fraction": 0.25,
+      "independent_weight_cv": 0.0,
+      "population_observed_mean": 0.531052544044834,
+      "mean_estimate": 0.53120953125,
+      "empirical_variance": 0.00032163926423982574,
+      "mean_linearised_variance": 0.00035236479220920137,
+      "linearised_to_empirical_variance_ratio": 1.09552791398772,
+      "asymptotic_normal_interval_coverage": 0.95,
+      "coverage_mc_standard_error": 0.006892024376045111,
+      "row_split_shared_psu_fraction": 1.0,
+      "whole_psu_split_shared_psu_fraction": 0.0,
+      "row_split_means_correlation_across_samples": 0.7437150089285991,
+      "whole_psu_split_means_correlation_across_samples": -0.03605765710204294,
+      "mean_joint_covariance": [
+        [
+          0.00035236479220920105, 0.0003545970540364582, 0.0003501325303819442,
+          -0.00043283501519097224
+        ],
+        [
+          0.0003545970540364582, 0.0004087466362847228, 0.00030044747178819463,
+          -0.0004357488172743061
+        ],
+        [
+          0.0003501325303819442, 0.00030044747178819463, 0.0003998175889756938,
+          -0.000429921213107639
+        ],
+        [
+          -0.00043283501519097224, -0.0004357488172743061, -0.000429921213107639,
+          0.0005452453124999994
+        ]
+      ],
+      "joint_covariance_order": [
+        "all_mean",
+        "domain_0_mean",
+        "domain_1_mean",
+        "midrank_cdf_at_0_5"
+      ],
+      "mean_domain_difference_variance_joint": 0.0002076692816840277,
+      "mean_domain_difference_variance_diagonal_only": 0.0008085642252604166,
+      "diagonal_only_to_joint_contrast_variance_ratio": 3.893518669220711
+    },
+    {
+      "latent_cluster_variance_fraction": 0.25,
+      "independent_weight_cv": 1.0,
+      "population_observed_mean": 0.531052544044834,
+      "mean_estimate": 0.5318854942575612,
+      "empirical_variance": 0.0004151263490336857,
+      "mean_linearised_variance": 0.0004198711346182258,
+      "linearised_to_empirical_variance_ratio": 1.0114297384292392,
+      "asymptotic_normal_interval_coverage": 0.955,
+      "coverage_mc_standard_error": 0.006892024376045111,
+      "row_split_shared_psu_fraction": 1.0,
+      "whole_psu_split_shared_psu_fraction": 0.0,
+      "row_split_means_correlation_across_samples": 0.5654029228125651,
+      "whole_psu_split_means_correlation_across_samples": -0.019140346208506027,
+      "mean_joint_covariance": [
+        [
+          0.00041987113461822563, 0.0004226188935711317, 0.00041473709283176705,
+          -0.0005178273055509648
+        ],
+        [
+          0.0004226188935711317, 0.0005427355959214254, 0.00030122544700299426,
+          -0.0005212451606142062
+        ],
+        [
+          0.00041473709283176705, 0.00030122544700299426, 0.0005277108236494098,
+          -0.0005114139207595203
+        ],
+        [
+          -0.0005178273055509648, -0.0005212451606142062, -0.0005114139207595203,
+          0.000665131537314595
+        ]
+      ],
+      "joint_covariance_order": [
+        "all_mean",
+        "domain_0_mean",
+        "domain_1_mean",
+        "midrank_cdf_at_0_5"
+      ],
+      "mean_domain_difference_variance_joint": 0.00046799552556484535,
+      "mean_domain_difference_variance_diagonal_only": 0.0010704464195708345,
+      "diagonal_only_to_joint_contrast_variance_ratio": 2.287300542625623
+    },
+    {
+      "latent_cluster_variance_fraction": 0.5,
+      "independent_weight_cv": 0.0,
+      "population_observed_mean": 0.531052544044834,
+      "mean_estimate": 0.53080796875,
+      "empirical_variance": 0.0006506894042235594,
+      "mean_linearised_variance": 0.0006429784749348959,
+      "linearised_to_empirical_variance_ratio": 0.9881496006564534,
+      "asymptotic_normal_interval_coverage": 0.95,
+      "coverage_mc_standard_error": 0.006892024376045111,
+      "row_split_shared_psu_fraction": 1.0,
+      "whole_psu_split_shared_psu_fraction": 0.0,
+      "row_split_means_correlation_across_samples": 0.8926886346114393,
+      "whole_psu_split_means_correlation_across_samples": 0.04646136457085024,
+      "mean_joint_covariance": [
+        [
+          0.0006429784749348959, 0.0006466278700086818, 0.0006393290798611107,
+          -0.0007928878092447924
+        ],
+        [
+          0.0006466278700086818, 0.0006870811740451386, 0.0006061745659722221,
+          -0.0007971262261284729
+        ],
+        [
+          0.0006393290798611107, 0.0006061745659722221, 0.0006724835937500006,
+          -0.0007886493923611101
+        ],
+        [
+          -0.0007928878092447924, -0.0007971262261284729, -0.0007886493923611101,
+          0.0009966866753472223
+        ]
+      ],
+      "joint_covariance_order": [
+        "all_mean",
+        "domain_0_mean",
+        "domain_1_mean",
+        "midrank_cdf_at_0_5"
+      ],
+      "mean_domain_difference_variance_joint": 0.00014721563585069436,
+      "mean_domain_difference_variance_diagonal_only": 0.0013595647677951388,
+      "diagonal_only_to_joint_contrast_variance_ratio": 9.23519271535807
+    },
+    {
+      "latent_cluster_variance_fraction": 0.5,
+      "independent_weight_cv": 1.0,
+      "population_observed_mean": 0.531052544044834,
+      "mean_estimate": 0.5319215359585423,
+      "empirical_variance": 0.0006752034962154878,
+      "mean_linearised_variance": 0.0007086394171889728,
+      "linearised_to_empirical_variance_ratio": 1.0495197687229008,
+      "asymptotic_normal_interval_coverage": 0.948,
+      "coverage_mc_standard_error": 0.006892024376045111,
+      "row_split_shared_psu_fraction": 1.0,
+      "whole_psu_split_shared_psu_fraction": 0.0,
+      "row_split_means_correlation_across_samples": 0.7329926889809715,
+      "whole_psu_split_means_correlation_across_samples": -0.04025284431604552,
+      "mean_joint_covariance": [
+        [
+          0.0007086394171889727, 0.0007096572439799324, 0.0007047863532159457,
+          -0.0008749217211057959
+        ],
+        [
+          0.0007096572439799324, 0.0008122867608361887, 0.0006061345330927216,
+          -0.0008759800400861297
+        ],
+        [
+          0.0007047863532159457, 0.0006061345330927216, 0.0008016208285462838, -0.000870357065205293
+        ],
+        [
+          -0.0008749217211057959, -0.0008759800400861297, -0.000870357065205293,
+          0.0011118339664196915
+        ]
+      ],
+      "joint_covariance_order": [
+        "all_mean",
+        "domain_0_mean",
+        "domain_1_mean",
+        "midrank_cdf_at_0_5"
+      ],
+      "mean_domain_difference_variance_joint": 0.00040163852319702906,
+      "mean_domain_difference_variance_diagonal_only": 0.0016139075893824716,
+      "diagonal_only_to_joint_contrast_variance_ratio": 4.018308743234642
+    }
+  ],
+  "bounded_score_precision_planning": {
+    "basis": "Own worst-case variance bound Var(S)<=1/4; normal approximation, not design guarantee",
+    "target_95_percent_half_width": 0.05,
+    "required_srs_effective_n_ceiling": 385,
+    "half_width_at_n_50": 0.13859038243496774
+  },
+  "equal_weight_dominance_example": {
+    "synthetic_item_variances": [0.25, 0.0, 0.0],
+    "contribution_shares": [1.0, 0.0, 0.0],
+    "maximum_leave_one_out_score_change": 0.16666666666666669
+  },
+  "same_count_different_masks_example": {
+    "synthetic_profile": [0.0, 1.0],
+    "mask_a": [0],
+    "mask_b": [1],
+    "answer_count_each": 1,
+    "subset_scores": [0.0, 1.0]
+  },
+  "limits": [
+    "No ordinal EFA/CFA, invariance, reliability, or personal-error-model fit was run.",
+    "No empirical precision, threshold, item mask, or design validity for ESS was established.",
+    "The bootstrap/PPS and post-stratification problems are not solved by this experiment.",
+    "Correlations across repeated synthetic samples are scenario-dependent; whole-PSU allocation is not a universal independence proof."
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T01:51:21.204021+00:00",
+  "updatedAtUtc": "2026-10-03T02:02:24.252836+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "9db0bf14902f83aed922fb8be0e0f2ff8ef8b6c1",
+  "currentHead": "6a9e9e20231e4c820c74f357e7ae3c9a8280f2a1",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -73,7 +73,9 @@
     "empiricalValidation": "NICHT_GEPRÜFT",
     "otherModelFamily": "BLOCKIERT",
     "currentBrowserPlaceholderPages": "BESTANDEN",
-    "currentHandbookGuard": "NICHT_BESTANDEN"
+    "currentHandbookGuard": "NICHT_BESTANDEN",
+    "foundationFiveReviewers": "NICHT_GEPRÜFT",
+    "currentInfrastructure": "NICHT_BESTANDEN"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -85,18 +87,18 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/loop001_author_inventory",
-      "role": "source-author",
-      "status": "RUNNING"
-    },
-    {
-      "name": "/root/loop002_author_methods",
-      "role": "methods-author",
-      "status": "RUNNING"
-    },
-    {
-      "name": "/root/loop000_recheck_guard",
+      "name": "/root/loop000_recheck_browser",
       "role": "independent-recheck",
+      "status": "RUNNING"
+    },
+    {
+      "name": "/root/foundation_review_sources",
+      "role": "source-reviewer",
+      "status": "RUNNING"
+    },
+    {
+      "name": "/root/foundation_review_politics",
+      "role": "politics-reviewer",
       "status": "RUNNING"
     }
   ],
@@ -120,19 +122,27 @@
       "id": "LOOP-002",
       "status": "RUNNING",
       "predefinedCriteria": "docs/arbeitsloop.md"
+    },
+    {
+      "id": "FOUNDATION-001",
+      "status": "RUNNING",
+      "predefinedCriteria": "reports/loop/foundation-pruefauftrag.md",
+      "manifest": "reports/loop/packages/FOUNDATION-001/v1/manifest.json",
+      "manifestSha256": "213eec2fba90ae60594323f1e52c39ed77d49af4656f3eea481c6300ecc0c5bb",
+      "reviewWaves": "sources and politics running; methods/neutrality/repro next; new juror after decisions/repairs"
     }
   ],
-  "nextConcreteStep": "Nachprüffassung der angenommenen LOOP-000-Findings einfrieren; Browser und technische Checks ausführen. Autorenpaket nach Abschluss getrennt einfrieren und fünf Fachreviews in Wellen starten.",
+  "nextConcreteStep": "Zweiten LOOP-000-Nachprüfbericht abschließen lassen, dann belegte Infrastrukturfehler reparieren und wieder unabhängig prüfen. FOUNDATION-001 fünf Erstberichte in Wellen vollständig sammeln; davor Forschungsartefakte unverändert lassen.",
   "checkpoint": {
-    "lastLocalCommit": "9db0bf14902f83aed922fb8be0e0f2ff8ef8b6c1",
-    "lastVerifiedRemoteCommit": "9db0bf14902f83aed922fb8be0e0f2ff8ef8b6c1",
-    "lastVerifiedPushAtUtc": "2026-10-03T01:44:12.685712+00:00",
+    "lastLocalCommit": "6a9e9e20231e4c820c74f357e7ae3c9a8280f2a1",
+    "lastVerifiedRemoteCommit": "6a9e9e20231e4c820c74f357e7ae3c9a8280f2a1",
+    "lastVerifiedPushAtUtc": "2026-10-03T01:53:02.690150+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-002.json"
+    "record": "reports/loop/push-003.json"
   },
-  "scientificStatus": "Theorieentwürfe mit 14 Themen/14 Aussagen vorhanden; unabhängige Fachprüfung offen. Inventar/Methoden in Ausarbeitung. Keine endgültigen Dimensionen, ESS-Import, A/B oder Modelltags. Claude wegen Sitzungslimit blockiert.",
+  "scientificStatus": "Drei Autorenentwürfe abgegeben und 25-Datei-Paket/36 öffentliche Quellartefakte eingefroren. Fünf Fachreviews in Wellen gestartet. Inventar mit 29 offenen Variablenzuordnungen, 70 Antwortblöcken, 23 Missingblöcken und 203 Routing-/Kontextstellen; keine Phase1-Abnahme. Kein Rohantwortimport, A/B, Modell oder öffentliche Tags.",
   "technicalRecord": "reports/loop/000-technical.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",

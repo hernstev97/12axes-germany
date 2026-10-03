@@ -1,0 +1,2565 @@
+{
+  "artifact": "ESS11 Germany original questionnaire inventory, AUTHOR DRAFT",
+  "status": "ENTWURF_TEILWEISE_STRUKTURIERT_KEINE_PHASE1_ABNAHME",
+  "createdOn": "2026-10-03",
+  "round": 11,
+  "questionnaireYear": 2023,
+  "targetDataCandidateEdition": "4.2; no response file read",
+  "metadataEdition": "Codebook 4.1",
+  "sources": {
+    "ESS11-DE-QUESTIONNAIRE": {
+      "file": "ESS11_questionnaires_DE.pdf",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "pages": 100
+    },
+    "ESS11-DE-SHOWCARDS": {
+      "file": "ESS11_showcards_DE.pdf",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "pages": 100
+    },
+    "ESS11-CODEBOOK": {
+      "file": "ESS11_appendix_a7_e04_1.pdf",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "pages": 552,
+      "edition": "4.1"
+    }
+  },
+  "license": {
+    "documentation": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "evidence": "ESS disclaimer Conditions of use, https://www.europeansocialsurvey.org/contact/disclaimer",
+    "liveEvidenceFile": "outputs/loop/inventory/ess-disclaimer.html",
+    "liveEvidenceSha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+    "attribution": "European Social Survey European Research Infrastructure (ESS ERIC) (2025). ESS round 11 - 2023. Social inequalities in health, Gender in contemporary Europe. Sikt - Norwegian Agency for Shared Services in Education and Research. https://doi.org/10.21338/ess11-2023. Deutsche Fragebogen-/Listenheftdokumentation und Codebook 4.1, Fundstellen je Zeile; CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. Extraktion, Strukturierung und Entwurfsannotationen durch dieses Projekt; keine ESS-Billigung.",
+    "changes": "PDF text extraction, inventory structure and author draft annotations; no rewritten question, no ESS endorsement",
+    "publicationGate": "Specific inventory reuse subject to repository review; this author records the public documentation licence, not legal approval"
+  },
+  "build": {
+    "command": "python3 pipeline/inventar.py build",
+    "verify": "python3 pipeline/inventar.py check",
+    "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+    "poppler": "pdftotext version 26.08.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+    "builderSha256": "4f49a267327e72662614048de74a1fd27d0b6bb28da36823ccc0716ec5a4af3b",
+    "csvSha256": "685e4c7114129d0cbd6625018c38c1a1f9900b51581d711bf24a548f10aac1c2",
+    "normalization": "Geometry orders words into source lines. Line breaks, displayed hyphens, spelling and punctuation retained. Table response captions serialized; no polarity or item rewriting."
+  },
+  "accessBoundary": {
+    "rawDataRead": false,
+    "respondentRows": false,
+    "portalAnalysis": false,
+    "partyDistributions": false,
+    "reviewerRole": false,
+    "otherModelFamily": false
+  },
+  "coverage": {
+    "labelOccurrences": 254,
+    "rows": 296,
+    "uniqueQuestionLabels": 249,
+    "portraits": 42,
+    "moduleCounts": {
+      "A": 6,
+      "B": 46,
+      "C": 43,
+      "D": 34,
+      "E": 32,
+      "F": 69,
+      "H": 44,
+      "I": 9,
+      "K": 4,
+      "J": 9
+    },
+    "categoryStatusCounts": {
+      "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE": 70,
+      "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN": 153,
+      "ENTWURF_TABELLENKOPF_UND_ZEILE": 73
+    },
+    "missingStatusCounts": {
+      "ENTWURF_ORIGINALBLOCK_CODEPAAR_ZUORDNUNG_NACHPRUEFEN": 200,
+      "ENTWURF_FRAGEBOGEN_CODES": 73,
+      "OFFEN": 23
+    },
+    "capturedLabels": [
+      {
+        "frage_id": "A1",
+        "pdf_seite": 3,
+        "y": 100.768383
+      },
+      {
+        "frage_id": "A2",
+        "pdf_seite": 3,
+        "y": 327.328396
+      },
+      {
+        "frage_id": "A3",
+        "pdf_seite": 3,
+        "y": 588.208371
+      },
+      {
+        "frage_id": "A4",
+        "pdf_seite": 4,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "A5",
+        "pdf_seite": 4,
+        "y": 277.768384
+      },
+      {
+        "frage_id": "A6",
+        "pdf_seite": 4,
+        "y": 467.4884
+      },
+      {
+        "frage_id": "B1",
+        "pdf_seite": 5,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "B2",
+        "pdf_seite": 5,
+        "y": 315.808384
+      },
+      {
+        "frage_id": "B3",
+        "pdf_seite": 5,
+        "y": 575.008389
+      },
+      {
+        "frage_id": "B4",
+        "pdf_seite": 6,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B5",
+        "pdf_seite": 6,
+        "y": 304.288396
+      },
+      {
+        "frage_id": "B6",
+        "pdf_seite": 7,
+        "y": 177.56839
+      },
+      {
+        "frage_id": "B7",
+        "pdf_seite": 7,
+        "y": 207.928387
+      },
+      {
+        "frage_id": "B8",
+        "pdf_seite": 7,
+        "y": 244.888386
+      },
+      {
+        "frage_id": "B9",
+        "pdf_seite": 7,
+        "y": 270.808384
+      },
+      {
+        "frage_id": "B10",
+        "pdf_seite": 7,
+        "y": 318.328396
+      },
+      {
+        "frage_id": "B11",
+        "pdf_seite": 7,
+        "y": 354.328396
+      },
+      {
+        "frage_id": "B12",
+        "pdf_seite": 7,
+        "y": 401.968411
+      },
+      {
+        "frage_id": "B13",
+        "pdf_seite": 7,
+        "y": 473.248394
+      },
+      {
+        "frage_id": "B14a",
+        "pdf_seite": 8,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "B14b",
+        "pdf_seite": 8,
+        "y": 410.60838
+      },
+      {
+        "frage_id": "B15",
+        "pdf_seite": 9,
+        "y": 183.328396
+      },
+      {
+        "frage_id": "B16",
+        "pdf_seite": 9,
+        "y": 227.368397
+      },
+      {
+        "frage_id": "B17",
+        "pdf_seite": 9,
+        "y": 277.888386
+      },
+      {
+        "frage_id": "B18",
+        "pdf_seite": 9,
+        "y": 315.808384
+      },
+      {
+        "frage_id": "B19",
+        "pdf_seite": 9,
+        "y": 458.248394
+      },
+      {
+        "frage_id": "B20",
+        "pdf_seite": 9,
+        "y": 486.688381
+      },
+      {
+        "frage_id": "B21",
+        "pdf_seite": 9,
+        "y": 516.08839
+      },
+      {
+        "frage_id": "B22",
+        "pdf_seite": 9,
+        "y": 579.328396
+      },
+      {
+        "frage_id": "B23",
+        "pdf_seite": 9,
+        "y": 650.60838
+      },
+      {
+        "frage_id": "B24",
+        "pdf_seite": 10,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "B25",
+        "pdf_seite": 10,
+        "y": 370.408398
+      },
+      {
+        "frage_id": "B26",
+        "pdf_seite": 10,
+        "y": 585.448376
+      },
+      {
+        "frage_id": "B27",
+        "pdf_seite": 11,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B28",
+        "pdf_seite": 11,
+        "y": 227.248394
+      },
+      {
+        "frage_id": "B29",
+        "pdf_seite": 11,
+        "y": 404.248394
+      },
+      {
+        "frage_id": "B30",
+        "pdf_seite": 11,
+        "y": 581.368374
+      },
+      {
+        "frage_id": "B31",
+        "pdf_seite": 12,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B32",
+        "pdf_seite": 12,
+        "y": 214.528378
+      },
+      {
+        "frage_id": "B33",
+        "pdf_seite": 13,
+        "y": 132.328385
+      },
+      {
+        "frage_id": "B34",
+        "pdf_seite": 13,
+        "y": 233.4884
+      },
+      {
+        "frage_id": "B35",
+        "pdf_seite": 13,
+        "y": 322.04839
+      },
+      {
+        "frage_id": "B36",
+        "pdf_seite": 13,
+        "y": 435.808407
+      },
+      {
+        "frage_id": "B37",
+        "pdf_seite": 14,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B38",
+        "pdf_seite": 14,
+        "y": 322.04839
+      },
+      {
+        "frage_id": "B39",
+        "pdf_seite": 14,
+        "y": 423.208371
+      },
+      {
+        "frage_id": "B40",
+        "pdf_seite": 15,
+        "y": 88.04839
+      },
+      {
+        "frage_id": "B41",
+        "pdf_seite": 15,
+        "y": 334.768384
+      },
+      {
+        "frage_id": "B42",
+        "pdf_seite": 15,
+        "y": 575.008389
+      },
+      {
+        "frage_id": "B43",
+        "pdf_seite": 16,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B44",
+        "pdf_seite": 16,
+        "y": 189.208393
+      },
+      {
+        "frage_id": "B45",
+        "pdf_seite": 16,
+        "y": 366.328396
+      },
+      {
+        "frage_id": "C1",
+        "pdf_seite": 17,
+        "y": 100.768383
+      },
+      {
+        "frage_id": "C2",
+        "pdf_seite": 17,
+        "y": 239.848385
+      },
+      {
+        "frage_id": "C3",
+        "pdf_seite": 17,
+        "y": 490.888409
+      },
+      {
+        "frage_id": "C4",
+        "pdf_seite": 18,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C5",
+        "pdf_seite": 18,
+        "y": 288.568379
+      },
+      {
+        "frage_id": "C6",
+        "pdf_seite": 18,
+        "y": 438.448376
+      },
+      {
+        "frage_id": "C7",
+        "pdf_seite": 19,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "C8",
+        "pdf_seite": 19,
+        "y": 288.568379
+      },
+      {
+        "frage_id": "C9",
+        "pdf_seite": 19,
+        "y": 539.60838
+      },
+      {
+        "frage_id": "C10",
+        "pdf_seite": 20,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C11",
+        "pdf_seite": 20,
+        "y": 189.208393
+      },
+      {
+        "frage_id": "C12",
+        "pdf_seite": 20,
+        "y": 405.448376
+      },
+      {
+        "frage_id": "C13",
+        "pdf_seite": 21,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "C14",
+        "pdf_seite": 21,
+        "y": 231.08839
+      },
+      {
+        "frage_id": "C15",
+        "pdf_seite": 21,
+        "y": 568.168393
+      },
+      {
+        "frage_id": "C16",
+        "pdf_seite": 22,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C17",
+        "pdf_seite": 22,
+        "y": 339.08839
+      },
+      {
+        "frage_id": "C18",
+        "pdf_seite": 22,
+        "y": 600.208371
+      },
+      {
+        "frage_id": "C19",
+        "pdf_seite": 23,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "C20",
+        "pdf_seite": 23,
+        "y": 415.048367
+      },
+      {
+        "frage_id": "C21",
+        "pdf_seite": 23,
+        "y": 572.968411
+      },
+      {
+        "frage_id": "C22",
+        "pdf_seite": 24,
+        "y": 69.56839
+      },
+      {
+        "frage_id": "C23",
+        "pdf_seite": 24,
+        "y": 209.248394
+      },
+      {
+        "frage_id": "C24",
+        "pdf_seite": 24,
+        "y": 358.648381
+      },
+      {
+        "frage_id": "C25",
+        "pdf_seite": 24,
+        "y": 510.928387
+      },
+      {
+        "frage_id": "C26",
+        "pdf_seite": 25,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C27",
+        "pdf_seite": 25,
+        "y": 259.288396
+      },
+      {
+        "frage_id": "C28",
+        "pdf_seite": 25,
+        "y": 398.968411
+      },
+      {
+        "frage_id": "C29",
+        "pdf_seite": 25,
+        "y": 620.728405
+      },
+      {
+        "frage_id": "C30",
+        "pdf_seite": 26,
+        "y": 88.04839
+      },
+      {
+        "frage_id": "C31",
+        "pdf_seite": 26,
+        "y": 383.60838
+      },
+      {
+        "frage_id": "C32",
+        "pdf_seite": 26,
+        "y": 539.4884
+      },
+      {
+        "frage_id": "C33",
+        "pdf_seite": 27,
+        "y": 100.768383
+      },
+      {
+        "frage_id": "C34",
+        "pdf_seite": 27,
+        "y": 236.728382
+      },
+      {
+        "frage_id": "C35",
+        "pdf_seite": 28,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C36",
+        "pdf_seite": 28,
+        "y": 402.328396
+      },
+      {
+        "frage_id": "C37",
+        "pdf_seite": 29,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "C38",
+        "pdf_seite": 29,
+        "y": 273.328396
+      },
+      {
+        "frage_id": "C39",
+        "pdf_seite": 29,
+        "y": 471.328396
+      },
+      {
+        "frage_id": "C40",
+        "pdf_seite": 30,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "C41",
+        "pdf_seite": 30,
+        "y": 292.288396
+      },
+      {
+        "frage_id": "C42",
+        "pdf_seite": 30,
+        "y": 515.60838
+      },
+      {
+        "frage_id": "C43",
+        "pdf_seite": 31,
+        "y": 88.04839
+      },
+      {
+        "frage_id": "D1",
+        "pdf_seite": 32,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "D2",
+        "pdf_seite": 32,
+        "y": 296.728382
+      },
+      {
+        "frage_id": "D3",
+        "pdf_seite": 33,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "D4",
+        "pdf_seite": 33,
+        "y": 322.04839
+      },
+      {
+        "frage_id": "D5",
+        "pdf_seite": 33,
+        "y": 470.368374
+      },
+      {
+        "frage_id": "D6",
+        "pdf_seite": 34,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D7",
+        "pdf_seite": 34,
+        "y": 383.968411
+      },
+      {
+        "frage_id": "D8",
+        "pdf_seite": 35,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "D9",
+        "pdf_seite": 35,
+        "y": 296.728382
+      },
+      {
+        "frage_id": "D10a",
+        "pdf_seite": 35,
+        "y": 437.368374
+      },
+      {
+        "frage_id": "D10b",
+        "pdf_seite": 36,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D11",
+        "pdf_seite": 36,
+        "y": 372.688381
+      },
+      {
+        "frage_id": "D12",
+        "pdf_seite": 36,
+        "y": 558.568402
+      },
+      {
+        "frage_id": "D13",
+        "pdf_seite": 37,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "D14",
+        "pdf_seite": 37,
+        "y": 271.528378
+      },
+      {
+        "frage_id": "D15",
+        "pdf_seite": 37,
+        "y": 461.248394
+      },
+      {
+        "frage_id": "D16",
+        "pdf_seite": 38,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D17",
+        "pdf_seite": 38,
+        "y": 239.848385
+      },
+      {
+        "frage_id": "D18",
+        "pdf_seite": 38,
+        "y": 508.048367
+      },
+      {
+        "frage_id": "D19",
+        "pdf_seite": 39,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D20",
+        "pdf_seite": 39,
+        "y": 675.568402
+      },
+      {
+        "frage_id": "D21",
+        "pdf_seite": 39,
+        "y": 713.60838
+      },
+      {
+        "frage_id": "D22",
+        "pdf_seite": 39,
+        "y": 748.288372
+      },
+      {
+        "frage_id": "D23",
+        "pdf_seite": 40,
+        "y": 59.608391
+      },
+      {
+        "frage_id": "D24",
+        "pdf_seite": 40,
+        "y": 91.288384
+      },
+      {
+        "frage_id": "D25",
+        "pdf_seite": 40,
+        "y": 122.968388
+      },
+      {
+        "frage_id": "D26",
+        "pdf_seite": 40,
+        "y": 154.52839
+      },
+      {
+        "frage_id": "D27",
+        "pdf_seite": 40,
+        "y": 186.208393
+      },
+      {
+        "frage_id": "D28",
+        "pdf_seite": 40,
+        "y": 258.928387
+      },
+      {
+        "frage_id": "D29",
+        "pdf_seite": 41,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D30",
+        "pdf_seite": 41,
+        "y": 494.848385
+      },
+      {
+        "frage_id": "D31",
+        "pdf_seite": 42,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D32",
+        "pdf_seite": 42,
+        "y": 233.4884
+      },
+      {
+        "frage_id": "D33",
+        "pdf_seite": 42,
+        "y": 454.888409
+      },
+      {
+        "frage_id": "E1",
+        "pdf_seite": 43,
+        "y": 101.728394
+      },
+      {
+        "frage_id": "E2",
+        "pdf_seite": 43,
+        "y": 291.448398
+      },
+      {
+        "frage_id": "E3",
+        "pdf_seite": 44,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E4",
+        "pdf_seite": 44,
+        "y": 337.648381
+      },
+      {
+        "frage_id": "E5",
+        "pdf_seite": 45,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E6",
+        "pdf_seite": 45,
+        "y": 383.60838
+      },
+      {
+        "frage_id": "E7",
+        "pdf_seite": 46,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E8M",
+        "pdf_seite": 46,
+        "y": 396.208371
+      },
+      {
+        "frage_id": "E8W",
+        "pdf_seite": 47,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "E9M",
+        "pdf_seite": 47,
+        "y": 328.408398
+      },
+      {
+        "frage_id": "E10M",
+        "pdf_seite": 47,
+        "y": 575.008389
+      },
+      {
+        "frage_id": "E11M",
+        "pdf_seite": 48,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E9W",
+        "pdf_seite": 48,
+        "y": 227.248394
+      },
+      {
+        "frage_id": "E10W",
+        "pdf_seite": 48,
+        "y": 454.528378
+      },
+      {
+        "frage_id": "E11W",
+        "pdf_seite": 48,
+        "y": 644.248394
+      },
+      {
+        "frage_id": "E12",
+        "pdf_seite": 49,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "E13",
+        "pdf_seite": 49,
+        "y": 271.528378
+      },
+      {
+        "frage_id": "E14",
+        "pdf_seite": 49,
+        "y": 448.528378
+      },
+      {
+        "frage_id": "E15",
+        "pdf_seite": 50,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E16",
+        "pdf_seite": 50,
+        "y": 334.768384
+      },
+      {
+        "frage_id": "E17",
+        "pdf_seite": 51,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E18",
+        "pdf_seite": 51,
+        "y": 304.888386
+      },
+      {
+        "frage_id": "E19",
+        "pdf_seite": 51,
+        "y": 589.408398
+      },
+      {
+        "frage_id": "E20",
+        "pdf_seite": 52,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E21",
+        "pdf_seite": 52,
+        "y": 322.04839
+      },
+      {
+        "frage_id": "E22",
+        "pdf_seite": 52,
+        "y": 530.728405
+      },
+      {
+        "frage_id": "E23",
+        "pdf_seite": 53,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "E24",
+        "pdf_seite": 53,
+        "y": 284.128392
+      },
+      {
+        "frage_id": "E25",
+        "pdf_seite": 53,
+        "y": 492.808407
+      },
+      {
+        "frage_id": "E26",
+        "pdf_seite": 54,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E27",
+        "pdf_seite": 54,
+        "y": 271.528378
+      },
+      {
+        "frage_id": "E28",
+        "pdf_seite": 54,
+        "y": 480.208371
+      },
+      {
+        "frage_id": "F1",
+        "pdf_seite": 55,
+        "y": 100.768383
+      },
+      {
+        "frage_id": "F2",
+        "pdf_seite": 55,
+        "y": 235.888386
+      },
+      {
+        "frage_id": "F3",
+        "pdf_seite": 55,
+        "y": 273.808384
+      },
+      {
+        "frage_id": "F2",
+        "pdf_seite": 56,
+        "y": 216.568379
+      },
+      {
+        "frage_id": "F3",
+        "pdf_seite": 56,
+        "y": 287.368397
+      },
+      {
+        "frage_id": "F4",
+        "pdf_seite": 56,
+        "y": 344.848385
+      },
+      {
+        "frage_id": "F2",
+        "pdf_seite": 56,
+        "y": 667.648404
+      },
+      {
+        "frage_id": "F3",
+        "pdf_seite": 56,
+        "y": 738.448376
+      },
+      {
+        "frage_id": "F4",
+        "pdf_seite": 57,
+        "y": 50.608391
+      },
+      {
+        "frage_id": "F6",
+        "pdf_seite": 58,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "F7",
+        "pdf_seite": 58,
+        "y": 367.888386
+      },
+      {
+        "frage_id": "F8",
+        "pdf_seite": 58,
+        "y": 546.08839
+      },
+      {
+        "frage_id": "F11",
+        "pdf_seite": 59,
+        "y": 88.04839
+      },
+      {
+        "frage_id": "F13",
+        "pdf_seite": 59,
+        "y": 401.728405
+      },
+      {
+        "frage_id": "F14",
+        "pdf_seite": 60,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F14a",
+        "pdf_seite": 60,
+        "y": 282.208393
+      },
+      {
+        "frage_id": "F15",
+        "pdf_seite": 61,
+        "y": 75.928387
+      },
+      {
+        "frage_id": "F15a",
+        "pdf_seite": 61,
+        "y": 437.728405
+      },
+      {
+        "frage_id": "F16",
+        "pdf_seite": 63,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F17a",
+        "pdf_seite": 63,
+        "y": 452.008389
+      },
+      {
+        "frage_id": "F17c",
+        "pdf_seite": 64,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F18",
+        "pdf_seite": 64,
+        "y": 402.328396
+      },
+      {
+        "frage_id": "F19",
+        "pdf_seite": 64,
+        "y": 586.408398
+      },
+      {
+        "frage_id": "F20",
+        "pdf_seite": 65,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F21",
+        "pdf_seite": 65,
+        "y": 362.368397
+      },
+      {
+        "frage_id": "F22",
+        "pdf_seite": 65,
+        "y": 589.648404
+      },
+      {
+        "frage_id": "F23",
+        "pdf_seite": 66,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "F24",
+        "pdf_seite": 66,
+        "y": 277.648381
+      },
+      {
+        "frage_id": "F25",
+        "pdf_seite": 66,
+        "y": 522.328396
+      },
+      {
+        "frage_id": "F26",
+        "pdf_seite": 66,
+        "y": 693.688381
+      },
+      {
+        "frage_id": "F27",
+        "pdf_seite": 67,
+        "y": 220.288396
+      },
+      {
+        "frage_id": "F28",
+        "pdf_seite": 67,
+        "y": 296.728382
+      },
+      {
+        "frage_id": "F29",
+        "pdf_seite": 67,
+        "y": 398.4884
+      },
+      {
+        "frage_id": "F30",
+        "pdf_seite": 67,
+        "y": 647.4884
+      },
+      {
+        "frage_id": "F31",
+        "pdf_seite": 68,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F32",
+        "pdf_seite": 68,
+        "y": 214.528378
+      },
+      {
+        "frage_id": "F33",
+        "pdf_seite": 68,
+        "y": 452.968411
+      },
+      {
+        "frage_id": "F34",
+        "pdf_seite": 68,
+        "y": 554.128369
+      },
+      {
+        "frage_id": "F34a",
+        "pdf_seite": 68,
+        "y": 680.60838
+      },
+      {
+        "frage_id": "F35",
+        "pdf_seite": 69,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F35a",
+        "pdf_seite": 69,
+        "y": 206.368397
+      },
+      {
+        "frage_id": "F35b",
+        "pdf_seite": 69,
+        "y": 446.60838
+      },
+      {
+        "frage_id": "F36",
+        "pdf_seite": 70,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F37",
+        "pdf_seite": 70,
+        "y": 224.60838
+      },
+      {
+        "frage_id": "F38",
+        "pdf_seite": 70,
+        "y": 364.888386
+      },
+      {
+        "frage_id": "F39",
+        "pdf_seite": 70,
+        "y": 552.688381
+      },
+      {
+        "frage_id": "F40",
+        "pdf_seite": 71,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F41",
+        "pdf_seite": 72,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F42",
+        "pdf_seite": 72,
+        "y": 465.328396
+      },
+      {
+        "frage_id": "F44",
+        "pdf_seite": 73,
+        "y": 101.728394
+      },
+      {
+        "frage_id": "F44a",
+        "pdf_seite": 73,
+        "y": 487.408398
+      },
+      {
+        "frage_id": "F45a",
+        "pdf_seite": 75,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F45c",
+        "pdf_seite": 75,
+        "y": 377.128369
+      },
+      {
+        "frage_id": "F46",
+        "pdf_seite": 76,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F47",
+        "pdf_seite": 76,
+        "y": 284.728382
+      },
+      {
+        "frage_id": "F48",
+        "pdf_seite": 76,
+        "y": 499.768384
+      },
+      {
+        "frage_id": "F49",
+        "pdf_seite": 76,
+        "y": 651.568402
+      },
+      {
+        "frage_id": "F50",
+        "pdf_seite": 77,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F51",
+        "pdf_seite": 77,
+        "y": 221.968388
+      },
+      {
+        "frage_id": "F52",
+        "pdf_seite": 78,
+        "y": 88.52839
+      },
+      {
+        "frage_id": "F52a",
+        "pdf_seite": 78,
+        "y": 437.728405
+      },
+      {
+        "frage_id": "F53",
+        "pdf_seite": 80,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F54",
+        "pdf_seite": 80,
+        "y": 259.528378
+      },
+      {
+        "frage_id": "F55",
+        "pdf_seite": 81,
+        "y": 75.928387
+      },
+      {
+        "frage_id": "F55a",
+        "pdf_seite": 81,
+        "y": 399.808407
+      },
+      {
+        "frage_id": "F56",
+        "pdf_seite": 82,
+        "y": 160.408387
+      },
+      {
+        "frage_id": "F57",
+        "pdf_seite": 82,
+        "y": 395.128369
+      },
+      {
+        "frage_id": "F58",
+        "pdf_seite": 83,
+        "y": 219.928387
+      },
+      {
+        "frage_id": "F59",
+        "pdf_seite": 84,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "H1",
+        "pdf_seite": 85,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "H2",
+        "pdf_seite": 89,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "I1",
+        "pdf_seite": 93,
+        "y": 139.648392
+      },
+      {
+        "frage_id": "I2",
+        "pdf_seite": 93,
+        "y": 371.728382
+      },
+      {
+        "frage_id": "I3",
+        "pdf_seite": 93,
+        "y": 595.768384
+      },
+      {
+        "frage_id": "I4",
+        "pdf_seite": 94,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "I5",
+        "pdf_seite": 94,
+        "y": 350.008389
+      },
+      {
+        "frage_id": "I6",
+        "pdf_seite": 94,
+        "y": 575.848385
+      },
+      {
+        "frage_id": "I7",
+        "pdf_seite": 95,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "I8",
+        "pdf_seite": 95,
+        "y": 459.328396
+      },
+      {
+        "frage_id": "I9",
+        "pdf_seite": 96,
+        "y": 125.968388
+      },
+      {
+        "frage_id": "K1",
+        "pdf_seite": 97,
+        "y": 114.448387
+      },
+      {
+        "frage_id": "K2",
+        "pdf_seite": 97,
+        "y": 321.208393
+      },
+      {
+        "frage_id": "K3",
+        "pdf_seite": 97,
+        "y": 496.288372
+      },
+      {
+        "frage_id": "K4",
+        "pdf_seite": 97,
+        "y": 662.728405
+      },
+      {
+        "frage_id": "J1",
+        "pdf_seite": 98,
+        "y": 236.60838
+      },
+      {
+        "frage_id": "J2",
+        "pdf_seite": 98,
+        "y": 418.888409
+      },
+      {
+        "frage_id": "J3",
+        "pdf_seite": 99,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "J4",
+        "pdf_seite": 99,
+        "y": 254.728382
+      },
+      {
+        "frage_id": "J5",
+        "pdf_seite": 99,
+        "y": 459.328396
+      },
+      {
+        "frage_id": "J6",
+        "pdf_seite": 99,
+        "y": 599.368374
+      },
+      {
+        "frage_id": "J7",
+        "pdf_seite": 100,
+        "y": 107.488388
+      },
+      {
+        "frage_id": "J8",
+        "pdf_seite": 100,
+        "y": 152.848385
+      },
+      {
+        "frage_id": "J9",
+        "pdf_seite": 100,
+        "y": 263.848385
+      }
+    ],
+    "filteredReferences": [
+      [
+        21,
+        "C11"
+      ],
+      [
+        58,
+        "F4"
+      ],
+      [
+        65,
+        "F19"
+      ],
+      [
+        66,
+        "F19"
+      ],
+      [
+        97,
+        "K1"
+      ]
+    ],
+    "originalQuestionnairePages": 100,
+    "claimsFullStructuredInventory": false,
+    "pendingByCriterion": {
+      "zuordnung_status": [
+        "F2",
+        "F3",
+        "F2@56.2",
+        "F3@56.2",
+        "F4",
+        "F2@56.3",
+        "F3@56.3",
+        "F4@57.2",
+        "F14a",
+        "F15",
+        "F15a",
+        "F44",
+        "F44a",
+        "F52",
+        "F52a",
+        "F55",
+        "F55a",
+        "H1",
+        "H2",
+        "I9",
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "J9"
+      ],
+      "kategorien_status": [
+        "A1",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "B26",
+        "B27",
+        "B28",
+        "B29",
+        "B30",
+        "B31",
+        "B32",
+        "B37",
+        "B43",
+        "B44",
+        "B45",
+        "C1",
+        "C3",
+        "C9",
+        "C10",
+        "C15",
+        "C22",
+        "C23",
+        "C24",
+        "C27",
+        "C29",
+        "C31",
+        "C33",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D9",
+        "D11",
+        "D12",
+        "D16",
+        "D18",
+        "D31",
+        "F1",
+        "F2",
+        "F3",
+        "F2@56.2",
+        "F3@56.2",
+        "F4",
+        "F2@56.3",
+        "F3@56.3",
+        "F4@57.2",
+        "F16",
+        "F20",
+        "F22",
+        "F24",
+        "F26",
+        "F30",
+        "F31",
+        "F33",
+        "F34",
+        "F34a",
+        "F47",
+        "F48",
+        "F49",
+        "F51",
+        "F59",
+        "H1",
+        "H2",
+        "J5",
+        "J7",
+        "J8",
+        "J9"
+      ],
+      "missingcodes_status": [
+        "C14",
+        "C33",
+        "D9",
+        "E1",
+        "F2",
+        "F2@56.2",
+        "F2@56.3",
+        "F26",
+        "F33",
+        "F34",
+        "F34a",
+        "F47",
+        "F48",
+        "F49",
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "J9"
+      ],
+      "kontext_status": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B13",
+        "B14a",
+        "B14b",
+        "B23",
+        "B24",
+        "B25",
+        "B26",
+        "B27",
+        "B28",
+        "B29",
+        "B30",
+        "B31",
+        "B32",
+        "B37",
+        "B40",
+        "B41",
+        "B42",
+        "B43",
+        "B44",
+        "B45",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "C30",
+        "C33",
+        "C43",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10a",
+        "D10b",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D28",
+        "D29",
+        "D30",
+        "D31",
+        "D32",
+        "D33",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8M",
+        "E8W",
+        "E9M",
+        "E10M",
+        "E11M",
+        "E9W",
+        "E10W",
+        "E11W",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E17",
+        "E18",
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27",
+        "E28",
+        "F1",
+        "F2",
+        "F3",
+        "F2@56.2",
+        "F3@56.2",
+        "F4",
+        "F2@56.3",
+        "F3@56.3",
+        "F4@57.2",
+        "F6",
+        "F7",
+        "F8",
+        "F11",
+        "F13",
+        "F14",
+        "F14a",
+        "F15",
+        "F15a",
+        "F16",
+        "F17a",
+        "F17c",
+        "F18",
+        "F19",
+        "F20",
+        "F21",
+        "F22",
+        "F23",
+        "F24",
+        "F25",
+        "F26",
+        "F29",
+        "F30",
+        "F31",
+        "F32",
+        "F33",
+        "F34",
+        "F34a",
+        "F35",
+        "F35a",
+        "F35b",
+        "F36",
+        "F37",
+        "F38",
+        "F39",
+        "F40",
+        "F41",
+        "F42",
+        "F44",
+        "F44a",
+        "F45a",
+        "F45c",
+        "F46",
+        "F47",
+        "F48",
+        "F49",
+        "F50",
+        "F51",
+        "F52",
+        "F52a",
+        "F53",
+        "F54",
+        "F55",
+        "F55a",
+        "F56",
+        "F57",
+        "F58",
+        "F59",
+        "H1",
+        "H2",
+        "K1",
+        "K2",
+        "K3",
+        "K4",
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "J9"
+      ]
+    },
+    "routingAndIndependentSemanticReview": "not complete; no first ratings or polarity, every row remains a draft"
+  },
+  "checks": {
+    "status": "BESTANDEN",
+    "scope": "Pinned source hashes, exact emitted wording tokens/regions, row identity and 42 German portraits; not semantic or category/filter completeness",
+    "rows": 296,
+    "errors": [],
+    "pending_rows": [
+      {
+        "id": "A1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "A2",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "A3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "A4",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "A5",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "A6",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B1",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B2",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B3",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B4",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B5",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B13",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B14a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "B14b",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "B23",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B24",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "B25",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B26",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B27",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B28",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B29",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B30",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B31",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B32",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B37",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B40",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B41",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B42",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B43",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B44",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "B45",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C2",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C4",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C5",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C6",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C7",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C8",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C9",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C10",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C11",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C12",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "C13",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C14",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "C15",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C16",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C17",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C18",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C19",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C20",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C21",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C22",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C23",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C24",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C25",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C26",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C27",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C28",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C29",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C30",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C31",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | ENTWURF_UEBERNOMMENER_ORIGINALKONTEXT_ROUTING_NACHPRUEFEN | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C33",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "C43",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D2",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D4",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D5",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D6",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D7",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D8",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D9",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D10a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "D10b",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "D11",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D12",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D13",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D14",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D15",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D16",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D17",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D18",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D19",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D28",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D29",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D30",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D31",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D32",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "D33",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E1",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E2",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E3",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E4",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E5",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E6",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E7",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E8M",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "E8W",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "E9M",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "E10M",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "E11M",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "E9W",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "E10W",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "E11W",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "E12",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E13",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E14",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E15",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E16",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E17",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E18",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E19",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E20",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E21",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E22",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E23",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E24",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E25",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E26",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E27",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "E28",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F2",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F2@56.2",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F3@56.2",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F4",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F2@56.3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F3@56.3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F4@57.2",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F6",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F7",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F8",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F11",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F13",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F14",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F14a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F15",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_DE_BILDUNGSADAPTATION"
+      },
+      {
+        "id": "F15a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F16",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F17a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F17c",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F18",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F19",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F20",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F21",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F22",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F23",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F24",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F25",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F26",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F29",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F30",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F31",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F32",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F33",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "F34",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "F34a",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "F35",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F35a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F35b",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F36",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F37",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F38",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F39",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F40",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F41",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F42",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F44",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_DE_BILDUNGSADAPTATION"
+      },
+      {
+        "id": "F44a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F45a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F45c",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F46",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F47",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "F48",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "F49",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_DE_ADAPTATION"
+      },
+      {
+        "id": "F50",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F51",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F52",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_DE_BILDUNGSADAPTATION"
+      },
+      {
+        "id": "F52a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F53",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F54",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F55",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_DE_BILDUNGSADAPTATION"
+      },
+      {
+        "id": "F55a",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "F56",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F57",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F58",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "F59",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "H1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "H2",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "I9",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | ENTWURF_UEBERNOMMENER_ORIGINALKONTEXT_ROUTING_NACHPRUEFEN | OFFEN_WIDERSPRUCH_CODEBOOK"
+      },
+      {
+        "id": "K1",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "K2",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "K3",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "K4",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | ENTWURF_LOCATION_ABGLEICH"
+      },
+      {
+        "id": "J1",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "J2",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "J3",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "J4",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "J5",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "J6",
+        "reason": "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "J7",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "J8",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      },
+      {
+        "id": "J9",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND | OFFEN_KEINE_EINDEUTIGE_LOCATION"
+      }
+    ],
+    "final_item_decisions": 0
+  },
+  "open": [
+    "Category cells and missing-code transfer to ESS data remain partly unparsed",
+    "Filtered routing and inherited shared introductions need complete row-by-row review",
+    "German-specific schooling, household repeat tables and open codebook mappings need official adaptation reconciliation",
+    "I9 source Location disagreement, codebook edition 4.1 versus candidate data edition 4.2",
+    "No C44 German item and no numbered R item found in German PDF despite overview; numbering gaps not invented",
+    "No independent item judgements, Claude first ratings, polarity or research phase acceptance"
+  ],
+  "authorToolModel": {
+    "runtimeReportedFamily": "GPT-6.1-Sol as documented by coordinator",
+    "internalRevision": "not exposed",
+    "tools": [
+      "exec_command",
+      "Poppler pdftotext/pdftoppm",
+      "Python standard library",
+      "view_image",
+      "web.run source access"
+    ]
+  }
+}

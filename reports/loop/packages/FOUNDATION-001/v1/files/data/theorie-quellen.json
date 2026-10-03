@@ -1,0 +1,992 @@
+{
+  "schemaVersion": "1.0",
+  "catalogKind": "Getrennter Quellenautor-Entwurf; keine Ergänzung des Hauptkatalogs",
+  "createdOn": "2026-10-03",
+  "createdAtUtc": "2026-10-03T01:40:03.165919+00:00",
+  "authorRole": "politikwissenschaftlicher Quellenautor, keine getrennte Item-Erstbewertung",
+  "model": "Codex GPT-6.1-Sol laut Koordinator-Laufzeit; interne Revision unbekannt",
+  "draftArtifacts": [
+    "docs/themenabdeckung.entwurf.md",
+    "docs/erwartungsmodell.entwurf.md"
+  ],
+  "dataAccess": "Nur Originalfragebogen und öffentliche Metadaten; keine Rohantwortdaten, B, Verteilungen, Gruppenwerte oder Portal-Analysis",
+  "sources": [
+    {
+      "id": "ESS11-DE-QUESTIONNAIRE",
+      "title": "Zusammen|Leben heute. Deutsche Teilstudie des ESS, Welle 11, 2023",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "edition": "Deutsches Instrument mit Titeljahr 2023; 100 PDF-Seiten",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Deutschland; dokumentierte Fragen, Einleitungen, Filter; keine Antworten",
+      "readLocators": [
+        {
+          "section": "Politik, Klima, Geschlechtermodul, Werte, COVID",
+          "pdfPages": [
+            2,
+            5,
+            6,
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            20,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            97
+          ],
+          "printedPageRule": "gedruckte Seite entspricht PDF-Seite",
+          "inspectionGranularity": "Originaltexte der benannten Fragen/Portraits; D-Kontextfragen teilweise als gezielte Fragepassagen gelesen, nicht jede wiederholte Antworttabelle."
+        },
+        {
+          "section": "Visuelle Nachlektüre",
+          "pdfPages": [
+            13,
+            26,
+            51,
+            52,
+            85
+          ]
+        }
+      ],
+      "limits": [
+        "Keine vollständige unabhängige Item-Erstbewertung; nur thematisch relevante Abschnitte gelesen und Gesamttext nach Lückengegenständen durchsucht.",
+        "C43 auf deutscher Seite 31 ist EU-Referendum; Überblick Seite 2 nennt C1–C44. Generische Frage-IDs nicht blind übertragen.",
+        "Instrumenttitel ist keine bestätigte Feldzeit; Bezug zur Datenausgabe 4.2 offen."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/ESS11_questionnaires_DE.pdf",
+          "kind": "original_pdf",
+          "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+          "bytes": 1304009,
+          "publishCopy": false
+        },
+        {
+          "path": "outputs/loop/theory/ESS11_questionnaires_DE.layout.txt",
+          "kind": "poppler_text",
+          "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+          "bytes": 213698,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT"
+    },
+    {
+      "id": "ESS11-CODEBOOK",
+      "title": "ESS11 Appendix A7 Codebook, integrated file edition 4.1",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "edition": "4.1; 552 PDF-Seiten, 551 nummerierte Seiten",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Öffentliche Variablenmetadaten; keine Antwortverteilungen",
+      "readLocators": [
+        {
+          "section": "B33–B45",
+          "pdfPages": [
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "printedPages": [
+            62,
+            63,
+            64,
+            65,
+            66
+          ]
+        },
+        {
+          "section": "C30–C32",
+          "pdfPages": [
+            165,
+            166
+          ],
+          "printedPages": [
+            164,
+            165
+          ]
+        },
+        {
+          "section": "E15–E28",
+          "pdfPages": [
+            213,
+            214,
+            215,
+            216,
+            217
+          ],
+          "printedPages": [
+            212,
+            213,
+            214,
+            215,
+            216
+          ]
+        },
+        {
+          "section": "Human values Ha-u",
+          "pdfPages": [
+            534,
+            535,
+            536,
+            538,
+            539,
+            541
+          ],
+          "printedPages": [
+            533,
+            534,
+            535,
+            537,
+            538,
+            540
+          ]
+        }
+      ],
+      "limits": [
+        "Metadaten-Version ist nicht automatisch Datenausgabe 4.2.",
+        "H-Namen tragen suffix a; lokales H1/H2-Buchstabenmapping durch Wortlautvergleich.",
+        "Einzelne über Seitengrenzen laufende Metadatensätze wurden zusätzlich geprüft."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/ESS11_appendix_a7_e04_1.pdf",
+          "kind": "original_pdf",
+          "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+          "bytes": 2162997,
+          "publishCopy": false
+        },
+        {
+          "path": "outputs/loop/theory/ESS11_appendix_a7_e04_1.layout.txt",
+          "kind": "poppler_text",
+          "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+          "bytes": 1074155,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT"
+    },
+    {
+      "id": "THEO-GG-20261003",
+      "title": "Grundgesetz für die Bundesrepublik Deutschland",
+      "url": "https://www.gesetze-im-internet.de/gg/BJNR000010949.html",
+      "edition": "Abgerufene konsolidierte Fassung nennt Änderung durch Art. 1 G v. 22.3.2025 I Nr. 94",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Institutioneller deutscher Themenbezug; keine Einstellungs- oder Normskala",
+      "readLocators": [
+        {
+          "section": "Art. 3, 5, 7, 10, 12, 14, 16a, 20, 20a, 23, 73 Abs.1, 74 Abs.1, 87a, 109",
+          "locatorType": "Artikel und Absätze; HTML ohne stabile Seitenzahlen"
+        }
+      ],
+      "limits": [
+        "Keine juristische Abnahme und keine Behauptung vollständiger Themenabdeckung.",
+        "Normative/institutionelle Gegenstände bestimmen keine empirische Wichtigkeit und keine bevorzugte Bürgerhaltung."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/GG-2026.html",
+          "kind": "original_html",
+          "sha256": "8df99989fc820e2d3f6c11be5a208fc84dc8edb79b60fd53826ab83fac8a7eca",
+          "bytes": 305445,
+          "publishCopy": false
+        },
+        {
+          "path": "outputs/loop/theory/GG-2026.txt",
+          "kind": "decoded_iso8859_1_text",
+          "sha256": "30dfeb86c3458702021078829e778767b312b959f2409cf7f2f5e10d7ff3fe09",
+          "bytes": 192141,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT"
+    },
+    {
+      "id": "GLES-RCS-2025",
+      "title": "GLES Rolling Cross-Section 2025 (ZA10101), Vorab-Publikation der Fragebögen",
+      "url": "https://www.gesis.org/fileadmin/upload/GLES/Dokumente/ZA10101_fb_v0-3_2025-03-10_1.pdf",
+      "edition": "Version 0.3, 10.03.2025; offizielles PDF hat 256 Seiten",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Deutsche Bundestagswahl 2025; Themen im Frageprogramm, keine Salienz- oder Antwortdaten",
+      "readLocators": [
+        {
+          "section": "Versionsgeschichte und Überblick",
+          "pdfPages": [
+            8,
+            10,
+            11
+          ]
+        },
+        {
+          "section": "pre020/pre022 offene Problemnennung",
+          "pdfPages": [
+            33,
+            35
+          ],
+          "printedPages": [
+            33,
+            35
+          ]
+        },
+        {
+          "section": "pre029/pre032/pre036",
+          "pdfPages": [
+            42,
+            45,
+            49
+          ],
+          "printedPages": [
+            42,
+            45,
+            49
+          ]
+        },
+        {
+          "section": "pre034/pre038",
+          "pdfPages": [
+            47,
+            51
+          ],
+          "printedPages": [
+            47,
+            51
+          ]
+        }
+      ],
+      "limits": [
+        "Lokaler HTTP-Aufruf 403; relevantes Original-PDF war im Web-Werkzeug als Text zugänglich.",
+        "Lokaler Hash bezeichnet Werkzeugauszüge, nicht originale PDF-Bytes.",
+        "Kein vollständiger Themenrahmen, kein Nachweis tatsächlicher Wichtigkeit und keine Übernahme fremder Fragen in den ESS-Test."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/GLES-RCS-2025.web-extract.json",
+          "kind": "web_tool_original_text_extract",
+          "sha256": "df0403d0314b5c960696fe7b653e16a3e56b1d2448686da1d04ef91a071b3cac",
+          "bytes": 22479,
+          "publishCopy": false
+        },
+        {
+          "path": "outputs/loop/theory/GLES-RCS-2025.html",
+          "kind": "failed_http_403_response",
+          "sha256": "c3bc9e0b2de1246cb4c59c48216ed9304b640e182add1ffb8115d8cb76804411",
+          "bytes": 5767,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT"
+    },
+    {
+      "id": "KRIESI-ETAL-2006",
+      "title": "Globalization and the transformation of the national political space: Six European countries compared",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1475-6765.2006.00644.x",
+      "edition": "European Journal of Political Research 45(6), 921–956 (2006); Original-HTML",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Parteienangebot von sechs westeuropäischen Ländern einschließlich Deutschland; Wahlkampfe der 1970er/1990er/frühen 2000er",
+      "readLocators": [
+        {
+          "section": "Introduction",
+          "locator": "Absätze über supply side vs demand side; gespeicherter Werkzeugauszug Linien 149–163"
+        },
+        {
+          "section": "The impact of the new structural conflict on the structure of the political space",
+          "locator": "embedding hypothesis und alternative neue Dimensionen; Linien 164–178"
+        },
+        {
+          "section": "Research design",
+          "locator": "Länder, Perioden, Zeitungsinhaltsanalyse; im ersten Originalaufruf Linien 222–235 gelesen, kein PDF-Seitenbezug geprüft"
+        }
+      ],
+      "limits": [
+        "Original-HTML zugänglich, kein vollständiger Verfahrens- oder Ergebnisreview.",
+        "Lokaler HTTP-Abruf 403; Werkzeugauszughash ist kein Original-HTML-Dateihash.",
+        "Keine Übertragung von Angebotsdimensionen auf individuelle ESS11-Messung; keine aktuellen deutschen Parteipositionen abgeleitet.",
+        "Gegenalternative neuer Dimensionen wird im Original diskutiert; parteistrategische Einbettung ist keine universelle Individualstruktur."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/KRIESI-ETAL-2006.theory-web-extract.json",
+          "kind": "web_tool_original_text_extract",
+          "sha256": "cf24c9e69dbe6cc317185cf211a65fce5fccc3cb5548e354c6c513615d7a27b3",
+          "bytes": 17889,
+          "publishCopy": false
+        },
+        {
+          "path": "outputs/loop/theory/KRIESI-ETAL-2006.web-extract.json",
+          "kind": "web_tool_original_text_extract",
+          "sha256": "01825d45a3fb7608adaea768d2963d6f03fc24ee5232dfa9f17b003cb9e0e07d",
+          "bytes": 31771,
+          "publishCopy": false
+        },
+        {
+          "path": "outputs/loop/theory/KRIESI-ETAL-2006.html",
+          "kind": "failed_http_403_response",
+          "sha256": "4c7d02c6066cd8085aeee3c5c7aa6b95394d8759bbbec795d7a7c8f83e951c7e",
+          "bytes": 5686,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT",
+      "doi": "10.1111/j.1475-6765.2006.00644.x"
+    },
+    {
+      "id": "DEVRIES-HAKHVERDIAN-LANCEE-2013",
+      "title": "The Dynamics of Voters’ Left/Right Identification: The Role of Economic and Cultural Attitudes",
+      "url": "https://www.bramlancee.eu/wp-content/uploads/2017/03/PSRM2013.pdf",
+      "edition": "Political Science Research and Methods 1(2), 223–238 (2013); 17-seitige autorbereitgestellte Verlagskopie inklusive Download-Titelseite",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Individuelle Beziehungen in wiederholten niederländischen Querschnitten 1980–2006",
+      "readLocators": [
+        {
+          "section": "Hypotheses; Data and measurement",
+          "pdfPages": [
+            8,
+            9
+          ],
+          "printedPages": [
+            229,
+            230
+          ]
+        },
+        {
+          "section": "Conclusion und Einschränkungen",
+          "pdfPages": [
+            14,
+            15
+          ],
+          "printedPages": [
+            235,
+            236
+          ]
+        }
+      ],
+      "limits": [
+        "Keine deutsche ESS11-Validierung.",
+        "Studie nutzt andere Migrations-/Verteilungsinstrumente; kein Beleg eines Ein-Faktor-Messmodells aller politischen Items.",
+        "Original nennt Endogenität und noch nicht direkt getestete Agendaeffekte."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/DEVRIES-HAKHVERDIAN-LANCEE-2013.pdf",
+          "kind": "author_hosted_publisher_pdf",
+          "sha256": "92f4f928381ddb5d5f2a02b4a04206428319b061db3818fe7af6efe5588ec3d5",
+          "bytes": 368825,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT",
+      "doi": "10.1017/psrm.2013.4"
+    },
+    {
+      "id": "EVANS-HEATH-LALLJEE-1996",
+      "title": "Measuring Left-Right and Libertarian-Authoritarian Values in the British Electorate",
+      "url": "https://catherinedevries.eu/stats/Evans.pdf",
+      "edition": "British Journal of Sociology 47(1), 93–112 (1996); 21 PDF-Seiten inklusive JSTOR-Deckblatt",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Britische individuelle Skalen und damalige Erhebungen der 1980er",
+      "readLocators": [
+        {
+          "section": "Introduction; Method; The Dimensionality of the Items in the Scales",
+          "pdfPages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "printedPages": [
+            94,
+            95,
+            96,
+            97
+          ]
+        },
+        {
+          "section": "Diskussion",
+          "pdfPages": [
+            17
+          ],
+          "printedPages": [
+            108
+          ]
+        }
+      ],
+      "limits": [
+        "Eigene britische Items und damalige Verfahren; keine aktuelle deutsche Skala.",
+        "Im Original entwickeln Autoren Items durch Auswahl und prüfen PCA/Varimax; die daraus erhaltene Orthogonalität wird hier nicht als notwendige Unabhängigkeit der deutschen Konstrukte übernommen.",
+        "Gegenbefund zur Behauptung grundsätzlich ungeordneter Massenmeinung; Instrumentqualität kann Unterschiede erklären."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/EVANS-HEATH-LALLJEE-1996.pdf",
+          "kind": "academic_hosted_publisher_pdf",
+          "sha256": "d683a1091150c77ba83fd1fc422c8fb9f25c1b1d37bdfe890915d65dbf53e293",
+          "bytes": 2187448,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT",
+      "doi": "10.2307/591118"
+    },
+    {
+      "id": "MALKA-LELKES-SOTO-2019",
+      "title": "Are Cultural and Economic Conservatism Positively Correlated? A Large-Scale Cross-National Test",
+      "url": "https://malkaresearch.com/wp-content/uploads/2014/10/malka-lelkes-soto-2017-bjpols.pdf",
+      "edition": "Autorbereitgestellte First-View-Verlagskopie Copyright 2017, S. 1–25; spätere bibliografische Heftfassung 2019, 49(3), 1045–1069",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "WVS 1989–2014, 99 Nationen; individuelle wirtschaftlich-kulturelle Beziehungen und Vergleichskontexte",
+      "readLocators": [
+        {
+          "section": "Method; Measures; within-nation associations",
+          "pdfPages": [
+            8,
+            9
+          ],
+          "printedPages": [
+            8,
+            9
+          ]
+        },
+        {
+          "section": "Conclusion, causal and contextual limitations",
+          "pdfPages": [
+            20,
+            21
+          ],
+          "printedPages": [
+            20,
+            21
+          ]
+        }
+      ],
+      "limits": [
+        "Gelesene Kopie hat First-View-Paginierung; kein Byte-Abgleich mit Heftfassung.",
+        "Keine deutsche ESS11-Prüfung; WVS-Instrumente unterscheiden sich.",
+        "Original benennt fehlenden Kausalnachweis und nicht untersuchte Parteienkontexte.",
+        "Einheitlich positive Rechts-Links-Verbindung wird nicht als universelle Erwartung übernommen; kultur-/wirtschaftsbezogene Beziehungen können schwach oder anders gerichtet sein."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/MALKA-LELKES-SOTO-2019.pdf",
+          "kind": "author_hosted_first_view_pdf",
+          "sha256": "99d1fac8556c76451d4379937c085088c27bafed8d2d9b853a31bb25d6008c1a",
+          "bytes": 1028283,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT",
+      "doi": "10.1017/S0007123417000072"
+    },
+    {
+      "id": "CONVERSE-1964-2006",
+      "title": "The nature of belief systems in mass publics (1964)",
+      "url": "https://web.ics.purdue.edu/~hoganr/Soc%20312/The%20nature%20of%20belief%20systems%20in%20mass%20publics%201964.pdf",
+      "edition": "Wiederabdruck Critical Review 18(1–3), 1–74 (2006); 75 PDF-Seiten inklusive Deckblatt. Originalkapitel 1964, 206–261, nicht separat gelesen",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Historische US-Eliten-/Massenbefunde und Begriffsargument zu constraint",
+      "readLocators": [
+        {
+          "section": "I. Some clarification of terms",
+          "pdfPages": [
+            4
+          ],
+          "printedPages": [
+            3
+          ]
+        },
+        {
+          "section": "X. Conclusion",
+          "pdfPages": [
+            66,
+            67
+          ],
+          "printedPages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "limits": [
+        "Keine aktuelle deutsche Diagnose, keine Aussage über Intelligenz oder persönliche politische Konsistenz.",
+        "Nur genannte Abschnitte des Wiederabdrucks gelesen; keine eigenständige Replikation und kein vollständiger Literaturreview.",
+        "Evans et al. liefern eine messinstrumentbezogene Gegenposition zu starken Schlussfolgerungen über fehlende Ordnung."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/CONVERSE-1964-2006.pdf",
+          "kind": "university_hosted_reprint_pdf",
+          "sha256": "aa6561226163383de80f100c42c7c90775ad61e810d7de81dae63c4cb2aec994",
+          "bytes": 4213899,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT",
+      "doi": "10.1080/08913810608443650"
+    },
+    {
+      "id": "SCHWARTZ-ESS-VALUES",
+      "title": "A Proposal for Measuring Value Orientations across Nations",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/ESS_core_questionnaire_human_values.pdf",
+      "edition": "61-seitige ESS-Kopie, gedruckte Kapitelseiten ab 259; Publikations-/Revisionsdatum der Kopie nicht gesichert",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "ORIGINALFUNDSTELLEN_PARTIELL_GELESEN",
+      "scope": "Allgemeine persönliche Werte, ESS-21-Item-Vorschlag und Auswertungsprinzipien",
+      "readLocators": [
+        {
+          "section": "7.1.1 The Nature of Values; motivational structure",
+          "pdfPages": [
+            4,
+            5,
+            11
+          ],
+          "printedPages": [
+            262,
+            263,
+            269
+          ]
+        },
+        {
+          "section": "Correcting for Response Tendencies",
+          "pdfPages": [
+            17
+          ],
+          "printedPages": [
+            275
+          ]
+        },
+        {
+          "section": "7.1.5 Proposed Value Items for ESS; Estimation of value orientation scores",
+          "pdfPages": [
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "printedPages": [
+            284,
+            285,
+            286,
+            287,
+            288
+          ]
+        }
+      ],
+      "limits": [
+        "PVQ-Priorität ist nicht einfache politische Zustimmung und nicht automatisch kompatibel mit 0–1-Scorevorgabe.",
+        "Vorschlag keine deutsche ESS11-Webmodusvalidierung.",
+        "Keine PVQ-Aufnahme, keine Zahl politischer Dimensionen übernommen; genauere vollständige Werte-Konstruktakten bleiben offen.",
+        "Tabelle 6 des Vorschlags hat teilweise andere Portraitwortlaute als ESS11 Deutschland; kein endgültiger aktueller Item-/Auswertungsschlüssel bestätigt."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/SCHWARTZ-ESS-VALUES.pdf",
+          "kind": "official_ess_pdf",
+          "sha256": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+          "bytes": 411213,
+          "publishCopy": false
+        }
+      ],
+      "independentReview": "NICHT_GEPRÜFT"
+    }
+  ],
+  "uninspectedCandidates": [
+    {
+      "id": "FUCHS-KLINGEMANN-1990",
+      "title": "The Left-Right Schema",
+      "url": "https://www.degruyterbrill.com/document/doi/10.1515/9783110882193.203/html",
+      "doi": "10.1515/9783110882193.203",
+      "edition": "Continuities in Political Action (1990), chapter 7, 203–234",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "NUR_METADATEN_VOLLTEXT_UNZUGAENGLICH",
+      "scope": "Als Literaturkandidat geführt; keine tragende Aussage daraus übernommen",
+      "limits": [
+        "Offizielle bibliografische Suchmetadaten gelesen; Volltextabruf gescheitert (Web 405, lokaler Abruf 202 ohne Inhalt).",
+        "Keine Ersatzlektüre über Sekundärzitate."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/FUCHS-KLINGEMANN-1990.metadata-web.json",
+          "kind": "failed_web_fetch_log",
+          "sha256": "a4325bfb3be3dd31db0b234211fa59ac9e442ed8b07d499d968831c18aec9e12",
+          "bytes": 322,
+          "publishCopy": false
+        },
+        {
+          "path": "outputs/loop/theory/FUCHS-KLINGEMANN-1990.html",
+          "kind": "empty_http_202_response",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "publishCopy": false
+        }
+      ]
+    },
+    {
+      "id": "PIURKO-ETAL-2011",
+      "title": "Basic Personal Values and the Meaning of Left-Right Political Orientations in 20 Countries",
+      "url": "https://doi.org/10.1111/j.1467-9221.2011.00828.x",
+      "doi": "10.1111/j.1467-9221.2011.00828.x",
+      "edition": "Political Psychology 32(4), 537–561 (2011), first published 19.05.2011",
+      "accessedOn": "2026-10-03",
+      "inspectionStatus": "NUR_METADATEN_ABSTRACT",
+      "scope": "ESS 2002–2003 laut Abstract; kein tragender Volltextbefund",
+      "limits": [
+        "Kein Originalvolltext gelesen; Herkunft/Methoden/Gegenbefunde nicht geprüft."
+      ],
+      "localArtifacts": [
+        {
+          "path": "outputs/loop/theory/PIURKO-ETAL-2011.metadata-web.json",
+          "kind": "publisher_metadata_web_extract",
+          "sha256": "a5d6720e23a6b58cf3a3362904c55cf496d16da85a5fa581857d4cf4d7fcabcf",
+          "bytes": 14034,
+          "publishCopy": false
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "L-THEO-001",
+      "kind": "Quellenbefund und eigene Rahmenentscheidung",
+      "statement": "GG nennt Rechte, Staatsaufgaben und Zuständigkeiten als unabhängigen deutschen Themenbezug.",
+      "sourceLocators": [
+        {
+          "source": "THEO-GG-20261003",
+          "locator": "Art. 3,5,7,10,12,14,16a,20,20a,23,73,74,87a,109"
+        }
+      ],
+      "allowedClaim": "Institutionelle Gegenstände begründen die Dokumentation von Abdeckung/Lücken.",
+      "limits": [
+        "Kein empirischer Wichtigkeits-, Vollständigkeits- oder Neutralitätsnachweis."
+      ],
+      "counterEvidence": [],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-002",
+      "kind": "Quellenbefund",
+      "statement": "Der GLES-RCS-Fragebogen 2025 enthält politische Gegenstände jenseits des ESS11-Ausschnitts und offene Problemnennung.",
+      "sourceLocators": [
+        {
+          "source": "GLES-RCS-2025",
+          "locator": "pre020/pre022, PDF/gedr. S.33/35; pre029/032/036 S.42/45/49; pre034/038 S.47/51"
+        }
+      ],
+      "allowedClaim": "Datierter instrumentunabhängiger Themenhinweis.",
+      "limits": [
+        "Keine Antwortdaten und keine Salienz-Rangfolge; keine fremden Items für den Test ausgewählt."
+      ],
+      "counterEvidence": [],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-003",
+      "kind": "Quellenbefund",
+      "statement": "Die im Themenrahmen/Erwartungsmodell benannten B-/E-Items sind im deutschen Original vorhanden; ihre Gegenstände und öffentlichen Variablennamen sind dokumentiert.",
+      "sourceLocators": [
+        {
+          "source": "ESS11-DE-QUESTIONNAIRE",
+          "locator": "Q S.13–16/50–54"
+        },
+        {
+          "source": "ESS11-CODEBOOK",
+          "locator": "CB PDF S.63–67/213–217, gedr.S.62–66/212–216"
+        }
+      ],
+      "allowedClaim": "Originalitembezogene Entwurfszuordnung.",
+      "limits": [
+        "Nicht vollständige Item-Erstbewertung; thematische Nähe beweist keine gemeinsame Dimension."
+      ],
+      "counterEvidence": [],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-004",
+      "kind": "Versionsgrenze",
+      "statement": "Deutsches Instrumentjahr 2023, Codebook 4.1 und Datenkandidat 4.2 sind unterschiedliche Versionsangaben.",
+      "sourceLocators": [
+        {
+          "source": "ESS11-DE-QUESTIONNAIRE",
+          "locator": "Titel PDF/gedr.S.1"
+        },
+        {
+          "source": "ESS11-CODEBOOK",
+          "locator": "Titel, Ausgabe4.1; PDF/gedr.Seitenoffset"
+        }
+      ],
+      "allowedClaim": "Reichweite der gelesenen Dokumente und offene Versionsprüfung.",
+      "limits": [
+        "Keine Datenausgabe4.2 durch diese Quellenlektüre validiert; Feldzeit nicht aus Titeljahr abgeleitet."
+      ],
+      "counterEvidence": [],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-005",
+      "kind": "Quellenbefund",
+      "statement": "C30–C32 unterscheiden Ursache, Verantwortung und Besorgnis; C30=55 überspringt Folgefragen; C33 randomisiert weitere Testformen.",
+      "sourceLocators": [
+        {
+          "source": "ESS11-DE-QUESTIONNAIRE",
+          "locator": "Q S.26–31"
+        },
+        {
+          "source": "ESS11-CODEBOOK",
+          "locator": "ccnthum/ccrdprs/wrclmch, PDF S.165–166, gedr.S.164–165"
+        }
+      ],
+      "allowedClaim": "Klimainhalt mit eigener Filter-/Aussageartgrenze.",
+      "limits": [
+        "Keine gemeinsame vollständige Norm oder politische Maßnahmenpräferenz bestätigt."
+      ],
+      "counterEvidence": [],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-006",
+      "kind": "Quellenbefund",
+      "statement": "H1/H2 sind Portrait-Ähnlichkeitsfragen mit Geschlechtsfilter; öffentliches Codebook führt Variablen mit suffix a.",
+      "sourceLocators": [
+        {
+          "source": "ESS11-DE-QUESTIONNAIRE",
+          "locator": "Q S.85–92, H1/H2 A–U, Filter E1=1/2"
+        },
+        {
+          "source": "ESS11-CODEBOOK",
+          "locator": "Ha-u, PDF S.534–541, u.a. ipeqopta/ipudrsta/impenva/imptrada/ipstrgva"
+        }
+      ],
+      "allowedClaim": "Bedingte Wertealternative und genaue originale Identitäten.",
+      "limits": [
+        "Keine politische Maßnahmenmessung, kein vollständiger PVQ-Vertrag; Filterfälle außerhalb E1=1/2 offen.",
+        "Wertezuordnung zum aktuellen Instrument bleibt wegen teils abweichender Proposal-Wortlaute offen."
+      ],
+      "counterEvidence": [],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-007",
+      "kind": "Quellenbefund",
+      "statement": "Kriesi et al. formulieren wirtschaftlich-kulturelle Einbettung von Integration/Abgrenzung und untersuchen historische Angebotskommunikation.",
+      "sourceLocators": [
+        {
+          "source": "KRIESI-ETAL-2006",
+          "locator": "Introduction; The impact ...; Research design; Original-HTML, Seiten nicht geprüft"
+        }
+      ],
+      "allowedClaim": "Historische Angebotsrahmung als mögliche Theoriequelle.",
+      "limits": [
+        "Kein deutscher ESS11-Individualfaktor, keine aktuellen Parteienwerte."
+      ],
+      "counterEvidence": [
+        "Original diskutiert Alternative zusätzlicher Dimensionen; Nachfrageseite ausdrücklich nicht Gegenstand dieses Artikels."
+      ],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-008",
+      "kind": "Quellenbefund",
+      "statement": "De Vries et al. untersuchen zeitlich wechselnde ökonomische/kulturelle Bezüge individueller Links-Rechts-Selbsteinstufung.",
+      "sourceLocators": [
+        {
+          "source": "DEVRIES-HAKHVERDIAN-LANCEE-2013",
+          "locator": "Data and measurement; Conclusion, PDF S.8–9/14–15, gedr.S.229–230/235–236"
+        }
+      ],
+      "allowedClaim": "Dynamische Issue-Basis in niederländischen wiederholten Querschnitten 1980–2006.",
+      "limits": [
+        "Kein deutscher Gegenwartsbefund, kein umfassender gemeinsamer latenter Faktor."
+      ],
+      "counterEvidence": [
+        "Original nennt Endogenität; verwendete Ressourcen-/Diskriminierungsitems unterscheiden sich von ESS-Zuwandereraufnahme."
+      ],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-009",
+      "kind": "Quellenbefund",
+      "statement": "Schwartz trennt allgemeine Werte von gegenstandsbezogenen Einstellungen und behandelt Prioritäten relativ sowie antworttendenzkorrigiert.",
+      "sourceLocators": [
+        {
+          "source": "SCHWARTZ-ESS-VALUES",
+          "locator": "The Nature of Values; Correcting for Response Tendencies; Proposed Value Items; Estimation, PDF S.4/11/17/26–30, gedr.S.262/269/275/284–288"
+        }
+      ],
+      "allowedClaim": "Gesonderter Auswertungsvertrag für eine mögliche PVQ-Aufnahme.",
+      "limits": [
+        "Keine übernommenen politischen Dimensionen; keine persönliche Motivdiagnose."
+      ],
+      "counterEvidence": [
+        "Vorschlag beschreibt alternative Korrekturwege und bedingte Itemanpassung; einfache0–1-Mittelung nicht als relative Priorität belegt."
+      ],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-010",
+      "kind": "Quellenbefund",
+      "statement": "Evans et al. prüfen wirtschaftliche Gleichheits- und libertär-autoritäre Mehr-Item-Skalen in britischen Erhebungen.",
+      "sourceLocators": [
+        {
+          "source": "EVANS-HEATH-LALLJEE-1996",
+          "locator": "Method; The Dimensionality ...; Diskussion, PDF S.3–6/17, gedr.S.94–97/108"
+        }
+      ],
+      "allowedClaim": "Gegenposition zu pauschal ungeordneter Massenmeinung und Kandidat getrennter Konstruktprüfung.",
+      "limits": [
+        "Andere Items, historische britische Erhebungen, keine aktuelle deutsche Validierung."
+      ],
+      "counterEvidence": [
+        "Original diskutiert Unterschiede der Instrumentqualität; PCA/Varimax-Ergebnis kein allgemeines Orthogonalitätsgebot."
+      ],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-011",
+      "kind": "Quellenbefund",
+      "statement": "Malka et al. dokumentieren in WVS1989–2014 variable, häufig schwache oder anders gerichtete kulturell-ökonomische Beziehungen.",
+      "sourceLocators": [
+        {
+          "source": "MALKA-LELKES-SOTO-2019",
+          "locator": "Method/Measures/Results; Conclusion, First-View PDF/gedr.S.8–9/20–21"
+        }
+      ],
+      "allowedClaim": "Gegenbeleg zur universellen positiven Rechts-Links-Bündelannahme.",
+      "limits": [
+        "Keine Übertragung konkreter Koeffizienten auf ESS11; kein kausaler Nachweis."
+      ],
+      "counterEvidence": [
+        "Original nennt nicht untersuchte Parteienkontexte und alternative Erklärungen; Quellenbestand entscheidet nicht die deutsche Struktur."
+      ],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-012",
+      "kind": "Quellenbefund",
+      "statement": "Converse unterscheidet Eliten-/Massenbeliefs und fasst constraint als graduellen Zusammenhang auf.",
+      "sourceLocators": [
+        {
+          "source": "CONVERSE-1964-2006",
+          "locator": "I.Some clarification of terms; X.Conclusion, PDF S.4/66–67, gedr.S.3/65–66"
+        }
+      ],
+      "allowedClaim": "Begriffsgrundlage für themenspezifische/geringer verbundene Alternativen.",
+      "limits": [
+        "Historische US-Reichweite, keine deutsche Personenklassifikation."
+      ],
+      "counterEvidence": [
+        "Evans et al. stellen starke Folgerungen aus schwacher Einzelitemmessung infrage."
+      ],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-013",
+      "kind": "Zugangsgrenze",
+      "statement": "Fuchs/Klingemann1990 und Piurko et al.2011 wurden nur bibliografisch beziehungsweise im Abstract eingesehen.",
+      "sourceLocators": [
+        {
+          "source": "FUCHS-KLINGEMANN-1990",
+          "locator": "Verlagsmetadaten Kap.7,S.203–234; Volltext unzugänglich"
+        },
+        {
+          "source": "PIURKO-ETAL-2011",
+          "locator": "Verlagsmetadaten/Abstract, Vol32(4),S.537–561; Volltext ungelesen"
+        }
+      ],
+      "allowedClaim": "Literaturkandidaten, kein tragender Volltextbeleg.",
+      "limits": [
+        "Keine behauptete vollständige Prüfung; keine Sekundärzitate als Originallektüre."
+      ],
+      "counterEvidence": [],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    },
+    {
+      "id": "L-THEO-014",
+      "kind": "Eigene Hypothesen",
+      "statement": "Die Matrix formuliert gemeinsamen, wirtschaftlich/gesellschaftlich getrennten, thematischen und bedingt wertebezogenen Zusammenhang als Alternativen.",
+      "sourceLocators": [
+        {
+          "source": "ESS11-DE-QUESTIONNAIRE",
+          "locator": "konkrete Original-IDs in docs/erwartungsmodell.entwurf.md"
+        },
+        {
+          "source": "DEVRIES-HAKHVERDIAN-LANCEE-2013",
+          "locator": "sieheL-THEO-008"
+        },
+        {
+          "source": "EVANS-HEATH-LALLJEE-1996",
+          "locator": "sieheL-THEO-010"
+        },
+        {
+          "source": "MALKA-LELKES-SOTO-2019",
+          "locator": "sieheL-THEO-011"
+        },
+        {
+          "source": "SCHWARTZ-ESS-VALUES",
+          "locator": "sieheL-THEO-009"
+        },
+        {
+          "source": "CONVERSE-1964-2006",
+          "locator": "sieheL-THEO-012"
+        }
+      ],
+      "allowedClaim": "Prüfbarer Autorenentwurf vor Antwortkenntnis.",
+      "limits": [
+        "Keine gerichteten Korrelationen, endgültigen Items, Polung oder feste Dimensionenzahl.",
+        "Numerische Abnahmeregeln und andere Modellfamilienprüfungen bleiben offen; B33 allein trägt keine breite latente Wirtschaftsorientierung."
+      ],
+      "counterEvidence": [],
+      "status": "ENTWURF_QUELLENPRUEFUNG_OFFEN"
+    }
+  ],
+  "scientificApproval": "NICHT_GEPRÜFT",
+  "licensing": "Nur eigene Beschreibungen/Metadaten im Git-Artefakt. Volltexte und Werkzeugauszüge ausschließlich unter ausgeschlossenen outputs/loop/theory/. Keine eigene Veröffentlichungserlaubnis der Artikelkopien behauptet."
+}
