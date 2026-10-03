@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T05:06:36.464804+00:00",
+  "updatedAtUtc": "2026-10-03T05:18:38.449202+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -613,9 +613,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["Quellenregister"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -624,7 +624,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "history": [
         {
@@ -647,8 +652,35 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "F-S01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-sources.md",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "Präziser historischer Lesebereich",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Quellenregister"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "F-P01",
@@ -659,9 +691,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["EU-Interpretation"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -670,7 +702,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "history": [
         {
@@ -693,8 +730,35 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "F-P01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "B37 misst keine Rücknahmepräferenz",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["EU-Interpretation"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "F-P02",
@@ -705,9 +769,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["P10 politische Gruppen"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -716,7 +780,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "history": [
         {
@@ -739,8 +808,35 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "F-P02",
+            "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Feste LR-Bereiche widersprechen Terzilen",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["P10 politische Gruppen"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "F-P03",
@@ -762,7 +858,10 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "boundedDocumentationCheck": "BESTANDEN",
+        "scientificResolution": "BLOCKIERT"
       },
       "history": [
         {
@@ -808,7 +907,10 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "boundedDocumentationCheck": "BESTANDEN",
+        "scientificResolution": "BLOCKIERT"
       },
       "history": [
         {
@@ -843,9 +945,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["P10 politische Gruppen"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -854,7 +956,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "duplicateOf": "F-P02",
       "history": [
@@ -879,8 +986,36 @@
             },
             "duplicateOf": "F-P02"
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "FM-F01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-methods.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Gleicher Terzilkonflikt wie F-P02",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["P10 politische Gruppen"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            },
+            "duplicateOf": "F-P02"
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "FM-F02",
@@ -891,9 +1026,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["synthetische Textaussage"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -902,7 +1037,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "history": [
         {
@@ -925,8 +1065,35 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "FM-F02",
+            "origin": "reports/loop/reviews/FOUNDATION-001-methods.md",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "Synthetischer Wert falsch gerundet",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["synthetische Textaussage"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "N-F01",
@@ -937,9 +1104,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 2,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["Inventar/Itemauswahl"],
-      "correctionState": "Begrenzte Runde2-Typkorrektur durch beide v3-Berichte bestätigt; großer Juror offen; alle205Restzeilen weiterhin offen.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -949,12 +1116,16 @@
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
         "boundedV2CorrectionCheck": "NICHT_BESTANDEN",
-        "currentManifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
         "boundedV3CorrectionCheck": "BESTANDEN",
         "independentV3Reports": [
           "reports/loop/reviews/FOUNDATION-001-v3-types.md",
           "reports/loop/reviews/FOUNDATION-001-v3-repro.md"
-        ]
+        ],
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "history": [
         {
@@ -977,8 +1148,41 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "N-F01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-neutrality.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Antwortgegenstände durch Fallback falsch klassifiziert",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 2,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Inventar/Itemauswahl"],
+            "correctionState": "Begrenzte Runde2-Typkorrektur durch beide v3-Berichte bestätigt; großer Juror offen; alle205Restzeilen weiterhin offen.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "NICHT_BESTANDEN",
+              "currentManifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json",
+              "boundedV3CorrectionCheck": "BESTANDEN",
+              "independentV3Reports": [
+                "reports/loop/reviews/FOUNDATION-001-v3-types.md",
+                "reports/loop/reviews/FOUNDATION-001-v3-repro.md"
+              ]
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "REPRO-F01",
@@ -989,9 +1193,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["Inventar-Reproduktion"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -1000,7 +1204,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "history": [
         {
@@ -1023,8 +1232,35 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "REPRO-F01",
+            "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Wirksamer Lizenzinput nicht deterministisch gebunden",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Inventar-Reproduktion"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "REPRO-F02",
@@ -1035,9 +1271,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["Nachprüfbarkeit"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Auftragsbindung und ehrliche Begrenzung historischer Nachweislücken bestätigt; ursprüngliche ungebundene vollständige Laufzeiten/Kommandos bleiben NICHT_GEPRÜFT.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -1046,7 +1282,13 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN",
+        "historicalUndocumentedExecution": "NICHT_GEPRÜFT"
       },
       "history": [
         {
@@ -1069,8 +1311,35 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "REPRO-F02",
+            "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+            "decision": "angenommen",
+            "severity": "mittel",
+            "problem": "Aufträge/historische Protokolle nicht eingefroren",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Nachprüfbarkeit"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "REPRO-F03",
@@ -1081,9 +1350,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["Inventarbeleg"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -1092,7 +1361,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "history": [
         {
@@ -1115,8 +1389,35 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "REPRO-F03",
+            "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "Liste92-Locator fehlt ohne Statusfolge",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Inventarbeleg"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "REPRO-F04",
@@ -1127,9 +1428,9 @@
       "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["Inventar-Provenienz"],
-      "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -1138,7 +1439,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
-        "boundedV2CorrectionCheck": "BESTANDEN"
+        "boundedV2CorrectionCheck": "BESTANDEN",
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
       },
       "history": [
         {
@@ -1161,8 +1467,35 @@
               "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "REPRO-F04",
+            "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "Seitenauszug als itemexklusiver Block beschrieben",
+            "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+            "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": ["Inventar-Provenienz"],
+            "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
+            "verification": {
+              "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
+              "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
+              "manifestSha256": "10157ee7bca65ca0b92707e673bc75c3698c4d1acc6664da421b7b218e7a1988",
+              "independentReports": [
+                "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+                "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
+              ],
+              "boundedV2CorrectionCheck": "BESTANDEN"
+            }
+          }
         }
-      ]
+      ],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md"
     },
     {
       "id": "PREP-M-01",
@@ -1502,15 +1835,41 @@
       "id": "FOUNDATION-PROV-01",
       "severity": "mittel",
       "decision": "angenommen",
-      "status": "NICHT_GEPRÜFT",
+      "status": "BESTANDEN",
       "repairRounds": 1,
       "problem": "Vier historische SourceInput-Hashes standen neben wiederverwendeten Livepfaden; v3-Dateikopien korrekt gebunden, pauschale157Hashgleichheit falsch.",
       "origin": "reports/loop/reviews/FOUNDATION-001-v3-types.md; formal auch v3-repro bestätigt",
       "evidence": "Beide vollständige v3-Berichte und originaler v3-Manifestbereich; exakte altenHashes stimmen mitv2/files.",
       "reason": "Konkrete Pfad/Byte-Gegenprüfung, keineMehrheitsentscheidung.",
-      "correctionState": "Neuev4historischeInputpfade ausdrücklichv2/files;alle47v3Dateiwerteunverändert;158hashes und155bereitgestellteBytefelderdurchRootgeprüft; unabhängigeFormalprüfung/Juroraktiv.",
-      "blocks": ["Pauschale vollständigeSourceInput-Bindungderv3Livepfade"],
-      "decisionRecord": "reports/loop/FOUNDATION-001-nachpruefentscheidung.md"
+      "correctionState": "Konkrete begrenzte Reparatur durch Nachprüfer und frischen unabhängigen Juror bestätigt; keine vollständige Forschungsabnahme.",
+      "blocks": [],
+      "decisionRecord": "reports/loop/FOUNDATION-001-juror-entscheidung.md",
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+          "previousRecord": {
+            "id": "FOUNDATION-PROV-01",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "status": "NICHT_GEPRÜFT",
+            "repairRounds": 1,
+            "problem": "Vier historische SourceInput-Hashes standen neben wiederverwendeten Livepfaden; v3-Dateikopien korrekt gebunden, pauschale157Hashgleichheit falsch.",
+            "origin": "reports/loop/reviews/FOUNDATION-001-v3-types.md; formal auch v3-repro bestätigt",
+            "evidence": "Beide vollständige v3-Berichte und originaler v3-Manifestbereich; exakte altenHashes stimmen mitv2/files.",
+            "reason": "Konkrete Pfad/Byte-Gegenprüfung, keineMehrheitsentscheidung.",
+            "correctionState": "Neuev4historischeInputpfade ausdrücklichv2/files;alle47v3Dateiwerteunverändert;158hashes und155bereitgestellteBytefelderdurchRootgeprüft; unabhängigeFormalprüfung/Juroraktiv.",
+            "blocks": ["Pauschale vollständigeSourceInput-Bindungderv3Livepfade"],
+            "decisionRecord": "reports/loop/FOUNDATION-001-nachpruefentscheidung.md"
+          }
+        }
+      ],
+      "verification": {
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+        "currentManifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
+        "jurorReport": "reports/loop/reviews/FOUNDATION-001-juror.md",
+        "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
+        "boundedJurorCheck": "BESTANDEN"
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."

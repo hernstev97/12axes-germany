@@ -1,0 +1,605 @@
+{
+  "paths": [
+    "AGENTS.md",
+    "docs/auftrag-life-93-2026-10-03.md",
+    "reports/loop/issue-2026-10-03.md",
+    "docs/analyseanforderungen.md",
+    "reports/loop/METHODS-002-vorabplan.md",
+    "pipeline/synthetic/methods-002.R",
+    "reports/loop/authors/METHODS-002.md",
+    "reports/loop/synthetic/methods-002.json"
+  ],
+  "metadata": {
+    "id": "METHODS-002",
+    "version": 2,
+    "codeCommit": "5fd7bb37e44addcc13bd6840a8ad6e4339f1c9e2",
+    "overrideRule": "Frozen files and explicit source hashes authoritative; public/synthetic-only probe, not ESS model decision",
+    "modelConfiguration": {
+      "n": 1440,
+      "clusters": 96,
+      "strata": 4,
+      "casesPerCluster": 15,
+      "rng": ["Mersenne-Twister", "Inversion", "Rejection"],
+      "model": "f =~ y1 + y2 + y3 + y4",
+      "items": ["y1", "y2", "y3", "y4"],
+      "missing": "none",
+      "fpc": "none",
+      "pps": "not modeled",
+      "target": "N times covariance of 22 sample moments"
+    },
+    "sourceInputs": [
+      {
+        "path": "outputs/loop/software-author/plan-before-run.md",
+        "bytes": 7868,
+        "sha256": "481f2cf1badd9eb67b473e86f0e68e3c73845bbc66a25cc443a4efefd2497ba3",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/setup-deviation-before-run.md",
+        "bytes": 1858,
+        "sha256": "2dbb22e0fa306b2073d52042d2a6d878ba49207abb21059fac2178ca2b5dd600",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/standalone-plan-before-run.md",
+        "bytes": 2027,
+        "sha256": "0b4c88f48b780338812fa148fa3d1c64ef90a8a23fc71c40ce9d44208b33cdb8",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/direct-r-plan-before-run.md",
+        "bytes": 3307,
+        "sha256": "1430e220601f92718d05b7d9a811fe37f750e7ad4c1fb4ef22f3f7217e20823a",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/environment-lock.json",
+        "bytes": 85769,
+        "sha256": "4179bf4d57339b96e6b4ff983b8420ad8dba160ee92dfd2403fbfeb9eb999686",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/conda-explicit-lock.txt",
+        "bytes": 14262,
+        "sha256": "90a494a5ea22e0d3fa7e5d65efb5257c6bbe5410e7a72983dd6fcbb24b4b9342",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/run-r-direct.py",
+        "bytes": 3709,
+        "sha256": "0da51b3c55476e0b0a166c042d4c1b52270e5a673d4ecddb6b533592c3ce0ee5",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/conda-create-command.json",
+        "bytes": 833,
+        "sha256": "3b97d6411956e2f01b6a27f1e4e321377e3b304f0c82a5c4326ff568b2f54050",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/conda-context.log",
+        "bytes": 581,
+        "sha256": "276f6cdaf1e21295a8efcddc82b8c2a8abe48751960ba0e30727f5d68b10aa55",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/conda-config.log",
+        "bytes": 445,
+        "sha256": "387e094a10c5139216278dee7b4c5c0055e924173045f06c46c3d2c10c2716e8",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/outside-write-incident.json",
+        "bytes": 1366,
+        "sha256": "4317e2f4fd857c2675a2d80cf94e499af9b0b3e66136068296bcfee0df67415e",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/user-file-baseline.json",
+        "bytes": 736,
+        "sha256": "3c7a138b3c89a70dc260cada5848d7eb0a26900e2241e5a3b67658fd679c6d77",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/user-file-after-create.json",
+        "bytes": 160,
+        "sha256": "5d44fdf4a11d943eab8be899b6c398b339adca8b37598e61f7e8adf71ef2a6b6",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/user-file-after-direct.json",
+        "bytes": 1880,
+        "sha256": "1e29fd840e8df43f57b28e527f1df634c9d15d54c5e107d2f45bd5afcc20bef3",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/direct-r-probe-final-command.json",
+        "bytes": 5639,
+        "sha256": "e28947582ea725fbeb034cf68f6de5ff4c8949c89385852e524e7af9e942f8de",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/direct-r-probe-final.log",
+        "bytes": 2582,
+        "sha256": "669ca1d9b0d9728a49daedeeb6bba80f2470c1434f161d0845e3ad42901176c8",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-final-command.json",
+        "bytes": 5245,
+        "sha256": "66d21b5444f4de7e8ed24c1134f209d157ce199d23ae49e0c70636fb8f42bf65",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-final.log",
+        "bytes": 727,
+        "sha256": "5657fbc6ab5c82d8ca3f378b7141c367a11c2c2e175ec193a0a62ddd01e93e4c",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-repeat-command.json",
+        "bytes": 5372,
+        "sha256": "35728be16544869b5c468a1bd1e524d937c2b15880a61a235173511f6d867dd5",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-repeat.log",
+        "bytes": 734,
+        "sha256": "35ef4b5f7611e271a5f0fb2eb9a81910c4d05da4688bec023d2899c92a2535fb",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/repeat-comparison.json",
+        "bytes": 548,
+        "sha256": "58972b5bd3b9b4b5df0e426d67975e9586eb1bd4dfb7c4e9330d15f6b18bccc2",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/first-run-script.R",
+        "bytes": 17172,
+        "sha256": "31e6714c968c78dbee883f556b55b8bd88d01938fed5fd5858c79d925d096d39",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/first-run-result.json",
+        "bytes": 200019,
+        "sha256": "da40fdd3e1adc9e164c7366df29cb80a8a0f872a1573caad48f66ebf4a6faeb5",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-input.csv",
+        "bytes": 101344,
+        "sha256": "2360c7663743bb2078601d86068b478f654c8c298866f0cb1b23bb86bc1863f7",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-labelled-command.json",
+        "bytes": 5248,
+        "sha256": "70516012226115dd2be4caf440cb8457cab0e4447cd49375479a0c3cd9536549",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-labelled.log",
+        "bytes": 727,
+        "sha256": "5657fbc6ab5c82d8ca3f378b7141c367a11c2c2e175ec193a0a62ddd01e93e4c",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-labelled-repeat-command.json",
+        "bytes": 5390,
+        "sha256": "9347344a84854c12e7403e6732d4af622d78694b2c0772284081344dcc86bba5",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/synthetic-labelled-repeat.log",
+        "bytes": 743,
+        "sha256": "c3f90bc4c0fb6cda92cd64d9cd88f5397b4a6a1886ec887f71275a019518247c",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/repeat-comparison-labelled.json",
+        "bytes": 548,
+        "sha256": "a00c3d45daf94ffe2ec131a99ea4f58961c218c26eb4d9e6890029ce2c97875d",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/pnpm-check-final.log",
+        "bytes": 4025,
+        "sha256": "d814a1d368c69daf72d174382670bd35ce2ffa938309446e3d313aae0a8c40c9",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/bootstrap.py",
+        "bytes": 7105,
+        "sha256": "4f66fb72a7daca604c4751c6903ccd1a8abe77a766ed87a56ea17649b5596731",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/run-scoped.py",
+        "bytes": 2327,
+        "sha256": "f522731f5b3a45aec876079dda3253203c8b446906f8879503a44bcb267cbb4c",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/download-sources.json",
+        "bytes": 14408,
+        "sha256": "82fef3fb58f5ddb4b0c484de5f77605dc9639d7bb2598d6ed7973f2325572799",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/micromamba-config-all.txt",
+        "bytes": 1899,
+        "sha256": "43df9b0724a49db486289c54f76b9811188c097696aa49addfb04afc1df78ff5",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/micromamba-config-describe.txt",
+        "bytes": 1,
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/Miniforge3-installer-header-full.txt",
+        "bytes": 28481,
+        "sha256": "ebf2bd2d3b6bbc65133c8ff43cc8d72bd376440cb420c42ceb4ae5acb9544717",
+        "scope": "Original author command/source/synthetic/runtime input; no ESS"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-install.html",
+        "bytes": 54140,
+        "sha256": "81ad3ea9a59ce7d9fbfa531c0518d7ead1d47163c42e6e5d9eb8cc1a5acdc858",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-use.html",
+        "bytes": 18662,
+        "sha256": "20dbf2ad186f96c614208e1b1a2c6d6f69fb7d4c3fab7035be5eb473362b619f",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-config.html",
+        "bytes": 24888,
+        "sha256": "82679c7112441c91760b5919df079832a160fac43f12d9ab793ce136584c9362",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan-release.html",
+        "bytes": 30176,
+        "sha256": "f33d679703f935f10c0b1a7b153eb54c4473ddf890a0f06d1c6ff062b231c6cc",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan-cat.html",
+        "bytes": 34308,
+        "sha256": "a542339d7c76fee89aba243f98e149c7e4cb0253d9e93f6a95023f7c8ecb9d02",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan-0.7-2-manual.pdf",
+        "bytes": 654088,
+        "sha256": "969cee634399198d580d10493fa2a7ccf2cf678b96b67fafee1d128c388b6b84",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/semTools-0.5-9-manual.pdf",
+        "bytes": 658256,
+        "sha256": "486d54175cd873598a414a2a32e43eaf86a29c8ddb584579b8a45df15c3a8a9e",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/semTools_0.5-9.tar.gz",
+        "bytes": 1432776,
+        "sha256": "8de79f0b2c4ff07e11254d60d6a3918b36beb5b5323e64be8f0bfe6d18f1ade5",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-environments-manager-main.cpp",
+        "bytes": 7402,
+        "sha256": "c00a42d8ede18896a0990e1d1307cc9841032dbd2f7b4c0db1ffd30901f626f5",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-configuration-main.cpp",
+        "bytes": 112559,
+        "sha256": "6a9926806bf8f97caba7653d9c0263372748cab99176414bad4889ead9995f91",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-env/micromamba-linux-64.tar.bz2",
+        "bytes": 6988090,
+        "sha256": "8761c382127e6363bd9e0a2451aa3ef90d071a79133f736e2f759a3bf13040dd",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software/lavaan_0.7-2.tar.gz",
+        "bytes": 1452937,
+        "sha256": "5e6497544beca09739a91da4f82e830d6baab367c51e002bbf62c58c3bd866e7",
+        "scope": "Original local synthetic runtime/source/protocol evidence"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-2.9.0-libmamba-src-api-configuration.cpp",
+        "bytes": 109647,
+        "sha256": "04ec02780b0e26825505bdaa12a8bf9937c2f70d8e2c327ca02658afd90ef87e",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-2.9.0-libmamba-src-core-environments_manager.cpp",
+        "bytes": 7402,
+        "sha256": "c00a42d8ede18896a0990e1d1307cc9841032dbd2f7b4c0db1ffd30901f626f5",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-2.9.0-libmamba-include-mamba-core-context.hpp",
+        "bytes": 10698,
+        "sha256": "b5ab169c8aadd37374ed23e45bdb689a66ddb6866a7f4331761f9ea0587fca44",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-2.9.0-micromamba-src-common_options.cpp",
+        "bytes": 17632,
+        "sha256": "3543d592e0e23f4207d6426fb9536f3194d54041c19ead207285f6ce1cd6c4e6",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/mamba-2.9.0-micromamba-src-main.cpp",
+        "bytes": 7022,
+        "sha256": "f0c847c068781a34cdf010119bb21fd098468d2049950d099a259c0fb50ef23f",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/Miniforge3-26.7.2-0-Linux-x86_64.sh.sha256",
+        "bytes": 104,
+        "sha256": "aede505155cd2411468cb06879ae0530b58ed6753161020aef86af1892bbf029",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/conda-standalone-readme.md",
+        "bytes": 7229,
+        "sha256": "66d257d44e5ec65bc02e6cc44244b4b9c8023e3620fc9282de102dfe80488970",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/conda-standalone-metadata.json",
+        "bytes": 285175,
+        "sha256": "2a3054a6135b1cdcb00384371fe56d1e72b4ff31f259307102ec7c6abc9441b7",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/conda-config.html",
+        "bytes": 122548,
+        "sha256": "698706a6cc3a95c5841a67b93d327b5c7d77c24b8e065dc30baf986fe129568c",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/miniforge-readme.md",
+        "bytes": 20990,
+        "sha256": "3be17cc2c2a3914a10a4afa7ad8648d07043e83a26845537b51fd1d82c2cd621",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/conda-envs-manager-main.py",
+        "bytes": 7371,
+        "sha256": "98147001312a0faa92768ecac625d8423e26b15e14f4975004740e74d9e35bf6",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/conda-context-main.py",
+        "bytes": 91782,
+        "sha256": "b83c5d3942c11c56082e6e7c13bdd5c362619b31e0dc0f4670f10a5741f58948",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-env/Miniforge3-Linux-x86_64.sh",
+        "bytes": 124514161,
+        "sha256": "281b0ac7d550802efc81af633225a5e6116d29ae72f3ab4eae7168c3931a4c05",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-env/conda-standalone-26.5.2-h643be8f_1.conda",
+        "bytes": 57578453,
+        "sha256": "1c5f11bcc585e1dffabda0aad96838a3290339d68504479422533b008c10d2fd",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/conda-26.5.2-conda-core-envs_manager.py",
+        "bytes": 7697,
+        "sha256": "d7f4ad770b6b768becbe8e7d05fcda7c6d39321a7ba591e3cf286412bd6b695c",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/conda-26.5.2-conda-base-context.py",
+        "bytes": 87936,
+        "sha256": "f9026322b04d07614db6536455321584f810c5bad82f1de09ce2c6e36d8906ab",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/conda-26.5.2-conda-core-path_actions.py",
+        "bytes": 54382,
+        "sha256": "91a5894dc7f6e3007980c1af087f30632e1838ec72bbc7aa6583f4d1150e5a5b",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/linux-landlock.html",
+        "bytes": 150991,
+        "sha256": "1c258549336d01df7163ef551674b314c9e6b81ae4b9f26c3b4d80336ab87875",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/setpriv-2.42.4-local-manual.txt",
+        "bytes": 10517,
+        "sha256": "64235fe477c56e490266ee037b387ba6329a12b4e92e53b5802052da14819d4b",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/R/lav_lavaan_step02_options.R",
+        "bytes": 12331,
+        "sha256": "b623d97dbd702c909f02e69c3d44bcd1652f4198cdf99b70bad9fb8f6070411c",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/R/lav_muthen1984.R",
+        "bytes": 18336,
+        "sha256": "1e1f24878f027d22814f3113ac8b44af21ccb08a54d385a6c6018fb38b87ff45",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/R/lav_samplestats.R",
+        "bytes": 93137,
+        "sha256": "438d4b5242456bf553c43bcb007da38b0f3983e1aa1dffcab80852fdf3032762",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/R/lav_object_inspect.R",
+        "bytes": 122611,
+        "sha256": "a5adc48a9920d719e46047b2c977ffcc7c25bcf27a097bf823f2ec624af3fe61",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/R/lav_data.R",
+        "bytes": 53485,
+        "sha256": "68451030f010c9b8cbb0d4e615f24d326a69fd7a14490514b946eef1d3402702",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/R/lav_options.R",
+        "bytes": 56518,
+        "sha256": "5bf803a9ce52f683b5335c8a718afcfbf73ea22d5719cb7ebccbff6072473857",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/man/lavaan.Rd",
+        "bytes": 8845,
+        "sha256": "b8a72f69e3d3a8a3202e4062279c38245f05ac3cede35cc7e390f9cd5b521f9d",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/man/lavOptions.Rd",
+        "bytes": 53821,
+        "sha256": "a76544eab2d7b7fa60560b4dfeee845569b35459b0e7d76cc6b30c9078c537de",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/sources/lavaan/DESCRIPTION",
+        "bytes": 3962,
+        "sha256": "3c1993253d4a2a80e178892e6c27767f34012fd206846935065fe2e647feda92",
+        "scope": "Pinned public original source; no response data"
+      },
+      {
+        "path": "outputs/loop/software-author/final-artifacts.json",
+        "bytes": 8048,
+        "sha256": "465648071f9cc2758c29f747b7543ca17f014b8b7108016481f480ab9e8aea41",
+        "scope": "Original local synthetic runtime/source/protocol evidence"
+      },
+      {
+        "path": "outputs/loop/software-author/scoped-env.json",
+        "bytes": 1751,
+        "sha256": "455d22cf4273d80b027e69377680c7c54e4b335fbd9888ceb3193511d25e44ed",
+        "scope": "Original local synthetic runtime/source/protocol evidence"
+      },
+      {
+        "path": "outputs/loop/software-author/pnpm-check.log",
+        "bytes": 4025,
+        "sha256": "c76101fdd364fe25d6a75e02305d6f2c3b61514b6678c592885d2ed56410a76c",
+        "scope": "Original local synthetic runtime/source/protocol evidence"
+      },
+      {
+        "path": "reports/loop/packages/SOFTWARE-001/v1/manifest.json",
+        "sha256": "126ab5309ec15a42ebd7b07d63e7c47eb8397d2d9d57b0a1c78675d4ca660a0e",
+        "bytes": 23175,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/software-correction/run-r-correction.py",
+        "sha256": "8076ba0b236766d81178dca16e995894f3f1efb50a65f382dec4b720457d692b",
+        "bytes": 7013,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/plan-before-run.md",
+        "sha256": "3c2dc1fda00e369ae179aea34863f59d3dc5f54867a6f33ce071ba9c2a25fdec",
+        "bytes": 4977,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/trial-001.R",
+        "sha256": "2d01a80bbe59eb1f8688706cd647b3a2ce24606ea402cb0cd726369f24c9c755",
+        "bytes": 10524,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/run-r-trial.py",
+        "sha256": "2d1c76e43c4ae064927d01d576e2c1ef2c88e30981d24854991edf6daf937a7d",
+        "bytes": 6972,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/profile-sentinel.R",
+        "sha256": "d83660d64237035596d6200ea7efa600c31dfb44c771402fd7758400497105c9",
+        "bytes": 37,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/Renviron-sentinel",
+        "sha256": "e4bf20e4bc73841e1788b8439b0713c2740127656f8093eba31388c923f2aa71",
+        "bytes": 37,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/before-run-bindings.json",
+        "sha256": "a8487e10af7fb443de2a9f72fb9edccf4806838c0d4dfcf441ba10628bc8a90b",
+        "bytes": 1793,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/trial-001-command.json",
+        "sha256": "ab547fc6e186dd800f6e2468b96ae4f41db07137f247163adf7f33634ae584a9",
+        "bytes": 5866,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/trial-001.log",
+        "sha256": "964d1e7a1f3d8d50b8bfd4e7fa37ae6aee60274b8f4a84c8c6631d2369227c0d",
+        "bytes": 590,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/trial-001-result.json",
+        "sha256": "4e4d5219c22dc9d8360e26fc1407eebf1a72a8678e21258786e852f2172c4c22",
+        "bytes": 33816,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/after-run-bindings.json",
+        "sha256": "f9adbfa825ab5863e3b22389ea409422cc22d867b507aef2c03b822932bd7275",
+        "bytes": 1736,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/survey-svyCprod.html",
+        "sha256": "64599cc8371e3534d90d89fa71c5f1b077580020e5a6bce67b132bdf6d7fb653",
+        "bytes": 7070,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/survey-svyrecvar.html",
+        "sha256": "e818a8adb59f327463a2e7e2d4d9c9812850bbdf38d26a81e64b8306f93c05d6",
+        "bytes": 6310,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/supplemental-source-capture.json",
+        "sha256": "0e9e65aaf6162485b4c3f59f042d5d5ed59299c315a6220264072e8813ec5763",
+        "bytes": 1096,
+        "scope": "Public software source, fixed synthetic-only code/plan/output or scoped runtime metadata; no ESS responses"
+      },
+      {
+        "path": "outputs/loop/methods002/format-transfer.json",
+        "bytes": 577,
+        "sha256": "f166ef289c2004b49c221d9f17d8e6dc421fa79caf6238b7213beae0fc778570",
+        "scope": "Synthetic-only formatting transfer evidence"
+      }
+    ],
+    "previousManifestSha256": "f94a4eec6539730c2d73ef5899ebf648a53d75455bc20436443be74c5047a0d4",
+    "correctionScope": "Formatting only; raw original output kept and parsed public JSON exactly equal"
+  }
+}

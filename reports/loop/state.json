@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T05:06:36.464804+00:00",
+  "updatedAtUtc": "2026-10-03T05:22:52.906685+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "7fda92dacc225817340b3e6231b8b50340bbe49f",
+  "currentHead": "5fd7bb37e44addcc13bd6840a8ad6e4339f1c9e2",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -21,10 +21,10 @@
     }
   ],
   "openTasks": [
-    "FOUNDATION-v4: vollständigen Jurorbericht lesen und evidenzbasiert entscheiden",
-    "SOFTWARE-v2: zwei unabhängige Korrektur-/tatsächliche Claude-Protokollberichte einsammeln",
-    "INVENTORY-002-AB: vollständige öffentliche Kategorien-/Filterergänzung einfrieren und zweifach unabhängig prüfen",
-    "Analyseplan: offene Methodennachweise und getrennte Claude-Forschungsbewertungen; kein Rohdatenzugriff vor Abnahme"
+    "SOFTWARE-v2: zweiten vollständigen Bericht einsammeln, erst dann Findings zusammenführen",
+    "INVENTORY-002-AB: zwei Erstberichte einsammeln, begründete Korrekturen nachprüfen",
+    "METHODS-002: technischen Autorenstand einfrieren und zweifach unabhängig prüfen",
+    "Übriges öffentliches Frageninventar und offene Methodennachweise; getrennte Claude-Forschungsbewertungen noch ausführen"
   ],
   "dependencies": [
     {
@@ -82,7 +82,9 @@
     "currentInfrastructure": "BESTANDEN",
     "actual200PercentBrowserZoom": "BLOCKIERT",
     "fullHandbookWebsiteAcceptance": "NICHT_GEPRÜFT",
-    "claudeTechnicalAccess": "BESTANDEN"
+    "claudeTechnicalAccess": "BESTANDEN",
+    "foundationBoundedCorrections": "BESTANDEN",
+    "foundationScientificPlanAcceptance": "BLOCKIERT"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -111,7 +113,9 @@
     "reports/loop/reviews/FOUNDATION-001-v3-types.md",
     "reports/loop/reviews/FOUNDATION-001-v3-repro.md",
     "reports/loop/reviews/PREP-001-v3-schema.md",
-    "reports/loop/reviews/PREP-001-v3-binding.md"
+    "reports/loop/reviews/PREP-001-v3-binding.md",
+    "reports/loop/reviews/FOUNDATION-001-juror.md",
+    "reports/loop/reviews/SOFTWARE-001-v2-boundary.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -119,30 +123,26 @@
     "R3-F02",
     "R3-F04",
     "R5-F03",
-    "F-P01",
-    "F-P02",
     "F-P03",
     "F-P04",
-    "FM-F01",
-    "N-F01",
-    "REPRO-F01",
-    "REPRO-F02"
+    "SW-ENV-004",
+    "SOFTWARE-001-REPRO-02"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/foundation_juror",
-      "role": "independent-big-audit-juror",
-      "status": "RUNNING"
-    },
-    {
-      "name": "/root/inventory002_ab_author",
-      "role": "public-source-author",
-      "status": "RUNNING"
-    },
-    {
-      "name": "/root/software_v2_boundary",
+      "name": "/root/software_v2_repro",
       "role": "independent-software-correction-and-actual-Claude-protocol-review",
+      "status": "RUNNING"
+    },
+    {
+      "name": "/root/inventory002_ab_sources",
+      "role": "independent-public-source-review",
+      "status": "RUNNING"
+    },
+    {
+      "name": "/root/inventory002_ab_repro",
+      "role": "independent-metadata-reproduction-review",
       "status": "RUNNING"
     }
   ],
@@ -173,12 +173,15 @@
     },
     {
       "id": "FOUNDATION-001",
-      "status": "RUNNING",
+      "status": "BLOCKED",
       "predefinedCriteria": "reports/loop/foundation-pruefauftrag.md",
       "manifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
       "manifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
-      "reviewWaves": "Fünf Erstberichte und je zwei v2/v3-Nachberichte abgeschlossen. Formale v4-Referenznachprüfung BESTANDEN; unabhängiger Juror schreibt Abschlussbericht.",
-      "decisions": "reports/loop/FOUNDATION-001-nachpruefentscheidung.md"
+      "reviewWaves": "Fünf Erstberichte, zwei v2-,zwei v3-Nachprüfungen und unabhängiger Juror abgeschlossen; konkrete Reparaturen bestätigt. Vollständige Phase-0-/Inventar-/Messmodell-Abnahme fehlt.",
+      "decisions": "reports/loop/FOUNDATION-001-nachpruefentscheidung.md",
+      "jurorDecision": "reports/loop/FOUNDATION-001-juror-entscheidung.md",
+      "boundedCorrectionStatus": "BESTANDEN",
+      "scientificAcceptance": "BLOCKIERT"
     },
     {
       "id": "PREP-001",
@@ -198,7 +201,7 @@
       "manifest": "reports/loop/packages/SOFTWARE-001/v2/manifest.json",
       "manifestSha256": "c88656c49ce561b9d57d2e1975ef82dabeb9b745fbefb14cda1e1d415f8a5ddf",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "Zwei Erstberichte abgeschlossen; v2-Korrektur-/Claude-Protokoll-Erstprüfung aktiv; zweiter unabhängiger Prüfer nach freiem Slot.",
+      "reviewStatus": "Erster v2-Korrektur-/Claude-Protokollbericht abgeschlossen; zweiter unabhängig aktiv. Noch keine Zusammenführung.",
       "setupStatus": "NICHT_BESTANDEN; dokumentierter Außenwrite",
       "authorCorrectionStatus": "COMPLETED"
     },
@@ -207,20 +210,36 @@
       "status": "RUNNING",
       "scope": "Alle52öffentlichenA/B-Frageidentitäten mitKategorien,Missing,RoutingundMetadaten;keinefinalePolung/Auswahl",
       "predefinedCriteria": "outputs/loop/inventory002-ab/plan-before-work.md; vollständiger Auftrag in Agentbericht",
-      "author": "/root/inventory002_ab_author"
+      "author": "/root/inventory002_ab_author",
+      "manifest": "reports/loop/packages/INVENTORY-002-AB/v1/manifest.json",
+      "manifestSha256": "5af3f5c77ffa84ecbba15dc2c3f541064c1530bda5297928e8a5d5c7ae1d9856",
+      "authorStatus": "COMPLETED",
+      "reviewStatus": "Zwei unabhängige Erstprüfungen aktiv;52Identitäten/61offenePunkte;keineIntegrationinaktiveCSV"
+    },
+    {
+      "id": "METHODS-002",
+      "status": "RUNNING",
+      "scope": "Synthetische externe ordinale Schichtkovarianz-Schnittstelle;keinESS-Verfahren gewählt",
+      "predefinedCriteria": "reports/loop/METHODS-002-vorabplan.md",
+      "author": "/root",
+      "authorStatus": "COMPLETED",
+      "reviewStatus": "Fassung v2 eingefroren; ausschließlich Formattransfer nach v1, geparste Ergebnisse exakt gleich; unabhängige Zweierprüfung bei freien Slots.",
+      "technicalRecord": "outputs/loop/methods002/trial-001-command.json",
+      "manifest": "reports/loop/packages/METHODS-002/v2/manifest.json",
+      "manifestSha256": "b736855447a96dcaa3f55926edf59d7eda29c19dfe90d2e752de18df8b0d78e4"
     }
   ],
-  "nextConcreteStep": "FOUNDATION-Juror abschließen; bei freiem Slot zweiten SOFTWARE-v2-Prüfer starten; öffentliche A/B-Inventarergänzung einfrieren und prüfen. Synthetische Designmethoden nur mit eigenem Vorabplan; keine ESS-Antwortanalyse.",
+  "nextConcreteStep": "Neue öffentliche A/B-Ergänzung und synthetische METHODEN-Probe getrennt prüfen; SOFTWARE-v2 vollständige Zweierberichte auswerten. Keine ESS-Antwortanalyse vor wissenschaftlicher Abnahme.",
   "checkpoint": {
-    "lastLocalCommit": "7fda92dacc225817340b3e6231b8b50340bbe49f",
-    "lastVerifiedRemoteCommit": "7fda92dacc225817340b3e6231b8b50340bbe49f",
-    "lastVerifiedPushAtUtc": "2026-10-03T05:06:36.464804+00:00",
+    "lastLocalCommit": "5fd7bb37e44addcc13bd6840a8ad6e4339f1c9e2",
+    "lastVerifiedRemoteCommit": "5fd7bb37e44addcc13bd6840a8ad6e4339f1c9e2",
+    "lastVerifiedPushAtUtc": "2026-10-03T05:07:33.652605+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-013.json",
+    "record": "reports/loop/push-014.json",
     "intervalOverrunNote": "Checkpoint nach Kontextkompaktierung erst nach 30-Minuten-Frist begonnen (03:53:14 bis mindestens04:25UTC). Verspätung dokumentiert; eigene Änderungen sofort gesichert.",
-    "lastPushCompletedAtUtcApproximate": "2026-10-03T04:57:00Z"
+    "lastPushCompletedAtUtcApproximate": "2026-10-03T05:07:33.652605+00:00"
   },
   "scientificStatus": "296 technische Inventarzeilen/205 offene Restzeilen. Fünf FOUNDATION-Erstberichte, zwei Nachberichte; N-F01 Runde2 korrigiert und erneut eingefroren, unabhängige Prüfung offen. Keine semantische Vollabnahme, Endauswahl, Rohantworten, A/B oder Tags.",
   "technicalRecord": {

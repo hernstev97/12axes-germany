@@ -318,10 +318,11 @@
       "returnedTaskName": "/root/foundation_juror",
       "fork_turns": "none",
       "kind": "independent-big-audit-juror",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/reviews/FOUNDATION-001-juror.md",
       "manifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext"
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext",
+      "reportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5"
     },
     {
       "task_name": "prep_v3_binding",
@@ -339,21 +340,56 @@
       "returnedTaskName": "/root/inventory002_ab_author",
       "fork_turns": "none",
       "kind": "public-source-author",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/authors/INVENTORY-002-AB.md",
       "manifest": null,
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext"
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext",
+      "reportSha256": "8d1a211532493ed401ee56ad435a7d877a64610b3e43c4a2c47b219ad05b65c2"
     },
     {
       "task_name": "software_v2_boundary",
       "returnedTaskName": "/root/software_v2_boundary",
       "fork_turns": "none",
       "kind": "independent-correction-and-actual-Claude-protocol-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/SOFTWARE-001/v2/manifest.json",
       "manifestSha256": "c88656c49ce561b9d57d2e1975ef82dabeb9b745fbefb14cda1e1d415f8a5ddf",
       "report": "reports/loop/reviews/SOFTWARE-001-v2-boundary.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht, frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht, frischer begrenzter Kontext.",
+      "reportSha256": "965d25b8c6a631b6ba6bba4d0a55848afb021e29832238c07206034d17261c76"
+    },
+    {
+      "task_name": "software_v2_repro",
+      "returnedTaskName": "/root/software_v2_repro",
+      "fork_turns": "none",
+      "kind": "independent-correction-and-actual-Claude-protocol-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/SOFTWARE-001/v2/manifest.json",
+      "manifestSha256": "c88656c49ce561b9d57d2e1975ef82dabeb9b745fbefb14cda1e1d415f8a5ddf",
+      "report": "reports/loop/reviews/SOFTWARE-001-v2-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext."
+    },
+    {
+      "task_name": "inventory002_ab_sources",
+      "returnedTaskName": "/root/inventory002_ab_sources",
+      "fork_turns": "none",
+      "kind": "independent-public-source-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/INVENTORY-002-AB/v1/manifest.json",
+      "manifestSha256": "5af3f5c77ffa84ecbba15dc2c3f541064c1530bda5297928e8a5d5c7ae1d9856",
+      "report": "reports/loop/reviews/INVENTORY-002-AB-sources.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext."
+    },
+    {
+      "task_name": "inventory002_ab_repro",
+      "returnedTaskName": "/root/inventory002_ab_repro",
+      "fork_turns": "none",
+      "kind": "independent-metadata-reproduction-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/INVENTORY-002-AB/v1/manifest.json",
+      "manifestSha256": "5af3f5c77ffa84ecbba15dc2c3f541064c1530bda5297928e8a5d5c7ae1d9856",
+      "report": "reports/loop/reviews/INVENTORY-002-AB-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext."
     }
   ],
   "activeAdditionalAuthors": [

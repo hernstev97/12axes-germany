@@ -1,0 +1,565 @@
+{
+  "paths": [
+    "AGENTS.md",
+    "docs/project.md",
+    "docs/auftrag-life-93-2026-10-03.md",
+    "reports/loop/issue-2026-10-03.md",
+    "docs/pruefregeln.md",
+    "docs/analyseanforderungen.md",
+    "docs/lizenzen.md",
+    "reports/loop/INVENTORY-002-AB-pruefauftrag.md",
+    "data/inventar-ab.ergaenzung.entwurf.json",
+    "reports/loop/authors/INVENTORY-002-AB.md"
+  ],
+  "metadata": {
+    "id": "INVENTORY-002-AB",
+    "version": 1,
+    "codeCommit": "5fd7bb37e44addcc13bd6840a8ad6e4339f1c9e2",
+    "overrideRule": "Frozen files and explicit source hashes are authoritative; two new public draft artifacts, no raw responses",
+    "sourceInputs": [
+      {
+        "path": "data/inventar-ab.ergaenzung.entwurf.json",
+        "bytes": 2484808,
+        "sha256": "9554a568c1a08fe7d6676960dd7e41d2b50d1ad7c16c5d8d33bfed4edc44c138",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-check-cache/ESS11_appendix_a7_e04_1.pdf",
+        "bytes": 2162997,
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-check-cache/ESS11_questionnaires_DE.pdf",
+        "bytes": 1304009,
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-check-cache/ESS11_showcards_DE.pdf",
+        "bytes": 2210799,
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-check-cache/check-current.json",
+        "bytes": 29637,
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-check-cache/codebook.layout.txt",
+        "bytes": 1074155,
+        "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-check-cache/ess-disclaimer.html",
+        "bytes": 168665,
+        "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-check-cache/questionnaire.bbox.html",
+        "bytes": 2637070,
+        "sha256": "cf596357ed4ea4da014e3f49a45ea302298ebf9dbceb2752b1aeed1f14e77e0d",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-check-cache/showcards.layout.txt",
+        "bytes": 94266,
+        "sha256": "525461ad810e078a0b7f63e381be50a99ad35551f435cd6988ddde0f2b01dc51",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-input-hashes.json",
+        "bytes": 1253,
+        "sha256": "1658b90a84fac2c6d8b01a60ebfaca3324cf26e0156a7bd86c10826989488c76",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/baseline-pipeline-check.log",
+        "bytes": 71,
+        "sha256": "84b1ebdc6f8699e0a9d9b065b8333519daae0a6fa9495e8bebc598729318404d",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/build_ab.py",
+        "bytes": 28471,
+        "sha256": "f1ec53b5721466b09a9eacfa32139916779b6b310abfebf68e9d4783e842d302",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-012.png",
+        "bytes": 113270,
+        "sha256": "2ea81e93ce0f4d206acb738bf7eb8f313b0052fd7135a82880c3910255df3821",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-021.png",
+        "bytes": 158917,
+        "sha256": "4998c39b010f940173bace96e922a8f62d88b569e33a15da900a75fc32661141",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-022.png",
+        "bytes": 132940,
+        "sha256": "c19ef3f53238ae7e7739b4cd637ed493aee156022cf4569ed179b9955422a239",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-038.png",
+        "bytes": 189532,
+        "sha256": "144f7d44fa70a1452d08325db98b4368d75fe90f0dfe5b95af53723d8eca33d2",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-039.png",
+        "bytes": 155063,
+        "sha256": "1a11bb900f1119c9b07dd877331d33536466b028c0458a7d8b13d04135a734c3",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-040.png",
+        "bytes": 166842,
+        "sha256": "53835494770dae8bb9d2942f0ae34d00558290c15ce74f7b155d98cb1a701eb8",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-045.png",
+        "bytes": 143792,
+        "sha256": "0eac3a8992f4f016e08d1b6a249c217bfbf04f963bc685d6fb56e0ec54b84292",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-046.png",
+        "bytes": 134423,
+        "sha256": "6688fc8c2338b57cf4ba7928857dc4cf3bca30c8648d17703dbd58692a155998",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-059.png",
+        "bytes": 129546,
+        "sha256": "d6d91181f411dea4269a60672d55f1a16dbc7f68768a844e889166ff00041c8d",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-063.png",
+        "bytes": 139785,
+        "sha256": "5dcb76bbc7e10661d221a6e8efd7385345fcbc5d12ada9e46c062fdfddc7e51a",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-064.png",
+        "bytes": 149484,
+        "sha256": "a81d77dffea679aa1aa09ebafa1c2592bf11e9a66336ef8132dbbad3309f5b19",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/c-065.png",
+        "bytes": 157018,
+        "sha256": "a5cfa8c030f5124bd9bbf4a1f42f9cfb3cce2a14baf27ded150665048dfcfbed",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/codebook.bbox.html",
+        "bytes": 16109603,
+        "sha256": "6246f80f8bfd3a1e62fcdc91c9010b4aba0b3dd303f7fcee509a918978f59910",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/codebook.layout.txt",
+        "bytes": 1074155,
+        "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/codebook.verify.bbox.html",
+        "bytes": 16109603,
+        "sha256": "6246f80f8bfd3a1e62fcdc91c9010b4aba0b3dd303f7fcee509a918978f59910",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/final-reproduction-check.json",
+        "bytes": 645,
+        "sha256": "95113e3bbe8b81921898a283f9c615a0ce7d15aedc0e71ad86ab73aca6593f0b",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/issue-input-check.json",
+        "bytes": 281,
+        "sha256": "d4200f03145ed9697b0462e4c8b4453763b5c69846fb324258e183e45e92c8de",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/own-format-check.log",
+        "bytes": 66,
+        "sha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/plan-before-work.json",
+        "bytes": 2298,
+        "sha256": "8b47ba7a4d3e58aa697d75a0a94b0d22971434a7678d29a288f4f3c8f8f0035b",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/pnpm-check.log",
+        "bytes": 4253,
+        "sha256": "5d8bab1b18d9481ca71c8f625dd4e2d13174aee1cbb70f50c15785cab0e44d46",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-003.png",
+        "bytes": 153398,
+        "sha256": "aa6a1b041354ba9c4cc91b0d776a85a06a2b3e2fbe4207112817a0e740c0518f",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-004.png",
+        "bytes": 166014,
+        "sha256": "ad62ac46fc9310ec7884e73915c92b76e01dc568a8c894bde33c0757812a0e73",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-005.png",
+        "bytes": 123746,
+        "sha256": "9904be306f6a21686840cd942bcb24638a84219aa8911b58cfbc1448c9630a82",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-006.png",
+        "bytes": 96112,
+        "sha256": "8a07b021cbbb1c229bd513dc41e3159977a6d21cfe0dc038f4abb586a2a24e1c",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-007.png",
+        "bytes": 175781,
+        "sha256": "c01d170fb0ef51c0d66e2c679b39b4ae0ea665da7993667f0deabe390a05fa42",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-008.png",
+        "bytes": 120608,
+        "sha256": "570c253d5174aca89b0d11ba0a412c56140e202e7240694c5720cb13ccffe4c9",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-009.png",
+        "bytes": 198765,
+        "sha256": "4572b1d33a09bb8480f81f2dd3fab4ffd1c764db8ea4aa166fe7563977b6db52",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-010.png",
+        "bytes": 125036,
+        "sha256": "bb88bbb9388afa810f2fe68e723e1328304c713c8a3fad99cdad0659272a218c",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-011.png",
+        "bytes": 150002,
+        "sha256": "0e4e5e7e42e2ccdaa227807f6bad4b0ee21c50f47b1cf030a2acb85d068446f1",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-012.png",
+        "bytes": 76033,
+        "sha256": "64c1be5b21132b73aaa71aa60be2f55e859a5d78663f330c5ef95784a0b5fe53",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-013.png",
+        "bytes": 110104,
+        "sha256": "4f06d7ce18f8631ff6cc5984bc612d987ad13c5cdb82e9486e7f75b201485e27",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-014.png",
+        "bytes": 122699,
+        "sha256": "14233627e96edd5976a78fec5fd35b42e85239e407e799c93af93f1be41e593b",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-015.png",
+        "bytes": 170628,
+        "sha256": "969e9d46d7afa8beaec9aa83e52ac888d81fe393f73e8c50e2a6f63c922d4519",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/q-016.png",
+        "bytes": 114003,
+        "sha256": "4e4e97819cffe66bfabe82dc81ff6675a2ff14d985a19ee77f3f99672a5e84fa",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/questionnaire.bbox.html",
+        "bytes": 2637070,
+        "sha256": "cf596357ed4ea4da014e3f49a45ea302298ebf9dbceb2752b1aeed1f14e77e0d",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/questionnaire.layout.txt",
+        "bytes": 213698,
+        "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/questionnaire.verify.bbox.html",
+        "bytes": 2637070,
+        "sha256": "cf596357ed4ea4da014e3f49a45ea302298ebf9dbceb2752b1aeed1f14e77e0d",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/read-tests-first-failed.json",
+        "bytes": 773159,
+        "sha256": "2cd545c79ef9402055b31d64659704c2c879dc59e6d0497e6d44254defeb0fed",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/read-tests.json",
+        "bytes": 812970,
+        "sha256": "9f078acfe8b0669bb09974e7a651e64b7abcd4a43fba29ada6f88b2b193e4141",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/read_tests.py",
+        "bytes": 12907,
+        "sha256": "a7f6f09559aca3414d5d940964da98535f64c6b2f02ca14e8a04d07d41c3eb16",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/reproduce.sh",
+        "bytes": 934,
+        "sha256": "2307f825fccd09cb482afa22f12cd0e6113148650c400b6a5d2fd683040d50e4",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-002.png",
+        "bytes": 21437,
+        "sha256": "9c2252c6caba009912cd4d9ee5dbe6102db26a30bf6fd2a880465ff52620e179",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-003.png",
+        "bytes": 24114,
+        "sha256": "48cdcab2417662d40456cad36c0cb6f042a7d6571cbb8aa00fbacaa8b89a3b92",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-004.png",
+        "bytes": 28570,
+        "sha256": "a2adcdd2e40b3bd05d27262ce63f81187d5244710f23a95f672772a6aaf5adcd",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-005.png",
+        "bytes": 30842,
+        "sha256": "d196787098efd78750a9d70e176c073c459df088f75aae6fbb7659ca6069933a",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-006.png",
+        "bytes": 21716,
+        "sha256": "95b1c6a4e113030d01084a977da6fb2ca9440f036761c56fb377b0335f126e43",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-007.png",
+        "bytes": 26198,
+        "sha256": "bfdcbf03aebf39ca029d363f2a87b49e09af712b27426a5ff54aedd8f884cfef",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-008.png",
+        "bytes": 21422,
+        "sha256": "f4e0313742256d6b4361895698c805b985ccf4ac5eb82c64a0b9bfa1bb1eaf95",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-009.png",
+        "bytes": 41736,
+        "sha256": "1abd8a8212c32f2a9d630c5eaa292b8c3f5b58197f2b1fbdfbaec988c25c1eb9",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-010.png",
+        "bytes": 22299,
+        "sha256": "357e04b19e65cdcc6f3c3f38e1d3d6fde40c12393445b69f5a2c46ddef266d2b",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-011.png",
+        "bytes": 13861,
+        "sha256": "f0752dd17380c966098cf52cc5d03525d518c6e9e23b7f117984d2cdc026603a",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-012.png",
+        "bytes": 20175,
+        "sha256": "7888db666c199ee033d70aba0120052caded223c0429c6b1fb60d82b2b968377",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-013.png",
+        "bytes": 18210,
+        "sha256": "0769d84d16cba6a198cd27a7d5d63e670adcb6df52a01f0de966a1232186da88",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-014.png",
+        "bytes": 24993,
+        "sha256": "c785e79fd4d40d7f69de66f40cbe1095c97ee972c2bd8352994407ce5cd56456",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-015.png",
+        "bytes": 20907,
+        "sha256": "793e19de3deb23c88d8ac17790c17b8f6009b228c6c2ec5a5bc64c7ea6250c32",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-016.png",
+        "bytes": 23636,
+        "sha256": "cda0313d05c4b8e11b12b88dba722fa68417a7e2791dfcd392466b0828459787",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-017.png",
+        "bytes": 34111,
+        "sha256": "e1fdf8bd1bbdc7e2671b9ecc36997502dec11dcb2c425a23e6af9d7a2b5dbc17",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-018.png",
+        "bytes": 20308,
+        "sha256": "68f83e3baab9ccf57729d67ebf4e45ec1ed86e60d4e22102eefb70c551871328",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-019.png",
+        "bytes": 21676,
+        "sha256": "17f68fed64839ea055cc02f48f3a6b9a940021db7ae19f7375c610bb3e19b879",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/s-020.png",
+        "bytes": 23017,
+        "sha256": "f7db4cd2c46d7dd03db460cbf2e41ac6cbcfa4f022f354f7024c269ac7c5a7ab",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/showcards.bbox.html",
+        "bytes": 1088740,
+        "sha256": "059b21f711566e922199e2ec5ca58abf24e0f084266eddb433d13176941c03c4",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/showcards.layout.txt",
+        "bytes": 94266,
+        "sha256": "525461ad810e078a0b7f63e381be50a99ad35551f435cd6988ddde0f2b01dc51",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/showcards.verify.bbox.html",
+        "bytes": 1088740,
+        "sha256": "059b21f711566e922199e2ec5ca58abf24e0f084266eddb433d13176941c03c4",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/startauftrag.txt",
+        "bytes": 3043,
+        "sha256": "c67b187fa2f80a8faafcee65dfbaa03da9b8540a3058e3a25ddcf3a8519cf45f",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/tool-versions.json",
+        "bytes": 452,
+        "sha256": "897ee228fa8093ee166887587aa377739b5afbead4d61011e920e8c1a9eac361",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/visual-reading.json",
+        "bytes": 6048,
+        "sha256": "d27477650985d08dbafd6db7c6e49db26276c559c5f1eab3b1c2f82d92dd8b6f",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/write_report.py",
+        "bytes": 15761,
+        "sha256": "d2742747f2e2f5590cc593552095742e4f31225e3d92082054c2bf6ad9dd3b0a",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "reports/loop/authors/INVENTORY-002-AB.md",
+        "bytes": 29214,
+        "sha256": "8d1a211532493ed401ee56ad435a7d877a64610b3e43c4a2c47b219ad05b65c2",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory/ESS11_questionnaires_DE.pdf",
+        "bytes": 1304009,
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory/ESS11_showcards_DE.pdf",
+        "bytes": 2210799,
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory/ESS11_appendix_a7_e04_1.pdf",
+        "bytes": 2162997,
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory/ess-disclaimer.html",
+        "bytes": 168665,
+        "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory/downloads.json",
+        "bytes": 1639,
+        "sha256": "1b0b734f6c332171587d648a0ec69eea569f1708e7957da809e156393e775dc9",
+        "scope": "Public source documentation, draft metadata or synthetic author checks; no response data"
+      },
+      {
+        "path": "outputs/loop/inventory002-ab/package-hashes.json",
+        "bytes": 18083,
+        "sha256": "b4c861759fdad19f9d4ba92cdd4c18c748218fbdce250e9bf42570497599b880",
+        "scope": "Public author package index; no response data"
+      },
+      {
+        "path": "data/inventar.entwurf.csv",
+        "bytes": 2437729,
+        "sha256": "8c73adb8b361db2992f5fe9e321e0c5b978afdc41ba22c1cbb471f92e60057c1",
+        "scope": "Public questionnaire inventory/code provenance only; no response data"
+      },
+      {
+        "path": "data/inventar.provenienz.json",
+        "bytes": 70582,
+        "sha256": "533a12c517ac49f869aea1fbc09dc86e3c1dfe7ef9bc7b05018b5a49ba753aa6",
+        "scope": "Public questionnaire inventory/code provenance only; no response data"
+      },
+      {
+        "path": "pipeline/inventar.py",
+        "bytes": 60065,
+        "sha256": "548109c85300e6a0ecee57e92af7acc5ec9e748e9d8bf7ee5daeba18e8580190",
+        "scope": "Public questionnaire inventory/code provenance only; no response data"
+      }
+    ],
+    "modelConfiguration": {
+      "type": "Public-source annotation only",
+      "selectedItems": null,
+      "polarity": null,
+      "score": null,
+      "questionnaireRound": 11,
+      "codebookEdition": "4.1",
+      "responseEditionComparison": "NICHT_GEPRÜFT"
+    }
+  }
+}
