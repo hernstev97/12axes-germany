@@ -1,0 +1,23 @@
+{
+  "kind": "Additional public original metadata observation, not analysis or acceptance",
+  "sourceId": "ESS11-STUDY-DE-DESIGN",
+  "url": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+  "capturedAtUtc": "2026-10-03T02:04:50.621Z",
+  "tool": "native T3 tab_9, country documentation Germany dialog",
+  "scope": "Sampling procedure plus universe, no answer distributions/Analysis view, no account/raw access",
+  "captureCache": "outputs/loop/design/portal-capture.json",
+  "captureSha256": "c67d91f51575396a8ac28f0b587da5c56693fc6723c86187f88c9da9e56c1f38",
+  "locator": "Country documentation > Germany > Details > Sampling procedure",
+  "originalExcerpt": "Sampling procedure\nSampling Frame: Municipality population registers\n\nSampling Design: A two-domain stratified two-stage probability design. The first domain consisted of the 15 largest municipalities in Germany. In this domain, a systematic (unclustered) random sample of individuals was selected, proportionately stratified by municipality. In the second domain, consisting of the remainder of the country, 166 municipalities were selected as PSUs with probability proportional to population size (aged 15+) and an equal number of individuals was subsequently selected at random from each selected municipality.",
+  "claimIds": {
+    "L-DESIGN-001": "Official summary distinguishes unclustered stratified individual selection in the 15 largest municipalities from two-stage PPS-municipality sampling in the remainder (166 municipalities).",
+    "L-DESIGN-002": "The summary does not determine with/without replacement, joint inclusion probabilities, allocation for each published stratum or actual PSU/stratum code mapping in edition4.2."
+  },
+  "consequence": "Do not assume a generic first-stage SRS bootstrap; reconcile the two domains with harmonized design-variable metadata before split/variance choices. Existing method draft remains unchanged during first review.",
+  "reviewStatus": "NICHT_GEPRÜFT",
+  "limits": [
+    "Not a full German sample design protocol.",
+    "Source-reading self-check, not an independent finding or empirical check.",
+    "Any later incorporation needs two independent source/method checks."
+  ]
+}

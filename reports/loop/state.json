@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T02:02:24.252836+00:00",
+  "updatedAtUtc": "2026-10-03T02:26:33.802844+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "6a9e9e20231e4c820c74f357e7ae3c9a8280f2a1",
+  "currentHead": "3a3b4f9fca3af825cca128036b99a1a20250b070",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -21,9 +21,9 @@
     }
   ],
   "openTasks": [
-    "LOOP-000 correction recheck and current browser/technical checks",
-    "LOOP-001 inventory and theory authors running",
-    "LOOP-002 methods author and public-only infrastructure review"
+    "LOOP-000 infrastructure and technical corrections after completed v2 rechecks",
+    "FOUNDATION-001 methods/neutrality/repro initial reviews; preserve all 25 frozen research inputs until all five finish",
+    "Independent protocol/design/review-skill draft checks and human Setup prerequisites"
   ],
   "dependencies": [
     {
@@ -81,24 +81,28 @@
     "reports/audit-recherche/README.md",
     "reports/audit-recherche/juror-6.md",
     "reports/loop/reviews/LOOP-000-integration.md",
-    "reports/loop/reviews/LOOP-000-provenance.md"
+    "reports/loop/reviews/LOOP-000-provenance.md",
+    "reports/loop/reviews/LOOP-000-v2-regeln-infrastruktur.md",
+    "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md",
+    "reports/loop/reviews/FOUNDATION-001-sources.md",
+    "reports/loop/reviews/FOUNDATION-001-politics.md"
   ],
   "blockingFindingIds": ["R2-F03", "R3-F01", "R3-F02", "R3-F04", "R5-F03"],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/loop000_recheck_browser",
-      "role": "independent-recheck",
+      "name": "/root/foundation_review_methods",
+      "role": "methods-reviewer",
       "status": "RUNNING"
     },
     {
-      "name": "/root/foundation_review_sources",
-      "role": "source-reviewer",
+      "name": "/root/foundation_review_neutrality",
+      "role": "neutrality-reviewer",
       "status": "RUNNING"
     },
     {
-      "name": "/root/foundation_review_politics",
-      "role": "politics-reviewer",
+      "name": "/root/foundation_review_repro",
+      "role": "repro-reviewer",
       "status": "RUNNING"
     }
   ],
@@ -129,23 +133,43 @@
       "predefinedCriteria": "reports/loop/foundation-pruefauftrag.md",
       "manifest": "reports/loop/packages/FOUNDATION-001/v1/manifest.json",
       "manifestSha256": "213eec2fba90ae60594323f1e52c39ed77d49af4656f3eea481c6300ecc0c5bb",
-      "reviewWaves": "sources and politics running; methods/neutrality/repro next; new juror after decisions/repairs"
+      "reviewWaves": "sources/politics completed; methods/neutrality/repro running; synthesis and new juror afterwards"
     }
   ],
-  "nextConcreteStep": "Zweiten LOOP-000-Nachprüfbericht abschließen lassen, dann belegte Infrastrukturfehler reparieren und wieder unabhängig prüfen. FOUNDATION-001 fünf Erstberichte in Wellen vollständig sammeln; davor Forschungsartefakte unverändert lassen.",
+  "nextConcreteStep": "Beide LOOP-000-v2-Berichte vollständig gelesen: G01–04 und B01–05 entscheiden, Infrastruktur/Text/Prüfwortlaut gezielt korrigieren; Forschungsgrundlage bis Abschluss aller fünf FOUNDATION-Erstberichte unverändert.",
   "checkpoint": {
-    "lastLocalCommit": "6a9e9e20231e4c820c74f357e7ae3c9a8280f2a1",
-    "lastVerifiedRemoteCommit": "6a9e9e20231e4c820c74f357e7ae3c9a8280f2a1",
-    "lastVerifiedPushAtUtc": "2026-10-03T01:53:02.690150+00:00",
+    "lastLocalCommit": "3a3b4f9fca3af825cca128036b99a1a20250b070",
+    "lastVerifiedRemoteCommit": "3a3b4f9fca3af825cca128036b99a1a20250b070",
+    "lastVerifiedPushAtUtc": "2026-10-03T02:02:56.778195+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-003.json"
+    "record": "reports/loop/push-004.json"
   },
   "scientificStatus": "Drei Autorenentwürfe abgegeben und 25-Datei-Paket/36 öffentliche Quellartefakte eingefroren. Fünf Fachreviews in Wellen gestartet. Inventar mit 29 offenen Variablenzuordnungen, 70 Antwortblöcken, 23 Missingblöcken und 203 Routing-/Kontextstellen; keine Phase1-Abnahme. Kein Rohantwortimport, A/B, Modell oder öffentliche Tags.",
   "technicalRecord": "reports/loop/000-technical.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
     "reports/loop/technical-v2/web-check.json"
+  ],
+  "independentPreparations": [
+    {
+      "id": "PHASE9-PROTOCOL-DRAFT",
+      "artifact": "docs/verstaendnistest.entwurf.md",
+      "status": "NICHT_GEPRÜFT",
+      "criteria": "LIFE-93 Phase9: five fixed questions for fictional example only, release key frozen before dispatch, no political answers collected, no human test invented."
+    },
+    {
+      "id": "DE-DESIGN-METADATA",
+      "artifact": "reports/loop/LOOP-003-design-metadaten.json",
+      "status": "NICHT_GEPRÜFT",
+      "criteria": "Original public German design source, claimed scope vs missing mapping, two independent checks before incorporation."
+    },
+    {
+      "id": "PREP-REVIEW-SKILL",
+      "artifacts": [".claude/skills/life93-review/SKILL.md"],
+      "status": "NICHT_GEPRÜFT",
+      "criteria": "LIFE-93 Setup/Phase7: limited manifest-bound source/method/neutrality review; machine-readable findings; first ratings separated from PR-review; raw/B held back; no active GitHub setup or false model-family claim. Skill format and independent behavioural review required."
+    }
   ]
 }

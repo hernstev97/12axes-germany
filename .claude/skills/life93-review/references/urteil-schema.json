@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LIFE-93 begrenztes KI-Urteil, Entwurf 0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "mode",
+    "task",
+    "scope",
+    "manifestSha256",
+    "status",
+    "execution",
+    "checks",
+    "findings",
+    "limits"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "mode": {
+      "enum": ["ERSTBEWERTUNG", "PR_REVIEW", "NACHPRUEFUNG", "SYNTHETISCHE_SKILLPRUEFUNG"]
+    },
+    "task": { "type": "string", "minLength": 1 },
+    "scope": { "type": "string", "minLength": 1 },
+    "manifestSha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+    "status": { "$ref": "#/$defs/status" },
+    "execution": {
+      "type": "object",
+      "required": [
+        "provider",
+        "model",
+        "modelEvidence",
+        "internalRevision",
+        "internalInstructions",
+        "tools",
+        "prompt",
+        "inputHashes"
+      ],
+      "properties": {
+        "provider": { "type": ["string", "null"] },
+        "model": { "type": ["string", "null"] },
+        "modelEvidence": { "type": "string" },
+        "internalRevision": { "type": ["string", "null"] },
+        "internalInstructions": { "const": null },
+        "tools": { "type": "array", "items": { "type": "string" } },
+        "prompt": { "type": "string" },
+        "inputHashes": {
+          "type": "object",
+          "additionalProperties": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "scope", "status", "evidence"],
+        "properties": {
+          "id": { "type": "string" },
+          "scope": { "type": "string" },
+          "status": { "$ref": "#/$defs/status" },
+          "evidence": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "problem",
+          "evidence",
+          "impact",
+          "severity",
+          "severityReason",
+          "correction",
+          "recheck",
+          "certainty"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "claim": { "type": "string" },
+          "problem": { "type": "string" },
+          "evidence": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "impact": { "type": "string" },
+          "severity": { "enum": ["niedrig", "mittel", "erheblich"] },
+          "severityReason": { "type": "string" },
+          "correction": { "type": "string" },
+          "recheck": { "type": "string" },
+          "certainty": { "enum": ["BELEGT", "VERMUTUNG", "OFFENE_FRAGE"] }
+        }
+      }
+    },
+    "ratings": { "type": "array", "items": { "type": "object" } },
+    "limits": { "type": "array", "items": { "type": "string" } }
+  },
+  "$defs": {
+    "status": {
+      "enum": [
+        "BESTANDEN",
+        "NICHT_BESTANDEN",
+        "NICHT_GEPRÜFT",
+        "BLOCKIERT",
+        "IN_DIESER_PHASE_NICHT_ERFORDERLICH"
+      ]
+    }
+  }
+}
