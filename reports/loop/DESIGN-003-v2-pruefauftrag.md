@@ -1,0 +1,13 @@
+# DESIGN-003 v2: unabhängige Nachprüfung der beiden Quellenkorrekturen
+
+Zwei frische Prüfer kontrollieren dieselbe Korrekturfassung. V1-Ausgangsfassung, beide vollständigen Erstberichte und die Entscheidung dürfen gelesen werden. Andere Nachberichte und zusätzliche Autorenverteidigung bleiben ausgeschlossen. Nur eigene neue Outputs und eigener unveränderlicher Bericht; keine gemeinsame Forschungsdatei ändern.
+
+Prüft D-S01/D-M01 am vollständig gebundenen Germany-Modaltext, an einer eigenen öffentlichen Browserlektüre und Codebook4.1 PDF484/Druck483. Sachsen und Sachsen-Anhalt müssen als getrennte Listenelemente geprüft werden. Neue Aussage und Wiederholungen dürfen keine fehlenden Befragten, regionale Repräsentativität oder einen offiziellen Crosswalk behaupten. Der historische Bericht bleibt erhalten und durch die neue Entscheidung ausdrücklich berichtigt. Keine neue Bremen-Datenausfallbehauptung.
+
+Prüft D-S02/D-M02 am gesamten Weights1.2 Box5 PDF10/Druck8 und der genauen survey-Originalhilfe. P07 muss Originalsyntax, eigene methodische Einordnung und zusätzliche nest-Option samt Voraussetzung trennen. Kein R- oder ESS-Lauf ist für diese Dokumentkorrektur erforderlich. Eine Quellenbeschreibung darf keine tatsächliche Designprüfung ersetzen.
+
+Kontrolliert vollständige Diffs: zehn andere Claimobjekte und sämtliche übrigen P01–P13-Passagen bleiben unverändert; Designbericht ändert nur die erklärte Korrektur, Versions-/Belegverweise. Alle Paket-/Quellenhashes vor/nach, alte Reports unverändert. Vermutungen, unterschiedliche Schwerebewertungen und offene konkrete Datenkodierungen bleiben sichtbar. Keine behobene Zuschreibung als Methodenfreigabe darstellen.
+
+Keine ESS-Rohdaten, Design-/Antwortzeilen, Personenkennungen, A/B-Hälften, Partei-/Selbsteinstufungswerte, Verteilungen, Portal-Analysis, Secrets, Auth-, Cookie-/Storage-/versteckte Datenzugriffe, Installationen oder globale Änderungen. Keine weiteren Agents, Commits, Pushes, Gesamtformatierung oder pnpm-Gesamtprüfung. T3-Browser nur sichtbare öffentliche Studien-/Germany-Metadaten. Absolute eigene Worktree-Patchpfade und explizites Shell-Arbeitsverzeichnis; Shared-FS ist keine technische Sandbox.
+
+Jedes Finding benennt Aussage, Originalbeleg, Problem, Wirkung, begründete Schwere, konkrete Korrektur/Nachprüfung. Keine Quote oder gewünschte Schlussfolgerung. Tatsächlicher Startauftrag, Modell-/Werkzeugangebot und Nutzung, Befehle, Exits, Fehlversuche und Grenzen werden dokumentiert. Die Erstnachberichte bleiben erhalten. Das ist ein enger KI-Audit derselben Modellfamilie, keine wissenschaftliche Phasenabnahme oder akademisches Peer Review.

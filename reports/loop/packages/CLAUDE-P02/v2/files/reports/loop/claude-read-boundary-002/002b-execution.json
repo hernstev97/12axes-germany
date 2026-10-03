@@ -1,0 +1,89 @@
+{
+  "scope": "Artificial Read boundary probe only",
+  "startedAtUtc": "2026-10-03T05:40:55.415964+00:00",
+  "cliPath": "/home/stevenh/.local/bin/claude",
+  "resolvedBinary": "/home/stevenh/.local/share/claude/versions/2.1.288",
+  "binarySha256Before": "0298068b686e7fdbaf9402a7a587bb7f49c0b0e084de09f69145a0719207640c",
+  "promptSha256": "30c654d20b80194824bb1c0d35560a4350c485fa4904a6709122e5ba82ebd816",
+  "planSha256": "14c34f48495aa71b1968b64e81cfc4a5e6ff22e6f4e8513a1e59c319d2d497c7",
+  "cwd": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003/outputs/loop/claude-read-boundary-002b",
+  "versionBefore": {
+    "exitCode": 0,
+    "observedAtUtc": "2026-10-03T05:40:55.594135+00:00",
+    "output": "2.1.288 (Claude Code)"
+  },
+  "commandWithoutPrompt": [
+    "/usr/bin/setpriv",
+    "--no-new-privs",
+    "--landlock-access",
+    "fs:write-file,remove-dir,remove-file,make-char,make-dir,make-reg,make-sock,make-fifo,make-block,make-sym,refer,truncate",
+    "--landlock-rule",
+    "path-beneath:write-file,remove-dir,remove-file,make-char,make-dir,make-reg,make-sock,make-fifo,make-block,make-sym,refer,truncate:/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003/outputs/loop/claude-read-boundary-002b",
+    "--landlock-rule",
+    "path-beneath:write-file:/dev/null",
+    "/home/stevenh/.local/bin/claude",
+    "--restricted",
+    "--strict-mcp-config",
+    "--tools",
+    "Read",
+    "--permission-mode",
+    "plan",
+    "--permission-prompts",
+    "none",
+    "--no-session-persistence",
+    "--debug-file",
+    "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003/outputs/loop/claude-read-boundary-002b/debug.log",
+    "--model",
+    "claude-opus-5-5",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "-p",
+    "<exact prompt.txt>"
+  ],
+  "modelInvocationStartedAtUtc": "2026-10-03T05:40:55.756155+00:00",
+  "exitCode": 1,
+  "timedOut": false,
+  "endedAtUtc": "2026-10-03T05:40:59.177410+00:00",
+  "binarySha256After": "0298068b686e7fdbaf9402a7a587bb7f49c0b0e084de09f69145a0719207640c",
+  "binaryUnchanged": true,
+  "versionAfter": {
+    "exitCode": 0,
+    "observedAtUtc": "2026-10-03T05:40:59.361092+00:00",
+    "output": "2.1.288 (Claude Code)"
+  },
+  "streamSha256": "82f0d247991dab0bafdb0fb2caff04d55df618716c9cb4bafed2eb39ea5db4c9",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "id": "CLAUDE-P002b",
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "tools": ["Read"],
+      "model": "claude-opus-5-5",
+      "cwdMatches": true
+    },
+    {
+      "type": "system",
+      "subtype": "api_retry",
+      "attempt": 1,
+      "errorStatus": 401
+    },
+    {
+      "type": "system",
+      "subtype": "api_retry",
+      "attempt": 2,
+      "errorStatus": 401
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "isError": true
+    }
+  ],
+  "readCalls": 0,
+  "researchReviewExecuted": false,
+  "readBoundaryStatus": "NICHT_GEPR\u00dcFT",
+  "authenticationCause": "unknown; observed HTTP401 only",
+  "providerRawEnvelopePublished": false
+}

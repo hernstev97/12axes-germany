@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T07:15:22.935240+00:00",
+  "updatedAtUtc": "2026-10-03T07:39:50.312079+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -1909,13 +1909,41 @@
       "severity": "niedrig",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
+      "status": "BESTANDEN",
       "blocks": [],
       "problem": "Nachgelagerte CLI-Versionsabfrage belegt keine exakte Version zum früheren Protokollstart.",
       "evidence": "Originalausführung 04:36:25–04:37:05; versionspezifische Abfrage 04:47:29. Beide Originalnachberichte kontrollieren diese Zeitbindung.",
       "reason": "Eigener Belegvergleich nach beiden vollständigen Berichten; kein belegter Versionswechsel.",
-      "correctionState": "Neue Entscheidung trennt Zeiten und lässt historische Binarybindung offen; kurze unabhängige Textnachprüfung noch ausstehend.",
-      "decisionRecord": "reports/loop/SOFTWARE-001-v2-entscheidung.md"
+      "correctionState": "Zwei abgeschlossene unabhängige CLI-Metadatenprüfer bestätigen die genaue nachgelagerte Versionszeitkorrektur; historische Binarybindung bleibt unbekannt.",
+      "decisionRecord": "reports/loop/CLAUDE-P02-v2-entscheidung.md",
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T07:39:50.312079+00:00",
+          "previousRecord": {
+            "id": "SOFTWARE-001-V2-REPRO-01",
+            "origin": "reports/loop/reviews/SOFTWARE-001-v2-repro.md",
+            "severity": "niedrig",
+            "decision": "angenommen",
+            "repairRounds": 1,
+            "status": "NICHT_GEPRÜFT",
+            "blocks": [],
+            "problem": "Nachgelagerte CLI-Versionsabfrage belegt keine exakte Version zum früheren Protokollstart.",
+            "evidence": "Originalausführung 04:36:25–04:37:05; versionspezifische Abfrage 04:47:29. Beide Originalnachberichte kontrollieren diese Zeitbindung.",
+            "reason": "Eigener Belegvergleich nach beiden vollständigen Berichten; kein belegter Versionswechsel.",
+            "correctionState": "Neue Entscheidung trennt Zeiten und lässt historische Binarybindung offen; kurze unabhängige Textnachprüfung noch ausstehend.",
+            "decisionRecord": "reports/loop/SOFTWARE-001-v2-entscheidung.md"
+          }
+        }
+      ],
+      "verification": {
+        "manifest": "reports/loop/packages/CLAUDE-P02/v1/manifest.json",
+        "status": "BESTANDEN",
+        "independentReports": [
+          "reports/loop/reviews/CLAUDE-P02-metadata.md",
+          "reports/loop/reviews/CLAUDE-P02-time-boundary.md"
+        ],
+        "scope": "Nur CASE-P01-Versionszeittext; kein Read-/Setup-/wissenschaftlicher Prüfstatus"
+      }
     },
     {
       "id": "AB-S01",
@@ -2202,15 +2230,145 @@
       "severity": "niedrig",
       "problem": "lnghom2-Metadaten enthalten zusätzlich zehn ISO-Lookupzeilen trotz deklarierter Kopf-/Beschreibungsgrenze.",
       "evidence": "Codebook4.1 PDF132/Druck131; INVENTORY-003-C-repro.md Finding C-R01; build_c.py143–151",
-      "repairRounds": 0,
+      "repairRounds": 1,
       "status": "NICHT_BESTANDEN",
-      "correctionState": "Neue isolierte Fassung vorgesehen; Original erhalten. Noch kein ausgeführter Korrekturcheck.",
+      "correctionState": "Neue isolierte Fassung v2, eigene tatsächliche Nachbauten und Gegenfälle; unabhängige Nachprüfungen noch nicht vollständig.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Neue Feldgrenze, zwei bytegleiche Builds, vollständiger Diff und zwei unabhängige Nachprüfungen"
+        "manifest": "reports/loop/packages/INVENTORY-003-C/v2/manifest.json",
+        "manifestSha256": "024cd9f143e353c17ffe1571c9b94a892bfe7c0bff36386488896a92a8db792b",
+        "status": "NICHT_GEPRÜFT"
       },
       "blocks": ["Saubere Metadatenabgrenzung C24/lnghom2 in der betroffenen Fassung"],
       "decisionRecord": "reports/loop/INVENTORY-003-C-v1-entscheidung.md",
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T07:39:50.312079+00:00",
+          "previousRecord": {
+            "id": "C-R01",
+            "decision": "angenommen",
+            "severity": "niedrig",
+            "problem": "lnghom2-Metadaten enthalten zusätzlich zehn ISO-Lookupzeilen trotz deklarierter Kopf-/Beschreibungsgrenze.",
+            "evidence": "Codebook4.1 PDF132/Druck131; INVENTORY-003-C-repro.md Finding C-R01; build_c.py143–151",
+            "repairRounds": 0,
+            "status": "NICHT_BESTANDEN",
+            "correctionState": "Neue isolierte Fassung vorgesehen; Original erhalten. Noch kein ausgeführter Korrekturcheck.",
+            "verification": {
+              "status": "NICHT_GEPRÜFT",
+              "scope": "Neue Feldgrenze, zwei bytegleiche Builds, vollständiger Diff und zwei unabhängige Nachprüfungen"
+            },
+            "blocks": ["Saubere Metadatenabgrenzung C24/lnghom2 in der betroffenen Fassung"],
+            "decisionRecord": "reports/loop/INVENTORY-003-C-v1-entscheidung.md",
+            "history": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "CP-M01",
+      "duplicateOf": null,
+      "severity": "niedrig",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Historische Schutzmetadaten nennen ungeprüfte Read-Grenzen tested und in002b nicht vorhandenes safe-mode.",
+      "evidence": "Originalexecution.json:8, argv und beide unabhängigen Read0/401-Extraktionen",
+      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+      },
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
+      "decisionRecord": "reports/loop/CLAUDE-P02-v2-entscheidung.md",
+      "history": []
+    },
+    {
+      "id": "CP-T01",
+      "duplicateOf": "CP-M01",
+      "severity": "niedrig",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Derselbe Read-Schutztextbefund.",
+      "evidence": "Zweiter unabhängiger Erstbericht",
+      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+      },
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
+      "decisionRecord": "reports/loop/CLAUDE-P02-v2-entscheidung.md",
+      "history": []
+    },
+    {
+      "id": "D-S01",
+      "duplicateOf": null,
+      "severity": "mittel",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Falscher Sachsen-Fehlbefund trotz explizitem Sachsen in gebundener Originalaufnahme.",
+      "evidence": "germany-modal.json Geographical unit; eigene erneute sichtbare Aufnahme; Codebook484",
+      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+      },
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
+      "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
+      "history": []
+    },
+    {
+      "id": "D-M01",
+      "duplicateOf": "D-S01",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Derselbe falsche Sachsen-Fehlbefund.",
+      "evidence": "Methoden-Erstbericht und Originalquelle",
+      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+      },
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
+      "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
+      "history": []
+    },
+    {
+      "id": "D-S02",
+      "duplicateOf": null,
+      "severity": "mittel",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "problem": "P07 bezeichnet eigene nest-Option und methodische Einordnung als ESS-Codeempfehlung.",
+      "evidence": "Weights1.2 Box5 PDF10; MethodenentwurfP07",
+      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+      },
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
+      "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
+      "history": []
+    },
+    {
+      "id": "D-M02",
+      "duplicateOf": "D-S02",
+      "severity": "niedrig",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Derselbe Zuschreibungsbefund, ursprüngliche methodische Schwerebewertung niedrig erhalten.",
+      "evidence": "Methoden-Erstbericht und WeightsBox5",
+      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+      },
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
+      "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
       "history": []
     }
   ],

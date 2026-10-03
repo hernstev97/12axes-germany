@@ -1,0 +1,186 @@
+{
+  "id": "DESIGN-003",
+  "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT",
+  "createdAtUtc": "2026-10-03T07:03:14.618191+00:00",
+  "scope": "Public original design documentation only; no response data or final design selection",
+  "sources": {
+    "country": {
+      "id": "country",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_country_documentation_report_e04.pdf",
+      "status": 200,
+      "path": "outputs/loop/design003/country.pdf",
+      "sha256": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+      "bytes": 2510948,
+      "accessedAtUtc": "2026-10-03T06:54:09.860223+00:00",
+      "pdftotextExitCode": 0,
+      "localPath": "outputs/loop/design003/country.pdf",
+      "version": "4.0 published19.11.2025"
+    },
+    "weights": {
+      "id": "weights",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/methodology/ESS_weighting_data_1_2.pdf",
+      "status": 200,
+      "path": "outputs/loop/design003/weights.pdf",
+      "sha256": "6b9c04b70b8f231de1b9040e4afcfc9387fc95e4a1d15ec0496aa7638f8528e5",
+      "bytes": 200908,
+      "accessedAtUtc": "2026-10-03T06:54:10.039126+00:00",
+      "pdftotextExitCode": 0,
+      "localPath": "outputs/loop/design003/weights.pdf",
+      "version": "1.2 06.07.2023"
+    },
+    "guidelines": {
+      "id": "guidelines",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/Round-11-ESS-sampling-guidelines_0.pdf",
+      "status": 200,
+      "path": "outputs/loop/design003/guidelines.pdf",
+      "sha256": "d97aa829b347306557815db73310185492396e918d236d55235039ceaaebc5a6",
+      "bytes": 493992,
+      "accessedAtUtc": "2026-10-03T06:54:10.340419+00:00",
+      "pdftotextExitCode": 0,
+      "localPath": "outputs/loop/design003/guidelines.pdf",
+      "version": "04.07.2022"
+    },
+    "protocol": {
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/source/ESS11_data_protocol_e01_5.pdf",
+      "status": 200,
+      "sha256": "b5176742b84ab503070e21f7ffaa9ff1a126e1e0e39354c25d810dd80eda77f7",
+      "bytes": 3796179,
+      "localPath": "outputs/loop/design003/protocol.pdf",
+      "version": "1.5 October 2023"
+    },
+    "codebook": {
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "copiedFrom": "Public cache, same edition4.1",
+      "liveRequest": false,
+      "localPath": "outputs/loop/design003/codebook.pdf",
+      "version": "4.1"
+    },
+    "study-germany": {
+      "url": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+      "localPath": "outputs/loop/design003/germany-modal.json",
+      "sha256": "206891436109a642cdfb9a1d012c615ed67a8bb94c7e819442308698f7a5271c",
+      "bytes": 5615,
+      "version": "Live public rendered study metadata, captured2026-10-03; no immutable study revision exposed",
+      "inspection": "Public DOM only, not analysis; saved capture"
+    },
+    "study-universe": {
+      "url": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+      "localPath": "outputs/loop/design003/universe-visible.txt",
+      "sha256": "b213732731a50f77bb4879f9d848113ad8a98b9b1dfa44072bfb1c099feedf0a",
+      "bytes": 1187,
+      "version": "Live public rendered study metadata, captured2026-10-03; no immutable study revision exposed",
+      "inspection": "Public DOM only, not analysis; saved capture"
+    },
+    "study-documents": {
+      "url": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+      "localPath": "outputs/loop/design003/documents-links.json",
+      "sha256": "90aa75246a4e3ce1023ff5aa819ca18b724a4857a5250a2221118ec58804eef1",
+      "bytes": 3223,
+      "version": "Live public rendered study metadata, captured2026-10-03; no immutable study revision exposed",
+      "inspection": "Public DOM only, not analysis; saved capture"
+    }
+  },
+  "claims": [
+    {
+      "id": "D-DE-001",
+      "claim": "Die deklarierte ESS-Zielpopulation umfasst Personen ab 15 Jahren in Privathaushalten, unabhängig von Staatsangehörigkeit.",
+      "sourceId": "study-universe",
+      "locator": "Universe, scope and method / Universe",
+      "scopeAndLimit": "Deklarierte Zielpopulation, kein Beweis tatsächlicher Abdeckung oder deutscher Sprachzugänglichkeit.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-002",
+      "claim": "Deutschland: Registerrahmen; direkte systematische Personenauswahl in den 15 größten Gemeinden, proportional nach Gemeinde geschichtet; im Restland zunächst 166 Gemeinden per PPS, dann gleich viele Personen je gezogener Gemeinde.",
+      "sourceId": "study-germany",
+      "locator": "Germany / Sampling procedure",
+      "scopeAndLimit": "Designbeschreibung, keine Rückrechnung tatsächlicher veröffentlichter PSU-/Stratumwerte. PPS nennt Auswahl proportional nach Bevölkerung15+, nicht explizit Zurücklegen oder Paarwahrscheinlichkeiten.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-003",
+      "claim": "Deutsche Feldarbeit 09.05.–21.12.2023, persönliche CAPI/CAMI-Interviews; ein gemischtes Stichprobendesign ist kein belegter gemischter Erhebungsmodus.",
+      "sourceId": "country",
+      "locator": "PDF/gedruckt79–80; Gegenbeleg study-germany / Mode of collection",
+      "scopeAndLimit": "Historische deutsche Referenz, keine Repräsentation des politischen Jahres2026 oder webbasierter Antwortmodusäquivalenz.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-004",
+      "claim": "Der Länderbericht empfiehlt nationale Auswertung und verneint regionale statistische Inferenz auf Bundesländerebene.",
+      "sourceId": "country",
+      "locator": "PDF/gedruckt86 / Statistical inference possible at the regional level",
+      "scopeAndLimit": "Kein pauschales Verbot jeder vorab begründeten regionalen Domäne; keine automatische repräsentative Landesnorm.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-005",
+      "claim": "Der Gewichtsleitfaden empfiehlt anweight; sein R-Beispiel verwendet psu, stratum, anweight ohne FPC oder PPS-Paarwahrscheinlichkeiten.",
+      "sourceId": "weights",
+      "locator": "§3 PDF6/gedruckt4; §4.1 PDF7/gedruckt5; §4.3 PDF8–10/gedruckt6–8, Box5",
+      "scopeAndLimit": "Standardempfehlung für Auswertung, kein EFA/CFA-/Split-/Coveragebeweis; nest=TRUE steht nicht im Originalbeispiel.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-006",
+      "claim": "Die Sampling Guidelines unterscheiden explizite und implizite Schichtung und verlangen getrennte Designbeschreibungen für mehrere Sampling-Domänen.",
+      "sourceId": "guidelines",
+      "locator": "§1.3 PDF5/gedruckt4; §3.3 PDF14–15/gedruckt13–14; Annex2 PDF25/A2-2 und28/A2-5",
+      "scopeAndLimit": "Allgemeine Vorgabe, kein ausgefülltes deutsches SDS; Feldnamen enthalten nicht automatisch vollständige Auswahlstufen.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-007",
+      "claim": "Data Protocol beschreibt für einstufige Designs PSU=idno, sein Beispiel nennt psu bei einstufiger Personenauswahl dagegen leer.",
+      "sourceId": "protocol",
+      "locator": "F4.1 PDF/gedruckt95 psu; F4.2 Example1 PDF/gedruckt96",
+      "scopeAndLimit": "Nicht aufgelöster Widerspruch in generischer Depositanweisung; keine Schlussfolgerung zur tatsächlichen integrierten deutschen Kodierung.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-008",
+      "claim": "Protocol B5 trennt nicht öffentlich freigegebene vollständige Deposits des SDDF von den verarbeiteten integrierten Designindikatoren im Gewichtsleitfaden.",
+      "sourceId": "protocol",
+      "locator": "B5/B5.1 PDF/gedruckt12; Gegenquelle weights §4.1 PDF7/gedruckt5",
+      "scopeAndLimit": "Keine neue Lizenzbehauptung zu integrierten Antwortdaten; vollständiges Deposit ist nicht dasselbe wie anonymisierte veröffentlichte Indikatoren.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-009",
+      "claim": "Codebook4.1 benennt domain, prob, stratum und psu, enthält auf diesen Seiten keine deutsche domänenspezifische Kodierungsableitung.",
+      "sourceId": "codebook",
+      "locator": "PDF551–552/gedruckt550–551, Sample Design variables",
+      "scopeAndLimit": "Keine Prüfung vorhandener Felder/Werte in Antwortdatei4.2; Versionsübertragung offen.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-010",
+      "claim": "Die live deutsche Geographical-unit-Liste nennt Sachsen-Anhalt, aber nicht Sachsen; Codebook4.1 enthält DED Sachsen.",
+      "sourceId": "study-germany",
+      "locator": "Germany / Geographical unit; Gegenquelle codebook PDF484/gedruckt483",
+      "scopeAndLimit": "Metadatenauffälligkeit mit verschiedenem Geltungsbereich/Version. Kein Beweis, dass Personen aus Sachsen tatsächlich fehlen; kein Länder-Crosswalk aus dieser Liste.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    },
+    {
+      "id": "D-DE-011",
+      "claim": "Der live Dokumentbereich verweist weiter auf CountryReport4.0, Codebook4.1 und DataProtocol1.5 neben der integrierten Hauptdatei4.2.",
+      "sourceId": "study-documents",
+      "locator": "Documents; study page Datafiles",
+      "scopeAndLimit": "Dokumente sind tatsächlich verschiedene Versionen. Das ist nicht allein ein Datenfehler, ersetzt aber keinen konkreten4.2-Abgleich.",
+      "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT"
+    }
+  ],
+  "openRequirements": [
+    "Final German SDS/sign-off or equivalent processed-indicator documentation, including both sampling domains.",
+    "Resolve Protocol95/96 apparent contradiction before assuming integrated one-stage PSU coding.",
+    "Official relationship between integrated stratum and explicit/implicit strata; no response-driven collapsing.",
+    "Chosen variance approximation and its assumptions/limits; missing FPC alone does not forbid the guide approximation.",
+    "PSU split applicable unit identities and adequate support; no actual split performed.",
+    "Concrete data4.2 category/design/region mapping and source version reconciliation after authorized gate.",
+    "Human web-comprehension/mode limits, measurement and survey variance kept distinct."
+  ],
+  "rawDataRead": false,
+  "finalModelOrSplit": false,
+  "independentReviewsCompleted": false
+}

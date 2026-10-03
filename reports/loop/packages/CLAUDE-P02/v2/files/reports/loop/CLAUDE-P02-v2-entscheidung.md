@@ -1,0 +1,23 @@
+# CLAUDE-P02: beide Erstberichte und getrennte Metadatenkorrektur
+
+Koordinator `/root`, 3. Oktober 2026. Beide vollständigen Erstberichte wurden einschließlich nachgelesener Schlussabschnitte vor dieser Zusammenführung gelesen. Geprüftes v1-Manifest: `5c4fe35d971dde4dafc6fb58bfcbe96eb848499dc09ee0b8713964ace061bef4`. Metadatenreview: `f53b8063efcefa5abe0de174cbe70f56aeb9ef917e5d9b8fa301db9cd3a5d1e1`; Zeit-/Grenzreview: `7fedb36c4a394ebb6e66ae363533c5fc514f27ffca6788374b5897ca9280e916`. Erstberichte und historische Ausführungsdateien bleiben unverändert.
+
+## Angenommener Befund CP-M01 / CP-T01
+
+Beide Kennungen beschreiben denselben niedrigen Befund und dieselbe Reparaturrunde: Das lokale Feld `readConfinement` nennt vorgesehene Lesegrenzen als „tested“; Versuch 002b erwähnt zudem safe-mode, obwohl das Flag entfernt wurde. Die originalen gebundenen argv, null Read-Toolnamen und Fehlerresultate tragen diesen Befund. Die öffentlichen Exporte und der Zugriffsbericht nennen schon zutreffend `NICHT_GEPRÜFT`. Es gibt keinen belegten erfolgreichen Außenread oder Claude-Forschungsreview. Nichts wird nach Stimmenzahl entschieden oder verworfen.
+
+Die neue gebundene Ergänzung `reports/loop/claude-read-boundary-002/correction-v2.json` benennt die historischen Felder samt SHA-256 und getrennt ihre korrigierte Bedeutung. In 002 ist safe-mode konfiguriert, in 002b nicht. Beide fordern restricted an. Beide endeten mit Exit 1 und HTTP401 vor jedem Read. Tatsächliche Lesegrenzen bleiben ungeprüft; die genaue Authentifizierungsursache, interne Modellrevision und umfassende OS-Isolation sind unbekannt. Historische Dateien werden weder überschrieben noch rückwirkend zu Erfolgen erklärt. Ein neuer Modell-/Loginaufruf ist für diese Dokumentkorrektur nicht erforderlich und wurde nicht durchgeführt.
+
+Vorabplan und eigene tatsächliche Kontrollresultate liegen unter `outputs/loop/claudep02-correction/`. Fünf historische Inputs wurden vor und nach der neuen Ergänzung unverändert gehasht; die Flags wurden feldweise verglichen. Zwei unabhängige Nachkontrollen dieser Ergänzung gegen die Originalfelder, argv und ausgewählten Ereignisse fehlen noch. Der Befund wird bis dahin nicht als korrigiert bestanden geschlossen.
+
+## Zeitkorrektur SOFTWARE-001-V2-REPRO-01
+
+Beide unabhängigen Erstprüfer kontrollieren die frühere CASE-P01-Zeitfolge selbst: Lauf 04:36:25–04:37:05 UTC, Versionsabfrage erst 04:47:29 UTC. Die korrigierte SOFTWARE-Entscheidung behauptet deshalb keine rückwirkende Binary-/Versionsbindung und keinen belegten Versionswechsel. Diese konkrete Textkorrektur ist anhand beider tatsächlicher Prüfungen `BESTANDEN` für CLAUDE-P02/v1. Der frühere Binärzustand bleibt unbekannt. Diese enge Schließung heilt weder den historischen externen Conda-Schreibvorgang noch formale Setup- oder wissenschaftliche Gates.
+
+## Tatsächliche Prüfgrenzen
+
+Beide Reviewer extrahieren die ausdrücklich ausgewählten vier öffentlichen Events selbst. Beide sehen zusätzlich den fünften Assistant-Eventtyp ohne Toolname; die anfänglichen zu breiten Gleichheitsannahmen und deren gezielte Korrekturen bleiben erhalten. Der Metadatenreviewer verwendet einen Scanner, der fremde skalare Werte überspringt; der Zeitreviewer dekodiert umschließende JSON-Objekte mechanisch und interpretiert/zeigt ausschließlich Whitelistfelder. Die unterschiedlichen Parserzugriffe sind offengelegt. Keine Zugangsdaten oder fremden Providertexte wurden als Belege übernommen.
+
+Vor-/Nachkontrollen bestätigen 22 Bindungen. Das sind Metadaten- und Extraktionsprüfungen, keine unabhängige frühere Kernel-/HOME-/Binarybeobachtung. Die beiden Read-Grenzprozesse bleiben als beobachteter Zugriff `BLOCKIERT`; Read-Grenzen und getrennte Claude-Forschungsreviews sind nicht erfüllt. Der Metadatenreviewer führte einen frühen Projektcheck mit Exit 1 wegen der zwischenzeitlich unformatierten Koordinationsdatei aus; Folgechecks liefen nicht. Der Zeitreviewer führte keinen Gesamtcheck aus. Der spätere erfolgreiche Root-Projektcheck ist ein gesonderter aktueller Technikbeleg.
+
+Das ist ein KI-Audit organisatorisch getrennter Reviewer derselben Codex-Modellfamilie. Frischer begrenzter Kontext und eigenes Prüfen begründen keine unabhängige Modellfamilie, akademisches Peer Review, wissenschaftliche Garantie oder absolute Neutralität. Der Reparaturautor ist `/root`, `gpt-6.1-sol`, Reasoning `ultra`; interne Revision und nicht zugängliche Vorgaben unbekannt. Tatsächlich genutzt wurden Shell-/Dateiwerkzeuge für erlaubte Metadaten und diese neue Ergänzung. Keine ESS-Antworten, Entblindung, Installation, globale Änderung, neuer Modellaufruf oder Schutzumgehung.

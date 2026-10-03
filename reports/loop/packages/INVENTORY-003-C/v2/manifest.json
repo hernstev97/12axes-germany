@@ -1,0 +1,795 @@
+{
+  "id": "INVENTORY-003-C",
+  "version": 2,
+  "codeCommit": "47e8cb564770d56ddf8d335ba1256f19a6de8b59",
+  "overrideRule": "Frozen files and source hashes authoritative; original author index report paths explicitly relocated after table-only formatting",
+  "authorIndexPublicPathRebinding": [
+    {
+      "originalPath": "reports/loop/authors/INVENTORY-003-C.md",
+      "preservedOriginalPath": "outputs/loop/inventory003-c-format-transfer/author-original.md",
+      "originalSha256": "e1115c1db314202fe2468f9c95bb36d24408123f6e22e625de3873c7c3b08ca1",
+      "formattedSha256": "743ba5394678f62c9d12b82b5518e3b60392ea59a8a727036114f209a02ad661",
+      "newProseAdded": false,
+      "jsonAndCodeUnchanged": true,
+      "originalIndexUnchanged": true,
+      "sourceIndexRebinding": "Original report_sha256 and files row resolve to preservedOriginalPath; new publicReport bound separately"
+    }
+  ],
+  "modelConfiguration": "43 technische Identitäten,1526 Belege,1525 unverändert. Keine Auswahl/Polung.",
+  "sourceInputs": [
+    {
+      "path": "outputs/loop/inventory003-c-format-transfer/author-original.md",
+      "bytes": 18854,
+      "sha256": "e1115c1db314202fe2468f9c95bb36d24408123f6e22e625de3873c7c3b08ca1",
+      "originalPath": "reports/loop/authors/INVENTORY-003-C.md",
+      "scope": "Preserved original author report before table-only formatting; original index explicit relocation"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/annotation-first-readtest-failed.json",
+      "bytes": 2860582,
+      "sha256": "948a15bc4993cc9b4702041e04ed66c7c0681132af882f2df8e2267da7e1ede2",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/annotation-second-readtest-failed.json",
+      "bytes": 3097409,
+      "sha256": "d7f4b82ed7f4cbbf1119cc93906982ca3b1df227da597e88037449d7c6819ca8",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/apply-patch-first-failed.json",
+      "bytes": 231,
+      "sha256": "517cb8ca3fce6f0eceddacddeeed43317d07e4db18284bdc9399f66062dec97f",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/baseline-git-diff-name-only.txt",
+      "bytes": 24,
+      "sha256": "907b016c9576c8a3b641d6556da32b90922bb838f78a22d1cbbe5a2dd31f2b9f",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/build-first-failed.json",
+      "bytes": 1657,
+      "sha256": "7710836b6ef46a6daefe18e6c1b12f9151bf4c7612a8c2a7e4d96a19872432d7",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/build-inputs/codebook.bbox.html",
+      "bytes": 10364414,
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/build-inputs/questionnaire.bbox.html",
+      "bytes": 1594668,
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/build-inputs/showcards.bbox.html",
+      "bytes": 587336,
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/build-second-failed.json",
+      "bytes": 329,
+      "sha256": "7c6c3e94da1a407e5af012627813510c1b4bd6f5558ae1a05b16114fde77982a",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/build_c.first-failed.py",
+      "bytes": 25176,
+      "sha256": "f31ef4d14ce3135e98b13383a246e65f4a944091d79f965f87f0c6beb43270b2",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/build_c.py",
+      "bytes": 29645,
+      "sha256": "878cf98c9d5b9d537e847b1f2101434146fcf6fadc7124a7071933818abf6dde",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/build_c.second-failed.py",
+      "bytes": 25196,
+      "sha256": "5e4147b44ddba91f850015f80bf0bb6ef2095cc3106c2c0172b730f93a1ca154",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-077.png",
+      "bytes": 138057,
+      "sha256": "719a25d55e7eb04eb1dd8425e27e9afa7a66ec7e336a4598340dbbdffc0e8317",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-078.png",
+      "bytes": 142149,
+      "sha256": "1d3efb538bef383afd4708b540a59a86a326306602a2071272523af72ead2e4f",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-092.png",
+      "bytes": 154103,
+      "sha256": "de03624ea29b80622e791578570e0157f1d9852744280340caed2652e79ffd85",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-108.png",
+      "bytes": 144512,
+      "sha256": "661b36f44d7e9899275167923132aa09014dea1277423883f01434b5759cdd8b",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-117.png",
+      "bytes": 145310,
+      "sha256": "c2745b9aa9c079e3f34e1509d1d0aaf96eef39fb8d1c4a84464b3791b2d4e56e",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-147.png",
+      "bytes": 159611,
+      "sha256": "b8ada0ee6d99ea05ff553417fd17e40e6d1691b3e73658f7c400850f23aabaaa",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-156.png",
+      "bytes": 121273,
+      "sha256": "63752d1aa2917f1e9809a489df088abc07aec696cf78ecd5cf4f4cc940fc969f",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-165.png",
+      "bytes": 110116,
+      "sha256": "bc114524338130095b77ab6dcf69d233c8f7402c0239677fd5fa61b48f4c0a98",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-166.png",
+      "bytes": 127185,
+      "sha256": "125820045aa035acf038e722aa27121ae20d91bf8fc4fe681a88083b9640f285",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-167.png",
+      "bytes": 142336,
+      "sha256": "66c0f4063943ecb479c9acb7a588e5eac7efa89b3c3c5a1f2a1e27d62d8db417",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-168.png",
+      "bytes": 99477,
+      "sha256": "b81906c9088f68b6165ebcdcd9cd997e0fcbce413959a4e8c038610bf0c8f59f",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-169.png",
+      "bytes": 147367,
+      "sha256": "3110b59ff28efc95c0759ddd6605342596c1fb6557ac2612831a1373ebe23dae",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-170.png",
+      "bytes": 133128,
+      "sha256": "88e31815e41c1ca9ccbdb367c384b92131deebff35ae0d3f6400d413ff5b7813",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/c-171.png",
+      "bytes": 164963,
+      "sha256": "bbc04afdefe67fb930c423ad87c97415fe494eb48075f87f78abfeb9a9a235a1",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/codebook.bbox.html",
+      "bytes": 10364414,
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/codebook.layout.txt",
+      "bytes": 1074155,
+      "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/failure-retention.json",
+      "bytes": 678,
+      "sha256": "231b9932e873e1e2497a0ba6e2b77c6f845601479d6876299b981e37fe4397aa",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/final-check.json",
+      "bytes": 1617,
+      "sha256": "d4e90c995757de2c3327b4737daf3a88b06cc5f06ecbfe70225a7a010eb5b2ed",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/input-hashes.json",
+      "bytes": 3787,
+      "sha256": "9344beafd988a8426602567486dfcbddca074c03c9e2624bb2fb10fec41a5b90",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/license-reading.json",
+      "bytes": 704,
+      "sha256": "f98e9bec1fa97a72ab4e6303413af5e994bcb8974064276183c4408ec2b6b44d",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/plan-before-work.json",
+      "bytes": 2868,
+      "sha256": "1a7a4b1f8c117a8b6d3bc4b3fde7a035da9da1bd2ce6277fd5b66eb2a4688146",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-017.png",
+      "bytes": 122289,
+      "sha256": "6eb23225d76b26e6d2119a51dc0529d475b8dc6f5b7762542beca8555b911287",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-018.png",
+      "bytes": 109690,
+      "sha256": "9b7bc6cc6784319936a64590590625d1148ad76c8946374a84298594a578e2ff",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-019.png",
+      "bytes": 140322,
+      "sha256": "41569458b1ae9db5cbb1acc7c3ece13e6450a7a2855e20e46521fde3b443d32f",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-020.png",
+      "bytes": 162497,
+      "sha256": "078654d9ef80949f1112549416ba709e36ed564e916b338b87560c29d371b90e",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-021.png",
+      "bytes": 161959,
+      "sha256": "b4b6309d1baa8a16efaf1092f9c6d62a78a43429bb0a6a8c05af386ab3f3109f",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-022.png",
+      "bytes": 127668,
+      "sha256": "14ac62a1df03e36a26e58530597dab1e943fcbe57405c0962a3529e186b87e12",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-023.png",
+      "bytes": 130249,
+      "sha256": "7e07a6777fc3d01599806b45c2470ca0aa666d8cac7e8fd123fb95c6eb1000fd",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-024.png",
+      "bytes": 121608,
+      "sha256": "9d23c5616a8d1bad25602fc3344c25f96d5e44a90093d259211fae4fd2ed3ab4",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-025.png",
+      "bytes": 154429,
+      "sha256": "5fa92d76d73ce0f18755acbf3c8cf327d85f69373e026326e70205c04b02bf78",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-026.png",
+      "bytes": 149635,
+      "sha256": "46af8ffb1351cfeab3f4918fd34545843473eb0e93dbefbaa61de961c749e5ab",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-027.png",
+      "bytes": 100155,
+      "sha256": "43db25af6945262148cc597258ed3652d20b0db837f9d61433460d55d5d8cd29",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-028.png",
+      "bytes": 86095,
+      "sha256": "9ab2e80b140c593bdc9aaa6212ed8e6a9cfe0003e8a1ad54aa77eb7173447f1d",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-029.png",
+      "bytes": 148140,
+      "sha256": "537fa61d51480a2a6f8d42c23c99ea02260497c6cd01458e50c9ca0abccb63c7",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-030.png",
+      "bytes": 121756,
+      "sha256": "fe6cf35834ba583375acff2fbeff5cb09a4d9320fe14303aa6d0dd657ae50045",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/q-031.png",
+      "bytes": 81380,
+      "sha256": "403f7b1de645abdc28d9ef8e90007a772b4a353fa44690ea564087158b9da6ea",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/questionnaire.bbox.html",
+      "bytes": 1594668,
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/questionnaire.layout.txt",
+      "bytes": 213698,
+      "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/read-tests-first-failed.json",
+      "bytes": 16299,
+      "sha256": "ba85ed70859a5960012765ea74748314f0e8334274be51a0e804971a6dc9833c",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/read-tests-second-failed.json",
+      "bytes": 12035,
+      "sha256": "7f338a7940307506f7bba6d9f3df801bbac92fa8b102728e7f80d1ee94f02b79",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/read-tests.json",
+      "bytes": 11176,
+      "sha256": "5e3ad04f83e851e9a34c526b9607a757b58e8fba731aa178d6d6f5ebaee3ce30",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/read_tests.py",
+      "bytes": 10614,
+      "sha256": "423c5880bf09c4ae3d89372e8f074864354c467a01d3eb73599ff965f597545c",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/reproduce.sh",
+      "bytes": 449,
+      "sha256": "62ec25d10457661adb075d01f17f9c741e38e3e69faa9e6f1921bb5c218d6e06",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/reproduced.json",
+      "bytes": 3422408,
+      "sha256": "ff26fe1d0c426005f394127d894e3dea61ffbf1deec283b19e8cc8fc159d4768",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/reproduction-and-protected-diff.json",
+      "bytes": 5638,
+      "sha256": "f20f29c8c99f250635ab25cc94a68b6cecea4681d7878e51cc139a21b47a1ee3",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/reproduction-inputs/codebook.bbox.html",
+      "bytes": 10364414,
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/reproduction-inputs/questionnaire.bbox.html",
+      "bytes": 1594668,
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/reproduction-inputs/showcards.bbox.html",
+      "bytes": 587336,
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/reproduction-read-tests.json",
+      "bytes": 11176,
+      "sha256": "5e3ad04f83e851e9a34c526b9607a757b58e8fba731aa178d6d6f5ebaee3ce30",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-021.png",
+      "bytes": 24500,
+      "sha256": "7d1785a6c838f6cfe37ee88a5cd432282fd3f29695ca61287f99c89403711b50",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-022.png",
+      "bytes": 44132,
+      "sha256": "832f5ef0ba5e2e7d7948889b30e8cd7e1472a7d19146380fda5608b20058c394",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-023.png",
+      "bytes": 21758,
+      "sha256": "3679dc4126513421197abd905d18aa31479743054cea42c2c0b151c273aaf26e",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-024.png",
+      "bytes": 44671,
+      "sha256": "94c9f4cae2f2c54d2c94a128ddcd25bbcac574a2ecd363f576ada4de68a7871e",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-025.png",
+      "bytes": 31590,
+      "sha256": "556fc146a754e35777bc12b942d1f4c529f6a62e8ea629b5423ef1b0a60bb34b",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-026.png",
+      "bytes": 24937,
+      "sha256": "49ac6f5595e560024191038fb079c109025a865bfda4f640ed9aa60fd2c88518",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-027.png",
+      "bytes": 49574,
+      "sha256": "fa5cbbf05156c0d639bb1b0fe3407748ef58f3929c597828709ef4e608b46126",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-028.png",
+      "bytes": 61365,
+      "sha256": "3cdf6b3087d7ae709eeb8206c5568cedb4ecc1cee40bb19d6ea55dae6603938e",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-029.png",
+      "bytes": 22812,
+      "sha256": "ae996eef238bf5312600e6a7daad36e9759fa303b489060bdca88047dbbcf9f7",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-030.png",
+      "bytes": 40521,
+      "sha256": "d0bc030415d769143c684d2a61c205f72ad8c792968644996e54e47190dd723b",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-031.png",
+      "bytes": 36424,
+      "sha256": "1bf8aac50eec54c85834d69b2e88cebedefb8a9af4c0b3d58d5e489c2672ba86",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-032.png",
+      "bytes": 42779,
+      "sha256": "3d2a68aab54cbc37445761338ee6a78a3f83b1ac5a64ee368c4fba1cfd374864",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/s-033.png",
+      "bytes": 30452,
+      "sha256": "3cd030a7cff63cd9997e270cff72d22f2be000b9a414b430f1b094a49bc7439e",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/showcards.bbox.html",
+      "bytes": 587336,
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/showcards.layout.txt",
+      "bytes": 94266,
+      "sha256": "525461ad810e078a0b7f63e381be50a99ad35551f435cd6988ddde0f2b01dc51",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/source_geometry.first-failed.py",
+      "bytes": 1244,
+      "sha256": "668b839129254db57fa136f4c14db62d07fcdd6f0d4c1d85e0118e4807b847c5",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/source_geometry.py",
+      "bytes": 1252,
+      "sha256": "61fb05cd5d0e6b637346692267f2a4c44bb9cb07567fa5c8cc03a61e42a6170f",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/startauftrag.txt",
+      "bytes": 2811,
+      "sha256": "ac7eb26153d0a85b397a8966bac67f7608a5f7569e7c454a98af0e84d3368be8",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/test-inputs/ESS11-CODEBOOK.bbox.html",
+      "bytes": 10364414,
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/test-inputs/ESS11-DE-QUESTIONNAIRE.bbox.html",
+      "bytes": 1594668,
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/test-inputs/ESS11-DE-SHOWCARDS.bbox.html",
+      "bytes": 587336,
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/tool-exits.jsonl",
+      "bytes": 26872,
+      "sha256": "07b387dcd33dd57f53c209ac89847e1718c8553f4f61bbc4f236218f3e7514aa",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/tool-offers.json",
+      "bytes": 924713,
+      "sha256": "5b9ef80290be9db29025d6d14256a7b161c92ab2ca150ce9fa8b6ebd93f7b2a8",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/visual-reading.json",
+      "bytes": 1502,
+      "sha256": "e3f7877a863727b92b1c03ac5fce6d9d4fa9de2bdd1245acae4f3b887f211784",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/write_report.py",
+      "bytes": 13642,
+      "sha256": "33cedb258e974251fa88fc9615bb9d1d83d00159219ed511134d5dbe76802bed",
+      "scope": "Public source or bounded source annotation/provenance/tests; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c/output-index.json",
+      "sha256": "0cead9447e7010edade246c5177db750a2525994f8671a53784b15e8123ee7bd",
+      "bytes": 16300,
+      "scope": "Public original inventory/parser or explicit author-format proof; no ESS respondents"
+    },
+    {
+      "path": "data/inventar.entwurf.csv",
+      "sha256": "8c73adb8b361db2992f5fe9e321e0c5b978afdc41ba22c1cbb471f92e60057c1",
+      "bytes": 2437729,
+      "scope": "Public original inventory/parser or explicit author-format proof; no ESS respondents"
+    },
+    {
+      "path": "data/inventar.provenienz.json",
+      "sha256": "533a12c517ac49f869aea1fbc09dc86e3c1dfe7ef9bc7b05018b5a49ba753aa6",
+      "bytes": 70582,
+      "scope": "Public original inventory/parser or explicit author-format proof; no ESS respondents"
+    },
+    {
+      "path": "pipeline/inventar.py",
+      "sha256": "548109c85300e6a0ecee57e92af7acc5ec9e748e9d8bf7ee5daeba18e8580190",
+      "bytes": 60065,
+      "scope": "Public original inventory/parser or explicit author-format proof; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-format-transfer/plan-before-format.json",
+      "sha256": "f274715817639a94b82847a20e4ca13e08d5043abf5900de61c5850112d006c2",
+      "bytes": 442,
+      "scope": "Public original inventory/parser or explicit author-format proof; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-format-transfer/report-format.diff",
+      "sha256": "8a5ae3854d5d9c7ef8898af0c13209ef9847f5f45bd8b2fad990cd3cbe0327ba",
+      "bytes": 21694,
+      "scope": "Public original inventory/parser or explicit author-format proof; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-format-transfer/transfer.json",
+      "sha256": "31a8a9ff44fdebbcac29611e7c1ff3d4a0a55f9308dc510498441caf09deb767",
+      "bytes": 560,
+      "scope": "Public original inventory/parser or explicit author-format proof; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-format-transfer/full-report-cell-equality.json",
+      "sha256": "501d716ec96577af22d28f6ee53a12c20403b5b692aa3caf5130b8ab35fbe000",
+      "bytes": 263,
+      "scope": "Public original inventory/parser or explicit author-format proof; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/__pycache__/source_geometry.cpython-314.pyc",
+      "sha256": "c2e89c3884b1024b121690f929b3086e78f0b29fbdd3888d130d62e0ad69152a",
+      "bytes": 4378,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-command-log.json",
+      "sha256": "7e10f25dbea2836d5076ff188204299abe3d5fb72918d411db956569ab457fc1",
+      "bytes": 1740,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-first/codebook.bbox.html",
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "bytes": 10364414,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-first/questionnaire.bbox.html",
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "bytes": 1594668,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-first/showcards.bbox.html",
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "bytes": 587336,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-first.json",
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e",
+      "bytes": 3418839,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-second/codebook.bbox.html",
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "bytes": 10364414,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-second/questionnaire.bbox.html",
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "bytes": 1594668,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-second/showcards.bbox.html",
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "bytes": 587336,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build-second.json",
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e",
+      "bytes": 3418839,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build_c.py",
+      "sha256": "d466f8503bd554127001aa567a8f48ff783ca264cc7b989b1e63fa557a58c1b7",
+      "bytes": 30391,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/codebook-132.png",
+      "sha256": "224e1fb03d0c6fe0090e98cbd912d12fa5d99a68a1470f86d65f237be7a98663",
+      "bytes": 142875,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/complete-structural-diff.json",
+      "sha256": "88d1588ee87485af3986f96f1cbaef328aac95db3deee40c3281a98ecf615f61",
+      "bytes": 25022,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/correction-check-results.json",
+      "sha256": "e68d745e40143984c389c844f73e005ea990fa578f18e1696d0799b11ebdcc47",
+      "bytes": 1577,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/index.json",
+      "sha256": "310c95597da7e5fe952c9d47c7b63d8da5f2d0d4c0d1d4211a227e69092f3a90",
+      "bytes": 4315,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/new-output-hash.json",
+      "sha256": "6dc2e8da322e1cdf6a0152be5f264015b3e8c01f52a650b9fef0af4691b4c8fb",
+      "bytes": 161,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/old-lookup-contamination-restored.json",
+      "sha256": "eb9f918f9d9a88640237db40ccc520e51b4701576decb6224db6c2573c55ade4",
+      "bytes": 3423073,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/plan-before-correction.json",
+      "sha256": "aadff13a00881ab779743eed4f9196a077c6d1be87564fb79ef4978fa525681f",
+      "bytes": 1851,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/render-command.json",
+      "sha256": "4dc3fc3d3f3bd7c071848b7c524988954ef4a8d0b8e906041204f4af6f57368b",
+      "bytes": 459,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/source_geometry.py",
+      "sha256": "61fb05cd5d0e6b637346692267f2a4c44bb9cb07567fa5c8cc03a61e42a6170f",
+      "bytes": 1252,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/tool-exits.jsonl",
+      "sha256": "265c3fe31a6f72da9a1931727d3c9212db17be0d638a0b5a8e9d8df74f057975",
+      "bytes": 2147,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/two-languages-instruction-removed.json",
+      "sha256": "1c5af9a8b179238e747f46dee7d9797d5e3b037fdac156b2997dd46b04f1d0fd",
+      "bytes": 3418832,
+      "scope": "Isolierte öffentliche Metadatenkorrektur, Originalrender/Text/Builder und synthetische Gegenfälle; keine Antworten"
+    }
+  ],
+  "previousManifestSha256": "14a87ba5148fba5e640e8164ea06d7ff34cbc2893117dc6baf3eee91f96be7cb",
+  "repairRound": 1,
+  "repairScope": "C-R01 Metadatengrenze und explizite Korrekturprovenienz; keine wissenschaftliche Inventarabnahme",
+  "frozenAtUtc": "2026-10-03T07:24:51.623226+00:00",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "docs/project.md": {
+      "sha256": "765d991f46986096a53a12c95afa17b65af0f2a1e0d4be2f5e42400a7a748eb0",
+      "bytes": 6889
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "docs/pruefregeln.md": {
+      "sha256": "7f1a86187a0a2c6a39acaabab25eb75cf92ec1fc5c2c4c97bf0d12411ece2a9f",
+      "bytes": 23337
+    },
+    "docs/analyseanforderungen.md": {
+      "sha256": "f94a4bc01c571af966e9269a674632f8a19cba3db0a5c8be0bddade27be7795b",
+      "bytes": 8485
+    },
+    "docs/lizenzen.md": {
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+      "bytes": 4845
+    },
+    "data/inventar-c.ergaenzung.entwurf.json": {
+      "sha256": "ff26fe1d0c426005f394127d894e3dea61ffbf1deec283b19e8cc8fc159d4768",
+      "bytes": 3422408
+    },
+    "reports/loop/authors/INVENTORY-003-C.md": {
+      "sha256": "743ba5394678f62c9d12b82b5518e3b60392ea59a8a727036114f209a02ad661",
+      "bytes": 24914
+    },
+    "reports/loop/INVENTORY-003-C-pruefauftrag.md": {
+      "sha256": "14f23e80d210d2a49eabf84f03c835ead1d1b97eaea68d0aaff393444d51d8fe",
+      "bytes": 3077
+    },
+    "reports/loop/reviews/INVENTORY-003-C-sources.md": {
+      "sha256": "56d4927b0384e1c0de9b3c6a711765c08c9f3b1fd98a84899cc0ca233adcaec5",
+      "bytes": 22401
+    },
+    "reports/loop/reviews/INVENTORY-003-C-repro.md": {
+      "sha256": "893ed72ebffce8c30772c3caf3dc9cb3dd598b4eefa0296f2ae88f5459a5f69b",
+      "bytes": 28142
+    },
+    "reports/loop/INVENTORY-003-C-v1-entscheidung.md": {
+      "sha256": "bbd4fc4f96ee931b9db930e110df1aff68ff9a7205903b79ed0c4b3ff0a6011a",
+      "bytes": 3855
+    },
+    "data/inventar-c.v2.ergaenzung.entwurf.json": {
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e",
+      "bytes": 3418839
+    },
+    "reports/loop/authors/INVENTORY-003-C-korrektur.md": {
+      "sha256": "eec4d3d008cf378adeeaf644bfb5692bec426d672f8cfb0c4141519ae5997c8b",
+      "bytes": 4876
+    },
+    "reports/loop/INVENTORY-003-C-v2-pruefauftrag.md": {
+      "sha256": "73e4eb385c65ead39efc8715d16676cb0e06033e04b4f97b47832dc53620c2cd",
+      "bytes": 2520
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

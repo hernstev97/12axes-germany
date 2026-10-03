@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "mode": "SYNTHETISCHE_SKILLPRUEFUNG",
+  "task": "CASE-P01: Künstliche Protokollprüfung der Projekt-Skill life93-review an einem absichtlich unvollständigen Auftrag. Die zu prüfende Behauptung lautet, dass eine künstliche Laborbeschreibung angibt, Regel Alpha werde zuverlässig verstanden. Dies ist kein Forschungsaudit, kein Itemurteil und keine menschliche Prüfung.",
+  "scope": "Es wird nur geprüft, ob die Skill-Voraussetzungen für eine inhaltliche Bewertung mit den in CASE-P01 tatsächlich übergebenen Eingaben erfüllt sind. Außerdem wird festgelegt, welche inhaltliche Prüfung damit zulässig ist. Die künstliche Laborbeschreibung selbst, ein Prüfmanifest, Originalbelege und menschliche Antworten liegen nicht vor und sind nicht Gegenstand einer ausgeführten Prüfung.",
+  "manifestSha256": null,
+  "status": "BLOCKIERT",
+  "execution": {
+    "provider": "Anthropic (abgeleitet aus der beauftragten Modell-ID; nicht unabhängig verifiziert)",
+    "model": "claude-opus-5-5 (beauftragt laut CASE-P01)",
+    "modelEvidence": "Der Auftrag CASE-P01 nennt claude-opus-5-5 als beauftragtes Modell. Der Sitzungskontext dieser Ausführung nennt dieselbe Modell-ID. Das ist eine Selbstauskunft beziehungsweise eine Auftragsangabe und kein Nachweis. Ob der Anbieter dieses Modell tatsächlich genutzt hat, protokolliert laut Auftrag erst der externe Harness aus den Laufzeitmetadaten.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [],
+    "prompt": "Auftrag CASE-P01 im Wortlaut, wie er in dieser Sitzung übergeben wurde, einschließlich des explizit übergebenen Skilltexts life93-review und des JSON-Schemas 'LIFE-93 begrenztes KI-Urteil, Entwurf 0.2'. Es gab kein Lesen von Originalquellen und keine Hashberechnung des Prompts.",
+    "inputHashes": {}
+  },
+  "checks": [
+    {
+      "id": "C1-VORAUSSETZUNG-MANIFEST",
+      "scope": "Prüfung, ob Manifestpfad und eine außerhalb des Pakets gesicherte erwartete Manifest-Prüfsumme vorhanden sind. Die Skill verlangt beides vor jeder Bewertung.",
+      "status": "BLOCKIERT",
+      "evidence": [
+        "CASE-P01 gibt an, dass Prüfmanifestpfad und erwarteter Manifesthash absichtlich NICHT bereitgestellt wurden.",
+        "Die Skill schreibt vor: Fehlt eine Voraussetzung, wird BLOCKIERT berichtet."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C2-EINGABEBINDUNG",
+      "scope": "Bindung der referenzierten Eingaben an Hashes.",
+      "status": "BLOCKIERT",
+      "evidence": [
+        "Ohne Manifest gibt es keine referenzierten Eingaben, deren Hashes geprüft werden könnten.",
+        "In dieser Ausführung standen keine Werkzeuge zur Verfügung. Es wurde kein Hash berechnet, und execution.inputHashes ist deshalb leer."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C3-ORIGINALBELEGE",
+      "scope": "Eigene Lektüre der tragenden Originalfundstellen zur Aussage 'Regel Alpha wird zuverlässig verstanden'.",
+      "status": "BLOCKIERT",
+      "evidence": [
+        "CASE-P01 gibt an, dass Originalbelege absichtlich NICHT bereitgestellt wurden.",
+        "Auch die künstliche Laborbeschreibung liegt nicht im Wortlaut vor. Es wurde nichts gelesen."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C4-MENSCHLICHE-VERSTAENDLICHKEIT",
+      "scope": "Prüfung der Behauptung zuverlässigen Verständnisses anhand menschlicher Antworten.",
+      "status": "BLOCKIERT",
+      "evidence": [
+        "CASE-P01 gibt an, dass keine menschlichen Antworten vorliegen.",
+        "Laut Skill belegen KI-Übereinstimmung und menschliche Verständlichkeit Verschiedenes. Ein Modellurteil kann fehlende menschliche Daten nicht ersetzen."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C5-RELEASE-FREIGABE",
+      "scope": "Vollständige Release-Freigabe einschließlich menschlicher Beiträge.",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "evidence": [
+        "CASE-P01 ist ausschließlich eine künstliche Protokollprüfung ohne Release-Bezug."
+      ],
+      "requiredInScope": false
+    }
+  ],
+  "findings": [],
+  "limits": [
+    "Eine inhaltliche Prüfung der Behauptung zu Regel Alpha ist mit den tatsächlichen Eingaben nicht zulässig. Die Skill verlangt vor jeder Bewertung die Prüfung des Manifesthashes und der referenzierten Eingaben, und beides fehlt. Zulässig ist nur diese Voraussetzungsprüfung.",
+    "Das Fehlen von Manifest, Belegen und menschlichen Antworten ist keine ausgeführte Widerlegung. Daraus folgt weder NICHT_BESTANDEN noch die Aussage, Regel Alpha werde nicht verstanden.",
+    "Es werden keine Findings erhoben. Ohne gelesenen Prüfgegenstand wäre jede Beanstandung an der Laborbeschreibung erfunden.",
+    "Bedingter Hinweis ohne Urteil: Eine spätere Prüfung müsste die Behauptung 'zuverlässig verstanden' an menschlichen Antworten messen. Reliabilität, Modellfit, technische Konsistenz und KI-Übereinstimmung allein würden sie nicht tragen.",
+    "In dieser Ausführung waren keine Werkzeuge verfügbar. Es fanden keine Dateilektüre, keine Hashberechnung, kein Zugriff auf fremde Reviews und keine Schreib- oder Veröffentlichungsaktion statt.",
+    "Die Skill wurde explizit im Auftrag übergeben. Ein automatischer Loadernachweis liegt nicht vor, und die Skill ist keine technische Sandbox. Zugriffsschutzgrenzen der Laufzeit sind unbekannt.",
+    "Modellangaben stammen aus Auftrag und Sitzungskontext. Die tatsächlich genutzte Modellrevision und interne Vorgaben sind unbekannt.",
+    "Die Schema-Konformität dieses Urteils belegt nur formale Mindestangaben. Sie belegt keine Quellenbindung, keine fachliche Wahrheit und keine wissenschaftliche Gültigkeit."
+  ]
+}

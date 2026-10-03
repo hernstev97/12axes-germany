@@ -1,0 +1,56 @@
+{
+  "id": "CLAUDE-P02-METADATA-CORRECTION",
+  "version": 2,
+  "repairRound": 1,
+  "status": "ENTWURF_NICHT_UNABHAENGIG_GEPRUEFT",
+  "finding": "CP-M01",
+  "duplicateFinding": "CP-T01",
+  "historicalFilesChanged": false,
+  "newModelCall": false,
+  "exactAuthenticationCause": "UNBEKANNT",
+  "items": [
+    {
+      "attempt": "002",
+      "historicalInput": "outputs/loop/claude-read-boundary-002/execution.json",
+      "historicalSha256": "a1e93131b063a561b3944cc2d36ea523cdde32aca87e1cec37f3e5a6f4349b2e",
+      "historicalField": "readConfinement",
+      "historicalText": "CLI restricted/safe mode tested on selected public/synthetic cases; not a complete OS read sandbox",
+      "correctedMeaning": {
+        "restrictedConfigured": true,
+        "safeModeConfigured": true,
+        "observation": "API-Fehler vor jedem Read; vorgesehene Lesegrenzen nicht ausgeführt",
+        "readBoundaryStatus": "NICHT_GEPRÜFT",
+        "observedReadCalls": 0,
+        "apiErrorStatus": 401,
+        "exitCode": 1,
+        "actualProviderRevision": "UNBEKANNT",
+        "readNetworkIoctlSupervisorIsolation": "NICHT_DURCH_DIESEN_TEST_NACHGEWIESEN"
+      },
+      "publicMetadata": "reports/loop/claude-read-boundary-002/002-execution.json",
+      "publicMetadataSha256": "4d31f8029bd6d58bea4c04585968e5656f19f8b50b4e963f28a6acfb6e16c490",
+      "reason": "Historischer Schutztext bezeichnete vorgesehene Konfiguration als getestet; 002b enthielt kein safe-mode."
+    },
+    {
+      "attempt": "002b",
+      "historicalInput": "outputs/loop/claude-read-boundary-002b/execution.json",
+      "historicalSha256": "c218d4b5f66487c4e2767c2e866c4a34de4860b1eaa3e446cefc307aedeb8f6b",
+      "historicalField": "readConfinement",
+      "historicalText": "CLI restricted/safe mode tested on selected public/synthetic cases; not a complete OS read sandbox",
+      "correctedMeaning": {
+        "restrictedConfigured": true,
+        "safeModeConfigured": false,
+        "observation": "API-Fehler vor jedem Read; vorgesehene Lesegrenzen nicht ausgeführt",
+        "readBoundaryStatus": "NICHT_GEPRÜFT",
+        "observedReadCalls": 0,
+        "apiErrorStatus": 401,
+        "exitCode": 1,
+        "actualProviderRevision": "UNBEKANNT",
+        "readNetworkIoctlSupervisorIsolation": "NICHT_DURCH_DIESEN_TEST_NACHGEWIESEN"
+      },
+      "publicMetadata": "reports/loop/claude-read-boundary-002/002b-execution.json",
+      "publicMetadataSha256": "10ba2cbf6c352a6255fab5031729ce44489d1699ca6373e3e0d23acf434a04cb",
+      "reason": "Historischer Schutztext bezeichnete vorgesehene Konfiguration als getestet; 002b enthielt kein safe-mode."
+    }
+  ],
+  "limits": "Nur dokumentierte Ereignisse und Flags. Kein Read, kein Claude-Forschungsreview, keine nachträgliche CASE-P01-Binarybindung, keine wissenschaftliche Abnahme."
+}

@@ -1,0 +1,166 @@
+{
+  "id": "CLAUDE-P02",
+  "version": 2,
+  "codeCommit": "47e8cb564770d56ddf8d335ba1256f19a6de8b59",
+  "rawData": "No ESS/person answers or raw data inputs accessed or bound",
+  "method": "Fresh independent Codex metadata controls, two reports before synthesis; same model family",
+  "requiredStatus": "P02 read-boundary NICHT_GEPRÜFT; observed access BLOCKIERT",
+  "sourceInputs": [
+    {
+      "path": "outputs/loop/claude-protocol-001/cli-version.json",
+      "bytes": 928,
+      "sha256": "a6b1ed2e4b2519e908a546d11c3fc3061e584a26830bf7c3fe75fdc424d6dfbb",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/plan-before-run.json",
+      "bytes": 1321,
+      "sha256": "c86cefaeb319ff5c0320e559f50e29058193a88d1690b1afcad3c3e99cba1748",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/plan-before-run.json",
+      "bytes": 1596,
+      "sha256": "14c34f48495aa71b1968b64e81cfc4a5e6ff22e6f4e8513a1e59c319d2d497c7",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/execution.json",
+      "bytes": 2699,
+      "sha256": "a1e93131b063a561b3944cc2d36ea523cdde32aca87e1cec37f3e5a6f4349b2e",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/execution.json",
+      "bytes": 2683,
+      "sha256": "c218d4b5f66487c4e2767c2e866c4a34de4860b1eaa3e446cefc307aedeb8f6b",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/provider-stream.jsonl",
+      "bytes": 4943,
+      "sha256": "7fcfc813618298446f2804643378c83911cf9636256264f82f05107308bd5c88",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/version-before.stdout",
+      "bytes": 22,
+      "sha256": "633e048600d3b521510cbcd629063291d140105c64e042c345b30850e9cf0c2d",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/version-after.stdout",
+      "bytes": 22,
+      "sha256": "633e048600d3b521510cbcd629063291d140105c64e042c345b30850e9cf0c2d",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/provider-stream.jsonl",
+      "bytes": 4963,
+      "sha256": "82f0d247991dab0bafdb0fb2caff04d55df618716c9cb4bafed2eb39ea5db4c9",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/version-before.stdout",
+      "bytes": 22,
+      "sha256": "633e048600d3b521510cbcd629063291d140105c64e042c345b30850e9cf0c2d",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/version-after.stdout",
+      "bytes": 22,
+      "sha256": "633e048600d3b521510cbcd629063291d140105c64e042c345b30850e9cf0c2d",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claudep02-correction/author-checks.json",
+      "sha256": "a9850503fab83bec1229c1c9793ea8dae020ffcc919aed3f63126f377dc0f779",
+      "bytes": 549,
+      "scope": "Eigener Vorabplan und historische Metadatenkontrolle; Freezefehler, kein neuer Modelllauf"
+    },
+    {
+      "path": "outputs/loop/claudep02-correction/freeze-first-failed.json",
+      "sha256": "72a147ef70cafb60e480a324c85b719442d500a9f1acb517d81f4c3d3e76821f",
+      "bytes": 341,
+      "scope": "Eigener Vorabplan und historische Metadatenkontrolle; Freezefehler, kein neuer Modelllauf"
+    },
+    {
+      "path": "outputs/loop/claudep02-correction/plan-before-correction.json",
+      "sha256": "22132e87b3a040846c95c86e3d00f27adece2e2a91f8562d0fba676bea9d0a1c",
+      "bytes": 1209,
+      "scope": "Eigener Vorabplan und historische Metadatenkontrolle; Freezefehler, kein neuer Modelllauf"
+    }
+  ],
+  "previousManifestSha256": "5c4fe35d971dde4dafc6fb58bfcbe96eb848499dc09ee0b8713964ace061bef4",
+  "repairRound": 1,
+  "repairScope": "CP-M01/CP-T01 Schutzmetadaten getrennt korrigieren; kein neuer Prozess oder Read-Grenztest.",
+  "manifestFormatChange": "files list[record] in v1, map[path] in v2 durch vorhandenes freeze; alle elf historischen Pfade/Bytes/Hashes erhalten",
+  "frozenAtUtc": "2026-10-03T07:30:52.014949+00:00",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "reports/loop/CLAUDE-P02-pruefauftrag.md": {
+      "sha256": "0f2ec24e41fd93497f63d9c117e91bc49a7e65350f97377736619513f3436a4a",
+      "bytes": 2360
+    },
+    "reports/loop/CLAUDE-P02-zugriffsbericht.md": {
+      "sha256": "cd399f061049df75ec67bff3a877ca6350f5bab456c3bed5f4a25edc8174d21b",
+      "bytes": 3248
+    },
+    "reports/loop/SOFTWARE-001-v2-entscheidung.md": {
+      "sha256": "304e25af32f6451f6561d3d94e2426726306d140a8e0bca7a84b7f7c9a3bfee1",
+      "bytes": 3148
+    },
+    "reports/loop/claude-protocol-001-execution.json": {
+      "sha256": "aa979562f0eab7dfe04d00214e5cb7850baea5b2b26edbb88e3a7d26d8f2fedf",
+      "bytes": 2763
+    },
+    "reports/loop/claude-protocol-001-auftrag.txt": {
+      "sha256": "b97b751888e6eb4e970e703db523283544afe7871428d48195c48342588d9e88",
+      "bytes": 15487
+    },
+    "reports/loop/claude-protocol-001-result.json": {
+      "sha256": "3babe6618c546014ccbceed314a88de904f1dd4a1233d16d22f8d92deec32388",
+      "bytes": 5731
+    },
+    "reports/loop/claude-read-boundary-002/002-execution.json": {
+      "sha256": "4d31f8029bd6d58bea4c04585968e5656f19f8b50b4e963f28a6acfb6e16c490",
+      "bytes": 3120
+    },
+    "reports/loop/claude-read-boundary-002/002b-execution.json": {
+      "sha256": "10ba2cbf6c352a6255fab5031729ce44489d1699ca6373e3e0d23acf434a04cb",
+      "bytes": 3105
+    },
+    "reports/loop/reviews/CLAUDE-P02-metadata.md": {
+      "sha256": "f53b8063efcefa5abe0de174cbe70f56aeb9ef917e5d9b8fa301db9cd3a5d1e1",
+      "bytes": 27963
+    },
+    "reports/loop/reviews/CLAUDE-P02-time-boundary.md": {
+      "sha256": "7fedb36c4a394ebb6e66ae363533c5fc514f27ffca6788374b5897ca9280e916",
+      "bytes": 26012
+    },
+    "reports/loop/CLAUDE-P02-v2-entscheidung.md": {
+      "sha256": "dec3e50ae69dd53eb4afa9787abe2f99850d44bfdd1a5b55057c369c8454b11e",
+      "bytes": 4699
+    },
+    "reports/loop/CLAUDE-P02-v2-pruefauftrag.md": {
+      "sha256": "13b9500d16dcba74db156a60fabfaf15a66b305b2bfb3ea766ff7f62c2f63c17",
+      "bytes": 2027
+    },
+    "reports/loop/claude-read-boundary-002/correction-v2.json": {
+      "sha256": "88cac9bab0a93cfabffaa7687a9ce6cef3d8449a6fa6d150186643fec3ca7cd2",
+      "bytes": 2806
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

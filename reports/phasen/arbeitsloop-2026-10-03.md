@@ -15,3 +15,7 @@ Aktuelle technische Prüfungen, operative Fehler, fehlende Claude-Reviews, Setup
 METHODS-002 v3 ist nach beiden vollständigen unabhängigen Nachberichten im engen synthetischen Softwareumfang bestätigt. C v1 hat zwei vollständige Erstberichte; niedriger Befund C-R01 angenommen, Korrektur ausstehend. E liegt mit 32 Identitäten/808 Belegen und eigener Reproduktion zur unabhängigen Erstprüfung bereit. DESIGN-003 untersucht elf öffentliche Deutschland-/Varianzaussagen mit Originalbelegen; zwei frische getrennte Reviewer aktiv. Der zweite CLI-Metadatenreview läuft.
 
 Der vollständige Projektcheck lief tatsächlich 07:15:35–07:15:47 UTC erfolgreich. Alle wissenschaftlichen, anderen Modellfamilien-, Organisations- und Menschenvoraussetzungen bleiben getrennt. Kein ESS-Antwortzugriff, keine neue Phase abgenommen, keine Websiteergebnisfunktion freigegeben.
+
+## Checkpoint 021: Korrekturen erhalten, Nachprüfungen ausstehend
+
+C-R01 ist in neuer Fassung zweimal bytegleich nachgebaut; die erste unabhängige Nachprüfung läuft. Beide E-Erstprüfer arbeiten unabhängig. Beide Design-Erstberichte fanden den falschen Sachsen-Gegensatz und die verbliebene nest-Zuschreibung; separate v2-Korrekturtexte sind gefroren. Beide CLI-Erstberichte bestätigen die zeitliche Versionskorrektur und finden einen niedrigen historischen Schutztextfehler; eine getrennte Ergänzung erhält die Originaldateien. Keine Wissenschaftsphase abgenommen, keine Antworten entblindet. Weitere Nachprüfungen werden beim nächsten freien Slot gestartet.
