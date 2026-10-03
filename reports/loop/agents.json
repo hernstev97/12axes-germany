@@ -110,34 +110,37 @@
       "name": "/root/foundation_review_repro",
       "fork_turns": "none",
       "kind": "independent-first-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/FOUNDATION-001/v1/manifest.json",
       "manifestSha256": "213eec2fba90ae60594323f1e52c39ed77d49af4656f3eea481c6300ecc0c5bb",
       "report": "reports/loop/reviews/FOUNDATION-001-repro.md",
       "actualPromptRecord": "Vollständiger tatsächlicher Spawnauftrag im eigenen Erstbericht; bis Abschluss Bericht noch ausstehend.",
-      "contextBoundary": "Gleiches eingefrorenes Paket/Issue, keine anderen Ersturteile/Verteidigung; nur eigener Bericht/Belege; shared-FS keine technische Sandbox."
+      "contextBoundary": "Gleiches eingefrorenes Paket/Issue, keine anderen Ersturteile/Verteidigung; nur eigener Bericht/Belege; shared-FS keine technische Sandbox.",
+      "reportSha256": "965a77b9b1adfb1d67f6cc3891e9859461b981b67f21bd1ae915d5bc48529c7b"
     },
     {
       "name": "/root/loop000_v3_guard",
       "kind": "independent-recheck",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/LOOP-000/v3/manifest.json",
       "manifestSha256": "82549de387004b65ddb1bb2cce2b51e95c5c0092ffc70512f819451d22ada467",
       "report": "reports/loop/reviews/LOOP-000-v3-guard.md",
       "actualPromptRecord": "Vollständiger Auftrag im eigenen Bericht, derzeit in Arbeit",
-      "contextBoundary": "v3+beide abgeschlossenen v2-Berichte/Entscheidungen, keine anderen v3-Berichte oder FOUNDATION-Forschung; nur eigene Fixture/Report; shared-FS"
+      "contextBoundary": "v3+beide abgeschlossenen v2-Berichte/Entscheidungen, keine anderen v3-Berichte oder FOUNDATION-Forschung; nur eigene Fixture/Report; shared-FS",
+      "reportSha256": "af2a9b9c4b5b22e70f4a1233030dd3443ee287d0a85c0a24ac74c675c3cd59fc"
     },
     {
       "name": "/root/loop000_v3_browser",
       "kind": "independent-recheck",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/LOOP-000/v3/manifest.json",
       "manifestSha256": "82549de387004b65ddb1bb2cce2b51e95c5c0092ffc70512f819451d22ada467",
       "report": "reports/loop/reviews/LOOP-000-v3-browser.md",
       "actualPromptRecord": "Vollständiger Auftrag im eigenen Bericht, derzeit in Arbeit",
-      "contextBoundary": "v3+beide abgeschlossenen v2-Berichte/Entscheidungen, keine anderen v3-Berichte oder FOUNDATION-Forschung; nur eigene Fixture/Report; shared-FS"
+      "contextBoundary": "v3+beide abgeschlossenen v2-Berichte/Entscheidungen, keine anderen v3-Berichte oder FOUNDATION-Forschung; nur eigene Fixture/Report; shared-FS",
+      "reportSha256": "8584def6c532468579bfa0059da898af2771a0791bcd85beedcf079402b3fe77"
     },
     {
       "task_name": "prep001_review_methods",
@@ -196,30 +199,86 @@
       "returnedTaskName": "/root/software001_author",
       "fork_turns": "none",
       "kind": "software-author",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/authors/SOFTWARE-001.md",
       "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Bericht, unverändert ab Abschluss",
-      "reportSha256": null
+      "reportSha256": "e156436c1962d678d31400707e7f9b4e5d6898496a7d2cf2cadbfe4f255647ba"
     },
     {
       "task_name": "foundation_v2_sources_politics",
       "returnedTaskName": "/root/foundation_v2_sources_politics",
       "kind": "independent-research-recheck",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/FOUNDATION-001/v2/manifest.json",
       "report": "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht, nach Abschluss unverändert"
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht, nach Abschluss unverändert",
+      "reportSha256": "f922946c538c939572e2ed6ff2ed1121d091b2ce142c5e5515a78b8f4b7b147b"
     },
     {
       "task_name": "foundation_v2_methods_repro",
       "returnedTaskName": "/root/foundation_v2_methods_repro",
       "kind": "independent-research-recheck",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/FOUNDATION-001/v2/manifest.json",
       "report": "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht, nach Abschluss unverändert"
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht, nach Abschluss unverändert",
+      "reportSha256": "18e5565b08eb84f7a0a232e462a42ec3535cbd1fe053fb6e1a12aae45d546758"
+    },
+    {
+      "task_name": "prep_v2_methods",
+      "returnedTaskName": "/root/prep_v2_methods",
+      "fork_turns": "none",
+      "kind": "independent-preparation-recheck",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/PREP-001/v2/manifest.json",
+      "report": "reports/loop/reviews/PREP-001-v2-methods.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; keine Dialogübernahme",
+      "reportSha256": "11e04500ac12e1940f1df1dff88f884cdea5311c8295c994e7cc261bede5a546"
+    },
+    {
+      "task_name": "prep_v2_repro",
+      "returnedTaskName": "/root/prep_v2_repro",
+      "fork_turns": "none",
+      "kind": "independent-preparation-recheck",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/PREP-001/v2/manifest.json",
+      "report": "reports/loop/reviews/PREP-001-v2-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext",
+      "reportSha256": "76227f1ba0a7caa0436e610f75101be48fa6ab70f2338308337e74c237ab11e3"
+    },
+    {
+      "task_name": "software001_review_methods",
+      "returnedTaskName": "/root/software001_review_methods",
+      "fork_turns": "none",
+      "kind": "independent-review",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/SOFTWARE-001/v1/manifest.json",
+      "report": "reports/loop/reviews/SOFTWARE-001-methods.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im jeweiligen Bericht; frischer begrenzter Kontext, gemeinsame FS nur durch Auftrag getrennt.",
+      "reportSha256": "ca760060394771edee9ba9b11dd69985dc84133bcd14216314e32d7eb667a802"
+    },
+    {
+      "task_name": "software001_review_repro",
+      "returnedTaskName": "/root/software001_review_repro",
+      "fork_turns": "none",
+      "kind": "independent-review",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/SOFTWARE-001/v1/manifest.json",
+      "report": "reports/loop/reviews/SOFTWARE-001-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im jeweiligen Bericht; frischer begrenzter Kontext, gemeinsame FS nur durch Auftrag getrennt.",
+      "reportSha256": "6ba249b8423e74d4afb778d01eeb702207f284ce8f8563039ef8e31740b04ac0"
+    },
+    {
+      "task_name": "foundation_v3_types",
+      "returnedTaskName": "/root/foundation_v3_types",
+      "fork_turns": "none",
+      "kind": "independent-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json",
+      "report": "reports/loop/reviews/FOUNDATION-001-v3-types.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im jeweiligen Bericht; frischer begrenzter Kontext, gemeinsame FS nur durch Auftrag getrennt."
     }
   ],
   "activeAdditionalAuthors": [
