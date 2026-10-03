@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "package": "COMPREHENSION-V21-001/v1",
+  "createdUtc": "2026-10-03T16:34:02.753210+00:00",
+  "status": "TECHNICAL_PREPARATION_BOUND_NOT_HUMAN_APPROVED",
+  "scope": "Exact final proposed UI/viewport/source/reference/control binding before any realperson; existing0.1/0.2rules preserved. Manifest is version evidence, not a new firstjudgment or humanapproval.",
+  "artifacts": [
+    {
+      "path": "data/analysevertrag.v2.entwurf.json",
+      "sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+    },
+    {
+      "path": "data/gruppenvertrag.v2.1.entwurf.json",
+      "sha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702"
+    },
+    {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+    },
+    {
+      "path": "data/reference-groups-v21/ESS5e03_6.json",
+      "sha256": "343d06f921f5a943e742f304255726302b71162fb55d8c73b73d11f2f184b19a"
+    },
+    {
+      "path": "data/reference-groups-v21/ESS8e02_3.json",
+      "sha256": "fda4e3dab0546ba25ebb2c265d0d930830615697b023fce2075e41c6a562ff3a"
+    },
+    {
+      "path": "data/reference-groups-v21/ESS9e03_3.json",
+      "sha256": "a1e7f8b116da9d055ffffb2dc5eb2af04e43524962433a9b032f09cbd8b5d093"
+    },
+    {
+      "path": "data/reference-groups-v21/README.md",
+      "sha256": "60ba830a02d4371214c29627f255add74d22d70f8f268d83cbeb6c346500342f"
+    },
+    {
+      "path": "data/reference-v2/ESS10SCe03_2.json",
+      "sha256": "e75dfbadcf68c14dce9d13c8a8a2dd1abc6e8a6e96618f960c8cd61c54bc3184"
+    },
+    {
+      "path": "data/reference-v2/ESS11e04_2.json",
+      "sha256": "453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721"
+    },
+    {
+      "path": "data/reference-v2/ESS5e03_6.json",
+      "sha256": "e489fe013d1cbd3d72b9ae816e422757ce8d34ae575d09f64df13a1750dc4bc6"
+    },
+    {
+      "path": "data/reference-v2/ESS8e02_3.json",
+      "sha256": "fb720cc18049f037ed86670bd76a51c3c1770342a61f5627b7afbfb127898ad7"
+    },
+    {
+      "path": "data/reference-v2/ESS9e03_3.json",
+      "sha256": "34e71b448c0c315cf9f19bda30628874c95464faf661813a65f25a3f9ad82be2"
+    },
+    {
+      "path": "data/reference-v2/README.md",
+      "sha256": "eb3d13cf1a423c3db43315a268eafa429ba92f8a579a89fe70f650c689fbd9d8"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "docs/verstaendnistest-v2.1.entwurf.md",
+      "sha256": "3bcbb52603058146b050afdb417e7b0803ae3652e3cab769cec3c7ed31fa4d47"
+    },
+    {
+      "path": "docs/verstaendnistest-v2.entwurf.md",
+      "sha256": "deaf970f15970f3bd68a3bd0494c5a304e611c491a79950ddfaa642e95e85a68"
+    },
+    {
+      "path": "reports/loop/packages/COMPREHENSION-V21-001/v1/show-script-ids.json",
+      "sha256": "228bd00ff0a10a37d43d45703dd42a032c7bb993ea6825699a0ae7078438c056"
+    },
+    {
+      "path": "reports/loop/packages/COMPREHENSION-V21-001/v1/showing-controls.json",
+      "sha256": "d58d273fb0b4060ac8614bd9ad4d969836b7ae5f44407be688ff2fe85160bd45"
+    },
+    {
+      "path": "reports/loop/packages/GROUP-PRESENTATION-V21-001/v2/manifest.json",
+      "sha256": "a96b12d423a27e3fe15f746b13f5885c882293f698c0846b4c1e76ecf3b07c99"
+    },
+    {
+      "path": "reports/loop/policy-group-v21-export-decisions.json",
+      "sha256": "544f31f83cac1e258ed13559c04373430a5ac0d792c4380421a32bb623ef42bc"
+    },
+    {
+      "path": "reports/loop/policy-v2-export-decisions.json",
+      "sha256": "a87f780a7219253f7f3773d051b7001f438b19b2fb2d0ee820fc22c1157a16df"
+    },
+    {
+      "path": "web/src/app/app.html",
+      "sha256": "dac5494b1ad8339c9fca675ff09b243b4fb3dda9a286ab984f77bed40f6a56ac"
+    },
+    {
+      "path": "web/src/app/app.scss",
+      "sha256": "5ad034daa84db2bb8bd36321f896602bed1c9a4d40a39ec4e3c781b876f0aaf4"
+    },
+    {
+      "path": "web/src/app/policy-draft/group-reference-types.ts",
+      "sha256": "539ca2854b8839a7e76590b56ca91f652350093582e68524dea9fe4575a85388"
+    },
+    {
+      "path": "web/src/app/policy-draft/group-reference.ts",
+      "sha256": "13d26f381c234f6d78a4687f0002528adf284eae722fa78e506ee1a942c5ca47"
+    },
+    {
+      "path": "web/src/app/policy-draft/historical-reference.ts",
+      "sha256": "58eb05517a43a4d3ea0a62c20f06c39857ca242e50748d3bce1a0f17a33683ab"
+    },
+    {
+      "path": "web/src/app/policy-draft/item-meanings.ts",
+      "sha256": "d55eb84799d1b99fc348e25a1bb2356594477e3d3c5b2f212d0764d4dcc8b4a3"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-catalogue.ts",
+      "sha256": "640f6470bddce074d034c5ed9a18174c95e4447fb2f3c3ba6e8848a36192c984"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.html",
+      "sha256": "f556dbb8bf3d6a41503378fd53476356e29cd8b448f2a7e5544b5d695d8087b6"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.scss",
+      "sha256": "a13b9138de8ac2086bff347f349494815c9eb7973b5c0d9f67696fce67776722"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.ts",
+      "sha256": "ee0267535f812e572a9c15859722bd2449f7681a06f54f52aeece2fe3a09b0fc"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-source-details.html",
+      "sha256": "75ee3fcd461a8831a1a678b3e3e867dde2a00f0cf4de27f201da03699b184796"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-source-details.scss",
+      "sha256": "98ba630fb6527743e449750fbffde418f28b5993a208e37455205aec2c997f8b"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-source-details.ts",
+      "sha256": "add8b2721004e120d71e7574d119bdd2ec84b5373c7b2b497d53e74e46a2f659"
+    },
+    {
+      "path": "web/src/app/policy-draft/public-catalogue.ts",
+      "sha256": "7a6a3a1ffeba3a976f9c1e07fb1dbd061098e5c5ea347f80303f1750a0fdf8e6"
+    },
+    {
+      "path": "web/src/app/policy-draft/reference-binding.ts",
+      "sha256": "07a928b852be0abb47025ecd2aa64af3c9db32fd36b3c564716dbed55ab69dfb"
+    },
+    {
+      "path": "web/src/app/policy-draft/reviewed-historical-groups.ts",
+      "sha256": "281159b645ccfc1d254b3745f3bcdab353800607223061fd76e43dced96bd175"
+    },
+    {
+      "path": "web/src/app/policy-draft/reviewed-historical-references.ts",
+      "sha256": "d1f0e17dcffe6b40df3664ed6ddbe34cb849a456d036af1c6ab607ab0dad03f2"
+    },
+    {
+      "path": "web/src/app/research-preview.routes.dev.ts",
+      "sha256": "e8557fe29e2ae2d5dcff9dc93e9ac9709d1e82c501d84ff5c0401ed3a3ed121b"
+    },
+    {
+      "path": "web/src/app/research-preview.routes.ts",
+      "sha256": "d9bda2c42f9c8edec6f02ab7a3d5dd71df6c8e5afe91fe3f33f8b4e1d3bb341a"
+    },
+    {
+      "path": "web/src/app/research-preview/policy-preview.ts",
+      "sha256": "52832ad57f51c62a6aa2f9600626cad71b78657938e709fbac8737939d49cccd"
+    },
+    {
+      "path": "web/src/app/research/policy-profile.ts",
+      "sha256": "28906eb1533bb953b43bed75a4995c907b71398f1ffcd63271c82cfdace05998"
+    },
+    {
+      "path": "web/src/styles.scss",
+      "sha256": "695afc2c43f15dcaf4ad0406a3bf9910d7b6b7f610e4e52516b72f624ba8cf11"
+    }
+  ],
+  "humanRunsPerformed": 0,
+  "pending": [
+    "Steven presentation/UI/viewport approval",
+    "Consent/5 realpeople",
+    "Real keyboardfocus/200percent browserzoom",
+    "Separate Claude/design/rights/release decisions"
+  ],
+  "noPrivateAnswers": true
+}

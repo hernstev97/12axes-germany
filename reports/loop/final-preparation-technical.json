@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "verifiedAtUtc": "2026-10-03T16:39:39.261229+00:00",
+  "status": "FINAL_TECHNICAL_PASS_EXTERNAL_CONTROL_NOT_ACCEPTANCE",
+  "globalCheck": {
+    "command": "pnpm check",
+    "exitCode": 0,
+    "log": "outputs/loop/check-058.log",
+    "logSha256": "681e9ac17e0cc9d5a1eeb7988dc4fd1d855dfedd73bd989ec65a695462aaeb70",
+    "tests": 78,
+    "scope": "Formatter,handbook,review-schema,typecheck,78AngularTests and production build; prior057formatfail preserved; no scientific/human/design release"
+  },
+  "priorFailedCheck": {
+    "exitCode": 1,
+    "log": "outputs/loop/check-057.log",
+    "scope": "Two bookkeeping JSON formatter warnings; no subsequent tests/typecheck/build"
+  },
+  "browserInitial": "reports/loop/group-presentation-browser-v1.json",
+  "responsiveBrowser": "reports/loop/group-presentation-responsive-round1-technical.json",
+  "publicCurrentStatusBrowser": "reports/loop/public-group-status-browser-technical.json",
+  "groupReview": {
+    "first": "reports/loop/reviews/GROUP-PRESENTATION-V21-001-first.md",
+    "firstSha256": "36691737a4038f908c08e7ec8b914eb9a94ff363ab446c733f6fd50b38924866",
+    "targeted": "reports/loop/reviews/GROUP-PRESENTATION-V21-001-responsive-round1.md",
+    "targetedSha256": "370aae54039c8cce6437cde21adcaab6ca183f0a78ce674bfd0d6b29c84db27f"
+  },
+  "CLI": "reports/loop/cli-reproduction-verification.json",
+  "finalTags": "reports/loop/final-plan-tag-verification.json",
+  "humanProposal": "reports/loop/packages/COMPREHENSION-V21-001/v1/manifest.json",
+  "humanProposalSha256": "811764468402ea4cb163bb666ee1b2833e259d73cc4775f7552fac8efef329cb",
+  "realHumanRuns": 0,
+  "activeOwnedAgents": 0,
+  "remaining": [
+    "Steven initiates deferred Claude final control at saved exact version; no Claude attempt by Root",
+    "Steven approves proposed UI/showing/viewport; consent and5realpeople; no humanrunsyet",
+    "Actual visible keyboardfocus and200percent browserzoom/manual device acceptance",
+    "Human design/teststart and concrete rights/noncommercial use/release decisions; merge/deployment separately authorized"
+  ],
+  "limits": [
+    "Same Codex family/shared errors; no absolute neutral/currentnorm/jointscore proof",
+    "Production test route absent; no merge/deploy/release",
+    "Desktop screenshot raster-quality limited; actualnative DOM/geometric/axe verified, human/device clarity remains",
+    "No independent official raw download or alternative implementation; positive CLI8 samecode/inputbytes"
+  ]
+}

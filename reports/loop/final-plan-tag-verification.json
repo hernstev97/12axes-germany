@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "verifiedAtUtc": "2026-10-03T16:37:52.969883+00:00",
+  "tags": [
+    {
+      "tag": "analyseplan-v1",
+      "tagObject": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+      "commit": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+      "localRemoteIdentical": true
+    },
+    {
+      "tag": "erwartungsmodell-v1",
+      "tagObject": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+      "commit": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+      "localRemoteIdentical": true
+    },
+    {
+      "tag": "modell-v1",
+      "tagObject": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
+      "commit": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
+      "localRemoteIdentical": true
+    },
+    {
+      "tag": "analyseplan-v2",
+      "tagObject": "106f383c15c52a5b2ecafc2323d923ef46b10c36",
+      "commit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+      "localRemoteIdentical": true
+    },
+    {
+      "tag": "analyseplan-v2.1",
+      "tagObject": "8b9a5b96a18e31e984a6e17bdd8451f38ce8d7e5",
+      "commit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
+      "localRemoteIdentical": true
+    }
+  ],
+  "scope": "Read-only final local/origin tag object+peeledcommit comparison; no new tag/reset/model/claim of untouched confirmation"
+}

@@ -64,3 +64,7 @@ Claude Code ist bereits installiert und angemeldet. Der erste beschränkte Zugri
 ## Aktueller Forschungsvorbehalt nach der Breitenkorrektur
 
 Die älteren Abschnitte beschreiben den jeweiligen damaligen Stand. Mittlerweile wurden A und B des historischen Neunermoduls tatsächlich gerechnet; genaue Einsicht und Halt sind im [Zugriffsbericht](../reports/loop/b-access-disclosure-20261003.json) erhalten. Sie sind keine unangetastete Bestätigung für Erweiterungen und kein fertiges breites Hauptprodukt. Aktuell entsteht ein eigener breiter v2-Vertrag vor neuen Antworten; [Empirieentwurf](empirie-plan-v2.entwurf.md), [Themenmatrix](abdeckung-v2.md) und [Arbeitszustand](../reports/loop/state.json) sind maßgeblich. Kein Claude-Zugang ist Voraussetzung der Hauptarbeit; die von Steven veranlasste Schlusskontrolle bleibt ausstehend.
+
+## Vorbereitete Kontrollfassung vom 3. Oktober 2026
+
+2026-10-03T16:36:47.884766+00:00: Der zuvor als entstehend beschriebene breite Plan wurde separat festgeschrieben und ausgeführt. Die breite Forschungs-UI, öffentliche Themen-/Gruppenberichte und konkrete Vorführung sind vorbereitet. Aktuelle Grenzen, tatsächliche Reproduktion und die noch von Steven veranlasste Kontrolle stehen in [Reproduktion](reproduktion-life93-v2.md), [Claude-Checkliste](claude-schlusskontrolle-v2.md) und [gespeichertem Zustand](../reports/loop/state.json). Ein öffentlicher freigegebener Test oder menschliche Abnahme wird daraus nicht abgeleitet.

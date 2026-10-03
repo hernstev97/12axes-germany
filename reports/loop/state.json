@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T16:30:44.228375+00:00",
-  "status": "RUNNING",
-  "phase": "Breite v2/v2.1: Bericht und Gruppenanzeige begrenzt geprüft; kleine responsive Korrektur und finale Humanbindung",
+  "updatedAtUtc": "2026-10-03T16:40:22.581648+00:00",
+  "status": "READY_FOR_APPROVAL",
+  "phase": "Breite Forschungsfassung v2/v2.1 vorbereitet für Stevens Claude-Schlusskontrolle; externe Menschen-/Design-/Releaseprüfungen offen",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -53,71 +53,60 @@
     "Methodology doc page technical package: check043 exit0,5widths final nooverflow/axe0/localfont/1H1; actual anchor focus bounded,200percent/visiblefocus pending",
     "EMPIRICAL-V2-001 revision2 both targeted roles ACCEPTED_BOUNDED; EV2-SRC-F01 closed correction1; new data still unopened",
     "analyseplan-v2 remote verified6702f187, alloldtagsunchanged;5actualprivatehistoricalruns exit0; PUI-R1–3 closed target1/browserbounded",
-    "GROUP-PRESENTATION-V21-001 original normal86pin first accepted bounded; actual26 native selections63available/111null,5widthaxe0; final responsive correction pending"
+    "GROUP-PRESENTATION-V21-001 original normal86pin first accepted bounded; actual26 native selections63available/111null,5widthaxe0; final responsive correction pending",
+    "Positive isolatedCLI8canonical candidates exactly equal; original source/run bytes and private replicas retained, no independent download/alternative model",
+    "GROUP-PRESENTATION-V21-001 responsive GBP-ROOT-01 round1 accepted and actual320/1280 browser verified; originalfirst saved in checkpoint51",
+    "Concrete Human0.2 proposed UI/controls/reference binding43pins and actualtechnicalshowing prepared; zero realpeople; Claude checklist/reproduction dates updated"
   ],
   "openTasks": [
-    "Verified v2 freeze/tag/gate and actual5 separate historical runs",
-    "Two fresh result roles and authenticated review-bound exports",
-    "v2.1 historical categorical voter-group contract/software/gates/analyses/results, no pooled scores",
-    "Methods report and concrete broad website with actual reviewed references; targeted UI review and browser checks",
-    "Human comprehension draft and Claude review dossier; actual Claude/design/comprehension/release pending"
+    "Steven initiates deferred Claude final control at saved exact version; no Claude attempt by Root",
+    "Steven approves proposed UI/showing/viewport; consent and5realpeople; no humanrunsyet",
+    "Actual visible keyboardfocus and200percent browserzoom/manual device acceptance",
+    "Human design/teststart and concrete rights/noncommercial use/release decisions; merge/deployment separately authorized"
   ],
   "dependencies": [
     {
       "id": "ACCESS-CLAUDE",
       "status": "VERSCHOBEN_NICHT_GEPRÜFT",
-      "evidence": [
-        "LIFE-93 Setup/Phase1/Phase7",
-        "docs/auftrag-life-93-2026-10-03.md"
-      ],
-      "blocks": [
-        "abschließende von Steven veranlasste Gesamtkontrolle"
-      ],
+      "evidence": ["LIFE-93 Setup/Phase1/Phase7", "docs/auftrag-life-93-2026-10-03.md"],
+      "blocks": ["abschließende von Steven veranlasste Gesamtkontrolle"],
       "actionNeeded": "Keine eigenen Claude-Versuche. Steven führt Schlusskontrolle am vorbereiteten Stand aus.",
       "authenticated": null,
       "proof": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
       "blockedBy": "HTTP401 bei beiden neueren Read-Proben; genaue Ursache unbekannt",
       "providerReportedResetLocal": "2026-10-03T06:10:00+02:00",
-      "retryNotBeforeUtc": "2026-10-03T04:10:00Z"
+      "retryNotBeforeUtc": "2026-10-03T04:10:00Z",
+      "legacyRetryFieldsHistoricalOnly": true
     },
     {
       "id": "SETUP-ACCEPTANCE",
       "status": "NICHT_GEPRÜFT",
-      "blocks": [
-        "formale Setup-Abnahme"
-      ],
-      "actionNeeded": "Tatsächliche Branch-/Pflichtcheck-Regeln und erfolgreicher Verstoß-/sauberer Test-PR fehlen."
+      "blocks": ["formale Setup-Abnahme"],
+      "actionNeeded": "Tatsächliche Branch-/Pflichtcheck-Regeln und erfolgreicher Verstoß-/sauberer Test-PR fehlen.",
+      "scope": "Historical repository governance setup acceptance remains unclaimed; not new categorical research validity or local preparation."
     },
     {
       "id": "PUBLIC-TAGS",
       "status": "BESTANDEN",
-      "blocks": [
-        "empirischer Analysebeginn"
-      ],
-      "actionNeeded": "Historische analyseplan-v1/erwartungsmodell-v1 vorA und modell-v1 vorB verifiziert; keine Erweiterungs-v2-Tags oder Datenfreigabe."
+      "blocks": [],
+      "actionNeeded": "v2 analyseplan-v2→6702f187 and v2.1→c8fe4533 remote verified before their permitted semantic analyses; oldtags unchanged. Tag/freeze does not grant currentnorm/adminvalidation."
     },
     {
       "id": "HUMAN-RELEASE",
-      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
-      "blocks": [
-        "öffentliche Freigabe"
-      ],
-      "actionNeeded": "Steven prüft konkrete Release-Fassung."
+      "status": "PENDING_EXTERNAL",
+      "blocks": ["public teststart/release"],
+      "actionNeeded": "Steven explicit design/rights/teststart/release decision at exact saved version; merge/deploy separate."
     },
     {
       "id": "HUMAN-COMPREHENSION",
-      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
-      "blocks": [
-        "DONE"
-      ],
-      "actionNeeded": "Fünf reale anonymisierte Antworten nach Deployment; keine Simulation."
+      "status": "PENDING_EXTERNAL",
+      "blocks": ["public teststart/release"],
+      "actionNeeded": "Approve concrete saved UI/show-script/viewport and consent/5realpeople; results anonymized, no private political profiles. No deployment prerequisite for local preparation."
     },
     {
       "id": "CLAUDE-REVIEWS",
       "status": "VERSCHOBEN_NICHT_GEPRÜFT",
-      "blocks": [
-        "abschließende von Steven veranlasste Gesamtkontrolle"
-      ],
+      "blocks": ["abschließende von Steven veranlasste Gesamtkontrolle"],
       "actionNeeded": "Keine eigenen Claude-Versuche. Steven führt Schlusskontrolle am vorbereiteten Stand aus."
     }
   ],
@@ -126,8 +115,10 @@
     "currentLocalTechnical": {
       "command": "pnpm check",
       "exitCode": 0,
-      "log": "outputs/loop/check-056.log",
-      "scope": "78 Angular tests,typecheck,handbook/schema/formatter,production build; sciences/humans separate"
+      "log": "outputs/loop/check-058.log",
+      "logSha256": "681e9ac17e0cc9d5a1eeb7988dc4fd1d855dfedd73bd989ec65a695462aaeb70",
+      "tests": 78,
+      "scope": "Formatter,handbook,review-schema,typecheck,78AngularTests and production build; prior057formatfail preserved; no scientific/human/design release"
     },
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Fünf historische v2-Einzelstudienläufe und 42 begrenzt geprüfte Einzelreferenzen; keine gemeinsame Produktvalidität, aktuelle Norm oder neue Administrationvalidierung.",
@@ -137,7 +128,7 @@
     "foundationFiveReviewers": "NICHT_BESTANDEN",
     "currentInfrastructure": "BESTANDEN",
     "actual200PercentBrowserZoom": "NICHT_GEPRÜFT; available T3 preview shortcuts have no measured zoom effect",
-    "fullHandbookWebsiteAcceptance": "NICHT_GEPRÜFT",
+    "fullHandbookWebsiteAcceptance": "PENDING_HUMAN_DESIGN_AND_ACTUAL_FOCUS_ZOOM; technical handbookguard/browser records do not grant design",
     "claudeTechnicalAccess": "NICHT_WEITER_VERFOLGT; keine Voraussetzung, abschließende Kontrolle durch Steven ausstehend",
     "foundationBoundedCorrections": "BESTANDEN",
     "foundationScientificPlanAcceptance": "BESTANDEN_BEGRÄNZT contract before A; no empirical validity",
@@ -157,11 +148,11 @@
     },
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
-    "currentWebsiteCopy": "BESTANDEN_BEGRÄNZT: WB-001/002/003 targeted correction1 accepted; no broad research/release acceptance",
-    "currentWebsiteBrowser": "Group63/111 exact in26selections;5widths sources open/closed axe0/nooverflow; native remount retained; GBP-ROOT-01 mobile select wrap correction pending; focus/200percent unverified",
+    "currentWebsiteCopy": "Current four public group status files accepted bounded in GROUP-PRESENTATION-V21-001/v1; prior PUBLIC-STATUS v3 stays historical before group export; no public teststart.",
+    "currentWebsiteBrowser": "Verified exact63/111 across26historical selections; fivewidths0axe/nooverflow, same-study isolation/remount; GBP-ROOT-01 CSSround1 bounded accepted and mobile320/desktop1280 observed fixed. Actual keyboard visiblefocus/200percent unverified.",
     "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung",
-    "currentConfirmatoryTransition": "BESTANDEN_BEGRÄNZT vorB; actual B executed pending result review",
-    "currentProductBreadth": "NICHT_BESTANDEN: historical narrow module does not satisfy broad product objective",
+    "currentConfirmatoryTransition": "Historical v1 B already accessed and fixed numerical criteria met before scope steering; subsequent B/FULL/C/norm/group flow held, no fresh blind B claim. Newv2/v2.1 gates/results separate.",
+    "currentProductBreadth": "PREPARED_BOUNDED:43original questions/8different substantive rubrics, economy/distribution and democracy/authority explicit; comprehensive/current product validity and human acceptance not established",
     "actualBHistorical": "Fixed v1 numerical criteria met before scope steering; no unexamined B for extension; not overall validity/release acceptance",
     "currentGenericCategoryArithmetic": "PRV2-F01 correction1 independently passed 22+29+6 synthetic testmethods; no empirical acceptance",
     "currentFrontendProfile": {
@@ -174,7 +165,25 @@
       "log": "outputs/loop/check-049.log",
       "tests": 54
     },
-    "currentBrowserScroll": "BESTANDEN_BEGRÄNZT desktop1280/mobile320 after rendered native E35 edit; initial anomalous measurement retained"
+    "currentBrowserScroll": "BESTANDEN_BEGRÄNZT desktop1280/mobile320 after rendered native E35 edit; initial anomalous measurement retained",
+    "check056": {
+      "exitCode": 0,
+      "log": "outputs/loop/check-056.log",
+      "tests": 78
+    },
+    "check057": {
+      "exitCode": 1,
+      "log": "outputs/loop/check-057.log",
+      "scope": "Two bookkeeping JSON formatter warnings; no subsequent tests/typecheck/build"
+    },
+    "check058": {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "log": "outputs/loop/check-058.log",
+      "logSha256": "681e9ac17e0cc9d5a1eeb7988dc4fd1d855dfedd73bd989ec65a695462aaeb70",
+      "tests": 78,
+      "scope": "Formatter,handbook,review-schema,typecheck,78AngularTests and production build; prior057formatfail preserved; no scientific/human/design release"
+    }
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -334,22 +343,10 @@
     "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1-decision.json",
     "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md",
     "reports/loop/reviews/FINAL-DOSSIER-HUMAN-V21-001-first.md",
-    "reports/loop/reviews/GROUP-PRESENTATION-V21-001-first.md"
+    "reports/loop/reviews/GROUP-PRESENTATION-V21-001-first.md",
+    "reports/loop/reviews/GROUP-PRESENTATION-V21-001-responsive-round1.md"
   ],
-  "blockingFindingIds": [
-    "R2-F03",
-    "R3-F01",
-    "R3-F02",
-    "R3-F04",
-    "R5-F03",
-    "F-P03",
-    "F-P04",
-    "SW-ENV-004",
-    "CP-01",
-    "CP-02",
-    "CP-03",
-    "PRODUCT-BREADTH-001"
-  ],
+  "blockingFindingIds": [],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [],
   "workPackages": [
@@ -566,7 +563,7 @@
     },
     {
       "id": "BREADTH-RESEARCH-001",
-      "status": "RUNNING",
+      "status": "DONE_BOUNDED_INSTRUMENTS_AND_TOPIC_MATRIX_USED_IN_V2",
       "scope": "Independent source/instrument and topic/bias development without response results",
       "criteria": "docs/auftrag-life-93-breite-2026-10-03.md; separate v2 plan required"
     },
@@ -594,34 +591,41 @@
     },
     {
       "id": "POLICY-PROFILE-001",
-      "status": "WIP_FIRST_REVIEW",
+      "status": "DONE_BOUNDED_TARGETED_PP001",
       "scope": "Inmemory separate response/navigation states; no UI/reference numbers",
       "author": "reports/loop/authors/POLICY-PROFILE-WIP.md",
-      "tests": "13 synthetic Vitest tests author exit0"
+      "tests": "13 synthetic Vitest tests author exit0",
+      "decision": "reports/loop/POLICY-PROFILE-001-entscheidung.md"
     },
     {
       "id": "PUBLIC-RESEARCH-STATUS-V2-001",
       "status": "DONE_BOUNDED_AT_PINNED_TIME",
       "manifest": "reports/loop/packages/PUBLIC-RESEARCH-STATUS-V2-001/v3/manifest.json",
       "decision": "reports/loop/PUBLIC-RESEARCH-STATUS-V2-001-entscheidung.md"
+    },
+    {
+      "id": "GROUP-PRESENTATION-V21-001",
+      "status": "DONE_BOUNDED_TARGETED_ROUND1",
+      "manifest": "reports/loop/packages/GROUP-PRESENTATION-V21-001/v2/manifest.json",
+      "decision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md"
     }
   ],
-  "nextConcreteStep": "Original86pin group presentation accepted bounded; preserve by checkpoint, correct GBP-ROOT-01 native select wrap only, same reviewer targeted check, actual affected browser, bind final Human script and finish control dossier. No new raw run/model/selection.",
+  "nextConcreteStep": "Steven initiates Claude final control using saved public dossier; approves exact proposed UI/show-script/viewport and consent/5realpeople. Actual visiblefocus/200percent, design/rights/teststart/release and merge/deployment remain human decisions. Do not restart research or old v1B/FULL/norm flow.",
   "checkpoint": {
-    "lastLocalCommit": "ccb431ddde7c139d7e7e6db1b968b25e3ab9818b",
-    "lastVerifiedRemoteCommit": "ccb431ddde7c139d7e7e6db1b968b25e3ab9818b",
-    "lastVerifiedPushAtUtc": "2026-10-03T16:10:08.182404+00:00",
+    "lastLocalCommit": "0afd0093b1bc90f651cf91baf3ef22459bca9965",
+    "lastVerifiedRemoteCommit": "0afd0093b1bc90f651cf91baf3ef22459bca9965",
+    "lastVerifiedPushAtUtc": "2026-10-03T16:31:09.280013+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-050.json",
+    "record": "reports/loop/push-051.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "WIP group UI/report ordinary accepted, responsive select correction and final human UI/control binding pending"
+    "pendingPayload": "Prepared final payload resolves git:HEAD; ordinaryfirst/targetedCSS/Human43pin proposal/dossier facts ready. Receipt follows actualremote comparison."
   },
   "scientificStatus": "43 original questions/8 content rubrics,42 reviewed historical single references,cttresa null; separate63 reviewed historical group pairs in ESS5/8/9,ESS10SC/11groups excluded. Two same-family role firsts and targeted fixes accepted bounded; actual Root byte/pair verification. No latent/common score,currentnorm,SE/CI,currentparty or new administration validation. Known-data CLI reproduction all8 exact, no independent download/alternative code.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -733,7 +737,10 @@
     },
     "reports/loop/public-group-status-browser-technical.json",
     "reports/loop/cli-reproduction-verification.json",
-    "reports/loop/group-presentation-browser-v1.json"
+    "reports/loop/group-presentation-browser-v1.json",
+    "reports/loop/group-presentation-responsive-round1-technical.json",
+    "reports/loop/final-preparation-technical.json",
+    "reports/loop/final-plan-tag-verification.json"
   ],
   "independentPreparations": [
     {
@@ -750,9 +757,7 @@
     },
     {
       "id": "PREP-REVIEW-SKILL",
-      "artifacts": [
-        ".claude/skills/life93-review/SKILL.md"
-      ],
+      "artifacts": [".claude/skills/life93-review/SKILL.md"],
       "status": "NICHT_GEPRÜFT",
       "criteria": "LIFE-93 Setup/Phase7: limited manifest-bound source/method/neutrality review; machine-readable findings; first ratings separated from PR-review; raw/B held back; no active GitHub setup or false model-family claim. Skill format and independent behavioural review required."
     },
@@ -778,18 +783,13 @@
       "id": "ESS-INVENTORY-final",
       "status": "author complete; transition review pending",
       "report": "reports/loop/authors/ESS-INVENTORY-final-proposal.md",
-      "files": [
-        "data/inventar.csv",
-        "data/item-core-v1.json"
-      ]
+      "files": ["data/inventar.csv", "data/item-core-v1.json"]
     },
     {
       "id": "ESS-GROUP-CONTRACT",
       "status": "source author complete; methods implementation/review pending",
       "report": "reports/loop/authors/ESS-GROUP-CONTRACT-proposal.md",
-      "files": [
-        "data/group-source-contract.v1.entwurf.json"
-      ]
+      "files": ["data/group-source-contract.v1.entwurf.json"]
     }
   ],
   "incidents": [
@@ -823,10 +823,14 @@
     {
       "utc": "2026-10-03T16:26:49.556539+00:00",
       "scope": "Read-only new manifest construction initially omitted pages/ segment in four paths; assert stopped before any writes. Correct actual pages paths,86-pin manifest created/authenticated. Public builder check0 followed rg no-match1 is an expected absence, not failed builder."
+    },
+    {
+      "utc": "2026-10-03T16:36:47.884766+00:00",
+      "scope": "Post-HMR axe absent in first corrected metrics; empty values not counted. Re-injected local QA, actual320/1280axe0. Check057 exited1 at state/findings format; corrected before finalcheck, no hidden test/build pass."
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md",
-  "executionStatus": "RUNNING_FINAL_RESPONSIVE_CORRECTION_AND_DOSSIER_BINDING",
+  "executionStatus": "PREPARED_ONLY_EXTERNAL_PREREQUISITES",
   "interruption": {
     "requestedAtUtc": "2026-10-03T09:02:07+00:00",
     "reason": "Steven ausdrücklich: aktuellen Arbeitsloop geordnet unterbrechen, keine neuen Pakete/Reviews; Projekt bleibt offen.",
@@ -904,10 +908,7 @@
     "fixedModel": "data/modell-v1.json",
     "fixedModelSha256": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
     "selectedModel": "M2",
-    "selectedScores": [
-      "H",
-      "ZF"
-    ],
+    "selectedScores": ["H", "ZF"],
     "BOpened": true,
     "comparisonFieldsOpened": false,
     "modelTag": "reports/loop/model-tag-v1.json",
@@ -918,10 +919,7 @@
     "exitCode": 0,
     "probeExitCode": 0,
     "selectedModel": "M2",
-    "retainedScores": [
-      "H",
-      "ZF"
-    ],
+    "retainedScores": ["H", "ZF"],
     "criteria": "CRITERIA_PASSED_PENDING_RESULT_REVIEW",
     "publicExport": "noch nicht erfolgt: separate technische Exportprüfung",
     "comparisonFieldsOpened": false,
@@ -930,7 +928,7 @@
   "currentAssignment": "docs/auftrag-life-93-breite-2026-10-03.md",
   "activePlan": "docs/empirie-plan-v2.entwurf.md",
   "productGoal": "Wissenschaftlich fundiertes, thematisch breites Politikprofil für Deutschland",
-  "productGoalStatus": "UNGELÖST: Neunerfassung allein erfüllt erforderliche Breite nicht",
+  "productGoalStatus": "VORBEREITETE_BREITE_FORSCHUNGSFASSUNG:43Originalfragen/8Sachbereiche; Neunermodul als historische Teilfassung erhalten. Keine umfassende validierte Produkt-/Releasefertigstellung.",
   "historicalAnalysisHold": {
     "authority": "latest user instruction",
     "record": "reports/loop/gates/research-hold-20261003.json",
@@ -1060,7 +1058,7 @@
       "exportDecision": "reports/loop/policy-v2-export-decisions.json",
       "exports": "data/reference-v2",
       "technicalAppendix": "reports/phasen/02-politikprofil-v2-technischer-anhang.md",
-      "remainingPresentation": "RV2-M-F03 and SCF-R01: original wordings, category labels, context and eight themes in substantive report; current listing only technical appendix",
+      "remainingPresentation": "RV2-M-F03/SCF-R01 closed by actual two-role thematic presentation review; SCF-P01/P02 closed targetedround1. Full public substantive report02 available; no new wholeaudit.",
       "rawIndependentReproduction": "NOT_PERFORMED"
     }
   },
@@ -1072,7 +1070,7 @@
     "remaining": "B25 original CAWI postflow and new web administration remain open; no operational equivalence."
   },
   "groupPreparationV2": {
-    "status": "ACCEPTED_BOUNDED63_PUBLIC_HISTORICAL_PAIRS_DISPLAY_PENDING",
+    "status": "ACCEPTED_BOUNDED63_PUBLIC_HISTORICAL_PAIRS_AND_PREPARED_DISPLAY_REPORT",
     "report": "reports/loop/authors/BREADTH-GROUP-SOURCES-005-WIP.md",
     "knownNewMargins": true,
     "limits": "Historical recalled second-vote only; weaker ESS5/8 alias concordance, ESS8 Munich gap, no current party/norm/pooling claim. ESS10SC/11 excluded for groups only.",
@@ -1087,15 +1085,8 @@
     "sourceFirst": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
     "gate": "reports/loop/gates/pre-group-v21.json",
     "newPlanTag": "analyseplan-v2.1",
-    "allowedStudyIds": [
-      "ESS5e03_6",
-      "ESS8e02_3",
-      "ESS9e03_3"
-    ],
-    "excludedStudyIds": [
-      "ESS10SCe03_2",
-      "ESS11e04_2"
-    ],
+    "allowedStudyIds": ["ESS5e03_6", "ESS8e02_3", "ESS9e03_3"],
+    "excludedStudyIds": ["ESS10SCe03_2", "ESS11e04_2"],
     "sourcesFirst": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
     "sourcesFirstSha256": "f9bec9e943a133b95bbd48a721d7d68cce037c80a457f76fc68b4c21a89da233",
     "rootDecision": "reports/loop/GROUP-V21-001-entscheidung.md",
@@ -1126,19 +1117,19 @@
     "path": "prototypes/policy-v2/index.html",
     "author": "reports/loop/authors/POLICY-UI-DESIGN-WIP.md",
     "browserStatus": "BOUNDED_TEN_LAYOUT_AXE_CHECKS_AND_FLOW43",
-    "historicalReferences": "No numbers included; not approved",
+    "historicalReferences": "This field concerns old plainHTML prototype only; real bound references are in angularPreparation current research UI.",
     "humanDesignRelease": "PENDING",
     "technicalRecord": "reports/loop/policy-ui-correction-technical.json",
     "correctionManifest": "reports/loop/packages/POLICY-UI-001/v2/manifest.json",
     "correctionManifestSha256": "b82dfe72af5e0b9182d70276138f432b2dea0ed97fa40c3acc4863dd81b2a6e8",
     "decision": "reports/loop/POLICY-UI-001-entscheidung.md",
     "angularPreparation": {
-      "status": "ACCEPTED_BOUNDED_BINDING_AND_SCROLL_ROUND1_LOCAL_RESEARCH_ONLY",
+      "status": "PREPARED_BOUNDED43_QUESTIONS42_SINGLE63_OPTIONAL_GROUP_REFS",
       "path": "web/src/app/policy-draft",
       "authorReport": "reports/loop/authors/ANGULAR-POLICY-DRAFT-WIP.md",
       "authorReportSha256": "a0f1474a8360045f7b5800c0a1b3f5dbf102dd15c7aa62cdf74bac8766a6425d",
-      "actualReferences": "42 plus explicit cttresa null",
-      "tests": "23 targeted tests, typecheck, source parity passed by author; browser still pending",
+      "actualReferences": "42single/cttresaNull plus63historical group pairs/111nulls in3eligible studies",
+      "tests": "Final check058 exit0/78AngularTests/typecheck/productionbuild; separate26publicreportTests and independent174pairtransfer accepted bounded.",
       "humanDesign": "PENDING",
       "bindingAuthor": "reports/loop/authors/ANGULAR-REFERENCE-BINDING-WIP.md",
       "integrationManifest": "reports/loop/packages/ANGULAR-REFERENCE-001/v1/manifest.json",
@@ -1149,7 +1140,9 @@
       "harness": "pnpm dev:research; http://127.0.0.1:4314/forschungsentwurf",
       "productionRoute": "Empty normal route list; actual independent production/research builds verified",
       "scrollRecord": "reports/loop/angular-scroll-round1-technical.json",
-      "scrollReview": "reports/loop/reviews/ANGULAR-REFERENCE-001-scroll-round1.md"
+      "scrollReview": "reports/loop/reviews/ANGULAR-REFERENCE-001-scroll-round1.md",
+      "browserFinal": "reports/loop/group-presentation-responsive-round1-technical.json",
+      "groupDisplayDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md"
     },
     "humanProtocol": {
       "status": "PLAN_ACCEPTED_BOUNDED",
@@ -1163,7 +1156,9 @@
         "Human approved UI/version/show script and actual published references must be pinned before first person",
         "Five real people and consent remain pending",
         "No political answer vectors or identities"
-      ]
+      ],
+      "groupAddendum": "docs/verstaendnistest-v2.1.entwurf.md",
+      "proposedFinalUIBinding": "reports/loop/packages/COMPREHENSION-V21-001/v1/manifest.json"
     }
   },
   "targetedCorrectionRounds": {
@@ -1192,23 +1187,35 @@
     "decision": "reports/loop/PUBLIC-RESEARCH-STATUS-V2-001-entscheidung.md",
     "manifest": "reports/loop/packages/PUBLIC-RESEARCH-STATUS-V2-001/v3/manifest.json",
     "browser": "reports/loop/public-status-v2-browser-technical.json",
-    "pending": "Current group status files included in accepted bounded GROUP-PRESENTATION-V21-001/v1; human/design/release pending."
+    "pending": "Only external design/comprehension/release; oldpublicv3 acceptance still historical before group exports.",
+    "currentGroupStatusAcceptance": {
+      "package": "GROUP-PRESENTATION-V21-001/v1",
+      "review": "reports/loop/reviews/GROUP-PRESENTATION-V21-001-first.md",
+      "browser": "reports/loop/public-group-status-browser-technical.json"
+    }
   },
   "finalPreparationV2": {
-    "dossierStatus": "ACCEPTED_BOUNDED_DOCS_AND_HUMAN_ADDENDUM",
-    "docs": [
-      "docs/reproduktion-life93-v2.md",
-      "docs/claude-schlusskontrolle-v2.md"
-    ],
+    "dossierStatus": "PREPARED_PUBLIC_CONTROL_DOSSIER_WITH_DATED_FACTUAL_UPDATES",
+    "docs": ["docs/reproduktion-life93-v2.md", "docs/claude-schlusskontrolle-v2.md"],
     "humanAddendum": "docs/verstaendnistest-v2.1.entwurf.md",
     "humanExampleIds": "reports/loop/packages/COMPREHENSION-V21-001/v1/show-script-ids.json",
-    "humanUIBinding": "PENDING_FINAL_GROUP_COMPONENT",
+    "humanUIBinding": "reports/loop/packages/COMPREHENSION-V21-001/v1/manifest.json",
     "humanRunsPerformed": 0,
     "ordinaryManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v1/manifest.json",
     "ordinaryReview": "reports/loop/reviews/FINAL-DOSSIER-HUMAN-V21-001-first.md",
     "ordinaryReviewSha256": "9d4d3c162ace76b7245b02c1e15b264bd6763f0552bbc25a2627f8019dbd401e",
     "formatTransferManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v2/manifest.json",
-    "rootDecision": "reports/loop/FINAL-DOSSIER-HUMAN-V21-001-entscheidung.md"
+    "rootDecision": "reports/loop/FINAL-DOSSIER-HUMAN-V21-001-entscheidung.md",
+    "humanUIBindingSha256": "811764468402ea4cb163bb666ee1b2833e259d73cc4775f7552fac8efef329cb",
+    "humanShowingControls": "reports/loop/packages/COMPREHENSION-V21-001/v1/showing-controls.json",
+    "humanApproval": "PENDING_STEVEN_CONSENT_5REALPEOPLE",
+    "cliReproduction": "reports/loop/cli-reproduction-verification.json",
+    "groupPresentationDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md",
+    "currentFactManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v3/manifest.json",
+    "currentFactManifestScope": "Dated verified execution/UI/version facts only; original ordinary40pin first and human0.1/0.2rules preserved, no new scientific verdict.",
+    "finalTechnical": "reports/loop/final-preparation-technical.json",
+    "finalTagVerification": "reports/loop/final-plan-tag-verification.json",
+    "currentFactManifestSha256": "3009a7a4e182d8ed42b9779970b967e9ddd312f726d2d8092e2de0e26356e3e7"
   },
   "cliReproduction": {
     "status": "PASS_EXACT8_CANONICAL_CANDIDATES",
@@ -1221,7 +1228,7 @@
     "privateReplicaRetained": true
   },
   "groupPresentationV21": {
-    "status": "ACCEPTED_BOUNDED_FIRST_ROOT_RESPONSIVE_CORRECTION_PENDING",
+    "status": "ACCEPTED_BOUNDED_FIRST_AND_RESPONSIVE_ROUND1",
     "manifest": "reports/loop/packages/GROUP-PRESENTATION-V21-001/v1/manifest.json",
     "manifestSha256": "d95b3522fe1e16a82d093f74d79f85a4e89e93de484f188970e611d2d1ecc914",
     "review": "reports/loop/reviews/GROUP-PRESENTATION-V21-001-first.md",
@@ -1229,6 +1236,35 @@
     "rootDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md",
     "report": "reports/phasen/03-politikprofil-v21-historische-gruppen.md",
     "browserInitial": "reports/loop/group-presentation-browser-v1.json",
-    "openResponsiveFinding": "GBP-ROOT-01"
-  }
+    "openResponsiveFinding": null,
+    "targetedManifest": "reports/loop/packages/GROUP-PRESENTATION-V21-001/v2/manifest.json",
+    "targetedManifestSha256": "a96b12d423a27e3fe15f746b13f5885c882293f698c0846b4c1e76ecf3b07c99",
+    "responsiveReview": "reports/loop/reviews/GROUP-PRESENTATION-V21-001-responsive-round1.md",
+    "responsiveReviewSha256": "370aae54039c8cce6437cde21adcaab6ca183f0a78ce674bfd0d6b29c84db27f",
+    "browserFinal": "reports/loop/group-presentation-responsive-round1-technical.json"
+  },
+  "historicalBlockingFindingIds": [
+    "R2-F03",
+    "R3-F01",
+    "R3-F02",
+    "R3-F04",
+    "R5-F03",
+    "F-P03",
+    "F-P04",
+    "SW-ENV-004",
+    "CP-01",
+    "CP-02",
+    "CP-03",
+    "PRODUCT-BREADTH-001"
+  ],
+  "currentScopeExclusions": [
+    "GROUP-V21-SOURCES-05/06:ESS10SC/ESS11 party group path excluded; respective individual references remain",
+    "Historical CP01–03/F-P03/F-P04/SW-ENV004 remain blocked for old functions/claims; not erased or repaired by unrelated v2"
+  ],
+  "externalPrerequisites": [
+    "Steven initiates deferred Claude final control at saved exact version; no Claude attempt by Root",
+    "Steven approves proposed UI/showing/viewport; consent and5realpeople; no humanrunsyet",
+    "Actual visible keyboardfocus and200percent browserzoom/manual device acceptance",
+    "Human design/teststart and concrete rights/noncommercial use/release decisions; merge/deployment separately authorized"
+  ]
 }

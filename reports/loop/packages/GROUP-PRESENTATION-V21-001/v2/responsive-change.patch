@@ -1,0 +1,13 @@
+diff --git a/web/src/app/policy-draft/policy-draft.scss b/web/src/app/policy-draft/policy-draft.scss
+index 3e06346..cc7efcc 100644
+--- a/web/src/app/policy-draft/policy-draft.scss
++++ b/web/src/app/policy-draft/policy-draft.scss
+@@ -99,6 +99,8 @@ legend span {
+ }
+ .group-controls select {
+   width: 100%;
++  white-space: nowrap;
++  text-overflow: ellipsis;
+ }
+ .group-sources {
+   margin-block: 1.5rem;

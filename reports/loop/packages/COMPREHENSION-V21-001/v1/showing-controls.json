@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "status": "CONCRETE_PREPARED_SHOWING_NOT_HUMAN_APPROVED",
+  "createdUtc": "2026-10-03T16:34:02.685Z",
+  "route": "/forschungsentwurf",
+  "startCommand": "pnpm dev:research",
+  "localUrl": "http://localhost:4314/forschungsentwurf",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 320,
+      "height": 900
+    }
+  ],
+  "selectedViewportApproval": "Steven chooses/approves actual presentation before first person; both technical layouts checked, no human/device acceptance",
+  "ids": "reports/loop/packages/COMPREHENSION-V21-001/v1/show-script-ids.json",
+  "nativeControls": {
+    "answer": "input[name='draft-original-answer'][value='<originalCategoryCode>']",
+    "next": "button Zur nächsten Frage",
+    "skip": "button Diese Frage überspringen; defaultKeineAngabe",
+    "results": "button Zum Ergebnisentwurf",
+    "study": "#draft-group-study",
+    "group": "#draft-vote-group",
+    "questionArticle": ".result-item[data-question-id='<questionId>']",
+    "sources": "details.group-sources and per-question app-policy-source-details"
+  },
+  "actions": [
+    "Fresh route load; no previous private/person answers retained",
+    "First catalogue question nativecode1; next; second nativecode5; next; skipthird; fourth+remaining untouched",
+    "Open result without group; show first original single reference then cttresa null and sources",
+    "Select ESS5e03_6; groupESS5e03_6:second_vote:1 (SPD originalAPIorder); show ESS5e03_6:bplcdc",
+    "Select originalOther code8; samequestion null with no figures; show foreign-study ESS9e03_3:sofrdst without group reference",
+    "Read distinct historical election2009/fieldtime2010–2011, weighted valid questiondenominator and unweighted n, weakalias/Other/rights/source limits; no participant party asked",
+    "Ask F1–F6 using unchanged0.1+dated0.2keys before giving correction; five realconsentedpeople external"
+  ],
+  "actualTechnicalObservation": {
+    "cttresaNull": true,
+    "foreignStudyMessage": true,
+    "foreignStudyNoFigures": true,
+    "named": {
+      "denominator": "Gewichtung: pspwght. Nenner der Anteile ist die Summe der Gewichte gültiger Antworten dieser Frage in dieser Gruppe. Alle Fallzahlen sind ungewichtet. Die Gruppenbasis ersetzt den gültigen Frage-Nenner nicht.",
+      "label": "SPD",
+      "reference": true
+    },
+    "otherLabel": "Other",
+    "otherQNoFigures": true,
+    "otherQNull": true,
+    "remainingUntouched": true,
+    "scriptHumanRuns": 0,
+    "single42": true,
+    "states": [
+      {
+        "id": "ESS9e03_3:sofrdst",
+        "state": "Beantwortet"
+      },
+      {
+        "id": "ESS9e03_3:sofrwrk",
+        "state": "Beantwortet"
+      },
+      {
+        "id": "ESS9e03_3:sofrpr",
+        "state": "Übersprungen"
+      },
+      {
+        "id": "ESS9e03_3:sofrprv",
+        "state": "Unberührt"
+      }
+    ],
+    "storage": {
+      "local": [],
+      "session": []
+    },
+    "url": "http://localhost:4314/forschungsentwurf",
+    "utc": "2026-10-03T16:33:19.174Z",
+    "width": 1280
+  },
+  "technicalDemonstrationOnly": true,
+  "humanRunsPerformed": 0,
+  "pending": [
+    "Steven approval of final exact UI/showing/viewport",
+    "Consent and5 realpeople",
+    "No fabricated comprehension/fairness/neutrality conclusions"
+  ]
+}

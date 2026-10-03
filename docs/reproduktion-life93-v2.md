@@ -2,7 +2,7 @@
 
 Fassung 0.2, Nachtrag vom `2026-10-03T16:26:02.982794+00:00`. Die ursprüngliche Fassung 0.1 und ihre begrenzte Dokumentationsprüfung bleiben in Commit `320e632e77c772f6474b6d9d7fe86e2ee01ba0c7` erhalten. Dieser Nachtrag ergänzt tatsächlich ausgeführte Reproduktions- und Darstellungsbelege; Kriterien, Originalreceipts, Exporte und Tags bleiben unverändert.
 
-Der aktuelle [Breitenauftrag](auftrag-life-93-breite-2026-10-03.md) hat Vorrang vor der alten Analysefolge. v2 führt 43 Originalfragen in acht Inhaltsrubriken, ohne gemeinsamen Faktor oder Gesamtscore. 42 historische Einzelreferenzen sind veröffentlicht; `ESS10SCe03_2:cttresa` bleibt null. Die neue [Gruppenentscheidung](../reports/loop/policy-group-v21-export-decisions.json) veröffentlicht 63 einzelne historische Frage-Gruppen-Paare aus ESS5, ESS8 und ESS9. Die Gruppenanzeige ist damit noch nicht fertig oder freigegeben.
+Der aktuelle [Breitenauftrag](auftrag-life-93-breite-2026-10-03.md) hat Vorrang vor der alten Analysefolge. v2 führt 43 Originalfragen in acht Inhaltsrubriken, ohne gemeinsamen Faktor oder Gesamtscore. 42 historische Einzelreferenzen sind veröffentlicht; `ESS10SCe03_2:cttresa` bleibt null. Die neue [Gruppenentscheidung](../reports/loop/policy-group-v21-export-decisions.json) veröffentlicht 63 einzelne historische Frage-Gruppen-Paare aus ESS5, ESS8 und ESS9. Die optionale lokale Gruppenanzeige und der öffentliche Gruppenbericht sind technisch vorbereitet und begrenzt gegengeprüft; eine menschliche Produkt- oder Releasefreigabe folgt daraus nicht.
 
 ## Was tatsächlich reproduziert wurde
 
@@ -104,7 +104,7 @@ Dieser Build benötigt zusätzlich die 30 öffentlichen Quellen-Caches aus `cata
 PYTHONDONTWRITEBYTECODE=1 python scripts/build-policy-group-report-v21.py --check
 ```
 
-Er liest nur die feste öffentliche Allowlist im Skript, einschließlich authentisierter Bericht-/Entscheidungsbytes. Keine privaten Pfade aus Manifesten werden verfolgt. Der Gruppenbericht und die optionale Webanzeige erhalten eine zusammengehörige begrenzte Darstellungsprüfung; menschliche Verständnis- und Releasefreigaben folgen getrennt.
+Er liest nur die feste öffentliche Allowlist im Skript, einschließlich authentisierter Bericht-/Entscheidungsbytes. Keine privaten Pfade aus Manifesten werden verfolgt. Der Gruppenbericht und die optionale Webanzeige erhielten eine zusammengehörige [begrenzte Darstellungsprüfung](../reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md), anschließend eine gezielte responsive CSS-Nachprüfung. Kriterien und Zahlen blieben unverändert; menschliche Verständnis- und Releasefreigaben folgen getrennt.
 
 ## Aussagegrenzen und Aktualisierung
 
@@ -114,4 +114,4 @@ Historische Wählergruppen beruhen auf erinnerter Wahlteilnahme und Zweitstimme 
 
 Die Codex-Erstrollen gehörten derselben Modellfamilie an. Übereinstimmung ist kein Neutralitätsbeweis, und die Ergebnisrollen haben keine unabhängige Roh-/Downloadreproduktion geleistet. Menschenverständnistest mit fünf realen Personen, Designzustimmung, sichtbarer Tastaturfokus, echte 200%-Zoomprüfung, Claude-Schlusskontrolle, konkrete Rechte-/kommerzielle Nutzungsprüfung und persönlicher Release bleiben offen.
 
-Root ergänzt hier den endgültigen Stand der Gruppenanzeige und die später tatsächlich abgeschlossenen menschlichen Prüfungen. Dafür Datum und Belegpfade ändern; die ursprünglichen Lauf-, Auswahl- und Nullgrenzen nicht rückwirkend umschreiben.
+Abschlussnachtrag `2026-10-03T16:34:54.156857+00:00`: Die Forschungs-UI ist unter `/forschungsentwurf` ausschließlich im lokalen Research-Harness (`pnpm dev:research`) erreichbar; der Produktionsbuild enthält keinen Teststart. Der [finale Vorschlag für die Menschenprüfung](../reports/loop/packages/COMPREHENSION-V21-001/v1/manifest.json) bindet 43 konkrete UI-/Protokoll-/Quellenartefakte und das feste Zeigeskript. Kein realer Mensch wurde befragt. Spätere Freigaben nur mit Datum und Originalbeleg ergänzen; Lauf-, Auswahl- und Nullgrenzen erhalten.

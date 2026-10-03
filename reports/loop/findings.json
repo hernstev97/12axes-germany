@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T16:30:44.228375+00:00",
+  "updatedAtUtc": "2026-10-03T16:36:47.884766+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -80,9 +80,7 @@
       "repairRounds": 0,
       "status": "NICHT_GEPRÜFT",
       "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
-      "blocks": [
-        "dependent empirical claim/function"
-      ]
+      "blocks": ["dependent empirical claim/function"]
     },
     {
       "id": "R2-F04",
@@ -122,9 +120,7 @@
       "repairRounds": 0,
       "status": "NICHT_GEPRÜFT",
       "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
-      "blocks": [
-        "dependent empirical claim/function"
-      ]
+      "blocks": ["dependent empirical claim/function"]
     },
     {
       "id": "R3-F02",
@@ -144,9 +140,7 @@
       "repairRounds": 0,
       "status": "NICHT_GEPRÜFT",
       "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
-      "blocks": [
-        "dependent empirical claim/function"
-      ]
+      "blocks": ["dependent empirical claim/function"]
     },
     {
       "id": "R3-F03",
@@ -186,9 +180,7 @@
       "repairRounds": 0,
       "status": "NICHT_GEPRÜFT",
       "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
-      "blocks": [
-        "dependent empirical claim/function"
-      ]
+      "blocks": ["dependent empirical claim/function"]
     },
     {
       "id": "R4-F01",
@@ -288,9 +280,7 @@
       "repairRounds": 0,
       "status": "NICHT_GEPRÜFT",
       "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
-      "blocks": [
-        "dependent empirical claim/function"
-      ]
+      "blocks": ["dependent empirical claim/function"]
     },
     {
       "id": "A-F01",
@@ -562,9 +552,7 @@
     {
       "id": "L000-B01",
       "decision": "angenommen",
-      "duplicateOf": [
-        "L000-G01"
-      ],
+      "duplicateOf": ["L000-G01"],
       "origin": "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md",
       "reason": "Unabhängig reproduzierte Beschreibung desselben Fehlers; Original-ID/Erstbericht erhalten, keine zusätzliche Reparaturrunde",
       "repairRounds": 1,
@@ -582,9 +570,7 @@
     {
       "id": "L000-B02",
       "decision": "angenommen",
-      "duplicateOf": [
-        "L000-G02"
-      ],
+      "duplicateOf": ["L000-G02"],
       "origin": "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md",
       "reason": "Unabhängig reproduzierte Beschreibung desselben Fehlers; Original-ID/Erstbericht erhalten, keine zusätzliche Reparaturrunde",
       "repairRounds": 1,
@@ -602,10 +588,7 @@
     {
       "id": "L000-B03",
       "decision": "angenommen",
-      "duplicateOf": [
-        "L000-G03",
-        "L000-G04"
-      ],
+      "duplicateOf": ["L000-G03", "L000-G04"],
       "origin": "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md",
       "reason": "Unabhängig reproduzierte Beschreibung desselben Fehlers; Original-ID/Erstbericht erhalten, keine zusätzliche Reparaturrunde",
       "repairRounds": 2,
@@ -661,9 +644,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Quellenregister"
-            ],
+            "blocks": ["Quellenregister"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -684,9 +665,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Quellenregister"
-            ],
+            "blocks": ["Quellenregister"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -743,9 +722,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "EU-Interpretation"
-            ],
+            "blocks": ["EU-Interpretation"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -766,9 +743,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "EU-Interpretation"
-            ],
+            "blocks": ["EU-Interpretation"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -825,9 +800,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "P10 politische Gruppen"
-            ],
+            "blocks": ["P10 politische Gruppen"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -848,9 +821,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "P10 politische Gruppen"
-            ],
+            "blocks": ["P10 politische Gruppen"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -877,9 +848,7 @@
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
       "status": "BLOCKIERT",
-      "blocks": [
-        "Geschlechterkonstrukte"
-      ],
+      "blocks": ["Geschlechterkonstrukte"],
       "correctionState": "Begrenzungsdokumentation unabhängig bestätigt; tatsächliche Gender-/Klimadomänen vor abhängigen wissenschaftlichen Aussagen noch zu prüfen.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -907,9 +876,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Geschlechterkonstrukte"
-            ],
+            "blocks": ["Geschlechterkonstrukte"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -930,9 +897,7 @@
       "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
       "repairRounds": 1,
       "status": "BLOCKIERT",
-      "blocks": [
-        "Klimanorm/Interpretation"
-      ],
+      "blocks": ["Klimanorm/Interpretation"],
       "correctionState": "Begrenzungsdokumentation unabhängig bestätigt; tatsächliche Gender-/Klimadomänen vor abhängigen wissenschaftlichen Aussagen noch zu prüfen.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -960,9 +925,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Klimanorm/Interpretation"
-            ],
+            "blocks": ["Klimanorm/Interpretation"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1014,9 +977,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "P10 politische Gruppen"
-            ],
+            "blocks": ["P10 politische Gruppen"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1038,9 +999,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "P10 politische Gruppen"
-            ],
+            "blocks": ["P10 politische Gruppen"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1098,9 +1057,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "synthetische Textaussage"
-            ],
+            "blocks": ["synthetische Textaussage"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1121,9 +1078,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "synthetische Textaussage"
-            ],
+            "blocks": ["synthetische Textaussage"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1185,9 +1140,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Inventar/Itemauswahl"
-            ],
+            "blocks": ["Inventar/Itemauswahl"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1208,9 +1161,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 2,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Inventar/Itemauswahl"
-            ],
+            "blocks": ["Inventar/Itemauswahl"],
             "correctionState": "Begrenzte Runde2-Typkorrektur durch beide v3-Berichte bestätigt; großer Juror offen; alle205Restzeilen weiterhin offen.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1273,9 +1224,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Inventar-Reproduktion"
-            ],
+            "blocks": ["Inventar-Reproduktion"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1296,9 +1245,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Inventar-Reproduktion"
-            ],
+            "blocks": ["Inventar-Reproduktion"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1356,9 +1303,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Nachprüfbarkeit"
-            ],
+            "blocks": ["Nachprüfbarkeit"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1379,9 +1324,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Nachprüfbarkeit"
-            ],
+            "blocks": ["Nachprüfbarkeit"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1438,9 +1381,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Inventarbeleg"
-            ],
+            "blocks": ["Inventarbeleg"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1461,9 +1402,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Inventarbeleg"
-            ],
+            "blocks": ["Inventarbeleg"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1520,9 +1459,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Inventar-Provenienz"
-            ],
+            "blocks": ["Inventar-Provenienz"],
             "correctionState": "Autorenkorrektur/Begrenzung durchgeführt; unabhängige v2-Nachprüfung und Juror offen",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1543,9 +1480,7 @@
             "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
-            "blocks": [
-              "Inventar-Provenienz"
-            ],
+            "blocks": ["Inventar-Provenienz"],
             "correctionState": "Begrenzte v2-Korrektur unabhängig bestätigt; großer Juror noch offen. Wissenschaftliche Voraussetzungen bleiben separat.",
             "verification": {
               "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
@@ -1602,9 +1537,7 @@
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
             "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
-            "blocks": [
-              "Betroffene PREP-Abnahme"
-            ],
+            "blocks": ["Betroffene PREP-Abnahme"],
             "duplicateOf": null,
             "verification": {
               "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
@@ -1626,9 +1559,7 @@
             "repairRounds": 2,
             "status": "NICHT_GEPRÜFT",
             "correctionState": "Konkreter Rest leere Inputnamen voll angenommen; Namensschema korrigiert,20synthetische Fälle ausgeführt; unabhängige v3-Nachprüfung offen.",
-            "blocks": [
-              "Betroffene PREP-Abnahme"
-            ],
+            "blocks": ["Betroffene PREP-Abnahme"],
             "duplicateOf": null,
             "verification": {
               "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
@@ -1680,9 +1611,7 @@
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
             "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
-            "blocks": [
-              "Betroffene PREP-Abnahme"
-            ],
+            "blocks": ["Betroffene PREP-Abnahme"],
             "duplicateOf": null,
             "verification": {
               "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
@@ -1730,9 +1659,7 @@
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
             "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
-            "blocks": [
-              "Betroffene PREP-Abnahme"
-            ],
+            "blocks": ["Betroffene PREP-Abnahme"],
             "duplicateOf": null,
             "verification": {
               "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
@@ -1780,9 +1707,7 @@
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
             "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
-            "blocks": [
-              "Betroffene PREP-Abnahme"
-            ],
+            "blocks": ["Betroffene PREP-Abnahme"],
             "duplicateOf": "PREP-M-03",
             "verification": {
               "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
@@ -1833,9 +1758,7 @@
             "repairRounds": 1,
             "status": "NICHT_GEPRÜFT",
             "correctionState": "Schema/Protokoll korrigiert,18eigeneSchemafälle bestehen; unabhängige Nachprüfung offen",
-            "blocks": [
-              "Betroffene PREP-Abnahme"
-            ],
+            "blocks": ["Betroffene PREP-Abnahme"],
             "duplicateOf": "PREP-M-01",
             "verification": {
               "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
@@ -1857,9 +1780,7 @@
             "repairRounds": 2,
             "status": "NICHT_GEPRÜFT",
             "correctionState": "Konkreter Rest leere Inputnamen voll angenommen; Namensschema korrigiert,20synthetische Fälle ausgeführt; unabhängige v3-Nachprüfung offen.",
-            "blocks": [
-              "Betroffene PREP-Abnahme"
-            ],
+            "blocks": ["Betroffene PREP-Abnahme"],
             "duplicateOf": "PREP-M-01",
             "verification": {
               "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
@@ -1876,10 +1797,7 @@
     },
     {
       "id": "SW-ENV-004",
-      "duplicates": [
-        "SOFTWARE-M-01",
-        "SOFTWARE-001-REPRO-01"
-      ],
+      "duplicates": ["SOFTWARE-M-01", "SOFTWARE-001-REPRO-01"],
       "severity": "erheblich",
       "decision": "angenommen",
       "origin": "reports/loop/authors/SOFTWARE-001.md",
@@ -1929,9 +1847,7 @@
             ],
             "reason": "Konkreter Rechtevektor und Originalquelle tragen die Beanstandung; keine schädliche Geräteoperation beobachtet.",
             "correctionState": "Getrennte Autorenkorrektur und sichere Probe ausgeführt, neue v2-Fassung eingefroren; zwei unabhängige Nachprüfungen offen.",
-            "blocks": [
-              "unkorrigierte IOCTL-Schutzbehauptung"
-            ]
+            "blocks": ["unkorrigierte IOCTL-Schutzbehauptung"]
           }
         }
       ],
@@ -1974,9 +1890,7 @@
             "evidence": "Beide vollständige v3-Berichte und originaler v3-Manifestbereich; exakte altenHashes stimmen mitv2/files.",
             "reason": "Konkrete Pfad/Byte-Gegenprüfung, keineMehrheitsentscheidung.",
             "correctionState": "Neuev4historischeInputpfade ausdrücklichv2/files;alle47v3Dateiwerteunverändert;158hashes und155bereitgestellteBytefelderdurchRootgeprüft; unabhängigeFormalprüfung/Juroraktiv.",
-            "blocks": [
-              "Pauschale vollständigeSourceInput-Bindungderv3Livepfade"
-            ],
+            "blocks": ["Pauschale vollständigeSourceInput-Bindungderv3Livepfade"],
             "decisionRecord": "reports/loop/FOUNDATION-001-nachpruefentscheidung.md"
           }
         }
@@ -2071,9 +1985,7 @@
               "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
               "executionRecord": "Noch nicht ausgeführt"
             },
-            "blocks": [
-              "Daraufaufbauende betroffeneBehauptung"
-            ],
+            "blocks": ["Daraufaufbauende betroffeneBehauptung"],
             "decisionRecord": "reports/loop/INVENTORY-002-AB-entscheidung.md",
             "history": []
           }
@@ -2120,9 +2032,7 @@
               "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
               "executionRecord": "Noch nicht ausgeführt"
             },
-            "blocks": [
-              "Daraufaufbauende betroffeneBehauptung"
-            ],
+            "blocks": ["Daraufaufbauende betroffeneBehauptung"],
             "decisionRecord": "reports/loop/INVENTORY-002-AB-entscheidung.md",
             "history": []
           }
@@ -2169,9 +2079,7 @@
               "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
               "executionRecord": "Noch nicht ausgeführt"
             },
-            "blocks": [
-              "Daraufaufbauende betroffeneBehauptung"
-            ],
+            "blocks": ["Daraufaufbauende betroffeneBehauptung"],
             "decisionRecord": "reports/loop/INVENTORY-002-AB-entscheidung.md",
             "history": []
           }
@@ -2217,9 +2125,7 @@
               "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
               "executionRecord": "Noch nicht ausgeführt"
             },
-            "blocks": [
-              "Daraufaufbauende betroffeneBehauptung"
-            ],
+            "blocks": ["Daraufaufbauende betroffeneBehauptung"],
             "decisionRecord": "reports/loop/METHODS-002-entscheidung.md",
             "history": []
           }
@@ -2265,9 +2171,7 @@
               "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
               "executionRecord": "Noch nicht ausgeführt"
             },
-            "blocks": [
-              "Daraufaufbauende betroffeneBehauptung"
-            ],
+            "blocks": ["Daraufaufbauende betroffeneBehauptung"],
             "decisionRecord": "reports/loop/METHODS-002-entscheidung.md",
             "history": []
           }
@@ -2313,9 +2217,7 @@
               "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
               "executionRecord": "Noch nicht ausgeführt"
             },
-            "blocks": [
-              "Daraufaufbauende betroffeneBehauptung"
-            ],
+            "blocks": ["Daraufaufbauende betroffeneBehauptung"],
             "decisionRecord": "reports/loop/METHODS-002-entscheidung.md",
             "history": []
           }
@@ -2336,9 +2238,7 @@
         "manifest": "reports/loop/packages/INVENTORY-003-C/v2/manifest.json",
         "scope": "Nur C-R01Runde1, keine umfassende Inventar- oder Messabnahme"
       },
-      "blocks": [
-        "Saubere Metadatenabgrenzung C24/lnghom2 in der betroffenen Fassung"
-      ],
+      "blocks": ["Saubere Metadatenabgrenzung C24/lnghom2 in der betroffenen Fassung"],
       "decisionRecord": "reports/loop/INVENTORY-003-C-v2-entscheidung.md",
       "history": [
         {
@@ -2356,9 +2256,7 @@
               "status": "NICHT_GEPRÜFT",
               "scope": "Neue Feldgrenze, zwei bytegleiche Builds, vollständiger Diff und zwei unabhängige Nachprüfungen"
             },
-            "blocks": [
-              "Saubere Metadatenabgrenzung C24/lnghom2 in der betroffenen Fassung"
-            ],
+            "blocks": ["Saubere Metadatenabgrenzung C24/lnghom2 in der betroffenen Fassung"],
             "decisionRecord": "reports/loop/INVENTORY-003-C-v1-entscheidung.md",
             "history": []
           }
@@ -2384,9 +2282,7 @@
         "status": "BESTANDEN",
         "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
-      "blocks": [
-        "Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"
-      ],
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
       "decisionRecord": "reports/loop/CLAUDE-P02-v2-nachpruefentscheidung.md",
       "history": [
         {
@@ -2410,9 +2306,7 @@
         "status": "BESTANDEN",
         "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
-      "blocks": [
-        "Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"
-      ],
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
       "decisionRecord": "reports/loop/CLAUDE-P02-v2-nachpruefentscheidung.md",
       "history": [
         {
@@ -2436,9 +2330,7 @@
         "status": "BESTANDEN",
         "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
-      "blocks": [
-        "Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"
-      ],
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
       "decisionRecord": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
       "history": [
         {
@@ -2462,9 +2354,7 @@
         "status": "BESTANDEN",
         "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
-      "blocks": [
-        "Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"
-      ],
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
       "decisionRecord": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
       "history": [
         {
@@ -2488,9 +2378,7 @@
         "status": "BESTANDEN",
         "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
-      "blocks": [
-        "Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"
-      ],
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
       "decisionRecord": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
       "history": [
         {
@@ -2514,9 +2402,7 @@
         "status": "BESTANDEN",
         "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
-      "blocks": [
-        "Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"
-      ],
+      "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
       "decisionRecord": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
       "history": [
         {
@@ -2539,9 +2425,7 @@
         "status": "BESTANDEN",
         "scope": "Two complete historical v2 reports confirm exact original corrections; no empirical/scientific acceptance"
       },
-      "blocks": [
-        "Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"
-      ],
+      "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
       "history": [
         {
@@ -2563,9 +2447,7 @@
         "status": "BESTANDEN",
         "scope": "Targeted v3 review: baseline32,10 previously accepted relevant bypasses rejected plus own cases; no general semantics/CAPI/scientific acceptance"
       },
-      "blocks": [
-        "Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"
-      ],
+      "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/reviews/INVENTORY-004-E-v3-targeted.md",
       "history": [
         {
@@ -2587,9 +2469,7 @@
         "status": "BESTANDEN",
         "scope": "Two complete historical v2 reports confirm exact original corrections; no empirical/scientific acceptance"
       },
-      "blocks": [
-        "Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"
-      ],
+      "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
       "history": [
         {
@@ -2611,9 +2491,7 @@
         "status": "BESTANDEN",
         "scope": "Two complete historical v2 reports confirm exact original corrections; no empirical/scientific acceptance"
       },
-      "blocks": [
-        "Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"
-      ],
+      "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
       "history": [
         {
@@ -2686,9 +2564,7 @@
       "status": "BESTANDEN",
       "correctionState": "v2 targeted89/89synthetic assertions passed; round1 unchanged; only metadata scope",
       "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
-      "blocks": [
-        "technical-design-import"
-      ],
+      "blocks": ["technical-design-import"],
       "verification": {
         "scope": "Targeted v2 technical metadata import only; actual metadata output separately recorded",
         "report": "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
@@ -2706,9 +2582,7 @@
       "status": "BESTANDEN",
       "correctionState": "v2 targeted89/89synthetic assertions passed; round1 unchanged; only metadata scope",
       "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
-      "blocks": [
-        "technical-design-import"
-      ],
+      "blocks": ["technical-design-import"],
       "verification": {
         "scope": "Targeted v2 technical metadata import only; actual metadata output separately recorded",
         "report": "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
@@ -2726,9 +2600,7 @@
       "status": "BESTANDEN",
       "correctionState": "v2 targeted89/89synthetic assertions passed; round1 unchanged; only metadata scope",
       "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
-      "blocks": [
-        "technical-design-import"
-      ],
+      "blocks": ["technical-design-import"],
       "verification": {
         "scope": "Targeted v2 technical metadata import only; actual metadata output separately recorded",
         "report": "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
@@ -2886,9 +2758,7 @@
       "status": "NICHT_BESTANDEN",
       "reason": "Exportvertragspin optional; attribution nach Zusatz ungeprüft, kann Lizenz verlieren/Respondentfelder übernehmen",
       "correctionState": "Nicht korrigiert; historische Exportfunktion WIP, weiterer Echt-Export durch neuen Auftrag angehalten",
-      "blocks": [
-        "historical automatic B/FULL aggregate export"
-      ],
+      "blocks": ["historical automatic B/FULL aggregate export"],
       "verification": {
         "reportSha256": "44d3cd6c5f6c449bc5c69b56c99a147b7938759ac8569fd3c49d6d50b82596e0",
         "actualTestExit": 1,
@@ -2904,9 +2774,7 @@
       "status": "NICHT_BESTANDEN",
       "reason": "Neue ESS_CONFIRMATORY-Fehlercodes durch geerbtes A-Schema zurückgewiesen",
       "correctionState": "Nicht korrigiert; historische Exportfunktion WIP, weiterer Echt-Export durch neuen Auftrag angehalten",
-      "blocks": [
-        "historical automatic B/FULL aggregate export"
-      ],
+      "blocks": ["historical automatic B/FULL aggregate export"],
       "verification": {
         "reportSha256": "44d3cd6c5f6c449bc5c69b56c99a147b7938759ac8569fd3c49d6d50b82596e0",
         "actualTestExit": 1,
@@ -2922,9 +2790,7 @@
       "status": "NICHT_BESTANDEN",
       "reason": "EFA mapping_failure fehlt als legitimer Statusast",
       "correctionState": "Nicht korrigiert; historische Exportfunktion WIP, weiterer Echt-Export durch neuen Auftrag angehalten",
-      "blocks": [
-        "historical automatic B/FULL aggregate export"
-      ],
+      "blocks": ["historical automatic B/FULL aggregate export"],
       "verification": {
         "reportSha256": "44d3cd6c5f6c449bc5c69b56c99a147b7938759ac8569fd3c49d6d50b82596e0",
         "actualTestExit": 1,
@@ -2937,15 +2803,23 @@
       "decision": "angenommen",
       "severity": "erheblich",
       "repairRounds": 0,
-      "status": "NICHT_BESTANDEN",
+      "status": "PREPARED_BOUNDED_PENDING_HUMAN_PRODUCT_VALIDATION",
       "reason": "Neun Fragen zu zwei engen Themen erfüllen das breite Deutschland-Politikprofil nicht",
-      "blocks": [
-        "completion as comprehensive political profile"
-      ],
-      "correctionState": "43originalItems8differenttopics plus42reviewed single references and63optional historical group pairs; actual broad Angular research draft prepared, group display/dossier/human version binding pending. No narrow nine-item completion claim.",
+      "blocks": ["Claim of fully validated comprehensive released political profile"],
+      "correctionState": "Broad research selection43original questions/8substantive domains and actual local UI prepared, economy/distribution and democracy/authority explicit.42reviewed historical single+63optionalhistoricalgroup references; thematic/groupreports/reproduction/dossier/Human43pin proposal ready. Nine-item history preserved. Samefamilybounded scientific checks do not establish current comprehensiveness/adminvalidity/neutrality/humanrelease.",
       "verification": {
-        "order": "docs/auftrag-life-93-breite-2026-10-03.md"
-      }
+        "order": "docs/auftrag-life-93-breite-2026-10-03.md",
+        "coverage": "docs/abdeckung-v2.md",
+        "themesReport": "reports/phasen/02-politikprofil-v2-methoden-und-ergebnisse.md",
+        "displayDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md"
+      },
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T16:36:47.884766+00:00",
+          "previousStatus": "NICHT_BESTANDEN",
+          "previousCorrectionState": "43originalItems8differenttopics plus42reviewed single references and63optional historical group pairs; actual broad Angular research draft prepared, group display/dossier/human version binding pending. No narrow nine-item completion claim."
+        }
+      ]
     },
     {
       "id": "MF-01",
@@ -3134,9 +3008,7 @@
       "repairRounds": 1,
       "status": "BESTANDEN_BEGRENZT",
       "reason": "ESS10 B3 and B6 CAWI democracy-context stem incorrectly omitted and described as shortened; four related claims need targeted inspection.",
-      "blocks": [
-        "affected source bindings and dependent interpretation"
-      ],
+      "blocks": ["affected source bindings and dependent interpretation"],
       "correctionState": "Six original CAWI stems and B25 scoped markers independently targeted verified. Static historical scope only; no administration/empirical/release claim.",
       "verification": {
         "originalManifest": "eeae3bc1b81463b51ce2c0a1bf90f12b08aa01f125064e680d1f983df60c62f4",
@@ -3165,9 +3037,7 @@
       "repairRounds": 1,
       "status": "BESTANDEN_BEGRENZT",
       "reason": "Result title implies replacement instead of original more/less budget tradeoff",
-      "blocks": [
-        "one result title"
-      ],
+      "blocks": ["one result title"],
       "correctionState": "Targeted round1 ACCEPTED_BOUNDED and actual corrected browser layout/code context observed. No human design/release.",
       "verification": {
         "report": "reports/loop/reviews/POLICY-UI-001-round1.md",
@@ -3183,9 +3053,7 @@
       "repairRounds": 1,
       "status": "BESTANDEN_BEGRENZT",
       "reason": "Three justice-principle explanations broaden original meaning",
-      "blocks": [
-        "three result explanations"
-      ],
+      "blocks": ["three result explanations"],
       "correctionState": "Targeted round1 ACCEPTED_BOUNDED and actual corrected browser layout/code context observed. No human design/release.",
       "verification": {
         "report": "reports/loop/reviews/POLICY-UI-001-round1.md",
@@ -3201,9 +3069,7 @@
       "repairRounds": 1,
       "status": "BESTANDEN_BEGRENZT",
       "reason": "Internal prepare.py pin stale after Root changed generator worktree depth for tracked prototype",
-      "blocks": [
-        "local prototype metadata"
-      ],
+      "blocks": ["local prototype metadata"],
       "correctionState": "Targeted round1 ACCEPTED_BOUNDED and actual corrected browser layout/code context observed. No human design/release.",
       "verification": {
         "report": "reports/loop/reviews/POLICY-UI-001-round1.md",
@@ -3271,9 +3137,7 @@
       "repairRounds": 0,
       "status": "OPEN_LIMIT",
       "reason": "B25 historical static reference allowed only bounded; new administration unvalidated",
-      "blocks": [
-        "new administration validity claim"
-      ]
+      "blocks": ["new administration validity claim"]
     },
     {
       "id": "SCF-R03",
@@ -3319,9 +3183,7 @@
       "repairRounds": 0,
       "status": "BLOCKED_SCOPE_EXCLUDED",
       "reason": "ESS10SC original/export Other processing lacks bound primary concordance; whole study excluded from this group step",
-      "blocks": [
-        "historical original-instrument group analysis for affected study only"
-      ]
+      "blocks": ["historical original-instrument group analysis for affected study only"]
     },
     {
       "id": "GROUP-V21-SOURCES-06",
@@ -3331,9 +3193,7 @@
       "repairRounds": 0,
       "status": "BLOCKED_SCOPE_EXCLUDED",
       "reason": "ESS11 extra named categories and residual processing lack bound primary provenance; whole study excluded from this group step",
-      "blocks": [
-        "historical original-instrument group analysis for affected study only"
-      ]
+      "blocks": ["historical original-instrument group analysis for affected study only"]
     },
     {
       "id": "GROUP-V21-SOURCES-03",
@@ -3367,9 +3227,7 @@
       "repairRounds": 1,
       "status": "CLOSED_BOUNDED_ROUND1",
       "reason": "README ESS11 documentation DOI diverges from pinned primary citation requirement; actual report/contract/catalogue already match primary; resolver validity not asserted",
-      "blocks": [
-        "README single ESS11 documentation attribution claim"
-      ],
+      "blocks": ["README single ESS11 documentation attribution claim"],
       "verification": {
         "report": "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md",
         "rootDecision": "reports/loop/RESULTS-V2-PRESENTATION-001-p01-p02-entscheidung.md"
@@ -3383,9 +3241,7 @@
       "repairRounds": 1,
       "status": "CLOSED_BOUNDED_ROUND1",
       "reason": "Pure exporter accepts synthetic impossible joint eligibility axes; actual3candidates satisfy independent oracle and stronger predicate",
-      "blocks": [
-        "group export function/public promotion only"
-      ],
+      "blocks": ["group export function/public promotion only"],
       "verification": {
         "report": "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1.md",
         "rootDecision": "reports/loop/GROUP-RESULTS-V21-001-round1-entscheidung.md"
@@ -3410,13 +3266,16 @@
       "origin": "reports/loop/group-presentation-browser-v1.json",
       "decision": "angenommen",
       "severity": "bounded responsive layout",
-      "repairRounds": 0,
-      "status": "NICHT_BESTANDEN",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
       "reason": "Native historical-study selected text wraps and vertically clips second row at320px; full native accessible option and separate election/fieldtime present",
-      "blocks": [
-        "final responsive group selector display"
-      ],
-      "correctionState": "Original86pin first accepted bounded; save original then minimal CSS nowrap/ellipsis correction and targeted same reviewer/browser."
+      "blocks": [],
+      "correctionState": "Two CSS declarations only; same reviewer actual85unchanged/86current pins acceptedbounded and Root320/1280actualscreenshots/axe0/nooverflow verified.",
+      "verification": {
+        "report": "reports/loop/reviews/GROUP-PRESENTATION-V21-001-responsive-round1.md",
+        "technical": "reports/loop/group-presentation-responsive-round1-technical.json",
+        "rootDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md"
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

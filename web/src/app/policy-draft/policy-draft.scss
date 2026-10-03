@@ -99,6 +99,8 @@ legend span {
 }
 .group-controls select {
   width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .group-sources {
   margin-block: 1.5rem;

@@ -9,3 +9,11 @@ Root prüfte tatsächlich alle 26 Gruppenauswahlen im Browser: 63 kopierte Refer
 Rootbefund GBP-ROOT-01 bleibt zunächst offen: Im nativen Studienfeld bei 320px wird die lange ausgewählte Beschriftung umgebrochen und die zweite Zeile vertikal angeschnitten. Die vollständige native Option und der separate Wahl-/Befragungszeittext sind vorhanden. Betroffen ist diese responsive Darstellung, nicht ein Ergebniswert. Die Originalprüffassung wird vor einer minimalen CSS-Korrektur gesichert; danach genau diesen Diff gezielt prüfen.
 
 Echte sichtbare Tastaturfokusdarstellung und200%-Browserzoom konnten über die vorhandenen T3-Steuerungen nicht bestätigt werden. Menschenprüfung, Claude-Schlusskontrolle, Design-/Rechte-/Releasefreigaben stehen aus.
+
+## Gezielter Abschluss GBP-ROOT-01
+
+2026-10-03T16:34:53.741864+00:00: gleiche Darstellungsrolle nahm den exakt zweizeiligen CSS-Diff begrenzt an. Root las [Round1](reviews/GROUP-PRESENTATION-V21-001-responsive-round1.md) vollständig und prüfte tatsächliche Berichtbytes (`370aae54…`) sowie alle86 aktuellen v2Pins (`a96b12d4…`). 85Pins, Erstbericht, öffentliche Berichte/Referenzwerte und Auswahlidentitäten bleiben unverändert. Originalfassung ist in verifiziertem Commit `0afd0093b1bc90f651cf91baf3ef22459bca9965` erhalten.
+
+Root sah die tatsächlich gespeicherten320/1280Screenshots. Die mobile ausgewählte Studie bleibt einzeilig mit Ellipsis; der volle nativeOptionstext und separate Zeit-/Gruppenangaben bleiben erhalten. Kein vertikal angeschnittener zweiter Textlauf, kein horizontaler Überlauf; erneute axePrüfungen beide ohneBefunde. [Gezielter Browserbeleg](group-presentation-responsive-round1-technical.json) bewahrt auch fehlgeschlagene QA-/Formatversuche. GBP-ROOT-01 ist damit in Runde1 begrenzt geschlossen. Echter sichtbarer Keyboardfokus und200%-Browserzoom bleiben unbestätigt.
+
+Die konkrete vorgeschlagene Vorführung wurde technisch ausgeführt, einschließlich42SingleReferenzen/cttresaNull, benannterGruppeSPD/ESS5 undOtherNull/andererStudie. [Humanbinding43Pins](packages/COMPREHENSION-V21-001/v1/manifest.json) und tatsächliche [Steuerschritte](packages/COMPREHENSION-V21-001/v1/showing-controls.json) sind vorbereitet. Null realeMenschenläufe, keine Einwilligung oder StevenFreigabe. Diese reine Versionsbindung erweitert die bereits begrenzt geprüften0.1/0.2Regeln nicht.

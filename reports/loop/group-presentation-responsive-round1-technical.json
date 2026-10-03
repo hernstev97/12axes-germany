@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "status": "GBP_ROOT_01_RESPONSIVE_CORRECTION_OBSERVED",
+  "createdUtc": "2026-10-03T16:32:44.027Z",
+  "manifest": "reports/loop/packages/GROUP-PRESENTATION-V21-001/v2/manifest.json",
+  "changedPath": "web/src/app/policy-draft/policy-draft.scss",
+  "change": "white-space:nowrap;text-overflow:ellipsis;all85otherpinsunchanged",
+  "metrics": [
+    {
+      "fullSelectedLabel": "ESS5e03_6 · erinnerte Zweitstimme 2009",
+      "height": 900,
+      "incomplete": [],
+      "minHeight": "48px",
+      "overflow": false,
+      "textOverflow": "ellipsis",
+      "utc": "2026-10-03T16:32:10.190Z",
+      "violations": [],
+      "whiteSpace": "nowrap",
+      "width": 320
+    },
+    {
+      "fullSelectedLabel": "ESS5e03_6 · erinnerte Zweitstimme 2009",
+      "height": 900,
+      "incomplete": [],
+      "minHeight": "48px",
+      "overflow": false,
+      "textOverflow": "ellipsis",
+      "utc": "2026-10-03T16:32:12.752Z",
+      "violations": [],
+      "whiteSpace": "nowrap",
+      "width": 1280
+    }
+  ],
+  "screenshots": [
+    {
+      "role": "responsive_corrected_select_320",
+      "url": "http://localhost:4314/forschungsentwurf",
+      "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musm0juc-927c1ccb.png"
+    },
+    {
+      "role": "responsive_corrected_select_1280",
+      "url": "http://localhost:4314/forschungsentwurf",
+      "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musm0kh3-c033f756.png"
+    }
+  ],
+  "rootVisualObservation": "Both screenshots actually opened. Mobile320 now has one readable selected text row and explicit ellipsis, no vertically cut second row. Full native selected label preserved; election/fieldtime and group remain visible below. Desktop native control geometry intact; desktop screenshot raster text quality limited, complete labels verified in DOM. No observed layout overflow.",
+  "humanSetup": {
+    "utc": "2026-10-03T16:28:54.483Z",
+    "technicalDemonstrationOnly": true,
+    "humanRunsPerformed": 0,
+    "nativeSteps": [
+      "navigate fresh research route",
+      "click q1 originalcode1",
+      "next",
+      "click q2 originalcode5",
+      "next",
+      "skip q3 defaultKeineAngabe",
+      "q4 untouched",
+      "open results"
+    ],
+    "observedStates": [
+      "ESS9e03_3:sofrdst answered1",
+      "ESS9e03_3:sofrwrk answered5",
+      "ESS9e03_3:sofrpr skipped",
+      "ESS9e03_3:sofrprv untouched",
+      "remaining39 untouched"
+    ],
+    "singleReferences42": true,
+    "cttresaNullNoNumbers": true
+  },
+  "incidents": [
+    "First post-CSS metrics returned no value because HMR removed local QA axe object; subsequent typeof window.axe confirmed undefined. Re-injected exact local QA library, actual320/1280 axe both0 and nooverflow. Initial empty metrics not counted as passes.",
+    "pnpm check057 exit1 at formatting of state/findings JSON; tests/typecheck/build not reached. Previous05678tests passed. Own current bookkeeping formatted before final corrected check."
+  ],
+  "limits": [
+    "Technical prescribed demonstration only; zero real people, approval/consent missing",
+    "Axe and computed/native geometry not true visible keyboard focus or200percent browserzoom. Original unsuccessful probes preserved",
+    "No value/code/source/selection/analysis/tag change and no Raw/private reread for CSS"
+  ]
+}
