@@ -5,12 +5,60 @@ import { REVIEWED_HISTORICAL_REFERENCES } from './reviewed-historical-references
 describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   let fixture: ComponentFixture<PolicyDraft>;
   let element: HTMLElement;
+  let restoreFocus: () => void;
+  let originalScrollDescriptor: PropertyDescriptor | undefined;
+  let headingInteractions: (
+    | { kind: 'focus'; target: HTMLElement; options: FocusOptions | undefined }
+    | {
+        kind: 'scroll';
+        target: HTMLElement;
+        options: boolean | ScrollIntoViewOptions | undefined;
+        focusedAtCall: Element | null;
+      }
+  )[];
 
   beforeEach(async () => {
+    headingInteractions = [];
+    const nativeFocus = HTMLElement.prototype.focus;
+    const focusSpy = vi.spyOn(HTMLElement.prototype, 'focus').mockImplementation(function (
+      this: HTMLElement,
+      options?: FocusOptions,
+    ) {
+      headingInteractions.push({ kind: 'focus', target: this, options });
+      nativeFocus.call(this, options);
+    });
+    restoreFocus = () => focusSpy.mockRestore();
+    originalScrollDescriptor = Object.getOwnPropertyDescriptor(
+      HTMLElement.prototype,
+      'scrollIntoView',
+    );
+    // jsdom has no layout or scrollIntoView implementation. This testdouble
+    // records the requested target/options and actual focus at the call only.
+    Object.defineProperty(HTMLElement.prototype, 'scrollIntoView', {
+      configurable: true,
+      writable: true,
+      value(this: HTMLElement, options?: boolean | ScrollIntoViewOptions) {
+        headingInteractions.push({
+          kind: 'scroll',
+          target: this,
+          options,
+          focusedAtCall: document.activeElement,
+        });
+      },
+    });
     await TestBed.configureTestingModule({ imports: [PolicyDraft] }).compileComponents();
     fixture = TestBed.createComponent(PolicyDraft);
     await fixture.whenStable();
     element = fixture.nativeElement as HTMLElement;
+  });
+
+  afterEach(() => {
+    restoreFocus();
+    if (originalScrollDescriptor) {
+      Object.defineProperty(HTMLElement.prototype, 'scrollIntoView', originalScrollDescriptor);
+    } else {
+      Reflect.deleteProperty(HTMLElement.prototype, 'scrollIntoView');
+    }
   });
 
   async function click(text: string): Promise<void> {
@@ -27,6 +75,104 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     radio.click();
     await fixture.whenStable();
   }
+
+  function expectFocusedAndScrolled(target: HTMLElement): void {
+    expect(document.activeElement).toBe(target);
+    expect(headingInteractions).toEqual([
+      { kind: 'focus', target, options: { preventScroll: true } },
+      {
+        kind: 'scroll',
+        target,
+        options: { block: 'start', inline: 'nearest', behavior: 'instant' },
+        focusedAtCall: target,
+      },
+    ]);
+  }
+
+  async function openLastQuestion(): Promise<void> {
+    await click('Zur Fragenübersicht');
+    element.querySelector<HTMLButtonElement>('.overview-list li:last-child button')!.click();
+    await fixture.whenStable();
+  }
+
+  it.each([
+    ['Zur nächsten Frage', 'Frage 3 von 43'],
+    ['Zur vorherigen Frage', 'Frage 1 von 43'],
+    ['Diese Frage überspringen', 'Frage 3 von 43'],
+  ])('Fokus und Scrollen folgen dem gerenderten Fragenwechsel durch %s', async (action, title) => {
+    await click('Zur nächsten Frage');
+    headingInteractions = [];
+    await click(action);
+    const heading = element.querySelector<HTMLElement>('#draft-question-title')!;
+    expect(heading.textContent).toContain(title);
+    expectFocusedAndScrolled(heading);
+  });
+
+  it.each([
+    ['Zu den Fragen', 'Zur Fragenübersicht', 'Fragenübersicht'],
+    ['Zu den Fragen', 'Zum Ergebnisentwurf', 'Ergebnisentwurf'],
+    ['Zur Fragenübersicht', 'Zu den Fragen', 'Fragenentwurf'],
+    ['Zur Fragenübersicht', 'Zum Ergebnisentwurf', 'Ergebnisentwurf'],
+    ['Zum Ergebnisentwurf', 'Zu den Fragen', 'Fragenentwurf'],
+    ['Zum Ergebnisentwurf', 'Zur Fragenübersicht', 'Fragenübersicht'],
+  ])(
+    'Fokus und Scrollen folgen der gerenderten Ansichtsüberschrift von %s durch %s',
+    async (fromAction, action, title) => {
+      await click(fromAction);
+      headingInteractions = [];
+      await click(action);
+      const heading = element.querySelector<HTMLElement>('h1')!;
+      expect(heading.textContent).toContain(title);
+      expectFocusedAndScrolled(heading);
+    },
+  );
+
+  it('Fokus und Scrollen führen von der letzten Übersichtsfrage zur gerenderten Frage 43', async () => {
+    await click('Zur Fragenübersicht');
+    headingInteractions = [];
+    element.querySelector<HTMLButtonElement>('.overview-list li:last-child button')!.click();
+    await fixture.whenStable();
+    const heading = element.querySelector<HTMLElement>('#draft-question-title')!;
+    expect(heading.textContent).toContain('Frage 43 von 43');
+    expectFocusedAndScrolled(heading);
+  });
+
+  it('Fokus und Scrollen führen beim nativen Bearbeiten des letzten Ergebnisses zur gerenderten E35-Frage', async () => {
+    await click('Zum Ergebnisentwurf');
+    headingInteractions = [];
+    element
+      .querySelector<HTMLButtonElement>('[data-question-id="ESS8e02_3:wrkprbf"] button')!
+      .click();
+    await fixture.whenStable();
+    const heading = element.querySelector<HTMLElement>('#draft-question-title')!;
+    expect(heading.textContent).toContain('Frage 43 von 43');
+    expect(element.textContent).toContain('Originalfrage E35');
+    expectFocusedAndScrolled(heading);
+  });
+
+  it.each(['Zum Ergebnisentwurf', 'Diese Frage überspringen'])(
+    'Fokus und Scrollen führen nach Frage 43 durch %s zur Ergebnisüberschrift',
+    async (action) => {
+      await openLastQuestion();
+      headingInteractions = [];
+      const controls = action === 'Zum Ergebnisentwurf' ? '.question-controls' : '.skip-controls';
+      const button = [...element.querySelectorAll<HTMLButtonElement>(`${controls} button`)].find(
+        (candidate) => candidate.textContent?.trim() === action,
+      )!;
+      button.click();
+      await fixture.whenStable();
+      const heading = element.querySelector<HTMLElement>('h1')!;
+      expect(heading.textContent).toContain('Ergebnisentwurf');
+      expectFocusedAndScrolled(heading);
+    },
+  );
+
+  it('Fokus und Scrollen werden bei einer bloßen Auswahl nicht neu angefordert', async () => {
+    headingInteractions = [];
+    await choose('2');
+    expect(headingInteractions).toEqual([]);
+    expect(element.querySelector<HTMLInputElement>('input[value="2"]')?.checked).toBe(true);
+  });
 
   it('behält Originalauswahl beim Zurückgehen und bearbeitet sie ohne andere Antworten zu ändern', async () => {
     await choose('2');

@@ -108,3 +108,7 @@ Die neue Planfassung `6702f187` und `analyseplan-v2` sind remote verifiziert. Da
 ## Paketstand 2026-10-03T14:49:15.344151+00:00
 
 RESULTS-V2-001: beide frischen Erstberichte begrenzt angenommen, tatsächliche Bytes geprüft.42historische Einzelreferenzen veröffentlicht als Forschungsartefakte,43Fragenbestand/cttresa=null erhalten. Technischer Anhang bleibt für RV2-M-F03/SCF-R01 unvollständig. Angular initial unroutierter WIP; Gruppenvertrag und Gruppencode benötigen eigenes Vorabgate. Keine Parteiantwortsemantik, menschliche/Claude-Schlusskontrolle und Produktfreigabe offen. Konkrete Belege und nächste Arbeit ausschließlich in state/findings/handoff und Ergebnisentscheidung.
+
+## Gruppenübergang v2.1, 2026-10-03T15:19:30.101584+00:00
+
+Beide frischen Erstrollen abgeschlossen. Root übernimmt drei Studien als Schnittmenge: ESS5/8/9. ESS10SC/11 sind wegen konkreter Quellenlücken nur für diesen Gruppenweg ausgeschlossen; unveränderte Einzelreferenzen bleiben gültig. [Entscheidung](../reports/loop/GROUP-V21-001-entscheidung.md) nennt Belege und Grenzen. Parteiantworten noch nicht semantisch geöffnet; eigener Plancommit/Tag und tatsächliches Gate folgen vor Zugriff. Themenbericht und Scrollkorrektur werden gezielt nachgeprüft, keine neuen Gesamtaudits.

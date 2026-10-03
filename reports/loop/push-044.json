@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 44,
+  "localCommit": "acc294a6a21b411faaff4eccdd514834ace5a1b3",
+  "verifiedRemoteCommit": "acc294a6a21b411faaff4eccdd514834ace5a1b3",
+  "verifiedAtUtc": "2026-10-03T15:10:05.308385+00:00",
+  "branch": "research/life-93-night-20261003",
+  "pushExitCode": 0,
+  "scan": "outputs/loop/breadth-checkpoint044-scan.json",
+  "technicalCheck": {
+    "command": "pnpm check",
+    "exitCode": 0,
+    "log": "outputs/loop/check-051.log",
+    "tests": 57
+  },
+  "scientificAcceptance": "Historical42 references only; pre-group sources pending, actual browser scroll defect open, human/Claude/release pending"
+}

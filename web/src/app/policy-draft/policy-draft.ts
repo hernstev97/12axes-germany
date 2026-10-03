@@ -191,8 +191,12 @@ export class PolicyDraft {
   private focus(target: 'page' | 'question'): void {
     afterNextRender(
       () => {
-        const heading = target === 'page' ? this.pageHeading() : this.questionHeading();
-        heading?.nativeElement.focus({ preventScroll: true });
+        const heading = (target === 'page' ? this.pageHeading() : this.questionHeading())
+          ?.nativeElement;
+        if (!heading) return;
+        heading.focus({ preventScroll: true });
+        // Focus alone can leave the rendered target above the viewport after an edit.
+        heading.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'instant' });
       },
       { injector: this.injector },
     );

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T15:10:02.635527+00:00",
+  "updatedAtUtc": "2026-10-03T15:22:43.649944+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -3152,15 +3152,46 @@
       "origin": "reports/loop/angular-preview-initial-technical.json",
       "severity": "erheblich Bedienung",
       "decision": "angenommen",
-      "repairRounds": 0,
-      "status": "OPEN",
-      "reason": "Native final result edit focuses heading outside viewport; original AR-L01 explicitly left browser open",
-      "blocks": ["Question edit usability completion"],
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED",
+      "reason": "Rendered heading focus/scroll corrected; same reviewer21tests and actual Root desktop/mobile native edit after render passed. Initial mobile anomaly retained; full focus/zoom/human acceptance pending.",
+      "blocks": [],
       "verification": {
         "headingTopPx": -391.34375,
         "headingBottomPx": -355.109375,
         "scrollY": 1188
-      }
+      },
+      "verificationRecord": "reports/loop/angular-scroll-round1-technical.json"
+    },
+    {
+      "id": "GROUP-V21-SOURCES-05",
+      "origin": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "materielle Quellenlücke",
+      "repairRounds": 0,
+      "status": "BLOCKED_SCOPE_EXCLUDED",
+      "reason": "ESS10SC original/export Other processing lacks bound primary concordance; whole study excluded from this group step",
+      "blocks": ["historical original-instrument group analysis for affected study only"]
+    },
+    {
+      "id": "GROUP-V21-SOURCES-06",
+      "origin": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "materielle Quellenlücke",
+      "repairRounds": 0,
+      "status": "BLOCKED_SCOPE_EXCLUDED",
+      "reason": "ESS11 extra named categories and residual processing lack bound primary provenance; whole study excluded from this group step",
+      "blocks": ["historical original-instrument group analysis for affected study only"]
+    },
+    {
+      "id": "GROUP-V21-SOURCES-03",
+      "origin": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "limit",
+      "repairRounds": 0,
+      "status": "OPEN_LIMIT",
+      "reason": "ESS5/8 ordered national forms plus original API/date binding accepted bounded; extra explicit current alias concordance not available",
+      "blocks": []
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

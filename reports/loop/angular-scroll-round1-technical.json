@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_BOUNDED_ACTUAL_BROWSER",
+  "checkedUtc": "2026-10-03 15:21:13 UTC",
+  "codeSha256": "fa926ffbdbff04c6efc9fd059b839c03c0e1e02fdda14b4cbfa5338154b798be",
+  "manifestSha256": "b4d85aac82317c7c44c502340f7809b2c9e9ebab6aa66281f2950b7492468ff8",
+  "desktop": {
+    "active": "Frage 43 von 43",
+    "bottom": 69.890625,
+    "client": 1265,
+    "focusVisible": false,
+    "focused": false,
+    "heading": "Frage 43 von 43",
+    "refs": 0,
+    "scrollY": 763,
+    "top": 33.65625,
+    "url": "http://localhost:4314/forschungsentwurf",
+    "viewport": [1280, 800],
+    "width": 1265
+  },
+  "desktopFinalUnmodified": {
+    "active": "Frage 43 von 43",
+    "bottom": 69.890625,
+    "client": 1265,
+    "heading": "Frage 43 von 43",
+    "scrollY": 763,
+    "top": 33.65625,
+    "viewport": [1280, 800],
+    "width": 1265
+  },
+  "mobileInitialMeasurement": {
+    "active": "Frage 43 von 43",
+    "bottom": -1249.0625,
+    "client": 305,
+    "focusVisible": false,
+    "focused": false,
+    "heading": "Frage 43 von 43",
+    "refs": 0,
+    "scrollY": 2390,
+    "top": -1279.25,
+    "url": "http://localhost:4314/forschungsentwurf",
+    "viewport": [320, 720],
+    "width": 305
+  },
+  "mobileFreshNavigationAfterRender": {
+    "active": "Frage 43 von 43",
+    "bottom": 61.9375,
+    "client": 305,
+    "heading": "Frage 43 von 43",
+    "scrollY": 1079,
+    "top": 31.75,
+    "viewport": [320, 720],
+    "width": 305
+  },
+  "mobileAxe": {
+    "incomplete": [],
+    "version": "4.13.0",
+    "violations": []
+  },
+  "screenshot": {
+    "url": "http://localhost:4314/forschungsentwurf",
+    "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musjh52q-56e13990.png"
+  },
+  "notes": [
+    "Initial 320px immediate measurement remained outside viewport; preserved as observed anomaly, not silently omitted.",
+    "Instrumented native scroll call showed heading visible after render and stable at two animation frames,100/500ms. Instrumentation removed by fresh navigation; final unmodified native edit then measured after render independently passed.",
+    "No CSS zoom substitute. Actual 200% browser zoom and visible keyboard focus remain NOT_VERIFIED.",
+    "This is local research-only route; no human design/comprehension/release approval."
+  ]
+}

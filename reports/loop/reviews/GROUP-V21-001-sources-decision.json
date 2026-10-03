@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "role": "sources_constructs_fairness",
+  "reviewManifestSha256": "73868d634da6a47fc7e5e72c858a4e93479785b892ffd6de65fda0c4243726a4",
+  "decision": "ACCEPTED_BOUNDED",
+  "allowedStudyIds": [
+    "ESS5e03_6",
+    "ESS8e02_3",
+    "ESS9e03_3"
+  ],
+  "concreteFindingIds": [
+    "GROUP-V21-SOURCES-01",
+    "GROUP-V21-SOURCES-02",
+    "GROUP-V21-SOURCES-03",
+    "GROUP-V21-SOURCES-04",
+    "GROUP-V21-SOURCES-05",
+    "GROUP-V21-SOURCES-06",
+    "GROUP-V21-SOURCES-07",
+    "GROUP-V21-SOURCES-08",
+    "GROUP-V21-SOURCES-09",
+    "GROUP-V21-SOURCES-10"
+  ]
+}

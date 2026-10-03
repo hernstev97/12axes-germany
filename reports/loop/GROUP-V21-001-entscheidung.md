@@ -1,0 +1,18 @@
+# Historischer Gruppenplan v2.1: begrenzte Übergangsentscheidung
+
+3. Oktober 2026. Root hat beide getrennten Erstberichte und deren tatsächliche Bytes geprüft. Der Methodenbericht nimmt alle fünf Studien begrenzt an. Der Quellenbericht lässt ESS5e03_6, ESS8e02_3 und ESS9e03_3 zu. Root übernimmt genau diese Schnittmenge für den nächsten privaten Analyseschritt. Keine Parteiantwortsemantik wurde vor dieser Entscheidung ausgeführt.
+
+Prüffassung: `GROUP-V21-001/v1`, 51 tatsächlich unveränderte Pins, Manifest-SHA256 `73868d634da6a47fc7e5e72c858a4e93479785b892ffd6de65fda0c4243726a4`. Gruppenvertrag: `9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702`; übernommener Einzelstudienvertrag: `8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b`.
+
+- Methoden-Erstbericht: [GROUP-V21-001-methods-first.md](reviews/GROUP-V21-001-methods-first.md), SHA256 `a75ef3b1d76053f0f36a9853cdaa7dfb6e2e229073e9e545571c544604c5a95b`.
+- Quellen-Erstbericht: [GROUP-V21-001-sources-first.md](reviews/GROUP-V21-001-sources-first.md), SHA256 `f9bec9e943a133b95bbd48a721d7d68cce037c80a457f76fc68b4c21a89da233`.
+
+ESS10SC bleibt wegen der nicht belegten Abgrenzung beziehungsweise Verarbeitung der gedruckten und exportierten Restkategorie ausgeschlossen (GROUP-V21-SOURCES-05). ESS11 bleibt wegen des nicht belegten Ursprungs der zusätzlichen benannten Dateikategorien und ihrer Restabgrenzung ausgeschlossen (GROUP-V21-SOURCES-06). Keine dieser Lücken wird als nachgewiesene amtliche Fehlcodierung behauptet. Es werden ganze Studien begrenzt; in den drei zugelassenen Studien bleiben alle ursprünglichen benannten Gruppen und Other erhalten. Die schwächere zusätzliche Alias-Konkordanz von ESS5/8 bleibt als GROUP-V21-SOURCES-03 sichtbar. Es gibt keine nachträgliche Umcodierung.
+
+Zulässig sind ausschließlich getrennte deskriptive Itemverteilungen zum damaligen Befragungszeitpunkt nach selbstberichteter früherer Zweitstimme. Die vorab festgelegten Nenner, PSP-Gewichtung, Sensitivitäten und 100/5-Darstellungsheuristiken bleiben unverändert. Keine heutigen Parteipositionen, Gesamtmatches, gemeinsamen Personen, latenten Skalen, Wahlprognosen, SE/CI oder Bevölkerungsnormen. Other bleibt eine heterogene Restkategorie.
+
+Die historischen v1-A/B-Ergebnisse und die inzwischen ausgeführten v2-Einzelstudienanalysen sind bekannt. Der neue Schritt ist keine unberührte Bestätigungsanalyse. Die CSV-Dateien wurden bei den Einzelstudienläufen lexikalisch traversiert; Parteifelder wurden dabei nicht semantisch interpretiert. Auch dieser Ablauf garantiert keine absolute Betriebssystemblindheit oder Neutralität. Beide Prüfer gehören zur Codex-Modellfamilie und können gemeinsame Fehlerquellen haben.
+
+Vor tatsächlichem Zugriff müssen der Plancommit und der neue Tag `analyseplan-v2.1` regulär gepusht und remote verifiziert sein. Freeze und Gate binden anschließend genau diesen Commit, das unveränderte Manifest, beide tatsächlichen Berichtsbytes und die drei zugelassenen Studien. Die 32 öffentlichen Originalcaches und zwei öffentliche Quellenableitungen bleiben lokale, gepinnte Reproduktionseingaben außerhalb von Git; der Plancommit enthält deren Referenzen, keine Verzeichniskopien. Alte Tags bleiben unverändert.
+
+Die nächsten Läufe erzeugen ausschließlich private Aggregate unter `data/local/policy-groups-v21/`. Vor öffentlicher Darstellung folgen zwei frische Ergebnisrollen und eine tatsächliche Root-Exportentscheidung. Die Codegrenzen ersetzen keine wissenschaftliche Abnahme. Claude-Schlusskontrolle, menschliche Verständnistests, Gestaltung und persönliche Releasefreigaben sind weiter offen.
