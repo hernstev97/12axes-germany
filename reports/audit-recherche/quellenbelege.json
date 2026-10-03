@@ -1,0 +1,43 @@
+{
+  "kind": "dated-original-source-evidence",
+  "capturedDuring": "KI-Audit, nicht historischer Rechercheabruf",
+  "evidence": [
+    {
+      "sourceId": "ESS11-DATA",
+      "url": "https://ess.sikt.no/en/datafile/242aaa39-3bbb-40f5-98bf-bfb1ce53d8ef",
+      "section": "DOI and version information",
+      "capturedAtUtc": "2026-10-03T00:29:38.127Z",
+      "tool": "T3 preview: open, Snapshot, section click, DOM read",
+      "facts": {
+        "edition": "4.2",
+        "publishedOn": "2026-07-02",
+        "germanyStratumCorrectionEdition": "4.0",
+        "laterGermanySpecificChangeListed": false
+      },
+      "scope": "Versionshinweise 4.0 bis 4.2. Fehlender Änderungshinweis ist kein Beweis gleicher Dateien.",
+      "localFullCapture": "outputs/audit-recherche/quellen/ESS11-DATA-2026-10-03.json",
+      "localFullCaptureSha256": "083fea85f496b7f4d9ac0f77cbb54b3c3cae7d3fb74684e487f2d0373b1a5ac5",
+      "checks": {
+        "germanyStratumCorrectionIn40": true,
+        "noGermanySpecificEntryIn41": true,
+        "noGermanySpecificEntryIn42": true
+      }
+    },
+    {
+      "sourceId": "ESS-DISCLAIMER",
+      "url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "section": "Conditions of use",
+      "capturedAtUtc": "2026-10-03T00:30:20.025632+00:00",
+      "httpStatus": 200,
+      "tool": "Python urllib.request plus BeautifulSoup; Original-HTML tatsächlich gelesen",
+      "facts": {
+        "dataLicense": "CC BY-NC-SA 4.0",
+        "documentationLicense": "CC BY-SA 4.0"
+      },
+      "scope": "Lizenztrennung bestätigt, keine Freigabe konkreter Exporte.",
+      "localFullCapture": "outputs/audit-recherche/quellen/ESS-DISCLAIMER-2026-10-03.html",
+      "localFullCaptureSha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d"
+    }
+  ],
+  "note": "Volltexte bleiben lokal außerhalb von Git. Öffentlich sind kurze Sachbelege, Fundstellen und ihre Hashes; ursprüngliche HTML-Abrufe werden nicht rückwirkend rekonstruiert."
+}

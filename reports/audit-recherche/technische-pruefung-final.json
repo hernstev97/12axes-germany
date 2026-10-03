@@ -1,0 +1,25 @@
+{
+  "kind": "final-technical-repeat-after-juror-format-failure",
+  "startedAtUtc": "2026-10-03T00:54:04.610376+00:00",
+  "endedAtUtc": "2026-10-03T00:54:12.243187+00:00",
+  "command": ["pnpm", "check"],
+  "exitCode": 0,
+  "toolVersions": {
+    "node": "v24.21.0",
+    "pnpm": "11.23.0",
+    "python": "Python 3.14.7",
+    "uv": "uv 0.12.20 (2274b80d6 2026-09-28 x86_64-unknown-linux-gnu)"
+  },
+  "inputManifest": "reports/audit-recherche/technischer-pruefstand-final.json",
+  "inputManifestSha256": "89348769a20db1c41a15b1f721876bb95a0ea33f375814d4e3e71ffa4008767b",
+  "logPath": "reports/audit-recherche/pnpm-check-final.log",
+  "logSha256": "8916ce1456bc21f7e5fa23bceac81410c33693a37ba5d9188384e81b0de99e8a",
+  "gitDiffCheck": {
+    "command": ["git", "diff", "--check"],
+    "exitCode": 0,
+    "logPath": "reports/audit-recherche/git-diff-check-final.log",
+    "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "reason": "Jurorlauf scheiterte nur an neuer Audit-JSON-Formatierung. Diese wurde korrigiert, der globale technische Check vollständig wiederholt. Frühere Läufe und wissenschaftliche Eingabefassungen bleiben erhalten.",
+  "scope": "Globaler Formatcheck im aktuellen Ignoreumfang, Typecheck, zwei bestehende UI-Tests, Angular-Build; keine wissenschaftliche oder Neutralitätsprüfung, kein CodeRabbit-/Browserlauf."
+}

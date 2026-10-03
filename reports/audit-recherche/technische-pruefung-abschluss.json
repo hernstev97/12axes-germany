@@ -1,0 +1,25 @@
+{
+  "kind": "final-technical-repeat-with-restored-corrected-snapshot",
+  "startedAtUtc": "2026-10-03T00:55:26.080813+00:00",
+  "endedAtUtc": "2026-10-03T00:55:33.917140+00:00",
+  "command": ["pnpm", "check"],
+  "exitCode": 0,
+  "toolVersions": {
+    "node": "v24.21.0",
+    "pnpm": "11.23.0",
+    "python": "Python 3.14.7",
+    "uv": "uv 0.12.20 (2274b80d6 2026-09-28 x86_64-unknown-linux-gnu)"
+  },
+  "inputManifest": "reports/audit-recherche/technischer-pruefstand-abschluss.json",
+  "inputManifestSha256": "5e04eccf21a35bbd30a7285f651dcea4543de06ba7e87a972223f4a4396f8a24",
+  "logPath": "reports/audit-recherche/pnpm-check-abschluss.log",
+  "logSha256": "ac02c31810443e81deb61cfb41b5c07baf646c81a8626b81b161d28a57d4b0c2",
+  "gitDiffCheck": {
+    "command": ["git", "diff", "--check"],
+    "exitCode": 0,
+    "logPath": "reports/audit-recherche/git-diff-check-abschluss.log",
+    "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "reason": "Abschlussintegrität meldete zwei zusätzliche Ignore-Ausnahmen des Autors. Originalkonfiguration wiederhergestellt; unveränderte Belegkopien als .json.log gesichert. Vollständiger technischer Check für diesen endgültigen Stand. Frühere Läufe bleiben erhalten.",
+  "scope": "Globaler Formatcheck im aktuellen Ignoreumfang, Typecheck, zwei bestehende UI-Tests, Angular-Build; keine wissenschaftliche oder Neutralitätsprüfung, kein CodeRabbit-/Browserlauf."
+}

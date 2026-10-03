@@ -1,0 +1,40 @@
+$ pnpm format:check && pnpm typecheck && pnpm test && pnpm build
+$ prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+$ pnpm --filter politikprofil typecheck
+$ ngc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.spec.json
+$ pnpm --filter politikprofil test --watch=false
+$ ng test --watch=false
+❯ Building...
+✔ Building...
+Application bundle generation complete. [0.869 seconds] - 2026-10-03T00:40:24.652Z
+
+
+ RUN  v5.0.3 /home/stevenh/projects/12axes-germany/web
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  02:40:24
+   Duration  899ms (environment 55%, setup 17%, tests 17%, import 5%, transform 5%, worker 1%)
+
+$ pnpm --filter politikprofil build
+$ ng build
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main-N6ZS6VNC.js    | main          | 219.99 kB |                59.80 kB
+styles-XUJCHX6O.css | styles        |   6.18 kB |                 1.22 kB
+
+                    | Initial total | 226.18 kB |                61.02 kB
+
+Lazy chunk files    | Names         |  Raw size | Estimated transfer size
+chunk-CBuoK54Q.js   | home          |   6.87 kB |                 2.21 kB
+chunk-EqotDYaG.js   | project       |   5.68 kB |                 2.16 kB
+chunk-ayN9vGJC.js   | not-found     | 876 bytes |               876 bytes
+
+Application bundle generation complete. [1.247 seconds] - 2026-10-03T00:40:27.934Z
+
+Output location: /home/stevenh/projects/12axes-germany/web/dist/politikprofil
+

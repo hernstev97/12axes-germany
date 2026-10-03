@@ -1,0 +1,56 @@
+{
+  "kind": "retained-technical-artifacts",
+  "registeredAtUtc": "2026-10-03T00:30:20.313393+00:00",
+  "files": [
+    {
+      "path": "outputs/browser-checks.json",
+      "sha256": "8c1da1eaeea8e7e28c4ce05a3188e6f47d2ed8a72abdb86918581b4542a914fa",
+      "bytes": 963,
+      "access": "lokal, Git-ausgeschlossen",
+      "timestampScope": "Registrierungszeit ist keine neu belegte historische Ausführungszeit"
+    },
+    {
+      "path": "outputs/desktop-hero.png",
+      "sha256": "456b0a3fe1ff10b4e020b9c1dbac09f85b79c091dfc49411e3a2f8037d10616a",
+      "bytes": 609211,
+      "access": "lokal, Git-ausgeschlossen",
+      "timestampScope": "Registrierungszeit ist keine neu belegte historische Ausführungszeit"
+    },
+    {
+      "path": "outputs/desktop.png",
+      "sha256": "9b918fd2abfe131c3aa6d669430829ba310fa4eba53227ee14c23fbbd41d3ed2",
+      "bytes": 693595,
+      "access": "lokal, Git-ausgeschlossen",
+      "timestampScope": "Registrierungszeit ist keine neu belegte historische Ausführungszeit"
+    },
+    {
+      "path": "outputs/initial-mobile.png",
+      "sha256": "3ea3148da225953bfa0ef503d108e2a3b89c6f66121f74dc62b2092d3218eaa2",
+      "bytes": 289566,
+      "access": "lokal, Git-ausgeschlossen",
+      "timestampScope": "Registrierungszeit ist keine neu belegte historische Ausführungszeit"
+    },
+    {
+      "path": "outputs/mobile.png",
+      "sha256": "2c971be3423f520e07b83f8c3b162cc376964a1229a526d89ff0a8ce97c4ea17",
+      "bytes": 289579,
+      "access": "lokal, Git-ausgeschlossen",
+      "timestampScope": "Registrierungszeit ist keine neu belegte historische Ausführungszeit"
+    },
+    {
+      "path": "outputs/small-mobile.png",
+      "sha256": "8da481e62af33477c2f530efba981d49785144123cddd5e8e6ab642974863c86",
+      "bytes": 245081,
+      "access": "lokal, Git-ausgeschlossen",
+      "timestampScope": "Registrierungszeit ist keine neu belegte historische Ausführungszeit"
+    },
+    {
+      "path": "outputs/tablet.png",
+      "sha256": "436fe4457df808578c5e884a5e69d3f86ab08d26d4dab3448072f527d7a55855",
+      "bytes": 314315,
+      "access": "lokal, Git-ausgeschlossen",
+      "timestampScope": "Registrierungszeit ist keine neu belegte historische Ausführungszeit"
+    }
+  ],
+  "note": "Browserergebnis und Bilder vorhanden, ursprünglicher Browsercode/komplette Run-Zeitlinie fehlen im veröffentlichten Paket. Keine erneute UI-Prüfung ausgeführt."
+}

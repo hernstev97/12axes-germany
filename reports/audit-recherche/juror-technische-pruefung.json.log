@@ -1,0 +1,11 @@
+{
+  "startedAtUtc": "2026-10-03T00:48:08.289767+00:00",
+  "endedAtUtc": "2026-10-03T00:48:09.543524+00:00",
+  "command": [
+    "pnpm",
+    "check"
+  ],
+  "exitCode": 1,
+  "logPath": "/tmp/life93-audit-juror-6/pnpm-check.log",
+  "logSha256": "3e104b20ad21716225aa3f15f9d0a6429585fd8f89e5225b99536a8883aa4732"
+}

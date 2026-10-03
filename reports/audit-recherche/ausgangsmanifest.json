@@ -1,0 +1,142 @@
+{
+  "kind": "frozen-input-for-ai-audit",
+  "recordedAtUtc": "2026-10-03T00:13:28.961919+00:00",
+  "baseCommit": "1a7b0c38f28e27219d59380c039f9bb0446a71dd",
+  "branch": "research/life-93-methodology",
+  "issueUpdatedAt": "2026-10-02T22:07:24.510Z",
+  "snapshotDirectory": "reports/audit-recherche/ausgangsfassung",
+  "algorithm": "SHA-256",
+  "files": {
+    ".coderabbit.yaml": {
+      "sha256": "daad16ae32bd45ec7dc05ebd8804d3f3b6b0577ca69575fa6a571c36fa662444",
+      "bytes": 3304
+    },
+    "AGENTS.md": {
+      "sha256": "e428eb1b5acde7e4876df3561e23d16fdc326f10ec9683ae5eb68e00a1e3b29a",
+      "bytes": 2596
+    },
+    "README.md": {
+      "sha256": "9af32685af8780c2138dd0c13a845944ac2a9c48f48352629a9d0f3e2216ba0b",
+      "bytes": 3526
+    },
+    "docs/project.md": {
+      "sha256": "2edc1d918a5ce7dad3fd969546784ecac4980966886607f88b7827a5f60a975a",
+      "bytes": 4066
+    },
+    "docs/pruefregeln.md": {
+      "sha256": "1b10d9d7aa46a0a4e8cbc6e25c80a2b046f1cf611ab62aed6321b24af6367c77",
+      "bytes": 19979
+    },
+    "docs/analyseplan.md": {
+      "sha256": "d0e1579f2e6891f097548c1c48d7cfb10f4f6f3d1bf5c0f228c25ba696ae1560",
+      "bytes": 9641
+    },
+    "docs/belegregister.md": {
+      "sha256": "eebb44ad32f681c6afff5165a4d840eed7221d34a28d6b95a8c8d3917865994a",
+      "bytes": 11794
+    },
+    "docs/datenlage.md": {
+      "sha256": "f6ed2725bef9368ed04bc9175c528f76edfc6b6a2d89d71be026f41188d22485",
+      "bytes": 6905
+    },
+    "docs/lizenzen.md": {
+      "sha256": "51d76737c4f4de389fbcd75af668e286867f848be4cfedb33a1eb1e275613a6d",
+      "bytes": 4715
+    },
+    "docs/quellen.json": {
+      "sha256": "d85f080d7be311877076d637b642ee201d4da7f6e1ae3de1e0f4c0d7a0b63c30",
+      "bytes": 7924
+    },
+    "docs/entscheidungen.md": {
+      "sha256": "e908dfdcd4c4c9562b668e59f9409c6a36063ef36131bae9a5b6d31533fa2a44",
+      "bytes": 3454
+    },
+    "docs/ki-protokoll.md": {
+      "sha256": "186442de21df4e10c45dfcdef80ea290c6ddaf63641b9e6915de53674735533e",
+      "bytes": 6980
+    },
+    "docs/reviews/README.md": {
+      "sha256": "bddb7361d55020a1bd279372813c7e2d1fd954626cb645d77f1f9486cb3ceda1",
+      "bytes": 4116
+    },
+    "pipeline/README.md": {
+      "sha256": "cd122241d705e43d03626a18fdf62fa5cf253e77a7d2d166fc43f0496ca79dd1",
+      "bytes": 542
+    },
+    "model/README.md": {
+      "sha256": "da999e1f2ffa09b257eff88915639ab487ef8a883d399b5cc035bd47c7ce7d15",
+      "bytes": 449
+    },
+    "reports/README.md": {
+      "sha256": "b72bffd65835524471e26adbd9eb39cec9bc10e32db9ed9517c9d2d2cd7bccc6",
+      "bytes": 468
+    },
+    "reports/phasen/00-recherche-2026-10-03.md": {
+      "sha256": "0769bb13a45c3cfb85a685f90acd201d981881ac14a2467eea1faa516043e505",
+      "bytes": 5603
+    },
+    "reports/phasen/00-dateieingang-2026-10-03.md": {
+      "sha256": "814513213d10957063dc6a26a7f4d9c0086b75c99262c86b2993ac2075d46621",
+      "bytes": 3982
+    },
+    "reports/phasen/00-recherche-2026-10-03-stand.json": {
+      "sha256": "515979fab1e1eee7ce51c018d1d460745c1d51b0e1b5d6b62021e7d69456fbdd",
+      "bytes": 4163
+    },
+    "docs/validation.md": {
+      "sha256": "5fbb447007328a9ed3e9736bf88e0a8adae5d0c35c5aa3b4efd9a007d592c6f1",
+      "bytes": 2936
+    },
+    "docs/design.md": {
+      "sha256": "bf7bd691d36bc54858805a34852fb27408793d991eb55edda11425062a3ffdea",
+      "bytes": 2128
+    },
+    "docs/assets.md": {
+      "sha256": "0537c1f69250ee438bad731b4a969c941623c9c223a55e8574382fc8663c7293",
+      "bytes": 2391
+    },
+    ".gitignore": {
+      "sha256": "908d1a2333b19d556a2795520c879c9bd768668bda4565c2ae24396ae7f1accf",
+      "bytes": 212
+    },
+    ".github/workflows/ci.yml": {
+      "sha256": "86a55ffa82ac4cdc2e13012d92e74aefaf4f3757af3293ac03cf3971a537b2ea",
+      "bytes": 606
+    },
+    "package.json": {
+      "sha256": "37ed643d0f6d7a18afe7c04f6ff93e01ac34ab893565b1bd5d7030505edb55e3",
+      "bytes": 624
+    },
+    "pnpm-lock.yaml": {
+      "sha256": "e1903c07e6d2a3d90023d27e44c764c566fdfeeaf36701af2a97fe1d79851fae",
+      "bytes": 134485
+    }
+  },
+  "auditInputFiles": {
+    "issue-LIFE-93.json": "258718010829e9fa187ea3359f6c96c6fb63758788de1e7cb8d779d986817fa7",
+    "issue-LIFE-93.md": "d25ba503af100f27ac1c81706b1bd7a2a69243c09c3ecc29d32f6e1d77a54364",
+    "pruefauftrag-gemeinsam.md": "ef26517dc7dd02c9e626b991275375c73a464abf074f6178baff0576390b0f8f"
+  },
+  "priorManifestVerified": {
+    ".coderabbit.yaml": true,
+    "AGENTS.md": true,
+    "README.md": true,
+    "docs/project.md": true,
+    "docs/pruefregeln.md": true,
+    "docs/analyseplan.md": true,
+    "docs/belegregister.md": true,
+    "docs/datenlage.md": true,
+    "docs/lizenzen.md": true,
+    "docs/quellen.json": true,
+    "docs/entscheidungen.md": true,
+    "docs/ki-protokoll.md": true,
+    "docs/reviews/README.md": true,
+    "pipeline/README.md": true,
+    "model/README.md": true,
+    "reports/README.md": true,
+    "reports/phasen/00-recherche-2026-10-03.md": true,
+    "reports/phasen/00-dateieingang-2026-10-03.md": true
+  },
+  "rawDataCopied": false,
+  "note": "Lokale unveränderte Ausgangsfassung; kein öffentliches Tag und kein Beweis für Blindheit, politische Neutralität oder andere Modellfamilien."
+}

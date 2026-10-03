@@ -1,0 +1,164 @@
+{
+  "performedAtUtc": "2026-10-03T00:15:20.657846+00:00",
+  "kind": "initial-input-integrity-check",
+  "snapshotAndIssueChecks": [
+    {
+      "file": ".coderabbit.yaml",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "AGENTS.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "README.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/project.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/pruefregeln.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/analyseplan.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/belegregister.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/datenlage.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/lizenzen.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/quellen.json",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/entscheidungen.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/ki-protokoll.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/reviews/README.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "pipeline/README.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "model/README.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "reports/README.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "reports/phasen/00-recherche-2026-10-03.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "reports/phasen/00-dateieingang-2026-10-03.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "reports/phasen/00-recherche-2026-10-03-stand.json",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/validation.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/design.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "docs/assets.md",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": ".gitignore",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "package.json",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "pnpm-lock.yaml",
+      "snapshotMatches": true,
+      "liveMatchesFrozenInput": true
+    },
+    {
+      "file": "audit-input/issue-LIFE-93.json",
+      "snapshotMatches": true
+    },
+    {
+      "file": "audit-input/issue-LIFE-93.md",
+      "snapshotMatches": true
+    },
+    {
+      "file": "audit-input/pruefauftrag-gemeinsam.md",
+      "snapshotMatches": true
+    }
+  ],
+  "rawFile": {
+    "bytes": 82693775,
+    "sha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+    "matchesArrivalHash": true,
+    "ignoredByGit": true,
+    "trackedRawDirectoryPaths": ["data/raw/.gitkeep"],
+    "scope": "Byte-Hash und Git-Ausschluss, keine CSV-Inhalte interpretiert."
+  },
+  "allChecksPassed": true,
+  "claimsNotProven": [
+    "Originaldownload-Authentizität",
+    "tatsächliche vollständige Blindheit",
+    "Validität",
+    "Neutralität",
+    "Reproduzierbarkeit einer noch nicht vorhandenen ESS-Pipeline"
+  ]
+}

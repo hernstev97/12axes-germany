@@ -1,0 +1,23 @@
+{
+  "kind": "new-technical-run",
+  "startedAtUtc": "2026-10-03T00:40:19.718951+00:00",
+  "endedAtUtc": "2026-10-03T00:40:28.003849+00:00",
+  "command": ["pnpm", "check"],
+  "exitCode": 0,
+  "toolVersions": {
+    "node": "v24.21.0",
+    "pnpm": "11.23.0",
+    "python": "Python 3.14.7",
+    "uv": "uv 0.12.20 (2274b80d6 2026-09-28 x86_64-unknown-linux-gnu)"
+  },
+  "inputManifest": "reports/audit-recherche/technischer-pruefstand.json",
+  "inputManifestSha256": "6c8b1741464657bd6091529db4fe82a9b0f73c474b08205a6dd49c7aac3f481b",
+  "logPath": "reports/audit-recherche/pnpm-check.log",
+  "logSha256": "220e4699ac09199ea0c8b5f243ee60d6ffa82ac0b997c15c2c0fd94d301b6387",
+  "gitDiffCheck": {
+    "command": ["git", "diff", "--check"],
+    "exitCode": 0,
+    "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scope": "Format, Typecheck, zwei bestehende UI-Tests, Angular-Build und Diff-Whitespace; keine wissenschaftliche Prüfung, kein CodeRabbit-/Browserlauf; historische Runs nicht rückwirkend bestätigt."
+}

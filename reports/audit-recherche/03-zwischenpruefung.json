@@ -1,0 +1,169 @@
+{
+  "kind": "audit-integrity-check",
+  "phase": "eingang",
+  "performedAtUtc": "2026-10-03T00:21:58.865181+00:00",
+  "scriptSha256": "b7c58eb63efb2ccff196b5c63a835170e7e9918ab8353ae8d9188fd06aec5344",
+  "checks": [
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": ".coderabbit.yaml",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/project.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/pruefregeln.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/analyseplan.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/belegregister.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/datenlage.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/lizenzen.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/quellen.json",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/entscheidungen.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/ki-protokoll.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/reviews/README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "pipeline/README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "model/README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "reports/README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "reports/phasen/00-recherche-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "reports/phasen/00-dateieingang-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "reports/phasen/00-recherche-2026-10-03-stand.json",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/validation.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/design.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/assets.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": ".gitignore",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": ".github/workflows/ci.yml",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "pnpm-lock.yaml",
+      "passed": true
+    },
+    {
+      "name": "unveränderter Issue-/Erstauftrag",
+      "file": "issue-LIFE-93.json",
+      "passed": true
+    },
+    {
+      "name": "unveränderter Issue-/Erstauftrag",
+      "file": "issue-LIFE-93.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderter Issue-/Erstauftrag",
+      "file": "pruefauftrag-gemeinsam.md",
+      "passed": true
+    },
+    {
+      "name": "Rohdatei unverändert",
+      "file": "data/raw/ess11-ed4.2/ESS11e04_2.csv",
+      "passed": true
+    },
+    {
+      "name": "Rohdatei von Git ausgeschlossen",
+      "passed": true
+    },
+    {
+      "name": "Keine Roh-/Zwischendaten getrackt",
+      "passed": true,
+      "trackedPaths": ["data/raw/.gitkeep"]
+    }
+  ],
+  "allChecksPassed": true,
+  "scope": "Dateihashes, Protokollvollständigkeit und Git-Ausschluss; keine inhaltliche Prüfung, Validitäts- oder Neutralitätsbestätigung."
+}

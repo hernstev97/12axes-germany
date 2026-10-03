@@ -1,0 +1,204 @@
+{
+  "catalogVersion": "0.2",
+  "accessedOn": "2026-10-03",
+  "independentVerification": "Partielles KI-Audit durch getrennte Codex-Subagents; Umfang/Zugang je Bericht. Kein anderer Modellfamiliennachweis, keine empirische Validierung.",
+  "sources": [
+    {
+      "id": "ESS-DISCLAIMER",
+      "title": "ESS Disclaimer and Conditions of use",
+      "url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "inspection": "HTML live abgerufen; Bedingungen und Zitationsabschnitt gelesen. HTML wegen dynamischer Navigation nicht als unveränderliches Dokument behandelt."
+    },
+    {
+      "id": "CC-BY-NC-SA-4",
+      "title": "CC BY-NC-SA 4.0 International Legal Code",
+      "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en",
+      "inspection": "Insbesondere Definition NonCommercial, §§ 2–4 gelesen."
+    },
+    {
+      "id": "CC-BY-SA-4",
+      "title": "CC BY-SA 4.0 International Legal Code",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+      "inspection": "Insbesondere §§ 2–3 gelesen."
+    },
+    {
+      "id": "ESS11-STUDY",
+      "title": "ESS round 11 - 2023. Social inequalities in health, Gender in contemporary Europe",
+      "url": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+      "doi": "10.21338/ess11-2023",
+      "inspection": "Live im T3-Browser: Dokumentlinks, Universe und Deutschland-Länderangaben einschließlich Stichprobendesign. Keine Rohdaten."
+    },
+    {
+      "id": "ESS11-DATA",
+      "title": "ESS11 - integrated file, edition 4.2",
+      "url": "https://ess.sikt.no/en/datafile/242aaa39-3bbb-40f5-98bf-bfb1ce53d8ef",
+      "doi": "10.21338/ess11e04_2",
+      "edition": "4.2",
+      "publishedOn": "2026-07-02",
+      "inspection": "Live im T3-Browser: Dateititel, Download/Login-Voraussetzung, Conditions-of-Use-Link und Versionshinweise. Kein Datendownload und keine Analysis-Ansicht."
+    },
+    {
+      "id": "ESS12-RELEASE",
+      "title": "Initial Round 12 data release scheduled for early 2027",
+      "url": "https://www.europeansocialsurvey.org/news/article/initial-round-12-data-release-scheduled-early-2027",
+      "publishedOn": "2026-09-30",
+      "inspection": "Live HTML abgerufen; Ankündigung gelesen. Geplanter Termin, keine tatsächlich freigegebene Datei."
+    },
+    {
+      "id": "ESS11-DE-QUESTIONNAIRE",
+      "title": "ESS11 Questionnaires DE",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "pages": 100,
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "inspection": "Vom ESS-Portal verlinkt, PDF abgerufen. S. 7–8 einschließlich B13/B14 gerendert und visuell gelesen. Weitere Seiten nur zur Orientierung durchsucht; keine vollständige Itemprüfung."
+    },
+    {
+      "id": "ESS11-DE-SHOWCARDS",
+      "title": "ESS11 Showcards DE",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+      "pages": 100,
+      "bytes": 2210799,
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "inspection": "Vom ESS-Portal verlinkt, PDF abgerufen. Titelblatt visuell bestätigt: Listenheft Deutschland, ESS Runde 11, 2023. Kartenprüfung ausstehend."
+    },
+    {
+      "id": "ESS-WEIGHTS",
+      "title": "Guide to Using Weights and Sample Design Indicators with ESS Data",
+      "author": "Olena Kaminska",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/methodology/ESS_weighting_data_1_2.pdf",
+      "edition": "1.2",
+      "publishedOn": "2023-07-06",
+      "pages": 15,
+      "bytes": 200908,
+      "sha256": "6b9c04b70b8f231de1b9040e4afcfc9387fc95e4a1d15ec0496aa7638f8528e5",
+      "inspection": "Portal-Link V1.2 statt zuerst gefundenem V1.1. Abschnitte 3 und 4 textuell gelesen; PDF-S. 6 und 8 visuell bestätigt. Design-Codebeispiele noch nicht ausgeführt."
+    },
+    {
+      "id": "ESS11-COUNTRY",
+      "title": "ESS11 Country Documentation Report",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_country_documentation_report_e04.pdf",
+      "edition": "4.0",
+      "pages": 293,
+      "bytes": 2510948,
+      "sha256": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+      "inspection": "Deutschland S. 79–81, 83, 86–88 textuell gelesen; S. 79, 80, 86 und 88 visuell bestätigt. Kein vollständiger Bericht-Review."
+    },
+    {
+      "id": "ESS11-PARTIES",
+      "title": "ESS11 Appendix A3 Political Parties",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a3_e04.pdf",
+      "edition": "4.0",
+      "pages": 138,
+      "bytes": 5255341,
+      "sha256": "2fae36160109a35614b327eb3d25f80eda36a8085a3a51fb829069f206784992",
+      "inspection": "Datei als mögliche Kodierungsquelle abgerufen. Automatische Orientierung gab auch andere Länder aus. Nicht vollständig geprüft; Beschreibungen werden nicht als Parteipositionen übernommen."
+    },
+    {
+      "id": "ESS11-CODEBOOK",
+      "title": "ESS11 Appendix A7 Codebook",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "edition": "4.1",
+      "pages": 552,
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "inspection": "Verlinkte Ausgabe 4.1 trotz Hauptdatei 4.2. Orientierende Variablensuche; PDF-S. 21–22 visuell bestätigt. Vollständiges Mapping/Importprüfung weiterhin ausstehend. PDF-Seiten liegen um 1 über den gedruckten Codebook-Seiten."
+    },
+    {
+      "id": "CODERABBIT-ROUTING",
+      "title": "Why users shouldn't choose their own LLM models",
+      "url": "https://www.coderabbit.ai/blog/why-users-shouldnt-choose-their-own-llm-models-choice-is-not-always-good",
+      "inspection": "Anbieterbeschreibung zu dynamischer Modellwahl und Modellmischung gelesen. Keine Überprüfung eines Projekt-Review-Laufs."
+    },
+    {
+      "id": "FLORA-CURRAN-2004",
+      "title": "An empirical evaluation of alternative methods of estimation for confirmatory factor analysis with ordinal data",
+      "authors": "David B. Flora; Patrick J. Curran",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15598100/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3153362/",
+      "doi": "10.1037/1082-989X.9.4.466",
+      "inspection": "Abstract gelesen. Volltext später durch Browserprüfung/reCAPTCHA nicht zuverlässig abrufbar; keine vollständige Methodenprüfung behauptet."
+    },
+    {
+      "id": "PUTNICK-BORNSTEIN-2016",
+      "title": "Measurement Invariance Conventions and Reporting: The State of the Art and Future Directions for Psychological Research",
+      "authors": "Diane L. Putnick; Marc H. Bornstein",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5145197/",
+      "doi": "10.1016/j.dr.2016.06.004",
+      "inspection": "Volltextabschnitte Testing Measurement Invariance, Configural/Metric/Scalar Invariance und Fit/Parameterization gelesen. Weitere darin zitierte Studien nicht als bereits geprüft behandelt."
+    },
+    {
+      "id": "MCNEISH-2018",
+      "title": "Thanks coefficient alpha, we'll take it from here",
+      "author": "Daniel McNeish",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28557467/",
+      "doi": "10.1037/met0000144",
+      "inspection": "Abstract gelesen; vollständige Verfahren und Softwareanhang noch zu prüfen."
+    },
+    {
+      "id": "RAYKOV-MARCOULIDES-2019",
+      "title": "Thanks Coefficient Alpha, We Still Need You!",
+      "authors": "Tenko Raykov; George A. Marcoulides",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6318747/",
+      "doi": "10.1177/0013164417725127",
+      "inspection": "Abstract und Anfang des Volltexts einschließlich Misunderstandings of Coefficient Alpha and Reliability gelesen. Heft 2019, online 2017. Gegenposition erfasst, noch kein Vergleich aller Bedingungen."
+    },
+    {
+      "id": "WU-ESTABROOK-2016",
+      "title": "Identification of Confirmatory Factor Analysis Models of Different Levels of Invariance for Ordered Categorical Outcomes",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5458787/",
+      "doi": "10.1007/s11336-016-9506-0",
+      "inspection": "Reviewer 3: Originalvolltext, Abstract, Einleitung, Abschnitt 2.2 und 10. Partielle Invarianz nicht vollständig gelöst.",
+      "addedDuring": "KI-Audit 2026-10-03",
+      "inspectionReport": "../reports/audit-recherche/reviewer-3-statistik.md"
+    },
+    {
+      "id": "TSE-LAI-ZHANG-2024",
+      "title": "Does strict invariance matter? Valid group mean comparisons with ordered-categorical items",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11133089/",
+      "doi": "10.3758/s13428-023-02247-6",
+      "inspection": "Reviewer 3: Originalvolltext, Observed mean comparison, Factor mean comparison, Simulation und Grenzen. Online 2023, Heft 2024. Volltitel am Original-HTML abgeglichen.",
+      "addedDuring": "KI-Audit 2026-10-03",
+      "inspectionReport": "../reports/audit-recherche/reviewer-3-statistik.md"
+    },
+    {
+      "id": "GREEN-YANG-2009",
+      "title": "Reliability of summed item scores using structural equation modeling: An alternative to coefficient alpha",
+      "url": "https://www.cambridge.org/core/journals/psychometrika/article/abs/reliability-of-summed-item-scores-using-structural-equation-modeling-an-alternative-to-coefficient-alpha/ADD66755CCF95B949428F8DB97AFB1B0",
+      "doi": "10.1007/s11336-008-9099-3",
+      "inspection": "Reviewer 3: nur Abstract/bibliografische Angaben. Volltextverfahren und persönliche Intervalle ungeprüft.",
+      "addedDuring": "KI-Audit 2026-10-03",
+      "inspectionReport": "../reports/audit-recherche/reviewer-3-statistik.md"
+    },
+    {
+      "id": "SCHWARTZ-ESS-VALUES",
+      "title": "A Proposal for Measuring Value Orientations across Nations",
+      "author": "Shalom H. Schwartz",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/ESS_core_questionnaire_human_values.pdf",
+      "bytes": 411213,
+      "sha256": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+      "inspection": "Reviewer 2: The Nature of Values; Correcting for Response Tendencies; Estimation of value orientation scores. PDF-S. 4–5, 17, 30; S. 17/30 visuell. Veröffentlichungs-/Revisionsstand der Kopie nicht gesichert; kein voller Validierungsreview.",
+      "addedDuring": "KI-Audit 2026-10-03",
+      "inspectionReport": "../reports/audit-recherche/reviewer-2-politikwissenschaft.md",
+      "pages": 61
+    },
+    {
+      "id": "ALEXANDER-ETAL-2026",
+      "title": "Measuring sexism and gender attitudes in Round 11 of the European Social Survey",
+      "url": "https://www.cambridge.org/core/journals/european-political-science/article/measuring-sexism-and-gender-attitudes-in-round-11-of-the-european-social-survey/3D2ABF95726D5D098B539EBEB25A7806",
+      "doi": "10.1017/S1682098326100435",
+      "publishedOn": "2026-04-23",
+      "inspection": "Reviewer 2: Abstract, The need for measures, Challenges in measuring gender attitudes and sexism. Entwicklungsbeitrag, kein selbst geprüfter Länder-/Webvalidierungsnachweis.",
+      "addedDuring": "KI-Audit 2026-10-03",
+      "inspectionReport": "../reports/audit-recherche/reviewer-2-politikwissenschaft.md"
+    }
+  ],
+  "auditReports": [
+    "../reports/audit-recherche/reviewer-1-quellen.md",
+    "../reports/audit-recherche/reviewer-2-politikwissenschaft.md",
+    "../reports/audit-recherche/reviewer-3-statistik.md",
+    "../reports/audit-recherche/reviewer-4-neutralitaet.md",
+    "../reports/audit-recherche/reviewer-5-reproduzierbarkeit.md"
+  ],
+  "datedHtmlEvidence": "../reports/audit-recherche/quellenbelege.json"
+}

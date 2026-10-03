@@ -1,0 +1,442 @@
+{
+  "kind": "audit-integrity-check",
+  "phase": "abschluss",
+  "performedAtUtc": "2026-10-03T00:55:50.451743+00:00",
+  "scriptSha256": "37e9ea07411fbad123a80da6ab227e032e27f866e95553535b3389c62a2c5505",
+  "checks": [
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": ".coderabbit.yaml",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/project.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/pruefregeln.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/analyseplan.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/belegregister.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/datenlage.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/lizenzen.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/quellen.json",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/entscheidungen.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/ki-protokoll.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/reviews/README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "pipeline/README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "model/README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "reports/README.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "reports/phasen/00-recherche-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "reports/phasen/00-dateieingang-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "reports/phasen/00-recherche-2026-10-03-stand.json",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/validation.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/design.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "docs/assets.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": ".gitignore",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": ".github/workflows/ci.yml",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "name": "unveränderte Ausgangsfassung",
+      "file": "pnpm-lock.yaml",
+      "passed": true
+    },
+    {
+      "name": "unveränderter Issue-/Erstauftrag",
+      "file": "issue-LIFE-93.json",
+      "passed": true
+    },
+    {
+      "name": "unveränderter Issue-/Erstauftrag",
+      "file": "issue-LIFE-93.md",
+      "passed": true
+    },
+    {
+      "name": "unveränderter Issue-/Erstauftrag",
+      "file": "pruefauftrag-gemeinsam.md",
+      "passed": true
+    },
+    {
+      "name": "Rohdatei unverändert",
+      "file": "data/raw/ess11-ed4.2/ESS11e04_2.csv",
+      "passed": true
+    },
+    {
+      "name": "Rohdatei von Git ausgeschlossen",
+      "passed": true
+    },
+    {
+      "name": "Keine Roh-/Zwischendaten getrackt",
+      "passed": true,
+      "trackedPaths": ["data/raw/.gitkeep"]
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": ".coderabbit.yaml",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "README.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/project.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/pruefregeln.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/analyseplan.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/belegregister.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/datenlage.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/lizenzen.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/quellen.json",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/entscheidungen.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/ki-protokoll.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/reviews/README.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "pipeline/README.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "model/README.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "reports/README.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "reports/phasen/00-recherche-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "reports/phasen/00-dateieingang-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "reports/phasen/00-recherche-2026-10-03-stand.json",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/validation.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/design.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/assets.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": ".gitignore",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": ".github/workflows/ci.yml",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "pnpm-lock.yaml",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": "docs/analyseanforderungen.md",
+      "passed": true
+    },
+    {
+      "name": "Korrigierter Forschungsstand",
+      "file": ".prettierignore",
+      "passed": true
+    },
+    {
+      "name": "Unveränderter unabhängiger Erstbericht",
+      "file": "reports/audit-recherche/reviewer-1-quellen.md",
+      "passed": true
+    },
+    {
+      "name": "Unveränderter unabhängiger Erstbericht",
+      "file": "reports/audit-recherche/reviewer-2-politikwissenschaft.md",
+      "passed": true
+    },
+    {
+      "name": "Unveränderter unabhängiger Erstbericht",
+      "file": "reports/audit-recherche/reviewer-3-statistik.md",
+      "passed": true
+    },
+    {
+      "name": "Unveränderter unabhängiger Erstbericht",
+      "file": "reports/audit-recherche/reviewer-4-neutralitaet.md",
+      "passed": true
+    },
+    {
+      "name": "Unveränderter unabhängiger Erstbericht",
+      "file": "reports/audit-recherche/reviewer-5-reproduzierbarkeit.md",
+      "passed": true
+    },
+    {
+      "name": "Eindeutige Finding-IDs",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R1-F01",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R2-F01",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R2-F02",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R2-F03",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R2-F04",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R3-F01",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R3-F02",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R3-F03",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R3-F04",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R4-F01",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R4-F02",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R5-F01",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R5-F02",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "R5-F03",
+      "passed": true
+    },
+    {
+      "name": "Dokumentierte Autorentscheidung",
+      "finding": "A-F01",
+      "passed": true
+    },
+    {
+      "name": "Erstbericht vorhanden",
+      "reviewer": 1,
+      "passed": true
+    },
+    {
+      "name": "Erstbericht vorhanden",
+      "reviewer": 2,
+      "passed": true
+    },
+    {
+      "name": "Erstbericht vorhanden",
+      "reviewer": 3,
+      "passed": true
+    },
+    {
+      "name": "Erstbericht vorhanden",
+      "reviewer": 4,
+      "passed": true
+    },
+    {
+      "name": "Erstbericht vorhanden",
+      "reviewer": 5,
+      "passed": true
+    },
+    {
+      "name": "Jurorbericht vorhanden",
+      "passed": true
+    }
+  ],
+  "allChecksPassed": true,
+  "scope": "Dateihashes, Protokollvollständigkeit und Git-Ausschluss; keine inhaltliche Prüfung, Validitäts- oder Neutralitätsbestätigung."
+}

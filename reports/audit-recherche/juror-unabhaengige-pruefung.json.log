@@ -1,0 +1,86 @@
+[
+  {
+    "name": "04 script hash",
+    "passed": true
+  },
+  {
+    "name": "05 script hash",
+    "passed": true
+  },
+  {
+    "name": "technical manifest",
+    "passed": true
+  },
+  {
+    "name": "technical log",
+    "passed": true
+  },
+  {
+    "name": "diff log",
+    "passed": true
+  },
+  {
+    "name": "schema hash",
+    "passed": true
+  },
+  {
+    "name": "Source evidence ESS11-DATA",
+    "passed": true
+  },
+  {
+    "name": "Source evidence ESS-DISCLAIMER",
+    "passed": true
+  },
+  {
+    "name": "historical artifact outputs/browser-checks.json",
+    "passed": true
+  },
+  {
+    "name": "historical artifact outputs/desktop-hero.png",
+    "passed": true
+  },
+  {
+    "name": "historical artifact outputs/desktop.png",
+    "passed": true
+  },
+  {
+    "name": "historical artifact outputs/initial-mobile.png",
+    "passed": true
+  },
+  {
+    "name": "historical artifact outputs/mobile.png",
+    "passed": true
+  },
+  {
+    "name": "historical artifact outputs/small-mobile.png",
+    "passed": true
+  },
+  {
+    "name": "historical artifact outputs/tablet.png",
+    "passed": true
+  },
+  {
+    "name": "technical source hashes excluding data placeholder",
+    "passed": true
+  },
+  {
+    "name": "web diff against foundation empty",
+    "passed": true
+  },
+  {
+    "name": "no local research tags",
+    "passed": true
+  },
+  {
+    "name": "no final artifacts",
+    "passed": true
+  },
+  {
+    "name": "synthetic rerun matches",
+    "passed": true
+  },
+  {
+    "name": "synthetic script hash",
+    "passed": true
+  }
+]

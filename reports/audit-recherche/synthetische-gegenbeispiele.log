@@ -1,0 +1,4 @@
+Missing-Beispiel: {'vollstaendiger_score': 0.25, 'teil_score': 0.5, 'teil_score_vollnorm': 0.25, 'teil_score_maskennorm': 0.75}
+Dominanz-Beispiel: {'voll_scores': [0.25, 0.5, 0.75], 'ohne_variables_item': [0.5, 0.5, 0.5]}
+Differenzunsicherheit mit gleichen marginalen SE: {'0.9': 0.044721359549995815, '-0.9': 0.1949358868961793}
+Spiegelung fuer feste Missing-Maske: {'faelle': 3, 'max_fehlbetrag': 1.1102230246251565e-16}

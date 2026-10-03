@@ -1,0 +1,694 @@
+{
+  "kind": "additional-final-audit-integrity-check",
+  "performedAtUtc": "2026-10-03T00:54:30.026068+00:00",
+  "command": ["python", "reports/audit-recherche/pruefe-abschluss.py"],
+  "scriptSha256": "92f41d9d58571035cdc4eb6742a3787e1c3e6b0eb731ccd860b4ab72936f8512",
+  "checks": [
+    {
+      "name": "Geschützter Bezug unverändert",
+      "file": "ausgangsmanifest.json",
+      "passed": true
+    },
+    {
+      "name": "Geschützter Bezug unverändert",
+      "file": "korrekturmanifest.json",
+      "passed": true
+    },
+    {
+      "name": "Geschützter Bezug unverändert",
+      "file": "finding-entscheidungen.json",
+      "passed": true
+    },
+    {
+      "name": "Geschützter Bezug unverändert",
+      "file": "juror-6.md",
+      "passed": true
+    },
+    {
+      "name": "Geschützter Bezug unverändert",
+      "file": "04-korrekturpruefung.json",
+      "passed": true
+    },
+    {
+      "name": "Geschützter Bezug unverändert",
+      "file": "technische-pruefung.json",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/.coderabbit.yaml",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/project.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/pruefregeln.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/analyseplan.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/belegregister.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/datenlage.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/lizenzen.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/quellen.json",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/entscheidungen.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/ki-protokoll.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/reviews/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/pipeline/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/model/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/reports/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/reports/phasen/00-recherche-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/reports/phasen/00-dateieingang-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/reports/phasen/00-recherche-2026-10-03-stand.json",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/validation.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/design.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/docs/assets.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/.gitignore",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/.github/workflows/ci.yml",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/package.json",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "ausgangsfassung/pnpm-lock.yaml",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/.coderabbit.yaml",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/project.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/pruefregeln.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/analyseplan.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/belegregister.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/datenlage.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/lizenzen.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/quellen.json",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/entscheidungen.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/ki-protokoll.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/reviews/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/pipeline/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/model/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/reports/README.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/reports/phasen/00-recherche-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/reports/phasen/00-dateieingang-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/reports/phasen/00-recherche-2026-10-03-stand.json",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/validation.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/design.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/assets.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/.gitignore",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/.github/workflows/ci.yml",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/package.json",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/pnpm-lock.yaml",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/docs/analyseanforderungen.md",
+      "passed": true
+    },
+    {
+      "name": "Archivhash und Bytezahl",
+      "file": "korrekturfassung/.prettierignore",
+      "passed": true
+    },
+    {
+      "name": "Sechs dokumentierte abgeschlossene Subagents",
+      "passed": true
+    },
+    {
+      "name": "Abgeschlossener Bericht unverändert",
+      "agent": "/root/reviewer_1_quellen",
+      "passed": true
+    },
+    {
+      "name": "Abgeschlossener Bericht unverändert",
+      "agent": "/root/reviewer_2_politikwissenschaft",
+      "passed": true
+    },
+    {
+      "name": "Abgeschlossener Bericht unverändert",
+      "agent": "/root/reviewer_3_statistik",
+      "passed": true
+    },
+    {
+      "name": "Abgeschlossener Bericht unverändert",
+      "agent": "/root/reviewer_4_neutralitaet",
+      "passed": true
+    },
+    {
+      "name": "Abgeschlossener Bericht unverändert",
+      "agent": "/root/reviewer_5_reproduzierbarkeit",
+      "passed": true
+    },
+    {
+      "name": "Abgeschlossener Bericht unverändert",
+      "agent": "/root/juror_6",
+      "passed": true
+    },
+    {
+      "name": "Unveränderte Kopie eines Jurorbelegs",
+      "file": "reports/audit-recherche/juror-unabhaengige-pruefung.json",
+      "passed": true
+    },
+    {
+      "name": "Unveränderte Kopie eines Jurorbelegs",
+      "file": "reports/audit-recherche/juror-technische-pruefung.json",
+      "passed": true
+    },
+    {
+      "name": "Unveränderte Kopie eines Jurorbelegs",
+      "file": "reports/audit-recherche/juror-pnpm-check.log",
+      "passed": true
+    },
+    {
+      "name": "Tatsächlicher erfolgreicher Lauf und Loghash",
+      "file": "technische-pruefung.json",
+      "passed": true
+    },
+    {
+      "name": "Eingabemanifest zum technischen Lauf",
+      "file": "technische-pruefung.json",
+      "passed": true
+    },
+    {
+      "name": "Tatsächlicher erfolgreicher Lauf und Loghash",
+      "file": "technische-pruefung-final.json",
+      "passed": true
+    },
+    {
+      "name": "Eingabemanifest zum technischen Lauf",
+      "file": "technische-pruefung-final.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": ".coderabbit.yaml",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": ".editorconfig",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": ".github/workflows/ci.yml",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": ".gitignore",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": ".node-version",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": ".prettierignore",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": ".prettierrc.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "AGENTS.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "README.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "data/raw/.gitkeep",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/analyseanforderungen.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/analyseplan.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/assets.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/belegregister.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/datenlage.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/design.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/entscheidungen.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/ki-protokoll.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/lizenzen.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/project.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/pruefregeln.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/quellen.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/reviews/README.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "docs/validation.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "model/README.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "pipeline/README.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "pnpm-lock.yaml",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "pnpm-workspace.yaml",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "reports/README.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "reports/phasen/00-dateieingang-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "reports/phasen/00-recherche-2026-10-03-stand.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "reports/phasen/00-recherche-2026-10-03.md",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "skills.yaml",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/.gitignore",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/.vscode/extensions.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/angular.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/package.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/public/art/wanderer-1600.webp",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/public/art/wanderer-480.webp",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/public/art/wanderer-800.webp",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/public/favicon.svg",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/public/fonts/licenses/fraunces.txt",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/public/fonts/licenses/newsreader.txt",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/app.config.ts",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/app.html",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/app.routes.ts",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/app.scss",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/app.spec.ts",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/app.ts",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/pages/home/home.html",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/pages/home/home.scss",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/pages/home/home.ts",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/pages/not-found/not-found.ts",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/pages/project/project.html",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/pages/project/project.scss",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/app/pages/project/project.ts",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/index.html",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/main.ts",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/src/styles.scss",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/tsconfig.app.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/tsconfig.json",
+      "passed": true
+    },
+    {
+      "name": "Aktiver öffentlicher Prüfstand unverändert",
+      "file": "web/tsconfig.spec.json",
+      "passed": true
+    }
+  ],
+  "allChecksPassed": true,
+  "scope": "Geschützte Archive, Berichte, tatsächliche technische Läufe und öffentlicher Prüfstand; keine wissenschaftliche Prüfung."
+}

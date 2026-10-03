@@ -1,0 +1,151 @@
+{
+  "kind": "performed-correction-checks",
+  "startedAtUtc": "2026-10-03T00:38:17.271505+00:00",
+  "endedAtUtc": "2026-10-03T00:38:17.579628+00:00",
+  "scriptSha256": "39b69c90b74e8afd6565c448bd83ced023f1b1a1f5b358329a2c68c0ec18c91b",
+  "versions": {
+    "python": "Python 3.14.7",
+    "jsonschema": "4.25.1",
+    "PyYAML": "6.0.3"
+  },
+  "schema": {
+    "url": "https://coderabbit.ai/integrations/schema.v2.json",
+    "localPath": "outputs/audit-recherche/coderabbit-schema-v2.json",
+    "sha256": "b16cfbfb90e8030b6ba1c16a166ec8ed4d7e1a7841116dc014d2bd3fd9f5a240",
+    "configurationSha256": "daad16ae32bd45ec7dc05ebd8804d3f3b6b0577ca69575fa6a571c36fa662444"
+  },
+  "sourceCount": 22,
+  "claimCount": 20,
+  "reviewerFindingCount": 14,
+  "decisionCount": 15,
+  "synthetic": {
+    "scriptSha256": "4b104202c5095dd3c95c5cdf09c9a371be0cb9ae2b9bf54a9f2c193729291d6c",
+    "logSha256": "3968528d5e643de4f395c9a72db583ea7afa075251c71bcac5862672ada3a1fc"
+  },
+  "checks": [
+    {
+      "name": "Unveränderter Erstbericht reviewer_1_quellen",
+      "passed": true,
+      "scope": "Dateiintegrität"
+    },
+    {
+      "name": "Unveränderter Erstbericht reviewer_2_politikwissenschaft",
+      "passed": true,
+      "scope": "Dateiintegrität"
+    },
+    {
+      "name": "Unveränderter Erstbericht reviewer_3_statistik",
+      "passed": true,
+      "scope": "Dateiintegrität"
+    },
+    {
+      "name": "Unveränderter Erstbericht reviewer_4_neutralitaet",
+      "passed": true,
+      "scope": "Dateiintegrität"
+    },
+    {
+      "name": "Unveränderter Erstbericht reviewer_5_reproduzierbarkeit",
+      "passed": true,
+      "scope": "Dateiintegrität"
+    },
+    {
+      "name": "Alle Erstfindings einzeln entschieden",
+      "passed": true,
+      "scope": "Protokollvollständigkeit, keine inhaltliche Richtigkeitsprüfung"
+    },
+    {
+      "name": "Versionswarnung präzisiert",
+      "passed": true,
+      "scope": "Formaler Textabgleich nach Originallektüre"
+    },
+    {
+      "name": "Parteibezug konsistent",
+      "passed": true,
+      "scope": "Formaler Regelabgleich; noch keine Item-Erstbewertung"
+    },
+    {
+      "name": "Persönliche Statistik-Abnahme nicht neu eingeführt",
+      "passed": true,
+      "scope": "Abgrenzung gegen Phase 0, keine Erfüllung späterer Voraussetzungen"
+    },
+    {
+      "name": "Spätere Anforderungen als offen gekennzeichnet",
+      "passed": true,
+      "scope": "Statuswortlaut, keine empirische Prüfung"
+    },
+    {
+      "name": "Keine finale Auswahl- und Analyseartefakte",
+      "passed": true,
+      "scope": "Tatsächlich noch fehlende Artefakte"
+    },
+    {
+      "name": "Keine Präregistrierungs-/Modell-Tags",
+      "passed": true,
+      "scope": "Lokale Tagliste, keine allgemeine Chronologiegarantie"
+    },
+    {
+      "name": "Quellen-IDs eindeutig",
+      "passed": true,
+      "scope": "Registerstruktur"
+    },
+    {
+      "name": "Neue tragende Quellenbefunde registriert",
+      "passed": true,
+      "scope": "Belegstruktur, keine Quellenvalidierung"
+    },
+    {
+      "name": "Lokaler datierter Quellenbeleg ESS11-DATA",
+      "passed": true,
+      "scope": "Hash des tatsächlichen aktuellen Abrufs, kein historischer Rückbeweis"
+    },
+    {
+      "name": "Lokaler datierter Quellenbeleg ESS-DISCLAIMER",
+      "passed": true,
+      "scope": "Hash des tatsächlichen aktuellen Abrufs, kein historischer Rückbeweis"
+    },
+    {
+      "name": "Gesicherte Versionsstelle trägt die engere Warnung",
+      "passed": true,
+      "scope": "Versionshinweisinhaltsprüfung; fehlender Eintrag beweist keine Dateigleichheit"
+    },
+    {
+      "name": "CodeRabbit-Konfiguration gegen aktuelles Originalschema",
+      "passed": true,
+      "scope": "Technische Schema-Gültigkeit, kein CodeRabbit-Lauf oder Methodenreview"
+    },
+    {
+      "name": "Teilantwort-Gegenrechnung wiederholt",
+      "passed": true,
+      "scope": "Erfundene Werte; keine Normmethode oder ESS-Prüfung validiert"
+    },
+    {
+      "name": "Dominanz-Gegenrechnung wiederholt",
+      "passed": true,
+      "scope": "Erfundene Werte; kein tatsächliches dominantes ESS-Item festgestellt"
+    },
+    {
+      "name": "Kovarianz-Gegenrechnung wiederholt",
+      "passed": true,
+      "scope": "Erfundene Kovarianzen; kein Rangverfahren validiert"
+    },
+    {
+      "name": "Algebraische Spiegelung mit festen Missing-Masken",
+      "passed": true,
+      "scope": "Drei synthetische Fälle; keine politische Gegenhaltung oder Perzentilsymmetrie bewiesen"
+    },
+    {
+      "name": "Lokale Markdown-Ziele",
+      "passed": true,
+      "scope": "Dateiexistenz, keine externe Linkprüfung"
+    }
+  ],
+  "missingLinks": [],
+  "allChecksPassed": true,
+  "notPerformed": [
+    "vollständiges Inventar/Themen-/Erwartungsmodell",
+    "ESS-Import, Split, EFA/CFA, Invarianz und Reliabilität",
+    "persönliche Messintervalle, Norm-/Rangvalidierung",
+    "andere Modellfamilie, konkrete Item-Erstbewertungen",
+    "CodeRabbit-Lauf, menschliche Verständlichkeit"
+  ]
+}

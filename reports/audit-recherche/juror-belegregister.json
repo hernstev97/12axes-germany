@@ -1,0 +1,25 @@
+{
+  "kind": "unchanged-juror-evidence-copies",
+  "copiedAtUtc": "2026-10-03T00:53:04.641434+00:00",
+  "files": [
+    {
+      "sourcePath": "/tmp/life93-audit-juror-6/independent-checks.json",
+      "preservedCopy": "reports/audit-recherche/juror-unabhaengige-pruefung.json.log",
+      "sha256": "2cd326415c1927ff642800d2b0db4f706d13ef8b4ceef8bc4ed3d1db261eec89",
+      "bytes": 1523
+    },
+    {
+      "sourcePath": "/tmp/life93-audit-juror-6/technical-check.json",
+      "preservedCopy": "reports/audit-recherche/juror-technische-pruefung.json.log",
+      "sha256": "d43b1bd66e470dc46d99a09d68c38ef6f198ad4c044bcfa8c7078e9c2ad5f570",
+      "bytes": 309
+    },
+    {
+      "sourcePath": "/tmp/life93-audit-juror-6/pnpm-check.log",
+      "preservedCopy": "reports/audit-recherche/juror-pnpm-check.log",
+      "sha256": "3e104b20ad21716225aa3f15f9d0a6429585fd8f89e5225b99536a8883aa4732",
+      "bytes": 351
+    }
+  ],
+  "scope": "Unveränderte Kopien tatsächlich vorhandener Jurorbelege; keine nachträgliche Ausführung. JSON-Inhalte werden als .json.log erhalten, damit der Formatierer ihre Bytes nicht verändert."
+}

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+.angular/
+.cache/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# ESS-Rohdaten und lokale Arbeitsdateien bleiben außerhalb von Git.
+data/raw/**
+!data/raw/.gitkeep
+data/local/
+outputs/
