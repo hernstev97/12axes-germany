@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T13:25:44.766382+00:00",
+  "updatedAtUtc": "2026-10-03T13:36:18.163962+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2965,20 +2965,30 @@
       "origin": "reports/loop/reviews/METHODOLOGY-PAGE-001-first.md",
       "severity": "gering",
       "decision": "angenommen",
-      "repairRounds": 0,
-      "status": "NICHT_GEPRÜFT",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
       "reason": "Public method page should directly link concrete draft plan/matrix",
-      "blocks": []
+      "blocks": [],
+      "correctionState": "Root verified bounded source-link correction; exact prior twelve first-review bytes retained in4e64f3f. Citation/documentation-only change needs no new overall scientific audit.",
+      "verification": {
+        "scope": "Root link/locator inspection, no fresh independent acceptance",
+        "report": "reports/loop/METHODOLOGY-PAGE-001-entscheidung.md"
+      }
     },
     {
       "id": "MP002",
       "origin": "reports/loop/reviews/METHODOLOGY-PAGE-001-first.md",
       "severity": "gering",
       "decision": "angenommen",
-      "repairRounds": 0,
-      "status": "NICHT_GEPRÜFT",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
       "reason": "More precise svyCprod source locator PDF101 instead100",
-      "blocks": []
+      "blocks": [],
+      "correctionState": "Root verified bounded source-link correction; exact prior twelve first-review bytes retained in4e64f3f. Citation/documentation-only change needs no new overall scientific audit.",
+      "verification": {
+        "scope": "Root link/locator inspection, no fresh independent acceptance",
+        "report": "reports/loop/METHODOLOGY-PAGE-001-entscheidung.md"
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

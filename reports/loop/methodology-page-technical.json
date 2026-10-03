@@ -1,0 +1,172 @@
+{
+  "scope": "Methodology document-page technical checks only, no research or release acceptance",
+  "firstVersionCommit": "4e64f3f99c3e170e224be4a89d8d627e500c257d",
+  "initialBrowserRuns": [
+    {
+      "atUtc": "2026-10-03T13:33:02.245Z",
+      "axeVersion": "4.13.0",
+      "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 1000,
+      "incomplete": [],
+      "overflow": false,
+      "title": "Methodik und Grenzen · 12 Axes Deutschland",
+      "violations": [],
+      "width": 1440
+    },
+    {
+      "atUtc": "2026-10-03T13:33:02.814Z",
+      "axeVersion": "4.13.0",
+      "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 768,
+      "incomplete": [],
+      "overflow": false,
+      "title": "Methodik und Grenzen · 12 Axes Deutschland",
+      "violations": [],
+      "width": 1024
+    },
+    {
+      "atUtc": "2026-10-03T13:33:03.379Z",
+      "axeVersion": "4.13.0",
+      "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 1024,
+      "incomplete": [],
+      "overflow": false,
+      "title": "Methodik und Grenzen · 12 Axes Deutschland",
+      "violations": [],
+      "width": 768
+    },
+    {
+      "atUtc": "2026-10-03T13:33:03.988Z",
+      "axeVersion": "4.13.0",
+      "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 844,
+      "incomplete": [],
+      "overflow": false,
+      "title": "Methodik und Grenzen · 12 Axes Deutschland",
+      "violations": [],
+      "width": 390
+    },
+    {
+      "atUtc": "2026-10-03T13:33:04.539Z",
+      "axeVersion": "4.13.0",
+      "font": "\"Libre Baskerville Variable\", \"Libre Baskerville\", Baskerville, Georgia, serif",
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 720,
+      "incomplete": [],
+      "overflow": true,
+      "title": "Methodik und Grenzen · 12 Axes Deutschland",
+      "violations": [],
+      "width": 320
+    }
+  ],
+  "finalBrowserRuns": [
+    {
+      "atUtc": "2026-10-03T13:34:54.538Z",
+      "axeVersion": "4.13.0",
+      "clientWidth": 1425,
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 1000,
+      "incomplete": [],
+      "newCopy": true,
+      "overflow": false,
+      "scrollWidth": 1425,
+      "violations": [],
+      "width": 1440
+    },
+    {
+      "atUtc": "2026-10-03T13:34:54.912Z",
+      "axeVersion": "4.13.0",
+      "clientWidth": 1009,
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 768,
+      "incomplete": [],
+      "newCopy": true,
+      "overflow": false,
+      "scrollWidth": 1009,
+      "violations": [],
+      "width": 1024
+    },
+    {
+      "atUtc": "2026-10-03T13:34:55.305Z",
+      "axeVersion": "4.13.0",
+      "clientWidth": 753,
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 1024,
+      "incomplete": [],
+      "newCopy": true,
+      "overflow": false,
+      "scrollWidth": 753,
+      "violations": [],
+      "width": 768
+    },
+    {
+      "atUtc": "2026-10-03T13:34:55.659Z",
+      "axeVersion": "4.13.0",
+      "clientWidth": 375,
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 844,
+      "incomplete": [],
+      "newCopy": true,
+      "overflow": false,
+      "scrollWidth": 375,
+      "violations": [],
+      "width": 390
+    },
+    {
+      "atUtc": "2026-10-03T13:34:55.989Z",
+      "axeVersion": "4.13.0",
+      "clientWidth": 305,
+      "fontLoaded": true,
+      "h1": 1,
+      "height": 720,
+      "incomplete": [],
+      "newCopy": true,
+      "overflow": false,
+      "scrollWidth": 305,
+      "violations": [],
+      "width": 320
+    }
+  ],
+  "failureAndCorrection": "320px overflow from long compound parent-leave label; replaced with same explanation in plain separated words. Initial failure retained; final actual clientWidth test passes.",
+  "screenshots": {
+    "desktop": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musfp24l-02177e5e.png",
+    "mobile": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musfp1uy-eaa6af5a.png",
+    "visuallyInspectedBy": "Root on3October2026, both final screenshots"
+  },
+  "navigation": {
+    "url": "/methodik#fragekontext",
+    "activeId": "fragekontext",
+    "observed": "3 October2026 around13:30UTC; exact action timestamp not separately recorded",
+    "documentHasFocus": false,
+    "scope": "Programmatic anchor focus observed in real bootstrapped browser; no visible keyboard-focus proof"
+  },
+  "tests": {
+    "check041": "exit1 30/31 PASS fragment focus assumption in unbootstrapped fixture",
+    "firstFix": "prod providers alone still failed before BootstrapListener initializes RouterScroller; failed log retained",
+    "boundedFixture": "app.spec uses actual appConfig providers; checks route/title/fragment URL, does not assert unavailable RouterScroller lifecycle; actual anchor focus separately observed in browser",
+    "check042": "exit0 all31 tests, build PASS before final wording-only overflow correction",
+    "check043": "exit0 all31 tests and productionbuild after final wording/record changes"
+  },
+  "limits": {
+    "browser200percentZoom": "NOT_VERIFIED",
+    "visibleKeyboardFocus": "NOT_VERIFIED",
+    "humanComprehension": "PENDING",
+    "empiricalValidation": "NOT_PASSED",
+    "fullWCAG": "NOT_PASSED"
+  },
+  "axeServer": "Root-only node_modules/axe-core4327 session43405 stopped exit0",
+  "finalHtmlSha256": "9bc197a2e90543a3fd355eacc8066e1bfd229f6ab32287577e56558bf0b434bf"
+}

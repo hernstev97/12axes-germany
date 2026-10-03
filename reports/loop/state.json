@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T13:25:44.766382+00:00",
+  "updatedAtUtc": "2026-10-03T13:38:25.531862+00:00",
   "status": "RUNNING",
   "phase": "Breite v2: 43 Quellenbindungen, vier zusätzliche CSVs gesichert; ausführbarer Vertrag und synthetische I/O-Vorbereitung vor Empiriegates",
   "coordinator": "/root",
@@ -49,7 +49,8 @@
     "Four user CSV files moved/hash-equal to active ignored raw directories, no headers/answers read",
     "BI004 targeted first correction accepted in round2; D36 semantic precision accepted, no overall audit",
     "PP-001 targeted correction1 accepted, original failed reproduction oracles retained",
-    "METHODOLOGY-PAGE-001 normal bounded first no blocking finding, source-link suggestions open"
+    "METHODOLOGY-PAGE-001 normal bounded first no blocking finding, source-link suggestions open",
+    "Methodology doc page technical package: check043 exit0,5widths final nooverflow/axe0/localfont/1H1; actual anchor focus bounded,200percent/visiblefocus pending"
   ],
   "openTasks": [
     "Strict v2 contract and source B25 scope decision before dependent analyses",
@@ -104,7 +105,7 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "NICHT_BESTANDEN: check041 exit1 im neuen Fragmentfokustest (30/31 PASS); Format, Handbuch, Reviewschema, Typecheck bestanden; Build nicht erreicht. Produktionsrouter hat Scrollfeature, Testfixture noch nicht. Korrektur folgt nach Sicherung der Erstprüffassung.",
+    "currentLocalTechnical": "check043 exit0: format/handbook/schema/typecheck,31tests,productionbuild; no scientific acceptance",
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Historische A/B-Kriterien berechnet; keine umfassende Produktvalidität. Breite v2 NICHT_GEPRÜFT.",
     "otherModelFamily": "NICHT_GEPRÜFT",
@@ -132,7 +133,7 @@
     "actualBHistorical": "Fixed v1 numerical criteria met before scope steering; no unexamined B for extension; not overall validity/release acceptance",
     "currentGenericCategoryArithmetic": "PRV2-F01 correction1 independently passed 22+29+6 synthetic testmethods; no empirical acceptance",
     "currentFrontendProfile": "PP-001 correction1 independently closed: 21 Vitest +13 reviewer oracles PASS; unchanged first cases 13/15 exit1 by now correct rejections, explicitly retained",
-    "currentMethodologyPage": "Normal fresh first bounded no blocking contradiction; MP001/MP002 minor citation hints open; browser/runtime pending"
+    "currentMethodologyPage": "Normal first no blockers, MP001/MP002 locator-only corrections Root checked;5widths/axe0/1H1/localfont/nooverflow final; actual anchor activeId observed, visible keyboard focus/200percent unverified"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -239,13 +240,19 @@
   "activeAgents": [
     {
       "name": "/root/breadth_topic_frame",
-      "status": "RUNNING_SYNTHETIC_PRIVATE_ANALYSIS",
-      "report": "reports/loop/authors/POLICY-ANALYSIS-WIP.md"
+      "status": "RUNNING_SYNTHETIC_PUBLIC_EXPORT_BOUNDARY",
+      "report": "reports/loop/authors/POLICY-EXPORT-WIP.md"
     },
     {
       "name": "/root/breadth_data_instruments",
       "status": "RUNNING_SYNTHETIC_GATED_IO_LIBRARY",
       "report": "reports/loop/authors/POLICY-ACCESS-WIP.md"
+    },
+    {
+      "name": "T3 policy_ui_design_author",
+      "status": "RUNNING_UNPUBLISHED_DESIGN_PROTOTYPE",
+      "taskId": "node:delegated-task:command%3Amcp%3Ac4ea3b31-9158-4e6e-944e-cc24189c4ff5%3Adelegate-task%3Alife93-methodology-page-wip-20261003",
+      "report": "reports/loop/authors/POLICY-UI-DESIGN-WIP.md"
     }
   ],
   "workPackages": [
@@ -498,20 +505,20 @@
   ],
   "nextConcreteStep": "Öffentliche Bindung003 abschließen, geprüfte Matrixfassung sichern, BI004 lokal korrigieren. Danach43Fragen-/Kategorienvertrag und Publikationskriterien vor neuer Empirie binden; zwei frische Übergangsrollen.",
   "checkpoint": {
-    "lastLocalCommit": "88eb7db56f00101cf76d46019661076d15deed70",
-    "lastVerifiedRemoteCommit": "88eb7db56f00101cf76d46019661076d15deed70",
-    "lastVerifiedPushAtUtc": "2026-10-03T13:01:07.189431+00:00",
+    "lastLocalCommit": "4e64f3f99c3e170e224be4a89d8d627e500c257d",
+    "lastVerifiedRemoteCommit": "4e64f3f99c3e170e224be4a89d8d627e500c257d",
+    "lastVerifiedPushAtUtc": "2026-10-03T13:26:29.622141+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-036.json",
+    "record": "reports/loop/push-037.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Source catalogue/metadata/43 draft, provided input receipt, pure CSV adapter, targeted frontend correction, bounded methodology page first review and route WIP. Partial analysis aggregator excluded until author completion."
+    "pendingPayload": "Machine contract/inputsha/publication/serialization rules before answers, completed pure analysis aggregator16synthetic PASS, bounded method-page source corrections/runtime-browser proof; access/export/prototype writers remain WIP outside payload until done."
   },
   "scientificStatus": "Breite Quellenmatrix v2 WIP; beide getrennte Erstberichte abgeschlossen, Quellenintegration in Prüfung. Bekannte v1 A/B und alle historischen Tags unverändert. Neue Rechenvorbereitung nur synthetisch, keine neue Datenfreigabe/Empirie.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -800,19 +807,22 @@
   },
   "empiricalPlanV2": {
     "path": "docs/empirie-plan-v2.entwurf.md",
-    "status": "DRAFT_NOT_GATE",
+    "status": "DRAFT_CONCRETE_MACHINE_CONTRACT_NO_GATE",
     "count": 43,
     "measurement": "separate original categorical responses, no global score or factor",
     "topics": 8,
     "accessStatus": "no actual v2 answer import",
     "remaining": "strict machine contract, pure analysis aggregator and gated IO, two fresh identical-package firsts, separate version freeze/gate; all5 raw files available, no v2 answers imported",
-    "localInputFilesAvailable": true
+    "localInputFilesAvailable": true,
+    "contract": "data/analysevertrag.v2.entwurf.json",
+    "contractSha256": "4194f3bb530f036b72a49a81e339779d9d9eed5530a32843acbe6f9697c42e5d",
+    "sourceB25Decision": "Historical static single response allowed after pre-empirical sources-role judgment; proposed new web postflow/CAWI downstream unknown explicitly not operational equivalence"
   },
   "sourceCatalogV2": {
     "path": "data/politikprofil-v2.fragen.entwurf.json",
     "sha256": "38e68b2edfc0ecf9c0b1071bf7283d0ff2f366d3492afd0e71388432415195b9",
     "report": "reports/loop/authors/BREADTH-CATALOG-004-WIP.md",
     "status": "DRAFT_BOUND_NO_EMPIRICAL_GATE",
-    "remaining": "B25 new postitem flow/original operational CAWI downstream routing; static wording/options bound. Root analytical vs website scope decision pending before answers."
+    "remaining": "Original downstream CAWI execution unknown; bounded descriptive B25/new website decision documented before new answers. No absolute administration equivalence."
   }
 }

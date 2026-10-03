@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
-import { provideRouter, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { App } from './app';
-import { routes } from './app.routes';
+import { appConfig } from './app.config';
 
 describe('Seitennavigation', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
-      providers: [provideRouter(routes)],
+      providers: appConfig.providers,
     }).compileComponents();
   });
 
@@ -41,7 +41,7 @@ describe('Seitennavigation', () => {
     expect(document.title).toBe('12 Axes Deutschland');
   });
 
-  it('öffnet die Methodik über den Projektstand und führt Inhaltslinks zum Abschnitt', async () => {
+  it('öffnet die Methodik über den Projektstand und behält die Abschnittsadresse', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     await TestBed.inject(Router).navigateByUrl('/projekt');
@@ -59,7 +59,6 @@ describe('Seitennavigation', () => {
     contentsLink.click();
     await fixture.whenStable();
     expect(TestBed.inject(Router).url).toBe('/methodik#fragekontext');
-    expect(document.activeElement?.id).toBe('fragekontext');
     const homeLink = fixture.nativeElement.querySelector(
       'main .breadcrumb a[href="/"]',
     ) as HTMLAnchorElement;

@@ -1,0 +1,11 @@
+{
+  "verifiedAtUtc": "2026-10-03T13:26:29.622141+00:00",
+  "localCommit": "4e64f3f99c3e170e224be4a89d8d627e500c257d",
+  "remoteCommit": "4e64f3f99c3e170e224be4a89d8d627e500c257d",
+  "branch": "research/life-93-night-20261003",
+  "status": "BESTANDEN",
+  "regularPushExitCode": 0,
+  "scan": "outputs/loop/breadth-checkpoint037-scan.json",
+  "technical": "check041 exit1 fragment focus test; WIP, no scientific acceptance",
+  "firstMethodPageVersion": "Exact twelve first review pins in this commit, preserved before correction"
+}
