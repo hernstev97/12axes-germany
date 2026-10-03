@@ -1,6 +1,6 @@
 # Arbeit in diesem Repository
 
-Lies vor Änderungen `docs/project.md` und bei UI-Arbeit `docs/design.md`.
+Lies vor Änderungen `docs/project.md`. Vor jeder Arbeit an Oberfläche, Bedienung, Bildern oder sichtbaren Texten `docs/handbuch.md` vollständig lesen und befolgen; es regelt Gestaltung, Texte, Bilder, Barrierefreiheit und den Prüfablauf.
 
 Die Repository-Grundlage steht. Der aktuelle Auftrag ist die öffentliche Quellenrecherche und das Schärfen der wissenschaftlichen Prüfregeln. Lies dafür zusätzlich `docs/pruefregeln.md`, `docs/analyseplan.md`, `docs/belegregister.md` und `docs/entscheidungen.md`.
 

@@ -1,0 +1,78 @@
+<section class="gallery" [attr.aria-label]="label()" aria-roledescription="Galerie">
+  <div class="mat">
+    @for (artwork of artworks(); track artwork.id; let i = $index) {
+      <div
+        class="slide"
+        [class.is-current]="i === index()"
+        role="group"
+        aria-roledescription="Bild"
+        [attr.aria-label]="'Bild ' + (i + 1) + ' von ' + count()"
+        [attr.aria-hidden]="i === index() ? null : 'true'"
+        [inert]="i !== index()"
+      >
+        @if (requested().has(i)) {
+          <img
+            [class.is-wide]="isWide(artwork)"
+            [src]="src(artwork)"
+            [srcset]="srcset(artwork)"
+            [sizes]="sizes(artwork)"
+            [width]="artwork.width"
+            [height]="artwork.height"
+            [alt]="artwork.alt"
+            [style.background-color]="artwork.tone"
+            [attr.fetchpriority]="i === index() ? 'high' : null"
+            decoding="async"
+            (load)="markLoaded(i)"
+            (error)="markLoaded(i)"
+          />
+        }
+      </div>
+    }
+  </div>
+  <div class="bar">
+    <!-- Alle Unterschriften liegen übereinander, damit die Höhe beim Wechsel gleich bleibt. -->
+    <div class="captions" [attr.aria-live]="paused() ? 'polite' : 'off'">
+      @for (artwork of artworks(); track artwork.id; let i = $index) {
+        <p
+          class="caption"
+          [class.is-current]="i === index()"
+          [attr.aria-hidden]="i === index() ? null : 'true'"
+        >
+          <span class="artist">{{ artwork.artist }}</span>
+          <span
+            ><cite>{{ artwork.title }}</cite
+            >, {{ artwork.date }}</span
+          >
+          <span>{{ artwork.collection }}</span>
+        </p>
+      }
+    </div>
+    @if (count() > 1) {
+      <div class="controls">
+        <button
+          type="button"
+          (click)="togglePause()"
+          [attr.aria-label]="paused() ? 'Bildwechsel fortsetzen' : 'Bildwechsel anhalten'"
+        >
+          @if (paused()) {
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5.5v9l7.5-4.5z" /></svg>
+          } @else {
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M7 5.5h2v9H7zM11 5.5h2v9h-2z" />
+            </svg>
+          }
+        </button>
+        <button type="button" (click)="show(index() - 1)" aria-label="Vorheriges Bild">
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <path class="stroke" d="M12 5l-5 5 5 5" />
+          </svg>
+        </button>
+        <button type="button" (click)="show(index() + 1)" aria-label="Nächstes Bild">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path class="stroke" d="M8 5l5 5-5 5" /></svg>
+        </button>
+        <span class="counter" aria-hidden="true">{{ index() + 1 }} / {{ count() }}</span>
+      </div>
+    }
+  </div>
+  <a class="credit-link" routerLink="/projekt" fragment="bildnachweise">Zu den Bildnachweisen</a>
+</section>

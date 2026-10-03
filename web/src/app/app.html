@@ -1,23 +1,44 @@
-<a class="skip-link" href="#main-content">Zum Inhalt springen</a>
-<header class="site-header page-width">
-  <a class="wordmark" routerLink="/" aria-label="Politikprofil Deutschland, Startseite">
-    <span class="wordmark-name">politikprofil<span aria-hidden="true">.</span></span>
-    <span class="wordmark-place">Deutschland</span>
-  </a>
-  <nav aria-label="Hauptnavigation">
-    <a routerLink="/" fragment="vorhaben">Das Vorhaben</a>
-    <a routerLink="/projekt" routerLinkActive="active" ariaCurrentWhenActive="page">Projektstand</a>
-  </nav>
+<a class="skip-link" href="#main-content" (click)="skipToContent($event)">Zum Inhalt springen</a>
+<header class="site-header">
+  <div class="header-inner page-width">
+    <a class="brand" routerLink="/" aria-label="12 Axes Deutschland, Startseite">
+      <span class="flag" aria-hidden="true"></span>
+      <span class="brand-name"><strong>12 Axes</strong> Deutschland</span>
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <a routerLink="/" fragment="vorhaben">Vorhaben</a>
+      <a routerLink="/projekt" routerLinkActive="active" ariaCurrentWhenActive="page"
+        >Projektstand</a
+      >
+    </nav>
+  </div>
+  <div class="status-bar page-width">
+    <p>
+      <strong class="status-tag">In Vorbereitung</strong>
+      <span
+        >Der geplante Test ist noch nicht verfügbar.
+        <a routerLink="/projekt" fragment="stand">Zum Stand der Arbeit</a></span
+      >
+    </p>
+  </div>
 </header>
 <main id="main-content" tabindex="-1">
   <router-outlet (activate)="focusPage()" />
 </main>
-<footer class="site-footer page-width">
-  <p>Politikprofil für Deutschland <span aria-hidden="true">·</span> In Vorbereitung</p>
-  <nav aria-label="Weitere Informationen">
-    <a routerLink="/projekt" fragment="bildnachweise">Bild &amp; Schrift</a>
-    <a href="https://github.com/hernstev97/12axes-germany"
-      >Quellcode <span aria-hidden="true">↗</span></a
-    >
-  </nav>
+<footer class="site-footer">
+  <div class="footer-inner page-width">
+    <div class="footer-about">
+      <p class="footer-name"><strong>12 Axes</strong> Deutschland</p>
+      <p>Test in Vorbereitung.</p>
+      <p>
+        Diese Website ist kein Angebot einer Behörde, einer Partei, des European Social Survey oder
+        von 12 Axes. Das Projekt entsteht mit KI-Agenten. Fachleute haben es nicht begutachtet.
+      </p>
+    </div>
+    <nav aria-label="Weitere Informationen">
+      <a routerLink="/projekt">Projektstand</a>
+      <a routerLink="/projekt" fragment="bildnachweise">Bild- und Schriftnachweise</a>
+      <a href="https://github.com/hernstev97/12axes-germany">Quellcode auf GitHub</a>
+    </nav>
+  </div>
 </footer>

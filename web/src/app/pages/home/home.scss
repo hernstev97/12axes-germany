@@ -1,181 +1,58 @@
 .hero {
-  display: grid;
-  grid-template-columns: 1.05fr 1fr;
   align-items: center;
-  gap: clamp(2rem, 5vw, 5rem);
-  padding-block: 3rem 4.75rem;
+  padding-block: clamp(2.5rem, 6vw, 4.5rem) var(--section-space);
 }
-.hero-copy {
-  padding-bottom: 0.5rem;
+.hero .lead {
+  max-width: 34rem;
+  margin: 1.6rem 0 2rem;
 }
-.hero-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 1.5rem;
-  color: var(--muted);
-  font-size: 0.68rem;
-  letter-spacing: 0.09em;
-}
-.hero-eyebrow span {
-  width: 7px;
-  height: 7px;
-  flex: none;
-  border-radius: 50%;
-  background: var(--accent);
-}
-h1 {
-  font-size: clamp(3.1rem, 6.6vw, 5.5rem);
-  line-height: 1.02;
-}
-h1 em {
-  font-weight: 550;
-}
-.hero-intro {
-  max-width: 26rem;
-  margin: 1.65rem 0 1.75rem;
-  font-size: 1.1rem;
-  line-height: 1.55;
-}
-.hero-note {
-  margin: 0.85rem 0 0;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-.hero-art {
-  min-width: 0;
-  margin: 0;
-}
-.art-frame {
-  overflow: hidden;
-  border-radius: 3px 3px 48% 3px / 3px 3px 15% 3px;
-  background: #dce0df;
-}
-.hero-art img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 2327 / 2980;
-}
-figcaption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 0.7rem;
-  color: var(--muted);
-  font-size: 0.72rem;
-  line-height: 1.4;
-}
-figcaption a {
+.scope {
   display: grid;
-  width: 44px;
-  height: 44px;
-  flex: none;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  font-size: 1.1rem;
-  text-decoration: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem var(--gutter);
+  margin-top: 2.25rem;
 }
-figcaption a:hover {
-  background: var(--sage);
-}
-.purpose {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 6vw, 5rem);
-  padding-block: 4rem;
+.scope ul {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
   border-top: 1px solid var(--line);
 }
-.purpose .eyebrow {
-  margin-bottom: 1.2rem;
+.scope li {
+  padding-block: 0.65rem;
+  border-bottom: 1px solid var(--line);
+  font-size: var(--size-ui);
+  line-height: 1.6;
 }
-.purpose h2 {
-  font-size: clamp(2rem, 3.5vw, 3rem);
+.basis {
+  --focus: var(--on-forest);
+  --caption-color: var(--on-forest-muted);
+  --caption-strong: var(--on-forest);
+  padding-block: var(--section-space);
+  color: var(--on-forest);
+  background: var(--forest);
 }
-.purpose-copy p:first-child {
-  margin-top: 0;
-}
-.purpose-copy p {
-  margin-bottom: 1rem;
-}
-.text-link {
-  display: inline-block;
-  padding-block: 0.5rem;
-  font-weight: 500;
-}
-.text-link span {
-  margin-left: 0.4rem;
-}
-.project-note {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+.basis .grid {
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 4rem;
-  padding: 2rem;
-  border-radius: 4px;
-  background: var(--sage);
 }
-.note-mark {
-  align-self: start;
-  font-size: 2.3rem;
-  line-height: 1;
+.basis .prose {
+  margin-top: 1.5rem;
+  color: var(--on-forest-muted);
 }
-.project-note h2 {
-  font-size: 1.4rem;
-  letter-spacing: -0.035em;
+.basis a {
+  color: var(--on-forest);
 }
-.project-note p {
-  max-width: 33rem;
-  margin: 0.65rem 0 0;
-  color: var(--muted);
-  font-size: 0.9rem;
+.basis + .section {
+  border-top: 0;
 }
-@media (max-width: 1050px) {
-  .project-note {
-    grid-template-columns: auto 1fr;
-  }
-  .project-note .button-link {
-    grid-column: 2;
-    justify-self: start;
+@media (max-width: 1180px) {
+  .scope {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
-@media (max-width: 760px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding-block: 2.5rem 3rem;
-  }
-  h1 {
-    font-size: clamp(3rem, 11vw, 4.5rem);
-  }
-  .hero-intro {
-    max-width: 28rem;
-  }
-  .hero-art {
-    max-width: 30rem;
-  }
-  .art-frame {
-    border-radius: 3px 3px 42% 3px / 3px 3px 12% 3px;
-  }
-  .purpose {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding-block: 2.5rem;
-  }
-  .purpose h2 {
-    font-size: 2.3rem;
-  }
-  .project-note {
-    gap: 1rem;
-    margin-bottom: 3rem;
-    padding: 1.3rem;
-  }
-  .project-note h2 {
-    font-size: 1.3rem;
-  }
-  .project-note .button-link {
-    grid-column: 1 / -1;
+@media (max-width: 860px) {
+  .hero app-art-gallery,
+  .basis app-art-figure {
+    max-width: 36rem;
   }
 }
