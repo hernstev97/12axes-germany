@@ -27,3 +27,7 @@ Diese Recherche hat LIFE-93 nicht geändert. Der methodische Anspruch bleibt dok
 Der gespeicherte Vollauftrag erweitert den Ausführungsumfang auf alle LIFE-93-Phasen, erhält aber deren methodische und menschliche Voraussetzungen. Keine erneute Beauftragung pro Phase erforderlich; keine automatische Veröffentlichung oder Merge. Eigenbranch-Checkpoints werden verifiziert gepusht.
 
 Vier Integrationsfindings und der zusätzliche Lizenzsatzbefund wurden angenommen; Begründungen, Quellen und Nachprüfungen in reports/loop/LOOP-000-entscheidungen.md. Die Handbuchpräzisierung erlaubt, einen tatsächlich ausgeführten begrenzten Methodenreview zu benennen; daraus entstehen weder empirische Evidenz noch Abnahme. Erstberichte und Ausgangsmanifeste unverändert erhalten.
+
+## 2026-10-03: Fortsetzung nach dem Haltepunkt
+
+E-20261003-09: Steven ersetzt Claude als Voraussetzung der Hauptarbeit durch zwei getrennte Codex-Erstbewertungen und vereinfacht die Reviewstruktur. Der [datierte Nachtrag](auftrag-life-93-fortsetzung-2026-10-03.md) enthält den aktuellen Vertrag. Claude-Schlusskontrolle, menschliche Tests und Releasefreigaben bleiben ausstehend. Fachliche Anforderungen werden dadurch nicht als bestanden erklärt.

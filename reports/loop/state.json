@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T09:15:59.089279+00:00",
-  "status": "BLOCKED",
-  "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
+  "updatedAtUtc": "2026-10-03T09:23:04.206880+00:00",
+  "status": "RUNNING",
+  "phase": "ESS-Voraussetzungen und gezielte Auswertung des Checkpoints",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -23,19 +23,19 @@
     "CLAUDE-P02/v2 begrenzte Metadatenkorrektur nach zwei vollständigen Nachberichten bestätigt; tatsächlicherRead/Zugang nicht freigegeben"
   ],
   "openTasks": [
-    "Öffentliche Inventar-/Theoriearbeit fortführen; Claude-Forschungsbewertungen, tatsächliche Setup-/Methoden- und Menschenabnahmen bleiben Voraussetzungen",
-    "INVENTORY-004-E/v2: zwei frische unabhängige Nachprüfungen ausstehend",
-    "REPRO-003-C/v1: beide vollständigen Erstberichte abwarten",
-    "E9-BOUNDARY-001: Autorabschluss und zwei spätere unabhängige Prüfungen",
-    "Unterbrechung auf ausdrücklichen Nutzerauftrag; keine automatische Wiederaufnahme. Handoff zuerst lesen."
+    "E-v2-Endauswertung und gezielte Kontext-/Belegkorrektur oder Begrenzung",
+    "C-v2 gezielte Nachprüfung RC-R01",
+    "Datenversion, Design, Gewichtung, Missing, Konstrukte und ausführbares Verfahren schließen",
+    "Zwei getrennte Codex-Erstbewertungen und Übergangsprüfung vor Empirie",
+    "Claude-Gesamtkontrolle, menschlicher Verständnistest und persönliche Releasefreigabe später"
   ],
   "dependencies": [
     {
       "id": "ACCESS-CLAUDE",
-      "status": "BLOCKIERT",
+      "status": "VERSCHOBEN_NICHT_GEPRÜFT",
       "evidence": ["LIFE-93 Setup/Phase1/Phase7", "docs/auftrag-life-93-2026-10-03.md"],
-      "blocks": ["Getrennte Claude-Erstbewertungen und Forschungsreviews"],
-      "actionNeeded": "Aktuellen CLI/API-Zugang klären. Früherer Erfolg bleibt historischer Beleg; kein aktueller Zugang oder Forschungsreview belegt.",
+      "blocks": ["abschließende von Steven veranlasste Gesamtkontrolle"],
+      "actionNeeded": "Keine eigenen Claude-Versuche. Steven führt Schlusskontrolle am vorbereiteten Stand aus.",
       "authenticated": null,
       "proof": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
       "blockedBy": "HTTP401 bei beiden neueren Read-Proben; genaue Ursache unbekannt",
@@ -68,9 +68,9 @@
     },
     {
       "id": "CLAUDE-REVIEWS",
-      "status": "NICHT_GEPRÜFT",
-      "blocks": ["getrennte Claude-Erstbewertungen und vorgeschriebene Forschungsabnahmen"],
-      "actionNeeded": "Konkrete manifestgebundene Aufträge mit frischem begrenztem Kontext tatsächlich ausführen; Zugriffstest genügt nicht."
+      "status": "VERSCHOBEN_NICHT_GEPRÜFT",
+      "blocks": ["abschließende von Steven veranlasste Gesamtkontrolle"],
+      "actionNeeded": "Keine eigenen Claude-Versuche. Steven führt Schlusskontrolle am vorbereiteten Stand aus."
     }
   ],
   "checks": {
@@ -164,7 +164,32 @@
     "E-R02"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
-  "activeAgents": [],
+  "activeAgents": [
+    {
+      "name": "resume_c_recheck",
+      "role": "targeted reviewer",
+      "status": "RUNNING",
+      "context": "fresh; no parent history",
+      "family": "Codex gpt-6.1-sol",
+      "writeScope": "own report and outputs only"
+    },
+    {
+      "name": "resume_design_methods",
+      "role": "author research",
+      "status": "RUNNING",
+      "context": "fresh; no parent history",
+      "family": "Codex gpt-6.1-sol",
+      "writeScope": "own proposal and outputs only"
+    },
+    {
+      "name": "resume_construct_sources",
+      "role": "author research",
+      "status": "RUNNING",
+      "context": "fresh; no parent history",
+      "family": "Codex gpt-6.1-sol",
+      "writeScope": "own proposal and outputs only"
+    }
+  ],
   "workPackages": [
     {
       "id": "LOOP-000",
@@ -351,7 +376,7 @@
       "executionStatus": "PAUSED_BY_USER"
     }
   ],
-  "nextConcreteStep": "Nach ausdrücklichem Fortsetzungsauftrag: Git/Pins/Handoff abgleichen; beide vollständigen E-v2-Nachberichte vollständig lesen und E-R02-Rest samt neuen Listenbelegfindings entscheiden. Erst danach Runde2 oder begründete Begrenzung; C-v2-Nachprüfung ist unvollständig, E9-Autorenentwurf noch ohne Erstprüfung.",
+  "nextConcreteStep": "E-v2-Nachberichte auswerten; C-v2 gezielt prüfen; fachliche Planentscheidungen für ESS schließen.",
   "checkpoint": {
     "lastLocalCommit": "git:HEAD",
     "lastVerifiedRemoteCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
@@ -364,9 +389,10 @@
     "receiptPolicy": "push-024 binds verified payload43ebe72. This final bookkeeping commit resolves through git:HEAD; actual final commit+remote verification saved after execution in final-push.json. The record is not self-referential.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
-    "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c"
+    "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
+    "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8"
   },
-  "scientificStatus": "Loop auf ausdrücklichen Nutzerauftrag angehalten. Wissenschaftliche Gesamt-/Plan-/Messmodellabnahme weiterhin blockiert; keine ESS-Rohantwortanalyse, Auswahl/Polung, B-Entblindung oder Website-Ergebnisfreigabe. Frühere begrenzte Foundation-/A/B-/C-/Methoden-/Design-/Claude-Dokumentkorrekturen bleiben wie entschieden; E-v2 beide vollständigen Nachberichte gesichert, E-R02 Runde1 offen und Endauswertung ausstehend. C-portabel RC-R01 Runde1 eigenständig korrigiert und gefroren, Nachprüfung nurWIP/nicht ausgeführt. E9 Autorenentwurf fertig, unabhängig ungeprüft. Technischer Haltepunktcheck und Payload-Push bestanden; Sicherung keine wissenschaftliche Abnahme. Keine aktiven beauftragten Agents.",
+  "scientificStatus": "Wiederaufnahme autorisiert. Keine Empirie oder Entblindung durchgeführt. Claude-Voraussetzung für Hauptarbeit ersetzt; fachliche Planentscheidungen und Datensperren bleiben offen.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -456,14 +482,15 @@
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md",
-  "executionStatus": "PAUSED_BY_USER",
+  "executionStatus": "RUNNING",
   "interruption": {
     "requestedAtUtc": "2026-10-03T09:02:07+00:00",
     "reason": "Steven ausdrücklich: aktuellen Arbeitsloop geordnet unterbrechen, keine neuen Pakete/Reviews; Projekt bleibt offen.",
-    "requiresExplicitContinuation": true,
+    "requiresExplicitContinuation": false,
     "handoff": "reports/loop/handoff.md",
     "scientificAcceptance": "Keine Abnahme durch Sicherung oder Unterbrechung.",
-    "agentsStatus": "Alle betroffenen Subagents final gesichert, keine aktiven Aufträge; C-v2 nur WIP, E-v2 beide vollständige Nachberichte."
+    "agentsStatus": "Alle betroffenen Subagents final gesichert, keine aktiven Aufträge; C-v2 nur WIP, E-v2 beide vollständige Nachberichte.",
+    "resumedAtUtc": "2026-10-03T09:23:04.206880+00:00"
   },
   "currentHeadResolution": "git rev-parse HEAD im angegebenen Worktree; aktueller Sicherungscommit wird nach dem Commit/Push im lokalen Haltepunktbeleg und Gitremote verifiziert. Keine selbstreferenzielle Commit-ID erfunden.",
   "pausePendingAgents": [],
@@ -487,5 +514,19 @@
       "reportSha256": "c731f136b784874171201eb77b901f1f927aaae0e8f375ce1cb67b6b2a7d828c",
       "actualReview": "NICHT_GEPRÜFT; only manifest read/hash, 22+63 pins not checked"
     }
-  ]
+  ],
+  "assignmentAmendment": "docs/auftrag-life-93-fortsetzung-2026-10-03.md",
+  "reviewPolicy": {
+    "amendment": "docs/auftrag-life-93-fortsetzung-2026-10-03.md",
+    "normalPackageReviewers": 1,
+    "transitionReviewers": 2,
+    "transitions": [
+      "before empirical development",
+      "before confirmatory data",
+      "before result interpretation"
+    ],
+    "family": "Codex; same model family; shared error sources possible",
+    "claude": "deferred final control, never passed",
+    "jurorRequired": false
+  }
 }

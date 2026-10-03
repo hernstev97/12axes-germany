@@ -67,3 +67,7 @@ Vor Veröffentlichung müssen die erforderlichen Setup- und Phasen-0–8-Nachwei
 ## Konkretisierungen aus dem KI-Audit
 
 [analyseanforderungen.md](analyseanforderungen.md) dokumentiert die angenommenen Anforderungen zu Konstruktbreite, Antworttypen, Teilantwortnormen, ordinalen Scorevergleichen, Reliabilität, Unsicherheitsarten und inhaltlich vergleichbaren Textprüfungen. Ihre Aufnahme in den Entwurf ist keine bestandene empirische Prüfung. Findings und Autorentscheidungen bleiben im Audit erhalten.
+
+## Vorrangiger Ablaufnachtrag vom 2026-10-03
+
+Der [Fortsetzungsauftrag](auftrag-life-93-fortsetzung-2026-10-03.md) ersetzt die widersprechenden Claude- und Gremiumsvoraussetzungen dieser Arbeitsfassung. R08/P13 werden für diesen Durchlauf durch zwei getrennte Codex-Erstbewertungen erfüllt, mit ausdrücklich gleicher Modellfamilie und möglichen gemeinsamen Fehlerquellen. Normale Pakete: ein passender Reviewer. Vor Empirie, B-Zugriff und Ergebnisaussagen: zwei getrennte fachliche Übergangsprüfungen. Claude erst zur von Steven veranlassten Schlusskontrolle, weiterhin ausstehend. Die fachlichen Anforderungen, Datensperren und konkreten Findings bleiben verbindlich; keine Analysefreigabe allein durch diesen Nachtrag.

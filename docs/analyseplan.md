@@ -58,3 +58,7 @@ Die [zusätzlichen Analyseanforderungen](analyseanforderungen.md) aus dem Audit 
 ## Fortschreibung im Gesamtauftrag
 
 Der [dauerhafte Auftrag](auftrag-life-93-2026-10-03.md) umfasst inzwischen alle Phasen und die Vorbereitung der erforderlichen getrennten Prüfpakete. Die frühere Entscheidung für ausschließlich CodeRabbit war eine Grenze des vorherigen Arbeitsschritts. Die Claude-Erstbewertungen, Reviews und Setup-Abnahme bleiben weiterhin echte Voraussetzungen. Der vorhandene CLI-Zugriff ist derzeit durch ein Providerlimit blockiert; der [Loopzustand](../reports/loop/state.json) nennt Beleg und Wiederaufnahmezeitpunkt. Dieser Abschnitt setzt keinen Planparameter fest und erteilt keine Analysefreigabe.
+
+## Vorrangiger Ablaufnachtrag vom 2026-10-03
+
+Der [Fortsetzungsauftrag](auftrag-life-93-fortsetzung-2026-10-03.md) ersetzt die widersprechenden Claude- und Gremiumsvoraussetzungen dieser Arbeitsfassung. R08/P13 werden für diesen Durchlauf durch zwei getrennte Codex-Erstbewertungen erfüllt, mit ausdrücklich gleicher Modellfamilie und möglichen gemeinsamen Fehlerquellen. Normale Pakete: ein passender Reviewer. Vor Empirie, B-Zugriff und Ergebnisaussagen: zwei getrennte fachliche Übergangsprüfungen. Claude erst zur von Steven veranlassten Schlusskontrolle, weiterhin ausstehend. Die fachlichen Anforderungen, Datensperren und konkreten Findings bleiben verbindlich; keine Analysefreigabe allein durch diesen Nachtrag.
