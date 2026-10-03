@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T05:18:38.449202+00:00",
+  "updatedAtUtc": "2026-10-03T05:37:22.321704+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -1820,7 +1820,7 @@
       "severity": "mittel",
       "decision": "angenommen",
       "origin": "reports/loop/reviews/SOFTWARE-001-repro.md",
-      "status": "NICHT_GEPRÜFT",
+      "status": "BESTANDEN",
       "repairRounds": 1,
       "problem": "Launcher und Commandmetadaten behaupten IOCTL-Sperre, obwohl ioctl-dev nicht im behandelten Rechtevektor steht.",
       "evidence": [
@@ -1828,8 +1828,40 @@
         "gebundene Kernelquelle1029–1033/1363–1377; run-r-direct.py38–55"
       ],
       "reason": "Konkreter Rechtevektor und Originalquelle tragen die Beanstandung; keine schädliche Geräteoperation beobachtet.",
-      "correctionState": "Getrennte Autorenkorrektur und sichere Probe ausgeführt, neue v2-Fassung eingefroren; zwei unabhängige Nachprüfungen offen.",
-      "blocks": ["unkorrigierte IOCTL-Schutzbehauptung"]
+      "correctionState": "Runde1 enge Rechtebeschreibung durch zwei tatsächliche unabhängige R-/Command-/Originalquellenprüfungen bestätigt; kein vollständiger PC-Schutz.",
+      "blocks": [],
+      "history": [
+        {
+          "savedAtUtc": "2026-10-03T05:37:22.321704+00:00",
+          "previousRecord": {
+            "id": "SOFTWARE-001-REPRO-02",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "origin": "reports/loop/reviews/SOFTWARE-001-repro.md",
+            "status": "NICHT_GEPRÜFT",
+            "repairRounds": 1,
+            "problem": "Launcher und Commandmetadaten behaupten IOCTL-Sperre, obwohl ioctl-dev nicht im behandelten Rechtevektor steht.",
+            "evidence": [
+              "SOFTWARE-001-repro.md: SOFTWARE-001-REPRO-02",
+              "gebundene Kernelquelle1029–1033/1363–1377; run-r-direct.py38–55"
+            ],
+            "reason": "Konkreter Rechtevektor und Originalquelle tragen die Beanstandung; keine schädliche Geräteoperation beobachtet.",
+            "correctionState": "Getrennte Autorenkorrektur und sichere Probe ausgeführt, neue v2-Fassung eingefroren; zwei unabhängige Nachprüfungen offen.",
+            "blocks": ["unkorrigierte IOCTL-Schutzbehauptung"]
+          }
+        }
+      ],
+      "decisionRecord": "reports/loop/SOFTWARE-001-v2-entscheidung.md",
+      "verification": {
+        "manifest": "reports/loop/packages/SOFTWARE-001/v2/manifest.json",
+        "manifestSha256": "c88656c49ce561b9d57d2e1975ef82dabeb9b745fbefb14cda1e1d415f8a5ddf",
+        "independentReports": [
+          "reports/loop/reviews/SOFTWARE-001-v2-boundary.md",
+          "reports/loop/reviews/SOFTWARE-001-v2-repro.md"
+        ],
+        "status": "BESTANDEN",
+        "scope": "Nur konkret beschriebene Dateirechte; ursprüngliches Setup bleibt NICHT_BESTANDEN"
+      }
     },
     {
       "id": "FOUNDATION-PROV-01",
@@ -1870,6 +1902,20 @@
         "jurorReportSha256": "a22ac051c26d23d1d47e967ba7ed208d771dc7292a615d4b1f9e4b49dcfc22e5",
         "boundedJurorCheck": "BESTANDEN"
       }
+    },
+    {
+      "id": "SOFTWARE-001-V2-REPRO-01",
+      "origin": "reports/loop/reviews/SOFTWARE-001-v2-repro.md",
+      "severity": "niedrig",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": [],
+      "problem": "Nachgelagerte CLI-Versionsabfrage belegt keine exakte Version zum früheren Protokollstart.",
+      "evidence": "Originalausführung 04:36:25–04:37:05; versionspezifische Abfrage 04:47:29. Beide Originalnachberichte kontrollieren diese Zeitbindung.",
+      "reason": "Eigener Belegvergleich nach beiden vollständigen Berichten; kein belegter Versionswechsel.",
+      "correctionState": "Neue Entscheidung trennt Zeiten und lässt historische Binarybindung offen; kurze unabhängige Textnachprüfung noch ausstehend.",
+      "decisionRecord": "reports/loop/SOFTWARE-001-v2-entscheidung.md"
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."

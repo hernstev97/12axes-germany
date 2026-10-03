@@ -363,11 +363,12 @@
       "returnedTaskName": "/root/software_v2_repro",
       "fork_turns": "none",
       "kind": "independent-correction-and-actual-Claude-protocol-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/SOFTWARE-001/v2/manifest.json",
       "manifestSha256": "c88656c49ce561b9d57d2e1975ef82dabeb9b745fbefb14cda1e1d415f8a5ddf",
       "report": "reports/loop/reviews/SOFTWARE-001-v2-repro.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext.",
+      "reportSha256": "98736f6acfac0ae74d74aab19a5134302820d01c56d4a5d87f72f15e7295025c"
     },
     {
       "task_name": "inventory002_ab_sources",
@@ -385,11 +386,34 @@
       "returnedTaskName": "/root/inventory002_ab_repro",
       "fork_turns": "none",
       "kind": "independent-metadata-reproduction-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/INVENTORY-002-AB/v1/manifest.json",
       "manifestSha256": "5af3f5c77ffa84ecbba15dc2c3f541064c1530bda5297928e8a5d5c7ae1d9856",
       "report": "reports/loop/reviews/INVENTORY-002-AB-repro.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext.",
+      "reportSha256": "74b5a6c5cf941741f411285dad1094f7de74a5cb1fe6f2021f564b5e12d38f51"
+    },
+    {
+      "task_name": "methods002_statistics",
+      "returnedTaskName": "/root/methods002_statistics",
+      "fork_turns": "none",
+      "kind": "independent-synthetic-methods-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/METHODS-002/v2/manifest.json",
+      "manifestSha256": "b736855447a96dcaa3f55926edf59d7eda29c19dfe90d2e752de18df8b0d78e4",
+      "report": "reports/loop/reviews/METHODS-002-statistics.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Erstbericht;frischer begrenzter Kontext."
+    },
+    {
+      "task_name": "methods002_repro",
+      "returnedTaskName": "/root/methods002_repro",
+      "fork_turns": "none",
+      "kind": "independent-synthetic-methods-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/METHODS-002/v2/manifest.json",
+      "manifestSha256": "b736855447a96dcaa3f55926edf59d7eda29c19dfe90d2e752de18df8b0d78e4",
+      "report": "reports/loop/reviews/METHODS-002-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Erstbericht;frischer begrenzter Kontext."
     }
   ],
   "activeAdditionalAuthors": [
