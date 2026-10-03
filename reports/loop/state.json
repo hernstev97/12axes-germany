@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T09:42:37.911132+00:00",
+  "updatedAtUtc": "2026-10-03T10:02:23.938912+00:00",
   "status": "RUNNING",
-  "phase": "ESS-Voraussetzungen und gezielte Auswertung des Checkpoints",
+  "phase": "Phase0: exakter Designvertrag, getrennte Item-Ersturteile und empirischer Plan",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -163,36 +163,38 @@
     "R5-F03",
     "F-P03",
     "F-P04",
-    "SW-ENV-004"
+    "SW-ENV-004",
+    "DM-R01",
+    "DM-R02",
+    "DM-R03"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/resume_construct_sources",
-      "scope": "C44/R original inventory boundary and public nine-item packet",
+      "name": "/root/design_metadata_review",
+      "role": "targeted technical reviewer round1; no real inputs",
       "writes": [
-        "outputs/loop/resume-construct-close/",
-        "reports/loop/authors/ESS-INVENTORY-resume-closure.md"
-      ],
-      "role": "author; no raw input"
+        "outputs/loop/resume-design-meta-review-v2/",
+        "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md"
+      ]
     },
     {
-      "name": "/root/resume_design_methods",
-      "scope": "executable group comparison conditions, synthetic only",
+      "name": "/root/item_first_sources",
+      "role": "independent item first rater1; original public corpus only",
       "writes": [
-        "outputs/loop/resume-group-methods/",
-        "reports/loop/authors/ESS-GROUPS-resume-proposal.md"
-      ],
-      "role": "author; no raw input"
+        "outputs/loop/item-first-sources/",
+        "reports/loop/reviews/ITEM-FIRST-001-sources.csv",
+        "reports/loop/reviews/ITEM-FIRST-001-sources.md"
+      ]
     },
     {
-      "name": "/root/resume_moment_adapter",
-      "scope": "version-bound moment adapter and independent synthetic finite differences",
+      "name": "/root/item_first_methods",
+      "role": "independent item first rater2; original public corpus only",
       "writes": [
-        "outputs/loop/resume-adapter/",
-        "reports/loop/authors/ESS-ADAPTER-resume-proposal.md"
-      ],
-      "role": "author; no raw input"
+        "outputs/loop/item-first-methods/",
+        "reports/loop/reviews/ITEM-FIRST-001-methods.csv",
+        "reports/loop/reviews/ITEM-FIRST-001-methods.md"
+      ]
     }
   ],
   "workPackages": [
@@ -385,15 +387,15 @@
       "executionStatus": "PAUSED_BY_USER"
     }
   ],
-  "nextConcreteStep": "Prepare compact phase0 candidate/decision packet and two fresh Codex transition reviews; no raw-answer analysis yet.",
+  "nextConcreteStep": "Targeted v2 metadata check then root-only private design audit; reconcile two item first ratings, fix executable P01–P13 plan and get two transition reviews before any answer analysis.",
   "checkpoint": {
     "lastLocalCommit": "git:HEAD",
-    "lastVerifiedRemoteCommit": "6f85d80c38bb4089bb9f4363a4743112be9d8e1b",
-    "lastVerifiedPushAtUtc": "2026-10-03T09:25:26.545136+00:00",
+    "lastVerifiedRemoteCommit": "47fdba0e5464321745b894554e82a733ea91d75b",
+    "lastVerifiedPushAtUtc": "2026-10-03T09:43:56.406676+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-025.json",
+    "record": "reports/loop/push-026.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",

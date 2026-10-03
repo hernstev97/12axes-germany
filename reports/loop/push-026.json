@@ -1,0 +1,8 @@
+{
+  "commit": "47fdba0e5464321745b894554e82a733ea91d75b",
+  "remoteCommit": "47fdba0e5464321745b894554e82a733ea91d75b",
+  "verified": true,
+  "atUtc": "2026-10-03T09:43:56.406676+00:00",
+  "technicalCheck": "pnpm check exit0; outputs/loop/resume-source-commit-check.log",
+  "scope": "bounded C/E targeted checks, preserved authors, current checkpoint; no empirical results"
+}

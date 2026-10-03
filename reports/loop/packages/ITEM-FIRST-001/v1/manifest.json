@@ -1,0 +1,66 @@
+{
+  "package": "ITEM-FIRST-001",
+  "version": 1,
+  "frozenAtUtc": "2026-10-03T09:50:55.326395+00:00",
+  "baseCommit": "47fdba0e5464321745b894554e82a733ea91d75b",
+  "files": [
+    {
+      "path": "reports/loop/packages/ITEM-FIRST-001/v1/originalitems.json",
+      "sha256": "243e50bac14689c6739288f35bb2b6d45dedb911e37693c0ef4dc565be305030"
+    },
+    {
+      "path": "data/inventar.entwurf.csv",
+      "sha256": "8c73adb8b361db2992f5fe9e321e0c5b978afdc41ba22c1cbb471f92e60057c1"
+    },
+    {
+      "path": "data/inventar-ab.v2.ergaenzung.entwurf.json",
+      "sha256": "31a4fa49c0149f3aec5820fcb30fb85388a09dcd5470393b9f259cf9013fceb8"
+    },
+    {
+      "path": "data/inventar-c.v2.ergaenzung.entwurf.json",
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e"
+    },
+    {
+      "path": "data/inventar-e.v2.ergaenzung.entwurf.json",
+      "sha256": "0c031abd7be58e14c91360db4e2a438b0b211e1116dd2f1b84ebab612931f6de"
+    },
+    {
+      "path": "docs/itemerstbewertung-vertrag.md",
+      "sha256": "ee2460223083cc910515b3c7fac890fff9433c7b3d414fb8786f9ed3d021f55d"
+    }
+  ],
+  "sources": [
+    {
+      "path": "outputs/loop/resume-constructs/sources/ESS11_questionnaires_DE.pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75"
+    },
+    {
+      "path": "outputs/loop/resume-constructs/sources/ESS11_questionnaires_DE.txt",
+      "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224"
+    },
+    {
+      "path": "outputs/loop/resume-constructs/sources/ESS11_showcards_DE.pdf",
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca"
+    },
+    {
+      "path": "outputs/loop/resume-constructs/sources/ESS11_appendix_a7_e04_1.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35"
+    }
+  ],
+  "noResponses": true,
+  "noAuthorSelection": true,
+  "sourceAttribution": {
+    "publisher": "European Social Survey ERIC; German ESS11 Welle11/2023",
+    "documentationLicense": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "questionnaireUrl": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+    "showcardsUrl": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+    "codebookUrl": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+    "changes": "Source-view extraction, original text linebreaks preserved; no source item words edited."
+  },
+  "additionalInventoryBoundary": {
+    "C44": "TOC Q2 only; C43 Q31 explicitly routes to D, Q32 D1. No printed C44 block evidenced.",
+    "R": "TOC Q2 only; Q96 I9, Q97 K1-K4, Q98 J. No printed R item evidenced; no invented wording.",
+    "V1": "Q98 interviewer mode administration missing from296 provided rows; not an attitude. Record separately."
+  }
+}

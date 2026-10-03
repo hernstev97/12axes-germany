@@ -1,0 +1,27 @@
+{
+  "package": "DESIGN-METADATA-001",
+  "version": 2,
+  "correctionRound": 1,
+  "frozenAtUtc": "2026-10-03T09:59:53.880102+00:00",
+  "baseCommit": "47fdba0e5464321745b894554e82a733ea91d75b",
+  "files": [
+    {
+      "path": "pipeline/design_audit_v2.py",
+      "sha256": "da9a7fbed839ce7d8bf708b6533bb521b7553ba6339a2343205cd0774eeab335"
+    },
+    {
+      "path": "docs/designaudit-v2-vertrag.md",
+      "sha256": "90a1dd9ca57bcc8b9ff58a157b4d38e9a49c9ca7c87e692b673ecbff0ba0c70d"
+    },
+    {
+      "path": "reports/loop/packages/DESIGN-METADATA-001/v1/manifest.json",
+      "sha256": "00987d0f54b8cfcf8d313272893e542625854cf6d0dfdc60b780077f10581ddf"
+    },
+    {
+      "path": "reports/loop/reviews/DESIGN-METADATA-001-first.md",
+      "sha256": "9099938774e771f93e48af043dcf35a61e7b04def36bb15c5eda7827249802b4"
+    }
+  ],
+  "scope": "targeted DM-R01-04; old sources/contract unchanged; real import not run",
+  "ownEvidence": "outputs/loop/resume-design-round1/own-result.json"
+}

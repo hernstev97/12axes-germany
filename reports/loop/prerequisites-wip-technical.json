@@ -1,0 +1,7 @@
+{
+  "atUtc": "2026-10-03T10:03:14.010673+00:00",
+  "pnpmCheck": "exit0; outputs/loop/resume-prerequisites-wip-check.log",
+  "credentialScan": "19 explicitly owned paths, no detected credential/private-data paths",
+  "scope": "WIP source corpus, unapproved methods/code, metadata correction under review; no real ESS run",
+  "scientificAcceptance": "none; initial item ratings still running; transition reviews and public plan freeze pending"
+}

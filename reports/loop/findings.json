@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T09:10:01.398003+00:00",
+  "updatedAtUtc": "2026-10-03T10:02:23.938912+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2553,6 +2553,70 @@
       "history": [],
       "duplicateOf": "E2-S01",
       "decisionRecord": "reports/loop/reviews/INVENTORY-004-E-v3-targeted.md"
+    },
+    {
+      "id": "DM-R01",
+      "origin": "reports/loop/reviews/DESIGN-METADATA-001-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "reason": "Float-Designcodeparse verändert mathematische Schlüssel; exakte Decimal-Normalisierung",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "V2 Runde1 umgesetzt; gezielte unabhängige Nachprüfung läuft",
+      "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
+      "blocks": ["technical-design-import"],
+      "verification": {
+        "scope": "targeted round1, synthetics only",
+        "executionRecord": "reports/loop/packages/DESIGN-METADATA-001/v2/manifest.json"
+      }
+    },
+    {
+      "id": "DM-R02",
+      "origin": "reports/loop/reviews/DESIGN-METADATA-001-first.md",
+      "decision": "angenommen",
+      "severity": "bedingt",
+      "reason": "Ablagegrenze allein garantiert keine Eigentümerrechte; neuer0700/0600Ordner",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "V2 Runde1 umgesetzt; gezielte unabhängige Nachprüfung läuft",
+      "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
+      "blocks": ["technical-design-import"],
+      "verification": {
+        "scope": "targeted round1, synthetics only",
+        "executionRecord": "reports/loop/packages/DESIGN-METADATA-001/v2/manifest.json"
+      }
+    },
+    {
+      "id": "DM-R03",
+      "origin": "reports/loop/reviews/DESIGN-METADATA-001-first.md",
+      "decision": "angenommen",
+      "severity": "bedingt",
+      "reason": "Separater Digest/Leseopen kann verschiedene Bytes treffen; unveränderliches interpretiertes Bytebild",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "V2 Runde1 umgesetzt; gezielte unabhängige Nachprüfung läuft",
+      "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
+      "blocks": ["technical-design-import"],
+      "verification": {
+        "scope": "targeted round1, synthetics only",
+        "executionRecord": "reports/loop/packages/DESIGN-METADATA-001/v2/manifest.json"
+      }
+    },
+    {
+      "id": "DM-R04",
+      "origin": "reports/loop/reviews/DESIGN-METADATA-001-first.md",
+      "decision": "angenommen",
+      "severity": "gering",
+      "reason": "Traversalprüfung erfolgte nach mkdir; Normalisierung vor allen Nebenwirkungen",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "V2 Runde1 umgesetzt; gezielte unabhängige Nachprüfung läuft",
+      "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
+      "blocks": [],
+      "verification": {
+        "scope": "targeted round1, synthetics only",
+        "executionRecord": "reports/loop/packages/DESIGN-METADATA-001/v2/manifest.json"
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

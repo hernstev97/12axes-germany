@@ -1,0 +1,27 @@
+{
+  "package": "DESIGN-METADATA-001",
+  "version": 1,
+  "frozenAtUtc": "2026-10-03T09:48:32.879810+00:00",
+  "baseCommit": "47fdba0e5464321745b894554e82a733ea91d75b",
+  "scope": "technical metadata-only prerequisite; no real run performed",
+  "files": [
+    {
+      "path": "pipeline/design_audit.py",
+      "sha256": "0a5ec52ec839c56fba55811b53671ec553dcd12374ccbf880f04574887281c62"
+    },
+    {
+      "path": "docs/designaudit-vorabvertrag.md",
+      "sha256": "d1e1e3047b053531db52524b2f7eba9f422909c30cec3c59831af40b8d1b9e79"
+    },
+    {
+      "path": "reports/phasen/00-dateieingang-2026-10-03.md",
+      "sha256": "814513213d10957063dc6a26a7f4d9c0086b75c99262c86b2993ac2075d46621"
+    }
+  ],
+  "syntheticEvidence": {
+    "path": "outputs/loop/resume-design-audit-synthetic/result.json",
+    "sha256": "e5314145ed5a8382218df3232af6f47cfe25a9df4b08c5578b309dbcd757c61b",
+    "notScientificValidation": true
+  },
+  "rawAccess": "reviewer forbidden; root CLI interprets fixed nine-field design/global-metadata positive list only after accepted review"
+}

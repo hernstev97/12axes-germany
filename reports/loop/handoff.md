@@ -28,3 +28,9 @@ Lokale Eingaben: ignorierte öffentliche Originale und synthetische Logs unter `
 Technik: fünf portable E-Tests und 39 eigene echte Fehlmutationen bestanden; unabhängiger Reviewer zusätzlich mit eigenen Mutationen. `pnpm check` abschließend Exit0, Log `outputs/loop/resume-package-check-final.log`. Ein anfänglicher Formatcheckfehler und dessen Lösung stehen in `resume-package-technical.json`. Wissenschaftliche Abnahme bleibt davon getrennt.
 
 Sicherung: `state.currentHead = git:HEAD`; tatsächliche Pushbelege liegen in `reports/loop/push-*.json` und lokalen Checkpoint-Belegen. Letzter vor diesem Paket verifizierter Commit: `6f85d80c38bb4089bb9f4363a4743112be9d8e1b` am 2026-10-03T09:25:26Z. Nach jedem abgeschlossenen Paket und spätestens alle30Minuten Änderungen sichern; kein main-Merge/Deployment/Force-Push. Claude-Zugang nicht mehr versuchen.
+
+## Fortschritt Phase0, 2026-10-03
+
+Rand-/Originalabschluss und weiterer synthetischer Gruppen-/Momentadapterbericht liegen als Autorenfassungen unter reports/loop/authors/. Produktiver Momentcode unter pipeline/ordinal/adapter.R bytegleich übernommen, noch unabhängig ungeprüft. Gruppenprobe besteht Algebra/API, verfehlt aber das eigene0.05Mappingbudget; keine Vergleichbarkeit daraus ableiten.
+
+DESIGN-METADATA-001/v1 Erstprüfung NICHT_BESTANDEN (DM-R01); Runde1 korrigiert präzise Schlüssel, Bytebindung und Dateigrenzen in pipeline/design_audit_v2.py. Historischev1 unverändert. Gezielte Nachprüfung läuft. Noch keine reale Ausführung. Die zwei getrennten Item-Erstprüfer lesen den gesamten296-Bestand ohne Autorenauswahl oder fremde Urteile, Paket ITEM-FIRST-001/v1. Noch keine Kandidaten-/Polungsentscheidung und kein Präregistrierungstag.
