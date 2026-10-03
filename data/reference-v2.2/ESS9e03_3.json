@@ -1,0 +1,1162 @@
+{
+ "schemaVersion": 2,
+ "plan": "docs/analyseplan-v2.2.md",
+ "stage": "released_after_result_review",
+ "privateRunSha256": "0ebe86b22cb3795ea232c9f0e645e6893d7355d47c842b7f8f10cb4ad6554001",
+ "designRunSha256": null,
+ "study": "ESS9e03_3",
+ "designAvailable": true,
+ "designSource": null,
+ "questions": [
+  {
+   "id": "ESS9e03_3:sofrdst",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 2324,
+    "totalCount": 2358,
+    "missingCount": 34,
+    "missingReasons": [
+     {
+      "reason": "Don't know",
+      "count": 24,
+      "primaryWeightSum": 33.8275278
+     },
+     {
+      "reason": "Refusal",
+      "count": 10,
+      "primaryWeightSum": 8.82044451
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.10697031539340748,
+      "lower": 0.09131715321420772,
+      "upper": 0.12493774910497725
+     },
+     {
+      "code": "2",
+      "proportion": 0.3172125068663722,
+      "lower": 0.2949737783756137,
+      "upper": 0.34031854889323687
+     },
+     {
+      "code": "3",
+      "proportion": 0.23176265782262406,
+      "lower": 0.21332092172089262,
+      "upper": 0.25128942587650754
+     },
+     {
+      "code": "4",
+      "proportion": 0.28551603450194074,
+      "lower": 0.26221351833786605,
+      "upper": 0.31001923099886525
+     },
+     {
+      "code": "5",
+      "proportion": 0.05853848541565555,
+      "lower": 0.050162730238565906,
+      "upper": 0.06821232056154138
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 89,
+     "strata": 89,
+     "psus": 178
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.013805427037335505,
+     "unweighted": 0.013967614379298499
+    }
+   }
+  },
+  {
+   "id": "ESS9e03_3:sofrwrk",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 2335,
+    "totalCount": 2358,
+    "missingCount": 23,
+    "missingReasons": [
+     {
+      "reason": "Don't know",
+      "count": 15,
+      "primaryWeightSum": 22.5720051
+     },
+     {
+      "reason": "Refusal",
+      "count": 8,
+      "primaryWeightSum": 6.81390525
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.23315468154683777,
+      "lower": 0.21256538780760983,
+      "upper": 0.25509221434798435
+     },
+     {
+      "code": "2",
+      "proportion": 0.6292204424888667,
+      "lower": 0.6029776381805303,
+      "upper": 0.6547219059002805
+     },
+     {
+      "code": "3",
+      "proportion": 0.09804477824442091,
+      "lower": 0.08382949494241485,
+      "upper": 0.11436968225782904
+     },
+     {
+      "code": "4",
+      "proportion": 0.035042434155637445,
+      "lower": 0.027534236911177946,
+      "upper": 0.044504313583063594
+     },
+     {
+      "code": "5",
+      "proportion": 0.004537663564237168,
+      "lower": 0.0027757287384146015,
+      "upper": 0.007409702369013639
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 89,
+     "strata": 89,
+     "psus": 178
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.004156124202168127,
+     "unweighted": 0.004032625872319562
+    }
+   }
+  },
+  {
+   "id": "ESS9e03_3:sofrpr",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 2335,
+    "totalCount": 2358,
+    "missingCount": 23,
+    "missingReasons": [
+     {
+      "reason": "Don't know",
+      "count": 17,
+      "primaryWeightSum": 26.47515204
+     },
+     {
+      "reason": "Refusal",
+      "count": 6,
+      "primaryWeightSum": 5.51243604
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.20559466619541575,
+      "lower": 0.18833289652445903,
+      "upper": 0.22400193944821145
+     },
+     {
+      "code": "2",
+      "proportion": 0.6241049231880682,
+      "lower": 0.5956470444956786,
+      "upper": 0.6517310063206587
+     },
+     {
+      "code": "3",
+      "proportion": 0.11135967543584617,
+      "lower": 0.10004690662264418,
+      "upper": 0.12377569765188316
+     },
+     {
+      "code": "4",
+      "proportion": 0.05269174066755813,
+      "lower": 0.038777735707309316,
+      "upper": 0.0712283325389894
+     },
+     {
+      "code": "5",
+      "proportion": 0.0062489945131116945,
+      "lower": 0.0030801434911000435,
+      "upper": 0.012636634702294766
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 89,
+     "strata": 89,
+     "psus": 178
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.0048398683023991584,
+     "unweighted": 0.004683706395590681
+    }
+   }
+  },
+  {
+   "id": "ESS9e03_3:sofrprv",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 2315,
+    "totalCount": 2358,
+    "missingCount": 43,
+    "missingReasons": [
+     {
+      "reason": "Don't know",
+      "count": 34,
+      "primaryWeightSum": 49.197175030000004
+     },
+     {
+      "reason": "Refusal",
+      "count": 9,
+      "primaryWeightSum": 7.84344121
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.009330662695119195,
+      "lower": 0.005567226283474522,
+      "upper": 0.015598270968982343
+     },
+     {
+      "code": "2",
+      "proportion": 0.1195614360157035,
+      "lower": 0.10309697190409367,
+      "upper": 0.1382499627760563
+     },
+     {
+      "code": "3",
+      "proportion": 0.21638290928488726,
+      "lower": 0.19878062887381273,
+      "upper": 0.23508655324900254
+     },
+     {
+      "code": "4",
+      "proportion": 0.46347250188882066,
+      "lower": 0.4379490987270057,
+      "upper": 0.4891887374212387
+     },
+     {
+      "code": "5",
+      "proportion": 0.1912524901154694,
+      "lower": 0.17078762438897996,
+      "upper": 0.21353809042418412
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 89,
+     "strata": 89,
+     "psus": 178
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.012566449807422886,
+     "unweighted": 0.012553416037745235
+    }
+   }
+  }
+ ],
+ "groups": [
+  {
+   "groupId": "ESS9e03_3:second_vote:1",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 556,
+      "totalCount": 558,
+      "missingCount": 2,
+      "missingReasons": [
+       {
+        "reason": "Don't know",
+        "count": 2,
+        "primaryWeightSum": null
+       }
+      ],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.03130272812422335,
+        "lower": 0.0189979238313118,
+        "upper": 0.05116161611427654
+       },
+       {
+        "code": "2",
+        "proportion": 0.2890690155291339,
+        "lower": 0.24476255700872826,
+        "upper": 0.33780837743671477
+       },
+       {
+        "code": "3",
+        "proportion": 0.24413301059033074,
+        "lower": 0.20669362491934146,
+        "upper": 0.28590987014729696
+       },
+       {
+        "code": "4",
+        "proportion": 0.33000986463363874,
+        "lower": 0.28813525936014395,
+        "upper": 0.3747662732547535
+       },
+       {
+        "code": "5",
+        "proportion": 0.1054853811226732,
+        "lower": 0.08109350884862558,
+        "upper": 0.13612714122678643
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.01748628171618427,
+       "unweighted": 0.01748628171618427
+      }
+     }
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 551,
+      "totalCount": 558,
+      "missingCount": 7,
+      "missingReasons": [
+       {
+        "reason": "Don't know",
+        "count": 6,
+        "primaryWeightSum": 6.95747724
+       },
+       {
+        "reason": "Refusal",
+        "count": 1,
+        "primaryWeightSum": null
+       }
+      ],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.008208112940436618,
+        "lower": 0.0032565390338121325,
+        "upper": 0.020533465522920985
+       },
+       {
+        "code": "2",
+        "proportion": 0.1519856507115456,
+        "lower": 0.11946732365646834,
+        "upper": 0.19143097635157874
+       },
+       {
+        "code": "3",
+        "proportion": 0.23157531901131698,
+        "lower": 0.19650493127914354,
+        "upper": 0.27079531369657306
+       },
+       {
+        "code": "4",
+        "proportion": 0.47634353525402423,
+        "lower": 0.436287843977638,
+        "upper": 0.5167058841481698
+       },
+       {
+        "code": "5",
+        "proportion": 0.1318873820826766,
+        "lower": 0.10641994001394865,
+        "upper": 0.16234220851060263
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.007858534432749864,
+       "unweighted": 0.007858534432749892
+      }
+     }
+    }
+   ]
+  },
+  {
+   "groupId": "ESS9e03_3:second_vote:2",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 353,
+      "totalCount": 355,
+      "missingCount": 2,
+      "missingReasons": [
+       {
+        "reason": "Don't know",
+        "count": 2,
+        "primaryWeightSum": null
+       }
+      ],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.12327115539244775,
+        "lower": 0.09438303613492832,
+        "upper": 0.1594444380661744
+       },
+       {
+        "code": "2",
+        "proportion": 0.3300674818758771,
+        "lower": 0.2764506397265289,
+        "upper": 0.38849965279054455
+       },
+       {
+        "code": "3",
+        "proportion": 0.23238985730254075,
+        "lower": 0.19521830700849382,
+        "upper": 0.274227490778903
+       },
+       {
+        "code": "4",
+        "proportion": 0.26422453920373823,
+        "lower": 0.21248601919617915,
+        "upper": 0.3233877014100408
+       },
+       {
+        "code": "5",
+        "proportion": 0.05004696622539623,
+        "lower": 0.032992417140962065,
+        "upper": 0.0752315475108951
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.01561988980788842,
+       "unweighted": 0.01561988980788842
+      }
+     }
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 354,
+      "totalCount": 355,
+      "missingCount": 1,
+      "missingReasons": [
+       {
+        "reason": "Don't know",
+        "count": 1,
+        "primaryWeightSum": null
+       }
+      ],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.016172847297106305,
+        "lower": 0.006809299254242699,
+        "upper": 0.03792070936866358
+       },
+       {
+        "code": "2",
+        "proportion": 0.11618540681115604,
+        "lower": 0.08721345700650786,
+        "upper": 0.15316673842064266
+       },
+       {
+        "code": "3",
+        "proportion": 0.1578211612540648,
+        "lower": 0.12344882573614148,
+        "upper": 0.19958479871134666
+       },
+       {
+        "code": "4",
+        "proportion": 0.5143947933400723,
+        "lower": 0.45320495765750507,
+        "upper": 0.5751561179472825
+       },
+       {
+        "code": "5",
+        "proportion": 0.1954257912976005,
+        "lower": 0.15664636406705007,
+        "upper": 0.24106136410985954
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.011569934583010144,
+       "unweighted": 0.011569934583010144
+      }
+     }
+    }
+   ]
+  },
+  {
+   "groupId": "ESS9e03_3:second_vote:3",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 125,
+      "totalCount": 125,
+      "missingCount": 0,
+      "missingReasons": [],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.1410215147919039,
+        "lower": 0.0928149368890985,
+        "upper": 0.20851104098993675
+       },
+       {
+        "code": "2",
+        "proportion": 0.39537236653520297,
+        "lower": 0.30475715141050735,
+        "upper": 0.49379442888578445
+       },
+       {
+        "code": "3",
+        "proportion": 0.17733450013175447,
+        "lower": 0.12109992650538756,
+        "upper": 0.25218953483517964
+       },
+       {
+        "code": "4",
+        "proportion": 0.2323281917539303,
+        "lower": 0.17111862147989523,
+        "upper": 0.30731488975777393
+       },
+       {
+        "code": "5",
+        "proportion": 0.053943426787208364,
+        "lower": 0.018694665016474828,
+        "upper": 0.14578031839478162
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.019372366535202967,
+       "unweighted": 0.019372366535202967
+      }
+     }
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    }
+   ]
+  },
+  {
+   "groupId": "ESS9e03_3:second_vote:4",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 287,
+      "totalCount": 289,
+      "missingCount": 2,
+      "missingReasons": [
+       {
+        "reason": "Refusal",
+        "count": 2,
+        "primaryWeightSum": null
+       }
+      ],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.08811011445800292,
+        "lower": 0.056842686313069525,
+        "upper": 0.13413081419063821
+       },
+       {
+        "code": "2",
+        "proportion": 0.3340443008990587,
+        "lower": 0.2822691940827995,
+        "upper": 0.39015382099215024
+       },
+       {
+        "code": "3",
+        "proportion": 0.2279810215483714,
+        "lower": 0.18387634760573748,
+        "upper": 0.2790475228431037
+       },
+       {
+        "code": "4",
+        "proportion": 0.3177764004873412,
+        "lower": 0.2629536473154897,
+        "upper": 0.37816458814393256
+       },
+       {
+        "code": "5",
+        "proportion": 0.032088162607225766,
+        "lower": 0.017334544918304398,
+        "upper": 0.058649294695695804
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.008468826426420217,
+       "unweighted": 0.00846882642642019
+      }
+     }
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    }
+   ]
+  },
+  {
+   "groupId": "ESS9e03_3:second_vote:5",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 147,
+      "totalCount": 147,
+      "missingCount": 0,
+      "missingReasons": [],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.03904229958687797,
+        "lower": 0.016633561404641173,
+        "upper": 0.08891056754816817
+       },
+       {
+        "code": "2",
+        "proportion": 0.22910864560290725,
+        "lower": 0.16251039939341239,
+        "upper": 0.3128055819057601
+       },
+       {
+        "code": "3",
+        "proportion": 0.23452790997896525,
+        "lower": 0.16079052200106228,
+        "upper": 0.32883070351025895
+       },
+       {
+        "code": "4",
+        "proportion": 0.38822023233440656,
+        "lower": 0.31202086625465897,
+        "upper": 0.4703073034063882
+       },
+       {
+        "code": "5",
+        "proportion": 0.10910091249684291,
+        "lower": 0.0674587288117545,
+        "upper": 0.17171539567608177
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.03044627732590402,
+       "unweighted": 0.03044627732590402
+      }
+     }
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 147,
+      "totalCount": 147,
+      "missingCount": 0,
+      "missingReasons": [],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.322766722769104,
+        "lower": 0.2443217964542163,
+        "upper": 0.4126448276729058
+       },
+       {
+        "code": "2",
+        "proportion": 0.5804988325792713,
+        "lower": 0.48976645324443285,
+        "upper": 0.6660965758357621
+       },
+       {
+        "code": "3",
+        "proportion": 0.057435350780031875,
+        "lower": 0.026321958649632545,
+        "upper": 0.12076434377149858
+       },
+       {
+        "code": "4",
+        "proportion": 0.03929909387159285,
+        "lower": 0.015163238082108416,
+        "upper": 0.0980287908339242
+       },
+       {
+        "code": "5",
+        "proportion": 0.0,
+        "lower": null,
+        "upper": null
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.009816303160984259,
+       "unweighted": 0.009816303160984259
+      }
+     }
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 146,
+      "totalCount": 147,
+      "missingCount": 1,
+      "missingReasons": [
+       {
+        "reason": "Don't know",
+        "count": 1,
+        "primaryWeightSum": null
+       }
+      ],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.0,
+        "lower": null,
+        "upper": null
+       },
+       {
+        "code": "2",
+        "proportion": 0.07672085502752346,
+        "lower": 0.04323676597393644,
+        "upper": 0.13254386108429772
+       },
+       {
+        "code": "3",
+        "proportion": 0.26318566406918087,
+        "lower": 0.19346475340353403,
+        "upper": 0.34721578750143317
+       },
+       {
+        "code": "4",
+        "proportion": 0.5179941818660019,
+        "lower": 0.4402375936803456,
+        "upper": 0.5948889454225756
+       },
+       {
+        "code": "5",
+        "proportion": 0.14209929903729385,
+        "lower": 0.09561854337009398,
+        "upper": 0.20602735655939486
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.03715826680890688,
+       "unweighted": 0.03715826680890691
+      }
+     }
+    }
+   ]
+  },
+  {
+   "groupId": "ESS9e03_3:second_vote:6",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 109,
+      "totalCount": 111,
+      "missingCount": 2,
+      "missingReasons": [
+       {
+        "reason": "Don't know",
+        "count": 2,
+        "primaryWeightSum": null
+       }
+      ],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.1006990975833688,
+        "lower": 0.045119550511852034,
+        "upper": 0.20970720747941007
+       },
+       {
+        "code": "2",
+        "proportion": 0.3159688756959169,
+        "lower": 0.22722107920104667,
+        "upper": 0.42051737862460487
+       },
+       {
+        "code": "3",
+        "proportion": 0.2277048802343726,
+        "lower": 0.14535167109344221,
+        "upper": 0.33825085537530863
+       },
+       {
+        "code": "4",
+        "proportion": 0.2856436448533136,
+        "lower": 0.1993562133752423,
+        "upper": 0.3910380539814973
+       },
+       {
+        "code": "5",
+        "proportion": 0.06998350163302812,
+        "lower": 0.037520854657676614,
+        "upper": 0.12683138996214835
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.02175961763302693,
+       "unweighted": 0.02175961763302693
+      }
+     }
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 111,
+      "totalCount": 111,
+      "missingCount": 0,
+      "missingReasons": [],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.3242993341498058,
+        "lower": 0.22934777018595887,
+        "upper": 0.4363057532306611
+       },
+       {
+        "code": "2",
+        "proportion": 0.5633316830818932,
+        "lower": 0.44492719378901324,
+        "upper": 0.6749320966469988
+       },
+       {
+        "code": "3",
+        "proportion": 0.11236898276830101,
+        "lower": 0.05314744584369027,
+        "upper": 0.22210124486427935
+       },
+       {
+        "code": "4",
+        "proportion": 0.0,
+        "lower": null,
+        "upper": null
+       },
+       {
+        "code": "5",
+        "proportion": 0.0,
+        "lower": null,
+        "upper": null
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.03126291151270144,
+       "unweighted": 0.03126291151270144
+      }
+     }
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "reviewed_historical_reference",
+     "reference": {
+      "validCount": 110,
+      "totalCount": 111,
+      "missingCount": 1,
+      "missingReasons": [
+       {
+        "reason": "Refusal",
+        "count": 1,
+        "primaryWeightSum": null
+       }
+      ],
+      "notAskedCount": 0,
+      "exportBlankCount": 0,
+      "categories": [
+       {
+        "code": "1",
+        "proportion": 0.0,
+        "lower": null,
+        "upper": null
+       },
+       {
+        "code": "2",
+        "proportion": 0.12995069019477065,
+        "lower": 0.07839976568259462,
+        "upper": 0.2077570015903439
+       },
+       {
+        "code": "3",
+        "proportion": 0.16204205032368998,
+        "lower": 0.10458247250790581,
+        "upper": 0.24252055227434877
+       },
+       {
+        "code": "4",
+        "proportion": 0.4652113627388408,
+        "lower": 0.3652192031379034,
+        "upper": 0.5680801557489726
+       },
+       {
+        "code": "5",
+        "proportion": 0.24279589674269855,
+        "lower": 0.15922818724432314,
+        "upper": 0.3518672924359078
+       }
+      ],
+      "interval": {
+       "method": "taylor_linearisation_xlogit",
+       "level": 0.95,
+       "degreesOfFreedom": 89,
+       "strata": 89,
+       "psus": 178
+      },
+      "sensitivityMaxAbs": {
+       "dweight": 0.03370498765178945,
+       "unweighted": 0.033704987651789475
+      }
+     }
+    }
+   ]
+  },
+  {
+   "groupId": "ESS9e03_3:second_vote:7",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    }
+   ]
+  },
+  {
+   "groupId": "ESS9e03_3:second_vote:8",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    }
+   ]
+  },
+  {
+   "groupId": "ESS9e03_3:second_vote:9",
+   "pairs": [
+    {
+     "questionId": "ESS9e03_3:sofrdst",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrwrk",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrpr",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    },
+    {
+     "questionId": "ESS9e03_3:sofrprv",
+     "status": "withheld_base_or_cell_count",
+     "reference": null
+    }
+   ]
+  }
+ ],
+ "decision": "EXPORT-V22-001",
+ "candidateSha256": "de294c01a673878cdca7f9a24c7c3574ab913178247a00c2500be79fc8427c2e"
+}

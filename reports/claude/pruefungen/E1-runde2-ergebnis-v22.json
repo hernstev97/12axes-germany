@@ -1,0 +1,3307 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "E1 Runde 2: gezielte Nachprüfung E1-V22-F01 bis F03 und Ergebnisprüfung der ESS5-/ESS8-Bereiche nach Plan v2.2",
+  "scope": "Extern gehashtes Umfangsmanifest reports/claude/auftraege/E1-runde2-ergebnispruefung-v22.md; candidate-2, Zellnachweis, benannte öffentliche Belege und Code; keine Roh-/Privatdaten, keine Fragenauswahl oder tatsächliche Veröffentlichung.",
+  "manifestSha256": "ce6aa5b35684f40d666743da866aa34af34a7d51b9fd3c5bf98fc99646c5458a",
+  "status": "BESTANDEN",
+  "execution": {
+    "provider": "OpenAI Codex",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "T3-Code-Runtime nennt gpt-6.1-sol und high reasoning effort; keine konkrete interne Modellrevision nachgewiesen.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "apply_patch",
+      "Python 3: JSON/SHA-256/Mathematik, unittest und unittest.mock",
+      "Git: lokale Status-/Tag-/Byteprüfung und ls-remote origin",
+      "Node/Ajv2020: formale JSON-Schemaprüfung",
+      "pnpm exec prettier: ausschließlich Formatierung und Prüfung der zwei Ergebnisdateien"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/E1-runde2-ergebnispruefung-v22.md vollständig. Arbeitsverzeichnis ist dieser Worktree. Der Auftrag ist das Umfangsmanifest. Sein SHA-256 lautet ce6aa5b35684f40d666743da866aa34af34a7d51b9fd3c5bf98fc99646c5458a. Prüfe ihn vor Beginn. Stand beim Auftrag: HEAD 3be8c4e846199255cfb4d24d232263e05ea5eaf4 auf dem Branch research/life-93-claude-20261003. Schreibe nur die beiden im Auftrag genannten Ergebnisdateien. Keine Commits, Pushes, Tags oder Nachrichten. Nichts unter data/raw/ oder data/local/ lesen. Am Ende fasse Gesamturteil und Findings in wenigen Sätzen zusammen.",
+    "inputHashes": {
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      "data/analysevertrag.v2.entwurf.json": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "data/politikprofil-v2.2.ergaenzung.json": "c4b0d97aeaf10868001199cb3f7f135a6fb8ec28d63b58f7f222ff7e0acd71ac",
+      "data/reference-groups-v21/ESS5e03_6.json": "343d06f921f5a943e742f304255726302b71162fb55d8c73b73d11f2f184b19a",
+      "data/reference-groups-v21/ESS8e02_3.json": "fda4e3dab0546ba25ebb2c265d0d930830615697b023fce2075e41c6a562ff3a",
+      "data/reference-groups-v21/ESS9e03_3.json": "a1e7f8b116da9d055ffffb2dc5eb2af04e43524962433a9b032f09cbd8b5d093",
+      "data/reference-v2/ESS10SCe03_2.json": "e75dfbadcf68c14dce9d13c8a8a2dd1abc6e8a6e96618f960c8cd61c54bc3184",
+      "data/reference-v2/ESS11e04_2.json": "453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721",
+      "data/reference-v2/ESS5e03_6.json": "e489fe013d1cbd3d72b9ae816e422757ce8d34ae575d09f64df13a1750dc4bc6",
+      "data/reference-v2/ESS8e02_3.json": "fb720cc18049f037ed86670bd76a51c3c1770342a61f5627b7afbfb127898ad7",
+      "data/reference-v2/ESS9e03_3.json": "34e71b448c0c315cf9f19bda30628874c95464faf661813a65f25a3f9ad82be2",
+      "docs/abdeckung-v2.2.md": "f3f03912f38dc7149b73739bc18fa9bcec59c65f6cb77edfd130be3c8e2d1b10",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "docs/project.md": "7cfa1d4046eb30ae4b29728c49fa90baff89f40e56199b8eff0a738ca004e270",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "outputs/claude/v22-candidate-2/ESS10SCe03_2.json": "2f79c5def38e0dc4a9bb8c199256e939a713f745b5e8b4db97ec4339aa069c42",
+      "outputs/claude/v22-candidate-2/ESS11e04_2.json": "5e8acdee4c151d9e223828d7b6ac49a885a5903f58965b281d22d40397375af3",
+      "outputs/claude/v22-candidate-2/ESS5e03_6.json": "454e500f7642a3abc138b121305e929265a8019f426fe8ddd0728ab6fdc74bb7",
+      "outputs/claude/v22-candidate-2/ESS8e02_3.json": "b61d3f66ee660bcbc062c0b7278dbb9f507f9df58fea4f7ca8c6663d0d8b5d4b",
+      "outputs/claude/v22-candidate-2/ESS9e03_3.json": "de294c01a673878cdca7f9a24c7c3574ab913178247a00c2500be79fc8427c2e",
+      "outputs/claude/v22-candidate-2/zellnachweis.json": "67d03502b85ad0f8b01f7cf9ae28dc4bfa5977c6ad322337c8ef883afbbcd2b9",
+      "outputs/claude/v22-candidate/ESS10SCe03_2.json": "b73b9dd089a51d9bb63c90ead09600de6547125f568d851eab97b2d3f6154baf",
+      "outputs/claude/v22-candidate/ESS11e04_2.json": "c5e20b9f5ae6bb20ce606c52066dc608db8e3c061217b8eefbbd121da5b5a0ac",
+      "outputs/claude/v22-candidate/ESS5e03_6.json": "5fa548f650a481d70662c88a1ef904ad7b11319c2e03b64b4d52ca40bb096500",
+      "outputs/claude/v22-candidate/ESS8e02_3.json": "203a95505a1305dfc2b6c3541730faf0719f82451189de045d4c3b0793c6c714",
+      "outputs/claude/v22-candidate/ESS9e03_3.json": "6a2acd3cd3cf6b42fec51e3e1a9b99f796d0af80900711452a8069004af87829",
+      "package.json": "451c9de3c5e0b647361bfbc749717712b895b822a04f84433288d19eb29a27f7",
+      "pipeline/policy_reference_v2.py": "bc06e5c06935e3ff492543bdca986ebca823ec962eab8e6321ff2bf19ee83d2b",
+      "pipeline/v22/export_v22.py": "de0cd64d93e1bd0744029ef764cfb9226cfec4902a04c3c42ba015f8645fd34b",
+      "pipeline/v22/run_v22.py": "b07d5bd8e9306dc7db2b0f1e72af9207d00ca255ea3b0c3c2f58d9f87925e1fd",
+      "pipeline/v22/run_v22_sddf.py": "60d6904c421b8b9bee0408b8c803a43f7783025ba50661e9a63454c1d87ddf66",
+      "pipeline/v22/sav.py": "2783682169b5f62a354b5384f758327aa86e6e8a7dd1e3ccd6b682d174c54216",
+      "pipeline/v22/survey.py": "ef9011c5a9b9792373f7c9395d4e5db17a4381dab648480b2276ddac15a982bc",
+      "pipeline/v22/test_export_v22.py": "ed9039cf2a5b0df6381649edbe098cc419597e38380ec5b9297a16b85018d4ee",
+      "pipeline/v22/test_run_v22.py": "e893eadbf46c64c0b96739dff16105be7f83529d3c1cc317df546ab44f46667c",
+      "pipeline/v22/test_run_v22_sddf.py": "906fd5f0a7c4bf6222a99238b77f8c7ce999149f975c90b009d5c28f394336d3",
+      "pipeline/v22/test_survey.py": "dacdde363044981d575636447f6e206f89a0325353c8cc7b9a7898e1ca8ed011",
+      "reports/claude/auftraege/E1-runde2-ergebnispruefung-v22.md": "ce6aa5b35684f40d666743da866aa34af34a7d51b9fd3c5bf98fc99646c5458a",
+      "reports/claude/kontrollrechnung/kontrolle.py": "53c0de1ed255f03fa77ffbddb1027a7e351bd77326b8c430820fd16dc7649246",
+      "reports/claude/kontrollrechnung/sddf-gegenprobe.json": "4d03c326a14dd254046948f14f625651193d59286e5aeae4af592d7d45ead87e",
+      "reports/claude/kontrollrechnung/sddf_gegenprobe.py": "c19acfb12d12e30f2af135b213a7f8f1b6391cb0a1345dba309732421035bccd",
+      "reports/claude/pruefungen/E1-ergebnis-v22.json": "005c82ca3e11905b918dd43a70521627021472f04bb990d9025a92a4ab88580e",
+      "reports/claude/pruefungen/E1-ergebnis-v22.md": "11241aa1acc153b8dd5df96fde077fc24b1c9edd2367ccc4b286ffde905593a4",
+      "reports/claude/v22-laufbeleg.json": "9eeab05e98c51a98bede3e262c83be15381a273e3524a3284d9ff80fdcde59db",
+      "scripts/check-review-schema.mjs": "2575997f720f0c440fc54a9ccc15a2bd8c8fb69638dab8c03cf8b9fdaf810166"
+    }
+  },
+  "checks": [
+    {
+      "id": "E1-R2-BINDUNG",
+      "scope": "Manifest, Kandidaten, Laufbeleg und eingefrorene Regeln",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Alle sechs extern genannten Sollhashes stimmen; HEAD/Branch entsprechen dem Auftrag; sechs eingefrorene Regel-/Codeartefakte bytegleich mit analyseplan-v2.2; Tag lokal und origin zeigt auf b6af9a472c71ade865543cf75100c44a164ee12d.",
+        "Während der Prüfung änderte parallele Arbeit HEAD auf 028c07fffdd4d91fe1a63b10725ebbea8e221faf. Alle 49 dokumentierten Eingabehashes wurden danach erneut geprüft und sind unverändert. Der zusätzliche unversionierte Bericht reports/claude/agenten/R5-wvs.md stammt nicht aus diesem Review und wurde nicht geöffnet oder verändert."
+      ]
+    },
+    {
+      "id": "E1-R2-F01",
+      "scope": "Status und Freigabekontrollfluss",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "outputs/claude/v22-candidate-2/*.json: alle 59 numerischen Einzelreferenzen und 96 numerischen Paare sind prepared_pending_result_review; übrige 197 Einträge tragen reference=null. pipeline/v22/export_v22.py:175-179 und 234-264: Kandidatenstatus bleibt vorbereitet; release prüft beide privaten Laufhashes und alle fünf Kandidatendokumenthashes. Sechs synthetische Release-Szenarien über stdin mit gemockten load_runs/candidates und Path-Schreibmethoden: falsche Lauf-/Kandidatenbindung und Freigabe einer gesperrten Referenz abgewiesen; positive und leere Freigabelisten korrekt verarbeitet."
+      ]
+    },
+    {
+      "id": "E1-R2-F02",
+      "scope": "Kategorienordnung und unveränderte Anteile",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "pipeline/v22/export_v22.py:116-129 und 163-177: public_reference iteriert über explizite order; apiValidCodeOrder wird für neue Fragen abgeglichen. Alle 914 exportierten Kategorien in 155 numerischen Referenzen stimmen mit apiValidCodeOrder beziehungsweise categoryCodes überein. Codebezogener Vergleich aller 104 bisherigen numerischen Referenzen gegen outputs/claude/v22-candidate: maximale Anteilsabweichung 0."
+      ]
+    },
+    {
+      "id": "E1-R2-F03",
+      "scope": "Zellnachweis und Publikationsregeln",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "outputs/claude/v22-candidate-2/zellnachweis.json: genau 155 eindeutige IDs, identische Menge wie die vorbereiteten Referenzen, validCount und Kategorienzahl jeweils gleich den Kandidaten, beide Laufhashes und alle fünf Kandidatenhashes gebunden. Minimum validCount=108; Minimum minPositiveCount=5; countSumEqualsValidCount=true bei allen 155 Einträgen; positiveCategories stimmt mit den positiven exportierten Anteilen überein. pipeline/v22/export_v22.py:144-156 und 213-230: Nachweis aus categoryCounts ausschließlich für vorbereitete Referenzen, Abbruch bei verletzter 100/5-Regel oder falscher Summe."
+      ]
+    },
+    {
+      "id": "E1-R2-SDDF",
+      "scope": "Eins-zu-eins-Zuordnung, PSU/Stratum, Gewichte und enger SPSS-Leser",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "run_v22_sddf.read_design/linked_design verweigern doppelte/fehlende IDs und unvollständige Zeilen; Mengenidentität und kanonische IDs werden geprüft. survey gruppiert PSU innerhalb Stratum und erhält das vollständige deutsche Design. PROB ist kein Bestandteil des festgelegten Verfahrens. Synthetische SDDF- und SAV-Tests bestanden; tatsächliche private Zuordnung nur durch Laufbeleg belegt."
+      ]
+    },
+    {
+      "id": "E1-R2-BEREICHE",
+      "scope": "Exportierte Bereiche, Freiheitsgrade und grobe Plausibilität",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Alle 889 Bereiche liegen in [0,1], enthalten ihren Anteil und sind auf der Logitskala symmetrisch; 25 fehlende Bereiche ausschließlich bei Anteil 0. ESS5:168−2=166 df; ESS8:180−20=160 df. Breiten und grobe Designeffekte liefern keinen groben Fallzahlwiderspruch."
+      ]
+    },
+    {
+      "id": "E1-R2-GEGENPROBE",
+      "scope": "Unabhängigkeit und Reichweite der erlaubten Gegenprobe",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Getrennte CSV-/Code-/Gruppenimplementierung und policy_reference_v2 für Anteile und Taylor-SE. Bericht bindet denselben Designlauf: ESS5 32 Referenzen/202 Kategorien, ESS8 79/407; max SE-Abweichung 0. ESS5 teilt sav.py, Logit/t-Quantile/Intervallgrenzen sind nicht Gegenstand der Gegenrechnung. Kein erneuter privater Lauf."
+      ]
+    },
+    {
+      "id": "E1-R2-V2-V21",
+      "scope": "Alle bereits veröffentlichten Werte, Status und Gruppendefinitionen",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "42 Einzelreferenzen und 63 Paare gegen veröffentlichte Dateien geprüft; maximale Anteilsabweichung jeweils 1.1102230246251565e-16. Numerisch/null und Unterdrückungsstatus gleich; historische Gruppen-IDs, Reihenfolge, Parteicodes, Art und veröffentlichte Bezeichnungen stimmen mit v2.1 überein."
+      ]
+    },
+    {
+      "id": "E1-R2-PLAN41",
+      "scope": "Bereiche für bereits veröffentlichte ESS5-/ESS8-Paare",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Plan 4.1 verlangt Bereiche für jeden veröffentlichten Kategorienanteil einer Einzelreferenz und eines Gruppenpaares mit vollständigem Design. Die zusätzlichen 51 vorbereiteten ESS5-/ESS8-v2.1-Paare sind planmäßig; Anteile und Status gegenüber veröffentlichten Dateien unverändert."
+      ]
+    },
+    {
+      "id": "E1-R2-EXPORTLISTE",
+      "scope": "Vollständige positive und negative Exportempfehlung",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "ratings[0] enthält 59 empfohlene Einzelreferenzen, 96 empfohlene Paare, drei ausgeschlossene Einzelreferenzen und 194 ausgeschlossene Paare mit Grund. Vollständige disjunkte Abdeckung des Kandidateninventars."
+      ]
+    },
+    {
+      "id": "E1-R2-TECHNIK",
+      "scope": "Ausdrücklich erlaubte synthetische Python-Tests",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s pipeline/v22 -t .: 21 Tests, OK. Zusätzliche sechs Release-Kontrollfluss-Szenarien rein im Speicher bestanden."
+      ]
+    },
+    {
+      "id": "E1-R2-RELEASE",
+      "scope": "Stevens Veröffentlichung, Rechte, UI und menschlicher Verständnistest",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "requiredInScope": false,
+      "evidence": [
+        "Keine tatsächliche Exportentscheidung oder Veröffentlichung Bestandteil dieses Reviewauftrags."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "E1-V22-F01",
+      "claim": "Numerische Kandidaten behalten prepared_pending_result_review bis zur ausdrücklichen Exportentscheidung.",
+      "problem": "Runde 1 setzte reviewed_historical_reference vor der Ergebnisprüfung. In Runde 2 korrigiert.",
+      "evidence": [
+        "outputs/claude/v22-candidate-2/*.json: alle 59 numerischen Einzelreferenzen und 96 numerischen Paare sind prepared_pending_result_review; übrige 197 Einträge tragen reference=null.",
+        "pipeline/v22/export_v22.py:175-179 und 234-264: Kandidatenstatus bleibt vorbereitet; release prüft beide privaten Laufhashes und alle fünf Kandidatendokumenthashes.",
+        "Sechs synthetische Release-Szenarien über stdin mit gemockten load_runs/candidates und Path-Schreibmethoden: falsche Lauf-/Kandidatenbindung und Freigabe einer gesperrten Referenz abgewiesen; positive und leere Freigabelisten korrekt verarbeitet."
+      ],
+      "impact": "Die vorzeitige Reviewbehauptung entfällt. Eine echte Exportentscheidung ist weiterhin erforderlich.",
+      "severity": "mittel",
+      "severityReason": "Historischer Befund betraf eine relevante Freigabeangabe, nicht die rechnerische Richtigkeit der Anteile.",
+      "correction": "Zweistufiger Export wurde umgesetzt; keine historische Datei ersetzt.",
+      "recheck": "Alle Status-/Null-Kombinationen und Hashbindungen geprüft; gezielte Release-Kontrollflussprobe bestanden. Zellnachweis wird in candidates erneut berechnet; seine öffentliche Datei wird nicht von release geladen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "E1-V22-F02",
+      "claim": "Kategorien jeder numerischen Referenz folgen exakt dem gebundenen Codeinventar in dessen Reihenfolge.",
+      "problem": "Runde 1 sortierte 20 Skalenreferenzen lexikografisch. In Runde 2 korrigiert.",
+      "evidence": [
+        "pipeline/v22/export_v22.py:116-129 und 163-177: public_reference iteriert über explizite order; apiValidCodeOrder wird für neue Fragen abgeglichen.",
+        "Alle 914 exportierten Kategorien in 155 numerischen Referenzen stimmen mit apiValidCodeOrder beziehungsweise categoryCodes überein.",
+        "Codebezogener Vergleich aller 104 bisherigen numerischen Referenzen gegen outputs/claude/v22-candidate: maximale Anteilsabweichung 0."
+      ],
+      "impact": "Die Ordinalreihenfolge ist wiederhergestellt, ohne die Anteile oder Polung zu ändern.",
+      "severity": "mittel",
+      "severityReason": "Historischer Befund konnte die Darstellung des oberen Skalenpols verfälschen.",
+      "correction": "Die Exportfassung nutzt explizite Vertragsreihenfolgen.",
+      "recheck": "Alle numerischen Einzelreferenzen und Paare auf Inventar und Arrayreihenfolge geprüft; 62 Fragen und 290 Paare strukturell gegen die geplanten Studien-/Gruppeninventare geprüft.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "E1-V22-F03",
+      "claim": "Jede vorbereitete Referenz hat einen gebundenen aggregierten Nachweis der Publikationsregeln 100/5 und des Summenabgleichs.",
+      "problem": "Runde 1 enthielt keinen nachprüfbaren Zellschwellennachweis. In Runde 2 korrigiert.",
+      "evidence": [
+        "outputs/claude/v22-candidate-2/zellnachweis.json: genau 155 eindeutige IDs, identische Menge wie die vorbereiteten Referenzen, validCount und Kategorienzahl jeweils gleich den Kandidaten, beide Laufhashes und alle fünf Kandidatenhashes gebunden.",
+        "Minimum validCount=108; Minimum minPositiveCount=5; countSumEqualsValidCount=true bei allen 155 Einträgen; positiveCategories stimmt mit den positiven exportierten Anteilen überein.",
+        "pipeline/v22/export_v22.py:144-156 und 213-230: Nachweis aus categoryCounts ausschließlich für vorbereitete Referenzen, Abbruch bei verletzter 100/5-Regel oder falscher Summe."
+      ],
+      "impact": "Der im Auftrag verlangte aggregierte Nachweis liegt vor und passt zum geprüften Paket.",
+      "severity": "mittel",
+      "severityReason": "Historischer Befund ließ eine ausdrückliche Publikationsvoraussetzung unbelegt.",
+      "correction": "Neue gehashte Nachweisdatei wurde bereitgestellt, ausschließlich für vorbereitete Referenzen.",
+      "recheck": "Alle Einträge, Mindestwerte, Summenbestätigungen, positive Kategorien und Hashbindungen abgeglichen. Ungewichtete Originalzählungen wurden nicht neu aus Privatdaten berechnet.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "E1-R2-EXPORTEMPFEHLUNG",
+      "kind": "Empfehlung für ausdrückliche Exportentscheidung; keine ausgeführte Entscheidung",
+      "privateRunSha256": "0ebe86b22cb3795ea232c9f0e645e6893d7355d47c842b7f8f10cb4ad6554001",
+      "designRunSha256": "821c8db3bdf783c3ecfeddf0462f39efc875953611d70ae9edbc7c92c951827c",
+      "candidateFiles": {
+        "ESS10SCe03_2.json": "2f79c5def38e0dc4a9bb8c199256e939a713f745b5e8b4db97ec4339aa069c42",
+        "ESS11e04_2.json": "5e8acdee4c151d9e223828d7b6ac49a885a5903f58965b281d22d40397375af3",
+        "ESS5e03_6.json": "454e500f7642a3abc138b121305e929265a8019f426fe8ddd0728ab6fdc74bb7",
+        "ESS8e02_3.json": "b61d3f66ee660bcbc062c0b7278dbb9f507f9df58fea4f7ca8c6663d0d8b5d4b",
+        "ESS9e03_3.json": "de294c01a673878cdca7f9a24c7c3574ab913178247a00c2500be79fc8427c2e"
+      },
+      "zellnachweisSha256": "67d03502b85ad0f8b01f7cf9ae28dc4bfa5977c6ad322337c8ef883afbbcd2b9",
+      "approvedQuestionIds": [
+        "ESS5e03_6:bplcdc",
+        "ESS5e03_6:dpcstrb",
+        "ESS5e03_6:hrshsnta",
+        "ESS5e03_6:dbctvrd",
+        "ESS5e03_6:lwstrob",
+        "ESS5e03_6:rgbrklw",
+        "ESS5e03_6:prtyban",
+        "ESS8e02_3:gvslvol",
+        "ESS8e02_3:gvslvue",
+        "ESS8e02_3:gvcldcr",
+        "ESS8e02_3:bnlwinc",
+        "ESS8e02_3:eduunmp",
+        "ESS8e02_3:inctxff",
+        "ESS8e02_3:sbsrnen",
+        "ESS8e02_3:banhhap",
+        "ESS8e02_3:imsclbn",
+        "ESS8e02_3:wrkprbf",
+        "ESS8e02_3:elgcoal",
+        "ESS8e02_3:elgngas",
+        "ESS8e02_3:elgsun",
+        "ESS8e02_3:elgwind",
+        "ESS8e02_3:elgbio",
+        "ESS8e02_3:gvrfgap",
+        "ESS8e02_3:rfgbfml",
+        "ESS8e02_3:basinc",
+        "ESS8e02_3:eusclbf",
+        "ESS8e02_3:mnrgtjb",
+        "ESS9e03_3:sofrdst",
+        "ESS9e03_3:sofrwrk",
+        "ESS9e03_3:sofrpr",
+        "ESS9e03_3:sofrprv",
+        "ESS10SCe03_2:fairelc",
+        "ESS10SCe03_2:dfprtal",
+        "ESS10SCe03_2:medcrgv",
+        "ESS10SCe03_2:rghmgpr",
+        "ESS10SCe03_2:votedir",
+        "ESS10SCe03_2:gptpelc",
+        "ESS10SCe03_2:gvctzpv",
+        "ESS10SCe03_2:grdfinc",
+        "ESS10SCe03_2:viepol",
+        "ESS10SCe03_2:wpestop",
+        "ESS10SCe03_2:scchpldm",
+        "ESS10SCe03_2:vteurmmb",
+        "ESS10SCe03_2:keydec",
+        "ESS10SCe03_2:imsmetn",
+        "ESS10SCe03_2:imdfetn",
+        "ESS10SCe03_2:impcntr",
+        "ESS10SCe03_2:panpriph",
+        "ESS10SCe03_2:panmonpb",
+        "ESS10SCe03_2:freehms",
+        "ESS10SCe03_2:hmsacld",
+        "ESS10SCe03_2:accalaw",
+        "ESS10SCe03_2:loylead",
+        "ESS11e04_2:gincdif",
+        "ESS11e04_2:euftf",
+        "ESS11e04_2:eqparep",
+        "ESS11e04_2:eqparlv",
+        "ESS11e04_2:freinsw",
+        "ESS11e04_2:fineqpy"
+      ],
+      "approvedPairs": [
+        {
+          "groupId": "ESS5e03_6:second_vote:1",
+          "questionId": "ESS5e03_6:bplcdc"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:1",
+          "questionId": "ESS5e03_6:hrshsnta"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:1",
+          "questionId": "ESS5e03_6:dbctvrd"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:1",
+          "questionId": "ESS5e03_6:rgbrklw"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:1",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:2",
+          "questionId": "ESS5e03_6:bplcdc"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:2",
+          "questionId": "ESS5e03_6:dpcstrb"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:2",
+          "questionId": "ESS5e03_6:hrshsnta"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:2",
+          "questionId": "ESS5e03_6:dbctvrd"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:2",
+          "questionId": "ESS5e03_6:lwstrob"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:2",
+          "questionId": "ESS5e03_6:rgbrklw"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:2",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:3",
+          "questionId": "ESS5e03_6:dpcstrb"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:3",
+          "questionId": "ESS5e03_6:hrshsnta"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:3",
+          "questionId": "ESS5e03_6:dbctvrd"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:3",
+          "questionId": "ESS5e03_6:lwstrob"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:3",
+          "questionId": "ESS5e03_6:rgbrklw"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:3",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:4",
+          "questionId": "ESS5e03_6:dbctvrd"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:4",
+          "questionId": "ESS5e03_6:rgbrklw"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:4",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:5",
+          "questionId": "ESS5e03_6:bplcdc"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:5",
+          "questionId": "ESS5e03_6:hrshsnta"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:5",
+          "questionId": "ESS5e03_6:dbctvrd"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:5",
+          "questionId": "ESS5e03_6:rgbrklw"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:bnlwinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:eduunmp"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:inctxff"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:sbsrnen"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:banhhap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:imsclbn"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:wrkprbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:gvslvue"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:bnlwinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:eduunmp"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:inctxff"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:sbsrnen"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:banhhap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:imsclbn"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:wrkprbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:bnlwinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:eduunmp"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:inctxff"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:banhhap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:imsclbn"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:wrkprbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:bnlwinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:eduunmp"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:inctxff"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:banhhap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:bnlwinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:eduunmp"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:inctxff"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:banhhap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:wrkprbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:1",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:1",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:2",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:2",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:3",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:4",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:5",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:5",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:5",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:6",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:6",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:6",
+          "questionId": "ESS9e03_3:sofrprv"
+        }
+      ],
+      "excludedQuestions": [
+        {
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "questionId": "ESS10SCe03_2:cttresa",
+          "reason": "withheld_base_or_cell_count"
+        }
+      ],
+      "excludedPairs": [
+        {
+          "groupId": "ESS5e03_6:second_vote:1",
+          "questionId": "ESS5e03_6:dpcstrb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:1",
+          "questionId": "ESS5e03_6:lwstrob",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:3",
+          "questionId": "ESS5e03_6:bplcdc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:4",
+          "questionId": "ESS5e03_6:bplcdc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:4",
+          "questionId": "ESS5e03_6:dpcstrb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:4",
+          "questionId": "ESS5e03_6:hrshsnta",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:4",
+          "questionId": "ESS5e03_6:lwstrob",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:5",
+          "questionId": "ESS5e03_6:dpcstrb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:5",
+          "questionId": "ESS5e03_6:lwstrob",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:5",
+          "questionId": "ESS5e03_6:prtyban",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:6",
+          "questionId": "ESS5e03_6:bplcdc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:6",
+          "questionId": "ESS5e03_6:dpcstrb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:6",
+          "questionId": "ESS5e03_6:hrshsnta",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:6",
+          "questionId": "ESS5e03_6:dbctvrd",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:6",
+          "questionId": "ESS5e03_6:lwstrob",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:6",
+          "questionId": "ESS5e03_6:rgbrklw",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:6",
+          "questionId": "ESS5e03_6:prtyban",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:7",
+          "questionId": "ESS5e03_6:bplcdc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:7",
+          "questionId": "ESS5e03_6:dpcstrb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:7",
+          "questionId": "ESS5e03_6:hrshsnta",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:7",
+          "questionId": "ESS5e03_6:dbctvrd",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:7",
+          "questionId": "ESS5e03_6:lwstrob",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:7",
+          "questionId": "ESS5e03_6:rgbrklw",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:7",
+          "questionId": "ESS5e03_6:prtyban",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:8",
+          "questionId": "ESS5e03_6:bplcdc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:8",
+          "questionId": "ESS5e03_6:dpcstrb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:8",
+          "questionId": "ESS5e03_6:hrshsnta",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:8",
+          "questionId": "ESS5e03_6:dbctvrd",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:8",
+          "questionId": "ESS5e03_6:lwstrob",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:8",
+          "questionId": "ESS5e03_6:rgbrklw",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:8",
+          "questionId": "ESS5e03_6:prtyban",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:gvslvue",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgcoal",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgbio",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgcoal",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgsun",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgbio",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:gvslvue",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:sbsrnen",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgcoal",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgngas",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgsun",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgwind",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgbio",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:mnrgtjb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:gvslvue",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:sbsrnen",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:imsclbn",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:wrkprbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgngas",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgsun",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgwind",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgbio",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:rfgbfml",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:mnrgtjb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:gvslvue",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:sbsrnen",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:imsclbn",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgcoal",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgwind",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:basinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:eusclbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:mnrgtjb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:gvslvue",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:bnlwinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:eduunmp",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:inctxff",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:sbsrnen",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:banhhap",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:imsclbn",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:wrkprbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgcoal",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgngas",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgsun",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgwind",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgbio",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:gvrfgap",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:rfgbfml",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:basinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:eusclbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:mnrgtjb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:gvslvue",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:bnlwinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:eduunmp",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:inctxff",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:sbsrnen",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:banhhap",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:imsclbn",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:wrkprbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgcoal",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgngas",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgsun",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgwind",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgbio",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:gvrfgap",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:rfgbfml",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:basinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:eusclbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:mnrgtjb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:gvslvue",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:bnlwinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:eduunmp",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:inctxff",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:sbsrnen",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:banhhap",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:imsclbn",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:wrkprbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgcoal",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgngas",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgsun",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgwind",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgbio",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:gvrfgap",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:rfgbfml",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:basinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:eusclbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:mnrgtjb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:gvslvol",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:gvslvue",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:gvcldcr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:bnlwinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:eduunmp",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:inctxff",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:sbsrnen",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:banhhap",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:imsclbn",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:wrkprbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgcoal",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgngas",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elghydr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgnuc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgsun",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgwind",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgbio",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:gvrfgap",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:rfgbfml",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:basinc",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:eusclbf",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:mnrgtjb",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:1",
+          "questionId": "ESS9e03_3:sofrwrk",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:1",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:2",
+          "questionId": "ESS9e03_3:sofrwrk",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:2",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:3",
+          "questionId": "ESS9e03_3:sofrwrk",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:3",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:3",
+          "questionId": "ESS9e03_3:sofrprv",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:4",
+          "questionId": "ESS9e03_3:sofrwrk",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:4",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:4",
+          "questionId": "ESS9e03_3:sofrprv",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:5",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:6",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:7",
+          "questionId": "ESS9e03_3:sofrdst",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:7",
+          "questionId": "ESS9e03_3:sofrwrk",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:7",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:7",
+          "questionId": "ESS9e03_3:sofrprv",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:8",
+          "questionId": "ESS9e03_3:sofrdst",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:8",
+          "questionId": "ESS9e03_3:sofrwrk",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:8",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:8",
+          "questionId": "ESS9e03_3:sofrprv",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:9",
+          "questionId": "ESS9e03_3:sofrdst",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:9",
+          "questionId": "ESS9e03_3:sofrwrk",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:9",
+          "questionId": "ESS9e03_3:sofrpr",
+          "reason": "withheld_base_or_cell_count"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:9",
+          "questionId": "ESS9e03_3:sofrprv",
+          "reason": "withheld_base_or_cell_count"
+        }
+      ],
+      "approvalReason": "Vorbereiteter Status, exakte Kategorienordnung, gebundener Zellnachweis, konsistente bekannte Anteile und planmäßige Bereiche bestehen diesen begrenzten Ergebnisreview.",
+      "exclusionReason": "withheld_base_or_cell_count: reference bleibt null; keine genaue Unterdrückungsursache oder Werte erschlossen.",
+      "excludedStudyGroups": [
+        "ESS10SCe03_2",
+        "ESS11e04_2"
+      ]
+    },
+    {
+      "id": "E1-R2-DIAGNOSTIK",
+      "metrics": {
+        "errors": [],
+        "summaries": {
+          "ESS5e03_6": {
+            "singles": {
+              "prepared_pending_result_review": 7
+            },
+            "pairs": {
+              "prepared_pending_result_review": 25,
+              "withheld_base_or_cell_count": 31
+            }
+          },
+          "ESS8e02_3": {
+            "singles": {
+              "prepared_pending_result_review": 20,
+              "withheld_base_or_cell_count": 2
+            },
+            "pairs": {
+              "withheld_base_or_cell_count": 139,
+              "prepared_pending_result_review": 59
+            }
+          },
+          "ESS9e03_3": {
+            "singles": {
+              "prepared_pending_result_review": 4
+            },
+            "pairs": {
+              "prepared_pending_result_review": 12,
+              "withheld_base_or_cell_count": 24
+            }
+          },
+          "ESS10SCe03_2": {
+            "singles": {
+              "prepared_pending_result_review": 22,
+              "withheld_base_or_cell_count": 1
+            },
+            "pairs": {}
+          },
+          "ESS11e04_2": {
+            "singles": {
+              "prepared_pending_result_review": 6
+            },
+            "pairs": {}
+          }
+        },
+        "numeric": 155,
+        "categories": 914,
+        "intervals": 889,
+        "boundaryCategories": 25,
+        "oldComparisons": 104,
+        "maxOldDifference": 0,
+        "publishedSingles": 42,
+        "maxSingleDifference": 1.1102230246251565e-16,
+        "publishedPairs": 63,
+        "maxPairDifference": 1.1102230246251565e-16,
+        "smallMissingSuppressed": 77,
+        "cellMinimum": 5,
+        "validMinimum": 108,
+        "diagnostics": {
+          "ESS5e03_6 singles": {
+            "width": [
+              0.008824511869884867,
+              0.03130989395395441,
+              0.061098489122799055
+            ],
+            "deff": [
+              1.0563710400166122,
+              1.771746203167725,
+              5.9191445585567655
+            ]
+          },
+          "ESS5e03_6 pairs": {
+            "width": [
+              0.01929682677957284,
+              0.08064228960385825,
+              0.16826198754644836
+            ],
+            "deff": [
+              0.8632251498123692,
+              1.321218069063804,
+              2.505190866258591
+            ]
+          },
+          "ESS8e02_3 singles": {
+            "width": [
+              0.0033400487378384986,
+              0.030256692721225165,
+              0.05533546639080489
+            ],
+            "deff": [
+              0.9603256553493886,
+              1.477582106954238,
+              2.41192639225013
+            ]
+          },
+          "ESS8e02_3 pairs": {
+            "width": [
+              0.013548766609888768,
+              0.09213278449977574,
+              0.2536379699195906
+            ],
+            "deff": [
+              0.6411603130097194,
+              1.3304989480573912,
+              3.969756874475047
+            ]
+          },
+          "ESS9e03_3 singles": {
+            "width": [
+              0.004633973630599038,
+              0.03541101689785753,
+              0.0560839618249801
+            ],
+            "deff": [
+              0.6500133656973621,
+              1.5232811451306636,
+              3.045566096111765
+            ]
+          },
+          "ESS9e03_3 pairs": {
+            "width": [
+              0.017276926489108852,
+              0.11040881318930088,
+              0.23000490285798558
+            ],
+            "deff": [
+              0.7772236676641932,
+              1.1194253247161257,
+              1.941875471660377
+            ]
+          },
+          "ESS10SCe03_2 singles": {
+            "width": [
+              0.002232443245183593,
+              0.01333651654735006,
+              0.037194712360548
+            ],
+            "deff": [
+              0.8960059534749582,
+              1.4100219403928522,
+              4.603862459753944
+            ]
+          },
+          "ESS11e04_2 singles": {
+            "width": [
+              0.014862521041148966,
+              0.04775809554387739,
+              0.07755895697865445
+            ],
+            "deff": [
+              1.603306797965367,
+              2.9467159361691513,
+              4.544108443362147
+            ]
+          }
+        },
+        "approvedQuestionIds": [
+          "ESS5e03_6:bplcdc",
+          "ESS5e03_6:dpcstrb",
+          "ESS5e03_6:hrshsnta",
+          "ESS5e03_6:dbctvrd",
+          "ESS5e03_6:lwstrob",
+          "ESS5e03_6:rgbrklw",
+          "ESS5e03_6:prtyban",
+          "ESS8e02_3:gvslvol",
+          "ESS8e02_3:gvslvue",
+          "ESS8e02_3:gvcldcr",
+          "ESS8e02_3:bnlwinc",
+          "ESS8e02_3:eduunmp",
+          "ESS8e02_3:inctxff",
+          "ESS8e02_3:sbsrnen",
+          "ESS8e02_3:banhhap",
+          "ESS8e02_3:imsclbn",
+          "ESS8e02_3:wrkprbf",
+          "ESS8e02_3:elgcoal",
+          "ESS8e02_3:elgngas",
+          "ESS8e02_3:elgsun",
+          "ESS8e02_3:elgwind",
+          "ESS8e02_3:elgbio",
+          "ESS8e02_3:gvrfgap",
+          "ESS8e02_3:rfgbfml",
+          "ESS8e02_3:basinc",
+          "ESS8e02_3:eusclbf",
+          "ESS8e02_3:mnrgtjb",
+          "ESS9e03_3:sofrdst",
+          "ESS9e03_3:sofrwrk",
+          "ESS9e03_3:sofrpr",
+          "ESS9e03_3:sofrprv",
+          "ESS10SCe03_2:fairelc",
+          "ESS10SCe03_2:dfprtal",
+          "ESS10SCe03_2:medcrgv",
+          "ESS10SCe03_2:rghmgpr",
+          "ESS10SCe03_2:votedir",
+          "ESS10SCe03_2:gptpelc",
+          "ESS10SCe03_2:gvctzpv",
+          "ESS10SCe03_2:grdfinc",
+          "ESS10SCe03_2:viepol",
+          "ESS10SCe03_2:wpestop",
+          "ESS10SCe03_2:scchpldm",
+          "ESS10SCe03_2:vteurmmb",
+          "ESS10SCe03_2:keydec",
+          "ESS10SCe03_2:imsmetn",
+          "ESS10SCe03_2:imdfetn",
+          "ESS10SCe03_2:impcntr",
+          "ESS10SCe03_2:panpriph",
+          "ESS10SCe03_2:panmonpb",
+          "ESS10SCe03_2:freehms",
+          "ESS10SCe03_2:hmsacld",
+          "ESS10SCe03_2:accalaw",
+          "ESS10SCe03_2:loylead",
+          "ESS11e04_2:gincdif",
+          "ESS11e04_2:euftf",
+          "ESS11e04_2:eqparep",
+          "ESS11e04_2:eqparlv",
+          "ESS11e04_2:freinsw",
+          "ESS11e04_2:fineqpy"
+        ],
+        "approvedPairs": [
+          {
+            "groupId": "ESS5e03_6:second_vote:1",
+            "questionId": "ESS5e03_6:bplcdc"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:1",
+            "questionId": "ESS5e03_6:hrshsnta"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:1",
+            "questionId": "ESS5e03_6:dbctvrd"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:1",
+            "questionId": "ESS5e03_6:rgbrklw"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:1",
+            "questionId": "ESS5e03_6:prtyban"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:2",
+            "questionId": "ESS5e03_6:bplcdc"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:2",
+            "questionId": "ESS5e03_6:dpcstrb"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:2",
+            "questionId": "ESS5e03_6:hrshsnta"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:2",
+            "questionId": "ESS5e03_6:dbctvrd"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:2",
+            "questionId": "ESS5e03_6:lwstrob"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:2",
+            "questionId": "ESS5e03_6:rgbrklw"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:2",
+            "questionId": "ESS5e03_6:prtyban"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:3",
+            "questionId": "ESS5e03_6:dpcstrb"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:3",
+            "questionId": "ESS5e03_6:hrshsnta"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:3",
+            "questionId": "ESS5e03_6:dbctvrd"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:3",
+            "questionId": "ESS5e03_6:lwstrob"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:3",
+            "questionId": "ESS5e03_6:rgbrklw"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:3",
+            "questionId": "ESS5e03_6:prtyban"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:4",
+            "questionId": "ESS5e03_6:dbctvrd"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:4",
+            "questionId": "ESS5e03_6:rgbrklw"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:4",
+            "questionId": "ESS5e03_6:prtyban"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:5",
+            "questionId": "ESS5e03_6:bplcdc"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:5",
+            "questionId": "ESS5e03_6:hrshsnta"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:5",
+            "questionId": "ESS5e03_6:dbctvrd"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:5",
+            "questionId": "ESS5e03_6:rgbrklw"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:bnlwinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:eduunmp"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:inctxff"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:sbsrnen"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:banhhap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:imsclbn"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:wrkprbf"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:elgngas"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:elgsun"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:elgwind"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:gvrfgap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:rfgbfml"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:basinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:eusclbf"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:mnrgtjb"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:gvslvue"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:bnlwinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:eduunmp"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:inctxff"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:sbsrnen"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:banhhap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:imsclbn"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:wrkprbf"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:elgngas"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:elgwind"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:gvrfgap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:rfgbfml"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:basinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:eusclbf"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:mnrgtjb"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:bnlwinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:eduunmp"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:inctxff"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:banhhap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:imsclbn"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:wrkprbf"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:gvrfgap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:rfgbfml"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:basinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:eusclbf"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:bnlwinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:eduunmp"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:inctxff"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:banhhap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:elgcoal"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:gvrfgap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:basinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:eusclbf"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:bnlwinc"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:eduunmp"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:inctxff"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:banhhap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:wrkprbf"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:elgngas"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:elghydr"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:elgsun"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:elgbio"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:gvrfgap"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:rfgbfml"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:1",
+            "questionId": "ESS9e03_3:sofrdst"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:1",
+            "questionId": "ESS9e03_3:sofrprv"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:2",
+            "questionId": "ESS9e03_3:sofrdst"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:2",
+            "questionId": "ESS9e03_3:sofrprv"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:3",
+            "questionId": "ESS9e03_3:sofrdst"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:4",
+            "questionId": "ESS9e03_3:sofrdst"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:5",
+            "questionId": "ESS9e03_3:sofrdst"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:5",
+            "questionId": "ESS9e03_3:sofrwrk"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:5",
+            "questionId": "ESS9e03_3:sofrprv"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:6",
+            "questionId": "ESS9e03_3:sofrdst"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:6",
+            "questionId": "ESS9e03_3:sofrwrk"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:6",
+            "questionId": "ESS9e03_3:sofrprv"
+          }
+        ],
+        "excludedQuestionIds": [
+          {
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "questionId": "ESS10SCe03_2:cttresa",
+            "reason": "withheld_base_or_cell_count"
+          }
+        ],
+        "excludedPairs": [
+          {
+            "groupId": "ESS5e03_6:second_vote:1",
+            "questionId": "ESS5e03_6:dpcstrb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:1",
+            "questionId": "ESS5e03_6:lwstrob",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:3",
+            "questionId": "ESS5e03_6:bplcdc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:4",
+            "questionId": "ESS5e03_6:bplcdc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:4",
+            "questionId": "ESS5e03_6:dpcstrb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:4",
+            "questionId": "ESS5e03_6:hrshsnta",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:4",
+            "questionId": "ESS5e03_6:lwstrob",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:5",
+            "questionId": "ESS5e03_6:dpcstrb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:5",
+            "questionId": "ESS5e03_6:lwstrob",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:5",
+            "questionId": "ESS5e03_6:prtyban",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:6",
+            "questionId": "ESS5e03_6:bplcdc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:6",
+            "questionId": "ESS5e03_6:dpcstrb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:6",
+            "questionId": "ESS5e03_6:hrshsnta",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:6",
+            "questionId": "ESS5e03_6:dbctvrd",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:6",
+            "questionId": "ESS5e03_6:lwstrob",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:6",
+            "questionId": "ESS5e03_6:rgbrklw",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:6",
+            "questionId": "ESS5e03_6:prtyban",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:7",
+            "questionId": "ESS5e03_6:bplcdc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:7",
+            "questionId": "ESS5e03_6:dpcstrb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:7",
+            "questionId": "ESS5e03_6:hrshsnta",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:7",
+            "questionId": "ESS5e03_6:dbctvrd",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:7",
+            "questionId": "ESS5e03_6:lwstrob",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:7",
+            "questionId": "ESS5e03_6:rgbrklw",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:7",
+            "questionId": "ESS5e03_6:prtyban",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:8",
+            "questionId": "ESS5e03_6:bplcdc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:8",
+            "questionId": "ESS5e03_6:dpcstrb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:8",
+            "questionId": "ESS5e03_6:hrshsnta",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:8",
+            "questionId": "ESS5e03_6:dbctvrd",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:8",
+            "questionId": "ESS5e03_6:lwstrob",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:8",
+            "questionId": "ESS5e03_6:rgbrklw",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS5e03_6:second_vote:8",
+            "questionId": "ESS5e03_6:prtyban",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:gvslvue",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:elgcoal",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:1",
+            "questionId": "ESS8e02_3:elgbio",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:elgcoal",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:elgsun",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:2",
+            "questionId": "ESS8e02_3:elgbio",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:gvslvue",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:sbsrnen",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:elgcoal",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:elgngas",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:elgsun",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:elgwind",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:elgbio",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:3",
+            "questionId": "ESS8e02_3:mnrgtjb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:gvslvue",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:sbsrnen",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:imsclbn",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:wrkprbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:elgngas",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:elgsun",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:elgwind",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:elgbio",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:rfgbfml",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:4",
+            "questionId": "ESS8e02_3:mnrgtjb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:gvslvue",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:sbsrnen",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:imsclbn",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:elgcoal",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:elgwind",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:basinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:eusclbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:5",
+            "questionId": "ESS8e02_3:mnrgtjb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:gvslvue",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:bnlwinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:eduunmp",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:inctxff",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:sbsrnen",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:banhhap",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:imsclbn",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:wrkprbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:elgcoal",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:elgngas",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:elgsun",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:elgwind",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:elgbio",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:gvrfgap",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:rfgbfml",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:basinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:eusclbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:6",
+            "questionId": "ESS8e02_3:mnrgtjb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:gvslvue",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:bnlwinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:eduunmp",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:inctxff",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:sbsrnen",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:banhhap",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:imsclbn",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:wrkprbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:elgcoal",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:elgngas",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:elgsun",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:elgwind",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:elgbio",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:gvrfgap",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:rfgbfml",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:basinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:eusclbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:7",
+            "questionId": "ESS8e02_3:mnrgtjb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:gvslvue",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:bnlwinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:eduunmp",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:inctxff",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:sbsrnen",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:banhhap",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:imsclbn",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:wrkprbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:elgcoal",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:elgngas",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:elgsun",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:elgwind",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:elgbio",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:gvrfgap",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:rfgbfml",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:basinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:eusclbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:8",
+            "questionId": "ESS8e02_3:mnrgtjb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:gvslvol",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:gvslvue",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:gvcldcr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:bnlwinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:eduunmp",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:inctxff",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:sbsrnen",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:banhhap",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:imsclbn",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:wrkprbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:elgcoal",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:elgngas",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:elghydr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:elgnuc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:elgsun",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:elgwind",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:elgbio",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:gvrfgap",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:rfgbfml",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:basinc",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:eusclbf",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS8e02_3:second_vote:9",
+            "questionId": "ESS8e02_3:mnrgtjb",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:1",
+            "questionId": "ESS9e03_3:sofrwrk",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:1",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:2",
+            "questionId": "ESS9e03_3:sofrwrk",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:2",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:3",
+            "questionId": "ESS9e03_3:sofrwrk",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:3",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:3",
+            "questionId": "ESS9e03_3:sofrprv",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:4",
+            "questionId": "ESS9e03_3:sofrwrk",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:4",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:4",
+            "questionId": "ESS9e03_3:sofrprv",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:5",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:6",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:7",
+            "questionId": "ESS9e03_3:sofrdst",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:7",
+            "questionId": "ESS9e03_3:sofrwrk",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:7",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:7",
+            "questionId": "ESS9e03_3:sofrprv",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:8",
+            "questionId": "ESS9e03_3:sofrdst",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:8",
+            "questionId": "ESS9e03_3:sofrwrk",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:8",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:8",
+            "questionId": "ESS9e03_3:sofrprv",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:9",
+            "questionId": "ESS9e03_3:sofrdst",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:9",
+            "questionId": "ESS9e03_3:sofrwrk",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:9",
+            "questionId": "ESS9e03_3:sofrpr",
+            "reason": "withheld_base_or_cell_count"
+          },
+          {
+            "groupId": "ESS9e03_3:second_vote:9",
+            "questionId": "ESS9e03_3:sofrprv",
+            "reason": "withheld_base_or_cell_count"
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Begrenztes KI-Review durch OpenAI Codex; keine akademische Begutachtung, empirische Gesamtvalidierung, Neutralitätsgarantie oder Freigabe durch Steven.",
+    "Nichts unter data/raw/ oder data/local/ gelesen, gehasht oder ausgeführt. Beide privaten Laufhashes und die SDDF-Dateiangaben sind übereinstimmende Belegangaben, keine von diesem Prüfer kontrollierten privaten Bytes.",
+    "Der Auftrag erlaubt aggregierte Laufbelege und synthetische Tests. Tatsächliche Eins-zu-eins-Zuordnung, Gewichte, Strata und PSU-Inhalte wurden nicht neu aus Originalfällen geprüft.",
+    "Der Zellnachweis berichtet Minimum und Summenbestätigung; seine private Herkunft wurde nicht unabhängig neu gezählt. Dies erfüllt die verlangte aggregierte Nachprüfung, nicht eine Rohdatenreproduktion.",
+    "Die Gegenprobe wird nur anhand ihres Codes und gehashten Berichts beurteilt, nicht erneut ausgeführt. ESS5 teilt den SPSS-Leser mit dem Hauptlauf; übereinstimmende IDs beweisen keine korrekt gelesenen Strata/PSUs. ESS8 nutzt einen getrennten CSV-Weg.",
+    "Die Gegenprobe kontrolliert Anteile und Taylor-Standardfehler, keine Logitgrenzen, t-Quantile, nominale Abdeckung, Rechte oder gegen Originaldokumentation geprüfte SDDF-Semantik. Derselbe Vertragsbestand kann gemeinsame Fehler enthalten.",
+    "Der SPSS-Leser ist auf den beschriebenen ESS5-Fall begrenzt: little-endian, bekannte Fallzahl, Kompression 0/1, numerische Werte und Stringsegmente. Round-trip-Tests sind keine unabhängige Validierung der realen SPSS-Datei; keine allgemeine SPSS-Formatfreigabe.",
+    "PROB wird planmäßig nicht genutzt. Die im Laufbeleg genannte Vermutung zu seiner Bedeutung und die dortigen Gewichtskorrelationen wurden nicht selbst nachgerechnet oder durch zusätzliche Quellen geklärt.",
+    "Der externe Manifesthash bindet sechs Kandidatenhashes. Laufbeleg und Gegenprobenbericht hatten keine separat extern übermittelten Sollhashes; ihre Isthashes werden dokumentiert.",
+    "Keine Fragenauswahl, Polung, Themenzuordnung oder Veröffentlichung geändert. E1 Runde 1 wurde im ausdrücklich erlaubten Nachprüfmodus gelesen; andere Urteile nicht neu geöffnet. Historische Reviewzusammenfassungen im Pflichtplan sind bekannte Kontextinformation.",
+    "Kein pnpm check: Der Build schreibt weitere Dateien und überschreitet die explizite Beschränkung auf zwei Ergebnisdateien. Die erlaubten unittest-Tests nutzen ausschließlich synthetische temporäre Dateien und wurden mit deaktiviertem Bytecode ausgeführt.",
+    "Breitendiagnostik ist keine neue Schwelle und kein Nachweis nominaler 95-%-Abdeckung. Zeit-/Moduswechsel, Nichtteilnahme und individuelle Messfehler bleiben außerhalb der Bereiche.",
+    "Kein Commit, Push, Tag, Nachricht an Dritte, Export, Deployment oder zusätzlicher Prüfagent. Dieser Prüfer schrieb ausschließlich die zwei beauftragten Ergebnisdateien.",
+    "Während der Prüfung änderte parallele Arbeit HEAD auf 028c07fffdd4d91fe1a63b10725ebbea8e221faf. Alle 49 dokumentierten Eingabehashes wurden danach erneut geprüft und sind unverändert. Der zusätzliche unversionierte Bericht reports/claude/agenten/R5-wvs.md stammt nicht aus diesem Review und wurde nicht geöffnet oder verändert."
+  ]
+}

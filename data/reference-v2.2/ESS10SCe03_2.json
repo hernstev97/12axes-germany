@@ -1,0 +1,1859 @@
+{
+ "schemaVersion": 2,
+ "plan": "docs/analyseplan-v2.2.md",
+ "stage": "released_after_result_review",
+ "privateRunSha256": "0ebe86b22cb3795ea232c9f0e645e6893d7355d47c842b7f8f10cb4ad6554001",
+ "designRunSha256": null,
+ "study": "ESS10SCe03_2",
+ "designAvailable": true,
+ "designSource": null,
+ "questions": [
+  {
+   "id": "ESS10SCe03_2:fairelc",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8414,
+    "totalCount": 8725,
+    "missingCount": 311,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 311,
+      "primaryWeightSum": 356.7272016
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.009057165910641747,
+      "lower": 0.006248310664204315,
+      "upper": 0.01311204877234742
+     },
+     {
+      "code": "1",
+      "proportion": 0.0014519259701892937,
+      "lower": 0.0007045716861800814,
+      "upper": 0.0029896432914124325
+     },
+     {
+      "code": "2",
+      "proportion": 0.004394479464255165,
+      "lower": 0.002838664576265913,
+      "upper": 0.006797192621209351
+     },
+     {
+      "code": "3",
+      "proportion": 0.005663882380766291,
+      "lower": 0.0038871238114419598,
+      "upper": 0.008246053346334194
+     },
+     {
+      "code": "4",
+      "proportion": 0.009356335783852813,
+      "lower": 0.006937697614817123,
+      "upper": 0.012607461099976805
+     },
+     {
+      "code": "5",
+      "proportion": 0.07643831666697536,
+      "lower": 0.07006049648012584,
+      "upper": 0.0833446943487713
+     },
+     {
+      "code": "6",
+      "proportion": 0.02320229883326544,
+      "lower": 0.018848105076207655,
+      "upper": 0.028533124017009182
+     },
+     {
+      "code": "7",
+      "proportion": 0.04192510299723972,
+      "lower": 0.03644949154885853,
+      "upper": 0.04818215362277328
+     },
+     {
+      "code": "8",
+      "proportion": 0.07838706889833337,
+      "lower": 0.07191515381902423,
+      "upper": 0.08538782968222919
+     },
+     {
+      "code": "9",
+      "proportion": 0.07805364868266816,
+      "lower": 0.07097619929281015,
+      "upper": 0.0857716751733054
+     },
+     {
+      "code": "10",
+      "proportion": 0.6720697744118126,
+      "lower": 0.654515672387559,
+      "upper": 0.6891555464148109
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.038455052055759054,
+     "unweighted": 0.03817505563335022
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:dfprtal",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8358,
+    "totalCount": 8725,
+    "missingCount": 367,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 367,
+      "primaryWeightSum": 423.67997024
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.027555295660409183,
+      "lower": 0.02343579390728924,
+      "upper": 0.03237491015958157
+     },
+     {
+      "code": "1",
+      "proportion": 0.004662440657391531,
+      "lower": 0.0032250773608664953,
+      "upper": 0.006736083692462486
+     },
+     {
+      "code": "2",
+      "proportion": 0.02048306607371557,
+      "lower": 0.017466607566502566,
+      "upper": 0.02400773383908543
+     },
+     {
+      "code": "3",
+      "proportion": 0.028920449548380252,
+      "lower": 0.025489471631262133,
+      "upper": 0.03279770698865436
+     },
+     {
+      "code": "4",
+      "proportion": 0.025717230965069268,
+      "lower": 0.0223872339902281,
+      "upper": 0.029527588930710426
+     },
+     {
+      "code": "5",
+      "proportion": 0.15823833000879237,
+      "lower": 0.14844813230950157,
+      "upper": 0.16854639831406634
+     },
+     {
+      "code": "6",
+      "proportion": 0.09123427250166796,
+      "lower": 0.08454293301457483,
+      "upper": 0.09839828862599966
+     },
+     {
+      "code": "7",
+      "proportion": 0.15980443209641226,
+      "lower": 0.15144449676579028,
+      "upper": 0.1685341910160197
+     },
+     {
+      "code": "8",
+      "proportion": 0.17553552672426298,
+      "lower": 0.16684651400230588,
+      "upper": 0.18457679678408892
+     },
+     {
+      "code": "9",
+      "proportion": 0.07216829734004512,
+      "lower": 0.06610561831840474,
+      "upper": 0.07874011667247839
+     },
+     {
+      "code": "10",
+      "proportion": 0.23568065842385355,
+      "lower": 0.2264188118915459,
+      "upper": 0.24520128039186867
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.012801317167053156,
+     "unweighted": 0.012906684331013413
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:medcrgv",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8459,
+    "totalCount": 8725,
+    "missingCount": 266,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 266,
+      "primaryWeightSum": 302.5594856
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.010561755379425181,
+      "lower": 0.007874823573901303,
+      "upper": 0.014152404802086807
+     },
+     {
+      "code": "1",
+      "proportion": 0.0024620904391634284,
+      "lower": 0.001534214483360012,
+      "upper": 0.003948916098733884
+     },
+     {
+      "code": "2",
+      "proportion": 0.004701481737750299,
+      "lower": 0.003309778568753982,
+      "upper": 0.006674452629160907
+     },
+     {
+      "code": "3",
+      "proportion": 0.007007287476105346,
+      "lower": 0.004929445880728478,
+      "upper": 0.009952213323942558
+     },
+     {
+      "code": "4",
+      "proportion": 0.009207677487784036,
+      "lower": 0.006904636623564171,
+      "upper": 0.012269406774295192
+     },
+     {
+      "code": "5",
+      "proportion": 0.07525225736619336,
+      "lower": 0.06863115193174378,
+      "upper": 0.08245557504553888
+     },
+     {
+      "code": "6",
+      "proportion": 0.034778346665672505,
+      "lower": 0.029497436195237377,
+      "upper": 0.040964788913921295
+     },
+     {
+      "code": "7",
+      "proportion": 0.07538992393259761,
+      "lower": 0.0696150661220628,
+      "upper": 0.08160181392239661
+     },
+     {
+      "code": "8",
+      "proportion": 0.13406794460536775,
+      "lower": 0.1261772538095048,
+      "upper": 0.14237169327381666
+     },
+     {
+      "code": "9",
+      "proportion": 0.09885725769076767,
+      "lower": 0.09180908594400852,
+      "upper": 0.10638313511796338
+     },
+     {
+      "code": "10",
+      "proportion": 0.5477139772191727,
+      "lower": 0.5319893264833161,
+      "upper": 0.563343950220015
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.025051133016790517,
+     "unweighted": 0.02528519525984374
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:rghmgpr",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8403,
+    "totalCount": 8725,
+    "missingCount": 322,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 322,
+      "primaryWeightSum": 371.4958802
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.007203692626064946,
+      "lower": 0.005575906005896478,
+      "upper": 0.009302237367624649
+     },
+     {
+      "code": "1",
+      "proportion": 0.002568034868299131,
+      "lower": 0.0016283167890004712,
+      "upper": 0.004047874923438802
+     },
+     {
+      "code": "2",
+      "proportion": 0.00872338755980473,
+      "lower": 0.006650792528226292,
+      "upper": 0.011434433266061104
+     },
+     {
+      "code": "3",
+      "proportion": 0.012383316588965257,
+      "lower": 0.009587406801774558,
+      "upper": 0.015981421777401632
+     },
+     {
+      "code": "4",
+      "proportion": 0.017454396016048316,
+      "lower": 0.014172564544874798,
+      "upper": 0.02147961781951427
+     },
+     {
+      "code": "5",
+      "proportion": 0.09170439525138988,
+      "lower": 0.08439523579547555,
+      "upper": 0.0995777291979853
+     },
+     {
+      "code": "6",
+      "proportion": 0.04893638897330173,
+      "lower": 0.04281347010916278,
+      "upper": 0.055883845818565425
+     },
+     {
+      "code": "7",
+      "proportion": 0.0899111356674151,
+      "lower": 0.08330744847129115,
+      "upper": 0.09698290869442866
+     },
+     {
+      "code": "8",
+      "proportion": 0.16122583320052836,
+      "lower": 0.15226987376731443,
+      "upper": 0.17060254167676403
+     },
+     {
+      "code": "9",
+      "proportion": 0.11237237155423499,
+      "lower": 0.1056791466467992,
+      "upper": 0.11943290167295853
+     },
+     {
+      "code": "10",
+      "proportion": 0.4475170476939476,
+      "lower": 0.4302647261489822,
+      "upper": 0.4648966631097522
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.01758291804471951,
+     "unweighted": 0.017316940167530437
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:votedir",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8408,
+    "totalCount": 8725,
+    "missingCount": 317,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 317,
+      "primaryWeightSum": 365.82096013
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.01893621026233907,
+      "lower": 0.015776438755015984,
+      "upper": 0.022714228926494304
+     },
+     {
+      "code": "1",
+      "proportion": 0.008837094284510554,
+      "lower": 0.006926566423756702,
+      "upper": 0.011268615929721086
+     },
+     {
+      "code": "2",
+      "proportion": 0.0229396853936372,
+      "lower": 0.01938704768921145,
+      "upper": 0.027125328764522044
+     },
+     {
+      "code": "3",
+      "proportion": 0.030778963082302067,
+      "lower": 0.02675260569295063,
+      "upper": 0.03538926615329036
+     },
+     {
+      "code": "4",
+      "proportion": 0.025378855685155424,
+      "lower": 0.021659013698870928,
+      "upper": 0.02971815818968652
+     },
+     {
+      "code": "5",
+      "proportion": 0.11313267368952186,
+      "lower": 0.10580940678176423,
+      "upper": 0.120894270697138
+     },
+     {
+      "code": "6",
+      "proportion": 0.06773244271947508,
+      "lower": 0.06194013521090936,
+      "upper": 0.07402367199398276
+     },
+     {
+      "code": "7",
+      "proportion": 0.11940698199348489,
+      "lower": 0.11145097027571138,
+      "upper": 0.1278492205023747
+     },
+     {
+      "code": "8",
+      "proportion": 0.177003351815373,
+      "lower": 0.1683927828581479,
+      "upper": 0.18595575859307595
+     },
+     {
+      "code": "9",
+      "proportion": 0.10130627747095662,
+      "lower": 0.09445719083907458,
+      "upper": 0.10859243570071547
+     },
+     {
+      "code": "10",
+      "proportion": 0.31454746360324415,
+      "lower": 0.30238276458555585,
+      "upper": 0.3269721706280707
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.01730527894444811,
+     "unweighted": 0.017092658655575244
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:cttresa",
+   "addedInV22": false,
+   "status": "withheld_base_or_cell_count",
+   "reference": null
+  },
+  {
+   "id": "ESS10SCe03_2:gptpelc",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8315,
+    "totalCount": 8725,
+    "missingCount": 410,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 410,
+      "primaryWeightSum": 463.03377012
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.013747795310014905,
+      "lower": 0.01077874769070083,
+      "upper": 0.01752019377998469
+     },
+     {
+      "code": "1",
+      "proportion": 0.003909557983891631,
+      "lower": 0.0027316990849622583,
+      "upper": 0.005592440170417481
+     },
+     {
+      "code": "2",
+      "proportion": 0.013908318664729297,
+      "lower": 0.011118533649514428,
+      "upper": 0.017385790331068324
+     },
+     {
+      "code": "3",
+      "proportion": 0.017726702618537628,
+      "lower": 0.015021100097052216,
+      "upper": 0.020909293426423108
+     },
+     {
+      "code": "4",
+      "proportion": 0.020876557069967328,
+      "lower": 0.0178882478249305,
+      "upper": 0.024351698279517463
+     },
+     {
+      "code": "5",
+      "proportion": 0.10884062648200914,
+      "lower": 0.10130402680451775,
+      "upper": 0.11686500646151209
+     },
+     {
+      "code": "6",
+      "proportion": 0.06515875586139659,
+      "lower": 0.05965977844879541,
+      "upper": 0.07112624872907365
+     },
+     {
+      "code": "7",
+      "proportion": 0.09729479462059892,
+      "lower": 0.08940217831571566,
+      "upper": 0.10580322884586765
+     },
+     {
+      "code": "8",
+      "proportion": 0.18229904385650245,
+      "lower": 0.17268174433760736,
+      "upper": 0.1923274501995207
+     },
+     {
+      "code": "9",
+      "proportion": 0.11540043169406838,
+      "lower": 0.10757461953845314,
+      "upper": 0.12371663082972435
+     },
+     {
+      "code": "10",
+      "proportion": 0.3608374158382838,
+      "lower": 0.3493464786508208,
+      "upper": 0.37248993950443154
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.00740982321118995,
+     "unweighted": 0.007457583788082492
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:gvctzpv",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8466,
+    "totalCount": 8725,
+    "missingCount": 259,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 259,
+      "primaryWeightSum": 283.58370682
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.00974032873713291,
+      "lower": 0.007541163607053844,
+      "upper": 0.012572693175654459
+     },
+     {
+      "code": "1",
+      "proportion": 0.002320464329486474,
+      "lower": 0.0014582215282154846,
+      "upper": 0.0036906647733990776
+     },
+     {
+      "code": "2",
+      "proportion": 0.011447525452039847,
+      "lower": 0.009307285364454283,
+      "upper": 0.014072929472538956
+     },
+     {
+      "code": "3",
+      "proportion": 0.019916187662660775,
+      "lower": 0.01689083316555677,
+      "upper": 0.023470483449035413
+     },
+     {
+      "code": "4",
+      "proportion": 0.016527199808390163,
+      "lower": 0.013831370116358788,
+      "upper": 0.019737948868148125
+     },
+     {
+      "code": "5",
+      "proportion": 0.07334948904505711,
+      "lower": 0.06688466222419608,
+      "upper": 0.08038535182835606
+     },
+     {
+      "code": "6",
+      "proportion": 0.05540362992327897,
+      "lower": 0.04919784915941398,
+      "upper": 0.0623408782763292
+     },
+     {
+      "code": "7",
+      "proportion": 0.10403250103065319,
+      "lower": 0.09615319754619173,
+      "upper": 0.11247712731855544
+     },
+     {
+      "code": "8",
+      "proportion": 0.17116056145264882,
+      "lower": 0.16198460020219121,
+      "upper": 0.18074420515041323
+     },
+     {
+      "code": "9",
+      "proportion": 0.11487900425633821,
+      "lower": 0.10809108752295267,
+      "upper": 0.12203486547820913
+     },
+     {
+      "code": "10",
+      "proportion": 0.4212231083023136,
+      "lower": 0.40899695641887485,
+      "upper": 0.43354663129809456
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.020979649927133304,
+     "unweighted": 0.02103411704315933
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:grdfinc",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8428,
+    "totalCount": 8725,
+    "missingCount": 297,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 297,
+      "primaryWeightSum": 333.85220274
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.024093579726866817,
+      "lower": 0.02055691927066532,
+      "upper": 0.02822116380143342
+     },
+     {
+      "code": "1",
+      "proportion": 0.009020627999938378,
+      "lower": 0.006862977421255295,
+      "upper": 0.01184852914933232
+     },
+     {
+      "code": "2",
+      "proportion": 0.02554891350319753,
+      "lower": 0.02216022626961541,
+      "upper": 0.029440189112170605
+     },
+     {
+      "code": "3",
+      "proportion": 0.03628579344418049,
+      "lower": 0.032084969921310165,
+      "upper": 0.04101331741615615
+     },
+     {
+      "code": "4",
+      "proportion": 0.03164362700301411,
+      "lower": 0.02749535330323301,
+      "upper": 0.036394336603894434
+     },
+     {
+      "code": "5",
+      "proportion": 0.12484370323955594,
+      "lower": 0.11564567278430136,
+      "upper": 0.13466191277243805
+     },
+     {
+      "code": "6",
+      "proportion": 0.08891945536384165,
+      "lower": 0.08093858130246466,
+      "upper": 0.09760370293095758
+     },
+     {
+      "code": "7",
+      "proportion": 0.12480496101658113,
+      "lower": 0.11685259396487728,
+      "upper": 0.13321688815906935
+     },
+     {
+      "code": "8",
+      "proportion": 0.1761776402861539,
+      "lower": 0.16741126323605357,
+      "upper": 0.18530089760326882
+     },
+     {
+      "code": "9",
+      "proportion": 0.0750215870482866,
+      "lower": 0.06931327798907776,
+      "upper": 0.08115900997685338
+     },
+     {
+      "code": "10",
+      "proportion": 0.28364011136838346,
+      "lower": 0.2709279865492206,
+      "upper": 0.29670595942342604
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.01849798700564398,
+     "unweighted": 0.018452641031411476
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:viepol",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8163,
+    "totalCount": 8725,
+    "missingCount": 562,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 562,
+      "primaryWeightSum": 620.95388399
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.039734864631835246,
+      "lower": 0.03525814749854015,
+      "upper": 0.044753621307098465
+     },
+     {
+      "code": "1",
+      "proportion": 0.006723403088077049,
+      "lower": 0.00521953402611133,
+      "upper": 0.008656801108903937
+     },
+     {
+      "code": "2",
+      "proportion": 0.022644149431600875,
+      "lower": 0.019046222140644678,
+      "upper": 0.026903103144204268
+     },
+     {
+      "code": "3",
+      "proportion": 0.02842873434215589,
+      "lower": 0.024904088981711824,
+      "upper": 0.03243562507429438
+     },
+     {
+      "code": "4",
+      "proportion": 0.029854224013235404,
+      "lower": 0.025634065375312376,
+      "upper": 0.03474437670141807
+     },
+     {
+      "code": "5",
+      "proportion": 0.2470567379774545,
+      "lower": 0.23596797765925484,
+      "upper": 0.25849029124173656
+     },
+     {
+      "code": "6",
+      "proportion": 0.08887115691361973,
+      "lower": 0.08213155267695735,
+      "upper": 0.0961058973290855
+     },
+     {
+      "code": "7",
+      "proportion": 0.12220344548924589,
+      "lower": 0.11460412344837746,
+      "upper": 0.13023255410770795
+     },
+     {
+      "code": "8",
+      "proportion": 0.1498782610502631,
+      "lower": 0.14165133309794303,
+      "upper": 0.15849477054232508
+     },
+     {
+      "code": "9",
+      "proportion": 0.07429203700075768,
+      "lower": 0.06822709844422147,
+      "upper": 0.08084932833007445
+     },
+     {
+      "code": "10",
+      "proportion": 0.19031298606175462,
+      "lower": 0.18050215118173343,
+      "upper": 0.20052658640115759
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.014776908517427745,
+     "unweighted": 0.014519772782323026
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:wpestop",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8331,
+    "totalCount": 8725,
+    "missingCount": 394,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 394,
+      "primaryWeightSum": 422.41643007
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.013383559217484561,
+      "lower": 0.010483547905703508,
+      "upper": 0.017071945644749658
+     },
+     {
+      "code": "1",
+      "proportion": 0.0038717194168443013,
+      "lower": 0.002697213745533107,
+      "upper": 0.005554816660934497
+     },
+     {
+      "code": "2",
+      "proportion": 0.01190988112824928,
+      "lower": 0.009592524192666825,
+      "upper": 0.01477871029345106
+     },
+     {
+      "code": "3",
+      "proportion": 0.02774623204890057,
+      "lower": 0.024264716324920412,
+      "upper": 0.03171104314876917
+     },
+     {
+      "code": "4",
+      "proportion": 0.03147614082013858,
+      "lower": 0.027165674094244033,
+      "upper": 0.03644494066477336
+     },
+     {
+      "code": "5",
+      "proportion": 0.17077428933827518,
+      "lower": 0.16248477588379875,
+      "upper": 0.17939612333758048
+     },
+     {
+      "code": "6",
+      "proportion": 0.0957642285286452,
+      "lower": 0.08918142918253592,
+      "upper": 0.10277809811731257
+     },
+     {
+      "code": "7",
+      "proportion": 0.13997837718966435,
+      "lower": 0.13210795873578252,
+      "upper": 0.14823759449413265
+     },
+     {
+      "code": "8",
+      "proportion": 0.18334910483375208,
+      "lower": 0.1743231625516633,
+      "upper": 0.1927332960268283
+     },
+     {
+      "code": "9",
+      "proportion": 0.09405413234410034,
+      "lower": 0.08690972125355853,
+      "upper": 0.1017204222464128
+     },
+     {
+      "code": "10",
+      "proportion": 0.22769233513394554,
+      "lower": 0.21752852979857684,
+      "upper": 0.2381864752499191
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.010390323623123338,
+     "unweighted": 0.010431502100696238
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:scchpldm",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8118,
+    "totalCount": 8725,
+    "missingCount": 607,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 607,
+      "primaryWeightSum": 632.61430296
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.8914219787223348,
+      "lower": 0.8820338468884753,
+      "upper": 0.9001475536645683
+     },
+     {
+      "code": "2",
+      "proportion": 0.10857802127766522,
+      "lower": 0.09985244633543162,
+      "upper": 0.11796615311152463
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.010520393433544273,
+     "unweighted": 0.010416805034234256
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:vteurmmb",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8389,
+    "totalCount": 8725,
+    "missingCount": 336,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 336,
+      "primaryWeightSum": 374.00364272
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.7704022608284028,
+      "lower": 0.7560194088574231,
+      "upper": 0.7841792764595461
+     },
+     {
+      "code": "2",
+      "proportion": 0.09544769937451332,
+      "lower": 0.08765435732197713,
+      "upper": 0.10385507133259603
+     },
+     {
+      "code": "33",
+      "proportion": 0.0344344648419364,
+      "lower": 0.029867364183770867,
+      "upper": 0.03967137522834623
+     },
+     {
+      "code": "44",
+      "proportion": 0.01218798481802031,
+      "lower": 0.00945365503773052,
+      "upper": 0.015700643424594308
+     },
+     {
+      "code": "55",
+      "proportion": 0.04380817389451098,
+      "lower": 0.037382760338587305,
+      "upper": 0.05127916604379057
+     },
+     {
+      "code": "65",
+      "proportion": 0.04371941624261618,
+      "lower": 0.03810685975358259,
+      "upper": 0.0501155473793951
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.03716424577146249,
+     "unweighted": 0.03720293645375239
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:keydec",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8247,
+    "totalCount": 8725,
+    "missingCount": 478,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 478,
+      "primaryWeightSum": 544.41022453
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.020188489740879303,
+      "lower": 0.017164320116635802,
+      "upper": 0.023732619503517245
+     },
+     {
+      "code": "1",
+      "proportion": 0.006207675274001077,
+      "lower": 0.004688916146485171,
+      "upper": 0.008214306778465706
+     },
+     {
+      "code": "2",
+      "proportion": 0.02527422787192911,
+      "lower": 0.02156481596498441,
+      "upper": 0.02960239943312099
+     },
+     {
+      "code": "3",
+      "proportion": 0.035050074611173494,
+      "lower": 0.030449494438312373,
+      "upper": 0.04031684709473292
+     },
+     {
+      "code": "4",
+      "proportion": 0.02531130790128464,
+      "lower": 0.02184611350436082,
+      "upper": 0.029309676034647306
+     },
+     {
+      "code": "5",
+      "proportion": 0.19395190228600528,
+      "lower": 0.18360126216904682,
+      "upper": 0.20473972796185427
+     },
+     {
+      "code": "6",
+      "proportion": 0.085853858657829,
+      "lower": 0.07941995108641796,
+      "upper": 0.09275646763376802
+     },
+     {
+      "code": "7",
+      "proportion": 0.12701025671629207,
+      "lower": 0.11896393629860631,
+      "upper": 0.13551709272008994
+     },
+     {
+      "code": "8",
+      "proportion": 0.17684455257908122,
+      "lower": 0.1670140439762348,
+      "upper": 0.1871237045023208
+     },
+     {
+      "code": "9",
+      "proportion": 0.0894318869527084,
+      "lower": 0.08290056050183979,
+      "upper": 0.0964236825038441
+     },
+     {
+      "code": "10",
+      "proportion": 0.21487576740881645,
+      "lower": 0.20154575967388855,
+      "upper": 0.22883473359799056
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.015288608225710987,
+     "unweighted": 0.015045526108949825
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:imsmetn",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8480,
+    "totalCount": 8725,
+    "missingCount": 245,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 245,
+      "primaryWeightSum": 259.05920376
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.3360721567910378,
+      "lower": 0.31873100926550463,
+      "upper": 0.35386671778485396
+     },
+     {
+      "code": "2",
+      "proportion": 0.5318429305545251,
+      "lower": 0.518738371843634,
+      "upper": 0.5449037108966646
+     },
+     {
+      "code": "3",
+      "proportion": 0.11820789611831765,
+      "lower": 0.1066768528948138,
+      "upper": 0.13080286141640382
+     },
+     {
+      "code": "4",
+      "proportion": 0.013877016536119417,
+      "lower": 0.010919385523123637,
+      "upper": 0.017621480663788013
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.02523865665201691,
+     "unweighted": 0.025130673397641468
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:imdfetn",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8436,
+    "totalCount": 8725,
+    "missingCount": 289,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 289,
+      "primaryWeightSum": 310.37761221
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.20090723963954685,
+      "lower": 0.18295345249677178,
+      "upper": 0.22014816485731978
+     },
+     {
+      "code": "2",
+      "proportion": 0.49146890163619367,
+      "lower": 0.4782911407375519,
+      "upper": 0.5046585282935253
+     },
+     {
+      "code": "3",
+      "proportion": 0.2626898540360587,
+      "lower": 0.2476383306252321,
+      "upper": 0.2783177919897631
+     },
+     {
+      "code": "4",
+      "proportion": 0.04493400468820068,
+      "lower": 0.038792461170002054,
+      "upper": 0.05199526867668128
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.016338037708178738,
+     "unweighted": 0.016138753722236
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:impcntr",
+   "addedInV22": false,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8456,
+    "totalCount": 8725,
+    "missingCount": 269,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 269,
+      "primaryWeightSum": 282.73989168
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.20335260699720645,
+      "lower": 0.18817798174738765,
+      "upper": 0.21942017315446136
+     },
+     {
+      "code": "2",
+      "proportion": 0.49219270159021794,
+      "lower": 0.4807372759669188,
+      "upper": 0.5036563312965288
+     },
+     {
+      "code": "3",
+      "proportion": 0.2466457151550047,
+      "lower": 0.23247723914300394,
+      "upper": 0.26138362660799996
+     },
+     {
+      "code": "4",
+      "proportion": 0.05780897625757089,
+      "lower": 0.05083273518347995,
+      "upper": 0.065676383725324
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.00957155791859704,
+     "unweighted": 0.009395737373654484
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:panpriph",
+   "addedInV22": true,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8594,
+    "totalCount": 8725,
+    "missingCount": 131,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 131,
+      "primaryWeightSum": 158.69777637
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.20696181523102133,
+      "lower": 0.1954560122492404,
+      "upper": 0.21896059196052475
+     },
+     {
+      "code": "1",
+      "proportion": 0.055102124818989885,
+      "lower": 0.05007078142127332,
+      "upper": 0.06060678461584631
+     },
+     {
+      "code": "2",
+      "proportion": 0.11879972841874357,
+      "lower": 0.11101593279958459,
+      "upper": 0.12705128095675705
+     },
+     {
+      "code": "3",
+      "proportion": 0.16603447188313228,
+      "lower": 0.15638950306214303,
+      "upper": 0.17615006853333803
+     },
+     {
+      "code": "4",
+      "proportion": 0.09135665921133225,
+      "lower": 0.08366395562656107,
+      "upper": 0.09967974529740607
+     },
+     {
+      "code": "5",
+      "proportion": 0.24006179350204418,
+      "lower": 0.2280808962802048,
+      "upper": 0.25246620120460767
+     },
+     {
+      "code": "6",
+      "proportion": 0.03153117678728977,
+      "lower": 0.027688437332855156,
+      "upper": 0.0358875464119623
+     },
+     {
+      "code": "7",
+      "proportion": 0.03435361956764236,
+      "lower": 0.03014612230500902,
+      "upper": 0.039124667882246666
+     },
+     {
+      "code": "8",
+      "proportion": 0.023985609639043597,
+      "lower": 0.021047041683203354,
+      "upper": 0.02732300656332492
+     },
+     {
+      "code": "9",
+      "proportion": 0.012274533396164434,
+      "lower": 0.009543973761806903,
+      "upper": 0.01577387273634618
+     },
+     {
+      "code": "10",
+      "proportion": 0.01953846754459635,
+      "lower": 0.01600421592638843,
+      "upper": 0.02383429222720706
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.013582811845156334,
+     "unweighted": 0.01333835700435157
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:panmonpb",
+   "addedInV22": true,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8588,
+    "totalCount": 8725,
+    "missingCount": 137,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 137,
+      "primaryWeightSum": 171.11409023
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.08624903096822756,
+      "lower": 0.07936564246119132,
+      "upper": 0.09366867568869425
+     },
+     {
+      "code": "1",
+      "proportion": 0.037522886453473916,
+      "lower": 0.033533032898846384,
+      "upper": 0.04196684997242194
+     },
+     {
+      "code": "2",
+      "proportion": 0.08362574861826809,
+      "lower": 0.07687065177040259,
+      "upper": 0.09091599446623418
+     },
+     {
+      "code": "3",
+      "proportion": 0.10754108967212346,
+      "lower": 0.09978390250423178,
+      "upper": 0.11582373076422244
+     },
+     {
+      "code": "4",
+      "proportion": 0.06818553715471977,
+      "lower": 0.06302535964005167,
+      "upper": 0.0737349547131246
+     },
+     {
+      "code": "5",
+      "proportion": 0.19143053050312664,
+      "lower": 0.1812971475546032,
+      "upper": 0.20199056589463554
+     },
+     {
+      "code": "6",
+      "proportion": 0.05765609767285407,
+      "lower": 0.05195967518483129,
+      "upper": 0.06393491188657513
+     },
+     {
+      "code": "7",
+      "proportion": 0.08455902513487622,
+      "lower": 0.07786616150288057,
+      "upper": 0.09176991255190226
+     },
+     {
+      "code": "8",
+      "proportion": 0.08516219474790147,
+      "lower": 0.07765281869552368,
+      "upper": 0.09332428428148247
+     },
+     {
+      "code": "9",
+      "proportion": 0.03529081146411745,
+      "lower": 0.031517903053630454,
+      "upper": 0.03949694375317377
+     },
+     {
+      "code": "10",
+      "proportion": 0.16277704761031134,
+      "lower": 0.1520570656066301,
+      "upper": 0.17409761546608588
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.01859764911605563,
+     "unweighted": 0.01827308859773566
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:freehms",
+   "addedInV22": true,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8646,
+    "totalCount": 8725,
+    "missingCount": 79,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 79,
+      "primaryWeightSum": 87.13289824
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.5234999342155353,
+      "lower": 0.5058975280661065,
+      "upper": 0.5410441537441522
+     },
+     {
+      "code": "2",
+      "proportion": 0.36958637000346534,
+      "lower": 0.35503571165465314,
+      "upper": 0.38437796851092787
+     },
+     {
+      "code": "3",
+      "proportion": 0.07073446318779267,
+      "lower": 0.06387039048913667,
+      "upper": 0.07827452876921394
+     },
+     {
+      "code": "4",
+      "proportion": 0.022420174535676206,
+      "lower": 0.018896448990301972,
+      "upper": 0.026583184768273857
+     },
+     {
+      "code": "5",
+      "proportion": 0.013759058057530445,
+      "lower": 0.010873036780386224,
+      "upper": 0.017397639918123063
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.01689773543821893,
+     "unweighted": 0.016518571451825337
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:hmsacld",
+   "addedInV22": true,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8612,
+    "totalCount": 8725,
+    "missingCount": 113,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 113,
+      "primaryWeightSum": 128.16986133
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.3709092902503453,
+      "lower": 0.35558831271015234,
+      "upper": 0.3864944736186701
+     },
+     {
+      "code": "2",
+      "proportion": 0.33602304985239845,
+      "lower": 0.3241252196358496,
+      "upper": 0.3481326619129593
+     },
+     {
+      "code": "3",
+      "proportion": 0.1341861046834559,
+      "lower": 0.1252941766500974,
+      "upper": 0.14360547624015516
+     },
+     {
+      "code": "4",
+      "proportion": 0.1030875302954983,
+      "lower": 0.09605110478329666,
+      "upper": 0.11057636883665051
+     },
+     {
+      "code": "5",
+      "proportion": 0.055794024918302036,
+      "lower": 0.04864486073675392,
+      "upper": 0.06392327902561613
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.007189724058884406,
+     "unweighted": 0.006471109192292879
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:accalaw",
+   "addedInV22": true,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8457,
+    "totalCount": 8725,
+    "missingCount": 268,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 268,
+      "primaryWeightSum": 297.3862024
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "0",
+      "proportion": 0.6121610245618719,
+      "lower": 0.5953032967819655,
+      "upper": 0.6287544566426333
+     },
+     {
+      "code": "1",
+      "proportion": 0.062532000378014,
+      "lower": 0.05681070135682409,
+      "upper": 0.0687874593707218
+     },
+     {
+      "code": "2",
+      "proportion": 0.06703611163923082,
+      "lower": 0.060579822932874734,
+      "upper": 0.07412618495679617
+     },
+     {
+      "code": "3",
+      "proportion": 0.04928711810401546,
+      "lower": 0.043727976500828235,
+      "upper": 0.05551196768422951
+     },
+     {
+      "code": "4",
+      "proportion": 0.027222157079130935,
+      "lower": 0.023317546423647303,
+      "upper": 0.03175934809334524
+     },
+     {
+      "code": "5",
+      "proportion": 0.07881181063685573,
+      "lower": 0.0724398934913192,
+      "upper": 0.08569243067823948
+     },
+     {
+      "code": "6",
+      "proportion": 0.02245604811772238,
+      "lower": 0.01888180425368125,
+      "upper": 0.026688476243703223
+     },
+     {
+      "code": "7",
+      "proportion": 0.02524760767909179,
+      "lower": 0.021197368466096756,
+      "upper": 0.030047979749648245
+     },
+     {
+      "code": "8",
+      "proportion": 0.02072373597518299,
+      "lower": 0.017075802457693908,
+      "upper": 0.025131058668863032
+     },
+     {
+      "code": "9",
+      "proportion": 0.00858533103328661,
+      "lower": 0.006236087201796188,
+      "upper": 0.011809059754883975
+     },
+     {
+      "code": "10",
+      "proportion": 0.02593705479559737,
+      "lower": 0.021707870466142098,
+      "upper": 0.030964101222763284
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.029108565016306986,
+     "unweighted": 0.028964670128916792
+    }
+   }
+  },
+  {
+   "id": "ESS10SCe03_2:loylead",
+   "addedInV22": true,
+   "status": "reviewed_historical_reference",
+   "reference": {
+    "validCount": 8399,
+    "totalCount": 8725,
+    "missingCount": 326,
+    "missingReasons": [
+     {
+      "reason": "No answer",
+      "count": 326,
+      "primaryWeightSum": 345.7119429
+     }
+    ],
+    "notAskedCount": 0,
+    "exportBlankCount": 0,
+    "categories": [
+     {
+      "code": "1",
+      "proportion": 0.0327489531228047,
+      "lower": 0.028247080385102003,
+      "upper": 0.0379402980408165
+     },
+     {
+      "code": "2",
+      "proportion": 0.31278662563727766,
+      "lower": 0.2977953140248691,
+      "upper": 0.3281799113299791
+     },
+     {
+      "code": "3",
+      "proportion": 0.4142210958831003,
+      "lower": 0.40183666714557326,
+      "upper": 0.4267149243038792
+     },
+     {
+      "code": "4",
+      "proportion": 0.17175166400219008,
+      "lower": 0.15979810914824571,
+      "upper": 0.1844031449706969
+     },
+     {
+      "code": "5",
+      "proportion": 0.06849166135462721,
+      "lower": 0.060391540871415565,
+      "upper": 0.07758851118307875
+     }
+    ],
+    "interval": {
+     "method": "taylor_linearisation_xlogit",
+     "level": 0.95,
+     "degreesOfFreedom": 90,
+     "strata": 89,
+     "psus": 179
+    },
+    "sensitivityMaxAbs": {
+     "dweight": 0.019868533799791144,
+     "unweighted": 0.019537429304380904
+    }
+   }
+  }
+ ],
+ "groups": [],
+ "decision": "EXPORT-V22-001",
+ "candidateSha256": "2f79c5def38e0dc4a9bb8c199256e939a713f745b5e8b4db97ec4339aa069c42"
+}
