@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "P3 Runde 3: abschließende gezielte Nachprüfung",
+  "scope": "Sechs Restpunkte P1-V22-F01/F02/F04/F08/F10 und P2-V22-F01 in PLAN-V22-003, Analyseplan v2.2 Fassung 1.2 vor Festschreibung.",
+  "manifestSha256": "6a575293673604ed52c83403f86a0b9993b0ce6fefaf929e1e1077a3bdfcde2c",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "Runtime-Information: T3 Code durch Codex harness, gpt-6.1-sol, medium reasoning effort. Keine konkrete interne Revision nachgewiesen.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "write_stdin",
+      "Python 3 unittest/hashlib/unittest.mock",
+      "pnpm/ng test/Vitest",
+      "pdftotext",
+      "Ajv JSON Schema"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nDein vollständiger, verbindlicher Prüfauftrag steht in der Datei `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/P3-runde3-gezielt.md` (SHA-256 d983154afb1c800ce196092fb7abaee5e7c06ee26e4ede8b9fc0cf7e168212b8). Lies diese Datei zuerst vollständig und führe den Auftrag genau so aus. Arbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`. Schreibe ausschließlich die beiden im Auftrag genannten Berichtsdateien. Antworte am Ende in höchstens 20 Zeilen mit Gesamturteil, Status je Punkt und den Pfaden deiner Berichtsdateien.\n\nVollständiger Datei-Auftrag:\n# Auftrag P3 Runde 3: abschließende gezielte Nachprüfung vor der Festschreibung von Plan v2.2\n\nDu bist ein frischer Prüfagent (Codex, OpenAI) im Projekt „12 Axes Deutschland“ (Linear LIFE-93). Dies ist eine **gezielte Korrekturprüfung** einzelner offener Punkte, kein Gesamtaudit.\n\nArbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`, Branch `research/life-93-claude-20261003`. Prüffassung: Manifest `reports/claude/pruefungen/PLAN-V22-003-manifest.json`, SHA-256 `6a575293673604ed52c83403f86a0b9993b0ce6fefaf929e1e1077a3bdfcde2c`. Prüfe zuerst die Hashes. Der Koordinator ändert während deiner Prüfung keine Dateien dieses Manifests. Lies `.claude/skills/life93-review/SKILL.md` und das Urteilsschema und folge ihnen.\n\nOffene Punkte aus Runde 2 (Berichte `reports/claude/pruefungen/P1-runde2-v22.*` und `P2-runde2-v22.*`): P1-V22-F01, P1-V22-F02, P1-V22-F04, P1-V22-F08, P1-V22-F10 und P2-V22-F01. Abschnitt 9 „Runde 2“ in `docs/analyseplan-v2.2.md` beschreibt die Korrekturen.\n\nAufgabe: Prüfe je Punkt anhand der tatsächlichen Dateien und mit synthetischen Tests, ob das in Runde 2 beschriebene Restproblem aufgelöst ist. Status je Punkt: BEHOBEN, TEILWEISE oder NICHT_BEHOBEN mit Beleg. Melde neue Probleme nur, wenn die Korrektur sie verursacht hat oder sie die Festschreibung erheblich gefährden.\n\nRegeln: Schreibe nur `reports/claude/pruefungen/P3-runde3-v22.md` und `.json`. Keine anderen Dateien ändern, keine Commits, Tags, Nachrichten. Nichts unter `data/raw/` oder `data/local/` lesen, `pipeline/v22/run_v22.py` nicht als Kommandozeile ausführen, keine Antwortverteilungen lesen (`data/reference-v2/`, `data/reference-groups-v21/`, `reports/phasen/02-*`, `reports/phasen/03-*`, `web/src/app/policy-draft/reviewed-historical-*.ts`). Synthetische Tests und Gegenproben unter `/tmp` sind erlaubt. Die Angular-Tests laufen mit `pnpm --filter politikprofil test --watch=false`, die Python-Tests mit `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s pipeline/v22 -p 'test_*.py'`.\n\nAusgabe: Bericht und JSON-Urteil. Gesamturteil BESTANDEN nur, wenn kein erhebliches Finding offen bleibt. Am Ende: gelesene Dateien mit Hash, ausgeführte Befehle, Modell laut Laufzeit.\n",
+    "inputHashes": {
+      "docs/analyseplan-v2.2.md": "2be4c3194aab52f5da78f27acda30ebb6ff7c775a42c15eafd26b466e04a3d60",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "docs/abdeckung-v2.2.md": "f3f03912f38dc7149b73739bc18fa9bcec59c65f6cb77edfd130be3c8e2d1b10",
+      "data/politikprofil-v2.2.ergaenzung.json": "c4b0d97aeaf10868001199cb3f7f135a6fb8ec28d63b58f7f222ff7e0acd71ac",
+      "pipeline/v22/survey.py": "ef9011c5a9b9792373f7c9395d4e5db17a4381dab648480b2276ddac15a982bc",
+      "pipeline/v22/run_v22.py": "b07d5bd8e9306dc7db2b0f1e72af9207d00ca255ea3b0c3c2f58d9f87925e1fd",
+      "pipeline/v22/catalogue_v22.py": "f259365c04bdd8d783a90acbd5291838efb07b76e567b9de139197840568f2fc",
+      "pipeline/v22/test_survey.py": "dacdde363044981d575636447f6e206f89a0325353c8cc7b9a7898e1ca8ed011",
+      "pipeline/v22/test_run_v22.py": "e893eadbf46c64c0b96739dff16105be7f83529d3c1cc317df546ab44f46667c",
+      "pipeline/v22/fetch_ess_metadata.py": "82952e3d660b75d4540b6b5a1a136e4dc7c26899294f0d96aeb22fd600bd6da5",
+      "web/src/app/policy-draft/profile/profile-rules.ts": "b07a153e0d9236c049048995a4122982df199c0c1781b44f2f8c8425b30905a2",
+      "web/src/app/policy-draft/profile/profile-structure.ts": "fb133d063a3a35fb94a337e5ee42eeb1647462df09b4bcfe7340c1baba40aadb",
+      "web/src/app/policy-draft/profile/profile-engine.ts": "1b11d598a1743b611d2359fd354a03fc8bd90522293c6fa89c23c928b0b897fa",
+      "web/src/app/policy-draft/profile/profile-engine.spec.ts": "fef14891d4c8cd59ae9e85297dc2af6f836ea3c4e2e56ba06f244088c0afa966",
+      "web/src/app/policy-draft/policy-catalogue.ts": "9efc5f67a66952a86c1c427c83c5b40a557104b1573e7997470fff61259745f9",
+      "data/analysevertrag.v2.entwurf.json": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "docs/empirie-plan-v2.entwurf.md": "2b0cd26f8fba81bbf520b9ae3411d623f9299c9ff707aacf681bde4c65a0439f",
+      "reports/claude/agenten/R1-themen-aussen-bildung-digital.md": "0389cd71c40d89ff62fcb093825312392abee0ae206ac868124d51a4e15cfba2",
+      "reports/claude/agenten/R2-themen-gesundheit-arbeit-wohnen.md": "207aa6bbae3680f7a52721f4a2f7abb82b03690c24b0e120e687a37a1564e11b",
+      "reports/claude/agenten/R3-themen-reichweite.md": "1ed197088a6f215fa1cea397a6faec5a9da5f70307db3cb06dc4ec790dbf27ec",
+      "reports/claude/agenten/R4-profilform.md": "8ea2b9ff837b6431d55acd051b45d5cba69eea3df1049878f748fe0655eddfa2",
+      "reports/claude/kontrollrechnung/bericht.md": "f53ef3500e1d702a85fac9ca1d2186eea940fd0e0366cab22d40fdb4eaa501d1",
+      "reports/claude/agenten/V2-quellen-konstrukte-fairness.md": "b7cb60fcd3f9febdd66e80ac3bf2221c8a9dcfd1af6d74a43de9f68cdc97cebb",
+      "pipeline/v22/export_v22.py": "839765b1a8287141f8176ab988e86ab4deca7d712d84d53287b943c164d6eee1",
+      "web/src/app/policy-draft/profile/area-scope.ts": "4ed439fd3a1d9b9d030f8ed33b9a4d55916d07cc694bcf8a3aec6f86d338a1b1",
+      "reports/claude/pruefungen/P1-methoden-v22.md": "d479242f5d075b23f9379bf6dbce9cf8199f8a29f6236d446578b57c17eadb00",
+      "reports/claude/pruefungen/P1-methoden-v22.json": "070af35fcb0ffc7c626e4bea40b142095ad9383ceb5f701965d94d75bd618a87",
+      "reports/claude/pruefungen/P2-quellen-fairness-v22.md": "5d5efeb3819e6d163489d82b9b3a8b4b7b515a9891f750dbe9229302441a84f3",
+      "reports/claude/pruefungen/P2-quellen-fairness-v22.json": "689e681c53699d104514cfbc71921818ed3ae5f8b8683e489a365e8568673012",
+      "reports/claude/pruefungen/P1-runde2-v22.md": "48b8955cc77f3d993fa04de46cdd14d43d5a59e36f463fa2c0383c2b48513f15",
+      "reports/claude/pruefungen/P1-runde2-v22.json": "58fe08601e18aa03145c2b479fbb57c1f6f9394e03743072d9f3da5690d15736",
+      "reports/claude/pruefungen/P2-runde2-v22.md": "9b80b4c1ef8fdf8588971f94e157b187f3c3d6704474cfc3e1d5b98a9201fa8c",
+      "reports/claude/pruefungen/P2-runde2-v22.json": "4d68528c8cfeaf30a444efde89b863fdf55e8b8aa74215e35fc9e4b55fac6d72",
+      "web/src/app/policy-draft/public-catalogue-v22.ts": "bc99055a10fb559cf2802d9a579ef3f07a3c8a77bdcc8556a2b08655d9d499cf",
+      "web/src/app/policy-draft/public-catalogue.ts": "7a6a3a1ffeba3a976f9c1e07fb1dbd061098e5c5ea347f80303f1750a0fdf8e6",
+      "web/src/app/policy-draft/catalogue-types.ts": "2599cfdf5c77ed912a85926b4e37a025b7d3661d1085749d27dbb5dc8be42822",
+      "web/src/app/policy-draft/generate-public-catalogue-v22.mjs": "a9854873edaf9086bf4741e6bd966e2ce98c4f73f599922e488744713b02535a",
+      "web/src/app/policy-draft/reference-v22.ts": "3790cd14e136cbd701bbc4124bcdcfbff29d6647bac66012e9794c9c662a8574",
+      "web/src/app/policy-draft/reference-v22.spec.ts": "f6e0a28b52f033d6efbcebe76166090ebebf0e27c73a713d3725425d4b3f22b1",
+      "web/src/app/policy-draft/policy-draft.spec.ts": "074cc930062087164c2d661da18622a14c402c3d9e04a1a3904ff95296ae080b",
+      "web/src/app/policy-draft/policy-catalogue.spec.ts": "d869f049f04b608ceed0020afbd500faa4739519e21ba06b06d75304ad87a829",
+      "pipeline/policy_reference_v2.py": "bc06e5c06935e3ff492543bdca986ebca823ec962eab8e6321ff2bf19ee83d2b",
+      "outputs/loop/breadth-data-001/sources/ess5-de-questionnaire.pdf": "24b5d2599e6d30dc02a6d835f5f80b5bcecf8f6014ee8f4670a703c25d3c3cbf",
+      "outputs/loop/breadth-data-001/sources/ess8-de-questionnaire.pdf": "977475c18d2adebea6ccb7695f377fb6ed500ef087b077086305f9a2e4a7b239",
+      "outputs/loop/breadth-data-001/sources/ess8-de-showcards.pdf": "dde02b5336b2d960c2900a8fcf5e2a0f0d254b46dcce1d9ffb785a830e096bc0",
+      "outputs/loop/breadth-data-001/sources/ess10-de-questionnaire.pdf": "158004a89b1821e5202e6faf3c2101eae5e56e794d7c3fdbc3dca1c9d67c8425",
+      "outputs/loop/methods/SURVEY-MANUAL.pdf": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c",
+      "outputs/claude/sources/ess8-candidates.json": "279f9c31b4236b71f4a820de7a2b519989ec796ad49ba4f2bde210c108d94168",
+      "outputs/claude/sources/ess10sc-candidates.json": "2a5927d1ec1d322b2a127ff0c2c35862cbae8fc1ae39767aee410ff910ef8394",
+      "outputs/claude/sources/ess10sc-candidates-2.json": "9ed9a9739dfe64b2cd8ebf2cc4cec8960ce29179b25d2013e90ff0dac53a038a",
+      "outputs/claude/sources/ess5-candidates.json": "4b0247142d37697b4193e3373a37174849bcc16552d9764e34a51169170795a8",
+      "outputs/loop/breadth-access-002/sources/ess10sc-file-metadata.json": "d9e6d606fb3b897d33d04f3247dbe5160d11f108a76fca6547a773e2c1ba0a57",
+      "package.json": "451c9de3c5e0b647361bfbc749717712b895b822a04f84433288d19eb29a27f7",
+      "web/package.json": "77db8383e6c64f65fe04638c46ba3b7f9b40040d95f0ad3ced1471fb475d60f7",
+      "web/angular.json": "91c9042107b35de10321454587d64abbd7cd18cd25ea345319dd0378b8337ed8",
+      "web/tsconfig.json": "b6445b51aafffbe2fed1026bbe83c8bdf1f9194c928f6bad0db9bad66fa10b4a",
+      "web/tsconfig.app.json": "73644210146f8c2f7fac8504404fe21c36a9650df7587ba9e971fc36e5138f4f",
+      "web/tsconfig.spec.json": "7aeb8799d7e1d086d16d7b238769f664cfa73b3d135318df5dcc441fdc6a7e87",
+      "web/src/app/policy-draft/policy-draft.ts": "fac85532a2a4320023058ead915868982fac409355b609d111e2faf4a03e39e3",
+      "web/src/app/research/policy-profile.ts": "28906eb1533bb953b43bed75a4995c907b71398f1ffcd63271c82cfdace05998",
+      "web/src/app/policy-draft/historical-reference.ts": "58eb05517a43a4d3ea0a62c20f06c39857ca242e50748d3bce1a0f17a33683ab",
+      "web/src/app/policy-draft/group-reference-types.ts": "539ca2854b8839a7e76590b56ca91f652350093582e68524dea9fe4575a85388",
+      "web/src/app/policy-draft/group-reference.ts": "13d26f381c234f6d78a4687f0002528adf284eae722fa78e506ee1a942c5ca47",
+      "web/src/app/policy-draft/policy-source-details.ts": "add8b2721004e120d71e7574d119bdd2ec84b5373c7b2b497d53e74e46a2f659",
+      "web/src/app/policy-draft/policy-source-details.html": "3ebaf5bf8145005ad9706ce42bacd8660cffb15daf152ae4001da4ccf539fdb2",
+      "web/src/app/policy-draft/policy-source-details.scss": "98ba630fb6527743e449750fbffde418f28b5993a208e37455205aec2c997f8b",
+      "web/src/app/policy-draft/policy-draft.html": "0288b1e44f356e848a0e4864f7f22fea76090c93dfc4f3561fb7cfbc9c504c1d",
+      "web/src/app/policy-draft/policy-draft.scss": "3b7e894c8b2e93029fe1da0136adf9d197adaa43a1a55e62c25b016eba2b07ce",
+      "reports/claude/auftraege/P3-runde3-gezielt.md": "d983154afb1c800ce196092fb7abaee5e7c06ee26e4ede8b9fc0cf7e168212b8",
+      "reports/claude/pruefungen/PLAN-V22-003-manifest.json": "6a575293673604ed52c83403f86a0b9993b0ce6fefaf929e1e1077a3bdfcde2c",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "docs/project.md": "7cfa1d4046eb30ae4b29728c49fa90baff89f40e56199b8eff0a738ca004e270",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "docs/handbuch.md": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    }
+  },
+  "checks": [
+    {
+      "id": "HASH-PLAN-V22-003",
+      "scope": "Auftrag, Manifest und sämtliche 53 referenzierten Eingaben",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Auftragshash d983154afb1c800ce196092fb7abaee5e7c06ee26e4ede8b9fc0cf7e168212b8; Manifesthash 6a575293673604ed52c83403f86a0b9993b0ce6fefaf929e1e1077a3bdfcde2c; sämtliche 43 Artefakte und 10 Caches vor Bewertung und vor Berichtschreiben hashgleich."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-V22-F01",
+      "scope": "Getrennte private Wahl-/Parteibilanz nach Gruppenvertrag v2.1.",
+      "status": "BESTANDEN",
+      "evidence": [
+        "pipeline/v22/run_v22.py:187–239",
+        "data/gruppenvertrag.v2.1.entwurf.json:3380–3415",
+        "S01: Refusal, Don't know und No answer je Feld; named/Other, Blank, strukturell nicht gefragt und Inkonsistenz getrennt; unbekannte Partei auch bei Nichtwähler abgelehnt."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-V22-F02",
+      "scope": "Verhältnisdiagnose nach dem Gruppenvertrag, mit gesonderter Gesamtstudien-Diagnose.",
+      "status": "BESTANDEN",
+      "evidence": [
+        "pipeline/v22/run_v22.py:242–250,286–315",
+        "data/gruppenvertrag.v2.1.entwurf.json:3443–3452",
+        "S02: Nichtwähler mit abweichendem Verhältnis ändern die Berechtigten-Diagnose nicht; absolute und relative Toleranz wirken beide; leere Domäne ergibt not_evaluable_no_eligible_group_cases."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-V22-F04",
+      "scope": "Abbruch vor Rechnung bei vorhandenen privaten Verzeichnissen mit Gruppen-/Fremdrechten.",
+      "status": "BESTANDEN",
+      "evidence": [
+        "pipeline/v22/run_v22.py:361–391",
+        "S03: importiertes main() nur unter /tmp mit gemocktem Gate/Runner; 0755/0777 abgelehnt vor run(), Modus unverändert; neue Ausgabe 0700/0600, vorhandener Lauf und Symlink abgelehnt."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-V22-F08",
+      "scope": "T30 ist als Anzeigeprüfung für zurückgehaltene und leere Referenzen vollständig umgesetzt.",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "web/src/app/policy-draft/policy-draft.spec.ts:1–5,110–125",
+        "web/src/app/policy-draft/reference-v22.spec.ts:20–49",
+        "docs/profilregeln-v1.md:85; docs/analyseplan-v2.2.md: Abschnitt 9 Runde 2",
+        "S04: identische T30-Assertions mit synthetischem withheld-Fixture bestehen. Unabhängige no_valid_answers-Index-Gegenprobe mit absichtlich mitgelieferten Zahlen entfernt Zahlen für Einzel-/Gruppeneinträge.",
+        "S04 Anzeigegegenprobe: cttresa=9 bleibt erhalten; no_valid_answers als unverfügbarer Eintrag führt zur globalen Quellenablehnung und keinem fragebezogenen reference-withheld-Hinweis. historical-reference.ts unterstützt nur reason=withheld_base_or_cell_count."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-V22-F10",
+      "scope": "PLAN-V22-003 bindet die tatsächlich benötigten öffentlichen Reproduktionsabhängigkeiten der Prüffälle.",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "reports/claude/pruefungen/PLAN-V22-003-manifest.json: artifacts",
+        "web/src/app/policy-draft/policy-draft.spec.ts:1–5,110–125",
+        "web/src/app/policy-draft/policy-draft.ts:1–46; templateUrl=policy-draft.html",
+        "web/src/app/policy-draft/historical-reference.ts: unavailableReferences-Bindung, referenceState",
+        "S05: Abgleich der für die isolierte T30-Ausführung tatsächlich kopierten Abhängigkeiten mit dem Manifest; Komponente, Vorlage und Referenzbinder fehlen. Ihre aktuellen Hashes sind in diesem Bericht und JSON protokolliert, nicht im eingefrorenen Paket."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P2-V22-F01",
+      "scope": "Soziale Absicherung ohne unterstelltes Modell der Bedürftigkeitsprüfung.",
+      "status": "BESTANDEN",
+      "evidence": [
+        "web/src/app/policy-draft/profile/profile-structure.ts:161–175",
+        "docs/profilregeln-v1.md: Querbezüge, Soziale Absicherung",
+        "ESS8 deutscher Fragebogen PDF-S.36 E6/E7; PDF-S.43 E36; Showcards PDF-S.55 Liste 54",
+        "S06: Profile mit ersten/letzten Kategorien der fünf Fragen und nur E6=10/E7=0 haben den korrigierten Titel und Kontext."
+      ],
+      "requiredInScope": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "P1-V22-F01",
+      "claim": "Getrennte private Wahl-/Parteibilanz nach Gruppenvertrag v2.1.",
+      "problem": "Runde 2 fasste Missing-Gründe und benannte Parteien/Other zusammen. Die neue Fassung trennt beides.",
+      "evidence": [
+        "pipeline/v22/run_v22.py:187–239",
+        "data/gruppenvertrag.v2.1.entwurf.json:3380–3415",
+        "S01: Refusal, Don't know und No answer je Feld; named/Other, Blank, strukturell nicht gefragt und Inkonsistenz getrennt; unbekannte Partei auch bei Nichtwähler abgelehnt."
+      ],
+      "impact": "Die ursprünglich fehlende Auflösung der privaten Ausschlüsse ist nachprüfbar.",
+      "correction": "Umgesetzt; keine weitere Korrektur für diesen Restpunkt.",
+      "recheck": "S01 und test_vote_party_accounting_and_inconsistency bestanden.",
+      "severity": "mittel",
+      "severityReason": "Konkrete lokale Vertrags-, Anzeigeprüfungs- oder Bindungsanforderung vor Festschreibung; kein empirisches Scheitern behauptet.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P1-V22-F02",
+      "claim": "Verhältnisdiagnose nach dem Gruppenvertrag, mit gesonderter Gesamtstudien-Diagnose.",
+      "problem": "Die frühere Diagnose benutzte alle Fälle und OR statt AND sowie keinen Leerstatus. Die Korrektur beseitigt diese Abweichungen.",
+      "evidence": [
+        "pipeline/v22/run_v22.py:242–250,286–315",
+        "data/gruppenvertrag.v2.1.entwurf.json:3443–3452",
+        "S02: Nichtwähler mit abweichendem Verhältnis ändern die Berechtigten-Diagnose nicht; absolute und relative Toleranz wirken beide; leere Domäne ergibt not_evaluable_no_eligible_group_cases."
+      ],
+      "impact": "Primärgewichte bleiben unverändert; Diagnosen entsprechen den zugesagten Fallkreisen.",
+      "correction": "Umgesetzt; keine weitere Korrektur für diesen Restpunkt.",
+      "recheck": "S02 einschließlich synthetischem run()-Durchlauf bestanden.",
+      "severity": "mittel",
+      "severityReason": "Konkrete lokale Vertrags-, Anzeigeprüfungs- oder Bindungsanforderung vor Festschreibung; kein empirisches Scheitern behauptet.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P1-V22-F04",
+      "claim": "Abbruch vor Rechnung bei vorhandenen privaten Verzeichnissen mit Gruppen-/Fremdrechten.",
+      "problem": "Runde 2 akzeptierte 0755. check_private_dir weist Gruppen-/Fremdrechte nun zurück und ändert vorhandene Rechte nicht.",
+      "evidence": [
+        "pipeline/v22/run_v22.py:361–391",
+        "S03: importiertes main() nur unter /tmp mit gemocktem Gate/Runner; 0755/0777 abgelehnt vor run(), Modus unverändert; neue Ausgabe 0700/0600, vorhandener Lauf und Symlink abgelehnt."
+      ],
+      "impact": "Die konkret beanstandeten zu offenen Verzeichnisrechte verhindern jetzt den Lauf.",
+      "correction": "Umgesetzt; keine weitere Korrektur für diesen Restpunkt.",
+      "recheck": "S03 und test_private_directory_checks bestanden.",
+      "severity": "mittel",
+      "severityReason": "Konkrete lokale Vertrags-, Anzeigeprüfungs- oder Bindungsanforderung vor Festschreibung; kein empirisches Scheitern behauptet.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P1-V22-F08",
+      "claim": "T30 ist als Anzeigeprüfung für zurückgehaltene und leere Referenzen vollständig umgesetzt.",
+      "problem": "Der neue Komponententest beantwortet cttresa und prüft für withheld den Erhalt der eigenen Aussage und die fehlenden Zahlen. Für no_valid_answers bleibt nur ein Index-Test ohne beantwortetes Item, Vorlage oder Fehlhinweis. Der Komponententest importiert außerdem weiterhin einen echten historischen Fixture. Eine verbindlich offene no_valid_answers-Anzeigeprüfung wird nicht ausgewiesen.",
+      "evidence": [
+        "web/src/app/policy-draft/policy-draft.spec.ts:1–5,110–125",
+        "web/src/app/policy-draft/reference-v22.spec.ts:20–49",
+        "docs/profilregeln-v1.md:85; docs/analyseplan-v2.2.md: Abschnitt 9 Runde 2",
+        "S04: identische T30-Assertions mit synthetischem withheld-Fixture bestehen. Unabhängige no_valid_answers-Index-Gegenprobe mit absichtlich mitgelieferten Zahlen entfernt Zahlen für Einzel-/Gruppeneinträge.",
+        "S04 Anzeigegegenprobe: cttresa=9 bleibt erhalten; no_valid_answers als unverfügbarer Eintrag führt zur globalen Quellenablehnung und keinem fragebezogenen reference-withheld-Hinweis. historical-reference.ts unterstützt nur reason=withheld_base_or_cell_count."
+      ],
+      "impact": "Die in Runde 2 verlangte vollständige synthetische Anzeigeprüfung ist weiterhin nicht belegt. Der Index-Test belegt keine Anzeige des Leerstatus. Keine Offenlegung realer Zahlen und kein empirischer Fehler behauptet.",
+      "correction": "Den no_valid_answers-Fall mit beantwortetem Item, fehlenden Prozentwerten, passendem Fehlhinweis und erhaltener eigener Aussage synthetisch im vorgesehenen Anzeigeweg prüfen. Alternativ diese konkrete Anzeigeprüfung vor der Festschreibung verbindlich als offen und als spätere Voraussetzung ausweisen. Den T30-Komponententest auf synthetische Referenzen umstellen, damit er ohne gesperrte Ergebnisdateien läuft.",
+      "recheck": "T30 getrennt für beide Status mit ausschließlich synthetischen Eingaben ausführen; gegebenenfalls die ausdrückliche Begrenzung des Plans prüfen.",
+      "severity": "mittel",
+      "severityReason": "Konkrete lokale Vertrags-, Anzeigeprüfungs- oder Bindungsanforderung vor Festschreibung; kein empirisches Scheitern behauptet.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F10",
+      "claim": "PLAN-V22-003 bindet die tatsächlich benötigten öffentlichen Reproduktionsabhängigkeiten der Prüffälle.",
+      "problem": "Alle in Runde 2 namentlich genannten Ergänzungen sind manifestiert. Der neu gebundene T30-Komponententest benötigt jedoch policy-draft.ts, policy-draft.html und historical-reference.ts, die weiterhin keine Manifest-Einträge besitzen. Damit bindet der Testhash nicht den tatsächlich ausgeführten Anzeige-/Bindungscode.",
+      "evidence": [
+        "reports/claude/pruefungen/PLAN-V22-003-manifest.json: artifacts",
+        "web/src/app/policy-draft/policy-draft.spec.ts:1–5,110–125",
+        "web/src/app/policy-draft/policy-draft.ts:1–46; templateUrl=policy-draft.html",
+        "web/src/app/policy-draft/historical-reference.ts: unavailableReferences-Bindung, referenceState",
+        "S05: Abgleich der für die isolierte T30-Ausführung tatsächlich kopierten Abhängigkeiten mit dem Manifest; Komponente, Vorlage und Referenzbinder fehlen. Ihre aktuellen Hashes sind in diesem Bericht und JSON protokolliert, nicht im eingefrorenen Paket."
+      ],
+      "impact": "Die Anzeigeprüfung kann bei verändertem produktivem Anzeige-/Bindungscode stattfinden, während alle Manifesthashes weiter passen. Die Bindungslücke betrifft die jetzt als erledigt beanspruchte T30-Korrektur.",
+      "correction": "Die öffentlichen Abhängigkeiten des T30-Tests einschließlich Komponente, Vorlage, Referenzbinder und weiterer benötigter Helper vollständig in ein neues Manifest aufnehmen. Synthetische Test-Fixtures statt gesperrter Antwortverteilungen binden; keine gesperrten Ergebnisdateien in den Auftrag aufnehmen.",
+      "recheck": "Mit neuem erwarteten Manifesthash erneut alle Eingaben prüfen; Änderungen an Komponente, Vorlage und Referenzbinder müssen die Bindungsprüfung jeweils scheitern lassen.",
+      "severity": "mittel",
+      "severityReason": "Konkrete lokale Vertrags-, Anzeigeprüfungs- oder Bindungsanforderung vor Festschreibung; kein empirisches Scheitern behauptet.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P2-V22-F01",
+      "claim": "Soziale Absicherung ohne unterstelltes Modell der Bedürftigkeitsprüfung.",
+      "problem": "Runde 2 behauptete ohne Bedürftigkeitsprüfung. Der feste Kontext lässt diese Frage jetzt ausdrücklich offen; Dokument- und Codetitel stimmen überein.",
+      "evidence": [
+        "web/src/app/policy-draft/profile/profile-structure.ts:161–175",
+        "docs/profilregeln-v1.md: Querbezüge, Soziale Absicherung",
+        "ESS8 deutscher Fragebogen PDF-S.36 E6/E7; PDF-S.43 E36; Showcards PDF-S.55 Liste 54",
+        "S06: Profile mit ersten/letzten Kategorien der fünf Fragen und nur E6=10/E7=0 haben den korrigierten Titel und Kontext."
+      ],
+      "impact": "Die Einzelantworten erhalten kein nicht erfragtes Anspruchsmodell; Grundeinkommen bleibt als anderer Gegenstand getrennt.",
+      "correction": "Umgesetzt; keine weitere Korrektur für diesen Restpunkt.",
+      "recheck": "Originalquellen direkt gelesen; S06 nach vollständiger Initialisierung aller Antwortzustände bestanden.",
+      "severity": "mittel",
+      "severityReason": "Konkrete lokale Vertrags-, Anzeigeprüfungs- oder Bindungsanforderung vor Festschreibung; kein empirisches Scheitern behauptet.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "P1-V22-F01",
+      "correctionStatus": "BEHOBEN"
+    },
+    {
+      "id": "P1-V22-F02",
+      "correctionStatus": "BEHOBEN"
+    },
+    {
+      "id": "P1-V22-F04",
+      "correctionStatus": "BEHOBEN"
+    },
+    {
+      "id": "P1-V22-F08",
+      "correctionStatus": "TEILWEISE"
+    },
+    {
+      "id": "P1-V22-F10",
+      "correctionStatus": "TEILWEISE"
+    },
+    {
+      "id": "P2-V22-F01",
+      "correctionStatus": "BEHOBEN"
+    }
+  ],
+  "limits": [
+    "Gezielte KI-Korrekturprüfung von sechs Restpunkten, kein Gesamtaudit, keine empirische Validierung oder wissenschaftliche/menschliche Abnahme.",
+    "Kein Finding erheblich. Zwei mittlere offene Findings blockieren erforderliche Checks dieser Festschreibung; daher NICHT_BESTANDEN.",
+    "Keine Rohdaten, data/raw/, data/local/, gesperrten Antwortverteilungen oder reviewed-historical-Dateien gelesen. run_v22.py nicht als Kommandozeile ausgeführt; importiertes main() nur in synthetischer /tmp-Wurzel mit gemocktem Gate/Runner.",
+    "Original-Angular-Gesamtsuite und pnpm check nicht ausgeführt, da sie gesperrte historische Ergebnisdateien importieren und zusätzliche Repository-Artefakte schreiben können. Isolierte Angular-Ausführung ersetzt keine vollständige unveränderte Suite und keine Browserbeobachtung.",
+    "Vorgegebene frühere Urteile bestimmungsgemäß gelesen; keine unabhängige Erstbewertung. Keine Aussagen über tatsächliche Verteilungen oder frühere Dateneinsicht anderer Agenten.",
+    "Nur die zwei beauftragten Berichte im Repository geschrieben. Keine Commits, Tags, Pushes, externen Nachrichten oder Freigaben. /tmp enthält synthetische Testkopien und Prüfprogramme."
+  ]
+}
