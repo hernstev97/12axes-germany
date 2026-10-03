@@ -1,0 +1,7 @@
+# Öffentlicher Status v2: gezielte Übernahme
+
+3. Oktober 2026. Root hat Erstbericht und Runde 1 vollständig gelesen. PRS-V2-001 ist an der festen v3 (28 aktuelle Pins tatsächlich geprüft) geschlossen: Die drei privaten historischen Gruppenläufe werden von noch offenen Ergebnisprüfungen/Veröffentlichungsentscheidungen unterschieden. v1, v2-Manifeste, rekonstruierbarer v2-Patch und beide Originalberichte bleiben erhalten. Die technische Satzzeichenkorrektur ist dieselbe Runde, kein neues Inhaltsaudit.
+
+`pnpm check` 054 scheiterte an drei Semikolons vor Tests/Typecheck/Build. Nach Teilung dieser drei Sätze bestand Check 055 mit 71 Tests, Typecheck und Produktionsbuild. Root prüfte anschließend Startseite, Projekt und Methodik auf 320/375/768/1280/1920 CSS-Pixeln: kein horizontaler Überlauf, eine H1 je Seite, lokale Fragmente vorhanden, keine Testroute/-links, Axe 4.13.0 ohne Violations/Incomplete. Der [Browserbeleg](public-status-v2-browser-technical.json) trennt Beobachtung, tatsächliche Screenshots und Grenzen. Sichtbarer echter Tastaturfokus und 200%-Zoom bleiben unbestätigt; keine Menschen-/Wissenschafts-/Releaseabnahme.
+
+Diese Übernahme betrifft den Zeitpunkt vor dem nun separat dokumentierten Gruppenexport. Dessen aktuelle Veröffentlichungsangabe wird im folgenden Gruppen-Darstellungspaket aktualisiert; die hier angenommene ursprüngliche Prüffassung wird nicht überschrieben oder als aktuell nachgeprüft ausgegeben.

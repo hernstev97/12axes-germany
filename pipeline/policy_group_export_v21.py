@@ -248,6 +248,11 @@ def _eligibility(value, groups):
              <= parties["valid_other_unlabelled"])
     _require(value["yes_vote_with_party_not_asked_count"] <= parties["structurally_not_asked"]
              and eligible + value["yes_vote_with_party_not_asked_count"] <= votes["yes"])
+    # After known yes+valid-party and yes+NotAsked cases, remaining yes cases
+    # must fit in Party-Missing or technical blanks. Separate state margins
+    # alone cannot establish this joint feasibility condition.
+    residual = votes["yes"] - eligible - value["yes_vote_with_party_not_asked_count"]
+    _require(0 <= residual <= parties["source_missing"] + parties["technical_export_blank"])
 
 
 def _ratio(value, eligible_count, all_references):

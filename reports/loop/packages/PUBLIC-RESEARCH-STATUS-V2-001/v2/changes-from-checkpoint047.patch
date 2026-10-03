@@ -1,0 +1,51 @@
+diff --git a/web/src/app/pages/home/home.html b/web/src/app/pages/home/home.html
+index 4950a17..85c1c67 100644
+--- a/web/src/app/pages/home/home.html
++++ b/web/src/app/pages/home/home.html
+@@ -133,7 +133,8 @@
+         <div>
+           <dt>Nächster Arbeitsschritt</dt>
+           <dd>
+-            Darstellung des Themenberichts prüfen. Die historische Gruppenanalyse läuft getrennt.
++            Darstellung des Themenberichts prüfen. Drei historische Gruppenläufe sind abgeschlossen;
++            Ergebnisprüfung und Veröffentlichung bleiben offen.
+           </dd>
+         </div>
+       </dl>
+diff --git a/web/src/app/pages/methodology/methodology.html b/web/src/app/pages/methodology/methodology.html
+index 525844b..2b0c726 100644
+--- a/web/src/app/pages/methodology/methodology.html
++++ b/web/src/app/pages/methodology/methodology.html
+@@ -224,10 +224,11 @@
+           geprüft. Der breite Themenbericht ist weiterhin in gezielter Darstellungsprüfung.
+         </p>
+         <p>
+-          Eine eigene historische Gruppenanalyse läuft derzeit nur für ESS5, ESS8 und ESS9.
+-          Ergebnisse und Anzeige stehen aus. Die Einzelreferenzen erteilen keine Gruppenfreigabe für
+-          ESS10-SC oder ESS11. Historische Gruppenverteilungen wären keine heutigen Parteiprogramme
+-          und kein Gesamtmatch.
++          Die drei getrennten historischen Gruppenläufe für ESS5, ESS8 und ESS9 sind abgeschlossen.
++          Ihre privaten Ergebnisfassungen werden geprüft; Veröffentlichung und Anzeige sind noch
++          nicht freigegeben. Die Einzelreferenzen erteilen keine Gruppenfreigabe für ESS10-SC oder
++          ESS11. Historische Gruppenverteilungen wären keine heutigen Parteiprogramme und kein
++          Gesamtmatch.
+         </p>
+         <p>
+           Die von Steven veranlasste abschließende Kontrolle durch Claude, Verständnistests mit
+diff --git a/web/src/app/pages/project/project.html b/web/src/app/pages/project/project.html
+index 9413fa5..077e1b7 100644
+--- a/web/src/app/pages/project/project.html
++++ b/web/src/app/pages/project/project.html
+@@ -233,9 +233,9 @@
+       <div class="prose area-body">
+         <p>
+           Der breite Themenbericht ist noch in gezielter Darstellungsprüfung. Eine getrennte
+-          historische Gruppenanalyse läuft für ESS5, ESS8 und ESS9. Ihre Ergebnisse und Anzeige
+-          stehen noch aus. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen.
+-          Der
++          historische Gruppenanalyse ist für ESS5, ESS8 und ESS9 ausgeführt. Die drei privaten
++          Ergebnisfassungen werden geprüft; Veröffentlichung und Anzeige sind noch nicht
++          freigegeben. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen. Der
+           <a
+             href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-night-20261003/docs/empirie-plan-v2.entwurf.md"
+             >Empirieplan v2</a

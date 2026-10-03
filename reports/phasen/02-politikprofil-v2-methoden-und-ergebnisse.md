@@ -32,7 +32,7 @@ Begrenzte Ergebnisentscheidungen: [Methoden](../loop/reviews/RESULTS-V2-001-meth
 
 European Social Survey European Research Infrastructure (ESS ERIC); Sikt – Norwegian Agency for Shared Services in Education and Research. [Daten-DOI](https://doi.org/10.21338/ess5e03_6) 10\.21338/ess5e03\_6; [Dokumentations-DOI](https://doi.org/10.21338/nsd-ess5-2010) 10\.21338/nsd\-ess5\-2010. Deutschland (DE), ESS-Runde 5.
 
-Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the &quot;Geographical Coverage&quot;. Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
+Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the "Geographical Coverage". Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
 
 Historische Feldzeit: 2010\-09\-15T00:00:00Z bis 2011\-02\-03T00:00:00Z; deklarierter Modus: Face\-to\-face interview: Computer\-assisted \(CAPI/CAMI\).
 
@@ -42,7 +42,7 @@ Datenlizenz: ess\-data\-cc\-by\-nc\-sa\-4\.0; Dokumentationslizenz: ess\-documen
 
 European Social Survey European Research Infrastructure (ESS ERIC); Sikt – Norwegian Agency for Shared Services in Education and Research. [Daten-DOI](https://doi.org/10.21338/ess8e02_3) 10\.21338/ess8e02\_3; [Dokumentations-DOI](https://doi.org/10.21338/nsd-ess8-2016) 10\.21338/nsd\-ess8\-2016. Deutschland (DE), ESS-Runde 8.
 
-Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the &quot;Geographical Coverage&quot;. Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
+Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the "Geographical Coverage". Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
 
 Historische Feldzeit: 2016\-08\-23T00:00:00Z bis 2017\-03\-26T00:00:00Z; deklarierter Modus: Face\-to\-face interview: Computer\-assisted \(CAPI/CAMI\).
 
@@ -54,7 +54,7 @@ Datenlizenz: ess\-data\-cc\-by\-nc\-sa\-4\.0; Dokumentationslizenz: ess\-documen
 
 European Social Survey European Research Infrastructure (ESS ERIC); Sikt – Norwegian Agency for Shared Services in Education and Research. [Daten-DOI](https://doi.org/10.21338/ess9e03_3) 10\.21338/ess9e03\_3; [Dokumentations-DOI](https://doi.org/10.21338/nsd-ess9-2018) 10\.21338/nsd\-ess9\-2018. Deutschland (DE), ESS-Runde 9.
 
-Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the &quot;Geographical Coverage&quot;. Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
+Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the "Geographical Coverage". Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
 
 Historische Feldzeit: 2018\-08\-29T00:00:00Z bis 2019\-03\-04T00:00:00Z; deklarierter Modus: Face\-to\-face interview: Computer\-assisted \(CAPI/CAMI\).
 
@@ -66,7 +66,7 @@ Datenlizenz: ess\-data\-cc\-by\-nc\-sa\-4\.0; Dokumentationslizenz: ess\-documen
 
 European Social Survey European Research Infrastructure (ESS ERIC); Sikt – Norwegian Agency for Shared Services in Education and Research. [Daten-DOI](https://doi.org/10.21338/ess10sce03_2) 10\.21338/ess10sce03\_2; [Dokumentations-DOI](https://doi.org/10.21338/NSD-ESS10-2020) 10\.21338/NSD\-ESS10\-2020. Deutschland (DE), ESS-Runde 10.
 
-Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the &quot;Geographical Unit&quot;. Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
+Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the "Geographical Unit". Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
 
 Historische Feldzeit: 2021\-10\-05T00:00:00Z bis 2022\-01\-04T00:00:00Z; deklarierter Modus: Self\-administered questionnaire: Paper; Self\-administered questionnaire: Web\-based \(CAWI\).
 
@@ -78,7 +78,7 @@ Datenlizenz: ess\-data\-cc\-by\-nc\-sa\-4\.0; Dokumentationslizenz: ess\-documen
 
 European Social Survey European Research Infrastructure (ESS ERIC); Sikt – Norwegian Agency for Shared Services in Education and Research. [Daten-DOI](https://doi.org/10.21338/ess11e04_2) 10\.21338/ess11e04\_2; [Dokumentations-DOI](https://doi.org/10.21338/ess11-2023) 10\.21338/ess11\-2023. Deutschland (DE), ESS-Runde 11.
 
-Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the &quot;Geographical Unit&quot;. Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
+Deklarierte Zielpopulation: All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the "Geographical Unit". Die gemeinsame ESS-Zielbeschreibung betrifft Personen ab 15 in Privathaushalten unabhängig von Staatsangehörigkeit, Sprache oder Rechtsstatus; sie ist keine vollständige realisierte Abdeckung. Declared target only; achieved German coverage and response availability have not been checked\.
 
 Historische Feldzeit: 2023\-05\-09 bis 2023\-12\-21; deklarierter Modus: Face\-to\-face interview: Computer\-assisted \(CAPI/CAMI\).
 
@@ -133,7 +133,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -143,7 +143,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 24 | 33,8275278 |
+| Don't know | 24 | 33,8275278 |
 | No answer | 0 | 0 |
 | Refusal | 10 | 8,82044451 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -195,7 +195,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -205,7 +205,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 15 | 22,5720051 |
+| Don't know | 15 | 22,5720051 |
 | No answer | 0 | 0 |
 | Refusal | 8 | 6,81390525 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -257,7 +257,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -267,7 +267,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 17 | 26,47515204 |
+| Don't know | 17 | 26,47515204 |
 | No answer | 0 | 0 |
 | Refusal | 6 | 5,51243604 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -319,7 +319,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -329,7 +329,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 34 | 49,19717503 |
+| Don't know | 34 | 49,19717503 |
 | No answer | 0 | 0 |
 | Refusal | 9 | 7,84344121 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -381,7 +381,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -391,7 +391,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 24 | 35,9534377456 |
+| Don't know | 24 | 35,9534377456 |
 | No answer | 0 | 0 |
 | Refusal | 3 | 1,60826325417 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -459,7 +459,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | Antwort verweigert | 77 |
-| 88 | Don&\#x27;t know | Weiß nicht | 88 |
+| 88 | Don't know | Weiß nicht | 88 |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -469,7 +469,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 17 | 18,71189679 |
+| Don't know | 17 | 18,71189679 |
 | No answer | 0 | 0 |
 | Refusal | 2 | 2,7960211 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -533,7 +533,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | Antwort verweigert | 77 |
-| 88 | Don&\#x27;t know | Weiß nicht | 88 |
+| 88 | Don't know | Weiß nicht | 88 |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -543,7 +543,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 27 | 28,09451124 |
+| Don't know | 27 | 28,09451124 |
 | No answer | 0 | 0 |
 | Refusal | 4 | 4,7537504 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -607,7 +607,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | Antwort verweigert | 77 |
-| 88 | Don&\#x27;t know | Weiß nicht | 88 |
+| 88 | Don't know | Weiß nicht | 88 |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -617,7 +617,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 13 | 13,68190651 |
+| Don't know | 13 | 13,68190651 |
 | No answer | 0 | 0 |
 | Refusal | 2 | 3,130869 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -670,7 +670,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -680,7 +680,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 75 | 76,53536747 |
+| Don't know | 75 | 76,53536747 |
 | No answer | 0 | 0 |
 | Refusal | 5 | 4,7626426 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -733,7 +733,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -743,7 +743,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 86 | 84,33402326 |
+| Don't know | 86 | 84,33402326 |
 | No answer | 0 | 0 |
 | Refusal | 9 | 7,81540677 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -833,7 +833,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -843,7 +843,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 311 | 356,7272016 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -929,7 +929,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -939,7 +939,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 367 | 423,67997024 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -980,7 +980,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_importance; Gegenstan
 
 **CAWI-Originalfrage:** Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Medien das Recht haben, Kritik an der Regierung zu üben?
 
-**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including &quot;für die Demokratie im Allgemeinen&quot;; no omission of this phrase is present on physical PDF page 139\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
+**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including "für die Demokratie im Allgemeinen"; no omission of this phrase is present on physical PDF page 139\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
 
 **Originalrouting:** No special filter/jump printed at this item in the inspected national block\.
 
@@ -1025,7 +1025,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1035,7 +1035,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 266 | 302,5594856 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1076,7 +1076,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_importance; Gegenstan
 
 **CAWI-Originalfrage:** Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Rechte von Minderheiten geschützt werden?
 
-**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including &quot;für die Demokratie im Allgemeinen&quot;; no omission of this phrase is present on physical PDF page 140\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
+**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including "für die Demokratie im Allgemeinen"; no omission of this phrase is present on physical PDF page 140\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
 
 **Originalrouting:** No special filter/jump printed at this item in the inspected national block\.
 
@@ -1121,7 +1121,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1131,7 +1131,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 322 | 371,4958802 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1172,7 +1172,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_importance; Gegenstan
 
 **CAWI-Originalfrage:** Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Bürger bei den wichtigsten politischen Sachfragen durch direkte Volksabstimmungen das letzte Wort haben?
 
-**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including &quot;für die Demokratie im Allgemeinen&quot;; no omission of this phrase is present on physical PDF page 141\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
+**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including "für die Demokratie im Allgemeinen"; no omission of this phrase is present on physical PDF page 141\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
 
 **Originalrouting:** No special filter/jump printed at this item in the inspected national block\.
 
@@ -1217,7 +1217,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1227,7 +1227,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 317 | 365,82096013 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1268,7 +1268,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_importance; Gegenstan
 
 **CAWI-Originalfrage:** Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Gerichte alle Menschen gleich behandeln?
 
-**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including &quot;für die Demokratie im Allgemeinen&quot;; no omission of this phrase is present on physical PDF page 142\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
+**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including "für die Demokratie im Allgemeinen"; no omission of this phrase is present on physical PDF page 142\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
 
 **Originalrouting:** No special filter/jump printed at this item in the inspected national block\.
 
@@ -1311,7 +1311,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1349,7 +1349,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_importance; Gegenstan
 
 **CAWI-Originalfrage:** Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass Regierungsparteien bei Wahlen abgestraft werden, wenn sie schlechte Arbeit geleistet haben?
 
-**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including &quot;für die Demokratie im Allgemeinen&quot;; no omission of this phrase is present on physical PDF page 143\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
+**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including "für die Demokratie im Allgemeinen"; no omission of this phrase is present on physical PDF page 143\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
 
 **Originalrouting:** No special filter/jump printed at this item in the inspected national block\.
 
@@ -1394,7 +1394,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1404,7 +1404,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 410 | 463,03377012 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1490,7 +1490,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1500,7 +1500,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 259 | 283,58370682 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1586,7 +1586,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1596,7 +1596,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 297 | 333,85220274 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1637,7 +1637,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_importance; Gegenstan
 
 **CAWI-Originalfrage:** Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Ansichten gewöhnlicher Menschen Vorrang vor den Ansichten der politischen Elite haben?
 
-**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including &quot;für die Demokratie im Allgemeinen&quot;; no omission of this phrase is present on physical PDF page 146\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
+**Dokumentierte Formabweichung/-gleichheit:** CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including "für die Demokratie im Allgemeinen"; no omission of this phrase is present on physical PDF page 146\. PAPI presents the shared stem and ellipsis\-prefixed item separately; CAWI joins them into one question\. Both full response anchors remain explicit\. Static wording correspondence only; no empirical mode\-equivalence claim\.
 
 **Originalrouting:** No special filter/jump printed at this item in the inspected national block\.
 
@@ -1682,7 +1682,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1692,7 +1692,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 562 | 620,95388399 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1778,7 +1778,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1788,7 +1788,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 394 | 422,41643007 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1827,7 +1827,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: nominal; Gegenstand: principle
 
 **CAWI-Originalfrage:** Welche der beiden Aussagen beschreibt, was aus Ihrer Sicht für die Demokratie im Allgemeinen am besten ist?
 
-**Dokumentierte Formabweichung/-gleichheit:** CAWI omits &quot;auf dieser Liste&quot;, the paper\-only single\-box instruction and printed jump arrows\. Same two alternatives, with no terminal period in the displayed CAWI labels\.
+**Dokumentierte Formabweichung/-gleichheit:** CAWI omits "auf dieser Liste", the paper\-only single\-box instruction and printed jump arrows\. Same two alternatives, with no terminal period in the displayed CAWI labels\.
 
 **Originalrouting:** PAPI answer 1 → B26; answer 2 → B28 on page 13\.
 
@@ -1895,7 +1895,7 @@ Pflichtgefühl gegenüber Polizei, Strafverschärfung und Rechtsbindung sind ein
 
 Quelle: ESS5e03\_6, Ausgabe 3\.6. Antwortform: ordered\_obligation; Gegenstand: principle.
 
-**Originaleinleitung:** Und nun ein paar Fragen zu Ihren Pflichten, die Sie gegenüber der Polizei in Deutschland haben\. Benutzen Sie Liste 33\. 0 bedeutet &quot;überhaupt nicht meine Pflicht&quot; und 10 &quot;voll und ganz meine Pflicht&quot;\.
+**Originaleinleitung:** Und nun ein paar Fragen zu Ihren Pflichten, die Sie gegenüber der Polizei in Deutschland haben\. Benutzen Sie Liste 33\. 0 bedeutet "überhaupt nicht meine Pflicht" und 10 "voll und ganz meine Pflicht"\.
 
 **Antwortstamm:** In welchem Ausmaß betrachten Sie es als Ihre Pflicht\.\.\.
 
@@ -1932,7 +1932,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | Weiß nicht | 98 |
+| 88 | Don't know | Weiß nicht | 98 |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -1942,7 +1942,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 31 | 41,23935771 |
+| Don't know | 31 | 41,23935771 |
 | No answer | 0 | 0 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -1967,7 +1967,7 @@ Quellen-/Codegrenze: Categories use exported file codes; printed German form cod
 
 Quelle: ESS5e03\_6, Ausgabe 3\.6. Antwortform: ordered\_obligation; Gegenstand: principle.
 
-**Originaleinleitung:** Und nun ein paar Fragen zu Ihren Pflichten, die Sie gegenüber der Polizei in Deutschland haben\. Benutzen Sie Liste 33\. 0 bedeutet &quot;überhaupt nicht meine Pflicht&quot; und 10 &quot;voll und ganz meine Pflicht&quot;\.
+**Originaleinleitung:** Und nun ein paar Fragen zu Ihren Pflichten, die Sie gegenüber der Polizei in Deutschland haben\. Benutzen Sie Liste 33\. 0 bedeutet "überhaupt nicht meine Pflicht" und 10 "voll und ganz meine Pflicht"\.
 
 **Antwortstamm:** In welchem Ausmaß betrachten Sie es als Ihre Pflicht\.\.\.
 
@@ -2004,7 +2004,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | Weiß nicht | 98 |
+| 88 | Don't know | Weiß nicht | 98 |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2014,7 +2014,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 54 | 64,56130598 |
+| Don't know | 54 | 64,56130598 |
 | No answer | 0 | 0 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2068,7 +2068,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2078,7 +2078,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 84 | 99,38760742 |
+| Don't know | 84 | 99,38760742 |
 | No answer | 0 | 0 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2089,7 +2089,7 @@ Primäre fehlende Gewichtssumme: 99,38760742; primäre Gewichtssumme aller deuts
 
 **Erlaubte Interpretation:** getrennte Antwort auf genau den zitierten Gegenstand unter dem vollständig genannten historischen Kontext. Antworttyp und Rubrik erzeugen keine allgemeine Personeneigenschaft, keine Latentskala und keine neue Politikposition.
 
-Quellen-/Codegrenze: Original matrix D32–D37 includes adjacent items outside this fixed draft\. &quot;Deutschland heute&quot; is the original 2010/11 context, not a contemporary website\-validity claim\.
+Quellen-/Codegrenze: Original matrix D32–D37 includes adjacent items outside this fixed draft\. "Deutschland heute" is the original 2010/11 context, not a contemporary website\-validity claim\.
 
 Quellen-/Codegrenze: Categories use exported file codes; printed German form codes are retained separately\. Missing labels are not substantive political options\.
 
@@ -2132,7 +2132,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2142,7 +2142,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 38 | 43,7543185 |
+| Don't know | 38 | 43,7543185 |
 | No answer | 0 | 0 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2153,7 +2153,7 @@ Primäre fehlende Gewichtssumme: 43,7543185; primäre Gewichtssumme aller deutsc
 
 **Erlaubte Interpretation:** getrennte Antwort auf genau den zitierten Gegenstand unter dem vollständig genannten historischen Kontext. Antworttyp und Rubrik erzeugen keine allgemeine Personeneigenschaft, keine Latentskala und keine neue Politikposition.
 
-Quellen-/Codegrenze: Original matrix D32–D37 includes adjacent items outside this fixed draft\. &quot;Deutschland heute&quot; is the original 2010/11 context, not a contemporary website\-validity claim\.
+Quellen-/Codegrenze: Original matrix D32–D37 includes adjacent items outside this fixed draft\. "Deutschland heute" is the original 2010/11 context, not a contemporary website\-validity claim\.
 
 Quellen-/Codegrenze: Categories use exported file codes; printed German form codes are retained separately\. Missing labels are not substantive political options\.
 
@@ -2196,7 +2196,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2206,7 +2206,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 18 | 20,28924403 |
+| Don't know | 18 | 20,28924403 |
 | No answer | 0 | 0 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2217,7 +2217,7 @@ Primäre fehlende Gewichtssumme: 20,28924403; primäre Gewichtssumme aller deuts
 
 **Erlaubte Interpretation:** getrennte Antwort auf genau den zitierten Gegenstand unter dem vollständig genannten historischen Kontext. Antworttyp und Rubrik erzeugen keine allgemeine Personeneigenschaft, keine Latentskala und keine neue Politikposition.
 
-Quellen-/Codegrenze: Original matrix D32–D37 includes adjacent items outside this fixed draft\. &quot;Deutschland heute&quot; is the original 2010/11 context, not a contemporary website\-validity claim\.
+Quellen-/Codegrenze: Original matrix D32–D37 includes adjacent items outside this fixed draft\. "Deutschland heute" is the original 2010/11 context, not a contemporary website\-validity claim\.
 
 Quellen-/Codegrenze: Categories use exported file codes; printed German form codes are retained separately\. Missing labels are not substantive political options\.
 
@@ -2260,7 +2260,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2270,7 +2270,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 109 | 129,49996084 |
+| Don't know | 109 | 129,49996084 |
 | No answer | 0 | 0 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2281,7 +2281,7 @@ Primäre fehlende Gewichtssumme: 129,49996084; primäre Gewichtssumme aller deut
 
 **Erlaubte Interpretation:** getrennte Antwort auf genau den zitierten Gegenstand unter dem vollständig genannten historischen Kontext. Antworttyp und Rubrik erzeugen keine allgemeine Personeneigenschaft, keine Latentskala und keine neue Politikposition.
 
-Quellen-/Codegrenze: Original matrix D32–D37 includes adjacent items outside this fixed draft\. &quot;Deutschland heute&quot; is the original 2010/11 context, not a contemporary website\-validity claim\.
+Quellen-/Codegrenze: Original matrix D32–D37 includes adjacent items outside this fixed draft\. "Deutschland heute" is the original 2010/11 context, not a contemporary website\-validity claim\.
 
 Quellen-/Codegrenze: Categories use exported file codes; printed German form codes are retained separately\. Missing labels are not substantive political options\.
 
@@ -2346,7 +2346,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2356,7 +2356,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 336 | 374,00364272 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2442,7 +2442,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 88 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 88 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2452,7 +2452,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 478 | 544,41022453 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2514,7 +2514,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 77 | Refusal | Antwort verweigert | 77 |
-| 88 | Don&\#x27;t know | Weiß nicht | 88 |
+| 88 | Don't know | Weiß nicht | 88 |
 | 99 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2524,7 +2524,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 54 | 77,4399292916 |
+| Don't know | 54 | 77,4399292916 |
 | No answer | 0 | 0 |
 | Refusal | 6 | 3,44067172706 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2584,7 +2584,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2594,7 +2594,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 34 | 43,70013839 |
+| Don't know | 34 | 43,70013839 |
 | No answer | 0 | 0 |
 | Refusal | 4 | 4,40090245 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2648,7 +2648,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2658,7 +2658,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 21 | 25,37707929 |
+| Don't know | 21 | 25,37707929 |
 | No answer | 0 | 0 |
 | Refusal | 5 | 4,97097555 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2712,7 +2712,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2722,7 +2722,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 20 | 23,65970939 |
+| Don't know | 20 | 23,65970939 |
 | No answer | 0 | 0 |
 | Refusal | 4 | 3,69755975 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2767,7 +2767,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_permission; Gegenstan
 
 **CAWI-Originalfrage:** Zunächst geht es um die Zuwanderer, die derselben Volksgruppe oder ethnischen Gruppe angehören wie die Mehrheit der Deutschen\. Wie vielen von ihnen sollte Deutschland erlauben, hier zu leben? Sollte Deutschland es\.\.\.
 
-**Dokumentierte Formabweichung/-gleichheit:** Same four category labels\. CAWI A55/A56 explicitly repeats &quot;Sollte Deutschland es\.\.\.&quot;; the PAPI A55/A56 stem continues the A54 response task\.
+**Dokumentierte Formabweichung/-gleichheit:** Same four category labels\. CAWI A55/A56 explicitly repeats "Sollte Deutschland es\.\.\."; the PAPI A55/A56 stem continues the A54 response task\.
 
 **Originalrouting:** PAPI A54 → A55 → A56 → A57; no filter/jump printed between A54–A56\.
 
@@ -2798,7 +2798,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 8 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 8 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2808,7 +2808,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 245 | 259,05920376 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2821,7 +2821,7 @@ Primäre fehlende Gewichtssumme: 259,05920376; primäre Gewichtssumme aller deut
 
 Quellen-/Codegrenze: DE\-PAPI druckt nur 1–4; API ergänzt 7 Refusal,8 Don’t know,9 No answer\. API\-englisch race/ethnic group ist kein Auftrag, den deutschen Volksgruppe/ethnischeGruppe\-Wortlaut frei neu zu übersetzen\.
 
-Quellen-/Codegrenze: Direct recheck of German PAPI page 7 corrects the prior BINDING003 abbreviated option\-3 transcription: official PAPI and CAWI both say &quot;Ein paar wenigen erlauben&quot;\. The historical report remains unchanged\.
+Quellen-/Codegrenze: Direct recheck of German PAPI page 7 corrects the prior BINDING003 abbreviated option\-3 transcription: official PAPI and CAWI both say "Ein paar wenigen erlauben"\. The historical report remains unchanged\.
 
 Quellen-/Codegrenze: Categories use exported file codes; printed German form codes are retained separately\. Missing labels are not substantive political options\.
 
@@ -2851,7 +2851,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_permission; Gegenstan
 
 **CAWI-Originalfrage:** Wie ist das mit Zuwanderern, die einer anderen Volksgruppe oder ethnischen Gruppe angehören als die Mehrheit der Deutschen? Sollte Deutschland es\.\.\.
 
-**Dokumentierte Formabweichung/-gleichheit:** Same four category labels\. CAWI A55/A56 explicitly repeats &quot;Sollte Deutschland es\.\.\.&quot;; the PAPI A55/A56 stem continues the A54 response task\.
+**Dokumentierte Formabweichung/-gleichheit:** Same four category labels\. CAWI A55/A56 explicitly repeats "Sollte Deutschland es\.\.\."; the PAPI A55/A56 stem continues the A54 response task\.
 
 **Originalrouting:** PAPI A54 → A55 → A56 → A57; no filter/jump printed between A54–A56\.
 
@@ -2882,7 +2882,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 8 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 8 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2892,7 +2892,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 289 | 310,37761221 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2907,7 +2907,7 @@ Quellen-/Codegrenze: DE\-PAPI nur 1–4; API zusätzlich 7/8/9 Missing\. Kein Co
 
 Quellen-/Codegrenze: Same response task continues from A54; the same\-group lead\-in applies only to A54, not to A55/A56\.
 
-Quellen-/Codegrenze: Direct recheck of German PAPI page 7 corrects the prior BINDING003 abbreviated option\-3 transcription: official PAPI and CAWI both say &quot;Ein paar wenigen erlauben&quot;\. The historical report remains unchanged\.
+Quellen-/Codegrenze: Direct recheck of German PAPI page 7 corrects the prior BINDING003 abbreviated option\-3 transcription: official PAPI and CAWI both say "Ein paar wenigen erlauben"\. The historical report remains unchanged\.
 
 Quellen-/Codegrenze: Categories use exported file codes; printed German form codes are retained separately\. Missing labels are not substantive political options\.
 
@@ -2937,7 +2937,7 @@ Quelle: ESS10SCe03\_2, Ausgabe 3\.2. Antwortform: ordered\_permission; Gegenstan
 
 **CAWI-Originalfrage:** Und wie ist das mit Zuwanderern, die aus den ärmeren Ländern außerhalb Europas kommen? Sollte Deutschland es\.\.\.
 
-**Dokumentierte Formabweichung/-gleichheit:** Same four category labels\. CAWI A55/A56 explicitly repeats &quot;Sollte Deutschland es\.\.\.&quot;; the PAPI A55/A56 stem continues the A54 response task\.
+**Dokumentierte Formabweichung/-gleichheit:** Same four category labels\. CAWI A55/A56 explicitly repeats "Sollte Deutschland es\.\.\."; the PAPI A55/A56 stem continues the A54 response task\.
 
 **Originalrouting:** PAPI A54 → A55 → A56 → A57; no filter/jump printed between A54–A56\.
 
@@ -2968,7 +2968,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | nicht gedruckt / nicht gebunden | nicht gedruckt |
-| 8 | Don&\#x27;t know | nicht gedruckt / nicht gebunden | nicht gedruckt |
+| 8 | Don't know | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -2978,7 +2978,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 0 | 0 |
+| Don't know | 0 | 0 |
 | No answer | 269 | 282,73989168 |
 | Refusal | 0 | 0 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -2993,7 +2993,7 @@ Quellen-/Codegrenze: DE\-PAPI nur 1–4; API ergänzt 7/8/9 Missing\. Kein Code 
 
 Quellen-/Codegrenze: Same response task continues from A54; the same\-group lead\-in applies only to A54, not to A55/A56\.
 
-Quellen-/Codegrenze: Direct recheck of German PAPI page 7 corrects the prior BINDING003 abbreviated option\-3 transcription: official PAPI and CAWI both say &quot;Ein paar wenigen erlauben&quot;\. The historical report remains unchanged\.
+Quellen-/Codegrenze: Direct recheck of German PAPI page 7 corrects the prior BINDING003 abbreviated option\-3 transcription: official PAPI and CAWI both say "Ein paar wenigen erlauben"\. The historical report remains unchanged\.
 
 Quellen-/Codegrenze: Categories use exported file codes; printed German form codes are retained separately\. Missing labels are not substantive political options\.
 
@@ -3036,7 +3036,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -3046,7 +3046,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 33 | 36,61152132 |
+| Don't know | 33 | 36,61152132 |
 | No answer | 0 | 0 |
 | Refusal | 11 | 10,25852 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -3106,7 +3106,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -3116,7 +3116,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 49 | 67,0130368322 |
+| Don't know | 49 | 67,0130368322 |
 | No answer | 0 | 0 |
 | Refusal | 4 | 6,52636018395 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -3170,7 +3170,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -3180,7 +3180,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 23 | 34,3424255401 |
+| Don't know | 23 | 34,3424255401 |
 | No answer | 0 | 0 |
 | Refusal | 3 | 5,01263843477 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -3232,7 +3232,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -3242,7 +3242,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 29 | 39,5101490468 |
+| Don't know | 29 | 39,5101490468 |
 | No answer | 0 | 0 |
 | Refusal | 8 | 5,07159970701 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -3294,7 +3294,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -3304,7 +3304,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 32 | 46,0836859494 |
+| Don't know | 32 | 46,0836859494 |
 | No answer | 0 | 0 |
 | Refusal | 13 | 15,0508907884 |
 | export\_blank\_unclassified | 0 | 0 |
@@ -3355,7 +3355,7 @@ Exportcodes und Druckcodes sind getrennt; Zwischenzahlen erhalten keine erfunden
 | Exportcode | API-Grund | Deutsches Original-Missinglabel | Druckcode |
 | --- | --- | --- | --- |
 | 7 | Refusal | Antwort verweigert | 7 |
-| 8 | Don&\#x27;t know | Weiß nicht | 8 |
+| 8 | Don't know | Weiß nicht | 8 |
 | 9 | No answer | nicht gedruckt / nicht gebunden | nicht gedruckt |
 | leere Exportzelle | export\_blank\_unclassified | Bedeutung nicht weiter klassifiziert | kein Druckcode |
 
@@ -3365,7 +3365,7 @@ Strukturelle Nichtgestellt-Codes: keine im gebundenen Adapter. Eine gültige Ant
 
 | Grund | Anzahl | Summe der primären Gewichte |
 | --- | --- | --- |
-| Don&\#x27;t know | 77 | 91,91575153 |
+| Don't know | 77 | 91,91575153 |
 | No answer | 0 | 0 |
 | Refusal | 10 | 9,22887527 |
 | export\_blank\_unclassified | 0 | 0 |

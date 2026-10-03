@@ -6,14 +6,23 @@ external pinned build, not to this in-memory API or a status string.
 """
 
 from enum import Enum
+from html import escape
 import re
 from urllib.parse import quote, urlsplit
 
 from pipeline.policy_export_v2 import _json_values, ExportErrorCode
 from pipeline.policy_report_v2 import (
-    PolicyReportError, render_historical_report, _VARIABLES, _md, _decimal,
+    PolicyReportError, render_historical_report, _VARIABLES, _decimal,
     _percentage,
 )
+
+
+def _md(value):
+    # These values enter Markdown text, never HTML attributes. Encode HTML
+    # delimiters while keeping quote characters literal: numeric quote entities
+    # would have their '#' escaped by the Markdown layer and become visible.
+    text = escape(str(value), quote=False).replace("\r", " ").replace("\n", " ")
+    return re.sub(r"([\\`*_{}\[\]()|#+.!-])", r"\\\1", text)
 
 
 THEMES = (

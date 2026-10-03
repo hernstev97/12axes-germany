@@ -8,6 +8,6 @@ Datenquelle: European Social Survey European Research Infrastructure (ESS ERIC);
 - ESS8, Ausgabe2.3: [Datensatz](https://doi.org/10.21338/ess8e02_3), [Dokumentation](https://doi.org/10.21338/nsd-ess8-2016).
 - ESS9, Ausgabe3.3: [Datensatz](https://doi.org/10.21338/ess9e03_3), [Dokumentation](https://doi.org/10.21338/nsd-ess9-2018).
 - ESS10-SC, Ausgabe3.2: [Datensatz](https://doi.org/10.21338/ess10sce03_2), [Dokumentation](https://doi.org/10.21338/NSD-ESS10-2020). Der überlieferte Metadaten-Zitationstext nennt teilweise3.1; Datei/DOI3.2 sind getrennt verzeichnet, kein korrigiertes Quellenzitat behauptet.
-- ESS11, Ausgabe4.2: [Datensatz](https://doi.org/10.21338/ess11e04_2), [Dokumentation](https://doi.org/10.21338/nsd-ess11-2023).
+- ESS11, Ausgabe4.2: [Datensatz](https://doi.org/10.21338/ess11e04_2), [Dokumentation](https://doi.org/10.21338/ess11-2023).
 
 Keine Freigabe einer kommerziellen Verwendung oder eines Produkt-Releases durch diese Forschungssicherung. Quellenattribution und Editionsgrenzen sind in den genannten Belegen vollständig erhalten.

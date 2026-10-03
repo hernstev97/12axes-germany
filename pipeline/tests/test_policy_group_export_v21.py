@@ -97,6 +97,31 @@ def fixture(sid="ESS5e03_6", valid_count=100, positive_cell=5, missing_count=20,
     return candidate, study_contract, group_contract, decision
 
 
+def eligibility_residual_fixture(residual, missing, blank, not_asked=0, yes_not_asked=0,
+                                 no_group_cases=False):
+    """Two independently specified state margins; no participant rows.
+
+    Original group question distributions stay untouched. Added cases occupy
+    explicit party states, while the independently declared yes/no margin can
+    be feasible or deliberately impossible. No production guard computes it.
+    """
+    args = list(fixture(valid_count=0, positive_cell=0, missing_count=0)
+                if no_group_cases else fixture())
+    diagnostic = args[0]["eligibility"]
+    eligible = diagnostic["eligible_group_case_count"]
+    total = eligible + missing + blank + not_asked
+    yes = eligible + yes_not_asked + residual
+    diagnostic.update(de_case_count=total, yes_vote_with_party_not_asked_count=yes_not_asked)
+    diagnostic["vote_states"][0]["count"] = yes
+    diagnostic["vote_states"][1]["count"] = total - yes
+    diagnostic["party_states"][2]["count"] = not_asked
+    diagnostic["party_states"][3]["count"] = missing
+    diagnostic["party_states"][4]["count"] = blank
+    diagnostic["party_source_missing_reasons"][0]["count"] = missing
+    args[3]["candidateSha256"] = _canonical_hash(args[0])
+    return args
+
+
 class ExportTests(unittest.TestCase):
     def setUp(self):
         self.args = fixture()
@@ -280,6 +305,75 @@ class ExportTests(unittest.TestCase):
                          lambda c: c["eligibility"]["party_states"][0].update(count=0),
                          lambda c: c["eligibility"].update(non_yes_vote_with_valid_party_count=1)):
             self.reject_candidate(mutation)
+
+    def test_eligibility_unexplained_yes_party_notasked_rejected(self):
+        # All ten added cases say yes and have Party-NotAsked. Declaring no
+        # yes+NotAsked cases leaves nowhere for those ten yes cases to go.
+        args = eligibility_residual_fixture(10, missing=0, blank=0, not_asked=10)
+        with self.assertRaises(export.PolicyGroupExportError) as caught:
+            self.build(args)
+        self.assertIs(caught.exception.code, export.ExportErrorCode.INVALID_CANDIDATE)
+        self.assertEqual(str(caught.exception), "policy_group_export_error: invalid_candidate")
+
+    def test_eligibility_residual_above_combined_capacity_rejected(self):
+        # Six unexplained yes cases cannot fit into two Party-Missing plus
+        # three Party-Blank cases; the additional NotAsked case is not assigned
+        # to yes. Each separate margin and earlier bound is otherwise valid.
+        args = eligibility_residual_fixture(6, missing=2, blank=3, not_asked=1)
+        with self.assertRaises(export.PolicyGroupExportError) as caught:
+            self.build(args)
+        self.assertIs(caught.exception.code, export.ExportErrorCode.INVALID_CANDIDATE)
+
+    def test_eligibility_negative_residual_rejected(self):
+        # All yes cases already belong to valid-party groups; assigning one
+        # further yes+NotAsked case would double-allocate a yes case.
+        args = eligibility_residual_fixture(-1, missing=0, blank=0,
+                                            not_asked=1, yes_not_asked=1)
+        with self.assertRaises(export.PolicyGroupExportError) as caught:
+            self.build(args)
+        self.assertIs(caught.exception.code, export.ExportErrorCode.INVALID_CANDIDATE)
+
+    def test_eligibility_missing_residual_all_original_missing_reasons(self):
+        for reason_index in range(3):
+            with self.subTest(reason_index=reason_index):
+                args = eligibility_residual_fixture(3, missing=3, blank=0)
+                entries = args[0]["eligibility"]["party_source_missing_reasons"]
+                entries[0]["count"] = 0
+                entries[reason_index]["count"] = 3
+                args[3]["candidateSha256"] = _canonical_hash(args[0])
+                result = self.build(args)
+                self.assertEqual(result["groups"][0]["questions"][0]["reference"]["totalCount"], 120)
+                self.assertNotIn("party_source_missing_reasons", json.dumps(result))
+
+    def test_eligibility_blank_residual_accepted_without_public_promotion(self):
+        result = self.build(eligibility_residual_fixture(10, missing=0, blank=10))
+        self.assertEqual(result["groups"][0]["questions"][0]["reference"]["totalCount"], 120)
+        self.assertEqual(result["groups"][0]["questions"][1]["status"], "result_review_withheld")
+        self.assertNotIn("technical_export_blank", json.dumps(result))
+
+    def test_eligibility_mixed_residual_zero_upper_and_partial_bounds(self):
+        # The five unassigned party cases can all be non-yes, all yes, or split
+        # across both margins, independently of the two known yes+NotAsked.
+        for residual in (0, 2, 5):
+            with self.subTest(residual=residual):
+                args = eligibility_residual_fixture(residual, missing=3, blank=2,
+                                                    not_asked=4, yes_not_asked=2)
+                result = self.build(args)
+                self.assertEqual(result["groups"][0]["questions"][0]["reference"]["validCount"], 100)
+                self.assertNotIn("de_case_count", json.dumps(result))
+
+    def test_eligibility_zero_capacity_and_no_group_cases_boundaries(self):
+        for args in (eligibility_residual_fixture(0, missing=0, blank=0),
+                     eligibility_residual_fixture(0, missing=0, blank=0,
+                                                  not_asked=2, yes_not_asked=2),
+                     eligibility_residual_fixture(0, missing=0, blank=0, no_group_cases=True),
+                     eligibility_residual_fixture(3, missing=2, blank=1,
+                                                  not_asked=1, yes_not_asked=1, no_group_cases=True)):
+            with self.subTest(no_group_cases=args[0]["eligibility"]["eligible_group_case_count"] == 0):
+                result = self.build(args)
+                if not args[0]["eligibility"]["eligible_group_case_count"]:
+                    self.assertTrue(all(question["reference"] is None
+                                        for group in result["groups"] for question in group["questions"]))
 
     def test_ratio_scope_bounds_and_status_not_public(self):
         for mutation in (lambda c: c["study_ratio_diagnostic"].update(scope="all_DE"),

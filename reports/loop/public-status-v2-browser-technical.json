@@ -1,0 +1,370 @@
+{
+  "scope": "Root actual T3 preview, normal app4311, v3 public status; no research/test route",
+  "createdUtc": "2026-10-03T15:52:17.865Z",
+  "checks": [
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 1265,
+      "groupStatusParagraphs": [
+        "Darstellung des Themenberichts prüfen. Drei historische Gruppenläufe sind abgeschlossen. Ergebnisprüfung und Veröffentlichung bleiben offen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [
+        {
+          "href": "/projekt",
+          "text": "Zum Projektstand"
+        }
+      ],
+      "scrollWidth": 1265,
+      "testLinks": 0,
+      "url": "http://localhost:4311/",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 305,
+      "groupStatusParagraphs": [
+        "Darstellung des Themenberichts prüfen. Drei historische Gruppenläufe sind abgeschlossen. Ergebnisprüfung und Veröffentlichung bleiben offen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [
+        {
+          "href": "/projekt",
+          "text": "Zum Projektstand"
+        }
+      ],
+      "scrollWidth": 305,
+      "testLinks": 0,
+      "url": "http://localhost:4311/",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 360,
+      "groupStatusParagraphs": [
+        "Darstellung des Themenberichts prüfen. Drei historische Gruppenläufe sind abgeschlossen. Ergebnisprüfung und Veröffentlichung bleiben offen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [
+        {
+          "href": "/projekt",
+          "text": "Zum Projektstand"
+        }
+      ],
+      "scrollWidth": 360,
+      "testLinks": 0,
+      "url": "http://localhost:4311/",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 753,
+      "groupStatusParagraphs": [
+        "Darstellung des Themenberichts prüfen. Drei historische Gruppenläufe sind abgeschlossen. Ergebnisprüfung und Veröffentlichung bleiben offen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [
+        {
+          "href": "/projekt",
+          "text": "Zum Projektstand"
+        }
+      ],
+      "scrollWidth": 753,
+      "testLinks": 0,
+      "url": "http://localhost:4311/",
+      "violations": [],
+      "width": 768
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 1905,
+      "groupStatusParagraphs": [
+        "Darstellung des Themenberichts prüfen. Drei historische Gruppenläufe sind abgeschlossen. Ergebnisprüfung und Veröffentlichung bleiben offen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [
+        {
+          "href": "/projekt",
+          "text": "Zum Projektstand"
+        }
+      ],
+      "scrollWidth": 1905,
+      "testLinks": 0,
+      "url": "http://localhost:4311/",
+      "violations": [],
+      "width": 1920
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 1265,
+      "groupStatusParagraphs": [
+        "Der breite Themenbericht ist noch in gezielter Darstellungsprüfung. Eine getrennte historische Gruppenanalyse ist für ESS5, ESS8 und ESS9 ausgeführt. Die drei privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen. Der Empirieplan v2 bindet Auswahl, Messform und Bewertungskriterien der Einzelreferenzen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 1265,
+      "testLinks": 0,
+      "url": "http://localhost:4311/projekt",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 305,
+      "groupStatusParagraphs": [
+        "Der breite Themenbericht ist noch in gezielter Darstellungsprüfung. Eine getrennte historische Gruppenanalyse ist für ESS5, ESS8 und ESS9 ausgeführt. Die drei privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen. Der Empirieplan v2 bindet Auswahl, Messform und Bewertungskriterien der Einzelreferenzen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 305,
+      "testLinks": 0,
+      "url": "http://localhost:4311/projekt",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 360,
+      "groupStatusParagraphs": [
+        "Der breite Themenbericht ist noch in gezielter Darstellungsprüfung. Eine getrennte historische Gruppenanalyse ist für ESS5, ESS8 und ESS9 ausgeführt. Die drei privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen. Der Empirieplan v2 bindet Auswahl, Messform und Bewertungskriterien der Einzelreferenzen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 360,
+      "testLinks": 0,
+      "url": "http://localhost:4311/projekt",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 753,
+      "groupStatusParagraphs": [
+        "Der breite Themenbericht ist noch in gezielter Darstellungsprüfung. Eine getrennte historische Gruppenanalyse ist für ESS5, ESS8 und ESS9 ausgeführt. Die drei privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen. Der Empirieplan v2 bindet Auswahl, Messform und Bewertungskriterien der Einzelreferenzen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 753,
+      "testLinks": 0,
+      "url": "http://localhost:4311/projekt",
+      "violations": [],
+      "width": 768
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 1905,
+      "groupStatusParagraphs": [
+        "Der breite Themenbericht ist noch in gezielter Darstellungsprüfung. Eine getrennte historische Gruppenanalyse ist für ESS5, ESS8 und ESS9 ausgeführt. Die drei privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen. Der Empirieplan v2 bindet Auswahl, Messform und Bewertungskriterien der Einzelreferenzen."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 1905,
+      "testLinks": 0,
+      "url": "http://localhost:4311/projekt",
+      "violations": [],
+      "width": 1920
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 1265,
+      "groupStatusParagraphs": [
+        "Die drei getrennten historischen Gruppenläufe für ESS5, ESS8 und ESS9 sind abgeschlossen. Ihre privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die Einzelreferenzen erteilen keine Gruppenfreigabe für ESS10-SC oder ESS11. Historische Gruppenverteilungen wären keine heutigen Parteiprogramme und kein Gesamtmatch."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 1265,
+      "testLinks": 0,
+      "url": "http://localhost:4311/methodik",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 305,
+      "groupStatusParagraphs": [
+        "Die drei getrennten historischen Gruppenläufe für ESS5, ESS8 und ESS9 sind abgeschlossen. Ihre privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die Einzelreferenzen erteilen keine Gruppenfreigabe für ESS10-SC oder ESS11. Historische Gruppenverteilungen wären keine heutigen Parteiprogramme und kein Gesamtmatch."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 305,
+      "testLinks": 0,
+      "url": "http://localhost:4311/methodik",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 360,
+      "groupStatusParagraphs": [
+        "Die drei getrennten historischen Gruppenläufe für ESS5, ESS8 und ESS9 sind abgeschlossen. Ihre privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die Einzelreferenzen erteilen keine Gruppenfreigabe für ESS10-SC oder ESS11. Historische Gruppenverteilungen wären keine heutigen Parteiprogramme und kein Gesamtmatch."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 360,
+      "testLinks": 0,
+      "url": "http://localhost:4311/methodik",
+      "violations": [],
+      "width": 375
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 753,
+      "groupStatusParagraphs": [
+        "Die drei getrennten historischen Gruppenläufe für ESS5, ESS8 und ESS9 sind abgeschlossen. Ihre privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die Einzelreferenzen erteilen keine Gruppenfreigabe für ESS10-SC oder ESS11. Historische Gruppenverteilungen wären keine heutigen Parteiprogramme und kein Gesamtmatch."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 753,
+      "testLinks": 0,
+      "url": "http://localhost:4311/methodik",
+      "violations": [],
+      "width": 768
+    },
+    {
+      "axeVersion": "4.13.0",
+      "brokenLocalFragments": [],
+      "clientWidth": 1905,
+      "groupStatusParagraphs": [
+        "Die drei getrennten historischen Gruppenläufe für ESS5, ESS8 und ESS9 sind abgeschlossen. Ihre privaten Ergebnisfassungen werden geprüft. Veröffentlichung und Anzeige sind noch nicht freigegeben. Die Einzelreferenzen erteilen keine Gruppenfreigabe für ESS10-SC oder ESS11. Historische Gruppenverteilungen wären keine heutigen Parteiprogramme und kein Gesamtmatch."
+      ],
+      "h1": 1,
+      "hasFocus": false,
+      "incomplete": 0,
+      "primaryCTAs": [],
+      "scrollWidth": 1905,
+      "testLinks": 0,
+      "url": "http://localhost:4311/methodik",
+      "violations": [],
+      "width": 1920
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/",
+      "width": 1280,
+      "result": {
+        "url": "http://localhost:4311/",
+        "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musklc0p-ef1eb0b1.png"
+      }
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "result": {
+        "url": "http://localhost:4311/",
+        "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musklcd7-a2c8c6d8.png"
+      }
+    },
+    {
+      "path": "/projekt",
+      "width": 1280,
+      "result": {
+        "url": "http://localhost:4311/projekt",
+        "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-muskldn0-250cd223.png"
+      }
+    },
+    {
+      "path": "/projekt",
+      "width": 320,
+      "result": {
+        "url": "http://localhost:4311/projekt",
+        "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-muskle1v-b0da54e9.png"
+      }
+    },
+    {
+      "path": "/methodik",
+      "width": 1280,
+      "result": {
+        "url": "http://localhost:4311/methodik",
+        "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musklfc3-00ba8891.png"
+      }
+    },
+    {
+      "path": "/methodik",
+      "width": 320,
+      "result": {
+        "url": "http://localhost:4311/methodik",
+        "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musklfop-0813ccaf.png"
+      }
+    }
+  ],
+  "passed": true,
+  "limits": [
+    "automation browser document.hasFocus false: visible real keyboard focus not verified",
+    "actual 200% zoom not verified",
+    "no humans/Claude/design/release acceptance"
+  ],
+  "detailScreenshots": [
+    {
+      "path": "/projekt",
+      "width": 1280,
+      "url": "http://localhost:4311/projekt",
+      "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musklxbl-bd8b7c9c.png"
+    },
+    {
+      "path": "/projekt",
+      "width": 320,
+      "url": "http://localhost:4311/projekt",
+      "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musklxnf-4bba441c.png"
+    },
+    {
+      "path": "/methodik",
+      "width": 1280,
+      "url": "http://localhost:4311/methodik",
+      "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-muskly33-df7a3383.png"
+    },
+    {
+      "path": "/methodik",
+      "width": 320,
+      "url": "http://localhost:4311/methodik",
+      "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musklyew-2e876b5a.png"
+    }
+  ],
+  "rootVisualInspection": "Home desktop and three mobile page headers; project next-step and methodology limits desktop/mobile screenshots actually viewed. Existing design preserved, no visible clipping found.",
+  "scopeTime": "Before new group publication; content accepted on v3, later publication status update will be part of group display package."
+}

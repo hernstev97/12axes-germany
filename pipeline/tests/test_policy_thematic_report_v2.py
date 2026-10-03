@@ -12,12 +12,47 @@ import json
 from pathlib import Path
 import unittest
 from unittest.mock import patch
+from html.parser import HTMLParser
+
+try:
+    from markdown_it import MarkdownIt
+except ImportError:
+    MarkdownIt = None
 
 from pipeline.policy_report_v2 import PolicyReportError
 from pipeline.policy_thematic_report_v2 import (
     THEMES, PolicyThematicReportError, render_thematic_report,
 )
 from pipeline.tests.test_policy_report_v2 import fixtures
+
+
+class CommonMarkTextTests(unittest.TestCase):
+    @unittest.skipIf(MarkdownIt is None, "Optional CommonMark QA reader markdown-it-py unavailable")
+    def test_source_quotes_and_untrusted_markup_remain_literal_text(self):
+        from pipeline.policy_thematic_report_v2 import _md
+
+        class Reader(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.text = []
+                self.tags = []
+
+            def handle_data(self, data):
+                self.text.append(data)
+
+            def handle_starttag(self, tag, attrs):
+                self.tags.append(tag)
+
+        originals = ["Don't know", '"Original" & Kategorie',
+                     '<script>alert("synthetic")</script>',
+                     '<img src=x onerror="synthetic">',
+                     '*Original* [Text](javascript:synthetic) | #']
+        for original in originals:
+            with self.subTest(original=original):
+                reader = Reader()
+                reader.feed(MarkdownIt("commonmark").render(_md(original)))
+                self.assertEqual(''.join(reader.text).strip(), original)
+                self.assertEqual(reader.tags, ['p'])
 
 
 def semantic_fixture():

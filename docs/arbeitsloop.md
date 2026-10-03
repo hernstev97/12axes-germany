@@ -120,3 +120,7 @@ Plan v2.1/tag vor Zugriff remote geprüft, danach drei private Gruppenläufe15:2
 ## Ergebnisguard v2.1, 2026-10-03T15:42:23.709354+00:00
 
 Beide getrennten Gruppen-Erstberichte gesichert. Reale Aggregatrechnung begrenzt bestanden, neue Exportfunktion wegen GR21-M-001 gesperrt. Gezielte Guardkorrektur und Nachprüfung durch dieselbe Methodenrolle; gültiges Quellenurteil weiterverwenden. Auswahl, echte Kandidaten und Kriterien bleiben unverändert.
+
+## Gezielte Korrekturen und Gruppenexport, 2026-10-03T15:56:38.829012+00:00
+
+GR21-M-001 durch gleiche Methodenrolle Runde1 geschlossen; Root tatsächliche Bytes und ausdrückliche Paar-Schnittmenge geprüft.63historische Gruppenreferenzen in drei getrennten Studien als Forschungsartefakte übernommen, ursprüngliche Erstberichte und Sperrentscheidung erhalten. Öffentlicher Statusbefund PRS-V2-001 gezielt geschlossen; erster Handbuchcheckfehler bleibt dokumentiert, Check055 und tatsächliche Browserchecks bestanden. Anzeige, Humanbindung und abschließendes Kontrolldossier folgen. Keine neuen Schwellen, Auswahlen, Rawreruns oder Gesamtaudits für Protokolländerungen.

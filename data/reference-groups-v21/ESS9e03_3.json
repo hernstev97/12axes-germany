@@ -1,0 +1,898 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed_historical_descriptive_group_reference",
+  "studyId": "ESS9e03_3",
+  "edition": "3.3",
+  "groupContractSha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+  "studyContractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+  "candidateSha256": "cf12662677918ca1c673c3d04bd1ec7c0a726cb8492afd2079df25d019b88266",
+  "reviewManifestSha256": "47aa3e3f3cf6043cc81bf25bf6b1228bc007f4a12c3e2866337d91161f114382",
+  "source": {
+    "country": "DE",
+    "election": {
+      "type": "Bundestagswahl",
+      "monthDe": "September",
+      "year": 2017,
+      "bindingBasis": "Explicit wording in German national original, not generic API country/year placeholders."
+    },
+    "populationDeclaredEn": "All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the \"Geographical Coverage\"",
+    "populationCoverageLimit": "Declared target only; achieved German coverage and response availability have not been checked.",
+    "fieldwork": [
+      {
+        "start": "2018-08-29T00:00:00Z",
+        "end": "2019-03-04T00:00:00Z",
+        "modesDeclaredEn": [
+          "Face-to-face interview: Computer-assisted (CAPI/CAMI)"
+        ]
+      }
+    ],
+    "dataDoi": "10.21338/ess9e03_3",
+    "dataDoiUrl": "https://doi.org/10.21338/ess9e03_3",
+    "documentationDoi": "10.21338/nsd-ess9-2018",
+    "documentationDoiUrl": "https://doi.org/10.21338/nsd-ess9-2018",
+    "dataLicenseId": "ess-data-cc-by-nc-sa-4.0",
+    "documentationLicenseId": "ess-documentation-cc-by-sa-4.0",
+    "attribution": "ESS ERIC; Sikt; national original and documentation DOI; linebreak-normalized source compilation noted",
+    "catalogue": {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+    },
+    "voteField": {
+      "variable": "vote",
+      "fieldId": "22cdf727-6ced-4d9e-a987-aebdd5061946",
+      "fieldMetadataVersion": 5,
+      "fileReference": {
+        "id": "b2b0bf39-176b-4eca-8d26-3c05ea83d2cb",
+        "metadataVersion": 280,
+        "label": "ESS9e03_3"
+      },
+      "apiLocation": null,
+      "apiQuestionEn": "Some people don't vote nowadays for one reason or another. Did you vote in the last [country] national election in [month/year]?",
+      "originalQuestion": {
+        "questionId": "B13",
+        "wordingDe": "Manche Menschen gehen heutzutage aus verschiedenen Gründen nicht zur Wahl. Wie ist das bei Ihnen? Haben Sie bei der letzten Bundestagswahl im September 2017 gewählt?",
+        "introductionDe": null,
+        "interviewerInstructionDe": "INTERVIEWER: Wenn der/die Befragte sagt, er/sie habe zwar an der Wahl teilgenommen, aber den Wahlzettel absichtlich ungültig gemacht oder ohne etwas anzukreuzen abgegeben, bitte \"Nein\" eintragen.",
+        "filterDe": null,
+        "printedVariableAlias": null,
+        "questionnaireSourceId": "ess9-de-questionnaire",
+        "pdfPages1Based": [
+          8
+        ],
+        "printedValidCategories": [
+          {
+            "code": "1",
+            "labelDe": "Ja"
+          },
+          {
+            "code": "2",
+            "labelDe": "Nein"
+          },
+          {
+            "code": "3",
+            "labelDe": "Nicht wahlberechtigt"
+          }
+        ],
+        "printedOther": null,
+        "printedMissingCategories": [
+          {
+            "code": "7",
+            "labelDe": "(Antwort verweigert)"
+          },
+          {
+            "code": "8",
+            "labelDe": "(Weiß nicht)"
+          }
+        ],
+        "routingByPrintedVoteCode": {
+          "1": "WEITER MIT B14a",
+          "2": "WEITER MIT B15",
+          "3": "WEITER MIT B15",
+          "7": "WEITER MIT B15",
+          "8": "WEITER MIT B15"
+        },
+        "modeVariants": []
+      },
+      "mappingNotes": [
+        "Party form codes 01–09 have leading zeros; API declares 1–9. Printed codes are retained separately.",
+        "API vote No answer 9 and party Not applicable 66 / No answer 99 are not printed options."
+      ]
+    },
+    "nationalParty2Field": {
+      "variable": "prtvede2",
+      "fieldId": "8081ac23-287b-4548-8997-4dee9fb0463c",
+      "fieldMetadataVersion": 6,
+      "fileReference": {
+        "id": "b2b0bf39-176b-4eca-8d26-3c05ea83d2cb",
+        "metadataVersion": 280,
+        "label": "ESS9e03_3"
+      },
+      "apiLocation": "B14DE2",
+      "apiQuestionEn": "Which party did you vote for in that election? (Germany 2)",
+      "originalQuestion": {
+        "questionId": "B14b",
+        "wordingDe": "Und welche Partei haben Sie mit Ihrer Zweitstimme gewählt?",
+        "introductionDe": null,
+        "interviewerInstructionDe": null,
+        "filterDe": "B14a & B14b WENN B13 = 1",
+        "printedVariableAlias": null,
+        "questionnaireSourceId": "ess9-de-questionnaire",
+        "pdfPages1Based": [
+          9
+        ],
+        "printedValidCategories": [
+          {
+            "code": "01",
+            "labelDe": "CDU/CSU"
+          },
+          {
+            "code": "02",
+            "labelDe": "SPD"
+          },
+          {
+            "code": "03",
+            "labelDe": "Die Linke"
+          },
+          {
+            "code": "04",
+            "labelDe": "Bündnis 90/Die Grünen"
+          },
+          {
+            "code": "05",
+            "labelDe": "FDP"
+          },
+          {
+            "code": "06",
+            "labelDe": "AfD"
+          },
+          {
+            "code": "07",
+            "labelDe": "Piratenpartei"
+          },
+          {
+            "code": "08",
+            "labelDe": "NPD"
+          }
+        ],
+        "printedOther": {
+          "code": "09",
+          "labelDe": "Andere Partei (EINTRAGEN)",
+          "openTextEntry": true,
+          "openTextContentsRead": false
+        },
+        "printedMissingCategories": [
+          {
+            "code": "77",
+            "labelDe": "(Antwort verweigert)"
+          },
+          {
+            "code": "88",
+            "labelDe": "(Weiß nicht)"
+          }
+        ],
+        "routingByPrintedVoteCode": null,
+        "modeVariants": []
+      },
+      "mappingNotes": [
+        "Party form codes 01–09 have leading zeros; API declares 1–9. Printed codes are retained separately.",
+        "API vote No answer 9 and party Not applicable 66 / No answer 99 are not printed options."
+      ]
+    },
+    "aliasToVoteTypeBinding": {
+      "status": "OFFICIAL_ALIAS_EXPLICIT_TEXT_BOUND",
+      "basis": "official_alias_explicit_first_second_vote_text",
+      "officialConcordanceSourceId": "ess9-political-parties-appendix",
+      "officialConcordancePdfPage1Based": 21,
+      "officialConcordanceEn": "In the data file, variable prtvede1 (Party voted for in last national election 1, Germany) refers to the first vote (Erststimme). Variable prtvede2 (Party voted for in last national election 2, Germany) refers to the second vote \"Zweitstimme\".",
+      "limit": "Official national appendix explicitly supplies current alias and vote type; German original wording still comes from the separately bound national questionnaire. Appendix edition3.0 is a documentation edition, not a replacement for file edition3.3."
+    },
+    "codeHistoryStatus": "NO_NEW_CODE_TRANSFORMATION_CLAIM",
+    "automaticPrintedCodeToFileCodeMappingAllowed": false,
+    "recodeBoundary": null,
+    "documents": [
+      {
+        "id": "ess-disclaimer-current",
+        "publicUrl": "https://europeansocialsurvey.org/contact/disclaimer",
+        "retrievedUtc": "2026-10-03T12:39:49.677113+00:00",
+        "originalBytesSha256": "b5201b2deefd86d7f87a8dfb11dfdd30fd4f9afb8cbbb51b9254dd58bfa5ab8a",
+        "documentMetadataId": null,
+        "documentMetadataVersion": null,
+        "licenseClass": "documentation_terms"
+      },
+      {
+        "id": "party-and-vote-original-codelists",
+        "publicUrl": "https://api.nsd.no/graphql",
+        "retrievedUtc": "2026-10-03T13:43:00.578781+00:00",
+        "originalBytesSha256": "e2af33e4d5e9652b8bed1dae87a8ae4e8a5fbb32cbe24c8fd9928371151bf6e2",
+        "documentMetadataId": null,
+        "documentMetadataVersion": null,
+        "licenseClass": "documentation_terms"
+      },
+      {
+        "id": "ess9-de-questionnaire",
+        "publicUrl": "https://stessrelpubprodwe.blob.core.windows.net/data/round9/fieldwork/germany/ESS9_questionnaires_DE.pdf",
+        "retrievedUtc": "2026-10-03T12:14:40.302351+00:00",
+        "originalBytesSha256": "ae960ebcae1b12106eb3003ced1de7c88a73c9b95736efedd93fd8b320e974a5",
+        "documentMetadataId": null,
+        "documentMetadataVersion": null,
+        "licenseClass": "documentation_terms"
+      },
+      {
+        "id": "ess9-political-parties-appendix",
+        "publicUrl": "https://stessrelpubprodwe.blob.core.windows.net/data/round9/survey/ESS9_appendix_a3_e03_0.pdf",
+        "retrievedUtc": "2026-10-03T13:59:20.543504+00:00",
+        "originalBytesSha256": "f60a614159c6ecb2aab47e9530fdf9f372cff6fca642d79885e7a43051ba5a98",
+        "documentMetadataId": "5f948ad4-bb45-4ade-98e5-a7e0a733fcc8",
+        "documentMetadataVersion": 2,
+        "licenseClass": "documentation_terms"
+      }
+    ]
+  },
+  "scope": {
+    "basis": "historical_same_study_policy_responses_grouped_by_recalled_Bundestag_second_vote",
+    "timeReference": "responses_at_declared_survey_fieldwork_grouped_by_recalled_past_vote_not_election_day_attitudes_or_party_platforms",
+    "populationReference": "self_reported_past_Bundestag_vote_in_each_resident_private_household_survey_not_verified_eligible_electorate",
+    "partyRecallAndModeLimit": "different_elections_recall_intervals_category_lists_and_modes_retained_no_pooled_or_current_party_claim",
+    "independentNorm": false,
+    "currentPartyPositions": false,
+    "partyScores": false,
+    "personsOrStudiesPooled": false,
+    "precisionOrAnonymityValidated": false
+  },
+  "groups": [
+    {
+      "id": "ESS9e03_3:second_vote:1",
+      "party2Code": "1",
+      "kind": "named_party",
+      "labelEnExactApi": "Christian Democratic Union/Christian Social Union (CDU/CSU)",
+      "labelDeOriginalForm": "CDU/CSU",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 556,
+            "totalCount": 558,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.03130272812422335
+              },
+              {
+                "code": "2",
+                "proportion": 0.2890690155291339
+              },
+              {
+                "code": "3",
+                "proportion": 0.24413301059033074
+              },
+              {
+                "code": "4",
+                "proportion": 0.33000986463363874
+              },
+              {
+                "code": "5",
+                "proportion": 0.1054853811226732
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 551,
+            "totalCount": 558,
+            "missingCount": 7,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.008208112940436618
+              },
+              {
+                "code": "2",
+                "proportion": 0.1519856507115456
+              },
+              {
+                "code": "3",
+                "proportion": 0.23157531901131698
+              },
+              {
+                "code": "4",
+                "proportion": 0.47634353525402423
+              },
+              {
+                "code": "5",
+                "proportion": 0.1318873820826766
+              }
+            ],
+            "uncertainty": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ESS9e03_3:second_vote:2",
+      "party2Code": "2",
+      "kind": "named_party",
+      "labelEnExactApi": "Social Democratic Party (SPD)",
+      "labelDeOriginalForm": "SPD",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 353,
+            "totalCount": 355,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.12327115539244775
+              },
+              {
+                "code": "2",
+                "proportion": 0.3300674818758771
+              },
+              {
+                "code": "3",
+                "proportion": 0.23238985730254075
+              },
+              {
+                "code": "4",
+                "proportion": 0.26422453920373823
+              },
+              {
+                "code": "5",
+                "proportion": 0.05004696622539623
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 354,
+            "totalCount": 355,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.016172847297106305
+              },
+              {
+                "code": "2",
+                "proportion": 0.11618540681115604
+              },
+              {
+                "code": "3",
+                "proportion": 0.1578211612540648
+              },
+              {
+                "code": "4",
+                "proportion": 0.5143947933400723
+              },
+              {
+                "code": "5",
+                "proportion": 0.1954257912976005
+              }
+            ],
+            "uncertainty": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ESS9e03_3:second_vote:3",
+      "party2Code": "3",
+      "kind": "named_party",
+      "labelEnExactApi": "The Left (Die Linke)",
+      "labelDeOriginalForm": "Die Linke",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 125,
+            "totalCount": 125,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.1410215147919039
+              },
+              {
+                "code": "2",
+                "proportion": 0.39537236653520297
+              },
+              {
+                "code": "3",
+                "proportion": 0.17733450013175447
+              },
+              {
+                "code": "4",
+                "proportion": 0.2323281917539303
+              },
+              {
+                "code": "5",
+                "proportion": 0.053943426787208364
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "id": "ESS9e03_3:second_vote:4",
+      "party2Code": "4",
+      "kind": "named_party",
+      "labelEnExactApi": "Alliance 90/The Greens (Bündnis 90/Die Grünen)",
+      "labelDeOriginalForm": "Bündnis 90/Die Grünen",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 287,
+            "totalCount": 289,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.08811011445800292
+              },
+              {
+                "code": "2",
+                "proportion": 0.3340443008990587
+              },
+              {
+                "code": "3",
+                "proportion": 0.2279810215483714
+              },
+              {
+                "code": "4",
+                "proportion": 0.3177764004873412
+              },
+              {
+                "code": "5",
+                "proportion": 0.032088162607225766
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "id": "ESS9e03_3:second_vote:5",
+      "party2Code": "5",
+      "kind": "named_party",
+      "labelEnExactApi": "Free Democratic Party (FDP) ",
+      "labelDeOriginalForm": "FDP",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 147,
+            "totalCount": 147,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.03904229958687797
+              },
+              {
+                "code": "2",
+                "proportion": 0.22910864560290725
+              },
+              {
+                "code": "3",
+                "proportion": 0.23452790997896525
+              },
+              {
+                "code": "4",
+                "proportion": 0.38822023233440656
+              },
+              {
+                "code": "5",
+                "proportion": 0.10910091249684291
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 147,
+            "totalCount": 147,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.322766722769104
+              },
+              {
+                "code": "2",
+                "proportion": 0.5804988325792713
+              },
+              {
+                "code": "3",
+                "proportion": 0.057435350780031875
+              },
+              {
+                "code": "4",
+                "proportion": 0.03929909387159285
+              },
+              {
+                "code": "5",
+                "proportion": 0.0
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 146,
+            "totalCount": 147,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.0
+              },
+              {
+                "code": "2",
+                "proportion": 0.07672085502752346
+              },
+              {
+                "code": "3",
+                "proportion": 0.26318566406918087
+              },
+              {
+                "code": "4",
+                "proportion": 0.5179941818660019
+              },
+              {
+                "code": "5",
+                "proportion": 0.14209929903729385
+              }
+            ],
+            "uncertainty": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ESS9e03_3:second_vote:6",
+      "party2Code": "6",
+      "kind": "named_party",
+      "labelEnExactApi": "Alternative for Germany (AFD)",
+      "labelDeOriginalForm": "AfD",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 109,
+            "totalCount": 111,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.1006990975833688
+              },
+              {
+                "code": "2",
+                "proportion": 0.3159688756959169
+              },
+              {
+                "code": "3",
+                "proportion": 0.2277048802343726
+              },
+              {
+                "code": "4",
+                "proportion": 0.2856436448533136
+              },
+              {
+                "code": "5",
+                "proportion": 0.06998350163302812
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 111,
+            "totalCount": 111,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.3242993341498058
+              },
+              {
+                "code": "2",
+                "proportion": 0.5633316830818932
+              },
+              {
+                "code": "3",
+                "proportion": 0.11236898276830101
+              },
+              {
+                "code": "4",
+                "proportion": 0.0
+              },
+              {
+                "code": "5",
+                "proportion": 0.0
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 110,
+            "totalCount": 111,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.0
+              },
+              {
+                "code": "2",
+                "proportion": 0.12995069019477065
+              },
+              {
+                "code": "3",
+                "proportion": 0.16204205032368998
+              },
+              {
+                "code": "4",
+                "proportion": 0.4652113627388408
+              },
+              {
+                "code": "5",
+                "proportion": 0.24279589674269855
+              }
+            ],
+            "uncertainty": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ESS9e03_3:second_vote:7",
+      "party2Code": "7",
+      "kind": "named_party",
+      "labelEnExactApi": "Pirate Party (Piratenpartei)",
+      "labelDeOriginalForm": "Piratenpartei",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "id": "ESS9e03_3:second_vote:8",
+      "party2Code": "8",
+      "kind": "named_party",
+      "labelEnExactApi": "National Democratic Party (NPD)",
+      "labelDeOriginalForm": "NPD",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "id": "ESS9e03_3:second_vote:9",
+      "party2Code": "9",
+      "kind": "other_unlabelled",
+      "labelEnExactApi": "Other",
+      "labelDeOriginalForm": null,
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "OTHER_FORM_CODE_DIFFERENCES_SEPARATELY_BOUND",
+      "heterogeneousUnlabelledOther": true,
+      "questions": [
+        {
+          "id": "ESS9e03_3:sofrdst",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrwrk",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrpr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS9e03_3:sofrprv",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T15:41:51.287647+00:00",
+  "updatedAtUtc": "2026-10-03T15:56:38.829012+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2806,7 +2806,7 @@
       "status": "NICHT_BESTANDEN",
       "reason": "Neun Fragen zu zwei engen Themen erfüllen das breite Deutschland-Politikprofil nicht",
       "blocks": ["completion as comprehensive political profile"],
-      "correctionState": "43items8topics, frozen plan and5 private candidates executed. Numeric results review/export and concrete Angular broad website remain pending; goal still open.",
+      "correctionState": "43originalItems8differenttopics plus42reviewed single references and63optional historical group pairs; actual broad Angular research draft prepared, group display/dossier/human version binding pending. No narrow nine-item completion claim.",
       "verification": {
         "order": "docs/auftrag-life-93-breite-2026-10-03.md"
       }
@@ -3200,8 +3200,8 @@
       "origin": "reports/loop/reviews/RESULTS-V2-001-sources-presentation-round1.md",
       "severity": "darstellung",
       "decision": "angenommen",
-      "repairRounds": 0,
-      "status": "OPEN_TARGETED_FIX",
+      "repairRounds": 1,
+      "status": "FIXED_PENDING_TARGETED_SOURCE_REVIEW",
       "reason": "Markdown displays apostroph entity text in English API missing labels; German source labels/meaning preserved",
       "blocks": []
     },
@@ -3210,8 +3210,8 @@
       "origin": "reports/loop/reviews/RESULTS-V2-001-sources-presentation-round1.md",
       "severity": "Quellenmetadaten",
       "decision": "angenommen",
-      "repairRounds": 0,
-      "status": "OPEN_TARGETED_FIX",
+      "repairRounds": 1,
+      "status": "FIXED_PENDING_TARGETED_SOURCE_REVIEW",
       "reason": "README ESS11 documentation DOI diverges from pinned primary citation requirement; actual report/contract/catalogue already match primary; resolver validity not asserted",
       "blocks": ["README single ESS11 documentation attribution claim"]
     },
@@ -3220,10 +3220,28 @@
       "origin": "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-first.md",
       "severity": "erheblich Exportguard",
       "decision": "angenommen",
-      "repairRounds": 0,
-      "status": "OPEN_BLOCKER",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
       "reason": "Pure exporter accepts synthetic impossible joint eligibility axes; actual3candidates satisfy independent oracle and stronger predicate",
-      "blocks": ["group export function/public promotion only"]
+      "blocks": ["group export function/public promotion only"],
+      "verification": {
+        "report": "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1.md",
+        "rootDecision": "reports/loop/GROUP-RESULTS-V21-001-round1-entscheidung.md"
+      }
+    },
+    {
+      "id": "PRS-V2-001",
+      "origin": "reports/loop/reviews/PUBLIC-RESEARCH-STATUS-V2-001-first.md",
+      "severity": "P2 factual status",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED_ROUND1",
+      "reason": "Completed private group runs were represented as pending calculation; corrected to separate result review/publication",
+      "blocks": [],
+      "verification": {
+        "report": "reports/loop/reviews/PUBLIC-RESEARCH-STATUS-V2-001-round1.md",
+        "rootDecision": "reports/loop/PUBLIC-RESEARCH-STATUS-V2-001-entscheidung.md"
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

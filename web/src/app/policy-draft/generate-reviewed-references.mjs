@@ -27,7 +27,7 @@ export const PUBLIC_SOURCE_PINS = Object.freeze({
     'e75dfbadcf68c14dce9d13c8a8a2dd1abc6e8a6e96618f960c8cd61c54bc3184',
   'data/reference-v2/ESS11e04_2.json':
     '453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721',
-  'data/reference-v2/README.md': 'a2917e6b57c59e96298345e526e9311de82b1422cfbb9a8bb1cfabc0684ba57c',
+  'data/reference-v2/README.md': 'eb3d13cf1a423c3db43315a268eafa429ba92f8a579a89fe70f650c689fbd9d8',
   [exportPath]: 'a87f780a7219253f7f3773d051b7001f438b19b2fb2d0ee820fc22c1157a16df',
   [methodsReceipt]: '765db3005c736174a3d1f9819ab212917ce50d6143059b8cfce2dac3f6f67806',
   [sourcesReceipt]: 'e5c3a730dc6cf71e5b788d4251c109b86a7d510684bf945b17ceaa6e48306065',

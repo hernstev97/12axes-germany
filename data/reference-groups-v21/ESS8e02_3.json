@@ -1,0 +1,1651 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed_historical_descriptive_group_reference",
+  "studyId": "ESS8e02_3",
+  "edition": "2.3",
+  "groupContractSha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+  "studyContractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+  "candidateSha256": "733c197572904cf015a7e2e7f58f65f62ad8fd021a49ffe897fbac4155f3e942",
+  "reviewManifestSha256": "47aa3e3f3cf6043cc81bf25bf6b1228bc007f4a12c3e2866337d91161f114382",
+  "source": {
+    "country": "DE",
+    "election": {
+      "type": "Bundestagswahl",
+      "monthDe": "September",
+      "year": 2013,
+      "bindingBasis": "Explicit wording in German national original, not generic API country/year placeholders."
+    },
+    "populationDeclaredEn": "All persons aged 15 and over resident within private households, regardless of their nationality, citizenship, language or legal status, in the countries as listed in the \"Geographical Coverage\"",
+    "populationCoverageLimit": "Declared target only; achieved German coverage and response availability have not been checked.",
+    "fieldwork": [
+      {
+        "start": "2016-08-23T00:00:00Z",
+        "end": "2017-03-26T00:00:00Z",
+        "modesDeclaredEn": [
+          "Face-to-face interview: Computer-assisted (CAPI/CAMI)"
+        ]
+      }
+    ],
+    "dataDoi": "10.21338/ess8e02_3",
+    "dataDoiUrl": "https://doi.org/10.21338/ess8e02_3",
+    "documentationDoi": "10.21338/nsd-ess8-2016",
+    "documentationDoiUrl": "https://doi.org/10.21338/nsd-ess8-2016",
+    "dataLicenseId": "ess-data-cc-by-nc-sa-4.0",
+    "documentationLicenseId": "ess-documentation-cc-by-sa-4.0",
+    "attribution": "ESS ERIC; Sikt; national original and documentation DOI; linebreak-normalized source compilation noted",
+    "catalogue": {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+    },
+    "voteField": {
+      "variable": "vote",
+      "fieldId": "db58bf51-88cd-4af8-804c-ffdb8465ef0c",
+      "fieldMetadataVersion": 3,
+      "fileReference": {
+        "id": "ffc43f48-e15a-4a1c-8813-47eda377c355",
+        "metadataVersion": 98,
+        "label": "ESS8e02_3"
+      },
+      "apiLocation": null,
+      "apiQuestionEn": "Some people don't vote nowadays for one reason or another. Did you vote in the last [country] national election in [month/year]?",
+      "originalQuestion": {
+        "questionId": "B13",
+        "wordingDe": "Manche Menschen gehen heutzutage aus verschiedenen Gründen nicht zur Wahl. Wie ist das bei Ihnen? Haben Sie bei der letzten Bundestagswahl im September 2013 gewählt?",
+        "introductionDe": null,
+        "interviewerInstructionDe": "INT.: WENN BEFRAGTE(R) SAGT, ER/SIE HABE ZWAR AN DER WAHL TEILGENOMMEN, ABER DEN WAHLZETTEL ABSICHTLICH UNGÜLTIG GEMACHT ODER OHNE ETWAS ANZUKREUZEN ABGEGEBEN, BITTE „NEIN“ EINTRAGEN.",
+        "filterDe": null,
+        "printedVariableAlias": "VOTE",
+        "questionnaireSourceId": "ess8-de-questionnaire",
+        "pdfPages1Based": [
+          8
+        ],
+        "printedValidCategories": [
+          {
+            "code": "1",
+            "labelDe": "Ja"
+          },
+          {
+            "code": "2",
+            "labelDe": "Nein"
+          },
+          {
+            "code": "3",
+            "labelDe": "Nicht wahlberechtigt"
+          }
+        ],
+        "printedOther": null,
+        "printedMissingCategories": [
+          {
+            "code": "7",
+            "labelDe": "(Antwort verweigert)"
+          },
+          {
+            "code": "8",
+            "labelDe": "(Weiß nicht)"
+          }
+        ],
+        "routingByPrintedVoteCode": {
+          "1": "WEITER MIT B14A",
+          "2": "WEITER MIT B15",
+          "3": "WEITER MIT B15",
+          "7": "WEITER MIT B15",
+          "8": "WEITER MIT B15"
+        },
+        "modeVariants": []
+      },
+      "mappingNotes": [
+        "First-vote label is printed as Die Bündnis90/Grünen; second-vote label is Bündnis90/Die Grünen. Both visually verified, neither silently corrected.",
+        "Questionnaire aliases PRTVDE1/PRTVDE2 differ from file names prtvede1/prtvede2.",
+        "API vote No answer 9 and party Not applicable 66 / No answer 99 are not printed options."
+      ]
+    },
+    "nationalParty2Field": {
+      "variable": "prtvede2",
+      "fieldId": "ae314cc9-e923-4dfe-900c-75b5d2b646c7",
+      "fieldMetadataVersion": 4,
+      "fileReference": {
+        "id": "ffc43f48-e15a-4a1c-8813-47eda377c355",
+        "metadataVersion": 98,
+        "label": "ESS8e02_3"
+      },
+      "apiLocation": "B14DE",
+      "apiQuestionEn": "Which party did you vote for in that election? (Germany 2)",
+      "originalQuestion": {
+        "questionId": "B14B",
+        "wordingDe": "Und welche Partei haben Sie mit Ihrer Zweitstimme gewählt?",
+        "introductionDe": null,
+        "interviewerInstructionDe": null,
+        "filterDe": "WENN BEFRAGTE(R) GEWÄHLT HAT (CODE 1 BEI VOTE)",
+        "printedVariableAlias": "PRTVDE2",
+        "questionnaireSourceId": "ess8-de-questionnaire",
+        "pdfPages1Based": [
+          9
+        ],
+        "printedValidCategories": [
+          {
+            "code": "1",
+            "labelDe": "CDU/CSU"
+          },
+          {
+            "code": "2",
+            "labelDe": "SPD"
+          },
+          {
+            "code": "3",
+            "labelDe": "Die Linke"
+          },
+          {
+            "code": "4",
+            "labelDe": "Bündnis90/Die Grünen"
+          },
+          {
+            "code": "5",
+            "labelDe": "FDP"
+          },
+          {
+            "code": "6",
+            "labelDe": "AfD"
+          },
+          {
+            "code": "7",
+            "labelDe": "Piratenpartei"
+          },
+          {
+            "code": "8",
+            "labelDe": "NPD"
+          }
+        ],
+        "printedOther": {
+          "code": "9",
+          "labelDe": "Andere Partei EINTRAGEN:",
+          "openTextEntry": true,
+          "openTextContentsRead": false
+        },
+        "printedMissingCategories": [
+          {
+            "code": "77",
+            "labelDe": "(Antwort verweigert)"
+          },
+          {
+            "code": "88",
+            "labelDe": "(Weiß nicht)"
+          }
+        ],
+        "routingByPrintedVoteCode": null,
+        "modeVariants": []
+      },
+      "mappingNotes": [
+        "First-vote label is printed as Die Bündnis90/Grünen; second-vote label is Bündnis90/Die Grünen. Both visually verified, neither silently corrected.",
+        "Questionnaire aliases PRTVDE1/PRTVDE2 differ from file names prtvede1/prtvede2.",
+        "API vote No answer 9 and party Not applicable 66 / No answer 99 are not printed options."
+      ]
+    },
+    "aliasToVoteTypeBinding": {
+      "status": "WIP_ORDERED_FORM_AND_API_LABEL_ASSOCIATION",
+      "basis": "paired_API_Germany1_Germany2_labels_and_ordered_national_questions",
+      "officialConcordanceSourceId": null,
+      "officialConcordancePdfPage1Based": null,
+      "officialConcordanceEn": null,
+      "limit": "No separate official current export-alias→German first/second question-text concordance found in the queried metadata and national appendix. Ordered questionnaire / paired API labels remain the association basis, not a newly retrieved alias-explicit assertion."
+    },
+    "codeHistoryStatus": "NO_NEW_CODE_TRANSFORMATION_CLAIM",
+    "automaticPrintedCodeToFileCodeMappingAllowed": false,
+    "recodeBoundary": null,
+    "documents": [
+      {
+        "id": "ess-disclaimer-current",
+        "publicUrl": "https://europeansocialsurvey.org/contact/disclaimer",
+        "retrievedUtc": "2026-10-03T12:39:49.677113+00:00",
+        "originalBytesSha256": "b5201b2deefd86d7f87a8dfb11dfdd30fd4f9afb8cbbb51b9254dd58bfa5ab8a",
+        "documentMetadataId": null,
+        "documentMetadataVersion": null,
+        "licenseClass": "documentation_terms"
+      },
+      {
+        "id": "party-and-vote-original-codelists",
+        "publicUrl": "https://api.nsd.no/graphql",
+        "retrievedUtc": "2026-10-03T13:43:00.578781+00:00",
+        "originalBytesSha256": "e2af33e4d5e9652b8bed1dae87a8ae4e8a5fbb32cbe24c8fd9928371151bf6e2",
+        "documentMetadataId": null,
+        "documentMetadataVersion": null,
+        "licenseClass": "documentation_terms"
+      },
+      {
+        "id": "ess8-de-questionnaire",
+        "publicUrl": "https://stessrelpubprodwe.blob.core.windows.net/data/round8/fieldwork/germany/ESS8_questionnaires_DE.pdf",
+        "retrievedUtc": "2026-10-03T12:14:39.927363+00:00",
+        "originalBytesSha256": "977475c18d2adebea6ccb7695f377fb6ed500ef087b077086305f9a2e4a7b239",
+        "documentMetadataId": null,
+        "documentMetadataVersion": null,
+        "licenseClass": "documentation_terms"
+      }
+    ]
+  },
+  "scope": {
+    "basis": "historical_same_study_policy_responses_grouped_by_recalled_Bundestag_second_vote",
+    "timeReference": "responses_at_declared_survey_fieldwork_grouped_by_recalled_past_vote_not_election_day_attitudes_or_party_platforms",
+    "populationReference": "self_reported_past_Bundestag_vote_in_each_resident_private_household_survey_not_verified_eligible_electorate",
+    "partyRecallAndModeLimit": "different_elections_recall_intervals_category_lists_and_modes_retained_no_pooled_or_current_party_claim",
+    "independentNorm": false,
+    "currentPartyPositions": false,
+    "partyScores": false,
+    "personsOrStudiesPooled": false,
+    "precisionOrAnonymityValidated": false
+  },
+  "groups": [
+    {
+      "id": "ESS8e02_3:second_vote:1",
+      "party2Code": "1",
+      "kind": "named_party",
+      "labelEnExactApi": "Christian Democratic Union/Christian Social Union (CDU/CSU)",
+      "labelDeOriginalForm": "CDU/CSU",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 681,
+            "totalCount": 693,
+            "missingCount": 12,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.13853728575744242
+              },
+              {
+                "code": "2",
+                "proportion": 0.47716617114386317
+              },
+              {
+                "code": "3",
+                "proportion": 0.33349800380844635
+              },
+              {
+                "code": "4",
+                "proportion": 0.050798539290247975
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 677,
+            "totalCount": 693,
+            "missingCount": 16,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.03570233991344534
+              },
+              {
+                "code": "2",
+                "proportion": 0.3491933267265091
+              },
+              {
+                "code": "3",
+                "proportion": 0.5420147961017291
+              },
+              {
+                "code": "4",
+                "proportion": 0.07308953725831646
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 689,
+            "totalCount": 693,
+            "missingCount": 4,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.05941505458390315
+              },
+              {
+                "code": "2",
+                "proportion": 0.27486274661842736
+              },
+              {
+                "code": "3",
+                "proportion": 0.25203920855404055
+              },
+              {
+                "code": "4",
+                "proportion": 0.31957934714724173
+              },
+              {
+                "code": "5",
+                "proportion": 0.09410364309638719
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 692,
+            "totalCount": 693,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.33355077911008835
+              },
+              {
+                "code": "2",
+                "proportion": 0.5024774137607014
+              },
+              {
+                "code": "3",
+                "proportion": 0.07052026798228206
+              },
+              {
+                "code": "4",
+                "proportion": 0.07525797591312675
+              },
+              {
+                "code": "5",
+                "proportion": 0.01819356323380145
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 693,
+            "totalCount": 693,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.39297207574522747
+              },
+              {
+                "code": "2",
+                "proportion": 0.34132332365015594
+              },
+              {
+                "code": "3",
+                "proportion": 0.11193172131262256
+              },
+              {
+                "code": "4",
+                "proportion": 0.1218864667994288
+              },
+              {
+                "code": "5",
+                "proportion": 0.031886412492565276
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 686,
+            "totalCount": 693,
+            "missingCount": 7,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.06861563633980026
+              },
+              {
+                "code": "2",
+                "proportion": 0.10515869163368213
+              },
+              {
+                "code": "3",
+                "proportion": 0.544592627953209
+              },
+              {
+                "code": "4",
+                "proportion": 0.25626604147315424
+              },
+              {
+                "code": "5",
+                "proportion": 0.02536700260015445
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 679,
+            "totalCount": 693,
+            "missingCount": 14,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.026763720455560077
+              },
+              {
+                "code": "2",
+                "proportion": 0.3681576651116196
+              },
+              {
+                "code": "3",
+                "proportion": 0.5347591603209154
+              },
+              {
+                "code": "4",
+                "proportion": 0.07031945411190484
+              }
+            ],
+            "uncertainty": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ESS8e02_3:second_vote:2",
+      "party2Code": "2",
+      "kind": "named_party",
+      "labelEnExactApi": "Social Democratic Party (SPD)",
+      "labelDeOriginalForm": "SPD",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 506,
+            "totalCount": 507,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "0",
+                "proportion": 0.012068391426139387
+              },
+              {
+                "code": "1",
+                "proportion": 0.009590478989856722
+              },
+              {
+                "code": "2",
+                "proportion": 0.01056900903426793
+              },
+              {
+                "code": "3",
+                "proportion": 0.08787428602265596
+              },
+              {
+                "code": "4",
+                "proportion": 0.07824800010150847
+              },
+              {
+                "code": "5",
+                "proportion": 0.22148332119428538
+              },
+              {
+                "code": "6",
+                "proportion": 0.15633986529590402
+              },
+              {
+                "code": "7",
+                "proportion": 0.18184089658337463
+              },
+              {
+                "code": "8",
+                "proportion": 0.13530148114618257
+              },
+              {
+                "code": "9",
+                "proportion": 0.04816017354396087
+              },
+              {
+                "code": "10",
+                "proportion": 0.05852409666186408
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 501,
+            "totalCount": 507,
+            "missingCount": 6,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.1774774838144115
+              },
+              {
+                "code": "2",
+                "proportion": 0.4037028811800505
+              },
+              {
+                "code": "3",
+                "proportion": 0.3747033117465683
+              },
+              {
+                "code": "4",
+                "proportion": 0.044116323258969685
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 496,
+            "totalCount": 507,
+            "missingCount": 11,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.03937253193910945
+              },
+              {
+                "code": "2",
+                "proportion": 0.39530626865117074
+              },
+              {
+                "code": "3",
+                "proportion": 0.5049357637152735
+              },
+              {
+                "code": "4",
+                "proportion": 0.060385435694446266
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 505,
+            "totalCount": 507,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.07523628866421943
+              },
+              {
+                "code": "2",
+                "proportion": 0.33082115448000177
+              },
+              {
+                "code": "3",
+                "proportion": 0.23351906088215008
+              },
+              {
+                "code": "4",
+                "proportion": 0.27310372976126834
+              },
+              {
+                "code": "5",
+                "proportion": 0.08731976621236032
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 506,
+            "totalCount": 507,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.4058168824386539
+              },
+              {
+                "code": "2",
+                "proportion": 0.48283121176833177
+              },
+              {
+                "code": "3",
+                "proportion": 0.045059498116689176
+              },
+              {
+                "code": "4",
+                "proportion": 0.05012968426002076
+              },
+              {
+                "code": "5",
+                "proportion": 0.016162723416304405
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 507,
+            "totalCount": 507,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.3751484052394477
+              },
+              {
+                "code": "2",
+                "proportion": 0.3271214770924366
+              },
+              {
+                "code": "3",
+                "proportion": 0.10863955466607746
+              },
+              {
+                "code": "4",
+                "proportion": 0.14064388082617946
+              },
+              {
+                "code": "5",
+                "proportion": 0.048446682175858756
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 505,
+            "totalCount": 507,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.1267691701218583
+              },
+              {
+                "code": "2",
+                "proportion": 0.1328667542328041
+              },
+              {
+                "code": "3",
+                "proportion": 0.5017624266818076
+              },
+              {
+                "code": "4",
+                "proportion": 0.22543643556070542
+              },
+              {
+                "code": "5",
+                "proportion": 0.013165213402824607
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 500,
+            "totalCount": 507,
+            "missingCount": 7,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.03175733881153192
+              },
+              {
+                "code": "2",
+                "proportion": 0.32088677587440667
+              },
+              {
+                "code": "3",
+                "proportion": 0.5671778192421031
+              },
+              {
+                "code": "4",
+                "proportion": 0.08017806607195838
+              }
+            ],
+            "uncertainty": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ESS8e02_3:second_vote:3",
+      "party2Code": "3",
+      "kind": "named_party",
+      "labelEnExactApi": "The Left (Die Linke)",
+      "labelDeOriginalForm": "Die Linke",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 190,
+            "totalCount": 193,
+            "missingCount": 3,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.16482295267796568
+              },
+              {
+                "code": "2",
+                "proportion": 0.40853122806390924
+              },
+              {
+                "code": "3",
+                "proportion": 0.30849846393711694
+              },
+              {
+                "code": "4",
+                "proportion": 0.11814735532100819
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 187,
+            "totalCount": 193,
+            "missingCount": 6,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.08862265273009712
+              },
+              {
+                "code": "2",
+                "proportion": 0.4470539932877047
+              },
+              {
+                "code": "3",
+                "proportion": 0.3939160599756205
+              },
+              {
+                "code": "4",
+                "proportion": 0.07040729400657761
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 192,
+            "totalCount": 193,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.17126548311967657
+              },
+              {
+                "code": "2",
+                "proportion": 0.23944630251311466
+              },
+              {
+                "code": "3",
+                "proportion": 0.15444055731915693
+              },
+              {
+                "code": "4",
+                "proportion": 0.32029217649419517
+              },
+              {
+                "code": "5",
+                "proportion": 0.11455548055385671
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 193,
+            "totalCount": 193,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.3587931925839689
+              },
+              {
+                "code": "2",
+                "proportion": 0.3477222463770784
+              },
+              {
+                "code": "3",
+                "proportion": 0.15375184552375254
+              },
+              {
+                "code": "4",
+                "proportion": 0.08875977307209414
+              },
+              {
+                "code": "5",
+                "proportion": 0.050972942443106004
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 191,
+            "totalCount": 193,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.1531843398714717
+              },
+              {
+                "code": "2",
+                "proportion": 0.13685328585185183
+              },
+              {
+                "code": "3",
+                "proportion": 0.4581594433144154
+              },
+              {
+                "code": "4",
+                "proportion": 0.2218080089865987
+              },
+              {
+                "code": "5",
+                "proportion": 0.029994921975662406
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 191,
+            "totalCount": 193,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.05553024001929221
+              },
+              {
+                "code": "2",
+                "proportion": 0.2951315984056279
+              },
+              {
+                "code": "3",
+                "proportion": 0.5062302359265447
+              },
+              {
+                "code": "4",
+                "proportion": 0.143107925648535
+              }
+            ],
+            "uncertainty": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ESS8e02_3:second_vote:4",
+      "party2Code": "4",
+      "kind": "named_party",
+      "labelEnExactApi": "Alliance 90/The Greens (Bündnis 90/Die Grünen)",
+      "labelDeOriginalForm": "Bündnis90/Die Grünen",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 240,
+            "totalCount": 242,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.1961627185822474
+              },
+              {
+                "code": "2",
+                "proportion": 0.49101256680879324
+              },
+              {
+                "code": "3",
+                "proportion": 0.27475274036676756
+              },
+              {
+                "code": "4",
+                "proportion": 0.03807197424219191
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 237,
+            "totalCount": 242,
+            "missingCount": 5,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.04309326880318626
+              },
+              {
+                "code": "2",
+                "proportion": 0.31223138489294383
+              },
+              {
+                "code": "3",
+                "proportion": 0.5316275408046062
+              },
+              {
+                "code": "4",
+                "proportion": 0.11304780549926376
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 241,
+            "totalCount": 242,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.16107307544147562
+              },
+              {
+                "code": "2",
+                "proportion": 0.4183768489954993
+              },
+              {
+                "code": "3",
+                "proportion": 0.12658415924110422
+              },
+              {
+                "code": "4",
+                "proportion": 0.273763056470719
+              },
+              {
+                "code": "5",
+                "proportion": 0.020202859851201727
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 241,
+            "totalCount": 242,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.4117668480593849
+              },
+              {
+                "code": "2",
+                "proportion": 0.33129775938958267
+              },
+              {
+                "code": "3",
+                "proportion": 0.1058700882088277
+              },
+              {
+                "code": "4",
+                "proportion": 0.1162589092824731
+              },
+              {
+                "code": "5",
+                "proportion": 0.0348063950597316
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "id": "ESS8e02_3:second_vote:5",
+      "party2Code": "5",
+      "kind": "named_party",
+      "labelEnExactApi": "Free Democratic Party (FDP) ",
+      "labelDeOriginalForm": "FDP",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 108,
+            "totalCount": 110,
+            "missingCount": 2,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.15041374962254378
+              },
+              {
+                "code": "2",
+                "proportion": 0.46246912687718655
+              },
+              {
+                "code": "3",
+                "proportion": 0.3276813583279617
+              },
+              {
+                "code": "4",
+                "proportion": 0.05943576517230795
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 110,
+            "totalCount": 110,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.08918989339903703
+              },
+              {
+                "code": "2",
+                "proportion": 0.33955722836217395
+              },
+              {
+                "code": "3",
+                "proportion": 0.51619632839678
+              },
+              {
+                "code": "4",
+                "proportion": 0.055056549842009105
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 110,
+            "totalCount": 110,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.05003779042214756
+              },
+              {
+                "code": "2",
+                "proportion": 0.3414683123031012
+              },
+              {
+                "code": "3",
+                "proportion": 0.22331905986851178
+              },
+              {
+                "code": "4",
+                "proportion": 0.24902145090927827
+              },
+              {
+                "code": "5",
+                "proportion": 0.13615338649696118
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 110,
+            "totalCount": 110,
+            "missingCount": 0,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.3059356249859126
+              },
+              {
+                "code": "2",
+                "proportion": 0.4245562761947198
+              },
+              {
+                "code": "3",
+                "proportion": 0.06149050641888607
+              },
+              {
+                "code": "4",
+                "proportion": 0.16948552892997365
+              },
+              {
+                "code": "5",
+                "proportion": 0.0385320634705079
+              }
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "reviewed_historical_reference",
+          "reference": {
+            "weight": "pspwght",
+            "validCount": 109,
+            "totalCount": 110,
+            "missingCount": 1,
+            "notAskedCount": 0,
+            "categories": [
+              {
+                "code": "1",
+                "proportion": 0.09193028095903026
+              },
+              {
+                "code": "2",
+                "proportion": 0.3349217324899138
+              },
+              {
+                "code": "3",
+                "proportion": 0.49235710091254986
+              },
+              {
+                "code": "4",
+                "proportion": 0.08079088563850614
+              }
+            ],
+            "uncertainty": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ESS8e02_3:second_vote:6",
+      "party2Code": "6",
+      "kind": "named_party",
+      "labelEnExactApi": "Alternative for Germany (AFD)",
+      "labelDeOriginalForm": "AfD",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "id": "ESS8e02_3:second_vote:7",
+      "party2Code": "7",
+      "kind": "named_party",
+      "labelEnExactApi": "Pirate Party (Piratenpartei)",
+      "labelDeOriginalForm": "Piratenpartei",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "id": "ESS8e02_3:second_vote:8",
+      "party2Code": "8",
+      "kind": "named_party",
+      "labelEnExactApi": "National Democratic Party (NPD)",
+      "labelDeOriginalForm": "NPD",
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "LABEL_AND_POSITION_BOUND",
+      "heterogeneousUnlabelledOther": false,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "id": "ESS8e02_3:second_vote:9",
+      "party2Code": "9",
+      "kind": "other_unlabelled",
+      "labelEnExactApi": "Other",
+      "labelDeOriginalForm": null,
+      "labelDeOfficialAppendix": null,
+      "appendixNameSourceId": null,
+      "appendixNamePdfPage1Based": null,
+      "formOptionStatus": "OTHER_FORM_CODE_DIFFERENCES_SEPARATELY_BOUND",
+      "heterogeneousUnlabelledOther": true,
+      "questions": [
+        {
+          "id": "ESS8e02_3:gvslvol",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvslvue",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:gvcldcr",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:bnlwinc",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:eduunmp",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:inctxff",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:sbsrnen",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:banhhap",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:imsclbn",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        },
+        {
+          "id": "ESS8e02_3:wrkprbf",
+          "status": "withheld_base_or_cell_count",
+          "reference": null
+        }
+      ]
+    }
+  ]
+}

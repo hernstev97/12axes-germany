@@ -2215,7 +2215,7 @@ export const REVIEWED_REFERENCE_PROVENANCE = freezePublicMetadata({
     'data/reference-v2/ESS11e04_2.json':
       '453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721',
     'data/reference-v2/README.md':
-      'a2917e6b57c59e96298345e526e9311de82b1422cfbb9a8bb1cfabc0684ba57c',
+      'eb3d13cf1a423c3db43315a268eafa429ba92f8a579a89fe70f650c689fbd9d8',
     'reports/loop/policy-v2-export-decisions.json':
       'a87f780a7219253f7f3773d051b7001f438b19b2fb2d0ee820fc22c1157a16df',
     'reports/loop/reviews/RESULTS-V2-001-methods-decision.json':
