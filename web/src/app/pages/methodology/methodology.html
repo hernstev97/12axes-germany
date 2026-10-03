@@ -10,16 +10,17 @@
       <h1 class="page-title">Methodik und Grenzen</h1>
       <p class="date">Stand: <span class="nowrap">3. Oktober 2026</span></p>
       <p class="lead">
-        12 Axes Deutschland bereitet einen breiten Test zu politischen Einstellungen vor. Die
-        Forschungsfassung ordnet 43 Originalangaben in acht Themenrubriken und hält die historischen
-        Befragungsreferenzen getrennt. Der geplante Test ist noch nicht öffentlich verfügbar.
+        12 Axes Deutschland bereitet einen Test zu politischen Einstellungen in Deutschland vor. Die
+        Forschungsfassung enthält 62 Originalfragen aus fünf historischen Befragungen und beschreibt
+        die Antworten Frage für Frage. Der geplante Test ist noch nicht öffentlich verfügbar.
       </p>
       <nav class="toc" aria-label="Inhalt dieser Seite">
         <ol>
-          <li><a routerLink="/methodik" fragment="messentwurf">Aktueller Messentwurf</a></li>
+          <li><a routerLink="/methodik" fragment="messentwurf">Fragen und Bereiche</a></li>
+          <li><a routerLink="/methodik" fragment="profil">Antwortprofil</a></li>
           <li><a routerLink="/methodik" fragment="referenzen">Historische Referenzen</a></li>
           <li><a routerLink="/methodik" fragment="fragekontext">Fragekontext und Webfassung</a></li>
-          <li><a routerLink="/methodik" fragment="auswertung">Auswertung und Referenzen</a></li>
+          <li><a routerLink="/methodik" fragment="auswertung">Auswertung und Unsicherheit</a></li>
           <li><a routerLink="/methodik" fragment="grenzen">Grenzen und offene Prüfungen</a></li>
           <li><a routerLink="/methodik" fragment="rechte">Quellen und Rechte</a></li>
         </ol>
@@ -29,22 +30,75 @@
 
   <section id="messentwurf" class="section page-width" aria-labelledby="messentwurf-title">
     <div class="grid">
-      <h2 id="messentwurf-title" class="section-title area-title">Aktueller Messentwurf</h2>
+      <h2 id="messentwurf-title" class="section-title area-title">Fragen und Bereiche</h2>
       <div class="prose area-body">
         <p>
-          Die Forschungsfassung führt getrennte Einzelangaben mit den jeweiligen
-          Originalantwortkategorien. Zustimmung, Wichtigkeit und nominale Auswahl beschreiben
-          unterschiedliche Gegenstände. Eine gemeinsame Messstruktur oder einheitliche Polung wird
-          nicht vorausgesetzt. Gesamtscores, Links-/Rechtspositionen und persönliche
-          Unsicherheitsintervalle sind nicht vorgesehen.
+          Die Forschungsfassung enthält 62 Fragen im deutschen Originalwortlaut aus fünf Befragungen
+          des <a href="https://www.europeansocialsurvey.org/">European Social Survey</a>
+          (ESS), einer repräsentativen wissenschaftlichen Befragung. 43 Fragen stammen aus Plan v2.
+          19 Fragen kamen mit dem
+          <a
+            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-claude-20261003/docs/analyseplan-v2.2.md"
+            >Analyseplan v2.2</a
+          >
+          hinzu.
         </p>
         <p>
-          Acht Themen ordnen die Auswahl: Wirtschaft und Verteilung, Sozialstaat, Demokratie und
-          politische Autorität, Bürgerrechte und Sicherheit, europäische Integration, Klima und
-          Energie, Migration sowie Gleichstellungs- und Familienpolitik. Die Themen sind keine
-          gemeinsamen Messdimensionen. Die konkrete Auswahl umfasst 43 Originalangaben und ist kein
-          freigegebener Test. Marktordnung, digitale Überwachung, Gesundheit und weitere Gegenstände
-          bleiben unvollständig erschlossen.
+          Sieben neue Fragen betreffen Energiequellen für Strom, zwei die Prüfung von Asylanträgen
+          und den Familiennachzug, zwei die Rechte von Schwulen und Lesben. Je eine betrifft das
+          Grundeinkommen, ein EU-weites Sozialleistungsprogramm, den Vorrang von Männern bei knappen
+          Arbeitsplätzen und das Verbot demokratiefeindlicher Parteien. Zwei Fragen betreffen
+          politische Führung: eine Führungsperson über dem Gesetz und Loyalität gegenüber der
+          Führung. Zwei weitere betreffen Abwägungen bei der Bekämpfung einer Pandemie.
+        </p>
+        <p>
+          Die Themenabdeckung beschreibt 14 Bereiche. Die 62 Fragen gehören zu acht davon, und
+          keiner dieser acht ist vollständig erfasst: Wirtschaft und Verteilung, Sozialstaat,
+          Demokratie und politische Autorität, Bürgerrechte und Sicherheit, europäische Integration,
+          Klima und Energie, Migration sowie Gleichstellungs- und Familienpolitik. Zu Arbeit und
+          Rente, Gesundheit und Pflege, Wohnen, Außen-, Verteidigungs- und Friedenspolitik, Bildung
+          und Forschung sowie Medien und Digitalpolitik gibt es keine oder fast keine eigene Frage.
+        </p>
+        <p>
+          Ein Bereich ordnet die Fragen für Lesende. Er ist keine Messdimension und erhält keinen
+          Wert. Die
+          <a
+            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-claude-20261003/docs/abdeckung-v2.2.md"
+            >Themenabdeckung v2.2</a
+          >
+          nennt je Bereich die erfassten Fragen, wichtige nicht erfasste Streitfragen und die
+          geprüften Quellen.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="profil" class="section page-width" aria-labelledby="profil-title">
+    <div class="grid">
+      <h2 id="profil-title" class="section-title area-title">Antwortprofil</h2>
+      <div class="prose area-body">
+        <p>
+          Die Ergebnisansicht des Forschungsentwurfs beschreibt jede beantwortete Frage in einem
+          Satz. Er nennt den Originalwortlaut, die gewählte Antwort und ein festes Merkmal der
+          Frage, etwa „Wichtigkeit für die Demokratie im Allgemeinen“. Bei Fragen desselben
+          Originalblocks mit gleicher Antwortliste fasst ein weiterer Satz zusammen, welche Aussagen
+          gleich oder unterschiedlich beantwortet wurden. Sieben Querbezüge stellen Antworten
+          verschiedener Fragen nebeneinander und nennen, worin sich die Fragen unterscheiden.
+        </p>
+        <p>
+          Das Profil hat keinen Gesamtwert, keine Achsen und keine Lagerbezeichnung. Die Fragen
+          stammen aus fünf Befragungen mit verschiedenen Personen und Jahren. Für keinen Bereich ist
+          ein gemeinsamer Wert für genau diese Fragen belegt. Unterschiedliche Antworten innerhalb
+          eines Blocks gelten nicht als Widerspruch. Die
+          <a
+            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-claude-20261003/docs/profilregeln-v1.md"
+            >Profilregeln v1</a
+          >
+          begründen diese Form und hängen nicht von Antwortdaten ab.
+        </p>
+        <p>
+          Die Gestaltung von Test und Ergebnis ist nicht freigegeben. Der Forschungsentwurf läuft
+          nur lokal und ist nicht Teil dieser Website.
         </p>
       </div>
     </div>
@@ -55,10 +109,9 @@
       <h2 id="referenzen-title" class="section-title area-title">Historische Referenzen</h2>
       <div class="prose area-body">
         <p>
-          Der <a href="https://www.europeansocialsurvey.org/">European Social Survey</a> (ESS) ist
-          eine repräsentative wissenschaftliche Befragung. Seine
+          Die
           <a href="https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b"
-            >Zielpopulation</a
+            >Zielpopulation des ESS</a
           >
           umfasst Menschen ab 15 Jahren in Privathaushalten unabhängig von ihrer
           Staatsangehörigkeit. Sie ist nicht mit Wahlberechtigten gleichzusetzen. Die fünf getrennt
@@ -112,16 +165,22 @@
           gemeinsamen Personen oder einer gemeinsamen Messstruktur zusammengefügt.
         </p>
         <p>
-          Für 42 der 43 Angaben liegen begrenzt geprüfte
+          Für 59 der 62 Fragen liegen begrenzt geprüfte
           <a
-            href="https://github.com/hernstev97/12axes-germany/tree/research/life-93-night-20261003/data/reference-v2"
+            href="https://github.com/hernstev97/12axes-germany/tree/research/life-93-claude-20261003/data/reference-v2.2"
             >historische Einzelreferenzen</a
           >
-          vor. Die Frage mit der Quellenkennung <code>cttresa</code> bleibt ohne Vergleichszahlen.
-          Die vorab festgelegte Darstellungsregel unterdrückt eine Referenz bei weniger als 100
-          gültigen Antworten oder einer beobachteten Kategorie mit ein bis vier ungewichteten
-          Fällen. Das ist eine projektspezifische Heuristik, kein Nachweis der Präzision oder
-          Anonymität. Eine fehlende Referenz ist kein Vergleichswert von null.
+          vor. Ohne Zahlen bleiben <code>cttresa</code> aus ESS10 sowie <code>elghydr</code> und
+          <code>elgnuc</code> aus ESS8. Die vorab festgelegte Darstellungsregel unterdrückt eine
+          Referenz bei weniger als 100 gültigen Antworten oder einer beobachteten Kategorie mit ein
+          bis vier ungewichteten Fällen. Das ist eine projektspezifische Regel, kein Nachweis der
+          Präzision oder Anonymität. Eine fehlende Referenz ist kein Vergleichswert von null.
+        </p>
+        <p>
+          Manche Fragen beziehen sich auf die damalige Lage, etwa mit „heute“ oder „schon jetzt“.
+          Für die damaligen Befragten meinte das die Feldzeit. Die Ergebnisansicht nennt das an der
+          betreffenden Frage. Seither geänderte Rechtslagen nennt sie nur mit Quelle, etwa das Ende
+          des Leistungsbetriebs der Kernkraftwerke im <span class="nowrap">April 2023</span>.
         </p>
       </div>
     </div>
@@ -154,29 +213,32 @@
           operative historische Webnachlauf ist nicht belegt. Die neue Zusammenstellung ist deshalb
           keine nachgewiesen gleichartige Durchführung der Originalbefragung.
         </p>
+        <p>
+          ESS10 bat die Befragten 2021/22, alle Fragen „nach dem heutigen Stand der Dinge, auch wenn
+          dieser durch die Pandemie anders ist als sonst“ zu beantworten. Die Ansicht nennt diese
+          Anleitung bei jeder ESS10-Frage. Wo die Einzelansicht vom gedruckten Fragebogen abweicht,
+          etwa durch eine wiederholte Einleitung, steht das an der Frage.
+        </p>
       </div>
     </div>
   </section>
 
   <section id="auswertung" class="section page-width" aria-labelledby="auswertung-title">
     <div class="grid">
-      <h2 id="auswertung-title" class="section-title area-title">Auswertung und Referenzen</h2>
+      <h2 id="auswertung-title" class="section-title area-title">Auswertung und Unsicherheit</h2>
       <div class="prose area-body">
         <p>
           Auswahl, Messform und Bewertungskriterien wurden vor den davon abhängigen Auswertungen
-          festgelegt und versioniert gesichert. Sie stehen im
+          festgelegt und versioniert gesichert: für die ersten 43 Fragen im
           <a
-            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-night-20261003/docs/empirie-plan-v2.entwurf.md"
+            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-claude-20261003/docs/empirie-plan-v2.entwurf.md"
             >Empirieplan v2</a
-          >. Die
-          <a
-            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-night-20261003/docs/abdeckung-v2.md"
-            >Themenmatrix</a
-          >
-          begründet Abdeckung und offene Lücken.
+          >, für die Ergänzungen und Unsicherheitsbereiche im Analyseplan v2.2. Den Plan v2.2
+          sichert der Git-Tag <code>analyseplan-v2.2</code>. Der Rechenweg läuft nur, wenn Plan und
+          Code mit diesem Tag übereinstimmen.
         </p>
         <p>
-          Die fünf Einzelstudienläufe berechnen gewichtete Originalkategorieanteile je Frage. Die
+          Die Läufe berechnen gewichtete Anteile der Originalkategorien je Frage und Befragung. Die
           <a
             href="https://www.europeansocialsurvey.org/methodology/ess-methodology/data-processing-and-archiving/weighting"
             >ESS-Gewichtungsanleitung</a
@@ -187,16 +249,21 @@
           mit reinem Designgewicht sind als Sensitivitätsprüfungen dokumentiert.
         </p>
         <p>
-          Kategorieanteile beziehen sich auf gültige Antworten der jeweiligen Frage. Gesamtumfang,
-          fehlende Antworten und nicht gestellte Fragen werden getrennt dokumentiert. Anteile
-          fehlender Antworten beziehen sich auf alle deutschen Stichprobenfälle. Gewichtung
-          beseitigt Zeit-, Modus- oder Nichtantwortverzerrungen nicht automatisch. Sie erzeugt auch
-          keine tatsächlich erhobenen Antworten aus dem in ESS8 ausgelassenen München.
+          Seit Plan v2.2 hat jeder veröffentlichte Anteil zwischen 0 und 100 % einen 95-%-Bereich.
+          Er folgt aus dem Stichprobendesign der jeweiligen Befragung: Taylor-Linearisierung,
+          Logit-Intervall, Freiheitsgrade aus der Zahl der Stichprobeneinheiten minus der Zahl der
+          Schichten. Für ESS5 und ESS8 stammen Schichten und Stichprobeneinheiten aus den
+          Designdateien des ESS. Eine zweite, getrennt geschriebene Rechnung kam für alle
+          veröffentlichten Referenzen auf dieselben Anteile und Standardfehler. Beide Rechnungen
+          nutzen dieselben Datendateien.
         </p>
         <p>
-          Diese v2-Auswertung berechnet keine Standardfehler. Die vorbereitete Ergebnisfassung zeigt
-          keine Konfidenzintervalle oder persönlichen Unsicherheiten. Fehlende Designinformationen
-          oder ein nicht berechneter Standardfehler bedeuten keine Unsicherheit von null.
+          Der Bereich beschreibt nur die Unsicherheit durch die damalige Zufallsstichprobe unter
+          vereinfachenden Annahmen. Zeitabstand, Befragungsmodus, Nichtteilnahme und der neue
+          Fragekontext sind nicht enthalten. Nahe 0 und 100 % kann er die Unsicherheit
+          unterschätzen. Für eine einzelne eigene Antwort gibt es keine Messunsicherheit, die sich
+          aus diesen Daten begründen ließe. Gewichtung erzeugt auch keine Antworten aus dem in ESS8
+          ausgelassenen München.
         </p>
       </div>
     </div>
@@ -207,34 +274,34 @@
       <h2 id="grenzen-title" class="section-title area-title">Grenzen und offene Prüfungen</h2>
       <div class="prose area-body">
         <p>
-          Politische Fairness verlangt eine Prüfung von Themenwahl, Auslassungen und Benennungen.
-          Getrennte Codex-Prüfagenten gehören derselben Modellfamilie an und können gemeinsame
-          Fehler machen. KI-Reviews sind keine Begutachtung durch Fachleute. Das Projekt ist weder
-          validiert noch wissenschaftlich geprüft und kann keine Neutralität garantieren.
+          Codex hat den ursprünglichen Stand erarbeitet. Seit dem
+          <span class="nowrap">3. Oktober 2026</span> prüft und ergänzt Claude im Auftrag von
+          Steven.
+        </p>
+        <p>
+          Getrennte Codex-Prüfagenten haben den Analyseplan v2.2 vor der Rechnung in drei Runden
+          geprüft. Zwei mittlere Punkte zur Anzeige blieben teilweise offen und sind im Plan
+          vermerkt. Ein weiterer Codex-Prüfagent hat die Ergebnisse vor dem Export in zwei Runden
+          geprüft. Das sind KI-Reviews, keine Begutachtung durch Fachleute.
         </p>
         <p>
           Die A-/B-Antworten des historischen v1-Teilmoduls sind bekannt. Weitere Fragen derselben
-          Personen liefern keine unberührte unabhängige Bestätigung. Historische Gruppenreferenzen
-          haben eigene begrenzte Ergebnisprüfungen. Eine persönliche Zuordnung zu Parteien ist nicht
-          vorgesehen.
+          Personen liefern keine unberührte unabhängige Bestätigung. Die Antworten der 43 Fragen aus
+          Plan v2 waren aus früheren Läufen bekannt. Die 19 neuen Fragen wurden ausgewählt, ohne
+          ihre Antworten zu kennen. Alle Werte stammen aus historischen Daten und sind keine neue
+          Bestätigung.
         </p>
         <p>
-          Die fünf getrennten Einzelstudienläufe und die Berichtsfassung sind gesichert. Zwei
-          getrennte Codex-Rollen haben 42 historische Einzelreferenzen in ihrem begrenzten Umfang
-          geprüft. Der breite Themenbericht ist als Forschungsfassung gesichert.
+          Historische Gruppenreferenzen beschreiben Antworten zur damaligen Befragungszeit nach
+          erinnerter Zweitstimme für ESS5, ESS8 und ESS9. Sie sind keine heutigen Parteiprogramme
+          und kein Gesamtmatch. Für ESS10 und ESS11 besteht keine Gruppenfreigabe. Eine persönliche
+          Zuordnung zu Parteien ist nicht vorgesehen.
         </p>
         <p>
-          Die getrennten historischen Gruppenreferenzen für ESS5, ESS8 und ESS9 sind nach zwei
-          begrenzten Ergebnisprüfungen als Forschungsartefakte übernommen. Ihre Darstellung und
-          menschliche Verständlichkeit bleiben zu prüfen. Für ESS10-SC oder ESS11 besteht keine
-          Gruppenfreigabe. Historische Gruppenverteilungen beschreiben Antworten zur damaligen
-          Befragungszeit nach erinnerter Zweitstimme. Sie sind keine heutigen Parteiprogramme und
-          kein Gesamtmatch.
-        </p>
-        <p>
-          Die von Steven veranlasste abschließende Kontrolle durch Claude, Verständnistests mit
-          Menschen sowie die menschlichen Freigaben für die Gestaltung von Test und Ergebnissen und
-          für die Veröffentlichung bleiben offen.
+          Offen sind der Verständnistest mit fünf Menschen, die Freigabe der Gestaltung von Test und
+          Ergebnis, die Klärung der Nutzungsrechte weiterer Quellen und die Freigabe einer
+          Veröffentlichung durch Steven. Das Projekt ist weder validiert noch wissenschaftlich
+          geprüft und kann keine Neutralität garantieren.
         </p>
       </div>
     </div>
@@ -253,16 +320,31 @@
           <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> und Daten unter
           <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
           Quellenangaben müssen die verwendete Ausgabe, Erhebungsjahre und verfügbare DOI nennen.
-          Attribution, Änderungskennzeichnung und einschlägige Weitergabebedingungen sind vor
-          Veröffentlichung zu prüfen. Die Datenlizenz beschränkt die Nutzung auf nichtkommerzielle
-          Zwecke.
+          Die Datenlizenz beschränkt die Nutzung auf nichtkommerzielle Zwecke. Rohdaten werden nicht
+          in die Website übernommen.
         </p>
         <p>
-          <a href="https://www.gesis.org/gles">GLES</a> und
-          <a href="https://issp.org/">ISSP</a> bleiben mögliche Ergänzungen. Zugang, Verarbeitung
-          und Website-Fragenrechte müssen je konkretem GESIS-Weg geklärt werden. Öffentliche
-          Dokumentation allein klärt diese Bedingungen nicht. Rohdaten werden nicht in die Website
-          übernommen.
+          Für viele fehlende Themen gibt es Originalfragen in der
+          <a href="https://www.gesis.org/gles">German Longitudinal Election Study</a> (GLES), im
+          <a href="https://issp.org/">International Social Survey Programme</a> (ISSP) und in der
+          Allgemeinen Bevölkerungsumfrage der Sozialwissenschaften (ALLBUS). GESIS stellt diese
+          Daten bereit. Die GESIS-Nutzungsbedingungen, gültig ab
+          <span class="nowrap">4. Februar 2026</span>, verbieten in § 4 „die Nutzung von KI-Systemen
+          für die Verarbeitung der Datenbasis“, außer GESIS lässt eine Ausnahme zu. Dieser Weg ruht,
+          bis die Nutzung geklärt ist.
+        </p>
+        <p>
+          Rechercheberichte von KI-Agenten haben Quellen außerhalb von GESIS untersucht. Der
+          <a href="https://www.worldvaluessurvey.org/">World Values Survey</a> enthält einzelne
+          Prinzipienfragen, etwa zu staatlicher Überwachung, die vorhandene Bereiche ergänzen
+          könnten. Die Eurobarometer-Tabellen der EU-Kommission betreffen Fragen zur EU-Ebene und
+          enthalten keine Wahlfrage. Keine dieser Quellen schließt eine der sechs Lücken, und jeder
+          Weg setzt eine Klärung der Rechte voraus. Die
+          <a
+            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-claude-20261003/docs/abdeckung-v2.2.md"
+            >Themenabdeckung v2.2</a
+          >
+          nennt die offenen Entscheidungen.
         </p>
       </div>
     </div>

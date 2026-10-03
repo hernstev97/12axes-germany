@@ -1,0 +1,14 @@
+{
+ "privateRunSha256": "0ebe86b22cb3795ea232c9f0e645e6893d7355d47c842b7f8f10cb4ad6554001",
+ "studien": {
+  "ESS9e03_3": {
+   "referenzen": 16,
+   "kategorien": 80,
+   "ohneBereichImLauf": 0,
+   "maxAbweichungAnteil": 0.0,
+   "maxAbweichungStandardfehler": 0.0,
+   "strata": 89,
+   "psus": 178
+  }
+ }
+}

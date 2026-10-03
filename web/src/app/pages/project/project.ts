@@ -20,22 +20,29 @@ export class Project {
     },
     {
       label: 'Fragenkatalog',
-      value: '43 Originalangaben aus fünf historischen ESS-Studien in acht Themenrubriken',
+      value:
+        '62 Originalfragen aus fünf historischen ESS-Studien in acht Bereichen. Sechs weitere Bereiche ohne oder fast ohne eigene Frage.',
     },
     { label: 'Dimensionen', value: 'Keine gemeinsamen Messdimensionen in der aktuellen Fassung' },
     {
       label: 'Analyse und Erweiterung',
-      value: 'Plan v2 versioniert gesichert. Fünf getrennte Einzelstudienläufe ausgeführt.',
+      value:
+        'Plan v2 und Analyseplan v2.2 versioniert gesichert. Auswertung ausgeführt, jede Befragung getrennt.',
     },
-    { label: 'Breiter Themenbericht', value: 'Als Forschungsfassung gesichert' },
+    {
+      label: 'Ergebnisansicht',
+      value:
+        'Beschreibung je Frage, Muster in Fragenblöcken und Querbezüge. Nur lokal im Forschungsentwurf. Gestaltung nicht freigegeben.',
+    },
     {
       label: 'Vergleichswerte',
-      value: '42 historische Einzelreferenzen. Keine aktuelle Bevölkerungsnorm.',
+      value:
+        '59 historische Einzelreferenzen und 96 historische Wählergruppenreferenzen aus ESS5, ESS8 und ESS9, jeweils mit 95-%-Bereich. Keine aktuelle Bevölkerungsnorm.',
     },
     {
       label: 'KI-Prüfungen',
       value:
-        'Zwei getrennte Codex-Rollen haben die historischen Einzelreferenzen begrenzt geprüft. Gleiche Modellfamilie. Gemeinsame Fehler möglich.',
+        'Codex hat Plan v2.2 und die Ergebnisse vor dem Export in KI-Reviews begrenzt geprüft. Claude hat den früheren Codex-Stand nachgeprüft. Gemeinsame Fehler bleiben möglich.',
     },
     { label: 'Verständlichkeit', value: 'Noch nicht mit Menschen geprüft' },
     { label: 'Methodischer Freigabeprozess', value: 'Dokumentiert. Erforderliche Abnahmen offen.' },
