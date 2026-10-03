@@ -1,6 +1,6 @@
 # LIFE-93: vorbereiteter Kontrollstand
 
-Stand 2026-10-03T16:37:51.389345+00:00. Worktree `/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003`, Branch `research/life-93-night-20261003`. Root ist alleiniger Koordinator; alle eigenen Autoren und Reviewer sind fertig. Letzter tatsächlich verifizierter Commit `0afd0093b1bc90f651cf91baf3ef22459bca9965`, Receipt `push-051.json`. Der abschließende Checkpoint enthält die CSS-Korrektur und endgültige Vorführbindung; seine Payload ist `git:HEAD`. HEAD und Remote live vergleichen; Receipts entstehen nach dem Push und werden beim folgenden Checkpoint gespeichert.
+Stand 2026-10-03T16:37:51.389345+00:00. Worktree `/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003`, Branch `research/life-93-night-20261003`. Root ist alleiniger Koordinator; alle eigenen Autoren und Reviewer sind fertig. Der vollständige Forschungs-/UI-/Kontrollstand ist in `f1c6c3bc26056206babd9d8a4c4163216db11f22` lokal und auf dem Arbeitsbranch tatsächlich verifiziert, Receipt `push-052.json`. Der abschließende reine Zustandscheckpoint enthält dieses Receipt; sein HEAD wird nach dem Push separat in `outputs/loop/final-checkpoint-verification.json` verifiziert. `git:HEAD` bezeichnet diese aktuelle Fassung. Keine Forschungs- oder UI-Bytes ändern sich durch den Receiptcheckpoint.
 
 ## Zuletzt abgeschlossen
 
