@@ -1,0 +1,13 @@
+{
+  "command": ["make", "all"],
+  "startUtc": "2026-10-03T02:34:07.980816+00:00",
+  "endUtc": "2026-10-03T02:34:08.023933+00:00",
+  "exitCode": 2,
+  "expectedExitCode": 2,
+  "status": "BLOCKIERT",
+  "inputsUnchanged": true,
+  "log": "reports/loop/technical-v3/all.log",
+  "logSha256": "c5af200b63cabfa66bd9c52a0e86e6a0559f17d637330ccb3c32c29557a5beb5",
+  "inputManifest": "reports/loop/technical-v3/inputs.json",
+  "scope": "Aktuelle Infrastruktur und unveränderte Informationswebsite, keine empirische Testfunktion"
+}

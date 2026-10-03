@@ -1,0 +1,11 @@
+# LOOP-000-v3: Korrekturprüfung, keine Gesamtfreigabe
+
+Vor dem Freeze festgelegt. Gegenstand sind die angenommenen G01–G04/B01–B05, die behaupteten begrenzten Korrekturen und deren aktuelle Ausführung. Beide v2-Nachprüfberichte, Entscheidungen, v2-Ausgangsfassung und neue Fassung gehören ins Paket. Die FOUNDATION-Erstgrundlage wird nicht geändert.
+
+Zwei frische unabhängige Reviewer prüfen alle Pfad-/Archiv-/Abschlussfehler mit eigenen synthetischen Gegenfällen und die Begrenzung technischer Aussagen. Ein Reviewer prüft zusätzlich die tatsächlichen geänderten UI-Sätze im Browser. Jeder schreibt einen getrennten unveränderlichen Bericht, liest keinen Bericht des anderen und keine Forschungsergebnisse. Gemeinsame Dateirechte sind keine Sandbox.
+
+Abnahme im begrenzten Umfang verlangt: direkte und aliasbasierte geschützte Inputs vor Paketerstellung abweisen; keine Ausgabe über umgeleitete Paketvorfahren; kein Verify über Archiv-/Manifestlinks; normalisierte Dubletten zurückweisen; falsche DONE-Hashes/fehlende oder abweichende Manifest-/Berichtsfassungen und jeder offene aktive Check/Menschenbeitrag/Paketstatus isoliert zurückweisen. Ein reguläres synthetisches Protokoll darf nur formal bestehen. Aktueller RUNNING-Zustand bleibt lesbar und `make all` BLOCKIERT. Acht eigene Tests ersetzen die unabhängigen Gegenfälle nicht.
+
+UI-Abnahme verlangt zwei sichtbare korrekte Lizenzsätze, keine ungewollte Layout-/Funktionsänderung, und einen tatsächlich vollständig erfolgreichen aktuellen `pnpm check`. Die erneute Reflowprüfung ist nur Reflow/Pixeldichte. Echter 200-%-Zoom ist weiterhin NICHT_GEPRÜFT beziehungsweise in der aktuellen nativen Werkzeugkontrolle BLOCKIERT, nachdem zwei korrigierte Tastaturversuche keinen messbaren Zoomwechsel erzeugten. Dies blockiert die vollständige Handbuch-/Websitefreigabe, aber nicht die Dokumentation der bestandenen engeren Reparaturkontrollen.
+
+Keine Umdeutung dieses Pakets als empirische Datenanalyse, Freigabe des vollständigen Projekts, Sandbox oder methodischer Gütenachweis. Originalreports und frühere fehlgeschlagene Läufe bleiben unverändert. Annahmen und Nachprüfergebnisse werden mit konkreten Finding-IDs verbunden. Es folgt keine automatische Veröffentlichung oder Zusammenführung.

@@ -1,0 +1,43 @@
+$ pnpm format:check && pnpm check:handbuch && pnpm typecheck && pnpm test && pnpm build
+$ prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+$ node scripts/check-handbuch.mjs
+Handbuch-Prüfung bestanden: 9 Gemälde, 23 Quelldateien, Seitentitel.
+$ pnpm --filter politikprofil typecheck
+$ ngc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.spec.json
+$ pnpm --filter politikprofil test --watch=false
+$ ng test --watch=false
+❯ Building...
+✔ Building...
+Application bundle generation complete. [1.065 seconds] - 2026-10-03T02:34:57.778Z
+
+
+ RUN  v5.0.3 /home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003/web
+
+
+ Test Files  2 passed (2)
+      Tests  9 passed (9)
+   Start at  04:34:57
+   Duration  834ms (environment 51%, tests 20%, setup 18%, transform 6%, import 5%, worker 1%)
+
+$ pnpm --filter politikprofil build
+$ ng build
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main-7SUCUQE6.js    | main          | 237.41 kB |                65.00 kB
+styles-7PIYTCFP.css | styles        |   6.32 kB |                 1.91 kB
+
+                    | Initial total | 243.74 kB |                66.90 kB
+
+Lazy chunk files    | Names         |  Raw size | Estimated transfer size
+chunk-Dpt3G32X.js   | home          |  14.34 kB |                 4.80 kB
+chunk-KqlrM_oG.js   | project       |   9.68 kB |                 3.53 kB
+chunk-Dck9BfEY.js   | -             |   6.14 kB |                 2.45 kB
+chunk-BD1OsX87.js   | not-found     |   1.10 kB |               614 bytes
+
+Application bundle generation complete. [1.372 seconds] - 2026-10-03T02:35:01.083Z
+
+Output location: /home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003/web/dist/politikprofil
+

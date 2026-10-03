@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T02:40:12.533795+00:00",
+  "updatedAtUtc": "2026-10-03T02:27:38.069401+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
@@ -68,16 +68,14 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "BESTANDEN",
-    "currentIndependentIntegration": "NICHT_GEPRÜFT",
+    "currentLocalTechnical": "NICHT_BESTANDEN",
+    "currentIndependentIntegration": "NICHT_BESTANDEN",
     "empiricalValidation": "NICHT_GEPRÜFT",
     "otherModelFamily": "BLOCKIERT",
     "currentBrowserPlaceholderPages": "BESTANDEN",
-    "currentHandbookGuard": "BESTANDEN",
+    "currentHandbookGuard": "NICHT_BESTANDEN",
     "foundationFiveReviewers": "NICHT_GEPRÜFT",
-    "currentInfrastructure": "NICHT_GEPRÜFT",
-    "actual200PercentBrowserZoom": "BLOCKIERT",
-    "fullHandbookWebsiteAcceptance": "NICHT_GEPRÜFT"
+    "currentInfrastructure": "NICHT_BESTANDEN"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -89,17 +87,7 @@
     "reports/loop/reviews/FOUNDATION-001-sources.md",
     "reports/loop/reviews/FOUNDATION-001-politics.md"
   ],
-  "blockingFindingIds": [
-    "R2-F03",
-    "R3-F01",
-    "R3-F02",
-    "R3-F04",
-    "R5-F03",
-    "L000-G01",
-    "L000-G02",
-    "L000-G03",
-    "L000-G04"
-  ],
+  "blockingFindingIds": ["R2-F03", "R3-F01", "R3-F02", "R3-F04", "R5-F03"],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
@@ -127,10 +115,7 @@
         "reports/loop/000-main-integration.json",
         "docs/auftrag-life-93-2026-10-03.md",
         "docs/arbeitsloop.md"
-      ],
-      "manifest": "reports/loop/packages/LOOP-000/v3/manifest.json",
-      "manifestSha256": "82549de387004b65ddb1bb2cce2b51e95c5c0092ffc70512f819451d22ada467",
-      "repairStatus": "G01–04/B01–05 round1 implemented, own eight tests/full check/browser rerun, independent v3 rechecks pending; actual zoom remains blocked"
+      ]
     },
     {
       "id": "LOOP-001",
@@ -149,17 +134,9 @@
       "manifest": "reports/loop/packages/FOUNDATION-001/v1/manifest.json",
       "manifestSha256": "213eec2fba90ae60594323f1e52c39ed77d49af4656f3eea481c6300ecc0c5bb",
       "reviewWaves": "sources/politics completed; methods/neutrality/repro running; synthesis and new juror afterwards"
-    },
-    {
-      "id": "PREP-001",
-      "status": "RUNNING",
-      "predefinedCriteria": "reports/loop/preparation-pruefauftrag.md",
-      "manifest": "reports/loop/packages/PREP-001/v1/manifest.json",
-      "manifestSha256": "152785d06f322a1e95b6503b9b78ed2ff768373852899f4f027ab7f2c6add66a",
-      "reviewStatus": "Two independent draft reviews pending slots; no human or Claude scientific execution"
     }
   ],
-  "nextConcreteStep": "Drei FOUNDATION-Erstberichte abschließen lassen, dann vollständige fünf Berichte zusammenführen. Parallel v3-/PREP-Nachprüfer in freien Slots starten. Keine Forschungseingaben vor Abschluss aller fünf verändern.",
+  "nextConcreteStep": "Beide LOOP-000-v2-Berichte vollständig gelesen: G01–04 und B01–05 entscheiden, Infrastruktur/Text/Prüfwortlaut gezielt korrigieren; Forschungsgrundlage bis Abschluss aller fünf FOUNDATION-Erstberichte unverändert.",
   "checkpoint": {
     "lastLocalCommit": "349046f21679a3b3b2ee1b3e00c2aa1c406e90ad",
     "lastVerifiedRemoteCommit": "349046f21679a3b3b2ee1b3e00c2aa1c406e90ad",
@@ -173,14 +150,7 @@
   "technicalRecord": "reports/loop/000-technical.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
-    "reports/loop/technical-v2/web-check.json",
-    "reports/loop/technical-v3/loop-tests.json",
-    "reports/loop/technical-v3/status.json",
-    "reports/loop/technical-v3/all.json",
-    "reports/loop/technical-v3/web-check.json",
-    "reports/loop/technical-v3/web-check-2.json",
-    "reports/loop/technical-v3/browser.json",
-    "reports/loop/technical-v3/native-text-and-zoom.json"
+    "reports/loop/technical-v2/web-check.json"
   ],
   "independentPreparations": [
     {

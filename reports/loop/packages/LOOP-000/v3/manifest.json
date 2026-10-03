@@ -1,0 +1,141 @@
+{
+  "id": "LOOP-000",
+  "version": 3,
+  "codeCommit": "349046f21679a3b3b2ee1b3e00c2aa1c406e90ad",
+  "overrideRule": "Frozen files override listed code paths; other code remains named commit",
+  "previousManifest": "reports/loop/packages/LOOP-000/v2/manifest.json",
+  "previousManifestSha256": "9ae58f200b4f559b951b95e90c713d6879284e1f31d572e0d9e17bbf9ff0ba00",
+  "analysisPlanVersion": "0.2, unchanged research input",
+  "sourceDataVersion": "ESS11 integrated4.2 candidate, no answers accessed",
+  "modelConfiguration": null,
+  "rawDataSha256MetadataOnly": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+  "acceptanceScope": "Infrastructure corrections and UI wording, no complete handbook approval; actual native zoom BLOCKIERT",
+  "frozenAtUtc": "2026-10-03T02:37:54.425011+00:00",
+  "files": {
+    "reports/loop/LOOP-000-v3-pruefauftrag.md": {
+      "sha256": "5647e6b302ca708a112f41c765e36e5e023178aa4ef3a0f8ccc4d91f9a6eefc4",
+      "bytes": 2289
+    },
+    "reports/loop/LOOP-000-entscheidungen.md": {
+      "sha256": "940a0b804296e6894c698810961a4f2bd054e5b0c15697e925f81fac741027ac",
+      "bytes": 10379
+    },
+    "reports/loop/reviews/LOOP-000-v2-regeln-infrastruktur.md": {
+      "sha256": "d0299fddd8c9250bdd0ddb296b0464639e2bb95823dacfb6d3649481753e7cab",
+      "bytes": 32196
+    },
+    "reports/loop/reviews/LOOP-000-v2-browser-infrastruktur.md": {
+      "sha256": "c139e48ee76db33ef39b4cb0af5439d1a00347a007e031f8bf39dbdfe197b538",
+      "bytes": 31396
+    },
+    "pipeline/loop.py": {
+      "sha256": "34d73c5fe9637cc275789ec11ed3508cdfc953ef2527c379c3150f39d8304fb0",
+      "bytes": 10560
+    },
+    "pipeline/tests/test_loop.py": {
+      "sha256": "b74dc4b2477884bd49de5a478eb0bc96a4a859e9bb1f41fb7b1e26d14aaeaea5",
+      "bytes": 9922
+    },
+    "Makefile": {
+      "sha256": "88981f3092bf9d6a9a0c0042f092250acc0ac7b34f4701355492776ed58d3f30",
+      "bytes": 184
+    },
+    "scripts/check-browser.mjs": {
+      "sha256": "ca46ebe7e23404972f6dcff9d3fe2b96c9335095a8919620e6ff90c7b65b3538",
+      "bytes": 6939
+    },
+    "scripts/check-handbuch.mjs": {
+      "sha256": "0539a25f70c8f096b0e0a333929643a62bace767445200dee166ccacfdc97ce7",
+      "bytes": 6867
+    },
+    "web/src/app/pages/home/home.html": {
+      "sha256": "9d3852319eb989235dbddf50c446df68a1c15b1feb46c95a8fdd0810bceb173f",
+      "bytes": 5131
+    },
+    "web/src/app/pages/project/project.html": {
+      "sha256": "4038da9be2027e08f90f96e3bd2ba58dd274d3f4c7765448aedd22ef5fc7473a",
+      "bytes": 8133
+    },
+    "web/src/app/pages/project/project.ts": {
+      "sha256": "d303afcc8f15a92703ebbaa9b4f898fb0c5e0d1ffd98becad6f48d3cac3deda1",
+      "bytes": 1753
+    },
+    "docs/handbuch.md": {
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a",
+      "bytes": 36004
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "reports/loop/state.json": {
+      "sha256": "66bc758b8bad673b3491fb79e44ab75ef74b3b4888828613f748cad59770fa4d",
+      "bytes": 7395
+    },
+    "reports/loop/findings.json": {
+      "sha256": "2f6bc7b38a1e541e44db69722d3306cf3688ba70d1d449c5e507b25eb5763a10",
+      "bytes": 32103
+    },
+    "reports/loop/technical-v3/all.json": {
+      "sha256": "7df00baa06ace9e95ba80651eff314544dc73c51a626cff4cf88fe72c1bbfaaa",
+      "bytes": 520
+    },
+    "reports/loop/technical-v3/all.log": {
+      "sha256": "c5af200b63cabfa66bd9c52a0e86e6a0559f17d637330ccb3c32c29557a5beb5",
+      "bytes": 2200
+    },
+    "reports/loop/technical-v3/browser.json": {
+      "sha256": "1318b03834d862596166d3ea8a12e84dbf52bf86a77146615fc665b4d93acb2b",
+      "bytes": 508
+    },
+    "reports/loop/technical-v3/browser.log": {
+      "sha256": "92e30c4bc7b080f69d48a697459360f50e39d2c5c40b19a4dfc9828308039175",
+      "bytes": 633
+    },
+    "reports/loop/technical-v3/inputs.json": {
+      "sha256": "baf715ae11078ed64456b8c95d76b4f9dfd0bb84658c86012d09c269f13845b9",
+      "bytes": 1120
+    },
+    "reports/loop/technical-v3/loop-tests.json": {
+      "sha256": "2bbef20a944bc8ebc2a799ded592019442b0a17f8523d8149b1bb46cec05c24b",
+      "bytes": 582
+    },
+    "reports/loop/technical-v3/loop-tests.log": {
+      "sha256": "38966da702652868df7f92547157ce4dcb1f26a59110dae0480e973f553c717e",
+      "bytes": 1388
+    },
+    "reports/loop/technical-v3/native-text-and-zoom.json": {
+      "sha256": "284ac00a6bb1b045d74c1a88e995a4026267c28d1cd12d4f4c3c04eba373309e",
+      "bytes": 1391
+    },
+    "reports/loop/technical-v3/status.json": {
+      "sha256": "7c7264508c831e3646ec408ef86cb4ad9b9c01c47f257612f236e494234290eb",
+      "bytes": 548
+    },
+    "reports/loop/technical-v3/status.log": {
+      "sha256": "639c812ff95fb11b1c53a54c364ff0604532bf9baa7c20c6faa86d712543333e",
+      "bytes": 2000
+    },
+    "reports/loop/technical-v3/web-check-2.json": {
+      "sha256": "4dbca4c8cf1e0abdbd80582a036107695870bfad72be8cad8ffd12592a8eccaf",
+      "bytes": 511
+    },
+    "reports/loop/technical-v3/web-check-2.log": {
+      "sha256": "587de56367e5b7c51b59e75fd48d93979e6b8891e493230b26749c77b42ba389",
+      "bytes": 1788
+    },
+    "reports/loop/technical-v3/web-check.json": {
+      "sha256": "a11754c8f168b00942149862cb41841f7923721eb723304ef01df1c08617c49d",
+      "bytes": 534
+    },
+    "reports/loop/technical-v3/web-check.log": {
+      "sha256": "165aa4aaa83ec2f6dd11f851a3071faa069b95696ceae8873951fa6cde0a8871",
+      "bytes": 437
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

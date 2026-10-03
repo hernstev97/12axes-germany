@@ -1,0 +1,9 @@
+$ pnpm format:check && pnpm check:handbuch && pnpm typecheck && pnpm test && pnpm build
+$ prettier --check .
+Checking formatting...
+[warn] reports/loop/technical-v3/all.json
+[warn] reports/loop/technical-v3/loop-tests.json
+[warn] reports/loop/technical-v3/status.json
+[warn] Code style issues found in 3 files. Run Prettier with --write to fix.
+[ELIFECYCLE] Command failed with exit code 1.
+[ELIFECYCLE] Command failed with exit code 1.

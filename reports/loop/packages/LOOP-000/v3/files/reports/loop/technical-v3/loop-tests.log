@@ -1,0 +1,13 @@
+test_done_rejects_each_open_requirement_with_otherwise_bound_evidence (test_loop.LoopSafetyTests.test_done_rejects_each_open_requirement_with_otherwise_bound_evidence) ... ok
+test_done_rejects_fabricated_missing_mismatched_or_tampered_evidence (test_loop.LoopSafetyTests.test_done_rejects_fabricated_missing_mismatched_or_tampered_evidence) ... ok
+test_done_with_missing_prerequisite_or_finding_is_rejected (test_loop.LoopSafetyTests.test_done_with_missing_prerequisite_or_finding_is_rejected) ... ok
+test_internal_file_and_directory_aliases_are_rejected_before_output (test_loop.LoopSafetyTests.test_internal_file_and_directory_aliases_are_rejected_before_output) ... ok
+test_normalized_duplicates_and_empty_archives_are_rejected (test_loop.LoopSafetyTests.test_normalized_duplicates_and_empty_archives_are_rejected) ... ok
+test_output_anchor_and_archive_aliases_are_rejected (test_loop.LoopSafetyTests.test_output_anchor_and_archive_aliases_are_rejected) ... ok
+test_raw_secret_and_external_symlink_cannot_be_frozen (test_loop.LoopSafetyTests.test_raw_secret_and_external_symlink_cannot_be_frozen) ... ok
+test_snapshot_keeps_source_changes_separate_and_detects_archive_tampering (test_loop.LoopSafetyTests.test_snapshot_keeps_source_changes_separate_and_detects_archive_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.197s
+
+OK

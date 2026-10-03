@@ -1,0 +1,33 @@
+{
+  "paths": [
+    "reports/loop/preparation-pruefauftrag.md",
+    "reports/loop/issue-2026-10-03.md",
+    "AGENTS.md",
+    "docs/auftrag-life-93-2026-10-03.md",
+    "docs/handbuch.md",
+    "docs/verstaendnistest.entwurf.md",
+    ".claude/skills/life93-review/SKILL.md",
+    ".claude/skills/life93-review/references/urteil-schema.json",
+    "docs/reviews/setup-vorbereitung.md",
+    "reports/loop/LOOP-003-design-metadaten.json",
+    "reports/loop/setup-access.json",
+    "reports/loop/claude-access.json"
+  ],
+  "metadata": {
+    "id": "PREP-001",
+    "version": 1,
+    "codeCommit": "349046f21679a3b3b2ee1b3e00c2aa1c406e90ad",
+    "overrideRule": "Frozen listed files are authoritative",
+    "modelConfiguration": null,
+    "sourceInputs": [
+      {
+        "path": "outputs/loop/design/portal-capture.json",
+        "sha256": "c67d91f51575396a8ac28f0b587da5c56693fc6723c86187f88c9da9e56c1f38",
+        "bytes": 6678,
+        "sourceUrl": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+        "scope": "Public Germany Country Documentation/Sampling and Universe; no answer data"
+      }
+    ],
+    "scope": "Preparations only, no human/Claude/GitHub/research-phase acceptance"
+  }
+}

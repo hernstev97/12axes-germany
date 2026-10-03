@@ -1,0 +1,11 @@
+{
+  "command": ["pnpm", "check:browser", "--", "http://127.0.0.1:4313"],
+  "startUtc": "2026-10-03T02:34:24.858512+00:00",
+  "endUtc": "2026-10-03T02:35:43.879749+00:00",
+  "exitCode": 0,
+  "inputsUnchanged": true,
+  "log": "reports/loop/technical-v3/browser.log",
+  "logSha256": "92e30c4bc7b080f69d48a697459360f50e39d2c5c40b19a4dfc9828308039175",
+  "scope": "Bestehender Reflow-/axe-/Bedienungs-/Network-/Storage-Test, kein echter 200-Prozent-Browserzoom oder Ergebnisberechnung",
+  "status": "BESTANDEN"
+}

@@ -1,0 +1,29 @@
+{
+  "startedAtUtc": "2026-10-03T01:17:46.295529+00:00",
+  "endedAtUtc": "2026-10-03T01:17:48.220996+00:00",
+  "command": [
+    "claude",
+    "--restricted",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--permission-mode",
+    "plan",
+    "--permission-prompts",
+    "none",
+    "--no-session-persistence",
+    "--model",
+    "opus",
+    "--output-format",
+    "json",
+    "-p",
+    "Technischer Zugriffstest, keine Forschungsprüfung. Antworte ausschließlich: ZUGRIFF_VERFUEGBAR"
+  ],
+  "exitCode": 1,
+  "isError": true,
+  "result": "You've hit your session limit · resets 6:10am (Europe/Berlin)",
+  "modelUsageIds": [],
+  "durationMs": 1011,
+  "permissionDenialsCount": 0,
+  "scope": "Zugriffstest vorhandener Claude-Anmeldung, keine methodische Prüfung, Tools vollständig entfernt; keine Einrichtung oder Sicherheitsumgehung."
+}

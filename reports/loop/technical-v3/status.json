@@ -1,0 +1,13 @@
+{
+  "command": ["python", "pipeline/loop.py", "status"],
+  "startUtc": "2026-10-03T02:34:07.937474+00:00",
+  "endUtc": "2026-10-03T02:34:07.980387+00:00",
+  "exitCode": 0,
+  "expectedExitCode": 0,
+  "status": "BESTANDEN",
+  "inputsUnchanged": true,
+  "log": "reports/loop/technical-v3/status.log",
+  "logSha256": "639c812ff95fb11b1c53a54c364ff0604532bf9baa7c20c6faa86d712543333e",
+  "inputManifest": "reports/loop/technical-v3/inputs.json",
+  "scope": "Aktuelle Infrastruktur und unveränderte Informationswebsite, keine empirische Testfunktion"
+}

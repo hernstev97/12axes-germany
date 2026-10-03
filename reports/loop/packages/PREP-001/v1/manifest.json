@@ -1,0 +1,68 @@
+{
+  "id": "PREP-001",
+  "version": 1,
+  "codeCommit": "349046f21679a3b3b2ee1b3e00c2aa1c406e90ad",
+  "overrideRule": "Frozen listed files are authoritative",
+  "modelConfiguration": null,
+  "sourceInputs": [
+    {
+      "path": "outputs/loop/design/portal-capture.json",
+      "sha256": "c67d91f51575396a8ac28f0b587da5c56693fc6723c86187f88c9da9e56c1f38",
+      "bytes": 6678,
+      "sourceUrl": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+      "scope": "Public Germany Country Documentation/Sampling and Universe; no answer data"
+    }
+  ],
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten",
+  "frozenAtUtc": "2026-10-03T02:39:22.349420+00:00",
+  "files": {
+    "reports/loop/preparation-pruefauftrag.md": {
+      "sha256": "c16e9841cb7c002358a1c522b1b54edc33b8c5a88ff42feeb6f174c3c5b8895b",
+      "bytes": 2870
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "docs/handbuch.md": {
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a",
+      "bytes": 36004
+    },
+    "docs/verstaendnistest.entwurf.md": {
+      "sha256": "118f2c08fc1581f8e7e02dbcffc0fdd14587667d8b866e90196a57a13858f2fe",
+      "bytes": 5737
+    },
+    ".claude/skills/life93-review/SKILL.md": {
+      "sha256": "a7b26a52ffaf7945f6fdbf9d20206d92aab72802b4e36da522677ac061a6c935",
+      "bytes": 5071
+    },
+    ".claude/skills/life93-review/references/urteil-schema.json": {
+      "sha256": "b11e99c5f0fedf8d126ef953950328edcb6415247060c1471882416b32703fd1",
+      "bytes": 3197
+    },
+    "docs/reviews/setup-vorbereitung.md": {
+      "sha256": "c579a248c090aa9188c4624a455176cf00173987f6de28725d507f4cdc923171",
+      "bytes": 3805
+    },
+    "reports/loop/LOOP-003-design-metadaten.json": {
+      "sha256": "ee56ce023b1fe4ca605b6e1d9e07e2da76fee1ce9595e5b5f516e4d6184eb618",
+      "bytes": 2219
+    },
+    "reports/loop/setup-access.json": {
+      "sha256": "5d60abd9b96ec8c4032100774a773f0cdc937c887496d99edb35e1aaba60227a",
+      "bytes": 939
+    },
+    "reports/loop/claude-access.json": {
+      "sha256": "f05261982e93d6286a2ab653cb9cfbe0e0f75edecdb14971a83bc78c0a9e2d46",
+      "bytes": 845
+    }
+  }
+}

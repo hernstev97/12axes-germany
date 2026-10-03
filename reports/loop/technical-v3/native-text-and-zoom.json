@@ -1,0 +1,38 @@
+{
+  "status": "BESTANDEN",
+  "scope": "Tatsächlich ausgelesene Lizenzsätze auf beiden Informationsseiten; kein vollständiger Browseraudit",
+  "tabId": "tab_b",
+  "home": {
+    "dpr": 1,
+    "height": 876,
+    "license": "Code, Analyseplan, Entscheidungsprotokoll, KI-Reviews und zusammengefasste Ergebnisse aus den ESS-Daten sollen öffentlich auf GitHub liegen. Die ESS-Rohdaten veröffentlicht das Projekt nicht. Es verweist auf das ESS-Portal.",
+    "overflow": -15,
+    "scale": 1,
+    "url": "http://127.0.0.1:4313/",
+    "width": 1402
+  },
+  "project": {
+    "dpr": 1,
+    "height": 876,
+    "license": "Code, Analyseplan, Entscheidungsprotokoll, KI-Reviews und zusammengefasste Ergebnisse aus den ESS-Daten sollen öffentlich auf GitHub liegen. Die ESS-Rohdaten veröffentlicht das Projekt nicht. Es verweist auf das ESS-Portal.",
+    "overflow": -15,
+    "storage": {
+      "local": 0,
+      "session": 0
+    },
+    "url": "http://127.0.0.1:4313/projekt",
+    "width": 1402
+  },
+  "actualBrowserZoom": {
+    "status": "BLOCKIERT",
+    "reason": "Control+= und korrigiertes Control++ ohne beobachtbare Änderung von CSS-Viewport, DPR oder visualViewport. Kein echter 200-Prozent-Zoom; keine CSS-Zoomersatzprüfung.",
+    "after": {
+      "dpr": 1,
+      "height": 876,
+      "overflow": -15,
+      "scale": 1,
+      "url": "http://127.0.0.1:4313/",
+      "width": 1402
+    }
+  }
+}

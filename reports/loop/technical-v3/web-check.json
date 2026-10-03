@@ -1,0 +1,13 @@
+{
+  "command": ["pnpm", "check"],
+  "startUtc": "2026-10-03T02:34:08.024248+00:00",
+  "endUtc": "2026-10-03T02:34:10.192768+00:00",
+  "exitCode": 1,
+  "expectedExitCode": 0,
+  "status": "NICHT_BESTANDEN",
+  "inputsUnchanged": true,
+  "log": "reports/loop/technical-v3/web-check.log",
+  "logSha256": "165aa4aaa83ec2f6dd11f851a3071faa069b95696ceae8873951fa6cde0a8871",
+  "inputManifest": "reports/loop/technical-v3/inputs.json",
+  "scope": "Aktuelle Infrastruktur und unveränderte Informationswebsite, keine empirische Testfunktion"
+}

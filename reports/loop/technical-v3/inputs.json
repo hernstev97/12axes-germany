@@ -1,0 +1,15 @@
+{
+  "scope": "Aktuelle Infrastruktur und unveränderte Informationswebsite, keine empirische Testfunktion",
+  "files": {
+    "pipeline/loop.py": "34d73c5fe9637cc275789ec11ed3508cdfc953ef2527c379c3150f39d8304fb0",
+    "pipeline/tests/test_loop.py": "b74dc4b2477884bd49de5a478eb0bc96a4a859e9bb1f41fb7b1e26d14aaeaea5",
+    "Makefile": "88981f3092bf9d6a9a0c0042f092250acc0ac7b34f4701355492776ed58d3f30",
+    "scripts/check-browser.mjs": "ca46ebe7e23404972f6dcff9d3fe2b96c9335095a8919620e6ff90c7b65b3538",
+    "scripts/check-handbuch.mjs": "0539a25f70c8f096b0e0a333929643a62bace767445200dee166ccacfdc97ce7",
+    "web/src/app/pages/home/home.html": "9d3852319eb989235dbddf50c446df68a1c15b1feb46c95a8fdd0810bceb173f",
+    "web/src/app/pages/project/project.html": "4038da9be2027e08f90f96e3bd2ba58dd274d3f4c7765448aedd22ef5fc7473a",
+    "web/src/app/pages/project/project.ts": "d303afcc8f15a92703ebbaa9b4f898fb0c5e0d1ffd98becad6f48d3cac3deda1",
+    "package.json": "250f1cf80c2717556600a8014fc947d1dd40bfae2409a11b501a45212d311a97",
+    "pnpm-lock.yaml": "03b59df0485e8c0d463bb8090727372d578fa6c2c6553169af3a3a0748815cfd"
+  }
+}
