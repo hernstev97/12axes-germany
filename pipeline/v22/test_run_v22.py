@@ -21,20 +21,24 @@ def write_study(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
-def synthetic(tmp: Path, *, extra_code: str | None = None):
+def synthetic(tmp: Path, *, extra_code: str | None = None, vote_code: str | None = None):
     rng = random.Random(7)
     rows = []
     for i in range(400):
         stratum = i % 20
         rows.append(dict(cntry='DE', essround='9', edition='3.3', idno=str(i),
                          pspwght=f'{rng.uniform(0.5, 2):.6f}', dweight=f'{rng.uniform(0.5, 2):.6f}',
+                         anweight=f'{rng.uniform(0.5, 2):.6f}',
                          psu=f'{stratum}-{i % 3}', stratum=str(stratum),
                          old=str(rng.choice([1, 2, 3, 4, 5, 8])), new=str(rng.choice([1, 2, 3, 4])),
                          rare=str(1 if i < 3 else 2), vote='1' if i % 2 else '2',
                          party='1' if i % 4 == 1 else ('2' if i % 4 == 3 else '66')))
+    rows[8]['party'] = '1'  # vote = 2 with a valid party code: counted as inconsistency
     rows.append(dict(rows[0], cntry='FR', idno='x'))
     if extra_code:
         rows[5]['new'] = extra_code
+    if vote_code:
+        rows[6]['vote'] = vote_code
     write_study(tmp / 'study.csv', rows)
     contract = dict(studies=[dict(
         study_id='ESS9e03_3', input=dict(path=str(tmp / 'study.csv'), sha256='unused'),
@@ -48,7 +52,11 @@ def synthetic(tmp: Path, *, extra_code: str | None = None):
         ]))])
     groups = dict(studies=[dict(
         studyId='ESS9e03_3', columns=dict(vote='vote', party2='party'),
-        nationalParty2Field=dict(validCodes=['1', '2']),
+        voteField=dict(validCodes=['1', '2', '3'],
+                       sourceMissingCodes=[dict(code=c) for c in ('7', '8', '9')]),
+        nationalParty2Field=dict(validCodes=['1', '2'],
+                                 sourceMissingCodes=[dict(code=c) for c in ('77', '88', '99')],
+                                 structurallyNotAskedCodes=[dict(code='66')]),
         groupsInDeclaredApiOrder=[dict(groupId='ESS9e03_3:second_vote:1', party2Code='1'),
                                   dict(groupId='ESS9e03_3:second_vote:2', party2Code='2')])])
     supplement = dict(items=[dict(
@@ -83,9 +91,22 @@ class RunV22(unittest.TestCase):
             self.assertIn('ESS9e03_3:old', group['pairs'])
 
     def test_unknown_codes_fail_the_study(self):
+        for kwargs in (dict(extra_code='9'), dict(extra_code='1\n'), dict(vote_code='999'),
+                       dict(vote_code='1 ')):
+            with tempfile.TemporaryDirectory() as directory:
+                with self.assertRaises(RunError, msg=str(kwargs)):
+                    run(*synthetic(Path(directory), **kwargs), verify_hashes=False)
+
+    def test_vote_party_accounting_and_inconsistency(self):
         with tempfile.TemporaryDirectory() as directory:
-            with self.assertRaises(RunError):
-                run(*synthetic(Path(directory), extra_code='9'), verify_hashes=False)
+            result = run(*synthetic(Path(directory)), verify_hashes=False)
+            accounting = result['studies']['ESS9e03_3']['eligibilityAccounting']
+            self.assertEqual(sum(accounting['voteStates'].values()), 400)
+            self.assertEqual(accounting['voteStates']['yes'], 200)
+            self.assertEqual(accounting['nonYesVoteWithValidParty'], 1)
+            self.assertEqual(result['studies']['ESS9e03_3']['groups']['ESS9e03_3:second_vote:1']
+                             ['groupSize'], 100)
+            self.assertIn('anweightRatioDiagnostic', result['studies']['ESS9e03_3'])
 
     def test_empty_domain_has_no_valid_answers(self):
         with tempfile.TemporaryDirectory() as directory:

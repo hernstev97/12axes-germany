@@ -82,4 +82,4 @@ Gesamtwerte, Themenwerte, Mittelwerte oder Summen über Fragen. Achsen, Karten, 
 
 ## Prüfung
 
-Die technischen Prüffälle T01–T30 aus R4 Abschnitt 5 sind als synthetische Tests in `profile-engine.spec.ts` umgesetzt. Ein weiterer Test prüft, dass jede Antwortkategorie jeder Frage einen Satz ohne verbotene Bezeichnungen und ohne direkte Anrede ergibt. Synthetische Antwortkombinationen sind keine empirischen Personen. Ob Menschen die Texte so verstehen wie beabsichtigt, kann nur der Verständnistest zeigen.
+Die technischen Prüffälle T01–T29 aus R4 Abschnitt 5 sind als synthetische Tests in `profile-engine.spec.ts` umgesetzt, dazu Tests für die Blöcke und Querbezüge aus Plan v2.2. T30 betrifft die Anzeige historischer Vergleiche und ist im Komponententest zu `cttresa` in `policy-draft.spec.ts` abgedeckt. Ein weiterer Test prüft, dass jede angebotene Antwortkategorie jeder Frage einen Satz ohne verbotene Bezeichnungen und ohne direkte Anrede ergibt. Synthetische Antwortkombinationen sind keine empirischen Personen. Ob Menschen die Texte so verstehen wie beabsichtigt, kann nur der Verständnistest zeigen.

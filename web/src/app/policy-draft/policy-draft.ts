@@ -111,16 +111,24 @@ export class PolicyDraft {
   protected readonly crossReferenceNote = CROSS_REFERENCE_NOTE;
   protected readonly uncoveredAreas = UNCOVERED_AREAS;
 
+  private readonly statementById = computed(
+    () =>
+      new Map(
+        this.profile()
+          .areas.flatMap((area) => area.statements)
+          .map((statement) => [statement.itemId, statement]),
+      ),
+  );
+  private readonly areaById = computed(
+    () => new Map(this.profile().areas.map((area) => [area.areaId, area])),
+  );
+
   protected statementFor(id: string) {
-    return (
-      this.profile()
-        .areas.flatMap((area) => area.statements)
-        .find((statement) => statement.itemId === id) ?? null
-    );
+    return this.statementById().get(id) ?? null;
   }
 
   protected areaProfile(id: string) {
-    return this.profile().areas.find((area) => area.areaId === id)!;
+    return this.areaById().get(id)!;
   }
 
   protected scopeFor(id: string) {

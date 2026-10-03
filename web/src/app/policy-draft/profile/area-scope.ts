@@ -46,9 +46,9 @@ export const AREA_SCOPES: readonly AreaScope[] = Object.freeze([
     id: 'europe',
     title: 'Europäische Integration',
     covered:
-      'Hypothetische Abstimmung über die Mitgliedschaft und nationale statt EU-Entscheidungen (ESS10), Richtung der Einigung (ESS11, 2023), EU-weites Sozialleistungsprogramm (ESS8, 2016/17).',
+      'Hypothetische Abstimmung über die Mitgliedschaft und nationale statt EU-Entscheidungen (ESS10), Richtung der Einigung (ESS11, 2023), ein EU-weites Sozialleistungsprogramm, das reichere Länder stärker finanzieren (ESS8, 2016/17).',
     notCovered:
-      'Gemeinsame Politikfelder wie Verteidigung und Migration, Euro, Erweiterung, Finanzsolidarität.',
+      'Gemeinsame Politikfelder wie Verteidigung und Migration, Euro, Erweiterung, Finanzsolidarität außerhalb dieses einen Programms.',
   },
   {
     id: 'climate_energy',
@@ -69,7 +69,7 @@ export const AREA_SCOPES: readonly AreaScope[] = Object.freeze([
     id: 'equality_family',
     title: 'Gleichstellungs- und Familienpolitik',
     covered:
-      'Vier gesetzliche oder betriebliche Gleichstellungsmittel (ESS11, 2023), Leistungen für erwerbstätige Eltern (ESS8), freie Lebensführung von Schwulen und Lesben und gleiches Adoptionsrecht (ESS10, 2021/22).',
+      'Vier gesetzliche oder betriebliche Gleichstellungsmittel (ESS11, 2023), Leistungen für erwerbstätige Eltern und Vorrang von Männern bei knappen Arbeitsplätzen (ESS8, 2016/17), freie Lebensführung von Schwulen und Lesben und gleiches Adoptionsrecht (ESS10, 2021/22).',
     notCovered:
       'Schwangerschaftsabbruch, Frauenquote in der Wirtschaft, geschlechtergerechte Sprache, Rechte von trans Personen.',
   },

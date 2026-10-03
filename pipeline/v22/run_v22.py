@@ -8,9 +8,12 @@ Computes, from the local ESS CSV files:
   complete design (ESS9, ESS10-SC, ESS11) and for ESS9 group pairs,
 - recomputed shares of the 43 v2 questions as a consistency check.
 
-Writes only data/local/v22/run.json (directory 0700, file 0600). Prints no
-rows, identifiers, single weights or counts. Refuses to run unless the tag
-`analyseplan-v2.2` exists, unless --synthetic is given for tests.
+Writes only data/local/v22/run.json (directory 0700, file 0600); the path is
+fixed. Prints no rows, identifiers, single weights or counts. The command line
+refuses to run unless the tag `analyseplan-v2.2` exists locally and on origin
+with the same target and the frozen plan, contract and software files in the
+working tree equal their tagged versions. `run()` itself is a library function
+used by the synthetic tests; it is not an access gate.
 """
 
 from __future__ import annotations
@@ -57,7 +60,7 @@ def sha256_file(path: Path) -> str:
 def code_of(raw: str):
     if raw == '':
         return 'blank', None
-    match = CANON.match(raw)
+    match = CANON.fullmatch(raw)
     return ('code', match.group(1)) if match else ('literal', None)
 
 
@@ -181,6 +184,48 @@ def reference(states, weights, design, categories, domain, with_interval):
     return result
 
 
+def field_state(raw: str, field: dict) -> str:
+    kind, code = code_of(raw)
+    if kind == 'blank':
+        return 'technical_export_blank'
+    if kind == 'literal':
+        raise RunError('unknown vote or party literal')
+    if code in field['validCodes']:
+        return 'valid'
+    if code in {m['code'] for m in field['sourceMissingCodes']}:
+        return 'source_missing'
+    if code in {m['code'] for m in field.get('structurallyNotAskedCodes', [])}:
+        return 'structurally_not_asked'
+    raise RunError('unknown vote or party code')
+
+
+def vote_party_states(rows, gs) -> tuple[list[str | None], dict]:
+    """Validates vote and second-vote fields for every German case (v2.1 contract).
+
+    Returns the party code per case where vote = 1 and the party code is valid, else None,
+    and a private accounting of vote states, party states and inconsistencies.
+    """
+    vote_field, party_field = gs['voteField'], gs['nationalParty2Field']
+    vote, party = gs['columns']['vote'], gs['columns']['party2']
+    vote_states, party_states = Counter(), Counter()
+    inconsistent = 0
+    party_of: list[str | None] = []
+    for row in rows:
+        v_state = field_state(row[vote], vote_field)
+        v_code = code_of(row[vote])[1]
+        if v_state == 'valid':
+            v_state = {'1': 'yes', '2': 'no', '3': 'not_eligible'}[v_code]
+        p_state = field_state(row[party], party_field)
+        p_code = code_of(row[party])[1]
+        vote_states[v_state] += 1
+        party_states[p_state] += 1
+        if p_state == 'valid' and v_state != 'yes':
+            inconsistent += 1
+        party_of.append(p_code if v_state == 'yes' and p_state == 'valid' else None)
+    return party_of, dict(voteStates=dict(vote_states), partyStates=dict(party_states),
+                          nonYesVoteWithValidParty=inconsistent)
+
+
 def run(contract_path: Path, group_contract_path: Path, supplement_path: Path,
         verify_hashes: bool = True) -> dict:
     contract = json.loads(contract_path.read_text())
@@ -199,7 +244,8 @@ def run(contract_path: Path, group_contract_path: Path, supplement_path: Path,
         if verify_hashes and sha256_file(path) != study['input']['sha256']:
             raise RunError('input hash mismatch')
         gs = groups.get(sid) if sid in GROUP_STUDIES else None
-        columns = ['cntry', 'essround', 'edition', 'idno', 'pspwght', 'dweight', 'psu', 'stratum']
+        columns = ['cntry', 'essround', 'edition', 'idno', 'pspwght', 'dweight', 'anweight', 'psu',
+                   'stratum']
         columns += [s['variable'] for s in specs[sid]]
         if gs:
             columns += [gs['columns']['vote'], gs['columns']['party2']]
@@ -214,12 +260,18 @@ def run(contract_path: Path, group_contract_path: Path, supplement_path: Path,
             raise RunError('edition mismatch') from error
         if len({r['idno'] for r in rows}) != len(rows):
             raise RunError('duplicate respondent identifiers')
-        weights = {w: [positive(r[w]) for r in rows] for w in ('pspwght', 'dweight')}
+        weights = {w: [positive(r[w]) for r in rows] for w in ('pspwght', 'dweight', 'anweight')}
+        ratios = [a / p for a, p in zip(weights['anweight'], weights['pspwght'])]
+        ratio_diagnostic = dict(
+            relativeSpread=(max(ratios) - min(ratios)) / min(ratios),
+            constantWithin1e12=all(abs(r - ratios[0]) <= 1e-12 or abs(r - ratios[0]) <= 1e-12 * ratios[0]
+                                   for r in ratios))
         has_design = all(r.get('psu', '') != '' and r.get('stratum', '') != '' for r in rows) \
             and 'psu' in rows[0]
         design = [(r['stratum'], r['psu']) for r in rows] if has_design else None
         everyone = [True] * len(rows)
-        study_out = dict(deRows=len(rows), designAvailable=has_design, items={}, groups={})
+        study_out = dict(deRows=len(rows), designAvailable=has_design, items={}, groups={},
+                         anweightRatioDiagnostic=ratio_diagnostic)
         for spec in specs[sid]:
             states = classify(rows, spec)
             study_out['items'][spec['id']] = dict(
@@ -228,7 +280,8 @@ def run(contract_path: Path, group_contract_path: Path, supplement_path: Path,
         if gs:
             valid_parties = set(gs['nationalParty2Field']['validCodes'])
             vote, party = gs['columns']['vote'], gs['columns']['party2']
-            party_of = [code_of(r[party])[1] if code_of(r[vote])[1] == '1' else None for r in rows]
+            party_of, accounting = vote_party_states(rows, gs)
+            study_out['eligibilityAccounting'] = accounting
             for group in gs['groupsInDeclaredApiOrder']:
                 code = group['party2Code']
                 if code not in valid_parties:
@@ -246,38 +299,66 @@ def run(contract_path: Path, group_contract_path: Path, supplement_path: Path,
     return output
 
 
-def plan_tag_present() -> bool:
-    result = subprocess.run(['git', 'rev-parse', '--verify', '--quiet', 'analyseplan-v2.2^{}'],
-                            cwd=ROOT, capture_output=True, text=True)
-    return result.returncode == 0
+PRIVATE_DIR = ROOT / 'data/local/v22'
+PRIVATE_RUN = PRIVATE_DIR / 'run.json'
+PLAN_TAG = 'analyseplan-v2.2'
+FROZEN_FILES = (
+    'docs/analyseplan-v2.2.md',
+    'data/politikprofil-v2.2.ergaenzung.json',
+    'data/analysevertrag.v2.entwurf.json',
+    'data/gruppenvertrag.v2.1.entwurf.json',
+    'pipeline/v22/survey.py',
+    'pipeline/v22/run_v22.py',
+)
+
+
+def git(*args: str) -> str:
+    return subprocess.run(['git', *args], cwd=ROOT, capture_output=True, check=True).stdout.decode()
+
+
+def gate() -> str:
+    """Positive gate: the tag exists locally and on origin with the same target, and every
+    frozen file in the working tree equals its version in the tag. Returns the tag commit."""
+    try:
+        local = git('rev-parse', f'{PLAN_TAG}^{{commit}}').strip()
+        remote = git('ls-remote', 'origin', f'refs/tags/{PLAN_TAG}^{{}}', f'refs/tags/{PLAN_TAG}')
+    except subprocess.CalledProcessError as error:
+        raise RunError('plan tag missing') from error
+    refs = dict(reversed(line.split('\t')) for line in remote.splitlines() if line)
+    remote_target = refs.get(f'refs/tags/{PLAN_TAG}^{{}}', refs.get(f'refs/tags/{PLAN_TAG}'))
+    if remote_target != local:
+        raise RunError('plan tag not published on origin with the same target')
+    for path in FROZEN_FILES:
+        frozen = subprocess.run(['git', 'show', f'{local}:{path}'], cwd=ROOT,
+                                capture_output=True, check=False).stdout
+        if frozen != (ROOT / path).read_bytes():
+            raise RunError('working tree differs from frozen plan files')
+    return local
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--out', default='data/local/v22/run.json')
-    args = parser.parse_args()
-    if not plan_tag_present():
-        print(json.dumps({'status': 'refused', 'reason': 'analyseplan-v2.2 tag missing'}))
-        return 1
-    out = ROOT / args.out
-    out.parent.mkdir(parents=True, exist_ok=True)
-    os.chmod(out.parent, 0o700)
-    if out.exists():
-        print(json.dumps({'status': 'refused', 'reason': 'existing private run'}))
-        return 1
+    argparse.ArgumentParser(description=__doc__).parse_args()
     try:
+        tag_commit = gate()
+        private_root = (ROOT / 'data/local').resolve()
+        if private_root != ROOT.resolve() / 'data/local' or PRIVATE_RUN.exists():
+            raise RunError('private output path unavailable or existing private run')
+        if PRIVATE_DIR.exists() and (PRIVATE_DIR.is_symlink() or PRIVATE_DIR.resolve() != private_root / 'v22'):
+            raise RunError('private output path unavailable or existing private run')
+        PRIVATE_DIR.mkdir(mode=0o700, parents=True, exist_ok=True)
         result = run(ROOT / 'data/analysevertrag.v2.entwurf.json',
                      ROOT / 'data/gruppenvertrag.v2.1.entwurf.json',
                      ROOT / 'data/politikprofil-v2.2.ergaenzung.json')
     except RunError as error:
-        print(json.dumps({'status': 'failed', 'reason': str(error)}))
+        print(json.dumps({'status': 'refused_or_failed', 'reason': str(error)}))
         return 1
+    result['planTagCommit'] = tag_commit
     text = json.dumps(result, ensure_ascii=False, indent=1, sort_keys=True)
-    fd = os.open(out, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+    fd = os.open(PRIVATE_RUN, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
     with os.fdopen(fd, 'w') as handle:
         handle.write(text)
-    print(json.dumps({'status': 'written', 'path': args.out,
-                      'sha256': hashlib.sha256(text.encode()).hexdigest()}))
+    print(json.dumps({'status': 'written', 'path': str(PRIVATE_RUN.relative_to(ROOT)),
+                      'sha256': hashlib.sha256(text.encode()).hexdigest(), 'planTagCommit': tag_commit}))
     return 0
 
 

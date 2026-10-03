@@ -329,9 +329,56 @@ describe('descriptive answer profile', () => {
     expect(allText(profile(strong))).not.toMatch(/Tendenz|Antwortstil/);
   });
 
-  it('every answerable category of every question yields a sentence without forbidden labels', () => {
+  it('T14: a cross-reference across answer formats lists answers without computing', () => {
+    const result = profile({ scchpldm: '1', wpestop: '0' });
+    const entry = result.crossReferences.find((cross) => cross.id === 'majority_will')!;
+    expect(entry.answers.map((answer) => answer.answer)).toEqual([
+      '0 von 10',
+      '„Die Regierung sollte ihre Pläne ändern und darauf reagieren, was die große Mehrheit der Bevölkerung denkt.“',
+    ]);
+    expect(entry.context).toContain('nicht verrechnen');
+  });
+
+  it('v2.2 blocks: energy sources are grouped by chosen amount in list order', () => {
+    const result = profile({ elgcoal: '5', elgnuc: '5', elgsun: '1', elgwind: '1', elgngas: '3' });
+    expect(block(result, 'electricity_sources')!.sentences).toEqual([
+      '„Eine sehr große Menge“: Sonnenenergie und Windkraft.',
+      '„Eine mittelgroße Menge“: Erdgas.',
+      '„Überhaupt nichts“: Kohle und Atom- bzw. Kernkraft.',
+    ]);
+    expect(statement(result, 'elgnuc')!.context).toContain('April 2023');
+    const same = profile({ elgcoal: '3', elgbio: '3' });
+    expect(block(same, 'electricity_sources')!.sentences).toEqual([
+      'Alle beantworteten Fragen dieses Blocks: „Eine mittelgroße Menge“.',
+    ]);
+  });
+
+  it('v2.2 blocks: asylum and same-sex couples list directions without labels', () => {
+    const result = profile({ gvrfgap: '1', rfgbfml: '4', freehms: '2', hmsacld: '3' });
+    expect(block(result, 'asylum')!.sentences).toEqual([
+      'Zustimmung: Großzügige Prüfung von Asylanträgen.',
+      'Ablehnung: Familiennachzug anerkannter Asylsuchender.',
+    ]);
+    expect(block(result, 'same_sex_couples')!.sentences).toEqual([
+      'Zustimmung: Freie Lebensführung von Schwulen und Lesben.',
+      'Weder Zustimmung noch Ablehnung: Gleiches Adoptionsrecht gleichgeschlechtlicher Paare.',
+    ]);
+    expect(allText(result)).not.toMatch(FORBIDDEN);
+  });
+
+  it('v2.2 cross-reference: social protection does not assume a means test', () => {
+    const result = profile({ sofrpr: '1', basinc: '4' });
+    const entry = result.crossReferences.find((cross) => cross.id === 'social_protection')!;
+    expect(entry.answers).toHaveLength(2);
+    expect(entry.context).toContain('ohne Bedürftigkeitsprüfung');
+    expect(statement(result, 'basinc')!.text).toBe(
+      'Für ein solches Grundeinkommen in Deutschland (gewählt: „Sehr dafür“).',
+    );
+  });
+
+  it('every offered category of every question yields a sentence without forbidden labels', () => {
     for (const item of POLICY_DRAFT_ITEMS) {
-      for (const category of item.categories) {
+      for (const category of item.offeredCategories) {
         const result = profile({ [item.variable]: category.code });
         const text = statement(result, item.variable)!.text;
         expect(text.length).toBeGreaterThan(10);

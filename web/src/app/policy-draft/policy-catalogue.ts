@@ -28,7 +28,7 @@ export interface PolicyDraftItem extends PublicItem {
   readonly study: PublicStudy;
   readonly title: string;
   readonly rubricTitle: string;
-  /** True for the 18 questions added by Analyseplan v2.2. */
+  /** True for the 19 questions added by Analyseplan v2.2. */
   readonly addedInV22: boolean;
   /** Categories shown as answer options; excludes categories not read out originally. */
   readonly offeredCategories: readonly PublicCategory[];
@@ -150,7 +150,7 @@ const V22_AFTER: Readonly<Record<string, readonly string[]>> = {
     'ESS8e02_3:elgbio',
   ],
   'ESS8e02_3:imsclbn': ['ESS8e02_3:gvrfgap', 'ESS8e02_3:rfgbfml'],
-  'ESS8e02_3:wrkprbf': ['ESS10SCe03_2:freehms', 'ESS10SCe03_2:hmsacld'],
+  'ESS8e02_3:wrkprbf': ['ESS8e02_3:mnrgtjb', 'ESS10SCe03_2:freehms', 'ESS10SCe03_2:hmsacld'],
 };
 const v22ById = new Map(PUBLIC_CATALOGUE_V22.items.map((item) => [item.id, item]));
 const merged: PolicyDraftItem[] = [];

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "status": "DRAFT_PENDING_PLAN_V22_REVIEW",
   "plan": "docs/analyseplan-v2.2.md",
-  "scope": "18 additional original ESS questions; wording and labels verified automatically against the cached German PDF text layer; no response data read.",
+  "scope": "19 additional original ESS questions; wording and labels verified automatically against the cached German PDF text layer; no response data read.",
   "sources": {
     "ess5-de-questionnaire": {
       "path": "outputs/loop/breadth-data-001/sources/ess5-de-questionnaire.pdf",
@@ -44,6 +44,10 @@
         "sha256": "9ed9a9739dfe64b2cd8ebf2cc4cec8960ce29179b25d2013e90ff0dac53a038a"
       }
     ]
+  },
+  "fileMetadata": {
+    "path": "outputs/loop/breadth-access-002/sources/ess10sc-file-metadata.json",
+    "sha256": "d9e6d606fb3b897d33d04f3247dbe5160d11f108a76fca6547a773e2c1ba0a57"
   },
   "attribution": "ESS ERIC / Sikt. Documentation CC BY-SA 4.0. Line breaks and line-end hyphenation normalised; bullet characters removed.",
   "items": [
@@ -1972,6 +1976,138 @@
         "Erhoben 2021/22 während der Coronavirus-Pandemie. Die Frage betrifft die Pandemiebekämpfung und deckt Digitalpolitik nicht ab."
       ],
       "boundOriginalForm": "PAPI"
+    },
+    {
+      "id": "ESS8e02_3:mnrgtjb",
+      "studyId": "ESS8e02_3",
+      "variable": "mnrgtjb",
+      "primaryTheme": "equality_family",
+      "originalQuestionId": "B33A",
+      "wordingDe": "Wenn Arbeitsplätze knapp sind, sollten Männer eher einen Anspruch auf einen Arbeitsplatz haben als Frauen.",
+      "introductionsDe": [
+        "Bitte schauen Sie jetzt auf Liste 13 und sagen Sie mir, wie sehr Sie jeder der folgenden Aussagen zustimmen oder wie sehr Sie diese ablehnen."
+      ],
+      "definitionDe": [],
+      "responseStemDe": null,
+      "situationDe": null,
+      "instructionDe": null,
+      "groupId": "job_rights_gender",
+      "originalOrderInGroup": 1,
+      "responseType": "ordered_agreement",
+      "responseContentType": "principle",
+      "categories": [
+        {
+          "code": "1",
+          "labelDe": "Stimme stark zu",
+          "labelEn": "Agree strongly",
+          "printedCodeDe": "1",
+          "isMissingApi": false,
+          "semanticRole": "substantive_response",
+          "offeredOnWebsite": true
+        },
+        {
+          "code": "2",
+          "labelDe": "Stimme zu",
+          "labelEn": "Agree",
+          "printedCodeDe": "2",
+          "isMissingApi": false,
+          "semanticRole": "substantive_response",
+          "offeredOnWebsite": true
+        },
+        {
+          "code": "3",
+          "labelDe": "Weder noch",
+          "labelEn": "Neither agree nor disagree",
+          "printedCodeDe": "3",
+          "isMissingApi": false,
+          "semanticRole": "substantive_response",
+          "offeredOnWebsite": true
+        },
+        {
+          "code": "4",
+          "labelDe": "Lehne ab",
+          "labelEn": "Disagree",
+          "printedCodeDe": "4",
+          "isMissingApi": false,
+          "semanticRole": "substantive_response",
+          "offeredOnWebsite": true
+        },
+        {
+          "code": "5",
+          "labelDe": "Lehne stark ab",
+          "labelEn": "Disagree strongly",
+          "printedCodeDe": "5",
+          "isMissingApi": false,
+          "semanticRole": "substantive_response",
+          "offeredOnWebsite": true
+        }
+      ],
+      "missingCodes": [
+        {
+          "code": "7",
+          "reasonApi": "Refusal",
+          "isMissingApi": true,
+          "printedCodeDe": null,
+          "labelDe": null
+        },
+        {
+          "code": "8",
+          "reasonApi": "Don't know",
+          "isMissingApi": true,
+          "printedCodeDe": null,
+          "labelDe": null
+        },
+        {
+          "code": "9",
+          "reasonApi": "No answer",
+          "isMissingApi": true,
+          "printedCodeDe": null,
+          "labelDe": null
+        }
+      ],
+      "notAskedCodes": [],
+      "apiValidCodeOrder": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "apiDeclaredCodeOrder": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "9"
+      ],
+      "sourceFieldId": "418694c6-c656-4ca7-943d-ffbe82c8f8ed",
+      "sourceFieldMetadataVersion": 1,
+      "dataFileMetadataId": "ffc43f48-e15a-4a1c-8813-47eda377c355",
+      "dataFileMetadataVersion": 98,
+      "apiVariableLabelEn": "Men should have more right to job than women when jobs are scarce",
+      "sourceRefs": [
+        {
+          "sourceId": "ess8-de-questionnaire",
+          "pdfPages": [
+            12
+          ],
+          "listLabelDe": null
+        },
+        {
+          "sourceId": "ess8-de-showcards",
+          "pdfPages": [
+            14
+          ],
+          "listLabelDe": "Liste 13"
+        }
+      ],
+      "contextNotes": [
+        "Im Originalblock stehen davor die Frage zu Einkommensunterschieden (B33) und danach die Fragen zu Schwulen und Lesben (B34–B36)."
+      ],
+      "boundOriginalForm": "CAPI"
     },
     {
       "id": "ESS10SCe03_2:freehms",

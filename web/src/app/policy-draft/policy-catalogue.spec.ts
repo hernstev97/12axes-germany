@@ -14,15 +14,15 @@ describe('Öffentliche Originalbindung des Angular-Entwurfs', () => {
     }
   });
 
-  it('enthält die gepinnten 43 v2-Fragen und 18 v2.2-Fragen mit 428 ausdrücklich gebundenen Optionen', () => {
+  it('enthält die gepinnten 43 v2-Fragen und 19 v2.2-Fragen mit 433 ausdrücklich gebundenen Optionen', () => {
     expect(PUBLIC_CATALOGUE.catalogueSha256).toBe(
       '5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4',
     );
-    expect(PUBLIC_CATALOGUE_V22.items).toHaveLength(18);
-    expect(POLICY_DRAFT_ITEMS).toHaveLength(61);
-    expect(POLICY_DRAFT_ITEMS.filter((item) => item.addedInV22)).toHaveLength(18);
-    expect(POLICY_DRAFT_ITEMS.reduce((count, item) => count + item.categories.length, 0)).toBe(428);
-    expect(new Set(POLICY_DRAFT_ITEMS.map((item) => item.id)).size).toBe(61);
+    expect(PUBLIC_CATALOGUE_V22.items).toHaveLength(19);
+    expect(POLICY_DRAFT_ITEMS).toHaveLength(62);
+    expect(POLICY_DRAFT_ITEMS.filter((item) => item.addedInV22)).toHaveLength(19);
+    expect(POLICY_DRAFT_ITEMS.reduce((count, item) => count + item.categories.length, 0)).toBe(433);
+    expect(new Set(POLICY_DRAFT_ITEMS.map((item) => item.id)).size).toBe(62);
     for (const item of POLICY_DRAFT_ITEMS) {
       expect(item.categories.map((category) => category.code)).toEqual(item.apiValidCodeOrder);
       expect(

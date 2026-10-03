@@ -158,11 +158,17 @@ export const CROSS_REFERENCE_RULES: readonly CrossReferenceRule[] = Object.freez
       'Alle drei Fragen betreffen Einkommensunterschiede. Sie fragen nach Verschiedenem: einem Merkmal einer gerechten Gesellschaft (ESS9), einem Auftrag an den Staat (ESS11) und der Wichtigkeit für Demokratie im Allgemeinen (ESS10).',
   },
   {
-    id: 'need_security',
-    title: 'Absicherung bei Armut und Bedarf',
-    itemIds: ['ESS9e03_3:sofrpr', 'ESS10SCe03_2:gvctzpv', 'ESS8e02_3:gvslvol', 'ESS8e02_3:gvslvue'],
+    id: 'social_protection',
+    title: 'Soziale Absicherung',
+    itemIds: [
+      'ESS9e03_3:sofrpr',
+      'ESS10SCe03_2:gvctzpv',
+      'ESS8e02_3:gvslvol',
+      'ESS8e02_3:gvslvue',
+      'ESS8e02_3:basinc',
+    ],
     context:
-      'Alle vier Fragen betreffen die Absicherung bedürftiger Menschen. Sie fragen nach einem Merkmal einer gerechten Gesellschaft ohne Gegenleistung (ESS9), nach der Wichtigkeit für Demokratie im Allgemeinen (ESS10) und nach staatlicher Verantwortung für bestimmte Gruppen (ESS8).',
+      'Die Fragen betreffen soziale Absicherung, aber verschiedene Gegenstände: die Sorge für Arme und Bedürftige als Merkmal einer gerechten Gesellschaft (ESS9), den Schutz aller vor Armut als Merkmal der Demokratie (ESS10), staatliche Verantwortung für den Lebensstandard im Alter und bei Arbeitslosigkeit ohne Bedürftigkeitsprüfung (ESS8) und ein Grundeinkommen für alle, das viele bestehende Leistungen ersetzen würde (ESS8).',
   },
   {
     id: 'majority_will',

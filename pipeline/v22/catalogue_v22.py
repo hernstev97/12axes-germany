@@ -34,6 +34,18 @@ METADATA = {
     'ESS10SCe03_2': ['outputs/claude/sources/ess10sc-candidates.json',
                      'outputs/claude/sources/ess10sc-candidates-2.json'],
 }
+ESS10SC_FILE_METADATA = 'outputs/loop/breadth-access-002/sources/ess10sc-file-metadata.json'
+EXPECTED_SHA256 = {
+    PDFS['ess5-de-questionnaire']: '24b5d2599e6d30dc02a6d835f5f80b5bcecf8f6014ee8f4670a703c25d3c3cbf',
+    PDFS['ess8-de-questionnaire']: '977475c18d2adebea6ccb7695f377fb6ed500ef087b077086305f9a2e4a7b239',
+    PDFS['ess8-de-showcards']: 'dde02b5336b2d960c2900a8fcf5e2a0f0d254b46dcce1d9ffb785a830e096bc0',
+    PDFS['ess10-de-questionnaire']: '158004a89b1821e5202e6faf3c2101eae5e56e794d7c3fdbc3dca1c9d67c8425',
+    'outputs/claude/sources/ess5-candidates.json': '4b0247142d37697b4193e3373a37174849bcc16552d9764e34a51169170795a8',
+    'outputs/claude/sources/ess8-candidates.json': '279f9c31b4236b71f4a820de7a2b519989ec796ad49ba4f2bde210c108d94168',
+    'outputs/claude/sources/ess10sc-candidates.json': '2a5927d1ec1d322b2a127ff0c2c35862cbae8fc1ae39767aee410ff910ef8394',
+    'outputs/claude/sources/ess10sc-candidates-2.json': '9ed9a9739dfe64b2cd8ebf2cc4cec8960ce29179b25d2013e90ff0dac53a038a',
+    ESS10SC_FILE_METADATA: 'd9e6d606fb3b897d33d04f3247dbe5160d11f108a76fca6547a773e2c1ba0a57',
+}
 FILE_METADATA = {
     'ESS5e03_6': ('0189b86b-8aa4-4be3-88ad-39c58b02f19f', 89),
     'ESS8e02_3': ('ffc43f48-e15a-4a1c-8813-47eda377c355', 98),
@@ -96,6 +108,7 @@ ITEMS = [
          wording='Bei der Prüfung von Asylanträgen sollte der Staat großzügig sein.',
          intro=ASYLUM_INTRO, stem=None, labels=AGREE,
          pages={'ess8-de-questionnaire': [25], 'ess8-de-showcards': [32]}, listLabel='Liste 31',
+         printedCodesUnreliable=True,
          notes=['Der Fragebogen druckt die Codes 0–5; Liste 31 hat fünf beschriftete Stufen. '
                 'Gebunden sind die Beschriftungen der Liste 31 und die API-Codes 1–5.']),
     dict(variable='rfgbfml', study='ESS8e02_3', area='migration', question='C44',
@@ -104,6 +117,7 @@ ITEMS = [
                  'engen Familienangehörigen nach Deutschland zu holen.',
          intro=ASYLUM_INTRO, stem=None, labels=AGREE,
          pages={'ess8-de-questionnaire': [25], 'ess8-de-showcards': [32]}, listLabel='Liste 31',
+         printedCodesUnreliable=True,
          notes=['Der Fragebogen druckt die Codes 0–5; Liste 31 hat fünf beschriftete Stufen. '
                 'Gebunden sind die Beschriftungen der Liste 31 und die API-Codes 1–5.',
                 'C43 (Wahrnehmung der Verfolgungsangst) liegt zwischen C42 und C44 und ist nicht '
@@ -178,6 +192,16 @@ ITEMS = [
          pages={'ess10-de-questionnaire': [2]}, listLabel=None,
          notes=['Erhoben 2021/22 während der Coronavirus-Pandemie. Die Frage betrifft die '
                 'Pandemiebekämpfung und deckt Digitalpolitik nicht ab.']),
+    dict(variable='mnrgtjb', study='ESS8e02_3', area='equality_family', question='B33A',
+         group='job_rights_gender', order=1, responseType='ordered_agreement', content='principle',
+         wording='Wenn Arbeitsplätze knapp sind, sollten Männer eher einen Anspruch auf einen '
+                 'Arbeitsplatz haben als Frauen.',
+         intro=['Bitte schauen Sie jetzt auf Liste 13 und sagen Sie mir, wie sehr Sie jeder der '
+                'folgenden Aussagen zustimmen oder wie sehr Sie diese ablehnen.'],
+         stem=None, labels=AGREE,
+         pages={'ess8-de-questionnaire': [12], 'ess8-de-showcards': [14]}, listLabel='Liste 13',
+         notes=['Im Originalblock stehen davor die Frage zu Einkommensunterschieden (B33) und '
+                'danach die Fragen zu Schwulen und Lesben (B34–B36).']),
     dict(variable='freehms', study='ESS10SCe03_2', area='equality_family', question='A47',
          group='same_sex_couples', order=1, responseType='ordered_agreement', content='principle',
          wording='Schwule und Lesben sollten ihr Leben so führen dürfen, wie sie es wollen.',
@@ -257,7 +281,7 @@ def api_fields(study: str) -> dict[str, dict]:
 def file_metadata(study: str) -> tuple[str, int]:
     if FILE_METADATA[study]:
         return FILE_METADATA[study]
-    data = json.loads((ROOT / f'{SRC.replace("breadth-data-001", "breadth-access-002")}/ess10sc-file-metadata.json').read_text())
+    data = json.loads((ROOT / ESS10SC_FILE_METADATA).read_text())
     meta = data['data']['search']['dataFileMetadata']
     return meta['id'], meta['version']
 
@@ -267,6 +291,9 @@ def sha256(path: str) -> str:
 
 
 def build() -> dict:
+    for path, expected in EXPECTED_SHA256.items():
+        if sha256(path) != expected:
+            raise SystemExit(f'pinned source changed: {path}')
     items = []
     for spec in ITEMS:
         study = spec['study']
@@ -288,16 +315,22 @@ def build() -> dict:
             label_source = texts.get('ess8-de-showcards', questionnaire)
             for label in spec['labels']:
                 verify(label, label_source, f'labels {spec["variable"]}')
-            labels = list(spec['labels']) + [label for _, label in spec.get('extraValid', [])]
-            if len(labels) != len(valid):
-                raise SystemExit(f'label count mismatch for {spec["variable"]}')
+            # Ordered labels bind to the consecutive API codes 1..n; extra codes bind explicitly.
+            by_code = {str(i + 1): label for i, label in enumerate(spec['labels'])}
+            for code, label in spec.get('extraValid', []):
+                verify(label, questionnaire, f'extra label {spec["variable"]} {code}')
+                by_code[code] = label
+            if set(by_code) != {c['value'] for c in valid}:
+                raise SystemExit(f'label/code binding mismatch for {spec["variable"]}')
+            unprinted = spec.get('printedCodesUnreliable', False)
             categories = [
-                dict(code=c['value'], labelDe=label, labelEn=c['label']['en'],
-                     printedCodeDe=None if spec['variable'].startswith(('gvrf', 'rfgb')) else c['value'],
+                dict(code=c['value'], labelDe=by_code[c['value']], labelEn=c['label']['en'],
+                     printedCodeDe=None if unprinted else c['value'],
                      isMissingApi=False,
-                     semanticRole='unprompted_nonposition' if c['value'] == '55' else 'substantive_response',
-                     offeredOnWebsite=c['value'] != '55')
-                for c, label in zip(valid, labels)
+                     semanticRole='unprompted_nonposition' if c['value'] in dict(spec.get('extraValid', []))
+                     else 'substantive_response',
+                     offeredOnWebsite=c['value'] not in dict(spec.get('extraValid', [])))
+                for c in valid
             ]
         else:
             low, high = spec['scale']
@@ -341,11 +374,12 @@ def build() -> dict:
         schemaVersion=1,
         status='DRAFT_PENDING_PLAN_V22_REVIEW',
         plan='docs/analyseplan-v2.2.md',
-        scope='18 additional original ESS questions; wording and labels verified automatically '
+        scope='19 additional original ESS questions; wording and labels verified automatically '
               'against the cached German PDF text layer; no response data read.',
         sources={sid: dict(path=path, sha256=sha256(path)) for sid, path in PDFS.items()},
         metadata={study: [dict(path=p, sha256=sha256(p)) for p in paths]
                   for study, paths in METADATA.items()},
+        fileMetadata=dict(path=ESS10SC_FILE_METADATA, sha256=sha256(ESS10SC_FILE_METADATA)),
         attribution='ESS ERIC / Sikt. Documentation CC BY-SA 4.0. Line breaks and line-end '
                     'hyphenation normalised; bullet characters removed.',
         items=items,

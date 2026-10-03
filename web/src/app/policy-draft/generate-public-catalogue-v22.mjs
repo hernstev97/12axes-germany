@@ -21,7 +21,7 @@ const codeSources = {
 const bytes = readFileSync(new URL(sourcePath, repository));
 const sha256 = createHash('sha256').update(bytes).digest('hex');
 const source = JSON.parse(bytes.toString('utf8'));
-assert.equal(source.items.length, 18);
+assert.equal(source.items.length, 19);
 
 const items = source.items.map((item) => ({
   id: item.id,

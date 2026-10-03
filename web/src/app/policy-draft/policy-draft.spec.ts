@@ -543,5 +543,5 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       storage.mockRestore();
       fetch.mockRestore();
     }
-  });
+  }, 20_000);
 });

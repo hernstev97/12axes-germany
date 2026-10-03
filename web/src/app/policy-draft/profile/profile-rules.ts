@@ -558,6 +558,16 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     },
     context: ESS10_PANDEMIC_CONTEXT,
   },
+  'ESS8e02_3:mnrgtjb': {
+    title: 'Vorrang von Männern bei knappen Arbeitsplätzen',
+    statement: {
+      form: 'agreement',
+      statement:
+        'Wenn Arbeitsplätze knapp sind, sollten Männer eher einen Anspruch auf einen Arbeitsplatz haben als Frauen.',
+    },
+    context: 'Allgemeine Aussage über Ansprüche auf Arbeitsplätze. Erhoben 2016/17.',
+    directions: AGREE,
+  },
   'ESS10SCe03_2:freehms': {
     title: 'Freie Lebensführung von Schwulen und Lesben',
     statement: {

@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "mode": "ERSTBEWERTUNG",
+  "task": "P1: Methoden und Reproduzierbarkeit, PLAN-V22-001",
+  "scope": "Planprüfung vor Festschreibung von analyseplan-v2.2 einschließlich Katalogergänzung, Rechenmodul und deterministischen Profilregeln; keine empirische Ergebnis-/Export-/Releasefreigabe.",
+  "manifestSha256": "1d269e9ab4fa49d3ba5beec17a600d5b9bd58f3998611f2ffe5e8f842d739639",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "Injizierte T3-Code-Laufzeit: Codex harness, gpt-6.1-sol, medium reasoning effort; keine unabhängig nachgewiesene Modellrevision.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "Python 3 unittest und synthetische Gegenproben",
+      "Poppler pdftotext",
+      "Node.js TypeScript-transpileModule mit In-memory-Assertion-Adapter"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nDein vollständiger, verbindlicher Prüfauftrag steht in der Datei `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/P1-plan-v22-methoden.md` (SHA-256 a34d402aab03ad89aa27349e3bdfb1b50006a66c464b9423f4cc32c25fb0a374). Lies diese Datei zuerst vollständig und führe den Auftrag genau so aus. Arbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`. Schreibe ausschließlich die beiden im Auftrag genannten Berichtsdateien. Antworte am Ende in höchstens 25 Zeilen mit Gesamturteil, wichtigsten Findings (ID, Schweregrad, Korrektur) und den Pfaden deiner Berichtsdateien.\n\nVollständiger dateigebundener Auftrag:\n# Auftrag P1: Prüfung des Plans v2.2 – Methoden und Reproduzierbarkeit\n\nDu bist ein frischer, getrennter Prüfagent (Codex, OpenAI) im Projekt „12 Axes Deutschland“ (Linear LIFE-93). Claude (Anthropic) hat den Arbeitsstand von Codex übernommen und einen Plannachtrag v2.2 geschrieben. LIFE-93 verlangt für wesentliche Änderungen an Messmodell und Auswertung zwei getrennte Prüfungen mit unterschiedlichen Schwerpunkten, nach Möglichkeit durch einen frischen Codex-Prüfer. Deine Rolle: **Methoden und Reproduzierbarkeit**. Eine zweite Rolle prüft getrennt Quellen, Konstrukte und politische Fairness. Du erhältst deren Urteil nicht.\n\nRepository und Arbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`, Branch `research/life-93-claude-20261003`. Prüffassung: Manifest `reports/claude/pruefungen/PLAN-V22-001-manifest.json`, SHA-256 `1d269e9ab4fa49d3ba5beec17a600d5b9bd58f3998611f2ffe5e8f842d739639`. Prüfe vor Beginn die Hashes der dort genannten Dateien.\n\nLies zuerst `.claude/skills/life93-review/SKILL.md` und `.claude/skills/life93-review/references/urteil-schema.json` und folge ihnen (Modus: Prüfung eines Plans vor der Festschreibung).\n\nRegeln:\n- Schreibe nur `reports/claude/pruefungen/P1-methoden-v22.md` und `reports/claude/pruefungen/P1-methoden-v22.json`. Keine anderen Dateien ändern, keine Commits, Pushes, Tags, Nachrichten.\n- Lies nichts unter `data/raw/` oder `data/local/`. Führe `pipeline/v22/run_v22.py` nicht aus. Synthetische Tests darfst du ausführen (`PYTHONDONTWRITEBYTECODE=1 python3 -m unittest pipeline/v22/test_survey.py pipeline/v22/test_run_v22.py`) und eigene synthetische Gegenproben schreiben, aber nur unter `/tmp`.\n- Lies keine Antwortverteilungen (`data/reference-v2/`, `data/reference-groups-v21/`, `reports/phasen/02-*`, `reports/phasen/03-*`, `web/src/app/policy-draft/reviewed-historical-*.ts`).\n- Belege jede Beanstandung mit Datei und Zeile oder Fundstelle. Kein Finding erfinden, um streng zu wirken.\n\nPrüffragen:\n1. Ist das Verfahren für Stichprobenunsicherheit in `docs/analyseplan-v2.2.md` Abschnitt 4 und `pipeline/v22/survey.py` korrekt umgesetzt und angemessen? Taylor-Linearisierung des Quotienten in Domänen, Behandlung von PSUs ohne gültige Antworten, Freiheitsgrade, xlogit-Intervall, Ausschlussbedingungen. Stimmt die Quellenangabe (survey-Handbuch, `outputs/loop/methods/SURVEY-MANUAL.pdf`, svyciprop S. 93–94)? Sind die dokumentierten Annahmen (feste Gewichte, keine Poststratifikation, mit Zurücklegen) ehrlich und vollständig benannt? Fehlt eine wesentliche Einschränkung?\n2. Rechnet `pipeline/v22/run_v22.py` nach Plan und v2/v2.1-Verträgen: Deutschland-Filter, Prüfungen von Hash, Runde, Edition und Kennungen, Gewichte, Missing-Gründe, nicht gestellte Fragen, leere Exportzellen, Publikationsregeln 100/5, Gruppenzuordnung nach `data/gruppenvertrag.v2.1.entwurf.json`, Intervalle nur für vorbereitete Referenzen? Gibt es Wege, auf denen Zeilen, Kennungen oder kleine Zellen in Ausgaben gelangen? Ist die Sperre ohne Tag `analyseplan-v2.2` wirksam?\n3. Ist der automatische Wortlautabgleich in `pipeline/v22/catalogue_v22.py` ein tatsächlicher Abgleich (kein Selbstvergleich)? Bindet er Codes und Missing-Gründe korrekt aus den Metadaten?\n4. Sind Auswahlregeln (Abschnitt 3.1) vor Ergebnissen festgelegt und prüfbar? Ist die Darstellung früherer Kenntnis (Abschnitt 1) ehrlich?\n5. Profilregeln (`docs/profilregeln-v1.md`, `web/src/app/policy-draft/profile/`): Sind sie deterministisch, reihenfolgeunabhängig und frei von verdeckten Rechenwerten? Decken die Tests die zugesagten Fälle ab?\n6. Was muss vor der Festschreibung korrigiert werden, was darf als offene Grenze bleiben?\n\nAusgabe: Bericht als Markdown und Urteil als JSON nach dem Skill-Schema. Am Ende des Berichts: gelesene Dateien mit Hash, ausgeführte Befehle, Modell laut Laufzeit.\n",
+    "inputHashes": {
+      "reports/claude/auftraege/P1-plan-v22-methoden.md": "a34d402aab03ad89aa27349e3bdfb1b50006a66c464b9423f4cc32c25fb0a374",
+      "reports/claude/pruefungen/PLAN-V22-001-manifest.json": "1d269e9ab4fa49d3ba5beec17a600d5b9bd58f3998611f2ffe5e8f842d739639",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "docs/project.md": "f8e512e64f05f03ce2eb78a854fb5e4b5ba707876feb9136fcfef8c939f892c8",
+      "docs/analyseplan-v2.2.md": "a08c2447ba33842e25a8c710217bc271a1528434f273de566a584da2ff3bfb0d",
+      "docs/profilregeln-v1.md": "13a59f9d0a3535d15577df9d7500cfffef379f5c90cda638543bd6c6d9a90da9",
+      "docs/abdeckung-v2.2.md": "ac945bf3ade6a068d87212eb9cc0ca4085770692e656905815fde2bc6539e244",
+      "docs/empirie-plan-v2.entwurf.md": "2b0cd26f8fba81bbf520b9ae3411d623f9299c9ff707aacf681bde4c65a0439f",
+      "data/analysevertrag.v2.entwurf.json": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "data/politikprofil-v2.2.ergaenzung.json": "f96fa667d78a84c9e039b7fad641616270ec4a57d207133624ca6a59d9733eb0",
+      "pipeline/v22/survey.py": "ef9011c5a9b9792373f7c9395d4e5db17a4381dab648480b2276ddac15a982bc",
+      "pipeline/v22/run_v22.py": "46f5b31e792d411182d123ca1f8d2042e02d52f8e48de39c1719c0ac0c5576ca",
+      "pipeline/v22/catalogue_v22.py": "c103dc092dbeb85ac557d39cd75bd0745fbbde0805ad8391a732b22cdefb6d83",
+      "pipeline/v22/test_survey.py": "dacdde363044981d575636447f6e206f89a0325353c8cc7b9a7898e1ca8ed011",
+      "pipeline/v22/test_run_v22.py": "5e1c4317e6f3d2d0aec62dacd672a019be8f95e36e403f5ac81ab95ff279db03",
+      "pipeline/v22/fetch_ess_metadata.py": "82952e3d660b75d4540b6b5a1a136e4dc7c26899294f0d96aeb22fd600bd6da5",
+      "pipeline/policy_reference_v2.py": "bc06e5c06935e3ff492543bdca986ebca823ec962eab8e6321ff2bf19ee83d2b",
+      "reports/claude/agenten/R4-profilform.md": "8ea2b9ff837b6431d55acd051b45d5cba69eea3df1049878f748fe0655eddfa2",
+      "web/src/app/policy-draft/profile/profile-rules.ts": "de5c1909621d5d5b4a164e8315fa302b0976ebacc0a126e26fdd3e655d06b589",
+      "web/src/app/policy-draft/profile/profile-structure.ts": "2ca2cae570714e0474fdff76355492e7ec179316bb64d9598ec8c780392bc622",
+      "web/src/app/policy-draft/profile/profile-engine.ts": "1b11d598a1743b611d2359fd354a03fc8bd90522293c6fa89c23c928b0b897fa",
+      "web/src/app/policy-draft/profile/profile-engine.spec.ts": "0ae5022b17365a8a10051bc53dca6bc3b057e9db3ef02e510194d5cc2b0babf5",
+      "web/src/app/policy-draft/policy-catalogue.ts": "78bd51603c0ebfce8966e34c99d80f1e08f3b63bde742b3283371747821c5e2d",
+      "web/src/app/policy-draft/public-catalogue.ts": "7a6a3a1ffeba3a976f9c1e07fb1dbd061098e5c5ea347f80303f1750a0fdf8e6",
+      "web/src/app/policy-draft/public-catalogue-v22.ts": "736f37d90c1005824b2958dac9b1e8fb7f4b965309a7ecfb7066363fb2ee5a9a",
+      "web/src/app/policy-draft/catalogue-types.ts": "2599cfdf5c77ed912a85926b4e37a025b7d3661d1085749d27dbb5dc8be42822",
+      "package.json": "451c9de3c5e0b647361bfbc749717712b895b822a04f84433288d19eb29a27f7",
+      "web/package.json": "77db8383e6c64f65fe04638c46ba3b7f9b40040d95f0ad3ced1471fb475d60f7",
+      "outputs/loop/methods/SURVEY-MANUAL.pdf": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c",
+      "outputs/loop/breadth-data-001/sources/ess5-de-questionnaire.pdf": "24b5d2599e6d30dc02a6d835f5f80b5bcecf8f6014ee8f4670a703c25d3c3cbf",
+      "outputs/loop/breadth-data-001/sources/ess8-de-questionnaire.pdf": "977475c18d2adebea6ccb7695f377fb6ed500ef087b077086305f9a2e4a7b239",
+      "outputs/loop/breadth-data-001/sources/ess8-de-showcards.pdf": "dde02b5336b2d960c2900a8fcf5e2a0f0d254b46dcce1d9ffb785a830e096bc0",
+      "outputs/loop/breadth-data-001/sources/ess10-de-questionnaire.pdf": "158004a89b1821e5202e6faf3c2101eae5e56e794d7c3fdbc3dca1c9d67c8425",
+      "outputs/claude/sources/ess5-candidates.json": "4b0247142d37697b4193e3373a37174849bcc16552d9764e34a51169170795a8",
+      "outputs/claude/sources/ess8-candidates.json": "279f9c31b4236b71f4a820de7a2b519989ec796ad49ba4f2bde210c108d94168",
+      "outputs/claude/sources/ess10sc-candidates.json": "2a5927d1ec1d322b2a127ff0c2c35862cbae8fc1ae39767aee410ff910ef8394",
+      "outputs/claude/sources/ess10sc-candidates-2.json": "9ed9a9739dfe64b2cd8ebf2cc4cec8960ce29179b25d2013e90ff0dac53a038a",
+      "outputs/loop/breadth-access-002/sources/ess10sc-file-metadata.json": "d9e6d606fb3b897d33d04f3247dbe5160d11f108a76fca6547a773e2c1ba0a57"
+    }
+  },
+  "checks": [
+    {
+      "id": "P1-C01",
+      "scope": "Manifest und alle gelisteten Artefakt-/Cachehashes",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Alle 24 Artefakte und 9 lokalen öffentlichen Caches stimmen; Auftrags- und Manifesthash stimmen."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-C02",
+      "scope": "Taylor-Quotient, vollständige PSU-Basis, df und xlogit-Formel",
+      "status": "BESTANDEN",
+      "evidence": [
+        "survey.py:91-110,169-202; SURVEY-MANUAL.pdf S.93-94,101,104; 11 synthetische Python-Tests bestanden."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-C03",
+      "scope": "v2/v2.1-Runnerverträge und Serialisierung",
+      "status": "NICHT_BESTANDEN",
+      "evidence": ["P1-V22-F01 bis F03; fünf synthetische Gegenproben akzeptiert."],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-C04",
+      "scope": "Private Ausgabe und Bindung der Festschreibung",
+      "status": "NICHT_BESTANDEN",
+      "evidence": ["P1-V22-F04/F05; statische Kontrolle, kein CLI-/Echtlauf."],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-C05",
+      "scope": "Katalogabgleich und vollständige Eingabebindung",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "Katalog --check besteht; echte pdftotext-Fundstellen statt Selbstvergleich. P1-V22-F06/F10."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-C06",
+      "scope": "Determinismus, Reihenfolge der Antworten, keine verdeckten Gesamtwerte",
+      "status": "BESTANDEN",
+      "evidence": [
+        "profile-engine.ts und feste Regeltabellen; 19 Originaltests via In-memory-Assertion-Adapter bestanden, darunter T27."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-C07",
+      "scope": "Dokument-/Codegleichheit und zugesagte Profiltests",
+      "status": "NICHT_BESTANDEN",
+      "evidence": ["P1-V22-F07/F08; basinc+sofrpr-Gegenprobe."],
+      "requiredInScope": true
+    },
+    {
+      "id": "P1-C08",
+      "scope": "Auswahlregeln vor neuen Ergebnissen und ehrliche Kenntnisdarstellung im Plantext",
+      "status": "BESTANDEN",
+      "evidence": [
+        "analyseplan-v2.2.md:7-11,25-55,104: alte Werte als bekannt bezeichnet, neue Auswahl inhaltsbezogen, keine unberührte Bestätigung. Keine unabhängige Zugriffsprüfung."
+      ],
+      "requiredInScope": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "P1-V22-F01",
+      "claim": "Der Runner übernimmt die v2.1-Gruppenzuordnung und deren Eingangsprüfung.",
+      "problem": "Nur vote == 1 wird geprüft. Unbekannte Wahl-/Parteicodes und Literale werden still als außerhalb der Gruppen behandelt. Die vorgeschriebene getrennte Wahl-/Parteistatusbilanz einschließlich Inkonsistenzen fehlt.",
+      "evidence": [
+        "pipeline/v22/run_v22.py:228-244",
+        "data/gruppenvertrag.v2.1.entwurf.json:3369-3425",
+        "Synthetische Gegenproben unknown_vote und unknown_party: run() akzeptiert jeweils 999; keine eligibilityAccounting-Ausgabe."
+      ],
+      "impact": "Fehlerhafte Gruppeneingänge bleiben unbemerkt; die Zuordnung ist bei bekannten gültigen Codes richtig, ihre Voraussetzungen und Ausschlüsse sind jedoch nicht nachprüfbar.",
+      "severity": "erheblich",
+      "severityReason": "Betrifft die vertragliche Grundlage aller neuen Gruppenreferenzen.",
+      "correction": "Wahl und Partei für alle deutschen Fälle mit vollständigen Vertragsinventaren validieren; unbekannte Literale/Codes mit festem Fehler abbrechen. Missing-Gründe, Nichtwahl, Nichtberechtigung, Nichtanwendbarkeit, technische Leere und Inkonsistenzen getrennt privat bilanzieren.",
+      "recheck": "Synthetisch sämtliche Zustände, unbekannte Werte auch bei Nichtwählenden, gültige Partei bei vote != 1 und Other prüfen; feste Fehlermeldungen und getrennte Bilanzen verlangen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F02",
+      "claim": "Gewichtsprüfungen und Diagnostik aus v2/v2.1 bleiben erhalten.",
+      "problem": "anweight wird weder gelesen noch auf positive endliche Werte geprüft. Die Konstanzdiagnose anweight/pspwght entfällt ohne dokumentierte Änderung des Vertrags.",
+      "evidence": [
+        "pipeline/v22/run_v22.py:202-217",
+        "docs/empirie-plan-v2.entwurf.md:42",
+        "data/gruppenvertrag.v2.1.entwurf.json:3430-3457",
+        "Synthetische Gegenprobe invalid_anweight: -1 wird akzeptiert."
+      ],
+      "impact": "Die Primäranteile mit pspwght sind dadurch nicht automatisch falsch; eine zugesagte Importprüfung und Reproduzierbarkeitsdiagnose fehlt.",
+      "severity": "mittel",
+      "severityReason": "Klarer Vertragsverstoß, ohne Beleg eines falschen Primäranteils.",
+      "correction": "anweight gemäß Vertrag validieren und Verhältnisdiagnose privat protokollieren; nichtkonstante Verhältnisse als Diagnose erhalten, ohne Primärgewicht oder Auswahl zu ändern.",
+      "recheck": "Tests für fehlende, negative, nullwertige und nichtendliche Gewichte sowie konstante und nichtkonstante Verhältnisse mit 1e-12-Toleranz.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F03",
+      "claim": "Die Serialisierung akzeptiert keine Whitespace-Abweichungen.",
+      "problem": "CANON.match mit $ akzeptiert einen abschließenden Zeilenumbruch. code_of(\"1\\n\") liefert den gültigen Code 1. Ein entsprechend quotiertes synthetisches CSV-Feld wird ausgewertet.",
+      "evidence": [
+        "pipeline/v22/run_v22.py:36,57-61",
+        "docs/empirie-plan-v2.entwurf.md:48",
+        "data/gruppenvertrag.v2.1.entwurf.json:3369-3378",
+        "Synthetische Gegenprobe newline_question: ACCEPTED."
+      ],
+      "impact": "Ein vertraglich unbekanntes Literal wird still in eine gültige Antwort umgewandelt.",
+      "severity": "mittel",
+      "severityReason": "Direkt reproduzierbare Abweichung von der vorab gebundenen Parserregel.",
+      "correction": "re.fullmatch oder einen absoluten Endanker verwenden, ohne trim/strip; dieselbe vollständige Prüfung auch für Wahl-/Parteifelder verwenden.",
+      "recheck": "Gültige 1/1.0/1.00 und ungültige Endzeilenumbrüche, führende/nachfolgende Leerzeichen, Tabulatoren, Vorzeichen, Exponenten und führende Nullen testen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F04",
+      "claim": "Der Lauf schreibt ausschließlich eine private Ausgabe unter data/local/v22.",
+      "problem": "--out wird uneingeschränkt mit ROOT kombiniert; absolute Pfade und .. sind zulässig. Somit können auch Aggregate kleiner Zellen in Git-/Web-Verzeichnissen landen. 0600 schützt nicht vor Git-Aufnahme. Zudem chmod erfolgt vor einer Pfadgrenzenprüfung.",
+      "evidence": [
+        "pipeline/v22/run_v22.py:11-13,257-267,275-280",
+        "pipeline/v22/run_v22.py:147-167",
+        "data/gruppenvertrag.v2.1.entwurf.json:3489-3503 (privacyAndOutputs)"
+      ],
+      "impact": "Der deklarierte private Ausgabekanal ist nicht erzwungen. Private WITHHELD-Anteile und kleine Zellzahlen sind tatsächlich im internen Ergebnis enthalten. Keine beobachtete Veröffentlichung oder tatsächliche Datenexposition wird behauptet.",
+      "severity": "erheblich",
+      "severityReason": "Erreichbarer Ausgabepfad verletzt die zentrale Trennung privater Aggregate von öffentlichen Artefakten.",
+      "correction": "Ausgabe fest auf den privaten Pfad beschränken oder aufgelöste Pfade inklusive Symlink-Zielen streng innerhalb eines eigens gebundenen privaten Verzeichnisses prüfen; vor mkdir/chmod abbrechen. Keine vorhandenen fremden Verzeichnisrechte ändern.",
+      "recheck": "Nur synthetisch: absoluter Pfad, .., Symlink-Flucht und Web-/Git-Pfad werden vor jeder Mutation abgelehnt; gültige Ausgabe erhält 0700/0600 und bleibt gitignored.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F05",
+      "claim": "Das Tag analyseplan-v2.2 bindet die geprüfte Festschreibung vor der Rechnung.",
+      "problem": "plan_tag_present prüft nur, ob irgendein auflösbares Git-Objekt unter diesem Namen existiert. Der Lauf prüft nicht, ob aktueller Plan, Verträge, Ergänzung und Rechencode zur eingefrorenen Fassung gehören. Die drei Vertrags-Hashes werden lediglich protokolliert, nicht gegen einen Gate-Sollwert geprüft.",
+      "evidence": [
+        "pipeline/v22/run_v22.py:184-200,249-261",
+        "docs/analyseplan-v2.2.md:118-120",
+        ".claude/skills/life93-review/SKILL.md: Manifest-/Eingabebindung vor Bewertung und neue Fassung nach Änderungen."
+      ],
+      "impact": "Die CLI verweigert ohne Tag korrekt; ein vorhandenes, veraltetes oder unpassendes Tag autorisiert dagegen auch eine ungeprüfte Arbeitsfassung. run() ist eine importierbare Bibliothek und selbst kein Zugriffsgate.",
+      "severity": "erheblich",
+      "severityReason": "Existenz allein sichert die zentrale Reihenfolge Prüfung/Festschreibung/abhängige Analyse nicht.",
+      "correction": "Ein positives, versionsgebundenes Gate mit eingefrorenen Plan-/Vertrags-/Softwarehashes prüfen. Bei Tag-Ziel oder Arbeitsdatei-Abweichung vor Datenöffnung abbrechen; autorisierten Bibliothekseinstieg ausdrücklich vom synthetischen Testweg unterscheiden.",
+      "recheck": "Ohne echte Daten: fehlendes/falsches Tag, passendes Tag mit verändertem Plan/Vertrag/Code und korrekt gebundenes Paket testen. Keine Tags im Projekt für diese Prüfung anlegen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F06",
+      "claim": "Jeder deutsche Katalogtext wird automatisch mit dem Original-PDF abgeglichen.",
+      "problem": "extraValid-Labels werden nach dem verify-Durchlauf angehängt. Der deutsche Text für Code 55 wird daher nicht geprüft. Außerdem wird der explizite Code aus extraValid ignoriert; Zuordnung erfolgt allein durch zip(valid, labels).",
+      "evidence": [
+        "pipeline/v22/catalogue_v22.py:77,285-300",
+        "docs/analyseplan-v2.2.md:59,63",
+        "Synthetische In-memory-Mutation extraValid[0] auf SYNTHETISCHER NICHTQUELLENTEXT: build() akzeptiert sie."
+      ],
+      "impact": "Die Aussage eines vollständigen automatischen Abgleichs ist zu weit. Dies ist kein Beleg, dass der derzeitige Code-55-Wortlaut falsch ist.",
+      "severity": "mittel",
+      "severityReason": "Nachgewiesene Lücke in einer ausdrücklich zugesagten Quellenprüfung.",
+      "correction": "Auch zusätzliche gültige Labels gegen ihre echte PDF-Fundstelle prüfen und ihren Code explizit binden. Für alle Labels eine nachvollziehbare Code-/Beschriftungszuordnung statt bloßer Mengen-/Positionsgleichheit absichern.",
+      "recheck": "Manipuliertes Code-55-Label und falscher extraValid-Code müssen scheitern; Originalfassung muss bestehen. Andere bereits geprüfte Wortlaute unverändert lassen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F07",
+      "claim": "Der Querbezug Absicherung bei Armut und Bedarf enthält basinc; Plan und Profilregeln nennen dieselbe feste Struktur.",
+      "problem": "Die Dokumentation nennt fünf Fragen einschließlich basinc, die Implementierung nur vier ohne basinc. Mit ausschließlich basinc und sofrpr entsteht trotz zweier dokumentierter Antworten kein Querbezug. Der Plan nennt sechs Querbezüge, Tabelle und Code tatsächlich sieben.",
+      "evidence": [
+        "docs/profilregeln-v1.md:46-57",
+        "web/src/app/policy-draft/profile/profile-structure.ts:160-165,152-224",
+        "docs/analyseplan-v2.2.md:100",
+        "Synthetische TS-Gegenprobe basinc+sofrpr: need_security present false."
+      ],
+      "impact": "Die eingefrorene erklärende Profilstruktur wäre uneinheitlich; derzeitige deterministische Ausführung erfüllt diesen dokumentierten Fall nicht.",
+      "severity": "mittel",
+      "severityReason": "Konkrete Abweichung des vorab festzulegenden Profilvertrags.",
+      "correction": "Vor Festschreibung entweder basinc samt passendem Kontext ergänzen oder seine Auslassung in der verbindlichen Regel begründen; Zahl der Querbezüge einheitlich auf sieben setzen, sofern diese Struktur bleibt.",
+      "recheck": "Zwei-Antwort-Fall basinc+sofrpr und vollständigen need_security-Inhalt testen; dokumentierte Mitglieder mit Regelmitgliedern maschinell vergleichen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F08",
+      "claim": "T01–T30 sind in profile-engine.spec.ts umgesetzt.",
+      "problem": "T14 fehlt als zugesagter Zwei-Format-Querbezug. T30 fehlt vollständig; die reine Profilfunktion nimmt keinen historischen Referenzstatus entgegen. Neue Blöcke und neue Grenzfälle haben überwiegend nur den generischen Einzelkategorietest. Der Allkategorietest nimmt auch das auf der Website nicht angebotene Code-55-Label auf.",
+      "evidence": [
+        "docs/profilregeln-v1.md:83-85",
+        "web/src/app/policy-draft/profile/profile-engine.spec.ts:123-343 (gesamte Testliste)",
+        "reports/claude/agenten/R4-profilform.md:349,365",
+        "web/src/app/policy-draft/profile/profile-engine.ts:337-380"
+      ],
+      "impact": "Die behauptete Testabdeckung ist nicht vorhanden. Bestehende Tests bestehen, sichern aber keine Unterdrückung historischer Vergleiche für WITHHELD/NO_VALID.",
+      "severity": "mittel",
+      "severityReason": "Konkrete falsche Abdeckungsbehauptung im Planprüfpaket; technische Tests und spätere Anzeigeprüfung müssen getrennt werden.",
+      "correction": "T14 ergänzen; T30 an der tatsächlich zuständigen Vergleichsfunktion testen oder hier ausdrücklich als noch offene Anzeigeprüfung ausweisen. Neue Blockmuster/Grenzfälle gezielt prüfen und answerable/offered-Kategorien korrekt benennen.",
+      "recheck": "Testfälle dokumentierten Kriterien zuordnen; T14 mit scchpldm=1 und wpestop=0; T30 für beide unterdrückten Status und fortbestehende eigene Aussage. Kein Browser-/Verständnistest daraus ableiten.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F09",
+      "claim": "Der 95-%-xlogit-Bereich beschreibt die Stichprobenunsicherheit unter dokumentierten Annahmen.",
+      "problem": "Das zitierte Originalhandbuch warnt zusätzlich vor Unterdeckung bei Anteilen nahe 0 oder 1. Diese Einschränkung fehlt in Abschnitt 4. Mindestfallzahlen 100/5 und globale Design-df >=20 garantieren weder ausreichende effektive Zellinformation noch nominale 95-%-Abdeckung.",
+      "evidence": [
+        "outputs/loop/methods/SURVEY-MANUAL.pdf: PDF S.94, Details, Absatz All methods undercover",
+        "docs/analyseplan-v2.2.md:79-88",
+        "pipeline/v22/survey.py:169-180,183-202"
+      ],
+      "impact": "Die Formel ist korrekt für die deklarierte Approximation; ihre nominale Abdeckung darf nicht als gesichert verstanden werden, besonders bei seltenen oder stark gewichteten Kategorien.",
+      "severity": "mittel",
+      "severityReason": "Dokumentationsgrenze eines vertretbaren Standardverfahrens, kein nachgewiesener Rechenfehler.",
+      "correction": "Nahe-Rand-Unterdeckung und mögliche geringe effektive Information ausdrücklich als offene Grenze nennen. 100/5/20 als Projektkriterien bezeichnen, ohne neue ergebnisabhängige Schwellen zu erfinden.",
+      "recheck": "Korrigierte Methodenerklärung gegen S.94 lesen; synthetische Rand-/Gewichtskonstellationen ergänzen. Eine neue Methode wäre separat vor abhängigen Ergebnissen festzulegen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P1-V22-F10",
+      "claim": "Das Manifest bindet die vollständigen Eingaben des reproduzierbaren Prüfpakets.",
+      "problem": "Der Kataloggenerator liest zusätzlich ess10sc-file-metadata.json; dieser Cache ist im Manifest nicht enthalten. Auch die technischen Tests bzw. Profilprüfung benötigen nicht manifestierte Hilfsdateien. Die angegebenen Hashes sind alle richtig, doch das Manifest ist kein vollständiger Abhängigkeitsverschluss.",
+      "evidence": [
+        "pipeline/v22/catalogue_v22.py:257-262",
+        "reports/claude/pruefungen/PLAN-V22-001-manifest.json: localPublicCaches",
+        "pipeline/v22/test_survey.py:15-17",
+        "web/src/app/policy-draft/policy-catalogue.ts:1-5"
+      ],
+      "impact": "Metadatenversion und Reproduktionsgrundlage können außerhalb der eingefrorenen Eingaben wechseln. Der eigene Bericht ergänzt tatsächliche Hashes, ersetzt damit aber nicht das festzuschreibende Manifest.",
+      "severity": "mittel",
+      "severityReason": "Fehlende verbindliche Quellen-/Softwarebindung trotz korrekter Hashes der gelisteten Artefakte.",
+      "correction": "Den tatsächlich gelesenen ESS10-Dateimetadatencache und benötigte Reproduktionsabhängigkeiten ins neue Manifest aufnehmen; Sollhashes beim Build prüfen, nicht nur neu berechnen. Prüfpaket nach Korrekturen neu versionieren.",
+      "recheck": "Katalogbuild mit unverändertem Cache muss reproduzieren; Änderung der Dateimetadaten muss an der Eingabebindung scheitern. Neue Manifestbindung gezielt nachprüfen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    }
+  ],
+  "limits": [
+    "Frischer Codex-Methodenprüfer, OpenAI, gpt-6.1-sol, medium laut injizierter T3-Laufzeit. Keine konkrete interne Revision bekannt. Zweiter Codex-Prüfer gehört derselben Modellfamilie an; gemeinsame mögliche Fehlerquellen bleiben. Keine Agentenübereinstimmung als Neutralitätsnachweis.",
+    "Keine Antwortdaten, data/raw oder data/local, keine gesperrten Verteilungen, keine P2-Urteile gelesen. R1-R3, V2-Quellenurteil und Kontrollrechnungsbericht nur binär gehasht; Inhalte nicht gelesen. R4 ist der im Auftrag gebundene Profilautorbericht, nur relevante Ausschnitte/Prüffälle gelesen, kein fremdes P1/P2-Ersturteil.",
+    "Kein run_v22.py-CLI-/Echtlauf, kein Tag/Commit/Push, keine Nachrichten an Dritte. Nur synthetische run()-Funktionsaufrufe mit CSV/Verträgen in temporären /tmp-Verzeichnissen.",
+    "Code enthält keine Serialisierung von Antwortzeilen, Kennungen oder Einzelgewichten. Private Aggregatdatei enthält kleine Zellen und WITHHELD-Anteile. Das ist intern zulässig; ihre öffentliche Weitergabe wurde nicht getestet oder freigegeben. Plan erlaubt kleine Missing-Anzahlen ohne Gewichtssumme, weshalb sie allein kein Finding darstellen.",
+    "Kein unabhängiger Zugriffsaudit der behaupteten neuen Ergebnisblindheit; Textdarstellung geprüft, tatsächliche frühere Kenntnis nicht bewiesen. Alte Referenzzahlen und tatsächliche Designzahlen nicht gelesen oder unabhängig bestätigt.",
+    "Keine empirische Varianz-/Abdeckungsvalidierung oder direkte R-survey-Kontrollrechnung. Synthetischer Vergleich zur vorhandenen Codex-Bibliothek bleibt ein Vergleich innerhalb derselben Modellfamilie.",
+    "Profiltests mit TypeScript-transpileModule und eigenem Assertion-Adapter im Speicher ausgeführt, nicht mit Vitest. Kein Browserlauf, keine menschliche Verständnisprüfung, keine UI- oder Releaseabnahme.",
+    "SDDF-Integration ist noch nicht implementiert: run() liest keine separate SDDF, und neue ESS5/ESS8-Gruppen erhalten mit_interval=False. Vor dem im Plan eröffneten späteren SDDF-Weg sind Hash-/Edition-/Schlüsselbindung, vollständiger Join und Gruppenintervalle synthetisch vorzubereiten; aktuelle fehlende Intervalle bleiben fehlend.",
+    "Keine neuen Rechts-/Quellen-/Fairnessurteile über GESIS oder ESS12; diese Rolle prüft Methoden. Keine eigenständige rechtliche Freigabe aus dem Plantext abgeleitet.",
+    "pnpm check nicht ausgeführt: es umfasst einen Build mit zusätzlichen Dateien und überschreitet den ausdrücklich auf zwei Berichtsdateien begrenzten Schreibauftrag. Bericht-/JSON-Prüfung separat; keine technischen Gesamtchecks als bestanden ausgegeben."
+  ]
+}
