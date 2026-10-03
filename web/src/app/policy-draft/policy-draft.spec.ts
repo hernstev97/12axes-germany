@@ -23,9 +23,9 @@ const SYNTHETIC_V22: ReferencesV22 = {
             notAskedCount: 0,
             categories: ['1', '2', '3', '4', '5'].map((code) => ({
               code,
-              proportion: 0.2,
-              lower: 0.15,
-              upper: 0.25,
+              proportion: code === '1' ? 0 : 0.25,
+              lower: code === '1' ? null : 0.15,
+              upper: code === '1' ? null : 0.25,
             })),
             interval: { degreesOfFreedom: 89, strata: 89, psus: 178 },
           },
@@ -218,12 +218,15 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     const withInterval = element.querySelector<HTMLElement>(
       '[data-question-id="ESS9e03_3:sofrdst"]',
     )!;
-    expect(withInterval.querySelectorAll('.interval').length).toBe(5);
+    expect(withInterval.querySelectorAll('.interval').length).toBe(4);
+    expect(withInterval.querySelectorAll('.interval-none')).toHaveLength(1);
+    expect(withInterval.querySelector('.interval-missing')).toBeNull();
     expect(withInterval.querySelector('.interval')?.textContent).toMatch(/15,0\s%\sbis 25,0\s%/);
     expect(withInterval.querySelector('.interval-note')).toBeNull();
     const explanation = element.querySelectorAll('.interval-note');
     expect(explanation).toHaveLength(1);
     expect(explanation[0]!.textContent).toContain('keine Unsicherheit der');
+    expect(explanation[0]!.textContent).toContain('Messfehler einzelner Antworten');
     const added = element.querySelector<HTMLElement>('[data-question-id="ESS8e02_3:elgcoal"]')!;
     expect(added.querySelector('.historical-reference')).not.toBeNull();
     expect(added.querySelector('.interval')).toBeNull();
@@ -239,6 +242,10 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expect(pair).not.toBeNull();
     expect(pair!.querySelectorAll('[data-category-code]')).toHaveLength(6);
     expect(pair!.querySelector('.interval-note')).toBeNull();
+    expect(pair!.querySelector('.interval')).toBeNull();
+    expect(pair!.querySelector('.interval-missing')?.textContent).toContain(
+      'keine Unsicherheit von null',
+    );
     expect(element.querySelectorAll('.interval-note')).toHaveLength(1);
     await selectComparison('draft-group-study', 'ESS9e03_3');
     await selectComparison('draft-vote-group', 'ESS9e03_3:second_vote:1');

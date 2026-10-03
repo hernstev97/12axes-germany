@@ -28,6 +28,8 @@ from kontrolle import CANON, classify, read_de  # noqa: E402
 from pipeline.policy_reference_v2 import DesignUnit, Observation, categorical_reference  # noqa: E402
 from pipeline.v22.sav import read_sav  # noqa: E402
 
+# Same tolerance as the export check against published values (export_v22.TOLERANCE).
+TOLERANCE = 1e-12
 SDDF = {
     'ESS5e03_6': ('data/raw/ess5-sddf-de/ESS5_DE_SDDF.sav', 'stratify'),
     'ESS8e02_3': ('data/raw/ess8-sddf-1.1/ESS8SDDFe01_1.csv', 'stratum'),
@@ -43,15 +45,21 @@ def integer_text(value) -> str:
     return match.group(1)
 
 
-def design_rows(sid: str) -> dict[str, DesignUnit]:
+def design_rows(sid: str) -> tuple[dict[str, DesignUnit], int]:
+    """German design rows by idno and the number of duplicate idno."""
     path, stratum = SDDF[sid]
     if path.endswith('.sav'):
         rows = read_sav(ROOT / path, ['cntry', 'idno', 'psu', stratum])
     else:
         with open(ROOT / path, newline='', encoding='utf-8') as handle:
             rows = [r for r in csv.DictReader(handle) if r['cntry'] == 'DE']
-    return {integer_text(r['idno']): DesignUnit(str(r[stratum]), integer_text(r['psu']))
-            for r in rows}
+    design: dict[str, DesignUnit] = {}
+    duplicates = 0
+    for r in rows:
+        key = integer_text(r['idno'])
+        duplicates += key in design
+        design[key] = DesignUnit(str(r[stratum]), integer_text(r['psu']))
+    return design, duplicates
 
 
 def questions(sid: str) -> list[dict]:
@@ -109,8 +117,14 @@ def main() -> int:
                                           .read_text())['studies'] if s['study_id'] == sid)['input']['path']
         rows, _, _ = read_de(ROOT / path, ['cntry', 'idno', 'pspwght', vote, party]
                              + [q['variable'] for q in qs])
-        design = design_rows(sid)
-        units = [design[integer_text(r['idno'])] for r in rows]
+        design, duplicates = design_rows(sid)
+        ids = [integer_text(r['idno']) for r in rows]
+        linkage = dict(duplicateDesignIdno=duplicates, mainUnique=len(set(ids)) == len(ids),
+                       sameSet=set(ids) == set(design))
+        if duplicates or not linkage['mainUnique'] or not linkage['sameSet']:
+            report['studien'][sid] = dict(zuordnung=linkage, status='NICHT_BESTANDEN')
+            continue
+        units = [design[i] for i in ids]
         basis = sorted(set(units), key=lambda u: (u.stratum, u.psu))
         stats = dict(referenzen=0, kategorien=0, ohneBereichImLauf=0,
                      maxAbweichungAnteil=0.0, maxAbweichungStandardfehler=0.0)
@@ -139,10 +153,18 @@ def main() -> int:
                 compare(own, pair, stats)
         stats['strata'] = len({u.stratum for u in basis})
         stats['psus'] = len(basis)
+        stats['zuordnung'] = linkage
+        stats['status'] = 'BESTANDEN' if (
+            stats['referenzen'] > 0 and stats['ohneBereichImLauf'] == 0
+            and stats['maxAbweichungAnteil'] <= TOLERANCE
+            and stats['maxAbweichungStandardfehler'] <= TOLERANCE) else 'NICHT_BESTANDEN'
         report['studien'][sid] = stats
+    report['toleranz'] = TOLERANCE
+    report['status'] = 'BESTANDEN' if all(
+        s['status'] == 'BESTANDEN' for s in report['studien'].values()) else 'NICHT_BESTANDEN'
     (HERE / 'sddf-gegenprobe.json').write_text(json.dumps(report, indent=1) + '\n')
     print(json.dumps(report, indent=1))
-    return 0
+    return 0 if report['status'] == 'BESTANDEN' else 1
 
 
 if __name__ == '__main__':

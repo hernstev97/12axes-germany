@@ -8,7 +8,13 @@
    "maxAbweichungAnteil": 1.1102230246251565e-16,
    "maxAbweichungStandardfehler": 0.0,
    "strata": 2,
-   "psus": 168
+   "psus": 168,
+   "zuordnung": {
+    "duplicateDesignIdno": 0,
+    "mainUnique": true,
+    "sameSet": true
+   },
+   "status": "BESTANDEN"
   },
   "ESS8e02_3": {
    "referenzen": 79,
@@ -17,7 +23,15 @@
    "maxAbweichungAnteil": 1.1102230246251565e-16,
    "maxAbweichungStandardfehler": 0.0,
    "strata": 20,
-   "psus": 180
+   "psus": 180,
+   "zuordnung": {
+    "duplicateDesignIdno": 0,
+    "mainUnique": true,
+    "sameSet": true
+   },
+   "status": "BESTANDEN"
   }
- }
+ },
+ "toleranz": 1e-12,
+ "status": "BESTANDEN"
 }

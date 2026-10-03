@@ -48,6 +48,40 @@ async function check(engineName, setting) {
     Object.assign(options, { isMobile: true, hasTouch: true, deviceScaleFactor: 3 });
   }
   const context = await browser.newContext(options);
+  // Record every write to client-side storage from the first script on, so that a value
+  // written and removed before the end does not go unnoticed.
+  await context.addInitScript(() => {
+    const calls = [];
+    const unavailable = [];
+    window.__storageCalls = calls;
+    window.__storageUnavailable = unavailable;
+    const wrap = (prototype, name, label) => {
+      const original = prototype?.[name];
+      if (typeof original !== 'function') {
+        unavailable.push(label);
+        return;
+      }
+      prototype[name] = function (...args) {
+        calls.push(label);
+        return original.apply(this, args);
+      };
+    };
+    wrap(window.Storage?.prototype, 'setItem', 'Storage.setItem');
+    wrap(window.IDBFactory?.prototype, 'open', 'indexedDB.open');
+    wrap(window.CacheStorage?.prototype, 'open', 'caches.open');
+    wrap(window.ServiceWorkerContainer?.prototype, 'register', 'serviceWorker.register');
+    const cookie = Object.getOwnPropertyDescriptor(Document.prototype, 'cookie');
+    if (cookie?.set) {
+      Object.defineProperty(Document.prototype, 'cookie', {
+        configurable: true,
+        get: cookie.get,
+        set(value) {
+          calls.push('document.cookie');
+          return cookie.set.call(this, value);
+        },
+      });
+    } else unavailable.push('document.cookie');
+  });
   const page = await context.newPage();
   const record = {
     engine: engineName,
@@ -65,6 +99,33 @@ async function check(engineName, setting) {
   });
   page.on('websocket', (socket) => socket.on('framesent', () => late.push(`ws ${socket.url()}`)));
   const step = (text) => record.steps.push(text);
+  record.storageChecks = [];
+
+  async function storageCheck(label) {
+    const state = await page.evaluate(async () => ({
+      calls: [...window.__storageCalls],
+      unavailable: [...window.__storageUnavailable],
+      local: localStorage.length,
+      session: sessionStorage.length,
+      cookie: document.cookie.length,
+      idb: indexedDB.databases ? (await indexedDB.databases()).length : 'NICHT_GEPRÜFT',
+      caches: typeof caches === 'undefined' ? 'NICHT_GEPRÜFT' : (await caches.keys()).length,
+      sw: navigator.serviceWorker
+        ? (await navigator.serviceWorker.getRegistrations()).length
+        : 'NICHT_GEPRÜFT',
+      path: location.pathname + location.search + location.hash,
+    }));
+    record.storageChecks.push({ label, ...state });
+    assert.deepEqual(state.calls, [], `${label}: storage writes ${state.calls.join(', ')}`);
+    for (const key of ['local', 'session', 'cookie', 'idb', 'caches', 'sw']) {
+      assert.ok(
+        state[key] === 0 || state[key] === 'NICHT_GEPRÜFT',
+        `${label}: ${key} ${state[key]}`,
+      );
+    }
+    assert.equal(state.path, '/forschungsentwurf', `${label}: URL`);
+    assert.equal((await context.cookies()).length, 0, `${label}: context cookies`);
+  }
 
   async function overflow(label) {
     const value = await page.evaluate(
@@ -102,6 +163,7 @@ async function check(engineName, setting) {
     );
     record.questions = total;
     await overflow('question 1');
+    await storageCheck('question 1');
     await axeCheck('question 1');
 
     // Keyboard: the first radio gets a visible focus ring.
@@ -124,6 +186,9 @@ async function check(engineName, setting) {
       };
     });
     record.radioFocus = ring;
+    assert.equal(ring.name, 'draft-original-answer', 'Tab reaches a radio');
+    assert.ok(ring.focusVisible, 'radio focus visible');
+    assert.equal(ring.outline, 'solid 2px', 'radio focus outline');
     step(`radio focus ${JSON.stringify(ring)}`);
 
     let skipped = 0;
@@ -153,6 +218,7 @@ async function check(engineName, setting) {
           .nth(count - 1)
           .click();
         await button('Auswahl zurücksetzen').click();
+        await page.waitForFunction(() => document.activeElement?.id === 'draft-question-title');
         // The native radio is aligned after the next render; allow that render, nothing more.
         await page
           .waitForFunction(
@@ -196,7 +262,10 @@ async function check(engineName, setting) {
           { timeout: 3000 },
         );
       }
-      if (question === Math.floor(total / 2)) await overflow(`question ${question}`);
+      if (question === Math.floor(total / 2)) {
+        await overflow(`question ${question}`);
+        await storageCheck(`question ${question}`);
+      }
     }
     await page.getByRole('heading', { name: 'Ergebnisentwurf', exact: true }).waitFor();
     await headingFocused('Ergebnisentwurf');
@@ -250,7 +319,9 @@ async function check(engineName, setting) {
     await overflow('groups');
     await axeCheck('groups');
 
+    await storageCheck('results and groups');
     await button('Zur Fragenübersicht').first().click();
+    await headingFocused('Fragenübersicht');
     await page.getByRole('heading', { name: 'Fragenübersicht', exact: true }).waitFor();
     await page.locator('.overview-list li:last-child button').click();
     await headingFocused(`Frage ${total} von ${total}`);
@@ -259,23 +330,14 @@ async function check(engineName, setting) {
 
     assert.deepEqual(errors, [], 'page errors');
     assert.deepEqual(late, [], 'requests after load');
-    const stored = await page.evaluate(async () => ({
-      local: localStorage.length,
-      session: sessionStorage.length,
-      cookie: document.cookie.length,
-      idb: indexedDB.databases ? (await indexedDB.databases()).length : 'n/a',
-      caches: typeof caches === 'undefined' ? 'n/a' : (await caches.keys()).length,
-      sw: navigator.serviceWorker
-        ? (await navigator.serviceWorker.getRegistrations()).length
-        : 'n/a',
-      path: location.pathname + location.search + location.hash,
-    }));
-    record.privacy = { stored, contextCookies: (await context.cookies()).length };
-    for (const [key, value] of Object.entries(stored)) {
-      if (key === 'path') assert.equal(value, '/forschungsentwurf');
-      else assert.ok(value === 0 || value === 'n/a', `${key} ${value}`);
-    }
-    assert.equal(record.privacy.contextCookies, 0);
+    await storageCheck('end');
+    record.privacy = {
+      notChecked: record.storageChecks.at(-1).unavailable.concat(
+        Object.entries(record.storageChecks.at(-1))
+          .filter(([, value]) => value === 'NICHT_GEPRÜFT')
+          .map(([key]) => key),
+      ),
+    };
     await page.screenshot({ path: `${run}/${engineName}-${setting.label}-end.png` });
     record.status = 'PASS';
     console.log(`${engineName} ${record.version} ${setting.label}: ${total} Fragen PASS`);

@@ -207,9 +207,11 @@
               Ein 95-%-Bereich beschreibt die Unsicherheit durch die Zufallsstichprobe der damaligen
               Befragung unter vereinfachenden Annahmen, im Gruppenvergleich innerhalb der gewählten
               Gruppe. Er enthält keine Unsicherheit durch den zeitlichen Abstand, den anderen
-              Befragungsmodus, Nichtteilnahme oder den neuen Fragekontext. Er ist keine Unsicherheit
-              der eigenen Antwort und kein Test auf Unterschiede zwischen Gruppen. Nahe 0 und 100 %
-              kann er die tatsächliche Unsicherheit unterschätzen.
+              Befragungsmodus, Nichtteilnahme, den neuen Fragekontext oder Messfehler einzelner
+              Antworten. Er ist keine Unsicherheit der eigenen Antwort und kein Test auf
+              Unterschiede zwischen Gruppen. Nahe 0 und 100 % kann er die tatsächliche Unsicherheit
+              unterschätzen. Bei einem Anteil von 0 oder 100 % wird kein Bereich berechnet, ein
+              fehlender Bereich bedeutet keine Unsicherheit von null.
             </p>
           }
           @if (references().status === 'none') {
@@ -520,6 +522,8 @@
                                 >(95-%-Bereich {{ percentage(category.lower) }} bis
                                 {{ percentage(category.upper) }})</span
                               >
+                            } @else if (reference.hasIntervals) {
+                              <span class="interval-none">(kein 95-%-Bereich)</span>
                             }
                           </dd>
                         </div>
@@ -609,12 +613,19 @@
                                 >(95-%-Bereich {{ percentage(interval.lower) }} bis
                                 {{ percentage(interval.upper) }})</span
                               >
+                            } @else if (comparison.intervals?.reference?.interval) {
+                              <span class="interval-none">(kein 95-%-Bereich)</span>
                             }
                           </dd>
                         </div>
                       }
                     </dl>
-
+                    @if (!comparison.intervals?.reference?.interval) {
+                      <p class="meta interval-missing">
+                        Für diesen Gruppenvergleich ist kein 95-%-Bereich angegeben. Ein fehlender
+                        Bereich bedeutet keine Unsicherheit von null.
+                      </p>
+                    }
                     <p class="meta">
                       Gewichtung: {{ comparison.reference.weight }}. Nenner der Anteile ist die
                       Summe der Gewichte gültiger Antworten dieser Frage in dieser Gruppe. Alle

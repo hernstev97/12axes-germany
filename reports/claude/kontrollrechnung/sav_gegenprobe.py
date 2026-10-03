@@ -43,6 +43,9 @@ from kontrolle import CANON, classify, read_de  # noqa: E402
 from pipeline.policy_reference_v2 import DesignUnit, categorical_reference  # noqa: E402
 
 SAV = ROOT / 'data/raw/ess5-sddf-de/ESS5_DE_SDDF.sav'
+# Same tolerance as the export check against published values (export_v22.TOLERANCE):
+# both computations run in double precision; only summation order may differ.
+TOLERANCE = 1e-12
 SID = 'ESS5e03_6'
 FIELDS = ['CNTRY', 'IDNO', 'PSU', 'SAMPPOIN', 'STRATIFY', 'PROB']
 
@@ -161,10 +164,9 @@ def main() -> int:
                              matched=len(set(ids) & set(design)),
                              onlyMain=len(set(ids) - set(design)),
                              onlyDesign=len(set(design) - set(ids)))
-    if report['linkage']['onlyMain'] or report['linkage']['onlyDesign']:
-        (HERE / 'sav-gegenprobe.json').write_text(json.dumps(report, indent=1) + '\n')
-        print(json.dumps(report, indent=1))
-        return 1
+    if report['linkage']['onlyMain'] or report['linkage']['onlyDesign'] or duplicates \
+            or len(set(ids)) != len(ids):
+        return finish(report, stats=None)
     units = [design[i] for i in ids]
     basis = sorted(set(units), key=lambda u: (u.stratum, u.psu))
     stats = dict(referenzen=0, kategorien=0, maxAbweichungAnteil=0.0,
@@ -202,9 +204,35 @@ def main() -> int:
     report['standardErrorsWithReadStatDesign'] = stats
     report['designRunSha256'] = hashlib.sha256(
         (ROOT / 'data/local/v22/sddf-run.json').read_bytes()).hexdigest()
+    return finish(report, stats)
+
+
+def finish(report: dict, stats: dict | None) -> int:
+    """Writes the report with an explicit overall status; any violation exits with 1."""
+    decoder = report['decoderComparison']
+    design = report['readstatDesign']
+    linkage = report.get('linkage', {})
+    checks = {
+        'gleicheZeilenzahl': decoder['rowsReadStat'] == decoder['rowsSavPy'],
+        'alleFelderGleich': bool(decoder['fields']) and all(
+            f['different'] == 0 for f in decoder['fields'].values()),
+        'keineDoppeltenIdno': design['duplicateIdno'] == 0,
+        'nurDeutschland': design['countries'] == ['DE'],
+        'jedePsuInEinemStratum': design['psusInMoreThanOneStratum'] == 0,
+        'einsZuEinsZuordnung': bool(linkage) and linkage['matched'] == linkage['mainGermanRows']
+        == linkage['mainUniqueIdno'] == design['uniqueIdno']
+        and not linkage['onlyMain'] and not linkage['onlyDesign'],
+        'anteileInnerhalbToleranz': stats is not None and stats['referenzen'] > 0
+        and stats['maxAbweichungAnteil'] <= TOLERANCE,
+        'standardfehlerInnerhalbToleranz': stats is not None and stats['referenzen'] > 0
+        and stats['maxAbweichungStandardfehler'] <= TOLERANCE,
+    }
+    report['toleranz'] = TOLERANCE
+    report['pruefungen'] = checks
+    report['status'] = 'BESTANDEN' if all(checks.values()) else 'NICHT_BESTANDEN'
     (HERE / 'sav-gegenprobe.json').write_text(json.dumps(report, indent=1) + '\n')
     print(json.dumps(report, indent=1))
-    return 0
+    return 0 if report['status'] == 'BESTANDEN' else 1
 
 
 if __name__ == '__main__':

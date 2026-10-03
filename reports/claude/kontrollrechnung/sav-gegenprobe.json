@@ -83,5 +83,17 @@
   "maxAbweichungStandardfehler": 0.0,
   "designfreiheitsgrade": 166
  },
- "designRunSha256": "821c8db3bdf783c3ecfeddf0462f39efc875953611d70ae9edbc7c92c951827c"
+ "designRunSha256": "821c8db3bdf783c3ecfeddf0462f39efc875953611d70ae9edbc7c92c951827c",
+ "toleranz": 1e-12,
+ "pruefungen": {
+  "gleicheZeilenzahl": true,
+  "alleFelderGleich": true,
+  "keineDoppeltenIdno": true,
+  "nurDeutschland": true,
+  "jedePsuInEinemStratum": true,
+  "einsZuEinsZuordnung": true,
+  "anteileInnerhalbToleranz": true,
+  "standardfehlerInnerhalbToleranz": true
+ },
+ "status": "BESTANDEN"
 }

@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(HERE))
 from kontrolle import classify, read_de  # noqa: E402
 from pipeline.policy_reference_v2 import DesignUnit, categorical_reference  # noqa: E402
-from sddf_gegenprobe import compare, integer_text, observations, questions  # noqa: E402
+from sddf_gegenprobe import TOLERANCE, compare, observations, questions  # noqa: E402
 
 SID = 'ESS9e03_3'
 
@@ -62,10 +62,16 @@ def main() -> int:
                                               design_basis=basis), pair, stats)
     stats['strata'] = len({u.stratum for u in basis})
     stats['psus'] = len(basis)
-    report = dict(privateRunSha256=hashlib.sha256(run_bytes).hexdigest(), studien={SID: stats})
+    stats['eindeutigeIdno'] = len({r['idno'] for r in rows}) == len(rows)
+    stats['status'] = 'BESTANDEN' if (
+        stats['eindeutigeIdno'] and stats['referenzen'] > 0 and stats['ohneBereichImLauf'] == 0
+        and stats['maxAbweichungAnteil'] <= TOLERANCE
+        and stats['maxAbweichungStandardfehler'] <= TOLERANCE) else 'NICHT_BESTANDEN'
+    report = dict(privateRunSha256=hashlib.sha256(run_bytes).hexdigest(), toleranz=TOLERANCE,
+                  status=stats['status'], studien={SID: stats})
     (HERE / 'ess9-gruppen-gegenprobe.json').write_text(json.dumps(report, indent=1) + '\n')
     print(json.dumps(report, indent=1))
-    return 0
+    return 0 if report['status'] == 'BESTANDEN' else 1
 
 
 if __name__ == '__main__':
