@@ -17,3 +17,9 @@ Originalfundstellen und vollständige Reviewerberichte bleiben maßgeblich. Noch
 B-LOOP-AB-v2: Die vier Einleitungen und die echten 08-Gegenfälle sind in Runde 1 nachgeprüft. Maßgeblich sind das v2-Manifest und beide vollständigen Nachberichte; die neue Koordinatorentscheidung nennt Hashes, Originalfundstellen und zulässigen Umfang. 61 Restpunkte und vollständige Item-/Polungsabnahme bleiben offen. V3/v4 ändern ausschließlich ausdrücklich geprüfte Markdownformatierung und Dokumentation.
 
 B-LOOP-METHODS-v3: Echte 16 Sample-TH und 22-Moment-Reihenfolge, tatsächlicher WLS-Import und getrennte NACOV-Wirkung sind in beiden Nachberichten durch eigene 32/33-Check-Läufe und Algebra/API-Gegenläufe bestätigt. Manifest a6a05b361cac1bf26975f56119b5f65934589f4d83f204177394307495f6bb80; keine wissenschaftliche Survey-Design- oder ESS-Abnahme.
+
+## Ergänzung: C-Erstprüfung, E-Autorenfassung und DESIGN-003
+
+- C v1: Manifest `14a87ba5148fba5e640e8164ea06d7ff34cbc2893117dc6baf3eee91f96be7cb`; Quellen- und Reproduktionsberichte in `reports/loop/reviews/INVENTORY-003-C-{sources,repro}.md`. Ein angenommener niedriger Befund C-R01; Korrektur noch nicht geprüft.
+- E: 32 technische Identitäten, 808 Belege; aktuelle JSON `2c7ef03dca2585bf6476eabf46f8508b3430666d30f07283bc84cd6b1978a224`. Autorentests tatsächlich ausgeführt; unabhängige Erstprüfung ausstehend.
+- DESIGN-003: elf Claim-IDs in `data/design-quellen.entwurf.json`, Originalfundstellen im `docs/design-deutschland.entwurf.md`; Manifest `adc655d01e9cb538d091ba6d7810dfe5212353b4fc39e8e98c5e07f35759cad1`. Beide unabhängigen Erstprüfungen laufen. Kein bestätigter neuer Wissenschaftsstatus.

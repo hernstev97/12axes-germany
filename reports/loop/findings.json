@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T06:50:55.366763+00:00",
+  "updatedAtUtc": "2026-10-03T07:15:22.935240+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2195,6 +2195,23 @@
           }
         }
       ]
+    },
+    {
+      "id": "C-R01",
+      "decision": "angenommen",
+      "severity": "niedrig",
+      "problem": "lnghom2-Metadaten enthalten zusätzlich zehn ISO-Lookupzeilen trotz deklarierter Kopf-/Beschreibungsgrenze.",
+      "evidence": "Codebook4.1 PDF132/Druck131; INVENTORY-003-C-repro.md Finding C-R01; build_c.py143–151",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "correctionState": "Neue isolierte Fassung vorgesehen; Original erhalten. Noch kein ausgeführter Korrekturcheck.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Neue Feldgrenze, zwei bytegleiche Builds, vollständiger Diff und zwei unabhängige Nachprüfungen"
+      },
+      "blocks": ["Saubere Metadatenabgrenzung C24/lnghom2 in der betroffenen Fassung"],
+      "decisionRecord": "reports/loop/INVENTORY-003-C-v1-entscheidung.md",
+      "history": []
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."

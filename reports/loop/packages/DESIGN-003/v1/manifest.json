@@ -1,0 +1,324 @@
+{
+  "id": "DESIGN-003",
+  "version": 1,
+  "codeCommit": "60414205eba970c5832e8ad130bb43215f0a7da6",
+  "sourceInputs": [
+    {
+      "path": "outputs/loop/design003/codebook-484.png",
+      "sha256": "a092325ae3c6007bc9fc1e039d97348441a394bcc2f9b9fb2834fdedafb64288",
+      "bytes": 139229,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/codebook-551.png",
+      "sha256": "ac2f577af1e0e2a734df11d3e93cec840b0f9c339e372620dab8594a0c7dbdf0",
+      "bytes": 147824,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/codebook-552.png",
+      "sha256": "36c1f10c9d58aa89dd2e0ae32e77ba4ec3ee3f7ee661d1af7df1e3e5351228d0",
+      "bytes": 23887,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/codebook.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "bytes": 2162997,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/codebook.txt",
+      "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+      "bytes": 1074155,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-079.png",
+      "sha256": "4fac3619429b1e575cad94d9a8b7712ca8e27b332f6a4055131cf7f8b69497c2",
+      "bytes": 117961,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-080.png",
+      "sha256": "a11bb210faf48a4c49a55f079cb64e3bc69342ee0cc33532eccd334016ce3bc5",
+      "bytes": 93295,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-081.png",
+      "sha256": "fd8caa50ba8f1f9d99ebb92db369282d95b112e4076fd810d2f2d64babffe45e",
+      "bytes": 145768,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-082.png",
+      "sha256": "137e46e9c2893c5dfa95dccc43351df4b832def0983275cb32b64b5f3bfff56b",
+      "bytes": 108004,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-083.png",
+      "sha256": "3fcb172bf95af0f4c0c8e45c6eb33bae3929cdb066f17b6467b66b61e45e5dc6",
+      "bytes": 150215,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-084.png",
+      "sha256": "2868e82a384604dc0dfd54dcd515e0ab99d4cacda913f0b2b2c08f1738306348",
+      "bytes": 154361,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-085.png",
+      "sha256": "66c8226acff4f7499428837a50e56ba965821bbf7eb7573c8affa561e2e3ac34",
+      "bytes": 145222,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-086.png",
+      "sha256": "f30d4f55a60c3e3538bdfb6ebe033413de1281edc9f720b0ede7d544aee45f3a",
+      "bytes": 133893,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-087.png",
+      "sha256": "be324c17a2d502dc6acab85f2179b2769c3492ba98f75fe420e17a57a365bc72",
+      "bytes": 195177,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country-088.png",
+      "sha256": "cbcb402257b5b759532b33e7433d045469ebd8456f81c0487824244d001f32ad",
+      "bytes": 194340,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country.pdf",
+      "sha256": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+      "bytes": 2510948,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/country.txt",
+      "sha256": "e20158146ded51aba75cce8a29e322d4f2ec73f88cbf91f08a14788c3942c833",
+      "bytes": 317163,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/documents-links.json",
+      "sha256": "90aa75246a4e3ce1023ff5aa819ca18b724a4857a5250a2221118ec58804eef1",
+      "bytes": 3223,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/extended-source-access.json",
+      "sha256": "0bfd0301dde751fc95e9c07e9ad0923bad6a82f54b5d6bb3bc6fdcea6783be26",
+      "bytes": 557,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/germany-modal.json",
+      "sha256": "206891436109a642cdfb9a1d012c615ed67a8bb94c7e819442308698f7a5271c",
+      "bytes": 5615,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/guidelines-selected-05.png",
+      "sha256": "75555c37b6ad945fc0390e164a11d4bf7746235d5e87f578faccf3f0c5882e1a",
+      "bytes": 126409,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/guidelines-selected-14.png",
+      "sha256": "7ec2332e4f8cfadcf2fdc2170376f28b66f0ddb02f3e247ba4e04d6f107b4239",
+      "bytes": 270324,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/guidelines-selected-15.png",
+      "sha256": "4dd01f8145460b64e1547ae96cf326bd21e2119bf9d4612f23a313c1b96cc838",
+      "bytes": 188829,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/guidelines-selected-25.png",
+      "sha256": "9dfa96370c82ade0a0ac3eb0f670d72bd534bd607124688eb51d18654b4a2fb2",
+      "bytes": 240412,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/guidelines-selected-28.png",
+      "sha256": "e9fde8f0c2d2bcf9faa0681cc99aa400391ca20433cec30baead1eaa209d5ff3",
+      "bytes": 234131,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/guidelines.pdf",
+      "sha256": "d97aa829b347306557815db73310185492396e918d236d55235039ceaaebc5a6",
+      "bytes": 493992,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/guidelines.txt",
+      "sha256": "62804086447b9ad3cf893168208f222482cb89126d5b040ed2e621bc2ad0549b",
+      "bytes": 71667,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/plan-before-work.json",
+      "sha256": "53c5dd01e62b2b8d7df7f138dac07852435f396dbd021a94d4a600ffaae5c378",
+      "bytes": 1768,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/protocol-12.png",
+      "sha256": "9416f5a6888b2d6c4ad489e761220a41a974f13d8ff0a0ad57c39a98ec277cb9",
+      "bytes": 257799,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/protocol-95.png",
+      "sha256": "b57ab3687d9987e1011aa35312b8d0fa8f0ba613c574e377b6f51752f84c6730",
+      "bytes": 287169,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/protocol-96.png",
+      "sha256": "c560b34c7d286fb04dca2bf97493cbf5a5d85b24a54ab6461464f686e2b75646",
+      "bytes": 264300,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/protocol.pdf",
+      "sha256": "b5176742b84ab503070e21f7ffaa9ff1a126e1e0e39354c25d810dd80eda77f7",
+      "bytes": 3796179,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/protocol.txt",
+      "sha256": "ef7d7a363660ccf9e039ef321feadb5c4a17335b64262a42abd6567cf7901a78",
+      "bytes": 436348,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/source-access.json",
+      "sha256": "46823d6f7aad4d7d987bab08adaa3795b84bea124267d8266d2a3e0fed13e627",
+      "bytes": 1217,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/source-extension-before-download.json",
+      "sha256": "b41cd7755e2cb6c0be3cedadf798c949e9f9baa7a0ae9f140aae30ae7fb2c7c8",
+      "bytes": 466,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/universe-visible.txt",
+      "sha256": "b213732731a50f77bb4879f9d848113ad8a98b9b1dfa44072bfb1c099feedf0a",
+      "bytes": 1187,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/weights-06.png",
+      "sha256": "37742070d82f30880a121f5e0a6a24b6bd8f26bb80a2b77be9bcaea8618b0ed3",
+      "bytes": 129766,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/weights-07.png",
+      "sha256": "153ea82778410df6c2f0f3f3be40f1b6ffca0d0525fb8aa696202ac4b03f86cc",
+      "bytes": 115537,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/weights-08.png",
+      "sha256": "f94b04f11ecc4c284f54b4228046df680654306ba4bf1d17bab8f352f6baf019",
+      "bytes": 112157,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/weights-selected-10.png",
+      "sha256": "0a77c673c4d27158062aa6df0503c084c2fc4696e4e5167e8341014ddb75c3f2",
+      "bytes": 88680,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/weights.pdf",
+      "sha256": "6b9c04b70b8f231de1b9040e4afcfc9387fc95e4a1d15ec0496aa7638f8528e5",
+      "bytes": 200908,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/weights.txt",
+      "sha256": "8eb4f65cafb5f7b9ff3e1946486404d7b0a664f2c7049d7342bd467be7b9c3e9",
+      "bytes": 17687,
+      "scope": "Public source PDF/metadata or author plan/render/text, no responses"
+    },
+    {
+      "path": "outputs/loop/design003/output-index.json",
+      "sha256": "41ff0cfbde67e66e1d41cfd33a2c26f09ad35435b45d3a002f02a9e41ad73f5f",
+      "bytes": 11218,
+      "scope": "Public source index, no responses"
+    }
+  ],
+  "modelConfiguration": {
+    "claims": 11,
+    "sourceDocumentationOnly": true,
+    "rawDataRead": false,
+    "finalDesignSelection": false
+  },
+  "reviewScope": "Public Germany ESS11 design reconciliation; no empirical/phase acceptance",
+  "frozenAtUtc": "2026-10-03T07:06:19.734082+00:00",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "docs/project.md": {
+      "sha256": "765d991f46986096a53a12c95afa17b65af0f2a1e0d4be2f5e42400a7a748eb0",
+      "bytes": 6889
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "docs/pruefregeln.md": {
+      "sha256": "7f1a86187a0a2c6a39acaabab25eb75cf92ec1fc5c2c4c97bf0d12411ece2a9f",
+      "bytes": 23337
+    },
+    "docs/analyseanforderungen.md": {
+      "sha256": "f94a4bc01c571af966e9269a674632f8a19cba3db0a5c8be0bddade27be7795b",
+      "bytes": 8485
+    },
+    "docs/lizenzen.md": {
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+      "bytes": 4845
+    },
+    "docs/analyseplan-methoden.entwurf.md": {
+      "sha256": "07ae8fad2839d4dc5f6ccb2ab985a8967f051b94ddb0beac68c7792f9fac59ca",
+      "bytes": 38244
+    },
+    "docs/design-deutschland.entwurf.md": {
+      "sha256": "26e351b2a6e159fbbe6308535847554319f29b89ac9536fd4bd15e4104ec524a",
+      "bytes": 4724
+    },
+    "data/design-quellen.entwurf.json": {
+      "sha256": "adeaa11281458c70afe01501b4e079f3694c956ad4c7affdc786ccd297e253e5",
+      "bytes": 10614
+    },
+    "reports/loop/authors/DESIGN-003.md": {
+      "sha256": "074fd99fc3d4977ed0cc76582270d95888d4412ca9ffb91cb51a64d11ea89e2c",
+      "bytes": 4272
+    },
+    "reports/loop/DESIGN-003-pruefauftrag.md": {
+      "sha256": "c3184d3829f60f058bba56991517444ccf160d94005541c2bc48de441e88220a",
+      "bytes": 2725
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T06:50:55.366763+00:00",
+  "updatedAtUtc": "2026-10-03T07:18:10.874545+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "3d2bdc455b7f6c503b4f5d0d7b8cca1a07f826ec",
+  "currentHead": "60414205eba970c5832e8ad130bb43215f0a7da6",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -21,10 +21,11 @@
     }
   ],
   "openTasks": [
-    "INVENTORY-003-C v1: beide unabhängigen Erstberichte sammeln; erst dann zusammenführen",
-    "Weitere öffentliche Module einschließlich E/Gender annotieren und zweifach prüfen",
-    "CLAUDE-P02: zwei abgegrenzte Metadatenprüfungen und zeitliche Versionstextkorrektur prüfen",
-    "Offene Theorie- und Methodennachweise bearbeiten; Claude-Forschungsbewertungen, reales Setup und spätere Menschenprüfungen bleiben Voraussetzungen"
+    "INVENTORY-003-C: C-R01 angenommen; isolierte Metadatenkorrektur und zwei unabhängige Nachprüfungen",
+    "INVENTORY-004-E: vollständigen Autorenstand einfrieren und zwei frische Erstprüfungen",
+    "DESIGN-003: beide unabhängigen Erstberichte vollständig sammeln und erst danach zusammenführen",
+    "CLAUDE-P02: zweiten Metadatenbericht sammeln; anschließend Evidenz und mögliche Korrekturen entscheiden",
+    "Offene Theorie-/Methodennachweise und unabhängige öffentliche Module bearbeiten; fehlende Claude-, Setup- und Menschenabnahmen erhalten"
   ],
   "dependencies": [
     {
@@ -127,7 +128,9 @@
     "reports/loop/reviews/METHODS-002-v3-statistics.md",
     "reports/loop/reviews/METHODS-002-v3-repro.md",
     "reports/loop/reviews/METHODS-002-v3-repro-formatnachtrag.md",
-    "reports/loop/reviews/INVENTORY-003-C-sources.md"
+    "reports/loop/reviews/INVENTORY-003-C-sources.md",
+    "reports/loop/reviews/INVENTORY-003-C-repro.md",
+    "reports/loop/reviews/CLAUDE-P02-metadata.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -142,18 +145,18 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/inventory003_c_repro",
-      "role": "independent-public-source-reproduction-first-review",
+      "name": "/root/claudep02_time_boundary",
+      "role": "independent-cli-time-and-scope-review",
       "status": "RUNNING"
     },
     {
-      "name": "/root/inventory004_e_author",
-      "role": "public-source-author",
+      "name": "/root/design003_sources",
+      "role": "independent-public-design-source-review",
       "status": "RUNNING"
     },
     {
-      "name": "/root/claudep02_metadata",
-      "role": "independent-access-metadata-review",
+      "name": "/root/design003_methods",
+      "role": "independent-public-design-methods-review",
       "status": "RUNNING"
     }
   ],
@@ -260,7 +263,7 @@
       "report": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
       "manifest": "reports/loop/packages/CLAUDE-P02/v1/manifest.json",
       "manifestSha256": "5c4fe35d971dde4dafc6fb58bfcbe96eb848499dc09ee0b8713964ace061bef4",
-      "documentationReviewStatus": "Erster frischer Metadatenreviewer aktiv; zweiter getrennt noch vorgesehen. Zugriff weiterhin HTTP401 blockiert, Readgrenzen nicht geprüft."
+      "documentationReviewStatus": "Erster vollständiger Metadatenbericht abgeschlossen; zweiter frischer Zeit-/Grenzreview aktiv. Keine Zusammenführung vor beiden Berichten. CLI-Zugriff weiterhin HTTP401 blockiert."
     },
     {
       "id": "INVENTORY-003-C",
@@ -268,36 +271,53 @@
       "scope": "43 öffentliche C-Frageidentitäten mit Kategorien, Kontext/Filter, Listen, Codebook; keine endgültige Auswahl/Polung",
       "author": "/root/inventory003_c_author",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "Quellen-Erstbericht abgeschlossen und erhalten; Repro-Erstbericht läuft. Keine Zusammenführung vor beiden vollständigen Berichten.",
+      "reviewStatus": "Beide vollständigen Erstberichte gelesen und zusammengeführt; niedriges C-R01 angenommen, neue Korrektur/Nachprüfung ausstehend.",
       "predefinedCriteria": "Vorabplan vorBearbeitung unter outputs/loop/inventory003-c/",
       "manifest": "reports/loop/packages/INVENTORY-003-C/v1/manifest.json",
       "manifestSha256": "14a87ba5148fba5e640e8164ea06d7ff34cbc2893117dc6baf3eee91f96be7cb",
-      "report": "reports/loop/authors/INVENTORY-003-C.md"
+      "report": "reports/loop/authors/INVENTORY-003-C.md",
+      "decision": "reports/loop/INVENTORY-003-C-v1-entscheidung.md"
     },
     {
       "id": "INVENTORY-004-E",
       "status": "RUNNING",
       "author": "/root/inventory004_e_author",
       "scope": "32 öffentliche E-Identitäten einschließlich Varianten, Kontext, Listen und Codebook; keine endgültige Auswahl/Polung",
-      "authorStatus": "RUNNING",
+      "authorStatus": "COMPLETED",
       "predefinedCriteria": "Vorabplan unter outputs/loop/inventory004-e/ vor Bearbeitung; tatsächlicher vollständiger Auftrag im Autorenbericht",
-      "reviewStatus": "Zwei frische unabhängige Erstprüfungen nach fertigem Freeze erforderlich"
+      "reviewStatus": "Fertige Autorenfassung in 10 Dateien/74 öffentlichen Quelleninputs eingefroren; zwei frische unabhängige Erstprüfungen nach freiem Slot erforderlich.",
+      "authorReport": "reports/loop/authors/INVENTORY-004-E.md",
+      "authorReportSha256": "ae291d2ef209840b40f021949a79420992b68a533a8ff76af276d3c233c377ac",
+      "annotationSha256": "2c7ef03dca2585bf6476eabf46f8508b3430666d30f07283bc84cd6b1978a224",
+      "manifest": "reports/loop/packages/INVENTORY-004-E/v1/manifest.json",
+      "manifestSha256": "0d124297e3410fd108dfeb1a676cb55a9562f4aa1b5e5adc52f8ddf95de66958"
+    },
+    {
+      "id": "DESIGN-003",
+      "status": "RUNNING",
+      "author": "/root",
+      "scope": "Elf öffentliche Designaussagen, Originalkonflikte und konkret fehlende Zuordnungen; keine endgültige Methode",
+      "authorStatus": "COMPLETED",
+      "predefinedCriteria": "outputs/loop/design003/plan-before-work.json",
+      "manifest": "reports/loop/packages/DESIGN-003/v1/manifest.json",
+      "manifestSha256": "adc655d01e9cb538d091ba6d7810dfe5212353b4fc39e8e98c5e07f35759cad1",
+      "reviewStatus": "Zwei frische unabhängige Erstprüfer mit getrennten Outputs aktiv; keine Zusammenführung vor vollständigen Berichten."
     }
   ],
-  "nextConcreteStep": "AB- und Methodenkorrekturen committen und Push prüfen. C-Repro-Erstbericht sammeln und dann beide auswerten. E-Annotation fortführen; zweiter unabhängiger Claude-Metadatenreview sobald Slot frei.",
+  "nextConcreteStep": "C-Metadatengrenze in neuer Fassung korrigieren; parallel laufende unabhängige DESIGN- und CLI-Prüfungen abschließen lassen. E-Prüfpaket vorbereiten.",
   "checkpoint": {
-    "lastLocalCommit": "3d2bdc455b7f6c503b4f5d0d7b8cca1a07f826ec",
-    "lastVerifiedRemoteCommit": "3d2bdc455b7f6c503b4f5d0d7b8cca1a07f826ec",
-    "lastVerifiedPushAtUtc": "2026-10-03T06:31:44.936267+00:00",
+    "lastLocalCommit": "60414205eba970c5832e8ad130bb43215f0a7da6",
+    "lastVerifiedRemoteCommit": "60414205eba970c5832e8ad130bb43215f0a7da6",
+    "lastVerifiedPushAtUtc": "2026-10-03T06:51:51.194555+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-018.json",
+    "record": "reports/loop/push-019.json",
     "intervalOverrunNote": "Checkpoint nach Kontextkompaktierung erst nach 30-Minuten-Frist begonnen (03:53:14 bis mindestens04:25UTC). Verspätung dokumentiert; eigene Änderungen sofort gesichert.",
     "lastPushCompletedAtUtcApproximate": "2026-10-03T06:29:27+00:00"
   },
   "scientificStatus": "296 technische Identitäten/205 Restzeilen unverändert. FOUNDATION-v4 begrenzte Korrekturen durch Nachprüfer und Juror bestätigt, wissenschaftliche Planabnahme BLOCKIERT. A/B: gezielte Fehler in 52 Identitäten nach zwei tatsächlichen Nachprüfungen korrigiert, 61 Quellen-/Versionsreste offen. METHODS-v3: beide technischen Nachberichte vollständig ausgewertet, drei gezielte Korrekturen bestätigt; wissenschaftliche Verfahrens-/ESS-Abnahme bleibt offen. C: 43 öffentliche Annotationen in zwei unabhängigen Erstprüfungen. Keine ESS-Antwortdaten, A/B-Auswertung, Entblindung, endgültige Itemauswahl oder Tags; Claude-Forschungsreviews nicht ausgeführt, aktueller Zugang HTTP401.",
-  "technicalRecord": "reports/loop/technical-post-ab-correction.json",
+  "technicalRecord": "reports/loop/technical-checkpoint020.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
     "reports/loop/technical-v2/web-check.json",
@@ -318,7 +338,8 @@
     "reports/loop/technical-v4/all.json",
     "reports/loop/technical-post-audit-decisions.json",
     "reports/loop/technical-new-packages.json",
-    "reports/loop/technical-post-ab-correction.json"
+    "reports/loop/technical-post-ab-correction.json",
+    "reports/loop/technical-checkpoint020.json"
   ],
   "independentPreparations": [
     {

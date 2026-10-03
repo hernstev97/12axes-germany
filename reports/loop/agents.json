@@ -509,32 +509,80 @@
       "returnedTaskName": "/root/inventory003_c_repro",
       "fork_turns": "none",
       "kind": "independent-reproduction-first-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/INVENTORY-003-C/v1/manifest.json",
       "manifestSha256": "14a87ba5148fba5e640e8164ea06d7ff34cbc2893117dc6baf3eee91f96be7cb",
       "report": "reports/loop/reviews/INVENTORY-003-C-repro.md",
       "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext.",
-      "writeScope": "Nur eigener Outputordner und eigener Bericht; absolute Patchpfade im Worktree verbindlich."
+      "writeScope": "Nur eigener Outputordner und eigener Bericht; absolute Patchpfade im Worktree verbindlich.",
+      "reportSha256": "893ed72ebffce8c30772c3caf3dc9cb3dd598b4eefa0296f2ae88f5459a5f69b"
     },
     {
       "task_name": "inventory004_e_author",
       "returnedTaskName": "/root/inventory004_e_author",
       "fork_turns": "none",
       "kind": "public-source-author",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/authors/INVENTORY-004-E.md",
       "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext.",
-      "writeScope": "Eigene getrennte Outputs und Bericht; absolute Worktree-Patchpfade."
+      "writeScope": "Eigene getrennte Outputs und Bericht; absolute Worktree-Patchpfade.",
+      "reportSha256": "ae291d2ef209840b40f021949a79420992b68a533a8ff76af276d3c233c377ac"
     },
     {
       "task_name": "claudep02_metadata",
       "returnedTaskName": "/root/claudep02_metadata",
       "fork_turns": "none",
       "kind": "independent-access-metadata-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/reviews/CLAUDE-P02-metadata.md",
       "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext.",
-      "writeScope": "Eigene getrennte Outputs und Bericht; absolute Worktree-Patchpfade."
+      "writeScope": "Eigene getrennte Outputs und Bericht; absolute Worktree-Patchpfade.",
+      "reportSha256": "f53b8063efcefa5abe0de174cbe70f56aeb9ef917e5d9b8fa301db9cd3a5d1e1"
+    },
+    {
+      "task_name": "claudep02_time_boundary",
+      "returnedTaskName": "/root/claudep02_time_boundary",
+      "kind": "independent-first-review",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/CLAUDE-P02/v1/manifest.json",
+      "manifestSha256": "5c4fe35d971dde4dafc6fb58bfcbe96eb848499dc09ee0b8713964ace061bef4",
+      "report": "reports/loop/reviews/CLAUDE-P02-time-boundary.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wird im eigenen Erstbericht wortgetreu erhalten. Keine Rekonstruktion.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext, keine Peerberichte/Verteidigung. Gemeinsames Dateisystem; keine technische Reviewer-Sandbox."
+    },
+    {
+      "task_name": "design003_sources",
+      "returnedTaskName": "/root/design003_sources",
+      "kind": "independent-first-review",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/DESIGN-003/v1/manifest.json",
+      "manifestSha256": "adc655d01e9cb538d091ba6d7810dfe5212353b4fc39e8e98c5e07f35759cad1",
+      "report": "reports/loop/reviews/DESIGN-003-sources.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wird im eigenen Erstbericht wortgetreu erhalten. Keine Rekonstruktion.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext, keine Peerberichte/Verteidigung. Gemeinsames Dateisystem; keine technische Reviewer-Sandbox."
+    },
+    {
+      "task_name": "design003_methods",
+      "returnedTaskName": "/root/design003_methods",
+      "kind": "independent-first-review",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/DESIGN-003/v1/manifest.json",
+      "manifestSha256": "adc655d01e9cb538d091ba6d7810dfe5212353b4fc39e8e98c5e07f35759cad1",
+      "report": "reports/loop/reviews/DESIGN-003-methods.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wird im eigenen Erstbericht wortgetreu erhalten. Keine Rekonstruktion.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext, keine Peerberichte/Verteidigung. Gemeinsames Dateisystem; keine technische Reviewer-Sandbox."
     }
   ],
   "activeAdditionalAuthors": [
@@ -620,5 +668,11 @@
       "reportSha256": "759606452a9eef5ce034bfb596723b4087d25a642fe4a8095e7689fdfa7e8b94"
     }
   ],
-  "updatedAtUtc": "2026-10-03T06:50:55.366763+00:00"
+  "updatedAtUtc": "2026-10-03T06:50:55.366763+00:00",
+  "operationalNotes": [
+    {
+      "atUtc": "2026-10-03T07:15:22.935240+00:00",
+      "event": "send_message an abgeschlossenen E-Autor nach neuer vierter aktiver Sitzung scheiterte mit agent thread limit reached. Keine Datei oder wissenschaftliche Prüfung betroffen. Modellmetadaten aus tatsächlichem Spawn ohne Override werden vom Koordinator dokumentiert; abgeschlossener Bericht bleibt unverändert."
+    }
+  ]
 }
