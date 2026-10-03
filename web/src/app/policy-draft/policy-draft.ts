@@ -74,6 +74,12 @@ export class PolicyDraft {
   readonly historicalGroups = input<HistoricalGroupInput | null>(null);
   readonly referencesV22 = input<ReferencesV22 | null>(null);
   protected readonly v22 = computed(() => indexReferencesV22(this.referencesV22()));
+  /** Plan v2.2, 4.3: the interval explanation appears once per view, not at every reference. */
+  protected readonly hasIntervals = computed(() =>
+    [...this.v22().single.values(), ...this.v22().pairs.values()].some(
+      (entry) => entry.reference?.interval,
+    ),
+  );
   private readonly injector = inject(Injector);
   private readonly pageHeading = viewChild<ElementRef<HTMLElement>>('pageHeading');
   private readonly questionHeading = viewChild<ElementRef<HTMLElement>>('questionHeading');

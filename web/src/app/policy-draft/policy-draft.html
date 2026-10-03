@@ -202,6 +202,16 @@
             Eine Antwort beschreibt nur die jeweilige Originalfrage. Sie ergibt keinen persönlichen
             Unsicherheitsbereich, keine Parteizuordnung und keine aktuelle Bevölkerungsnorm.
           </p>
+          @if (hasIntervals()) {
+            <p class="interval-note">
+              Ein 95-%-Bereich beschreibt die Unsicherheit durch die Zufallsstichprobe der damaligen
+              Befragung unter vereinfachenden Annahmen, im Gruppenvergleich innerhalb der gewählten
+              Gruppe. Er enthält keine Unsicherheit durch den zeitlichen Abstand, den anderen
+              Befragungsmodus, Nichtteilnahme oder den neuen Fragekontext. Er ist keine Unsicherheit
+              der eigenen Antwort und kein Test auf Unterschiede zwischen Gruppen. Nahe 0 und 100 %
+              kann er die tatsächliche Unsicherheit unterschätzen.
+            </p>
+          }
           @if (references().status === 'none') {
             <p>Historische Vergleichswerte sind in dieser Fassung noch nicht eingebunden.</p>
           }
@@ -515,16 +525,7 @@
                         </div>
                       }
                     </dl>
-                    @if (reference.hasIntervals) {
-                      <p class="meta interval-note">
-                        Der 95-%-Bereich beschreibt die Unsicherheit durch die Zufallsstichprobe der
-                        damaligen Befragung unter vereinfachenden Annahmen. Er enthält keine
-                        Unsicherheit durch den zeitlichen Abstand, den anderen Befragungsmodus,
-                        Nichtteilnahme oder den neuen Fragekontext. Er ist keine Unsicherheit der
-                        eigenen Antwort. Nahe 0 und 100 % kann er die tatsächliche Unsicherheit
-                        unterschätzen.
-                      </p>
-                    } @else {
+                    @if (!reference.hasIntervals) {
                       <p class="meta interval-missing">
                         Für diese Referenz ist kein 95-%-Bereich angegeben. Ein fehlender Bereich
                         bedeutet keine Unsicherheit von null.
@@ -613,14 +614,7 @@
                         </div>
                       }
                     </dl>
-                    @if (comparison.intervals?.reference?.interval) {
-                      <p class="meta interval-note">
-                        Der 95-%-Bereich beschreibt die Unsicherheit durch die Zufallsstichprobe der
-                        damaligen Befragung in dieser Gruppe unter vereinfachenden Annahmen. Er
-                        enthält keine Unsicherheit durch den zeitlichen Abstand, Nichtteilnahme oder
-                        den neuen Fragekontext. Er ist kein Test auf Unterschiede zwischen Gruppen.
-                      </p>
-                    }
+
                     <p class="meta">
                       Gewichtung: {{ comparison.reference.weight }}. Nenner der Anteile ist die
                       Summe der Gewichte gültiger Antworten dieser Frage in dieser Gruppe. Alle

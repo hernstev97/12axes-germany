@@ -220,9 +220,10 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     )!;
     expect(withInterval.querySelectorAll('.interval').length).toBe(5);
     expect(withInterval.querySelector('.interval')?.textContent).toMatch(/15,0\s%\sbis 25,0\s%/);
-    expect(withInterval.querySelector('.interval-note')?.textContent).toContain(
-      'keine Unsicherheit der',
-    );
+    expect(withInterval.querySelector('.interval-note')).toBeNull();
+    const explanation = element.querySelectorAll('.interval-note');
+    expect(explanation).toHaveLength(1);
+    expect(explanation[0]!.textContent).toContain('keine Unsicherheit der');
     const added = element.querySelector<HTMLElement>('[data-question-id="ESS8e02_3:elgcoal"]')!;
     expect(added.querySelector('.historical-reference')).not.toBeNull();
     expect(added.querySelector('.interval')).toBeNull();
@@ -238,13 +239,15 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expect(pair).not.toBeNull();
     expect(pair!.querySelectorAll('[data-category-code]')).toHaveLength(6);
     expect(pair!.querySelector('.interval-note')).toBeNull();
+    expect(element.querySelectorAll('.interval-note')).toHaveLength(1);
     await selectComparison('draft-group-study', 'ESS9e03_3');
     await selectComparison('draft-vote-group', 'ESS9e03_3:second_vote:1');
     const ess9Pair = element.querySelector<HTMLElement>(
       '[data-question-id="ESS9e03_3:sofrdst"] .group-reference',
     )!;
     expect(ess9Pair.querySelectorAll('.interval').length).toBe(5);
-    expect(ess9Pair.querySelector('.interval-note')?.textContent).toContain(
+    expect(ess9Pair.querySelector('.interval-note')).toBeNull();
+    expect(element.querySelector('.interval-note')?.textContent).toContain(
       'kein Test auf Unterschiede zwischen Gruppen',
     );
   }, 20_000);
