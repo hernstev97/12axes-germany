@@ -366,11 +366,12 @@ describe('descriptive answer profile', () => {
     expect(allText(result)).not.toMatch(FORBIDDEN);
   });
 
-  it('v2.2 cross-reference: social protection does not assume a means test', () => {
+  it('v2.2 cross-reference: social protection leaves a means test unspecified', () => {
     const result = profile({ sofrpr: '1', basinc: '4' });
     const entry = result.crossReferences.find((cross) => cross.id === 'social_protection')!;
     expect(entry.answers).toHaveLength(2);
-    expect(entry.context).toContain('ohne Bedürftigkeitsprüfung');
+    expect(entry.context).toContain('Ob eine Bedürftigkeit geprüft wird, legen');
+    expect(entry.context).not.toContain('ohne Bedürftigkeitsprüfung');
     expect(statement(result, 'basinc')!.text).toBe(
       'Für ein solches Grundeinkommen in Deutschland (gewählt: „Sehr dafür“).',
     );

@@ -107,6 +107,23 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     await fixture.whenStable();
   }
 
+  it('T30: zeigt bei zurückgehaltener Referenz keine Zahlen, behält aber die eigene Aussage', async () => {
+    fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
+    await click('Zur Fragenübersicht');
+    const target = POLICY_DRAFT_ITEMS.findIndex((item) => item.id === 'ESS10SCe03_2:cttresa');
+    element.querySelectorAll<HTMLButtonElement>('.overview-list li button')[target]!.click();
+    await fixture.whenStable();
+    await choose('9');
+    await click('Zum Ergebnisentwurf');
+    const article = element.querySelector<HTMLElement>(
+      '[data-question-id="ESS10SCe03_2:cttresa"]',
+    )!;
+    expect(article.querySelector('.profile-statement')?.textContent).toContain(': 9 (0 = ');
+    expect(article.querySelector('.reference-withheld')).not.toBeNull();
+    expect(article.querySelector('.same-category')).toBeNull();
+    expect(article.querySelector('.historical-reference')).toBeNull();
+    expect(article.textContent).not.toMatch(/\d+(?:,\d+)? %/);
+  });
   it('zeigt das erklärende Profil mit Blockmuster, Querbezug, markierter eigener Antwort und Lücken', async () => {
     fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
     await choose('1');

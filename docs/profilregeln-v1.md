@@ -49,7 +49,7 @@ Querbezüge stellen Fragen aus verschiedenen Blöcken oder Studien nebeneinander
 | Querbezug                         | Fragen                                                                         |
 | --------------------------------- | ------------------------------------------------------------------------------ |
 | Einkommensunterschiede            | `sofrdst` (ESS9), `gincdif` (ESS11), `grdfinc` (ESS10)                         |
-| Absicherung bei Armut und Bedarf  | `sofrpr` (ESS9), `gvctzpv` (ESS10), `gvslvol`, `gvslvue`, `basinc` (ESS8)      |
+| Soziale Absicherung               | `sofrpr` (ESS9), `gvctzpv` (ESS10), `gvslvol`, `gvslvue`, `basinc` (ESS8)      |
 | Gewicht der Bevölkerungsmehrheit  | `votedir`, `viepol`, `wpestop`, `scchpldm` (ESS10)                             |
 | Recht, Gerichte und Polizei       | `cttresa` (ESS10), `dbctvrd`, `lwstrob`, `rgbrklw`, `bplcdc`, `dpcstrb` (ESS5) |
 | Politische Führung und Recht      | `accalaw`, `loylead`, `cttresa` (ESS10), `prtyban` (ESS5)                      |
@@ -82,4 +82,4 @@ Gesamtwerte, Themenwerte, Mittelwerte oder Summen über Fragen. Achsen, Karten, 
 
 ## Prüfung
 
-Die technischen Prüffälle T01–T29 aus R4 Abschnitt 5 sind als synthetische Tests in `profile-engine.spec.ts` umgesetzt, dazu Tests für die Blöcke und Querbezüge aus Plan v2.2. T30 betrifft die Anzeige historischer Vergleiche und ist im Komponententest zu `cttresa` in `policy-draft.spec.ts` abgedeckt. Ein weiterer Test prüft, dass jede angebotene Antwortkategorie jeder Frage einen Satz ohne verbotene Bezeichnungen und ohne direkte Anrede ergibt. Synthetische Antwortkombinationen sind keine empirischen Personen. Ob Menschen die Texte so verstehen wie beabsichtigt, kann nur der Verständnistest zeigen.
+Die technischen Prüffälle T01–T29 aus R4 Abschnitt 5 sind als synthetische Tests in `profile-engine.spec.ts` umgesetzt, dazu Tests für die Blöcke und Querbezüge aus Plan v2.2. T30 betrifft die Anzeige historischer Vergleiche. Ein Komponententest in `policy-draft.spec.ts` beantwortet die zurückgehaltene Frage `cttresa` und prüft, dass keine Prozentwerte erscheinen und die eigene Aussage bleibt. `reference-v22.spec.ts` prüft, dass Einträge mit dem Status `withheld_base_or_cell_count` oder `no_valid_answers` nie Zahlen tragen. Ein weiterer Test prüft, dass jede angebotene Antwortkategorie jeder Frage einen Satz ohne verbotene Bezeichnungen und ohne direkte Anrede ergibt. Synthetische Antwortkombinationen sind keine empirischen Personen. Ob Menschen die Texte so verstehen wie beabsichtigt, kann nur der Verständnistest zeigen.

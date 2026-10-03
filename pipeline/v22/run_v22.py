@@ -184,18 +184,21 @@ def reference(states, weights, design, categories, domain, with_interval):
     return result
 
 
-def field_state(raw: str, field: dict) -> str:
+def field_state(raw: str, field: dict) -> tuple[str, str | None]:
+    """Returns (state, detail): detail is the exact API missing reason or the code."""
     kind, code = code_of(raw)
     if kind == 'blank':
-        return 'technical_export_blank'
+        return 'technical_export_blank', None
     if kind == 'literal':
         raise RunError('unknown vote or party literal')
     if code in field['validCodes']:
-        return 'valid'
-    if code in {m['code'] for m in field['sourceMissingCodes']}:
-        return 'source_missing'
-    if code in {m['code'] for m in field.get('structurallyNotAskedCodes', [])}:
-        return 'structurally_not_asked'
+        return 'valid', code
+    for missing in field['sourceMissingCodes']:
+        if code == missing['code']:
+            return 'source_missing', missing.get('reasonApiExact', code)
+    for not_asked in field.get('structurallyNotAskedCodes', []):
+        if code == not_asked['code']:
+            return 'structurally_not_asked', None
     raise RunError('unknown vote or party code')
 
 
@@ -203,27 +206,48 @@ def vote_party_states(rows, gs) -> tuple[list[str | None], dict]:
     """Validates vote and second-vote fields for every German case (v2.1 contract).
 
     Returns the party code per case where vote = 1 and the party code is valid, else None,
-    and a private accounting of vote states, party states and inconsistencies.
+    and a private accounting with separate axes for vote state and party state, exact
+    missing reasons per field, named versus unlabelled other parties, and inconsistencies.
     """
     vote_field, party_field = gs['voteField'], gs['nationalParty2Field']
     vote, party = gs['columns']['vote'], gs['columns']['party2']
+    kinds = {g['party2Code']: g['kind'] for g in gs['groupsInDeclaredApiOrder']}
     vote_states, party_states = Counter(), Counter()
+    vote_missing, party_missing = Counter(), Counter()
     inconsistent = 0
     party_of: list[str | None] = []
     for row in rows:
-        v_state = field_state(row[vote], vote_field)
-        v_code = code_of(row[vote])[1]
+        v_state, v_detail = field_state(row[vote], vote_field)
         if v_state == 'valid':
-            v_state = {'1': 'yes', '2': 'no', '3': 'not_eligible'}[v_code]
-        p_state = field_state(row[party], party_field)
-        p_code = code_of(row[party])[1]
+            v_state = {'1': 'yes', '2': 'no', '3': 'not_eligible'}[v_detail]
+        elif v_state == 'source_missing':
+            vote_missing[v_detail] += 1
+        p_state, p_detail = field_state(row[party], party_field)
+        if p_state == 'valid':
+            p_state = 'valid_named_party' if kinds.get(p_detail) == 'named_party' \
+                else 'valid_other_unlabelled'
+        elif p_state == 'source_missing':
+            party_missing[p_detail] += 1
         vote_states[v_state] += 1
         party_states[p_state] += 1
-        if p_state == 'valid' and v_state != 'yes':
+        valid_party = p_state.startswith('valid_')
+        if valid_party and v_state != 'yes':
             inconsistent += 1
-        party_of.append(p_code if v_state == 'yes' and p_state == 'valid' else None)
-    return party_of, dict(voteStates=dict(vote_states), partyStates=dict(party_states),
+        party_of.append(p_detail if v_state == 'yes' and valid_party else None)
+    return party_of, dict(voteStates=dict(vote_states), voteMissingReasons=dict(vote_missing),
+                          partyStates=dict(party_states), partyMissingReasons=dict(party_missing),
                           nonYesVoteWithValidParty=inconsistent)
+
+
+def ratio_diagnostic(anweight: list[float], pspwght: list[float], scope: list[bool]) -> dict:
+    """anweight/pspwght against the first in-scope ratio; absolute and relative tolerance."""
+    ratios = [a / p for a, p, inside in zip(anweight, pspwght, scope) if inside]
+    if not ratios:
+        return dict(status='not_evaluable_no_eligible_group_cases')
+    first = ratios[0]
+    constant = all(abs(r - first) <= 1e-12 and abs(r - first) <= 1e-12 * abs(first) for r in ratios)
+    return dict(status='constant_within_tolerance' if constant else 'not_constant_within_tolerance',
+                cases=len(ratios), relativeSpread=(max(ratios) - min(ratios)) / min(ratios))
 
 
 def run(contract_path: Path, group_contract_path: Path, supplement_path: Path,
@@ -261,17 +285,13 @@ def run(contract_path: Path, group_contract_path: Path, supplement_path: Path,
         if len({r['idno'] for r in rows}) != len(rows):
             raise RunError('duplicate respondent identifiers')
         weights = {w: [positive(r[w]) for r in rows] for w in ('pspwght', 'dweight', 'anweight')}
-        ratios = [a / p for a, p in zip(weights['anweight'], weights['pspwght'])]
-        ratio_diagnostic = dict(
-            relativeSpread=(max(ratios) - min(ratios)) / min(ratios),
-            constantWithin1e12=all(abs(r - ratios[0]) <= 1e-12 or abs(r - ratios[0]) <= 1e-12 * ratios[0]
-                                   for r in ratios))
+        all_german = ratio_diagnostic(weights['anweight'], weights['pspwght'], [True] * len(rows))
         has_design = all(r.get('psu', '') != '' and r.get('stratum', '') != '' for r in rows) \
             and 'psu' in rows[0]
         design = [(r['stratum'], r['psu']) for r in rows] if has_design else None
         everyone = [True] * len(rows)
         study_out = dict(deRows=len(rows), designAvailable=has_design, items={}, groups={},
-                         anweightRatioDiagnostic=ratio_diagnostic)
+                         anweightRatioAllGermanCases=all_german)
         for spec in specs[sid]:
             states = classify(rows, spec)
             study_out['items'][spec['id']] = dict(
@@ -282,6 +302,8 @@ def run(contract_path: Path, group_contract_path: Path, supplement_path: Path,
             vote, party = gs['columns']['vote'], gs['columns']['party2']
             party_of, accounting = vote_party_states(rows, gs)
             study_out['eligibilityAccounting'] = accounting
+            study_out['anweightRatioEligibleGroupCases'] = ratio_diagnostic(
+                weights['anweight'], weights['pspwght'], [p is not None for p in party_of])
             for group in gs['groupsInDeclaredApiOrder']:
                 code = group['party2Code']
                 if code not in valid_parties:
@@ -336,16 +358,26 @@ def gate() -> str:
     return local
 
 
+def check_private_dir(private_dir: Path, expected_parent: Path) -> None:
+    """Refuses symlinks, paths outside the expected parent, group/other permissions and an
+    existing run. Never changes existing permissions."""
+    parent = private_dir.parent
+    if parent.exists() and (parent.is_symlink() or parent.resolve() != expected_parent.resolve()):
+        raise RunError('private output path unavailable')
+    if private_dir.exists():
+        if private_dir.is_symlink() or private_dir.stat().st_mode & 0o077:
+            raise RunError('private output directory is not a plain 0700 directory')
+        if (private_dir / 'run.json').exists():
+            raise RunError('existing private run')
+
+
 def main() -> int:
     argparse.ArgumentParser(description=__doc__).parse_args()
     try:
         tag_commit = gate()
-        private_root = (ROOT / 'data/local').resolve()
-        if private_root != ROOT.resolve() / 'data/local' or PRIVATE_RUN.exists():
-            raise RunError('private output path unavailable or existing private run')
-        if PRIVATE_DIR.exists() and (PRIVATE_DIR.is_symlink() or PRIVATE_DIR.resolve() != private_root / 'v22'):
-            raise RunError('private output path unavailable or existing private run')
+        check_private_dir(PRIVATE_DIR, ROOT / 'data/local')
         PRIVATE_DIR.mkdir(mode=0o700, parents=True, exist_ok=True)
+        check_private_dir(PRIVATE_DIR, ROOT / 'data/local')
         result = run(ROOT / 'data/analysevertrag.v2.entwurf.json',
                      ROOT / 'data/gruppenvertrag.v2.1.entwurf.json',
                      ROOT / 'data/politikprofil-v2.2.ergaenzung.json')

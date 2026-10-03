@@ -168,7 +168,7 @@ export const CROSS_REFERENCE_RULES: readonly CrossReferenceRule[] = Object.freez
       'ESS8e02_3:basinc',
     ],
     context:
-      'Die Fragen betreffen soziale Absicherung, aber verschiedene Gegenstände: die Sorge für Arme und Bedürftige als Merkmal einer gerechten Gesellschaft (ESS9), den Schutz aller vor Armut als Merkmal der Demokratie (ESS10), staatliche Verantwortung für den Lebensstandard im Alter und bei Arbeitslosigkeit ohne Bedürftigkeitsprüfung (ESS8) und ein Grundeinkommen für alle, das viele bestehende Leistungen ersetzen würde (ESS8).',
+      'Die Fragen betreffen soziale Absicherung, aber verschiedene Gegenstände: die Sorge für Arme und Bedürftige als Merkmal einer gerechten Gesellschaft (ESS9), den Schutz aller vor Armut als Merkmal der Demokratie (ESS10), staatliche Verantwortung für einen angemessenen Lebensstandard im Alter und bei Arbeitslosigkeit (ESS8) und ein Grundeinkommen für alle, das viele bestehende Leistungen ersetzen würde (ESS8). Ob eine Bedürftigkeit geprüft wird, legen die ESS8-Fragen zu Alter und Arbeitslosigkeit nicht fest.',
   },
   {
     id: 'majority_will',
