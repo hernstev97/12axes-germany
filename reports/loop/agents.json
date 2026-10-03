@@ -592,7 +592,7 @@
       "returnedTaskName": "/root/inventory004_e_sources",
       "kind": "independent-first-review",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/INVENTORY-004-E/v1/manifest.json",
       "manifestSha256": "0d124297e3410fd108dfeb1a676cb55a9562f4aa1b5e5adc52f8ddf95de66958",
       "report": "reports/loop/reviews/INVENTORY-004-E-sources.md",
@@ -600,14 +600,15 @@
       "model": "gpt-6.1-sol",
       "reasoning": "ultra",
       "overrides": false,
-      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peerberichte/Verteidigung. C-Nachprüfung darf die abgeschlossenen v1-Erstberichte kennen. Shared-FS keine technische Sandbox."
+      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peerberichte/Verteidigung. C-Nachprüfung darf die abgeschlossenen v1-Erstberichte kennen. Shared-FS keine technische Sandbox.",
+      "reportSha256": "3da4930f03f4268c8d19ad7455a17702bf601568adf80e20f85121ab2ed0b50c"
     },
     {
       "task_name": "inventory004_e_repro",
       "returnedTaskName": "/root/inventory004_e_repro",
       "kind": "independent-first-review",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/INVENTORY-004-E/v1/manifest.json",
       "manifestSha256": "0d124297e3410fd108dfeb1a676cb55a9562f4aa1b5e5adc52f8ddf95de66958",
       "report": "reports/loop/reviews/INVENTORY-004-E-repro.md",
@@ -615,14 +616,15 @@
       "model": "gpt-6.1-sol",
       "reasoning": "ultra",
       "overrides": false,
-      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peerberichte/Verteidigung. C-Nachprüfung darf die abgeschlossenen v1-Erstberichte kennen. Shared-FS keine technische Sandbox."
+      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peerberichte/Verteidigung. C-Nachprüfung darf die abgeschlossenen v1-Erstberichte kennen. Shared-FS keine technische Sandbox.",
+      "reportSha256": "baf6eea2d9962fd67fe625dc4dc9250284ea22c2f54aaef8b04ba8bc530702b5"
     },
     {
       "task_name": "inventory003_c_v2_sources",
       "returnedTaskName": "/root/inventory003_c_v2_sources",
       "kind": "independent-recheck",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/INVENTORY-003-C/v2/manifest.json",
       "manifestSha256": "024cd9f143e353c17ffe1571c9b94a892bfe7c0bff36386488896a92a8db792b",
       "report": "reports/loop/reviews/INVENTORY-003-C-v2-sources.md",
@@ -630,7 +632,87 @@
       "model": "gpt-6.1-sol",
       "reasoning": "ultra",
       "overrides": false,
-      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peerberichte/Verteidigung. C-Nachprüfung darf die abgeschlossenen v1-Erstberichte kennen. Shared-FS keine technische Sandbox."
+      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peerberichte/Verteidigung. C-Nachprüfung darf die abgeschlossenen v1-Erstberichte kennen. Shared-FS keine technische Sandbox.",
+      "reportSha256": "985761f5f3283af1bbc2d7c95d7fa4cb5005946943aad3204eacf055a4a184ca"
+    },
+    {
+      "task_name": "inventory003_c_v2_repro",
+      "returnedTaskName": "/root/inventory003_c_v2_repro",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/INVENTORY-003-C/v2/manifest.json",
+      "manifestSha256": "024cd9f143e353c17ffe1571c9b94a892bfe7c0bff36386488896a92a8db792b",
+      "report": "reports/loop/reviews/INVENTORY-003-C-v2-repro.md",
+      "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen Bericht wortgetreu erhalten; keine erfundene Rekonstruktion.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext; originale v1-Berichte im Prüfpaket erlaubt, keine aktuellen Peer-Nachberichte. Shared FS keine technische Sandbox.",
+      "reportSha256": "70c0f4c925601969c50cba18b18d7ec29be63e867a18d1d6f66f0cdfad344940",
+      "rootFullReportRead": true
+    },
+    {
+      "task_name": "design003_v2_sources",
+      "returnedTaskName": "/root/design003_v2_sources",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/DESIGN-003/v2/manifest.json",
+      "manifestSha256": "fdfd7d4d2f24c80c6a93682477e03a90fcdfa0e90a1863ba1c5881b23dbe695f",
+      "report": "reports/loop/reviews/DESIGN-003-v2-sources.md",
+      "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen Bericht wortgetreu erhalten; keine erfundene Rekonstruktion.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext; originale v1-Berichte im Prüfpaket erlaubt, keine aktuellen Peer-Nachberichte. Shared FS keine technische Sandbox.",
+      "reportSha256": "ed490efc972ab2a668fb05fced3e25b688db20fde6ed62d3090a471d24f8eebb",
+      "rootFullReportRead": false
+    },
+    {
+      "task_name": "design003_v2_methods",
+      "returnedTaskName": "/root/design003_v2_methods",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/DESIGN-003/v2/manifest.json",
+      "manifestSha256": "fdfd7d4d2f24c80c6a93682477e03a90fcdfa0e90a1863ba1c5881b23dbe695f",
+      "report": "reports/loop/reviews/DESIGN-003-v2-methods.md",
+      "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen Bericht wortgetreu erhalten; keine erfundene Rekonstruktion.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext; originale v1-Berichte im Prüfpaket erlaubt, keine aktuellen Peer-Nachberichte. Shared FS keine technische Sandbox."
+    },
+    {
+      "task_name": "claudep02_v2_metadata",
+      "returnedTaskName": "/root/claudep02_v2_metadata",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/CLAUDE-P02/v2/manifest.json",
+      "manifestSha256": "a857ba7b0f587376321a2e82066a152076fc7ee794a377e7ebacb3ea97248056",
+      "report": "reports/loop/reviews/CLAUDE-P02-v2-metadata.md",
+      "actualStartPrompt": "Wortgetreuer tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen Erstnachbericht erhalten.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer Kontext; keine aktuellen Peer-Nachberichte. Kein neuer Claude-Aufruf, nur eng öffentliche erlaubte Metadaten."
+    },
+    {
+      "task_name": "claudep02_v2_boundary",
+      "returnedTaskName": "/root/claudep02_v2_boundary",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/CLAUDE-P02/v2/manifest.json",
+      "manifestSha256": "a857ba7b0f587376321a2e82066a152076fc7ee794a377e7ebacb3ea97248056",
+      "report": "reports/loop/reviews/CLAUDE-P02-v2-boundary.md",
+      "actualStartPrompt": "Wortgetreuer tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen Erstnachbericht erhalten.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer Kontext; keine aktuellen Peer-Nachberichte. Kein neuer Claude-Aufruf, nur eng öffentliche erlaubte Metadaten."
     }
   ],
   "activeAdditionalAuthors": [
@@ -716,11 +798,16 @@
       "reportSha256": "759606452a9eef5ce034bfb596723b4087d25a642fe4a8095e7689fdfa7e8b94"
     }
   ],
-  "updatedAtUtc": "2026-10-03T06:50:55.366763+00:00",
+  "updatedAtUtc": "2026-10-03T08:09:52.427814+00:00",
   "operationalNotes": [
     {
       "atUtc": "2026-10-03T07:15:22.935240+00:00",
       "event": "send_message an abgeschlossenen E-Autor nach neuer vierter aktiver Sitzung scheiterte mit agent thread limit reached. Keine Datei oder wissenschaftliche Prüfung betroffen. Modellmetadaten aus tatsächlichem Spawn ohne Override werden vom Koordinator dokumentiert; abgeschlossener Bericht bleibt unverändert."
+    },
+    {
+      "atUtc": "2026-10-03T08:06:11.231621+00:00",
+      "target": "/root/inventory004_e_repro",
+      "event": "Operative Pfadklärung: 205 ist die ursprüngliche Pending-Zeilenanzahl der 296-Zeilen-CSV, keine zweite CSV. Lesen der ursprünglichen technischen Zählregel pipeline/inventar.py:610–628 erlaubt. Kein anderer Reviewerbefund übermittelt."
     }
   ]
 }

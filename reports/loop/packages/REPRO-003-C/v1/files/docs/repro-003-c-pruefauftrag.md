@@ -1,0 +1,9 @@
+# Prüfauftrag REPRO-003-C
+
+Prüfgegenstand ist der ausführbare Nachbau der historischen öffentlichen C-v2-Annotation, keine wissenschaftliche Modellfreigabe. Das konkrete Manifest bindet Code, Anforderungen, öffentliche Eingaben, historische Zielbytes, Vorabplan und tatsächliche Autorenoutputs. Alle gebundenen Eingaben bleiben während der unabhängigen Erstprüfung unverändert.
+
+Zwei frische unabhängige Reviewer prüfen getrennt: erstens Code, Eingabe-/Ausgabepfade, Downloads, Hashbindung und behauptete Grenzen; zweitens Nachbau aus einer eigenen minimalen Kopie, ursprüngliche Quellbindung, historische Metadaten und echte zusätzliche Gegenfälle. Beide lesen Originalquellen soweit ihre Aussagen sie benötigen. Kein Reviewer liest den Bericht des anderen oder Loopfindings und keiner verändert gemeinsame Forschungsartefakte.
+
+Abnahme: vollständiger Nachbau ohne ignorierte Autorenbuilder oder Caches; tatsächlicher Download aus offiziellen Quellen mit exakten Pins; identische historische Annotationbytes; nachvollziehbare tatsächliche Laufprovenienz, die historische Metadaten nicht zur aktuellen Selbstbeschreibung macht; keine Rohantwortlesung oder fremde Überschreibung; tatsächlich ausgeführte begrenzte Pfad-/Eingabegegenfälle. Eine fehlende Voraussetzung oder ein nicht ausgeführter Test bleibt sichtbar. Pfadkontrolle ist keine OS-Sandbox; Bytegleichheit ist kein semantischer oder wissenschaftlicher Nachweis.
+
+Eigene Outputs und der eigene vollständige Erstbericht liegen in vorher getrennt zugewiesenen Pfaden. Jedes Finding braucht genaue Aussage, Problem, überprüfbare Fundstelle, Wirkung, begründeten Schweregrad, konkrete Korrektur und Nachprüfung. Vollständigen tatsächlichen Auftrag, angebotene und benutzte Werkzeuge, Befehle/Exits/Fehlläufe und tatsächliche Modellmetadaten dokumentieren. Die organisatorisch getrennte Prüfung derselben Codex-Familie heißt KI-Audit, nicht akademisches Peer Review.

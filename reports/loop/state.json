@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T07:39:50.312079+00:00",
+  "updatedAtUtc": "2026-10-03T08:09:52.427814+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "47e8cb564770d56ddf8d335ba1256f19a6de8b59",
+  "currentHead": "1fa2251bb7dc57d36ee9169cba7af6918d75c295",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -133,7 +133,12 @@
     "reports/loop/reviews/CLAUDE-P02-metadata.md",
     "reports/loop/reviews/CLAUDE-P02-time-boundary.md",
     "reports/loop/reviews/DESIGN-003-sources.md",
-    "reports/loop/reviews/DESIGN-003-methods.md"
+    "reports/loop/reviews/DESIGN-003-methods.md",
+    "reports/loop/reviews/INVENTORY-004-E-sources.md",
+    "reports/loop/reviews/INVENTORY-004-E-repro.md",
+    "reports/loop/reviews/INVENTORY-003-C-v2-sources.md",
+    "reports/loop/reviews/INVENTORY-003-C-v2-repro.md",
+    "reports/loop/reviews/DESIGN-003-v2-sources.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -148,18 +153,18 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/inventory004_e_sources",
-      "role": "independent-public-source-first-review",
+      "name": "/root/design003_v2_methods",
+      "role": "independent-correction-recheck",
       "status": "RUNNING"
     },
     {
-      "name": "/root/inventory004_e_repro",
-      "role": "independent-public-reproduction-first-review",
+      "name": "/root/claudep02_v2_metadata",
+      "role": "independent-correction-recheck",
       "status": "RUNNING"
     },
     {
-      "name": "/root/inventory003_c_v2_sources",
-      "role": "independent-source-correction-review",
+      "name": "/root/claudep02_v2_boundary",
+      "role": "independent-correction-recheck",
       "status": "RUNNING"
     }
   ],
@@ -266,21 +271,21 @@
       "report": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
       "manifest": "reports/loop/packages/CLAUDE-P02/v2/manifest.json",
       "manifestSha256": "a857ba7b0f587376321a2e82066a152076fc7ee794a377e7ebacb3ea97248056",
-      "documentationReviewStatus": "Beide vollständigen Erstberichte ausgewertet; historische Zeitkorrektur eng bestätigt. CP-M01/CP-T01 angenommen, separate Ergänzung gefroren; zwei unabhängige Nachkontrollen ausstehend.",
+      "documentationReviewStatus": "Zwei frische enge unabhängige Dokumentnachprüfer aktiv, kein neuer Claude-Prozess.",
       "decision": "reports/loop/CLAUDE-P02-v2-entscheidung.md"
     },
     {
       "id": "INVENTORY-003-C",
-      "status": "RUNNING",
+      "status": "DONE",
       "scope": "43 öffentliche C-Frageidentitäten mit Kategorien, Kontext/Filter, Listen, Codebook; keine endgültige Auswahl/Polung",
       "author": "/root/inventory003_c_author",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "C-R01 Runde1: zwei bytegleiche Builds/eigene Original- und zwei Mutationschecks ausgeführt; erster frischer unabhängiger Nachprüfer aktiv, zweiter ausstehend. Noch kein bestandener Korrekturstatus.",
+      "reviewStatus": "Beide vollständigen unabhängigen Nachberichte gelesen; C-R01 Runde1 im genauen Manifestumfang BESTANDEN, wissenschaftliche Folgeabnahmen offen.",
       "predefinedCriteria": "Vorabplan vorBearbeitung unter outputs/loop/inventory003-c/",
       "manifest": "reports/loop/packages/INVENTORY-003-C/v2/manifest.json",
       "manifestSha256": "024cd9f143e353c17ffe1571c9b94a892bfe7c0bff36386488896a92a8db792b",
       "report": "reports/loop/authors/INVENTORY-003-C.md",
-      "decision": "reports/loop/INVENTORY-003-C-v1-entscheidung.md",
+      "decision": "reports/loop/INVENTORY-003-C-v2-entscheidung.md",
       "authorCorrectionStatus": "COMPLETED",
       "correctionReport": "reports/loop/authors/INVENTORY-003-C-korrektur.md"
     },
@@ -291,12 +296,13 @@
       "scope": "32 öffentliche E-Identitäten einschließlich Varianten, Kontext, Listen und Codebook; keine endgültige Auswahl/Polung",
       "authorStatus": "COMPLETED",
       "predefinedCriteria": "Vorabplan unter outputs/loop/inventory004-e/ vor Bearbeitung; tatsächlicher vollständiger Auftrag im Autorenbericht",
-      "reviewStatus": "Zwei frische unabhängige Quellen-/Reproduktions-Erstprüfer aktiv; keine Zusammenführung vor beiden vollständigen Berichten.",
+      "reviewStatus": "Beide vollständigen Erstberichte gelesen und zusammengeführt: aktuelle Bindungen korrekt, E-R01/E-R02 mittlere Validatorlücken und E-S01/E-R03 niedrige sichtbare Transkriptionsabweichung angenommen. Separate Reparatur mit Nachprüfungen noch offen.",
       "authorReport": "reports/loop/authors/INVENTORY-004-E.md",
       "authorReportSha256": "ae291d2ef209840b40f021949a79420992b68a533a8ff76af276d3c233c377ac",
       "annotationSha256": "2c7ef03dca2585bf6476eabf46f8508b3430666d30f07283bc84cd6b1978a224",
       "manifest": "reports/loop/packages/INVENTORY-004-E/v1/manifest.json",
-      "manifestSha256": "0d124297e3410fd108dfeb1a676cb55a9562f4aa1b5e5adc52f8ddf95de66958"
+      "manifestSha256": "0d124297e3410fd108dfeb1a676cb55a9562f4aa1b5e5adc52f8ddf95de66958",
+      "decision": "reports/loop/INVENTORY-004-E-v1-entscheidung.md"
     },
     {
       "id": "DESIGN-003",
@@ -307,23 +313,35 @@
       "predefinedCriteria": "outputs/loop/design003/plan-before-work.json",
       "manifest": "reports/loop/packages/DESIGN-003/v2/manifest.json",
       "manifestSha256": "fdfd7d4d2f24c80c6a93682477e03a90fcdfa0e90a1863ba1c5881b23dbe695f",
-      "reviewStatus": "Beide vollständigen Erstberichte ausgewertet. D-S01/D-M01 Sachsen-Fehlbefund und D-S02/D-M02 nest-Zuschreibung angenommen; isolierte Autorenkorrekturen gefroren, zwei unabhängige Nachprüfungen ausstehend.",
+      "reviewStatus": "Quellennachprüfer abgeschlossen, vollständige Koordinatorlektüre noch offen; zweiter methodischer Nachprüfer aktiv. Noch keine koordinierte Annahme.",
       "authorCorrectionStatus": "COMPLETED",
       "decision": "reports/loop/DESIGN-003-v2-entscheidung.md"
+    },
+    {
+      "id": "REPRO-003-C",
+      "status": "RUNNING",
+      "author": "/root",
+      "scope": "Öffentliche historische C-v2-Annotation aus Repositorycode ohne ignorierte Autorenbuilder/Caches nachbauen",
+      "predefinedCriteria": "outputs/loop/repro003-c-author/plan-before-code.json",
+      "authorStatus": "COMPLETED",
+      "authorReport": "reports/loop/authors/REPRO-003-C.md",
+      "reviewStatus": "16Dateien/31SourceInputs gefroren; Paketverify tatsächlich bestanden; zwei unabhängige Code-/Reproduktionsprüfer ausstehend.",
+      "manifest": "reports/loop/packages/REPRO-003-C/v1/manifest.json",
+      "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3"
     }
   ],
-  "nextConcreteStep": "Nächsten freien Slot für zweiten C-Nachprüfer nutzen; anschließend Design- und CLI-Korrekturen nachprüfen. E-Erstberichte erst nach beiden vollständigen Abschlüssen zusammenführen.",
+  "nextConcreteStep": "REPRO-003-C nach technischem Check einfrieren; E-Validator und sichtbare Transkription in separater Runde reparieren. Laufende C/Design-Nachberichte vollständig abwarten; danach CLI-Nachprüfer und öffentliche Reproduktionsreviewer starten.",
   "checkpoint": {
-    "lastLocalCommit": "47e8cb564770d56ddf8d335ba1256f19a6de8b59",
-    "lastVerifiedRemoteCommit": "47e8cb564770d56ddf8d335ba1256f19a6de8b59",
-    "lastVerifiedPushAtUtc": "2026-10-03T07:18:34.269364+00:00",
+    "lastLocalCommit": "1fa2251bb7dc57d36ee9169cba7af6918d75c295",
+    "lastVerifiedRemoteCommit": "1fa2251bb7dc57d36ee9169cba7af6918d75c295",
+    "lastVerifiedPushAtUtc": "2026-10-03T07:42:37.362604+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-020.json"
+    "record": "reports/loop/push-021.json"
   },
-  "scientificStatus": "296 technische Identitäten/205 Restzeilen unverändert. FOUNDATION-v4 begrenzte Korrekturen durch Nachprüfer und Juror bestätigt, wissenschaftliche Planabnahme BLOCKIERT. A/B: gezielte Fehler in 52 Identitäten nach zwei tatsächlichen Nachprüfungen korrigiert, 61 Quellen-/Versionsreste offen. METHODS-v3: beide technischen Nachberichte vollständig ausgewertet, drei gezielte Korrekturen bestätigt; wissenschaftliche Verfahrens-/ESS-Abnahme bleibt offen. C: 43 öffentliche Annotationen in zwei unabhängigen Erstprüfungen. Keine ESS-Antwortdaten, A/B-Auswertung, Entblindung, endgültige Itemauswahl oder Tags; Claude-Forschungsreviews nicht ausgeführt, aktueller Zugang HTTP401.",
-  "technicalRecord": "reports/loop/technical-checkpoint021.json",
+  "scientificStatus": "296 technische Identitäten/205 Restzeilen unverändert. FOUNDATION-v4 begrenzte Korrekturen durch Nachprüfer und Juror bestätigt, wissenschaftliche Planabnahme BLOCKIERT. A/B: gezielte Fehler in 52 Identitäten nach zwei tatsächlichen Nachprüfungen korrigiert, 61 Quellen-/Versionsreste offen. METHODS-v3: beide technischen Nachberichte vollständig ausgewertet, drei gezielte Korrekturen bestätigt; wissenschaftliche Verfahrens-/ESS-Abnahme bleibt offen. C: 43 öffentliche Annotationen in zwei unabhängigen Erstprüfungen. Keine ESS-Antwortdaten, A/B-Auswertung, Entblindung, endgültige Itemauswahl oder Tags; Claude-Forschungsreviews nicht ausgeführt, aktueller Zugang HTTP401. E: beide vollständigen Erstberichte ausgewertet; korrekte aktuelle Bindungen, Validatorlücken und zwei sichtbare Punktabweichungen angenommen, Reparatur offen. Kein empirischer ESS-Zugriff.",
+  "technicalRecord": "reports/loop/technical-checkpoint022.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
     "reports/loop/technical-v2/web-check.json",
@@ -346,7 +364,8 @@
     "reports/loop/technical-new-packages.json",
     "reports/loop/technical-post-ab-correction.json",
     "reports/loop/technical-checkpoint020.json",
-    "reports/loop/technical-checkpoint021.json"
+    "reports/loop/technical-checkpoint021.json",
+    "reports/loop/technical-checkpoint022.json"
   ],
   "independentPreparations": [
     {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T07:39:50.312079+00:00",
+  "updatedAtUtc": "2026-10-03T08:09:52.427814+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2231,15 +2231,15 @@
       "problem": "lnghom2-Metadaten enthalten zusätzlich zehn ISO-Lookupzeilen trotz deklarierter Kopf-/Beschreibungsgrenze.",
       "evidence": "Codebook4.1 PDF132/Druck131; INVENTORY-003-C-repro.md Finding C-R01; build_c.py143–151",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
-      "correctionState": "Neue isolierte Fassung v2, eigene tatsächliche Nachbauten und Gegenfälle; unabhängige Nachprüfungen noch nicht vollständig.",
+      "status": "BESTANDEN",
+      "correctionState": "Originalmetadatengrenze und Erhaltung durch zwei getrennte tatsächliche Original-/Diff-/Nachbau-/Mutationsprüfungen bestätigt.",
       "verification": {
+        "status": "BESTANDEN",
         "manifest": "reports/loop/packages/INVENTORY-003-C/v2/manifest.json",
-        "manifestSha256": "024cd9f143e353c17ffe1571c9b94a892bfe7c0bff36386488896a92a8db792b",
-        "status": "NICHT_GEPRÜFT"
+        "scope": "Nur C-R01Runde1, keine umfassende Inventar- oder Messabnahme"
       },
       "blocks": ["Saubere Metadatenabgrenzung C24/lnghom2 in der betroffenen Fassung"],
-      "decisionRecord": "reports/loop/INVENTORY-003-C-v1-entscheidung.md",
+      "decisionRecord": "reports/loop/INVENTORY-003-C-v2-entscheidung.md",
       "history": [
         {
           "savedAtUtc": "2026-10-03T07:39:50.312079+00:00",
@@ -2260,6 +2260,11 @@
             "decisionRecord": "reports/loop/INVENTORY-003-C-v1-entscheidung.md",
             "history": []
           }
+        },
+        {
+          "atUtc": "2026-10-03T08:09:52.427814+00:00",
+          "status": "NICHT_BESTANDEN",
+          "event": "Zwei frische vollständige Nachberichte nach Runde1 gesammelt und ausgewertet."
         }
       ]
     },
@@ -2370,6 +2375,75 @@
       "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
       "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
       "history": []
+    },
+    {
+      "id": "E-R01",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Kohärent vertauschte Fragebogenlabels samt Belegen sowie sichtbare Listenpole passieren Autorenvalidator.",
+      "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
+      "correctionState": "Noch keine Reparatur; beide Erstbewertungen unverändert erhalten.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
+      },
+      "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
+      "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
+      "history": []
+    },
+    {
+      "id": "E-R02",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Erforderliche Filter können entfernt und Filterwortlaut/Zuweisung kohärent falsch verändert werden, ohne Validatorfehler.",
+      "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
+      "correctionState": "Noch keine Reparatur; beide Erstbewertungen unverändert erhalten.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
+      },
+      "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
+      "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
+      "history": []
+    },
+    {
+      "id": "E-S01",
+      "severity": "niedrig",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "problem": "E12/E13 sichtbare Liste58 enthält nicht sichtbaren Schlusszeichenpunkt aus originaler Textlage.",
+      "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
+      "correctionState": "Noch keine Reparatur; beide Erstbewertungen unverändert erhalten.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
+      },
+      "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
+      "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
+      "history": []
+    },
+    {
+      "id": "E-R03",
+      "severity": "niedrig",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Derselbe sichtbare Schlusszeichenunterschied unabhängig bestätigt.",
+      "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
+      "correctionState": "Noch keine Reparatur; beide Erstbewertungen unverändert erhalten.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
+      },
+      "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
+      "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
+      "history": [],
+      "duplicateOf": "E-S01"
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."

@@ -1,0 +1,19 @@
+# REPRO-003-C: ausführbarer öffentlicher Dokumentnachbau
+
+Autorenstand vom 2026-10-03, Koordinator `/root`. Vorabplan: `outputs/loop/repro003-c-author/plan-before-code.json`, gespeichert 07:49:20 UTC vor der Codearbeit. Dieses Paket macht einen bisher von ignorierten Autorenoutputs abhängigen Nachbau als Repositorycode ausführbar. Es trifft keine neue Item-, Polungs-, Dimensions- oder Analyseentscheidung.
+
+Neue Dateien sind `pipeline/reproduce_c_annotation.py`, `pipeline/annotations/c_builder_v2.py`, `pipeline/annotations/source_geometry.py` und `docs/reproduktion-c-quellen.md`. Der Builder stammt aus der erhaltenen C-v2-Korrekturfassung; nur ausführbare Root-/Ausgabepfade, historische Quellenpfadaufzeichnung und die Verweigerung vorhandener Ziele wurden angepasst. Die genaue Änderung wird im eigenen Diffprotokoll erhalten. Der Geometriehelfer wird bytegleich übernommen. Die historischen Annotationmetadaten bleiben ausdrücklich historische Angaben. Der neue Sidecar beschreibt den tatsächlichen Nachbaulauf.
+
+## Tatsächlich ausgeführt
+
+Der vollständige Aufruf `python3 pipeline/reproduce_c_annotation.py --output-dir outputs/public-reproduction/c-v2-author-run1` lud drei öffentliche Original-PDFs von den fest gebundenen ESS-Adressen herunter, prüfte ihre Hashes und endete mit Exit 0. Die Annotation ist bytegleich zu `data/inventar-c.v2.ergaenzung.entwurf.json`, SHA-256 `70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e`.
+
+Ein zweiter vollständiger Lauf wurde aus `outputs/loop/repro003-c-author/minimal-checkout/` ausgeführt. Diese eigene Kopie enthielt vor dem Lauf nur die drei neuen Python-Dateien sowie die unveränderte öffentliche CSV und Provenienz. Sie enthielt keine historischen Builder, Caches, PDFs, ESS-Rohdaten oder Annotationoutputs. Auch dieser Lauf lud die Originale neu herunter, endete mit Exit 0 und erzeugte dieselben Annotationbytes. Er ist eine kleine Dateikopie, kein Git-Klon. Befehle, Zeiten und Ausgaben stehen in `minimal-checkout-command.json`; der Vergleich steht in `byte-comparison.json`.
+
+Sechs weitere echte CLI-Aufrufe endeten wie erwartet mit Exit 1: vorhandenes Ziel, Ziel unter `data/raw/`, Elternkomponente `..`, absoluter Pfad, tatsächlich veränderte öffentliche CSV in der eigenen kleinen Kopie und symbolischer Ausgabeelternpfad in dieser Kopie. Die CSV wurde nur dort verändert und anschließend bytegleich wiederhergestellt. Die zwei letzten Fälle legten kein neues Ausgabekind an. `data/raw/` wurde lediglich als zurückzuweisendes Argument übergeben, nicht gelesen. Sämtliche Deltas und Fehlermeldungen stehen in `actual-boundary-tests.json`. Diese Beispiele sind keine vollständige Zugriffssperre.
+
+## Abnahmegrenzen
+
+Die eigene bytegleiche Reproduktion und die sechs begrenzten Gegenfälle sind ausgeführt. Zwei unabhängige Code-/Reproduktionsprüfungen des noch einzufrierenden Pakets fehlen. Die separate C-v2-Korrekturnachprüfung wird durch dieses Paket nicht ersetzt. Reale ESS-Analyse, Ausgabe-4.2-Abgleich, Konstrukte, Reliabilität, Validität, Neutralität, persönliche Unsicherheit und Websiteabnahme bleiben `NICHT_GEPRÜFT` beziehungsweise von ihren bereits dokumentierten Voraussetzungen blockiert. Ein reproduzierbarer historischer Text wird dadurch nicht wissenschaftlich gültig.
+
+Ausführung durch die tatsächliche T3-Laufzeit: GPT-6.1-Sol, `gpt-6.1-sol`, Reasoning ultra. Interne Modellrevision und Vorgaben sind unbekannt. Dies ist Autorenarbeit derselben Codex-Familie, keine andere Modellfamilienprüfung. Werkzeuge: `functions.exec` mit `exec_command`, `write_stdin` und `apply_patch`; Python-Standardbibliothek, vorhandenes Poppler und Shell-Dateilesungen. Kein neuer Claude-Aufruf, keine Installation, globalen Änderungen, Rohdatenlesung, Entblindung oder Veröffentlichung. Eigene Shellaufrufe hatten explizites Worktree-CWD; neue Patches absolute Worktreepfade. Öffentliche Downloads und synthetische Gegenfälle wurden nur unter eigenen Projektoutputs gespeichert.

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "commit": "1fa2251bb7dc57d36ee9169cba7af6918d75c295",
+  "branch": "research/life-93-night-20261003",
+  "remote": "origin",
+  "pushExit": 0,
+  "pushOutput": "To https://github.com/hernstev97/12axes-germany.git\n   47e8cb5..1fa2251  research/life-93-night-20261003 -> research/life-93-night-20261003\n",
+  "startedAtUtc": "2026-10-03T07:42:35.122212+00:00",
+  "verifiedAtUtc": "2026-10-03T07:42:37.362604+00:00",
+  "lsRemoteExit": 0,
+  "verifiedRemoteCommit": "1fa2251bb7dc57d36ee9169cba7af6918d75c295",
+  "changedFileCount": 76,
+  "status": "BESTANDEN",
+  "scope": "WIP eigene öffentliche Quellenkorrekturen/Metadaten; unabhängige Nachprüfungen ausstehend; keine Rohdaten/Secrets/main/Merge/Publikation"
+}
