@@ -1,0 +1,23 @@
+{
+ "designRunSha256": "821c8db3bdf783c3ecfeddf0462f39efc875953611d70ae9edbc7c92c951827c",
+ "studien": {
+  "ESS5e03_6": {
+   "referenzen": 32,
+   "kategorien": 202,
+   "ohneBereichImLauf": 0,
+   "maxAbweichungAnteil": 1.1102230246251565e-16,
+   "maxAbweichungStandardfehler": 0.0,
+   "strata": 2,
+   "psus": 168
+  },
+  "ESS8e02_3": {
+   "referenzen": 79,
+   "kategorien": 407,
+   "ohneBereichImLauf": 0,
+   "maxAbweichungAnteil": 1.1102230246251565e-16,
+   "maxAbweichungStandardfehler": 0.0,
+   "strata": 20,
+   "psus": 180
+  }
+ }
+}

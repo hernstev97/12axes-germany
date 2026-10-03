@@ -88,5 +88,70 @@
     "outputs/claude/v22-candidate/ESS8e02_3.json": "203a95505a1305dfc2b6c3541730faf0719f82451189de045d4c3b0793c6c714",
     "outputs/claude/v22-candidate/ESS9e03_3.json": "6a2acd3cd3cf6b42fec51e3e1a9b99f796d0af80900711452a8069004af87829"
   },
-  "limits": "Dieselben lokalen Eingabebytes wie bisher. Kein offizieller Download-Abgleich. Ausgaben dieses Belegs enthalten nur Status, Anzahlen und Abweichungen."
+  "limits": "Dieselben lokalen Eingabebytes wie bisher. Kein offizieller Download-Abgleich. Ausgaben dieses Belegs enthalten nur Status, Anzahlen und Abweichungen.",
+  "designRun": {
+    "plan": "docs/analyseplan-v2.2.md Abschnitt 4.1: dasselbe Verfahren ohne neuen Plan, sofern jeder deutsche Fall über idno genau einer Designzeile zugeordnet wird.",
+    "run": "data/local/v22/sddf-run.json (privat, nicht in Git)",
+    "designRunSha256": "821c8db3bdf783c3ecfeddf0462f39efc875953611d70ae9edbc7c92c951827c",
+    "boundPrivateRunSha256": "0ebe86b22cb3795ea232c9f0e645e6893d7355d47c842b7f8f10cb4ad6554001",
+    "startedUtc": "2026-10-03T21:03:31Z",
+    "finishedUtc": "2026-10-03T21:03:36Z",
+    "exitCode": 0,
+    "software": {
+      "pipeline/v22/run_v22_sddf.py": "60d6904c421b8b9bee0408b8c803a43f7783025ba50661e9a63454c1d87ddf66",
+      "pipeline/v22/sav.py": "2783682169b5f62a354b5384f758327aa86e6e8a7dd1e3ccd6b682d174c54216",
+      "commit": "fbdd123"
+    },
+    "designFiles": {
+      "data/raw/ess5-sddf-de/ESS5_DE_SDDF.sav": {
+        "sha256": "dbd02a1e0ff891be5587c715a6c75d8d6c58ada00e2b8f7d08304704a74c2b48",
+        "germanRows": 3031,
+        "linkage": "complete_one_to_one",
+        "strata": 2,
+        "psus": 168,
+        "singletonStrata": 0,
+        "degreesOfFreedom": 166
+      },
+      "data/raw/ess8-sddf-1.1/ESS8SDDFe01_1.csv": {
+        "sha256": "bbcb3f7f2acf2a0acdd1de90bd383f908e1a6d8a4fab553d37ac4128de7bf9e1",
+        "germanRows": 2852,
+        "linkage": "complete_one_to_one",
+        "strata": 20,
+        "psus": 180,
+        "singletonStrata": 0,
+        "degreesOfFreedom": 160
+      }
+    },
+    "designFileNotes": [
+      "ESS5_DE_SDDF.sav: SPSS 25, erstellt am 30. April 2019, 3031 Zeilen, alle cntry = DE, jede idno genau einmal und deckungsgleich mit den 3031 deutschen Fällen von ESS5 Ausgabe 3.6. Jede PSU liegt in genau einem Stratum. SAMPPOIN ist durchgehend leer. Variablenbeschriftungen fehlen.",
+      "ESS5: dweight ist innerhalb jeder SDDF-PSU konstant, aber nicht proportional zu 1/PROB (Korrelation 0,17). Die Summe von 1/PROB liegt weit unter der Bevölkerungsgröße. PROB ist deshalb vermutlich nicht die Gesamtauswahlwahrscheinlichkeit. PROB wird nicht verwendet. Das Verfahren nach Plan 4.2 braucht nur Stratum und PSU.",
+      "ESS8SDDFe01_1.csv: 2852 deutsche Zeilen, jede idno genau einmal und deckungsgleich mit ESS8 Ausgabe 2.3. dweight ist bis auf 6e-8 proportional zu 1/prob. Die Spalte edition enthält 1.2, der Dateiname nennt Ausgabe 1.1. Die Zuordnung ist davon nicht betroffen.",
+      "Wie bei ESS9, ESS10 und ESS11 werden alle Einzelreferenzen und alle Gruppenpaare dieser Studien mit Bereich berechnet, auch die bereits in v2 und v2.1 veröffentlichten."
+    ],
+    "consistency": "export_v22.py candidate: Jeder gemeinsame Wert des Designlaufs (Status, Fallzahlen, Anteile, Missing-Gründe, Bilanz, Gruppengrößen) ist identisch mit dem eingefrorenen Lauf. Die Anteile der in v2 und v2.1 veröffentlichten Referenzen stimmen bis 1e-12, die Status stimmen überein.",
+    "independentCrossCheck": "reports/claude/kontrollrechnung/sddf_gegenprobe.py mit pipeline/policy_reference_v2.categorical_reference (Codex) und dem Einlesen der Kontrollrechnung V1: ESS5 32 Referenzen und 202 Kategorien, ESS8 79 Referenzen und 407 Kategorien. Größte Abweichung der Anteile 1,1e-16, der Standardfehler 0. Ergebnis in sddf-gegenprobe.json."
+  },
+  "candidateExportRound2": {
+    "reason": "E1-V22-F01 bis F03: Status bleibt prepared_pending_result_review, Kategorien in gebundener Reihenfolge, aggregierter Zellnachweis. Dazu Bereiche für ESS5 und ESS8.",
+    "command": "python3 pipeline/v22/export_v22.py candidate",
+    "files": {
+      "outputs/claude/v22-candidate-2/ESS10SCe03_2.json": "2f79c5def38e0dc4a9bb8c199256e939a713f745b5e8b4db97ec4339aa069c42",
+      "outputs/claude/v22-candidate-2/ESS11e04_2.json": "5e8acdee4c151d9e223828d7b6ac49a885a5903f58965b281d22d40397375af3",
+      "outputs/claude/v22-candidate-2/ESS5e03_6.json": "454e500f7642a3abc138b121305e929265a8019f426fe8ddd0728ab6fdc74bb7",
+      "outputs/claude/v22-candidate-2/ESS8e02_3.json": "b61d3f66ee660bcbc062c0b7278dbb9f507f9df58fea4f7ca8c6663d0d8b5d4b",
+      "outputs/claude/v22-candidate-2/ESS9e03_3.json": "de294c01a673878cdca7f9a24c7c3574ab913178247a00c2500be79fc8427c2e",
+      "outputs/claude/v22-candidate-2/zellnachweis.json": "67d03502b85ad0f8b01f7cf9ae28dc4bfa5977c6ad322337c8ef883afbbcd2b9"
+    },
+    "statuses": {
+      "singles": {
+        "prepared_pending_result_review": 59,
+        "withheld_base_or_cell_count": 3
+      },
+      "pairs": {
+        "prepared_pending_result_review": 96,
+        "withheld_base_or_cell_count": 194
+      },
+      "referencesWithInterval": 155
+    }
+  }
 }
