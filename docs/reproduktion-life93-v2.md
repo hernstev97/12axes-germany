@@ -1,5 +1,7 @@
 # LIFE-93 v2: lokale Reproduktion
 
+> Nachtrag vom 3. Oktober 2026: Dieser Stand ist historisch. Claude hat ihn übernommen und fortgesetzt (Branch `research/life-93-claude-20261003`). Den aktuellen Stand beschreiben [README](../README.md), [Projektstand](project.md) und der [Abschlussbericht](../reports/claude/abschlusspruefung.md). Der folgende Text bleibt unverändert.
+
 Fassung 0.3, technischer Nachtrag vom `2026-10-03T18:36:44.715227+00:00`. Fassung 0.2 bleibt in Commit `9de6ec5a31c365c898b45f4394d2cf1ff0052476` erhalten. Die ursprüngliche Fassung 0.1 und ihre begrenzte Dokumentationsprüfung bleiben in Commit `320e632e77c772f6474b6d9d7fe86e2ee01ba0c7` erhalten. Dieser Nachtrag ergänzt tatsächlich ausgeführte Reproduktions- und Darstellungsbelege; Kriterien, Originalreceipts, Exporte und Tags bleiben unverändert.
 
 Der aktuelle [Breitenauftrag](auftrag-life-93-breite-2026-10-03.md) hat Vorrang vor der alten Analysefolge. v2 führt 43 Originalfragen in acht Inhaltsrubriken, ohne gemeinsamen Faktor oder Gesamtscore. 42 historische Einzelreferenzen sind veröffentlicht; `ESS10SCe03_2:cttresa` bleibt null. Die neue [Gruppenentscheidung](../reports/loop/policy-group-v21-export-decisions.json) veröffentlicht 63 einzelne historische Frage-Gruppen-Paare aus ESS5, ESS8 und ESS9. Die optionale lokale Gruppenanzeige und der öffentliche Gruppenbericht sind technisch vorbereitet und begrenzt gegengeprüft; eine menschliche Produkt- oder Releasefreigabe folgt daraus nicht.

@@ -1,5 +1,7 @@
 # LIFE-93 v2: Vorbereitung von Stevens Claude-Schlusskontrolle
 
+> Nachtrag vom 3. Oktober 2026: Dieser Stand ist historisch. Claude hat ihn übernommen und fortgesetzt (Branch `research/life-93-claude-20261003`). Den aktuellen Stand beschreiben [README](../README.md), [Projektstand](project.md) und der [Abschlussbericht](../reports/claude/abschlusspruefung.md). Der folgende Text bleibt unverändert.
+
 Fassung 0.3, technischer Nachtrag vom `2026-10-03T18:36:44.715227+00:00`. Fassung 0.2 bleibt in Commit `9de6ec5a31c365c898b45f4394d2cf1ff0052476` erhalten. Original 0.1 und Dokumentations-Erstprüfung bleiben in Commit `320e632e77c772f6474b6d9d7fe86e2ee01ba0c7` erhalten. Steven veranlasst die spätere Kontrolle. Kein Claude-Auftrag, Verbindungsversuch, Login oder vorweggenommenes Urteil wurde ausgeführt.
 
 ## Kontrollgegenstand und Ausgangslage
