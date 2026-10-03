@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T15:22:43.649944+00:00",
+  "updatedAtUtc": "2026-10-03T15:35:34.557564+00:00",
   "status": "RUNNING",
   "phase": "Breite v2: Ergebnisdarstellung und Angular-Korrektur; historischer Gruppenplan v2.1 vor Zugriff begrenzt angenommen",
   "coordinator": "/root",
@@ -307,7 +307,9 @@
       "scope": "Pre-party method/code only; source first pending"
     },
     "reports/loop/reviews/GROUP-V21-001-sources-first.md",
-    "reports/loop/reviews/ANGULAR-REFERENCE-001-scroll-round1.md"
+    "reports/loop/reviews/ANGULAR-REFERENCE-001-scroll-round1.md",
+    "reports/loop/reviews/RESULTS-V2-001-methods-presentation-round1.md",
+    "reports/loop/reviews/RESULTS-V2-001-sources-presentation-round1.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -326,24 +328,19 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "id": "/root/breadth_data_instruments",
+      "id": "/root/angular_policy_draft",
       "status": "RUNNING",
-      "scope": "New pure group export only"
+      "scope": "Public four-page-file research status texts only"
     },
     {
-      "id": "/root/angular_reference_review",
+      "id": "/root/group_results_v21_methods",
       "status": "RUNNING",
-      "scope": "Targeted scroll round1 only"
+      "scope": "Fresh independent private aggregate result first"
     },
     {
-      "id": "T3 RESULTS-V2-001 methods",
+      "id": "/root/group_results_v21_sources",
       "status": "RUNNING",
-      "scope": "Targeted public presentation round1 only"
-    },
-    {
-      "id": "T3 RESULTS-V2-001 sources",
-      "status": "RUNNING",
-      "scope": "Targeted public presentation round1 only"
+      "scope": "Fresh independent sources/meaning result first"
     }
   ],
   "workPackages": [
@@ -594,22 +591,22 @@
       "tests": "13 synthetic Vitest tests author exit0"
     }
   ],
-  "nextConcreteStep": "Plan v2.1 committen und analyseplan-v2.1 regulär pushen/remote prüfen; erst danach Freeze/Gate und drei private Gruppenläufe. Präsentations- und Scrollnachprüfungen parallel abschließen.",
+  "nextConcreteStep": "Save original group private-run receipts and original thematic firsts. Fix SCF-P01 Markdown apostroph and SCF-P02 isolated README DOI under new targeted source check. Await group result firsts, verify actual bytes/explicit pair intersections before public export, then prepare UI.",
   "checkpoint": {
-    "lastLocalCommit": "acc294a6a21b411faaff4eccdd514834ace5a1b3",
-    "lastVerifiedRemoteCommit": "acc294a6a21b411faaff4eccdd514834ace5a1b3",
-    "lastVerifiedPushAtUtc": "2026-10-03T15:10:05.308385+00:00",
+    "lastLocalCommit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
+    "lastVerifiedRemoteCommit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
+    "lastVerifiedPushAtUtc": "2026-10-03T15:23:11.269699+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-044.json",
+    "record": "reports/loop/push-045.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Group plan accepted only ESS5/8/9 before party access. Original sources first saved. Thematic report saved WIP under two targeted reviews; scroll round1 bounded reviewer and actual browser checks passed."
+    "pendingPayload": "Group gate/freeze and3 actual private runs, pure export/CLI; two fresh group result firsts running. Thematic two bounded targeted firsts saved, two isolated presentation/source fixes next. Public copy author still writing, excluded."
   },
   "scientificStatus": "Five private historical categorical candidates executed14:25:06–14:25:18UTC after verified new plan tag; no public numeric export. Two fresh same-family result roles running. No party semantic access.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -1000,7 +997,7 @@
     "remaining": "B25 original CAWI postflow and new web administration remain open; no operational equivalence."
   },
   "groupPreparationV2": {
-    "status": "PLAN_ACCEPTED_BOUNDED_PENDING_COMMIT_TAG_GATE_NO_PARTY_SEMANTICS",
+    "status": "THREE_PRIVATE_GROUP_RUNS_PENDING_TWO_FRESH_RESULT_FIRSTS",
     "report": "reports/loop/authors/BREADTH-GROUP-SOURCES-005-WIP.md",
     "knownNewMargins": true,
     "limits": "Printed/file-code differences and alias binding need explicit limits. No party headers/answers opened; v2 gate does not permit them.",
@@ -1020,7 +1017,20 @@
     "sourcesFirst": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
     "sourcesFirstSha256": "f9bec9e943a133b95bbd48a721d7d68cce037c80a457f76fc68b4c21a89da233",
     "rootDecision": "reports/loop/GROUP-V21-001-entscheidung.md",
-    "actualPartySemanticAccess": false
+    "actualPartySemanticAccess": true,
+    "planCommit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
+    "planTag": "analyseplan-v2.1",
+    "freezeSha256": "cfeb130f0975c6fab281c3a3eb1f7120f8667458d197f998cb1703211e061c09",
+    "gateSha256": "7a695756ad4f9a05be31448559b8fcce7aadee686f8a25e47eb19768057dd8b2",
+    "actualRunIntervalUtc": [
+      "2026-10-03T15:24:22.211025+00:00",
+      "2026-10-03T15:24:28.088629+00:00"
+    ],
+    "runReceipts": "reports/loop/group-v21-run-receipts.json",
+    "accessDisclosure": "reports/loop/group-v21-access-disclosure.json",
+    "resultManifest": "reports/loop/packages/GROUP-RESULTS-V21-001/v1/manifest.json",
+    "resultManifestSha256": "dddbcda2fe8a18f46a45ee812100508d9c3ed10c5cca8c8d391be648e474b13a",
+    "publicGroupReferencesPublished": false
   },
   "prototypeV2": {
     "status": "PUI_R1_R2_R3_CLOSED_BOUNDED_ROUND1",
@@ -1071,10 +1081,12 @@
     "AUI-ROOT-01": 1
   },
   "thematicReportV2": {
-    "status": "WIP_TARGETED_PRESENTATION_REVIEW_RUNNING",
+    "status": "ACCEPTED_BOUNDED_TARGETED_PRESENTATION_MINOR_FIXES_OPEN",
     "path": "reports/phasen/02-politikprofil-v2-methoden-und-ergebnisse.md",
     "manifest": "reports/loop/packages/RESULTS-V2-PRESENTATION-001/v1/manifest.json",
     "manifestSha256": "3ac825a3546b1c83fc2adf9101e648eff3c16d145ae3ec040a7ee7717a052889",
-    "scope": "43 original contexts, eight themes,42 published references/cttresa null; public-only exact reproduction passed, not new raw estimation"
+    "scope": "43 original contexts, eight themes,42 published references/cttresa null; public-only exact reproduction passed, not new raw estimation",
+    "rootDecision": "reports/loop/RESULTS-V2-PRESENTATION-001-entscheidung.md",
+    "openPresentationFindings": ["SCF-P01", "SCF-P02"]
   }
 }

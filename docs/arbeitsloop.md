@@ -112,3 +112,7 @@ RESULTS-V2-001: beide frischen Erstberichte begrenzt angenommen, tatsächliche B
 ## Gruppenübergang v2.1, 2026-10-03T15:19:30.101584+00:00
 
 Beide frischen Erstrollen abgeschlossen. Root übernimmt drei Studien als Schnittmenge: ESS5/8/9. ESS10SC/11 sind wegen konkreter Quellenlücken nur für diesen Gruppenweg ausgeschlossen; unveränderte Einzelreferenzen bleiben gültig. [Entscheidung](../reports/loop/GROUP-V21-001-entscheidung.md) nennt Belege und Grenzen. Parteiantworten noch nicht semantisch geöffnet; eigener Plancommit/Tag und tatsächliches Gate folgen vor Zugriff. Themenbericht und Scrollkorrektur werden gezielt nachgeprüft, keine neuen Gesamtaudits.
+
+## Historische Gruppenläufe und Themenbericht, 2026-10-03T15:35:34.557564+00:00
+
+Plan v2.1/tag vor Zugriff remote geprüft, danach drei private Gruppenläufe15:24:22–15:24:28UTC exit0. Zwei frische Ergebnisrollen prüfen identische sichere Aggregate vor Export. [Zugriff](../reports/loop/group-v21-access-disclosure.json) nennt den tatsächlichen Umfang. Thematische Darstellungsbefunde durch beide gezielten Rollen geschlossen; zwei isolierte neue Anzeige-/DOI-Befunde werden separat korrigiert. Keine Veränderung alter Auswahl, Kriterien, Tags oder Originalberichte.

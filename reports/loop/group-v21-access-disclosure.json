@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "THREE_PRIVATE_HISTORICAL_GROUP_RUNS_COMPLETE_PENDING_RESULT_REVIEW",
+  "planCommit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
+  "planTag": "analyseplan-v2.1",
+  "remoteTagVerifiedUtc": "2026-10-03T15:24:02.197607+00:00",
+  "runIntervalUtc": [
+    "2026-10-03T15:24:22.211025+00:00",
+    "2026-10-03T15:24:28.088629+00:00"
+  ],
+  "separateFirstRawByteTimestamp": "NOT_INSTRUMENTED; receipts bound whole guarded runs",
+  "allowedStudyIds": [
+    "ESS5e03_6",
+    "ESS8e02_3",
+    "ESS9e03_3"
+  ],
+  "excludedStudyIds": [
+    "ESS10SCe03_2",
+    "ESS11e04_2"
+  ],
+  "semanticScope": [
+    "country/round/edition for all German rows before party semantics",
+    "internal German identifiers for duplicate detection, never exported",
+    "vote and the selected national PartyGermany2 field",
+    "the preselected six/ten/four item fields, strict literal validation",
+    "declared weights on eligible German vote=1 and valid party2 cases"
+  ],
+  "lexicalScope": "Whole input bytes hashed before decode; CSV headers and all columns/countries lexically traversed; first-vote and unselected strings not substantively interpreted",
+  "knownBeforeRuns": [
+    "Historical v1 A and B exposure preserved",
+    "Five v2 marginal runs and subsequent42 public single references already known",
+    "No prior actual v2.1 party-answer semantic run asserted"
+  ],
+  "privateOnly": "Three closed safe aggregate candidates under data/local/policy-groups-v21, files0600/directories0700; no raw rows/identifiers/individual answers in receipts or candidates",
+  "limits": [
+    "Not untouched confirmatory evidence",
+    "No absolute OS blindness or neutrality proof",
+    "No excluded-study group access",
+    "No public group export or new UI from these receipts",
+    "Positive libraries executed; fresh-clone CLI positive run not performed; help/refusal checked"
+  ]
+}

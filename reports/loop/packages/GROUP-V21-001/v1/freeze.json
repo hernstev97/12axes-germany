@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "package": "GROUP-V21-001/v1",
+  "frozenCommit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
+  "planTag": "analyseplan-v2.1",
+  "reviewedManifestSha256": "73868d634da6a47fc7e5e72c858a4e93479785b892ffd6de65fda0c4243726a4",
+  "groupContractSha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+  "studyContractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "package": "GROUP-V21-001/v1",
+  "frozenCommit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
+  "planTag": "analyseplan-v2.1",
+  "reviewedManifestSha256": "73868d634da6a47fc7e5e72c858a4e93479785b892ffd6de65fda0c4243726a4",
+  "decision": "ALLOW_HISTORICAL_DESCRIPTIVE_GROUPS_V21",
+  "allowedStudyIds": [
+    "ESS5e03_6",
+    "ESS8e02_3",
+    "ESS9e03_3"
+  ],
+  "reviewers": [
+    {
+      "role": "methods_reproducibility",
+      "reportPath": "reports/loop/reviews/GROUP-V21-001-methods-first.md",
+      "sha256": "a75ef3b1d76053f0f36a9853cdaa7dfb6e2e229073e9e545571c544604c5a95b",
+      "decision": "ACCEPTED_BOUNDED"
+    },
+    {
+      "role": "sources_constructs_fairness",
+      "reportPath": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
+      "sha256": "f9bec9e943a133b95bbd48a721d7d68cce037c80a457f76fc68b4c21a89da233",
+      "decision": "ACCEPTED_BOUNDED"
+    }
+  ]
+}

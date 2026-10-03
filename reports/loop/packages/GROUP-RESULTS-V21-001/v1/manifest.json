@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "package": "GROUP-RESULTS-V21-001/v1",
+  "createdUtc": "2026-10-03T15:29:48.525097+00:00",
+  "rawAccessAllowed": false,
+  "allowedStudyIds": [
+    "ESS5e03_6",
+    "ESS8e02_3",
+    "ESS9e03_3"
+  ],
+  "scope": "Two fresh independent result firsts. Public pre-party reports may be hashed as bytes for guard/authenticity ONLY, no verdict prose. Own output/report only; no parent/State/authors/other result reviews. PrivateAggregate paths below are the only permitted private files. No data/raw stat/read/list/header/rows, no other data/local. Public outputs only after Root verifies actual firsts and explicit pair approvals. Pure export schema tested synthetic across5studies does not expand allowed3.",
+  "publicArtifacts": [
+    {
+      "path": "data/analysevertrag.v2.entwurf.json",
+      "sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+    },
+    {
+      "path": "data/gruppenvertrag.v2.1.entwurf.json",
+      "sha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702"
+    },
+    {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+    },
+    {
+      "path": "docs/auftrag-life-93-breite-2026-10-03.md",
+      "sha256": "d0a059efb9de65aec1be25b3c2d5fac3bcb61cb57b0d7af8e7d8f64ecb1fd5ed"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    },
+    {
+      "path": "docs/messformen-v2.entwurf.md",
+      "sha256": "0536441391becb9ac84e4b9596b20e2e0e4aab1a9aef827cbc162f8d7261238b"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess-disclaimer-current.html",
+      "sha256": "b5201b2deefd86d7f87a8dfb11dfdd30fd4f9afb8cbbb51b9254dd58bfa5ab8a"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess10-study-current.json",
+      "sha256": "99c1662190d5d79d0efe20f30ed678497a216184a37282e374e06a746e5cc3d9"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess10sc-file-metadata.json",
+      "sha256": "d9e6d606fb3b897d33d04f3247dbe5160d11f108a76fca6547a773e2c1ba0a57"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess5-file-metadata.json",
+      "sha256": "a6f232bfdff538b29db3f79fba6d8a452852012db26d0993fec9933f778d29da"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess5-study-current.json",
+      "sha256": "6a58c03724731f75f84b2d4814956394d9b55b67dd3a5a72231da0d381565dc0"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess8-file-metadata.json",
+      "sha256": "99d5e0bf071ae4fd6ee946a64f8e152a5d72341ef575c1c3325e78c21b70a050"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess8-study-current.json",
+      "sha256": "7dd3204782e7a42324416c57f17a0f5e357ba1308f3cfc05bdab04e0eb2c8d52"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess9-file-metadata.json",
+      "sha256": "8eb100eb4b0dad2a8e7ae5525cc255a4f428d6d18e0cce235de75a021f195bfd"
+    },
+    {
+      "path": "outputs/loop/breadth-access-002/sources/ess9-study-current.json",
+      "sha256": "6bbeb34b89c028e6c1712981c0a6072e5fc8f58178509e83d658676e4b7d144f"
+    },
+    {
+      "path": "outputs/loop/breadth-binding-003/sources/ess11-current-study.json",
+      "sha256": "3f029f3d4759224f07a9a05b21f16ac2d13e1b29ef2b845aa056601283ea3c4d"
+    },
+    {
+      "path": "outputs/loop/breadth-binding-003/sources/ess11-file-variable-catalogue.json",
+      "sha256": "0091d6206b33d4018ab2fc2891e2bf2e911a384e497d7b391631d9e19f707505"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess-public-de-mode-metadata.json",
+      "sha256": "2bf2a0cf1ec2696483a17ea7bdd02763255ef4afbed305829ff6f7b8436074c1"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess10-de-questionnaire.pdf",
+      "sha256": "158004a89b1821e5202e6faf3c2101eae5e56e794d7c3fdbc3dca1c9d67c8425"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess10-study-access-metadata.json",
+      "sha256": "ea3f3a252be74c99e7260b2f906e21f7f06612ac4b15ac7fedb982d749770d66"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess11-de-questionnaire.pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess11-study-access-metadata.json",
+      "sha256": "19736f79eeabef664298fb1d0b23a94007716d7a41d1e7f84679e85797963430"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess5-de-questionnaire.pdf",
+      "sha256": "24b5d2599e6d30dc02a6d835f5f80b5bcecf8f6014ee8f4670a703c25d3c3cbf"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess5-study-access-metadata.json",
+      "sha256": "6a58c03724731f75f84b2d4814956394d9b55b67dd3a5a72231da0d381565dc0"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess8-de-questionnaire.pdf",
+      "sha256": "977475c18d2adebea6ccb7695f377fb6ed500ef087b077086305f9a2e4a7b239"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess8-study-access-metadata.json",
+      "sha256": "1a17f742d7529fe535f0e0b93973e1b74198a1a8781fbf196a7c1ec702346ce7"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess9-de-questionnaire.pdf",
+      "sha256": "ae960ebcae1b12106eb3003ced1de7c88a73c9b95736efedd93fd8b320e974a5"
+    },
+    {
+      "path": "outputs/loop/breadth-data-001/sources/ess9-study-access-metadata.json",
+      "sha256": "d32903b14ad1018552ce3b50183d50825ff8b5b90dc28c5bc93e127430a8812f"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/binding-inventory.json",
+      "sha256": "68ec6067e08ed5b8b8f007069228777119efbd0c1eb6bea1ecf7caed15640396"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/exposure-boundaries.json",
+      "sha256": "e747bb0b2d8bf7a256d41a54d6e15255b2ffa156924a9eb8920747b1dcfb51e4"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/documentation-related-schema.json",
+      "sha256": "36fb785a07d586c94b3cd1941ed2c74c6a0cef0cd6f412f0950c6f83227cfe47"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/ess10-political-parties-appendix.pdf",
+      "sha256": "c8ea7576290b1ea9de015941e7b7c0bc264dad9807d377b11e1d08c1be0e42ce"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/ess11-political-parties-appendix.pdf",
+      "sha256": "2fae36160109a35614b327eb3d25f80eda36a8085a3a51fb829069f206784992"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/ess5-political-parties-appendix.pdf",
+      "sha256": "e8c0fd9c4e4d4588e5bbf01672c5e2afb3926500fe313b95c8df8c0a9f77787f"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/ess8-political-parties-appendix.pdf",
+      "sha256": "300e80bdd0ba9060dc042a6ea6651a2dbf6205d4d49588cec81b544b064a6a73"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/ess9-political-parties-appendix.pdf",
+      "sha256": "f60a614159c6ecb2aab47e9530fdf9f372cff6fca642d79885e7a43051ba5a98"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/five-studies-official-document-links.json",
+      "sha256": "7857ddfbeb48dc0ff548b588445d75e6dd6dce7ab9bed36ae5902fc4b4c62487"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/party-processing-question-metadata.json",
+      "sha256": "01346b376fe96986faf08ba6ef94a868c9bf773c8faff42d9884a8e32397c2b5"
+    },
+    {
+      "path": "outputs/loop/breadth-group-binding-006/sources/two-file-edition-coding-history.json",
+      "sha256": "ee9440cbdc0f85f7674321b4bdaa06122ea9f2023c7255dd7ecbe724b89627c4"
+    },
+    {
+      "path": "outputs/loop/breadth-group-sources-005/crosswalk.json",
+      "sha256": "fa601e8e76d2702026ea8bd97b163b9e5f24a7228a1fd06c7dad0af7b79ba25e"
+    },
+    {
+      "path": "outputs/loop/breadth-group-sources-005/sources/party-and-vote-original-codelists.json",
+      "sha256": "e2af33e4d5e9652b8bed1dae87a8ae4e8a5fbb32cbe24c8fd9928371151bf6e2"
+    },
+    {
+      "path": "outputs/loop/group-contract-v21/known-data-context.json",
+      "sha256": "a20e066d7400826142cdcd8ace27bb0c8df6d48d3101bfebb3acd4d03b305c92"
+    },
+    {
+      "path": "pipeline/policy_access_v2.py",
+      "sha256": "f2c26b2895f1730a344fde41fee63a960b9ff30f63a68a7beefb82a33e6366db"
+    },
+    {
+      "path": "pipeline/policy_adapter_v2.py",
+      "sha256": "3159243bc6f536359c896e414e8f418955b51e7504e38f3add62a811b0e5500e"
+    },
+    {
+      "path": "pipeline/policy_analysis_v2.py",
+      "sha256": "d7d23c99b84d352f161ea607f575155594ecd1ff365ad89e8f2624b4f9500309"
+    },
+    {
+      "path": "pipeline/policy_export_v2.py",
+      "sha256": "27b225b5975f0c321f08adbfa7ccab4e03dae8421f3987d0e104cf4945d0437a"
+    },
+    {
+      "path": "pipeline/policy_group_access_v21.py",
+      "sha256": "a662e216c82085ab0a059056715ea880e3d9c63ba8ade9efaff2b5e7881a2f58"
+    },
+    {
+      "path": "pipeline/policy_group_export_v21.py",
+      "sha256": "56eafd87fa0855df11b23cad90e0f7dff3e6c13af3944f20cc430a09cd4509ba"
+    },
+    {
+      "path": "pipeline/policy_groups_v21.py",
+      "sha256": "9b680b07385cefc665a54e583cf4b44f03d1305b2829a724fb9afbd7103284b6"
+    },
+    {
+      "path": "pipeline/policy_reference_v2.py",
+      "sha256": "bc06e5c06935e3ff492543bdca986ebca823ec962eab8e6321ff2bf19ee83d2b"
+    },
+    {
+      "path": "pipeline/policy_report_v2.py",
+      "sha256": "53d68f23f2bf7c57c95e2bdd55ae0059da4dfe8598bcbd12e2681206a9e4d6ea"
+    },
+    {
+      "path": "pipeline/tests/test_policy_group_access_v21.py",
+      "sha256": "27130d07b1f573ef0d0113459a19b66676bb93a84afb7aea1ffeb8896d915c8d"
+    },
+    {
+      "path": "pipeline/tests/test_policy_group_export_v21.py",
+      "sha256": "17f1be3edcc4716acb43d93c8fa5945aa885f4b401d69e9efd494240edc34e7e"
+    },
+    {
+      "path": "pipeline/tests/test_policy_groups_v21.py",
+      "sha256": "e60f7df0b3c5989d6fbc688358af8c7c0a93ef57ceb1b6caafbf8c062d3ebddd"
+    },
+    {
+      "path": "reports/loop/authors/BREADTH-GROUP-SOURCES-005-erratum.md",
+      "sha256": "fcd487d0248fb8784f7d5072cbc2fc2e47b972b96037efe370c7fd3e68f20a20"
+    },
+    {
+      "path": "reports/loop/gates/pre-group-v21.json",
+      "sha256": "7a695756ad4f9a05be31448559b8fcce7aadee686f8a25e47eb19768057dd8b2"
+    },
+    {
+      "path": "reports/loop/group-v21-access-disclosure.json",
+      "sha256": "25476bdf5b6338e0c63ff6db050928c9a2859cbafcfe7b6a9b63af2e1db8dde6"
+    },
+    {
+      "path": "reports/loop/group-v21-plan-tag-verification.json",
+      "sha256": "523ec44fb4188d1ca8080d0fa4f2d24dcefc34d04115a4673285968a18d00a68"
+    },
+    {
+      "path": "reports/loop/group-v21-run-receipts.json",
+      "sha256": "e7d2dd5db68f953649d63adb0a13da88373354b7c09158462884239d1873d4c9"
+    },
+    {
+      "path": "reports/loop/packages/GROUP-V21-001/v1/freeze.json",
+      "sha256": "cfeb130f0975c6fab281c3a3eb1f7120f8667458d197f998cb1703211e061c09"
+    },
+    {
+      "path": "reports/loop/packages/GROUP-V21-001/v1/manifest.json",
+      "sha256": "73868d634da6a47fc7e5e72c858a4e93479785b892ffd6de65fda0c4243726a4"
+    },
+    {
+      "path": "reports/loop/reviews/GROUP-V21-001-methods-first.md",
+      "sha256": "a75ef3b1d76053f0f36a9853cdaa7dfb6e2e229073e9e545571c544604c5a95b"
+    },
+    {
+      "path": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
+      "sha256": "f9bec9e943a133b95bbd48a721d7d68cce037c80a457f76fc68b4c21a89da233"
+    },
+    {
+      "path": "scripts/run-policy-groups-v21.py",
+      "sha256": "4a7dc196e05ec7a3d2a4c776c7806196a9cc53eefc37ccd63fb017f88735d33b"
+    }
+  ],
+  "privateAggregates": [
+    {
+      "path": "data/local/policy-groups-v21/ESS5e03_6/run.json",
+      "sha256": "424f617567186194611bfd5afd3ea7881eb54e7ca940d6495c10eede0494e600",
+      "studyId": "ESS5e03_6",
+      "candidateSha256": "94777a8c0e4924e0427e78958ee5fac1c825916c1af49d4bb6423cc2007730ec",
+      "scope": "closed safe aggregate run only; no rows/individual identifiers or answers"
+    },
+    {
+      "path": "data/local/policy-groups-v21/ESS8e02_3/run.json",
+      "sha256": "62803a9433e6160402af8167cf6180a55a13258402f29813d7b4118c1f92ec1e",
+      "studyId": "ESS8e02_3",
+      "candidateSha256": "733c197572904cf015a7e2e7f58f65f62ad8fd021a49ffe897fbac4155f3e942",
+      "scope": "closed safe aggregate run only; no rows/individual identifiers or answers"
+    },
+    {
+      "path": "data/local/policy-groups-v21/ESS9e03_3/run.json",
+      "sha256": "48171dc07062dc331950be26605d1dcbbd6e5409a21d53049950267c2ffd8c09",
+      "studyId": "ESS9e03_3",
+      "candidateSha256": "cf12662677918ca1c673c3d04bd1ec7c0a726cb8492afd2079df25d019b88266",
+      "scope": "closed safe aggregate run only; no rows/individual identifiers or answers"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T15:22:43.649944+00:00",
+  "updatedAtUtc": "2026-10-03T15:35:34.557564+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -3092,10 +3092,11 @@
       "origin": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
       "decision": "angenommen",
       "severity": "presentation",
-      "repairRounds": 0,
-      "status": "OPEN",
-      "reason": "Technical listing lacks thematic original wording/category/context presentation",
-      "blocks": ["substantive thematic report"]
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED",
+      "reason": "Two targeted presentation roles accepted60pins with43 full contexts and8themes; numerical firsts unchanged",
+      "blocks": [],
+      "verificationRecord": "reports/loop/RESULTS-V2-PRESENTATION-001-entscheidung.md"
     },
     {
       "id": "RV2-M-F04",
@@ -3112,10 +3113,11 @@
       "origin": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
       "decision": "angenommen",
       "severity": "presentation",
-      "repairRounds": 0,
-      "status": "OPEN",
-      "reason": "Technical listing lacks eight topics, full wording/category labels and B25 caveat",
-      "blocks": ["substantive thematic report"]
+      "repairRounds": 1,
+      "status": "CLOSED_BOUNDED",
+      "reason": "Two targeted presentation roles accepted60pins with43 full contexts and8themes; numerical firsts unchanged",
+      "blocks": [],
+      "verificationRecord": "reports/loop/RESULTS-V2-PRESENTATION-001-entscheidung.md"
     },
     {
       "id": "SCF-R02",
@@ -3192,6 +3194,26 @@
       "status": "OPEN_LIMIT",
       "reason": "ESS5/8 ordered national forms plus original API/date binding accepted bounded; extra explicit current alias concordance not available",
       "blocks": []
+    },
+    {
+      "id": "SCF-P01",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-sources-presentation-round1.md",
+      "severity": "darstellung",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "OPEN_TARGETED_FIX",
+      "reason": "Markdown displays apostroph entity text in English API missing labels; German source labels/meaning preserved",
+      "blocks": []
+    },
+    {
+      "id": "SCF-P02",
+      "origin": "reports/loop/reviews/RESULTS-V2-001-sources-presentation-round1.md",
+      "severity": "Quellenmetadaten",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "OPEN_TARGETED_FIX",
+      "reason": "README ESS11 documentation DOI diverges from pinned primary citation requirement; actual report/contract/catalogue already match primary; resolver validity not asserted",
+      "blocks": ["README single ESS11 documentation attribution claim"]
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."
