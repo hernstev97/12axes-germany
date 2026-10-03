@@ -4,13 +4,13 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude für Steven. Jede Entscheidung n
 
 ## Kurz: die fünf Entscheidungen mit der größten Wirkung
 
-| Nr. | Entscheidung                                                  | Empfehlung                                                                                 | Aufwand für Steven                |
-| --- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------- |
-| 1   | GESIS um eine Ausnahme nach § 4 bitten                        | Ja, Entwurf 1 senden                                                                       | eine E-Mail, Antwort abwarten     |
-| 2   | Eurobarometer-Tabellen der Kommission zulassen                | Ja, für die elf Fragen in Plan v2.3 Abschnitt 11.1, nach Strukturprüfung und Rechteanfrage | Freigabe, eine E-Mail (Entwurf 3) |
-| 3   | Online-Quotenstichproben als Vergleich                        | Vorerst nein                                                                               | keine                             |
-| 4   | Textvorschläge für Statushinweis, Meta-Beschreibung, Handbuch | Annehmen wie empfohlen                                                                     | Durchsicht von fünf Vorschlägen   |
-| 5   | ESS12 nach Veröffentlichung vorbereiten                       | Ja, ohne weiteren Schritt bis Januar 2027                                                  | keine                             |
+| Nr. | Entscheidung                                                  | Empfehlung                                                                                                | Aufwand für Steven                |
+| --- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| 1   | GESIS um eine Ausnahme nach § 4 bitten                        | Ja, Entwurf 1 senden                                                                                      | eine E-Mail, Antwort abwarten     |
+| 2   | Eurobarometer-Tabellen der Kommission zulassen                | Ja, für die neun geprüften Fragen in Plan v2.3 Abschnitt 11.1, nach Planprüfung und Klärung des Wortlauts | Freigabe, eine E-Mail (Entwurf 3) |
+| 3   | Online-Quotenstichproben als Vergleich                        | Vorerst nein                                                                                              | keine                             |
+| 4   | Textvorschläge für Statushinweis, Meta-Beschreibung, Handbuch | Annehmen wie empfohlen                                                                                    | Durchsicht von fünf Vorschlägen   |
+| 5   | ESS12 nach Veröffentlichung vorbereiten                       | Ja, ohne weiteren Schritt bis Januar 2027                                                                 | keine                             |
 
 ## 1 GESIS-Ausnahme
 
@@ -24,9 +24,9 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude für Steven. Jede Entscheidung n
 
 ## 2 Eurobarometer-Tabellen der Kommission
 
-**Lage.** Die Weiterverwendungsregel der Kommission erlaubt die Verarbeitung der veröffentlichten Tabellen und die Veröffentlichung von Anteilen mit Quellenangabe (R10 Klasse C). Die Rechte an den deutschen Fragewortlauten sind ungeklärt (Klasse B), weil die Kommission die deutschen Fragebögen nicht selbst veröffentlicht. Die Fragen betreffen fast alle Politik der EU, nicht Entscheidungen Deutschlands. Wählergruppen sind nicht möglich. Ein Bevölkerungsvergleich mit EU-Staatsangehörigen ab 15 Jahren in Deutschland ist als eigener, begrenzter Vergleich vertretbar (R10 Abschnitt 5.2). STRUKTURPRUEFUNG
+**Lage.** Die Weiterverwendungsregel der Kommission erlaubt die Verarbeitung der veröffentlichten Tabellen und die Veröffentlichung von Anteilen mit Quellenangabe (R10 Klasse C). Die Rechte an den deutschen Fragewortlauten sind ungeklärt (Klasse B), weil die Kommission die deutschen Fragebögen nicht selbst veröffentlicht. Die Fragen betreffen fast alle Politik der EU, nicht Entscheidungen Deutschlands. Wählergruppen sind nicht möglich. Ein Bevölkerungsvergleich mit EU-Staatsangehörigen ab 15 Jahren in Deutschland ist als eigener, begrenzter Vergleich vertretbar (R10 Abschnitt 5.2). Die Strukturprüfung S1 zeigt: Die Tabellen enthalten Deutschland gesamt, alle Kategorien und „Weiß nicht“ einzeln, aber keine ungewichtete Basis je Frage und keine Gewichtungsvariable. Plan v2.3 Abschnitt 6 legt deshalb fest, dass nur Fragen an alle Befragten in Frage kommen, mit der Interviewzahl als Basis und dem beschriebenen Gewichtungsverfahren. Der deutsche Datenanhang der Kommission enthält deutsche Fragetexte, was die Rechtefrage zu den Wortlauten entschärfen könnte.
 
-**Optionen.** A: zulassen für die elf Fragen aus Plan v2.3 Abschnitt 11.1, nach Rechteanfrage (Entwurf 3) und Planprüfung. B: zulassen ohne deutsche Wortlaute, nur mit Verweis. B scheidet nach den Projektregeln aus, weil die Ansicht den Originalwortlaut zeigt. C: nicht zulassen.
+**Optionen.** A: zulassen für die neun Fragen aus Plan v2.3 Abschnitt 11.1, deren Tabellen S1 geprüft hat, nach Planprüfung und mit Wortlaut aus dem deutschen Datenanhang der Kommission oder nach Rechteanfrage (Entwurf 3). Zwei weitere Fragen (SP557) brauchen zuerst eine Strukturprüfung. B: zulassen ohne deutsche Wortlaute, nur mit Verweis. B scheidet nach den Projektregeln aus, weil die Ansicht den Originalwortlaut zeigt. C: nicht zulassen.
 
 **Empfehlung: A.** Die Fragen schließen keine nationale Lücke, geben dem Profil aber aktuelle Vergleiche zur EU-Ebene für Außen-, Digital-, Bildungs- und Gesundheitspolitik, mit Zufallsstichprobe und klarer Kennzeichnung der Ebene.
 
