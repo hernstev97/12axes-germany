@@ -423,18 +423,69 @@
       "returnedTaskName": "/root/inventory003_c_author",
       "fork_turns": "none",
       "kind": "public-source-author",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/authors/INVENTORY-003-C.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Autorenbericht;frischer Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Autorenbericht;frischer Kontext.",
+      "authorOriginalReportSha256": "e1115c1db314202fe2468f9c95bb36d24408123f6e22e625de3873c7c3b08ca1",
+      "formattedPublicReportSha256": "743ba5394678f62c9d12b82b5518e3b60392ea59a8a727036114f209a02ad661",
+      "formatTransfer": "outputs/loop/inventory003-c-format-transfer/transfer.json"
     },
     {
       "task_name": "methods002_correction_author",
       "returnedTaskName": "/root/methods002_correction_author",
       "fork_turns": "none",
       "kind": "bounded-synthetic-correction-author",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/authors/METHODS-002-korrektur.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Autorenbericht;frischer Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Autorenbericht;frischer Kontext.",
+      "authorOriginalReportSha256": "4816eef9f0f407083f66e1951dfefb1f3ce05e9ba9bc05201551894df78e5693",
+      "formattedPublicReportSha256": "8eaa2d5f085b41a741110f8b49d121fcfdd6e95dec7e395560b5ba05776be020",
+      "formatTransfer": "outputs/loop/methods002-v3-format-transfer/transfer.json"
+    },
+    {
+      "task_name": "inventory002_ab_v2_sources",
+      "returnedTaskName": "/root/inventory002_ab_v2_sources",
+      "fork_turns": "none",
+      "kind": "independent-correction-source-review",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/INVENTORY-002-AB/v2/manifest.json",
+      "manifestSha256": "2fe41dba331a3775c9a4a254f8136ded551f54c864cb9aea21b6c375863a4bd4",
+      "report": "reports/loop/reviews/INVENTORY-002-AB-v2-sources.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext.",
+      "reportSha256": "a61b946a5eda356e96e3874dea07176994a53a37c9a0d01f4b1c554b84323674"
+    },
+    {
+      "task_name": "inventory002_ab_v2_repro",
+      "returnedTaskName": "/root/inventory002_ab_v2_repro",
+      "fork_turns": "none",
+      "kind": "independent-correction-reproduction-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/INVENTORY-002-AB/v2/manifest.json",
+      "manifestSha256": "2fe41dba331a3775c9a4a254f8136ded551f54c864cb9aea21b6c375863a4bd4",
+      "report": "reports/loop/reviews/INVENTORY-002-AB-v2-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext."
+    },
+    {
+      "task_name": "methods002_v3_statistics",
+      "returnedTaskName": "/root/methods002_v3_statistics",
+      "fork_turns": "none",
+      "kind": "independent-synthetic-correction-methods-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/METHODS-002/v3/manifest.json",
+      "manifestSha256": "a6a05b361cac1bf26975f56119b5f65934589f4d83f204177394307495f6bb80",
+      "report": "reports/loop/reviews/METHODS-002-v3-statistics.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext."
+    },
+    {
+      "task_name": "methods002_v3_repro",
+      "returnedTaskName": "/root/methods002_v3_repro",
+      "fork_turns": "none",
+      "kind": "independent-synthetic-correction-reproduction-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/METHODS-002/v3/manifest.json",
+      "manifestSha256": "a6a05b361cac1bf26975f56119b5f65934589f4d83f204177394307495f6bb80",
+      "report": "reports/loop/reviews/METHODS-002-v3-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Erstbericht; frischer begrenzter Kontext."
     }
   ],
   "activeAdditionalAuthors": [
@@ -513,9 +564,11 @@
     {
       "target": "/root/inventory002_ab_author",
       "kind": "bounded-correction",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "calledAtUtc": "2026-10-03T05:53:54.441837+00:00",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im Autorenkorrekturbericht;Altfassungenunverändert."
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im Autorenkorrekturbericht;Altfassungenunverändert.",
+      "report": "reports/loop/authors/INVENTORY-002-AB-korrektur.md",
+      "reportSha256": "759606452a9eef5ce034bfb596723b4087d25a642fe4a8095e7689fdfa7e8b94"
     }
   ]
 }

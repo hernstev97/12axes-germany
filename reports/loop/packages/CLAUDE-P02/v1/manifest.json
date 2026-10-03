@@ -1,0 +1,146 @@
+{
+  "id": "CLAUDE-P02",
+  "version": 1,
+  "frozenAtUtc": "2026-10-03T06:02:03.472474+00:00",
+  "codeCommit": "595ab8b77fff1a32404691b3d4d6dd8de9e3e6ab",
+  "scope": "Selected access metadata, not actual research review or read-boundary acceptance",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/AGENTS.md",
+      "bytes": 4003,
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c"
+    },
+    {
+      "path": "docs/auftrag-life-93-2026-10-03.md",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/docs/auftrag-life-93-2026-10-03.md",
+      "bytes": 17471,
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6"
+    },
+    {
+      "path": "reports/loop/issue-2026-10-03.md",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/issue-2026-10-03.md",
+      "bytes": 37196,
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397"
+    },
+    {
+      "path": "reports/loop/CLAUDE-P02-pruefauftrag.md",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/CLAUDE-P02-pruefauftrag.md",
+      "bytes": 2360,
+      "sha256": "0f2ec24e41fd93497f63d9c117e91bc49a7e65350f97377736619513f3436a4a"
+    },
+    {
+      "path": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/CLAUDE-P02-zugriffsbericht.md",
+      "bytes": 3248,
+      "sha256": "cd399f061049df75ec67bff3a877ca6350f5bab456c3bed5f4a25edc8174d21b"
+    },
+    {
+      "path": "reports/loop/SOFTWARE-001-v2-entscheidung.md",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/SOFTWARE-001-v2-entscheidung.md",
+      "bytes": 3148,
+      "sha256": "304e25af32f6451f6561d3d94e2426726306d140a8e0bca7a84b7f7c9a3bfee1"
+    },
+    {
+      "path": "reports/loop/claude-protocol-001-execution.json",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/claude-protocol-001-execution.json",
+      "bytes": 2763,
+      "sha256": "aa979562f0eab7dfe04d00214e5cb7850baea5b2b26edbb88e3a7d26d8f2fedf"
+    },
+    {
+      "path": "reports/loop/claude-protocol-001-auftrag.txt",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/claude-protocol-001-auftrag.txt",
+      "bytes": 15487,
+      "sha256": "b97b751888e6eb4e970e703db523283544afe7871428d48195c48342588d9e88"
+    },
+    {
+      "path": "reports/loop/claude-protocol-001-result.json",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/claude-protocol-001-result.json",
+      "bytes": 5731,
+      "sha256": "3babe6618c546014ccbceed314a88de904f1dd4a1233d16d22f8d92deec32388"
+    },
+    {
+      "path": "reports/loop/claude-read-boundary-002/002-execution.json",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/claude-read-boundary-002/002-execution.json",
+      "bytes": 3120,
+      "sha256": "4d31f8029bd6d58bea4c04585968e5656f19f8b50b4e963f28a6acfb6e16c490"
+    },
+    {
+      "path": "reports/loop/claude-read-boundary-002/002b-execution.json",
+      "snapshotPath": "reports/loop/packages/CLAUDE-P02/v1/files/reports/loop/claude-read-boundary-002/002b-execution.json",
+      "bytes": 3105,
+      "sha256": "10ba2cbf6c352a6255fab5031729ce44489d1699ca6373e3e0d23acf434a04cb"
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "outputs/loop/claude-protocol-001/cli-version.json",
+      "bytes": 928,
+      "sha256": "a6b1ed2e4b2519e908a546d11c3fc3061e584a26830bf7c3fe75fdc424d6dfbb",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/plan-before-run.json",
+      "bytes": 1321,
+      "sha256": "c86cefaeb319ff5c0320e559f50e29058193a88d1690b1afcad3c3e99cba1748",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/plan-before-run.json",
+      "bytes": 1596,
+      "sha256": "14c34f48495aa71b1968b64e81cfc4a5e6ff22e6f4e8513a1e59c319d2d497c7",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/execution.json",
+      "bytes": 2699,
+      "sha256": "a1e93131b063a561b3944cc2d36ea523cdde32aca87e1cec37f3e5a6f4349b2e",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/execution.json",
+      "bytes": 2683,
+      "sha256": "c218d4b5f66487c4e2767c2e866c4a34de4860b1eaa3e446cefc307aedeb8f6b",
+      "scope": "Selected process metadata/artificial public-source preplan; no provider raw text/debug/credentials/ESS"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/provider-stream.jsonl",
+      "bytes": 4943,
+      "sha256": "7fcfc813618298446f2804643378c83911cf9636256264f82f05107308bd5c88",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/version-before.stdout",
+      "bytes": 22,
+      "sha256": "633e048600d3b521510cbcd629063291d140105c64e042c345b30850e9cf0c2d",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002/version-after.stdout",
+      "bytes": 22,
+      "sha256": "633e048600d3b521510cbcd629063291d140105c64e042c345b30850e9cf0c2d",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/provider-stream.jsonl",
+      "bytes": 4963,
+      "sha256": "82f0d247991dab0bafdb0fb2caff04d55df618716c9cb4bafed2eb39ea5db4c9",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/version-before.stdout",
+      "bytes": 22,
+      "sha256": "633e048600d3b521510cbcd629063291d140105c64e042c345b30850e9cf0c2d",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    },
+    {
+      "path": "outputs/loop/claude-read-boundary-002b/version-after.stdout",
+      "bytes": 22,
+      "sha256": "633e048600d3b521510cbcd629063291d140105c64e042c345b30850e9cf0c2d",
+      "scope": "Only selected process metadata fields by own whitelist extractor; no other provider text; no ESS/data/userfile content"
+    }
+  ],
+  "rawData": "No ESS/person answers or raw data inputs accessed or bound",
+  "method": "Fresh independent Codex metadata controls, two reports before synthesis; same model family",
+  "requiredStatus": "P02 read-boundary NICHT_GEPRÜFT; observed access BLOCKIERT"
+}

@@ -1,0 +1,12 @@
+{
+  "observedAtUtc": "2026-10-03T06:28:46.160823+00:00",
+  "command": ["pnpm", "check"],
+  "exitCode": 1,
+  "status": "NICHT_BESTANDEN",
+  "log": "outputs/loop/post-audit-decisions/new-packages-check.log",
+  "logSha256": "955122d6491cf4aef9272271c14941241ff37fd316c7b2d82e4f8956f3b815d1",
+  "failure": "Formatcheck author INVENTORY-002-AB-korrektur.md; currently immutable review input, not changed during independent review",
+  "subsequentChecks": "NICHT_GEPR\u00dcFT in this invocation",
+  "lastActualSuccessfulRun": "reports/loop/technical-post-audit-decisions.json",
+  "scope": "Technical current integration; no scientific finding; format repair after both complete reports without altering frozen bytes"
+}
