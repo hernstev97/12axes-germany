@@ -1,0 +1,68 @@
+{
+  "id": "WEBSITE-METHODS-001/v1",
+  "baseCommit": "3595c0a2e45c8ffbf4d047f7341e8761f5aa0d6d",
+  "scope": "Existing documentation copy+home status only; no active test/analysis result/navigation/stylechange",
+  "files": [
+    {
+      "path": "web/src/app/pages/project/project.html",
+      "sha256": "075bf3a55c3ec76951676cb959121d7bfae40955396f87f64e32784bfa12d14a"
+    },
+    {
+      "path": "web/src/app/pages/project/project.ts",
+      "sha256": "30c23776dc60e350c209ed35699b25c2820addda97cd40b0a7ecc3e33bd0f099"
+    },
+    {
+      "path": "web/src/app/pages/home/home.html",
+      "sha256": "c2658a161e5d19b1805bdadbe6e64c631d805a95c21a7e647d96731b6aca5be2"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "docs/auftrag-life-93-fortsetzung-2026-10-03.md",
+      "sha256": "1e2b2f5a64332c0265e1fa75ad6942c9eef234cb9ad9b0ca67e8a565b4cb10be"
+    },
+    {
+      "path": "reports/phasen/00-designmetadaten-2026-10-03.json",
+      "sha256": "d906ac9e8f959c21153e87b69956193dc0f84f05cb03b410118d7d5ffffa08fa"
+    },
+    {
+      "path": "data/item-core-v1.json",
+      "sha256": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e"
+    },
+    {
+      "path": "data/core-integrated-4.2-binding.json",
+      "sha256": "03232e0a8ea36114324b992518d2325f6630cd850529d7a32fc6cd5933216703"
+    },
+    {
+      "path": "reports/loop/ITEM-FIRST-001-agreement.json",
+      "sha256": "777241be61a731095878a97b36220cd061976e68993f2ad429edf645223b74db"
+    },
+    {
+      "path": "reports/loop/authors/ESS-INVENTORY-final-proposal.md",
+      "sha256": "328b9e8e52687d9c45a1572be92eaa7ece96ecacd8b24d9461e5becf2d26dfad"
+    },
+    {
+      "path": "reports/loop/authors/ESS-CORE-VERSION-binding.md",
+      "sha256": "a05b22e814d6556e75cbd7e6028adf2df2b9fbf5ab1b7c22540c92e125b8a553"
+    },
+    {
+      "path": "reports/loop/authors/ESS-CONSTRUCTS-resume-proposal.md",
+      "sha256": "a5d22c7f12f93ccbce41af99e86bc7021a6c04d3f98cd05afde4bc82c3ce9cb6"
+    },
+    {
+      "path": "docs/empirie-plan-v1.entwurf.md",
+      "sha256": "ee6e339d8c2e0a36b9efb40fe57e3a037593e0979a4d95676f05db4a70b7810e"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    }
+  ],
+  "requirements": [
+    "Fresh bounded reviewer facts/tone/neutrality; no sharedpage mutations",
+    "Existing handbook preserved; browser/root technical separate",
+    "Actual metadata only;9itemsproposal; samefamilyratingsnotvalidity; human/Claude releasepending"
+  ]
+}

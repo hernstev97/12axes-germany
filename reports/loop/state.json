@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T10:30:03.704016+00:00",
+  "updatedAtUtc": "2026-10-03T10:48:38.747566+00:00",
   "status": "RUNNING",
-  "phase": "Phase0: Metadatenimport und getrennte Item-Ersturteile abgeschlossen; konkreter Analysevertrag und Software WIP",
+  "phase": "Phase0: Quellen-/Metadatenabschluss, ausführbarer Analysevertrag vor Übergangsprüfung; Website-Dokumentation begrenzt geprüft",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -25,10 +25,13 @@
     "E-v3 fixed-document context/card guard independently verified; E-R02 round2 and E2-S01/E2-R01 bounded closure",
     "DM-R01–04 bounded targeted correction passed; actual metadata-only import exit0, 2420DE/25strata/500PSUs; min4 condition fails in two strata",
     "ITEM-FIRST-001 two independent initial ratings completed and preserved; all296 kappa0.8954479226455914; not accuracy/validity",
-    "ESS-SPLIT source author completed; fixed floor/ceil conditional split proposal, not plan approval"
+    "ESS-SPLIT source author completed; fixed floor/ceil conditional split proposal, not plan approval",
+    "Nine-item official ESS4.2 metadata/source binding complete; actual answer codes still unopened",
+    "Ordinal fixed-I observed-Jacobian support completed with54/54 synthetic checks; empirical methods transition review pending",
+    "WEBSITE-METHODS-001 bounded copy review PASS; pnpm check and two pages/five widths axe/nooverflow PASS; actual200percent/focus-visible unverified"
   ],
   "openTasks": [
-    "Integrate final core/screening and exact group source contract; close concrete plan and software before two major transition reviews",
+    "Complete development/runtime software then obtain two pre-A transition judgments for fixed nine-item plan",
     "Freeze public plan/expectations after reviews; protected A empirical development then model freeze before B gate",
     "One-time B, whole-DE transfer, allowed comparisons and result interpretation reviews",
     "Methods/website from actual evidence; concrete design acceptance, Claude final control and real human tests remain pending"
@@ -87,18 +90,20 @@
     "currentHandbookGuard": "BESTANDEN",
     "foundationFiveReviewers": "NICHT_BESTANDEN",
     "currentInfrastructure": "BESTANDEN",
-    "actual200PercentBrowserZoom": "BLOCKIERT",
+    "actual200PercentBrowserZoom": "NICHT_GEPRÜFT; available T3 preview shortcuts have no measured zoom effect",
     "fullHandbookWebsiteAcceptance": "NICHT_GEPRÜFT",
     "claudeTechnicalAccess": "BLOCKIERT",
     "foundationBoundedCorrections": "BESTANDEN",
-    "foundationScientificPlanAcceptance": "BLOCKIERT",
+    "foundationScientificPlanAcceptance": "NICHT_GEPRÜFT current concrete plan awaits two transition reviewers",
     "claudeReadBoundary": "NICHT_GEPRÜFT",
     "haltBackup": "BESTANDEN",
     "haltTechnical": "BESTANDEN",
     "currentDesignMetadataTechnical": "BESTANDEN",
     "currentEmpiricalTransition": "NICHT_GEPRÜFT",
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
-    "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding"
+    "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
+    "currentWebsiteCopy": "BESTANDEN bounded",
+    "currentWebsiteBrowser": "BESTANDEN layout/axe two pages five widths; realzoom/focus-visible NICHT_GEPRÜFT"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -164,7 +169,8 @@
     "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
     "reports/loop/reviews/ITEM-FIRST-001-methods.md",
     "reports/loop/reviews/ITEM-FIRST-001-sources.md",
-    "reports/loop/reviews/ITEM-FIRST-001-sources-errata.md"
+    "reports/loop/reviews/ITEM-FIRST-001-sources-errata.md",
+    "reports/loop/reviews/WEBSITE-METHODS-001-first.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -180,31 +186,32 @@
   "activeAgents": [
     {
       "name": "/root/ordinal_support_author",
-      "role": "author observed DWLS/design support, synthetic only",
-      "writes": [
-        "pipeline/ordinal/support.R",
-        "pipeline/ordinal/test-support.R",
-        "pipeline/ordinal/run_r.py",
-        "reports/loop/authors/ESS-ORDINAL-SUPPORT-proposal.md",
-        "outputs/loop/resume-ordinal-support/"
+      "task": "new synthetic development runner only",
+      "allowedWrites": [
+        "pipeline/ordinal/develop.R",
+        "pipeline/ordinal/develop-config.R",
+        "reports/loop/authors/ESS-DEVELOPMENT-runner-proposal.md",
+        "outputs/loop/resume-development-author/"
       ]
     },
     {
-      "name": "/root/group_contract_sources",
-      "role": "completed group source contract; bounded core4.2 metadata supplement in progress",
-      "writes": [
-        "data/core-integrated-4.2-binding.json",
-        "reports/loop/authors/ESS-CORE-VERSION-binding.md",
-        "outputs/loop/resume-group-contract/core-version/"
+      "name": "/root/joint_groups_author",
+      "task": "full joint ordinal groups synthetic implementation only",
+      "allowedWrites": [
+        "pipeline/ordinal/groups.R",
+        "pipeline/ordinal/test-groups.R",
+        "reports/loop/authors/ESS-JOINT-GROUPS-proposal.md",
+        "outputs/loop/resume-joint-groups/"
       ]
     },
     {
-      "name": "/root/website_methods_author",
-      "role": "author existing approved project documentation only; source copy review and browser pending",
-      "writes": [
-        "web/src/app/pages/project/",
-        "reports/loop/authors/WEBSITE-METHODS-resume-proposal.md",
-        "outputs/loop/resume-website-methods/"
+      "name": "/root/runtime_author",
+      "task": "new pinned runtime/reproduction wrapper; no real input",
+      "allowedWrites": [
+        "pipeline/r_runtime.py",
+        "pipeline/ordinal/reproduce-support.R",
+        "reports/loop/authors/ESS-RUNTIME-proposal.md",
+        "outputs/loop/resume-runtime-author/"
       ]
     }
   ],
@@ -421,15 +428,15 @@
       "reviewStatus": "not reviewed; no empirical access"
     }
   ],
-  "nextConcreteStep": "Complete observed-DWLS support and public source contracts; pin compact pre-empirical review package and obtain two fresh independent transition judgments. No response import or tags yet.",
+  "nextConcreteStep": "Entwicklungsrunner und frische Runtime-Reproduktion fertigstellen; kompakte Fassung an zwei frische Übergangsprüfer; danach Tags vor A. B/C und politische Felder geschlossen.",
   "checkpoint": {
     "lastLocalCommit": "git:HEAD",
-    "lastVerifiedRemoteCommit": "0f7f2f01afafec1fa39d277efd1a92832d2c3151",
-    "lastVerifiedPushAtUtc": "2026-10-03T10:03:16.456416+00:00",
+    "lastVerifiedRemoteCommit": "3595c0a2e45c8ffbf4d047f7341e8761f5aa0d6d",
+    "lastVerifiedPushAtUtc": "2026-10-03T10:32:36.794553+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-027.json",
+    "record": "reports/loop/push-028.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
@@ -465,7 +472,8 @@
     "reports/loop/technical-checkpoint022.json",
     "reports/loop/technical-checkpoint023.json",
     "reports/loop/technical-halt.json",
-    "reports/loop/resume-package-technical.json"
+    "reports/loop/resume-package-technical.json",
+    "reports/loop/resume-website-technical.json"
   ],
   "independentPreparations": [
     {

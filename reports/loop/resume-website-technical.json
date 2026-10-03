@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "atUtc": "2026-10-03 10:47:40 UTC",
+  "scope": "WEBSITE-METHODS-001 text/status edits; empirical plan and runtime work remain WIP",
+  "copyReview": {
+    "path": "reports/loop/reviews/WEBSITE-METHODS-001-first.md",
+    "sha256": "70d236bd96025336eb6f06ab70363bf8585209a8b318c711e88572ff467b4f53",
+    "decision": "PASS bounded; no scientific/test/release approval"
+  },
+  "pnpmCheck": {
+    "exitCode": 0,
+    "log": "outputs/loop/resume-checkpoint-029.log"
+  },
+  "browser": {
+    "provider": "T3 collaborative preview tab_1",
+    "server": "owned pnpm dev session15872 http://localhost:4311",
+    "project": [
+      {
+        "url": "http://localhost:4311/projekt",
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1425,
+        "violations": []
+      },
+      {
+        "url": "http://localhost:4311/projekt",
+        "innerWidth": 1024,
+        "innerHeight": 768,
+        "scrollWidth": 1009,
+        "violations": []
+      },
+      {
+        "url": "http://localhost:4311/projekt",
+        "innerWidth": 768,
+        "innerHeight": 1024,
+        "scrollWidth": 753,
+        "violations": []
+      },
+      {
+        "url": "http://localhost:4311/projekt",
+        "innerWidth": 320,
+        "innerHeight": 720,
+        "scrollWidth": 305,
+        "violations": []
+      },
+      {
+        "url": "http://localhost:4311/projekt",
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 375,
+        "violations": []
+      }
+    ],
+    "home": [
+      {
+        "url": "http://localhost:4311/",
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1425,
+        "violations": []
+      },
+      {
+        "url": "http://localhost:4311/",
+        "innerWidth": 1024,
+        "innerHeight": 768,
+        "scrollWidth": 1009,
+        "violations": []
+      },
+      {
+        "url": "http://localhost:4311/",
+        "innerWidth": 768,
+        "innerHeight": 1024,
+        "scrollWidth": 753,
+        "violations": []
+      },
+      {
+        "url": "http://localhost:4311/",
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 375,
+        "violations": []
+      },
+      {
+        "url": "http://localhost:4311/",
+        "innerWidth": 320,
+        "innerHeight": 720,
+        "scrollWidth": 305,
+        "violations": []
+      }
+    ],
+    "observedScreenshots": "Desktop1440, project390/320, source section1440, home320 inspected; paper/ink/layout/artwork preserved",
+    "images": "project artwork loaded naturalWidth380; no image/style code changed",
+    "keyboard": {
+      "firstTab": "Zum Inhalt springen",
+      "enterTarget": "main-content",
+      "url": "/projekt",
+      "focusVisible": "NOT_VERIFIED: document.hasFocus=false, :focus/:focus-visible false under preview automation"
+    },
+    "actual200PercentZoom": {
+      "status": "NOT_VERIFIED",
+      "attempts": "Ctrl+plus/Ctrl+equal unchanged innerWidth1440/dpr1; Ctrl0 resets existing initial dpr1.7 to1, does not verify200percent"
+    },
+    "limitations": "No standalone fallback used: T3 preview available. No new full network/storage/gallery/reduced-motion/screenreader proof. Earlier unchanged gallery checks remain historical evidence only.",
+    "axe": "WCAG2A/AA,21A/AA,22AA,best-practice; zero violations, not full accessibility acceptance"
+  },
+  "scientificAcceptance": false
+}

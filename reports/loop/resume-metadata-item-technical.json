@@ -3,7 +3,7 @@
   "pnpmCheck": {
     "exitCode": 0,
     "log": "outputs/loop/resume-checkpoint-028.log",
-    "atUtc": "2026-10-03T10:32:00Z"
+    "atUtc": "2026-10-03T10:31:46.479Z"
   },
   "syntheticAccessTests": {
     "command": "python -m unittest pipeline.tests.test_empirical_access -v",
@@ -24,5 +24,6 @@
     "reason": "Original hashed CSVs use standard CRLF; default check reports CR as trailing whitespace",
     "bytesChanged": false
   },
-  "gitDiffCheckPolicy": "per-command cr-at-eol; original CSVs unchanged"
+  "gitDiffCheckPolicy": "per-command cr-at-eol; original CSVs unchanged",
+  "timestampCorrection": "Build completion timestamp from original log replaces initial approximate10:32; no check rerun or scientific status change."
 }

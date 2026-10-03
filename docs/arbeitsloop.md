@@ -54,3 +54,9 @@ Steven hat den Haltepunkt ausdrücklich beendet und den geänderten Ablauf beauf
 ## Empirische Voraussetzungen nach Metadatenprüfung
 
 Der tatsächliche begrenzte Metadatenimport und die beiden Item-Ersturteile sind abgeschlossen. Zwei Strata mit je zwei PSUs verhindern den bisherigen unbeschränkten A/B-Vertrag. Der neue Splitvorschlag und der konkrete [Empirieplan](empirie-plan-v1.entwurf.md) sind vor Antwortzugriff zu prüfen. Das Neunerbinding und das ganze Screeninginventar erhalten Originalberichte, Dissense und bekannte Quelldefekte. Keine Quellen- oder technischen Abnahmen als Messgüte ausgeben. Der aktuelle A-Importer hat noch kein positives Übergangsgate; B/C und Vergleichsfelder bleiben zurückgehalten.
+
+## Ausführbarer Plan und Website-Dokumentation
+
+2026-10-03: Kern-/Gruppenquellen für Ausgabe4.2 gebunden; beobachteter fixed-I-Modellsupport54/54 synthetisch. Der konkrete Vertrag präzisiert Normalintervalle und die vollständig strikte modellbedingte Gruppenprüfung samt gemeinsamer affiner Identifikationsgrenze. Noch keine A-Antworten oder Tags. Entwicklungs- und Runtimecode werden vor zwei Übergangsprüfungen fertiggestellt.
+
+Die bestehenden Dokumentationsseiten erhielten Quellen-/Statuskorrekturen, begrenzter frischer Review PASS. Technik-/Browserumfang und ausgefallene Fokus-/Zoomprüfung stehen einmalig in `reports/loop/resume-website-technical.json`. Keine fachliche Freigabe oder sichtbare Testaktion aus diesen Prüfungen ableiten.

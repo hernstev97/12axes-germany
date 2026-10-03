@@ -1,0 +1,8 @@
+{
+  "commit": "3595c0a2e45c8ffbf4d047f7341e8761f5aa0d6d",
+  "remoteCommit": "3595c0a2e45c8ffbf4d047f7341e8761f5aa0d6d",
+  "verified": true,
+  "atUtc": "2026-10-03T10:32:36.794553+00:00",
+  "scope": "Completed metadata/item source package, protected plan/access and ordinal support WIP; no empirical approval",
+  "technicalCheck": "pnpm check exit0 outputs/loop/resume-checkpoint-028.log; CRLF-aware staged diffcheck exit0"
+}

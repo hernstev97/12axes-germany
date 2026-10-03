@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T10:23:29.323667+00:00",
+  "updatedAtUtc": "2026-10-03T10:48:38.747566+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2640,6 +2640,17 @@
         "author": "reports/loop/authors/ESS-SPLIT-resume-proposal.md",
         "scope": "real metadata fact; synthetic contract and public sources; no answers"
       }
+    },
+    {
+      "id": "WM-R01",
+      "origin": "reports/loop/reviews/WEBSITE-METHODS-001-first.md",
+      "severity": "Hinweis",
+      "type": "optional-source-link-comfort",
+      "decision": "kein sachlicher Fehler; Zusatzsprung zu PDF8 optional",
+      "repairRounds": 0,
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "blocks": [],
+      "closureScope": "Current question7link supports election year; second-vote source8 verified; no claim repair required"
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

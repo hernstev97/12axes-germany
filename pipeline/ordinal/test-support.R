@@ -4,7 +4,8 @@ stopifnot(length(args)==4L)
 project <- normalizePath(args[[1]],mustWork=TRUE); own <- normalizePath(args[[2]],mustWork=TRUE)
 stopifnot(identical(own,file.path(project,'outputs/loop/resume-ordinal-support')),
           identical(Sys.getenv('HOME'),args[[3]]))
-source(file.path(project,'pipeline/ordinal/adapter.R'))
+source(file.path(project,if(startsWith(args[[4]],'test-fixed-v2'))
+  'pipeline/ordinal/adapter_v2.R' else 'pipeline/ordinal/adapter.R'))
 source(file.path(project,'pipeline/ordinal/support.R'))
 checks <- list(); warnings_seen <- character(); diagnostic <- list()
 check <- function(id,observed,passed,rule) {

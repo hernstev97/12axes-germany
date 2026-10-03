@@ -15,23 +15,25 @@ export class Project {
   protected readonly credits = ALL_ARTWORKS;
   protected readonly status = [
     { label: 'Website', value: 'Startseite und Seite zum Projektstand vorhanden' },
-    { label: 'Fragenkatalog', value: 'Noch nicht festgelegt' },
+    { label: 'Fragenkatalog', value: 'Neun Originalfragen vorgeschlagen. Noch nicht freigegeben.' },
     { label: 'Dimensionen', value: 'Anzahl und Struktur offen' },
-    { label: 'Analyse der ESS-Daten', value: 'Noch nicht vorhanden' },
+    {
+      label: 'Analyse der ESS-Daten',
+      value: 'Stichprobenmetadaten geprüft. Noch keine politischen Antworten ausgewertet.',
+    },
     { label: 'Auswertung', value: 'Noch nicht vorhanden' },
     { label: 'Vergleichswerte', value: 'Noch nicht berechnet' },
     {
       label: 'Methodische Prüfungen',
-      value:
-        'Ein KI-Audit hat Teile des Rechercheentwurfs geprüft. Eine empirische Modellprüfung fehlt.',
+      value: 'Zwei getrennte KI-Erstbewertungen liegen vor. Eine empirische Modellprüfung fehlt.',
     },
     { label: 'Verständlichkeit', value: 'Noch nicht mit Menschen geprüft' },
-    { label: 'Methodischer Freigabeprozess', value: 'Noch nicht eingerichtet' },
+    { label: 'Methodischer Freigabeprozess', value: 'Dokumentiert. Erforderliche Abnahmen offen.' },
     {
       label: 'Technische Prüfungen',
       value: 'Für den Code der Website eingerichtet. Eine methodische Prüfung ersetzen sie nicht.',
     },
-    { label: 'Gespeicherte Antworten', value: 'Keine. Es gibt noch keine Fragen.' },
+    { label: 'Gespeicherte Antworten', value: 'Keine. Die Website erhebt keine Antworten.' },
     {
       label: 'Externe Dienste',
       value:

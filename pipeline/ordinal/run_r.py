@@ -40,7 +40,8 @@ def main():
     if len(sys.argv) != 2 or sys.argv[1] not in (
         "inspect-001", "inspect-002", "inspect-003", "test-001", "test-002", "test-003", "test-004",
         "test-005", "test-006", "test-007", "test-008", "test-adapter-v2-001",
-        "test-strong-v2-001", "test-strong-v2-002", "test-fixed-001", "test-fixed-002", "test-009"
+        "test-strong-v2-001", "test-strong-v2-002", "test-fixed-001", "test-fixed-002", "test-009",
+        "test-fixed-v2-001"
     ):
         raise RuntimeError("Only fixed synthetic labels are supported")
     label = sys.argv[1]
@@ -112,7 +113,7 @@ def main():
     support = PROJECT / "pipeline/ordinal/support.R"
     if support.is_file():
         code_paths.append(support)
-    if label.startswith(("test-adapter-v2", "test-strong-v2")):
+    if label.startswith(("test-adapter-v2", "test-strong-v2", "test-fixed-v2")):
         code_paths.append(PROJECT / "pipeline/ordinal/adapter_v2.R")
     record = dict(label=label, command=command, cwd=str(OWN), startedAtUtc=utc(),
                   childHandledWriteRights=RIGHTS.split(","),

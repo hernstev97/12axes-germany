@@ -152,7 +152,13 @@
     "group_minimum_complete_cases": 50,
     "group_mean95_max_halfwidth": 0.05,
     "boundary_or_undefined_intervals": "no positive precision claim",
-    "group_minimum_contributing_psus": 10
+    "group_minimum_contributing_psus": 10,
+    "interval_convention": {
+      "rms": "one-sided95 normal qnorm(.95)",
+      "other_model_score": "two-sided95 normal; Bonferroni within stated complete family",
+      "factor_correlations": "all candidate factor pairs, not selected published pairs",
+      "dominance": "both observed sample and model; separately fixed within-score families"
+    }
   },
   "score": {
     "raw": "equalweight mean of original category mappings in item contract",
@@ -171,11 +177,41 @@
     "external_round_replication": "not yet available"
   },
   "comparisons": {
-    "latent_construct_profiles": "blocked without identified source-supported invariance/anchor and full joint design covariance",
+    "latent_construct_profiles": "full strict Wu-Estabrook identified model-conditional gates with joint covariance; no partial rescue; common affine DIF remains unidentified",
     "descriptive_response_means": "separate narrow statement, precision gates and human display decision",
     "party_order": "alphabetical",
     "closeness_ranking": false,
-    "overall_match_percentage": false
+    "overall_match_percentage": false,
+    "invariance": {
+      "sequence": [
+        "configural",
+        "thresholds",
+        "loadings",
+        "intercepts",
+        "residuals"
+      ],
+      "reference_group": "first fixed contract group",
+      "metric": "fixed identity",
+      "covariance": "full joint PSU crossblocks and observed model Jacobian",
+      "spectral_diagnostic_family": "all global stage fits plus successive substantive restrictions within grouping variable",
+      "family_alpha": 0.05,
+      "mc_draws": 200000,
+      "mc_seed_base": 2026100341,
+      "mc_seed_rule": "base plus fixed stage index",
+      "mc_boundary": "binomial95 interval crossing Bonferroni threshold stays unresolved; no rerun",
+      "equivalence_grid": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "equivalence_margin": 0.05,
+      "equivalence_family": "all fixed group pairs x retained scores x grid within grouping variable",
+      "equivalence_bound": "abs(delta)+t(1-.05/(2*L),design_df)*SE < .05",
+      "link": "configural item curves linked only by full strict factor means and variances; joint both-fit covariance",
+      "limits": "model conditional; common affine DIF unidentifiable; no claim outside grid"
+    }
   },
   "gates": {
     "before_A": [
