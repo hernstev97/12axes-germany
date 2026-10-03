@@ -1,0 +1,14 @@
+{
+  "atUtc": "2026-10-03T13:42:22.000084+00:00",
+  "purpose": "Opaque identical local ESS11 copy for fixed no-symlink v2 runner; no header/answer interpretation",
+  "relativePath": "data/raw/ess11-ed4.2/ESS11e04_2.csv",
+  "bytes": 82693775,
+  "sha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+  "originalLinkPreserved": "data/raw/ess11-ed4.2.link-before-v2-20261003",
+  "sourceCheckoutModified": false,
+  "directoryMode": "0700",
+  "fileMode": "0600",
+  "historicalContractsAndTagsChanged": false,
+  "v2GateStillClosed": true,
+  "scope": "Only active worktree raw link renamed and identical bytes copied; no deletion of original or foreign work."
+}

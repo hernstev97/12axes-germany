@@ -1,0 +1,87 @@
+{
+  "package": "EMPIRICAL-V2-001/v1",
+  "createdAtUtc": "2026-10-03T13:45:29.352134+00:00",
+  "scope": "Fresh two-role pre-empirical judgments, no actual answer access or results/publication acceptance",
+  "artifacts": [
+    {
+      "path": "data/analysevertrag.v2.entwurf.json",
+      "sha256": "4194f3bb530f036b72a49a81e339779d9d9eed5530a32843acbe6f9697c42e5d"
+    },
+    {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "38e68b2edfc0ecf9c0b1071bf7283d0ff2f366d3492afd0e71388432415195b9"
+    },
+    {
+      "path": "docs/empirie-plan-v2.entwurf.md",
+      "sha256": "2b0cd26f8fba81bbf520b9ae3411d623f9299c9ff707aacf681bde4c65a0439f"
+    },
+    {
+      "path": "docs/abdeckung-v2.md",
+      "sha256": "77ae3d328c4862d1396e72207e5e1401dfa4da1f57580315e973943d3dfad945"
+    },
+    {
+      "path": "docs/messformen-v2.entwurf.md",
+      "sha256": "0536441391becb9ac84e4b9596b20e2e0e4aab1a9aef827cbc162f8d7261238b"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    },
+    {
+      "path": "docs/quellen.json",
+      "sha256": "b9dc63919d1d340ea79ce462885fc697cb4c093b6c88f1c06eb6202ca69f0ae2"
+    },
+    {
+      "path": "docs/belegregister.md",
+      "sha256": "f78cc9316b6b7fb2745f5d3d592bd2c5a31a3740c99de9f15d13fa663c808e64"
+    },
+    {
+      "path": "reports/loop/packages/EMPIRICAL-V2-001/v1/scope.md",
+      "sha256": "24ec0210cf6d6f02ba1f1138b5c89eadec16af4284814552d74da53c853d48cc"
+    },
+    {
+      "path": "reports/loop/packages/EMPIRICAL-V2-001/v1/input-identity-context.json",
+      "sha256": "2bd8ed41ca5b852cfb41846aad556c1ddfd21b5544bd5237a3d28e757d3ed6fe"
+    },
+    {
+      "path": "pipeline/policy_reference_v2.py",
+      "sha256": "bc06e5c06935e3ff492543bdca986ebca823ec962eab8e6321ff2bf19ee83d2b"
+    },
+    {
+      "path": "pipeline/tests/test_policy_reference_v2.py",
+      "sha256": "01ddfaa79b3fedf1cc10d79b547a38622827fa218a29bd921f896e39568d5ad8"
+    },
+    {
+      "path": "pipeline/policy_adapter_v2.py",
+      "sha256": "3159243bc6f536359c896e414e8f418955b51e7504e38f3add62a811b0e5500e"
+    },
+    {
+      "path": "pipeline/tests/test_policy_adapter_v2.py",
+      "sha256": "43759f87d216d5c0f1c1ae28db60cf640b680f09913a56c8b0cd0c126ce5f829"
+    },
+    {
+      "path": "pipeline/policy_analysis_v2.py",
+      "sha256": "d7d23c99b84d352f161ea607f575155594ecd1ff365ad89e8f2624b4f9500309"
+    },
+    {
+      "path": "pipeline/tests/test_policy_analysis_v2.py",
+      "sha256": "f6012546dcabb5912dd9faa889df8e78272043295b6a70a09d0425b7db907d45"
+    },
+    {
+      "path": "pipeline/policy_access_v2.py",
+      "sha256": "f2c26b2895f1730a344fde41fee63a960b9ff30f63a68a7beefb82a33e6366db"
+    },
+    {
+      "path": "pipeline/tests/test_policy_access_v2.py",
+      "sha256": "0523a8b3d2a996c0e3be593b9a588d7b5c5714a110789442dd157de418d32058"
+    },
+    {
+      "path": "pipeline/policy_export_v2.py",
+      "sha256": "27b225b5975f0c321f08adbfa7ccab4e03dae8421f3987d0e104cf4945d0437a"
+    },
+    {
+      "path": "pipeline/tests/test_policy_export_v2.py",
+      "sha256": "9eb80c2e96188ae9725285d32b0dd27b40d53a63c05a6a29e8190c4b079b1db3"
+    }
+  ]
+}

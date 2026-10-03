@@ -1,0 +1,10 @@
+{
+  "verifiedAtUtc": "2026-10-03T13:38:51.377961+00:00",
+  "localCommit": "e3785ab4560e13a18547713ffbca5cc585d91a40",
+  "remoteCommit": "e3785ab4560e13a18547713ffbca5cc585d91a40",
+  "branch": "research/life-93-night-20261003",
+  "status": "BESTANDEN",
+  "regularPushExitCode": 0,
+  "scan": "outputs/loop/breadth-checkpoint038-scan.json",
+  "technical": "check043 exit0/31tests/build; methodology5widths/axe0 bounded; scientific plan still draft"
+}

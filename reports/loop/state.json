@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T13:38:25.531862+00:00",
+  "updatedAtUtc": "2026-10-03T13:59:33.034517+00:00",
   "status": "RUNNING",
-  "phase": "Breite v2: 43 Quellenbindungen, vier zusätzliche CSVs gesichert; ausführbarer Vertrag und synthetische I/O-Vorbereitung vor Empiriegates",
+  "phase": "BROAD_V2_SOURCE_BINDING_CORRECTION",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -105,7 +105,12 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "check043 exit0: format/handbook/schema/typecheck,31tests,productionbuild; no scientific acceptance",
+    "currentLocalTechnical": {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "log": "outputs/loop/check-044.log",
+      "scope": "format/handbook/review-schema/typecheck31tests/build; no empirical validation"
+    },
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Historische A/B-Kriterien berechnet; keine umfassende Produktvalidität. Breite v2 NICHT_GEPRÜFT.",
     "otherModelFamily": "NICHT_GEPRÜFT",
@@ -122,7 +127,14 @@
     "haltBackup": "BESTANDEN",
     "haltTechnical": "BESTANDEN",
     "currentDesignMetadataTechnical": "BESTANDEN",
-    "currentEmpiricalTransition": "BESTANDEN_BEGRÄNZT_VOR_A; first reports plus correction1",
+    "currentEmpiricalTransition": {
+      "status": "METHODS_ACCEPTED_BOUNDED_SOURCES_F01_OPEN",
+      "manifest": "reports/loop/packages/EMPIRICAL-V2-001/v1/manifest.json",
+      "pins": 20,
+      "answerDataOpened": false,
+      "claude": "deferred final control, not passed",
+      "familyLimit": "Both Codex; shared model-family errors possible"
+    },
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
     "currentWebsiteCopy": "BESTANDEN_BEGRÄNZT: WB-001/002/003 targeted correction1 accepted; no broad research/release acceptance",
@@ -132,7 +144,10 @@
     "currentProductBreadth": "NICHT_BESTANDEN: historical narrow module does not satisfy broad product objective",
     "actualBHistorical": "Fixed v1 numerical criteria met before scope steering; no unexamined B for extension; not overall validity/release acceptance",
     "currentGenericCategoryArithmetic": "PRV2-F01 correction1 independently passed 22+29+6 synthetic testmethods; no empirical acceptance",
-    "currentFrontendProfile": "PP-001 correction1 independently closed: 21 Vitest +13 reviewer oracles PASS; unchanged first cases 13/15 exit1 by now correct rejections, explicitly retained",
+    "currentFrontendProfile": {
+      "status": "PP001_TARGETED_CORRECTION_PASSED",
+      "decision": "reports/loop/POLICY-PROFILE-001-entscheidung.md"
+    },
     "currentMethodologyPage": "Normal first no blockers, MP001/MP002 locator-only corrections Root checked;5widths/axe0/1H1/localfont/nooverflow final; actual anchor activeId observed, visible keyboard focus/200percent unverified"
   },
   "reviewReports": [
@@ -220,7 +235,19 @@
     "reports/loop/reviews/POLICY-PROFILE-001-first.md",
     "reports/loop/reviews/POLICY-PROFILE-001-round1.md",
     "reports/loop/reviews/METHODOLOGY-PAGE-001-first.md",
-    "reports/loop/reviews/BREADTH-INTEGRATION-002-round2.md"
+    "reports/loop/reviews/BREADTH-INTEGRATION-002-round2.md",
+    {
+      "path": "reports/loop/reviews/EMPIRICAL-V2-001-methods-first.md",
+      "sha256": "50de767d6ebae82b42a80cc923be74a5b3d9d9af3c17ee216424f04faee8dd02",
+      "scope": "pre-empirical v2 independent first",
+      "decision": "ACCEPTED_BOUNDED"
+    },
+    {
+      "path": "reports/loop/reviews/EMPIRICAL-V2-001-sources-first.md",
+      "sha256": "be827e1bfa2073d0e84a069aadbff1950143f5f015ea36cdbaf40c8aba7c05dc",
+      "scope": "pre-empirical v2 independent first",
+      "decision": "NOT_ACCEPTED"
+    }
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -240,19 +267,13 @@
   "activeAgents": [
     {
       "name": "/root/breadth_topic_frame",
-      "status": "RUNNING_SYNTHETIC_PUBLIC_EXPORT_BOUNDARY",
-      "report": "reports/loop/authors/POLICY-EXPORT-WIP.md"
+      "status": "RUNNING_SOURCE_CORRECTION_PROPOSAL_ONLY",
+      "report": "reports/loop/authors/CAWI-BINDING-CORRECTION-001-WIP.md"
     },
     {
       "name": "/root/breadth_data_instruments",
-      "status": "RUNNING_SYNTHETIC_GATED_IO_LIBRARY",
-      "report": "reports/loop/authors/POLICY-ACCESS-WIP.md"
-    },
-    {
-      "name": "T3 policy_ui_design_author",
-      "status": "RUNNING_UNPUBLISHED_DESIGN_PROTOTYPE",
-      "taskId": "node:delegated-task:command%3Amcp%3Ac4ea3b31-9158-4e6e-944e-cc24189c4ff5%3Adelegate-task%3Alife93-methodology-page-wip-20261003",
-      "report": "reports/loop/authors/POLICY-UI-DESIGN-WIP.md"
+      "status": "RUNNING_PUBLIC_GROUP_BINDING_FOLLOWUP_ONLY",
+      "report": "reports/loop/authors/BREADTH-GROUP-BINDING-006-WIP.md"
     }
   ],
   "workPackages": [
@@ -503,24 +524,24 @@
       "tests": "13 synthetic Vitest tests author exit0"
     }
   ],
-  "nextConcreteStep": "Öffentliche Bindung003 abschließen, geprüfte Matrixfassung sichern, BI004 lokal korrigieren. Danach43Fragen-/Kategorienvertrag und Publikationskriterien vor neuer Empirie binden; zwei frische Übergangsrollen.",
+  "nextConcreteStep": "Preserve both original20-pin firsts; correct EV2-SRC-F01 CAWI context and clarify B25 scope, targeted sources recheck. Retain bounded methods acceptance. Then freeze/tag/gate before separate five historical runs.",
   "checkpoint": {
-    "lastLocalCommit": "4e64f3f99c3e170e224be4a89d8d627e500c257d",
-    "lastVerifiedRemoteCommit": "4e64f3f99c3e170e224be4a89d8d627e500c257d",
-    "lastVerifiedPushAtUtc": "2026-10-03T13:26:29.622141+00:00",
+    "lastLocalCommit": "e3785ab4560e13a18547713ffbca5cc585d91a40",
+    "lastVerifiedRemoteCommit": "e3785ab4560e13a18547713ffbca5cc585d91a40",
+    "lastVerifiedPushAtUtc": "2026-10-03T13:38:51.377961+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-037.json",
+    "record": "reports/loop/push-038.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Machine contract/inputsha/publication/serialization rules before answers, completed pure analysis aggregator16synthetic PASS, bounded method-page source corrections/runtime-browser proof; access/export/prototype writers remain WIP outside payload until done."
+    "pendingPayload": "Completed synthetic access/export libraries, original20-pin transition package and both first reports, ESS11 byte-identical local copy receipt, prototype author report and public group-source inventory WIP. No v2 answer access. Prototype/source caches locally ignored until reviewed promotion."
   },
-  "scientificStatus": "Breite Quellenmatrix v2 WIP; beide getrennte Erstberichte abgeschlossen, Quellenintegration in Prüfung. Bekannte v1 A/B und alle historischen Tags unverändert. Neue Rechenvorbereitung nur synthetisch, keine neue Datenfreigabe/Empirie.",
+  "scientificStatus": "43 categorical original items,8topics. Methods first ACCEPTED_BOUNDED; sources first NOT_ACCEPTED for two CAWI text bindings. No new v2 header/answer/marginal interpreted; v1 A/B known.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -640,7 +661,7 @@
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md",
-  "executionStatus": "RUNNING_PUBLIC_RESEARCH_ONLY",
+  "executionStatus": "RUNNING_TARGETED_SOURCE_CORRECTION_AND_LOCAL_PROTOTYPE",
   "interruption": {
     "requestedAtUtc": "2026-10-03T09:02:07+00:00",
     "reason": "Steven ausdrücklich: aktuellen Arbeitsloop geordnet unterbrechen, keine neuen Pakete/Reviews; Projekt bleibt offen.",
@@ -736,7 +757,7 @@
     "limits": "A/B komplementäre Teile derselben Erhebung; keine generelle Messvalidität/Mode-/Populationsannahme"
   },
   "currentAssignment": "docs/auftrag-life-93-breite-2026-10-03.md",
-  "activePlan": "docs/erweiterungsplan-v2.entwurf.md",
+  "activePlan": "docs/empirie-plan-v2.entwurf.md",
   "productGoal": "Wissenschaftlich fundiertes, thematisch breites Politikprofil für Deutschland",
   "productGoalStatus": "UNGELÖST: Neunerfassung allein erfüllt erforderliche Breite nicht",
   "historicalAnalysisHold": {
@@ -803,20 +824,23 @@
     "rawDataAccess": "Four provided CSVs moved and opaque hashes checked, no header/answers decoded; prior ESS11 answers known in historical v1 only",
     "userInput": "Provided at main checkout data/raw/new-ess-sets; moved ONLY four authorized files into active worktree; source empty directories left intact",
     "GLES_ISSP": "Public instrument paths retained; GESIS original data AI processing conditions require study-specific permission/exception; no autonomous contact/auth/terms acceptance",
-    "intakeRecord": "reports/loop/ess-v2-file-intake-20261003.json"
+    "intakeRecord": "reports/loop/ess-v2-file-intake-20261003.json",
+    "ess11LocalCopyRecord": "reports/loop/ess11-v2-opaque-local-copy.json"
   },
   "empiricalPlanV2": {
     "path": "docs/empirie-plan-v2.entwurf.md",
-    "status": "DRAFT_CONCRETE_MACHINE_CONTRACT_NO_GATE",
+    "status": "FIRSTS_COMPLETE_TARGETED_SOURCE_CORRECTION_NO_GATE",
     "count": 43,
     "measurement": "separate original categorical responses, no global score or factor",
     "topics": 8,
     "accessStatus": "no actual v2 answer import",
-    "remaining": "strict machine contract, pure analysis aggregator and gated IO, two fresh identical-package firsts, separate version freeze/gate; all5 raw files available, no v2 answers imported",
+    "remaining": "EV2-SRC-F01 correction and targeted recheck; separate version freeze/tag/positive gate before actual studies.",
     "localInputFilesAvailable": true,
     "contract": "data/analysevertrag.v2.entwurf.json",
     "contractSha256": "4194f3bb530f036b72a49a81e339779d9d9eed5530a32843acbe6f9697c42e5d",
-    "sourceB25Decision": "Historical static single response allowed after pre-empirical sources-role judgment; proposed new web postflow/CAWI downstream unknown explicitly not operational equivalence"
+    "sourceB25Decision": "Historical static single response allowed after pre-empirical sources-role judgment; proposed new web postflow/CAWI downstream unknown explicitly not operational equivalence",
+    "reviewManifest": "reports/loop/packages/EMPIRICAL-V2-001/v1/manifest.json",
+    "reviewManifestSha256": "eeae3bc1b81463b51ce2c0a1bf90f12b08aa01f125064e680d1f983df60c62f4"
   },
   "sourceCatalogV2": {
     "path": "data/politikprofil-v2.fragen.entwurf.json",
@@ -824,5 +848,19 @@
     "report": "reports/loop/authors/BREADTH-CATALOG-004-WIP.md",
     "status": "DRAFT_BOUND_NO_EMPIRICAL_GATE",
     "remaining": "Original downstream CAWI execution unknown; bounded descriptive B25/new website decision documented before new answers. No absolute administration equivalence."
+  },
+  "groupPreparationV2": {
+    "status": "PUBLIC_SOURCE_INVENTORY_WIP_SEPARATE_V21_REQUIRED",
+    "report": "reports/loop/authors/BREADTH-GROUP-SOURCES-005-WIP.md",
+    "knownNewMargins": false,
+    "limits": "Printed/file-code differences and alias binding need explicit limits. No party headers/answers opened; v2 gate does not permit them."
+  },
+  "prototypeV2": {
+    "status": "UNPUBLISHED_LOCAL_DESIGN_PROPOSAL_AUTHOR_COMPLETE",
+    "path": "outputs/loop/policy-ui-design-v2/index.html",
+    "author": "reports/loop/authors/POLICY-UI-DESIGN-WIP.md",
+    "browserStatus": "PENDING",
+    "historicalReferences": "No numbers included; not approved",
+    "humanDesignRelease": "PENDING"
   }
 }

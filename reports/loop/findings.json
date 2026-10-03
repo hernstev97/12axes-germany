@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T13:36:18.163962+00:00",
+  "updatedAtUtc": "2026-10-03T13:59:33.034517+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2806,7 +2806,7 @@
       "status": "NICHT_BESTANDEN",
       "reason": "Neun Fragen zu zwei engen Themen erfüllen das breite Deutschland-Politikprofil nicht",
       "blocks": ["completion as comprehensive political profile"],
-      "correctionState": "Eight-topic43-item draft source-bound, input files now present. No fixed v2 gates, empirical results or concrete accepted broad website yet; product goal remains open.",
+      "correctionState": "43-item8-topic contract and local prototype prepared. Two firsts complete; CAWI source correction required. No new marginals or accepted broad result website.",
       "verification": {
         "order": "docs/auftrag-life-93-breite-2026-10-03.md"
       }
@@ -2988,6 +2988,20 @@
       "verification": {
         "scope": "Root link/locator inspection, no fresh independent acceptance",
         "report": "reports/loop/METHODOLOGY-PAGE-001-entscheidung.md"
+      }
+    },
+    {
+      "id": "EV2-SRC-F01",
+      "origin": "reports/loop/reviews/EMPIRICAL-V2-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "ESS10 B3 and B6 CAWI democracy-context stem incorrectly omitted and described as shortened; four related claims need targeted inspection.",
+      "blocks": ["affected source bindings and dependent interpretation"],
+      "correctionState": "Author preparing source-only correction; no actual v2 data read.",
+      "verification": {
+        "originalManifest": "eeae3bc1b81463b51ce2c0a1bf90f12b08aa01f125064e680d1f983df60c62f4"
       }
     }
   ],
