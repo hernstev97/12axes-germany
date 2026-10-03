@@ -191,6 +191,33 @@
       "inspection": "Reviewer 2: Abstract, The need for measures, Challenges in measuring gender attitudes and sexism. Entwicklungsbeitrag, kein selbst geprüfter Länder-/Webvalidierungsnachweis.",
       "addedDuring": "KI-Audit 2026-10-03",
       "inspectionReport": "../reports/audit-recherche/reviewer-2-politikwissenschaft.md"
+    },
+    {
+      "id": "V2-BOLLEN-LENNOX-1991",
+      "title": "Conventional wisdom on measurement: A structural equation perspective",
+      "url": "https://doi.org/10.1037/0033-2909.110.2.305",
+      "abstractAccessUrl": "https://www.researchgate.net/publication/232516427_Conventional_Wisdom_on_Measurement_A_Structural_Equation_Perspective",
+      "inspection": "Bibliografische Angaben/Abstract; direktes APA/DOI-Öffnen fehlgeschlagen, HTTP403 bei Volltextversuchen12:19:01UTC. Kein Volltext/Originalhash.",
+      "verificationReport": "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md"
+    },
+    {
+      "id": "V2-OECD-JRC-2008",
+      "title": "Handbook on Constructing Composite Indicators: Methodology and User Guide",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2008/08/handbook-on-constructing-composite-indicators-methodology-and-user-guide_g1gh9301/9789264043466-en.pdf",
+      "doi": "10.1787/9789264043466-en",
+      "sha256": "8b82c5b5563122960170f3dff0607ba47eaeab5e7c4b85c9edaf28d58cf5eca7",
+      "verificationAccessAtUtc": "2026-10-03T12:17:27Z",
+      "inspection": "GedruckteS15–16/31–35 (PDF17–18/33–37) tragen gebundene Claims; unabhängiger Originalabruf200/Hash/Seitenabgleich. Beispiele Länderindikatoren, keine Personenprofilvalidierung.",
+      "verificationReport": "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md"
+    },
+    {
+      "id": "V2-KROSNICK-1999",
+      "title": "Maximizing Questionnaire Quality",
+      "url": "https://web.stanford.edu/dept/communication/faculty/krosnick/docs/1999/1999%20Maximizing%20questionnaire%20quality.pdf",
+      "sha256": "d2120b11ba74bf0feb33725f52523f06a2a9c605c0a4f67fc6a30c835a16b5d1",
+      "verificationAccessAtUtc": "2026-10-03T12:17:30Z",
+      "inspection": "PDF1/4 = gedruckteS37/40 visuell vollständig von Root/Prüfer gelesen; übrigeSeiten nicht geprüft. Originalabruf200, Hashmatch.",
+      "verificationReport": "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md"
     }
   ],
   "auditReports": [
@@ -200,5 +227,9 @@
     "../reports/audit-recherche/reviewer-4-neutralitaet.md",
     "../reports/audit-recherche/reviewer-5-reproduzierbarkeit.md"
   ],
-  "datedHtmlEvidence": "../reports/audit-recherche/quellenbelege.json"
+  "datedHtmlEvidence": "../reports/audit-recherche/quellenbelege.json",
+  "datedV2Addition": {
+    "atUtc": "2026-10-03T12:25:30.739780+00:00",
+    "scope": "Three methods references only; historical entries and access reports preserved"
+  }
 }

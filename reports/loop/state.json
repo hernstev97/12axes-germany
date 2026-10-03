@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T12:22:40.987858+00:00",
+  "updatedAtUtc": "2026-10-03T12:42:13.589395+00:00",
   "status": "RUNNING",
   "phase": "Breite Forschungsgrundlage v2; altes Neunermodul historisch, B/FULL-Folge angehalten",
   "coordinator": "/root",
@@ -40,14 +40,16 @@
     "M2 H/ZF mit neun Items unverändert in data/modell-v1.json gebunden; öffentlicher Modelltag folgt",
     "B/FULL-Zugriffs- und Runtimeautoren fertig (17 Loader-/8 Wrapper-/52 R-Checks); echte B-Daten ungeöffnet",
     "Normautor fertig:45 synthetische Assertions; unabhängige Prüfung/Wrapper/Empirie offen",
-    "Beide frischen Vor-B-Ersturteile ACCEPTED_BOUNDED, Gate mitgehashten27/19Pins; tatsächlicher B-Import und Runtime exit0, H/ZF behalten"
+    "Beide frischen Vor-B-Ersturteile ACCEPTED_BOUNDED, Gate mitgehashten27/19Pins; tatsächlicher B-Import und Runtime exit0, H/ZF behalten",
+    "BREADTH-DATA-001 and TOPICS-001 separate immutable first source reports completed; unsolicited public exposure limits disclosed",
+    "WEBSITE-BREADTH-002 WB-001/002/003 targeted correction1 accepted",
+    "POLICY-REFERENCE-V2 pure synthetic preparation author19hand-oracles PASS, independent review pending"
   ],
   "openTasks": [
-    "Zwei frische ergebnisblinde Autoren: Daten/Instrumente und unabhängiger Themen-/Biasrahmen",
-    "Tatsächliche GLES/ESS-/gegebenenfallsISSP-Fragen, Rechte/Zugang/Empirie und politikwissenschaftlichen Themenrahmen belegen",
-    "Abdeckungsmatrix zusammenführen, Wirtschaft/Verteilung und Demokratie/Autorität ausdrücklich untersuchen; Breite bleibt Produktkriterium",
-    "Eigene versionierte v2-Auswahl-/Analyse-/Bewertungs-/Bestätigungsstrategie vor abhängiger Empirie; zwei Übergangsprüfungen",
-    "Zulässige Analysen, Methodenbericht und breite Website fertig vorbereiten; Claude-/Design-/reale Menschen-/Releasefreigaben offen"
+    "Abdeckungsmatrix normale Quellen-/Konstruktprüfung, konkrete Zugang/Rechte und Dateicodelisten",
+    "Eigenen ausführbaren v2-Auswahl-/Analysevertrag vor abhängiger Empirie festlegen; zwei frische Übergangsrollen",
+    "Zulässige Analysen, Methodenbericht und konkrete breite Website fertig vorbereiten; keine Fertigmeldung für Neunermodul",
+    "Claude-/Testdesign-/Verständnis-/Releasefreigaben sichtbar offen"
   ],
   "dependencies": [
     {
@@ -95,7 +97,7 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "BESTANDEN pnpm check035 exit0; scientific breadth/known-data limits unresolved",
+    "currentLocalTechnical": "BESTANDEN pnpm check038 exit0; breadth empirical/rights/access gates unresolved",
     "currentIndependentIntegration": "NICHT_GEPRÜFT",
     "empiricalValidation": "Historische A/B-Kriterien berechnet; keine umfassende Produktvalidität. Breite v2 NICHT_GEPRÜFT.",
     "otherModelFamily": "NICHT_GEPRÜFT",
@@ -115,7 +117,7 @@
     "currentEmpiricalTransition": "BESTANDEN_BEGRÄNZT_VOR_A; first reports plus correction1",
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
-    "currentWebsiteCopy": "WIP breadth status copy; fresh review pending",
+    "currentWebsiteCopy": "BESTANDEN_BEGRÄNZT: WB-001/002/003 targeted correction1 accepted; no broad research/release acceptance",
     "currentWebsiteBrowser": "Bounded layout/axe two pages five widths PASS; visiblefocus/200percent NOT_VERIFIED",
     "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung",
     "currentConfirmatoryTransition": "BESTANDEN_BEGRÄNZT vorB; actual B executed pending result review",
@@ -197,7 +199,10 @@
     "reports/loop/reviews/PRE-CONFIRMATORY-001-methods-first.md",
     "reports/loop/reviews/PRE-CONFIRMATORY-001-sources-first.md",
     "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md",
-    "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md"
+    "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md",
+    "reports/loop/reviews/WEBSITE-BREADTH-002-first.md",
+    "reports/loop/reviews/WEBSITE-BREADTH-002-round1.md",
+    "reports/loop/reviews/POLICY-REFERENCE-V2-first.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -211,20 +216,26 @@
     "CP-01",
     "CP-02",
     "CP-03",
-    "PRODUCT-BREADTH-001"
+    "PRODUCT-BREADTH-001",
+    "PRV2-F01"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
       "name": "/root/breadth_data_instruments",
-      "status": "RUNNING_RESULT_BLIND_PUBLIC_SOURCES",
-      "report": "reports/loop/authors/BREADTH-DATA-001-first.md"
+      "status": "RUNNING_PUBLIC_ACCESS_METADATA_ONLY_FOLLOWUP",
+      "report": "reports/loop/authors/BREADTH-ACCESS-002.md"
     },
     {
-      "name": "T3 website_breadth_review",
+      "name": "T3 breadth_integration_review",
       "status": "RUNNING_FIRST_REVIEW",
-      "report": "reports/loop/reviews/WEBSITE-BREADTH-002-first.md",
-      "taskId": "node:delegated-task:command%3Amcp%3Ac4ea3b31-9158-4e6e-944e-cc24189c4ff5%3Adelegate-task%3Alife93-website-breadth-002-first-20261003"
+      "taskId": "node:delegated-task:command%3Amcp%3Ac4ea3b31-9158-4e6e-944e-cc24189c4ff5%3Adelegate-task%3Alife93-breadth-integration-002-first-20261003",
+      "report": "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md"
+    },
+    {
+      "name": "/root/breadth_topic_frame",
+      "status": "PAUSED_BEFORE_CODE_CORRECTION_UNTIL_V1_CHECKPOINT",
+      "report": "reports/loop/authors/POLICY-REFERENCE-V2-round1-WIP.md"
     }
   ],
   "workPackages": [
@@ -450,7 +461,7 @@
       "status": "DONE_BOUNDED_DRAFT",
       "manifest": "reports/loop/packages/MEASUREMENT-FORMS-002/v1/manifest.json",
       "decision": "reports/loop/MEASUREMENT-FORMS-002-entscheidung.md",
-      "reviewStatus": "BESTANDEN begrenzt; MF-01 gering offen, keine empirische/Übergangs-/Auswahlfreigabe"
+      "reviewStatus": "BESTANDEN begrenzt; MF-01 reine Registerkorrektur1 erledigt, unveränderte Erstfassung in85aac531"
     },
     {
       "id": "WEBSITE-BREADTH-002",
@@ -458,17 +469,22 @@
       "manifest": "reports/loop/packages/WEBSITE-BREADTH-002/v1/manifest.json",
       "technical": "reports/loop/breadth-website-technical.json",
       "scope": "Bestehende Seiten-/Statustexte; keine numerischen Ergebnisbehauptungen"
+    },
+    {
+      "id": "POLICY-REFERENCE-V2",
+      "status": "WIP_SYNTHETIC_ONLY",
+      "scope": "Generic per-study weighted category proportions and optional WRT-Taylor variance; no data access or concrete item/method acceptance"
     }
   ],
   "nextConcreteStep": "Zwei laufende unabhängige Breitenautoren ohne Antwortergebnisse; beide Erstberichte lesen, Quellen-/Abdeckungsmatrix zusammenführen und v2-Kriterien vor neuer Empirie festlegen.",
   "checkpoint": {
-    "lastLocalCommit": "94f99d547026682310d81f3e3153d566ff937468",
-    "lastVerifiedRemoteCommit": "94f99d547026682310d81f3e3153d566ff937468",
-    "lastVerifiedPushAtUtc": "2026-10-03T12:09:03.986462+00:00",
+    "lastLocalCommit": "85aac531cb0218f7ab6d3fc71fff2ac76eb35f10",
+    "lastVerifiedRemoteCommit": "85aac531cb0218f7ab6d3fc71fff2ac76eb35f10",
+    "lastVerifiedPushAtUtc": "2026-10-03T12:24:42.652687+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-033.json",
+    "record": "reports/loop/push-034.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
@@ -477,7 +493,7 @@
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
     "pendingPayload": "Breitenquellen v2 und passende Messformen; alte B/FULL-Normen/Gruppen angehalten"
   },
-  "scientificStatus": "Historisches Neunermodul: A und B gerechnet, B-Antworten bekannt; kein breites Hauptprodukt, keine neue Bestätigung aus bekannten Antworten. Neue Arbeit nur öffentliche Quellen/Messformplanung, alte FULL-/Gruppen-/Normfortsetzung angehalten.",
+  "scientificStatus": "Breite Quellenmatrix v2 WIP; beide getrennte Erstberichte abgeschlossen, Quellenintegration in Prüfung. Bekannte v1 A/B und alle historischen Tags unverändert. Neue Rechenvorbereitung nur synthetisch, keine neue Datenfreigabe/Empirie.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -633,7 +649,8 @@
     "F-P03": "excluded gender domain remains blocked; not nine core hypothesis",
     "F-P04": "excluded climate domain remains blocked; not nine core hypothesis",
     "SW-ENV-004": "historical installer/full-locality claim remains false; no new installer",
-    "META-SPLIT-001": "new conditional23strata/reserveC proposal awaits pre-empirical review"
+    "META-SPLIT-001": "new conditional23strata/reserveC proposal awaits pre-empirical review",
+    "PRV2-F01": "optional generic Taylor SE with subnormalweights; no claimed actual study exposure; pure preparation correction1 pending"
   },
   "pendingTransitionReviewers": [],
   "actualA": {
@@ -717,9 +734,18 @@
       "sha256": "f9dfe17df6795d0a7b82918c5d956421645249036e3ee22257a88a1044d58f5b"
     },
     "data": {
-      "status": "RUNNING_RESULT_BLIND",
-      "report": "reports/loop/authors/BREADTH-DATA-001-first.md"
+      "status": "COMPLETED_FIRST_REPORT_WITH_PUBLIC_EXPOSURE_LIMITS",
+      "report": "reports/loop/authors/BREADTH-DATA-001-first.md",
+      "sha256": "4f4634947a882e09b2e060920ca0816ebe20a28508ab8b69b4e95608fbe946ca",
+      "exposureRecord": "outputs/loop/breadth-data-001/exposure-boundaries.json"
     },
-    "firstJudgmentsShared": false
+    "firstJudgmentsShared": true,
+    "sharedAfterBothFirstReports": "Root only; source integration after completed immutable firsts, not retroactive author consensus"
+  },
+  "sourceIntegrationV2": {
+    "matrix": "docs/abdeckung-v2.md",
+    "review": "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md",
+    "status": "NICHT_GEPRÜFT",
+    "empiricalGate": "no v2 gate/tags/data access"
   }
 }

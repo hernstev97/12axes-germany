@@ -24,11 +24,12 @@ export class Project {
       label: 'Analyse und Erweiterung',
       value: 'Früheres Teilmodul untersucht. Erweiterung erhält einen eigenen Plan.',
     },
-    { label: 'Auswertung', value: 'Noch nicht vorhanden' },
+    { label: 'Auswertung des breiten Websiteprofils', value: 'Noch nicht vorhanden' },
     { label: 'Vergleichswerte', value: 'Noch nicht berechnet' },
     {
       label: 'Methodische Prüfungen',
-      value: 'Frühere Quellen- und Methodenprüfungen vorhanden. Breite Fassung noch nicht geprüft.',
+      value:
+        'Frühere KI-Prüfungen zu Quellen und Methoden vorhanden. Breite Fassung noch nicht geprüft.',
     },
     { label: 'Verständlichkeit', value: 'Noch nicht mit Menschen geprüft' },
     { label: 'Methodischer Freigabeprozess', value: 'Dokumentiert. Erforderliche Abnahmen offen.' },

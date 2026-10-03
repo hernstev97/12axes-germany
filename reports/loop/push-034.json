@@ -1,0 +1,10 @@
+{
+  "atUtc": "2026-10-03T12:24:42.652687+00:00",
+  "localCommit": "85aac531cb0218f7ab6d3fc71fff2ac76eb35f10",
+  "remoteCommit": "85aac531cb0218f7ab6d3fc71fff2ac76eb35f10",
+  "branch": "research/life-93-night-20261003",
+  "status": "BESTANDEN",
+  "pnpmCheck": "outputs/loop/resume-checkpoint-037.log exit0",
+  "scopeScan": "outputs/loop/breadth-checkpoint034-scan.json 19 explicit own paths, credentials/raw/foreign PASS",
+  "limits": "Methods draft only, MF-01 minor open; broad source/website work WIP; no v2 data authorization"
+}

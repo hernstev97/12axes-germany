@@ -11,9 +11,9 @@ Entwurf vom 3. Oktober2026 nach dem [Breitennachtrag](auftrag-life-93-breite-202
 5. Erst danach eigenständige v2-Analyse-/Auswahl-/Erwartungsregeln und Evaluationsstrategie festlegen und von zwei frischen Rollen prüfen lassen. Kennzeichnen, was schon bekannt ist. Wirklich zurückgehaltene Daten oder eine andere unverbrauchte Studie für neue Bestätigung identifizieren; nicht durch Umbenennung alter B-Antworten vortäuschen. Noch keine v2-Tags.
 6. Zugelassene Analysen reproduzierbar durchführen, Ergebnisaussagen getrennt prüfen, Methodenbericht und bestehende Website anhand tragfähiger Breite weiterentwickeln. Teilmodule und begrenzte Einzelangaben sichtbar unterscheiden; keine erfundene Gesamtposition oder Bevölkerungsnorm. Design-/Mensch-/Claude-/Releasegrenzen bleiben offen.
 
-## Erste Abdeckungsmatrix
+## Abdeckungsmatrix, zusammengeführt am 3. Oktober 2026
 
-Die Matrix wird nach beiden getrennten Autorenberichten gefüllt; Themenbereiche sind zunächst Arbeitsrubriken aus Stevens Auftrag, keine beschlossenen Faktoren. Jede Zuordnung nennt Originalfundstelle und erlaubte Schlussfolgerung. Lücken werden nicht durch ähnliche Zusatzitems verdeckt.
+Beide getrennten Erstberichte liegen unverändert vor. Die neue [Abdeckungsmatrix](abdeckung-v2.md) bindet die tatsächlichen deutschen Fragen an politische Binnenfacetten, Messformen, Studienpopulationen und Lücken. Die nachstehende frühe Suchmatrix bleibt als historischer Entwurfsstand erhalten; ihre offenen Felder beschreiben nicht mehr den aktuellen Rechercheumfang. Themenrubriken sind keine beschlossenen Faktoren.
 
 | Bereich                              | Quellen-/Instrumentenweg                                                   | Geeignete Fragen und Messform       | Population/Zeit/Modus und Vergleich | Lücke/Entscheidung                            |
 | ------------------------------------ | -------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------- | --------------------------------------------- |
@@ -27,3 +27,7 @@ Die Matrix wird nach beiden getrennten Autorenberichten gefüllt; Themenbereiche
 | Gleichstellungs- und Familienpolitik | Historische ESS11-Teilmodulquellen weiterverwenden, ergänzende Wege prüfen | Breiten-/Messformentscheidung offen | Historische Referenz getrennt       | Neunerinhalt ist nur enges Teilthema          |
 
 Keine Themen- oder Instrumentenvorabentscheidung aus dieser leeren Arbeitsmatrix ableiten. Neue Originalquellen, Zugriffe, Rechte und genaue Frageidentitäten werden zunächst im Autorenbericht gebunden, dann knapp ins Belegregister/Quellenverzeichnis übernommen.
+
+## Aktueller nächster Schritt
+
+Vorrangig konkrete GLES2025-Rechte/Zugang und ESS-Datei-/Gewichts-/Design-/Codelisten prüfen. Dann eigener ausführbarer Auswahl-/Analysevertrag für breite Einzelangaben; keine erfundene gemeinsame Skala aus unterschiedlichen Studien. Die reine kategoriale Rechenbibliothek ist synthetische Vorbereitung, keine Empirie. Quellenautoren hatten keine projektbezogenen Antwortresultate; der Datenautor legt ungewollte öffentliche Ausschnitte im Erstbericht offen. Absolute Ergebnisblindheit wird dafür nicht nachträglich behauptet. Normale Quellenintegration erhält einen Prüfer, der konkrete Empirieübergang zwei getrennte Rollen. Matrix und Rechenvorbereitung allein beenden den Auftrag nicht.

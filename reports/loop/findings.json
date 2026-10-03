@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T12:22:40.985448+00:00",
+  "updatedAtUtc": "2026-10-03T12:39:46.418277+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2816,11 +2816,69 @@
       "origin": "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md",
       "decision": "angenommen",
       "severity": "gering",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "Methodenquellen im Entwurf noch ohne stabile projektbezogene Beleg-IDs verknüpft",
+      "correctionState": "Reine Register-/ID-Verknüpfung nachgezogen, B-V2-M01–03, Methoden unverändert; Root Dokumentkontrolle, kein neues fachliches Audit",
+      "blocks": [],
+      "verification": {
+        "originalReportSha256": "449ee7ea3fbccb7492af15237d16f77ed2792677650d0e05c099b705043d3fbc",
+        "originalPayloadCommit": "85aac531cb0218f7ab6d3fc71fff2ac76eb35f10",
+        "scope": "Dokumentationskorrektur, keine neue Empirie-/Freigabebehauptung"
+      }
+    },
+    {
+      "id": "WB-001",
+      "origin": "reports/loop/reviews/WEBSITE-BREADTH-002-first.md",
+      "severity": "P2",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "KI-Prüfungen/Codex-Prüfagenten und gemeinsame Modellfamilie ausdrücklich benannt.",
+      "verification": {
+        "scope": "Gezielte Korrekturrunde1, keine fachliche Gesamt-/Empirieprüfung",
+        "executionRecord": "reports/loop/reviews/WEBSITE-BREADTH-002-round1.md"
+      },
+      "blocks": []
+    },
+    {
+      "id": "WB-002",
+      "origin": "reports/loop/reviews/WEBSITE-BREADTH-002-first.md",
+      "severity": "P2",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "Fehlende Auswertung ausdrücklich auf breites Websiteprofil begrenzt.",
+      "verification": {
+        "scope": "Gezielte Korrekturrunde1, keine fachliche Gesamt-/Empirieprüfung",
+        "executionRecord": "reports/loop/reviews/WEBSITE-BREADTH-002-round1.md"
+      },
+      "blocks": []
+    },
+    {
+      "id": "WB-003",
+      "origin": "reports/loop/reviews/WEBSITE-BREADTH-002-first.md",
+      "severity": "P3",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "Dimension gemäß Handbuch, frühere P3-Abweichung nicht blockierend.",
+      "verification": {
+        "scope": "Gezielte Korrekturrunde1, keine fachliche Gesamt-/Empirieprüfung",
+        "executionRecord": "reports/loop/reviews/WEBSITE-BREADTH-002-round1.md"
+      },
+      "blocks": []
+    },
+    {
+      "id": "PRV2-F01",
+      "origin": "reports/loop/reviews/POLICY-REFERENCE-V2-first.md",
+      "severity": "P2",
+      "decision": "angenommen",
       "repairRounds": 0,
       "status": "NICHT_BESTANDEN",
-      "reason": "Methodenquellen im Entwurf noch ohne stabile projektbezogene Beleg-IDs verknüpft",
-      "correctionState": "Register-/ID-Zuordnung folgt als Dokumentationskorrektur; kein fachlicher Blocker",
-      "blocks": []
+      "reason": "Subnormal positive weights underflow before division and distort generic Taylor variance. No actual empirical study exposure claimed.",
+      "correctionState": "Gezielte Runde1 beauftragt, ursprüngliche Erstprüffassung jetzt sichern.",
+      "blocks": ["optional generic categories variance/SE in declared positive Float range"]
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

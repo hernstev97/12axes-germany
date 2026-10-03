@@ -1,0 +1,25 @@
+{
+  "package": "WEBSITE-BREADTH-002/v2",
+  "createdAtUtc": "2026-10-03T12:35:37.950330+00:00",
+  "scope": "Gezielte Korrektur WB-001/002/003; keine neue Gesamtprüfung",
+  "previousVersion": {
+    "commit": "85aac531cb0218f7ab6d3fc71fff2ac76eb35f10",
+    "manifest": "reports/loop/packages/WEBSITE-BREADTH-002/v1/manifest.json",
+    "report": "reports/loop/reviews/WEBSITE-BREADTH-002-first.md",
+    "reportSha256": "4b379dd0ad528925a946c743078785316114f3da4497b6b162509061556989b2"
+  },
+  "pins": [
+    {
+      "path": "web/src/app/pages/home/home.html",
+      "sha256": "f62279e3a7aee63e80df7009c0a5c7dd685691d05473f1b174b03051adb44a07"
+    },
+    {
+      "path": "web/src/app/pages/project/project.html",
+      "sha256": "81eeb5091541f1ffd5446bb405f36088bdd6878cb0da84b5c495aada53810ff8"
+    },
+    {
+      "path": "web/src/app/pages/project/project.ts",
+      "sha256": "a2fef7dca6635a9483a807ea715be4fa68c8ca65821b0162750d8708d537b375"
+    }
+  ]
+}

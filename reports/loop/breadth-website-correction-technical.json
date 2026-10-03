@@ -1,0 +1,22 @@
+{
+  "checkedAtUtc": "2026-10-03T12:41:19.493283+00:00",
+  "scope": "WB-001/002/003 targeted text correction; pnpm check038 exit0",
+  "pages": ["/", "/projekt"],
+  "viewports": [
+    [1440, 1000],
+    [1024, 768],
+    [768, 1024],
+    [390, 844],
+    [320, 720]
+  ],
+  "domLayout": "10/10 no overflow, one H1, original Libre Baskerville font",
+  "visualScreenshots": [
+    "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musdrbux-d66137ce.png",
+    "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musdrhba-4d48a59b.png"
+  ],
+  "priorAccessibilityRecord": "reports/loop/breadth-website-technical.json; original axe0 not rerun for these wording corrections",
+  "actualKeyboardFocus": "NOT_VERIFIED",
+  "actual200PercentZoom": "NOT_VERIFIED",
+  "scientificAcceptance": false,
+  "humanRelease": false
+}

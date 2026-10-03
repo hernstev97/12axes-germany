@@ -1,0 +1,28 @@
+{
+  "package": "BREADTH-INTEGRATION-002/v1",
+  "createdAtUtc": "2026-10-03T12:38:36.937134+00:00",
+  "scope": "Abdeckungsmatrix/Quellenzusammenführung, keine konkrete Itemauswahl oder Datenfreigabe",
+  "knownResponsesExcluded": true,
+  "pins": [
+    {
+      "path": "docs/abdeckung-v2.md",
+      "sha256": "f59ac0dfa2c620b402aff1be0a38137f6a177b1e4241e20790b8457eb3374a11"
+    },
+    {
+      "path": "reports/loop/authors/BREADTH-DATA-001-first.md",
+      "sha256": "4f4634947a882e09b2e060920ca0816ebe20a28508ab8b69b4e95608fbe946ca"
+    },
+    {
+      "path": "reports/loop/authors/BREADTH-TOPICS-001-first.md",
+      "sha256": "f9dfe17df6795d0a7b82918c5d956421645249036e3ee22257a88a1044d58f5b"
+    },
+    {
+      "path": "docs/auftrag-life-93-breite-2026-10-03.md",
+      "sha256": "d0a059efb9de65aec1be25b3c2d5fac3bcb61cb57b0d7af8e7d8f64ecb1fd5ed"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    }
+  ]
+}
