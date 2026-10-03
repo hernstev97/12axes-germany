@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "run": "data/local/v22/run.json (privat, nicht in Git)",
+  "privateRunSha256": "0ebe86b22cb3795ea232c9f0e645e6893d7355d47c842b7f8f10cb4ad6554001",
+  "planTag": "analyseplan-v2.2",
+  "planTagCommit": "b6af9a472c71ade865543cf75100c44a164ee12d",
+  "startedUtc": "2026-10-03T20:43:13Z",
+  "finishedUtc": "2026-10-03T20:43:18Z",
+  "exitCode": 0,
+  "inputs": {
+    "analysisContract": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+    "groupContract": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+    "supplement": "c4b0d97aeaf10868001199cb3f7f135a6fb8ec28d63b58f7f222ff7e0acd71ac"
+  },
+  "consistencyWithPublishedV2": "Alle 42 veröffentlichten Einzelreferenzen und 63 Gruppenpaare erneut berechnet: Abweichung höchstens 1e-12, gleiche Status.",
+  "independentCrossCheck": {
+    "shares": "19 neue Fragen mit der unabhängigen Implementierung der Kontrollrechnung V1 (reports/claude/kontrollrechnung/kontrolle.py): 17 vorbereitete Referenzen, maximale Abweichung 0, Status gleich.",
+    "standardErrors": "32 Einzelreferenzen aus ESS9, ESS10-SC und ESS11 mit pipeline/policy_reference_v2.categorical_reference (Codex): maximale Abweichung der Standardfehler 0. Jeder Bereich enthält seinen Schätzwert."
+  },
+  "statuses": {
+    "ESS10SCe03_2": {
+      "newQuestions": {
+        "prepared_pending_result_review": 6
+      },
+      "v2Questions": {
+        "withheld_base_or_cell_count": 1,
+        "prepared_pending_result_review": 16
+      },
+      "singleReferencesWithIntervals": 22,
+      "groupPairs": {},
+      "designAvailable": true
+    },
+    "ESS11e04_2": {
+      "newQuestions": {},
+      "v2Questions": {
+        "prepared_pending_result_review": 6
+      },
+      "singleReferencesWithIntervals": 6,
+      "groupPairs": {},
+      "designAvailable": true
+    },
+    "ESS5e03_6": {
+      "newQuestions": {
+        "prepared_pending_result_review": 1
+      },
+      "v2Questions": {
+        "prepared_pending_result_review": 6
+      },
+      "singleReferencesWithIntervals": 0,
+      "groupPairs": {
+        "prepared_pending_result_review": 4,
+        "withheld_base_or_cell_count": 4
+      },
+      "designAvailable": false
+    },
+    "ESS8e02_3": {
+      "newQuestions": {
+        "prepared_pending_result_review": 10,
+        "withheld_base_or_cell_count": 2
+      },
+      "v2Questions": {
+        "prepared_pending_result_review": 10
+      },
+      "singleReferencesWithIntervals": 0,
+      "groupPairs": {
+        "prepared_pending_result_review": 29,
+        "withheld_base_or_cell_count": 79
+      },
+      "designAvailable": false
+    },
+    "ESS9e03_3": {
+      "newQuestions": {},
+      "v2Questions": {
+        "prepared_pending_result_review": 4
+      },
+      "singleReferencesWithIntervals": 4,
+      "groupPairs": {
+        "prepared_pending_result_review": 12,
+        "withheld_base_or_cell_count": 24
+      },
+      "designAvailable": true
+    }
+  },
+  "candidateExport": {
+    "outputs/claude/v22-candidate/ESS10SCe03_2.json": "b73b9dd089a51d9bb63c90ead09600de6547125f568d851eab97b2d3f6154baf",
+    "outputs/claude/v22-candidate/ESS11e04_2.json": "c5e20b9f5ae6bb20ce606c52066dc608db8e3c061217b8eefbbd121da5b5a0ac",
+    "outputs/claude/v22-candidate/ESS5e03_6.json": "5fa548f650a481d70662c88a1ef904ad7b11319c2e03b64b4d52ca40bb096500",
+    "outputs/claude/v22-candidate/ESS8e02_3.json": "203a95505a1305dfc2b6c3541730faf0719f82451189de045d4c3b0793c6c714",
+    "outputs/claude/v22-candidate/ESS9e03_3.json": "6a2acd3cd3cf6b42fec51e3e1a9b99f796d0af80900711452a8069004af87829"
+  },
+  "limits": "Dieselben lokalen Eingabebytes wie bisher. Kein offizieller Download-Abgleich. Ausgaben dieses Belegs enthalten nur Status, Anzahlen und Abweichungen."
+}
