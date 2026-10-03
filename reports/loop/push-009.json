@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "commit": "0beba4738d8c0059c2b2709ae34bc9f6390a3fc8",
+  "branch": "research/life-93-night-20261003",
+  "remote": "origin",
+  "verifiedRemoteCommit": "0beba4738d8c0059c2b2709ae34bc9f6390a3fc8",
+  "verifiedAtUtc": "2026-10-03T03:48:49Z",
+  "status": "BESTANDEN",
+  "method": "git push then exact git ls-remote branch comparison",
+  "note": "WIP preparation-v2; active SOFTWARE author paths excluded. git diff --cached --check flagged preserved verbatim mandate trailing whitespace; not marked passed."
+}

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T03:48:44.018181+00:00",
+  "updatedAtUtc": "2026-10-03T03:49:04.262982+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "2b19f8c6a424f002502ed1c00e3cf333d35db01b",
+  "currentHead": "0beba4738d8c0059c2b2709ae34bc9f6390a3fc8",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -183,13 +183,13 @@
   ],
   "nextConcreteStep": "Beide FOUNDATION-v2-Berichte abschließen lassen, Findings entscheiden und neuen unbeteiligten Juror starten; PREP-v2-Nachprüfungen und SOFTWARE-Paket in freien Slots. Keine ESS-Antwortanalyse.",
   "checkpoint": {
-    "lastLocalCommit": "2b19f8c6a424f002502ed1c00e3cf333d35db01b",
-    "lastVerifiedRemoteCommit": "2b19f8c6a424f002502ed1c00e3cf333d35db01b",
-    "lastVerifiedPushAtUtc": "2026-10-03T03:33:03Z",
+    "lastLocalCommit": "0beba4738d8c0059c2b2709ae34bc9f6390a3fc8",
+    "lastVerifiedRemoteCommit": "0beba4738d8c0059c2b2709ae34bc9f6390a3fc8",
+    "lastVerifiedPushAtUtc": "2026-10-03T03:48:49Z",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-008.json"
+    "record": "reports/loop/push-009.json"
   },
   "scientificStatus": "FOUNDATION fünf Erstberichte abgeschlossen; zwölf Findings angenommen, korrigiert oder als ungelöste künftige Voraussetzung begrenzt. Neue42Dateien/101öffentlicheInputs eingefroren; unabhängige Nachprüfung/Juror offen. 296Inventarzeilen/205technische Restzeilen; keine Endauswahl, Rohantworten, A/B oder öffentlicheTags.",
   "technicalRecord": "reports/loop/000-technical.json",
