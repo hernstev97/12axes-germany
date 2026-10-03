@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "T2 Runde 2: gezielte Nachprüfung der Findings T2-F01 bis T2-F05",
+  "scope": "Diff 46e70be..da10fdf für scripts/check-research-engines.mjs, web/src/app/policy-draft/, die benannten Gegenproben unter reports/claude/kontrollrechnung/, docs/validation.md und reports/claude/datenzugriff.md; neue öffentliche Gegenproben-JSONs; s1_struktur.py ausgeschlossen. Statische Korrektur-/Regressionsprüfung und pnpm check, keine Browser-/Datenläufe.",
+  "manifestSha256": "13d1c6324cfc7c0ec2d9c17e15e99c326c4a8e096a38a08e6eaecee6e45603e8",
+  "status": "BESTANDEN",
+  "execution": {
+    "provider": "OpenAI (Codex)",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "Laufzeitangabe: T3 Code über Codex harness, gpt-6.1-sol mit high reasoning effort. Keine genauere Modellrevision nachgewiesen.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command (bash, Git, Python 3, Node.js, pnpm)",
+      "write_stdin",
+      "apply_patch",
+      "Ajv2020"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/T2-runde2-technik.md vollständig. Arbeitsverzeichnis ist dieser Worktree. Der Auftrag ist das Umfangsmanifest; sein SHA-256 lautet 13d1c6324cfc7c0ec2d9c17e15e99c326c4a8e096a38a08e6eaecee6e45603e8. Prüfe ihn vor Beginn. Stand beim Auftrag: HEAD 75c6f8b285bc8e9414b547ccbe4609e0a9592f68 auf dem Branch research/life-93-claude-20261003. Schreibe nur die beiden im Auftrag genannten Ergebnisdateien. Keine Commits, Pushes, Tags oder Nachrichten. Nichts unter data/raw/, data/local/ oder outputs/ lesen. Am Ende fasse Gesamturteil und Stand der Findings in wenigen Sätzen zusammen.",
+    "inputHashes": {
+      "reports/claude/auftraege/T2-runde2-technik.md": "13d1c6324cfc7c0ec2d9c17e15e99c326c4a8e096a38a08e6eaecee6e45603e8",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "reports/claude/pruefungen/T2-technik-v22.md": "5bc82e7e331a2fdb32a833ed5ef8bc8d798f1ad3968f96decd574c7f0e9ba588",
+      "reports/claude/pruefungen/T2-technik-v22.json": "5e600e209335569e856cc0782e6b66b82034398cb893148c3ca862c5304b0dcf",
+      "docs/project.md": "9f827fdd40d5f9a4239043a5fb21ec84fa93805141566ac5b68e455a63d8bba6",
+      "docs/handbuch.md": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/abdeckung-v2.2.md": "618012f903783c749b751cb32c8acffab1e7ca09765cd80a26a2a2c1cbeb8b70",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "package.json": "451c9de3c5e0b647361bfbc749717712b895b822a04f84433288d19eb29a27f7",
+      "web/package.json": "77db8383e6c64f65fe04638c46ba3b7f9b40040d95f0ad3ced1471fb475d60f7",
+      "scripts/check-handbuch.mjs": "ebb9815ee0341fab5ad8aa58f01dec459dcdc08b75ca87f5a81707bab50e2813",
+      "scripts/check-review-schema.mjs": "2575997f720f0c440fc54a9ccc15a2bd8c8fb69638dab8c03cf8b9fdaf810166",
+      "scripts/check-research-engines.mjs": "2c51e60ea6ff5bf184ac71cfc1f5a868b68b1ddff3a495021a660d3ab8770ae7",
+      "docs/validation.md": "04b23203eacf00b0299b26fea97acb8dc410514bc2b10a83914e7d64cc2a1c39",
+      "reports/claude/datenzugriff.md": "14081a45864c8a4ab4d1e0be1d5739c32a039fce5af4140248389e5c0a2742bf",
+      "reports/claude/kontrollrechnung/ess9-gruppen-gegenprobe.json": "d72311f935a9e1a7027916c8e76dfd874863a4f1cadebe14cf36241df75bc9b2",
+      "reports/claude/kontrollrechnung/ess9_gruppen_gegenprobe.py": "9a24b36788635e024672a47f127409c6ae60dbdcf29385ce8ea60b38b0182cfe",
+      "reports/claude/kontrollrechnung/sav-gegenprobe.json": "a1ea8934e40cf26a0cb3c898be296114f81eacea072c3021e6678fdcc9da42bb",
+      "reports/claude/kontrollrechnung/sav-gegenprobe.md": "fd6091951c76c4fc84c0f2f4beb722c5e7a89ceeb94cd72086cc981a676caef4",
+      "reports/claude/kontrollrechnung/sav_gegenprobe.py": "d6f9427d766e0d24962ef953be64d07cab03b8e3e8a0fa3857f5a8004acd9b79",
+      "reports/claude/kontrollrechnung/sddf-gegenprobe.json": "0998b5f9ac2904b29d77f2050b905d1166e324f7c0bba5f8860e234de524e9ba",
+      "reports/claude/kontrollrechnung/sddf_gegenprobe.py": "f70b0d753b927277ef0ed9180b782d466d55208fe355967437112a1eef872a63",
+      "web/src/app/policy-draft/policy-draft.html": "f25712dc8d6fbd85c5d93fa4c6db8c006fe5132282db06f922733fd9e2c94b2a",
+      "web/src/app/policy-draft/policy-draft.spec.ts": "5e35eed8fc3c3d8fff2cb65bd28ca96b977c40cceb7fc00ea050d455e2850969",
+      "web/src/app/policy-draft/policy-draft.ts": "f26b1a53e40e80ed12a1a32c2c754876c938d50ee6f1110ef99f67ddc64fad09",
+      ".prettierignore": "08a4df06f736d54e36b84502d1452185812e04966191918a39d299523d3c2531",
+      "web/angular.json": "91c9042107b35de10321454587d64abbd7cd18cd25ea345319dd0378b8337ed8",
+      "web/src/app/policy-draft/generate-references-v22.mjs": "754c20ce770a53f7e0f8cbfe64de0d4cf826a008d02a3f136328817eaeb03b96",
+      "web/src/app/policy-draft/generate-public-catalogue-v22.mjs": "a9854873edaf9086bf4741e6bd966e2ce98c4f73f599922e488744713b02535a",
+      "web/src/app/policy-draft/group-reference-generator.test.mjs": "7891c73f95af6f33ea745524d716b8c395bd5421d3ce193b31c5fbe17e87008c",
+      "web/src/app/policy-draft/group-reference-generator.mjs": "f12a6e8eb528d9776741b8cab5cb327e5d5714d951fd3dfa157075832ad93a9f",
+      "web/src/app/policy-draft/generate-reviewed-references.mjs": "e7389ab3b21e6584b4ce30eb00fd8c196e849577e0e0b971bce118ee6b1d565a",
+      "web/src/app/policy-draft/verify-public-catalogue.mjs": "b9156684e80949abbd4223708334159a5945b226ed674b6f158f072ed80450f7",
+      "web/src/app/policy-draft/reference-generator.test.mjs": "0165d5d945ec01061e87dfb5c40ba22b6efd758c308bf967ecd3090d437676f9",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9"
+    }
+  },
+  "checks": [
+    {
+      "id": "T2-R2-C01",
+      "scope": "Manifest, Branch, HEAD und Bindung des begrenzten Korrekturstands",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Manifesthash 13d1c6324cfc7c0ec2d9c17e15e99c326c4a8e096a38a08e6eaecee6e45603e8 vor Bewertung bestätigt.",
+        "Branch und HEAD entsprechen Auftrag; relevante lokale Artefakte gegenüber da10fdf unverändert. 39 lokale Eingabehashes gebunden und erneut geprüft."
+      ]
+    },
+    {
+      "id": "T2-R2-C02",
+      "scope": "T2-F01: gezielte Code-/Komponentennachprüfung",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "scripts/check-research-engines.mjs:169-191: Tab-Suche und Assertions auf Radio-Namen, :focus-visible und solid 2px.",
+        "scripts/check-research-engines.mjs:220-221,323-327: Fokus nach Reset auf draft-question-title und nach Übersichtwechsel vor dem Fernsprung geprüft.",
+        "docs/validation.md:78: einzelne geprüfte Wechsel und Radio-Rahmen benannt."
+      ]
+    },
+    {
+      "id": "T2-R2-C03",
+      "scope": "T2-F02: gezielte Code-/Komponentennachprüfung",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "scripts/check-research-engines.mjs:53-84: addInitScript vor newPage/goto; Mitschrift für Storage.setItem, indexedDB.open, caches.open, serviceWorker.register und document.cookie.",
+        "scripts/check-research-engines.mjs:104-127,166,265-267,322,333: kumulative Aufrufe und Zustände an vier Prüfpunkten; gespeicherte Aufrufliste muss leer sein.",
+        "scripts/check-research-engines.mjs:111-115,334-339: NICHT_GEPRÜFT und privacy.notChecked statt ungeprüft leer.",
+        "docs/validation.md:78: property-Zuweisungen localStorage.x ausdrücklich von der Mitschrift ausgenommen; Zustandsprüfung und behaupteter konkreter Lauf getrennt lesbar."
+      ]
+    },
+    {
+      "id": "T2-R2-C04",
+      "scope": "T2-F03: gezielte Code-/Komponentennachprüfung",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "web/src/app/policy-draft/policy-draft.html:520-535: fehlende Einzelkategorien mit interval-none, vollständig fehlende Bereiche mit interval-missing.",
+        "web/src/app/policy-draft/policy-draft.html:611-627: entsprechender Gruppen-Kategoriezweig und Hinweis bei fehlenden Gruppenbereichen.",
+        "web/src/app/policy-draft/policy-draft.html:205-215: genau eine gemeinsame Erklärung, einschließlich fehlender Bereich bedeutet keine Unsicherheit von null.",
+        "web/src/app/policy-draft/policy-draft.spec.ts:24-30,221-249: gemischte Einzelkategorien und Gruppe ohne Bereiche samt Missing-Assertions und genau einer Erklärung.",
+        "pnpm check: 113 Webtests in zehn Dateien bestanden, einschließlich des geänderten Komponententests."
+      ]
+    },
+    {
+      "id": "T2-R2-C05",
+      "scope": "T2-F04: gezielte Code-/Komponentennachprüfung",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "reports/claude/kontrollrechnung/sav_gegenprobe.py:167-169,210-235: früher Abschluss bei Duplikaten/Zuordnungslücken; acht Prüfungen mit BESTANDEN/NICHT_BESTANDEN und Exit 0/1.",
+        "reports/claude/kontrollrechnung/sav_gegenprobe.py:46-48,225-228: Toleranz 1e-12 mit Begründung der Gleitkomma-/Summationsabweichung.",
+        "reports/claude/kontrollrechnung/sddf_gegenprobe.py:120-126,157-167; ess9_gruppen_gegenprobe.py:65-74: Zuordnungs-/Duplikatprüfung, numerischer Status und Exitcode auch für die beiden zusätzlichen Gegenproben.",
+        "sav-gegenprobe.json, sddf-gegenprobe.json, ess9-gruppen-gegenprobe.json: Statusfelder aus gespeicherten Aggregaten konsistent; sämtliche vorbestehenden Aggregate und Laufhashes gegenüber 46e70be unverändert.",
+        "reports/claude/kontrollrechnung/sav-gegenprobe.md:31; reports/claude/datenzugriff.md:20: Statusregel, behauptete synthetische Autorprüfung und erneuter Datenzugriff dokumentiert."
+      ]
+    },
+    {
+      "id": "T2-R2-C06",
+      "scope": "T2-F05: gezielte Code-/Komponentennachprüfung",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "docs/analyseplan-v2.2.md:88-90: verbindliche Ausschlüsse.",
+        "web/src/app/policy-draft/policy-draft.html:207-214: Zeitabstand, Befragungsmodus, Nichtteilnahme, neuer Fragekontext und Messfehler einzelner Antworten ausdrücklich ausgeschlossen; persönliche Unsicherheit getrennt.",
+        "web/src/app/policy-draft/policy-draft.spec.ts:226-229: genau eine Erklärung und Messfehlertext assertiert; Komponententest im pnpm check bestanden."
+      ]
+    },
+    {
+      "id": "T2-R2-C07",
+      "scope": "pnpm check",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Exit 0; Formatprüfung, Handbuchprüfung, 20 synthetische Schemafälle, Typprüfung, 113 Webtests in zehn Dateien und Produktionsbuild bestanden."
+      ]
+    },
+    {
+      "id": "T2-R2-C08",
+      "scope": "Syntax, öffentliche Gegenproben und Diff",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "node --check scripts/check-research-engines.mjs und ast.parse für die drei Gegenprobenskripte bestanden.",
+        "Inline-Python: neue JSON-Statusfelder konsistent; alle vorbestehenden Aggregate und Laufhashes gegenüber 46e70be unverändert.",
+        "git diff --check für den zugelassenen Diff unter Ausschluss s1_struktur.py ohne Befund."
+      ]
+    },
+    {
+      "id": "T2-R2-C09",
+      "scope": "Eigene Browser-/Datenläufe und Autor-Negativproben",
+      "status": "NICHT_GEPRÜFT",
+      "requiredInScope": false,
+      "evidence": [
+        "Im Auftrag ausgeschlossen. Keine Läufe wiederholt und keine Belege unter gesperrten Pfaden gelesen."
+      ]
+    },
+    {
+      "id": "T2-R2-C10",
+      "scope": "Wissenschaftliche und menschliche Abnahmen sowie Veröffentlichung",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "requiredInScope": false,
+      "evidence": [
+        "Auftrag ist ausschließlich die technische Finding-Nachprüfung."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "T2-F01",
+      "severity": "mittel",
+      "claim": "Die dokumentierten Fokusprüfungen sollen Radiofokus, Fokusrahmen, Reset und Fragenübersicht tatsächlich assertieren.",
+      "problem": "Runde 1: Radio-Ziel, :focus-visible und Rahmen wurden nur protokolliert; Reset und Übersicht hatten keine Fokusassertion.",
+      "evidence": [
+        "scripts/check-research-engines.mjs:169-191: Tab-Suche und Assertions auf Radio-Namen, :focus-visible und solid 2px.",
+        "scripts/check-research-engines.mjs:220-221,323-327: Fokus nach Reset auf draft-question-title und nach Übersichtwechsel vor dem Fernsprung geprüft.",
+        "docs/validation.md:78: einzelne geprüfte Wechsel und Radio-Rahmen benannt."
+      ],
+      "impact": "Die beanstandeten Prüfpfade enthalten jetzt negative Assertions bzw. abbrechende Fokuswartebedingungen. Eine tatsächliche Browserausführung ist damit nicht erneut bestätigt.",
+      "severityReason": "Ursprünglich mittlere Lücke der behaupteten Tastatur-/Fokusabdeckung; Schweregrad zur Nachverfolgung erhalten.",
+      "correction": "Ziel, :focus-visible und 2-px-Outline assertiert; Reset- und Übersichtfokus geprüft; Dokumentation präzisiert.",
+      "recheck": "Diff und aktuelle Bedingungen statisch nachgeprüft; node --check bestanden. Chromium/Firefox und synthetische Browser-Negativproben laut Auftrag nicht ausgeführt.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "T2-F02",
+      "severity": "mittel",
+      "claim": "Die Speicherprüfung muss kurzlebige Speicherzugriffe und nicht verfügbare APIs von einem geprüften leeren Endzustand unterscheiden.",
+      "problem": "Runde 1: einmalige Endabfrage konnte setItem/removeItem übersehen und behandelte n/a ohne getrennte Reichweitenangabe als Erfolg.",
+      "evidence": [
+        "scripts/check-research-engines.mjs:53-84: addInitScript vor newPage/goto; Mitschrift für Storage.setItem, indexedDB.open, caches.open, serviceWorker.register und document.cookie.",
+        "scripts/check-research-engines.mjs:104-127,166,265-267,322,333: kumulative Aufrufe und Zustände an vier Prüfpunkten; gespeicherte Aufrufliste muss leer sein.",
+        "scripts/check-research-engines.mjs:111-115,334-339: NICHT_GEPRÜFT und privacy.notChecked statt ungeprüft leer.",
+        "docs/validation.md:78: property-Zuweisungen localStorage.x ausdrücklich von der Mitschrift ausgenommen; Zustandsprüfung und behaupteter konkreter Lauf getrennt lesbar."
+      ],
+      "impact": "Ein setItem-Aufruf bleibt auch nach removeItem in der kumulativen Liste und verletzt die Assertion. Fehlende Datenbankzählung wird als NICHT_GEPRÜFT protokolliert. Die Dokumentation begrenzt die Operationsabdeckung.",
+      "severityReason": "Ursprünglich mittlere Überdehnung der Datenschutzprüfung; kein Datenabfluss nachgewiesen.",
+      "correction": "Mitschrift vor dem ersten Seitenskript, vier Zustandspunkte und ausdrückliche Liste nicht geprüfter APIs ergänzt; property-Zuweisungsgrenze dokumentiert.",
+      "recheck": "Initialisierungsreihenfolge, Lebensdauer der Aufrufliste, Assertions und NICHT_GEPRÜFT-Zweige statisch geprüft. Keine Browser-Negativprobe oder Sichtung der privaten Laufbelege.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "T2-F03",
+      "severity": "mittel",
+      "claim": "Fehlende Bereiche sind auch bei Gruppen und gemischten Kategorien sichtbar als fehlend anzugeben; die gemeinsame Erklärung bleibt einmalig.",
+      "problem": "Runde 1: fehlende Gruppenbereiche und einzelne fehlende Kategoriengrenzen verschwanden ohne Missing-Markierung.",
+      "evidence": [
+        "web/src/app/policy-draft/policy-draft.html:520-535: fehlende Einzelkategorien mit interval-none, vollständig fehlende Bereiche mit interval-missing.",
+        "web/src/app/policy-draft/policy-draft.html:611-627: entsprechender Gruppen-Kategoriezweig und Hinweis bei fehlenden Gruppenbereichen.",
+        "web/src/app/policy-draft/policy-draft.html:205-215: genau eine gemeinsame Erklärung, einschließlich fehlender Bereich bedeutet keine Unsicherheit von null.",
+        "web/src/app/policy-draft/policy-draft.spec.ts:24-30,221-249: gemischte Einzelkategorien und Gruppe ohne Bereiche samt Missing-Assertions und genau einer Erklärung.",
+        "pnpm check: 113 Webtests in zehn Dateien bestanden, einschließlich des geänderten Komponententests."
+      ],
+      "impact": "Die beiden konkreten Gegenfälle aus Runde 1 sind sichtbar gekennzeichnet und durch den Komponententest abgesichert. Eine Nullgrenze wird nicht als Unsicherheit von null ausgegeben.",
+      "severityReason": "Ursprünglich mittlere Verletzung der Anzeigeregel aus Analyseplan 4.2; Schweregrad für die Historie erhalten.",
+      "correction": "Kategorienhinweis und Gruppenhinweis ergänzt; synthetische Einzelreferenz mit gemischten Grenzen sowie Missing-Gruppe assertiert.",
+      "recheck": "Template gegen Analyseplan 4.2/4.3 und Referenzansicht geprüft; geänderter Komponententest im erfolgreichen pnpm check ausgeführt. Gemischte Gruppenkategorien nur statisch geprüft, nicht als zusätzlicher eigener Testfall ausgegeben; Browserprüfung ausgeschlossen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "T2-F04",
+      "severity": "mittel",
+      "claim": "Verletzungen der Dekoder-, Zuordnungs- und numerischen Gegenprüfungen müssen einen negativen Gesamtstatus und Exitcode ergeben.",
+      "problem": "Runde 1: Dekoderabweichungen, Duplikate und große Abweichungen der Anteile/Standardfehler konnten trotz Gegenbefund zu Exit 0 führen.",
+      "evidence": [
+        "reports/claude/kontrollrechnung/sav_gegenprobe.py:167-169,210-235: früher Abschluss bei Duplikaten/Zuordnungslücken; acht Prüfungen mit BESTANDEN/NICHT_BESTANDEN und Exit 0/1.",
+        "reports/claude/kontrollrechnung/sav_gegenprobe.py:46-48,225-228: Toleranz 1e-12 mit Begründung der Gleitkomma-/Summationsabweichung.",
+        "reports/claude/kontrollrechnung/sddf_gegenprobe.py:120-126,157-167; ess9_gruppen_gegenprobe.py:65-74: Zuordnungs-/Duplikatprüfung, numerischer Status und Exitcode auch für die beiden zusätzlichen Gegenproben.",
+        "sav-gegenprobe.json, sddf-gegenprobe.json, ess9-gruppen-gegenprobe.json: Statusfelder aus gespeicherten Aggregaten konsistent; sämtliche vorbestehenden Aggregate und Laufhashes gegenüber 46e70be unverändert.",
+        "reports/claude/kontrollrechnung/sav-gegenprobe.md:31; reports/claude/datenzugriff.md:20: Statusregel, behauptete synthetische Autorprüfung und erneuter Datenzugriff dokumentiert."
+      ],
+      "impact": "Die benannten Verletzungen fließen in den negativen Prozessstatus ein. Der öffentliche Nullbefund ist weiterhin konsistent; die tatsächliche Neuberechnung und die Autor-Negativproben wurden nicht wiederholt.",
+      "severityReason": "Ursprünglich mittlere, für den gespeicherten Nullbefund nicht blockierende Lücke des automatischen Prüferfolgs.",
+      "correction": "Gesamtstatus und Exitcode anhand expliziter Prüfungen mit Toleranz 1e-12 eingeführt; öffentliche JSON-Berichte um Status-/Zuordnungsfelder ergänzt.",
+      "recheck": "Kontrollfluss statisch geprüft, drei Python-Dateien ausschließlich per ast.parse auf Syntax geprüft; gespeicherte JSON-Aggregate und neue Statusfelder mit Inline-Python geprüft. Kein Import oder Ausführen der Datenskripte, keine privaten Dateien gelesen, synthetische Autorproben nicht unabhängig ausgeführt.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "T2-F05",
+      "severity": "niedrig",
+      "claim": "Die gemeinsame Intervallerklärung muss auch Messfehler einzelner Antworten als nicht enthaltene Unsicherheit nennen.",
+      "problem": "Runde 1: der ausdrückliche Messfehlerausschluss aus Analyseplan 4.3 fehlte.",
+      "evidence": [
+        "docs/analyseplan-v2.2.md:88-90: verbindliche Ausschlüsse.",
+        "web/src/app/policy-draft/policy-draft.html:207-214: Zeitabstand, Befragungsmodus, Nichtteilnahme, neuer Fragekontext und Messfehler einzelner Antworten ausdrücklich ausgeschlossen; persönliche Unsicherheit getrennt.",
+        "web/src/app/policy-draft/policy-draft.spec.ts:226-229: genau eine Erklärung und Messfehlertext assertiert; Komponententest im pnpm check bestanden."
+      ],
+      "impact": "Die beanstandete Auslassung ist behoben; alle Ausschlüsse aus Abschnitt 4.3 sind im gemeinsamen Text enthalten.",
+      "severityReason": "Ursprünglich niedrige Textauslassung ohne belegten Rechenfehler.",
+      "correction": "Messfehler einzelner Antworten im gemeinsamen Text und in der Testassertion ergänzt.",
+      "recheck": "Vollständiger Abgleich der Ausschlüsse aus Analyseplan 4.3 gegen den Text; Komponententest durch pnpm check bestanden.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    }
+  ],
+  "limits": [
+    "BESTANDEN gilt ausschließlich für die gezielte Nachprüfung T2-F01 bis T2-F05 und mögliche Fehler durch die benannten Korrekturen. Keine vollständige neue Paketprüfung, keine Übernahme anderer Abnahmen.",
+    "Browser- und Datenskripte wurden weder importiert noch ausgeführt. Keine Dateien unter data/raw/, data/local/ oder outputs/ gelesen; dortige Pfade in öffentlichen Dokumenten sind nur Text. s1_struktur.py nicht gelesen oder bewertet; sein Dateiname erschien in Git-Metadaten.",
+    "Tatsächliche Chromium-/Firefox-Läufe, Screenshots, Browser-Negativproben, Rohdatenrechnung und synthetische Autor-Negativproben der Gegenproben sind NICHT_GEPRÜFT. Ihre Dokumentation wird nicht als eigener Laufbeleg ausgegeben.",
+    "Die Speicherinstrumentierung erfasst benannte Methoden im Seitenkontext. Property-Zuweisungen mit anschließendem Löschen zwischen Prüfpunkten sind ausdrücklich nicht abgedeckt. Nicht verfügbare APIs sind als ungeprüft protokollierbar; ein Gesamt-PASS besagt dann keinen vollständigen Speichercheck.",
+    "Der Test für gemischte Einzelkategorien und die Gruppe ohne Bereiche lief; der entsprechende neue Zweig für gemischte Gruppenkategorien wurde statisch nachgeprüft, ohne zusätzliche Testfixture.",
+    "Kein wissenschaftliches, empirisches, Neutralitäts-, menschliches, Design- oder Veröffentlichungsurteil. Frühere T2-Grenzen außerhalb F01-F05 bleiben unbewertet erhalten.",
+    "Nur die beiden beauftragten Ergebnisdateien selbst geschrieben. Der erlaubte pnpm check erzeugt übliche ignorierte Build-/Testartefakte. Keine Commits, Pushes, Tags, Delegationen oder Nachrichten an andere Personen/Agenten.",
+    "Bei Beginn war git status --short leer. Später erschienen fremde Änderungen an s1_struktur.py und zwei unversionierte P4/P5-Aufträge; nur Statusmetadaten gesehen, keine Inhalte gelesen oder verändert. HEAD blieb 75c6f8b285bc8e9414b547ccbe4609e0a9592f68. Alle 39 gebundenen Eingaben vor dem Schreiben erneut unverändert.",
+    "Einige Sammelausgaben der Werkzeuge wurden gekürzt; relevante Finding-Bedingungen, Gegenproben und Runde-1-Bericht wurden mit getrennten Ansichten nachgelesen. Keine fehlgeschlagenen Prüfkommandos oder Zugriffsversuche auf gesperrte Pfade.",
+    "Memory.md nur für allgemeine Prüfabgrenzung, Zeilen 52-55; kein aktueller technischer Befund oder früheres fremdes Sachurteil daraus übernommen. Die Bewertung beruht auf Auftrag, Diff, aktuellen Dateien und ausgeführten technischen Checks."
+  ]
+}
+
