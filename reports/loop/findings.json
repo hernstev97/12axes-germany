@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T14:23:20.016753+00:00",
+  "updatedAtUtc": "2026-10-03T14:32:25.405967+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2806,7 +2806,7 @@
       "status": "NICHT_BESTANDEN",
       "reason": "Neun Fragen zu zwei engen Themen erfüllen das breite Deutschland-Politikprofil nicht",
       "blocks": ["completion as comprehensive political profile"],
-      "correctionState": "43 categorical items8topics source-bound and accepted pre-empirically; actual broad analyses/reference website still pending. Product goal remains open.",
+      "correctionState": "43items8topics, frozen plan and5 private candidates executed. Numeric results review/export and concrete Angular broad website remain pending; goal still open.",
       "verification": {
         "order": "docs/auftrag-life-93-breite-2026-10-03.md"
       }
@@ -3025,10 +3025,15 @@
       "decision": "angenommen",
       "severity": "erheblich",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN_BEGRENZT",
       "reason": "Result title implies replacement instead of original more/less budget tradeoff",
       "blocks": ["one result title"],
-      "correctionState": "Corrections in current11-pin v2 UI proposal, targeted reviewer running; original first proposal preserved in7b03f4c6. No scientific gate affected."
+      "correctionState": "Targeted round1 ACCEPTED_BOUNDED and actual corrected browser layout/code context observed. No human design/release.",
+      "verification": {
+        "report": "reports/loop/reviews/POLICY-UI-001-round1.md",
+        "sha256": "00bb2789b8166dad229be6d46c40a7fbc5b9b9f7d1c6b69ea758cea048ba7955",
+        "technical": "reports/loop/policy-ui-correction-technical.json"
+      }
     },
     {
       "id": "PUI-R2",
@@ -3036,10 +3041,15 @@
       "decision": "angenommen",
       "severity": "erheblich",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN_BEGRENZT",
       "reason": "Three justice-principle explanations broaden original meaning",
       "blocks": ["three result explanations"],
-      "correctionState": "Corrections in current11-pin v2 UI proposal, targeted reviewer running; original first proposal preserved in7b03f4c6. No scientific gate affected."
+      "correctionState": "Targeted round1 ACCEPTED_BOUNDED and actual corrected browser layout/code context observed. No human design/release.",
+      "verification": {
+        "report": "reports/loop/reviews/POLICY-UI-001-round1.md",
+        "sha256": "00bb2789b8166dad229be6d46c40a7fbc5b9b9f7d1c6b69ea758cea048ba7955",
+        "technical": "reports/loop/policy-ui-correction-technical.json"
+      }
     },
     {
       "id": "PUI-R3",
@@ -3047,10 +3057,15 @@
       "decision": "angenommen",
       "severity": "begrenzt",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN_BEGRENZT",
       "reason": "Internal prepare.py pin stale after Root changed generator worktree depth for tracked prototype",
       "blocks": ["local prototype metadata"],
-      "correctionState": "Corrections in current11-pin v2 UI proposal, targeted reviewer running; original first proposal preserved in7b03f4c6. No scientific gate affected."
+      "correctionState": "Targeted round1 ACCEPTED_BOUNDED and actual corrected browser layout/code context observed. No human design/release.",
+      "verification": {
+        "report": "reports/loop/reviews/POLICY-UI-001-round1.md",
+        "sha256": "00bb2789b8166dad229be6d46c40a7fbc5b9b9f7d1c6b69ea758cea048ba7955",
+        "technical": "reports/loop/policy-ui-correction-technical.json"
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

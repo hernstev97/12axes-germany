@@ -3,6 +3,7 @@
 import hashlib
 import json
 import shutil
+import subprocess
 from pathlib import Path
 
 WORKTREE = Path(__file__).resolve().parents[2]
@@ -34,6 +35,7 @@ study_fields = (
     'id', 'edition', 'dataDoiUrl', 'documentationDoiUrl', 'citationRequirementDeclaredEn',
     'country', 'populationDeclaredEn', 'populationCoverageLimit', 'fieldwork', 'versionNotes',
     'dataLicenseId', 'documentationLicenseId',
+    'samplingProceduresDeclaredEn',
 )
 public = {
     'catalogueSha256': hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
@@ -82,4 +84,16 @@ evidence = {
     'responseDataRead': False,
 }
 (OUT / 'source-binding.json').write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + '\n')
+subprocess.run([
+    'pnpm', 'exec', 'prettier', '--write',
+    str(OUT / 'catalogue.js'), str(OUT / 'foundation.css'),
+    str(OUT / 'index.html'), str(OUT / 'prototype.js'),
+    str(OUT / 'prototype.css'), str(OUT / 'source-binding.json'),
+], cwd=WORKTREE, check=True)
+manifest_files = [p for p in sorted(OUT.rglob('*')) if p.is_file() and p.name != 'manifest.json']
+(OUT / 'manifest.json').write_text(json.dumps({
+    'scope': 'Unpublished local design draft. Browser, human design approval and comprehension testing pending.',
+    'files': [{'path': str(p.relative_to(OUT)), 'bytes': p.stat().st_size,
+               'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in manifest_files],
+}, ensure_ascii=False, indent=2) + '\n')
 print('Prepared public catalogue projection and local style/font assets.')

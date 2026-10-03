@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "collectedAtUtc": "2026-10-03 14:31:34 UTC",
+  "manifestPath": "reports/loop/packages/POLICY-UI-001/v2/manifest.json",
+  "manifestSha256": "b82dfe72af5e0b9182d70276138f432b2dea0ed97fa40c3acc4863dd81b2a6e8",
+  "server": {
+    "port": 4313,
+    "root": "prototypes/policy-v2",
+    "sessionId": 2522,
+    "qaInstrument": "separate exact /__qa__/axe.min.js mapping to local dependency; not prototype artifact"
+  },
+  "layouts": [],
+  "partialResult": {
+    "atUtc": "2026-10-03T14:31:34.389Z",
+    "clientWidth": 305,
+    "incomplete": 0,
+    "innerWidth": 320,
+    "resultItems": 43,
+    "scrollWidth": 305,
+    "view": "partial_result_synthetic4",
+    "violations": []
+  },
+  "syntheticCorrectionFlow": {
+    "atUtc": "2026-10-03T14:31:02.662Z",
+    "items": ["sofrwrk", "sofrpr", "sofrprv", "eduunmp"],
+    "selectedOriginalFirstCategory": true,
+    "meaningTextObserved": true,
+    "resultItems": 43,
+    "scope": "software selections, not user or simulated voter responses"
+  },
+  "keyboard": {
+    "atUtc": "2026-10-03T14:31:03.508Z",
+    "nativeClickThenArrowDown": true,
+    "activeTag": "INPUT",
+    "status": "Beantwortet",
+    "documentHasFocus": false,
+    "focusVisible": false,
+    "visibleFocus": "NOT_VERIFIED"
+  },
+  "actual200PercentZoom": "NOT_VERIFIED",
+  "resourcesObserved": [
+    "foundation.css",
+    "prototype.css",
+    "prototype.js",
+    "catalogue.js",
+    "assets/libre-baskerville-latin-wght-normal.woff2",
+    "QA-only axe.min.js"
+  ],
+  "extraAnswerResourceObserved": false,
+  "networkAndStorageLimit": "Resource entries/code inspection only; not general transport or host storage isolation proof",
+  "screenshots": {
+    "desktop": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-mushpwbc-cf59326c.png"
+  },
+  "scientificOrHumanAcceptance": false
+}

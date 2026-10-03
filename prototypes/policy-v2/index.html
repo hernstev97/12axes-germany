@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
     <meta name="referrer" content="no-referrer" />
     <title>Gestaltungsentwurf · 12 Axes Deutschland</title>
     <link rel="stylesheet" href="./foundation.css" />
@@ -27,8 +30,14 @@
           <div class="area-text-wide">
             <h1 id="page-title" class="page-title" tabindex="-1">Fragenentwurf</h1>
             <p class="date">Stand: <span class="nowrap">3. Oktober 2026</span></p>
-            <p id="view-lead" class="lead">43 Originalangaben aus fünf historischen ESS-Studien bilden den Fragenentwurf. Die neue Zusammenstellung und ihre Durchführung sind noch nicht freigegeben.</p>
-            <p>Antworten bleiben nur im Arbeitsspeicher dieser geöffneten Seite. Neuladen verwirft die Sitzung.</p>
+            <p id="view-lead" class="lead">
+              43 Originalangaben aus fünf historischen ESS-Studien bilden den Fragenentwurf. Die
+              neue Zusammenstellung und ihre Durchführung sind noch nicht freigegeben.
+            </p>
+            <p>
+              Antworten bleiben nur im Arbeitsspeicher dieser geöffneten Seite. Neuladen verwirft
+              die Sitzung.
+            </p>
           </div>
         </header>
         <div id="question-view">
@@ -43,11 +52,18 @@
               <div class="prose area-body">
                 <div id="original-context"></div>
                 <p id="development-note" class="context-note"></p>
-                <fieldset id="answer-fieldset" aria-describedby="original-context development-note missing-note">
+                <fieldset
+                  id="answer-fieldset"
+                  aria-describedby="original-context development-note missing-note"
+                >
                   <legend id="question-wording"></legend>
                   <div id="answer-options"></div>
                 </fieldset>
-                <p id="missing-note" class="meta">Zahlen in einer Antwortliste bezeichnen Originalkategorien, keine Punkte. Weiß nicht oder keine Antwort geben gehören zum Überspringen. Sie sind keine politischen Antwortoptionen und keine Übernahme von Missing-Codes der Studie.</p>
+                <p id="missing-note" class="meta">
+                  Zahlen in einer Antwortliste bezeichnen Originalkategorien, keine Punkte. Weiß
+                  nicht oder keine Antwort geben gehören zum Überspringen. Sie sind keine
+                  politischen Antwortoptionen und keine Übernahme von Missing-Codes der Studie.
+                </p>
                 <div class="skip-reason">
                   <label for="skip-reason">Grund für das Überspringen, optional</label>
                   <select id="skip-reason">
@@ -61,7 +77,10 @@
                   <button id="next" class="button primary" type="button">Zur nächsten Frage</button>
                   <button id="skip" class="text-button" type="button">Frage überspringen</button>
                 </nav>
-                <p class="meta">Der Fortgang ohne Auswahl lässt die Frage unberührt. Eine Radioauswahl zählt als beantwortet; Überspringen kennzeichnet bewusst keine Angabe.</p>
+                <p class="meta">
+                  Der Fortgang ohne Auswahl lässt die Frage unberührt. Eine Radioauswahl zählt als
+                  beantwortet; Überspringen kennzeichnet bewusst keine Angabe.
+                </p>
                 <div id="question-sources"></div>
               </div>
             </div>
@@ -70,7 +89,11 @@
             <div class="grid">
               <h2 class="section-title area-title">Fragenübersicht</h2>
               <div class="prose area-body">
-                <p>Die Übersicht nennt alle Originalfragen und ihren Zustand. Direkte Sprünge helfen der Entwurfsprüfung; der reguläre Fortgang erhält B1–B12 als zusammenhängende Gruppe.</p>
+                <p>
+                  Die Übersicht nennt alle Originalfragen und ihren Zustand. Direkte Sprünge helfen
+                  der Entwurfsprüfung; der reguläre Fortgang erhält B1–B12 als zusammenhängende
+                  Gruppe.
+                </p>
                 <details id="question-overview">
                   <summary>Alle 43 Fragen und Antwortzustände</summary>
                   <ol id="overview-list" class="overview-list"></ol>
@@ -83,12 +106,50 @@
       </article>
     </main>
     <footer class="draft-footer section page-width prose">
-      <p>Das Projekt ist weder validiert noch wissenschaftlich geprüft und kann keine Neutralität garantieren.</p>
-      <p>Diese Website ist kein Angebot einer Behörde, einer Partei, des European Social Survey oder von 12 Axes. Das Projekt entsteht mit KI-Agenten. Fachleute haben es nicht begutachtet.</p>
-      <p>Originaldokumentation: European Social Survey European Research Infrastructure (ESS ERIC), Sikt. Deutsche Auszüge und Antwortkategorien unter <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Dieser lokale Entwurf ändert Anordnung und Darstellung. Politische Originalformulierungen bleiben erhalten; Quellen und Fassungen stehen bei jeder Frage.</p>
-      <p>ESS-Daten unter <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> sind getrennt lizenziert und hier nicht eingebunden. <a href="https://europeansocialsurvey.org/contact/disclaimer" target="_blank" rel="noopener noreferrer">ESS-Lizenzbedingungen</a>.</p>
-      <p>Lokale Schrift Libre Baskerville: <a href="./assets/libre-baskerville-license.txt">SIL Open Font License</a>.</p>
+      <p>
+        Das Projekt ist weder validiert noch wissenschaftlich geprüft und kann keine Neutralität
+        garantieren.
+      </p>
+      <p>
+        Diese Website ist kein Angebot einer Behörde, einer Partei, des European Social Survey oder
+        von 12 Axes. Das Projekt entsteht mit KI-Agenten. Fachleute haben es nicht begutachtet.
+      </p>
+      <p>
+        Originaldokumentation: European Social Survey European Research Infrastructure (ESS ERIC),
+        Sikt. Deutsche Auszüge und Antwortkategorien unter
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CC BY-SA 4.0</a
+        >. Dieser lokale Entwurf ändert Anordnung und Darstellung. Politische Originalformulierungen
+        bleiben erhalten; Quellen und Fassungen stehen bei jeder Frage.
+      </p>
+      <p>
+        ESS-Daten unter
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CC BY-NC-SA 4.0</a
+        >
+        sind getrennt lizenziert und hier nicht eingebunden.
+        <a
+          href="https://europeansocialsurvey.org/contact/disclaimer"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ESS-Lizenzbedingungen</a
+        >.
+      </p>
+      <p>
+        Lokale Schrift Libre Baskerville:
+        <a href="./assets/libre-baskerville-license.txt">SIL Open Font License</a>.
+      </p>
     </footer>
-    <noscript><p class="page-width">Für die flüchtige Entwurfssitzung benötigt diese lokale Seite JavaScript.</p></noscript>
+    <noscript
+      ><p class="page-width">
+        Für die flüchtige Entwurfssitzung benötigt diese lokale Seite JavaScript.
+      </p></noscript
+    >
   </body>
 </html>

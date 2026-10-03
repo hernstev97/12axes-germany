@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "startedAtUtc": "2026-10-03T14:25:06.762296+00:00",
+  "status": "COMPLETED_PRIVATE_PENDING_RESULT_REVIEW",
+  "scope": "five separate historical categorical references, not confirmation; no party/comparison semantic access",
+  "runs": [
+    {
+      "study_id": "ESS5e03_6",
+      "status": "PRIVATE_CANDIDATE_PENDING_RESULT_REVIEW",
+      "started_utc": "2026-10-03T14:25:06.762321+00:00",
+      "finished_utc": "2026-10-03T14:25:09.346544+00:00",
+      "gate_sha256": "733ba8ba698e79c7f27fe06a8cc41dce0d3595e3ef15fb67ff2a2febd3e517b5",
+      "manifest_sha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c",
+      "contract_sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "freeze_sha256": "a9a38fd5926ed3e83a1e335340991de21e8f25198e7544af42b6ba7382856c7a",
+      "input_sha256": "bd93e915c2033a43bc41328fc3f4df13278b8079f8e071f98a11770f25b4022e",
+      "private_path": "data/local/policy-v2/ESS5e03_6/run.json",
+      "exit_code": 0
+    },
+    {
+      "study_id": "ESS8e02_3",
+      "status": "PRIVATE_CANDIDATE_PENDING_RESULT_REVIEW",
+      "started_utc": "2026-10-03T14:25:09.352275+00:00",
+      "finished_utc": "2026-10-03T14:25:11.329728+00:00",
+      "gate_sha256": "733ba8ba698e79c7f27fe06a8cc41dce0d3595e3ef15fb67ff2a2febd3e517b5",
+      "manifest_sha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c",
+      "contract_sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "freeze_sha256": "a9a38fd5926ed3e83a1e335340991de21e8f25198e7544af42b6ba7382856c7a",
+      "input_sha256": "5112f64fd65df229e353c82ef0f3593b568654ea76f854639f6527bca8db3684",
+      "private_path": "data/local/policy-v2/ESS8e02_3/run.json",
+      "exit_code": 0
+    },
+    {
+      "study_id": "ESS9e03_3",
+      "status": "PRIVATE_CANDIDATE_PENDING_RESULT_REVIEW",
+      "started_utc": "2026-10-03T14:25:11.332166+00:00",
+      "finished_utc": "2026-10-03T14:25:13.536060+00:00",
+      "gate_sha256": "733ba8ba698e79c7f27fe06a8cc41dce0d3595e3ef15fb67ff2a2febd3e517b5",
+      "manifest_sha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c",
+      "contract_sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "freeze_sha256": "a9a38fd5926ed3e83a1e335340991de21e8f25198e7544af42b6ba7382856c7a",
+      "input_sha256": "499dffc823859b621902b23859dc456e214772e97158bbd01cdb8eff93b1adaa",
+      "private_path": "data/local/policy-v2/ESS9e03_3/run.json",
+      "exit_code": 0
+    },
+    {
+      "study_id": "ESS10SCe03_2",
+      "status": "PRIVATE_CANDIDATE_PENDING_RESULT_REVIEW",
+      "started_utc": "2026-10-03T14:25:13.539008+00:00",
+      "finished_utc": "2026-10-03T14:25:16.162067+00:00",
+      "gate_sha256": "733ba8ba698e79c7f27fe06a8cc41dce0d3595e3ef15fb67ff2a2febd3e517b5",
+      "manifest_sha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c",
+      "contract_sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "freeze_sha256": "a9a38fd5926ed3e83a1e335340991de21e8f25198e7544af42b6ba7382856c7a",
+      "input_sha256": "9a04d8d52b53cfe8136d0cb238d21647fcd3539d21b339498a38035aec22ec6b",
+      "private_path": "data/local/policy-v2/ESS10SCe03_2/run.json",
+      "exit_code": 0
+    },
+    {
+      "study_id": "ESS11e04_2",
+      "status": "PRIVATE_CANDIDATE_PENDING_RESULT_REVIEW",
+      "started_utc": "2026-10-03T14:25:16.167511+00:00",
+      "finished_utc": "2026-10-03T14:25:18.739475+00:00",
+      "gate_sha256": "733ba8ba698e79c7f27fe06a8cc41dce0d3595e3ef15fb67ff2a2febd3e517b5",
+      "manifest_sha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c",
+      "contract_sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "freeze_sha256": "a9a38fd5926ed3e83a1e335340991de21e8f25198e7544af42b6ba7382856c7a",
+      "input_sha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+      "private_path": "data/local/policy-v2/ESS11e04_2/run.json",
+      "exit_code": 0
+    }
+  ],
+  "publicStatisticsIncluded": false,
+  "previousKnownResults": "Historical v1 A/B nine-item results; ESS11 same study secondary",
+  "finishedAtUtc": "2026-10-03T14:25:18.741974+00:00"
+}

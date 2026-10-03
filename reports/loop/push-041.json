@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 41,
+  "localCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+  "verifiedRemoteCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+  "verifiedAtUtc": "2026-10-03T14:24:39.574596+00:00",
+  "branch": "research/life-93-night-20261003",
+  "pushExitCode": 0,
+  "scan": "outputs/loop/breadth-checkpoint041-scan.json",
+  "technicalCheck": {
+    "command": "pnpm check",
+    "exitCode": 0,
+    "log": "outputs/loop/check-047.log"
+  },
+  "verificationCorrection": "First remote verification probe exit1 assumed annotated historical tags. Corrected fallback to direct ref for lightweight tags; no raw access or tag mutation.",
+  "scientificAcceptance": "bounded pre-empirical plan only, no empirical/product/release acceptance"
+}

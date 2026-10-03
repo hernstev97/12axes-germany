@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T14:23:20.016753+00:00",
+  "updatedAtUtc": "2026-10-03T14:32:25.405967+00:00",
   "status": "RUNNING",
-  "phase": "BROAD_V2_PLAN_FREEZE",
+  "phase": "BROAD_V2_RESULT_REVIEW_AND_WEBSITE",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -51,7 +51,8 @@
     "PP-001 targeted correction1 accepted, original failed reproduction oracles retained",
     "METHODOLOGY-PAGE-001 normal bounded first no blocking finding, source-link suggestions open",
     "Methodology doc page technical package: check043 exit0,5widths final nooverflow/axe0/localfont/1H1; actual anchor focus bounded,200percent/visiblefocus pending",
-    "EMPIRICAL-V2-001 revision2 both targeted roles ACCEPTED_BOUNDED; EV2-SRC-F01 closed correction1; new data still unopened"
+    "EMPIRICAL-V2-001 revision2 both targeted roles ACCEPTED_BOUNDED; EV2-SRC-F01 closed correction1; new data still unopened",
+    "analyseplan-v2 remote verified6702f187, alloldtagsunchanged;5actualprivatehistoricalruns exit0; PUI-R1–3 closed target1/browserbounded"
   ],
   "openTasks": [
     "Verified v2 freeze/tag/gate and actual5 separate historical runs",
@@ -108,9 +109,9 @@
     "mainIntegration": "BESTANDEN",
     "currentLocalTechnical": {
       "command": "pnpm check",
-      "exitCode": 0,
-      "log": "outputs/loop/check-047.log",
-      "scope": "format/handbook/review schema/typecheck/31tests/build; no scientific acceptance"
+      "exitCode": 1,
+      "log": "outputs/loop/check-048.log",
+      "scope": "Format stage failed on original human-protocol draft and currently written unstaged Angular-author files; later stages not run. Original human draft saved WIP before format correction."
     },
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Historische A/B-Kriterien berechnet; keine umfassende Produktvalidität. Breite v2 NICHT_GEPRÜFT.",
@@ -281,24 +282,28 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "T3 preempirical_v2_methods",
-      "status": "COMPLETED_TARGETED_ROUND1_ACCEPTED_BOUNDED"
+      "name": "T3 results_v2_methods",
+      "status": "RUNNING_FRESH_FIRST"
     },
     {
-      "name": "T3 preempirical_v2_sources",
-      "status": "COMPLETED_TARGETED_ROUND1_ACCEPTED_BOUNDED"
+      "name": "T3 results_v2_sources",
+      "status": "RUNNING_FRESH_FIRST"
     },
     {
-      "name": "T3 policy_ui_reviewer",
-      "status": "RUNNING_TARGETED_ROUND1"
-    },
-    {
-      "name": "/root/breadth_topic_frame",
-      "status": "RUNNING_COMPREHENSION_V2_DRAFT_AUTHOR_NO_RESPONSES"
+      "name": "/root/angular_policy_draft",
+      "status": "RUNNING_UNROUTED_ANGULAR_AUTHOR_NO_RESPONSES"
     },
     {
       "name": "/root/breadth_data_instruments",
       "status": "RUNNING_GROUP_V21_CONTRACT_AUTHOR_NO_PARTY_RESPONSES"
+    },
+    {
+      "name": "/root/breadth_topic_frame",
+      "status": "COMPLETED_PURE_REPORT_AND_HUMAN_PROTOCOL_AUTHORS"
+    },
+    {
+      "name": "/root/breadth_topic_frame",
+      "status": "RUNNING_PURE_GROUP_V21_AUTHOR_NO_ACTUAL_RESPONSES"
     }
   ],
   "workPackages": [
@@ -549,24 +554,24 @@
       "tests": "13 synthetic Vitest tests author exit0"
     }
   ],
-  "nextConcreteStep": "Commit accepted plan, create and verify new analyseplan-v2 tag; then exact freeze/gate and5 separate private historical runs. Two fresh result roles before export.",
+  "nextConcreteStep": "Read both fresh results reviews, apply bounded targeted fixes if required then authenticated exports/report. Finish own v2.1 plan/code/reviews before party semantics; unrouted Angular draft and human protocol review in parallel.",
   "checkpoint": {
-    "lastLocalCommit": "7b03f4c6ccc317a3968a1f9693a744c457f1f7e0",
-    "lastVerifiedRemoteCommit": "7b03f4c6ccc317a3968a1f9693a744c457f1f7e0",
-    "lastVerifiedPushAtUtc": "2026-10-03T14:12:54.091037+00:00",
+    "lastLocalCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+    "lastVerifiedRemoteCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+    "lastVerifiedPushAtUtc": "2026-10-03T14:24:39.574596+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-040.json",
+    "record": "reports/loop/push-041.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Accepted22-pin plan revision2 and two targeted reports; no v2 header/response/marginal exposure. Separate current UI corrections still under targeted review; group/report authors WIP not staged in science freeze."
+    "pendingPayload": "Actual freeze/gate/exposure/run receipts and corrected bounded UI package; private candidates excluded. Report/CLI/human protocol/group contract explicitly WIP."
   },
-  "scientificStatus": "Current22-pin revision2 accepted bounded by two targeted Codex roles. No new v2 headers/answers/marginals yet; historical v1 A/B known. No result/product/release acceptance.",
+  "scientificStatus": "Five private historical categorical candidates executed14:25:06–14:25:18UTC after verified new plan tag; no public numeric export. Two fresh same-family result roles running. No party semantic access.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -686,7 +691,7 @@
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md",
-  "executionStatus": "RUNNING_ACCEPTED_PLAN_FREEZE_BEFORE_NEW_V2_DATA",
+  "executionStatus": "RUNNING_FIVE_PRIVATE_CANDIDATES_RESULT_REVIEWS",
   "interruption": {
     "requestedAtUtc": "2026-10-03T09:02:07+00:00",
     "reason": "Steven ausdrücklich: aktuellen Arbeitsloop geordnet unterbrechen, keine neuen Pakete/Reviews; Projekt bleibt offen.",
@@ -854,12 +859,12 @@
   },
   "empiricalPlanV2": {
     "path": "docs/empirie-plan-v2.entwurf.md",
-    "status": "ACCEPTED_BOUNDED_PENDING_VERIFIED_TAG_AND_GATE",
+    "status": "FROZEN_EXECUTED_PRIVATE_PENDING_RESULT_REVIEW",
     "count": 43,
     "measurement": "separate original categorical responses, no global score or factor",
     "topics": 8,
-    "accessStatus": "no actual v2 answer import",
-    "remaining": "Commit accepted plan, create and verify new analyseplan-v2 tag; then exact freeze/gate and5 separate private historical runs. Two fresh result roles before export.",
+    "accessStatus": "selected43 DE categorical responses processed in5studies; no party semantic interpretation",
+    "remaining": "Two fresh result judgments and authentic per-study allowed-question decisions before numeric export.",
     "localInputFilesAvailable": true,
     "contract": "data/analysevertrag.v2.entwurf.json",
     "contractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
@@ -880,7 +885,14 @@
         "sha256": "77d6e6b0fb24b760d4368e5a0ef0db3cb8d5952d166c2d32ef0fcf773d35fe5a",
         "decision": "ACCEPTED_BOUNDED"
       }
-    ]
+    ],
+    "frozenCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+    "planTag": "analyseplan-v2",
+    "publicTags": "reports/loop/public-tags-v2.json",
+    "gate": "reports/loop/gates/pre-empirical-v2.json",
+    "freeze": "reports/loop/packages/EMPIRICAL-V2-001/v1/freeze.json",
+    "runReceipts": "reports/loop/policy-v2-run-receipts.json",
+    "accessDisclosure": "reports/loop/policy-v2-access-disclosure.json"
   },
   "sourceCatalogV2": {
     "path": "data/politikprofil-v2.fragen.entwurf.json",
@@ -892,19 +904,22 @@
   "groupPreparationV2": {
     "status": "NEW_SEPARATE_V21_CONTRACT_IN_PREPARATION_NO_PARTY_HEADERS",
     "report": "reports/loop/authors/BREADTH-GROUP-SOURCES-005-WIP.md",
-    "knownNewMargins": false,
+    "knownNewMargins": true,
     "limits": "Printed/file-code differences and alias binding need explicit limits. No party headers/answers opened; v2 gate does not permit them.",
-    "bindingReport": "reports/loop/authors/BREADTH-GROUP-BINDING-006-WIP.md"
+    "bindingReport": "reports/loop/authors/BREADTH-GROUP-BINDING-006-WIP.md",
+    "knownNewMarginsScope": "Root produced fixed v2 candidates, sources author informed of access times only, no numbers; no party semantic access"
   },
   "prototypeV2": {
-    "status": "PUI_R1_R2_R3_CORRECTED_TARGETED_ROUND1_RUNNING",
+    "status": "PUI_R1_R2_R3_CLOSED_BOUNDED_ROUND1",
     "path": "prototypes/policy-v2/index.html",
     "author": "reports/loop/authors/POLICY-UI-DESIGN-WIP.md",
     "browserStatus": "BOUNDED_TEN_LAYOUT_AXE_CHECKS_AND_FLOW43",
     "historicalReferences": "No numbers included; not approved",
     "humanDesignRelease": "PENDING",
-    "technicalRecord": "reports/loop/policy-ui-technical-wip.json",
+    "technicalRecord": "reports/loop/policy-ui-correction-technical.json",
     "correctionManifest": "reports/loop/packages/POLICY-UI-001/v2/manifest.json",
-    "correctionManifestSha256": "b82dfe72af5e0b9182d70276138f432b2dea0ed97fa40c3acc4863dd81b2a6e8"
+    "correctionManifestSha256": "b82dfe72af5e0b9182d70276138f432b2dea0ed97fa40c3acc4863dd81b2a6e8",
+    "decision": "reports/loop/POLICY-UI-001-entscheidung.md",
+    "angularPreparation": "unrouted author running; no public test start"
   }
 }

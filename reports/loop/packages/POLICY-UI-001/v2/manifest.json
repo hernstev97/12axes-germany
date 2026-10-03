@@ -1,0 +1,52 @@
+{
+  "package": "POLICY-UI-001/v2",
+  "createdAtUtc": "2026-10-03T14:16:20.956647+00:00",
+  "originalCommit": "7b03f4c6ccc317a3968a1f9693a744c457f1f7e0",
+  "scope": "Targeted PUI-R1/R2 semantic fixes, generator-owned consistent manifest, content-column wrap, declaredESS8sampling limit. No change to43original questions/categories/states, no actual references/release.",
+  "artifacts": [
+    {
+      "path": "prototypes/policy-v2/assets/libre-baskerville-latin-wght-normal.woff2",
+      "sha256": "22219fb90e3b9bd28debd1825fe8d9a0154a0e31f8b3fa601ac1a0a5aa5e6d1b"
+    },
+    {
+      "path": "prototypes/policy-v2/assets/libre-baskerville-license.txt",
+      "sha256": "8490e863633e537100d6d18755d994ea30b0b44741876a17809d28becf45ce11"
+    },
+    {
+      "path": "prototypes/policy-v2/catalogue.js",
+      "sha256": "05f9d24c2c0ac6ca4d0532a8a22bb71070b5eca0d4317b442fa705f215a2a0cf"
+    },
+    {
+      "path": "prototypes/policy-v2/foundation.css",
+      "sha256": "97853bc6912eaa3a722b0ea3707f61aca418a77a7f69ec602aaca9a4a60dceca"
+    },
+    {
+      "path": "prototypes/policy-v2/index.html",
+      "sha256": "f1240f743ed8346b304f6f0d5f56f0999c7919ecca10e237239d514b92e07881"
+    },
+    {
+      "path": "prototypes/policy-v2/manifest.json",
+      "sha256": "a6ed88a85d4ab4682862ae5d3abca8add173decb5b22db7e8ce61939c7963366"
+    },
+    {
+      "path": "prototypes/policy-v2/prepare.py",
+      "sha256": "7bed0f5fe468c7daa2e8962a3174fbcd674012a035aa54dc01f9af0036795d73"
+    },
+    {
+      "path": "prototypes/policy-v2/prototype.css",
+      "sha256": "0fca11378c7f5ebceb7129e65e780d849b465daf8a2a46924d9582cc9f4a9cd0"
+    },
+    {
+      "path": "prototypes/policy-v2/prototype.js",
+      "sha256": "7fc49855b514cf358b70274868536b4c6dc67424f8d77ea13af11dde26a59def"
+    },
+    {
+      "path": "prototypes/policy-v2/source-binding.json",
+      "sha256": "3bef7c33b813127cdb361d1bc9d37ef7b2b9e70ba82435bc9840ad4afac42eea"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    }
+  ]
+}

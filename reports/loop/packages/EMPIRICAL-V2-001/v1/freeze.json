@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "package": "EMPIRICAL-V2-001/v1",
+  "frozenCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+  "planTag": "analyseplan-v2",
+  "reviewedManifestSha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c",
+  "contractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+}

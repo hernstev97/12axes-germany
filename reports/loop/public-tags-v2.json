@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "verifiedAtUtc": "2026-10-03T14:24:39.574596+00:00",
+  "tag": "analyseplan-v2",
+  "frozenCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+  "remoteRefs": {
+    "refs/heads/research/life-93-night-20261003": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+    "refs/tags/analyseplan-v1": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+    "refs/tags/analyseplan-v2": "106f383c15c52a5b2ecafc2323d923ef46b10c36",
+    "refs/tags/analyseplan-v2^{}": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+    "refs/tags/erwartungsmodell-v1": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+    "refs/tags/modell-v1": "c9aadb4b610bac0c90ed8ceb409949b0222863df"
+  },
+  "historicalTags": {
+    "analyseplan-v1": {
+      "target": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+      "kind": "lightweight"
+    },
+    "erwartungsmodell-v1": {
+      "target": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+      "kind": "lightweight"
+    },
+    "modell-v1": {
+      "target": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
+      "kind": "lightweight"
+    }
+  },
+  "scope": "new plan before selected v2 data; old v1 tags unchanged; no empirical results"
+}

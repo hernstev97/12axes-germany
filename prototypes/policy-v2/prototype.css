@@ -8,6 +8,13 @@
 [hidden] {
   display: none !important;
 }
+.page-title,
+.section-title,
+.result-item h3,
+legend {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
 button,
 input,
 select {

@@ -100,3 +100,7 @@ Die lokale43-Fragen-Gestaltung liegt als eigener Vorschlag unter prototypes/poli
 ## Planannahme v2, 2026-10-03T14:23:20.016753+00:00
 
 Beide gezielten Rollen akzeptieren die22-Pin-Revision2 begrenzt; EV2-SRC-F01 geschlossen Korrekturrunde1. [Rootentscheidung](../reports/loop/EMPIRICAL-V2-001-entscheidung.md) bindet tatsächliche Berichtsbytes und Grenzen. Keine neuen v2-Header/Antworten/Marginals vor dieser Entscheidung. Neuer versionierter Tag und positiv gebundener Freeze/Gate sind die nächsten Voraussetzungen, danach fünf getrennte historische Auswertungen. Zwei frische Ergebnisrollen vor Aussagen/Export. Keine Claude-/menschliche/Releaseabnahme aus dieser Planannahme.
+
+## Tatsächliche historische v2-Läufe, 3. Oktober 2026
+
+Die neue Planfassung `6702f187` und `analyseplan-v2` sind remote verifiziert. Danach liefen fünf getrennte private Studienanalysen von 14:25:06 bis 14:25:18 UTC mit Exitcode 0. Die [Zugriffsoffenlegung](../reports/loop/policy-v2-access-disclosure.json) nennt semantischen und lexikalischen Umfang. Zwei frische Ergebnisrollen prüfen identische sichere Aggregate vor dem Zahlenexport. Keine Parteifeldinterpretation oder neue Bestätigungsbehauptung. UI-Befunde PUI-R1–R3 sind begrenzt geschlossen; Angular-Vorbereitung und Gruppenvertrag laufen unabhängig weiter.

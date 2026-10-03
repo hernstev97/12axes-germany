@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "package": "EMPIRICAL-V2-001/v1",
+  "decision": "ALLOW_HISTORICAL_DESCRIPTIVE_V2",
+  "reviewedManifestSha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c",
+  "frozenCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+  "planTag": "analyseplan-v2",
+  "reviewers": [
+    {
+      "role": "methods_reproducibility",
+      "reportPath": "reports/loop/reviews/EMPIRICAL-V2-001-methods-round1.md",
+      "sha256": "8d1d2989ac6780d3a78bc2e987dbdfcdebf3b0ccb4c2610c43897ca6cfb798ef",
+      "decision": "ACCEPTED_BOUNDED"
+    },
+    {
+      "role": "sources_constructs_fairness",
+      "reportPath": "reports/loop/reviews/EMPIRICAL-V2-001-sources-round1.md",
+      "sha256": "77d6e6b0fb24b760d4368e5a0ef0db3cb8d5952d166c2d32ef0fcf773d35fe5a",
+      "decision": "ACCEPTED_BOUNDED"
+    }
+  ]
+}

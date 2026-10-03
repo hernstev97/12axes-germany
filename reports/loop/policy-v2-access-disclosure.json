@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-10-03T14:32:25.405967+00:00",
+  "firstSelectedDataAccessUtc": "2026-10-03T14:25:06.762321+00:00",
+  "finishedSelectedDataAccessUtc": "2026-10-03T14:25:18.739475+00:00",
+  "scope": "five historical DE categorical studies after verified analyseplan-v2, no confirmation claim",
+  "planTag": "analyseplan-v2",
+  "frozenCommit": "6702f187394aed903f04c03cf48b46708c2ff4e4",
+  "accessReceipts": "reports/loop/policy-v2-run-receipts.json",
+  "selectedSources": [
+    {
+      "studyId": "ESS5e03_6",
+      "edition": "3.6",
+      "round": 5,
+      "questionIds": [
+        "ESS5e03_6:bplcdc",
+        "ESS5e03_6:dpcstrb",
+        "ESS5e03_6:hrshsnta",
+        "ESS5e03_6:dbctvrd",
+        "ESS5e03_6:lwstrob",
+        "ESS5e03_6:rgbrklw"
+      ]
+    },
+    {
+      "studyId": "ESS8e02_3",
+      "edition": "2.3",
+      "round": 8,
+      "questionIds": [
+        "ESS8e02_3:gvslvol",
+        "ESS8e02_3:gvslvue",
+        "ESS8e02_3:gvcldcr",
+        "ESS8e02_3:bnlwinc",
+        "ESS8e02_3:eduunmp",
+        "ESS8e02_3:inctxff",
+        "ESS8e02_3:sbsrnen",
+        "ESS8e02_3:banhhap",
+        "ESS8e02_3:imsclbn",
+        "ESS8e02_3:wrkprbf"
+      ]
+    },
+    {
+      "studyId": "ESS9e03_3",
+      "edition": "3.3",
+      "round": 9,
+      "questionIds": [
+        "ESS9e03_3:sofrdst",
+        "ESS9e03_3:sofrwrk",
+        "ESS9e03_3:sofrpr",
+        "ESS9e03_3:sofrprv"
+      ]
+    },
+    {
+      "studyId": "ESS10SCe03_2",
+      "edition": "3.2",
+      "round": 10,
+      "questionIds": [
+        "ESS10SCe03_2:fairelc",
+        "ESS10SCe03_2:dfprtal",
+        "ESS10SCe03_2:medcrgv",
+        "ESS10SCe03_2:rghmgpr",
+        "ESS10SCe03_2:votedir",
+        "ESS10SCe03_2:cttresa",
+        "ESS10SCe03_2:gptpelc",
+        "ESS10SCe03_2:gvctzpv",
+        "ESS10SCe03_2:grdfinc",
+        "ESS10SCe03_2:viepol",
+        "ESS10SCe03_2:wpestop",
+        "ESS10SCe03_2:scchpldm",
+        "ESS10SCe03_2:vteurmmb",
+        "ESS10SCe03_2:keydec",
+        "ESS10SCe03_2:imsmetn",
+        "ESS10SCe03_2:imdfetn",
+        "ESS10SCe03_2:impcntr"
+      ]
+    },
+    {
+      "studyId": "ESS11e04_2",
+      "edition": "4.2",
+      "round": 11,
+      "questionIds": [
+        "ESS11e04_2:gincdif",
+        "ESS11e04_2:euftf",
+        "ESS11e04_2:eqparep",
+        "ESS11e04_2:eqparlv",
+        "ESS11e04_2:freinsw",
+        "ESS11e04_2:fineqpy"
+      ]
+    }
+  ],
+  "semanticAccess": "DE country/round/edition, selected43 responses, required weights and internal identifiers for duplicate protection; IDs never exported or printed",
+  "lexicalAccess": "whole CSV text/headers/cells decoded by fixed parser; unselected values traversed as uninterpreted strings, no absolute OS blindness",
+  "partyComparisonSemanticAccess": false,
+  "oldV1FlowHeld": true,
+  "priorExposure": "historical ESS11 v1 A/B nine-item results known; six selected v2 ESS11 variables in same study secondary",
+  "changesAfterThisAccess": "None to frozen22-pin selection/codes/criteria/software at record time. New report generator/CLI/UI work separate; v2.1 grouping needs separate plan before party interpretation.",
+  "resultStatus": "private candidates only, two fresh result roles running; no numeric public export"
+}

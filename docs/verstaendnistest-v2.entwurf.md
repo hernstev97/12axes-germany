@@ -1,0 +1,83 @@
+# Verständnistest v2: Einzelangaben und historische Referenzen
+
+ENTWURF 0.1, 2026-10-03. Noch keine UI-Fassung ausgewählt, keine Personen befragt und keine Durchführung oder Veröffentlichung freigegeben. Dieser Plan ersetzt für v2 die Fragen und den Bewertungsschlüssel des [historischen Entwurfs](verstaendnistest.entwurf.md); dessen Datei bleibt unverändert.
+
+## Zweck und Grenze
+
+Fünf reale Personen sollen erklären, was die später ausgewählte Darstellung aussagt. Geprüft werden getrennte Antworten in Originalkategorien und gegebenenfalls freigegebene historische Referenzen zu einzelnen Fragen. Themen ordnen Angaben; daraus entstehen weder gemeinsame latente Dimensionen noch Gesamtpunkte, Perzentile oder Parteiübereinstimmungen. Auch eine nummerierte Originalantwort ist kein berechneter Profilwert.
+
+Die Runde ist eine kleine qualitative Prüfung auf konkrete Missverständnisse und Benachteiligungen. Sie untersucht weder die Güte eines Messmodells noch die Repräsentativität der Referenzen. Fünf Personen erlauben keine Schätzung einer allgemeinen Verständlichkeitsquote. Das Projekt ist weder validiert noch wissenschaftlich geprüft und kann keine Neutralität garantieren.
+
+## Vor der Durchführung festzulegen
+
+Steven wählt und billigt die konkrete UI-Fassung und entscheidet über die Durchführung. Vor der ersten Person werden deren Bytehash oder unveränderliche Versionskennung, alle sichtbaren Erläuterungen, Quellenbindungen, verwendeten Beispielzustände und dieser Fragen-/Schlüsselstand protokolliert. Dazu gehören Gerätebreite, bereitgestellte Lesefassung und gegebenenfalls tatsächlich freigegebene öffentliche Referenzexporte samt ihren Pins. Dieser Entwurf legt kein Layout, keine Farbe und keine neue Bedienform fest.
+
+Für eine vollständige Runde müssen die ausgewählte Fassung und das feste Vorführskript die in F1–F4 genannten Fälle zugänglich machen: eine gewählte Kategorie, verschiedene Themen und Studien, unberührte und übersprungene Fragen, eine fehlende Referenz sowie mindestens eine tatsächlich separat freigegebene historische Referenz mit Quelle, Erhebungszeit und Nenner. Referenzzahlen stammen ausschließlich aus dem gebundenen Export. Die Testleitung erhält keine privaten Kandidaten oder Rohdaten. Ohne freigegebene Referenz bleibt F2 eine offene Voraussetzung; eine Prüfung bloßer Erläuterungen darf nicht als Prüfung des Verständnisses angezeigter Anteile berichtet werden.
+
+Ein **technisches Beispiel ohne empirische Zahlen** ist zulässig: In der fest gebundenen Katalogreihenfolge erhält die erste Frage ihre erste gültige Originalkategorie, die zweite ihre letzte, die dritte den Zustand „übersprungen“ und die vierte „noch nicht beantwortet“; übrige Fragen bleiben unberührt. Das ist eine deterministische Zustandsvorführung ohne politische Personenbeschreibung. Sie enthält keine erfundenen Anteile, Nenner, Unsicherheiten oder Bevölkerungsergebnisse. Die Beispielmarkierungen sind keine Antworten der Teilnehmenden. Der technische Teil allein erfüllt die Voraussetzung für F2 nicht.
+
+Die Testleitung zeigt ausschließlich die menschlich gebilligte Fassung. Originaleinleitungen, Situationen, Antwortanker und Quellen dürfen dabei nicht für das Beispiel verkürzt oder umgedeutet werden. Insbesondere behandelt der ESS10-Block B1–B12 Wichtigkeit für die Demokratie im Allgemeinen; die offene B25-Nachlauf-/Webadministrationsfrage wird durch diesen Verständnistest nicht gelöst.
+
+## Ablauf und Datensparsamkeit
+
+Steven wählt fünf reale Personen möglichst mit unterschiedlichen Lese- und digitalen Erfahrungen; dies ist keine Zufallsstichprobe. Politische Ansichten, eigene Antworten, Parteipräferenzen, Namen und Kontaktdaten werden nicht abgefragt oder im Testprotokoll geführt. Die Personen erläutern nur das vorgegebene technische Beispiel und die Bedeutung der gebundenen Darstellung. KI-simulierte Personen oder Antworten zählen nicht.
+
+Alle erhalten dieselbe Version und dasselbe Vorführskript. Die sechs Fragen werden einzeln in der folgenden Reihenfolge gestellt, ohne den Bewertungsschlüssel zu zeigen. Die Darstellung bleibt zum Nachlesen verfügbar; geprüft wird Verständnis, kein Gedächtnis. Vor Abschluss der sechs Erklärungen erfolgen keine Korrekturen oder Hinweise auf erwartete Antworten. Eine neutrale Nachfrage lautet höchstens: „Auf welche Stelle bezieht sich diese Erklärung?“ Nachfrage und anschließende Ergänzung werden getrennt von der ersten Erklärung vermerkt.
+
+Vorher ist das Einverständnis zum anonymen Festhalten von Verständniserklärungen und Textkritik einzuholen; Teilnahme und einzelne Antworten sind freiwillig. Für ein später autorisiertes Protokoll genügen T1–T5 ohne Zuordnungsliste: Fragenkennung, anonymisierte Erklärung, bezeichnete UI-Stelle, Nachfrage, Bewertung und Begründung. Keine Audio-/Videoaufzeichnung, politischen Antwortvektoren oder Gerätekennungen. Unaufgefordert genannte Namen oder eigene politische Positionen werden nicht übernommen; eine Auslassung wird als solche vermerkt. Über eine öffentliche Wiedergabe von Zitaten entscheidet Steven gesondert nach Einverständnis und Prüfung. In diesem Arbeitsschritt wird nichts erhoben.
+
+## Sechs feste Fragen und Bewertungsschlüssel
+
+Die Formulierungen F1–F6 und die Kernpunkte werden vor der Durchführung festgeschrieben. Die Personen müssen keine Fachbegriffe wiederholen: Eine in eigenen Worten gleichbedeutende Erklärung genügt. Politische Zustimmung ist kein Bewertungskriterium.
+
+| ID | Wortlaut der Frage | Kernpunkte / Bewertungsschlüssel |
+| --- | --- | --- |
+| F1 | Was bedeutet die markierte Antwort bei einer einzelnen Frage? Was bedeutet ihre Zuordnung zu einem Themenbereich? | Eine konkret gewählte Originalkategorie zu dieser Frage. Das Thema ordnet Einzelangaben; es berechnet keinen gemeinsamen Wert und keine politische Gesamteigenschaft. Geordnete Antwortmöglichkeiten können ihre ursprüngliche Bedeutung behalten; ihre Codes sind keine zusätzlichen Punkte oder gemeinsame Skala. |
+| F2 | Was beschreibt eine angezeigte historische Prozentreferenz? Auf welche Frage, Erhebung und Antworten bezieht sie sich? | Ein gewichteter Kategorieanteil für genau diese Frage in der genannten historischen Studie/Edition und Erhebungszeit. Der Nenner ist die Summe der Primärgewichte der für diese Frage gültigen Antworten aus der getrennten deutschen Studienbasis, nicht die Zahl aller Fälle und nicht die heutige Bevölkerung. Fehlende bzw. tatsächlich nicht gestellte Angaben sind getrennt ausgewiesen und gehören nicht in diesen gültigen Nenner. Die persönliche Markierung ist kein Bestandteil dieser historischen Berechnung. |
+| F3 | Wie unterscheiden sich „noch nicht beantwortet“, „übersprungen“, eine gewählte Kategorie und „keine historische Referenz verfügbar“? Welche Rolle haben fehlende Angaben in der historischen Erhebung? | Unberührt und ausdrücklich übersprungen sind verschiedene lokale Zustände ohne politische Kategorie. Nur eine gewählte gültige Kategorie ist eine eigene Antwort; auch „Weder noch“ muss ausdrücklich gewählt werden. Eine fehlende Referenz löscht oder ersetzt keine eigene Antwort und bedeutet keinen Anteil von null. Historische Missing-Gründe sind getrennte Angaben, keine mittlere Position; eine unklassifizierte leere Exportzelle belegt weder Verweigerung noch Unwissen. Ein lokaler Skip ist kein nachgewiesener historischer Nicht-gestellt-Code. |
+| F4 | Was lässt sich aus der Darstellung über die heutige Bevölkerung, eine politische Gesamtposition, eine passende Partei und die Sicherheit der Aussagen ableiten? | Keine aktuelle Bevölkerungsnorm, gemeinsame latente Position oder Partei-Gesamtübereinstimmung. Die Studien bleiben getrennte historische Einzelreferenzen. Es werden keine Standardfehler oder Intervalle und keine persönliche Unsicherheit ausgewiesen; ihre Abwesenheit bedeutet nicht Fehlerfreiheit. Gewichtsvergleiche beschreiben Unterschiede zwischen Gewichtungen, keine persönliche Sicherheit und kein Konfidenzintervall. |
+| F5 | Welche Stelle ist schwer verständlich? Welche Bedeutung bleibt dort unklar? Falls keine Stelle auffällt: Welche Erklärung war besonders hilfreich? | Gesondertes Unklarheitsfeedback: genaue Text-/Darstellungsstelle und offene Bedeutung, gegebenenfalls „keine Auffälligkeit“. Keine Richtig/falsch- oder Gesamtpunktwertung. Eine hilfreiche Stelle ist kein Nachweis, dass alle Inhalte verstanden wurden. |
+| F6 | Welche Formulierung, Auswahl oder Anordnung könnte eine politische Position benachteiligen? An welcher Stelle und wodurch? Falls keine Stelle auffällt, kann das so angegeben werden. | Gesondertes Fairnessfeedback: konkrete Stelle und behauptete Benachteiligung festhalten, ohne die eigene politische Position zu erfragen. Zustimmung zu einer Politik ist kein Fairnessbeleg, Ablehnung kein Fehler. „Keine Auffälligkeit“ beweist keine Neutralität. Auch Auswahl, fehlende Gegenstände, Antwortmöglichkeiten und Quellenkontexte können begründet kritisiert werden. |
+
+Für F1–F4 wird je Erklärung genau ein Urteil mit Textbeleg vergeben:
+
+- **Zutreffend:** alle Kernpunkte dieser Frage sinngemäß erklärt, keine widersprechende Schlussfolgerung.
+- **Teilweise zutreffend:** mindestens ein Kernpunkt erklärt, andere fehlen; keine konkrete falsche Schlussfolgerung. Ein ausgelassener Punkt wird nicht als verstanden ergänzt.
+- **Konkrete Fehlinterpretation:** eine benennbare falsche Schlussfolgerung, auch wenn andere Teile zutreffen.
+- **Nicht einordenbar:** keine eindeutige Bedeutungszuschreibung; offen lassen und den Grund nennen.
+- **Fehlende Antwort:** keine Erklärung; zählt weder als Verständnis noch als Missverständnis.
+
+Keine Summe und kein persönlicher „Bestanden“-Status. Für konkrete Fehlinterpretationen dienen folgende vorab feste Kennungen; mehrere können in einer Erklärung vorkommen:
+
+| Kennung | Falsche Schlussfolgerung |
+| --- | --- |
+| M1 | Kategoriencodes sind berechnete Punkte oder messen eine gemeinsame latente Eigenschaft. |
+| M2 | Themen oder Antworten aus verschiedenen Studien ergeben einen gemeinsamen Gesamtwert. |
+| H1 | Ein historischer Anteil beschreibt die heutige Bevölkerung Deutschlands. |
+| H2 | Der Kategorienanteil verwendet alle Studienfälle einschließlich Missing als gültigen Nenner oder ist unabhängig von der genannten Frage/Studie. |
+| S1 | Unberührt, übersprungen oder historisch fehlend wird automatisch als mittlere politische Kategorie beantwortet. |
+| S2 | Eine fehlende Referenz bedeutet einen Anteil von null oder löscht/ersetzt die eigene Kategorie. |
+| S3 | Ein lokaler Skip beweist einen historischen Nicht-gestellt-Status; eine unklassifizierte Leerstelle beweist einen bestimmten Missing-Grund. |
+| U1 | Fehlende Unsicherheitsangaben bedeuten keine Unsicherheit bzw. Fehlerfreiheit. |
+| U2 | Historische Anteile oder Gewichtssensitivitäten liefern ein persönliches Unsicherheits-/Konfidenzintervall. |
+| P1 | Einzelangaben ergeben eine Partei-Gesamtübereinstimmung, Parteirangliste oder Wahlempfehlung. |
+
+Eine andersartige konkrete Fehlinterpretation wird wörtlich begründet als „sonstige“ festgehalten. Sie wird nicht nachträglich in eine bestehende Kennung umgedeutet. Eine neue Kennung verlangt eine neue Schlüsselversion; die erste Runde bleibt nach dem ursprünglichen Stand dokumentiert.
+
+## Auswertung und Überarbeitung
+
+Bei **mindestens zwei der fünf Personen mit derselben konkret belegten Fehlinterpretation** ist die betreffende Erklärung oder Darstellung zu überarbeiten und erneut zu prüfen. Gezählt werden Personen, nicht wiederholte Aussagen oder bloße Kennungsähnlichkeit: Zwei unter H2 geführte Aussagen müssen dieselbe falsche Nenner-/Quellenannahme enthalten. Die Schwelle sucht wiederkehrende Probleme in einer kleinen Runde; sie ist keine Schätzung eines Bevölkerungsanteils, kein Signifikanztest und keine wissenschaftliche Gütegrenze.
+
+Bereits **ein schweres Einzelmissverständnis** verlangt eine dokumentierte Klärung vor einer Freigabeentscheidung. Als schwer gelten Schlussfolgerungen, die eine persönliche Angabe ersetzen, eine historische Referenz zur heutigen Norm erklären, politische Gesamt-/Parteizuschreibungen erzeugen oder nicht ausgewiesene Sicherheit behaupten. Stelle, Folge und Überarbeitungsentscheidung sind einzeln zu begründen; die Mehrheitsmeinung der übrigen vier hebt den Befund nicht auf.
+
+Teilweise, nicht einordenbare und fehlende Erklärungen bleiben sichtbar. Der Nenner der Runde bleibt fünf; er wird nicht durch Weglassen solcher Fälle verkleinert. Unklare Codierungen brauchen eine getrennte begründete Zweitbeurteilung und bleiben bis dahin offen. Rückmeldungen aus F5 und F6 werden jeweils einzeln auf Wortlaut, Quellenkontext, gleichberechtigte Antwortmöglichkeiten und mögliche Gegenpositionen geprüft; sie fließen nicht in einen Verständniswert ein. Ein einzelner begründeter Fairnesshinweis kann eine Änderung erfordern. Häufigkeit, Mehrheit oder KI-Übereinstimmung beweisen keine Fairness.
+
+Der spätere Befund lautet entweder „Überarbeitung erforderlich“, „Befund offen“ oder „In dieser Runde kein konkreter Überarbeitungsauslöser beobachtet“, jeweils mit Frage, Stelle und begrenzter Begründung. Keiner dieser Befunde ist eine Produkt-, Empirie- oder Releasefreigabe. Inhaltlich relevante Änderungen an Fragen, Quellen-/Nennererklärungen, Missing oder Ergebnisdarstellung verlangen einen neuen Versionsstand und eine erneute Runde mit fünf realen Personen. Bei wiederholter Teilnahme sind Lern- und Erinnerungseffekte ausdrücklich zu begrenzen; alte Erklärungen werden nicht umbewertet.
+
+## Bindungen und offene Voraussetzungen
+
+Grundlagen sind [Handbuch](handbuch.md), [aktueller Projektauftrag](project.md), [historischer Verständnistest](verstaendnistest.entwurf.md), [öffentlicher v2-Katalog](../data/politikprofil-v2.fragen.entwurf.json) und [reiner Exportvertrag](../pipeline/policy_export_v2.py). Der Katalog ist ein Quellenentwurf mit 43 Angaben aus fünf Studien; das ist keine Item-/Administrationsfreigabe. Ältere Handbuchbegriffe zu Dimensionen und Wählergruppen beschreiben hier keine v2-Ergebnisform. Für diesen Plan gilt der aktuelle Auftrag zu getrennten Kategorien und historischen Einzelreferenzen; das Handbuch wurde nicht verändert.
+
+Der Exportvertrag trennt freigegebene historische Referenzen von `no_valid_answers`, `withheld_base_or_cell_count` und `result_review_withheld`, jeweils ohne Referenzzahlen. Seine Anzeigegrenzen von 100 gültigen Fällen und fünf Fällen je positiv besetzter Kategorie sind projektspezifische Heuristiken, keine Präzisions- oder Anonymitätsgarantie. Strukturell nicht gestellte Angaben bleiben begrifflich getrennt; die derzeitigen 43 Kataloglisten enthalten keine entsprechenden Codes. Die gültige Originaloption „Nicht stimmberechtigt“ bei `vteurmmb` wird deshalb nicht zum Skip umgedeutet. Quellenzeit, Modus und Zielpopulation müssen bei der konkreten Fassung erhalten bleiben; der katalogisierte ESS8-Ausschluss von München darf nicht als vollständige Deutschlandabdeckung dargestellt werden.
+
+Offen bleiben die menschlich gebilligte UI und Vorführung, quellspezifische Nutzung/Administration einschließlich B25, tatsächlich geprüfte Referenzexporte und ihre Root-Pins, Einverständnis und Auswahl der fünf Personen, Durchführung, begründete Auswertung sowie jede spätere Änderungs- oder Freigabeentscheidung. Dieser Entwurf erfüllt keine dieser Voraussetzungen durch seine Existenz.
