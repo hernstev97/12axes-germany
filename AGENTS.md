@@ -1,6 +1,6 @@
 # Arbeit in diesem Repository
 
-Lies vor Änderungen `docs/project.md` und bei UI-Arbeit `docs/design.md`.
+Lies vor Änderungen `docs/project.md`. Vor jeder Arbeit an Oberfläche, Bedienung, Bildern oder sichtbaren Texten `docs/handbuch.md` vollständig lesen und befolgen; es regelt Gestaltung, Texte, Bilder, Barrierefreiheit und den Prüfablauf.
 
 Der aktuelle Auftrag ist die Repository-Grundlage: Angular-Webapp, Startseite, Gestaltung, Skills CLI und CodeRabbit-Konfiguration. Steven möchte die wissenschaftlichen Prüfregeln anschließend gesondert schärfen. Claude vorerst nicht einrichten. Die ältere Claude-Setup-Vorgabe in LIFE-93 ist durch diese Entscheidung vom 2026-10-03 für den aktuellen Arbeitsschritt überholt.
 

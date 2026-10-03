@@ -19,7 +19,22 @@ reviews:
         responsive Darstellung, Laufzeitfehler und unnötige externe Anfragen.
         Die Website ist derzeit eine Grundlage ohne fertigen Test.
         Beanstande erfundene Ergebnisse oder Aussagen, die einen bereits
-        validierten Politiktest suggerieren. Beachte docs/design.md und docs/project.md.
+        validierten Politiktest suggerieren. Gestaltung, Texte, Bilder und
+        Barrierefreiheit müssen docs/handbuch.md folgen; beanstande Abweichungen
+        mit Kapitelangabe. Beanstande Bundesadler, Bundesdienstflagge,
+        Flaggenstab oder andere Zeichen, die ein amtliches Angebot nahelegen.
+        Beachte docs/project.md.
+    - path: 'web/src/app/art/**'
+      instructions: >-
+        Jedes Gemälde braucht einen Abschnitt in docs/assets.md mit
+        Commons-Link, Kennzeichnung, SHA-256, Provenienz und Verarbeitung.
+        Titel, Datierung und Sammlung müssen mit docs/assets.md übereinstimmen.
+        Prüfe die Auswahlregeln aus docs/handbuch.md, Kapitel 6.
+    - path: 'docs/**'
+      instructions: >-
+        Prüfe Übereinstimmung mit Code und Quellen. Beanstande erfundene
+        Güteaussagen und Formulierungen, die CI, KI-Reviews oder
+        Teilagenten-Übereinstimmung als methodische Validierung darstellen.
   auto_review:
     enabled: true
     auto_incremental_review: true

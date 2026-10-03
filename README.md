@@ -1,6 +1,6 @@
-# Politikprofil für Deutschland
+# 12 Axes Deutschland
 
-Angular-Webapp für einen erklärenden Politiktest mit einem mehrdimensionalen Einstellungsprofil und Vergleichen zu realen Wählergruppen in Deutschland. „Politikprofil“ ist ein Arbeitsname.
+Angular-Webapp für einen erklärenden Politiktest mit einem mehrdimensionalen Einstellungsprofil und Vergleichen zu Wählergruppen in Deutschland. „12 Axes Deutschland“ ist ein vorläufiger Name; die Zahl zwölf legt keine Dimensionen fest.
 
 Aktuell steht die technische und gestalterische Grundlage. Es gibt eine Startseite und eine Seite zum Projektstand. Fragen, Auswertung, wissenschaftliche Prüfregeln und Vergleichsdaten sind noch nicht umgesetzt.
 
@@ -19,23 +19,24 @@ Die App läuft auf <http://127.0.0.1:4311>.
 pnpm check
 ```
 
-Dieser Befehl prüft Formatierung und Typen, führt die UI-Tests aus und erstellt den Produktionsbuild. Die GitHub Action heißt `CI` und führt dieselben technischen Prüfungen aus. Wissenschaftliche Freigaben sind darin noch nicht enthalten.
+Dieser Befehl prüft Formatierung, die mechanischen Regeln des Handbuchs (`scripts/check-handbuch.mjs`) und die Typen, führt die UI-Tests aus und erstellt den Produktionsbuild. Die GitHub Action heißt `CI` und führt dieselben technischen Prüfungen aus. Wissenschaftliche Freigaben sind darin noch nicht enthalten.
 
 Der Stand der lokalen und visuellen Prüfung ist in [docs/validation.md](docs/validation.md) festgehalten.
 
 ## Aufbau
 
-| Pfad              | Inhalt                                                              |
-| ----------------- | ------------------------------------------------------------------- |
-| `web/`            | Angular 22, Standalone Components, zoneless, SCSS, Vitest           |
-| `docs/`           | Projektentscheidungen, Gestaltung, Asset-Nachweise und KI-Protokoll |
-| `data/raw/`       | Lokale Rohdaten, von Git ausgeschlossen                             |
-| `pipeline/`       | Platz für die spätere Analyse                                       |
-| `model/`          | Platz für versionierte Modelle                                      |
-| `reports/`        | Platz für spätere Analyse- und Prüfberichte                         |
-| `.agents/skills/` | Alle Skills aus dem persönlichen Skills-Repository                  |
+| Pfad              | Inhalt                                                            |
+| ----------------- | ----------------------------------------------------------------- |
+| `web/`            | Angular 22, Standalone Components, zoneless, SCSS, Vitest         |
+| `docs/`           | Projektentscheidungen, Handbuch, Asset-Nachweise und KI-Protokoll |
+| `scripts/`        | Handbuch-Prüfung und Bildverarbeitung                             |
+| `data/raw/`       | Lokale Rohdaten, von Git ausgeschlossen                           |
+| `pipeline/`       | Platz für die spätere Analyse                                     |
+| `model/`          | Platz für versionierte Modelle                                    |
+| `reports/`        | Platz für spätere Analyse- und Prüfberichte                       |
+| `.agents/skills/` | Alle Skills aus dem persönlichen Skills-Repository                |
 
-Schriften und Kunstwerk werden lokal ausgeliefert. Die App bindet keine Analyse-, Tracking- oder KI-Dienste ein und speichert derzeit keine Antworten.
+Schrift und Gemälde werden lokal ausgeliefert. Die App bindet keine Analyse-, Tracking- oder KI-Dienste ein und speichert derzeit keine Antworten.
 
 ## Skills und Review
 
@@ -47,4 +48,4 @@ SKILLS_REPO=/pfad/zum/skills-repository skills sync
 
 `.coderabbit.yaml` bereitet deutschsprachige technische PR-Reviews vor. CodeRabbit muss Zugriff auf dieses Repository haben; eine lokale Konfigurationsdatei belegt noch keinen erfolgreichen Review-Lauf. Claude wird vorerst nicht eingerichtet. Die methodischen Prüfregeln und die unabhängigen KI-Erstbewertungen werden im nächsten Schritt festgelegt.
 
-Auftrag: [LIFE-93](https://linear.app/kiumu-app/issue/LIFE-93/politiktest-fur-deutschland-wissenschaftlich-fundieren-und-transparent). Aktuelle Entscheidungen stehen in [docs/project.md](docs/project.md), die Designrichtung in [docs/design.md](docs/design.md).
+Auftrag: [LIFE-93](https://linear.app/kiumu-app/issue/LIFE-93/politiktest-fur-deutschland-wissenschaftlich-fundieren-und-transparent). Aktuelle Entscheidungen stehen in [docs/project.md](docs/project.md). Gestaltung, Texte und Bilder regelt das [Handbuch](docs/handbuch.md).

@@ -1,0 +1,116 @@
+:host {
+  display: block;
+  min-width: 0;
+}
+/* Quadratisch, damit Hoch- und Querformate eine ähnliche Fläche bekommen (MAT_RATIO). */
+.mat {
+  position: relative;
+  aspect-ratio: 1;
+  background: var(--mat);
+}
+/* 7 % Rand auf jeder Seite ergibt MAT_INNER = 0,86. */
+.slide {
+  position: absolute;
+  inset: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide,
+.caption {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 1s ease,
+    visibility 0s linear 1s;
+}
+.slide.is-current,
+.caption.is-current {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 1s ease,
+    visibility 0s;
+}
+img {
+  width: auto;
+  height: 100%;
+  box-shadow: var(--shadow-art);
+}
+img.is-wide {
+  width: 100%;
+  height: auto;
+}
+.bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+.captions {
+  display: grid;
+  min-width: 0;
+}
+.caption {
+  display: flex;
+  grid-area: 1 / 1;
+  flex-direction: column;
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--size-small);
+  line-height: 1.55;
+}
+.artist {
+  color: var(--ink);
+}
+.controls {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+button {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--ink);
+  background: transparent;
+  cursor: pointer;
+}
+button:hover {
+  border-color: var(--ink);
+}
+svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.stroke {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+}
+.counter {
+  min-width: 3.2rem;
+  color: var(--muted);
+  font-size: var(--size-small);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.credit-link {
+  display: inline-block;
+  padding-block: 0.3rem;
+  color: var(--muted);
+  font-size: var(--size-small);
+}
+@media (max-width: 480px) {
+  .bar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

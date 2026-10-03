@@ -22,9 +22,9 @@ describe('Seitennavigation', () => {
     projectLink.focus();
     projectLink.click();
     await fixture.whenStable();
-    expect(document.title).toBe('Projektstand · Politikprofil');
+    expect(document.title).toBe('Projektstand · 12 Axes Deutschland');
     expect(document.activeElement?.id).toBe('main-content');
-    expect(fixture.nativeElement.querySelector('h1')?.textContent).toContain('Ein offener Blick');
+    expect(fixture.nativeElement.querySelector('h1')?.textContent).toContain('Projektstand');
     expect(projectLink.getAttribute('aria-current')).toBe('page');
   });
 
@@ -33,11 +33,11 @@ describe('Seitennavigation', () => {
     await fixture.whenStable();
     await TestBed.inject(Router).navigateByUrl('/unbekannt');
     await fixture.whenStable();
-    expect(document.title).toBe('Seite nicht gefunden · Politikprofil');
+    expect(document.title).toBe('Seite nicht gefunden · 12 Axes Deutschland');
     const returnLink = fixture.nativeElement.querySelector('main a') as HTMLAnchorElement;
     returnLink.click();
     await fixture.whenStable();
     expect(TestBed.inject(Router).url).toBe('/');
-    expect(document.title).toBe('Politikprofil · Deutschland');
+    expect(document.title).toBe('12 Axes Deutschland');
   });
 });
