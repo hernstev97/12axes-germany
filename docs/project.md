@@ -4,7 +4,7 @@ Stand: 2026-10-03.
 
 ## Produkt
 
-Das Vorbild für das erklärende Testerlebnis ist [12 Axes](https://12axes.vercel.app/) mit seinem [öffentlichen Repository](https://github.com/RomanCypherpunk/12axes). Dieses Projekt konzentriert sich vollständig auf Deutschland. Die erste Version soll politische Einstellungen erklären und mit der Bevölkerung sowie Wählergruppen zum Zeitpunkt einer Befragung vergleichen. Ideologie-, Länder- und Personen-Matches gehören nicht zum Umfang.
+Das Vorbild für das erklärende Testerlebnis ist [12 Axes](https://12axes.vercel.app/) mit seinem [öffentlichen Repository](https://github.com/RomanCypherpunk/12axes). Dieses Projekt konzentriert sich vollständig auf Deutschland. Die erste Version soll ein thematisch breites Politikprofil tragen und politische Einstellungen erklären. Vergleiche mit Befragten und historischen Wählergruppen benötigen jeweils eine geeignete, getrennt nachvollziehbare Referenz. Ideologie-, Länder- und Personen-Matches gehören nicht zum Umfang.
 
 [LIFE-93](https://linear.app/kiumu-app/issue/LIFE-93/politiktest-fur-deutschland-wissenschaftlich-fundieren-und-transparent) beschreibt die vorgesehene wissenschaftliche Grundlage. Zahl und Struktur der Dimensionen sind offen. Die Zahl zwölf im Repository-Namen ist keine methodische Vorgabe.
 
@@ -24,9 +24,19 @@ Alle elf Skills aus dem persönlichen Skills-Repository sind über die Skills CL
 
 Steven richtet Claude vorerst nicht ein und möchte ausschließlich CodeRabbit nutzen. Am 2026-10-03 hat er bestätigt: Die methodische Freigabe bleibt offen; auch ein zusätzlicher Review-Auftrag an eine andere Modellfamilie wird vorerst nicht vorbereitet. CodeRabbit kann technische und inhaltliche Findings liefern. Die in LIFE-93 geforderten getrennten methodischen Erstbewertungen werden dadurch nicht ersetzt. Die ältere Claude-Setup-Vorgabe wird in diesem Arbeitsschritt nicht ausgeführt.
 
-Steven hat inzwischen einen ESS-Account und die CSV-Datei lokal bereitgestellt. Dateiname, interne globale Metadaten und Header passen zu ESS11 Ausgabe 4.2. Die Datei liegt im ausgeschlossenen Rohdatenordner; ihre Prüfsumme ist erfasst. Noch keine Antwortdaten analysiert. Downloadbedingungen und vollständiger Import werden gesondert dokumentiert. Der [Dateieingangsbericht](../reports/phasen/00-dateieingang-2026-10-03.md) nennt Umfang und Grenzen der technischen Prüfung.
+Steven hat inzwischen einen ESS-Account und die CSV-Datei lokal bereitgestellt. Dateiname, interne globale Metadaten und Header passen zu ESS11 Ausgabe 4.2. Die Datei liegt im ausgeschlossenen Rohdatenordner; ihre Prüfsumme ist erfasst. Beim damaligen Dateieingang wurden noch keine Antwortdaten analysiert. Downloadbedingungen und vollständiger Import werden gesondert dokumentiert. Der [Dateieingangsbericht](../reports/phasen/00-dateieingang-2026-10-03.md) nennt Umfang und Grenzen der technischen Prüfung.
 
-## Jetzt vorhanden
+## Aktueller Produktauftrag
+
+Steven hat die erforderliche Breite im [Nachtrag vom3.Oktober2026](auftrag-life-93-breite-2026-10-03.md) ausdrücklich präzisiert. Wirtschaft/Verteilung und Demokratie/politischeAutorität müssen untersucht werden; daneben weitere unterschiedliche Sachbereiche substanziell erschließen. Die enge historische Teilmodulfassung erfüllt dieses Hauptproduktziel nicht. Fragenbestände/Instrumente aus GLES, weiteren ESS-Runden und gegebenenfallsISSP mit ihren eigenen Referenzen prüfen. Themen sind keine automatisch beschlossenen Dimensionen; begründete Einzelpräferenzen und formative Ansätze sind neben latenten Dimensionen möglich.
+
+Aktuell gilt der [Erweiterungsplanv2](erweiterungsplan-v2.entwurf.md) als ergebnisblinder Quellen-/Auswahlentwurf ohne neue Datenfreigabe. Die alte Analysefolge ist angehalten. Historische Forschung, Verträge und Tags bleiben erhalten; frühere Dateneinsicht wird vom Koordinator getrennt dokumentiert. KeineFertigstellung allein aus dem engen Teilmodul. Claude kontrolliert später auf StevensVeranlassung; konkrete Design-/Verständnis-/Releasefreigaben bleiben offen.
+
+## Historischer Repository-Aufbau
+
+Die folgenden Abschnitte bewahren den frühen Aufbau-/Auftragsstand. Sie sind keine aktuellen Behauptungen zum Forschungsfortschritt; maßgeblich sind der Breitennachtrag und der versionierte neue Plan.
+
+### Damals vorhanden
 
 - Startseite und Seite zum Projektstand, einschließlich Bild- und Schriftnachweisen. Die Startseite zeigt eine wechselnde Auswahl von Gemälden.
 - Lokaler Entwicklungsserver, Produktionsbuild und technische Prüfungen.

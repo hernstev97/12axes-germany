@@ -1,0 +1,35 @@
+{
+  "atUtc": "2026-10-03T12:07:51.712264+00:00",
+  "pnpmCheck034": {
+    "exitCode": 0,
+    "log": "outputs/loop/resume-checkpoint-034.log"
+  },
+  "ownStoppedAgents": ["ordinal_support_author", "later_access_author", "confirm_export_review"],
+  "allOwnChildSessionsStopped": true,
+  "protectedDataStatus": "B read once before steering; FULL/C/group/norm interpretation not executed",
+  "publicationLimits": "Old B exporter NICHT_BESTANDEN CP01–03; no actual B/public norms published; broad product goal unresolved",
+  "preservedTagTrees": {
+    "analyseplan-v1": {
+      "docs/empirie-plan-v1.entwurf.md": "8c0eb638dc58612922ea50e2b50018ed9e8a14109822a0b3da682f8be1840a28",
+      "data/analysevertrag.v1.entwurf.json": "c21cea472e9832f254b7e03a5625ae375b935c8f004d6d8ce8251c3b549d18a1",
+      "pipeline/ordinal/develop-config.R": "44a74f0e59645d047f2bdc4508cc0058d0dd80ffb4a67a8963ee9e84f0f429b0"
+    },
+    "erwartungsmodell-v1": {
+      "data/item-core-v1.json": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e",
+      "reports/loop/authors/ESS-CONSTRUCTS-resume-proposal.md": "a5d22c7f12f93ccbce41af99e86bc7021a6c04d3f98cd05afde4bc82c3ce9cb6"
+    },
+    "modell-v1": {
+      "data/modell-v1.json": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
+      "reports/phasen/01-a-entwicklung.json": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e"
+    }
+  },
+  "pnpmCheck035": {
+    "exitCode": 0,
+    "log": "outputs/loop/resume-checkpoint-035.log"
+  },
+  "credentialRawAndForeignCheck": {
+    "status": "PASS",
+    "ownCandidateFiles": 31,
+    "limits": "Explicit own paths; static credential patterns plus scope inspection; no claim of infallible secret detection"
+  }
+}

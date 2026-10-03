@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T11:47:03.127085+00:00",
+  "updatedAtUtc": "2026-10-03T12:06:39.013985+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2715,6 +2715,100 @@
         "sha256": "b18a3f3f9ecbe7e648a53c00f79f71a266fcc95e857fcf0bb3a8cacff535d8f6",
         "actualExport": "reports/phasen/01-a-entwicklung.json",
         "actualExportSha256": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e"
+      }
+    },
+    {
+      "id": "PB-S01",
+      "origin": "reports/loop/reviews/PRE-CONFIRMATORY-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "gering",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "Generischer 6/66-Nichtanwendbartext; numerische Kodierung unverändert korrekt",
+      "correctionState": "Vorgeschlagene ergänzende Dokumentationspräzisierung ausgeführt; ursprüngliche Forschungsbytes unverändert. Quellen-Ersturteil bleibt begrenzt positiv.",
+      "blocks": [],
+      "verification": {
+        "path": "data/item-core-v1.errata.md",
+        "sha256": "58aa512f0b8fc57caccbcf3e0a2a91974a814d608caa683ee61f44e6a4ab5836",
+        "scope": "Dokumentationskorrektur, keine zusätzliche fachliche/empirische Abnahme"
+      }
+    },
+    {
+      "id": "PB-S02",
+      "origin": "reports/loop/reviews/PRE-CONFIRMATORY-001-sources-first.md",
+      "decision": "angenommen",
+      "severity": "gering",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "Fehlgeschlagene Drei-Faktor-EFA ist keine empirische Widerlegung",
+      "correctionState": "Vorgeschlagene ergänzende Dokumentationspräzisierung ausgeführt; ursprüngliche Forschungsbytes unverändert. Quellen-Ersturteil bleibt begrenzt positiv.",
+      "blocks": [],
+      "verification": {
+        "path": "reports/phasen/01-a-praezisierungen.md",
+        "sha256": "caf777eaa9925e07b4fdce60678806ecbc16a1edf619710b959173f9964050dd",
+        "scope": "Dokumentationskorrektur, keine zusätzliche fachliche/empirische Abnahme"
+      }
+    },
+    {
+      "id": "CP-01",
+      "origin": "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "Exportvertragspin optional; attribution nach Zusatz ungeprüft, kann Lizenz verlieren/Respondentfelder übernehmen",
+      "correctionState": "Nicht korrigiert; historische Exportfunktion WIP, weiterer Echt-Export durch neuen Auftrag angehalten",
+      "blocks": ["historical automatic B/FULL aggregate export"],
+      "verification": {
+        "reportSha256": "44d3cd6c5f6c449bc5c69b56c99a147b7938759ac8569fd3c49d6d50b82596e0",
+        "actualTestExit": 1,
+        "scope": "87 technische Fälle:81 bestanden,6 legitime Formen nicht angenommen; keine echte ESS-Datei oder Exportprüfung"
+      }
+    },
+    {
+      "id": "CP-02",
+      "origin": "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "Neue ESS_CONFIRMATORY-Fehlercodes durch geerbtes A-Schema zurückgewiesen",
+      "correctionState": "Nicht korrigiert; historische Exportfunktion WIP, weiterer Echt-Export durch neuen Auftrag angehalten",
+      "blocks": ["historical automatic B/FULL aggregate export"],
+      "verification": {
+        "reportSha256": "44d3cd6c5f6c449bc5c69b56c99a147b7938759ac8569fd3c49d6d50b82596e0",
+        "actualTestExit": 1,
+        "scope": "87 technische Fälle:81 bestanden,6 legitime Formen nicht angenommen; keine echte ESS-Datei oder Exportprüfung"
+      }
+    },
+    {
+      "id": "CP-03",
+      "origin": "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "EFA mapping_failure fehlt als legitimer Statusast",
+      "correctionState": "Nicht korrigiert; historische Exportfunktion WIP, weiterer Echt-Export durch neuen Auftrag angehalten",
+      "blocks": ["historical automatic B/FULL aggregate export"],
+      "verification": {
+        "reportSha256": "44d3cd6c5f6c449bc5c69b56c99a147b7938759ac8569fd3c49d6d50b82596e0",
+        "actualTestExit": 1,
+        "scope": "87 technische Fälle:81 bestanden,6 legitime Formen nicht angenommen; keine echte ESS-Datei oder Exportprüfung"
+      }
+    },
+    {
+      "id": "PRODUCT-BREADTH-001",
+      "origin": "explicit user steering 2026-10-03",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "Neun Fragen zu zwei engen Themen erfüllen das breite Deutschland-Politikprofil nicht",
+      "blocks": ["completion as comprehensive political profile"],
+      "correctionState": "Eigenständiger v2-Quellen-/Themen-/Auswahlplan; zwei neue ergebnisblinde Autoren folgen nach Checkpoint",
+      "verification": {
+        "order": "docs/auftrag-life-93-breite-2026-10-03.md"
       }
     }
   ],

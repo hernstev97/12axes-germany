@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T11:47:03.127085+00:00",
+  "updatedAtUtc": "2026-10-03T12:06:39.013985+00:00",
   "status": "RUNNING",
-  "phase": "A abgeschlossen, Modell festgelegt; Vor-B-Prüfung vorbereiten",
+  "phase": "Breite Forschungsgrundlage v2; altes Neunermodul historisch, B/FULL-Folge angehalten",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -39,14 +39,15 @@
     "AE-01 gezielte Runde1 angenommen; tatsächlicher A-Aggregatexport und Root-Nachkontrolle abgeschlossen",
     "M2 H/ZF mit neun Items unverändert in data/modell-v1.json gebunden; öffentlicher Modelltag folgt",
     "B/FULL-Zugriffs- und Runtimeautoren fertig (17 Loader-/8 Wrapper-/52 R-Checks); echte B-Daten ungeöffnet",
-    "Normautor fertig:45 synthetische Assertions; unabhängige Prüfung/Wrapper/Empirie offen"
+    "Normautor fertig:45 synthetische Assertions; unabhängige Prüfung/Wrapper/Empirie offen",
+    "Beide frischen Vor-B-Ersturteile ACCEPTED_BOUNDED, Gate mitgehashten27/19Pins; tatsächlicher B-Import und Runtime exit0, H/ZF behalten"
   ],
   "openTasks": [
-    "modell-v1 auf gesichertem Commit erstellen/verifizieren; zwei frische Vor-B-Ersturteile",
-    "Unverändertes M2 einmalig in B prüfen; danach bedingte FULL-Anwendung",
-    "Norm-/Gruppensoftware gezielt prüfen und real anwenden, soweit Kriterien tragen",
-    "Zwei Ergebnisübergangsprüfungen; Methodenbericht und Website aus tragfähigen Ergebnissen",
-    "Claude-Schlusskontrolle, konkrete Designfreigabe, reale Verständnistests und persönliche Releasefreigabe ausstehend"
+    "Zwei frische ergebnisblinde Autoren: Daten/Instrumente und unabhängiger Themen-/Biasrahmen",
+    "Tatsächliche GLES/ESS-/gegebenenfallsISSP-Fragen, Rechte/Zugang/Empirie und politikwissenschaftlichen Themenrahmen belegen",
+    "Abdeckungsmatrix zusammenführen, Wirtschaft/Verteilung und Demokratie/Autorität ausdrücklich untersuchen; Breite bleibt Produktkriterium",
+    "Eigene versionierte v2-Auswahl-/Analyse-/Bewertungs-/Bestätigungsstrategie vor abhängiger Empirie; zwei Übergangsprüfungen",
+    "Zulässige Analysen, Methodenbericht und breite Website fertig vorbereiten; Claude-/Design-/reale Menschen-/Releasefreigaben offen"
   ],
   "dependencies": [
     {
@@ -94,7 +95,7 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "BESTANDEN pnpm check033 exit0",
+    "currentLocalTechnical": "BESTANDEN pnpm check035 exit0; scientific breadth/known-data limits unresolved",
     "currentIndependentIntegration": "NICHT_GEPRÜFT",
     "empiricalValidation": "NICHT_GEPRÜFT; exploratoryA complete, B held",
     "otherModelFamily": "NICHT_GEPRÜFT",
@@ -116,7 +117,10 @@
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
     "currentWebsiteCopy": "BESTANDEN bounded",
     "currentWebsiteBrowser": "BESTANDEN layout/axe two pages five widths; realzoom/focus-visible NICHT_GEPRÜFT",
-    "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung"
+    "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung",
+    "currentConfirmatoryTransition": "BESTANDEN_BEGRÄNZT vorB; actual B executed pending result review",
+    "currentProductBreadth": "NICHT_BESTANDEN: historical narrow module does not satisfy broad product objective",
+    "actualBHistorical": "Fixed v1 numerical criteria met before scope steering; no unexamined B for extension; not overall validity/release acceptance"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -189,7 +193,10 @@
     "reports/loop/reviews/PRE-EMPIRICAL-001-sources-errata.md",
     "reports/loop/reviews/PRE-EMPIRICAL-001-methods-round1.md",
     "reports/loop/reviews/AGGREGATE-EXPORT-001-first.md",
-    "reports/loop/reviews/AGGREGATE-EXPORT-001-round1.md"
+    "reports/loop/reviews/AGGREGATE-EXPORT-001-round1.md",
+    "reports/loop/reviews/PRE-CONFIRMATORY-001-methods-first.md",
+    "reports/loop/reviews/PRE-CONFIRMATORY-001-sources-first.md",
+    "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -199,7 +206,11 @@
     "R5-F03",
     "F-P03",
     "F-P04",
-    "SW-ENV-004"
+    "SW-ENV-004",
+    "CP-01",
+    "CP-02",
+    "CP-03",
+    "PRODUCT-BREADTH-001"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [],
@@ -414,17 +425,23 @@
       "configuration": "data/analysevertrag.v1.entwurf.json",
       "accessCode": "pipeline/empirical_access.py",
       "reviewStatus": "not reviewed; no empirical access"
+    },
+    {
+      "id": "BREADTH-RESEARCH-001",
+      "status": "RUNNING",
+      "scope": "Independent source/instrument and topic/bias development without response results",
+      "criteria": "docs/auftrag-life-93-breite-2026-10-03.md; separate v2 plan required"
     }
   ],
   "nextConcreteStep": "Read AE-01 round1; exactpins beforechecked A export, model-v1 tag, newB runtime package and2freshreviewers",
   "checkpoint": {
-    "lastLocalCommit": "git:HEAD",
-    "lastVerifiedRemoteCommit": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
-    "lastVerifiedPushAtUtc": "2026-10-03T11:24:15.197587+00:00",
+    "lastLocalCommit": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
+    "lastVerifiedRemoteCommit": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
+    "lastVerifiedPushAtUtc": "2026-10-03T11:47:54.993131+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-031.json",
+    "record": "reports/loop/push-032.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
@@ -537,7 +554,7 @@
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md",
-  "executionStatus": "RUNNING",
+  "executionStatus": "RUNNING_PUBLIC_RESEARCH_ONLY",
   "interruption": {
     "requestedAtUtc": "2026-10-03T09:02:07+00:00",
     "reason": "Steven ausdrücklich: aktuellen Arbeitsloop geordnet unterbrechen, keine neuen Pakete/Reviews; Projekt bleibt offen.",
@@ -615,6 +632,53 @@
     "selectedModel": "M2",
     "selectedScores": ["H", "ZF"],
     "BOpened": false,
-    "comparisonFieldsOpened": false
-  }
+    "comparisonFieldsOpened": false,
+    "modelTag": "reports/loop/model-tag-v1.json"
+  },
+  "currentB": {
+    "execution": "real-b-001 private",
+    "exitCode": 0,
+    "probeExitCode": 0,
+    "selectedModel": "M2",
+    "retainedScores": ["H", "ZF"],
+    "criteria": "CRITERIA_PASSED_PENDING_RESULT_REVIEW",
+    "publicExport": "noch nicht erfolgt: separate technische Exportprüfung",
+    "comparisonFieldsOpened": false,
+    "limits": "A/B komplementäre Teile derselben Erhebung; keine generelle Messvalidität/Mode-/Populationsannahme"
+  },
+  "currentAssignment": "docs/auftrag-life-93-breite-2026-10-03.md",
+  "activePlan": "docs/erweiterungsplan-v2.entwurf.md",
+  "productGoal": "Wissenschaftlich fundiertes, thematisch breites Politikprofil für Deutschland",
+  "productGoalStatus": "UNGELÖST: Neunerfassung allein erfüllt erforderliche Breite nicht",
+  "historicalAnalysisHold": {
+    "authority": "latest user instruction",
+    "record": "reports/loop/gates/research-hold-20261003.json",
+    "accessDisclosure": "reports/loop/b-access-disclosure-20261003.json",
+    "BOpened": true,
+    "BRunCompletedOnce": true,
+    "BResultPubliclyExported": false,
+    "FULLCGroupResponsesOpened": false,
+    "allTagsUnchanged": true,
+    "futureConfirmation": "No known A/B answer data relabeled as untouched confirmation"
+  },
+  "stoppedAgents": [
+    {
+      "name": "/root/ordinal_support_author",
+      "status": "STOPPED_WITH_WIP",
+      "record": "reports/loop/authors/ESS-NORM-RUNTIME-WIP-20261003.md",
+      "sessionsOrPids": []
+    },
+    {
+      "name": "/root/later_access_author",
+      "status": "STOPPED_WITH_WIP",
+      "record": "reports/loop/authors/ESS-GROUP-RUNTIME-WIP-20261003.md",
+      "sessionsOrPids": []
+    },
+    {
+      "name": "/root/confirm_export_review",
+      "status": "STOPPED_FIRST_REPORT_SAVED",
+      "record": "reports/loop/reviews/CONFIRM-PUBLICATION-001-first.md",
+      "sessionsOrPids": []
+    }
+  ]
 }

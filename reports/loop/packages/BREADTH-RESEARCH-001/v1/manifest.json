@@ -1,0 +1,23 @@
+{
+  "schema": "life93-breadth-author-package-1",
+  "version": "v1",
+  "sourceScope": "public instrument/theory research only; no response results",
+  "pins": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "3add120093de26769ff7d2d96cf0e36b85eec6fc444c169f5e9cc0199095efca"
+    },
+    {
+      "path": "docs/project.md",
+      "sha256": "6f76ae9ee74d3352fcd6015f035eb92e58afa08fac596a10668980a346484142"
+    },
+    {
+      "path": "docs/erweiterungsplan-v2.entwurf.md",
+      "sha256": "03342d08148bbd319d36c765fbb08959976269e0cad4967e8d14384fbd9ab1ad"
+    },
+    {
+      "path": "reports/loop/packages/BREADTH-RESEARCH-001/v1/author-requirements.md",
+      "sha256": "942eb5e9372bb070487d40868c3aac5880547b4ba7cfe857a24dcd48eef0fbb4"
+    }
+  ]
+}

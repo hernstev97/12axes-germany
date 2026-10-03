@@ -1,0 +1,56 @@
+{
+  "schema": "life93-historical-access-disclosure-1",
+  "recordedAtUtc": "2026-10-03T12:04:48.969601+00:00",
+  "scopeChange": "Broad German political profile; nine-item version is a historical partial module",
+  "BOpened": true,
+  "BImportTimeEvidence": {
+    "publicGateCreatedAtUtc": "2026-10-03T11:57:46.541577+00:00",
+    "BFileLastModificationAtUtc": "2026-10-03T11:57:51.493186+00:00",
+    "privateInputReceiptLastModificationAtUtc": "2026-10-03T11:57:51.493429+00:00",
+    "limits": "Filesystem timestamps bound file creation/completion, not a byte-level first-read trace; first protected interpretation occurred after positive gate and before B.csv completion."
+  },
+  "BRun": {
+    "label": "real-b-001",
+    "startedAtUtc": "2026-10-03T11:57:55.280421+00:00",
+    "endedAtUtc": "2026-10-03T11:58:06.642434+00:00",
+    "exitCode": 0,
+    "runtimeProbeExitCode": 0,
+    "selectedSourceFields": [
+      "freehms",
+      "hmsfmlsh",
+      "hmsacld",
+      "imsmetn",
+      "imdfetn",
+      "impcntr",
+      "imbgeco",
+      "imueclt",
+      "imwbcnt"
+    ],
+    "designMetadata": "Country/version/date/stratum/PSU/anweight only; B conditional arm weights; no person identifier selected",
+    "extent": {
+      "BDesignCases": 1189,
+      "BCompleteNineResponses": 1102,
+      "BPSUs": 253,
+      "BStrata": 23
+    }
+  },
+  "knownResults": {
+    "A": "Unchanged planned route selected M2 with H/ZF; public A file/model tag preserved",
+    "B": "Same fixed M2/H-ZF met its pre-fixed numerical criteria; private aggregate not published or result/release-approved",
+    "priorOtherKnowledge": "Full design metadata and public question/source inventories; no protected vote/LR/group response fields interpreted"
+  },
+  "furtherProtectedAccess": {
+    "FULLExecuted": false,
+    "CResponsesInterpreted": false,
+    "groupResponseFieldsInterpreted": false,
+    "normApplicationExecuted": false
+  },
+  "activeAuthorization": "HALTED for historical B/FULL/norm/group continuation by latest user order",
+  "preservation": {
+    "analyseplan-v1": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+    "erwartungsmodell-v1": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+    "modell-v1": "c9aadb4b610bac0c90ed8ceb409949b0222863df"
+  },
+  "futureUse": "Known A/B answers are development/history for extensions, never unexamined confirmatory data. Other response fields were not selected, but the ESS11 A/B people are not a new independent study. A v2 confirmation strategy must state item- and sample-level prior knowledge before access.",
+  "limits": "No private hashes/rows/keys/answer vectors exposed; chronology relies on actual local receipts and timestamps, not immutable third-party logging."
+}

@@ -1,0 +1,11 @@
+{
+  "verifiedAtUtc": "2026-10-03T11:47:57.115095+00:00",
+  "tag": "modell-v1",
+  "commit": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
+  "remoteCommit": "c9aadb4b610bac0c90ed8ceb409949b0222863df",
+  "tagTreePins": {
+    "data/modell-v1.json": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
+    "reports/phasen/01-a-entwicklung.json": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e"
+  },
+  "scope": "Nach A, vor B; keine Bestätigung"
+}

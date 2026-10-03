@@ -1,0 +1,20 @@
+{
+  "schema": "life93-research-authorization-hold-1",
+  "atUtc": "2026-10-03T12:04:48.969601+00:00",
+  "authority": "Latest explicit user instruction: thematic breadth expansion",
+  "decision": "HALTED",
+  "affectedStages": [
+    "historical B re-execution",
+    "FULL",
+    "norms",
+    "groups",
+    "historical profile release"
+  ],
+  "historicalGateRecordsPreserved": true,
+  "allowedNow": [
+    "Preserve/read actual access timestamps and known aggregate extent",
+    "Public source/instrument/theme research for separately versioned v2",
+    "Review/fix broad research prerequisites before new dependent analyses"
+  ],
+  "enforcementLimit": "Coordinator authorization state, not an operating-system read lock; old receipts remain immutable historical evidence and confer no current authority."
+}

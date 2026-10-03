@@ -72,3 +72,7 @@ Plan-/Erwartungstags und positive Rollen-/Codepins vor Antwortimport verifiziert
 ## A-Abschluss und festes Modell
 
 2026-10-03: AE-01 gezielt unabhängig geschlossen; kontrollierter öffentlicher A-Bericht und unveränderte M2-H/ZF-Festlegung fertig. Zahlen und Grenzen stehen einmalig im [A-Entscheid](../reports/phasen/01-a-entscheidung.md). B/FULL-Software vorbereitet, Normen ungeprüfte Autorenfassung. Modelltag und zwei frische Rollenprüfungen bleiben vor B erforderlich. Keine B-/Vergleichsantworten geöffnet.
+
+## Breitenpriorität und historischer Datenstand
+
+2026-10-03 ab12:02UTC dokumentiert: Stevens [Breitennachtrag](auftrag-life-93-breite-2026-10-03.md) verlangt ein wesentlich breiteres Hauptprodukt; Neunerfassung bleibt Teilmodul. B war bereits einmal ausgewertet, Zeitpunkt/Umfang im [Zugriffsbericht](../reports/loop/b-access-disclosure-20261003.json). Alte Folgefreigaben angehalten, Schreibagents sichern WIP. Plan-/Modell-/Tags/Erstberichte unverändert. Nächste Arbeit: zwei frische, ergebnisblinde Quellenautoren für Daten/Instrumente und unabhängigen Themen-/Biasrahmen, dann versionierter v2-Plan. Keine Umbenennung bekannter B-Antworten zu unberührter Bestätigung. Breite bleibt verbindliches Produktkriterium; keine Fertigmeldung allein für das enge Teilmodul.

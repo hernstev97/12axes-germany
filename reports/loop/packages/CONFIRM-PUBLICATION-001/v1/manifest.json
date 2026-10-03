@@ -1,0 +1,44 @@
+{
+  "schema": "life93-limited-review-package-1",
+  "package": "CONFIRM-PUBLICATION-001",
+  "version": "v1",
+  "scope": "Strict new B/FULL publication guard; no real data or research rerun",
+  "pins": [
+    {
+      "path": "pipeline/confirm_publication.py",
+      "sha256": "9593155b55b2abd91775175b0eeebd5b49e04e8dccd6c057891e47ff147980df"
+    },
+    {
+      "path": "pipeline/public_schema.py",
+      "sha256": "41093aed8699db89846b6cb0b962335c450ea3a21e96f906e2d6dbfd8288b1bc"
+    },
+    {
+      "path": "data/a-aggregate-public.schema.json",
+      "sha256": "fe7d71fa47fa96b00e45cd60c8a97d4f623b351f91066d6120dd9d006cde3fd2"
+    },
+    {
+      "path": "pipeline/confirm_runtime.py",
+      "sha256": "9399e29e4eda5a4faf2f46dc9f3f2fd6a3c74f2ceefa572c2caeab5b94844ba5"
+    },
+    {
+      "path": "pipeline/stage_access.py",
+      "sha256": "50774e5190c8c6e82b27f77223b6a572b261ff71088e02841a703557ec06c02f"
+    },
+    {
+      "path": "pipeline/r_runtime.py",
+      "sha256": "40168392ac69960d2b532f721aaaca4abc82317f8304f7145056537d8a901fce"
+    },
+    {
+      "path": "pipeline/ordinal/confirm.R",
+      "sha256": "e7c8d04d8010c456c5db6d9902353a37786737b201cf9a160d082f40a84bddad"
+    },
+    {
+      "path": "reports/loop/aggregate-publication-contract.json",
+      "sha256": "5697f76078548ee5620aeddbb8c2d6741a90b3032e9d8610e5137f0cf58486a2"
+    },
+    {
+      "path": "outputs/loop/root-confirm-publication-002/checks.json",
+      "sha256": "c53bd83b9f4a934d90061bb5aaacd17b0dd0eac02dd7f2ca9b61ceadb79eb607"
+    }
+  ]
+}
