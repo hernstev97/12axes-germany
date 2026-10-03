@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T15:56:38.829012+00:00",
+  "updatedAtUtc": "2026-10-03T16:05:12.481817+00:00",
   "status": "RUNNING",
   "phase": "Breite v2: historische Einzel- und Gruppenreferenzen begrenzt übernommen; Anzeige, Humanbindung und Kontrolldossier in Vorbereitung",
   "coordinator": "/root",
@@ -315,7 +315,8 @@
     "reports/loop/reviews/PUBLIC-RESEARCH-STATUS-V2-001-first.md",
     "reports/loop/reviews/PUBLIC-RESEARCH-STATUS-V2-001-round1.md",
     "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1.md",
-    "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1-decision.json"
+    "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1-decision.json",
+    "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -334,14 +335,19 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "id": "/root/breadth_topic_frame",
+      "id": "/root/angular_policy_draft",
       "status": "RUNNING",
-      "scope": "Reproduction/control dossier author only"
+      "scope": "Optional group UI/authentication author"
     },
     {
-      "id": "T3 life93-results-v2-001-sources-first-20261003 ordinal3",
+      "id": "/root/breadth_data_instruments",
       "status": "RUNNING",
-      "scope": "Targeted SCF-P01/P02 same-source follow-up only"
+      "scope": "Public group report author"
+    },
+    {
+      "id": "/root/final_dossier_human_review",
+      "status": "RUNNING",
+      "scope": "Fresh ordinary40-pin dossier and human addendum review"
     }
   ],
   "workPackages": [
@@ -600,20 +606,20 @@
   ],
   "nextConcreteStep": "Prepare authenticated optional historical group display/report from actual public63 pairs; update public group status in same display package. Complete reproducibility/control dossier and targeted single-report attribution review. No Raw reruns or new selection.",
   "checkpoint": {
-    "lastLocalCommit": "fbd4ab658879574c225913667cf595e23b8a938b",
-    "lastVerifiedRemoteCommit": "fbd4ab658879574c225913667cf595e23b8a938b",
-    "lastVerifiedPushAtUtc": "2026-10-03T15:42:29.742737+00:00",
+    "lastLocalCommit": "d885a54e46aa9c1675f053b81ed503b0d79e3bdd",
+    "lastVerifiedRemoteCommit": "d885a54e46aa9c1675f053b81ed503b0d79e3bdd",
+    "lastVerifiedPushAtUtc": "2026-10-03T15:57:50.084691+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-047.json",
+    "record": "reports/loop/push-048.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Group correction and actual63-pair reviewed public export; public status round1 accepted at its pinned pre-export time. New group display pending. Single-report minor corrections under targeted source review."
+    "pendingPayload": "SCF-P01/P02 targeted closed and originals saved; dossier/humanaddendum/public status new group publication WIP under proper review. Group UI/report authors active; no Raw changes."
   },
   "scientificStatus": "Five private historical categorical candidates executed14:25:06–14:25:18UTC after verified new plan tag; no public numeric export. Two fresh same-family result roles running. No party semantic access.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -706,7 +712,12 @@
       "exitCode": 1,
       "scope": "wrong assumed privateArtifacts key; no manifest output before corrected privateAggregates schema"
     },
-    "reports/loop/public-status-v2-browser-technical.json"
+    "reports/loop/public-status-v2-browser-technical.json",
+    {
+      "id": "public-catalogue-schema-probe",
+      "exitCode": 1,
+      "scope": "read-only KeyError questions; actual catalogue.items read next, no writes before exception"
+    }
   ],
   "independentPreparations": [
     {
@@ -1123,15 +1134,18 @@
     "PRS-V2-001": 1
   },
   "thematicReportV2": {
-    "status": "SCF_P01_P02_FIXED_TARGETED_SOURCE_REVIEW_PENDING",
+    "status": "ACCEPTED_BOUNDED_P01_P02_CLOSED_ROUND1",
     "path": "reports/phasen/02-politikprofil-v2-methoden-und-ergebnisse.md",
     "manifest": "reports/loop/packages/RESULTS-V2-PRESENTATION-001/v1/manifest.json",
     "manifestSha256": "3ac825a3546b1c83fc2adf9101e648eff3c16d145ae3ec040a7ee7717a052889",
     "scope": "43 original contexts, eight themes,42 published references/cttresa null; public-only exact reproduction passed, not new raw estimation",
     "rootDecision": "reports/loop/RESULTS-V2-PRESENTATION-001-entscheidung.md",
-    "openPresentationFindings": ["SCF-P01", "SCF-P02"],
+    "openPresentationFindings": [],
     "targetedManifest": "reports/loop/packages/RESULTS-V2-PRESENTATION-001/v2/manifest.json",
-    "targetedManifestSha256": "744edecd3e4072b34e4c7b2408b77236dc40525e0fdb693e4f682cc1d3fc973e"
+    "targetedManifestSha256": "744edecd3e4072b34e4c7b2408b77236dc40525e0fdb693e4f682cc1d3fc973e",
+    "targetedReview": "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md",
+    "targetedReviewSha256": "45c884808b6574b3021c844a7900460a58cabb6bed745178baf0841ec08e10a4",
+    "targetedRootDecision": "reports/loop/RESULTS-V2-PRESENTATION-001-p01-p02-entscheidung.md"
   },
   "publicStatusV2": {
     "status": "ACCEPTED_BOUNDED_ROUND1_V3_BEFORE_NEW_GROUP_EXPORT",
@@ -1139,5 +1153,14 @@
     "manifest": "reports/loop/packages/PUBLIC-RESEARCH-STATUS-V2-001/v3/manifest.json",
     "browser": "reports/loop/public-status-v2-browser-technical.json",
     "pending": "New group publication status update in group display package"
+  },
+  "finalPreparationV2": {
+    "dossierStatus": "AUTHOR_COMPLETE_ORDINARY_FIRST_PENDING",
+    "docs": ["docs/reproduktion-life93-v2.md", "docs/claude-schlusskontrolle-v2.md"],
+    "humanAddendum": "docs/verstaendnistest-v2.1.entwurf.md",
+    "humanExampleIds": "reports/loop/packages/COMPREHENSION-V21-001/v1/show-script-ids.json",
+    "humanUIBinding": "PENDING_FINAL_GROUP_COMPONENT",
+    "humanRunsPerformed": 0,
+    "ordinaryManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v1/manifest.json"
   }
 }

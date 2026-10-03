@@ -124,3 +124,7 @@ Beide getrennten Gruppen-Erstberichte gesichert. Reale Aggregatrechnung begrenzt
 ## Gezielte Korrekturen und Gruppenexport, 2026-10-03T15:56:38.829012+00:00
 
 GR21-M-001 durch gleiche Methodenrolle Runde1 geschlossen; Root tatsächliche Bytes und ausdrückliche Paar-Schnittmenge geprüft.63historische Gruppenreferenzen in drei getrennten Studien als Forschungsartefakte übernommen, ursprüngliche Erstberichte und Sperrentscheidung erhalten. Öffentlicher Statusbefund PRS-V2-001 gezielt geschlossen; erster Handbuchcheckfehler bleibt dokumentiert, Check055 und tatsächliche Browserchecks bestanden. Anzeige, Humanbindung und abschließendes Kontrolldossier folgen. Keine neuen Schwellen, Auswahlen, Rawreruns oder Gesamtaudits für Protokolländerungen.
+
+## Themenbericht und Abschlussvorbereitung, 2026-10-03T16:05:12.481817+00:00
+
+SCF-P01/P02 gezielt durch dieselbe Quellenrolle begrenzt geschlossen. Alle65 aktuellen Pins von Root geprüft, Originale bleiben erhalten. Reproduktions-/Claudecheckliste und Humanzusatz0.2 als eigenes40Pin-Dokumentationspaket frisch geprüft; derzeit laufend, keine Abnahme behauptet. Konkrete technische Vorführ-IDs ohne simulierte Personen oder erfundene historische Zahlen vorbereitet, finale UIbindung und Menschen offen. Gruppenanzeige und öffentlicher Gruppenbericht in separater Autorenarbeit.

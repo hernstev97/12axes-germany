@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T15:56:38.829012+00:00",
+  "updatedAtUtc": "2026-10-03T15:59:49.124217+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -3201,9 +3201,13 @@
       "severity": "darstellung",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "FIXED_PENDING_TARGETED_SOURCE_REVIEW",
+      "status": "CLOSED_BOUNDED_ROUND1",
       "reason": "Markdown displays apostroph entity text in English API missing labels; German source labels/meaning preserved",
-      "blocks": []
+      "blocks": [],
+      "verification": {
+        "report": "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md",
+        "rootDecision": "reports/loop/RESULTS-V2-PRESENTATION-001-p01-p02-entscheidung.md"
+      }
     },
     {
       "id": "SCF-P02",
@@ -3211,9 +3215,13 @@
       "severity": "Quellenmetadaten",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "FIXED_PENDING_TARGETED_SOURCE_REVIEW",
+      "status": "CLOSED_BOUNDED_ROUND1",
       "reason": "README ESS11 documentation DOI diverges from pinned primary citation requirement; actual report/contract/catalogue already match primary; resolver validity not asserted",
-      "blocks": ["README single ESS11 documentation attribution claim"]
+      "blocks": ["README single ESS11 documentation attribution claim"],
+      "verification": {
+        "report": "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md",
+        "rootDecision": "reports/loop/RESULTS-V2-PRESENTATION-001-p01-p02-entscheidung.md"
+      }
     },
     {
       "id": "GR21-M-001",

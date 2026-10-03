@@ -1,0 +1,50 @@
+# LIFE-93 v2: Vorbereitung von Stevens Claude-Schlusskontrolle
+
+Fassung 0.1, Stand `2026-10-03T15:56:20.289903+00:00`. Checkliste als Dokumentations-WIP. Kein ausgeführter Claude-Auftrag, keine Verbindung, Anmeldung, Freigabe oder vorweggenommenes Urteil. Steven veranlasst die spätere Kontrolle. Root ergänzt neue Gruppenanzeige- und Abnahmestände mit Datum und Belegen.
+
+## Kontrollgegenstand und Ausgangslage
+
+Maßgeblich sind [Breitenauftrag](auftrag-life-93-breite-2026-10-03.md), [v2-Empirieplan](empirie-plan-v2.entwurf.md), [Analysevertrag](../data/analysevertrag.v2.entwurf.json), [Fragenkatalog](../data/politikprofil-v2.fragen.entwurf.json), [Themenmatrix](abdeckung-v2.md) und [Messformen](messformen-v2.entwurf.md). 43 Originalfragen werden unter acht Rubriken geordnet; 42 historische Einzelreferenzen sind begrenzt veröffentlicht, cttresa bleibt null. Rubriken sind keine empirischen Dimensionen und keine Gesamtscores.
+
+Seit der [Rootentscheidung vom 3. Oktober 2026, 15:54:40 UTC](../reports/loop/policy-group-v21-export-decisions.json) liegen außerdem drei öffentliche Gruppenexporte mit 63 ausdrücklich zugelassenen Frage-Gruppen-Paaren vor. Die vollständigen Gruppenbestände bleiben erhalten, alle anderen Referenzen null. Das erlaubt keine fertige Gruppenanzeige, aktuelle Parteienposition oder Partei-Gesamtübereinstimmung. Die konkrete Gruppen-Webdarstellung und ihre menschliche Verständnisprüfung sind weiterhin offen.
+
+Für die Kontrolle einen tatsächlich gesicherten Versionsstand der öffentlichen Dateien und der gewünschten UI bestimmen. Keine privaten Antworten, Namen, Rohdaten, Personenkennungen, Authdaten oder privaten Kandidaten in einen Claude-Kontext übernehmen. Ein öffentliches Prüfdossier ist keine Erlaubnis zum Rohdatenzugriff. Falls ein Kontrollziel ohne private Daten nicht überprüfbar ist, diese Grenze im späteren Urteil nennen.
+
+## Belege und Reproduktion
+
+- Stimmen tatsächlich gelesene Datei-/Manifestbytes mit den gebundenen SHA256 überein? [Reproduktionsanleitung](reproduktion-life93-v2.md), [v2-Freeze](../reports/loop/packages/EMPIRICAL-V2-001/v1/freeze.json), [v2.1-Freeze](../reports/loop/packages/GROUP-V21-001/v1/freeze.json), [Einzelreceipts](../reports/loop/policy-v2-run-receipts.json) und [Gruppenreceipts](../reports/loop/group-v21-run-receipts.json) trennen Planfestschreibung, tatsächliche Bibliotheksläufe und spätere Exporte.
+- Ist die Grenze der Reproduktion korrekt beschrieben? Ein positiver Fresh-checkout-CLI-Lauf wurde bisher nicht durchgeführt. Hilfeausgabe, synthetische Tests, frühere Bibliotheksläufe und Reproduktion einer öffentlichen Darstellung sind verschiedene Nachweise.
+- Binden [Einzelentscheidung](../reports/loop/policy-v2-export-decisions.json) und [Gruppenentscheidung](../reports/loop/policy-group-v21-export-decisions.json) tatsächlich die benutzten Exporte und expliziten IDs beziehungsweise Paare? Ein formaler Statusstring beweist keine wissenschaftliche Annahme. Root hat die tatsächlichen öffentlichen und privaten Pins geprüft; die Kontrolle darf diese dokumentierte Prüfung nicht als eigene unabhängige Rohreproduktion ausgeben.
+- Bleibt die gezielte Gruppenkorrektur nachvollziehbar? GR21-M-001 ist laut Root nach der Methodenround1 geschlossen. Das unveränderte ursprüngliche Quellenurteil wurde begrenzt weitergenutzt. Alte Erstberichte, Kandidaten, Kriterien und Auswahl wurden nicht nachträglich in eine neue Erstprüfung umbenannt. Die Bindungen stehen im [Ergebnismanifest v2](../reports/loop/packages/GROUP-RESULTS-V21-001/v2/manifest.json) und im Exportentscheid.
+
+## Rechen- und Interpretationsgrenzen
+
+- Bleiben alle Originalkategorien und ihre Labels, Druck-/Exportcodes und Zeitbezüge erhalten? Pro Frage gilt der pspwght-Anteil unter gültigen Antworten, mit eigenem Nenner. Keine Mittelwertimputation, Polung oder ordinalen Punkte. Ungewichtete und dweight-Angaben sind Sensitivitäten; anweight bleibt Diagnose.
+- Werden Missing, leere Exportzellen und Nichtgestellt-Fälle getrennt beschrieben? `export_blank_unclassified` ist kein geratenes „weiß nicht“. Nullreferenzen erhalten keine Anteile oder kleinen Zellstatistiken. Eine verfügbare unbeobachtete Kategorie darf dagegen einen Nullanteil haben. Die festen 100/5-Grenzen sind keine wissenschaftlich nachgewiesene Präzision oder Anonymität.
+- Stimmen die Scopes der Gewichtsdiagnostik? Bei Einzelreferenzen bezieht sich das anweight/pspwght-Verhältnis auf alle deutschen Studienfälle. Beim Gruppenweg gehört es auf alle eligible Gruppeneinheiten derselben Studie, auch bei später fehlender Frageantwort. Keine Begrenzung auf nur gültige Frageantworten als Studiendiagnose ausgeben.
+- Bleiben historische Zweitstimmengruppen konditionale Befragungsgruppen? Erinnerte Teilnahme und damals berichtete Zweitstimme sind keine aktuellen Parteipositionen. Fehlende/inkonsistente Wahlantworten, Nichtberechtigung und Other brauchen ihre ursprünglichen Grenzen. Keine Gruppen löschen, umetikettieren, zusammenpoolen oder zu einer „nächsten Partei“ verrechnen.
+- Gibt es irgendwo einen unbelegten Genauigkeitsanspruch? Die erste v2/v2.1-Fassung zeigt keine SE, CI oder persönliche Messunsicherheit. Ein fehlender SE ist nicht null. Aggregatquotienten erlauben keine eigenständige Rückgewinnung individueller Gewichte oder ihrer Ratioextrema. ESS8s München-Auslassung, Nonresponse, Modus und historische Zeit bleiben erkennbar.
+
+## Inhalt, Konstrukte und politische Fairness
+
+- Trägt die Auswahl unterschiedliche politische Gegenstände, ausdrücklich Wirtschaft/Verteilung und Demokratie/politische Autorität? [Themenmatrix](abdeckung-v2.md) und [thematischer Bericht](../reports/phasen/02-politikprofil-v2-methoden-und-ergebnisse.md) benennen konkrete Facetten und Auslassungen. Zugängliche ESS-Fragen begründen keine vollständige Politikabdeckung; GLES/ISSP bleiben eigene Ergänzungswege. Keine andere Zahl ähnlicher Fragen als Ersatz für Breite zählen.
+- Werden Zustimmung, Wichtigkeit, Zuständigkeit und nominale Wahl unterschieden? Einzelmaßnahmen erlauben begrenzte Aussagen. Literaturplausibilität und die gleiche Themenrubrik erzeugen keinen latenten Faktor oder Gesamtindex. Benennungen beschreiben den erfragten Gegenstand, keine Motive oder moralischen Eigenschaften.
+- Haben vergleichbare politische Positionen gleiche Belegstandards und faire Originalantwortmöglichkeiten? Besonders prüfen: EU-Nichtwahl-/Nichtberechtigungskategorien, Sozialleistungsbedingungen, historische Migrationsgruppenbegriffe, Elternzeit-Szenario, ausdrückliche Budget-/Steuerfolgen und die Bedeutung des historischen „heute“ bei Strafverschärfung.
+- Bleibt der Demokratiekontext vollständig? B1–B12 fragt nach Demokratie im Allgemeinen; B12/keydec bleibt Teil des Originalblocks und erhält primär EU als Rubrik. B13–B24 zur Umsetzung fehlen. B25 ist nur statisch-historisch gebunden; PAPI führt nach Antwort 1 zu B26, nach Antwort 2 zu B28. B26–B29 sind ausgelassen und der operative CAWI-Nachlauf ist nicht belegt. Keine Gleichwertigkeit der neuen Webfolge behaupten.
+- Bleibt Exposition offen? v1-A/B war bekannt; die alte Folge ist angehalten. ESS11-Zusatzfragen derselben Erhebung sind Sekundärangaben. v2-Einzelreferenzen waren vor der Gruppenanalyse bekannt. Diese Einsichten dürfen nicht als unangetastete Bestätigungsdaten erscheinen.
+- Wird der Reviewumfang korrekt benannt? Getrennte Codex-Erstrollen haben begrenzte Prüfungen ausgeführt, gehören aber derselben Modellfamilie an. Mögliche gemeinsame Fehler bleiben. Agentenübereinstimmung und technische CI/CodeRabbit beweisen weder Neutralität noch wissenschaftliche Gesamtvalidität.
+
+## Webübertragung und echte menschliche Voraussetzungen
+
+Die lokal vorbereitete Oberfläche ist ein Forschungsentwurf. Die neue Zusammenstellung verändert Reihenfolge, Modus, Publikum und teilweise den Nachlauf. Identische Originaltexte und historische Zahlen allein belegen keine Übertragbarkeit auf heutige Websitebesucher. Eine öffentliche Exportentscheidung ersetzt keine Teststart-, Gestaltung- oder Releaseentscheidung.
+
+- Für die zu prüfende UI genaue Fassung, tatsächlich benutzte Referenzen, Zeigeskript und Prüfbelege pinnen. Keine Beispielanteile oder KI-simulierten politischen Profile als empirisches Ergebnis nutzen.
+- Den [Verständnistestentwurf](verstaendnistest-v2.entwurf.md) mit fünf realen Personen durchführen. Vorher konkrete UI/Zeigeskript, Einwilligung und Bedingungen festhalten. Bisher sind keine menschlichen Durchläufe dokumentiert. Keine Namen oder privaten politischen Antwortprofile sammeln; Verständnisbefunde und Fairnessfeedback getrennt auswerten. Für Gruppenanzeigen Erinnerung an die historische Wahl und konditionale Frage-Nenner ergänzen, bevor Menschen diese Fassung prüfen.
+- Sichtbaren Tastaturfokus und echten Browserzoom von 200% tatsächlich prüfen. Bereits vorhandene Desktop-/Smartphone-Beobachtungen sind kein Ersatz dafür. Neue Gruppenansichten brauchen ihre eigenen nachvollziehbaren Bedienungs- und Verständnisbelege.
+- Stevens konkrete Designzustimmung, persönliche Releaseentscheidung und die Nutzungs-/Lizenzprüfung bleiben offen. [ESS-Daten](lizenzen.md) und Originaldokumentation haben unterschiedliche Lizenzen; Attribution, Änderungen und ShareAlike prüfen. Die Datenlizenz enthält die NC-Grenze. Keine kommerzielle Verwendung oder ESS-Billigung aus technischer Fertigstellung ableiten.
+
+## Spätere Abschlussnotiz
+
+Steven beziehungsweise Root hält nach einer tatsächlichen Claude-Kontrolle fest: geprüfte Fassung und Bytes, wirklich gelesene Belege, tatsächliche Rechen-/Bedienungsschritte, konkrete Befunde, begrenzte Aussage und offene Voraussetzungen. Nicht durchgeführte Prüfungen bleiben offen. Ein KI-Urteil ersetzt die fünf menschlichen Tests oder persönliche Design-/Releasezustimmung nicht.
+
+Aktualisierungspunkt für Root: veröffentlichte Gruppenpaare sind seit dem oben genannten Entscheid vorhanden; ihre Anzeige und menschliche Übertragung sind noch nicht abgenommen. Neue Freigaben nur mit Datum und Originalbeleg ergänzen. Diese Checkliste selbst gibt kein Urteil und startet keinen Claude-Prozess.

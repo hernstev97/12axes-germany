@@ -27,7 +27,7 @@ export class Project {
       label: 'Analyse und Erweiterung',
       value: 'Plan v2 versioniert gesichert. Fünf getrennte Einzelstudienläufe ausgeführt.',
     },
-    { label: 'Breiter Themenbericht', value: 'In gezielter Darstellungsprüfung' },
+    { label: 'Breiter Themenbericht', value: 'Als Forschungsfassung gesichert' },
     {
       label: 'Vergleichswerte',
       value: '42 historische Einzelreferenzen. Keine aktuelle Bevölkerungsnorm.',

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "status": "PREPARED_TECHNICAL_SHOW_SCRIPT_IDS_NOT_HUMAN_APPROVED",
+  "createdUtc": "2026-10-03T16:04:27.557659+00:00",
+  "basis": "Deterministic rules of docs/verstaendnistest-v2.1.entwurf.md; not a person, voter simulation, participant response or normative example",
+  "catalogueSha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4",
+  "groupContractSha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+  "localTechnicalStates": [
+    {
+      "questionId": "ESS9e03_3:sofrdst",
+      "status": "answered",
+      "originalCategoryCode": "1"
+    },
+    {
+      "questionId": "ESS9e03_3:sofrwrk",
+      "status": "answered",
+      "originalCategoryCode": "5"
+    },
+    {
+      "questionId": "ESS9e03_3:sofrpr",
+      "status": "skipped"
+    },
+    {
+      "questionId": "ESS9e03_3:sofrprv",
+      "status": "untouched"
+    }
+  ],
+  "remainingQuestions": "untouched",
+  "singleReferenceQuestionId": "ESS9e03_3:sofrdst",
+  "singleNullQuestionId": "ESS10SCe03_2:cttresa",
+  "historicalGroup": {
+    "studyId": "ESS5e03_6",
+    "groupId": "ESS5e03_6:second_vote:1",
+    "questionId": "ESS5e03_6:bplcdc"
+  },
+  "otherAndNull": {
+    "studyId": "ESS5e03_6",
+    "groupId": "ESS5e03_6:second_vote:8",
+    "questionId": "ESS5e03_6:bplcdc",
+    "resolution": "First null question while showing Other, in declared contract order"
+  },
+  "otherStudyWithSelectedGroup": {
+    "selectedStudyId": "ESS5e03_6",
+    "selectedGroupId": "ESS5e03_6:second_vote:1",
+    "questionId": "ESS9e03_3:sofrdst"
+  },
+  "humanRunsPerformed": 0,
+  "pending": [
+    "final actual UI/module/component/source hashes",
+    "actual showing controls and selected viewport",
+    "Steven approval and consent/5 real people"
+  ]
+}

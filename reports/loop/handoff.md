@@ -1,12 +1,12 @@
 # LIFE-93: Fortsetzung
 
-Stand 2026-10-03T15:57:23.368352+00:00. Root ist einziger gemeinsamer Koordinator. Worktree `/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003`, Branch `research/life-93-night-20261003`. Auftrag `docs/auftrag-life-93-breite-2026-10-03.md`. Nicht neu anfangen. Letzter verifizierter Push `fbd4ab658879574c225913667cf595e23b8a938b`, Receipt `push-047.json`; HEAD/Remote live prüfen. Receipt entsteht nach Push und wird im nächsten Checkpoint gespeichert.
+Stand 2026-10-03T15:57:23.368352+00:00. Root ist einziger gemeinsamer Koordinator. Worktree `/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003`, Branch `research/life-93-night-20261003`. Auftrag `docs/auftrag-life-93-breite-2026-10-03.md`. Nicht neu anfangen. Letzter verifizierter Push `d885a54e46aa9c1675f053b81ed503b0d79e3bdd`, Receipt `push-048.json`; HEAD/Remote live prüfen. Receipt entsteht nach Push und wird im nächsten Checkpoint gespeichert.
 
 ## Nächste konkrete Arbeit
 
 1. Authentische optionale historische Gruppenanzeige und reproduzierbaren öffentlichen Gruppenbericht aus `data/reference-groups-v21` vorbereiten. Öffentliche Statuscopy dabei auf neuen Forschungsbranch-Export aktualisieren. Keine Parteizuordnung, Nähepunkte oder heutige Parteipositionen.
-2. Gleiche Quellenrolle prüft nur SCF-P01/P02 an `RESULTS-V2-PRESENTATION-001/v2` (65Pins,744edecd…). Root hat Apostrophdarstellung und einzelnen ESS11-README-Dokumentationslink gezielt korrigiert. Ganze Referenzwerte exakt identisch zu Checkpoint47; Frontendgenerator nurREADME-Provenienzpin. Originale und erster falscher Node-Testpfad erhalten, korrigierte10NodeTests/15PythonTests/publicBuildCheck bestanden.
-3. `breadth_topic_frame` schreibt nur `docs/reproduktion-life93-v2.md`, `docs/claude-schlusskontrolle-v2.md` und eigenen WIP-Bericht. Keine Raw/private/Claudeaktion. Neue öffentliche63Gruppenpaare dürfen gelesen werden.
+2. Gleiche Quellenrolle hat SCF-P01/P02 begrenzt geschlossen an `RESULTS-V2-PRESENTATION-001/v2` (65Pins,744edecd…). Root hat Apostrophdarstellung und einzelnen ESS11-README-Dokumentationslink gezielt korrigiert. Ganze Referenzwerte exakt identisch zu Checkpoint47; Frontendgenerator nurREADME-Provenienzpin. Originale und erster falscher Node-Testpfad erhalten, korrigierte10NodeTests/15PythonTests/publicBuildCheck bestanden.
+3. `breadth_topic_frame` ist fertig; frische finale Dossier-/Humanrolle prüft40Pins. Fertige Dateien: `docs/reproduktion-life93-v2.md`, `docs/claude-schlusskontrolle-v2.md` und eigener WIP-Bericht. Keine Raw/private/Claudeaktion. Neuer Humanzusatz0.2 und konkrete Vorführ-IDs fertig als WIP, UIbindung nach Gruppenkomponente.
 4. Humanprotokoll versioniert um Gruppen-Nenner/Erinnerung ergänzen und konkrete UI/Zeigeskript/Referenzfassung vor erster Person binden. Fünf echte Menschen, Einwilligung, Design/Release und Claude bleiben extern offen.
 5. Passende gezielte Darstellungsprüfungen, tatsächlicher Browser und erforderliche technische Checks, dann finaler verifizierter Checkpoint. Nicht wegen bloßer Protokolländerungen neu auditieren.
 
