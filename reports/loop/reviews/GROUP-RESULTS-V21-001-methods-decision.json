@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "role": "methods_reproducibility",
+  "reviewManifestSha256": "dddbcda2fe8a18f46a45ee812100508d9c3ed10c5cca8c8d391be648e474b13a",
+  "decision": "NOT_ACCEPTED",
+  "approvedGroupQuestionIdsByStudy": {
+    "ESS5e03_6": [],
+    "ESS8e02_3": [],
+    "ESS9e03_3": []
+  },
+  "concreteFindingIds": [
+    "GR21-M-001",
+    "GR21-M-002",
+    "GR21-M-003",
+    "GR21-M-004",
+    "GR21-M-005"
+  ]
+}

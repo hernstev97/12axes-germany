@@ -116,3 +116,7 @@ Beide frischen Erstrollen abgeschlossen. Root übernimmt drei Studien als Schnit
 ## Historische Gruppenläufe und Themenbericht, 2026-10-03T15:35:34.557564+00:00
 
 Plan v2.1/tag vor Zugriff remote geprüft, danach drei private Gruppenläufe15:24:22–15:24:28UTC exit0. Zwei frische Ergebnisrollen prüfen identische sichere Aggregate vor Export. [Zugriff](../reports/loop/group-v21-access-disclosure.json) nennt den tatsächlichen Umfang. Thematische Darstellungsbefunde durch beide gezielten Rollen geschlossen; zwei isolierte neue Anzeige-/DOI-Befunde werden separat korrigiert. Keine Veränderung alter Auswahl, Kriterien, Tags oder Originalberichte.
+
+## Ergebnisguard v2.1, 2026-10-03T15:42:23.709354+00:00
+
+Beide getrennten Gruppen-Erstberichte gesichert. Reale Aggregatrechnung begrenzt bestanden, neue Exportfunktion wegen GR21-M-001 gesperrt. Gezielte Guardkorrektur und Nachprüfung durch dieselbe Methodenrolle; gültiges Quellenurteil weiterverwenden. Auswahl, echte Kandidaten und Kriterien bleiben unverändert.

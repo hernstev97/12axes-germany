@@ -10,16 +10,16 @@
       <h1 class="page-title">Methodik und Grenzen</h1>
       <p class="date">Stand: <span class="nowrap">3. Oktober 2026</span></p>
       <p class="lead">
-        12 Axes Deutschland bereitet einen breiten Test zu politischen Einstellungen vor. Der
-        aktuelle Messentwurf ordnet konkrete Antworten nach Themen und hält ihre historischen
-        Befragungsreferenzen getrennt.
+        12 Axes Deutschland bereitet einen breiten Test zu politischen Einstellungen vor. Die
+        Forschungsfassung ordnet 43 Originalangaben in acht Themenrubriken und hält die historischen
+        Befragungsreferenzen getrennt. Der geplante Test ist noch nicht öffentlich verfügbar.
       </p>
       <nav class="toc" aria-label="Inhalt dieser Seite">
         <ol>
           <li><a routerLink="/methodik" fragment="messentwurf">Aktueller Messentwurf</a></li>
           <li><a routerLink="/methodik" fragment="referenzen">Historische Referenzen</a></li>
           <li><a routerLink="/methodik" fragment="fragekontext">Fragekontext und Webfassung</a></li>
-          <li><a routerLink="/methodik" fragment="auswertung">Geplante Auswertung</a></li>
+          <li><a routerLink="/methodik" fragment="auswertung">Auswertung und Referenzen</a></li>
           <li><a routerLink="/methodik" fragment="grenzen">Grenzen und offene Prüfungen</a></li>
           <li><a routerLink="/methodik" fragment="rechte">Quellen und Rechte</a></li>
         </ol>
@@ -32,19 +32,19 @@
       <h2 id="messentwurf-title" class="section-title area-title">Aktueller Messentwurf</h2>
       <div class="prose area-body">
         <p>
-          Vorgesehen sind getrennte Einzelangaben mit den jeweiligen Originalantwortkategorien.
-          Zustimmung, Wichtigkeit und nominale Auswahl beschreiben unterschiedliche Gegenstände.
-          Eine gemeinsame Messstruktur oder einheitliche Polung wird nicht vorausgesetzt.
-          Gesamtscores, Links-/Rechtspositionen und persönliche Unsicherheitsintervalle sind nicht
-          vorgesehen.
+          Die Forschungsfassung führt getrennte Einzelangaben mit den jeweiligen
+          Originalantwortkategorien. Zustimmung, Wichtigkeit und nominale Auswahl beschreiben
+          unterschiedliche Gegenstände. Eine gemeinsame Messstruktur oder einheitliche Polung wird
+          nicht vorausgesetzt. Gesamtscores, Links-/Rechtspositionen und persönliche
+          Unsicherheitsintervalle sind nicht vorgesehen.
         </p>
         <p>
           Acht Themen ordnen die Auswahl: Wirtschaft und Verteilung, Sozialstaat, Demokratie und
           politische Autorität, Bürgerrechte und Sicherheit, europäische Integration, Klima und
           Energie, Migration sowie Gleichstellungs- und Familienpolitik. Die Themen sind keine
-          festgelegten Dimensionen. Die konkrete Auswahl umfasst im Entwurf 43 Einzelangaben und ist
-          kein freigegebener Test. Marktordnung, digitale Überwachung, Gesundheit und weitere
-          Gegenstände bleiben unvollständig erschlossen.
+          gemeinsamen Messdimensionen. Die konkrete Auswahl umfasst 43 Originalangaben und ist kein
+          freigegebener Test. Marktordnung, digitale Überwachung, Gesundheit und weitere Gegenstände
+          bleiben unvollständig erschlossen.
         </p>
       </div>
     </div>
@@ -61,8 +61,8 @@
             >Zielpopulation</a
           >
           umfasst Menschen ab 15 Jahren in Privathaushalten unabhängig von ihrer
-          Staatsangehörigkeit. Sie ist nicht mit Wahlberechtigten gleichzusetzen. Vorgesehen sind
-          fünf getrennte historische Deutschlandreferenzen:
+          Staatsangehörigkeit. Sie ist nicht mit Wahlberechtigten gleichzusetzen. Die fünf getrennt
+          ausgewerteten Deutschlandstudien haben folgende historische Grundlagen:
         </p>
         <ul>
           <li>
@@ -111,6 +111,18 @@
           Stichproben und Modi bleiben sichtbar. Befragte verschiedener Studien werden nicht zu
           gemeinsamen Personen oder einer gemeinsamen Messstruktur zusammengefügt.
         </p>
+        <p>
+          Für 42 der 43 Angaben liegen begrenzt geprüfte
+          <a
+            href="https://github.com/hernstev97/12axes-germany/tree/research/life-93-night-20261003/data/reference-v2"
+            >historische Einzelreferenzen</a
+          >
+          vor. Die Frage mit der Quellenkennung <code>cttresa</code> bleibt ohne Vergleichszahlen.
+          Die vorab festgelegte Darstellungsregel unterdrückt eine Referenz bei weniger als 100
+          gültigen Antworten oder einer beobachteten Kategorie mit ein bis vier ungewichteten
+          Fällen. Das ist eine projektspezifische Heuristik, kein Nachweis der Präzision oder
+          Anonymität. Eine fehlende Referenz ist kein Vergleichswert von null.
+        </p>
       </div>
     </div>
   </section>
@@ -136,46 +148,55 @@
           >
           erläutert. Die konkrete Webübertragung ist noch nicht empirisch geprüft.
         </p>
+        <p>
+          Der Demokratieblock B1–B12 behält im Entwurf seine Originalfolge. B12 gehört im Ergebnis
+          primär zur europäischen Integration. Bei B25 fehlen die nachgelagerten Fragen B26–B29. Der
+          operative historische Webnachlauf ist nicht belegt. Die neue Zusammenstellung ist deshalb
+          keine nachgewiesen gleichartige Durchführung der Originalbefragung.
+        </p>
       </div>
     </div>
   </section>
 
   <section id="auswertung" class="section page-width" aria-labelledby="auswertung-title">
     <div class="grid">
-      <h2 id="auswertung-title" class="section-title area-title">Geplante Auswertung</h2>
+      <h2 id="auswertung-title" class="section-title area-title">Auswertung und Referenzen</h2>
       <div class="prose area-body">
         <p>
-          Die konkrete Auswahl und die Bewertungskriterien stehen im
+          Auswahl, Messform und Bewertungskriterien wurden vor den davon abhängigen Auswertungen
+          festgelegt und versioniert gesichert. Sie stehen im
           <a
-            href="https://github.com/hernstev97/12axes-germany/blob/4e64f3f99c3e170e224be4a89d8d627e500c257d/docs/empirie-plan-v2.entwurf.md"
-            >Empirieplan v2 als Entwurf</a
+            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-night-20261003/docs/empirie-plan-v2.entwurf.md"
+            >Empirieplan v2</a
           >. Die
           <a
-            href="https://github.com/hernstev97/12axes-germany/blob/4e64f3f99c3e170e224be4a89d8d627e500c257d/docs/abdeckung-v2.md"
-            >Themenmatrix als Entwurf</a
+            href="https://github.com/hernstev97/12axes-germany/blob/research/life-93-night-20261003/docs/abdeckung-v2.md"
+            >Themenmatrix</a
           >
           begründet Abdeckung und offene Lücken.
         </p>
         <p>
-          Der Entwurf plant gewichtete Kategorieanteile je Einzelstudie. Die
+          Die fünf Einzelstudienläufe berechnen gewichtete Originalkategorieanteile je Frage. Die
           <a
             href="https://www.europeansocialsurvey.org/methodology/ess-methodology/data-processing-and-archiving/weighting"
             >ESS-Gewichtungsanleitung</a
           >
-          unterscheidet Design- und Poststratifikationsgewichte. Vorgesehen ist
+          unterscheidet Design- und Poststratifikationsgewichte. Verwendet wird
           <code>pspwght</code>, ohne zusätzliche Multiplikation mit <code>dweight</code>. Der Nenner
           enthält nur die gültigen Antworten der jeweiligen Frage. Ungewichtete Anteile und Anteile
-          mit reinem Designgewicht sollen als Sensitivitätsprüfungen danebenstehen.
+          mit reinem Designgewicht sind als Sensitivitätsprüfungen dokumentiert.
         </p>
         <p>
-          Optionale Designstandardfehler setzen eine vollständige ursprüngliche Stichprobenbasis
-          voraus. Geplant ist eine linearisierte Quotientenrechnung nach dem
-          <a href="https://cran.r-project.org/web/packages/survey/survey.pdf#page=101"
-            >survey-Manual v4.5, Abschnitt svyCprod, Seiten 100–101</a
-          >, bedingt auf feste Gewichte und dokumentierte Designannahmen. Nichtantwort-, Zeit- und
-          Moduseffekte erfasst sie nicht vollständig. Fehlende Designinformationen erzeugen keinen
-          Standardfehler von null. Die erste v2-Auswertung berechnet keine Standardfehler. Die erste
-          Websitefassung soll keine Konfidenzintervalle oder persönlichen Unsicherheiten anzeigen.
+          Kategorieanteile beziehen sich auf gültige Antworten der jeweiligen Frage. Gesamtumfang,
+          fehlende Antworten und nicht gestellte Fragen werden getrennt dokumentiert. Anteile
+          fehlender Antworten beziehen sich auf alle deutschen Stichprobenfälle. Gewichtung
+          beseitigt Zeit-, Modus- oder Nichtantwortverzerrungen nicht automatisch. Sie erzeugt auch
+          keine tatsächlich erhobenen Antworten aus dem in ESS8 ausgelassenen München.
+        </p>
+        <p>
+          Diese v2-Auswertung berechnet keine Standardfehler. Die vorbereitete Ergebnisfassung zeigt
+          keine Konfidenzintervalle oder persönlichen Unsicherheiten. Fehlende Designinformationen
+          oder ein nicht berechneter Standardfehler bedeuten keine Unsicherheit von null.
         </p>
       </div>
     </div>
@@ -198,15 +219,20 @@
           Parteien ist nicht vorgesehen.
         </p>
         <p>
-          Die vier weiteren ESS-Dateien sind inzwischen lokal bereitgestellt. Ihre sichere Bindung
-          an Ausgaben und Instrumente, zwei getrennte Erstprüfungen und die tatsächliche Analyse
-          stehen aus. Der v2-Antwortzugriff ist noch nicht freigegeben. Ein tatsächlicher
-          v2-Antwortlauf und ein Ergebnisbericht liegen noch nicht vor.
+          Die fünf getrennten Einzelstudienläufe und die Berichtsfassung sind gesichert. Zwei
+          getrennte Codex-Rollen haben 42 historische Einzelreferenzen in ihrem begrenzten Umfang
+          geprüft. Der breite Themenbericht ist weiterhin in gezielter Darstellungsprüfung.
         </p>
         <p>
-          Die abschließende Kontrolle durch Claude, Verständnistests mit Menschen sowie die
-          menschlichen Freigaben für die Gestaltung von Test und Ergebnissen und für die
-          Veröffentlichung bleiben offen.
+          Eine eigene historische Gruppenanalyse läuft derzeit nur für ESS5, ESS8 und ESS9.
+          Ergebnisse und Anzeige stehen aus. Die Einzelreferenzen erteilen keine Gruppenfreigabe für
+          ESS10-SC oder ESS11. Historische Gruppenverteilungen wären keine heutigen Parteiprogramme
+          und kein Gesamtmatch.
+        </p>
+        <p>
+          Die von Steven veranlasste abschließende Kontrolle durch Claude, Verständnistests mit
+          Menschen sowie die menschlichen Freigaben für die Gestaltung von Test und Ergebnissen und
+          für die Veröffentlichung bleiben offen.
         </p>
       </div>
     </div>

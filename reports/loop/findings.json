@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T15:35:34.557564+00:00",
+  "updatedAtUtc": "2026-10-03T15:41:51.287647+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -3214,6 +3214,16 @@
       "status": "OPEN_TARGETED_FIX",
       "reason": "README ESS11 documentation DOI diverges from pinned primary citation requirement; actual report/contract/catalogue already match primary; resolver validity not asserted",
       "blocks": ["README single ESS11 documentation attribution claim"]
+    },
+    {
+      "id": "GR21-M-001",
+      "origin": "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-first.md",
+      "severity": "erheblich Exportguard",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "OPEN_BLOCKER",
+      "reason": "Pure exporter accepts synthetic impossible joint eligibility axes; actual3candidates satisfy independent oracle and stronger predicate",
+      "blocks": ["group export function/public promotion only"]
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

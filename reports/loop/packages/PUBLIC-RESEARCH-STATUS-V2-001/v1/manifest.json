@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "package": "PUBLIC-RESEARCH-STATUS-V2-001/v1",
+  "scope": "Ordinary fresh factual/meaning/fairness review of four changed public page text files only. Unchanged styles/shell/routing preserved. No raw/local, numeric re-estimation, test navigation, deployment or human validation. Run receipts are declared execution metadata, not independent raw reproduction; no authors/other package opinions/State/parent context.",
+  "artifacts": [
+    {
+      "path": "web/src/app/pages/home/home.html",
+      "sha256": "c2530f88e3e1491333c24e0ccb4e12341ac11a8de987e96ee8c71bbd99b510fc"
+    },
+    {
+      "path": "web/src/app/pages/home/home.scss",
+      "sha256": "a9b8a777a5c46147547b215de18657be3b6c4e77a192273e9d24b7b8ee300b94"
+    },
+    {
+      "path": "web/src/app/pages/home/home.ts",
+      "sha256": "cdc1ae74bfeef8880af8ae25f44db946f71c6508b937483b2e0fb1c42af7ae82"
+    },
+    {
+      "path": "web/src/app/pages/project/project.html",
+      "sha256": "2fd16b5fecd8792804a4420985a5c6c837ea75c9e07bc048fda4fd726d13b137"
+    },
+    {
+      "path": "web/src/app/pages/project/project.scss",
+      "sha256": "c4c50f7d7552e3978c02df643204217c0ddcb530044e7503099ef2d86d7dc6f2"
+    },
+    {
+      "path": "web/src/app/pages/project/project.ts",
+      "sha256": "d7f09ba634b61f13c6f07657e78b05fb16a672a48d2eb0627d9b911c3e3cabcf"
+    },
+    {
+      "path": "web/src/app/pages/methodology/methodology.html",
+      "sha256": "5bfb0ee79cd9dfd2714cd53492652281db562d4da907e70a3f6127dc73321f99"
+    },
+    {
+      "path": "web/src/app/pages/methodology/methodology.scss",
+      "sha256": "ec2c89fde913caff741baa0b0f3cf68a9acb5e85467e4f21b6c824fdad201394"
+    },
+    {
+      "path": "web/src/app/pages/methodology/methodology.ts",
+      "sha256": "c1a2819ed6486f13a28447b39ba3a0d0d57b8232da4cf80de024734117d3b317"
+    },
+    {
+      "path": "web/src/app/app.html",
+      "sha256": "dac5494b1ad8339c9fca675ff09b243b4fb3dda9a286ab984f77bed40f6a56ac"
+    },
+    {
+      "path": "web/src/app/app.routes.ts",
+      "sha256": "d1ad2dc6a5abd0f51aa0a14c79210d9709c19f272af0efca275719bf4cd925b1"
+    },
+    {
+      "path": "web/src/app/research-preview.routes.ts",
+      "sha256": "d9bda2c42f9c8edec6f02ab7a3d5dd71df6c8e5afe91fe3f33f8b4e1d3bb341a"
+    },
+    {
+      "path": "docs/project.md",
+      "sha256": "50fd74dc5612293f22591e679856dbb09745ef2ff9a217ff5583b219cf224328"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "docs/abdeckung-v2.md",
+      "sha256": "77ae3d328c4862d1396e72207e5e1401dfa4da1f57580315e973943d3dfad945"
+    },
+    {
+      "path": "docs/empirie-plan-v2.entwurf.md",
+      "sha256": "2b0cd26f8fba81bbf520b9ae3411d623f9299c9ff707aacf681bde4c65a0439f"
+    },
+    {
+      "path": "docs/messformen-v2.entwurf.md",
+      "sha256": "0536441391becb9ac84e4b9596b20e2e0e4aab1a9aef827cbc162f8d7261238b"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    },
+    {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+    },
+    {
+      "path": "reports/loop/policy-v2-export-decisions.json",
+      "sha256": "a87f780a7219253f7f3773d051b7001f438b19b2fb2d0ee820fc22c1157a16df"
+    },
+    {
+      "path": "reports/loop/policy-v2-run-receipts.json",
+      "sha256": "1d957ae0833f23ef34239f889bc9ce00771557c9e5ad096dfe6bd91f3709cfae"
+    },
+    {
+      "path": "reports/loop/group-v21-run-receipts.json",
+      "sha256": "e7d2dd5db68f953649d63adb0a13da88373354b7c09158462884239d1873d4c9"
+    },
+    {
+      "path": "reports/loop/group-v21-access-disclosure.json",
+      "sha256": "25476bdf5b6338e0c63ff6db050928c9a2859cbafcfe7b6a9b63af2e1db8dde6"
+    },
+    {
+      "path": "data/reference-v2/ESS5e03_6.json",
+      "sha256": "e489fe013d1cbd3d72b9ae816e422757ce8d34ae575d09f64df13a1750dc4bc6"
+    },
+    {
+      "path": "data/reference-v2/ESS8e02_3.json",
+      "sha256": "fb720cc18049f037ed86670bd76a51c3c1770342a61f5627b7afbfb127898ad7"
+    },
+    {
+      "path": "data/reference-v2/ESS9e03_3.json",
+      "sha256": "34e71b448c0c315cf9f19bda30628874c95464faf661813a65f25a3f9ad82be2"
+    },
+    {
+      "path": "data/reference-v2/ESS10SCe03_2.json",
+      "sha256": "e75dfbadcf68c14dce9d13c8a8a2dd1abc6e8a6e96618f960c8cd61c54bc3184"
+    },
+    {
+      "path": "data/reference-v2/ESS11e04_2.json",
+      "sha256": "453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721"
+    }
+  ]
+}

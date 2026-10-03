@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T15:35:34.557564+00:00",
+  "updatedAtUtc": "2026-10-03T15:41:51.287647+00:00",
   "status": "RUNNING",
   "phase": "Breite v2: Ergebnisdarstellung und Angular-Korrektur; historischer Gruppenplan v2.1 vor Zugriff begrenzt angenommen",
   "coordinator": "/root",
@@ -110,8 +110,8 @@
     "currentLocalTechnical": {
       "command": "pnpm check",
       "exitCode": 0,
-      "log": "outputs/loop/check-052.log",
-      "scope": "71 Angular tests, typecheck and production build after scroll correction"
+      "log": "outputs/loop/check-053.log",
+      "scope": "71 tests/typecheck/production build with public-copy changes; not science acceptance"
     },
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Fünf historische v2-Einzelstudienläufe und 42 begrenzt geprüfte Einzelreferenzen; keine gemeinsame Produktvalidität, aktuelle Norm oder neue Administrationvalidierung.",
@@ -309,7 +309,9 @@
     "reports/loop/reviews/GROUP-V21-001-sources-first.md",
     "reports/loop/reviews/ANGULAR-REFERENCE-001-scroll-round1.md",
     "reports/loop/reviews/RESULTS-V2-001-methods-presentation-round1.md",
-    "reports/loop/reviews/RESULTS-V2-001-sources-presentation-round1.md"
+    "reports/loop/reviews/RESULTS-V2-001-sources-presentation-round1.md",
+    "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-first.md",
+    "reports/loop/reviews/GROUP-RESULTS-V21-001-sources-first.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -328,19 +330,9 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "id": "/root/angular_policy_draft",
+      "id": "/root/public_status_v2_review",
       "status": "RUNNING",
-      "scope": "Public four-page-file research status texts only"
-    },
-    {
-      "id": "/root/group_results_v21_methods",
-      "status": "RUNNING",
-      "scope": "Fresh independent private aggregate result first"
-    },
-    {
-      "id": "/root/group_results_v21_sources",
-      "status": "RUNNING",
-      "scope": "Fresh independent sources/meaning result first"
+      "scope": "Fresh ordinary public status copy review only"
     }
   ],
   "workPackages": [
@@ -591,22 +583,22 @@
       "tests": "13 synthetic Vitest tests author exit0"
     }
   ],
-  "nextConcreteStep": "Save original group private-run receipts and original thematic firsts. Fix SCF-P01 Markdown apostroph and SCF-P02 isolated README DOI under new targeted source check. Await group result firsts, verify actual bytes/explicit pair intersections before public export, then prepare UI.",
+  "nextConcreteStep": "Correct only new group export eligibility guard and targeted same-methods follow-up. Fix separate thematic Markdown/README DOI issues, authenticate unchanged single references. Public copy fresh review and actual browser checks pending.",
   "checkpoint": {
-    "lastLocalCommit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
-    "lastVerifiedRemoteCommit": "c8fe45333c8be0bf9e8cfa84fe160509802e9184",
-    "lastVerifiedPushAtUtc": "2026-10-03T15:23:11.269699+00:00",
+    "lastLocalCommit": "0147ec0c769a5477a3f65a7c6450f318dc05e06c",
+    "lastVerifiedRemoteCommit": "0147ec0c769a5477a3f65a7c6450f318dc05e06c",
+    "lastVerifiedPushAtUtc": "2026-10-03T15:36:08.110924+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-045.json",
+    "record": "reports/loop/push-046.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Group gate/freeze and3 actual private runs, pure export/CLI; two fresh group result firsts running. Thematic two bounded targeted firsts saved, two isolated presentation/source fixes next. Public copy author still writing, excluded."
+    "pendingPayload": "Original group firsts and blocker saved before correction; original public text copy WIP fixed under fresh ordinary review. No group public numbers."
   },
   "scientificStatus": "Five private historical categorical candidates executed14:25:06–14:25:18UTC after verified new plan tag; no public numeric export. Two fresh same-family result roles running. No party semantic access.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -675,6 +667,12 @@
       "kind": "state_writer_error",
       "exitCode": 1,
       "scope": "First checkpoint45 updater assumed prototypeV2.angular and round registry object; actual angularPreparation and legacy string. Exception before state/findings/handoff writes; fixed explicit types. Following formatter separately exit0, not evidence that failed Python passed."
+    },
+    {
+      "timeUtc": "2026-10-03T15:41:51.287647+00:00",
+      "kind": "public_copy_manifest_preparation_error",
+      "exitCode": 1,
+      "scope": "Wrong assumed .css names; actual files .scss found by rg. No manifest written before assert; corrected28pins af0f915c… and check053 exit0."
     }
   ],
   "independentPreparations": [
@@ -997,7 +995,7 @@
     "remaining": "B25 original CAWI postflow and new web administration remain open; no operational equivalence."
   },
   "groupPreparationV2": {
-    "status": "THREE_PRIVATE_GROUP_RUNS_PENDING_TWO_FRESH_RESULT_FIRSTS",
+    "status": "RESULT_METHODS_NOT_ACCEPTED_GUARD_FIX_REQUIRED_SOURCES_ACCEPTED_BOUNDED",
     "report": "reports/loop/authors/BREADTH-GROUP-SOURCES-005-WIP.md",
     "knownNewMargins": true,
     "limits": "Printed/file-code differences and alias binding need explicit limits. No party headers/answers opened; v2 gate does not permit them.",
@@ -1030,7 +1028,10 @@
     "accessDisclosure": "reports/loop/group-v21-access-disclosure.json",
     "resultManifest": "reports/loop/packages/GROUP-RESULTS-V21-001/v1/manifest.json",
     "resultManifestSha256": "dddbcda2fe8a18f46a45ee812100508d9c3ed10c5cca8c8d391be648e474b13a",
-    "publicGroupReferencesPublished": false
+    "publicGroupReferencesPublished": false,
+    "resultDecision": "reports/loop/GROUP-RESULTS-V21-001-entscheidung.md",
+    "blockingFindingIds": ["GR21-M-001"],
+    "actualAggregateOracle": "PASS_BOUNDED, not independent raw reproduction"
   },
   "prototypeV2": {
     "status": "PUI_R1_R2_R3_CLOSED_BOUNDED_ROUND1",

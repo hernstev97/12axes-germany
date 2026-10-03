@@ -14,22 +14,28 @@ export class Project {
   protected readonly artwork = PROJECT_ARTWORK;
   protected readonly credits = ALL_ARTWORKS;
   protected readonly status = [
-    { label: 'Website', value: 'Startseite und Seite zum Projektstand vorhanden' },
+    {
+      label: 'Website',
+      value: 'Informationsseiten vorhanden. Der Test ist nicht öffentlich verfügbar.',
+    },
     {
       label: 'Fragenkatalog',
-      value: 'Breiter Katalog in Entwicklung. Neun frühere ESS-Fragen bleiben ein Teilmodul.',
+      value: '43 Originalangaben aus fünf historischen ESS-Studien in acht Themenrubriken',
     },
-    { label: 'Dimensionen', value: 'Anzahl und Struktur offen' },
+    { label: 'Dimensionen', value: 'Keine gemeinsamen Messdimensionen in der aktuellen Fassung' },
     {
       label: 'Analyse und Erweiterung',
-      value: 'Früheres Teilmodul untersucht. Erweiterung erhält einen eigenen Plan.',
+      value: 'Plan v2 versioniert gesichert. Fünf getrennte Einzelstudienläufe ausgeführt.',
     },
-    { label: 'Auswertung des breiten Websiteprofils', value: 'Noch nicht vorhanden' },
-    { label: 'Vergleichswerte', value: 'Noch nicht berechnet' },
+    { label: 'Breiter Themenbericht', value: 'In gezielter Darstellungsprüfung' },
     {
-      label: 'Methodische Prüfungen',
+      label: 'Vergleichswerte',
+      value: '42 historische Einzelreferenzen. Keine aktuelle Bevölkerungsnorm.',
+    },
+    {
+      label: 'KI-Prüfungen',
       value:
-        'Frühere KI-Prüfungen zu Quellen und Methoden vorhanden. Breite Fassung noch nicht geprüft.',
+        'Zwei getrennte Codex-Rollen haben die historischen Einzelreferenzen begrenzt geprüft. Gleiche Modellfamilie. Gemeinsame Fehler möglich.',
     },
     { label: 'Verständlichkeit', value: 'Noch nicht mit Menschen geprüft' },
     { label: 'Methodischer Freigabeprozess', value: 'Dokumentiert. Erforderliche Abnahmen offen.' },
