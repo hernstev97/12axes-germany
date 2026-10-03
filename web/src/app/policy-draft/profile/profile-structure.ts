@@ -31,7 +31,7 @@ export const BLOCK_RULES: readonly BlockRule[] = Object.freeze([
     title: 'Vier Gerechtigkeitsprinzipien',
     itemIds: ['ESS9e03_3:sofrdst', 'ESS9e03_3:sofrwrk', 'ESS9e03_3:sofrpr', 'ESS9e03_3:sofrprv'],
     pattern: 'directions',
-    note: 'Die Forschung behandelt Gleichheit, Leistung, Bedarf und Anrecht als getrennte Gerechtigkeitsprinzipien. Zustimmung zu mehreren Prinzipien zugleich ist häufig und kein Widerspruch.',
+    note: 'Die Forschung behandelt Gleichheit, Leistung, Bedarf und Anrecht als getrennte Gerechtigkeitsprinzipien. Zustimmung zu mehreren Prinzipien zugleich ist dort beschrieben und kein Widerspruch.',
     basis:
       'Originalblock ESS9 G26–G29 mit gleicher Einleitung und Antwortliste. ESS9-Modulvorlage „Justice and Fairness“, S. 4 und 33–36. Adriaans und Fourré 2022, S. 2–3.',
   },
