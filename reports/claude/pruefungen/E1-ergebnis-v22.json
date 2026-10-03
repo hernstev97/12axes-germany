@@ -1,0 +1,1073 @@
+{
+  "schemaVersion": 1,
+  "mode": "ERSTBEWERTUNG",
+  "task": "E1: Ergebnisprüfung der v2.2-Referenzen vor dem Export",
+  "scope": "Fünf SHA-256-gebundene v22-Kandidaten: Status,100/5,Missing,Kategorien,42 bekannte Einzelreferenzen,12 ESS9-Paare,Intervalle,Gruppen,Kodierung und Exportempfehlung.",
+  "manifestSha256": "d347d6ef1d3a7614a06dc8bdf005ec9f7e0d2799dba11aa66cc3cb7f2c1346bf",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "OpenAI / Codex in T3 Code",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "Laufzeitangabe t3_code_runtime: gpt-6.1-sol, medium reasoning effort. Keine unabhängig nachgewiesene interne Modellrevision.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command: bash, Python 3, git, rg, sha256sum, cat, sed",
+      "Python unittest: acht rein synthetische survey-Tests",
+      "Ajv2020: formale Kontrolle des eigenen JSON-Urteils"
+    ],
+    "prompt": "Act as the review sub-agent for this task. Dein vollständiger, verbindlicher Prüfauftrag steht in der Datei /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/E1-ergebnispruefung-v22.md (SHA-256 d347d6ef1d3a7614a06dc8bdf005ec9f7e0d2799dba11aa66cc3cb7f2c1346bf). Lies diese Datei zuerst vollständig und führe den Auftrag genau so aus. Arbeitsverzeichnis: /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c. Schreibe ausschließlich die beiden im Auftrag genannten Berichtsdateien. Antworte am Ende in höchstens 20 Zeilen mit Gesamturteil, Exportempfehlung und den Pfaden deiner Berichtsdateien.\n\nVollständiger dateibasierter Auftrag:\n# Auftrag E1: Ergebnisprüfung der v2.2-Referenzen vor dem Export\n\nDu bist ein frischer Prüfagent (Codex, OpenAI) im Projekt „12 Axes Deutschland“ (Linear LIFE-93). Plan v2.2 ist mit dem Tag `analyseplan-v2.2` (Commit `b6af9a472c71ade865543cf75100c44a164ee12d`) festgeschrieben. Claude hat danach den privaten Lauf ausgeführt und einen Kandidatenexport erzeugt. Laut Plan, Abschnitt 8.3, prüft ein frischer Prüfagent die Ergebnisse vor dem Export. Du bist diese Prüfung. Es ist keine Prüfung der Fragenauswahl mehr; diese ist festgeschrieben.\n\nArbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`. Lies `.claude/skills/life93-review/SKILL.md` und das Urteilsschema und folge ihnen.\n\nPrüfgegenstand:\n- Kandidatenexport (zusammengefasste Werte, nur vorbereitete Referenzen tragen Zahlen): `outputs/claude/v22-candidate/{ESS5e03_6,ESS8e02_3,ESS9e03_3,ESS10SCe03_2,ESS11e04_2}.json`. SHA-256 stehen in `reports/claude/v22-laufbeleg.json` unter `candidateExport`.\n- Laufbeleg: `reports/claude/v22-laufbeleg.json`.\n- Plan und Bindung: `docs/analyseplan-v2.2.md`, `data/politikprofil-v2.2.ergaenzung.json`, `data/gruppenvertrag.v2.1.entwurf.json`, `pipeline/v22/export_v22.py`, `pipeline/v22/survey.py`.\n- Zum Abgleich der bekannten Fragen darfst du jetzt die veröffentlichten v2-Dateien `data/reference-v2/*.json` und `data/reference-groups-v21/*.json` lesen.\n\nRegeln: Schreibe nur `reports/claude/pruefungen/E1-ergebnis-v22.md` und `.json`. Keine anderen Dateien ändern, keine Commits, Tags, Nachrichten. Nichts unter `data/raw/` oder `data/local/` lesen. Keine Werte zurückgehaltener Referenzen erschließen oder berichten.\n\nPrüffragen:\n1. Tragen nur Referenzen mit dem Status `prepared_pending_result_review` Zahlen? Hält jede veröffentlichte Referenz die Regeln 100/5? Fehlen Gewichtssummen bei Missing-Gründen mit eins bis vier Fällen?\n2. Summieren sich die Anteile zu 1? Passen Kategorien und Codes zum Katalog (einschließlich Code 55 bei den Energiequellen)?\n3. Stimmen die Anteile der 42 bekannten Einzelreferenzen und 12 bekannten ESS9-Gruppenpaare mit den veröffentlichten v2-Dateien überein?\n4. Intervalle: nur für ESS9, ESS10 Self-completion und ESS11; jeder Bereich liegt in [0, 1] und enthält seinen Schätzwert; Freiheitsgrade passen zu Strata und PSUs; keine Bereiche bei Anteil 0 oder 1. Sind Breiten im Verhältnis zur Fallzahl plausibel (Designeffekt grob prüfen, ohne neue Schwellen zu erfinden)?\n5. Gruppenpaare: nur neue ESS5/ESS8-Fragen und ESS9-Intervalle, gleiche Gruppendefinitionen wie v2.1.\n6. Gibt es Auffälligkeiten, die auf Kodier- oder Polungsfehler hindeuten (z. B. vertauschte Kategorien im Vergleich zu Wortlaut und Antwortliste)? Benenne sie mit Beleg. Inhaltliche Ergebnisse bewertest du nicht politisch.\n7. Empfiehl ausdrücklich, welche Fragen und Paare exportiert werden dürfen und welche nicht, mit Grund.\n\nAusgabe: Bericht und JSON-Urteil. Am Ende: gelesene Dateien mit Hash, ausgeführte Befehle, Modell laut Laufzeit.\n",
+    "inputHashes": {
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      "AGENTS.md": "6d405f6baff0b692edf657dae09c933b3ef978e2f3a98d3caaf14dc7666f627f",
+      "data/analysevertrag.v2.entwurf.json": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "data/politikprofil-v2.2.ergaenzung.json": "c4b0d97aeaf10868001199cb3f7f135a6fb8ec28d63b58f7f222ff7e0acd71ac",
+      "data/politikprofil-v2.fragen.entwurf.json": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4",
+      "data/reference-groups-v21/ESS5e03_6.json": "343d06f921f5a943e742f304255726302b71162fb55d8c73b73d11f2f184b19a",
+      "data/reference-groups-v21/ESS8e02_3.json": "fda4e3dab0546ba25ebb2c265d0d930830615697b023fce2075e41c6a562ff3a",
+      "data/reference-groups-v21/ESS9e03_3.json": "a1e7f8b116da9d055ffffb2dc5eb2af04e43524962433a9b032f09cbd8b5d093",
+      "data/reference-v2/ESS10SCe03_2.json": "e75dfbadcf68c14dce9d13c8a8a2dd1abc6e8a6e96618f960c8cd61c54bc3184",
+      "data/reference-v2/ESS11e04_2.json": "453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721",
+      "data/reference-v2/ESS5e03_6.json": "e489fe013d1cbd3d72b9ae816e422757ce8d34ae575d09f64df13a1750dc4bc6",
+      "data/reference-v2/ESS8e02_3.json": "fb720cc18049f037ed86670bd76a51c3c1770342a61f5627b7afbfb127898ad7",
+      "data/reference-v2/ESS9e03_3.json": "34e71b448c0c315cf9f19bda30628874c95464faf661813a65f25a3f9ad82be2",
+      "docs/abdeckung-v2.2.md": "f3f03912f38dc7149b73739bc18fa9bcec59c65f6cb77edfd130be3c8e2d1b10",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "docs/project.md": "7cfa1d4046eb30ae4b29728c49fa90baff89f40e56199b8eff0a738ca004e270",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "outputs/claude/v22-candidate/ESS10SCe03_2.json": "b73b9dd089a51d9bb63c90ead09600de6547125f568d851eab97b2d3f6154baf",
+      "outputs/claude/v22-candidate/ESS11e04_2.json": "c5e20b9f5ae6bb20ce606c52066dc608db8e3c061217b8eefbbd121da5b5a0ac",
+      "outputs/claude/v22-candidate/ESS5e03_6.json": "5fa548f650a481d70662c88a1ef904ad7b11319c2e03b64b4d52ca40bb096500",
+      "outputs/claude/v22-candidate/ESS8e02_3.json": "203a95505a1305dfc2b6c3541730faf0719f82451189de045d4c3b0793c6c714",
+      "outputs/claude/v22-candidate/ESS9e03_3.json": "6a2acd3cd3cf6b42fec51e3e1a9b99f796d0af80900711452a8069004af87829",
+      "package.json": "451c9de3c5e0b647361bfbc749717712b895b822a04f84433288d19eb29a27f7",
+      "pipeline/policy_reference_v2.py": "bc06e5c06935e3ff492543bdca986ebca823ec962eab8e6321ff2bf19ee83d2b",
+      "pipeline/v22/export_v22.py": "839765b1a8287141f8176ab988e86ab4deca7d712d84d53287b943c164d6eee1",
+      "pipeline/v22/run_v22.py": "b07d5bd8e9306dc7db2b0f1e72af9207d00ca255ea3b0c3c2f58d9f87925e1fd",
+      "pipeline/v22/survey.py": "ef9011c5a9b9792373f7c9395d4e5db17a4381dab648480b2276ddac15a982bc",
+      "pipeline/v22/test_survey.py": "dacdde363044981d575636447f6e206f89a0325353c8cc7b9a7898e1ca8ed011",
+      "reports/claude/auftraege/E1-ergebnispruefung-v22.md": "d347d6ef1d3a7614a06dc8bdf005ec9f7e0d2799dba11aa66cc3cb7f2c1346bf",
+      "reports/claude/v22-laufbeleg.json": "931d11ef811fa157e819ab5bc962a5c3a59b257274c8587467bb01a076bcd639",
+      "scripts/check-review-schema.mjs": "2575997f720f0c440fc54a9ccc15a2bd8c8fb69638dab8c03cf8b9fdaf810166"
+    }
+  },
+  "checks": [
+    {
+      "id": "E1-C00",
+      "scope": "Auftrag, Dateibindung und eingefrorene Fassung",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Auftragshash stimmt mit extern mitgeteiltem SHA-256 überein. Der gehashte Auftrag benennt den Umfang und den Laufbeleg; er wird hier als Umfangsmanifest verwendet.",
+        "Alle fünf candidateExport-Hashes stimmen; privateRunSha256 ist in allen Kandidaten identisch zum Laufbeleg.",
+        "Lokal und origin: annotiertes Tag 76ce19dce5b34d44249a8e095fb55e0fa0d4383f, Zielcommit b6af9a472c71ade865543cf75100c44a164ee12d. Plan, beide Verträge, Ergänzung und drei Rechen-/Exportmodule bytegleich mit Tag.",
+        "Der Laufbeleg selbst hat keinen separat vom Auftrag übermittelten Sollhash; die tatsächliche Prüfsumme ist protokolliert. Private Laufbytes werden weder geöffnet noch unabhängig bestätigt."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C01",
+      "scope": "Zahlen nur bei vorbereitetem Status",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "E1-V22-F01: 104 numerische Einträge vorzeitig als reviewed_historical_reference bezeichnet."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C02A",
+      "scope": "Mindestbasis, Bilanz und Schutz zurückgehaltener Referenzen",
+      "status": "BESTANDEN",
+      "evidence": [
+        "104/104 numerische Referenzen haben validCount >=100 und konsistente Bilanz totalCount=validCount+missingCount+notAskedCount+exportBlankCount.",
+        "Drei zurückgehaltene Einzelreferenzen und 107 zurückgehaltene Paare haben reference=null, keine numerischen Referenzfelder. Keine Werte erschlossen."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C02B",
+      "scope": "Mindestens fünf Fälle pro beobachteter Kategorie",
+      "status": "NICHT_GEPRÜFT",
+      "evidence": [
+        "E1-V22-F03: Keine ungewichteten Kategoriehäufigkeiten der tatsächlichen Referenzen im erlaubten Paket; private Ausgabe ist ausdrücklich gesperrt."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C03",
+      "scope": "Missing-Gründe mit ein bis vier Fällen ohne Gewichtssumme",
+      "status": "BESTANDEN",
+      "evidence": [
+        "45 Missing-Einträge mit 1–4 Fällen haben primaryWeightSum=null. Alle Missing-Summen stimmen; Gründe mit mindestens fünf Fällen haben positive endliche Gewichtssummen."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C04A",
+      "scope": "Anteile, Codeinventar und Code 55",
+      "status": "BESTANDEN",
+      "evidence": [
+        "637 Kategorien in 104 Referenzen: Anteile endlich in [0,1], Originalcodeinventar vollständig einschließlich 55 bei vorhandenen elg-Referenzen. Maximale Summenabweichung 1.1102230246251565e-16.",
+        "Code 55 bleibt eigenständige historische Kategorie. Nullanteile sind zulässig; keine numerischen Werte zurückgehaltener Energiefragen geöffnet."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C04B",
+      "scope": "Reihenfolge der Originalkategorien",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "E1-V22-F02: 20 Arrayreihenfolgen weichen von apiValidCodeOrder ab; Codes und zugehörige Anteile wurden nicht vertauscht."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C05",
+      "scope": "Abgleich der bekannten Referenzen",
+      "status": "BESTANDEN",
+      "evidence": [
+        "42 Einzelreferenzen: maximale absolute Anteilabweichung 1.1102230246251565e-16; zwölf ESS9-Gruppenpaare: 0. Toleranz 1e-12 eingehalten.",
+        "Verfügbarkeit und validCount/totalCount/missingCount/notAskedCount stimmen ebenfalls. Dies ist eine Kontrolle bekannter Ergebnisse, keine unberührte Bestätigung.",
+        "Die im Laufbeleg erwähnten 63 bekannten Paare sind eine Autorangabe zum privaten Lauf; unabhängig verglichen wurden hier die zwölf zugänglichen ESS9-Kandidatenpaare."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C06",
+      "scope": "Intervalle: Struktur, Freiheitsgrade und grobe Plausibilität",
+      "status": "BESTANDEN",
+      "evidence": [
+        "300 Intervalle aus 32 Einzelreferenzen und zwölf ESS9-Paaren: endlich, [0,1], Schätzwert enthalten, logit-symmetrisch. Bei Anteil 0/1 kein Bereich; ESS5/8 ohne Bereiche.",
+        "ESS9: 89 Strata,178 PSUs,89 df; ESS10SC:89,179,90; ESS11:25,500,475. df=PSUs-Strata und mindestens 20.",
+        "Implizite Varianz aus Grenzen und t-Quantil rückgerechnet. Designeffekte gegen p(1-p)/n ungefähr 0.65–4.60; keine grobe Auffälligkeit und keine neue Akzeptanzschwelle eingeführt.",
+        "Acht reine synthetische Tests von pipeline.v22.test_survey bestanden. Diese prüfen den Code und bestätigen nicht die tatsächlichen Designzuordnungen der gesperrten privaten Daten."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C07",
+      "scope": "Gruppenpaare und Gruppendefinitionen",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Alle 152 Paarplätze beschränken sich auf neue ESS5/8-Fragen und bestehende ESS9-Fragen mit Intervallen. Keine ESS10/11-Paare.",
+        "8 ESS5-,9 ESS8- und9 ESS9-Gruppen-IDs stimmen mit groupsInDeclaredApiOrder überein; ESS5/8-Gruppenidentitäten zusätzlich mit veröffentlichtem v2.1 abgeglichen.",
+        "run_v22.py nutzt die gebundenen Zweitstimmenvariablen und nur vote=yes mit gültigem Parteicode. Tatsächliche Fallzuordnung ohne Privatdaten nicht erneut gerechnet."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C08",
+      "scope": "Kodierung und Polung im freigegebenen Ergebnisumfang",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Alle codebezogenen Anteilvergleiche bestanden. Neue Fragen werden in item_specs/classify nach unverändertem Variablennamen und Originalcode verarbeitet; keine Umkehr oder Zusammenfassung.",
+        "Insbesondere basinc/eusclbf: Code 1=Sehr dagegen,4=Sehr dafür; Energie:1=sehr große Menge,5=überhaupt nichts,55=eigene gültige Antwort; panpriph/panmonpb:0 und10 entsprechen den gebundenen Endpunkten.",
+        "Kein belegter Rechen- oder Polungsfehler. Belegter Sortierungsfehler E1-V22-F02. Ohne freigegebene zusätzliche Kontrollwerte neuer Fragen kann eine falsch deklarierte Rohcodierung nicht ausgeschlossen werden."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "E1-C09",
+      "scope": "Exportempfehlung je Frage und Paar",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "Aktuell approvedQuestionIds=[] und approvedPairs=[]; alle 59 numerischen Fragen und45 numerischen Paare benötigen F01/F03,20 Fragen zusätzlich F02.",
+        "Alle drei withheld-Fragen und107 withheld-Paare weiterhin vom numerischen Export ausgeschlossen. Vollständige IDs und Gründe in ratings und Bericht."
+      ],
+      "requiredInScope": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "E1-V22-F01",
+      "claim": "Kandidaten vor Ergebnisprüfung sollen prepared_pending_result_review bleiben.",
+      "problem": "Alle 59 numerischen Einzelreferenzen und 45 numerischen Gruppenpaare tragen bereits reviewed_historical_reference. Die Dateientscheidung lautet gleichzeitig CANDIDATE-FOR-RESULT-REVIEW.",
+      "evidence": [
+        "outputs/claude/v22-candidate/ESS10SCe03_2.json#/questions/0/status: reviewed_historical_reference; /decision: CANDIDATE-FOR-RESULT-REVIEW",
+        "pipeline/v22/export_v22.py: export(), include führt unabhängig von einem Prüfurteil zu reviewed_historical_reference",
+        "reports/claude/auftraege/E1-ergebnispruefung-v22.md: Prüffrage 1; docs/analyseplan-v2.2.md: Abschnitte 6 und 8.3"
+      ],
+      "impact": "Der Kandidat behauptet einen bereits abgeschlossenen Prüfschritt. Keine Ergebnis- oder Exportfreigabe für diese Kandidatenfassung.",
+      "severity": "mittel",
+      "severityReason": "Der Status ist eine relevante Freigabeangabe; die Zahlen werden dadurch nicht rechnerisch falsch.",
+      "correction": "Kandidaten in einer neuen Exportfassung mit prepared_pending_result_review und unveränderten Anteilen erzeugen. reviewed_historical_reference erst mit einer ausdrücklichen, an Lauf und geprüfte Kandidaten gebundenen Entscheidung setzen.",
+      "recheck": "Neue Hashes sichern; sämtliche 104 numerischen Einträge auf Kandidatenstatus und zurückgehaltene Einträge auf reference=null prüfen. Keine historischen Artefakte überschreiben.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "E1-V22-F02",
+      "claim": "Originalkategorien behalten die gebundene Reihenfolge.",
+      "problem": "20 Einzelreferenzen der Skala 0–10 exportieren die Reihenfolge 0,1,10,2,3,4,5,6,7,8,9 statt 0,1,2,3,4,5,6,7,8,9,10.",
+      "evidence": [
+        "outputs/claude/v22-candidate/ESS10SCe03_2.json#/questions/0/reference/categories/2/code: 10 (accalaw)",
+        "data/politikprofil-v2.2.ergaenzung.json: items[id=ESS10SCe03_2:accalaw].apiValidCodeOrder",
+        "pipeline/v22/run_v22.py: main(), json.dumps(..., sort_keys=True); pipeline/v22/export_v22.py: public_reference(), Iteration über ref[shares].items()",
+        "data/gruppenvertrag.v2.1.entwurf.json: questionDefinitionPolicy, exact_category_order"
+      ],
+      "impact": "Bei Ausgabe nach Arrayreihenfolge rückt der obere Skalenpol zwischen 1 und 2. Die Anteile bleiben ihren Codes korrekt zugeordnet; ein Polungsfehler der Rechnung ist damit nicht belegt. Die 20 betroffenen Referenzen nicht in dieser Form exportieren.",
+      "severity": "mittel",
+      "severityReason": "Gebundene Originalreihenfolge verletzt, mit möglicher falscher Darstellung ordinaler Kategorien.",
+      "correction": "Neue Exportfassung ausdrücklich nach apiValidCodeOrder des gebundenen Katalogs ordnen. Keine bloße Stringsortierung und keine Änderung der Zahlen.",
+      "recheck": "Alle 62 Fragen und 152 Paare strukturell mit dem Katalog vergleichen; bei vorhandenen Referenzen Arrayreihenfolge exakt prüfen. Anteilvergleich nach Code erneut ausführen.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "E1-V22-F03",
+      "claim": "Jede numerische Referenz erfüllt die Regeln 100/5.",
+      "problem": "validCount ist prüfbar und überall mindestens 100. Ungewichtete Kategoriehäufigkeiten beziehungsweise ein an die Kandidaten gebundener Nachweis der Mindesthäufigkeit positiver Zellen fehlen jedoch in allen 104 numerischen Referenzen. Der Laufbeleg enthält nur Statuszahlen und Autorangaben zu Gegenrechnungen.",
+      "evidence": [
+        "pipeline/v22/export_v22.py: public_reference() exportiert validCount und Kategorienanteile, jedoch keine categoryCounts",
+        "reports/claude/v22-laufbeleg.json: statuses und independentCrossCheck ohne überprüfbaren Zellschwellennachweis",
+        "pipeline/v22/run_v22.py: reference(), private categoryCounts und Prüfung 1 <= counts[c] < 5"
+      ],
+      "impact": "Die Fünf-Fälle-Regel lässt sich mit den erlaubten Eingaben nicht unabhängig nachprüfen. Das ist eine fehlende Prüfung, kein Beleg für eine verletzte Fallzahlregel. Exportempfehlung bleibt für alle numerischen Kandidaten gesperrt.",
+      "severity": "mittel",
+      "severityReason": "Eine ausdrücklich verlangte Publikationsvoraussetzung bleibt unbelegt; der Code enthält die richtige Regel, beweist aber nicht die tatsächlichen Laufzellen.",
+      "correction": "Ein geprüftes, an privateRunSha256 und Kandidatenhashes gebundenes aggregiertes Prüfarbeitsprodukt für ausschließlich vorbereitete Referenzen bereitstellen, etwa Minimum der positiven Kategoriehäufigkeiten und Summenabgleich je Referenz. Keine Rohzeilen, Einzelgewichte oder Häufigkeiten zurückgehaltener Referenzen öffnen.",
+      "recheck": "Frischer Prüfer verifiziert für jede numerische Referenz Mindestbasis 100, jede positive Kategorie mindestens 5 sowie unveränderte Kandidatenanteile. Die gesperrten Referenzen bleiben reference=null.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "E1-EXPORTEMPFEHLUNG-V22",
+      "recommendation": "KEIN_EXPORT_DIESER_KANDIDATENFASSUNG",
+      "privateRunSha256": "0ebe86b22cb3795ea232c9f0e645e6893d7355d47c842b7f8f10cb4ad6554001",
+      "candidateHashes": {
+        "outputs/claude/v22-candidate/ESS10SCe03_2.json": "b73b9dd089a51d9bb63c90ead09600de6547125f568d851eab97b2d3f6154baf",
+        "outputs/claude/v22-candidate/ESS11e04_2.json": "c5e20b9f5ae6bb20ce606c52066dc608db8e3c061217b8eefbbd121da5b5a0ac",
+        "outputs/claude/v22-candidate/ESS5e03_6.json": "5fa548f650a481d70662c88a1ef904ad7b11319c2e03b64b4d52ca40bb096500",
+        "outputs/claude/v22-candidate/ESS8e02_3.json": "203a95505a1305dfc2b6c3541730faf0719f82451189de045d4c3b0793c6c714",
+        "outputs/claude/v22-candidate/ESS9e03_3.json": "6a2acd3cd3cf6b42fec51e3e1a9b99f796d0af80900711452a8069004af87829"
+      },
+      "approvedQuestionIds": [],
+      "approvedPairs": [],
+      "pendingQuestionIds": [
+        "ESS10SCe03_2:accalaw",
+        "ESS10SCe03_2:dfprtal",
+        "ESS10SCe03_2:fairelc",
+        "ESS10SCe03_2:freehms",
+        "ESS10SCe03_2:gptpelc",
+        "ESS10SCe03_2:grdfinc",
+        "ESS10SCe03_2:gvctzpv",
+        "ESS10SCe03_2:hmsacld",
+        "ESS10SCe03_2:imdfetn",
+        "ESS10SCe03_2:impcntr",
+        "ESS10SCe03_2:imsmetn",
+        "ESS10SCe03_2:keydec",
+        "ESS10SCe03_2:loylead",
+        "ESS10SCe03_2:medcrgv",
+        "ESS10SCe03_2:panmonpb",
+        "ESS10SCe03_2:panpriph",
+        "ESS10SCe03_2:rghmgpr",
+        "ESS10SCe03_2:scchpldm",
+        "ESS10SCe03_2:viepol",
+        "ESS10SCe03_2:votedir",
+        "ESS10SCe03_2:vteurmmb",
+        "ESS10SCe03_2:wpestop",
+        "ESS11e04_2:eqparep",
+        "ESS11e04_2:eqparlv",
+        "ESS11e04_2:euftf",
+        "ESS11e04_2:fineqpy",
+        "ESS11e04_2:freinsw",
+        "ESS11e04_2:gincdif",
+        "ESS5e03_6:bplcdc",
+        "ESS5e03_6:dbctvrd",
+        "ESS5e03_6:dpcstrb",
+        "ESS5e03_6:hrshsnta",
+        "ESS5e03_6:lwstrob",
+        "ESS5e03_6:prtyban",
+        "ESS5e03_6:rgbrklw",
+        "ESS8e02_3:banhhap",
+        "ESS8e02_3:basinc",
+        "ESS8e02_3:bnlwinc",
+        "ESS8e02_3:eduunmp",
+        "ESS8e02_3:elgbio",
+        "ESS8e02_3:elgcoal",
+        "ESS8e02_3:elgngas",
+        "ESS8e02_3:elgsun",
+        "ESS8e02_3:elgwind",
+        "ESS8e02_3:eusclbf",
+        "ESS8e02_3:gvcldcr",
+        "ESS8e02_3:gvrfgap",
+        "ESS8e02_3:gvslvol",
+        "ESS8e02_3:gvslvue",
+        "ESS8e02_3:imsclbn",
+        "ESS8e02_3:inctxff",
+        "ESS8e02_3:mnrgtjb",
+        "ESS8e02_3:rfgbfml",
+        "ESS8e02_3:sbsrnen",
+        "ESS8e02_3:wrkprbf",
+        "ESS9e03_3:sofrdst",
+        "ESS9e03_3:sofrpr",
+        "ESS9e03_3:sofrprv",
+        "ESS9e03_3:sofrwrk"
+      ],
+      "pendingPairs": [
+        {
+          "groupId": "ESS5e03_6:second_vote:1",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:2",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:3",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:4",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:1",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:1",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:2",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:2",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:3",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:4",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:5",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:5",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:5",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:6",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:6",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:6",
+          "questionId": "ESS9e03_3:sofrwrk"
+        }
+      ],
+      "pendingReason": "E1-V22-F01 Kandidatenstatus korrigieren und E1-V22-F03 aggregierten 5-Fälle-Nachweis nachprüfen. Für die 20 in categoryOrderAffectedQuestionIds genannten Fragen zusätzlich E1-V22-F02 korrigieren.",
+      "categoryOrderAffectedQuestionIds": [
+        "ESS10SCe03_2:accalaw",
+        "ESS10SCe03_2:dfprtal",
+        "ESS10SCe03_2:fairelc",
+        "ESS10SCe03_2:gptpelc",
+        "ESS10SCe03_2:grdfinc",
+        "ESS10SCe03_2:gvctzpv",
+        "ESS10SCe03_2:keydec",
+        "ESS10SCe03_2:medcrgv",
+        "ESS10SCe03_2:panmonpb",
+        "ESS10SCe03_2:panpriph",
+        "ESS10SCe03_2:rghmgpr",
+        "ESS10SCe03_2:viepol",
+        "ESS10SCe03_2:votedir",
+        "ESS10SCe03_2:wpestop",
+        "ESS11e04_2:euftf",
+        "ESS5e03_6:bplcdc",
+        "ESS5e03_6:dpcstrb",
+        "ESS8e02_3:gvcldcr",
+        "ESS8e02_3:gvslvol",
+        "ESS8e02_3:gvslvue"
+      ],
+      "excludedQuestionIds": [
+        "ESS10SCe03_2:cttresa",
+        "ESS8e02_3:elghydr",
+        "ESS8e02_3:elgnuc"
+      ],
+      "excludedPairs": [
+        {
+          "groupId": "ESS5e03_6:second_vote:5",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:6",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:7",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS5e03_6:second_vote:8",
+          "questionId": "ESS5e03_6:prtyban"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:1",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:2",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:3",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:4",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:5",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:6",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:7",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:8",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:basinc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgbio"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgcoal"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elghydr"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgngas"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgnuc"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgsun"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:elgwind"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:eusclbf"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:gvrfgap"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:mnrgtjb"
+        },
+        {
+          "groupId": "ESS8e02_3:second_vote:9",
+          "questionId": "ESS8e02_3:rfgbfml"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:1",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:1",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:2",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:2",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:3",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:3",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:3",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:4",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:4",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:4",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:5",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:6",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:7",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:7",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:7",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:7",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:8",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:8",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:8",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:8",
+          "questionId": "ESS9e03_3:sofrwrk"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:9",
+          "questionId": "ESS9e03_3:sofrdst"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:9",
+          "questionId": "ESS9e03_3:sofrpr"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:9",
+          "questionId": "ESS9e03_3:sofrprv"
+        },
+        {
+          "groupId": "ESS9e03_3:second_vote:9",
+          "questionId": "ESS9e03_3:sofrwrk"
+        }
+      ],
+      "exclusionReason": "withheld_base_or_cell_count, Referenz bleibt null; keine Werte oder genaue Ursache der Unterdrückung erschließen.",
+      "scope": "Empfehlung für neuen v2.2-Export; bestehende Veröffentlichungen unverändert. Diese Empfehlung ist keine ausführbare positive Exportentscheidung."
+    },
+    {
+      "id": "E1-DIAGNOSTIK",
+      "metrics": {
+        "summary": {
+          "ESS10SCe03_2": {
+            "decision": "CANDIDATE-FOR-RESULT-REVIEW",
+            "questions": {
+              "reviewed_historical_reference": 22,
+              "withheld_base_or_cell_count": 1
+            },
+            "pairs": {}
+          },
+          "ESS11e04_2": {
+            "decision": "CANDIDATE-FOR-RESULT-REVIEW",
+            "questions": {
+              "reviewed_historical_reference": 6
+            },
+            "pairs": {}
+          },
+          "ESS5e03_6": {
+            "decision": "CANDIDATE-FOR-RESULT-REVIEW",
+            "questions": {
+              "reviewed_historical_reference": 7
+            },
+            "pairs": {
+              "reviewed_historical_reference": 4,
+              "withheld_base_or_cell_count": 4
+            }
+          },
+          "ESS8e02_3": {
+            "decision": "CANDIDATE-FOR-RESULT-REVIEW",
+            "questions": {
+              "reviewed_historical_reference": 20,
+              "withheld_base_or_cell_count": 2
+            },
+            "pairs": {
+              "reviewed_historical_reference": 29,
+              "withheld_base_or_cell_count": 79
+            }
+          },
+          "ESS9e03_3": {
+            "decision": "CANDIDATE-FOR-RESULT-REVIEW",
+            "questions": {
+              "reviewed_historical_reference": 4
+            },
+            "pairs": {
+              "reviewed_historical_reference": 12,
+              "withheld_base_or_cell_count": 24
+            }
+          }
+        },
+        "referencesWithNumbers": 104,
+        "smallMissingSuppressed": 45,
+        "categoriesChecked": 637,
+        "intervalsChecked": 300,
+        "singleComparisons": 42,
+        "maxSingleDifference": 1.1102230246251565e-16,
+        "groupComparisons": 12,
+        "maxGroupDifference": 0.0,
+        "maxSumError": 1.1102230246251565e-16,
+        "intervalDiagnostics": {
+          "ESS10SCe03_2 singles": {
+            "widthMin": 0.002232443245183593,
+            "widthMedian": 0.01333651654735006,
+            "widthMax": 0.037194712360548,
+            "deffMin": 0.8960059534749582,
+            "deffMedian": 1.4100219403928522,
+            "deffMax": 4.603862459753944
+          },
+          "ESS11e04_2 singles": {
+            "widthMin": 0.014862521041148966,
+            "widthMedian": 0.04775809554387739,
+            "widthMax": 0.07755895697865445,
+            "deffMin": 1.603306797965367,
+            "deffMedian": 2.9467159361691513,
+            "deffMax": 4.544108443362147
+          },
+          "ESS9e03_3 singles": {
+            "widthMin": 0.004633973630599038,
+            "widthMedian": 0.03541101689785753,
+            "widthMax": 0.0560839618249801,
+            "deffMin": 0.6500133656973621,
+            "deffMedian": 1.5232811451306636,
+            "deffMax": 3.045566096111765
+          },
+          "ESS9e03_3 groups": {
+            "widthMin": 0.017276926489108852,
+            "widthMedian": 0.11040881318930088,
+            "widthMax": 0.23000490285798558,
+            "deffMin": 0.7772236676641932,
+            "deffMedian": 1.1194253247161257,
+            "deffMax": 1.941875471660377
+          }
+        },
+        "excludedQuestions": [
+          "ESS10SCe03_2:cttresa",
+          "ESS8e02_3:elghydr",
+          "ESS8e02_3:elgnuc"
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Begrenztes KI-Review durch OpenAI Codex, keine akademische Begutachtung, Neutralitätsgarantie oder Freigabe durch Steven.",
+    "Keine Frage neu ausgewählt, entfernt, umgepolt oder thematisch umgeordnet. Die Auswahl ist festgeschrieben.",
+    "Nichts unter data/raw/ oder data/local/ gelesen, gehasht oder ausgeführt; kein Rechenlauf, Export, Commit, Tag, Push, Nachrichtenversand oder Deployment.",
+    "privateRunSha256 sowie private Gegenrechnungen sind Angaben des Laufbelegs, keine unabhängig geprüften Privatbytes.",
+    "Der extern gesicherte Hash bindet den Prüfauftrag, nicht separat die Laufbelegbytes. Kandidatenhashes wurden gegen den darin benannten Laufbeleg geprüft; eingefrorene Regeln zusätzlich gegen den Tag.",
+    "Keine fremden P1/P2/P3-Urteile oder Kontrollrechnungsberichte als Bewertungshilfe geöffnet. Der verpflichtend gelesene Plan enthält historische Reviewzusammenfassungen; das ist protokollierte Kontextinformation und ersetzt kein eigenes Urteil.",
+    "Intervallplausibilität nutzt nur vorhandene nicht zurückgehaltene Anteile, Grenzen und gültige Fallzahlen. Keine Designzuordnung, Gewichte oder Varianz aus Originalfällen kontrolliert.",
+    "Keine externen Quellenrecherchen: Fragenauswahl und Quellenbindung sind festgeschrieben; Ergebnisprüfung gegen die ausdrücklich erlaubten lokalen Artefakte.",
+    "pnpm check nicht ausgeführt: Der enthaltene Build schreibt weitere Dateien. Vollständige unittest-Discovery ebenfalls nicht ausgeführt, weil test_run_v22.py synthetische temporäre Dateien schreibt. Der ausdrückliche Auftrag erlaubt ausschließlich zwei Berichtsdateien. Acht rein rechnerische survey-Tests liefen mit ausgeschaltetem Bytecode.",
+    "UI/Browser, Rechte, Teststart, wissenschaftliche Gesamtfreigabe und Veröffentlichung außerhalb dieses Auftrags."
+  ]
+}
