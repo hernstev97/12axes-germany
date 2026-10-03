@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T12:39:46.418277+00:00",
+  "updatedAtUtc": "2026-10-03T12:59:53.028030+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2806,7 +2806,7 @@
       "status": "NICHT_BESTANDEN",
       "reason": "Neun Fragen zu zwei engen Themen erfüllen das breite Deutschland-Politikprofil nicht",
       "blocks": ["completion as comprehensive political profile"],
-      "correctionState": "Zwei frische ergebnisblinde Autoren gestartet; Themen-Erstbericht fertig, Datenbericht laufend. Erweiterungsplan und Messformen entworfen, Breite noch nicht empirisch erschlossen.",
+      "correctionState": "Achtbereichsmatrix aus zwei getrennten unveränderten Quellen-Erstberichten, normale Quellenprüfung mit gezielten semantischen Korrekturen; konkreter43Angabenentwurf aus fünf ESS-Erhebungen. Vier neue Rohdateien fehlen, v2-Auswahl/Empiriegates/Ergebnisse/Websitefreigaben offen.",
       "verification": {
         "order": "docs/auftrag-life-93-breite-2026-10-03.md"
       }
@@ -2874,11 +2874,72 @@
       "origin": "reports/loop/reviews/POLICY-REFERENCE-V2-first.md",
       "severity": "P2",
       "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "Subnormal positive weights underflow before division and distort generic Taylor variance. No actual empirical study exposure claimed.",
+      "correctionState": "Runde1 gezielt unabhängig bestätigt: Reihenfolge Normierung vor Multiplikation, kein zweites Dividieren; 22+29+6 synthetische Testmethoden exit0; keine Empiriefreigabe",
+      "blocks": [],
+      "verification": {
+        "report": "reports/loop/reviews/POLICY-REFERENCE-V2-round1.md",
+        "sha256": "d292d4d4fc73381b51909ca3903d4b66b0be55574029a38a3f553ed8ff4a72b8",
+        "scope": "generic numerical correction only"
+      }
+    },
+    {
+      "id": "BI-001",
+      "origin": "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md",
+      "severity": "mittel",
+      "reason": "GLES q27g bestehende Gleichstellungsmaßnahmen zu weit; q27b Sprachbewertung keine staatliche Pflicht",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Gezielte Runde1 bestätigt; keine Auswahl-/Empirie-/Neutralitätsabnahme",
+      "verification": {
+        "report": "reports/loop/reviews/BREADTH-INTEGRATION-002-round1.md",
+        "sha256": "bf01e79391664b6acd1c0549ccaf7409f191360224ef6f3606baf90de4b92051"
+      }
+    },
+    {
+      "id": "BI-002",
+      "origin": "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md",
+      "severity": "mittel",
+      "reason": "GLES q51d/e/f Wahrnehmungen/Erwartung von normativen Ordnungspräferenzen unterscheiden",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Gezielte Runde1 bestätigt; keine Auswahl-/Empirie-/Neutralitätsabnahme",
+      "verification": {
+        "report": "reports/loop/reviews/BREADTH-INTEGRATION-002-round1.md",
+        "sha256": "bf01e79391664b6acd1c0549ccaf7409f191360224ef6f3606baf90de4b92051"
+      }
+    },
+    {
+      "id": "BI-003",
+      "origin": "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md",
+      "severity": "gering",
+      "reason": "ISSP2016 getrennte deutsche Fundstellen PDF6–7 bzw.13–15",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Gezielte Runde1 bestätigt; keine Auswahl-/Empirie-/Neutralitätsabnahme",
+      "verification": {
+        "report": "reports/loop/reviews/BREADTH-INTEGRATION-002-round1.md",
+        "sha256": "bf01e79391664b6acd1c0549ccaf7409f191360224ef6f3606baf90de4b92051"
+      }
+    },
+    {
+      "id": "BI-004",
+      "origin": "reports/loop/reviews/BREADTH-INTEGRATION-002-round1.md",
+      "severity": "gering",
+      "reason": "q51b fordert Entscheidungen durch das Volk, aber kein bestimmtes Volksentscheidverfahren",
+      "decision": "angenommen",
       "repairRounds": 0,
       "status": "NICHT_BESTANDEN",
-      "reason": "Subnormal positive weights underflow before division and distort generic Taylor variance. No actual empirical study exposure claimed.",
-      "correctionState": "Gezielte Runde1 beauftragt, ursprüngliche Erstprüffassung jetzt sichern.",
-      "blocks": ["optional generic categories variance/SE in declared positive Float range"]
+      "blocks": ["matrix q51b naming only"],
+      "correctionState": "Minimaler Wortwechsel nach Sicherung der geprüften v2-Fassung; keine neue Grundlagenrecherche"
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

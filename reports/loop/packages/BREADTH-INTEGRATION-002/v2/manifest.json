@@ -1,0 +1,17 @@
+{
+  "package": "BREADTH-INTEGRATION-002/v2",
+  "createdAtUtc": "2026-10-03T12:44:46.721619+00:00",
+  "scope": "Gezielte BI-001/002/003 Korrektur1, kein Gesamtaudit",
+  "previousVersion": {
+    "commit": "c72d465b7a226356dfca09ae48e83273ee2dfc03",
+    "manifest": "reports/loop/packages/BREADTH-INTEGRATION-002/v1/manifest.json",
+    "report": "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md",
+    "reportSha256": "e5fb9424e78ac81a19eb80a584fd52dcad7b525d08d2ff008c1dfeadf0f2114a"
+  },
+  "pins": [
+    {
+      "path": "docs/abdeckung-v2.md",
+      "sha256": "5cd0a1bdff8d9c442cc90e9106f25fbf409d348f9b32066429ff518a985d2a7d"
+    }
+  ]
+}

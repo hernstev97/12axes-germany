@@ -253,9 +253,11 @@ def categorical_reference(
             for row in valid:
                 assert row.design is not None
                 indicator = 1.0 if row.response == code else 0.0
-                residuals[row.design].append(row.weight * (indicator - proportion))
+                # Normalize before multiplying so subnormal weights do not
+                # underflow before the quotient can recover their contribution.
+                residuals[row.design].append((row.weight / valid_weight) * (indicator - proportion))
             linearized = {
-                unit: fsum(contributions) / valid_weight
+                unit: fsum(contributions)
                 for unit, contributions in residuals.items()
             }
             stratum_variances = []

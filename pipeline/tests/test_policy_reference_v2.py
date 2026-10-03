@@ -1,7 +1,7 @@
 """Synthetic hand-calculation oracles; no empirical data or source validation."""
 
 from fractions import Fraction
-from math import sqrt
+from math import nextafter, sqrt
 import unittest
 
 from pipeline.policy_reference_v2 import (
@@ -107,6 +107,58 @@ class PolicyReferenceTests(unittest.TestCase):
         self.assertEqual(result.estimates[0].proportion, float(Fraction(1, 3)))
         self.assertAlmostEqual(result.estimates[0].variance, float(Fraction(1, 81)))
         self.assertAlmostEqual(result.estimates[0].standard_error, float(Fraction(1, 9)))
+
+    def test_smallest_positive_float_equal_weights_hand_oracle(self):
+        smallest = nextafter(0.0, 1.0)
+        basis = (DesignUnit("S", 1), DesignUnit("S", 2))
+        result = self.reference([
+            Observation("A", smallest, True, False, basis[0]),
+            Observation("B", smallest, True, False, basis[1]),
+        ], basis=basis)
+        # W=2w, p_A=p_B=1/2, normalized PSU totals=(1/4,-1/4).
+        # V=2*(1/16+1/16)=1/4; SE=1/2, independent of positive w.
+        self.assertEqual(result.variance_status, VarianceStatus.COMPUTED_WRT_TAYLOR)
+        self.assertEqual(result.accounting.valid_weight, 2 * smallest)
+        for estimate in result.estimates:
+            self.assertEqual(estimate.proportion, float(Fraction(1, 2)))
+            self.assertEqual(estimate.variance, float(Fraction(1, 4)))
+            self.assertEqual(estimate.standard_error, float(Fraction(1, 2)))
+
+    def test_smallest_positive_float_one_to_two_weights_hand_oracle(self):
+        smallest = nextafter(0.0, 1.0)
+        basis = (DesignUnit("S", 1), DesignUnit("S", 2))
+        result = self.reference([
+            Observation("A", smallest, True, False, basis[0]),
+            Observation("B", 2 * smallest, True, False, basis[1]),
+        ], basis=basis)
+        # W=3w, p_A=1/3, p_B=2/3. A's normalized totals=(2/9,-2/9).
+        # V=2*(4/81+4/81)=16/81; SE=4/9. B has opposite totals.
+        self.assertEqual(result.variance_status, VarianceStatus.COMPUTED_WRT_TAYLOR)
+        self.assertEqual(result.accounting.valid_weight, 3 * smallest)
+        self.assertEqual(result.estimates[0].proportion, float(Fraction(1, 3)))
+        self.assertEqual(result.estimates[1].proportion, float(Fraction(2, 3)))
+        for estimate in result.estimates:
+            self.assertAlmostEqual(estimate.variance, float(Fraction(16, 81)))
+            self.assertAlmostEqual(estimate.standard_error, float(Fraction(4, 9)))
+
+    def test_common_weight_scaling_preserves_shares_and_variance(self):
+        basis = (DesignUnit("S", 1), DesignUnit("S", 2))
+        for first_weight, second_weight in ((1, 1), (1, 2)):
+            baseline = self.reference([
+                Observation("A", first_weight, True, False, basis[0]),
+                Observation("B", second_weight, True, False, basis[1]),
+            ], basis=basis)
+            for scale in (nextafter(0.0, 1.0), 1e-200, 1.0, 1e100, 1e306):
+                with self.subTest(weights=(first_weight, second_weight), scale=scale):
+                    scaled = self.reference([
+                        Observation("A", first_weight * scale, True, False, basis[0]),
+                        Observation("B", second_weight * scale, True, False, basis[1]),
+                    ], basis=basis)
+                    self.assertEqual(scaled.variance_status, VarianceStatus.COMPUTED_WRT_TAYLOR)
+                    for actual, expected in zip(scaled.estimates, baseline.estimates):
+                        self.assertAlmostEqual(actual.proportion, expected.proportion)
+                        self.assertAlmostEqual(actual.variance, expected.variance)
+                        self.assertAlmostEqual(actual.standard_error, expected.standard_error)
 
     def test_separate_studies_and_questions_keep_separate_references(self):
         first = self.reference([

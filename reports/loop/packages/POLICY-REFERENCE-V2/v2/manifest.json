@@ -1,0 +1,20 @@
+{
+  "package": "POLICY-REFERENCE-V2/v2",
+  "createdAtUtc": "2026-10-03T12:46:19.820326+00:00",
+  "scope": "PRV2-F01 targeted correction1, no source-specific/empirical gate",
+  "previousVersion": {
+    "commit": "c72d465b7a226356dfca09ae48e83273ee2dfc03",
+    "report": "reports/loop/reviews/POLICY-REFERENCE-V2-first.md",
+    "reportSha256": "d3aa9f4fe5721facef4a733679a6ed841f54f4c414f91b7c83038304dc7c3618"
+  },
+  "pins": [
+    {
+      "path": "pipeline/policy_reference_v2.py",
+      "sha256": "bc06e5c06935e3ff492543bdca986ebca823ec962eab8e6321ff2bf19ee83d2b"
+    },
+    {
+      "path": "pipeline/tests/test_policy_reference_v2.py",
+      "sha256": "01ddfaa79b3fedf1cc10d79b547a38622827fa218a29bd921f896e39568d5ad8"
+    }
+  ]
+}

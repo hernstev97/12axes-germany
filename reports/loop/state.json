@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T12:42:13.589395+00:00",
+  "updatedAtUtc": "2026-10-03T13:00:17.199466+00:00",
   "status": "RUNNING",
-  "phase": "Breite Forschungsgrundlage v2; altes Neunermodul historisch, B/FULL-Folge angehalten",
+  "phase": "Breite v2: 43 Originalangaben aus acht Themen als Entwurf; Vertrag, synthetische Adapter und Websitevorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -43,7 +43,8 @@
     "Beide frischen Vor-B-Ersturteile ACCEPTED_BOUNDED, Gate mitgehashten27/19Pins; tatsächlicher B-Import und Runtime exit0, H/ZF behalten",
     "BREADTH-DATA-001 and TOPICS-001 separate immutable first source reports completed; unsolicited public exposure limits disclosed",
     "WEBSITE-BREADTH-002 WB-001/002/003 targeted correction1 accepted",
-    "POLICY-REFERENCE-V2 pure synthetic preparation author19hand-oracles PASS, independent review pending"
+    "POLICY-REFERENCE-V2 pure synthetic preparation author19hand-oracles PASS, independent review pending",
+    "POLICY-REFERENCE-V2 PRV2-F01 gezielte Runde1 bestätigt; 22+29+6 synthetische Testmethoden exit0, keine Empirie"
   ],
   "openTasks": [
     "Abdeckungsmatrix normale Quellen-/Konstruktprüfung, konkrete Zugang/Rechte und Dateicodelisten",
@@ -97,8 +98,8 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "BESTANDEN pnpm check038 exit0; breadth empirical/rights/access gates unresolved",
-    "currentIndependentIntegration": "NICHT_GEPRÜFT",
+    "currentLocalTechnical": "NICHT_BESTANDEN: pnpm check040 exit1 bei Prettier state und zwei neuen Frontenddateien; übrige Checks dadurch nicht ausgeführt. Frontendpins bleiben bis Ersturteil unverändert, reine Formatkorrektur folgt danach.",
+    "currentIndependentIntegration": "BI001–003 bounded correction1 passed; BI004 minor naming pending",
     "empiricalValidation": "Historische A/B-Kriterien berechnet; keine umfassende Produktvalidität. Breite v2 NICHT_GEPRÜFT.",
     "otherModelFamily": "NICHT_GEPRÜFT",
     "currentBrowserPlaceholderPages": "BESTANDEN",
@@ -122,7 +123,8 @@
     "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung",
     "currentConfirmatoryTransition": "BESTANDEN_BEGRÄNZT vorB; actual B executed pending result review",
     "currentProductBreadth": "NICHT_BESTANDEN: historical narrow module does not satisfy broad product objective",
-    "actualBHistorical": "Fixed v1 numerical criteria met before scope steering; no unexamined B for extension; not overall validity/release acceptance"
+    "actualBHistorical": "Fixed v1 numerical criteria met before scope steering; no unexamined B for extension; not overall validity/release acceptance",
+    "currentGenericCategoryArithmetic": "PRV2-F01 correction1 independently passed 22+29+6 synthetic testmethods; no empirical acceptance"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -202,7 +204,10 @@
     "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md",
     "reports/loop/reviews/WEBSITE-BREADTH-002-first.md",
     "reports/loop/reviews/WEBSITE-BREADTH-002-round1.md",
-    "reports/loop/reviews/POLICY-REFERENCE-V2-first.md"
+    "reports/loop/reviews/POLICY-REFERENCE-V2-first.md",
+    "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md",
+    "reports/loop/reviews/BREADTH-INTEGRATION-002-round1.md",
+    "reports/loop/reviews/POLICY-REFERENCE-V2-round1.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -216,26 +221,25 @@
     "CP-01",
     "CP-02",
     "CP-03",
-    "PRODUCT-BREADTH-001",
-    "PRV2-F01"
+    "PRODUCT-BREADTH-001"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
       "name": "/root/breadth_data_instruments",
-      "status": "RUNNING_PUBLIC_ACCESS_METADATA_ONLY_FOLLOWUP",
-      "report": "reports/loop/authors/BREADTH-ACCESS-002.md"
-    },
-    {
-      "name": "T3 breadth_integration_review",
-      "status": "RUNNING_FIRST_REVIEW",
-      "taskId": "node:delegated-task:command%3Amcp%3Ac4ea3b31-9158-4e6e-944e-cc24189c4ff5%3Adelegate-task%3Alife93-breadth-integration-002-first-20261003",
-      "report": "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md"
+      "status": "RUNNING_PUBLIC_BINDING_ONLY",
+      "report": "reports/loop/authors/BREADTH-BINDING-003.md"
     },
     {
       "name": "/root/breadth_topic_frame",
-      "status": "PAUSED_BEFORE_CODE_CORRECTION_UNTIL_V1_CHECKPOINT",
-      "report": "reports/loop/authors/POLICY-REFERENCE-V2-round1-WIP.md"
+      "status": "RUNNING_SYNTHETIC_INMEMORY_ADAPTER",
+      "report": "reports/loop/authors/POLICY-ADAPTER-WIP.md"
+    },
+    {
+      "name": "T3 policy_profile_review",
+      "status": "RUNNING_FIRST_REVIEW",
+      "taskId": "node:delegated-task:command%3Amcp%3Ac4ea3b31-9158-4e6e-944e-cc24189c4ff5%3Adelegate-task%3Alife93-policy-profile-001-first-20261003",
+      "report": "reports/loop/reviews/POLICY-PROFILE-001-first.md"
     }
   ],
   "workPackages": [
@@ -465,33 +469,43 @@
     },
     {
       "id": "WEBSITE-BREADTH-002",
-      "status": "WIP_REVIEW_RUNNING",
+      "status": "DONE_BOUNDED_COPY",
       "manifest": "reports/loop/packages/WEBSITE-BREADTH-002/v1/manifest.json",
       "technical": "reports/loop/breadth-website-technical.json",
-      "scope": "Bestehende Seiten-/Statustexte; keine numerischen Ergebnisbehauptungen"
+      "scope": "Bestehende Seiten-/Statustexte; keine numerischen Ergebnisbehauptungen",
+      "reviewStatus": "WB001–003 correction1 accepted; no new design/results/release"
     },
     {
       "id": "POLICY-REFERENCE-V2",
-      "status": "WIP_SYNTHETIC_ONLY",
-      "scope": "Generic per-study weighted category proportions and optional WRT-Taylor variance; no data access or concrete item/method acceptance"
+      "status": "DONE_BOUNDED_SYNTHETIC",
+      "scope": "Generic per-study weighted category proportions and optional WRT-Taylor variance; no data access or concrete item/method acceptance",
+      "reviewStatus": "PRV2-F01 correction1 passed, no empirical gate",
+      "decision": "reports/loop/POLICY-REFERENCE-V2-entscheidung.md"
+    },
+    {
+      "id": "POLICY-PROFILE-001",
+      "status": "WIP_FIRST_REVIEW",
+      "scope": "Inmemory separate response/navigation states; no UI/reference numbers",
+      "author": "reports/loop/authors/POLICY-PROFILE-WIP.md",
+      "tests": "13 synthetic Vitest tests author exit0"
     }
   ],
-  "nextConcreteStep": "Zwei laufende unabhängige Breitenautoren ohne Antwortergebnisse; beide Erstberichte lesen, Quellen-/Abdeckungsmatrix zusammenführen und v2-Kriterien vor neuer Empirie festlegen.",
+  "nextConcreteStep": "Öffentliche Bindung003 abschließen, geprüfte Matrixfassung sichern, BI004 lokal korrigieren. Danach43Fragen-/Kategorienvertrag und Publikationskriterien vor neuer Empirie binden; zwei frische Übergangsrollen.",
   "checkpoint": {
-    "lastLocalCommit": "85aac531cb0218f7ab6d3fc71fff2ac76eb35f10",
-    "lastVerifiedRemoteCommit": "85aac531cb0218f7ab6d3fc71fff2ac76eb35f10",
-    "lastVerifiedPushAtUtc": "2026-10-03T12:24:42.652687+00:00",
+    "lastLocalCommit": "c72d465b7a226356dfca09ae48e83273ee2dfc03",
+    "lastVerifiedRemoteCommit": "c72d465b7a226356dfca09ae48e83273ee2dfc03",
+    "lastVerifiedPushAtUtc": "2026-10-03T12:42:54.741522+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-034.json",
+    "record": "reports/loop/push-035.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Breitenquellen v2 und passende Messformen; alte B/FULL-Normen/Gruppen angehalten"
+    "pendingPayload": "v2 Matrix-Korrekturfassung und Rundenerstberichte, korrigierte reine Kategorienrechnung, öffentliche Zugangsmetadaten,43Angabenentwurf und Frontendzustände WIP"
   },
   "scientificStatus": "Breite Quellenmatrix v2 WIP; beide getrennte Erstberichte abgeschlossen, Quellenintegration in Prüfung. Bekannte v1 A/B und alle historischen Tags unverändert. Neue Rechenvorbereitung nur synthetisch, keine neue Datenfreigabe/Empirie.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -523,7 +537,15 @@
     "reports/loop/technical-halt.json",
     "reports/loop/resume-package-technical.json",
     "reports/loop/resume-website-technical.json",
-    "reports/loop/breadth-website-technical.json"
+    "reports/loop/breadth-website-technical.json",
+    {
+      "id": "check040",
+      "command": "pnpm check",
+      "exitCode": 1,
+      "output": "outputs/loop/check-040.log",
+      "scope": "format stage failed; later stages not run",
+      "correction": "state format now, frontend format after first review and original checkpoint; no semantic review cycle for formatting"
+    }
   ],
   "independentPreparations": [
     {
@@ -595,6 +617,13 @@
       "event": "Breite öffentliche Dokumentensuche lieferte ungewollt Portal-/Erratum-Suchauszug mit öffentlichen Personenkennungen. Treffer nicht geöffnet; keine Antwortdaten untersucht oder Kennungen inArtefakteübernommen. Root begrenzt Suche auf konkreteOriginaldokumentlinks.",
       "status": "Gemeldete Zugriffsgrenze, keine unbewiesene vollständige Root-Nachprüfung",
       "identifiersStoredHere": false
+    },
+    {
+      "id": "PRV2-MANIFEST-BEREITSTELLUNG-001",
+      "atUtc": "2026-10-03T12:46:12.812874+00:00",
+      "status": "DOCUMENTED_CORRECTED",
+      "source": "reports/loop/reviews/POLICY-REFERENCE-V2-round1.md",
+      "scope": "Root delegierte Runde1 versehentlich vor erfolgreicher Manifestbereitstellung. Erster Zugriff FileNotFoundError exit1; danach identischer Pfad mit echtem Hash geprüft. Kein Test-/Forschungsbefund, kein Datenzugriff."
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md",
@@ -650,7 +679,8 @@
     "F-P04": "excluded climate domain remains blocked; not nine core hypothesis",
     "SW-ENV-004": "historical installer/full-locality claim remains false; no new installer",
     "META-SPLIT-001": "new conditional23strata/reserveC proposal awaits pre-empirical review",
-    "PRV2-F01": "optional generic Taylor SE with subnormalweights; no claimed actual study exposure; pure preparation correction1 pending"
+    "PRV2-F01": "Geschlossen gezielte Runde1; keine tatsächliche Studie/Designvollständigkeit bestätigt",
+    "BI-004": "Lokale q51b Benennung; blockiert übrige Forschung nicht"
   },
   "pendingTransitionReviewers": [],
   "actualA": {
@@ -745,7 +775,27 @@
   "sourceIntegrationV2": {
     "matrix": "docs/abdeckung-v2.md",
     "review": "reports/loop/reviews/BREADTH-INTEGRATION-002-first.md",
-    "status": "NICHT_GEPRÜFT",
-    "empiricalGate": "no v2 gate/tags/data access"
+    "status": "Normale Erstprüfung tragfähig; BI001–003 gezielt behoben, BI004 lokale Benennung noch offen",
+    "empiricalGate": "no v2 gate/tags/data access",
+    "round1": "reports/loop/reviews/BREADTH-INTEGRATION-002-round1.md"
+  },
+  "sourceAccessV2": {
+    "report": "reports/loop/authors/BREADTH-ACCESS-002.md",
+    "sha256": "e5ac6bbbaec7c0b406afcc42ca0b654993a94245dd0c13128ab2379c517243b5",
+    "status": "PUBLIC_METADATA_ONLY_COMPLETED",
+    "firstReportsPreserved": true,
+    "contextDrift": "Root änderte Erweiterungsplan nach beiden Quellen-Erstberichten während Zugangsfolgeauftrag; Autor las neue Fassung nicht. Drei andere Kontextpins und eigener Erstbericht gleich. Keine rückwirkende Reinblindheitsbehauptung.",
+    "rawDataAccess": "No new raw GET/HEAD or responses; only prior ESS11 raw locally evidenced",
+    "userInput": "User has no additional local files, then offered downloading requested ESS5 3.6/ESS8 2.3/ESS9 3.3/ESS10SC 3.2 CSV plus ESS8SDDF1.1 if offered; paths pending",
+    "GLES_ISSP": "Public instrument paths retained; GESIS original data AI processing conditions require study-specific permission/exception; no autonomous contact/auth/terms acceptance"
+  },
+  "empiricalPlanV2": {
+    "path": "docs/empirie-plan-v2.entwurf.md",
+    "status": "DRAFT_NOT_GATE",
+    "count": 43,
+    "measurement": "separate original categorical responses, no global score or factor",
+    "topics": 8,
+    "accessStatus": "no actual v2 answer import",
+    "remaining": "strict contract/context/publication rules, executable synthetic preparation, two fresh preempirical firsts, separate version freeze/gate"
   }
 }

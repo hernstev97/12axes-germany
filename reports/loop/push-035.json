@@ -1,0 +1,10 @@
+{
+  "atUtc": "2026-10-03T12:42:54.741522+00:00",
+  "localCommit": "c72d465b7a226356dfca09ae48e83273ee2dfc03",
+  "remoteCommit": "c72d465b7a226356dfca09ae48e83273ee2dfc03",
+  "branch": "research/life-93-night-20261003",
+  "status": "BESTANDEN",
+  "pnpmCheck": "outputs/loop/resume-checkpoint-039.log exit0",
+  "scopeScan": "outputs/loop/breadth-checkpoint035-scan.json, 27 explicit own paths PASS",
+  "limits": "Source matrix and prototype WIP; optional generic SE PRV2-F01 correction pending, no v2 empirical/release permission"
+}
