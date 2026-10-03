@@ -25,6 +25,10 @@ reports/loop/packages/
 reports/loop/reviews/
 reports/loop/authors/
 
+# Tatsächliche Gate-/Phasenbytes sind an private Receipts und öffentliche Tags gebunden.
+reports/loop/gates/
+reports/phasen/
+
 # Ursprünglicher tatsächlicher Claude-Auftrag und Modelltext bleiben bytegleich.
 reports/loop/claude-protocol-001-result.json
 reports/loop/claude-protocol-001-auftrag.txt

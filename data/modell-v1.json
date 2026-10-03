@@ -1,0 +1,270 @@
+{
+  "schema": "life93-model-freeze-1",
+  "model": "M2",
+  "scores": [
+    "H",
+    "ZF"
+  ],
+  "items": [
+    "B34",
+    "B35",
+    "B36",
+    "B40",
+    "B41",
+    "B42",
+    "B43",
+    "B44",
+    "B45"
+  ],
+  "groups": {
+    "H": [
+      "B34",
+      "B35",
+      "B36"
+    ],
+    "ZF": [
+      "B40",
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "B45"
+    ]
+  },
+  "config": {
+    "schema": "life93-A-development-1",
+    "status": "AUTHOR_DRAFT_NO_EMPIRICAL_GATE",
+    "input_columns": [
+      "stratum",
+      "psu",
+      "weight",
+      "B34",
+      "B35",
+      "B36",
+      "B40",
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "B45"
+    ],
+    "items": [
+      "B34",
+      "B35",
+      "B36",
+      "B40",
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "B45"
+    ],
+    "categories": [
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      11,
+      11,
+      11
+    ],
+    "manifest": {
+      "B34": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "B35": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "B36": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "B40": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "B41": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "B42": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "B43": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "B44": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "B45": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "models": {
+      "M1": {
+        "ALL": [
+          "B34",
+          "B35",
+          "B36",
+          "B40",
+          "B41",
+          "B42",
+          "B43",
+          "B44",
+          "B45"
+        ]
+      },
+      "M2": {
+        "H": [
+          "B34",
+          "B35",
+          "B36"
+        ],
+        "ZF": [
+          "B40",
+          "B41",
+          "B42",
+          "B43",
+          "B44",
+          "B45"
+        ]
+      },
+      "M3": {
+        "H": [
+          "B34",
+          "B35",
+          "B36"
+        ],
+        "Z": [
+          "B40",
+          "B41",
+          "B42"
+        ],
+        "F": [
+          "B43",
+          "B44",
+          "B45"
+        ]
+      }
+    },
+    "labels": {
+      "H": "Freiheit, familiäre Scham und Adoption homosexueller Menschen",
+      "Z": "Zulassung von Zuwanderung für die drei erfragten Gruppen",
+      "F": "Wahrgenommene wirtschaftliche, kulturelle und allgemeine Folgen von Zuwanderung",
+      "ZF": "Zulassung und wahrgenommene Folgen von Zuwanderung"
+    },
+    "metric": "fixed identity ULS on survey-weighted ordinal moments",
+    "efa": {
+      "factors": [
+        1,
+        2,
+        3
+      ],
+      "rotation": "geomin",
+      "rstarts": 30,
+      "epsilon": 0.001,
+      "seed": 2026100313,
+      "repeat_seed": 2026100314,
+      "sensitivity": "oblimin",
+      "alignment_max_difference": 0.0001,
+      "numerical_tie_tolerance": 1e-08
+    },
+    "criteria": {
+      "alpha": 0.05,
+      "rms_one_sided_upper_max": 0.1,
+      "loading_lower_exclusive": 0,
+      "reliability_lower_exclusive": 0.5,
+      "dominance_upper_max": 0.5,
+      "correlation_lower_exclusive": -1,
+      "correlation_upper_exclusive": 1,
+      "minimum_scores": 2,
+      "selection_order": [
+        "M2",
+        "M3"
+      ],
+      "rms_interval": "one-sided95 normal delta",
+      "other_intervals": "two-sided95 normal delta",
+      "loading_family": "Bonferroni within each fixed score",
+      "dominance_family": "Bonferroni within each fixed score, checked separately for raw and model covariance",
+      "correlation_family": "Bonferroni all pairs of the complete candidate model, before score outcomes",
+      "near_zero_rms": "INCONCLUSIVE; no conservative alternative implemented"
+    },
+    "runtime": {
+      "R": "4.5.3",
+      "lavaan": "0.7.2",
+      "pbivnorm": "0.6.0",
+      "jsonlite": "2.0.0"
+    },
+    "source_pins": {
+      "pipeline/ordinal/adapter_v2.R": "8786b8c1d60eadd2bd3faf88eb175e9df2e7afc952b7dbc26cb58ce15d7d038b",
+      "pipeline/ordinal/support.R": "b1b986e05424e11208f9184c5159f3d628cc032b48a36c028aa6ef222c81ae22"
+    },
+    "limits": [
+      "fixed original item set and oriented category coding; no outcome-based item drops or residual repairs",
+      "normal/delta inference conditional on the chosen model, fixed coding and weights",
+      "WR ultimate-PSU approximation; no calibration/FPC/PPS-WOR or personal uncertainty",
+      "conservative full-moment SPD/design-df contract inherited from the pinned adapter",
+      "selection in A is exploratory development; B remains held back; no immediate publication permission"
+    ]
+  },
+  "source_code_pins": {
+    "pipeline/ordinal/develop.R": "d1b725b05ba43d9a3edbe4964e05ae0d5365ef951944fe1c83284967ff800e74",
+    "pipeline/ordinal/develop-config.R": "44a74f0e59645d047f2bdc4508cc0058d0dd80ffb4a67a8963ee9e84f0f429b0",
+    "pipeline/ordinal/adapter_v2.R": "8786b8c1d60eadd2bd3faf88eb175e9df2e7afc952b7dbc26cb58ce15d7d038b",
+    "pipeline/ordinal/support.R": "b1b986e05424e11208f9184c5159f3d628cc032b48a36c028aa6ef222c81ae22"
+  },
+  "a_result": {
+    "path": "reports/phasen/01-a-entwicklung.json",
+    "sha256": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e"
+  }
+}

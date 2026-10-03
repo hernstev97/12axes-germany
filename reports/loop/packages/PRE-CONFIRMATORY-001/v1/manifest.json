@@ -1,0 +1,243 @@
+{
+  "schema": "life93-limited-review-package-1",
+  "package": "PRE-CONFIRMATORY-001",
+  "version": "v1",
+  "createdAtUtc": "2026-10-03T11:47:03.127085+00:00",
+  "payloadReference": "git:modell-v1 (create and verify before review launch)",
+  "roles": {
+    "methods-repro": [
+      {
+        "path": "docs/auftrag-life-93-fortsetzung-2026-10-03.md",
+        "sha256": "1e2b2f5a64332c0265e1fa75ad6942c9eef234cb9ad9b0ca67e8a565b4cb10be",
+        "publication": "public"
+      },
+      {
+        "path": "docs/planfestschreibung-v1.md",
+        "sha256": "3d3ec7cb06e5f2102213fdebe7cdab3694ce90613c1dc94327c3ef556b3a1409",
+        "publication": "public"
+      },
+      {
+        "path": "docs/empirie-plan-v1.entwurf.md",
+        "sha256": "8c0eb638dc58612922ea50e2b50018ed9e8a14109822a0b3da682f8be1840a28",
+        "publication": "public"
+      },
+      {
+        "path": "data/analysevertrag.v1.entwurf.json",
+        "sha256": "c21cea472e9832f254b7e03a5625ae375b935c8f004d6d8ce8251c3b549d18a1",
+        "publication": "public"
+      },
+      {
+        "path": "data/item-core-v1.json",
+        "sha256": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e",
+        "publication": "public"
+      },
+      {
+        "path": "data/modell-v1.json",
+        "sha256": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
+        "publication": "public"
+      },
+      {
+        "path": "reports/phasen/01-a-entwicklung.json",
+        "sha256": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e",
+        "publication": "public"
+      },
+      {
+        "path": "reports/phasen/01-a-entscheidung.md",
+        "sha256": "f35c359e2b82e7e920f7ebccf7e06026cb56ec48037df559c89163ee7df5a8a9",
+        "publication": "public"
+      },
+      {
+        "path": "docs/sensitivitaeten-v1.entwurf.md",
+        "sha256": "e2a279f5a94deebe56c3066eff34cb974566a9a6b8f6e54befe85433fa101c76",
+        "publication": "public"
+      },
+      {
+        "path": "docs/lizenzen.md",
+        "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/public-tags-v1.json",
+        "sha256": "2478202742a151e1bd888f8becef57aa49f0f8e0437b8e938736df8b7640ea3c",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/empirical_access.py",
+        "sha256": "a21de31bd937e708681095a36673267b02578217effb185a01ae4c42a9019901",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/stage_access.py",
+        "sha256": "50774e5190c8c6e82b27f77223b6a572b261ff71088e02841a703557ec06c02f",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/confirm_runtime.py",
+        "sha256": "9399e29e4eda5a4faf2f46dc9f3f2fd6a3c74f2ceefa572c2caeab5b94844ba5",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/r_runtime.py",
+        "sha256": "40168392ac69960d2b532f721aaaca4abc82317f8304f7145056537d8a901fce",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/ordinal/develop.R",
+        "sha256": "d1b725b05ba43d9a3edbe4964e05ae0d5365ef951944fe1c83284967ff800e74",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/ordinal/develop-config.R",
+        "sha256": "44a74f0e59645d047f2bdc4508cc0058d0dd80ffb4a67a8963ee9e84f0f429b0",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/ordinal/adapter_v2.R",
+        "sha256": "8786b8c1d60eadd2bd3faf88eb175e9df2e7afc952b7dbc26cb58ce15d7d038b",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/ordinal/support.R",
+        "sha256": "b1b986e05424e11208f9184c5159f3d628cc032b48a36c028aa6ef222c81ae22",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/ordinal/confirm.R",
+        "sha256": "e7c8d04d8010c456c5db6d9902353a37786737b201cf9a160d082f40a84bddad",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/ordinal/reproduce-confirm.R",
+        "sha256": "be801acf5e25a36e820277d5b048757fbd691456d2447e1fef65bc1566b0cb98",
+        "publication": "public"
+      },
+      {
+        "path": "pipeline/tests/test_stage_access.py",
+        "sha256": "eb3a0df4ece319757572f601ff519dcb5a3dbd89b7ee6db2949b88498815e560",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/authors/ESS-CONFIRMATORY-runner-proposal.md",
+        "sha256": "a2d4dd56f4104da1d4acbbbc82ddde00f4936fd1676569c6015ca09af644631e",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/authors/ESS-LATER-ACCESS-proposal.md",
+        "sha256": "2bfde3a92d29b7f7d2c82899c03ce56ac948ad840b52b079c2aff00cba371977",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/authors/ESS-CONFIRM-RUNTIME-proposal.md",
+        "sha256": "07f5c24caa9003a3a978963a581544e38bb7f00fec0061a87254e1175c2d0b62",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/authors/ESS-ORDINAL-SUPPORT-proposal.md",
+        "sha256": "efd25d20fce881f0e96359a928c6732f22297bb2043d10e07a5d85cb4f1f8011",
+        "publication": "public"
+      },
+      {
+        "path": "outputs/loop/r-runtime/confirm-runtime-author-002/receipt.json",
+        "sha256": "0c98f68092e6e160a231ce91fdb5bd69064f79cecdff1ee148a7203d96fe5bdb",
+        "publication": "local proof only"
+      }
+    ],
+    "sources-construct-fairness": [
+      {
+        "path": "docs/auftrag-life-93-fortsetzung-2026-10-03.md",
+        "sha256": "1e2b2f5a64332c0265e1fa75ad6942c9eef234cb9ad9b0ca67e8a565b4cb10be",
+        "publication": "public"
+      },
+      {
+        "path": "docs/planfestschreibung-v1.md",
+        "sha256": "3d3ec7cb06e5f2102213fdebe7cdab3694ce90613c1dc94327c3ef556b3a1409",
+        "publication": "public"
+      },
+      {
+        "path": "docs/empirie-plan-v1.entwurf.md",
+        "sha256": "8c0eb638dc58612922ea50e2b50018ed9e8a14109822a0b3da682f8be1840a28",
+        "publication": "public"
+      },
+      {
+        "path": "data/analysevertrag.v1.entwurf.json",
+        "sha256": "c21cea472e9832f254b7e03a5625ae375b935c8f004d6d8ce8251c3b549d18a1",
+        "publication": "public"
+      },
+      {
+        "path": "data/item-core-v1.json",
+        "sha256": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e",
+        "publication": "public"
+      },
+      {
+        "path": "data/modell-v1.json",
+        "sha256": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
+        "publication": "public"
+      },
+      {
+        "path": "reports/phasen/01-a-entwicklung.json",
+        "sha256": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e",
+        "publication": "public"
+      },
+      {
+        "path": "reports/phasen/01-a-entscheidung.md",
+        "sha256": "f35c359e2b82e7e920f7ebccf7e06026cb56ec48037df559c89163ee7df5a8a9",
+        "publication": "public"
+      },
+      {
+        "path": "docs/sensitivitaeten-v1.entwurf.md",
+        "sha256": "e2a279f5a94deebe56c3066eff34cb974566a9a6b8f6e54befe85433fa101c76",
+        "publication": "public"
+      },
+      {
+        "path": "docs/lizenzen.md",
+        "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/public-tags-v1.json",
+        "sha256": "2478202742a151e1bd888f8becef57aa49f0f8e0437b8e938736df8b7640ea3c",
+        "publication": "public"
+      },
+      {
+        "path": "docs/konstruktakten.entwurf.md",
+        "sha256": "fb94d84a4f00c94e1c43a59a409d603d1984655610749d5e9260fdcdf3858191",
+        "publication": "public"
+      },
+      {
+        "path": "docs/belegregister.md",
+        "sha256": "fa93c16bf26c8b21ced068bc60c51b4fa76767ac8449a92552499b32c97e5533",
+        "publication": "public"
+      },
+      {
+        "path": "docs/quellen.json",
+        "sha256": "f58e4556f877aeccf65707548d8aa4cdb4fa2848863b20f1a318ee783dcef41d",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/authors/ESS-CONSTRUCTS-resume-proposal.md",
+        "sha256": "a5d22c7f12f93ccbce41af99e86bc7021a6c04d3f98cd05afde4bc82c3ce9cb6",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/authors/ESS-CORE-VERSION-binding.md",
+        "sha256": "a05b22e814d6556e75cbd7e6028adf2df2b9fbf5ab1b7c22540c92e125b8a553",
+        "publication": "public"
+      },
+      {
+        "path": "reports/loop/authors/ESS-SPLIT-resume-proposal.md",
+        "sha256": "be37600c307f132a0e1480bcc525f49f9a6a5e70f1bd65c9a216e2493424e6f2",
+        "publication": "public"
+      },
+      {
+        "path": "data/group-source-contract.v1.entwurf.json",
+        "sha256": "14ecbf9c77e4b9eccd3dceb837bd6dbd0da49509858015bfdebf76432f9b385a",
+        "publication": "public"
+      },
+      {
+        "path": "docs/ess-versionsabgleich.entwurf.md",
+        "sha256": "e9f8c926588134ff337b49ce2753940ab4dd0ca565854fbfc7ec44c7a79ba458",
+        "publication": "public"
+      }
+    ]
+  }
+}

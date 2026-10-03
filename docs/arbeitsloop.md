@@ -64,3 +64,11 @@ Die bestehenden Dokumentationsseiten erhielten Quellen-/Statuskorrekturen, begre
 ## Planübergang vor A
 
 2026-10-03: Beide Erstberichte abgeschlossen. Methodenfehler PE-M01 in erster gezielter Korrekturrunde geschlossen; Quellenurteil weiter begrenzt gültig. Konkreter [Planfreeze](planfestschreibung-v1.md) vor tatsächlicher Antwortinterpretation. Autorentests des neuen festen B-Runners sind Vorbereitung; Normen und spätere Loader bleiben WIP. Keine weiteren Claude-Zugriffe. Ausführung beginnt erst nach verifizierten Tags und positivem Vor-A-Gate.
+
+## Erster tatsächlicher A-Schritt
+
+Plan-/Erwartungstags und positive Rollen-/Codepins vor Antwortimport verifiziert. Private Zuteilung, Neuner-A-Import und feste Entwicklungsrechnung exit0. Der so ausgewählte Zweifaktorkandidat ist keine Bestätigung. Neuer automatischer Aggregatexport hat einen getrennten Schemafehler AE-01; gezielte Korrekturprüfung vor Kopie. B/C und Vergleichsfelder bleiben geschlossen. Spätere Normsensitivität nutzt echte fitted Modellschwellen; deren Ausgabefelder werden vor B separat geprüft, keine neue Modellwahl.
+
+## A-Abschluss und festes Modell
+
+2026-10-03: AE-01 gezielt unabhängig geschlossen; kontrollierter öffentlicher A-Bericht und unveränderte M2-H/ZF-Festlegung fertig. Zahlen und Grenzen stehen einmalig im [A-Entscheid](../reports/phasen/01-a-entscheidung.md). B/FULL-Software vorbereitet, Normen ungeprüfte Autorenfassung. Modelltag und zwei frische Rollenprüfungen bleiben vor B erforderlich. Keine B-/Vergleichsantworten geöffnet.

@@ -1,0 +1,154 @@
+{
+  "schema": "life93-pre-empirical-gate-1",
+  "atUtc": "2026-10-03T11:26:28.287693+00:00",
+  "decision": "ACCEPTED_BOUNDED",
+  "scope": "Plan and executable A development before actual response access; no B/group/norm/result/empirical or release pass",
+  "reviews": [
+    {
+      "reviewer": "/root/pre_empirical_methods",
+      "scope": "methods-repro",
+      "path": "reports/loop/reviews/PRE-EMPIRICAL-001-methods-round1.md",
+      "sha256": "22a660be9e4065fd53caea3d4f6d73e71a0d294e9252dac7ad6ed2d4bcbeb0c1",
+      "basis": "Unchanged first report plus targeted PE-M01 round1 and bounded sensitivity definition"
+    },
+    {
+      "reviewer": "/root/pre_empirical_sources",
+      "scope": "sources-construct-fairness",
+      "path": "reports/loop/reviews/PRE-EMPIRICAL-001-sources-first.md",
+      "sha256": "5f178ca8d4ccaefc33fe278725004ce6a843ea80187c52b0fb05cc2f7cb41587",
+      "basis": "Unchanged bounded first judgment, two separately documented page/edition metadata corrections"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/empirie-plan-v1.entwurf.md",
+      "sha256": "8c0eb638dc58612922ea50e2b50018ed9e8a14109822a0b3da682f8be1840a28"
+    },
+    {
+      "path": "docs/sensitivitaeten-v1.entwurf.md",
+      "sha256": "e2a279f5a94deebe56c3066eff34cb974566a9a6b8f6e54befe85433fa101c76"
+    },
+    {
+      "path": "docs/planfestschreibung-v1.md",
+      "sha256": "3d3ec7cb06e5f2102213fdebe7cdab3694ce90613c1dc94327c3ef556b3a1409"
+    },
+    {
+      "path": "data/analysevertrag.v1.entwurf.json",
+      "sha256": "c21cea472e9832f254b7e03a5625ae375b935c8f004d6d8ce8251c3b549d18a1"
+    },
+    {
+      "path": "data/item-core-v1.json",
+      "sha256": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e"
+    },
+    {
+      "path": "data/inventar.csv",
+      "sha256": "5d20a5a18ab19ff131be4aac2af83057feea6ef10736c5e19c828f73ed4ad3d7"
+    },
+    {
+      "path": "data/core-integrated-4.2-binding.json",
+      "sha256": "03232e0a8ea36114324b992518d2325f6630cd850529d7a32fc6cd5933216703"
+    },
+    {
+      "path": "data/group-source-contract.v1.entwurf.json",
+      "sha256": "14ecbf9c77e4b9eccd3dceb837bd6dbd0da49509858015bfdebf76432f9b385a"
+    },
+    {
+      "path": "reports/phasen/00-designmetadaten-2026-10-03.json",
+      "sha256": "d906ac9e8f959c21153e87b69956193dc0f84f05cb03b410118d7d5ffffa08fa"
+    },
+    {
+      "path": "reports/loop/ITEM-FIRST-001-agreement.json",
+      "sha256": "777241be61a731095878a97b36220cd061976e68993f2ad429edf645223b74db"
+    },
+    {
+      "path": "reports/loop/authors/ESS-CONSTRUCTS-resume-proposal.md",
+      "sha256": "a5d22c7f12f93ccbce41af99e86bc7021a6c04d3f98cd05afde4bc82c3ce9cb6"
+    },
+    {
+      "path": "reports/loop/authors/ESS-SPLIT-resume-proposal.md",
+      "sha256": "be37600c307f132a0e1480bcc525f49f9a6a5e70f1bd65c9a216e2493424e6f2"
+    },
+    {
+      "path": "reports/loop/authors/ESS-CORE-VERSION-binding.md",
+      "sha256": "a05b22e814d6556e75cbd7e6028adf2df2b9fbf5ab1b7c22540c92e125b8a553"
+    },
+    {
+      "path": "reports/loop/authors/ESS-GROUP-CONTRACT-proposal.md",
+      "sha256": "8ef6bb020f6debfbc0674e6b4480d0918a0c2651571b87399426c088acebe0c5"
+    },
+    {
+      "path": "reports/loop/reviews/PRE-EMPIRICAL-001-methods-first.md",
+      "sha256": "a6c7eb2d6fc14a6fabc85b7fc3e4def27faf66588cb4313e752784e30a416226"
+    },
+    {
+      "path": "reports/loop/reviews/PRE-EMPIRICAL-001-sources-errata.md",
+      "sha256": "76005a88dd620a3d2940ce319be3340fd053d8ece8f9fa737d292c8735855b6e"
+    },
+    {
+      "path": "reports/loop/packages/PRE-EMPIRICAL-001/v1/manifest.json",
+      "sha256": "924082737753d702d9d5aab727bf62a4fe6853fcdb60d79b3ca9b3022b16bd19"
+    },
+    {
+      "path": "reports/loop/packages/PRE-EMPIRICAL-001/v2/manifest.json",
+      "sha256": "1cc1df1f65e5e4d84bee70155cd2c0ba59a5a87317ec15061101252e610bee1e"
+    },
+    {
+      "path": "reports/loop/public-tags-v1.json",
+      "sha256": "2478202742a151e1bd888f8becef57aa49f0f8e0437b8e938736df8b7640ea3c"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    },
+    {
+      "path": "reports/loop/aggregate-publication-contract.json",
+      "sha256": "5697f76078548ee5620aeddbb8c2d6741a90b3032e9d8610e5137f0cf58486a2"
+    },
+    {
+      "path": "pipeline/r_runtime.py",
+      "sha256": "40168392ac69960d2b532f721aaaca4abc82317f8304f7145056537d8a901fce"
+    },
+    {
+      "path": "pipeline/empirical_access.py",
+      "sha256": "a21de31bd937e708681095a36673267b02578217effb185a01ae4c42a9019901"
+    },
+    {
+      "path": "pipeline/ordinal/develop.R",
+      "sha256": "d1b725b05ba43d9a3edbe4964e05ae0d5365ef951944fe1c83284967ff800e74"
+    },
+    {
+      "path": "pipeline/ordinal/develop-config.R",
+      "sha256": "44a74f0e59645d047f2bdc4508cc0058d0dd80ffb4a67a8963ee9e84f0f429b0"
+    },
+    {
+      "path": "pipeline/ordinal/support.R",
+      "sha256": "b1b986e05424e11208f9184c5159f3d628cc032b48a36c028aa6ef222c81ae22"
+    },
+    {
+      "path": "pipeline/ordinal/adapter_v2.R",
+      "sha256": "8786b8c1d60eadd2bd3faf88eb175e9df2e7afc952b7dbc26cb58ce15d7d038b"
+    }
+  ],
+  "tags": {
+    "analyseplan-v1": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+    "erwartungsmodell-v1": "6466767c54070e747b5a233b0c0c41c07f0fc7ca"
+  },
+  "runtime": {
+    "schema": "r-runtime-v1",
+    "sourceSha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+    "privateReceiptPath": "data/local/empirical-v1/runtime-input-receipt.json",
+    "reviewedCodeHashes": {
+      "pipeline/r_runtime.py": "40168392ac69960d2b532f721aaaca4abc82317f8304f7145056537d8a901fce",
+      "pipeline/empirical_access.py": "a21de31bd937e708681095a36673267b02578217effb185a01ae4c42a9019901",
+      "pipeline/ordinal/develop.R": "d1b725b05ba43d9a3edbe4964e05ae0d5365ef951944fe1c83284967ff800e74",
+      "pipeline/ordinal/develop-config.R": "44a74f0e59645d047f2bdc4508cc0058d0dd80ffb4a67a8963ee9e84f0f429b0",
+      "pipeline/ordinal/support.R": "b1b986e05424e11208f9184c5159f3d628cc032b48a36c028aa6ef222c81ae22",
+      "pipeline/ordinal/adapter_v2.R": "8786b8c1d60eadd2bd3faf88eb175e9df2e7afc952b7dbc26cb58ce15d7d038b"
+    }
+  },
+  "limits": [
+    "Two Codex reviewers same family; shared error sources possible",
+    "Mutable coordinator receipts/shared filesystem, no absolute blinding",
+    "A exploratory development, WR approximation and conditional model inference; actual aggregates require separate checked export"
+  ]
+}

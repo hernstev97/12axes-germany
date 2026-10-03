@@ -129,9 +129,16 @@ ec_model_evaluation<-function(adapter,groups,scores,efa,cfg) {
     minimum_dimensions=count>=cfg$criteria$minimum_scores)
   diagnostics<-ec_attempt(function()as.list(lavaan::fitMeasures(fit$private,
     c('chisq','df','pvalue','chisq.scaled','df.scaled','pvalue.scaled','cfi.scaled','tli.scaled','rmsea.scaled','srmr'))))
+  context<-sw$private$context
+  fitted_moments<-os_at(context,context$x)$moments
+  threshold_index<-grepl('|',names(fitted_moments),fixed=TRUE)
   list(status='EXECUTED',fit=fit$aggregate,metric=cfg$metric,sandwich=sw$aggregate,
     standardized_parameters=std$results,standardized_points=list(items=cfg$items,factors=names(groups),
-      loadings=loading_points,correlation=correlation_points),rms=rms_bound,correlations=correlations,
+      loadings=loading_points,correlation=correlation_points,
+      thresholds=unname(fitted_moments[threshold_index]),
+      threshold_labels=names(fitted_moments)[threshold_index],
+      threshold_observed_max_difference=max(abs(fitted_moments[threshold_index]-adapter$moments[threshold_index]))),
+    rms=rms_bound,correlations=correlations,
     model_criteria=as.list(criteria),eligible=all(criteria),scores=score_results,
     diagnostics=if(diagnostics$status=='EXECUTED')list(status='EXECUTED',values=diagnostics$value)else
       list(status='UNAVAILABLE',code=diagnostics$code))

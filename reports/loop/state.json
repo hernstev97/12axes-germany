@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T11:21:50.737925+00:00",
+  "updatedAtUtc": "2026-10-03T11:47:03.127085+00:00",
   "status": "RUNNING",
-  "phase": "Phase0: bounded preA reviews accepted; public plan/expectation freeze, before real answers",
+  "phase": "A abgeschlossen, Modell festgelegt; Vor-B-Prüfung vorbereiten",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -33,13 +33,20 @@
     "Generic pinned runtime fresh coordinator reproduction54/54; mock gate tests13/13, true private production remains unopened",
     "Joint-group author43/43 synthetic implementation assertions; separate application review still required",
     "Two preA first judgments complete; PE-M01 correction1 accepted with8 targeted assertions, sources first boundedpass reused",
-    "Fixed B/FULL confirm author113/113 plusnegativeboundary probes; separate B gate outstanding"
+    "Fixed B/FULL confirm author113/113 plusnegativeboundary probes; separate B gate outstanding",
+    "analyseplan-v1 then erwartungsmodell-v1 verified6466767 beforeA responses",
+    "ActualA runtime exit0:1198design/1113complete, M2 H/ZF candidate by unchanged selection; not confirmation/validity",
+    "AE-01 gezielte Runde1 angenommen; tatsächlicher A-Aggregatexport und Root-Nachkontrolle abgeschlossen",
+    "M2 H/ZF mit neun Items unverändert in data/modell-v1.json gebunden; öffentlicher Modelltag folgt",
+    "B/FULL-Zugriffs- und Runtimeautoren fertig (17 Loader-/8 Wrapper-/52 R-Checks); echte B-Daten ungeöffnet",
+    "Normautor fertig:45 synthetische Assertions; unabhängige Prüfung/Wrapper/Empirie offen"
   ],
   "openTasks": [
-    "Publish verified public plan/expectation tags and positive gate, then protected actual A development",
-    "Freeze public plan/expectations after reviews; protected A empirical development then model freeze before B gate",
-    "One-time B, whole-DE transfer, allowed comparisons and result interpretation reviews",
-    "Methods/website from actual evidence; concrete design acceptance, Claude final control and real human tests remain pending"
+    "modell-v1 auf gesichertem Commit erstellen/verifizieren; zwei frische Vor-B-Ersturteile",
+    "Unverändertes M2 einmalig in B prüfen; danach bedingte FULL-Anwendung",
+    "Norm-/Gruppensoftware gezielt prüfen und real anwenden, soweit Kriterien tragen",
+    "Zwei Ergebnisübergangsprüfungen; Methodenbericht und Website aus tragfähigen Ergebnissen",
+    "Claude-Schlusskontrolle, konkrete Designfreigabe, reale Verständnistests und persönliche Releasefreigabe ausstehend"
   ],
   "dependencies": [
     {
@@ -62,9 +69,9 @@
     },
     {
       "id": "PUBLIC-TAGS",
-      "status": "NICHT_GEPRÜFT",
+      "status": "BESTANDEN",
       "blocks": ["empirischer Analysebeginn"],
-      "actionNeeded": "Analyseplan und Erwartungsmodell vollständig begründen und erforderliche Prüfungen erfüllen; erst dann öffentliche Tags."
+      "actionNeeded": "analyseplan-v1 and erwartungsmodell-v1 remote/treepins verified beforeA; separate modeltag still pending"
     },
     {
       "id": "HUMAN-RELEASE",
@@ -87,9 +94,9 @@
   ],
   "checks": {
     "mainIntegration": "BESTANDEN",
-    "currentLocalTechnical": "BESTANDEN retry031; initial031 formattingfailure retained",
+    "currentLocalTechnical": "BESTANDEN pnpm check033 exit0",
     "currentIndependentIntegration": "NICHT_GEPRÜFT",
-    "empiricalValidation": "NICHT_GEPRÜFT",
+    "empiricalValidation": "NICHT_GEPRÜFT; exploratoryA complete, B held",
     "otherModelFamily": "NICHT_GEPRÜFT",
     "currentBrowserPlaceholderPages": "BESTANDEN",
     "currentHandbookGuard": "BESTANDEN",
@@ -108,7 +115,8 @@
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
     "currentWebsiteCopy": "BESTANDEN bounded",
-    "currentWebsiteBrowser": "BESTANDEN layout/axe two pages five widths; realzoom/focus-visible NICHT_GEPRÜFT"
+    "currentWebsiteBrowser": "BESTANDEN layout/axe two pages five widths; realzoom/focus-visible NICHT_GEPRÜFT",
+    "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -179,7 +187,9 @@
     "reports/loop/reviews/PRE-EMPIRICAL-001-methods-first.md",
     "reports/loop/reviews/PRE-EMPIRICAL-001-sources-first.md",
     "reports/loop/reviews/PRE-EMPIRICAL-001-sources-errata.md",
-    "reports/loop/reviews/PRE-EMPIRICAL-001-methods-round1.md"
+    "reports/loop/reviews/PRE-EMPIRICAL-001-methods-round1.md",
+    "reports/loop/reviews/AGGREGATE-EXPORT-001-first.md",
+    "reports/loop/reviews/AGGREGATE-EXPORT-001-round1.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -192,36 +202,7 @@
     "SW-ENV-004"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
-  "activeAgents": [
-    {
-      "name": "/root/ordinal_support_author",
-      "task": "New fixed Full-DE norm/sensitivity code; invented data only",
-      "allowedWrites": [
-        "pipeline/ordinal/norms.R",
-        "pipeline/ordinal/test-norms.R",
-        "reports/loop/authors/ESS-NORMS-proposal.md",
-        "outputs/loop/resume-norms-author/"
-      ]
-    },
-    {
-      "name": "/root/later_access_author",
-      "task": "New fixed B/FULL positive-access loader; invented data only",
-      "allowedWrites": [
-        "pipeline/stage_access.py",
-        "pipeline/tests/test_stage_access.py",
-        "reports/loop/authors/ESS-LATER-ACCESS-proposal.md",
-        "outputs/loop/resume-later-access-author/"
-      ]
-    },
-    {
-      "name": "/root/pre_empirical_methods",
-      "task": "Separate normal export-boundary technical review; read-only existing research",
-      "allowedWrites": [
-        "reports/loop/reviews/AGGREGATE-EXPORT-001-first.md",
-        "outputs/loop/aggregate-export-review/"
-      ]
-    }
-  ],
+  "activeAgents": [],
   "workPackages": [
     {
       "id": "LOOP-000",
@@ -435,21 +416,22 @@
       "reviewStatus": "not reviewed; no empirical access"
     }
   ],
-  "nextConcreteStep": "Two fresh independent pre-A transition reviews on PRE-EMPIRICAL-001/v1; correct bounded findings before any public tag/A import",
+  "nextConcreteStep": "Read AE-01 round1; exactpins beforechecked A export, model-v1 tag, newB runtime package and2freshreviewers",
   "checkpoint": {
     "lastLocalCommit": "git:HEAD",
-    "lastVerifiedRemoteCommit": "a199581c1749a692d4610795ea98ee4850c44724",
-    "lastVerifiedPushAtUtc": "2026-10-03T11:02:22.398239+00:00",
+    "lastVerifiedRemoteCommit": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+    "lastVerifiedPushAtUtc": "2026-10-03T11:24:15.197587+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-030.json",
+    "record": "reports/loop/push-031.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
-    "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8"
+    "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
+    "pendingPayload": "A-Aggregate/Modellabschluss, B/FULL-Software und Vor-B-Prüffassung; Normen WIP"
   },
   "scientificStatus": "Actual design metadata only. All9 core eligible in both independent source first judgments; selection/model still proposed. No A/B/C response interpretation, political data exposure or scientific release acceptance.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -608,5 +590,31 @@
     "SW-ENV-004": "historical installer/full-locality claim remains false; no new installer",
     "META-SPLIT-001": "new conditional23strata/reserveC proposal awaits pre-empirical review"
   },
-  "pendingTransitionReviewers": []
+  "pendingTransitionReviewers": [],
+  "actualA": {
+    "status": "EXECUTED_PRIVATE",
+    "inputStageExitCode": 0,
+    "runtimeExitCode": 0,
+    "publicGate": "reports/loop/gates/pre-empirical.json",
+    "publicTags": "reports/loop/public-tags-v1.json",
+    "candidate": "M2 H/ZF",
+    "scope": "Exploratory development only; numerical export correction pending; B/C/comparisons unopened",
+    "reproduction": [
+      "python3 pipeline/empirical_access.py prepare",
+      "python3 pipeline/empirical_access.py A",
+      "python3 pipeline/r_runtime.py development-a --label real-a-001"
+    ],
+    "privateBindings": "actualinput/provenance/runs onlydata/local/empirical-v1; privatehashesnotpublished"
+  },
+  "currentA": {
+    "result": "reports/phasen/01-a-entwicklung.json",
+    "sha256": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e",
+    "decision": "reports/phasen/01-a-entscheidung.md",
+    "fixedModel": "data/modell-v1.json",
+    "fixedModelSha256": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
+    "selectedModel": "M2",
+    "selectedScores": ["H", "ZF"],
+    "BOpened": false,
+    "comparisonFieldsOpened": false
+  }
 }

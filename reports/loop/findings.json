@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T11:21:50.737925+00:00",
+  "updatedAtUtc": "2026-10-03T11:47:03.127085+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2696,6 +2696,25 @@
       "blocks": [],
       "verification": {
         "report": "reports/loop/reviews/PRE-EMPIRICAL-001-sources-errata.md"
+      }
+    },
+    {
+      "id": "AE-01",
+      "origin": "reports/loop/reviews/AGGREGATE-EXPORT-001-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "Global known-key list admits misplaced respondent-shaped arrays and empty source pins",
+      "correctionState": "Gezielte Runde1 ACCEPTED_BOUNDED; Root prüfte Pins, exportierte A einmalig und validierte Struktur/Lizenz/Code erneut.",
+      "blocks": [],
+      "verification": {
+        "package": "reports/loop/packages/AGGREGATE-EXPORT-001/v2/manifest.json",
+        "firstReportSha256": "8d88a723579d4a77dcc34f195e6af21cb890b0ab4ab83fbcbf0f26e9c277aea0",
+        "report": "reports/loop/reviews/AGGREGATE-EXPORT-001-round1.md",
+        "sha256": "b18a3f3f9ecbe7e648a53c00f79f71a266fcc95e857fcf0bb3a8cacff535d8f6",
+        "actualExport": "reports/phasen/01-a-entwicklung.json",
+        "actualExportSha256": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e"
       }
     }
   ],

@@ -1,0 +1,43 @@
+{
+  "schema": "life93-public-tags-1",
+  "verifiedAtUtc": "2026-10-03T11:25:47.710409+00:00",
+  "creationOrder": ["analyseplan-v1", "erwartungsmodell-v1"],
+  "tags": {
+    "analyseplan-v1": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+    "erwartungsmodell-v1": "6466767c54070e747b5a233b0c0c41c07f0fc7ca"
+  },
+  "artifactTreePins": [
+    {
+      "tag": "analyseplan-v1",
+      "path": "docs/empirie-plan-v1.entwurf.md",
+      "sha256": "8c0eb638dc58612922ea50e2b50018ed9e8a14109822a0b3da682f8be1840a28",
+      "tagTreeEqualsActive": true
+    },
+    {
+      "tag": "analyseplan-v1",
+      "path": "data/analysevertrag.v1.entwurf.json",
+      "sha256": "c21cea472e9832f254b7e03a5625ae375b935c8f004d6d8ce8251c3b549d18a1",
+      "tagTreeEqualsActive": true
+    },
+    {
+      "tag": "analyseplan-v1",
+      "path": "pipeline/ordinal/develop-config.R",
+      "sha256": "44a74f0e59645d047f2bdc4508cc0058d0dd80ffb4a67a8963ee9e84f0f429b0",
+      "tagTreeEqualsActive": true
+    },
+    {
+      "tag": "erwartungsmodell-v1",
+      "path": "data/item-core-v1.json",
+      "sha256": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e",
+      "tagTreeEqualsActive": true
+    },
+    {
+      "tag": "erwartungsmodell-v1",
+      "path": "reports/loop/authors/ESS-CONSTRUCTS-resume-proposal.md",
+      "sha256": "a5d22c7f12f93ccbce41af99e86bc7021a6c04d3f98cd05afde4bc82c3ce9cb6",
+      "tagTreeEqualsActive": true
+    }
+  ],
+  "status": "BESTANDEN",
+  "scope": "Plan/expectation publication before actual responses; WIP unrelated tree files not scientifically approved"
+}

@@ -1,0 +1,38 @@
+{
+  "package": "AGGREGATE-EXPORT-001",
+  "version": 2,
+  "round": 1,
+  "atUtc": "2026-10-03T11:32:10.077906+00:00",
+  "baseCommit": "6466767c54070e747b5a233b0c0c41c07f0fc7ca",
+  "scope": "Exact accidental disclosure/schema guard correction; no numerical criterion changes or actual inputs",
+  "files": [
+    {
+      "path": "pipeline/aggregate_export.py",
+      "sha256": "93321bd7395cd7dfddc2bde3dbfe7b1ae1d53c436d3162012eee768a0665deb9"
+    },
+    {
+      "path": "pipeline/public_schema.py",
+      "sha256": "41093aed8699db89846b6cb0b962335c450ea3a21e96f906e2d6dbfd8288b1bc"
+    },
+    {
+      "path": "data/a-aggregate-public.schema.json",
+      "sha256": "fe7d71fa47fa96b00e45cd60c8a97d4f623b351f91066d6120dd9d006cde3fd2"
+    },
+    {
+      "path": "reports/loop/authors/ESS-AGGREGATE-EXPORT-correction.md",
+      "sha256": "e3e2d5260792dccb1074d4c40dedb35042844b29fd6e055d394aa713d194c83b"
+    },
+    {
+      "path": "pipeline/r_runtime.py",
+      "sha256": "40168392ac69960d2b532f721aaaca4abc82317f8304f7145056537d8a901fce"
+    },
+    {
+      "path": "reports/loop/aggregate-publication-contract.json",
+      "sha256": "5697f76078548ee5620aeddbb8c2d6741a90b3032e9d8610e5137f0cf58486a2"
+    },
+    {
+      "path": "reports/loop/reviews/AGGREGATE-EXPORT-001-first.md",
+      "sha256": "8d88a723579d4a77dcc34f195e6af21cb890b0ab4ab83fbcbf0f26e9c277aea0"
+    }
+  ]
+}

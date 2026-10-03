@@ -2,7 +2,8 @@
   "atUtc": "2026-10-03T11:21:50.737925+00:00",
   "pnpmCheck": {
     "initial": "exit1 format state/findings only; outputs/loop/resume-checkpoint-031.log",
-    "retry": "exit0 outputs/loop/resume-checkpoint-031-retry.log"
+    "retry": "exit0 outputs/loop/resume-checkpoint-031-retry.log",
+    "final": "exit0 outputs/loop/resume-checkpoint-031-final.log"
   },
   "rootSyntheticCorrection": {
     "receipt": "outputs/loop/r-runtime/root-development-correlation-round1-001/receipt.json",
@@ -15,5 +16,31 @@
     "codeSha256": "fe4a54aa13297758bb76e0933a7ae6ea6338abbc4ea953ae7ed9a5ede70d3cfb",
     "independentReview": "pending"
   },
-  "limits": "No actual answers, tags or empirical acceptance at time of record"
+  "limits": "No actual answers, tags or empirical acceptance at time of record",
+  "actualAStages": {
+    "prepareExit": 0,
+    "inputExit": 0,
+    "runtimeExit": 0,
+    "scope": "Realanswers/privateinputskeptprivate,unchangedreviewedA6code"
+  },
+  "fittedThresholdExtension": {
+    "file": "pipeline/ordinal/confirm.R",
+    "sha256": "e7c8d04d8010c456c5db6d9902353a37786737b201cf9a160d082f40a84bddad",
+    "priorVersion": "6466767 preservese49author113report",
+    "scope": "Actualimpliedfittedthresholds/labelsforEAP;nofit/criteriachange",
+    "syntheticChecks": "root-confirm-thresholds-001 threshold-result.json8/8pass, observeddifference2.5260874503274522e-08",
+    "review": "freshpreBpending"
+  },
+  "recordingError": "First status updater stopped at wrong key backup; findings saved only, no gate/input/code changed. Actual key checkpoint verified and updater corrected.",
+  "pnpmCheck032": {
+    "exitCode": 0,
+    "log": "outputs/loop/resume-checkpoint-032.log"
+  },
+  "actualAExport": {
+    "exitCode": 0,
+    "review": "reports/loop/reviews/AGGREGATE-EXPORT-001-round1.md",
+    "resultSha256": "52dfd477b2399d2d7d1704d44f037bcbf2248a69444be567e02d3e60a6e5ba4e",
+    "rootStructureLicenseAndCodePins": "BESTANDEN",
+    "limits": "Keine empirische Bestätigung/Releasefreigabe"
+  }
 }

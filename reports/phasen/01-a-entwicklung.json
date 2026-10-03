@@ -1,0 +1,3960 @@
+{
+  "schema": "life93-A-development-aggregate-1",
+  "scope": "A exploratory development; no publication or scientific approval",
+  "config": {
+    "schema": "life93-A-development-1",
+    "status": "AUTHOR_DRAFT_NO_EMPIRICAL_GATE",
+    "input_columns": [
+      "stratum",
+      "psu",
+      "weight",
+      "B34",
+      "B35",
+      "B36",
+      "B40",
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "B45"
+    ],
+    "items": [
+      "B34",
+      "B35",
+      "B36",
+      "B40",
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "B45"
+    ],
+    "categories": [
+      5,
+      5,
+      5,
+      4,
+      4,
+      4,
+      11,
+      11,
+      11
+    ],
+    "manifest": {
+      "B34": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "B35": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "B36": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "B40": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "B41": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "B42": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "B43": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "B44": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "B45": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "models": {
+      "M1": {
+        "ALL": [
+          "B34",
+          "B35",
+          "B36",
+          "B40",
+          "B41",
+          "B42",
+          "B43",
+          "B44",
+          "B45"
+        ]
+      },
+      "M2": {
+        "H": [
+          "B34",
+          "B35",
+          "B36"
+        ],
+        "ZF": [
+          "B40",
+          "B41",
+          "B42",
+          "B43",
+          "B44",
+          "B45"
+        ]
+      },
+      "M3": {
+        "H": [
+          "B34",
+          "B35",
+          "B36"
+        ],
+        "Z": [
+          "B40",
+          "B41",
+          "B42"
+        ],
+        "F": [
+          "B43",
+          "B44",
+          "B45"
+        ]
+      }
+    },
+    "labels": {
+      "H": "Freiheit, familiäre Scham und Adoption homosexueller Menschen",
+      "Z": "Zulassung von Zuwanderung für die drei erfragten Gruppen",
+      "F": "Wahrgenommene wirtschaftliche, kulturelle und allgemeine Folgen von Zuwanderung",
+      "ZF": "Zulassung und wahrgenommene Folgen von Zuwanderung"
+    },
+    "metric": "fixed identity ULS on survey-weighted ordinal moments",
+    "efa": {
+      "factors": [
+        1,
+        2,
+        3
+      ],
+      "rotation": "geomin",
+      "rstarts": 30,
+      "epsilon": 0.001,
+      "seed": 2026100313,
+      "repeat_seed": 2026100314,
+      "sensitivity": "oblimin",
+      "alignment_max_difference": 0.0001,
+      "numerical_tie_tolerance": 1e-08
+    },
+    "criteria": {
+      "alpha": 0.05,
+      "rms_one_sided_upper_max": 0.1,
+      "loading_lower_exclusive": 0,
+      "reliability_lower_exclusive": 0.5,
+      "dominance_upper_max": 0.5,
+      "correlation_lower_exclusive": -1,
+      "correlation_upper_exclusive": 1,
+      "minimum_scores": 2,
+      "selection_order": [
+        "M2",
+        "M3"
+      ],
+      "rms_interval": "one-sided95 normal delta",
+      "other_intervals": "two-sided95 normal delta",
+      "loading_family": "Bonferroni within each fixed score",
+      "dominance_family": "Bonferroni within each fixed score, checked separately for raw and model covariance",
+      "correlation_family": "Bonferroni all pairs of the complete candidate model, before score outcomes",
+      "near_zero_rms": "INCONCLUSIVE; no conservative alternative implemented"
+    },
+    "runtime": {
+      "R": "4.5.3",
+      "lavaan": "0.7.2",
+      "pbivnorm": "0.6.0",
+      "jsonlite": "2.0.0"
+    },
+    "source_pins": {
+      "pipeline/ordinal/adapter_v2.R": "8786b8c1d60eadd2bd3faf88eb175e9df2e7afc952b7dbc26cb58ce15d7d038b",
+      "pipeline/ordinal/support.R": "b1b986e05424e11208f9184c5159f3d628cc032b48a36c028aa6ef222c81ae22"
+    },
+    "limits": [
+      "fixed original item set and oriented category coding; no outcome-based item drops or residual repairs",
+      "normal/delta inference conditional on the chosen model, fixed coding and weights",
+      "WR ultimate-PSU approximation; no calibration/FPC/PPS-WOR or personal uncertainty",
+      "conservative full-moment SPD/design-df contract inherited from the pinned adapter",
+      "selection in A is exploratory development; B remains held back; no immediate publication permission"
+    ]
+  },
+  "source_code_pins": {
+    "pipeline/ordinal/develop.R": "d1b725b05ba43d9a3edbe4964e05ae0d5365ef951944fe1c83284967ff800e74",
+    "pipeline/ordinal/develop-config.R": "44a74f0e59645d047f2bdc4508cc0058d0dd80ffb4a67a8963ee9e84f0f429b0",
+    "pipeline/ordinal/adapter_v2.R": "8786b8c1d60eadd2bd3faf88eb175e9df2e7afc952b7dbc26cb58ce15d7d038b",
+    "pipeline/ordinal/support.R": "b1b986e05424e11208f9184c5159f3d628cc032b48a36c028aa6ef222c81ae22"
+  },
+  "counts": {
+    "n_design": 1198,
+    "n_complete": 1113,
+    "n_excluded": 85,
+    "psus": 243,
+    "strata": 23,
+    "design_df": 220,
+    "moments": 87,
+    "zero_psus": 11,
+    "native_point_max_difference": 2.339998839140378e-08,
+    "point_metric": "fixed identity on ordered thresholds and polychoric correlations",
+    "point_estimator": "unweighted least-squares external moment fit; nominal lavaan DWLS engine only",
+    "item_missing_counts": {
+      "B34": 6,
+      "B35": 13,
+      "B36": 22,
+      "B40": 31,
+      "B41": 31,
+      "B42": 32,
+      "B43": 19,
+      "B44": 10,
+      "B45": 19
+    },
+    "weighted_missing_mass": 0.07606427187065797,
+    "contributing_complete_psus": 232
+  },
+  "point_moments": {
+    "items": [
+      "B34",
+      "B35",
+      "B36",
+      "B40",
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "B45"
+    ],
+    "labels": [
+      "B34|t1",
+      "B34|t2",
+      "B34|t3",
+      "B34|t4",
+      "B35|t1",
+      "B35|t2",
+      "B35|t3",
+      "B35|t4",
+      "B36|t1",
+      "B36|t2",
+      "B36|t3",
+      "B36|t4",
+      "B40|t1",
+      "B40|t2",
+      "B40|t3",
+      "B41|t1",
+      "B41|t2",
+      "B41|t3",
+      "B42|t1",
+      "B42|t2",
+      "B42|t3",
+      "B43|t1",
+      "B43|t2",
+      "B43|t3",
+      "B43|t4",
+      "B43|t5",
+      "B43|t6",
+      "B43|t7",
+      "B43|t8",
+      "B43|t9",
+      "B43|t10",
+      "B44|t1",
+      "B44|t2",
+      "B44|t3",
+      "B44|t4",
+      "B44|t5",
+      "B44|t6",
+      "B44|t7",
+      "B44|t8",
+      "B44|t9",
+      "B44|t10",
+      "B45|t1",
+      "B45|t2",
+      "B45|t3",
+      "B45|t4",
+      "B45|t5",
+      "B45|t6",
+      "B45|t7",
+      "B45|t8",
+      "B45|t9",
+      "B45|t10",
+      "B34~~B35",
+      "B34~~B36",
+      "B34~~B40",
+      "B34~~B41",
+      "B34~~B42",
+      "B34~~B43",
+      "B34~~B44",
+      "B34~~B45",
+      "B35~~B36",
+      "B35~~B40",
+      "B35~~B41",
+      "B35~~B42",
+      "B35~~B43",
+      "B35~~B44",
+      "B35~~B45",
+      "B36~~B40",
+      "B36~~B41",
+      "B36~~B42",
+      "B36~~B43",
+      "B36~~B44",
+      "B36~~B45",
+      "B40~~B41",
+      "B40~~B42",
+      "B40~~B43",
+      "B40~~B44",
+      "B40~~B45",
+      "B41~~B42",
+      "B41~~B43",
+      "B41~~B44",
+      "B41~~B45",
+      "B42~~B43",
+      "B42~~B44",
+      "B42~~B45",
+      "B43~~B44",
+      "B43~~B45",
+      "B44~~B45"
+    ],
+    "thresholds": [
+      -1.9153518897679576,
+      -1.6177830069433052,
+      -1.2605663682924684,
+      -0.18548661690933158,
+      -1.8854933069702173,
+      -1.5395443527455428,
+      -1.0323307015200192,
+      -0.3808552090381197,
+      -1.6204674609995702,
+      -1.1052520573792706,
+      -0.7839529317982918,
+      0.17386542421793996,
+      -2.2121340436417483,
+      -1.1103156056153363,
+      0.25942993474819004,
+      -1.6743084092446767,
+      -0.4574925427653028,
+      0.7702858839421837,
+      -1.4198779073081758,
+      -0.3605044065546988,
+      0.7741587006802416,
+      -1.8923336797759407,
+      -1.6600025870494555,
+      -1.1361510216315074,
+      -0.8683452282612996,
+      -0.6291095601127072,
+      -0.11167174357276889,
+      0.18182490466934215,
+      0.6533821341907352,
+      1.2416636219775394,
+      1.532714536629447,
+      -1.696283300749053,
+      -1.4222296321294126,
+      -1.1279871044506316,
+      -0.8484927140869379,
+      -0.6023940035382116,
+      -0.09275186536060114,
+      0.1457653485639735,
+      0.5455254080362685,
+      1.1285456134893508,
+      1.5198201849220931,
+      -1.5749776647769769,
+      -1.3286498444267556,
+      -0.9456423504798498,
+      -0.5957063883648098,
+      -0.39203677163651995,
+      0.2469159981363605,
+      0.5697094300102731,
+      1.0092966440828575,
+      1.4553272810403501,
+      1.8560499278883666
+    ],
+    "correlation": [
+      [
+        1,
+        0.7459977907502798,
+        0.7877478107963295,
+        0.35848185096099144,
+        0.32338709002996596,
+        0.3222961808688418,
+        0.2685049933461805,
+        0.2709396170851571,
+        0.22866400593265157
+      ],
+      [
+        0.7459977907502798,
+        1,
+        0.7162353147522714,
+        0.3010766068797481,
+        0.23638527946325769,
+        0.2424827826774432,
+        0.20154387705855997,
+        0.22209661896808425,
+        0.13460851783183858
+      ],
+      [
+        0.7877478107963295,
+        0.7162353147522714,
+        1,
+        0.32989705269167646,
+        0.38075474508783486,
+        0.34926500550043627,
+        0.1839042885819229,
+        0.2596465779749416,
+        0.2313065633162983
+      ],
+      [
+        0.35848185096099144,
+        0.3010766068797481,
+        0.32989705269167646,
+        1,
+        0.7848791525505735,
+        0.572820171853557,
+        0.47877576512185716,
+        0.465068147047997,
+        0.46497010559294993
+      ],
+      [
+        0.32338709002996596,
+        0.23638527946325769,
+        0.38075474508783486,
+        0.7848791525505735,
+        1,
+        0.7937035176506836,
+        0.54716600936415,
+        0.5943062303176005,
+        0.58922062819307
+      ],
+      [
+        0.3222961808688418,
+        0.2424827826774432,
+        0.34926500550043627,
+        0.572820171853557,
+        0.7937035176506836,
+        1,
+        0.5228881352213378,
+        0.5765709665495057,
+        0.6440527602684437
+      ],
+      [
+        0.2685049933461805,
+        0.20154387705855997,
+        0.1839042885819229,
+        0.47877576512185716,
+        0.54716600936415,
+        0.5228881352213378,
+        1,
+        0.6079483237946027,
+        0.6841949012437171
+      ],
+      [
+        0.2709396170851571,
+        0.22209661896808425,
+        0.2596465779749416,
+        0.465068147047997,
+        0.5943062303176005,
+        0.5765709665495057,
+        0.6079483237946027,
+        1,
+        0.7444767130502071
+      ],
+      [
+        0.22866400593265157,
+        0.13460851783183858,
+        0.2313065633162983,
+        0.46497010559294993,
+        0.58922062819307,
+        0.6440527602684437,
+        0.6841949012437171,
+        0.7444767130502071,
+        1
+      ]
+    ]
+  },
+  "efa": {
+    "1": {
+      "runs": {
+        "main": {
+          "status": "EXECUTED",
+          "solution": {
+            "items": [
+              "B34",
+              "B35",
+              "B36",
+              "B40",
+              "B41",
+              "B42",
+              "B43",
+              "B44",
+              "B45"
+            ],
+            "factors": "e1",
+            "loadings": [
+              [
+                0.5405088690089593
+              ],
+              [
+                0.45266935844990464
+              ],
+              [
+                0.5337552850325299
+              ],
+              [
+                0.7208664840492497
+              ],
+              [
+                0.8448755354170654
+              ],
+              [
+                0.791661630417575
+              ],
+              [
+                0.6743189877680923
+              ],
+              [
+                0.7251621406492058
+              ],
+              [
+                0.7320729401092307
+              ]
+            ],
+            "correlation": [
+              [
+                1
+              ]
+            ],
+            "df": 27
+          }
+        },
+        "repeated": {
+          "status": "EXECUTED",
+          "solution": {
+            "items": [
+              "B34",
+              "B35",
+              "B36",
+              "B40",
+              "B41",
+              "B42",
+              "B43",
+              "B44",
+              "B45"
+            ],
+            "factors": "e1",
+            "loadings": [
+              [
+                0.5405088690089593
+              ],
+              [
+                0.45266935844990464
+              ],
+              [
+                0.5337552850325299
+              ],
+              [
+                0.7208664840492497
+              ],
+              [
+                0.8448755354170654
+              ],
+              [
+                0.791661630417575
+              ],
+              [
+                0.6743189877680923
+              ],
+              [
+                0.7251621406492058
+              ],
+              [
+                0.7320729401092307
+              ]
+            ],
+            "correlation": [
+              [
+                1
+              ]
+            ],
+            "df": 27
+          }
+        },
+        "oblimin": {
+          "status": "EXECUTED",
+          "solution": {
+            "items": [
+              "B34",
+              "B35",
+              "B36",
+              "B40",
+              "B41",
+              "B42",
+              "B43",
+              "B44",
+              "B45"
+            ],
+            "factors": "e1",
+            "loadings": [
+              [
+                0.5405088690089593
+              ],
+              [
+                0.45266935844990464
+              ],
+              [
+                0.5337552850325299
+              ],
+              [
+                0.7208664840492497
+              ],
+              [
+                0.8448755354170654
+              ],
+              [
+                0.791661630417575
+              ],
+              [
+                0.6743189877680923
+              ],
+              [
+                0.7251621406492058
+              ],
+              [
+                0.7320729401092307
+              ]
+            ],
+            "correlation": [
+              [
+                1
+              ]
+            ],
+            "df": 27
+          }
+        }
+      },
+      "rotation_se": "NOT_IMPLEMENTED_NO_CLAIM",
+      "repeat_alignment": {
+        "loadings": [
+          [
+            0.5405088690089593
+          ],
+          [
+            0.45266935844990464
+          ],
+          [
+            0.5337552850325299
+          ],
+          [
+            0.7208664840492497
+          ],
+          [
+            0.8448755354170654
+          ],
+          [
+            0.791661630417575
+          ],
+          [
+            0.6743189877680923
+          ],
+          [
+            0.7251621406492058
+          ],
+          [
+            0.7320729401092307
+          ]
+        ],
+        "correlation": [
+          [
+            1
+          ]
+        ],
+        "permutation": 1,
+        "sign": 1,
+        "max_difference": 0
+      },
+      "expected_mapping": {
+        "main": {
+          "passed": true,
+          "items": [
+            "B34",
+            "B35",
+            "B36",
+            "B40",
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "factors": "ALL",
+          "loadings": [
+            [
+              0.5405088690089593
+            ],
+            [
+              0.45266935844990464
+            ],
+            [
+              0.5337552850325299
+            ],
+            [
+              0.7208664840492497
+            ],
+            [
+              0.8448755354170654
+            ],
+            [
+              0.791661630417575
+            ],
+            [
+              0.6743189877680923
+            ],
+            [
+              0.7251621406492058
+            ],
+            [
+              0.7320729401092307
+            ]
+          ],
+          "correlation": [
+            [
+              1
+            ]
+          ],
+          "item_largest_positive": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "minimum_absolute_loading_gap": 0.45266935844990464,
+          "permutation": 1,
+          "sign": 1
+        },
+        "repeated": {
+          "passed": true,
+          "items": [
+            "B34",
+            "B35",
+            "B36",
+            "B40",
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "factors": "ALL",
+          "loadings": [
+            [
+              0.5405088690089593
+            ],
+            [
+              0.45266935844990464
+            ],
+            [
+              0.5337552850325299
+            ],
+            [
+              0.7208664840492497
+            ],
+            [
+              0.8448755354170654
+            ],
+            [
+              0.791661630417575
+            ],
+            [
+              0.6743189877680923
+            ],
+            [
+              0.7251621406492058
+            ],
+            [
+              0.7320729401092307
+            ]
+          ],
+          "correlation": [
+            [
+              1
+            ]
+          ],
+          "item_largest_positive": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "minimum_absolute_loading_gap": 0.45266935844990464,
+          "permutation": 1,
+          "sign": 1
+        },
+        "oblimin": {
+          "passed": true,
+          "items": [
+            "B34",
+            "B35",
+            "B36",
+            "B40",
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "factors": "ALL",
+          "loadings": [
+            [
+              0.5405088690089593
+            ],
+            [
+              0.45266935844990464
+            ],
+            [
+              0.5337552850325299
+            ],
+            [
+              0.7208664840492497
+            ],
+            [
+              0.8448755354170654
+            ],
+            [
+              0.791661630417575
+            ],
+            [
+              0.6743189877680923
+            ],
+            [
+              0.7251621406492058
+            ],
+            [
+              0.7320729401092307
+            ]
+          ],
+          "correlation": [
+            [
+              1
+            ]
+          ],
+          "item_largest_positive": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "minimum_absolute_loading_gap": 0.45266935844990464,
+          "permutation": 1,
+          "sign": 1
+        }
+      },
+      "reproduced": true,
+      "expected_mapping_passed": true,
+      "eligible": true
+    },
+    "2": {
+      "runs": {
+        "main": {
+          "status": "EXECUTED",
+          "solution": {
+            "items": [
+              "B34",
+              "B35",
+              "B36",
+              "B40",
+              "B41",
+              "B42",
+              "B43",
+              "B44",
+              "B45"
+            ],
+            "factors": [
+              "e1",
+              "e2"
+            ],
+            "loadings": [
+              [
+                0.893392700663446,
+                0.015323614741497755
+              ],
+              [
+                0.8470025823509238,
+                -0.05969048470224554
+              ],
+              [
+                0.8633926423524736,
+                0.022445761752553146
+              ],
+              [
+                0.15045804779206634,
+                0.6397108182586916
+              ],
+              [
+                0.06984176387718931,
+                0.8308128259304973
+              ],
+              [
+                0.06158771080140983,
+                0.7826409919585402
+              ],
+              [
+                -0.035162008249342416,
+                0.735103927242912
+              ],
+              [
+                -0.017583247672439704,
+                0.7769919484601944
+              ],
+              [
+                -0.10723611878782532,
+                0.8595345414697277
+              ]
+            ],
+            "correlation": [
+              [
+                1,
+                0.3847430402201298
+              ],
+              [
+                0.3847430402201298,
+                1
+              ]
+            ],
+            "df": 19
+          }
+        },
+        "repeated": {
+          "status": "EXECUTED",
+          "solution": {
+            "items": [
+              "B34",
+              "B35",
+              "B36",
+              "B40",
+              "B41",
+              "B42",
+              "B43",
+              "B44",
+              "B45"
+            ],
+            "factors": [
+              "e1",
+              "e2"
+            ],
+            "loadings": [
+              [
+                0.8933927004212325,
+                0.015323615186473637
+              ],
+              [
+                0.8470025825249855,
+                -0.05969048443569538
+              ],
+              [
+                0.8633926420768553,
+                0.022445762198568447
+              ],
+              [
+                0.15045804428571757,
+                0.63971081966698
+              ],
+              [
+                0.06984175934571,
+                0.8308128277014537
+              ],
+              [
+                0.06158770653342051,
+                0.7826409936248705
+              ],
+              [
+                -0.03516201224155819,
+                0.7351039287650439
+              ],
+              [
+                -0.017583251895623854,
+                0.7769919500781117
+              ],
+              [
+                -0.10723612344404325,
+                0.8595345432189495
+              ]
+            ],
+            "correlation": [
+              [
+                1,
+                0.3847430444605215
+              ],
+              [
+                0.3847430444605215,
+                1
+              ]
+            ],
+            "df": 19
+          }
+        },
+        "oblimin": {
+          "status": "EXECUTED",
+          "solution": {
+            "items": [
+              "B34",
+              "B35",
+              "B36",
+              "B40",
+              "B41",
+              "B42",
+              "B43",
+              "B44",
+              "B45"
+            ],
+            "factors": [
+              "e1",
+              "e2"
+            ],
+            "loadings": [
+              [
+                0.8892980732479312,
+                0.025867357732142392
+              ],
+              [
+                0.8434258208668088,
+                -0.049809136829013397
+              ],
+              [
+                0.859404103556781,
+                0.03264726961934909
+              ],
+              [
+                0.14714804271549198,
+                0.6424728990565288
+              ],
+              [
+                0.06610958114635565,
+                0.832921480144889
+              ],
+              [
+                0.05809089957606045,
+                0.7845778733815321
+              ],
+              [
+                -0.038026705234491254,
+                0.7358279504104641
+              ],
+              [
+                -0.020699551291464197,
+                0.7779878177609426
+              ],
+              [
+                -0.11028733215964366,
+                0.859602506323406
+              ]
+            ],
+            "correlation": [
+              [
+                1,
+                0.37818583708548015
+              ],
+              [
+                0.37818583708548015,
+                1
+              ]
+            ],
+            "df": 19
+          }
+        }
+      },
+      "rotation_se": "NOT_IMPLEMENTED_NO_CLAIM",
+      "repeat_alignment": {
+        "loadings": [
+          [
+            0.8933927004212325,
+            0.015323615186473637
+          ],
+          [
+            0.8470025825249855,
+            -0.05969048443569538
+          ],
+          [
+            0.8633926420768553,
+            0.022445762198568447
+          ],
+          [
+            0.15045804428571757,
+            0.63971081966698
+          ],
+          [
+            0.06984175934571,
+            0.8308128277014537
+          ],
+          [
+            0.06158770653342051,
+            0.7826409936248705
+          ],
+          [
+            -0.03516201224155819,
+            0.7351039287650439
+          ],
+          [
+            -0.017583251895623854,
+            0.7769919500781117
+          ],
+          [
+            -0.10723612344404325,
+            0.8595345432189495
+          ]
+        ],
+        "correlation": [
+          [
+            1,
+            0.3847430444605215
+          ],
+          [
+            0.3847430444605215,
+            1
+          ]
+        ],
+        "permutation": [
+          1,
+          2
+        ],
+        "sign": [
+          1,
+          1
+        ],
+        "max_difference": 4.65621792511417e-09
+      },
+      "expected_mapping": {
+        "main": {
+          "passed": true,
+          "items": [
+            "B34",
+            "B35",
+            "B36",
+            "B40",
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "factors": [
+            "H",
+            "ZF"
+          ],
+          "loadings": [
+            [
+              0.893392700663446,
+              0.015323614741497755
+            ],
+            [
+              0.8470025823509238,
+              -0.05969048470224554
+            ],
+            [
+              0.8633926423524736,
+              0.022445761752553146
+            ],
+            [
+              0.15045804779206634,
+              0.6397108182586916
+            ],
+            [
+              0.06984176387718931,
+              0.8308128259304973
+            ],
+            [
+              0.06158771080140983,
+              0.7826409919585402
+            ],
+            [
+              -0.035162008249342416,
+              0.735103927242912
+            ],
+            [
+              -0.017583247672439704,
+              0.7769919484601944
+            ],
+            [
+              -0.10723611878782532,
+              0.8595345414697277
+            ]
+          ],
+          "correlation": [
+            [
+              1,
+              0.3847430402201298
+            ],
+            [
+              0.3847430402201298,
+              1
+            ]
+          ],
+          "item_largest_positive": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "minimum_absolute_loading_gap": 0.48925277046662524,
+          "permutation": [
+            1,
+            2
+          ],
+          "sign": [
+            1,
+            1
+          ]
+        },
+        "repeated": {
+          "passed": true,
+          "items": [
+            "B34",
+            "B35",
+            "B36",
+            "B40",
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "factors": [
+            "H",
+            "ZF"
+          ],
+          "loadings": [
+            [
+              0.8933927004212325,
+              0.015323615186473637
+            ],
+            [
+              0.8470025825249855,
+              -0.05969048443569538
+            ],
+            [
+              0.8633926420768553,
+              0.022445762198568447
+            ],
+            [
+              0.15045804428571757,
+              0.63971081966698
+            ],
+            [
+              0.06984175934571,
+              0.8308128277014537
+            ],
+            [
+              0.06158770653342051,
+              0.7826409936248705
+            ],
+            [
+              -0.03516201224155819,
+              0.7351039287650439
+            ],
+            [
+              -0.017583251895623854,
+              0.7769919500781117
+            ],
+            [
+              -0.10723612344404325,
+              0.8595345432189495
+            ]
+          ],
+          "correlation": [
+            [
+              1,
+              0.3847430444605215
+            ],
+            [
+              0.3847430444605215,
+              1
+            ]
+          ],
+          "item_largest_positive": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "minimum_absolute_loading_gap": 0.4892527753812624,
+          "permutation": [
+            1,
+            2
+          ],
+          "sign": [
+            1,
+            1
+          ]
+        },
+        "oblimin": {
+          "passed": true,
+          "items": [
+            "B34",
+            "B35",
+            "B36",
+            "B40",
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "factors": [
+            "H",
+            "ZF"
+          ],
+          "loadings": [
+            [
+              0.8892980732479312,
+              0.025867357732142392
+            ],
+            [
+              0.8434258208668088,
+              -0.049809136829013397
+            ],
+            [
+              0.859404103556781,
+              0.03264726961934909
+            ],
+            [
+              0.14714804271549198,
+              0.6424728990565288
+            ],
+            [
+              0.06610958114635565,
+              0.832921480144889
+            ],
+            [
+              0.05809089957606045,
+              0.7845778733815321
+            ],
+            [
+              -0.038026705234491254,
+              0.7358279504104641
+            ],
+            [
+              -0.020699551291464197,
+              0.7779878177609426
+            ],
+            [
+              -0.11028733215964366,
+              0.859602506323406
+            ]
+          ],
+          "correlation": [
+            [
+              1,
+              0.37818583708548015
+            ],
+            [
+              0.37818583708548015,
+              1
+            ]
+          ],
+          "item_largest_positive": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "minimum_absolute_loading_gap": 0.49532485634103685,
+          "permutation": [
+            1,
+            2
+          ],
+          "sign": [
+            1,
+            1
+          ]
+        }
+      },
+      "reproduced": true,
+      "expected_mapping_passed": true,
+      "eligible": true
+    },
+    "3": {
+      "runs": {
+        "main": {
+          "status": "FAILED",
+          "code": "ORDINAL_ADAPTER_LIBRARY_WARNING"
+        },
+        "repeated": {
+          "status": "FAILED",
+          "code": "ORDINAL_ADAPTER_LIBRARY_WARNING"
+        },
+        "oblimin": {
+          "status": "FAILED",
+          "code": "ESS_DEVELOPMENT_LIBRARY_WARNING"
+        }
+      },
+      "rotation_se": "NOT_IMPLEMENTED_NO_CLAIM",
+      "eligible": false
+    }
+  },
+  "models": {
+    "M1": {
+      "status": "EXECUTED",
+      "fit": {
+        "df": 27,
+        "converged": true,
+        "postcheck": true,
+        "efa_factors": {}
+      },
+      "metric": "fixed identity ULS on survey-weighted ordinal moments",
+      "sandwich": {
+        "moment_count": 87,
+        "free_parameters": 60,
+        "delta_rank": 60,
+        "design_df": 220,
+        "bread_method": "observed",
+        "jacobian_step": 1e-05,
+        "point_metric": "fixed identity on ordered thresholds and polychoric correlations",
+        "estimating_score_max": 1.7601449164870994e-06,
+        "observed_expected_bread_max_difference": 0.21166884169999117,
+        "estimator": "psi=D(theta)t W [s-m(theta)]; J=dpsi/dtheta; K=-J^-1 DtW; Vbeta=K Cov(m) Kt",
+        "limits": [
+          "single-group identified unconstrained CFA only; local normal/delta approximation",
+          "point metric held fixed; observed Jacobian includes fitted residual curvature",
+          "WR ultimate-PSU approximation; no FPC/PPS-WOR or calibration/nonresponse-weight uncertainty",
+          "no model-selection, rotation, small-PSU coverage or personal measurement uncertainty"
+        ]
+      },
+      "standardized_parameters": {
+        "ALL=~B34": {
+          "estimate": 0.5405088998736495,
+          "design_se": 0.0511752642706868,
+          "lower": 0.44020722500378395,
+          "upper": 0.640810574743515,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ALL=~B35": {
+          "estimate": 0.4526694027021937,
+          "design_se": 0.058759563110465075,
+          "lower": 0.3375027752583738,
+          "upper": 0.5678360301460136,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ALL=~B36": {
+          "estimate": 0.5337555184916523,
+          "design_se": 0.04951557863029219,
+          "lower": 0.43670676770261846,
+          "upper": 0.6308042692806861,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ALL=~B40": {
+          "estimate": 0.7208661632966695,
+          "design_se": 0.030671625053757794,
+          "lower": 0.6607508828439879,
+          "upper": 0.7809814437493512,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ALL=~B41": {
+          "estimate": 0.8448753348380331,
+          "design_se": 0.0262952545014724,
+          "lower": 0.7933375830508325,
+          "upper": 0.8964130866252338,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ALL=~B42": {
+          "estimate": 0.7916624584381445,
+          "design_se": 0.029443881688777686,
+          "lower": 0.7339535107630819,
+          "upper": 0.8493714061132072,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ALL=~B43": {
+          "estimate": 0.674318731208422,
+          "design_se": 0.029462444832637543,
+          "lower": 0.6165734004399542,
+          "upper": 0.7320640619768898,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ALL=~B44": {
+          "estimate": 0.7251624814917803,
+          "design_se": 0.024061327708508023,
+          "lower": 0.6780031457628889,
+          "upper": 0.7723218172206717,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ALL=~B45": {
+          "estimate": 0.7320719826024629,
+          "design_se": 0.023271943856764076,
+          "lower": 0.6864598107929671,
+          "upper": 0.7776841544119586,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        }
+      },
+      "standardized_points": {
+        "items": [
+          "B34",
+          "B35",
+          "B36",
+          "B40",
+          "B41",
+          "B42",
+          "B43",
+          "B44",
+          "B45"
+        ],
+        "factors": "ALL",
+        "loadings": [
+          [
+            0.5405088998736495
+          ],
+          [
+            0.4526694027021937
+          ],
+          [
+            0.5337555184916523
+          ],
+          [
+            0.7208661632966695
+          ],
+          [
+            0.8448753348380331
+          ],
+          [
+            0.7916624584381445
+          ],
+          [
+            0.674318731208422
+          ],
+          [
+            0.7251624814917803
+          ],
+          [
+            0.7320719826024629
+          ]
+        ],
+        "correlation": [
+          [
+            1
+          ]
+        ]
+      },
+      "rms": {
+        "estimate": 0.17837824020664325,
+        "design_se": 0.013493308208167461,
+        "lower": 0.15618372326086494,
+        "upper": 0.20057275715242157,
+        "critical": 1.6448536269514715,
+        "family": 1,
+        "method": "one-sided normal95 bound"
+      },
+      "correlations": [],
+      "model_criteria": {
+        "efa": true,
+        "rms": false,
+        "all_candidate_factor_pairs": true,
+        "minimum_dimensions": false
+      },
+      "eligible": false,
+      "scores": {
+        "ALL": {
+          "items": [
+            "B34",
+            "B35",
+            "B36",
+            "B40",
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "label": {},
+          "passed": true,
+          "criteria": {
+            "loadings": true,
+            "reliability": true,
+            "model_dominance": true,
+            "raw_dominance": true
+          },
+          "failures": [],
+          "loadings": {
+            "B34": {
+              "estimate": 0.5405088998736495,
+              "design_se": 0.0511752642706868,
+              "lower": 0.39860391982023624,
+              "upper": 0.6824138799270627,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.4526694027021937,
+              "design_se": 0.058759563110465075,
+              "lower": 0.2897337588912835,
+              "upper": 0.6156050465131039,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.5337555184916523,
+              "design_se": 0.04951557863029219,
+              "lower": 0.39645271609284544,
+              "upper": 0.671058320890459,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B40": {
+              "estimate": 0.7208661632966695,
+              "design_se": 0.030671625053757794,
+              "lower": 0.635816161044852,
+              "upper": 0.8059161655484871,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.8448753348380331,
+              "design_se": 0.0262952545014724,
+              "lower": 0.771960663683746,
+              "upper": 0.9177900059923202,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.7916624584381445,
+              "design_se": 0.029443881688777686,
+              "lower": 0.7100168919073948,
+              "upper": 0.8733080249688943,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B43": {
+              "estimate": 0.674318731208422,
+              "design_se": 0.029462444832637543,
+              "lower": 0.5926216905407684,
+              "upper": 0.7560157718760756,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.7251624814917803,
+              "design_se": 0.024061327708508023,
+              "lower": 0.658442313512301,
+              "upper": 0.7918826494712596,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.7320719826024629,
+              "design_se": 0.023271943856764076,
+              "lower": 0.6675407139151045,
+              "upper": 0.7966032512898212,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "reliability": {
+            "estimate": 0.8560065556760234,
+            "design_se": 0.012288676219018357,
+            "lower": 0.8319211928690735,
+            "upper": 0.8800919184829732,
+            "critical": 1.9599639845400536,
+            "family": 1,
+            "method": "two-sided normal95 Bonferroni interval"
+          },
+          "model_dominance": {
+            "B34": {
+              "estimate": 0.07806592045175477,
+              "design_se": 0.005614069109600763,
+              "lower": 0.06249854866833812,
+              "upper": 0.09363329223517142,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.07616196125547618,
+              "design_se": 0.006018708709004134,
+              "lower": 0.05947255571023201,
+              "upper": 0.09285136680072036,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.10765270080415255,
+              "design_se": 0.006840490083530712,
+              "lower": 0.08868456018597086,
+              "upper": 0.12662084142233426,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B40": {
+              "estimate": 0.10552191772106582,
+              "design_se": 0.004307403023477295,
+              "lower": 0.0935778281528039,
+              "upper": 0.11746600728932775,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.13840185294288618,
+              "design_se": 0.004600686443433404,
+              "lower": 0.1256445115340723,
+              "upper": 0.15115919435170005,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.14422611529050589,
+              "design_se": 0.005111364181553604,
+              "lower": 0.1300527047069759,
+              "upper": 0.15839952587403586,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B43": {
+              "estimate": 0.10992962353177337,
+              "design_se": 0.004463244354069943,
+              "lower": 0.09755339821933094,
+              "upper": 0.12230584884421579,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.1233640652583698,
+              "design_se": 0.004995282486991611,
+              "lower": 0.10951254007760505,
+              "upper": 0.13721559043913456,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.11667584274401549,
+              "design_se": 0.005033465516807711,
+              "lower": 0.10271843902678099,
+              "upper": 0.13063324646125,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "raw_dominance": {
+            "B34": {
+              "estimate": 0.08340058762057644,
+              "design_se": 0.00549011871504752,
+              "lower": 0.06817692052569162,
+              "upper": 0.09862425471546125,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.08263584376269284,
+              "design_se": 0.006208257544180748,
+              "lower": 0.06542083421601916,
+              "upper": 0.09985085330936652,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.11246720498327847,
+              "design_se": 0.007002941017269672,
+              "lower": 0.09304860071160295,
+              "upper": 0.131885809254954,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B40": {
+              "estimate": 0.10380706631029385,
+              "design_se": 0.004551799196041821,
+              "lower": 0.09118528539080689,
+              "upper": 0.11642884722978081,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.1358180713460962,
+              "design_se": 0.00472983214855716,
+              "lower": 0.1227026190614374,
+              "upper": 0.148933523630755,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.14013225831014864,
+              "design_se": 0.0056120556021181205,
+              "lower": 0.12457046982450747,
+              "upper": 0.1556940467957898,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B43": {
+              "estimate": 0.1070645391266994,
+              "design_se": 0.004357153305169592,
+              "lower": 0.09498249594292013,
+              "upper": 0.11914658231047867,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.12055110386053897,
+              "design_se": 0.004815843576385963,
+              "lower": 0.10719714865607399,
+              "upper": 0.13390505906500394,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.11412332467967513,
+              "design_se": 0.004503763566164512,
+              "lower": 0.1016347427811749,
+              "upper": 0.12661190657817536,
+              "critical": 2.772921294608662,
+              "family": 9,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "model_components": {
+            "mean": {
+              "estimate": 0.6738556818115108,
+              "design_se": 0.010762908567595524,
+              "lower": 0.652760768650126,
+              "upper": 0.6949505949728956,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "observed_variance": {
+              "estimate": 0.029921999305046083,
+              "design_se": 0.0017950376697055714,
+              "lower": 0.02640379012153046,
+              "upper": 0.033440208488561704,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "true_variance": {
+              "estimate": 0.02561342756405286,
+              "design_se": 0.0018132878921068853,
+              "lower": 0.022059448601920814,
+              "upper": 0.029167406526184908,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "error_variance": {
+              "estimate": 0.004308571740993222,
+              "design_se": 0.0002623428310120101,
+              "lower": 0.003794389240607405,
+              "upper": 0.004822754241379039,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05143530485836042,
+                0.009822750070196897,
+                0.014446171976306196,
+                0.016154694405868354,
+                0.02184098974904192,
+                0.022112544382441392,
+                0.01655405332128333,
+                0.01893298736923065,
+                0.01790746568519116
+              ],
+              [
+                0.009822750070196897,
+                0.06053055402439499,
+                0.012859874308414747,
+                0.014397361642130247,
+                0.01951165750655692,
+                0.019756460810424023,
+                0.014789780573393798,
+                0.016909789466178583,
+                0.01601414189065149
+              ],
+              [
+                0.014446171976306196,
+                0.012859874308414747,
+                0.0820735055780637,
+                0.021390945044049786,
+                0.029188105861741507,
+                0.02956549019344816,
+                0.02211419085371693,
+                0.025270360960335636,
+                0.024007262354426472
+              ],
+              [
+                0.016154694405868354,
+                0.014397361642130247,
+                0.021390945044049786,
+                0.05651646185914518,
+                0.03305803621912654,
+                0.03347418394079211,
+                0.025009272961413254,
+                0.02856295759976533,
+                0.02718765297377501
+              ],
+              [
+                0.02184098974904192,
+                0.01951165750655692,
+                0.029188105861741507,
+                0.03305803621912654,
+                0.07364335969139083,
+                0.046343282730509645,
+                0.034611230007201045,
+                0.03948150378300184,
+                0.03776390640493431
+              ],
+              [
+                0.022112544382441392,
+                0.019756460810424023,
+                0.02956549019344816,
+                0.03347418394079211,
+                0.046343282730509645,
+                0.08497259941800449,
+                0.035063597537928315,
+                0.04000500723637432,
+                0.038265065190930626
+              ],
+              [
+                0.01655405332128333,
+                0.014789780573393798,
+                0.02211419085371693,
+                0.025009272961413254,
+                0.034611230007201045,
+                0.035063597537928315,
+                0.05968740103591778,
+                0.029932940454747738,
+                0.028671976887055542
+              ],
+              [
+                0.01893298736923065,
+                0.016909789466178583,
+                0.025270360960335636,
+                0.02856295759976533,
+                0.03948150378300184,
+                0.04000500723637432,
+                0.029932940454747738,
+                0.06724064966024607,
+                0.03265906093933651
+              ],
+              [
+                0.01790746568519116,
+                0.01601414189065149,
+                0.024007262354426472,
+                0.02718765297377501,
+                0.03776390640493431,
+                0.038265065190930626,
+                0.028671976887055542,
+                0.03265906093933651,
+                0.06030860099936876
+              ]
+            ],
+            "covariance_with_score": [
+              0.0210229957575467,
+              0.020510263365815747,
+              0.02899065634783368,
+              0.028416840738451757,
+              0.037271341328167173,
+              0.03883980349342812,
+              0.029603827070295304,
+              0.03322169527435741,
+              0.031420570369518876
+            ]
+          },
+          "raw_components": {
+            "mean": {
+              "estimate": 0.6738556733807985,
+              "design_se": 0.010762906752774947,
+              "lower": 0.6527607637763967,
+              "upper": 0.6949505829852004,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "variance": {
+              "estimate": 0.029975080523226418,
+              "design_se": 0.0017494667521444575,
+              "lower": 0.026546188696873023,
+              "upper": 0.033403972349579814,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05143528765055788,
+                0.03583722355120167,
+                0.045183440819509785,
+                0.014511456877167511,
+                0.013615578640486597,
+                0.013768656709554928,
+                0.01034595255747054,
+                0.010418054183034462,
+                0.007379434709522137
+              ],
+              [
+                0.03583722355120167,
+                0.060530577319862354,
+                0.0427502626008318,
+                0.012627822024822793,
+                0.011216103861296166,
+                0.011785169032382005,
+                0.009378613262795932,
+                0.010541471838170361,
+                0.005971058250846441
+              ],
+              [
+                0.045183440819509785,
+                0.0427502626008318,
+                0.08207351248611482,
+                0.01800160138537389,
+                0.023365581028217397,
+                0.022457872627723717,
+                0.010251534880939397,
+                0.01613342402305578,
+                0.01285106572150808
+              ],
+              [
+                0.014511456877167511,
+                0.012627822024822793,
+                0.018001601385373895,
+                0.05651645331684926,
+                0.0429723597922787,
+                0.0331601888776235,
+                0.02440019382516835,
+                0.02554352528768092,
+                0.024308037507043013
+              ],
+              [
+                0.013615578640486597,
+                0.011216103861296166,
+                0.023365581028217397,
+                0.0429723597922787,
+                0.07364335241229855,
+                0.05657601946614585,
+                0.03345608501866807,
+                0.03849029748485586,
+                0.036428389929544856
+              ],
+              [
+                0.013768656709554931,
+                0.011785169032382001,
+                0.022457872627723717,
+                0.0331601888776235,
+                0.05657601946614585,
+                0.0849724384474773,
+                0.03454989860467417,
+                0.04027265741945303,
+                0.042695632681575384
+              ],
+              [
+                0.01034595255747054,
+                0.00937861326279593,
+                0.010251534880939397,
+                0.02440019382516835,
+                0.03345608501866807,
+                0.03454989860467417,
+                0.059687399735066635,
+                0.03739480263085027,
+                0.040486242186266785
+              ],
+              [
+                0.01041805418303446,
+                0.01054147183817036,
+                0.01613342402305578,
+                0.02554352528768092,
+                0.03849029748485586,
+                0.04027265741945303,
+                0.037394802630850266,
+                0.06724071316865023,
+                0.046660906640311556
+              ],
+              [
+                0.007379434709522135,
+                0.00597105825084644,
+                0.012851065721508083,
+                0.024308037507043013,
+                0.03642838992954486,
+                0.04269563268157539,
+                0.04048624218626679,
+                0.046660906640311535,
+                0.06030855596835932
+              ]
+            ],
+            "covariance_with_score": [
+              0.02249945396650061,
+              0.02229314463802328,
+              0.030340921730363853,
+              0.028004626543778662,
+              0.036640418625976896,
+              0.03780428154073443,
+              0.02888341363354446,
+              0.03252176140845138,
+              0.030787702621664175
+            ]
+          },
+          "limits": [
+            "Gaussian CFA, fixed coding/polarity, local independence and all modeled common factors",
+            "model-implied observed-score denominator; no latent-response omega substitution",
+            "equal score weights alone do not establish absence of item dominance",
+            "normal delta CI conditional on selected model; no coverage or personal interval claim"
+          ]
+        }
+      },
+      "diagnostics": {
+        "status": "EXECUTED",
+        "values": {
+          "chisq": 1273.7700646793164,
+          "df": 27,
+          "pvalue": null,
+          "chisq.scaled": 515.2880178641941,
+          "df.scaled": 27,
+          "pvalue.scaled": 0,
+          "cfi.scaled": 0.678644252696952,
+          "tli.scaled": 0.5715256702626028,
+          "rmsea.scaled": 0.12752747412543836,
+          "srmr": 0.15954634832353617
+        }
+      }
+    },
+    "M2": {
+      "status": "EXECUTED",
+      "fit": {
+        "df": 26,
+        "converged": true,
+        "postcheck": true,
+        "efa_factors": {}
+      },
+      "metric": "fixed identity ULS on survey-weighted ordinal moments",
+      "sandwich": {
+        "moment_count": 87,
+        "free_parameters": 61,
+        "delta_rank": 61,
+        "design_df": 220,
+        "bread_method": "observed",
+        "jacobian_step": 1e-05,
+        "point_metric": "fixed identity on ordered thresholds and polychoric correlations",
+        "estimating_score_max": 2.4530726520173773e-07,
+        "observed_expected_bread_max_difference": 0.06054457122714538,
+        "estimator": "psi=D(theta)t W [s-m(theta)]; J=dpsi/dtheta; K=-J^-1 DtW; Vbeta=K Cov(m) Kt",
+        "limits": [
+          "single-group identified unconstrained CFA only; local normal/delta approximation",
+          "point metric held fixed; observed Jacobian includes fitted residual curvature",
+          "WR ultimate-PSU approximation; no FPC/PPS-WOR or calibration/nonresponse-weight uncertainty",
+          "no model-selection, rotation, small-PSU coverage or personal measurement uncertainty"
+        ]
+      },
+      "standardized_parameters": {
+        "H=~B34": {
+          "estimate": 0.9214983132415961,
+          "design_se": 0.028055276974858316,
+          "lower": 0.866510980794578,
+          "upper": 0.9764856456886143,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "H=~B35": {
+          "estimate": 0.7798912252104523,
+          "design_se": 0.045239422343984974,
+          "lower": 0.6912235867348452,
+          "upper": 0.8685588636860594,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "H=~B36": {
+          "estimate": 0.8964006335534367,
+          "design_se": 0.03346253070666001,
+          "lower": 0.8308152785368175,
+          "upper": 0.9619859885700559,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ZF=~B40": {
+          "estimate": 0.7347969851512619,
+          "design_se": 0.031639074968735366,
+          "lower": 0.6727855377083779,
+          "upper": 0.7968084325941459,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ZF=~B41": {
+          "estimate": 0.8784039110216915,
+          "design_se": 0.0260219313791715,
+          "lower": 0.8274018627103427,
+          "upper": 0.9294059593330403,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ZF=~B42": {
+          "estimate": 0.8202460587388036,
+          "design_se": 0.029233689470438275,
+          "lower": 0.7629490802415169,
+          "upper": 0.8775430372360904,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ZF=~B43": {
+          "estimate": 0.704478072417336,
+          "design_se": 0.030086587350291367,
+          "lower": 0.6455094447930465,
+          "upper": 0.7634467000416254,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ZF=~B44": {
+          "estimate": 0.7562926857261406,
+          "design_se": 0.022403320964647238,
+          "lower": 0.7123829835013409,
+          "upper": 0.8002023879509403,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "ZF=~B45": {
+          "estimate": 0.7733685315152311,
+          "design_se": 0.022552737006152783,
+          "lower": 0.729165979230368,
+          "upper": 0.8175710838000942,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "H~~ZF": {
+          "estimate": 0.40139935195998044,
+          "design_se": 0.05473991402282154,
+          "lower": 0.2941110919584312,
+          "upper": 0.5086876119615297,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        }
+      },
+      "standardized_points": {
+        "items": [
+          "B34",
+          "B35",
+          "B36",
+          "B40",
+          "B41",
+          "B42",
+          "B43",
+          "B44",
+          "B45"
+        ],
+        "factors": [
+          "H",
+          "ZF"
+        ],
+        "loadings": [
+          [
+            0.9214983132415961,
+            0
+          ],
+          [
+            0.7798912252104523,
+            0
+          ],
+          [
+            0.8964006335534367,
+            0
+          ],
+          [
+            0,
+            0.7347969851512619
+          ],
+          [
+            0,
+            0.8784039110216915
+          ],
+          [
+            0,
+            0.8202460587388036
+          ],
+          [
+            0,
+            0.704478072417336
+          ],
+          [
+            0,
+            0.7562926857261406
+          ],
+          [
+            0,
+            0.7733685315152311
+          ]
+        ],
+        "correlation": [
+          [
+            1,
+            0.40139935195998044
+          ],
+          [
+            0.40139935195998044,
+            1
+          ]
+        ]
+      },
+      "rms": {
+        "estimate": 0.06894362767924501,
+        "design_se": 0.007769675136224396,
+        "lower": 0.05616364935119165,
+        "upper": 0.08172360600729839,
+        "critical": 1.6448536269514715,
+        "family": 1,
+        "method": "one-sided normal95 bound"
+      },
+      "correlations": {
+        "H~~ZF": {
+          "estimate": 0.40139935195998044,
+          "design_se": 0.05473991402282154,
+          "lower": 0.2941110919584312,
+          "upper": 0.5086876119615297,
+          "critical": 1.9599639845400536,
+          "family": 1,
+          "method": "two-sided normal95 Bonferroni interval",
+          "passed": true
+        }
+      },
+      "model_criteria": {
+        "efa": true,
+        "rms": true,
+        "all_candidate_factor_pairs": true,
+        "minimum_dimensions": true
+      },
+      "eligible": true,
+      "scores": {
+        "H": {
+          "items": [
+            "B34",
+            "B35",
+            "B36"
+          ],
+          "label": "Freiheit, familiäre Scham und Adoption homosexueller Menschen",
+          "passed": true,
+          "criteria": {
+            "loadings": true,
+            "reliability": true,
+            "model_dominance": true,
+            "raw_dominance": true
+          },
+          "failures": [],
+          "loadings": {
+            "B34": {
+              "estimate": 0.9214983132415961,
+              "design_se": 0.028055276974858316,
+              "lower": 0.854334546885472,
+              "upper": 0.9886620795977203,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.7798912252104523,
+              "design_se": 0.045239422343984974,
+              "lower": 0.671588961963494,
+              "upper": 0.8881934884574105,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.8964006335534367,
+              "design_se": 0.03346253070666001,
+              "lower": 0.816292010990886,
+              "upper": 0.9765092561159874,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "reliability": {
+            "estimate": 0.8475980076595391,
+            "design_se": 0.016479689317688142,
+            "lower": 0.8152984101204609,
+            "upper": 0.8798976051986173,
+            "critical": 1.9599639845400536,
+            "family": 1,
+            "method": "two-sided normal95 Bonferroni interval"
+          },
+          "model_dominance": {
+            "B34": {
+              "estimate": 0.30065318553752174,
+              "design_se": 0.010234958605248593,
+              "lower": 0.276150901384578,
+              "upper": 0.3251554696904655,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.31035098202408656,
+              "design_se": 0.011211406814078916,
+              "lower": 0.28351110058363405,
+              "upper": 0.3371908634645391,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.3889958324383917,
+              "design_se": 0.008669198269343755,
+              "lower": 0.3682419469009612,
+              "upper": 0.4097497179758222,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "raw_dominance": {
+            "B34": {
+              "estimate": 0.29995829216165104,
+              "design_se": 0.009482816832476666,
+              "lower": 0.27725662021932296,
+              "upper": 0.3226599641039791,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.3150452364810699,
+              "design_se": 0.011232086805971831,
+              "lower": 0.28815584755776535,
+              "upper": 0.34193462540437447,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.384996471357279,
+              "design_se": 0.009145625207034963,
+              "lower": 0.3631020293549263,
+              "upper": 0.4068909133596317,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "model_components": {
+            "mean": {
+              "estimate": 0.8185412106420741,
+              "design_se": 0.01130438546464208,
+              "lower": 0.7963850222640175,
+              "upper": 0.8406973990201306,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "observed_variance": {
+              "estimate": 0.048646478017108315,
+              "design_se": 0.004489510822667715,
+              "lower": 0.039847198496476804,
+              "upper": 0.057445757537739825,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "true_variance": {
+              "estimate": 0.041232657846954575,
+              "design_se": 0.004351665293049294,
+              "lower": 0.03270355059980502,
+              "upper": 0.04976176509410413,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "error_variance": {
+              "estimate": 0.00741382017015374,
+              "design_se": 0.0006519661981911665,
+              "lower": 0.006135989902561551,
+              "upper": 0.008691650437745928,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05143528408700659,
+                0.03365348351512758,
+                0.0465426996270876
+              ],
+              [
+                0.03365348351512758,
+                0.0605305793617537,
+                0.04169327714472306
+              ],
+              [
+                0.0465426996270876,
+                0.04169327714472306,
+                0.08207351813133808
+              ]
+            ],
+            "covariance_with_score": [
+              0.043877155743073916,
+              0.045292446673868114,
+              0.05676983163438291
+            ]
+          },
+          "raw_components": {
+            "mean": {
+              "estimate": 0.8185412109625576,
+              "design_se": 0.011304385118927743,
+              "lower": 0.7963850232620887,
+              "upper": 0.8406973986630265,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "variance": {
+              "estimate": 0.04906458126662462,
+              "design_se": 0.00473730094497173,
+              "lower": 0.03977964203055247,
+              "upper": 0.058349520502696775,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05143528765055788,
+                0.03583722355120167,
+                0.045183440819509785
+              ],
+              [
+                0.03583722355120167,
+                0.060530577319862354,
+                0.0427502626008318
+              ],
+              [
+                0.045183440819509785,
+                0.0427502626008318,
+                0.08207351248611482
+              ]
+            ],
+            "covariance_with_score": [
+              0.04415198400708978,
+              0.04637268782396528,
+              0.056669071968818804
+            ]
+          },
+          "limits": [
+            "Gaussian CFA, fixed coding/polarity, local independence and all modeled common factors",
+            "model-implied observed-score denominator; no latent-response omega substitution",
+            "equal score weights alone do not establish absence of item dominance",
+            "normal delta CI conditional on selected model; no coverage or personal interval claim"
+          ]
+        },
+        "ZF": {
+          "items": [
+            "B40",
+            "B41",
+            "B42",
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "label": "Zulassung und wahrgenommene Folgen von Zuwanderung",
+          "passed": true,
+          "criteria": {
+            "loadings": true,
+            "reliability": true,
+            "model_dominance": true,
+            "raw_dominance": true
+          },
+          "failures": [],
+          "loadings": {
+            "B40": {
+              "estimate": 0.7347969851512619,
+              "design_se": 0.031639074968735366,
+              "lower": 0.6513249654889196,
+              "upper": 0.8182690048136042,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.8784039110216915,
+              "design_se": 0.0260219313791715,
+              "lower": 0.8097513612906794,
+              "upper": 0.9470564607527036,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.8202460587388036,
+              "design_se": 0.029233689470438275,
+              "lower": 0.7431200648628591,
+              "upper": 0.8973720526147482,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B43": {
+              "estimate": 0.704478072417336,
+              "design_se": 0.030086587350291367,
+              "lower": 0.6251019145063361,
+              "upper": 0.7838542303283358,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.7562926857261406,
+              "design_se": 0.022403320964647238,
+              "lower": 0.6971869612411259,
+              "upper": 0.8153984102111553,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.7733685315152311,
+              "design_se": 0.022552737006152783,
+              "lower": 0.7138686090719403,
+              "upper": 0.8328684539585219,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "reliability": {
+            "estimate": 0.8830297301841841,
+            "design_se": 0.008118406841421585,
+            "lower": 0.8671179451631542,
+            "upper": 0.8989415152052139,
+            "critical": 1.9599639845400536,
+            "family": 1,
+            "method": "two-sided normal95 Bonferroni interval"
+          },
+          "model_dominance": {
+            "B40": {
+              "estimate": 0.14155882389667282,
+              "design_se": 0.005809275405363977,
+              "lower": 0.1262324608048417,
+              "upper": 0.15688518698850393,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.18628372300678947,
+              "design_se": 0.005120192026165332,
+              "lower": 0.17277533915216112,
+              "upper": 0.19979210686141782,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.19480013415637373,
+              "design_se": 0.005684057119756983,
+              "lower": 0.17980412911731755,
+              "upper": 0.20979613919542991,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B43": {
+              "estimate": 0.15013420996345536,
+              "design_se": 0.004666773452354169,
+              "lower": 0.13782206095911376,
+              "upper": 0.16244635896779697,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.16750463850917144,
+              "design_se": 0.0050053633246702756,
+              "lower": 0.15429920231146632,
+              "upper": 0.18071007470687656,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.1597184704675372,
+              "design_se": 0.004940187330600658,
+              "lower": 0.14668498531024232,
+              "upper": 0.1727519556248321,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "raw_dominance": {
+            "B40": {
+              "estimate": 0.13637377870566267,
+              "design_se": 0.006307919515794826,
+              "lower": 0.11973186416261103,
+              "upper": 0.1530156932487143,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.18558795231186054,
+              "design_se": 0.005531074102141294,
+              "lower": 0.1709955558317474,
+              "upper": 0.2001803487919737,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.19261445953266482,
+              "design_se": 0.005681763501304874,
+              "lower": 0.1776245056491725,
+              "upper": 0.20760441341615712,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B43": {
+              "estimate": 0.15158237417711443,
+              "design_se": 0.00511256823870586,
+              "lower": 0.13809410383520246,
+              "upper": 0.1650706445190264,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.1684746538136428,
+              "design_se": 0.004934098810835032,
+              "lower": 0.1554572317379043,
+              "upper": 0.1814920758893813,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.16536678145905495,
+              "design_se": 0.005135490528543469,
+              "lower": 0.1518180362192542,
+              "upper": 0.17891552669885571,
+              "critical": 2.638257273476751,
+              "family": 6,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "model_components": {
+            "mean": {
+              "estimate": 0.6015128997147086,
+              "design_se": 0.012753370341687942,
+              "lower": 0.5765167531634989,
+              "upper": 0.6265090462659182,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "observed_variance": {
+              "estimate": 0.04186799226438417,
+              "design_se": 0.002141344066001276,
+              "lower": 0.03767103501651311,
+              "upper": 0.046064949512255225,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "true_variance": {
+              "estimate": 0.036970681912572655,
+              "design_se": 0.002147222381898435,
+              "lower": 0.03276220337725341,
+              "upper": 0.0411791604478919,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "error_variance": {
+              "estimate": 0.004897310351811512,
+              "design_se": 0.0002375924244033787,
+              "lower": 0.004431637756981335,
+              "upper": 0.00536298294664169,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05651644356214309,
+                0.03508715968967451,
+                0.035402120492637495,
+                0.026659154294170106,
+                0.03040351477291048,
+                0.029295821967468143
+              ],
+              [
+                0.03508715968967451,
+                0.07364335355497031,
+                0.05002087606085086,
+                0.0376344143490974,
+                0.04287083584984102,
+                0.04151907755340786
+              ],
+              [
+                0.035402120492637495,
+                0.05002087606085086,
+                0.08497243720641591,
+                0.037995697589179186,
+                0.04329208993744148,
+                0.04192883707203699
+              ],
+              [
+                0.026659154294170106,
+                0.0376344143490974,
+                0.037995697589179186,
+                0.059687398869833194,
+                0.032646804543745515,
+                0.03166597624327215
+              ],
+              [
+                0.03040351477291048,
+                0.04287083584984102,
+                0.04329208993744148,
+                0.032646804543745515,
+                0.06724070918374965,
+                0.03601703044892824
+              ],
+              [
+                0.029295821967468143,
+                0.04151907755340786,
+                0.04192883707203699,
+                0.03166597624327215,
+                0.03601703044892824,
+                0.060308557411394875
+              ]
+            ],
+            "covariance_with_score": [
+              0.0355607024631673,
+              0.046795952842973665,
+              0.04893534305976032,
+              0.03771490764821626,
+              0.04207849745610273,
+              0.04012255011608471
+            ]
+          },
+          "raw_components": {
+            "mean": {
+              "estimate": 0.601512904589919,
+              "design_se": 0.012753370640963288,
+              "lower": 0.5765167574521405,
+              "upper": 0.6265090517276976,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "variance": {
+              "estimate": 0.04214331632647172,
+              "design_se": 0.0021686157744019983,
+              "lower": 0.03789290751233836,
+              "upper": 0.04639372514060507,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05651645331684926,
+                0.0429723597922787,
+                0.0331601888776235,
+                0.02440019382516835,
+                0.02554352528768092,
+                0.024308037507043013
+              ],
+              [
+                0.0429723597922787,
+                0.07364335241229855,
+                0.05657601946614585,
+                0.03345608501866807,
+                0.03849029748485586,
+                0.03642838992954486
+              ],
+              [
+                0.0331601888776235,
+                0.05657601946614585,
+                0.0849724384474773,
+                0.03454989860467417,
+                0.04027265741945303,
+                0.04269563268157539
+              ],
+              [
+                0.02440019382516835,
+                0.03345608501866807,
+                0.03454989860467417,
+                0.059687399735066635,
+                0.03739480263085027,
+                0.04048624218626679
+              ],
+              [
+                0.02554352528768092,
+                0.03849029748485586,
+                0.04027265741945303,
+                0.037394802630850266,
+                0.06724071316865023,
+                0.046660906640311535
+              ],
+              [
+                0.024308037507043013,
+                0.03642838992954486,
+                0.04269563268157539,
+                0.04048624218626679,
+                0.046660906640311535,
+                0.06030855596835932
+              ]
+            ],
+            "covariance_with_score": [
+              0.034483459767773963,
+              0.04692775068396532,
+              0.04870447258282487,
+              0.03832910366678238,
+              0.04260048377196698,
+              0.04181462748551682
+            ]
+          },
+          "limits": [
+            "Gaussian CFA, fixed coding/polarity, local independence and all modeled common factors",
+            "model-implied observed-score denominator; no latent-response omega substitution",
+            "equal score weights alone do not establish absence of item dominance",
+            "normal delta CI conditional on selected model; no coverage or personal interval claim"
+          ]
+        }
+      },
+      "diagnostics": {
+        "status": "EXECUTED",
+        "values": {
+          "chisq": 190.28105506530585,
+          "df": 26,
+          "pvalue": null,
+          "chisq.scaled": 100.23653295789458,
+          "df.scaled": 26,
+          "pvalue.scaled": 1.1723033654931214e-10,
+          "cfi.scaled": 0.9511428999830451,
+          "tli.scaled": 0.9323517076688318,
+          "rmsea.scaled": 0.05067220148412341,
+          "srmr": 0.061665055242491176
+        }
+      }
+    },
+    "M3": {
+      "status": "EXECUTED",
+      "fit": {
+        "df": 24,
+        "converged": true,
+        "postcheck": true,
+        "efa_factors": {}
+      },
+      "metric": "fixed identity ULS on survey-weighted ordinal moments",
+      "sandwich": {
+        "moment_count": 87,
+        "free_parameters": 63,
+        "delta_rank": 63,
+        "design_df": 220,
+        "bread_method": "observed",
+        "jacobian_step": 1e-05,
+        "point_metric": "fixed identity on ordered thresholds and polychoric correlations",
+        "estimating_score_max": 1.6815213832008531e-07,
+        "observed_expected_bread_max_difference": 0.030076990013549243,
+        "estimator": "psi=D(theta)t W [s-m(theta)]; J=dpsi/dtheta; K=-J^-1 DtW; Vbeta=K Cov(m) Kt",
+        "limits": [
+          "single-group identified unconstrained CFA only; local normal/delta approximation",
+          "point metric held fixed; observed Jacobian includes fitted residual curvature",
+          "WR ultimate-PSU approximation; no FPC/PPS-WOR or calibration/nonresponse-weight uncertainty",
+          "no model-selection, rotation, small-PSU coverage or personal measurement uncertainty"
+        ]
+      },
+      "standardized_parameters": {
+        "H=~B34": {
+          "estimate": 0.919032753373017,
+          "design_se": 0.02800705009524288,
+          "lower": 0.8641399438731319,
+          "upper": 0.9739255628729022,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "H=~B35": {
+          "estimate": 0.7790900887731801,
+          "design_se": 0.04496367511815816,
+          "lower": 0.6909629049290303,
+          "upper": 0.8672172726173298,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "H=~B36": {
+          "estimate": 0.8995898645258562,
+          "design_se": 0.03372004577407596,
+          "lower": 0.8334997892516253,
+          "upper": 0.9656799398000872,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "Z=~B40": {
+          "estimate": 0.7698032808825966,
+          "design_se": 0.028498508704808793,
+          "lower": 0.7139472302080702,
+          "upper": 0.8256593315571231,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "Z=~B41": {
+          "estimate": 0.9256621178646376,
+          "design_se": 0.020446108265398746,
+          "lower": 0.8855884820404494,
+          "upper": 0.9657357536888258,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "Z=~B42": {
+          "estimate": 0.85278990319334,
+          "design_se": 0.031826553064650986,
+          "lower": 0.7904110054345712,
+          "upper": 0.9151688009521088,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "F=~B43": {
+          "estimate": 0.7740280420512191,
+          "design_se": 0.03235900492777878,
+          "lower": 0.7106055578172186,
+          "upper": 0.8374505262852197,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "F=~B44": {
+          "estimate": 0.8367911429800149,
+          "design_se": 0.021032563126567892,
+          "lower": 0.7955680767493767,
+          "upper": 0.8780142092106531,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "F=~B45": {
+          "estimate": 0.8641021242313977,
+          "design_se": 0.023585697524488417,
+          "lower": 0.8178750065331448,
+          "upper": 0.9103292419296505,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "H~~Z": {
+          "estimate": 0.42813230553626075,
+          "design_se": 0.05438798857378823,
+          "lower": 0.3215338067400599,
+          "upper": 0.5347308043324617,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "H~~F": {
+          "estimate": 0.3115641873225544,
+          "design_se": 0.05569546867121884,
+          "lower": 0.2024030746248866,
+          "upper": 0.42072530002022224,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        },
+        "Z~~F": {
+          "estimate": 0.7744440855952693,
+          "design_se": 0.023882196079806264,
+          "lower": 0.7276358414071254,
+          "upper": 0.8212523297834132,
+          "level": 0.95,
+          "method": "normal first-order delta; raw interval without truncation"
+        }
+      },
+      "standardized_points": {
+        "items": [
+          "B34",
+          "B35",
+          "B36",
+          "B40",
+          "B41",
+          "B42",
+          "B43",
+          "B44",
+          "B45"
+        ],
+        "factors": [
+          "H",
+          "Z",
+          "F"
+        ],
+        "loadings": [
+          [
+            0.919032753373017,
+            0,
+            0
+          ],
+          [
+            0.7790900887731801,
+            0,
+            0
+          ],
+          [
+            0.8995898645258562,
+            0,
+            0
+          ],
+          [
+            0,
+            0.7698032808825966,
+            0
+          ],
+          [
+            0,
+            0.9256621178646376,
+            0
+          ],
+          [
+            0,
+            0.85278990319334,
+            0
+          ],
+          [
+            0,
+            0,
+            0.7740280420512191
+          ],
+          [
+            0,
+            0,
+            0.8367911429800149
+          ],
+          [
+            0,
+            0,
+            0.8641021242313977
+          ]
+        ],
+        "correlation": [
+          [
+            1,
+            0.42813230553626075,
+            0.3115641873225544
+          ],
+          [
+            0.42813230553626075,
+            1,
+            0.7744440855952693
+          ],
+          [
+            0.3115641873225544,
+            0.7744440855952693,
+            1
+          ]
+        ]
+      },
+      "rms": {
+        "estimate": 0.03938057288591083,
+        "design_se": 0.007011246230523165,
+        "lower": 0.027848099094184973,
+        "upper": 0.05091304667763669,
+        "critical": 1.6448536269514715,
+        "family": 1,
+        "method": "one-sided normal95 bound"
+      },
+      "correlations": {
+        "H~~Z": {
+          "estimate": 0.42813230553626075,
+          "design_se": 0.05438798857378823,
+          "lower": 0.2979285595378518,
+          "upper": 0.5583360515346697,
+          "critical": 2.3939797998185104,
+          "family": 3,
+          "method": "two-sided normal95 Bonferroni interval",
+          "passed": true
+        },
+        "H~~F": {
+          "estimate": 0.3115641873225544,
+          "design_se": 0.05569546867121884,
+          "lower": 0.1782303603822318,
+          "upper": 0.444898014262877,
+          "critical": 2.3939797998185104,
+          "family": 3,
+          "method": "two-sided normal95 Bonferroni interval",
+          "passed": true
+        },
+        "Z~~F": {
+          "estimate": 0.7744440855952693,
+          "design_se": 0.023882196079806264,
+          "lower": 0.7172705906049083,
+          "upper": 0.8316175805856304,
+          "critical": 2.3939797998185104,
+          "family": 3,
+          "method": "two-sided normal95 Bonferroni interval",
+          "passed": true
+        }
+      },
+      "model_criteria": {
+        "efa": false,
+        "rms": true,
+        "all_candidate_factor_pairs": true,
+        "minimum_dimensions": true
+      },
+      "eligible": false,
+      "scores": {
+        "H": {
+          "items": [
+            "B34",
+            "B35",
+            "B36"
+          ],
+          "label": "Freiheit, familiäre Scham und Adoption homosexueller Menschen",
+          "passed": true,
+          "criteria": {
+            "loadings": true,
+            "reliability": true,
+            "model_dominance": true,
+            "raw_dominance": true
+          },
+          "failures": [],
+          "loadings": {
+            "B34": {
+              "estimate": 0.919032753373017,
+              "design_se": 0.02800705009524288,
+              "lower": 0.8519844411925005,
+              "upper": 0.9860810655535336,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.7790900887731801,
+              "design_se": 0.04496367511815816,
+              "lower": 0.6714479588147073,
+              "upper": 0.8867322187316529,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.8995898645258562,
+              "design_se": 0.03372004577407596,
+              "lower": 0.8188647560937629,
+              "upper": 0.9803149729579496,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "reliability": {
+            "estimate": 0.8479684792090927,
+            "design_se": 0.01652692256655496,
+            "lower": 0.8155763062033627,
+            "upper": 0.8803606522148226,
+            "critical": 1.9599639845400536,
+            "family": 1,
+            "method": "two-sided normal95 Bonferroni interval"
+          },
+          "model_dominance": {
+            "B34": {
+              "estimate": 0.3003855950550392,
+              "design_se": 0.0102656939170725,
+              "lower": 0.27580973118644786,
+              "upper": 0.32496145892363054,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.31025780472364173,
+              "design_se": 0.011301859293467057,
+              "lower": 0.2832013818746905,
+              "upper": 0.33731422757259294,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.3893566002213192,
+              "design_se": 0.008638003862919125,
+              "lower": 0.36867739346273654,
+              "upper": 0.41003580697990183,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "raw_dominance": {
+            "B34": {
+              "estimate": 0.29995829216165104,
+              "design_se": 0.009482816832476666,
+              "lower": 0.27725662021932296,
+              "upper": 0.3226599641039791,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B35": {
+              "estimate": 0.3150452364810699,
+              "design_se": 0.011232086805971831,
+              "lower": 0.28815584755776535,
+              "upper": 0.34193462540437447,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B36": {
+              "estimate": 0.384996471357279,
+              "design_se": 0.009145625207034963,
+              "lower": 0.3631020293549263,
+              "upper": 0.4068909133596317,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "model_components": {
+            "mean": {
+              "estimate": 0.8185412042098911,
+              "design_se": 0.011304385262354522,
+              "lower": 0.7963850162283108,
+              "upper": 0.8406973921914713,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "observed_variance": {
+              "estimate": 0.04865078147287446,
+              "design_se": 0.0044879269793929345,
+              "lower": 0.039854606228018674,
+              "upper": 0.057446956717730244,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "true_variance": {
+              "estimate": 0.04125432917788726,
+              "design_se": 0.004356927353747474,
+              "lower": 0.03271490848128481,
+              "upper": 0.04979374987448971,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "error_variance": {
+              "estimate": 0.007396452294987199,
+              "design_se": 0.0006489457702296014,
+              "lower": 0.006124541957417576,
+              "upper": 0.008668362632556824,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05143528394397727,
+                0.033499818287805634,
+                0.04659084325181572
+              ],
+              [
+                0.033499818287805634,
+                0.06053057483583027,
+                0.04181816879713694
+              ],
+              [
+                0.04659084325181572,
+                0.04181816879713694,
+                0.082073513802546
+              ]
+            ],
+            "covariance_with_score": [
+              0.043841981827866215,
+              0.04528285397359095,
+              0.05682750861716623
+            ]
+          },
+          "raw_components": {
+            "mean": {
+              "estimate": 0.8185412109625576,
+              "design_se": 0.011304385118927743,
+              "lower": 0.7963850232620887,
+              "upper": 0.8406973986630265,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "variance": {
+              "estimate": 0.04906458126662462,
+              "design_se": 0.00473730094497173,
+              "lower": 0.03977964203055247,
+              "upper": 0.058349520502696775,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05143528765055788,
+                0.03583722355120167,
+                0.045183440819509785
+              ],
+              [
+                0.03583722355120167,
+                0.060530577319862354,
+                0.0427502626008318
+              ],
+              [
+                0.045183440819509785,
+                0.0427502626008318,
+                0.08207351248611482
+              ]
+            ],
+            "covariance_with_score": [
+              0.04415198400708978,
+              0.04637268782396528,
+              0.056669071968818804
+            ]
+          },
+          "limits": [
+            "Gaussian CFA, fixed coding/polarity, local independence and all modeled common factors",
+            "model-implied observed-score denominator; no latent-response omega substitution",
+            "equal score weights alone do not establish absence of item dominance",
+            "normal delta CI conditional on selected model; no coverage or personal interval claim"
+          ]
+        },
+        "Z": {
+          "items": [
+            "B40",
+            "B41",
+            "B42"
+          ],
+          "label": "Zulassung von Zuwanderung für die drei erfragten Gruppen",
+          "passed": true,
+          "criteria": {
+            "loadings": true,
+            "reliability": true,
+            "model_dominance": true,
+            "raw_dominance": true
+          },
+          "failures": [],
+          "loadings": {
+            "B40": {
+              "estimate": 0.7698032808825966,
+              "design_se": 0.028498508704808793,
+              "lower": 0.7015784267183324,
+              "upper": 0.8380281350468609,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.9256621178646376,
+              "design_se": 0.020446108265398746,
+              "lower": 0.8767145476923707,
+              "upper": 0.9746096880369045,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.85278990319334,
+              "design_se": 0.031826553064650986,
+              "lower": 0.7765977780587137,
+              "upper": 0.9289820283279664,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "reliability": {
+            "estimate": 0.8388704636050948,
+            "design_se": 0.016965949941322167,
+            "lower": 0.8056178127565938,
+            "upper": 0.8721231144535957,
+            "critical": 1.9599639845400536,
+            "family": 1,
+            "method": "two-sided normal95 Bonferroni interval"
+          },
+          "model_dominance": {
+            "B40": {
+              "estimate": 0.27915474692291725,
+              "design_se": 0.00843087239299847,
+              "lower": 0.25897140871923136,
+              "upper": 0.29933808512660315,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.3488261215896956,
+              "design_se": 0.006031808573952489,
+              "lower": 0.3343860937072813,
+              "upper": 0.36326614947210994,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.3720191314873872,
+              "design_se": 0.0075985452259170125,
+              "lower": 0.3538283677085345,
+              "upper": 0.3902098952662399,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "raw_dominance": {
+            "B40": {
+              "estimate": 0.27603615233649487,
+              "design_se": 0.009440210667793695,
+              "lower": 0.25343647869176555,
+              "upper": 0.2986358259812242,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B41": {
+              "estimate": 0.3604036103615457,
+              "design_se": 0.006544793338971684,
+              "lower": 0.3447355073140608,
+              "upper": 0.3760717134090307,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B42": {
+              "estimate": 0.3635602373019593,
+              "design_se": 0.0074757318111103276,
+              "lower": 0.34566348635730054,
+              "upper": 0.38145698824661806,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "model_components": {
+            "mean": {
+              "estimate": 0.6536638946203978,
+              "design_se": 0.012377210892859975,
+              "lower": 0.6294050070413354,
+              "upper": 0.6779227821994601,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "observed_variance": {
+              "estimate": 0.05334295019700637,
+              "design_se": 0.0027595577060038454,
+              "lower": 0.04793431647997887,
+              "upper": 0.05875158391403387,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "true_variance": {
+              "estimate": 0.04474782536182621,
+              "design_se": 0.002902993243216583,
+              "lower": 0.03905806315775859,
+              "upper": 0.05043758756589384,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "error_variance": {
+              "estimate": 0.008595124835180157,
+              "design_se": 0.0007646419600476305,
+              "lower": 0.0070964541324186866,
+              "upper": 0.010093795537941628,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05651645429953788,
+                0.03884821218649758,
+                0.038653773375268353
+              ],
+              [
+                0.03884821218649758,
+                0.07364334843732262,
+                0.05497516925854598
+              ],
+              [
+                0.038653773375268353,
+                0.05497516925854598,
+                0.08497243939557299
+              ]
+            ],
+            "covariance_with_score": [
+              0.04467281328710127,
+              0.05582224329412206,
+              0.059533794009795776
+            ]
+          },
+          "raw_components": {
+            "mean": {
+              "estimate": 0.6536638945342229,
+              "design_se": 0.012377210959212988,
+              "lower": 0.629405006825111,
+              "upper": 0.6779227822433348,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "variance": {
+              "estimate": 0.05339437560541347,
+              "design_se": 0.0027568234806071112,
+              "lower": 0.047991100871689174,
+              "upper": 0.058797650339137766,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.05651645331684926,
+                0.0429723597922787,
+                0.0331601888776235
+              ],
+              [
+                0.0429723597922787,
+                0.07364335241229855,
+                0.05657601946614585
+              ],
+              [
+                0.0331601888776235,
+                0.05657601946614585,
+                0.0849724384474773
+              ]
+            ],
+            "covariance_with_score": [
+              0.04421633399558382,
+              0.05773057722357438,
+              0.058236215597082204
+            ]
+          },
+          "limits": [
+            "Gaussian CFA, fixed coding/polarity, local independence and all modeled common factors",
+            "model-implied observed-score denominator; no latent-response omega substitution",
+            "equal score weights alone do not establish absence of item dominance",
+            "normal delta CI conditional on selected model; no coverage or personal interval claim"
+          ]
+        },
+        "F": {
+          "items": [
+            "B43",
+            "B44",
+            "B45"
+          ],
+          "label": "Wahrgenommene wirtschaftliche, kulturelle und allgemeine Folgen von Zuwanderung",
+          "passed": true,
+          "criteria": {
+            "loadings": true,
+            "reliability": true,
+            "model_dominance": true,
+            "raw_dominance": true
+          },
+          "failures": [],
+          "loadings": {
+            "B43": {
+              "estimate": 0.7740280420512191,
+              "design_se": 0.03235900492777878,
+              "lower": 0.6965612379118891,
+              "upper": 0.8514948461905492,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.8367911429800149,
+              "design_se": 0.021032563126567892,
+              "lower": 0.7864396117166037,
+              "upper": 0.8871426742434261,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.8641021242313977,
+              "design_se": 0.023585697524488417,
+              "lower": 0.807638440793143,
+              "upper": 0.9205658076696523,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "reliability": {
+            "estimate": 0.8548709295524728,
+            "design_se": 0.013997691140801719,
+            "lower": 0.8274359590497861,
+            "upper": 0.8823059000551595,
+            "critical": 1.9599639845400536,
+            "family": 1,
+            "method": "two-sided normal95 Bonferroni interval"
+          },
+          "model_dominance": {
+            "B43": {
+              "estimate": 0.31894436487277783,
+              "design_se": 0.007011687230706781,
+              "lower": 0.3021585272798204,
+              "upper": 0.33573020246573526,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.34949360544731517,
+              "design_se": 0.005687560498549712,
+              "lower": 0.3358777005035415,
+              "upper": 0.36310951039108885,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.33156202967990717,
+              "design_se": 0.005585231702800203,
+              "lower": 0.31819109780609756,
+              "upper": 0.3449329615537168,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "raw_dominance": {
+            "B43": {
+              "estimate": 0.31529213483741475,
+              "design_se": 0.0070640495279381136,
+              "lower": 0.2983809429626134,
+              "upper": 0.3322033267122161,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B44": {
+              "estimate": 0.34675518924121235,
+              "design_se": 0.005734291466677605,
+              "lower": 0.3330274113037145,
+              "upper": 0.3604829671787102,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            },
+            "B45": {
+              "estimate": 0.337952675921373,
+              "design_se": 0.006184918078620267,
+              "lower": 0.3231461069776238,
+              "upper": 0.3527592448651222,
+              "critical": 2.3939797998185104,
+              "family": 3,
+              "method": "two-sided normal95 Bonferroni interval"
+            }
+          },
+          "model_components": {
+            "mean": {
+              "estimate": 0.5493619128008757,
+              "design_se": 0.014597367355350112,
+              "lower": 0.5207515985152887,
+              "upper": 0.5779722270864626,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "observed_variance": {
+              "estimate": 0.048229410116488874,
+              "design_se": 0.002895764725528276,
+              "lower": 0.042553815546751944,
+              "upper": 0.053905004686225805,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "true_variance": {
+              "estimate": 0.04122992065805028,
+              "design_se": 0.0029920773419251597,
+              "lower": 0.03536555682891863,
+              "upper": 0.04709428448718193,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "error_variance": {
+              "estimate": 0.006999489458438597,
+              "design_se": 0.0004798552880717598,
+              "lower": 0.006058990376026856,
+              "upper": 0.007939988540850339,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.059687399841275,
+                0.03980319861683763,
+                0.03895188874201778
+              ],
+              [
+                0.03980319861683763,
+                0.0672407110864777,
+                0.04465892416856488
+              ],
+              [
+                0.03895188874201778,
+                0.04465892416856488,
+                0.06030855706580664
+              ]
+            ],
+            "covariance_with_score": [
+              0.04614749573337681,
+              0.050567611290626736,
+              0.0479731233254631
+            ]
+          },
+          "raw_components": {
+            "mean": {
+              "estimate": 0.5493619146456152,
+              "design_se": 0.014597367338961002,
+              "lower": 0.5207516003921504,
+              "upper": 0.5779722288990801,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "variance": {
+              "estimate": 0.04848006353188149,
+              "design_se": 0.0030263557527779915,
+              "lower": 0.04254851525203102,
+              "upper": 0.05441161181173195,
+              "level": 0.95,
+              "method": "normal first-order delta; raw interval without truncation"
+            },
+            "item_covariance": [
+              [
+                0.059687399735066635,
+                0.03739480263085027,
+                0.04048624218626679
+              ],
+              [
+                0.037394802630850266,
+                0.06724071316865023,
+                0.046660906640311535
+              ],
+              [
+                0.04048624218626679,
+                0.046660906640311535,
+                0.06030855596835932
+              ]
+            ],
+            "covariance_with_score": [
+              0.04585614818406123,
+              0.05043214081327068,
+              0.04915190159831255
+            ]
+          },
+          "limits": [
+            "Gaussian CFA, fixed coding/polarity, local independence and all modeled common factors",
+            "model-implied observed-score denominator; no latent-response omega substitution",
+            "equal score weights alone do not establish absence of item dominance",
+            "normal delta CI conditional on selected model; no coverage or personal interval claim"
+          ]
+        }
+      },
+      "diagnostics": {
+        "status": "EXECUTED",
+        "values": {
+          "chisq": 62.08280737778271,
+          "df": 24,
+          "pvalue": null,
+          "chisq.scaled": 44.89578580303258,
+          "df.scaled": 24,
+          "pvalue.scaled": 0.005992522335353079,
+          "cfi.scaled": 0.9862479098062047,
+          "tli.scaled": 0.9793718647093069,
+          "rmsea.scaled": 0.027981522387776035,
+          "srmr": 0.03522305518631268
+        }
+      }
+    }
+  },
+  "selection": {
+    "status": "CANDIDATE_SELECTED_FOR_FREEZE_REVIEW",
+    "model": "M2",
+    "scores": [
+      "H",
+      "ZF"
+    ],
+    "rule": "M2 first if at least two complete fixed scores pass, otherwise M3"
+  },
+  "limits": [
+    "fixed original item set and oriented category coding; no outcome-based item drops or residual repairs",
+    "normal/delta inference conditional on the chosen model, fixed coding and weights",
+    "WR ultimate-PSU approximation; no calibration/FPC/PPS-WOR or personal uncertainty",
+    "conservative full-moment SPD/design-df contract inherited from the pinned adapter",
+    "selection in A is exploratory development; B remains held back; no immediate publication permission"
+  ],
+  "attribution": {
+    "creator": "European Social Survey ERIC; ESS Data Archive",
+    "dataset": "ESS11 integrated edition4.2",
+    "doi": "https://doi.org/10.21338/ess11e04_2",
+    "sha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+    "license": "CC BY-NC-SA4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "disclaimer": "https://www.europeansocialsurvey.org/contact/disclaimer",
+    "changes": "Own field selection, original-pole transformations, complete-case domains, arm weighting and fixed statistical analyses; name each concrete operation in its export",
+    "scope": "A exploratory development, conditional complete-case results; no empirical approval, B confirmation, ESS endorsement or release acceptance"
+  }
+}
