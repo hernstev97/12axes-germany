@@ -390,10 +390,13 @@ export class PolicyDraft {
     return 'ESS-Nutzungsbedingungen';
   }
 
+  /** One decimal for shares and interval bounds alike (Analyseplan v2.2, 4.3). */
   protected percentage(share: number): string {
-    return new Intl.NumberFormat('de-DE', { style: 'percent', maximumFractionDigits: 1 }).format(
-      share,
-    );
+    return new Intl.NumberFormat('de-DE', {
+      style: 'percent',
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1,
+    }).format(share);
   }
 
   private clearSkipReason(id: string): void {

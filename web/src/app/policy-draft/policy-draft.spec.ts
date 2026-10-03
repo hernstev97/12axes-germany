@@ -219,6 +219,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       '[data-question-id="ESS9e03_3:sofrdst"]',
     )!;
     expect(withInterval.querySelectorAll('.interval').length).toBe(5);
+    expect(withInterval.querySelector('.interval')?.textContent).toMatch(/15,0\s%\sbis 25,0\s%/);
     expect(withInterval.querySelector('.interval-note')?.textContent).toContain(
       'keine Unsicherheit der',
     );
@@ -597,7 +598,11 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
         row.getAttribute('data-category-code'),
       ),
     ).toEqual(actual.categories.map((category) => category.code));
-    const percent = new Intl.NumberFormat('de-DE', { style: 'percent', maximumFractionDigits: 1 });
+    const percent = new Intl.NumberFormat('de-DE', {
+      style: 'percent',
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1,
+    });
     expect(
       [...approved.querySelectorAll('.group-proportions dd')].map((row) => row.textContent?.trim()),
     ).toEqual(actual.categories.map((category) => percent.format(category.proportion)));
