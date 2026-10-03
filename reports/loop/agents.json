@@ -375,11 +375,12 @@
       "returnedTaskName": "/root/inventory002_ab_sources",
       "fork_turns": "none",
       "kind": "independent-public-source-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/INVENTORY-002-AB/v1/manifest.json",
       "manifestSha256": "5af3f5c77ffa84ecbba15dc2c3f541064c1530bda5297928e8a5d5c7ae1d9856",
       "report": "reports/loop/reviews/INVENTORY-002-AB-sources.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht;frischer begrenzter Kontext.",
+      "reportSha256": "76bd287adea616f6964e2f86c24ecc63d8f24616f8908dd4abb72fae848671a4"
     },
     {
       "task_name": "inventory002_ab_repro",
@@ -398,22 +399,42 @@
       "returnedTaskName": "/root/methods002_statistics",
       "fork_turns": "none",
       "kind": "independent-synthetic-methods-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/METHODS-002/v2/manifest.json",
       "manifestSha256": "b736855447a96dcaa3f55926edf59d7eda29c19dfe90d2e752de18df8b0d78e4",
       "report": "reports/loop/reviews/METHODS-002-statistics.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Erstbericht;frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Erstbericht;frischer begrenzter Kontext.",
+      "reportSha256": "8682b6feb031a4b9ba6bdfbc665aea18d5ffe412ef10e37015fc7d26eec8930d"
     },
     {
       "task_name": "methods002_repro",
       "returnedTaskName": "/root/methods002_repro",
       "fork_turns": "none",
       "kind": "independent-synthetic-methods-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/METHODS-002/v2/manifest.json",
       "manifestSha256": "b736855447a96dcaa3f55926edf59d7eda29c19dfe90d2e752de18df8b0d78e4",
       "report": "reports/loop/reviews/METHODS-002-repro.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Erstbericht;frischer begrenzter Kontext."
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Erstbericht;frischer begrenzter Kontext.",
+      "reportSha256": "636b766831eb9dd3384cf18046e3577cf14b3906c34b508fe55df8c23d2e35a6"
+    },
+    {
+      "task_name": "inventory003_c_author",
+      "returnedTaskName": "/root/inventory003_c_author",
+      "fork_turns": "none",
+      "kind": "public-source-author",
+      "status": "RUNNING",
+      "report": "reports/loop/authors/INVENTORY-003-C.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Autorenbericht;frischer Kontext."
+    },
+    {
+      "task_name": "methods002_correction_author",
+      "returnedTaskName": "/root/methods002_correction_author",
+      "fork_turns": "none",
+      "kind": "bounded-synthetic-correction-author",
+      "status": "RUNNING",
+      "report": "reports/loop/authors/METHODS-002-korrektur.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Autorenbericht;frischer Kontext."
     }
   ],
   "activeAdditionalAuthors": [
@@ -462,6 +483,39 @@
       "model": "claude-opus-5-5",
       "auxiliaryModelObserved": "claude-haiku-4-5-20251001",
       "internalRevision": null
+    },
+    {
+      "id": "CLAUDE-P002",
+      "method": "installed CLI fresh restricted artificialRead process",
+      "record": "reports/loop/claude-read-boundary-002/002-execution.json",
+      "model": "claude-opus-5-5",
+      "internalRevision": null,
+      "exitCode": 1,
+      "status": "BLOCKIERT",
+      "readCalls": 0,
+      "cause": "Observed HTTP401; precise cause unknown",
+      "scope": "Access prerequisite; no executedReadreview"
+    },
+    {
+      "id": "CLAUDE-P002b",
+      "method": "installed CLI fresh restricted artificialRead process",
+      "record": "reports/loop/claude-read-boundary-002/002b-execution.json",
+      "model": "claude-opus-5-5",
+      "internalRevision": null,
+      "exitCode": 1,
+      "status": "BLOCKIERT",
+      "readCalls": 0,
+      "cause": "Observed HTTP401; precise cause unknown",
+      "scope": "Access prerequisite; no executedReadreview"
+    }
+  ],
+  "followupCalls": [
+    {
+      "target": "/root/inventory002_ab_author",
+      "kind": "bounded-correction",
+      "status": "RUNNING",
+      "calledAtUtc": "2026-10-03T05:53:54.441837+00:00",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im Autorenkorrekturbericht;Altfassungenunverändert."
     }
   ]
 }

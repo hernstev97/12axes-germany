@@ -1,0 +1,19 @@
+{
+  "startedAtUtc": "2026-10-03T05:56:17.153599+00:00",
+  "endedAtUtc": "2026-10-03T05:56:28.844892+00:00",
+  "command": ["pnpm", "check"],
+  "exitCode": 0,
+  "status": "BESTANDEN",
+  "log": "outputs/loop/post-audit-decisions/app-check.log",
+  "logSha256": "195208681c189340c9592e8541310c0777aba1bfa9591afb02f045a00328ad99",
+  "coordinatorInputHashesBefore": {
+    "reports/loop/state.json": "799595c8f6eb67fee135c20d8d86bd0d4c6c0d534df76cf524e9bad133f85565",
+    "reports/loop/findings.json": "f04858e7c8a8a9eb6c33ed151e058db305b908810739f2d074f1687f98435e04",
+    "reports/loop/agents.json": "8b671f7833e045226ee8490ff74779e137fd8dbdb387ee45a720a05e90e75214",
+    "reports/loop/INVENTORY-002-AB-entscheidung.md": "29fc7098268d96c01ec22a22df76095803dd92d10cc2be2e0514b8084742c776",
+    "reports/loop/METHODS-002-entscheidung.md": "e475f61e716fd2cd9d981adc16af2e92228dfeb2fc743636817bc20ee6972eca",
+    "reports/loop/CLAUDE-P02-zugriffsbericht.md": "cd399f061049df75ec67bff3a877ca6350f5bab456c3bed5f4a25edc8174d21b"
+  },
+  "coordinatorInputsUnchanged": true,
+  "scope": "Local technical suite only, no scientific/browser/Claude acceptance"
+}

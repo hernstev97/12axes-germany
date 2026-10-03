@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T05:37:22.321704+00:00",
+  "updatedAtUtc": "2026-10-03T05:53:54.441837+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -1916,6 +1916,108 @@
       "reason": "Eigener Belegvergleich nach beiden vollständigen Berichten; kein belegter Versionswechsel.",
       "correctionState": "Neue Entscheidung trennt Zeiten und lässt historische Binarybindung offen; kurze unabhängige Textnachprüfung noch ausstehend.",
       "decisionRecord": "reports/loop/SOFTWARE-001-v2-entscheidung.md"
+    },
+    {
+      "id": "AB-S01",
+      "decision": "angenommen",
+      "duplicateOf": null,
+      "severity": "mittel",
+      "problem": "B19–B22 Einleitung enthält Tabellenkopf",
+      "evidence": "OriginalDEQ9;BBoxy0=429.688381;Quellenreview",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "correctionState": "Neue gezielteKorrektur läuft; Erstfassung erhalten",
+      "verification": {
+        "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
+        "executionRecord": "Noch nicht ausgeführt"
+      },
+      "blocks": ["Daraufaufbauende betroffeneBehauptung"],
+      "decisionRecord": "reports/loop/INVENTORY-002-AB-entscheidung.md"
+    },
+    {
+      "id": "AB-S02",
+      "decision": "angenommen",
+      "duplicateOf": null,
+      "severity": "niedrig",
+      "problem": "AngeblicherB24Code08Test ist Duplikat01",
+      "evidence": "read_tests.py:115;beideErstberichte",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "correctionState": "Neue gezielteKorrektur läuft; Erstfassung erhalten",
+      "verification": {
+        "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
+        "executionRecord": "Noch nicht ausgeführt"
+      },
+      "blocks": ["Daraufaufbauende betroffeneBehauptung"],
+      "decisionRecord": "reports/loop/INVENTORY-002-AB-entscheidung.md"
+    },
+    {
+      "id": "AB-R01",
+      "decision": "angenommen",
+      "duplicateOf": "AB-S02",
+      "severity": "niedrig",
+      "problem": "Derselbe falsch benannte Gegenfall",
+      "evidence": "Reproerstbericht",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "correctionState": "Neue gezielteKorrektur läuft; Erstfassung erhalten",
+      "verification": {
+        "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
+        "executionRecord": "Noch nicht ausgeführt"
+      },
+      "blocks": ["Daraufaufbauende betroffeneBehauptung"],
+      "decisionRecord": "reports/loop/INVENTORY-002-AB-entscheidung.md"
+    },
+    {
+      "id": "M2-S01",
+      "decision": "angenommen",
+      "duplicateOf": null,
+      "severity": "mittel",
+      "problem": "MarginaleTH-Prüfung liest modellimplizierteTH",
+      "evidence": "lav_object_inspect.R:1893–1900/2207–2210;METHODSstatistik",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "correctionState": "Neue gezielteKorrektur läuft; Erstfassung erhalten",
+      "verification": {
+        "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
+        "executionRecord": "Noch nicht ausgeführt"
+      },
+      "blocks": ["Daraufaufbauende betroffeneBehauptung"],
+      "decisionRecord": "reports/loop/METHODS-002-entscheidung.md"
+    },
+    {
+      "id": "M2-R01",
+      "decision": "angenommen",
+      "duplicateOf": null,
+      "severity": "mittel",
+      "problem": "Behaupteter externerWLSV-Input tatsächlichNULL",
+      "evidence": "lav_samplestats.R:193–224/1402–1405;METHODSrepro",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "correctionState": "Neue gezielteKorrektur läuft; Erstfassung erhalten",
+      "verification": {
+        "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
+        "executionRecord": "Noch nicht ausgeführt"
+      },
+      "blocks": ["Daraufaufbauende betroffeneBehauptung"],
+      "decisionRecord": "reports/loop/METHODS-002-entscheidung.md"
+    },
+    {
+      "id": "M2-S02",
+      "decision": "angenommen",
+      "duplicateOf": null,
+      "severity": "niedrig",
+      "problem": "NurLayoutbehauptung übersieht redaktionelleErgänzung",
+      "evidence": "v1-v2Autorenberichtdiff;beideErstberichte",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "correctionState": "Neue gezielteKorrektur läuft; Erstfassung erhalten",
+      "verification": {
+        "scope": "NeueFassung und tatsächlicheOriginal-/Mutationstests; zwei frischeNachprüfer",
+        "executionRecord": "Noch nicht ausgeführt"
+      },
+      "blocks": ["Daraufaufbauende betroffeneBehauptung"],
+      "decisionRecord": "reports/loop/METHODS-002-entscheidung.md"
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."

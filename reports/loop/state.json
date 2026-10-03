@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T05:40:56.575512+00:00",
+  "updatedAtUtc": "2026-10-03T05:58:53.334439+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "62783f9f71a63032995c5ec679e5833a9e9434d6",
+  "currentHead": "0a8d41333365d985f1162489ed712e27aad148d2",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -82,7 +82,7 @@
     "currentInfrastructure": "BESTANDEN",
     "actual200PercentBrowserZoom": "BLOCKIERT",
     "fullHandbookWebsiteAcceptance": "NICHT_GEPRÜFT",
-    "claudeTechnicalAccess": "BESTANDEN",
+    "claudeTechnicalAccess": "BLOCKIERT",
     "foundationBoundedCorrections": "BESTANDEN",
     "foundationScientificPlanAcceptance": "BLOCKIERT",
     "claudeReadBoundary": "NICHT_GEPRÜFT"
@@ -118,7 +118,10 @@
     "reports/loop/reviews/FOUNDATION-001-juror.md",
     "reports/loop/reviews/SOFTWARE-001-v2-boundary.md",
     "reports/loop/reviews/SOFTWARE-001-v2-repro.md",
-    "reports/loop/reviews/INVENTORY-002-AB-repro.md"
+    "reports/loop/reviews/INVENTORY-002-AB-repro.md",
+    "reports/loop/reviews/INVENTORY-002-AB-sources.md",
+    "reports/loop/reviews/METHODS-002-statistics.md",
+    "reports/loop/reviews/METHODS-002-repro.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -129,23 +132,26 @@
     "F-P03",
     "F-P04",
     "SW-ENV-004",
-    "SOFTWARE-001-REPRO-02"
+    "AB-S01",
+    "AB-S02",
+    "M2-S01",
+    "M2-R01"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/inventory002_ab_sources",
-      "role": "independent-public-source-review",
+      "name": "/root/inventory002_ab_author",
+      "role": "bounded-versioned-correction",
       "status": "RUNNING"
     },
     {
-      "name": "/root/methods002_statistics",
-      "role": "independent-synthetic-methods-review",
+      "name": "/root/inventory003_c_author",
+      "role": "public-source-author",
       "status": "RUNNING"
     },
     {
-      "name": "/root/methods002_repro",
-      "role": "independent-synthetic-reproduction-review",
+      "name": "/root/methods002_correction_author",
+      "role": "versioned-synthetic-correction",
       "status": "RUNNING"
     }
   ],
@@ -218,7 +224,9 @@
       "manifest": "reports/loop/packages/INVENTORY-002-AB/v1/manifest.json",
       "manifestSha256": "5af3f5c77ffa84ecbba15dc2c3f541064c1530bda5297928e8a5d5c7ae1d9856",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "Erster vollständiger Metadaten-/Reprobericht abgeschlossen; Quellenbericht läuft. Noch keine Findingszusammenführung."
+      "reviewStatus": "Beide vollständigen Erstberichte gelesen; AB-S01 und AB-S02/AB-R01 angenommen. Runde1-Korrektur als neueFassung läuft.",
+      "decision": "reports/loop/INVENTORY-002-AB-entscheidung.md",
+      "authorCorrectionStatus": "RUNNING"
     },
     {
       "id": "METHODS-002",
@@ -227,10 +235,12 @@
       "predefinedCriteria": "reports/loop/METHODS-002-vorabplan.md",
       "author": "/root",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "Zwei frische unabhängige Erstprüfungen auf v2 aktiv; keine nachträgliche Kriterienänderung.",
+      "reviewStatus": "Beide vollständigen Erstberichte gelesen; M2-S01/M2-R01/M2-S02 angenommen. NeueFassung zur technischenKorrektur läuft, keineAbnahme.",
       "technicalRecord": "outputs/loop/methods002/trial-001-command.json",
       "manifest": "reports/loop/packages/METHODS-002/v2/manifest.json",
-      "manifestSha256": "b736855447a96dcaa3f55926edf59d7eda29c19dfe90d2e752de18df8b0d78e4"
+      "manifestSha256": "b736855447a96dcaa3f55926edf59d7eda29c19dfe90d2e752de18df8b0d78e4",
+      "authorCorrectionStatus": "RUNNING",
+      "decision": "reports/loop/METHODS-002-entscheidung.md"
     },
     {
       "id": "CLAUDE-P02",
@@ -238,29 +248,34 @@
       "scope": "Künstlicher eingeschränkter Read-Grenztest; kein Forschungsreview",
       "predefinedCriteria": "outputs/loop/claude-read-boundary-002/plan-before-run.json",
       "actualProcess": "outputs/loop/claude-read-boundary-002/execution.json",
-      "reviewStatus": "API401 vor jedem Read; kein Grenztest ausgeführt. Ein vorab begründeter Diagnoseversuch ohne safe-mode läuft; keine Auth-/Rechteänderung.",
-      "diagnostic": "outputs/loop/claude-read-boundary-002b/plan-before-run.json"
+      "reviewStatus": "Beide Zugriffsversuche Exit1/API401 vor Read; Grenzen NICHT_GEPRÜFT, keine weiteren Retries.",
+      "diagnostic": "outputs/loop/claude-read-boundary-002b/plan-before-run.json",
+      "report": "reports/loop/CLAUDE-P02-zugriffsbericht.md"
+    },
+    {
+      "id": "INVENTORY-003-C",
+      "status": "RUNNING",
+      "scope": "43 öffentliche C-Frageidentitäten mit Kategorien, Kontext/Filter, Listen, Codebook; keine endgültige Auswahl/Polung",
+      "author": "/root/inventory003_c_author",
+      "authorStatus": "RUNNING",
+      "reviewStatus": "NICHT_GEPRÜFT; zwei getrennte Erstprüfungen nach eingefrorenerFassung",
+      "predefinedCriteria": "Vorabplan vorBearbeitung unter outputs/loop/inventory003-c/"
     }
   ],
-  "nextConcreteStep": "Neue öffentliche A/B-Ergänzung und synthetische METHODEN-Probe getrennt prüfen; SOFTWARE-v2 vollständige Zweierberichte auswerten. Keine ESS-Antwortanalyse vor wissenschaftlicher Abnahme.",
+  "nextConcreteStep": "Neue AB- und METHODS-Korrekturen einfrieren und jeweils durch zwei frische Reviewer nachprüfen. Öffentliche C-Quellenannotation parallel. Claudezugriff401 bleibt offen.",
   "checkpoint": {
-    "lastLocalCommit": "62783f9f71a63032995c5ec679e5833a9e9434d6",
-    "lastVerifiedRemoteCommit": "62783f9f71a63032995c5ec679e5833a9e9434d6",
-    "lastVerifiedPushAtUtc": "2026-10-03T05:23:26.000930+00:00",
+    "lastLocalCommit": "0a8d41333365d985f1162489ed712e27aad148d2",
+    "lastVerifiedRemoteCommit": "0a8d41333365d985f1162489ed712e27aad148d2",
+    "lastVerifiedPushAtUtc": "2026-10-03T05:47:35.165412+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-015.json",
+    "record": "reports/loop/push-016.json",
     "intervalOverrunNote": "Checkpoint nach Kontextkompaktierung erst nach 30-Minuten-Frist begonnen (03:53:14 bis mindestens04:25UTC). Verspätung dokumentiert; eigene Änderungen sofort gesichert.",
-    "lastPushCompletedAtUtcApproximate": "2026-10-03T05:23:26.000930+00:00"
+    "lastPushCompletedAtUtcApproximate": "2026-10-03T05:41:00+00:00"
   },
-  "scientificStatus": "296 technische Inventarzeilen/205 offene Restzeilen. Fünf FOUNDATION-Erstberichte, zwei Nachberichte; N-F01 Runde2 korrigiert und erneut eingefroren, unabhängige Prüfung offen. Keine semantische Vollabnahme, Endauswahl, Rohantworten, A/B oder Tags.",
-  "technicalRecord": {
-    "path": "outputs/loop/post-software-v2/app-check.json",
-    "status": "BESTANDEN",
-    "logSha256": "0284ca80663341168c565a66485d9f02aa761e7d1a4534ddb0cec81174a36f56",
-    "scope": "Actual pnpm check 05:37:22–05:37:34 UTC after both SOFTWARE-v2 reports; no scientific/browser acceptance"
-  },
+  "scientificStatus": "296 technische Inventaridentitäten/205Restzeilen bleiben unverändert. FOUNDATION-v4 begrenzte Korrekturen durch zwei Nachprüfungen und Juror belegt; wissenschaftliche Planabnahme BLOCKIERT. AB-v1 zwei vollständig gelesene Erstberichte mit vierKontextfehlern und falschbenanntemGegenfall; Korrektur läuft. METHODS-v2 zwei Erstberichte belegen engeRechenkette und zwei fehlerhafteZielprüfungen; technischeReparatur läuft. C43öffentlicheAnnotation läuft. Keine ESS-Rohantworten/A/B/Entblindung/Endauswahl/Tags; getrennteClaudebewertungen nichtausgeführt, aktuellerZugriff401.",
+  "technicalRecord": "reports/loop/technical-post-audit-decisions.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
     "reports/loop/technical-v2/web-check.json",
@@ -278,7 +293,8 @@
     "reports/loop/technical-v4/inputs.json",
     "reports/loop/technical-v4/loop-tests.json",
     "reports/loop/technical-v4/status.json",
-    "reports/loop/technical-v4/all.json"
+    "reports/loop/technical-v4/all.json",
+    "reports/loop/technical-post-audit-decisions.json"
   ],
   "independentPreparations": [
     {
