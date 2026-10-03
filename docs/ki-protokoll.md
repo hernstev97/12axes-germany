@@ -196,3 +196,33 @@ Dazu folgte die Ausgabe des externen KI-Reviews (GPT-6.1-Sol) zu World Values Su
 - **Quellen außerhalb von GESIS.** Drei Claude-Subagents (R5 WVS/EVS, R6 Eurobarometer, R7 weitere Quellen), ergebnisblind, ohne Downloads und ohne Anmeldungen. Auswertung im Nachtrag zu `docs/abdeckung-v2.2.md`.
 - **Nachprüfung V2.** Ein Claude-Subagent ordnete die V2-Findings dem aktuellen Stand zu (nur lesend). Die behebbaren Punkte setzte Claude in der Anzeige um, ohne Kataloge oder Profilregeln zu ändern.
 - **Texte.** Die neuen Seitentexte las ein getrennter Claude-Subagent auf Fakten, KI-Ton und Neutralität (Handbuch 7.8). Das ist dieselbe Modellfamilie wie der Autor.
+
+## 2026-10-04: Fortsetzung ohne Stevens Mitwirkung
+
+- Agent: Claude über T3 Code, Modellkennung laut Laufzeit `claude-opus-5-5[1m]`. Branch `research/life-93-claude-20261003`, Ausgangsstand `b5a53ff`.
+- Subagents: Claude-Subagents R8, R9, R10 (Recherche, ergebnisblind) und S1 (getrennte technische Rolle für Tabellenstruktur, ohne Werte an die Auswahlrolle). R8 startete selbst einen eng begrenzten Unteragenten zur Rechtslage; zeitweise liefen damit vier statt höchstens drei Agenten. Codex-Prüfer (`gpt-6.1-sol`, hohe Denktiefe): T2 und T2 Runde 2 für das technische Paket, P4 und P5 für den Planentwurf v2.3.
+- Isolierte Abhängigkeiten ohne Systemänderung: `uv`-Umgebung `outputs/claude/venv-readstat` (pyreadstat, pandas, openpyxl), WebKit-Build unter `outputs/claude/pw-browsers` (startet ohne Systembibliotheken nicht, nicht genutzt).
+
+Stevens Auftrag im Wortlaut:
+
+> Ich bin unterwegs und kann aktuell keine größeren Entscheidungen treffen, Dateien bereitstellen oder Accounts erstellen. Setze LIFE-93 mit allen Arbeiten fort, die innerhalb des bestehenden Auftrags ohne meine Mitwirkung möglich sind. Warte bei einem blockierten Teil nicht auf mich, sondern bearbeite das nächste ausführbare Paket.
+>
+> Arbeite im bisherigen Worktree auf "research/life-93-claude-20261003". Ausgangspunkt ist der Abschlussstand "b5a53ff"; prüfe den tatsächlichen HEAD und Arbeitsbaum. Lies den Abschlussbericht und die aktuellen Projektregeln. Behalte eingefrorene Pläne, Ergebnisse und Prüfberichte unverändert. Diese Fortsetzung ist keine Veröffentlichungsgenehmigung.
+>
+> Schließe zuerst die konkreten technischen Prüfgrenzen. Prüfe insbesondere die ESS5-Designdatei mit einer zweiten, unabhängigen SPSS-Implementierung statt des gemeinsam verwendeten "sav.py". Vergleiche Zuordnungen und Designfelder lokal, ohne Personenkennungen oder Rohdatenzeilen auszugeben. Nutze vorhandene Werkzeuge oder isolierte lokale Abhängigkeiten. Untersuche Abweichungen und dokumentiere die tatsächliche Unabhängigkeit der Gegenprobe. Überschreibe keine bestehenden privaten Läufe.
+>
+> Prüfe anschließend den gebauten Produktionsstand im Browser, den echten 200-%-Zoom der öffentlichen Seiten und den Forschungsentwurf in weiteren verfügbaren Browser-Engines. Untersuche den vollständigen Ablauf, Fokus, Antwortänderungen, Überspringen, Vergleichsanzeigen und Datenschutz. Behebe konkrete Fehler. Kennzeichne nicht durchführbare Prüfungen ehrlich; Browseremulation ersetzt weder ein physisches Smartphone noch einen menschlichen Screenreader-Test. Wiederhole bereits bestandene Prüfungen nur wegen Änderungen oder konkreter offener Fragen.
+>
+> Bereite parallel ein Erweiterungspaket für 2025/26 vor. Erstelle für die sechs fehlenden Themenbereiche und die Aktualisierung der Wählergruppen eine konkrete Liste geeigneter Erhebungen und Fragenkandidaten. Dokumentiere Feldzeit, deutsche Zielpopulation, Stichprobenverfahren, verfügbare Antwortkategorien, Fragekontext, Zugangsweg und Nutzungsbedingungen. Nutze öffentliche Primärquellen und die vorhandenen Rechercheberichte. Trenne aktuelle Gesetzeslage, politische Vorschläge und beobachtete Einstellungen. Neue Fragenkandidaten bleiben Forschungsentwürfe und werden nicht ungeprüft in den Test aufgenommen.
+>
+> Präzisiere die Quellenblocker. Unterscheide ausdrückliche Verbote, ungeklärte Vertragsbedingungen und Nutzungen, die eine vorhandene Lizenz bereits erlaubt. Das Fehlen einer KI-Klausel allein begründet weder eine Erlaubnis noch automatisch eine zusätzliche Genehmigungspflicht. Halte die bestehende GESIS-Sperre ein. Bewerte Eurobarometer-Fragen zur EU auch auf ihre Relevanz für ein deutsches Politikprofil; kennzeichne ihren Geltungsbereich. Fehlende Wählergruppen dürfen ihre mögliche Eignung als begrenzten Bevölkerungsvergleich nicht pauschal ausschließen.
+>
+> Erstelle daraus einen versionierten Analyseplan als Entwurf, einschließlich Auswahlregeln, Umgang mit historischen und aktuellen Vergleichen sowie getrennten Populationen. Die fachliche Frageauswahl bleibt ergebnisblind. Falls öffentlich zugängliche Tabellen auch Ergebnisse enthalten, lasse einen getrennten technischen Agenten ihre Struktur prüfen, ohne politische Verteilungen an die Auswahlrolle weiterzugeben. Keine neue Auswertung vor der erforderlichen Planprüfung und Quellenfreigabe.
+>
+> Verbessere den lokalen Test- und Ergebnisentwurf innerhalb des bestehenden Handbuchs. Bereite überprüfbare Vorschläge für noch offene Beschriftungen und sachlich problematische Pflichttexte vor. Keine neuen Achsen, Gesamtscores, politischen Etiketten oder Designrichtungen. Halte den Entwurf lokal und als Forschungsentwurf gekennzeichnet. Bereite außerdem die notwendigen Quellenanfragen und eine Entscheidungsvorlage mit begründeter Empfehlung vor; sende keine Nachrichten und erstelle keine Accounts.
+>
+> Nutze höchstens drei gleichzeitig aktive Subagents mit getrennten Aufgaben. Normale Pakete erhalten einen passenden Prüfagenten; wesentliche methodische Änderungen die vorgesehenen zwei Prüfungen. Keine erneute vollständige Audit-Schleife ohne konkreten Anlass. Führe die erforderlichen Checks nach Änderungen aus und committe und pushe abgeschlossene Pakete, spätestens nach 30 Minuten mit Änderungen.
+>
+> Ändere keine globalen Systemeinstellungen oder Repository-Schutzregeln. Kein Merge, Deployment, Force-Push oder Löschen fremder Arbeit. Beende den Lauf erst, wenn die ausführbaren Pakete abgeschlossen sind oder nachvollziehbar blockieren. Hinterlasse einen Fortsetzungsbericht mit tatsächlichen Ergebnissen, verbleibenden Grenzen und den wenigen konkreten Entscheidungen, die danach wirklich von mir benötigt werden.
+
+Zugriff und Exposition: Die Rohdatenzugriffe stehen in `reports/claude/datenzugriff.md`. Die Auswahlrolle (Claude) hat keine Ergebniswerte externer Erhebungen gesehen. S1 hat Ergebnistabellen der Kommission geöffnet und nur Struktur, Basen und Methodenangaben gemeldet. Rechercheagenten berichten ungefragt angezeigte Ergebnisbruchstücke in Suchzusammenfassungen; sie wurden nicht verwendet.
