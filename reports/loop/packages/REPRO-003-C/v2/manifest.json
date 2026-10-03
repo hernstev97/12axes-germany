@@ -1,0 +1,483 @@
+{
+  "id": "REPRO-003-C",
+  "version": 2,
+  "codeCommit": "204ae72b446f9515832783f085d37eefd64aab54",
+  "modelConfiguration": "Historical C-v2 documentary annotation only; 43 identities and 1526 evidence objects. No new model/selection/analysis.",
+  "analysisPlanVersion": "Bound frozen draft docs/analyseplan.md, no scientific approval",
+  "dataVersion": "No respondent dataset accessed; Codebook4.1 versus proposed data4.2 not reconciled",
+  "sourceInputs": [
+    {
+      "path": "outputs/loop/repro003-c-author/plan-before-code.json",
+      "bytes": 1593,
+      "sha256": "daa266a1cce1491a47b148a4e6d8ac69119f48e875bd9e01665d25dec1a376ce",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/builder-portability.diff",
+      "bytes": 4574,
+      "sha256": "1ac51cec9aab2a5abb4a2c86ed5de56f8fa3e87068dd54bdf267c12d3a11dd66",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/code-diff-verification.json",
+      "bytes": 320,
+      "sha256": "4b1323253f0cfc66d0fd24b0ca118a9dfee01c383c126f80a579efaed8b07b54",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/byte-comparison.json",
+      "bytes": 235,
+      "sha256": "cc303446b1393621548771c767d4369ec40b2764b7177438dd4603595844a84f",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/actual-boundary-tests.json",
+      "bytes": 7236,
+      "sha256": "e441de03066afdb598aea7f1f0e91875c39929159d48122ca8d002f2ff4abd8f",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout-command.json",
+      "bytes": 1142,
+      "sha256": "0fb5aed7d435aba4a77ca49f7424eac9d7c21ef29a3246a635ca1124ac1a31b4",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/pipeline/reproduce_c_annotation.py",
+      "bytes": 5967,
+      "sha256": "1b40515f4cae4e62718407c28ad5e80b929f1222acc768eaf27752de3a4b0bf4",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/pipeline/annotations/c_builder_v2.py",
+      "bytes": 30375,
+      "sha256": "031aff14c42da05f6a57a78fef89ad8b5ba8220fc493cb65af1777a31d57c584",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/pipeline/annotations/source_geometry.py",
+      "bytes": 1252,
+      "sha256": "61fb05cd5d0e6b637346692267f2a4c44bb9cb07567fa5c8cc03a61e42a6170f",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/data/inventar.entwurf.csv",
+      "bytes": 2437729,
+      "sha256": "8c73adb8b361db2992f5fe9e321e0c5b978afdc41ba22c1cbb471f92e60057c1",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/data/inventar.provenienz.json",
+      "bytes": 70582,
+      "sha256": "533a12c517ac49f869aea1fbc09dc86e3c1dfe7ef9bc7b05018b5a49ba753aa6",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/annotation.json",
+      "bytes": 3418839,
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/build-inputs/codebook.bbox.html",
+      "bytes": 10364414,
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/build-inputs/questionnaire.bbox.html",
+      "bytes": 1594668,
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/build-inputs/showcards.bbox.html",
+      "bytes": 587336,
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/reproduction.json",
+      "bytes": 3108,
+      "sha256": "3957c4b104a4e13dbbe8c28a0261abe714e7870db7427a2088149e48152008f5",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/sources/ESS11_appendix_a7_e04_1.pdf",
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/sources/ESS11_questionnaires_DE.pdf",
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/sources/ESS11_showcards_DE.pdf",
+      "bytes": 2210799,
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-author-run1/tool-exits.jsonl",
+      "bytes": 1102,
+      "sha256": "b2a65a97659cbd5d09fde5d6a82eed34fbf605a286c84a7a6cf7939f1682f3dd",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/annotation.json",
+      "bytes": 3418839,
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/build-inputs/codebook.bbox.html",
+      "bytes": 10364414,
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/build-inputs/questionnaire.bbox.html",
+      "bytes": 1594668,
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/build-inputs/showcards.bbox.html",
+      "bytes": 587336,
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/reproduction.json",
+      "bytes": 3114,
+      "sha256": "081d93d81d48e13edc7015df63da24ef2ebcedaa4bb7e50741fb26598fdc3320",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/sources/ESS11_appendix_a7_e04_1.pdf",
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/sources/ESS11_questionnaires_DE.pdf",
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/sources/ESS11_showcards_DE.pdf",
+      "bytes": 2210799,
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-author/minimal-checkout/outputs/public-reproduction/c-v2-minimal-clone/tool-exits.jsonl",
+      "bytes": 1402,
+      "sha256": "6a749dc489f03c1c0710d2f09faf2343d0655e93465e743f2ff85762c9824e3e",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/build_c.py",
+      "bytes": 30391,
+      "sha256": "d466f8503bd554127001aa567a8f48ff783ca264cc7b989b1e63fa557a58c1b7",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory003-c-correction/source_geometry.py",
+      "bytes": 1252,
+      "sha256": "61fb05cd5d0e6b637346692267f2a4c44bb9cb07567fa5c8cc03a61e42a6170f",
+      "scope": "Public original documentation or own bounded reproduction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/actual-correction-results.json",
+      "bytes": 1199,
+      "sha256": "639cfd3bd5bfb89080260693b5be0f4b1e38ea9c4bb3b8eef4143ee52738c2a6",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/actual-http404-command.json",
+      "bytes": 2352,
+      "sha256": "927953f271d436420f10e30f101d310f0e78dfb67ce155454accae842722b34a",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/http404-minimal-clone/data/inventar.entwurf.csv",
+      "bytes": 2437729,
+      "sha256": "8c73adb8b361db2992f5fe9e321e0c5b978afdc41ba22c1cbb471f92e60057c1",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/http404-minimal-clone/data/inventar.provenienz.json",
+      "bytes": 70582,
+      "sha256": "533a12c517ac49f869aea1fbc09dc86e3c1dfe7ef9bc7b05018b5a49ba753aa6",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/http404-minimal-clone/outputs/public-reproduction/http404/reproduction.json",
+      "bytes": 1626,
+      "sha256": "37b83eaceef1832c06072f00297c80b36a337e8ac3aaa31b6a6afa12c8b5db92",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/http404-minimal-clone/pipeline/annotations/c_builder_v2.py",
+      "bytes": 30375,
+      "sha256": "031aff14c42da05f6a57a78fef89ad8b5ba8220fc493cb65af1777a31d57c584",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/http404-minimal-clone/pipeline/annotations/source_geometry.py",
+      "bytes": 1252,
+      "sha256": "61fb05cd5d0e6b637346692267f2a4c44bb9cb07567fa5c8cc03a61e42a6170f",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/http404-minimal-clone/pipeline/reproduce_c_annotation.py",
+      "bytes": 6941,
+      "sha256": "87671812a87b3d0cb50b7278dd6517eb90b96a3246c7de2dc503f9e33a4d7134",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/plan-before-correction.json",
+      "bytes": 1159,
+      "sha256": "bb81065aa53b0025a29d2281330dd3a29b27840425c6a38f319374e8097c111d",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/positive-run-1-command.json",
+      "bytes": 820,
+      "sha256": "8553bb1aaa68685558aab8ea1ffb91a22194863493edf1a6268b83d19bcffdcf",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/positive-run-2-command.json",
+      "bytes": 820,
+      "sha256": "9db290905fc07281128bb38603078f0c6153cce61649568a2ab289a426b6afe0",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/preparation-first-failed.json",
+      "bytes": 388,
+      "sha256": "9bbbcba4cd9fee6ff7981c7ddb3a783c8a69abf6642dcadaaed48745272c8cfa",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/wrapper-source-diff.patch",
+      "bytes": 2912,
+      "sha256": "1cc6a3796cecb1e9da1de7b3d8d07c199c34e90b4a98d2360514d93009490b5a",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/repro003-c-correction/wrapper-v1.py",
+      "bytes": 5967,
+      "sha256": "1b40515f4cae4e62718407c28ad5e80b929f1222acc768eaf27752de3a4b0bf4",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/annotation.json",
+      "bytes": 3418839,
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/build-inputs/codebook.bbox.html",
+      "bytes": 10364414,
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/build-inputs/questionnaire.bbox.html",
+      "bytes": 1594668,
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/build-inputs/showcards.bbox.html",
+      "bytes": 587336,
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/reproduction.json",
+      "bytes": 3454,
+      "sha256": "55a1ebfbe526317cf47be0ecde56ced80437d38fed2660595b007b3a11e5ea99",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/sources/ESS11_appendix_a7_e04_1.pdf",
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/sources/ESS11_questionnaires_DE.pdf",
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/sources/ESS11_showcards_DE.pdf",
+      "bytes": 2210799,
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run1/tool-exits.jsonl",
+      "bytes": 1102,
+      "sha256": "b122ad1b726b3986ba60079318ebac361394530fe5d3e7604139f084e3cbdd37",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/annotation.json",
+      "bytes": 3418839,
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/build-inputs/codebook.bbox.html",
+      "bytes": 10364414,
+      "sha256": "62d5e509ca449c489b165e31db1beefc0646e43a7accd2c11990ed995bdd29cc",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/build-inputs/questionnaire.bbox.html",
+      "bytes": 1594668,
+      "sha256": "226130e9627a9016a7b80d51dba397668fa238f0edb521b49fba6fe851533240",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/build-inputs/showcards.bbox.html",
+      "bytes": 587336,
+      "sha256": "755f0236765deaac94b02b227d17950b73e895514e987caa5a2e41783efc45d6",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/reproduction.json",
+      "bytes": 3454,
+      "sha256": "ba2d8667721f2d452335421429bd8d556260d0a78708951667f63110f2f7b1da",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/sources/ESS11_appendix_a7_e04_1.pdf",
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/sources/ESS11_questionnaires_DE.pdf",
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/sources/ESS11_showcards_DE.pdf",
+      "bytes": 2210799,
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    },
+    {
+      "path": "outputs/public-reproduction/c-v2-rc-r01-run2/tool-exits.jsonl",
+      "bytes": 1102,
+      "sha256": "be2e12d6723f417a6890b449a0c569314408c0a393f24944d3eedba9201d5e57",
+      "scope": "Public documentation or own bounded RC-R01 correction; no ESS respondents"
+    }
+  ],
+  "acceptance": "Two fresh independent targeted reviews pending; own positive and real404 results executed; no scientific acceptance",
+  "historicalAnnotationMetadataRetained": true,
+  "correction": "RC-R01 Runde1; source-download failure attempt provenance; annotation bytes unchanged",
+  "frozenAtUtc": "2026-10-03T09:01:23.304898+00:00",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "docs/pruefregeln.md": {
+      "sha256": "7f1a86187a0a2c6a39acaabab25eb75cf92ec1fc5c2c4c97bf0d12411ece2a9f",
+      "bytes": 23337
+    },
+    "docs/analyseplan.md": {
+      "sha256": "7eb07ed5e8edf87970c34f1d77590f60add33a19c4a90f83b14814740a31ac47",
+      "bytes": 13766
+    },
+    "docs/analyseanforderungen.md": {
+      "sha256": "f94a4bc01c571af966e9269a674632f8a19cba3db0a5c8be0bddade27be7795b",
+      "bytes": 8485
+    },
+    "docs/lizenzen.md": {
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+      "bytes": 4845
+    },
+    "docs/repro-003-c-pruefauftrag.md": {
+      "sha256": "bcc5225a7b7506d60b8832b88947da7a130e635b60f456288d7a79cb598fe3b9",
+      "bytes": 1958
+    },
+    "docs/reproduktion-c-quellen.md": {
+      "sha256": "1be22005ffe410d89ad7594d95625ce6fd52f2cf2ceed75b40fe9033d788b47f",
+      "bytes": 3783
+    },
+    "reports/loop/authors/REPRO-003-C.md": {
+      "sha256": "35f1044f5c0c0ebaedcb3ea02a89f2ced8056ace52e87a5f28dc9906837caeed",
+      "bytes": 4006
+    },
+    "pipeline/reproduce_c_annotation.py": {
+      "sha256": "8f8d9cbba76c1ee37f2e967321493265e33eb4445d1444f3a519180ea4dcc1d2",
+      "bytes": 6932
+    },
+    "pipeline/annotations/c_builder_v2.py": {
+      "sha256": "031aff14c42da05f6a57a78fef89ad8b5ba8220fc493cb65af1777a31d57c584",
+      "bytes": 30375
+    },
+    "pipeline/annotations/source_geometry.py": {
+      "sha256": "61fb05cd5d0e6b637346692267f2a4c44bb9cb07567fa5c8cc03a61e42a6170f",
+      "bytes": 1252
+    },
+    "data/inventar.entwurf.csv": {
+      "sha256": "8c73adb8b361db2992f5fe9e321e0c5b978afdc41ba22c1cbb471f92e60057c1",
+      "bytes": 2437729
+    },
+    "data/inventar.provenienz.json": {
+      "sha256": "533a12c517ac49f869aea1fbc09dc86e3c1dfe7ef9bc7b05018b5a49ba753aa6",
+      "bytes": 70582
+    },
+    "data/inventar-c.v2.ergaenzung.entwurf.json": {
+      "sha256": "70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e",
+      "bytes": 3418839
+    },
+    "reports/loop/REPRO-003-C-v1-entscheidung.md": {
+      "sha256": "ae62ed1011475b6ebdf3bc39338ded93a491a99aacfbbb2434f4298ac73db40a",
+      "bytes": 2365
+    },
+    "reports/loop/reviews/REPRO-003-C-code.md": {
+      "sha256": "9777da31931fce54eff3d3dfbcdb0640f2b0ad318588c0f5d7970fa481455459",
+      "bytes": 22463
+    },
+    "reports/loop/reviews/REPRO-003-C-repro.md": {
+      "sha256": "59f27d082204064edf3a88269a111f5fe2d7eabe7c5983e93a27ba568c0ba693",
+      "bytes": 21391
+    },
+    "reports/loop/authors/REPRO-003-C-korrektur.md": {
+      "sha256": "7dd6f9bdf9b65c61126f1c78eb822eb708bef2b876de1d01ee0048f7e9b1c2b0",
+      "bytes": 2727
+    },
+    "docs/repro-003-c-v2-pruefauftrag.md": {
+      "sha256": "59d070fb6854a3e1d465dde6fb603dc3366608145c9db87721b3b938bcae136c",
+      "bytes": 1702
+    },
+    "reports/loop/auftraege/repro003_c_repro.txt": {
+      "sha256": "d6db365b6b137236b04b2b30e1b29bd37645ed439e7738458047fb8e81ab66fe",
+      "bytes": 2612
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

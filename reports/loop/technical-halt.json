@@ -1,0 +1,10 @@
+{
+  "startedAtUtc": "2026-10-03T09:11:54.517892+00:00",
+  "endedAtUtc": "2026-10-03T09:12:07.679008+00:00",
+  "command": ["pnpm", "check"],
+  "exit": 0,
+  "status": "BESTANDEN",
+  "log": "outputs/loop/halt-checkpoint/pnpm-check.log",
+  "logSha256": "2cf14b8341bacb78b1dd7f0755683de967e6a09d3bc0d25108289d8637adb513",
+  "scope": "Mandatory technical project check at user-requested halt; no new scientific audit or acceptance."
+}

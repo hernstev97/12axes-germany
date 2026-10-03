@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T08:38:32.754255+00:00",
-  "status": "RUNNING",
+  "updatedAtUtc": "2026-10-03T09:14:05.681284+00:00",
+  "status": "BLOCKED",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "5d3a945768874875c1b5bbca770b56148c3ac636",
+  "currentHead": "git:HEAD",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -26,7 +26,8 @@
     "Öffentliche Inventar-/Theoriearbeit fortführen; Claude-Forschungsbewertungen, tatsächliche Setup-/Methoden- und Menschenabnahmen bleiben Voraussetzungen",
     "INVENTORY-004-E/v2: zwei frische unabhängige Nachprüfungen ausstehend",
     "REPRO-003-C/v1: beide vollständigen Erstberichte abwarten",
-    "E9-BOUNDARY-001: Autorabschluss und zwei spätere unabhängige Prüfungen"
+    "E9-BOUNDARY-001: Autorabschluss und zwei spätere unabhängige Prüfungen",
+    "Unterbrechung auf ausdrücklichen Nutzerauftrag; keine automatische Wiederaufnahme. Handoff zuerst lesen."
   ],
   "dependencies": [
     {
@@ -87,7 +88,9 @@
     "claudeTechnicalAccess": "BLOCKIERT",
     "foundationBoundedCorrections": "BESTANDEN",
     "foundationScientificPlanAcceptance": "BLOCKIERT",
-    "claudeReadBoundary": "NICHT_GEPRÜFT"
+    "claudeReadBoundary": "NICHT_GEPRÜFT",
+    "haltBackup": "NICHT_GEPRÜFT",
+    "haltTechnical": "BESTANDEN"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -142,7 +145,12 @@
     "reports/loop/reviews/DESIGN-003-v2-sources.md",
     "reports/loop/reviews/DESIGN-003-v2-methods.md",
     "reports/loop/reviews/CLAUDE-P02-v2-metadata.md",
-    "reports/loop/reviews/CLAUDE-P02-v2-boundary.md"
+    "reports/loop/reviews/CLAUDE-P02-v2-boundary.md",
+    "reports/loop/reviews/REPRO-003-C-code.md",
+    "reports/loop/reviews/REPRO-003-C-repro.md",
+    "reports/loop/reviews/INVENTORY-004-E-v2-sources.md",
+    "reports/loop/reviews/INVENTORY-004-E-v2-repro.md",
+    "reports/loop/reviews/REPRO-003-C-v2-code.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -152,26 +160,11 @@
     "R5-F03",
     "F-P03",
     "F-P04",
-    "SW-ENV-004"
+    "SW-ENV-004",
+    "E-R02"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
-  "activeAgents": [
-    {
-      "name": "/root/repro003_c_code",
-      "role": "independent-code-first-review",
-      "status": "RUNNING"
-    },
-    {
-      "name": "/root/repro003_c_repro",
-      "role": "independent-reproduction-first-review",
-      "status": "RUNNING"
-    },
-    {
-      "name": "/root/e9_source_boundary_author",
-      "role": "bounded-public-source-author",
-      "status": "RUNNING"
-    }
-  ],
+  "activeAgents": [],
   "workPackages": [
     {
       "id": "LOOP-000",
@@ -300,7 +293,7 @@
       "scope": "32 öffentliche E-Identitäten einschließlich Varianten, Kontext, Listen und Codebook; keine endgültige Auswahl/Polung",
       "authorStatus": "COMPLETED",
       "predefinedCriteria": "Vorabplan unter outputs/loop/inventory004-e/ vor Bearbeitung; tatsächlicher vollständiger Auftrag im Autorenbericht",
-      "reviewStatus": "Runde1: zwei komplette bytegleiche Builds,32Sourcevertragsidentitäten,808Belegegleich,siebenalte+zwölfneueechteMutationenabgewiesen.17+130Paketgefroren. Zwei frische unabhängige Nachprüfungen ausstehend.",
+      "reviewStatus": "Beide vollständigen v2-Nachberichte gesichert; Koordinator-Endauswertung ausstehend. Reviewer bestätigen ursprüngliche E-R01/E-S01/E-R03-Reparatur im Umfang, E-R02 Runde1 bleibt mit echten kohärenten Falschkontext-Gegenfällen offen; neue geringe E2-S01/E2-R01 Listenbelegbefunde. Kein v3 oder Runde2 begonnen.",
       "authorReport": "reports/loop/authors/INVENTORY-004-E.md",
       "authorReportSha256": "ae291d2ef209840b40f021949a79420992b68a533a8ff76af276d3c233c377ac",
       "annotationSha256": "0c031abd7be58e14c91360db4e2a438b0b211e1116dd2f1b84ebab612931f6de",
@@ -308,7 +301,8 @@
       "manifestSha256": "e1e184883b5f2ca04f729b2c2383777070601af6eba049c72e040aa1e1f56ca2",
       "decision": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
       "authorCorrectionStatus": "COMPLETED",
-      "correctionReport": "reports/loop/authors/INVENTORY-004-E-korrektur.md"
+      "correctionReport": "reports/loop/authors/INVENTORY-004-E-korrektur.md",
+      "executionStatus": "PAUSED_BY_USER"
     },
     {
       "id": "DESIGN-003",
@@ -336,9 +330,13 @@
       "predefinedCriteria": "outputs/loop/repro003-c-author/plan-before-code.json",
       "authorStatus": "COMPLETED",
       "authorReport": "reports/loop/authors/REPRO-003-C.md",
-      "reviewStatus": "Zwei frische unabhängige Code-/Reproduktions-Erstprüfer aktiv, keine Änderung oder Zusammenführung vor beiden vollständigen Erstberichten.",
-      "manifest": "reports/loop/packages/REPRO-003-C/v1/manifest.json",
-      "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3"
+      "reviewStatus": "Beide v1-Erstberichte ausgewertet; RC-R01 Runde1 eigene2positive+real404 und v2Freeze22+63 ausgeführt. Frischer erster Nachprüfer hat nur Manifest gelesen/gehasht, WIP gesichert und angehalten; zweiter nicht gestartet. Unabhängige Nachprüfung NICHT_GEPRÜFT.",
+      "manifest": "reports/loop/packages/REPRO-003-C/v2/manifest.json",
+      "manifestSha256": "c3fd8f2bf210b62183c14739b91a3dd0b8ff809baad3d8186173f88bebfebab7",
+      "authorCorrectionStatus": "COMPLETED",
+      "decision": "reports/loop/REPRO-003-C-v1-entscheidung.md",
+      "correctionReport": "reports/loop/authors/REPRO-003-C-korrektur.md",
+      "executionStatus": "PAUSED_BY_USER"
     },
     {
       "id": "E9-BOUNDARY-001",
@@ -346,23 +344,30 @@
       "author": "/root/e9_source_boundary_author",
       "scope": "Offizielle E9-Originalreferenz86 und deutsche medizinischeKategorie4-Quellengrenze, keine Auswertungsentscheidung",
       "predefinedCriteria": "Eigener Vorabplan unter outputs/loop/e9-boundary-author/ vorRecherche; tatsächlicherSpawnauftrag imAutorenbericht",
-      "authorStatus": "RUNNING",
+      "authorStatus": "COMPLETED",
       "authorReport": "reports/loop/authors/E9-BOUNDARY-001.md",
-      "reviewStatus": "Zwei unabhängige Quellen-/Reproduktionsreviews nachAutorabschluss/Freeze ausstehend. Quellenautor meldet Originalmatch, noch nicht als angenommener Beleg."
+      "reviewStatus": "Autorenentwurf fertig, 47 begrenzte Autorenkontrollen laut gespeichertem Ergebnis. Originalmatch86 gefunden, keine unabhängige Erstprüfung/Rootannahme. Kein Root-Prüfpaket eingefroren; Autorindex lokal gesichert.",
+      "authorReportSha256": "b25bd01ce8107b25ae19123b134a57c6b453347293463e0d8811f58fec0cd6fb",
+      "executionStatus": "PAUSED_BY_USER"
     }
   ],
-  "nextConcreteStep": "E-v2-Korrekturnachprüfer im nächsten freien Slot starten; portableC-Erstberichte erst nach beiden vollständigen Abschlüssen zusammenführen; E9-Autorenquellen nach Abschluss einfrieren und separat unabhängig prüfen.",
+  "nextConcreteStep": "Nach ausdrücklichem Fortsetzungsauftrag: Git/Pins/Handoff abgleichen; beide vollständigen E-v2-Nachberichte vollständig lesen und E-R02-Rest samt neuen Listenbelegfindings entscheiden. Erst danach Runde2 oder begründete Begrenzung; C-v2-Nachprüfung ist unvollständig, E9-Autorenentwurf noch ohne Erstprüfung.",
   "checkpoint": {
-    "lastLocalCommit": "5d3a945768874875c1b5bbca770b56148c3ac636",
-    "lastVerifiedRemoteCommit": "5d3a945768874875c1b5bbca770b56148c3ac636",
-    "lastVerifiedPushAtUtc": "2026-10-03T08:11:15.121212+00:00",
+    "lastLocalCommit": "204ae72b446f9515832783f085d37eefd64aab54",
+    "lastVerifiedRemoteCommit": "204ae72b446f9515832783f085d37eefd64aab54",
+    "lastVerifiedPushAtUtc": "2026-10-03T08:39:56.465993+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-022.json"
+    "record": "reports/loop/push-023.json",
+    "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
+    "receiptPolicy": "Letzter historischer verifizierter Push bleibt exakt; Haltepunktcommit über git:HEAD und tatsächlichen final-push.json prüfen. Lokale ignorierte Belege nicht als remote mitgesichert ausgeben.",
+    "finalCheckpointCommit": "git:HEAD",
+    "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
+    "pendingPush": "Actual final commit and push will be recorded locally after execution; historical lastVerifiedRemoteCommit retained as historical."
   },
   "scientificStatus": "Setup/Phase0 und öffentliche Phase1-Vorbereitung, keine empirische ESS-Untersuchung. Grundlage296/205unverändert. FOUNDATION-v4 begrenzte Korrekturen durch5Fachreviews/Nachprüfer/Juror bestätigt; WissenschaftsplanBLOCKIERT. AB-v2/C-v2 und synthetischeMETHODS-v3 gezielteKorrekturen eng nachgeprüft. DESIGN-v2 undCLI-Metadaten-v2 gezielteDokumentkorrekturen nachzwei vollständigenNachberichten bestätigt. E-v2Runde1:2Builds/7alte+12neueMutationen ausgeführt,2unabhängigeNachprüfungenfehlen. PortableC-Erstprüfungen laufen; E9neuerOriginalbeleg nochunabhängigzuprüfen. KeineESS-Antwort/Designzeilen,A/B,ParteiLR,Entblindung,endgültigeItemauswahloderTags. Claude-Forschungsreviewsnichtausgeführt, zuletztZugangHTTP401.",
-  "technicalRecord": "reports/loop/technical-checkpoint023.json",
+  "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
     "reports/loop/technical-v2/web-check.json",
@@ -387,7 +392,8 @@
     "reports/loop/technical-checkpoint020.json",
     "reports/loop/technical-checkpoint021.json",
     "reports/loop/technical-checkpoint022.json",
-    "reports/loop/technical-checkpoint023.json"
+    "reports/loop/technical-checkpoint023.json",
+    "reports/loop/technical-halt.json"
   ],
   "independentPreparations": [
     {
@@ -449,5 +455,37 @@
       "identifiersStoredHere": false
     }
   ],
-  "morningReport": "reports/morgenbericht-2026-10-03.md"
+  "morningReport": "reports/morgenbericht-2026-10-03.md",
+  "executionStatus": "PAUSED_BY_USER",
+  "interruption": {
+    "requestedAtUtc": "2026-10-03T09:02:07+00:00",
+    "reason": "Steven ausdrücklich: aktuellen Arbeitsloop geordnet unterbrechen, keine neuen Pakete/Reviews; Projekt bleibt offen.",
+    "requiresExplicitContinuation": true,
+    "handoff": "reports/loop/handoff.md",
+    "scientificAcceptance": "Keine Abnahme durch Sicherung oder Unterbrechung.",
+    "agentsStatus": "Alle betroffenen Subagents final gesichert, keine aktiven Aufträge; C-v2 nur WIP, E-v2 beide vollständige Nachberichte."
+  },
+  "currentHeadResolution": "git rev-parse HEAD im angegebenen Worktree; aktueller Sicherungscommit wird nach dem Commit/Push im lokalen Haltepunktbeleg und Gitremote verifiziert. Keine selbstreferenzielle Commit-ID erfunden.",
+  "pausePendingAgents": [],
+  "haltedAgents": [
+    {
+      "name": "/root/inventory004_e_v2_repro",
+      "status": "COMPLETED_AND_HALTED",
+      "report": "reports/loop/reviews/INVENTORY-004-E-v2-repro.md",
+      "reportSha256": "d3301c0f77b3d5cf9327d8efc914e2067b107ad5c7cb32c6f84207d1a8b90640"
+    },
+    {
+      "name": "/root/inventory004_e_v2_sources",
+      "status": "COMPLETED",
+      "report": "reports/loop/reviews/INVENTORY-004-E-v2-sources.md",
+      "reportSha256": "212ea3790b56fa73fd54e4227d90657d06592f0dae1355bd502a93ad1445154f"
+    },
+    {
+      "name": "/root/repro003_c_v2_code",
+      "status": "WIP_SAVED_AND_HALTED",
+      "report": "reports/loop/reviews/REPRO-003-C-v2-code.md",
+      "reportSha256": "c731f136b784874171201eb77b901f1f927aaae0e8f375ce1cb67b6b2a7d828c",
+      "actualReview": "NICHT_GEPRÜFT; only manifest read/hash, 22+63 pins not checked"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T08:35:25.541817+00:00",
+  "updatedAtUtc": "2026-10-03T09:10:01.398003+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2420,14 +2420,19 @@
       "status": "NICHT_BESTANDEN",
       "problem": "Kohärent vertauschte Fragebogenlabels samt Belegen sowie sichtbare Listenpole passieren Autorenvalidator.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Separate neue Fassung und Autoren-Zusatzcode gefroren, alle808Originalbelege unverändert; eigene7+12Mutationen und2Builds ausgeführt. Unabhängige Nachprüfung noch offen.",
+      "correctionState": "Runde1 gefroren; Reviewer bestätigen Wortlautreparaturen, E-R02 bleibt mit kohärenten Fehlkontext-Gegenfällen offen. Root-Endentscheidung ausstehend; keine Runde2.",
       "verification": {
         "status": "NICHT_GEPRÜFT",
         "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
       },
       "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
-      "history": []
+      "history": [
+        {
+          "atUtc": "2026-10-03T09:10:01.398003+00:00",
+          "event": "Beide vollständigen v2-Nachberichte gesichert; Root-Endauswertung noch offen. IDs/Runde1 erhalten."
+        }
+      ]
     },
     {
       "id": "E-R02",
@@ -2437,14 +2442,19 @@
       "status": "NICHT_BESTANDEN",
       "problem": "Erforderliche Filter können entfernt und Filterwortlaut/Zuweisung kohärent falsch verändert werden, ohne Validatorfehler.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Separate neue Fassung und Autoren-Zusatzcode gefroren, alle808Originalbelege unverändert; eigene7+12Mutationen und2Builds ausgeführt. Unabhängige Nachprüfung noch offen.",
+      "correctionState": "Runde1 gefroren; Reviewer bestätigen Wortlautreparaturen, E-R02 bleibt mit kohärenten Fehlkontext-Gegenfällen offen. Root-Endentscheidung ausstehend; keine Runde2.",
       "verification": {
         "status": "NICHT_GEPRÜFT",
         "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
       },
       "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
-      "history": []
+      "history": [
+        {
+          "atUtc": "2026-10-03T09:10:01.398003+00:00",
+          "event": "Beide vollständigen v2-Nachberichte gesichert; Root-Endauswertung noch offen. IDs/Runde1 erhalten."
+        }
+      ]
     },
     {
       "id": "E-S01",
@@ -2454,14 +2464,19 @@
       "status": "NICHT_BESTANDEN",
       "problem": "E12/E13 sichtbare Liste58 enthält nicht sichtbaren Schlusszeichenpunkt aus originaler Textlage.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Separate neue Fassung und Autoren-Zusatzcode gefroren, alle808Originalbelege unverändert; eigene7+12Mutationen und2Builds ausgeführt. Unabhängige Nachprüfung noch offen.",
+      "correctionState": "Runde1 gefroren; Reviewer bestätigen Wortlautreparaturen, E-R02 bleibt mit kohärenten Fehlkontext-Gegenfällen offen. Root-Endentscheidung ausstehend; keine Runde2.",
       "verification": {
         "status": "NICHT_GEPRÜFT",
         "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
       },
       "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
-      "history": []
+      "history": [
+        {
+          "atUtc": "2026-10-03T09:10:01.398003+00:00",
+          "event": "Beide vollständigen v2-Nachberichte gesichert; Root-Endauswertung noch offen. IDs/Runde1 erhalten."
+        }
+      ]
     },
     {
       "id": "E-R03",
@@ -2471,16 +2486,71 @@
       "status": "NICHT_BESTANDEN",
       "problem": "Derselbe sichtbare Schlusszeichenunterschied unabhängig bestätigt.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Separate neue Fassung und Autoren-Zusatzcode gefroren, alle808Originalbelege unverändert; eigene7+12Mutationen und2Builds ausgeführt. Unabhängige Nachprüfung noch offen.",
+      "correctionState": "Runde1 gefroren; Reviewer bestätigen Wortlautreparaturen, E-R02 bleibt mit kohärenten Fehlkontext-Gegenfällen offen. Root-Endentscheidung ausstehend; keine Runde2.",
       "verification": {
         "status": "NICHT_GEPRÜFT",
         "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
       },
       "blocks": ["Betroffene semantische Validatorbehauptung oder sichtbare Transkriptionsaussage"],
       "decisionRecord": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
-      "history": [],
+      "history": [
+        {
+          "atUtc": "2026-10-03T09:10:01.398003+00:00",
+          "event": "Beide vollständigen v2-Nachberichte gesichert; Root-Endauswertung noch offen. IDs/Runde1 erhalten."
+        }
+      ],
       "duplicateOf": "E-S01"
+    },
+    {
+      "id": "RC-R01",
+      "severity": "niedrig",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "NICHT_BESTANDEN",
+      "problem": "Fehlgeschlagener tatsächlicher HTTP-Abruf im portablen C-Nachbau verlor versuchte URL und Zugriffszeiten.",
+      "evidence": "reports/loop/reviews/REPRO-003-C-repro.md: realer404 und Sidecar; unveränderte v1-Fassung",
+      "impact": "Positive Reproduktion belegt; Fehlerprovenienz unvollständig.",
+      "correctionState": "Runde1 korrigiert, zwei echte positive und realer404 durch Root ausgeführt, v2 gefroren. Nachprüfung angehalten/unvollständig.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Beide unabhängigen gezielten Nachberichte fehlen."
+      },
+      "decisionRecord": "reports/loop/REPRO-003-C-v1-entscheidung.md",
+      "correctionReport": "reports/loop/authors/REPRO-003-C-korrektur.md",
+      "history": []
+    },
+    {
+      "id": "E2-S01",
+      "severity": "niedrig",
+      "decision": "offen; Root-Endauswertung ausstehend",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "problem": "E19 sichtbarer korrekter Listenwert kann falschen Ganzseitenbeleg tragen, echter akzeptierter Einzelfeldgegenfall.",
+      "evidence": "reports/loop/reviews/INVENTORY-004-E-v2-sources.md: Kandidat und konkrete Originalseiten",
+      "impact": "Späterer Quellenverweis könnte auf falsche Antwortskala führen; aktueller Wortlaut richtig.",
+      "correctionState": "Keine Reparatur; mögliche gemeinsame Ursache mit E2-R01 erst nach vollständiger Endauswertung entscheiden.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Entscheidung/Korrektur/Nachprüfung ausstehend"
+      },
+      "history": []
+    },
+    {
+      "id": "E2-R01",
+      "severity": "niedrig",
+      "decision": "offen; Root-Endauswertung ausstehend",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "problem": "E19 sichtbarer korrekter Listenwert kann falschen Ganzseitenbeleg tragen, echter akzeptierter Einzelfeldgegenfall.",
+      "evidence": "reports/loop/reviews/INVENTORY-004-E-v2-repro.md: Kandidat und konkrete Originalseiten",
+      "impact": "Späterer Quellenverweis könnte auf falsche Antwortskala führen; aktueller Wortlaut richtig.",
+      "correctionState": "Keine Reparatur; mögliche gemeinsame Ursache mit E2-S01 erst nach vollständiger Endauswertung entscheiden.",
+      "verification": {
+        "status": "NICHT_GEPRÜFT",
+        "scope": "Entscheidung/Korrektur/Nachprüfung ausstehend"
+      },
+      "history": []
     }
   ],
-  "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."
+  "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."
 }

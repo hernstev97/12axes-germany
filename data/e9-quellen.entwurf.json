@@ -1,0 +1,993 @@
+{
+  "schema_version": "e9-boundary-draft-1",
+  "package": "E9-BOUNDARY-001",
+  "status": "ENTWURF_QUELLENAUTOR_ZWEI_FRISCHE_REVIEWS_OFFEN",
+  "created_on": "2026-10-03",
+  "author": {
+    "role": "abgegrenzter öffentlicher Quellenautor",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra geerbt laut Startauftrag",
+    "internal_revision": "UNBEKANNT",
+    "other_model_family": false,
+    "subagents_spawned": 0
+  },
+  "scope": {
+    "round": 11,
+    "identities": [
+      "E9M",
+      "E9W"
+    ],
+    "codebook_variable": "trmedmw",
+    "codebook_edition": "4.1",
+    "metadata42": "NICHT_GEPRUEFT",
+    "capi": "NICHT_GEPRUEFT",
+    "methodological_approval": "NICHT_GEPRUEFT",
+    "item_suitability": "NICHT_GEPRUEFT",
+    "raw_data_access": false,
+    "shared_artifacts_changed": false
+  },
+  "sources": {
+    "ESS11-DE-Q-LIVE": {
+      "id": "ESS11-DE-Q-LIVE",
+      "started_utc": "2026-10-03T08:28:55.906003+00:00",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 10 Jun 2024 09:30:15 GMT",
+      "etag": "0x8DC892FEFB6992F",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS11_questionnaires_DE-live.pdf",
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:28:56.154568+00:00",
+      "title": "„Zusammen|Leben heute“: Deutsche Teilstudie des European Social Survey (ESS), Welle 11, 2023",
+      "version": "Welle 11 (2023); keine zusätzliche Ausgabennummer auf der gelesenen Titelseite",
+      "pages": 100,
+      "text_read": [
+        1,
+        47,
+        48
+      ],
+      "visual_read": [
+        47,
+        48
+      ],
+      "printed_pages": {
+        "47": 47,
+        "48": 48
+      },
+      "attribution": "European Social Survey ERIC / deutsche Teilstudie, offizieller deutscher ESS11-Fragebogen. PDF-Metadaten nennen Hahn, Caroline; bibliographische Urheberschaft ist dadurch nicht abschließend geklärt.",
+      "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-DE-L55-LIVE": {
+      "id": "ESS11-DE-L55-LIVE",
+      "started_utc": "2026-10-03T08:28:55.906946+00:00",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 10 Jun 2024 09:30:16 GMT",
+      "etag": "0x8DC892FF004ADBF",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS11_showcards_DE-live.pdf",
+      "bytes": 2210799,
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:28:56.163631+00:00",
+      "title": "Listenheft Deutschland, ESS Runde 11, 2023",
+      "version": "ESS Runde 11 (2023); Metadatentitel Listenheft_ESS11_DE_v1_AK8_DRUCK.indd ist kein eigener geprüfter Editionsvertrag",
+      "pages": 100,
+      "text_read": [
+        1,
+        56
+      ],
+      "visual_read": [
+        56
+      ],
+      "printed_pages": {
+        "56": null
+      },
+      "attribution": "European Social Survey ERIC / deutsche Teilstudie, offizielles deutsches ESS11-Listenheft.",
+      "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-CB41-LIVE": {
+      "id": "ESS11-CB41-LIVE",
+      "started_utc": "2026-10-03T08:28:55.907103+00:00",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Tue, 13 Jan 2026 09:20:48 GMT",
+      "etag": "0x8DE52850A069CFA",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS11_appendix_a7_e04_1-live.pdf",
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:28:56.312890+00:00",
+      "title": "Appendix A7 Codebook, ESS11 - 2023, The ESS Data Archive",
+      "version": "Edition 4.1",
+      "pages": 552,
+      "text_read": [
+        1,
+        211
+      ],
+      "visual_read": [
+        211
+      ],
+      "printed_pages": {
+        "211": "210 of 551"
+      },
+      "attribution": "The ESS Data Archive / ESS ERIC. Appendix A7 Codebook ESS11, edition 4.1.",
+      "negative_search_scope": "Gesamter pdftotext-Layout-Text von 552 PDF-Seiten nach Referenz 86 und Begriff unjust treatment durchsucht. Nicht alle Seiten visuell gelesen; negative Treffer sind auf den Textlayer begrenzt.",
+      "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-SQ-LINKPAGE": {
+      "id": "ESS11-SQ-LINKPAGE",
+      "started_utc": "2026-10-03T08:28:56.154699+00:00",
+      "url": "https://www.europeansocialsurvey.org/news/article/round-11-questionnaire-and-provisional-release-dates",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/news/article/round-11-questionnaire-and-provisional-release-dates",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "file": "outputs/loop/e9-boundary-author/sources/round11-questionnaire-news.html",
+      "bytes": 114810,
+      "sha256": "3bc9fc487ac35781756c490a3bc674908783c06edb4698db4204cbb86b01ba63",
+      "is_pdf": false,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:28:56.333336+00:00",
+      "title": "Round 11 questionnaire and provisional release dates",
+      "version": "Artikel datiert 25 January 2024; Live-HTML-Snapshot 2026-10-03",
+      "text_read": [
+        "Links ESS11 Main Questionnaire / ESS11 Showcards / gender proposal"
+      ],
+      "visual_read": [],
+      "scope": "Nur Herkunft der konkreten öffentlichen Dokumentlinks; keine Release-/Antwortdaten-Aussage.",
+      "original_url": "https://www.europeansocialsurvey.org/news/article/round-11-questionnaire-and-provisional-release-dates",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-VERIFICATION": {
+      "id": "ESS11-VERIFICATION",
+      "started_utc": "2026-10-03T08:28:56.313071+00:00",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Verification_instructions.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Verification_instructions.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 19 Aug 2024 11:19:41 GMT",
+      "etag": "\"1476e7-620077c417ba3;65b0da9f3ad79",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS_R11_Verification_instructions.pdf",
+      "bytes": 1341159,
+      "sha256": "cddd144390727e91e3ea5a00ae7e183edae9c81f4faf67bf52d023da308766cf",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:28:56.546500+00:00",
+      "title": "ESS Round 11 Verification Instructions for National Coordinators, Brita Dorer / Elica Krajčeva",
+      "version": "ESS document date 09.12.2022",
+      "pages": 34,
+      "text_read": [
+        1,
+        6,
+        10,
+        12
+      ],
+      "visual_read": [
+        10,
+        12
+      ],
+      "printed_pages": {
+        "6": 6,
+        "10": 10,
+        "12": 12
+      },
+      "attribution": "European Social Survey (2022). ESS Round 11 Verification Instructions for National Coordinators. London: ESS ERIC Headquarters.",
+      "negative_search_scope": "Gesamter Textlayer nach trmedmw, E9M, E9W, unfairly treated86, unjust treatment und habe versucht: keine Treffer.",
+      "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Verification_instructions.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-QUALITY-CHECKLIST": {
+      "id": "ESS11-QUALITY-CHECKLIST",
+      "started_utc": "2026-10-03T08:28:56.333395+00:00",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Translation_Quality_Checklist.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Translation_Quality_Checklist.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 19 Aug 2024 11:15:38 GMT",
+      "etag": "\"4679d-620076dbb1715;65b0da9f3ad79",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS_R11_Translation_Quality_Checklist.pdf",
+      "bytes": 288669,
+      "sha256": "a0d6e95b2ce32b31a1dc9790d94aafeccb71af3cc404ac16afe019c68230cf0d",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:28:56.512150+00:00",
+      "title": "ESS 11 Translation Quality Checklist, ESS Translation Team (GESIS)",
+      "version": "17 October 2022",
+      "pages": 6,
+      "text_read": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "visual_read": [
+        2,
+        3,
+        4
+      ],
+      "printed_pages": {
+        "2": null,
+        "3": null,
+        "4": null
+      },
+      "attribution": "ESS Translation Team (GESIS), ESS 11 Translation Quality Checklist, 17 October 2022.",
+      "negative_search_scope": "Gesamter Textlayer nach trmedmw, E9M, E9W, unfairly treated86, unjust treatment und habe versucht: keine Treffer; leere Kontrollkästchen sind keine nationale Abnahme.",
+      "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Translation_Quality_Checklist.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS-LICENSE": {
+      "id": "ESS-LICENSE",
+      "started_utc": "2026-10-03T08:28:56.512185+00:00",
+      "url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "file": "outputs/loop/e9-boundary-author/sources/disclaimer.html",
+      "bytes": 168665,
+      "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+      "is_pdf": false,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:28:56.682979+00:00",
+      "title": "ESS Disclaimer: Conditions of use",
+      "version": "Live-HTML-Snapshot 2026-10-03; kein dauerhaftes Editionsdatum behauptet",
+      "attribution": "European Social Survey ERIC",
+      "text_read": [
+        "Conditions of use",
+        "Citation of ESS documentation"
+      ],
+      "visual_read": [],
+      "original_url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-SOURCE-Q": {
+      "id": "ESS11-SOURCE-Q",
+      "started_utc": "2026-10-03T08:30:04.584442+00:00",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Wed, 24 Jan 2024 13:11:24 GMT",
+      "etag": "\"130b49-60fb0ccc9e5bf;65b0da9f3ad79",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS11_Source_Questionnaire_FINAL_Alert04.pdf",
+      "bytes": 1248073,
+      "sha256": "68aa307825e0ff12ee1ef62952aeadd7cbf90fd592e5791bb5a10efc809e1227",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:30:05.702539+00:00",
+      "title": "ESS Round 11 Source Questionnaire",
+      "version": "FINAL, Alerts 01 (20.10.2022), 02 (06.12.2022), 03 (06.03.2023), 04 (08.06.2023); ESS document date 08.06.2023",
+      "pages": 102,
+      "text_read": [
+        1,
+        50,
+        51
+      ],
+      "visual_read": [
+        50,
+        51
+      ],
+      "printed_pages": {
+        "50": 50,
+        "51": 51
+      },
+      "attribution": "European Social Survey (2022). ESS Round 11 Source Questionnaire. London: ESS ERIC Headquarters c/o City, University of London. Cover: written by Core Scientific Team; disclaimer of liability on title page.",
+      "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-SOURCE-SHOWCARDS": {
+      "id": "ESS11-SOURCE-SHOWCARDS",
+      "started_utc": "2026-10-03T08:30:04.584993+00:00",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Showcards_FINAL_Alert%2002.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Showcards_FINAL_Alert%2002.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Wed, 24 Jan 2024 13:13:39 GMT",
+      "etag": "\"873da-60fb0d4cb9f9f;65b0da9f3ad79",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS11_Source_Showcards_FINAL_Alert02.pdf",
+      "bytes": 553946,
+      "sha256": "e6e5b824a92a6fa5d31361baf0fd27853499b89d37e0882c4712d73dad8af411",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:30:05.370278+00:00",
+      "title": "ESS Round 11 Source Showcards",
+      "version": "FINAL, Alerts 01 (20.10.2022), 02 (06.12.2022); ESS document date 06.12.2022",
+      "pages": 99,
+      "text_read": [
+        1,
+        60
+      ],
+      "visual_read": [
+        60
+      ],
+      "printed_pages": {
+        "60": null
+      },
+      "attribution": "European Social Survey (2022). ESS Round 11 Source Showcards. London: ESS ERIC Headquarters c/o City, University of London. Cover: written by Core Scientific Team; disclaimer of liability on title page.",
+      "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Showcards_FINAL_Alert%2002.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS-TRANSLATION-LINKPAGE": {
+      "id": "ESS-TRANSLATION-LINKPAGE",
+      "started_utc": "2026-10-03T08:30:04.585311+00:00",
+      "url": "https://www.europeansocialsurvey.org/methodology/translation",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/methodology/translation",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "file": "outputs/loop/e9-boundary-author/sources/translation.html",
+      "bytes": 166139,
+      "sha256": "06de78044e391e3750509e7de3054a635baffe8a6e0039c523d0979a3e4d5f5d",
+      "is_pdf": false,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:30:05.658730+00:00",
+      "title": "ESS methodology: Translation",
+      "version": "Live-HTML-Snapshot 2026-10-03",
+      "text_read": [
+        "Links ESS Round 11 Translation Guidelines / Translation Quality Checklist"
+      ],
+      "visual_read": [],
+      "scope": "Nur Herkunft der Dokumentlinks; keine nationale Übersetzungsabnahme.",
+      "original_url": "https://www.europeansocialsurvey.org/methodology/translation",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS-SOURCE-LINKPAGE": {
+      "id": "ESS-SOURCE-LINKPAGE",
+      "started_utc": "2026-10-03T08:30:05.370340+00:00",
+      "url": "https://www.europeansocialsurvey.org/methodology/source-questionnaire",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/methodology/source-questionnaire",
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "etag": null,
+      "file": "outputs/loop/e9-boundary-author/sources/source-questionnaire.html",
+      "bytes": 208247,
+      "sha256": "c376e98123369d40cfe4a66781292c42fbc9a35cdfa93639142a3fa9ccdbe670",
+      "is_pdf": false,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:30:05.882126+00:00",
+      "title": "ESS methodology: Source Questionnaire",
+      "version": "Live-HTML-Snapshot 2026-10-03",
+      "text_read": [
+        "Links ESS11 Main Questionnaire / Showcards / Gender module Stage 2 application"
+      ],
+      "visual_read": [],
+      "scope": "Nur Herkunft der konkreten Dokumentlinks; kein finales Modulprotokoll identifiziert.",
+      "original_url": "https://www.europeansocialsurvey.org/methodology/source-questionnaire",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-GENDER-PROPOSAL": {
+      "id": "ESS11-GENDER-PROPOSAL",
+      "started_utc": "2026-10-03T08:30:05.658771+00:00",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/ESS11-gender-in-contemporary-europe.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/ESS11-gender-in-contemporary-europe.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Thu, 15 Jun 2023 11:28:37 GMT",
+      "etag": "\"176195-5fe295e8d8340;65b0da9f3ad79",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS11-gender-in-contemporary-europe.pdf",
+      "bytes": 1532309,
+      "sha256": "80d366702b46e64b14d73d94a4c855f7e599a565eaa5deb2e7766bd4ba64639e",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:30:06.573874+00:00",
+      "title": "Gender in Contemporary Europe: Rethinking Equality and the Backlash, Round 11 QDT Stage 2 Application",
+      "version": "Stage 2 Application; PDF-Kopf nennt Abgabefrist 26 May 2020. Tatsächliches Abgabe-/Versionsdatum unbekannt. Kein finales Modulprotokoll.",
+      "pages": 37,
+      "text_read": [
+        1,
+        12,
+        20
+      ],
+      "visual_read": [
+        1,
+        12,
+        20
+      ],
+      "printed_pages": {
+        "1": null,
+        "12": 10,
+        "20": 18
+      },
+      "attribution": "ESS Round 11 Question Module Design Teams, Stage 2 Application. Principal Applicant Susan Banducci et al. Konkrete Rechte dieser externen Modulbewerbung nicht aus dem ESS-Hosting allein abgeleitet.",
+      "license_scope": "ESS-Hosting belegt Zugänglichkeit, keine gesonderte Rechtekette der Modulbewerbung. Hier nur Titel und enge Verfahrensgrenze paraphrasiert; keine umfangreiche Wiederveröffentlichung.",
+      "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/ESS11-gender-in-contemporary-europe.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "ESS11-TRANSLATION-GUIDELINES": {
+      "id": "ESS11-TRANSLATION-GUIDELINES",
+      "started_utc": "2026-10-03T08:31:45.561484+00:00",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Translation_Guidelines.pdf",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Translation_Guidelines.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 19 Aug 2024 11:14:45 GMT",
+      "etag": "\"b84cc-620076a9199a0;65b0da9f3ad79",
+      "file": "outputs/loop/e9-boundary-author/sources/ESS_R11_Translation_Guidelines.pdf",
+      "bytes": 754892,
+      "sha256": "6912ae0d94715f67f9f1fbf8febee8aa4a81753252412be62d1ca8e0af19bcc6",
+      "is_pdf": true,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:31:45.903994+00:00",
+      "title": "ESS Round 11 Translation Guidelines, Brita Dorer (GESIS)",
+      "version": "ESS document date September 12, 2022",
+      "pages": 50,
+      "text_read": [
+        1,
+        39,
+        40,
+        41,
+        42
+      ],
+      "visual_read": [
+        40,
+        42
+      ],
+      "printed_pages": {
+        "39": 39,
+        "40": 40,
+        "41": 41,
+        "42": 42
+      },
+      "attribution": "European Social Survey (2022). ESS Round 11 Translation Guidelines. London: ESS ERIC Headquarters.",
+      "negative_search_scope": "Gesamter Textlayer nach trmedmw, E9M, E9W, unfairly treated86, unjust treatment und habe versucht: keine Treffer; kein Beleg über deutsche Durchführung.",
+      "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Translation_Guidelines.pdf",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    },
+    "CC-BY-SA-4-LEGAL": {
+      "id": "CC-BY-SA-4-LEGAL",
+      "started_utc": "2026-10-03T08:35:15.169840+00:00",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "http_status": 200,
+      "final_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+      "content_type": "text/html",
+      "last_modified": "Thu, 01 Oct 2026 17:09:56 GMT",
+      "etag": null,
+      "file": "outputs/loop/e9-boundary-author/sources/cc-by-sa-4-legalcode.html",
+      "bytes": 51645,
+      "sha256": "47c0a954c88d793bdefe92fb007ae3c038fb3807f1a27083433d01aa7542c0d8",
+      "is_pdf": false,
+      "status": "DOWNLOADED",
+      "ended_utc": "2026-10-03T08:35:22.047788+00:00",
+      "title": "Creative Commons Attribution-ShareAlike 4.0 International, Legal Code",
+      "version": "CC BY-SA 4.0 International; Live-HTML-Snapshot 2026-10-03",
+      "attribution": "Creative Commons",
+      "text_read": [
+        "Section 2(a)(1)",
+        "Section 2(a)(6)",
+        "Section 3(a)",
+        "Section 3(b)"
+      ],
+      "visual_read": [],
+      "original_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+      "access_status": "ORIGINAL_ABGERUFEN_SELEKTIVE_FUNDSTELLENPRUEFUNG_KEIN_PAUSCHALER_VOLLPRUEFSTATUS"
+    }
+  },
+  "access_failures": [
+    {
+      "id": "ESS11-TRANSLATION-LINKPAGE",
+      "started_utc": "2026-10-03T08:28:56.163865+00:00",
+      "url": "https://www.europeansocialsurvey.org/methodology/methodology/translation",
+      "method": "GET",
+      "authentication": false,
+      "cookies": false,
+      "status": "NOT_ACCESSIBLE",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 404: Not Found",
+      "http_status": 404,
+      "ended_utc": "2026-10-03T08:28:56.574528+00:00"
+    }
+  ],
+  "claims": [
+    {
+      "id": "E9-Q01",
+      "type": "QUELLENBEFUND",
+      "claim": "Im offiziellen deutschen Fragebogen steht Kategorie 4 bei E9M und E9W mit derselben auffälligen zweiten Verbalgruppe; die gedruckte Kategorie wird unverändert erhalten.",
+      "original_excerpt": "War noch nie bei einem Arzt oder einer Ärztin oder habe versucht,\neine medizinische Behandlung zu bekommen",
+      "excerpt_normalization": "Einmaliges Zitieren des in beiden Originaltabellen identischen Labels; nur führende Layoutabstände entfernt. Zeilenumbruch und Wortlaut erhalten.",
+      "evidence": [
+        {
+          "source_id": "ESS11-DE-Q-LIVE",
+          "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+          "version": "Welle 11 (2023); keine zusätzliche Ausgabennummer auf der gelesenen Titelseite",
+          "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+          "pdf_pages": [
+            47,
+            48
+          ],
+          "printed_pages": [
+            47,
+            48
+          ],
+          "locator": "E9M / E9W, Antworttabelle, Code 4",
+          "visual_artifacts": [
+            "de-q-047.png",
+            "de-q-048.png"
+          ]
+        }
+      ],
+      "scope": "Der öffentliche gedruckte deutsche Fragebogen, kein CAPI- oder Interviewbeleg.",
+      "counter_evidence": "Englische Originale haben eine anders gebaute negative Kategorie. Die Wiederholung des deutschen Labels in beiden Tabellen widerlegt einen einzelnen lokalen Abschreibfehler, bestätigt aber nicht seine Bedeutung.",
+      "status": "AUTOR_ORIGINAL_VISUELL_GELESEN_ZWEI_FRISCHE_REVIEWS_OFFEN"
+    },
+    {
+      "id": "E9-Q02",
+      "type": "QUELLENBEFUND",
+      "claim": "Die öffentliche deutsche Liste 55 nennt E9M und E9W und zeigt dasselbe Kategorie-4-Label. Die Auffälligkeit ist in beiden veröffentlichten deutschen Instrumenten sichtbar.",
+      "original_excerpt": "War noch nie bei einem Arzt oder einer Ärztin oder\nhabe versucht, eine medizinische Behandlung zu\nbekommen",
+      "excerpt_normalization": "Führende Layoutabstände entfernt; sichtbare Zeilenfolge bewahrt. Keine Negation ergänzt.",
+      "evidence": [
+        {
+          "source_id": "ESS11-DE-L55-LIVE",
+          "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+          "version": "ESS Runde 11 (2023); Metadatentitel Listenheft_ESS11_DE_v1_AK8_DRUCK.indd ist kein eigener geprüfter Editionsvertrag",
+          "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+          "pdf_pages": [
+            56
+          ],
+          "printed_pages": [
+            null
+          ],
+          "locator": "LISTE 55, Kopf Frage(n): E9M, E9W, vierte sichtbare Kategorie",
+          "visual_artifacts": [
+            "de-list-056.png"
+          ]
+        }
+      ],
+      "scope": "Listenheft ohne gedruckte Seitennummer und ohne sichtbare Antwortcodes. Der Codebezug stammt aus dem Fragebogen, nicht aus einer auf der Liste abgedruckten 4.",
+      "counter_evidence": "Fragebogen und Liste könnten eine gemeinsame Entstehungsquelle haben. Ihre Übereinstimmung ist keine unabhängige Übersetzungsvalidierung.",
+      "status": "AUTOR_ORIGINAL_VISUELL_GELESEN_ZWEI_FRISCHE_REVIEWS_OFFEN"
+    },
+    {
+      "id": "E9-Q03",
+      "type": "QUELLENBEFUND",
+      "claim": "Codebook 4.1 verknüpft trmedmw mit E9m-w und CARD 55; im Fragetext steht direkt an unfairly treated der Verweis 86. Kategorie 4 hat den englischen Text unten.",
+      "original_excerpt": "Have never visited doctor or sought medical\ntreatment",
+      "marker_excerpt": "unfairly treated86",
+      "evidence": [
+        {
+          "source_id": "ESS11-CB41-LIVE",
+          "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+          "version": "Edition 4.1",
+          "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+          "pdf_pages": [
+            211
+          ],
+          "printed_pages": [
+            "210 of 551"
+          ],
+          "locator": "trmedmw, Location E9m-w, Question, Antwortzeile 4",
+          "visual_artifacts": [
+            "cb41-211.png"
+          ]
+        }
+      ],
+      "scope": "Edition 4.1; keine 4.2-Zuordnung oder Import-/Missing-Regel. Im Abschnitt stehen die Antwortzeilen 1 bis 4; aus ihrer Auswahl wird keine endgültige Codeliste abgeleitet.",
+      "counter_evidence": "Die deutsche Kategorie ist anders formuliert. Der vollständige Codebook-Textlayer liefert keinen Text unjust treatment und keinen auflösenden Noteneintrag 86; andere Vorkommen der Zahl betreffen Seiten-/Karten-/Kategorienummern.",
+      "status": "AUTOR_ORIGINAL_VISUELL_GELESEN_ZWEI_FRISCHE_REVIEWS_OFFEN"
+    },
+    {
+      "id": "E9-Q04",
+      "type": "QUELLENBEFUND_MIT_DOKUMENTMATCH",
+      "claim": "Referenz 86 lässt sich über einen konkreten ESS11-Originalmatch auflösen: Source Questionnaire FINAL Alert04 hat bei E9M denselben Ausdruck mit demselben Verweis 86 und druckt die zugehörige Fußnote auf derselben Seite.",
+      "original_excerpt": "This is equivalent to unjust treatment.",
+      "evidence": [
+        {
+          "source_id": "ESS11-SOURCE-Q",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+          "version": "FINAL, Alerts 01 (20.10.2022), 02 (06.12.2022), 03 (06.03.2023), 04 (08.06.2023); ESS document date 08.06.2023",
+          "sha256": "68aa307825e0ff12ee1ef62952aeadd7cbf90fd592e5791bb5a10efc809e1227",
+          "pdf_pages": [
+            50
+          ],
+          "printed_pages": [
+            50
+          ],
+          "locator": "E9M CARD 55, Verweis 86 an unfairly treated und Fußnote 86 am Seitenende",
+          "visual_artifacts": [
+            "en-q-050.png"
+          ]
+        },
+        {
+          "source_id": "ESS11-CB41-LIVE",
+          "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+          "version": "Edition 4.1",
+          "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+          "pdf_pages": [
+            211
+          ],
+          "printed_pages": [
+            "210 of 551"
+          ],
+          "locator": "trmedmw, Location E9m-w, Question, Verweis 86"
+        }
+      ],
+      "match_basis": [
+        "gleiche Runde ESS11",
+        "gleiche E9M-Frageposition und CARD 55",
+        "gleicher Ausdruck und dieselbe Verweisnummer 86",
+        "gleicher medizinischer Kontext und dieselbe englische Kategorie 4"
+      ],
+      "scope": "Die Note erläutert den englischen Ausdruck als ungerechte Behandlung. Sie enthält keine Erläuterung der deutschen Kategorie-4-Negation und keinen Nachweis tatsächlich erfolgter Diskriminierung.",
+      "counter_evidence": "Im Codebook selbst ist der Notentext nicht abgedruckt. Die Zuordnung ist ein belegter Dokumentmatch und kein nachgewiesener PDF-Hyperlink. E9W auf Source-Seite 51 druckt keine eigene 86 erneut; der kombinierte Codebook-Eintrag ersetzt die getrennten Originalpositionen nicht.",
+      "status": "AUTOR_KONKRETER_ORIGINALMATCH_GELESEN_ZWEI_FRISCHE_REVIEWS_OFFEN"
+    },
+    {
+      "id": "E9-Q05",
+      "type": "QUELLENBEFUND",
+      "claim": "Source Questionnaire druckt die englische Kategorie 4 bei E9M und E9W; Source Showcard 55 wiederholt sie. Note 88 am E9M-Abschnitt erklärt seek als Suchen beziehungsweise Versuch des Behandlungszugangs gegenüber tatsächlichem Erhalten und erklärt die Geltung für alle seek-Instanzen in diesem Modulkontext.",
+      "original_excerpt": "Have never visited doctor or sought medical treatment",
+      "evidence": [
+        {
+          "source_id": "ESS11-SOURCE-Q",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+          "version": "FINAL, Alerts 01 (20.10.2022), 02 (06.12.2022), 03 (06.03.2023), 04 (08.06.2023); ESS document date 08.06.2023",
+          "sha256": "68aa307825e0ff12ee1ef62952aeadd7cbf90fd592e5791bb5a10efc809e1227",
+          "pdf_pages": [
+            50,
+            51
+          ],
+          "printed_pages": [
+            50,
+            51
+          ],
+          "locator": "E9M / E9W, Antwortzeile 4; S.50 Note 88",
+          "visual_artifacts": [
+            "en-q-050.png",
+            "en-q-051.png"
+          ]
+        },
+        {
+          "source_id": "ESS11-SOURCE-SHOWCARDS",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Showcards_FINAL_Alert%2002.pdf",
+          "version": "FINAL, Alerts 01 (20.10.2022), 02 (06.12.2022); ESS document date 06.12.2022",
+          "sha256": "e6e5b824a92a6fa5d31361baf0fd27853499b89d37e0882c4712d73dad8af411",
+          "pdf_pages": [
+            60
+          ],
+          "printed_pages": [
+            null
+          ],
+          "locator": "CARD 55, Kopf Question(s): E9M, E9W, vierte sichtbare Kategorie",
+          "visual_artifacts": [
+            "en-list-60.png"
+          ]
+        }
+      ],
+      "scope": "Englische Source-Dokumente mit den angegebenen Alertständen. Note 87 verlangt eine beide Geschlechter abdeckende oder neutrale Übersetzung von doctor; sie ist keine Kategorie-4-Korrektur.",
+      "counter_evidence": "Das englische Source-Label und Note 88 erklären den Referenzgegenstand; ohne deutsche Übersetzungs-/Adjudikationsunterlagen ist keine Gleichheit der deutschen Negationsbindung oder des tatsächlichen Antwortverständnisses nachgewiesen.",
+      "status": "AUTOR_ORIGINAL_VISUELL_GELESEN_ZWEI_FRISCHE_REVIEWS_OFFEN"
+    },
+    {
+      "id": "E9-Q06",
+      "type": "AUTORENBEGRENZUNG",
+      "claim": "Die deutsche Formulierung wird nicht sinngemäß repariert. Ihre semantische Gleichheit mit der englischen negativen Erfahrungs-/Zugangskategorie ist nicht belegt; eine endgültige Rollen-, Missing- oder Scoreentscheidung über deutsche Kategorie 4 bleibt offen.",
+      "evidence": [
+        {
+          "source_id": "ESS11-DE-Q-LIVE",
+          "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+          "version": "Welle 11 (2023); keine zusätzliche Ausgabennummer auf der gelesenen Titelseite",
+          "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+          "pdf_pages": [
+            47,
+            48
+          ],
+          "printed_pages": [
+            47,
+            48
+          ],
+          "locator": "E9M / E9W, Kategorie 4"
+        },
+        {
+          "source_id": "ESS11-DE-L55-LIVE",
+          "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+          "version": "ESS Runde 11 (2023); Metadatentitel Listenheft_ESS11_DE_v1_AK8_DRUCK.indd ist kein eigener geprüfter Editionsvertrag",
+          "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+          "pdf_pages": [
+            56
+          ],
+          "printed_pages": [
+            null
+          ],
+          "locator": "LISTE 55, vierte Kategorie"
+        },
+        {
+          "source_id": "ESS11-SOURCE-Q",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+          "version": "FINAL, Alerts 01 (20.10.2022), 02 (06.12.2022), 03 (06.03.2023), 04 (08.06.2023); ESS document date 08.06.2023",
+          "sha256": "68aa307825e0ff12ee1ef62952aeadd7cbf90fd592e5791bb5a10efc809e1227",
+          "pdf_pages": [
+            50,
+            51
+          ],
+          "printed_pages": [
+            50,
+            51
+          ],
+          "locator": "E9M / E9W, Kategorie 4 und S.50 Note 88"
+        }
+      ],
+      "scope": "Dokumentierter Schutz vor einer unbelegten Zusammenziehung. Kein eigenständiges Item-Eignungsurteil und kein Ausschluss aller unabhängigen Quellenarbeit.",
+      "counter_evidence": "Übereinstimmende englische Source- und Codebook-Labels machen eine fehlende Erfahrung zum plausiblen englischen Bezug. Plausibilität erklärt den auffälligen deutschen Text nicht und belegt keine deutsche Freigabe.",
+      "status": "DE_SEMANTISCHE_GLEICHHEIT_NICHT_GEPRUEFT"
+    },
+    {
+      "id": "E9-Q07",
+      "type": "QUELLENBEFUND_UND_NACHWEISGRENZE",
+      "claim": "Öffentliche ESS11-Übersetzungsregeln verlangen Vergleich von Kategorien und Quellen, dokumentierte Entscheidungen und nationale Übersetzungsprüfungen. Die zugänglichen allgemeinen Unterlagen enthalten keinen konkreten E9M/E9W-Befund für Deutschland.",
+      "evidence": [
+        {
+          "source_id": "ESS11-TRANSLATION-GUIDELINES",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Translation_Guidelines.pdf",
+          "version": "ESS document date September 12, 2022",
+          "sha256": "6912ae0d94715f67f9f1fbf8febee8aa4a81753252412be62d1ca8e0af19bcc6",
+          "pdf_pages": [
+            40,
+            42
+          ],
+          "printed_pages": [
+            40,
+            42
+          ],
+          "locator": "26.1 Unforeseen adaptations; 28.2 Labels of categories",
+          "visual_artifacts": [
+            "guidelines-40.png",
+            "guidelines-42.png"
+          ]
+        },
+        {
+          "source_id": "ESS11-QUALITY-CHECKLIST",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Translation_Quality_Checklist.pdf",
+          "version": "17 October 2022",
+          "sha256": "a0d6e95b2ce32b31a1dc9790d94aafeccb71af3cc404ac16afe019c68230cf0d",
+          "pdf_pages": [
+            2,
+            3,
+            4
+          ],
+          "printed_pages": [
+            null,
+            null,
+            null
+          ],
+          "locator": "B Technical format checks; D Check your answer scales; E Other checks; F Checks; I Documentation and Sign off",
+          "visual_artifacts": [
+            "checklist-2.png",
+            "checklist-3.png",
+            "checklist-4.png"
+          ]
+        },
+        {
+          "source_id": "ESS11-VERIFICATION",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-08/ESS_R11_Verification_instructions.pdf",
+          "version": "ESS document date 09.12.2022",
+          "sha256": "cddd144390727e91e3ea5a00ae7e183edae9c81f4faf67bf52d023da308766cf",
+          "pdf_pages": [
+            10,
+            12
+          ],
+          "printed_pages": [
+            10,
+            12
+          ],
+          "locator": "Option 1 R11 (T)VFF / Source Version Area; Comments after adjudication / for verification",
+          "visual_artifacts": [
+            "verification-10.png",
+            "verification-12.png"
+          ]
+        }
+      ],
+      "scope": "Allgemeine Verfahrensanforderungen: dokumentierte Adjudikation kann strittige Übersetzungen erklären; ihre deutsche Ausführung wurde nicht gelesen. Checkliste S.3 trennt Übersetzerannotation vom Interviewtext; fehlende deutsche Fußnote allein beweist deshalb keinen Verfahrensfehler.",
+      "counter_evidence": "Adaptationen können nach Klärung zulässig sein, rein sprachliche Änderungen sind nicht pauschal inhaltliche Adaptationen. Allgemeine Regeln beweisen weder einen Fehler noch eine genehmigte deutsche Variante. (T)VFF/Q&A werden in myESS/NC-Intranet beschrieben; keine Login-Umgehung oder Behauptung öffentlicher Nichtexistenz.",
+      "status": "DE_UEBERSETZUNG_ADJUDIKATION_SIGNOFF_NICHT_GEPRUEFT"
+    },
+    {
+      "id": "E9-Q08",
+      "type": "QUELLENVERSIONSGRENZE",
+      "claim": "Der zugängliche ESS11-Gender-Bewerbungstext ist eine Stage 2 Application. Die gelesenen Abschnitte zeigen einen allgemeinen Vorläufer zu Erfahrungen und Wahrnehmungen von Diskriminierung, kein finales medizinisches E9-Instrument und keine passende Note 86.",
+      "evidence": [
+        {
+          "source_id": "ESS11-GENDER-PROPOSAL",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2023-06/ESS11-gender-in-contemporary-europe.pdf",
+          "version": "Stage 2 Application; PDF-Kopf nennt Abgabefrist 26 May 2020. Tatsächliches Abgabe-/Versionsdatum unbekannt. Kein finales Modulprotokoll.",
+          "sha256": "80d366702b46e64b14d73d94a4c855f7e599a565eaa5deb2e7766bd4ba64639e",
+          "pdf_pages": [
+            1,
+            12,
+            20
+          ],
+          "printed_pages": [
+            null,
+            10,
+            18
+          ],
+          "locator": "Titel Stage 2 Application; Abschnitt 3.3; Tabellenzeile Q15–Q17",
+          "visual_artifacts": [
+            "proposal-01.png",
+            "proposal-12.png",
+            "proposal-20.png"
+          ]
+        }
+      ],
+      "scope": "Nur Versions-/Zuordnungsgrenze. Kein Konstrukturteil aus der Modulüberschrift. Ein gesondertes finales Modulprotokoll wurde in der begrenzten Recherche nicht als konkrete Originaldatei identifiziert und ist NICHT_GEPRUEFT.",
+      "counter_evidence": "Die Themenverwandtschaft ist real; sie belegt keine Gleichheit der Vorläuferfrage mit dem konkreten finalen E9-Kontext. Der öffentliche Source-Fragebogen enthält dagegen den konkreten Match für Note 86.",
+      "status": "GELESENE_BEWERBUNG_SELEKTIV_GEPRUEFT_FINALES_MODULPROTOKOLL_NICHT_GEPRUEFT"
+    },
+    {
+      "id": "E9-Q09",
+      "type": "INTERPRETATIONSGRENZE",
+      "claim": "E9M/E9W erfragen das eigene Gefühl ungerechter Behandlung im medizinischen Kontext mit zugeschriebenem Bezug zum Mann-/Frausein. Weder der Fragetext noch Note 86 belegen tatsächlich erfolgte Diskriminierung, deren objektive Ursache oder politische Identität.",
+      "original_excerpt": "ungerecht behandelt gefühlt",
+      "evidence": [
+        {
+          "source_id": "ESS11-DE-Q-LIVE",
+          "original_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+          "version": "Welle 11 (2023); keine zusätzliche Ausgabennummer auf der gelesenen Titelseite",
+          "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+          "pdf_pages": [
+            47,
+            48
+          ],
+          "printed_pages": [
+            47,
+            48
+          ],
+          "locator": "E9M / E9W, Fragetext und Einleitung persönliche Erfahrungen"
+        },
+        {
+          "source_id": "ESS11-SOURCE-Q",
+          "original_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+          "version": "FINAL, Alerts 01 (20.10.2022), 02 (06.12.2022), 03 (06.03.2023), 04 (08.06.2023); ESS document date 08.06.2023",
+          "sha256": "68aa307825e0ff12ee1ef62952aeadd7cbf90fd592e5791bb5a10efc809e1227",
+          "pdf_pages": [
+            50,
+            51
+          ],
+          "printed_pages": [
+            50,
+            51
+          ],
+          "locator": "E9M / E9W, Fragetext; S.50 Note 86"
+        }
+      ],
+      "scope": "Enge Beschreibung des Antwortgegenstands; keine geeignete politische Dimension, Skala oder psychometrische Güte wird daraus abgeleitet.",
+      "counter_evidence": "Das Gender-Modul untersucht entsprechende Erfahrungen und Wahrnehmungen. Dieser Untersuchungszweck hebt die Selbstauskunftsgrenze nicht auf.",
+      "status": "AUTOR_BEDEUTUNGSGRENZE_ZWEI_FRISCHE_REVIEWS_OFFEN"
+    },
+    {
+      "id": "E9-Q10",
+      "type": "LIZENZQUELLENBEFUND_MIT_ARTEFAKTGRENZE",
+      "claim": "Der live gelesene ESS-Disclaimer bezeichnet ESS-Dokumentation als CC BY-SA 4.0. Die Originalinstrument-Auszüge in dieser Akte sind dokumentationsbezogen attribuiert. Die externe Modulbewerbung und eigene Kommentare erhalten daraus keine pauschale neue Rechtefreigabe.",
+      "evidence": [
+        {
+          "source_id": "ESS-LICENSE",
+          "original_url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+          "version": "Live-HTML-Snapshot 2026-10-03; kein dauerhaftes Editionsdatum behauptet",
+          "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+          "pdf_pages": [],
+          "printed_pages": [],
+          "locator": "Conditions of use: documentation license; Citation of ESS documentation"
+        },
+        {
+          "source_id": "CC-BY-SA-4-LEGAL",
+          "original_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+          "version": "CC BY-SA 4.0 International; Live-HTML-Snapshot 2026-10-03",
+          "sha256": "47c0a954c88d793bdefe92fb007ae3c038fb3807f1a27083433d01aa7542c0d8",
+          "pdf_pages": [],
+          "printed_pages": [],
+          "locator": "Sections 2(a)(1), 2(a)(6), 3(a), 3(b)"
+        }
+      ],
+      "scope": "Konkrete Auszüge aus Q, Listen und Source/Codebook mit Original-URLs, Versionen und Lizenzlink. Quellenmaterial verbleibt lokal in Outputs; keine PDF-Weiterveröffentlichung erfolgt. Eigene Kommentare sind als solche getrennt; keine ESS-Billigung.",
+      "counter_evidence": "Allgemeine ESS-Bedingungen ersetzen keine vollständige Rechtekette einer fremden Modulbewerbung und keine Prüfung des späteren konkreten Web-/Exportartefakts. Datenlizenz CC BY-NC-SA 4.0 ist getrennt und wird hier nicht auf Dokumentation übertragen.",
+      "status": "KONKRETE_LIZENZFUNDSTELLEN_GELESEN_ENDGUELTIGE_VERÖFFENTLICHUNGSPRUEFUNG_NICHT_GEPRUEFT"
+    }
+  ],
+  "open_boundaries": [
+    {
+      "id": "E9-OPEN-DE-CAT4",
+      "status": "NICHT_GEPRUEFT",
+      "description": "Semantische Gleichheit der auffälligen deutschen Kategorie 4, nationale Adjudikation, mögliche Korrekturen und tatsächliches Antwortverständnis.",
+      "needed_evidence": "Konkrete freigegebene deutsche Übersetzungs-/Adjudikationsunterlage oder andere offizielle E9-bezogene Klärung; eigenständige Gegenprüfung. Kein selbst formuliertes Ersatzlabel."
+    },
+    {
+      "id": "E9-OPEN-CAPI",
+      "status": "NICHT_GEPRUEFT",
+      "description": "Tatsächlich programmiertes und im Interview verwendetes deutsches E9-Instrument samt Routing."
+    },
+    {
+      "id": "E9-OPEN-42",
+      "status": "NICHT_GEPRUEFT",
+      "description": "Übertragbarkeit auf Edition 4.2; keine Edition 4.2 abgerufen, keine Kodierungs-/Missing-Regel entschieden."
+    },
+    {
+      "id": "E9-OPEN-FINAL-MODULE",
+      "status": "NICHT_GEPRUEFT",
+      "description": "Gesondertes finales Modulprotokoll nicht als konkrete Originaldatei in dieser begrenzten Suche identifiziert. Die Stage-2-Bewerbung ersetzt es nicht."
+    },
+    {
+      "id": "E9-OPEN-INDEPENDENT",
+      "status": "NICHT_GEPRUEFT",
+      "description": "Zwei frische unabhängige Reviews dieser unveränderten Autorenfassung sowie erforderliche Erstbewertungen/Forschungsabnahmen fehlen."
+    }
+  ],
+  "reference86_resolution": {
+    "status": "KONKRETER_ORIGINALMATCH_BEIM_AUTOR_GELESEN_REVIEW_OFFEN",
+    "claim": "E9-Q04",
+    "not_resolved_by": "Andere Edition, anderer Frageabschnitt, abstrakte Themenähnlichkeit oder bloße Nummerngleichheit"
+  },
+  "license": {
+    "documentation_reference": "https://www.europeansocialsurvey.org/contact/disclaimer",
+    "documentation_license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "excerpt_handling": "Wörtliche Originalauszüge gekennzeichnet; nur Layoutabstände entfernt und Originalfundstellen angegeben. Quellenkommentar getrennt, keine Frage repariert. Keine ESS-Billigung oder amtlicher Projektstatus.",
+    "module_proposal_rights": "KONKRETE_RECHTEKETTE_NICHT_GEPRUEFT",
+    "repository_license": "HIER_NICHT_ENTSCHIEDEN",
+    "publication_approval": "NICHT_GEPRUEFT"
+  },
+  "logs": {
+    "preplan": "outputs/loop/e9-boundary-author/vorabplan.md",
+    "fetch": "outputs/loop/e9-boundary-author/fetch.jsonl",
+    "pin": "outputs/loop/e9-boundary-author/pin-inputs.jsonl",
+    "commands": "outputs/loop/e9-boundary-author/commands.jsonl",
+    "tools": "outputs/loop/e9-boundary-author/tools-offered.json",
+    "index": "outputs/loop/e9-boundary-author/index.json"
+  }
+}

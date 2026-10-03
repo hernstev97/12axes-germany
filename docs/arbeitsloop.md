@@ -36,3 +36,9 @@ Das UI/UX-Handbuch liegt als docs/handbuch.md vor und wurde vollständig gelesen
 | LOOP-002: Analyseplan und Sicherheitsinfrastruktur | Begründete konkrete Planparameter als Entwurf; kontrollierte Zugriffe und synthetische technische Tests                               | Quellenbezogene Methodenprüfung, konkrete Entscheidung/Folge für jedes Gate; fünf Fachreviews und neuer Juror für die große Planabnahme; fehlende Claude-/Setup-Prüfung blockiert abhängige empirische Entwicklung |
 
 Weitere Pakete werden konkretisiert, sobald die jeweiligen Voraussetzungen vorliegen. Der Morgenbericht hält erledigte Arbeit, tatsächliche Prüfungen, Korrekturen, Grenzen und die kleinste benötigte menschliche Handlung fest.
+
+## Haltepunkt auf ausdrücklichen Auftrag
+
+2026-10-03 ab 09:02 UTC: Loop unterbrochen, erst nach Stevens Fortsetzungsauftrag wieder aufnehmen. Status `BLOCKED` mit `executionStatus = PAUSED_BY_USER` unterscheidet Haltepunkt und wissenschaftliche Blocker. Alle betroffenen Agents haben gesichert und angehalten. Keine neuen Recherchepakete oder Reviews nach Stop.
+
+[Handoff](../reports/loop/handoff.md), Zustand, Findings und Agentregister erhalten tatsächlichen Stand. C-v2 eigenständig korrigiert/gefroren, unabhängige Nachprüfung offen; beide E-v2-Nachberichte gesichert, E-R02 bleibt Runde1 offen. E9 fertiger ungeprüfter Autorenentwurf. Originalberichte/Pakete bleiben erhalten. Sicherung ist keine wissenschaftliche Abnahme.

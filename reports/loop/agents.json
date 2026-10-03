@@ -725,7 +725,7 @@
       "returnedTaskName": "/root/repro003_c_code",
       "kind": "independent-code-first-review",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/reviews/REPRO-003-C-code.md",
       "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen eigenen Bericht wortgetreu erhalten.",
       "model": "gpt-6.1-sol",
@@ -733,14 +733,16 @@
       "overrides": false,
       "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peer-/Jurorberichte/Loopfindings/Agentlisten. Shared-FS keine technische Sandbox.",
       "manifest": "reports/loop/packages/REPRO-003-C/v1/manifest.json",
-      "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3"
+      "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3",
+      "reportSha256": "9777da31931fce54eff3d3dfbcdb0640f2b0ad318588c0f5d7970fa481455459",
+      "rootFullReportRead": true
     },
     {
       "task_name": "repro003_c_repro",
       "returnedTaskName": "/root/repro003_c_repro",
       "kind": "independent-reproduction-first-review",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/reviews/REPRO-003-C-repro.md",
       "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen eigenen Bericht wortgetreu erhalten.",
       "model": "gpt-6.1-sol",
@@ -748,20 +750,72 @@
       "overrides": false,
       "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peer-/Jurorberichte/Loopfindings/Agentlisten. Shared-FS keine technische Sandbox.",
       "manifest": "reports/loop/packages/REPRO-003-C/v1/manifest.json",
-      "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3"
+      "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3",
+      "reportSha256": "59f27d082204064edf3a88269a111f5fe2d7eabe7c5983e93a27ba568c0ba693",
+      "rootFullReportRead": true
     },
     {
       "task_name": "e9_source_boundary_author",
       "returnedTaskName": "/root/e9_source_boundary_author",
       "kind": "bounded-public-source-author",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/authors/E9-BOUNDARY-001.md",
       "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen eigenen Bericht wortgetreu erhalten.",
       "model": "gpt-6.1-sol",
       "reasoning": "ultra",
       "overrides": false,
-      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peer-/Jurorberichte/Loopfindings/Agentlisten. Shared-FS keine technische Sandbox."
+      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peer-/Jurorberichte/Loopfindings/Agentlisten. Shared-FS keine technische Sandbox.",
+      "reportSha256": "b25bd01ce8107b25ae19123b134a57c6b453347293463e0d8811f58fec0cd6fb",
+      "rootFullReportRead": true
+    },
+    {
+      "task_name": "inventory004_e_v2_sources",
+      "returnedTaskName": "/root/inventory004_e_v2_sources",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "COMPLETED",
+      "manifest": "reports/loop/packages/INVENTORY-004-E/v2/manifest.json",
+      "report": "reports/loop/reviews/INVENTORY-004-E-v2-sources.md",
+      "reportSha256": "212ea3790b56fa73fd54e4227d90657d06592f0dae1355bd502a93ad1445154f",
+      "model": "gpt-6.1-sol inherited",
+      "reasoning": "ultra inherited",
+      "overrides": false,
+      "rootFullReportRead": false,
+      "actualStartPrompt": "E reviewer: wortgetreu im Bericht. C WIP: reports/loop/auftraege/repro003_c_v2_code.txt.",
+      "contextBoundary": "Frischer Kontext, keine aktuellen Peerberichte; shared FS keine technische Sandbox."
+    },
+    {
+      "task_name": "inventory004_e_v2_repro",
+      "returnedTaskName": "/root/inventory004_e_v2_repro",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "COMPLETED_AND_HALTED",
+      "manifest": "reports/loop/packages/INVENTORY-004-E/v2/manifest.json",
+      "report": "reports/loop/reviews/INVENTORY-004-E-v2-repro.md",
+      "reportSha256": "d3301c0f77b3d5cf9327d8efc914e2067b107ad5c7cb32c6f84207d1a8b90640",
+      "model": "gpt-6.1-sol inherited",
+      "reasoning": "ultra inherited",
+      "overrides": false,
+      "rootFullReportRead": false,
+      "actualStartPrompt": "E reviewer: wortgetreu im Bericht. C WIP: reports/loop/auftraege/repro003_c_v2_code.txt.",
+      "contextBoundary": "Frischer Kontext, keine aktuellen Peerberichte; shared FS keine technische Sandbox."
+    },
+    {
+      "task_name": "repro003_c_v2_code",
+      "returnedTaskName": "/root/repro003_c_v2_code",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "WIP_SAVED_AND_HALTED",
+      "manifest": "reports/loop/packages/REPRO-003-C/v2/manifest.json",
+      "report": "reports/loop/reviews/REPRO-003-C-v2-code.md",
+      "reportSha256": "c731f136b784874171201eb77b901f1f927aaae0e8f375ce1cb67b6b2a7d828c",
+      "model": "gpt-6.1-sol inherited",
+      "reasoning": "ultra inherited",
+      "overrides": false,
+      "rootFullReportRead": true,
+      "actualStartPrompt": "E reviewer: wortgetreu im Bericht. C WIP: reports/loop/auftraege/repro003_c_v2_code.txt.",
+      "contextBoundary": "Frischer Kontext, keine aktuellen Peerberichte; shared FS keine technische Sandbox."
     }
   ],
   "activeAdditionalAuthors": [
@@ -847,7 +901,7 @@
       "reportSha256": "759606452a9eef5ce034bfb596723b4087d25a642fe4a8095e7689fdfa7e8b94"
     }
   ],
-  "updatedAtUtc": "2026-10-03T08:35:25.541817+00:00",
+  "updatedAtUtc": "2026-10-03T09:11:10.432701+00:00",
   "operationalNotes": [
     {
       "atUtc": "2026-10-03T07:15:22.935240+00:00",
@@ -861,6 +915,10 @@
     {
       "atUtc": "2026-10-03T08:35:25.541817+00:00",
       "event": "Root-Anweisung an E9-Autor: betroffenenSuchtreffer nichtweiteröffnen/ausgeben; keine Kennungen/Evidenz daraus übernehmen; konkreteOriginaldokumentsuche, ungelösteReferenzoffenlassen."
+    },
+    {
+      "atUtc": "2026-10-03T09:11:10.432701+00:00",
+      "event": "User Stop: aktive inventory004_e_v2_repro und repro003_c_v2_code tatsächlich zum Sichern/Halt aufgefordert, beide final gesichert und angehalten. Alle übrigen Agents fertig, keine neuen Aufträge nach Stop."
     }
   ]
 }

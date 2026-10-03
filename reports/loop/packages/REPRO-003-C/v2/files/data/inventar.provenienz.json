@@ -1,0 +1,2847 @@
+{
+  "artifact": "ESS11 Germany original questionnaire inventory, AUTHOR DRAFT",
+  "status": "ENTWURF_TEILWEISE_STRUKTURIERT_KEINE_PHASE1_ABNAHME",
+  "createdOn": "2026-10-03",
+  "round": 11,
+  "questionnaireYear": 2023,
+  "targetDataCandidateEdition": "4.2; no response file read",
+  "metadataEdition": "Codebook 4.1",
+  "sources": {
+    "ESS11-DE-QUESTIONNAIRE": {
+      "file": "ESS11_questionnaires_DE.pdf",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "pages": 100
+    },
+    "ESS11-DE-SHOWCARDS": {
+      "file": "ESS11_showcards_DE.pdf",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_showcards_DE.pdf",
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "pages": 100
+    },
+    "ESS11-CODEBOOK": {
+      "file": "ESS11_appendix_a7_e04_1.pdf",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "pages": 552,
+      "edition": "4.1"
+    },
+    "ESS-CONDITIONS-OF-USE": {
+      "file": "ess-disclaimer.html",
+      "url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "finalUrlAtPinnedAccess": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+      "kind": "HTML",
+      "pinnedAccessUtc": "2026-10-03T01:45:13.074558+00:00",
+      "pinEvidence": "reports/loop/LOOP-000-license-source.json"
+    }
+  },
+  "license": {
+    "documentation": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "evidence": "ESS disclaimer Conditions of use, https://www.europeansocialsurvey.org/contact/disclaimer",
+    "sourceId": "ESS-CONDITIONS-OF-USE",
+    "cacheRelativeEvidenceFile": "ess-disclaimer.html",
+    "liveEvidenceSha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+    "attribution": "European Social Survey European Research Infrastructure (ESS ERIC) (2025). ESS round 11 - 2023. Social inequalities in health, Gender in contemporary Europe. Sikt - Norwegian Agency for Shared Services in Education and Research. https://doi.org/10.21338/ess11-2023. Deutsche Fragebogen-/Listenheftdokumentation und Codebook 4.1, Fundstellen je Zeile; CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. Extraktion, Strukturierung und Entwurfsannotationen durch dieses Projekt; keine ESS-Billigung.",
+    "changes": "PDF text extraction, inventory structure and author draft annotations; no rewritten question, no ESS endorsement",
+    "publicationGate": "Specific inventory reuse subject to repository review; this author records the public documentation licence, not legal approval"
+  },
+  "build": {
+    "command": "python3 pipeline/inventar.py build",
+    "verify": "python3 pipeline/inventar.py check",
+    "fetch": "python3 pipeline/inventar.py fetch",
+    "cleanRecipe": [
+      "python3 pipeline/inventar.py fetch --cache <empty-public-cache>",
+      "python3 pipeline/inventar.py build --cache <public-cache> --csv <output.csv> --provenance <output.json>",
+      "python3 pipeline/inventar.py check --cache <public-cache> --csv <output.csv> --provenance <output.json>"
+    ],
+    "cachePolicy": "All four exact source hashes required. Missing or changed bytes stop build/check; fetch refuses to replace a mismatching cache or accept changed network bytes. A new source version needs an explicit new pin.",
+    "byteReproductionBoundary": "Same pinned inputs, builder, Python and Poppler; provenance includes tool versions, output/cache paths are deliberately omitted",
+    "python": "3.14.7 (main, Aug 14 2026, 06:38:32) [GCC 16.2.1 20260810]",
+    "poppler": "pdftotext version 26.08.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+    "builderSha256": "548109c85300e6a0ecee57e92af7acc5ec9e748e9d8bf7ee5daeba18e8580190",
+    "csvSha256": "8c73adb8b361db2992f5fe9e321e0c5b978afdc41ba22c1cbb471f92e60057c1",
+    "normalization": "Geometry orders words into source lines. Line breaks, displayed hyphens, spelling and punctuation retained. Table response captions serialized; no polarity or item rewriting.",
+    "originalblockMeaning": "For numbered questions, originalblock_de is a larger page-context excerpt that may include later items. Exact question wording is separately located in wortlaut_fundstelle_json; response cells and inherited context have separate evidence. Portrait rows retain only portrait wording."
+  },
+  "accessBoundary": {
+    "rawDataRead": false,
+    "respondentRows": false,
+    "portalAnalysis": false,
+    "partyDistributions": false,
+    "reviewerRole": false,
+    "otherModelFamily": false
+  },
+  "coverage": {
+    "labelOccurrences": 254,
+    "rows": 296,
+    "uniqueQuestionLabels": 249,
+    "portraits": 42,
+    "moduleCounts": {
+      "A": 6,
+      "B": 46,
+      "C": 43,
+      "D": 34,
+      "E": 32,
+      "F": 69,
+      "H": 44,
+      "I": 9,
+      "K": 4,
+      "J": 9
+    },
+    "categoryStatusCounts": {
+      "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE": 70,
+      "ENTWURF_VERTIKALE_CODES_LABELZEILEN_NACHPRUEFEN": 153,
+      "ENTWURF_TABELLENKOPF_UND_ZEILE": 73
+    },
+    "missingStatusCounts": {
+      "ENTWURF_ORIGINALBLOCK_CODEPAAR_ZUORDNUNG_NACHPRUEFEN": 200,
+      "ENTWURF_FRAGEBOGEN_CODES": 73,
+      "OFFEN": 23
+    },
+    "capturedLabels": [
+      {
+        "frage_id": "A1",
+        "pdf_seite": 3,
+        "y": 100.768383
+      },
+      {
+        "frage_id": "A2",
+        "pdf_seite": 3,
+        "y": 327.328396
+      },
+      {
+        "frage_id": "A3",
+        "pdf_seite": 3,
+        "y": 588.208371
+      },
+      {
+        "frage_id": "A4",
+        "pdf_seite": 4,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "A5",
+        "pdf_seite": 4,
+        "y": 277.768384
+      },
+      {
+        "frage_id": "A6",
+        "pdf_seite": 4,
+        "y": 467.4884
+      },
+      {
+        "frage_id": "B1",
+        "pdf_seite": 5,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "B2",
+        "pdf_seite": 5,
+        "y": 315.808384
+      },
+      {
+        "frage_id": "B3",
+        "pdf_seite": 5,
+        "y": 575.008389
+      },
+      {
+        "frage_id": "B4",
+        "pdf_seite": 6,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B5",
+        "pdf_seite": 6,
+        "y": 304.288396
+      },
+      {
+        "frage_id": "B6",
+        "pdf_seite": 7,
+        "y": 177.56839
+      },
+      {
+        "frage_id": "B7",
+        "pdf_seite": 7,
+        "y": 207.928387
+      },
+      {
+        "frage_id": "B8",
+        "pdf_seite": 7,
+        "y": 244.888386
+      },
+      {
+        "frage_id": "B9",
+        "pdf_seite": 7,
+        "y": 270.808384
+      },
+      {
+        "frage_id": "B10",
+        "pdf_seite": 7,
+        "y": 318.328396
+      },
+      {
+        "frage_id": "B11",
+        "pdf_seite": 7,
+        "y": 354.328396
+      },
+      {
+        "frage_id": "B12",
+        "pdf_seite": 7,
+        "y": 401.968411
+      },
+      {
+        "frage_id": "B13",
+        "pdf_seite": 7,
+        "y": 473.248394
+      },
+      {
+        "frage_id": "B14a",
+        "pdf_seite": 8,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "B14b",
+        "pdf_seite": 8,
+        "y": 410.60838
+      },
+      {
+        "frage_id": "B15",
+        "pdf_seite": 9,
+        "y": 183.328396
+      },
+      {
+        "frage_id": "B16",
+        "pdf_seite": 9,
+        "y": 227.368397
+      },
+      {
+        "frage_id": "B17",
+        "pdf_seite": 9,
+        "y": 277.888386
+      },
+      {
+        "frage_id": "B18",
+        "pdf_seite": 9,
+        "y": 315.808384
+      },
+      {
+        "frage_id": "B19",
+        "pdf_seite": 9,
+        "y": 458.248394
+      },
+      {
+        "frage_id": "B20",
+        "pdf_seite": 9,
+        "y": 486.688381
+      },
+      {
+        "frage_id": "B21",
+        "pdf_seite": 9,
+        "y": 516.08839
+      },
+      {
+        "frage_id": "B22",
+        "pdf_seite": 9,
+        "y": 579.328396
+      },
+      {
+        "frage_id": "B23",
+        "pdf_seite": 9,
+        "y": 650.60838
+      },
+      {
+        "frage_id": "B24",
+        "pdf_seite": 10,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "B25",
+        "pdf_seite": 10,
+        "y": 370.408398
+      },
+      {
+        "frage_id": "B26",
+        "pdf_seite": 10,
+        "y": 585.448376
+      },
+      {
+        "frage_id": "B27",
+        "pdf_seite": 11,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B28",
+        "pdf_seite": 11,
+        "y": 227.248394
+      },
+      {
+        "frage_id": "B29",
+        "pdf_seite": 11,
+        "y": 404.248394
+      },
+      {
+        "frage_id": "B30",
+        "pdf_seite": 11,
+        "y": 581.368374
+      },
+      {
+        "frage_id": "B31",
+        "pdf_seite": 12,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B32",
+        "pdf_seite": 12,
+        "y": 214.528378
+      },
+      {
+        "frage_id": "B33",
+        "pdf_seite": 13,
+        "y": 132.328385
+      },
+      {
+        "frage_id": "B34",
+        "pdf_seite": 13,
+        "y": 233.4884
+      },
+      {
+        "frage_id": "B35",
+        "pdf_seite": 13,
+        "y": 322.04839
+      },
+      {
+        "frage_id": "B36",
+        "pdf_seite": 13,
+        "y": 435.808407
+      },
+      {
+        "frage_id": "B37",
+        "pdf_seite": 14,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B38",
+        "pdf_seite": 14,
+        "y": 322.04839
+      },
+      {
+        "frage_id": "B39",
+        "pdf_seite": 14,
+        "y": 423.208371
+      },
+      {
+        "frage_id": "B40",
+        "pdf_seite": 15,
+        "y": 88.04839
+      },
+      {
+        "frage_id": "B41",
+        "pdf_seite": 15,
+        "y": 334.768384
+      },
+      {
+        "frage_id": "B42",
+        "pdf_seite": 15,
+        "y": 575.008389
+      },
+      {
+        "frage_id": "B43",
+        "pdf_seite": 16,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "B44",
+        "pdf_seite": 16,
+        "y": 189.208393
+      },
+      {
+        "frage_id": "B45",
+        "pdf_seite": 16,
+        "y": 366.328396
+      },
+      {
+        "frage_id": "C1",
+        "pdf_seite": 17,
+        "y": 100.768383
+      },
+      {
+        "frage_id": "C2",
+        "pdf_seite": 17,
+        "y": 239.848385
+      },
+      {
+        "frage_id": "C3",
+        "pdf_seite": 17,
+        "y": 490.888409
+      },
+      {
+        "frage_id": "C4",
+        "pdf_seite": 18,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C5",
+        "pdf_seite": 18,
+        "y": 288.568379
+      },
+      {
+        "frage_id": "C6",
+        "pdf_seite": 18,
+        "y": 438.448376
+      },
+      {
+        "frage_id": "C7",
+        "pdf_seite": 19,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "C8",
+        "pdf_seite": 19,
+        "y": 288.568379
+      },
+      {
+        "frage_id": "C9",
+        "pdf_seite": 19,
+        "y": 539.60838
+      },
+      {
+        "frage_id": "C10",
+        "pdf_seite": 20,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C11",
+        "pdf_seite": 20,
+        "y": 189.208393
+      },
+      {
+        "frage_id": "C12",
+        "pdf_seite": 20,
+        "y": 405.448376
+      },
+      {
+        "frage_id": "C13",
+        "pdf_seite": 21,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "C14",
+        "pdf_seite": 21,
+        "y": 231.08839
+      },
+      {
+        "frage_id": "C15",
+        "pdf_seite": 21,
+        "y": 568.168393
+      },
+      {
+        "frage_id": "C16",
+        "pdf_seite": 22,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C17",
+        "pdf_seite": 22,
+        "y": 339.08839
+      },
+      {
+        "frage_id": "C18",
+        "pdf_seite": 22,
+        "y": 600.208371
+      },
+      {
+        "frage_id": "C19",
+        "pdf_seite": 23,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "C20",
+        "pdf_seite": 23,
+        "y": 415.048367
+      },
+      {
+        "frage_id": "C21",
+        "pdf_seite": 23,
+        "y": 572.968411
+      },
+      {
+        "frage_id": "C22",
+        "pdf_seite": 24,
+        "y": 69.56839
+      },
+      {
+        "frage_id": "C23",
+        "pdf_seite": 24,
+        "y": 209.248394
+      },
+      {
+        "frage_id": "C24",
+        "pdf_seite": 24,
+        "y": 358.648381
+      },
+      {
+        "frage_id": "C25",
+        "pdf_seite": 24,
+        "y": 510.928387
+      },
+      {
+        "frage_id": "C26",
+        "pdf_seite": 25,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C27",
+        "pdf_seite": 25,
+        "y": 259.288396
+      },
+      {
+        "frage_id": "C28",
+        "pdf_seite": 25,
+        "y": 398.968411
+      },
+      {
+        "frage_id": "C29",
+        "pdf_seite": 25,
+        "y": 620.728405
+      },
+      {
+        "frage_id": "C30",
+        "pdf_seite": 26,
+        "y": 88.04839
+      },
+      {
+        "frage_id": "C31",
+        "pdf_seite": 26,
+        "y": 383.60838
+      },
+      {
+        "frage_id": "C32",
+        "pdf_seite": 26,
+        "y": 539.4884
+      },
+      {
+        "frage_id": "C33",
+        "pdf_seite": 27,
+        "y": 100.768383
+      },
+      {
+        "frage_id": "C34",
+        "pdf_seite": 27,
+        "y": 236.728382
+      },
+      {
+        "frage_id": "C35",
+        "pdf_seite": 28,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "C36",
+        "pdf_seite": 28,
+        "y": 402.328396
+      },
+      {
+        "frage_id": "C37",
+        "pdf_seite": 29,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "C38",
+        "pdf_seite": 29,
+        "y": 273.328396
+      },
+      {
+        "frage_id": "C39",
+        "pdf_seite": 29,
+        "y": 471.328396
+      },
+      {
+        "frage_id": "C40",
+        "pdf_seite": 30,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "C41",
+        "pdf_seite": 30,
+        "y": 292.288396
+      },
+      {
+        "frage_id": "C42",
+        "pdf_seite": 30,
+        "y": 515.60838
+      },
+      {
+        "frage_id": "C43",
+        "pdf_seite": 31,
+        "y": 88.04839
+      },
+      {
+        "frage_id": "D1",
+        "pdf_seite": 32,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "D2",
+        "pdf_seite": 32,
+        "y": 296.728382
+      },
+      {
+        "frage_id": "D3",
+        "pdf_seite": 33,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "D4",
+        "pdf_seite": 33,
+        "y": 322.04839
+      },
+      {
+        "frage_id": "D5",
+        "pdf_seite": 33,
+        "y": 470.368374
+      },
+      {
+        "frage_id": "D6",
+        "pdf_seite": 34,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D7",
+        "pdf_seite": 34,
+        "y": 383.968411
+      },
+      {
+        "frage_id": "D8",
+        "pdf_seite": 35,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "D9",
+        "pdf_seite": 35,
+        "y": 296.728382
+      },
+      {
+        "frage_id": "D10a",
+        "pdf_seite": 35,
+        "y": 437.368374
+      },
+      {
+        "frage_id": "D10b",
+        "pdf_seite": 36,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D11",
+        "pdf_seite": 36,
+        "y": 372.688381
+      },
+      {
+        "frage_id": "D12",
+        "pdf_seite": 36,
+        "y": 558.568402
+      },
+      {
+        "frage_id": "D13",
+        "pdf_seite": 37,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "D14",
+        "pdf_seite": 37,
+        "y": 271.528378
+      },
+      {
+        "frage_id": "D15",
+        "pdf_seite": 37,
+        "y": 461.248394
+      },
+      {
+        "frage_id": "D16",
+        "pdf_seite": 38,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D17",
+        "pdf_seite": 38,
+        "y": 239.848385
+      },
+      {
+        "frage_id": "D18",
+        "pdf_seite": 38,
+        "y": 508.048367
+      },
+      {
+        "frage_id": "D19",
+        "pdf_seite": 39,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D20",
+        "pdf_seite": 39,
+        "y": 675.568402
+      },
+      {
+        "frage_id": "D21",
+        "pdf_seite": 39,
+        "y": 713.60838
+      },
+      {
+        "frage_id": "D22",
+        "pdf_seite": 39,
+        "y": 748.288372
+      },
+      {
+        "frage_id": "D23",
+        "pdf_seite": 40,
+        "y": 59.608391
+      },
+      {
+        "frage_id": "D24",
+        "pdf_seite": 40,
+        "y": 91.288384
+      },
+      {
+        "frage_id": "D25",
+        "pdf_seite": 40,
+        "y": 122.968388
+      },
+      {
+        "frage_id": "D26",
+        "pdf_seite": 40,
+        "y": 154.52839
+      },
+      {
+        "frage_id": "D27",
+        "pdf_seite": 40,
+        "y": 186.208393
+      },
+      {
+        "frage_id": "D28",
+        "pdf_seite": 40,
+        "y": 258.928387
+      },
+      {
+        "frage_id": "D29",
+        "pdf_seite": 41,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D30",
+        "pdf_seite": 41,
+        "y": 494.848385
+      },
+      {
+        "frage_id": "D31",
+        "pdf_seite": 42,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "D32",
+        "pdf_seite": 42,
+        "y": 233.4884
+      },
+      {
+        "frage_id": "D33",
+        "pdf_seite": 42,
+        "y": 454.888409
+      },
+      {
+        "frage_id": "E1",
+        "pdf_seite": 43,
+        "y": 101.728394
+      },
+      {
+        "frage_id": "E2",
+        "pdf_seite": 43,
+        "y": 291.448398
+      },
+      {
+        "frage_id": "E3",
+        "pdf_seite": 44,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E4",
+        "pdf_seite": 44,
+        "y": 337.648381
+      },
+      {
+        "frage_id": "E5",
+        "pdf_seite": 45,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E6",
+        "pdf_seite": 45,
+        "y": 383.60838
+      },
+      {
+        "frage_id": "E7",
+        "pdf_seite": 46,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E8M",
+        "pdf_seite": 46,
+        "y": 396.208371
+      },
+      {
+        "frage_id": "E8W",
+        "pdf_seite": 47,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "E9M",
+        "pdf_seite": 47,
+        "y": 328.408398
+      },
+      {
+        "frage_id": "E10M",
+        "pdf_seite": 47,
+        "y": 575.008389
+      },
+      {
+        "frage_id": "E11M",
+        "pdf_seite": 48,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E9W",
+        "pdf_seite": 48,
+        "y": 227.248394
+      },
+      {
+        "frage_id": "E10W",
+        "pdf_seite": 48,
+        "y": 454.528378
+      },
+      {
+        "frage_id": "E11W",
+        "pdf_seite": 48,
+        "y": 644.248394
+      },
+      {
+        "frage_id": "E12",
+        "pdf_seite": 49,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "E13",
+        "pdf_seite": 49,
+        "y": 271.528378
+      },
+      {
+        "frage_id": "E14",
+        "pdf_seite": 49,
+        "y": 448.528378
+      },
+      {
+        "frage_id": "E15",
+        "pdf_seite": 50,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E16",
+        "pdf_seite": 50,
+        "y": 334.768384
+      },
+      {
+        "frage_id": "E17",
+        "pdf_seite": 51,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E18",
+        "pdf_seite": 51,
+        "y": 304.888386
+      },
+      {
+        "frage_id": "E19",
+        "pdf_seite": 51,
+        "y": 589.408398
+      },
+      {
+        "frage_id": "E20",
+        "pdf_seite": 52,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E21",
+        "pdf_seite": 52,
+        "y": 322.04839
+      },
+      {
+        "frage_id": "E22",
+        "pdf_seite": 52,
+        "y": 530.728405
+      },
+      {
+        "frage_id": "E23",
+        "pdf_seite": 53,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "E24",
+        "pdf_seite": 53,
+        "y": 284.128392
+      },
+      {
+        "frage_id": "E25",
+        "pdf_seite": 53,
+        "y": 492.808407
+      },
+      {
+        "frage_id": "E26",
+        "pdf_seite": 54,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "E27",
+        "pdf_seite": 54,
+        "y": 271.528378
+      },
+      {
+        "frage_id": "E28",
+        "pdf_seite": 54,
+        "y": 480.208371
+      },
+      {
+        "frage_id": "F1",
+        "pdf_seite": 55,
+        "y": 100.768383
+      },
+      {
+        "frage_id": "F2",
+        "pdf_seite": 55,
+        "y": 235.888386
+      },
+      {
+        "frage_id": "F3",
+        "pdf_seite": 55,
+        "y": 273.808384
+      },
+      {
+        "frage_id": "F2",
+        "pdf_seite": 56,
+        "y": 216.568379
+      },
+      {
+        "frage_id": "F3",
+        "pdf_seite": 56,
+        "y": 287.368397
+      },
+      {
+        "frage_id": "F4",
+        "pdf_seite": 56,
+        "y": 344.848385
+      },
+      {
+        "frage_id": "F2",
+        "pdf_seite": 56,
+        "y": 667.648404
+      },
+      {
+        "frage_id": "F3",
+        "pdf_seite": 56,
+        "y": 738.448376
+      },
+      {
+        "frage_id": "F4",
+        "pdf_seite": 57,
+        "y": 50.608391
+      },
+      {
+        "frage_id": "F6",
+        "pdf_seite": 58,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "F7",
+        "pdf_seite": 58,
+        "y": 367.888386
+      },
+      {
+        "frage_id": "F8",
+        "pdf_seite": 58,
+        "y": 546.08839
+      },
+      {
+        "frage_id": "F11",
+        "pdf_seite": 59,
+        "y": 88.04839
+      },
+      {
+        "frage_id": "F13",
+        "pdf_seite": 59,
+        "y": 401.728405
+      },
+      {
+        "frage_id": "F14",
+        "pdf_seite": 60,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F14a",
+        "pdf_seite": 60,
+        "y": 282.208393
+      },
+      {
+        "frage_id": "F15",
+        "pdf_seite": 61,
+        "y": 75.928387
+      },
+      {
+        "frage_id": "F15a",
+        "pdf_seite": 61,
+        "y": 437.728405
+      },
+      {
+        "frage_id": "F16",
+        "pdf_seite": 63,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F17a",
+        "pdf_seite": 63,
+        "y": 452.008389
+      },
+      {
+        "frage_id": "F17c",
+        "pdf_seite": 64,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F18",
+        "pdf_seite": 64,
+        "y": 402.328396
+      },
+      {
+        "frage_id": "F19",
+        "pdf_seite": 64,
+        "y": 586.408398
+      },
+      {
+        "frage_id": "F20",
+        "pdf_seite": 65,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F21",
+        "pdf_seite": 65,
+        "y": 362.368397
+      },
+      {
+        "frage_id": "F22",
+        "pdf_seite": 65,
+        "y": 589.648404
+      },
+      {
+        "frage_id": "F23",
+        "pdf_seite": 66,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "F24",
+        "pdf_seite": 66,
+        "y": 277.648381
+      },
+      {
+        "frage_id": "F25",
+        "pdf_seite": 66,
+        "y": 522.328396
+      },
+      {
+        "frage_id": "F26",
+        "pdf_seite": 66,
+        "y": 693.688381
+      },
+      {
+        "frage_id": "F27",
+        "pdf_seite": 67,
+        "y": 220.288396
+      },
+      {
+        "frage_id": "F28",
+        "pdf_seite": 67,
+        "y": 296.728382
+      },
+      {
+        "frage_id": "F29",
+        "pdf_seite": 67,
+        "y": 398.4884
+      },
+      {
+        "frage_id": "F30",
+        "pdf_seite": 67,
+        "y": 647.4884
+      },
+      {
+        "frage_id": "F31",
+        "pdf_seite": 68,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F32",
+        "pdf_seite": 68,
+        "y": 214.528378
+      },
+      {
+        "frage_id": "F33",
+        "pdf_seite": 68,
+        "y": 452.968411
+      },
+      {
+        "frage_id": "F34",
+        "pdf_seite": 68,
+        "y": 554.128369
+      },
+      {
+        "frage_id": "F34a",
+        "pdf_seite": 68,
+        "y": 680.60838
+      },
+      {
+        "frage_id": "F35",
+        "pdf_seite": 69,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F35a",
+        "pdf_seite": 69,
+        "y": 206.368397
+      },
+      {
+        "frage_id": "F35b",
+        "pdf_seite": 69,
+        "y": 446.60838
+      },
+      {
+        "frage_id": "F36",
+        "pdf_seite": 70,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F37",
+        "pdf_seite": 70,
+        "y": 224.60838
+      },
+      {
+        "frage_id": "F38",
+        "pdf_seite": 70,
+        "y": 364.888386
+      },
+      {
+        "frage_id": "F39",
+        "pdf_seite": 70,
+        "y": 552.688381
+      },
+      {
+        "frage_id": "F40",
+        "pdf_seite": 71,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F41",
+        "pdf_seite": 72,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F42",
+        "pdf_seite": 72,
+        "y": 465.328396
+      },
+      {
+        "frage_id": "F44",
+        "pdf_seite": 73,
+        "y": 101.728394
+      },
+      {
+        "frage_id": "F44a",
+        "pdf_seite": 73,
+        "y": 487.408398
+      },
+      {
+        "frage_id": "F45a",
+        "pdf_seite": 75,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F45c",
+        "pdf_seite": 75,
+        "y": 377.128369
+      },
+      {
+        "frage_id": "F46",
+        "pdf_seite": 76,
+        "y": 62.728388
+      },
+      {
+        "frage_id": "F47",
+        "pdf_seite": 76,
+        "y": 284.728382
+      },
+      {
+        "frage_id": "F48",
+        "pdf_seite": 76,
+        "y": 499.768384
+      },
+      {
+        "frage_id": "F49",
+        "pdf_seite": 76,
+        "y": 651.568402
+      },
+      {
+        "frage_id": "F50",
+        "pdf_seite": 77,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F51",
+        "pdf_seite": 77,
+        "y": 221.968388
+      },
+      {
+        "frage_id": "F52",
+        "pdf_seite": 78,
+        "y": 88.52839
+      },
+      {
+        "frage_id": "F52a",
+        "pdf_seite": 78,
+        "y": 437.728405
+      },
+      {
+        "frage_id": "F53",
+        "pdf_seite": 80,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "F54",
+        "pdf_seite": 80,
+        "y": 259.528378
+      },
+      {
+        "frage_id": "F55",
+        "pdf_seite": 81,
+        "y": 75.928387
+      },
+      {
+        "frage_id": "F55a",
+        "pdf_seite": 81,
+        "y": 399.808407
+      },
+      {
+        "frage_id": "F56",
+        "pdf_seite": 82,
+        "y": 160.408387
+      },
+      {
+        "frage_id": "F57",
+        "pdf_seite": 82,
+        "y": 395.128369
+      },
+      {
+        "frage_id": "F58",
+        "pdf_seite": 83,
+        "y": 219.928387
+      },
+      {
+        "frage_id": "F59",
+        "pdf_seite": 84,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "H1",
+        "pdf_seite": 85,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "H2",
+        "pdf_seite": 89,
+        "y": 75.448387
+      },
+      {
+        "frage_id": "I1",
+        "pdf_seite": 93,
+        "y": 139.648392
+      },
+      {
+        "frage_id": "I2",
+        "pdf_seite": 93,
+        "y": 371.728382
+      },
+      {
+        "frage_id": "I3",
+        "pdf_seite": 93,
+        "y": 595.768384
+      },
+      {
+        "frage_id": "I4",
+        "pdf_seite": 94,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "I5",
+        "pdf_seite": 94,
+        "y": 350.008389
+      },
+      {
+        "frage_id": "I6",
+        "pdf_seite": 94,
+        "y": 575.848385
+      },
+      {
+        "frage_id": "I7",
+        "pdf_seite": 95,
+        "y": 113.368386
+      },
+      {
+        "frage_id": "I8",
+        "pdf_seite": 95,
+        "y": 459.328396
+      },
+      {
+        "frage_id": "I9",
+        "pdf_seite": 96,
+        "y": 125.968388
+      },
+      {
+        "frage_id": "K1",
+        "pdf_seite": 97,
+        "y": 114.448387
+      },
+      {
+        "frage_id": "K2",
+        "pdf_seite": 97,
+        "y": 321.208393
+      },
+      {
+        "frage_id": "K3",
+        "pdf_seite": 97,
+        "y": 496.288372
+      },
+      {
+        "frage_id": "K4",
+        "pdf_seite": 97,
+        "y": 662.728405
+      },
+      {
+        "frage_id": "J1",
+        "pdf_seite": 98,
+        "y": 236.60838
+      },
+      {
+        "frage_id": "J2",
+        "pdf_seite": 98,
+        "y": 418.888409
+      },
+      {
+        "frage_id": "J3",
+        "pdf_seite": 99,
+        "y": 50.128392
+      },
+      {
+        "frage_id": "J4",
+        "pdf_seite": 99,
+        "y": 254.728382
+      },
+      {
+        "frage_id": "J5",
+        "pdf_seite": 99,
+        "y": 459.328396
+      },
+      {
+        "frage_id": "J6",
+        "pdf_seite": 99,
+        "y": 599.368374
+      },
+      {
+        "frage_id": "J7",
+        "pdf_seite": 100,
+        "y": 107.488388
+      },
+      {
+        "frage_id": "J8",
+        "pdf_seite": 100,
+        "y": 152.848385
+      },
+      {
+        "frage_id": "J9",
+        "pdf_seite": 100,
+        "y": 263.848385
+      }
+    ],
+    "filteredReferences": [
+      [
+        21,
+        "C11"
+      ],
+      [
+        58,
+        "F4"
+      ],
+      [
+        65,
+        "F19"
+      ],
+      [
+        66,
+        "F19"
+      ],
+      [
+        97,
+        "K1"
+      ]
+    ],
+    "originalQuestionnairePages": 100,
+    "claimsFullStructuredInventory": false,
+    "pendingByCriterion": {
+      "zuordnung_status": [
+        "F2",
+        "F3",
+        "F2@56.2",
+        "F3@56.2",
+        "F4",
+        "F2@56.3",
+        "F3@56.3",
+        "F4@57.2",
+        "F14a",
+        "F15",
+        "F15a",
+        "F44",
+        "F44a",
+        "F52",
+        "F52a",
+        "F55",
+        "F55a",
+        "H1",
+        "H2",
+        "I9",
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "J9"
+      ],
+      "kategorien_status": [
+        "A1",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "B26",
+        "B27",
+        "B28",
+        "B29",
+        "B30",
+        "B31",
+        "B32",
+        "B37",
+        "B43",
+        "B44",
+        "B45",
+        "C1",
+        "C3",
+        "C9",
+        "C10",
+        "C15",
+        "C22",
+        "C23",
+        "C24",
+        "C27",
+        "C29",
+        "C31",
+        "C33",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D9",
+        "D11",
+        "D12",
+        "D16",
+        "D18",
+        "D31",
+        "F1",
+        "F2",
+        "F3",
+        "F2@56.2",
+        "F3@56.2",
+        "F4",
+        "F2@56.3",
+        "F3@56.3",
+        "F4@57.2",
+        "F16",
+        "F20",
+        "F22",
+        "F24",
+        "F26",
+        "F30",
+        "F31",
+        "F33",
+        "F34",
+        "F34a",
+        "F47",
+        "F48",
+        "F49",
+        "F51",
+        "F59",
+        "H1",
+        "H2",
+        "J5",
+        "J7",
+        "J8",
+        "J9"
+      ],
+      "missingcodes_status": [
+        "C14",
+        "C33",
+        "D9",
+        "E1",
+        "F2",
+        "F2@56.2",
+        "F2@56.3",
+        "F26",
+        "F33",
+        "F34",
+        "F34a",
+        "F47",
+        "F48",
+        "F49",
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "J9"
+      ],
+      "kontext_status": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B13",
+        "B14a",
+        "B14b",
+        "B23",
+        "B24",
+        "B25",
+        "B26",
+        "B27",
+        "B28",
+        "B29",
+        "B30",
+        "B31",
+        "B32",
+        "B37",
+        "B40",
+        "B41",
+        "B42",
+        "B43",
+        "B44",
+        "B45",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "C30",
+        "C33",
+        "C43",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10a",
+        "D10b",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D28",
+        "D29",
+        "D30",
+        "D31",
+        "D32",
+        "D33",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8M",
+        "E8W",
+        "E9M",
+        "E10M",
+        "E11M",
+        "E9W",
+        "E10W",
+        "E11W",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E17",
+        "E18",
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23",
+        "E24",
+        "E25",
+        "E26",
+        "E27",
+        "E28",
+        "F1",
+        "F2",
+        "F3",
+        "F2@56.2",
+        "F3@56.2",
+        "F4",
+        "F2@56.3",
+        "F3@56.3",
+        "F4@57.2",
+        "F6",
+        "F7",
+        "F8",
+        "F11",
+        "F13",
+        "F14",
+        "F14a",
+        "F15",
+        "F15a",
+        "F16",
+        "F17a",
+        "F17c",
+        "F18",
+        "F19",
+        "F20",
+        "F21",
+        "F22",
+        "F23",
+        "F24",
+        "F25",
+        "F26",
+        "F29",
+        "F30",
+        "F31",
+        "F32",
+        "F33",
+        "F34",
+        "F34a",
+        "F35",
+        "F35a",
+        "F35b",
+        "F36",
+        "F37",
+        "F38",
+        "F39",
+        "F40",
+        "F41",
+        "F42",
+        "F44",
+        "F44a",
+        "F45a",
+        "F45c",
+        "F46",
+        "F47",
+        "F48",
+        "F49",
+        "F50",
+        "F51",
+        "F52",
+        "F52a",
+        "F53",
+        "F54",
+        "F55",
+        "F55a",
+        "F56",
+        "F57",
+        "F58",
+        "F59",
+        "H1",
+        "H2",
+        "K1",
+        "K2",
+        "K3",
+        "K4",
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7",
+        "J8",
+        "J9"
+      ],
+      "antworttyp_status": [],
+      "listenheft_status": []
+    },
+    "responseTaskAuthorRereading": {
+      "rowIds": [
+        "A4",
+        "A5",
+        "A6",
+        "B1",
+        "B3",
+        "B5",
+        "B34",
+        "B35",
+        "B36",
+        "C1",
+        "C6",
+        "C9",
+        "C10",
+        "C15",
+        "C31",
+        "C32",
+        "C43",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10a",
+        "D10b",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8M",
+        "E8W",
+        "E9M",
+        "E9W",
+        "E10M",
+        "E10W",
+        "E11M",
+        "E11W"
+      ],
+      "scope": "All 31 former fallback rows, D14 and comparative B36; no independent semantic acceptance"
+    },
+    "showcardContentAcceptancePending": [
+      "A2",
+      "A4",
+      "A5",
+      "A6",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B26",
+      "B27",
+      "B28",
+      "B29",
+      "B30",
+      "B31",
+      "B32",
+      "B33",
+      "B34",
+      "B35",
+      "B36",
+      "B37",
+      "B38",
+      "B39",
+      "B40",
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "B45",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C15",
+      "C16",
+      "C17",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "D1",
+      "D2",
+      "D3",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D10a",
+      "D10b",
+      "D13",
+      "D14",
+      "D15",
+      "D17",
+      "D18",
+      "D19",
+      "D20",
+      "D21",
+      "D22",
+      "D23",
+      "D24",
+      "D25",
+      "D26",
+      "D27",
+      "D28",
+      "D29",
+      "D30",
+      "D31",
+      "D32",
+      "D33",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8M",
+      "E8W",
+      "E9M",
+      "E10M",
+      "E11M",
+      "E9W",
+      "E10W",
+      "E11W",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23",
+      "E24",
+      "E25",
+      "E26",
+      "E27",
+      "E28",
+      "F6",
+      "F11",
+      "F14",
+      "F14a",
+      "F15",
+      "F15a",
+      "F17a",
+      "F17c",
+      "F27",
+      "F28",
+      "F32",
+      "F35a",
+      "F35b",
+      "F40",
+      "F41",
+      "F42",
+      "F44",
+      "F44a",
+      "F45a",
+      "F45c",
+      "F52",
+      "F52a",
+      "F54",
+      "F55",
+      "F55a",
+      "F57",
+      "F59",
+      "H1",
+      "H1.A",
+      "H1.B",
+      "H1.C",
+      "H1.D",
+      "H1.E",
+      "H1.F",
+      "H1.G",
+      "H1.H",
+      "H1.I",
+      "H1.J",
+      "H1.K",
+      "H1.L",
+      "H1.M",
+      "H1.N",
+      "H1.O",
+      "H1.P",
+      "H1.Q",
+      "H1.R",
+      "H1.S",
+      "H1.T",
+      "H1.U",
+      "H2",
+      "H2.A",
+      "H2.B",
+      "H2.C",
+      "H2.D",
+      "H2.E",
+      "H2.F",
+      "H2.G",
+      "H2.H",
+      "H2.I",
+      "H2.J",
+      "H2.K",
+      "H2.L",
+      "H2.M",
+      "H2.N",
+      "H2.O",
+      "H2.P",
+      "H2.Q",
+      "H2.R",
+      "H2.S",
+      "H2.T",
+      "H2.U",
+      "I1",
+      "I2",
+      "I3",
+      "I4",
+      "I5",
+      "I6",
+      "I7",
+      "I8",
+      "I9",
+      "K1",
+      "K2",
+      "K3"
+    ],
+    "routingAndIndependentSemanticReview": "not complete; no first ratings or polarity, every row remains a draft"
+  },
+  "checks": {
+    "status": "BESTANDEN",
+    "scope": "Pinned public source hashes, emitted wording/context tokens and regions, row identity and 42 German portraits; no full semantic, response-task, category, missing or routing acceptance",
+    "semanticInventoryAcceptance": "NICHT_GEPRUEFT",
+    "showcardCategoryAcceptance": "NICHT_GEPRUEFT",
+    "rows": 296,
+    "errors": [],
+    "pending_rows": [
+      {
+        "id": "A1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "A2",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "A3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "A4",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "A5",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "A6",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B1",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B2",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B3",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B4",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B5",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B13",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B14a",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B14b",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B23",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B24",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B25",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B26",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B27",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B28",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B29",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B30",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B31",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B32",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B37",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B40",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B41",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B42",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B43",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B44",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "B45",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C2",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C4",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C5",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C6",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C7",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C8",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C9",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C10",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C11",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C12",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C13",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C14",
+        "reason": "OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C15",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C16",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C17",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C18",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C19",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C20",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C21",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C22",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C23",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C24",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C25",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C26",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C27",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C28",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C29",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C30",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C31",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE"
+      },
+      {
+        "id": "C33",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "C43",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D2",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D3",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D4",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D5",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D6",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D7",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D8",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D9",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D10a",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D10b",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D11",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D12",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D13",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D14",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D15",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D16",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D17",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D18",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D19",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D28",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D29",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D30",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D31",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D32",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "D33",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E1",
+        "reason": "OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E2",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E3",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E4",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E5",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E6",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E7",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E8M",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E8W",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E9M",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E10M",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E11M",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E9W",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E10W",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E11W",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E12",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E13",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E14",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E15",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E16",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E17",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E18",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E19",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E20",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E21",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E22",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E23",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E24",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E25",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E26",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E27",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "E28",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F1",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F2",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F3",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F2@56.2",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F3@56.2",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F4",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F2@56.3",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F3@56.3",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F4@57.2",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F6",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F7",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F8",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F11",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F13",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F14",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F14a",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F15",
+        "reason": "OFFEN_DE_BILDUNGSADAPTATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F15a",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F16",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F17a",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F17c",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F18",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F19",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F20",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F21",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F22",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F23",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F24",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F25",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F26",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F29",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F30",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F31",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F32",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F33",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F34",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F34a",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F35",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F35a",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F35b",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F36",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F37",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F38",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F39",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F40",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F41",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F42",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F44",
+        "reason": "OFFEN_DE_BILDUNGSADAPTATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F44a",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F45a",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F45c",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F46",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F47",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F48",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F49",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F50",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F51",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F52",
+        "reason": "OFFEN_DE_BILDUNGSADAPTATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F52a",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F53",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F54",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F55",
+        "reason": "OFFEN_DE_BILDUNGSADAPTATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F55a",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F56",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F57",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F58",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "F59",
+        "reason": "OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "H1",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "H2",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "I9",
+        "reason": "OFFEN_WIDERSPRUCH_CODEBOOK"
+      },
+      {
+        "id": "K1",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "K2",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "K3",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "K4",
+        "reason": "OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J1",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J2",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J3",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J4",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J5",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J6",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J7",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J8",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      },
+      {
+        "id": "J9",
+        "reason": "OFFEN_KEINE_EINDEUTIGE_LOCATION | OFFEN_ORIGINALANTWORTBLOCK_NOCH_NICHT_ZELLENWEISE | OFFEN | OFFEN_SEITENKONTEXT_VOLLSTAENDIG_GEROUTETER_FILTERABGLEICH_AUSSTEHEND"
+      }
+    ],
+    "final_item_decisions": 0
+  },
+  "open": [
+    "Category cells and missing-code transfer to ESS data remain partly unparsed",
+    "Filtered routing and inherited shared introductions need complete row-by-row review",
+    "German-specific schooling, household repeat tables and open codebook mappings need official adaptation reconciliation",
+    "I9 source Location disagreement, codebook edition 4.1 versus candidate data edition 4.2",
+    "No C44 German item and no numbered R item found in German PDF despite overview; numbering gaps not invented",
+    "No independent item judgements, Claude first ratings, polarity or research phase acceptance"
+  ],
+  "authorToolModel": {
+    "runtimeReportedFamily": "Inherited Codex runtime, GPT-6 family; exact variant not independently exposed to repair author",
+    "internalRevision": "not exposed",
+    "role": "Targeted repair author, not independent reviewer",
+    "tools": [
+      "exec_command",
+      "apply_patch",
+      "Poppler pdftotext/pdftoppm",
+      "Python standard library",
+      "view_image"
+    ]
+  }
+}

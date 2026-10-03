@@ -1,0 +1,11 @@
+# REPRO-003-C: Entscheidung nach beiden Erstprüfungen
+
+2026-10-03. Beide vollständigen unabhängigen Erstberichte wurden gesammelt und gelesen: [Code](reviews/REPRO-003-C-code.md), SHA-256 `9777da31931fce54eff3d3dfbcdb0640f2b0ad318588c0f5d7970fa481455459`, und [Reproduktion](reviews/REPRO-003-C-repro.md), SHA-256 `59f27d082204064edf3a88269a111f5fe2d7eabe7c5983e93a27ba568c0ba693`. Konkretes Manifest: `5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3`.
+
+Beide führten je zwei eigene vollständige Downloadnachbauten ohne historische Caches aus. Alle erzeugten die historischen C-v2-Bytes. Eigene zusätzliche Pfad-, Pin-, Download- und Werkzeuggegenfälle wurden ausgeführt; die Erstberichte unterscheiden direkte CLI-Fehler, tatsächliche Remoteantworten und synthetisch injizierte Fehler. Quellen- und Lizenzgrenzen wurden an Originalen geprüft. Die Nachbaubefunde gelten technisch, nicht für Konstrukte, Antwortdaten oder eine wissenschaftliche Modellfreigabe.
+
+RC-R01, niedrig und für den positiv belegten Nachbau nicht blockierend, wird angenommen. Der Reproduktionsreviewer führte einen echten HTTP404-Abruf aus. Der Sidecar kennzeichnet das Scheitern richtig, enthält aber nicht die konkrete versuchte URL und Zugriffszeit. Die allgemeine positive Bewertung des Codeprüfers widerlegt diesen tatsächlich gezeigten Protokollverlust nicht. Es gibt keine erhebliche Kritik, die verworfen wird.
+
+Die Reparatur ergänzt vor jedem Zugriff einen Versuchseintrag und vervollständigt ihn bei Erfolg oder Fehler. Unbekannte Beobachtungen bleiben unbekannt. Historische Annotationbytes ändern sich nicht. Nachprüfung: zwei echte positive vollständige Nachbauten, ein echter fehlgeschlagener eigener Abruf mit vollständigem Versuchseintrag sowie zwei unabhängige gezielte Nachprüfungen. Der Vorabplan ist vor Bearbeitung gespeichert; die Korrektur ist bis zu deren Abschluss nicht unabhängig bestanden. Ausgangscode, Manifest und Erstberichte bleiben erhalten.
+
+Die ausgeführten Codegrenzen bei Redirects, Versionsabfragefehlern und späterer Quellenmanipulation bleiben ausdrücklich dokumentiert. Keine OS-Sandbox, native Zugriffskontrolle oder allgemeine Racefreiheit wird behauptet. Der KI-Audit gehört derselben Codex-Familie an und ersetzt keine anderen Modellfamilien-, wissenschaftlichen, menschlichen oder Releaseabnahmen.

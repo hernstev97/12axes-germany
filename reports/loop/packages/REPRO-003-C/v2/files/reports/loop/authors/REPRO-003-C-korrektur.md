@@ -1,0 +1,13 @@
+# REPRO-003-C: Korrektur RC-R01, Runde 1
+
+2026-10-03. Beide vollständigen Erstberichte wurden vor Bearbeitung gesammelt und gelesen. Die [Entscheidung](../REPRO-003-C-v1-entscheidung.md) nimmt den tatsächlich gezeigten Protokollverlust bei HTTP-Fehlern an. Der ursprüngliche Wrapper bleibt im v1-Prüfpaket und zusätzlich unter `outputs/loop/repro003-c-correction/wrapper-v1.py` erhalten. Der Vorabplan wurde um 08:46:33 UTC gespeichert.
+
+Ein Downloadversuch wird jetzt vor `urlopen` eingetragen. Er enthält Dateiname, versuchte URL, erwarteten Pin, Zielpfad sowie Beginn und Ende. Beobachtete HTTP-Antwort, finale URL, Bytezahl, Dateiabschluss und Prüfsumme werden nur bei tatsächlicher Beobachtung ergänzt; Unbekanntes bleibt `null`. Fehler bleiben Exit 1 und `NICHT_BESTANDEN`. Der konkrete Code-Diff liegt unter `outputs/loop/repro003-c-correction/wrapper-source-diff.patch`.
+
+Zwei eigene vollständige neue Abrufe der drei offiziellen PDFs wurden tatsächlich ausgeführt. Beide erzeugten bytegleich die historische C-v2-Annotation mit SHA-256 `70ad20618e3b2084cbbb300f50b387d465a47cb97aa3b06be30ec5b59fc5ef5e`. Die sechs tatsächlichen Downloads tragen jeweils Status 200, die richtigen Pins und vollständige Zugriffszeiten. `positive-run-1-command.json`, `positive-run-2-command.json` und `actual-correction-results.json` im Korrekturordner dokumentieren Befehle, Zeit und Ergebnisse.
+
+In einer eigenen minimalen Kopie wurde ausschließlich die erste URL auf eine nicht existierende öffentliche PDF desselben offiziellen Hosts gesetzt. Der echte Abruf endete mit HTTP 404 und Exit 1. Der Versuchseintrag enthält Dateiname, tatsächliche versuchte URL, HTTP 404, Beginn/Ende und den Fehler. Bytezahl und Hash bleiben unbekannt, `completeFileWritten` ist falsch, es entstand keine Annotation. `actual-http404-command.json` enthält Ausgangs-/Mutationshash, URL und tatsächliches Ergebnis. Ein synthetisch erzeugter Fehler wird hier nicht als echter Remoteabruf bezeichnet.
+
+Dies sind Autorenprüfungen. Zwei frische unabhängige Nachprüfungen des eingefrorenen v2-Pakets stehen aus. Keine wissenschaftliche, semantische, Edition-4.2-, Rohdaten-, OS-Sandbox-, Racefreiheits- oder Veröffentlichungsabnahme wird daraus abgeleitet. Historische Metadaten in der Annotation bleiben historische Metadaten.
+
+Autor: tatsächlicher Root-Koordinator, GPT-6.1-sol, geerbte Reasoning-Einstellung ultra; interne Modellrevision unbekannt. Benutzte Werkzeuge: `functions.exec` mit `exec_command`, Python-Standardbibliothek und CLI-Unterprozessen, `apply_patch`, Uhr; eigene neue PDF-Downloads durch den Wrapper. Keine fremde Modellfamilie und keine menschliche Prüfung. Fehler-/Erfolgsläufe bleiben vollständig erhalten.
