@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T09:14:05.681284+00:00",
+  "updatedAtUtc": "2026-10-03T09:15:59.089279+00:00",
   "status": "BLOCKED",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
@@ -89,7 +89,7 @@
     "foundationBoundedCorrections": "BESTANDEN",
     "foundationScientificPlanAcceptance": "BLOCKIERT",
     "claudeReadBoundary": "NICHT_GEPRÜFT",
-    "haltBackup": "NICHT_GEPRÜFT",
+    "haltBackup": "BESTANDEN",
     "haltTechnical": "BESTANDEN"
   },
   "reviewReports": [
@@ -353,20 +353,20 @@
   ],
   "nextConcreteStep": "Nach ausdrücklichem Fortsetzungsauftrag: Git/Pins/Handoff abgleichen; beide vollständigen E-v2-Nachberichte vollständig lesen und E-R02-Rest samt neuen Listenbelegfindings entscheiden. Erst danach Runde2 oder begründete Begrenzung; C-v2-Nachprüfung ist unvollständig, E9-Autorenentwurf noch ohne Erstprüfung.",
   "checkpoint": {
-    "lastLocalCommit": "204ae72b446f9515832783f085d37eefd64aab54",
-    "lastVerifiedRemoteCommit": "204ae72b446f9515832783f085d37eefd64aab54",
-    "lastVerifiedPushAtUtc": "2026-10-03T08:39:56.465993+00:00",
+    "lastLocalCommit": "git:HEAD",
+    "lastVerifiedRemoteCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
+    "lastVerifiedPushAtUtc": "2026-10-03T09:14:23.035536+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-023.json",
+    "record": "reports/loop/push-024.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
-    "receiptPolicy": "Letzter historischer verifizierter Push bleibt exakt; Haltepunktcommit über git:HEAD und tatsächlichen final-push.json prüfen. Lokale ignorierte Belege nicht als remote mitgesichert ausgeben.",
+    "receiptPolicy": "push-024 binds verified payload43ebe72. This final bookkeeping commit resolves through git:HEAD; actual final commit+remote verification saved after execution in final-push.json. The record is not self-referential.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
-    "pendingPush": "Actual final commit and push will be recorded locally after execution; historical lastVerifiedRemoteCommit retained as historical."
+    "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c"
   },
-  "scientificStatus": "Setup/Phase0 und öffentliche Phase1-Vorbereitung, keine empirische ESS-Untersuchung. Grundlage296/205unverändert. FOUNDATION-v4 begrenzte Korrekturen durch5Fachreviews/Nachprüfer/Juror bestätigt; WissenschaftsplanBLOCKIERT. AB-v2/C-v2 und synthetischeMETHODS-v3 gezielteKorrekturen eng nachgeprüft. DESIGN-v2 undCLI-Metadaten-v2 gezielteDokumentkorrekturen nachzwei vollständigenNachberichten bestätigt. E-v2Runde1:2Builds/7alte+12neueMutationen ausgeführt,2unabhängigeNachprüfungenfehlen. PortableC-Erstprüfungen laufen; E9neuerOriginalbeleg nochunabhängigzuprüfen. KeineESS-Antwort/Designzeilen,A/B,ParteiLR,Entblindung,endgültigeItemauswahloderTags. Claude-Forschungsreviewsnichtausgeführt, zuletztZugangHTTP401.",
+  "scientificStatus": "Loop auf ausdrücklichen Nutzerauftrag angehalten. Wissenschaftliche Gesamt-/Plan-/Messmodellabnahme weiterhin blockiert; keine ESS-Rohantwortanalyse, Auswahl/Polung, B-Entblindung oder Website-Ergebnisfreigabe. Frühere begrenzte Foundation-/A/B-/C-/Methoden-/Design-/Claude-Dokumentkorrekturen bleiben wie entschieden; E-v2 beide vollständigen Nachberichte gesichert, E-R02 Runde1 offen und Endauswertung ausstehend. C-portabel RC-R01 Runde1 eigenständig korrigiert und gefroren, Nachprüfung nurWIP/nicht ausgeführt. E9 Autorenentwurf fertig, unabhängig ungeprüft. Technischer Haltepunktcheck und Payload-Push bestanden; Sicherung keine wissenschaftliche Abnahme. Keine aktiven beauftragten Agents.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",

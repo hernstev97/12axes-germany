@@ -24,3 +24,5 @@ Nächste konkrete Schritte erst nach Fortsetzungsauftrag:
 4. Wissenschaftliche Voraussetzungen weiter bearbeiten: vollständiges Inventar/4.2-Designzuordnung, Gender/Klima-Konstrukte, ordinales Design-/Unsicherheitsverfahren, vorgeschriebene andere Modellfamilie. Letzter tatsächlicher Claude-Aufruf401 vor Read; kein neuer Retry/Login/Setup beim Halt. Menschen-Verständnistest und Releasefreigabe später nötig. Empirie/Website-Scores weiter gesperrt; main-UI/Handbuch erhalten.
 
 Technische Check-/Pushresultate gesondert protokollieren. Sicherung ist keine wissenschaftliche Abnahme. Fehlbefunde, Fehlläufe, IDs und Korrekturrunden erhalten. Keine neuen fachlichen Audits beim Haltepunkt.
+
+Gesicherter Payload: Commit `43ebe72c958e551920ea9b642c9c9d735e635f6c`, regulärer Branchpush am 2026-10-03T09:14:23.035536+00:00 per ls-remote bestätigt, Beleg `reports/loop/push-024.json`. Anschließender reiner Beleg-/Zustandscommit ist `git:HEAD`; dessen tatsächliche Remoteverifikation wird lokal in `outputs/loop/halt-checkpoint/final-push.json` gespeichert. Technischer `pnpm check` bestanden (09:11:54–09:12:07 UTC), siehe technical-halt.json. Keine wissenschaftliche Abnahme.
