@@ -180,3 +180,19 @@ Während der Übernahme ergänzte Steven den Issue um die Abschnitte 2a bis 2c u
 Zugriff und Exposition: Claude und die Prüfer lasen keine Antwortverteilungen der 19 neuen Fragen vor der Festschreibung von Plan v2.2. Gelesen wurden Spaltennamen der lokalen CSV-Dateien und öffentliche ESS-Metadaten. Die Kontrollrechnung V1 las die lokalen CSV-Dateien mit eigenem Code und gab nur Vergleichsergebnisse aus. In ihren ersten Terminalausgaben standen Zählungen von Wahl- und Parteistatus, aus denen sich ein zurückgehaltener Wert von eins bis vier hätte ableiten lassen. Diese Ausgaben gelangten in keine Berichtsdatei. Sie liegen im lokalen Werkzeugcache der Claude-Sitzung. Rechercheagenten berichten ungefragt angezeigte Ergebniszahlen anderer Befragungen in Suchmaschinen-Zusammenfassungen. Sie wurden nicht verwendet.
 
 Übereinstimmung zwischen Claude- und Codex-Agenten ist kein Neutralitätsnachweis. Claude hat Plan v2.2, Profilregeln und Rechenweg selbst verfasst. Die Codex-Prüfungen sind KI-Reviews einer anderen Modellfamilie, keine Begutachtung durch Fachleute.
+
+### Fortsetzung am 3. Oktober 2026: SDDF, Export, Quellen außerhalb von GESIS
+
+Weitere Nachrichten von Steven im Wortlaut:
+
+> gib mir mal den link zu den beiden ESS downloads aus bitte
+
+> die dateien habe ich abgelegt. bei dem ess5 de handelt es sich um eine sav datei und ich bin nicht zu 100% sicher ob es die richtige ist. zum thema gesis: ich habe das gpt 6.1 sol prüfen lassen und ich schicke dir die ausgabe dazu hier rein. lies es und prüfe entsprechend:
+
+Dazu folgte die Ausgabe des externen KI-Reviews (GPT-6.1-Sol) zu World Values Survey und Eurobarometer. Ihr Wortlaut ist in den Aufträgen R5 bis R7 sinngemäß wiedergegeben, nicht vollständig.
+
+- **SDDF-Dateien.** Claude prüfte beide Dateien mit Zählungen ohne Kennungen oder Werte (`reports/claude/datenzugriff.md`). Die ESS5-Datei ist die richtige: 3031 deutsche Fälle, jede `idno` genau einmal und deckungsgleich mit ESS5 Ausgabe 3.6. Designlauf `pipeline/v22/run_v22_sddf.py` nach Plan 4.1, unabhängige Gegenprobe `reports/claude/kontrollrechnung/sddf_gegenprobe.py`.
+- **Ergebnisprüfung.** E1 (Codex `gpt-6.1-sol`, mittlere Denktiefe): NICHT_BESTANDEN mit drei Findings zum Export. E1 Runde 2 (Codex `gpt-6.1-sol`, hohe Denktiefe, frischer Kontext, Auftrag `reports/claude/auftraege/E1-runde2-ergebnispruefung-v22.md`, Manifest-SHA-256 `ce6aa5b3…`): BESTANDEN. Danach Exportentscheidung `EXPORT-V22-001` durch Claude als Autor. Sie ist keine Freigabe durch Steven.
+- **Quellen außerhalb von GESIS.** Drei Claude-Subagents (R5 WVS/EVS, R6 Eurobarometer, R7 weitere Quellen), ergebnisblind, ohne Downloads und ohne Anmeldungen. Auswertung im Nachtrag zu `docs/abdeckung-v2.2.md`.
+- **Nachprüfung V2.** Ein Claude-Subagent ordnete die V2-Findings dem aktuellen Stand zu (nur lesend). Die behebbaren Punkte setzte Claude in der Anzeige um, ohne Kataloge oder Profilregeln zu ändern.
+- **Texte.** Die neuen Seitentexte las ein getrennter Claude-Subagent auf Fakten, KI-Ton und Neutralität (Handbuch 7.8). Das ist dieselbe Modellfamilie wie der Autor.
