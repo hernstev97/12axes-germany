@@ -193,12 +193,12 @@ describe('PolicyProfileSession: synthetic preparation only', () => {
     session.answer('entry-a', 'a-code-1');
     expect(session.getAnswer('entry-b')).toEqual({ status: 'untouched' });
     session.answer('entry-b', 'independent-code');
-    expect(session.result().themes[0].answers.map(({ source, code }) => [source.studyId, code])).toEqual(
-      [
-        ['synthetic-study-a', 'a-code-1'],
-        ['synthetic-study-b', 'independent-code'],
-      ],
-    );
+    expect(
+      session.result().themes[0].answers.map(({ source, code }) => [source.studyId, code]),
+    ).toEqual([
+      ['synthetic-study-a', 'a-code-1'],
+      ['synthetic-study-b', 'independent-code'],
+    ]);
     expect(() => session.answer('entry-a', 'independent-code')).toThrow(PolicyProfileInputError);
   });
 
@@ -225,7 +225,9 @@ describe('PolicyProfileSession: synthetic preparation only', () => {
     expect(() => new PolicyProfileSession(duplicateId)).toThrow(/duplicate question id/);
     const duplicateOriginal = questions();
     duplicateOriginal[1] = { ...duplicateOriginal[1], source: duplicateOriginal[0].source };
-    expect(() => new PolicyProfileSession(duplicateOriginal)).toThrow(/duplicate original question/);
+    expect(() => new PolicyProfileSession(duplicateOriginal)).toThrow(
+      /duplicate original question/,
+    );
   });
 
   it('rejects duplicated, missing and nonstring category codes without manufacturing a middle', () => {
@@ -244,7 +246,14 @@ describe('PolicyProfileSession: synthetic preparation only', () => {
   });
 
   it('requires separate nonempty source fields and rejects unrecognized metadata', () => {
-    for (const field of ['studyId', 'originalQuestionId', 'sourceId', 'time', 'population', 'mode']) {
+    for (const field of [
+      'studyId',
+      'originalQuestionId',
+      'sourceId',
+      'time',
+      'population',
+      'mode',
+    ]) {
       for (const value of ['', ' ', ' padded ', null, 2026]) {
         const input = questions();
         const malformed = [{ ...input[0], source: { ...input[0].source, [field]: value } }];
@@ -258,7 +267,9 @@ describe('PolicyProfileSession: synthetic preparation only', () => {
       );
     }
     const input = questions();
-    expect(() => constructInvalid([{ ...input[0], source: null }])).toThrow(PolicyProfileInputError);
+    expect(() => constructInvalid([{ ...input[0], source: null }])).toThrow(
+      PolicyProfileInputError,
+    );
     expect(() =>
       constructInvalid([{ ...input[0], source: { ...input[0].source, reference: 0.5 } }]),
     ).toThrow(PolicyProfileInputError);
@@ -285,7 +296,9 @@ describe('PolicyProfileSession: synthetic preparation only', () => {
   it('copies input data and freezes exposed data so later mutation cannot rewrite answers or provenance', () => {
     const input = questions();
     const categoryArray = input[0].categories as string[];
-    const inputSource = input[0].source as { -readonly [Key in keyof PolicyQuestionSource]: string };
+    const inputSource = input[0].source as {
+      -readonly [Key in keyof PolicyQuestionSource]: string;
+    };
     const session = new PolicyProfileSession(input);
     const oldSnapshot = session.snapshot();
     categoryArray.push('injected');
@@ -319,5 +332,166 @@ describe('PolicyProfileSession: synthetic preparation only', () => {
       PolicyProfileInputError,
     );
     expect(reads).toBe(0);
+  });
+});
+
+describe('PP-001: passive array boundary', () => {
+  it('reads declared category data without calling a custom iterator or accepting its injected code', () => {
+    const input = questions();
+    const categories = ['a-code-1', 'a-code-2'];
+    let iteratorCalls = 0;
+    Object.defineProperty(categories, Symbol.iterator, {
+      value: () => {
+        iteratorCalls++;
+        return ['injected-code'][Symbol.iterator]();
+      },
+    });
+    input[0] = { ...input[0], categories };
+    const session = new PolicyProfileSession(input);
+    expect(session.currentQuestion?.categories).toEqual(['a-code-1', 'a-code-2']);
+    const before = session.snapshot();
+    expect(() => session.answer('entry-a', 'injected-code')).toThrow(PolicyProfileInputError);
+    expect(session.snapshot()).toEqual(before);
+    session.answer('entry-a', 'a-code-2');
+    expect(session.getAnswer('entry-a')).toEqual({ status: 'answered', code: 'a-code-2' });
+    expect(iteratorCalls).toBe(0);
+  });
+
+  it('rejects an invalid indexed category even when its custom iterator would yield a valid code', () => {
+    const input = questions();
+    const categories: unknown[] = [null];
+    let iteratorCalls = 0;
+    Object.defineProperty(categories, Symbol.iterator, {
+      value: () => {
+        iteratorCalls++;
+        return ['a-code-1'][Symbol.iterator]();
+      },
+    });
+    expect(() => constructInvalid([{ ...input[0], categories }])).toThrow(PolicyProfileInputError);
+    expect(iteratorCalls).toBe(0);
+  });
+
+  it('rejects a category getter without reading it or allowing it to mutate the source', () => {
+    const input = questions();
+    const mutableSource = input[0].source as {
+      -readonly [Key in keyof PolicyQuestionSource]: string;
+    };
+    const categories = ['a-code-1'];
+    let getterCalls = 0;
+    Object.defineProperty(categories, '0', {
+      get: () => {
+        getterCalls++;
+        mutableSource.studyId = 'changed-by-getter';
+        return 'a-code-1';
+      },
+    });
+    expect(() => constructInvalid([{ ...input[0], categories }])).toThrow(PolicyProfileInputError);
+    expect(getterCalls).toBe(0);
+    expect(mutableSource.studyId).toBe('synthetic-study-a');
+  });
+
+  it('rejects an outer question getter before it can read or mutate any source', () => {
+    const firstQuestion = questions()[0];
+    const mutableSource = firstQuestion.source as {
+      -readonly [Key in keyof PolicyQuestionSource]: string;
+    };
+    const input: PolicyQuestion[] = [firstQuestion];
+    let getterCalls = 0;
+    Object.defineProperty(input, '0', {
+      get: () => {
+        getterCalls++;
+        mutableSource.studyId = 'changed-by-outer-getter';
+        return firstQuestion;
+      },
+    });
+    expect(() => new PolicyProfileSession(input)).toThrow(PolicyProfileInputError);
+    expect(getterCalls).toBe(0);
+    expect(mutableSource.studyId).toBe('synthetic-study-a');
+  });
+
+  it('rejects setter-only elements in either array without invoking them', () => {
+    const firstQuestion = questions()[0];
+    let setterCalls = 0;
+    const categories = ['a-code-1'];
+    const input: PolicyQuestion[] = [firstQuestion];
+    const setter = () => {
+      setterCalls++;
+    };
+    Object.defineProperty(categories, '0', { set: setter });
+    Object.defineProperty(input, '0', { set: setter });
+    expect(() => constructInvalid([{ ...firstQuestion, categories }])).toThrow(
+      PolicyProfileInputError,
+    );
+    expect(() => new PolicyProfileSession(input)).toThrow(PolicyProfileInputError);
+    expect(setterCalls).toBe(0);
+  });
+
+  it('does not read iterator accessors on category arrays or the outer questions array', () => {
+    const input = questions();
+    const categories = ['a-code-1', 'a-code-2'];
+    let iteratorReads = 0;
+    const iteratorGetter = () => {
+      iteratorReads++;
+      throw new Error('caller iterator accessor must not run');
+    };
+    Object.defineProperty(categories, Symbol.iterator, { get: iteratorGetter });
+    input[0] = { ...input[0], categories };
+    Object.defineProperty(input, Symbol.iterator, { get: iteratorGetter });
+    const session = new PolicyProfileSession(input);
+    expect(session.snapshot().responses.map(({ question }) => question.id)).toEqual([
+      'entry-a',
+      'entry-b',
+      'entry-c',
+    ]);
+    session.answer('entry-a', 'a-code-1');
+    expect(session.getAnswer('entry-a')).toEqual({ status: 'answered', code: 'a-code-1' });
+    expect(iteratorReads).toBe(0);
+  });
+
+  it('rejects sparse category and question arrays rather than accepting an iterator substitute', () => {
+    const firstQuestion = questions()[0];
+    const sparseCategories = new Array(1);
+    const sparseQuestions = new Array(1);
+    let iteratorCalls = 0;
+    Object.defineProperty(sparseCategories, Symbol.iterator, {
+      value: () => {
+        iteratorCalls++;
+        return ['a-code-1'][Symbol.iterator]();
+      },
+    });
+    Object.defineProperty(sparseQuestions, Symbol.iterator, {
+      value: () => {
+        iteratorCalls++;
+        return [firstQuestion][Symbol.iterator]();
+      },
+    });
+    expect(() => constructInvalid([{ ...firstQuestion, categories: sparseCategories }])).toThrow(
+      PolicyProfileInputError,
+    );
+    expect(() => constructInvalid(sparseQuestions)).toThrow(PolicyProfileInputError);
+    expect(iteratorCalls).toBe(0);
+  });
+
+  it('preserves frozen readonly passive arrays and independent sessions', () => {
+    const input = Object.freeze(
+      questions().map((question) =>
+        Object.freeze({ ...question, categories: Object.freeze([...question.categories]) }),
+      ),
+    );
+    const first = new PolicyProfileSession(input);
+    const second = new PolicyProfileSession(input);
+    first.answer('entry-a', 'a-code-2');
+    first.next();
+    first.skip('entry-b');
+    first.previous();
+    expect(first.getAnswer('entry-a')).toEqual({ status: 'answered', code: 'a-code-2' });
+    expect(first.getAnswer('entry-b')).toEqual({ status: 'skipped' });
+    expect(second.snapshot().responses.map(({ answer }) => answer)).toEqual([
+      { status: 'untouched' },
+      { status: 'untouched' },
+      { status: 'untouched' },
+    ]);
+    expect(second.currentQuestion?.id).toBe('entry-a');
+    expect(first.currentQuestion?.source.studyId).toBe('synthetic-study-a');
   });
 });

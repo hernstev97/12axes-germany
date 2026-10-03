@@ -40,4 +40,32 @@ describe('Seitennavigation', () => {
     expect(TestBed.inject(Router).url).toBe('/');
     expect(document.title).toBe('12 Axes Deutschland');
   });
+
+  it('öffnet die Methodik über den Projektstand und führt Inhaltslinks zum Abschnitt', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    await TestBed.inject(Router).navigateByUrl('/projekt');
+    await fixture.whenStable();
+    const methodologyLink = fixture.nativeElement.querySelector(
+      'main a[href="/methodik"]',
+    ) as HTMLAnchorElement;
+    methodologyLink.click();
+    await fixture.whenStable();
+    expect(document.title).toBe('Methodik und Grenzen · 12 Axes Deutschland');
+    expect(document.activeElement?.id).toBe('main-content');
+    const contentsLink = fixture.nativeElement.querySelector(
+      'main nav a[href="/methodik#fragekontext"]',
+    ) as HTMLAnchorElement;
+    contentsLink.click();
+    await fixture.whenStable();
+    expect(TestBed.inject(Router).url).toBe('/methodik#fragekontext');
+    expect(document.activeElement?.id).toBe('fragekontext');
+    const homeLink = fixture.nativeElement.querySelector(
+      'main .breadcrumb a[href="/"]',
+    ) as HTMLAnchorElement;
+    homeLink.click();
+    await fixture.whenStable();
+    expect(TestBed.inject(Router).url).toBe('/');
+    expect(document.title).toBe('12 Axes Deutschland');
+  });
 });

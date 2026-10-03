@@ -218,6 +218,17 @@
       "verificationAccessAtUtc": "2026-10-03T12:17:30Z",
       "inspection": "PDF1/4 = gedruckteS37/40 visuell vollständig von Root/Prüfer gelesen; übrigeSeiten nicht geprüft. Originalabruf200, Hashmatch.",
       "verificationReport": "reports/loop/reviews/MEASUREMENT-FORMS-002-first.md"
+    },
+    {
+      "id": "V2-SURVEY-MANUAL-4.5",
+      "title": "survey: Analysis of Complex Survey Samples, manual v4.5",
+      "url": "https://cran.r-project.org/web/packages/survey/survey.pdf",
+      "accessedAtUtc": "2026-10-03T13:03:21.395056+00:00",
+      "sha256": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c",
+      "status": "PRIMARY_SECTIONS_READ_NOT_PRODUCT_VALIDATION",
+      "fundstellen": "Gedruckte/physische PDF78–80 surveysummary,100–102 svyCprod/onestage,103–105 svydesign; Header4.5/May9 2026, DatePublicationFeb24 2026",
+      "inspection": "Indikatormittel, fehlende Werte, PSU-Summen und Zentrierung, Nullbeiträge für ursprüngliche Designbasis; WR first-stage ohne FPC. svyCprod legacy vor2.9, onestage für neueDesignobjekte. Keine laufende Packageinstallation oder empirische/softwarevergleichende Bestätigung; poststrat weights als fixed approximiert.",
+      "localOriginal": "outputs/loop/v2-methods/survey-v4.5.pdf"
     }
   ],
   "auditReports": [

@@ -117,24 +117,57 @@ function source(value: unknown, path: string): PolicyQuestionSource {
   });
 }
 
-function catalog(value: unknown): readonly PolicyQuestion[] {
+/**
+ * Copy only dense own numeric data fields. Caller iterators and unrelated own
+ * properties are ignored without being read. Element getters/setters and holes
+ * are rejected. This does not isolate proxies or global prototype changes.
+ */
+function passiveArray(value: unknown, path: string): readonly unknown[] {
   if (!Array.isArray(value)) {
-    return fail('questions must be an array');
+    return fail(`${path} must be an array`);
   }
+  const lengthDescriptor = Object.getOwnPropertyDescriptor(value, 'length');
+  if (
+    !lengthDescriptor ||
+    !('value' in lengthDescriptor) ||
+    typeof lengthDescriptor.value !== 'number' ||
+    !Number.isInteger(lengthDescriptor.value) ||
+    lengthDescriptor.value < 0 ||
+    lengthDescriptor.value > 4_294_967_295
+  ) {
+    return fail(`${path} must have an own array length data field`);
+  }
+  const entries: unknown[] = [];
+  for (let index = 0; index < lengthDescriptor.value; index++) {
+    const descriptor = Object.getOwnPropertyDescriptor(value, String(index));
+    if (!descriptor || !('value' in descriptor)) {
+      return fail(`${path}[${index}] must be an own data field`);
+    }
+    entries.push(descriptor.value);
+  }
+  return Object.freeze(entries);
+}
+
+function catalog(value: unknown): readonly PolicyQuestion[] {
+  const questionInputs = passiveArray(value, 'questions');
   const ids = new Set<string>();
   const originalIds = new Map<string, Set<string>>();
   const questions: PolicyQuestion[] = [];
-  for (let index = 0; index < value.length; index++) {
+  for (let index = 0; index < questionInputs.length; index++) {
     const path = `questions[${index}]`;
-    const input = record(value[index], ['id', 'primaryTheme', 'categories', 'source'], path);
+    const input = record(
+      questionInputs[index],
+      ['id', 'primaryTheme', 'categories', 'source'],
+      path,
+    );
     const id = metadata(input['id'], `${path}.id`);
     if (ids.has(id)) {
       return fail(`duplicate question id: ${id}`);
     }
     ids.add(id);
     const primaryTheme = metadata(input['primaryTheme'], `${path}.primaryTheme`);
-    const originalCategories = input['categories'];
-    if (!Array.isArray(originalCategories) || originalCategories.length === 0) {
+    const originalCategories = passiveArray(input['categories'], `${path}.categories`);
+    if (originalCategories.length === 0) {
       return fail(`${path}.categories must be a nonempty array`);
     }
     const categories: string[] = [];
@@ -158,7 +191,12 @@ function catalog(value: unknown): readonly PolicyQuestion[] {
     studyQuestions.add(questionSource.originalQuestionId);
     originalIds.set(questionSource.studyId, studyQuestions);
     questions.push(
-      Object.freeze({ id, primaryTheme, categories: Object.freeze(categories), source: questionSource }),
+      Object.freeze({
+        id,
+        primaryTheme,
+        categories: Object.freeze(categories),
+        source: questionSource,
+      }),
     );
   }
   return Object.freeze(questions);

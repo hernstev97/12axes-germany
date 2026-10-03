@@ -1,0 +1,9 @@
+{
+  "atUtc": "2026-10-03T13:17:31.275379+00:00",
+  "baseCommit": "88eb7db56f00101cf76d46019661076d15deed70",
+  "reviewedReconstructionPatch": "reports/loop/packages/BREADTH-INTEGRATION-002/v3/reviewed-matrix.patch",
+  "patchSha256": "83f682cbfa3030c6d3e812096dcad33135737fa3e07892ab727b0761ae2583fe",
+  "reconstructedReviewedSha256": "6b7143e8e18b1f541bcfa5d68921ab1b91a412456854e89f852a348a1121e99a",
+  "currentFormattedSha256": "77ae3d328c4862d1396e72207e5e1401dfa4da1f57580315e973943d3dfad945",
+  "scope": "Prettier only table padding; two reviewed word corrections reconstructed exactly from base plus patch. No new substantive review."
+}

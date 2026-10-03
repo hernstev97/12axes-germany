@@ -1,0 +1,18 @@
+{
+  "package": "POLICY-PROFILE-001/v2",
+  "createdAtUtc": "2026-10-03T13:13:45.896484+00:00",
+  "originalCodePayloadCommit": "88eb7db56f00101cf76d46019661076d15deed70",
+  "scope": "PP001 numerical own-data array descriptor boundary, eight targeted regressions and formatting",
+  "artifacts": [
+    {
+      "path": "web/src/app/research/policy-profile.ts",
+      "sha256": "28906eb1533bb953b43bed75a4995c907b71398f1ffcd63271c82cfdace05998"
+    },
+    {
+      "path": "web/src/app/research/policy-profile.spec.ts",
+      "sha256": "6b2b3302afe308f28f65ec9aba76c7f1b8b6d14bf9ffa9b8fbc6508f9a1c22c1"
+    }
+  ],
+  "firstReport": "reports/loop/reviews/POLICY-PROFILE-001-first.md",
+  "firstReportSha256": "bbc62b4ff955d92f264c63eea2f2d33370864f447495d7117b92cfc6db960b2f"
+}

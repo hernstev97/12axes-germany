@@ -1,0 +1,55 @@
+{
+  "package": "METHODOLOGY-PAGE-001/v1",
+  "createdAtUtc": "2026-10-03T13:17:31.275627+00:00",
+  "scope": "Current factual/style/fairness copy and existing document-page navigation only; no empirical transition or results gate",
+  "artifacts": [
+    {
+      "path": "web/src/app/pages/methodology/methodology.ts",
+      "sha256": "c1a2819ed6486f13a28447b39ba3a0d0d57b8232da4cf80de024734117d3b317"
+    },
+    {
+      "path": "web/src/app/pages/methodology/methodology.html",
+      "sha256": "cd19a32dc1b2f1b7b35fd5bae4a9a366a488fc46089a6eb76b466bf0290cbeaa"
+    },
+    {
+      "path": "web/src/app/pages/methodology/methodology.scss",
+      "sha256": "ec2c89fde913caff741baa0b0f3cf68a9acb5e85467e4f21b6c824fdad201394"
+    },
+    {
+      "path": "web/src/app/app.routes.ts",
+      "sha256": "b529120aa5cfec2c0dbeacb3d0bddc39d4e9f36811257e4f28e0fba8e6fc0d22"
+    },
+    {
+      "path": "web/src/app/app.spec.ts",
+      "sha256": "aa3e9d1ba0d699fab68a1469da816fe8d7b5f4783a0ce87e1dd0c4c9e6c935d8"
+    },
+    {
+      "path": "web/src/app/pages/project/project.html",
+      "sha256": "c1c355258eaab24270fa0487554a0ba15cc78dd018545bf593794c4236b33850"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "docs/project.md",
+      "sha256": "50fd74dc5612293f22591e679856dbb09745ef2ff9a217ff5583b219cf224328"
+    },
+    {
+      "path": "docs/empirie-plan-v2.entwurf.md",
+      "sha256": "fe5519498d3ece9a6aa7847c52fbdc79ca6976e352336a20ba7d43c7ac863e04"
+    },
+    {
+      "path": "docs/abdeckung-v2.md",
+      "sha256": "77ae3d328c4862d1396e72207e5e1401dfa4da1f57580315e973943d3dfad945"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    },
+    {
+      "path": "docs/messformen-v2.entwurf.md",
+      "sha256": "0536441391becb9ac84e4b9596b20e2e0e4aab1a9aef827cbc162f8d7261238b"
+    }
+  ]
+}

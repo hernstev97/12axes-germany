@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T12:59:53.028030+00:00",
+  "updatedAtUtc": "2026-10-03T13:25:44.766382+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2806,7 +2806,7 @@
       "status": "NICHT_BESTANDEN",
       "reason": "Neun Fragen zu zwei engen Themen erfüllen das breite Deutschland-Politikprofil nicht",
       "blocks": ["completion as comprehensive political profile"],
-      "correctionState": "Achtbereichsmatrix aus zwei getrennten unveränderten Quellen-Erstberichten, normale Quellenprüfung mit gezielten semantischen Korrekturen; konkreter43Angabenentwurf aus fünf ESS-Erhebungen. Vier neue Rohdateien fehlen, v2-Auswahl/Empiriegates/Ergebnisse/Websitefreigaben offen.",
+      "correctionState": "Eight-topic43-item draft source-bound, input files now present. No fixed v2 gates, empirical results or concrete accepted broad website yet; product goal remains open.",
       "verification": {
         "order": "docs/auftrag-life-93-breite-2026-10-03.md"
       }
@@ -2936,10 +2936,49 @@
       "severity": "gering",
       "reason": "q51b fordert Entscheidungen durch das Volk, aber kein bestimmtes Volksentscheidverfahren",
       "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "blocks": [],
+      "correctionState": "Round2 targeted correction accepted, no new overall audit",
+      "verification": {
+        "report": "reports/loop/reviews/BREADTH-INTEGRATION-002-round2.md",
+        "sha256": "b7aaa7d2d55a71b3ab5403253632660c37b5561a16c545de40e9ce019c8249dc"
+      }
+    },
+    {
+      "id": "PP-001",
+      "origin": "reports/loop/reviews/POLICY-PROFILE-001-first.md",
+      "severity": "P2",
+      "decision": "angenommen",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "reason": "Array iterators could inject codes and indexed getters mutate provenance",
+      "blocks": [],
+      "correctionState": "Targeted round1 closed for dense own numeric passive data fields; Proxy/global isolation outside contract",
+      "verification": {
+        "report": "reports/loop/reviews/POLICY-PROFILE-001-round1.md",
+        "sha256": "6a6ce957028fbfb2f9e6387f04c11d9c9e2ea4b6f14244a0efb2a3d120651fba"
+      }
+    },
+    {
+      "id": "MP001",
+      "origin": "reports/loop/reviews/METHODOLOGY-PAGE-001-first.md",
+      "severity": "gering",
+      "decision": "angenommen",
       "repairRounds": 0,
-      "status": "NICHT_BESTANDEN",
-      "blocks": ["matrix q51b naming only"],
-      "correctionState": "Minimaler Wortwechsel nach Sicherung der geprüften v2-Fassung; keine neue Grundlagenrecherche"
+      "status": "NICHT_GEPRÜFT",
+      "reason": "Public method page should directly link concrete draft plan/matrix",
+      "blocks": []
+    },
+    {
+      "id": "MP002",
+      "origin": "reports/loop/reviews/METHODOLOGY-PAGE-001-first.md",
+      "severity": "gering",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "reason": "More precise svyCprod source locator PDF101 instead100",
+      "blocks": []
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

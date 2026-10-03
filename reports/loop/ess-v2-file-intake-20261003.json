@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "atUtc": "2026-10-03T13:11:14.478972+00:00",
+  "sourceProvidedByUser": "/home/stevenh/projects/12axes-germany/data/raw/new-ess-sets",
+  "action": "User-authorized rename of directory layout and move four CSVs; filenames already canonical. Source directories left intact, no reset/clean/deletion of other work.",
+  "files": [
+    {
+      "fileLabel": "ESS5e03_6",
+      "editionFromRequestedFileLabel": "3.6",
+      "relativePath": "data/raw/ess5-ed3.6/ESS5e03_6.csv",
+      "bytes": 69880337,
+      "sha256": "bd93e915c2033a43bc41328fc3f4df13278b8079f8e071f98a11770f25b4022e",
+      "fileMode": "0600",
+      "directoryMode": "0700",
+      "ignoredByGit": true,
+      "moveByteVerified": true
+    },
+    {
+      "fileLabel": "ESS8e02_3",
+      "editionFromRequestedFileLabel": "2.3",
+      "relativePath": "data/raw/ess8-ed2.3/ESS8e02_3.csv",
+      "bytes": 47692954,
+      "sha256": "5112f64fd65df229e353c82ef0f3593b568654ea76f854639f6527bca8db3684",
+      "fileMode": "0600",
+      "directoryMode": "0700",
+      "ignoredByGit": true,
+      "moveByteVerified": true
+    },
+    {
+      "fileLabel": "ESS9e03_3",
+      "editionFromRequestedFileLabel": "3.3",
+      "relativePath": "data/raw/ess9-ed3.3/ESS9e03_3.csv",
+      "bytes": 59670184,
+      "sha256": "499dffc823859b621902b23859dc456e214772e97158bbd01cdb8eff93b1adaa",
+      "fileMode": "0600",
+      "directoryMode": "0700",
+      "ignoredByGit": true,
+      "moveByteVerified": true
+    },
+    {
+      "fileLabel": "ESS10SCe03_2",
+      "editionFromRequestedFileLabel": "3.2",
+      "relativePath": "data/raw/ess10-sc-ed3.2/ESS10SCe03_2.csv",
+      "bytes": 27241140,
+      "sha256": "9a04d8d52b53cfe8136d0cb238d21647fcd3539d21b339498a38035aec22ec6b",
+      "fileMode": "0600",
+      "directoryMode": "0700",
+      "ignoredByGit": true,
+      "moveByteVerified": true
+    }
+  ],
+  "observedScope": "Filesystem names/size, ignored-path check, whole-file binary hashes only. No CSV header or answer value decoded or interpreted.",
+  "editionEvidenceLimit": "Requested exact portal editions reflected in user-supplied file labels; no official reference checksum or download-time record supplied. File label is not independent proof of content edition. Later plan-bound intake must verify permissible metadata.",
+  "accessGate": "V2 answers still closed pending fixed contract and two separate first judgments; historical v1 B/FULL hold remains in force.",
+  "ess8Sddf": "Not supplied in this directory; optional design path unresolved, no reconstructed SE."
+}

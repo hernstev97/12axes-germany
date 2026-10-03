@@ -139,3 +139,9 @@ Auf Grundlage des [aktuellen Breitennachtrags](auftrag-life-93-breite-2026-10-03
 ## Breitenquellen und gezielte Websitekorrektur
 
 3. Oktober2026: getrennte Daten-/Instrumenten- und Themen-/Bias-Erstberichte abgeschlossen; Root führt echte Deutschlandfragen in docs/abdeckung-v2.md zusammen. Quellenintegration frisch begrenzt geprüft, noch kein Urteil. Datenautor dokumentiert ungewollte öffentliche Ergebnis-/Methodenexpositionen; kein projektbezogener Ergebniszugriff und kein absoluter Blindheitsnachweis. Alle beteiligten Autoren/Prüfer Codex GPT-6.1-Sol mit möglichen gemeinsamen Fehlern. WEBSITE-BREADTH-002 WB-001/002/003 gezielte Korrekturrunde1 bestätigt; Quellenregister MF-01 dokumentarisch korrigiert. Neue Rechenbibliothek nur synthetisch; keine neue Empirie, v2-Tags oder öffentliche Testfreigabe.
+
+## V2-Vertragsvorbereitung nach den Quellen-Ersturteilen
+
+3. Oktober2026: beide Quellen-Erstberichte unverändert, öffentliche ACCESS002/BINDING003-Folgeaufträge ergänzen Dateicodes und vollständige Fragekontexte ohne Antworten. Root änderte den Erweiterungsplan während ACCESS002, nachdem beide Ersturteile fertig waren; neue Planfassung wurde dort nicht gelesen. Kein rückwirkender Blindheitsnachweis. Normale Matrixprüfung und gezielte Korrekturen sind mit Originalfassungen gespeichert. PRV2-F01 numerisch gezielt geschlossen; synthetische Prüfungen bleiben Synthetik.
+
+Root entwickelt einen43Angabenentwurf aus acht Themen und fünf getrennten ESS-Erhebungen. Vier zusätzliche Rohdateien fehlen, Steven bietet Download an; keinerlei neuer Antwortimport. Die ursprüngliche ESS11-A/B-Einsicht bleibt bekannt. Quellenkatalog B-V2-M04 bindet ausschließlich begrenzte offizielle Manualabschnitte; kein Survey-Package installiert. Gleiche Codex-Modellfamilie begrenzt alle KI-Gegenprüfungen. Check040 Formatfehler ausdrücklich dokumentiert, Originalprüfpins als WIP88eb7db gesichert.

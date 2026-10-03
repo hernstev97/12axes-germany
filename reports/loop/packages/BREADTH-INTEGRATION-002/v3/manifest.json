@@ -1,0 +1,18 @@
+{
+  "package": "BREADTH-INTEGRATION-002/v3",
+  "createdAtUtc": "2026-10-03T13:03:07.882247+00:00",
+  "originalV2PayloadCommit": "88eb7db56f00101cf76d46019661076d15deed70",
+  "scope": "BI004 local naming and own ESS5D36 source-specific paraphrase correction; no other method/selection change",
+  "artifacts": [
+    {
+      "path": "docs/abdeckung-v2.md",
+      "sha256": "6b7143e8e18b1f541bcfa5d68921ab1b91a412456854e89f852a348a1121e99a"
+    }
+  ],
+  "priorReview": "reports/loop/reviews/BREADTH-INTEGRATION-002-round1.md",
+  "targetedOriginal": {
+    "ess5": "outputs/loop/breadth-data-001/sources/ess5-de-questionnaire.pdf",
+    "sha256": "24b5d2599e6d30dc02a6d835f5f80b5bcecf8f6014ee8f4670a703c25d3c3cbf",
+    "physicalPdfPage1based": 27
+  }
+}
