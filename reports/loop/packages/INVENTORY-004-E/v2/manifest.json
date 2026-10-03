@@ -1,0 +1,866 @@
+{
+  "id": "INVENTORY-004-E",
+  "version": 2,
+  "repairRound": 1,
+  "codeCommit": "5d3a945768874875c1b5bbca770b56148c3ac636",
+  "analysisPlanVersion": "Frozen draft no scientific acceptance",
+  "modelConfiguration": "32 technical E identities,808 evidence objects; two visible punctuation corrections and author semantic supplement. No model/selection/poling.",
+  "dataVersion": "Public originals Q/SC2023 and Codebook4.1; no respondent dataset or4.2values accessed",
+  "originalManifestSha256": "0d124297e3410fd108dfeb1a676cb55a9562f4aa1b5e5adc52f8ddf95de66958",
+  "sourceInputs": [
+    {
+      "path": "outputs/loop/inventory004-e/E1-extrakthash-null.synthetische-mutation.json",
+      "sha256": "20ee97a455e6a6728d882257addf4a063c836b9c2377a4e1a0f3f62d5e621f0b",
+      "bytes": 2146536,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/E11M-liste57-zu56.synthetische-mutation.json",
+      "sha256": "03136b84a977c5c163ed625a630515bf7b8de9e538ac02a85e6f44e4c30974d4",
+      "bytes": 2146563,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/E12-label1-durch-label2.synthetische-mutation.json",
+      "sha256": "226421a238a7a715d62001d6788328f500e09d3605c2391f320cd77809dbcc0e",
+      "bytes": 2146536,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/E19-antwortcode-1-zu-5.synthetische-mutation.json",
+      "sha256": "ff171498c071eda371e988f90e32528c06d05313a345871136a4efbfc7929fdd",
+      "bytes": 2146536,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/E26-definition-entfernt.synthetische-mutation.json",
+      "sha256": "08cae268cb16584c8e43bc0a232f4bbab2ddda3fc50d9115b6cca3eca3be814a",
+      "bytes": 2145943,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/E8M-variantenzuweisung-1-zu2.synthetische-mutation.json",
+      "sha256": "4f9472b256e1b2ee8e963b928190e7c838ab835973dca941e4dbf106c3a5dfff",
+      "bytes": 2146536,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/E8W-filter-E1-2-zu-1.synthetische-mutation.json",
+      "sha256": "f938c8f46edc35c34e247aba3dd3e83dec9a49f6b963d5fab124687057f1729c",
+      "bytes": 2146536,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/ESS11_appendix_a7_e04_1.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "bytes": 2162997,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/ESS11_questionnaires_DE.pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "bytes": 1304009,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/ESS11_showcards_DE.pdf",
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "bytes": 2210799,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/build.py",
+      "sha256": "9ed610283b883438946569138b4db23cb618724eb96cc6f2d20d977806422d03",
+      "bytes": 29899,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/build1.json",
+      "sha256": "2c7ef03dca2585bf6476eabf46f8508b3430666d30f07283bc84cd6b1978a224",
+      "bytes": 2064684,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/build2.json",
+      "sha256": "2c7ef03dca2585bf6476eabf46f8508b3430666d30f07283bc84cd6b1978a224",
+      "bytes": 2064684,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/cb-208.png",
+      "sha256": "f740af319c88afa10ce6db9a96be30c455295af3ad55e59dc50f4ab7685c94a7",
+      "bytes": 174513,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/cb-210.png",
+      "sha256": "0503b2c24e4d5332b8792702a05c95240b0275428703362a85cac8d9f4bdf8fb",
+      "bytes": 129388,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/cb-211.png",
+      "sha256": "1c90f575434930e94d361a18075e419bd81c6496094f64fe4fd618420cbcd548",
+      "bytes": 139902,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/cb-212.png",
+      "sha256": "9b2922edec0d43c198ec7dba3ae3c65e843adb209a732136f6ddb4c7fcc256fc",
+      "bytes": 170355,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/cb-215.png",
+      "sha256": "e2cbbf2161bab5388bb3851c8a7fce7ef34ee5eb723213244d138e25abd92fb2",
+      "bytes": 168106,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/cb-217.png",
+      "sha256": "3d6e20c6b6e3a315a217943b753a076a0aac25ef7867df382b95daf961f81cc0",
+      "bytes": 137384,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/cb-218.png",
+      "sha256": "f9da0377fc5cd80dea22d4b457678f121ef5fd6ffe0e6bf0ba2c82d9400c60e4",
+      "bytes": 231046,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/codebook.bbox.html",
+      "sha256": "6246f80f8bfd3a1e62fcdc91c9010b4aba0b3dd303f7fcee509a918978f59910",
+      "bytes": 16109603,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/codebook.layout.txt",
+      "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+      "bytes": 1074155,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/ess-disclaimer.html",
+      "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+      "bytes": 168665,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/final-command-log.json",
+      "sha256": "e8cd5ad833eb3f4aa926ceca9f805ae626e5b0cb187594d310a80faf1ddb2489",
+      "bytes": 10806,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/index.json",
+      "sha256": "c8c89e07084e880e6f5bab5ec93e66006edcd49584a24972005498c996f0643e",
+      "bytes": 24383,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/input-hashes-after.json",
+      "sha256": "761e4341d791959f3fab40207c2c23217647efd1f1f5744bb09afabdb01af97b",
+      "bytes": 2403,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/input-hashes-before.json",
+      "sha256": "36e6a34a5e93b17b85f18806a5ae4fe0a1aab582fffacdc3a3752b0d420e914b",
+      "bytes": 3459,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/license-section.txt",
+      "sha256": "a0579fda5aa2b0ccfbadda827ccecaa18d88bf0b663826f9a00c0ae96b083593",
+      "bytes": 10001,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/plan.md",
+      "sha256": "cc93840e73bf8dbef6a9f470ff15c98440f6b1cc5c107ee1232a6f1620579998",
+      "bytes": 3523,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-43.png",
+      "sha256": "3329f135cb38ed0cde5936a85c989ca2a184d793e1381bda1f8a3552cb71b33d",
+      "bytes": 68886,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-44.png",
+      "sha256": "f4e907c379c6869ee512395e58e5f3c1cd943a934a60d6f289a5b882b6268200",
+      "bytes": 64872,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-45.png",
+      "sha256": "2fd603ddcee57da79d61d75edf1055d0d667c0b29e51a830a7c0a7e335f6d191",
+      "bytes": 87420,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-46.png",
+      "sha256": "756487d47cf3afd291074cb84076301d297a3c111d876a958f17d036f5a8ed60",
+      "bytes": 91764,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-47.png",
+      "sha256": "f6bb7f05303b1077e471eedfcb8316f30ccac47fc9ce7cf6f081962ad0328e45",
+      "bytes": 139470,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-48.png",
+      "sha256": "50646140d36c55205c2382dbe3dfa8ab02038e207e854db6e27a0da5c736bb44",
+      "bytes": 170908,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-49.png",
+      "sha256": "8b31ea80a832252a6f7a85b494233bfe80815034118655a76aced8ec610c719a",
+      "bytes": 155270,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-50.png",
+      "sha256": "f708d77ff3aefafc0dbca17364032610180c2e3d03c4db6f7b24d2897f5aee83",
+      "bytes": 84837,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-51.png",
+      "sha256": "cac16ffbfcd43d4fe2e2017d509f458b8a31212b3aaab2284c98d4f8a1e3eb74",
+      "bytes": 128919,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-52.png",
+      "sha256": "bce58ecac4f0055b64b441216e0e50e45e7d678dbe444bb1f7553461db4381fc",
+      "bytes": 155673,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-53.png",
+      "sha256": "1e91e5c262a1c404956b60840f48a40730a8678c1b9c5a00596eb4ed0c960a20",
+      "bytes": 98705,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/q-54.png",
+      "sha256": "f12a5284a6cc658ef7591e52be2be0d3e3e64545b9d0dac6bacfdc6b69d79926",
+      "bytes": 109578,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/questionnaire.bbox.html",
+      "sha256": "cf596357ed4ea4da014e3f49a45ea302298ebf9dbceb2752b1aeed1f14e77e0d",
+      "bytes": 2637070,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/questionnaire.layout.txt",
+      "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+      "bytes": 213698,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/read-tests-result.json",
+      "sha256": "3f2eb4cbe016349c4e6ee6d64b8a913c7d65d7fe4ae87a27a597015d36ffc642",
+      "bytes": 3389,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/read-tests.py",
+      "sha256": "946d19580739a99ee1e3b0f8f268ebd8db77c0ad3998e1d4a5ba6681e81f6371",
+      "bytes": 9902,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/reading-log.json",
+      "sha256": "ff17d53a5047c92b1139990c387199d48eaf2930fc361979496bed7b047e7353",
+      "bytes": 1490,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/render-log.json",
+      "sha256": "5c14f183949d9302a284fa89b810b42c855d42de124d69fbb17d147cc8523ba1",
+      "bytes": 11244,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/reproduce.py",
+      "sha256": "ae66119ab012ce891de520f430338f0c03dda2732db433fc185cfed21418bfdc",
+      "bytes": 1397,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/reproduction-result.json",
+      "sha256": "ecf37a3e6f17af0e68f01399d0e883452d770c888949fc05ec844b50d542778c",
+      "bytes": 1775,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-51.png",
+      "sha256": "782a28261a3eaadc04ab1d0a7afc47d33c1b90fdf10cabae2ab7f10c4c3f0dd3",
+      "bytes": 26958,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-52.png",
+      "sha256": "fab29392185cf3328e82c90a4c0a2c55d2587bbb2f63990e6fbae3545cb95a82",
+      "bytes": 24531,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-53.png",
+      "sha256": "cae6e4a27f14c387375750b8f48d4195c19905b85274dfe585624a36791de68c",
+      "bytes": 25184,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-54.png",
+      "sha256": "3e3ff1f71a4b41632e3f4b2cf4cd3a8c188211b8f0ad0c7ee20390771478f390",
+      "bytes": 25261,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-55.png",
+      "sha256": "57c3a4968e9ff458958ba3ae4c73ab936a1c50ce6d521d43cd5f57aef437bcfa",
+      "bytes": 28801,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-56.png",
+      "sha256": "f8d7d08834317ccf49680c01caa84058ed3ed79bf30c82d71927f18d07643795",
+      "bytes": 43271,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-57.png",
+      "sha256": "908ac1df1fd592af97498a53a09827d12b224c452b2d7bf6f871fb63b1b4146a",
+      "bytes": 36232,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-58.png",
+      "sha256": "66ef13e7dd1cb7417009673913b09b81e0836a1e1faab1e189cadd83a6fbd8d6",
+      "bytes": 29246,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-59.png",
+      "sha256": "c04be673cfcf11e57216b9792a92a652dbaf11348a0e4262e9294d01bdcf8ff1",
+      "bytes": 51969,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-60.png",
+      "sha256": "9ff7ff0a6944d3b4ddd3c8937101fd79721c37120468f856bc8a716fdf5db200",
+      "bytes": 51184,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-61.png",
+      "sha256": "7ef38e1b48cdd5d63e7cd5e328cda88bd2486831e9b9efc091f73256e899a676",
+      "bytes": 37398,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-62.png",
+      "sha256": "be9bcfffac94b587c39e2f43a4284837d084e91b5e05131dce0acc1d6d3f8071",
+      "bytes": 34451,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-63.png",
+      "sha256": "2a8d995961051b8523bca6434ec233f1de35ef8c04624c3815c10281664eec2a",
+      "bytes": 33953,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-64.png",
+      "sha256": "fbf513ea654f7a4d088007801c0dc1c617af78e7334b7c6febea2e6bdbd144de",
+      "bytes": 38425,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-65.png",
+      "sha256": "0742c1e06d758b7f373c1f09edca12a510fb71097199a7cb1d30eb6194f06432",
+      "bytes": 36437,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-66.png",
+      "sha256": "9489c84cadd3673d2325299429439e28eb86a8c67bec5038e487be7a8368e89b",
+      "bytes": 22317,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-67.png",
+      "sha256": "fd985fa0b1bba1726aab025e2635ad778127e2503ab69c20551c58ab405f9132",
+      "bytes": 61280,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/sc-68.png",
+      "sha256": "abe58e0670509810f8d916eeb4aa9db7f0f7a5ef943c7cf3de4cadef58fb9e11",
+      "bytes": 30617,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/showcards.bbox.html",
+      "sha256": "059b21f711566e922199e2ec5ca58abf24e0f084266eddb433d13176941c03c4",
+      "bytes": 1088740,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/showcards.layout.txt",
+      "sha256": "525461ad810e078a0b7f63e381be50a99ad35551f435cd6988ddde0f2b01dc51",
+      "bytes": 94266,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/source-fetch-log.json",
+      "sha256": "962a215878b059b87877a0e7375ec2c2956d9daaf427b9b99dc34ad7374f7f3b",
+      "bytes": 3549,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory004-e/startauftrag.txt",
+      "sha256": "19869e8ef3219f3ee855d79a254dbf7a5a81871675efd3ca713ce65d4e9bad0c",
+      "bytes": 4224,
+      "scope": "Eigene öffentliche Quellen, Pläne, Renderings, reproduzierbare Annotation und synthetische Gegenfälle; keine Antworten"
+    },
+    {
+      "path": "outputs/loop/inventory002-ab/baseline-check-cache/ESS11_questionnaires_DE.pdf",
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "bytes": 1304009,
+      "scope": "Öffentliche Originaldokumentation"
+    },
+    {
+      "path": "outputs/loop/inventory002-ab/baseline-check-cache/ESS11_showcards_DE.pdf",
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "bytes": 2210799,
+      "scope": "Öffentliche Originaldokumentation"
+    },
+    {
+      "path": "outputs/loop/inventory002-ab/baseline-check-cache/ESS11_appendix_a7_e04_1.pdf",
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "bytes": 2162997,
+      "scope": "Öffentliche Originaldokumentation"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/additional-mutated-cases.json",
+      "bytes": 9374,
+      "sha256": "7c682e8095e6ae7c7360cdfc6627e205d244fa231bd44061478202d73148574b",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/build-command-1.json",
+      "bytes": 850,
+      "sha256": "42f5943720d00819d7e0624774024deca23af14491a02a0695ffb918511b61b4",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/build-command-2.json",
+      "bytes": 850,
+      "sha256": "df6ffbff5c4935d40335f5ef4bbbfa981992467275fbe718263008d796988af2",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/build_e_v2.py",
+      "bytes": 31096,
+      "sha256": "67c563fa670c794f95b17db78e805fe5d7ef7a33afcef3810fbd51cc8b6b0885",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/byte-reproduction.json",
+      "bytes": 239,
+      "sha256": "43b026eceee401f8c9db6f1cc8ff08022954adfdd63cbef5fe4479783f8e281e",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/coherent-label-and-evidence-swap.synthetic-mutation.json",
+      "bytes": 2147912,
+      "sha256": "bc594d8ccdfecdcebd0e2a4eb5e021ee17fe5fe8fcc7e943d13f386605b45750",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/coherent-variant-and-codebook-filter.synthetic-mutation.json",
+      "bytes": 2147912,
+      "sha256": "df55d1c3a76aeb9cc919c705ee922035b69f0e5f85e38d216f9afe81032b6b3a",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/coherent-whole-list-replaced.synthetic-mutation.json",
+      "bytes": 2147939,
+      "sha256": "6a7768f3b5e930af43569314100a89d04f772ba51b5e1f2d837b36e78a9ac38c",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/complete-structural-diff.json",
+      "bytes": 347,
+      "sha256": "3a261b6ba5f79d0b931337c1b576927b0e737b4f6791584bc2168bef3d783341",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/definition-removed.synthetic-mutation.json",
+      "bytes": 2147319,
+      "sha256": "dde00a99ed12a0ef119cc1c332aaa36bf1a6c0238b34641757cc25f2f8f69329",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/direct-filter-removed.synthetic-mutation.json",
+      "bytes": 2147350,
+      "sha256": "6c999d52db502e92c5fc16a7be0c0d45db4f8e8949090f64675d160ed749f655",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/extended-author-seven-tests-command.json",
+      "bytes": 11431,
+      "sha256": "0b61e115a15416522bbe82b1c3600fb119e65240423ae4b80f68f9f9c2599837",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/filter-reset-removed.synthetic-mutation.json",
+      "bytes": 2147070,
+      "sha256": "faf3a1f05229c0cbbd30d6b3941309272be86f19f0ecc56ef57934feeee312d7",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/inherited-filter-removed.synthetic-mutation.json",
+      "bytes": 2147281,
+      "sha256": "69f62321b5808b9aadc50a3a3ce5361ca2f4942618caf2f4180f820caa5f939f",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/list58-original.png",
+      "bytes": 70458,
+      "sha256": "014b72016f634ee911c236b97a405f83417ee7733dfddb73994e5afdbc6226cb",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/old-visible-period-restored.synthetic-mutation.json",
+      "bytes": 2147913,
+      "sha256": "f853b68db2741ce84a0ccf1c3ed1e9bd1371aff005ce51f128ae93881e2a64e1",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/original-protection-after.json",
+      "bytes": 1014,
+      "sha256": "c8060ca9b4eda374bbd8e6b404d562423aec8dab65d3617eeac93ede2d499854",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/original-reading-and-contract-adoption.json",
+      "bytes": 766,
+      "sha256": "0f517410ffad9f683d3cdc0b0872031436f7be7194244dcaf942a45a390c70c6",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/original-render-command.json",
+      "bytes": 521,
+      "sha256": "cddd5aef5a8d5d22fd876c01a0d1698ba21f35af5e158ef8b2276d860fc3ce36",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/plan-before-correction.json",
+      "bytes": 2172,
+      "sha256": "eb8c30946de2222a9f0df2463d1cf51fac6d584625fa625763de2d317793d99a",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/random-order-instruction-removed.synthetic-mutation.json",
+      "bytes": 2147292,
+      "sha256": "28e5b5d0c06f7bc4afbf460d6de3d66faa91d5c6b7d1cdda6e19f97814ef55de",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/E1-extrakthash-null.synthetische-mutation.json",
+      "bytes": 2147912,
+      "sha256": "42a1b92006b77d548eae22ae871940ed235d7ae2f046fb0be62f9b0e2ede26d1",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/E11M-liste57-zu56.synthetische-mutation.json",
+      "bytes": 2147939,
+      "sha256": "c13576808624c795844778d800323b69f304c0219ef9a19d598773a6b4f20316",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/E12-label1-durch-label2.synthetische-mutation.json",
+      "bytes": 2147912,
+      "sha256": "1f2799307439f03d9c329fd3834e3c0d178ec833538ddacfc8cbeab6058935fc",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/E19-antwortcode-1-zu-5.synthetische-mutation.json",
+      "bytes": 2147912,
+      "sha256": "599763ab5a23b2f9be98e55bbb2b9ab0bcb06ca39a24b39cf7238873281d05cb",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/E26-definition-entfernt.synthetische-mutation.json",
+      "bytes": 2147319,
+      "sha256": "dde00a99ed12a0ef119cc1c332aaa36bf1a6c0238b34641757cc25f2f8f69329",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/E8M-variantenzuweisung-1-zu2.synthetische-mutation.json",
+      "bytes": 2147912,
+      "sha256": "8ae65b5916d31cc96558c4365989858128db71e8a40f8054bb109ef147ec2ea3",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/E8W-filter-E1-2-zu-1.synthetische-mutation.json",
+      "bytes": 2147912,
+      "sha256": "e7e47974d93d83312ae6d9c811cc7dabca3753f3c3f6fb341b4768566245b629",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/ESS11_appendix_a7_e04_1.pdf",
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/ESS11_questionnaires_DE.pdf",
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/ESS11_showcards_DE.pdf",
+      "bytes": 2210799,
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/annotation.json",
+      "bytes": 2066030,
+      "sha256": "0c031abd7be58e14c91360db4e2a438b0b211e1116dd2f1b84ebab612931f6de",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/build.py",
+      "bytes": 31096,
+      "sha256": "67c563fa670c794f95b17db78e805fe5d7ef7a33afcef3810fbd51cc8b6b0885",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/codebook.bbox.html",
+      "bytes": 16109603,
+      "sha256": "6246f80f8bfd3a1e62fcdc91c9010b4aba0b3dd303f7fcee509a918978f59910",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/ess-disclaimer.html",
+      "bytes": 168665,
+      "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/input-hashes-before.json",
+      "bytes": 3459,
+      "sha256": "36e6a34a5e93b17b85f18806a5ae4fe0a1aab582fffacdc3a3752b0d420e914b",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/license-section.txt",
+      "bytes": 10001,
+      "sha256": "a0579fda5aa2b0ccfbadda827ccecaa18d88bf0b663826f9a00c0ae96b083593",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/questionnaire.bbox.html",
+      "bytes": 2637070,
+      "sha256": "cf596357ed4ea4da014e3f49a45ea302298ebf9dbceb2752b1aeed1f14e77e0d",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/read-tests-result.json",
+      "bytes": 12971,
+      "sha256": "405d9e1bbfb99b8489ea4daaa2f278de3b30b095d336c8d3f12e0ba5085c1b9e",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/read-tests-v2.py",
+      "bytes": 10257,
+      "sha256": "90d72141b47976429d92bdd220688eea588af7fa6d934502c2b7fa9b94c03ff3",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-1/showcards.bbox.html",
+      "bytes": 1088740,
+      "sha256": "059b21f711566e922199e2ec5ca58abf24e0f084266eddb433d13176941c03c4",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/ESS11_appendix_a7_e04_1.pdf",
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/ESS11_questionnaires_DE.pdf",
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/ESS11_showcards_DE.pdf",
+      "bytes": 2210799,
+      "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/annotation.json",
+      "bytes": 2066030,
+      "sha256": "0c031abd7be58e14c91360db4e2a438b0b211e1116dd2f1b84ebab612931f6de",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/build.py",
+      "bytes": 31096,
+      "sha256": "67c563fa670c794f95b17db78e805fe5d7ef7a33afcef3810fbd51cc8b6b0885",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/codebook.bbox.html",
+      "bytes": 16109603,
+      "sha256": "6246f80f8bfd3a1e62fcdc91c9010b4aba0b3dd303f7fcee509a918978f59910",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/ess-disclaimer.html",
+      "bytes": 168665,
+      "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/input-hashes-before.json",
+      "bytes": 3459,
+      "sha256": "36e6a34a5e93b17b85f18806a5ae4fe0a1aab582fffacdc3a3752b0d420e914b",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/license-section.txt",
+      "bytes": 10001,
+      "sha256": "a0579fda5aa2b0ccfbadda827ccecaa18d88bf0b663826f9a00c0ae96b083593",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/questionnaire.bbox.html",
+      "bytes": 2637070,
+      "sha256": "cf596357ed4ea4da014e3f49a45ea302298ebf9dbceb2752b1aeed1f14e77e0d",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/run-2/showcards.bbox.html",
+      "bytes": 1088740,
+      "sha256": "059b21f711566e922199e2ec5ca58abf24e0f084266eddb433d13176941c03c4",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/shared-introduction-removed.synthetic-mutation.json",
+      "bytes": 2147098,
+      "sha256": "08caa0432b97e05fbaffb5018ee45c7894c83cac1099b8ec067ee03cb42ad74e",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/vignette-removed.synthetic-mutation.json",
+      "bytes": 2146806,
+      "sha256": "6007109043706560ec85e96c3c861e7e3fadd37de3c9758e6f7504133f9d1f21",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "outputs/loop/inventory004-e-correction/visible-poles-swapped.synthetic-mutation.json",
+      "bytes": 2147912,
+      "sha256": "4b74f44f29e3ea91bff521c0b99d195d5ba6db1cb2e449e5eff57d2781d850e2",
+      "scope": "Own public document correction, copied official sources, bounded synthetic tests/provenance; no ESS respondents"
+    },
+    {
+      "path": "reports/loop/packages/INVENTORY-004-E/v1/manifest.json",
+      "bytes": 25794,
+      "sha256": "0d124297e3410fd108dfeb1a676cb55a9562f4aa1b5e5adc52f8ddf95de66958",
+      "scope": "Immutable original public annotation package manifest"
+    }
+  ],
+  "acceptance": "Author corrections executed; two fresh independent rechecks pending.",
+  "adoptedReviewerCodeBecomesAuthorCode": true,
+  "frozenAtUtc": "2026-10-03T08:32:18.325213+00:00",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "docs/pruefregeln.md": {
+      "sha256": "7f1a86187a0a2c6a39acaabab25eb75cf92ec1fc5c2c4c97bf0d12411ece2a9f",
+      "bytes": 23337
+    },
+    "docs/analyseplan.md": {
+      "sha256": "7eb07ed5e8edf87970c34f1d77590f60add33a19c4a90f83b14814740a31ac47",
+      "bytes": 13766
+    },
+    "docs/analyseanforderungen.md": {
+      "sha256": "f94a4bc01c571af966e9269a674632f8a19cba3db0a5c8be0bddade27be7795b",
+      "bytes": 8485
+    },
+    "docs/lizenzen.md": {
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+      "bytes": 4845
+    },
+    "data/inventar-e.ergaenzung.entwurf.json": {
+      "sha256": "2c7ef03dca2585bf6476eabf46f8508b3430666d30f07283bc84cd6b1978a224",
+      "bytes": 2064684
+    },
+    "reports/loop/authors/INVENTORY-004-E.md": {
+      "sha256": "ae291d2ef209840b40f021949a79420992b68a533a8ff76af276d3c233c377ac",
+      "bytes": 20146
+    },
+    "reports/loop/INVENTORY-004-E-pruefauftrag.md": {
+      "sha256": "18c1f4a316c552a1a83ac64c5543c385c19de5246a13d01e201bbd13212ce811",
+      "bytes": 3781
+    },
+    "data/inventar-e.v2.ergaenzung.entwurf.json": {
+      "sha256": "0c031abd7be58e14c91360db4e2a438b0b211e1116dd2f1b84ebab612931f6de",
+      "bytes": 2066030
+    },
+    "pipeline/annotations/e_semantic_contract_v2.py": {
+      "sha256": "740598c0f64f9a426db978bf4199f877b79ad24d9c68e7bae1eac2affa8c7c07",
+      "bytes": 8219
+    },
+    "reports/loop/reviews/INVENTORY-004-E-sources.md": {
+      "sha256": "3da4930f03f4268c8d19ad7455a17702bf601568adf80e20f85121ab2ed0b50c",
+      "bytes": 27216
+    },
+    "reports/loop/reviews/INVENTORY-004-E-repro.md": {
+      "sha256": "baf6eea2d9962fd67fe625dc4dc9250284ea22c2f54aaef8b04ba8bc530702b5",
+      "bytes": 35433
+    },
+    "reports/loop/INVENTORY-004-E-v1-entscheidung.md": {
+      "sha256": "f2ff719642a0c3b69d5c6681222512e8799e25b34127833cd000e834460c1ea4",
+      "bytes": 5098
+    },
+    "reports/loop/authors/INVENTORY-004-E-korrektur.md": {
+      "sha256": "eb9f97e5d14c8bb2709124a13cb09196c50eb2db1a4d9bef78f3fabfe4f71593",
+      "bytes": 6670
+    },
+    "docs/inventory004-e-v2-pruefauftrag.md": {
+      "sha256": "0ee05730738837262dc42fdc73d0a5d04131b1bacbef20a3565c2941f842b73d",
+      "bytes": 2868
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

@@ -28,3 +28,7 @@ DESIGN-003 hält elf öffentliche Deutschland-/Varianzaussagen samt Originalkonf
 DESIGN-003: beide vollständigen Erstberichte sind ausgewertet. D-S01/D-M01 widerlegen den behaupteten Sachsen-Gegensatz am schon gebundenen Original; D-S02/D-M02 korrigieren P07s Zuschreibung einer eigenen nest-Option. Alle Findings angenommen, historische Dateien erhalten. Neue getrennte v2-Artefakte warten auf zwei Nachprüfungen; kein Datenausfall, Crosswalk oder endgültiges Varianzverfahren wird abgenommen. Entscheidung `reports/loop/DESIGN-003-v2-entscheidung.md`.
 
 CLAUDE-P02: zwei unabhängige Erstberichte bestätigen die Versionszeitkorrektur und finden denselben niedrigen lokalen Schutztextfehler CP-M01/CP-T01. Eine separate gebundene Ergänzung nennt Flags und tatsächlichen Abbruch vor Read. Korrektur noch ungeprüft. Die konkrete SOFTWARE-Versionszeitkorrektur ist anhand der beiden tatsächlichen Berichte eng bestätigt. Entscheidung `reports/loop/CLAUDE-P02-v2-entscheidung.md`.
+
+## 08:34 UTC: Dokumentkorrekturen und E-Nachprüfung
+
+Design- und CLI-Metadatenkorrekturen sind nach beiden vollständigen frischen Nachberichten im engen Umfang angenommen; Entscheidungen unter reports/loop/DESIGN-003-v2-nachpruefentscheidung.md und reports/loop/CLAUDE-P02-v2-nachpruefentscheidung.md. Historische Erstfassungen bleiben unverändert. E-v2-Runde1 ist gefroren; Autorenprüfungen ersetzen ihre noch fehlenden zwei Nachreviews nicht.

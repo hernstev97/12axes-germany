@@ -1,0 +1,9 @@
+# CLAUDE-P02: Abschluss der Metadatenkorrektur
+
+2026-10-03. Beide vollständigen frischen Nachberichte sind gelesen: [Metadaten](reviews/CLAUDE-P02-v2-metadata.md), SHA-256 `8d0559a21f486da0e695ea7562332077ded26167bc945ed5f4adbaa6589e9a9a`, und [Grenzen](reviews/CLAUDE-P02-v2-boundary.md), SHA-256 `62e3c0c96c6b95728e5a3a8a7e1f1ad273a1c835151f84faacd216dcc42057c7`. Konkretes Manifest: `a857ba7b0f587376321a2e82066a152076fc7ee794a377e7ebacb3ea97248056`.
+
+CP-M01/CP-T01 sind in Runde 1 ausschließlich als getrennte Dokumentkorrektur `BESTANDEN`. Beide Reviewer haben eigene enge Whitelistparser mit künstlichen Ausschlussfällen ausgeführt, erlaubte Ereignisse selbst reproduziert und die Ergänzung feldweise kontrolliert. Read 0, HTTP401 und Exit 1 bleiben sichtbar; safe-mode gehört nur zu 002. Die historische tested-Formulierung bleibt unverändert als fehlerhafte Ausgangsaussage erhalten. Die Ergänzung trennt Konfiguration und nicht ausgeführtes Verhalten korrekt. Keine neuen Findings.
+
+Die CASE-P01-Versionsabfrage erfolgte nach dem damaligen Modelllauf; keine rückwirkende Binarybindung. Die gespeicherten Version-/Binarywerte von 002/002b bleiben Metadatenbeobachtungen für diese Versuche. Beide kontrollierten 16+14 Pins vor/nach; zentrale Grenzen wurden vom zweiten Nachprüfer zusätzlich an offiziellen CLI- und Kernelquellen gelesen. Keine heutige Zugangs-, Kernel- oder Claudeprobe wurde ausgeführt.
+
+Read-Grenzen sind weiterhin `NICHT_GEPRÜFT`. Der zuletzt tatsächlich beobachtete Anbieterzugang ist `BLOCKIERT` mit HTTP401; dessen Ursache unbekannt. Vorgeschriebene Claude-Forschungsreviews, organisatorische Setup-, wissenschaftliche und menschliche Abnahmen bleiben offen. Die Korrektur beseitigt keine Zugangsvoraussetzung und ersetzt keine andere Modellfamilie. Alte Ausführungsdateien und Erstberichte bleiben erhalten. KI-Audit derselben Codex-Familie, kein akademisches Peer Review oder Sicherheitsnachweis.

@@ -667,14 +667,14 @@
       "overrides": false,
       "contextBoundary": "Frischer begrenzter Kontext; originale v1-Berichte im Prüfpaket erlaubt, keine aktuellen Peer-Nachberichte. Shared FS keine technische Sandbox.",
       "reportSha256": "ed490efc972ab2a668fb05fced3e25b688db20fde6ed62d3090a471d24f8eebb",
-      "rootFullReportRead": false
+      "rootFullReportRead": true
     },
     {
       "task_name": "design003_v2_methods",
       "returnedTaskName": "/root/design003_v2_methods",
       "kind": "independent-recheck",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/DESIGN-003/v2/manifest.json",
       "manifestSha256": "fdfd7d4d2f24c80c6a93682477e03a90fcdfa0e90a1863ba1c5881b23dbe695f",
       "report": "reports/loop/reviews/DESIGN-003-v2-methods.md",
@@ -682,14 +682,16 @@
       "model": "gpt-6.1-sol",
       "reasoning": "ultra",
       "overrides": false,
-      "contextBoundary": "Frischer begrenzter Kontext; originale v1-Berichte im Prüfpaket erlaubt, keine aktuellen Peer-Nachberichte. Shared FS keine technische Sandbox."
+      "contextBoundary": "Frischer begrenzter Kontext; originale v1-Berichte im Prüfpaket erlaubt, keine aktuellen Peer-Nachberichte. Shared FS keine technische Sandbox.",
+      "reportSha256": "7d302d14655c8f5c702861026dff47a3579f0d1208192642e1bf43188686f213",
+      "rootFullReportRead": true
     },
     {
       "task_name": "claudep02_v2_metadata",
       "returnedTaskName": "/root/claudep02_v2_metadata",
       "kind": "independent-recheck",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/CLAUDE-P02/v2/manifest.json",
       "manifestSha256": "a857ba7b0f587376321a2e82066a152076fc7ee794a377e7ebacb3ea97248056",
       "report": "reports/loop/reviews/CLAUDE-P02-v2-metadata.md",
@@ -697,14 +699,16 @@
       "model": "gpt-6.1-sol",
       "reasoning": "ultra",
       "overrides": false,
-      "contextBoundary": "Frischer Kontext; keine aktuellen Peer-Nachberichte. Kein neuer Claude-Aufruf, nur eng öffentliche erlaubte Metadaten."
+      "contextBoundary": "Frischer Kontext; keine aktuellen Peer-Nachberichte. Kein neuer Claude-Aufruf, nur eng öffentliche erlaubte Metadaten.",
+      "reportSha256": "8d0559a21f486da0e695ea7562332077ded26167bc945ed5f4adbaa6589e9a9a",
+      "rootFullReportRead": true
     },
     {
       "task_name": "claudep02_v2_boundary",
       "returnedTaskName": "/root/claudep02_v2_boundary",
       "kind": "independent-recheck",
       "fork_turns": "none",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/CLAUDE-P02/v2/manifest.json",
       "manifestSha256": "a857ba7b0f587376321a2e82066a152076fc7ee794a377e7ebacb3ea97248056",
       "report": "reports/loop/reviews/CLAUDE-P02-v2-boundary.md",
@@ -712,7 +716,52 @@
       "model": "gpt-6.1-sol",
       "reasoning": "ultra",
       "overrides": false,
-      "contextBoundary": "Frischer Kontext; keine aktuellen Peer-Nachberichte. Kein neuer Claude-Aufruf, nur eng öffentliche erlaubte Metadaten."
+      "contextBoundary": "Frischer Kontext; keine aktuellen Peer-Nachberichte. Kein neuer Claude-Aufruf, nur eng öffentliche erlaubte Metadaten.",
+      "reportSha256": "62e3c0c96c6b95728e5a3a8a7e1f1ad273a1c835151f84faacd216dcc42057c7",
+      "rootFullReportRead": true
+    },
+    {
+      "task_name": "repro003_c_code",
+      "returnedTaskName": "/root/repro003_c_code",
+      "kind": "independent-code-first-review",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "report": "reports/loop/reviews/REPRO-003-C-code.md",
+      "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen eigenen Bericht wortgetreu erhalten.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peer-/Jurorberichte/Loopfindings/Agentlisten. Shared-FS keine technische Sandbox.",
+      "manifest": "reports/loop/packages/REPRO-003-C/v1/manifest.json",
+      "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3"
+    },
+    {
+      "task_name": "repro003_c_repro",
+      "returnedTaskName": "/root/repro003_c_repro",
+      "kind": "independent-reproduction-first-review",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "report": "reports/loop/reviews/REPRO-003-C-repro.md",
+      "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen eigenen Bericht wortgetreu erhalten.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peer-/Jurorberichte/Loopfindings/Agentlisten. Shared-FS keine technische Sandbox.",
+      "manifest": "reports/loop/packages/REPRO-003-C/v1/manifest.json",
+      "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3"
+    },
+    {
+      "task_name": "e9_source_boundary_author",
+      "returnedTaskName": "/root/e9_source_boundary_author",
+      "kind": "bounded-public-source-author",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "report": "reports/loop/authors/E9-BOUNDARY-001.md",
+      "actualStartPrompt": "Tatsächlicher collaboration.spawn_agent-Auftrag wird im vollständigen eigenen Bericht wortgetreu erhalten.",
+      "model": "gpt-6.1-sol",
+      "reasoning": "ultra",
+      "overrides": false,
+      "contextBoundary": "Frischer begrenzter Kontext, keine aktuellen Peer-/Jurorberichte/Loopfindings/Agentlisten. Shared-FS keine technische Sandbox."
     }
   ],
   "activeAdditionalAuthors": [
@@ -798,7 +847,7 @@
       "reportSha256": "759606452a9eef5ce034bfb596723b4087d25a642fe4a8095e7689fdfa7e8b94"
     }
   ],
-  "updatedAtUtc": "2026-10-03T08:09:52.427814+00:00",
+  "updatedAtUtc": "2026-10-03T08:35:25.541817+00:00",
   "operationalNotes": [
     {
       "atUtc": "2026-10-03T07:15:22.935240+00:00",
@@ -808,6 +857,10 @@
       "atUtc": "2026-10-03T08:06:11.231621+00:00",
       "target": "/root/inventory004_e_repro",
       "event": "Operative Pfadklärung: 205 ist die ursprüngliche Pending-Zeilenanzahl der 296-Zeilen-CSV, keine zweite CSV. Lesen der ursprünglichen technischen Zählregel pipeline/inventar.py:610–628 erlaubt. Kein anderer Reviewerbefund übermittelt."
+    },
+    {
+      "atUtc": "2026-10-03T08:35:25.541817+00:00",
+      "event": "Root-Anweisung an E9-Autor: betroffenenSuchtreffer nichtweiteröffnen/ausgeben; keine Kennungen/Evidenz daraus übernehmen; konkreteOriginaldokumentsuche, ungelösteReferenzoffenlassen."
     }
   ]
 }

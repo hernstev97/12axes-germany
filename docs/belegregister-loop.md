@@ -23,3 +23,7 @@ B-LOOP-METHODS-v3: Echte 16 Sample-TH und 22-Moment-Reihenfolge, tatsächlicher 
 - C v1: Manifest `14a87ba5148fba5e640e8164ea06d7ff34cbc2893117dc6baf3eee91f96be7cb`; Quellen- und Reproduktionsberichte in `reports/loop/reviews/INVENTORY-003-C-{sources,repro}.md`. Ein angenommener niedriger Befund C-R01; Korrektur noch nicht geprüft.
 - E: 32 technische Identitäten, 808 Belege; aktuelle JSON `2c7ef03dca2585bf6476eabf46f8508b3430666d30f07283bc84cd6b1978a224`. Autorentests tatsächlich ausgeführt; unabhängige Erstprüfung ausstehend.
 - DESIGN-003: elf Claim-IDs in `data/design-quellen.entwurf.json`, Originalfundstellen im `docs/design-deutschland.entwurf.md`; Manifest `adc655d01e9cb538d091ba6d7810dfe5212353b4fc39e8e98c5e07f35759cad1`. Beide unabhängigen Erstprüfungen laufen. Kein bestätigter neuer Wissenschaftsstatus.
+
+## Nachgeprüfte Dokumentgrenzen, 08:34 UTC
+
+DESIGN-003/v2: Sachsenquelle und P07-Zuschreibung durch zwei tatsächliche Original-/Diffnachprüfungen bestätigt. CLAUDE-P02/v2: konfigurierte Flags und Read0/401/Exit1 durch zwei eigene Whitelistnachrechnungen bestätigt; Read-/Zugangsfunktion ungeprüft. INVENTORY-004-E/v2:17+130Inputs und SHA e1e184883b5f2ca04f729b2c2383777070601af6eba049c72e040aa1e1f56ca2; nur Autorkorrektur, unabhängige Nachprüfung offen. E9-Originalmatch ist bis unabhängiger Prüfung kein angenommener Forschungsbeleg.

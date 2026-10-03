@@ -19,3 +19,7 @@ Der vollständige Projektcheck lief tatsächlich 07:15:35–07:15:47 UTC erfolgr
 ## Checkpoint 021: Korrekturen erhalten, Nachprüfungen ausstehend
 
 C-R01 ist in neuer Fassung zweimal bytegleich nachgebaut; die erste unabhängige Nachprüfung läuft. Beide E-Erstprüfer arbeiten unabhängig. Beide Design-Erstberichte fanden den falschen Sachsen-Gegensatz und die verbliebene nest-Zuschreibung; separate v2-Korrekturtexte sind gefroren. Beide CLI-Erstberichte bestätigen die zeitliche Versionskorrektur und finden einen niedrigen historischen Schutztextfehler; eine getrennte Ergänzung erhält die Originaldateien. Keine Wissenschaftsphase abgenommen, keine Antworten entblindet. Weitere Nachprüfungen werden beim nächsten freien Slot gestartet.
+
+## 08:34 UTC
+
+Gezielte Design-/CLI-Dokumentkorrekturen nach beiden vollständigen Nachreviews abgeschlossen, wissenschaftliche Folgeabnahmen unverändert offen. E-v2 mit zwei tatsächlichen Nachbauten und19echtenGegenfällen eingefroren, Nachprüfer ausstehend. PortableC-Review läuft getrennt; E9-Quellenauftrag bearbeitet Originalfußnote ohne deutscheWortlaut-/Missingreparatur. LetzteverifizierteSicherung5d3a945/push022.

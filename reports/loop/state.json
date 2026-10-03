@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T08:09:52.427814+00:00",
+  "updatedAtUtc": "2026-10-03T08:38:32.754255+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "1fa2251bb7dc57d36ee9169cba7af6918d75c295",
+  "currentHead": "5d3a945768874875c1b5bbca770b56148c3ac636",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -18,14 +18,15 @@
       "proof": "reports/loop/000-main-integration.json",
       "status": "BESTANDEN",
       "scope": "main-Webdateien und Handbuch bytegleich; ursprüngliche Arbeit erhalten; keine umfassende Abnahme"
-    }
+    },
+    "DESIGN-003/v2 gezielte Quellen-/Zuschreibungskorrekturen nach zwei vollständigen frischen Nachberichten bestätigt",
+    "CLAUDE-P02/v2 begrenzte Metadatenkorrektur nach zwei vollständigen Nachberichten bestätigt; tatsächlicherRead/Zugang nicht freigegeben"
   ],
   "openTasks": [
-    "C-R01: erster frischer Nachprüfer läuft, zweiten starten und beide vollständige Ergebnisse auswerten",
-    "E: beide frischen unabhängigen Erstberichte sammeln, danach Findings bearbeiten",
-    "DESIGN-003 v2: zwei frische unabhängige Nachprüfungen starten",
-    "CLAUDE-P02 v2: zwei getrennte enge Dokumentnachprüfungen starten",
-    "Öffentliche Inventar-/Theoriearbeit fortführen; Claude-Forschungsbewertungen, tatsächliche Setup-/Methoden- und Menschenabnahmen bleiben Voraussetzungen"
+    "Öffentliche Inventar-/Theoriearbeit fortführen; Claude-Forschungsbewertungen, tatsächliche Setup-/Methoden- und Menschenabnahmen bleiben Voraussetzungen",
+    "INVENTORY-004-E/v2: zwei frische unabhängige Nachprüfungen ausstehend",
+    "REPRO-003-C/v1: beide vollständigen Erstberichte abwarten",
+    "E9-BOUNDARY-001: Autorabschluss und zwei spätere unabhängige Prüfungen"
   ],
   "dependencies": [
     {
@@ -138,7 +139,10 @@
     "reports/loop/reviews/INVENTORY-004-E-repro.md",
     "reports/loop/reviews/INVENTORY-003-C-v2-sources.md",
     "reports/loop/reviews/INVENTORY-003-C-v2-repro.md",
-    "reports/loop/reviews/DESIGN-003-v2-sources.md"
+    "reports/loop/reviews/DESIGN-003-v2-sources.md",
+    "reports/loop/reviews/DESIGN-003-v2-methods.md",
+    "reports/loop/reviews/CLAUDE-P02-v2-metadata.md",
+    "reports/loop/reviews/CLAUDE-P02-v2-boundary.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -153,18 +157,18 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/design003_v2_methods",
-      "role": "independent-correction-recheck",
+      "name": "/root/repro003_c_code",
+      "role": "independent-code-first-review",
       "status": "RUNNING"
     },
     {
-      "name": "/root/claudep02_v2_metadata",
-      "role": "independent-correction-recheck",
+      "name": "/root/repro003_c_repro",
+      "role": "independent-reproduction-first-review",
       "status": "RUNNING"
     },
     {
-      "name": "/root/claudep02_v2_boundary",
-      "role": "independent-correction-recheck",
+      "name": "/root/e9_source_boundary_author",
+      "role": "bounded-public-source-author",
       "status": "RUNNING"
     }
   ],
@@ -271,8 +275,8 @@
       "report": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
       "manifest": "reports/loop/packages/CLAUDE-P02/v2/manifest.json",
       "manifestSha256": "a857ba7b0f587376321a2e82066a152076fc7ee794a377e7ebacb3ea97248056",
-      "documentationReviewStatus": "Zwei frische enge unabhängige Dokumentnachprüfer aktiv, kein neuer Claude-Prozess.",
-      "decision": "reports/loop/CLAUDE-P02-v2-entscheidung.md"
+      "documentationReviewStatus": "Beide vollständigen frischen Nachberichte ausgewertet; CP-M01/CP-T01 begrenzte Dokumentreparatur Runde1 BESTANDEN. Reale Read-Grenzen ungeprüft und zuletztZugang401blockiert; kein neuerAufruf.",
+      "decision": "reports/loop/CLAUDE-P02-v2-nachpruefentscheidung.md"
     },
     {
       "id": "INVENTORY-003-C",
@@ -296,26 +300,33 @@
       "scope": "32 öffentliche E-Identitäten einschließlich Varianten, Kontext, Listen und Codebook; keine endgültige Auswahl/Polung",
       "authorStatus": "COMPLETED",
       "predefinedCriteria": "Vorabplan unter outputs/loop/inventory004-e/ vor Bearbeitung; tatsächlicher vollständiger Auftrag im Autorenbericht",
-      "reviewStatus": "Beide vollständigen Erstberichte gelesen und zusammengeführt: aktuelle Bindungen korrekt, E-R01/E-R02 mittlere Validatorlücken und E-S01/E-R03 niedrige sichtbare Transkriptionsabweichung angenommen. Separate Reparatur mit Nachprüfungen noch offen.",
+      "reviewStatus": "Runde1: zwei komplette bytegleiche Builds,32Sourcevertragsidentitäten,808Belegegleich,siebenalte+zwölfneueechteMutationenabgewiesen.17+130Paketgefroren. Zwei frische unabhängige Nachprüfungen ausstehend.",
       "authorReport": "reports/loop/authors/INVENTORY-004-E.md",
       "authorReportSha256": "ae291d2ef209840b40f021949a79420992b68a533a8ff76af276d3c233c377ac",
-      "annotationSha256": "2c7ef03dca2585bf6476eabf46f8508b3430666d30f07283bc84cd6b1978a224",
-      "manifest": "reports/loop/packages/INVENTORY-004-E/v1/manifest.json",
-      "manifestSha256": "0d124297e3410fd108dfeb1a676cb55a9562f4aa1b5e5adc52f8ddf95de66958",
-      "decision": "reports/loop/INVENTORY-004-E-v1-entscheidung.md"
+      "annotationSha256": "0c031abd7be58e14c91360db4e2a438b0b211e1116dd2f1b84ebab612931f6de",
+      "manifest": "reports/loop/packages/INVENTORY-004-E/v2/manifest.json",
+      "manifestSha256": "e1e184883b5f2ca04f729b2c2383777070601af6eba049c72e040aa1e1f56ca2",
+      "decision": "reports/loop/INVENTORY-004-E-v1-entscheidung.md",
+      "authorCorrectionStatus": "COMPLETED",
+      "correctionReport": "reports/loop/authors/INVENTORY-004-E-korrektur.md"
     },
     {
       "id": "DESIGN-003",
-      "status": "RUNNING",
+      "status": "DONE",
       "author": "/root",
       "scope": "Elf öffentliche Designaussagen, Originalkonflikte und konkret fehlende Zuordnungen; keine endgültige Methode",
       "authorStatus": "COMPLETED",
       "predefinedCriteria": "outputs/loop/design003/plan-before-work.json",
       "manifest": "reports/loop/packages/DESIGN-003/v2/manifest.json",
       "manifestSha256": "fdfd7d4d2f24c80c6a93682477e03a90fcdfa0e90a1863ba1c5881b23dbe695f",
-      "reviewStatus": "Quellennachprüfer abgeschlossen, vollständige Koordinatorlektüre noch offen; zweiter methodischer Nachprüfer aktiv. Noch keine koordinierte Annahme.",
+      "reviewStatus": "Beide vollständigen frischen Nachberichte ausgewertet; gezielte D-S01/D-M01/D-S02/D-M02 Dokumentkorrekturen Runde1 BESTANDEN. Keine reale Design-/Wissenschaftsabnahme.",
       "authorCorrectionStatus": "COMPLETED",
-      "decision": "reports/loop/DESIGN-003-v2-entscheidung.md"
+      "decision": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
+      "currentDraftFiles": [
+        "docs/design-deutschland.v2.entwurf.md",
+        "data/design-quellen.v2.entwurf.json",
+        "docs/analyseplan-methoden.v2.entwurf.md"
+      ]
     },
     {
       "id": "REPRO-003-C",
@@ -325,23 +336,33 @@
       "predefinedCriteria": "outputs/loop/repro003-c-author/plan-before-code.json",
       "authorStatus": "COMPLETED",
       "authorReport": "reports/loop/authors/REPRO-003-C.md",
-      "reviewStatus": "16Dateien/31SourceInputs gefroren; Paketverify tatsächlich bestanden; zwei unabhängige Code-/Reproduktionsprüfer ausstehend.",
+      "reviewStatus": "Zwei frische unabhängige Code-/Reproduktions-Erstprüfer aktiv, keine Änderung oder Zusammenführung vor beiden vollständigen Erstberichten.",
       "manifest": "reports/loop/packages/REPRO-003-C/v1/manifest.json",
       "manifestSha256": "5cb5e10f09f32fa52a6929a33a92f56b384fe4a6af34fa583acb0e8c5feb11d3"
+    },
+    {
+      "id": "E9-BOUNDARY-001",
+      "status": "RUNNING",
+      "author": "/root/e9_source_boundary_author",
+      "scope": "Offizielle E9-Originalreferenz86 und deutsche medizinischeKategorie4-Quellengrenze, keine Auswertungsentscheidung",
+      "predefinedCriteria": "Eigener Vorabplan unter outputs/loop/e9-boundary-author/ vorRecherche; tatsächlicherSpawnauftrag imAutorenbericht",
+      "authorStatus": "RUNNING",
+      "authorReport": "reports/loop/authors/E9-BOUNDARY-001.md",
+      "reviewStatus": "Zwei unabhängige Quellen-/Reproduktionsreviews nachAutorabschluss/Freeze ausstehend. Quellenautor meldet Originalmatch, noch nicht als angenommener Beleg."
     }
   ],
-  "nextConcreteStep": "REPRO-003-C nach technischem Check einfrieren; E-Validator und sichtbare Transkription in separater Runde reparieren. Laufende C/Design-Nachberichte vollständig abwarten; danach CLI-Nachprüfer und öffentliche Reproduktionsreviewer starten.",
+  "nextConcreteStep": "E-v2-Korrekturnachprüfer im nächsten freien Slot starten; portableC-Erstberichte erst nach beiden vollständigen Abschlüssen zusammenführen; E9-Autorenquellen nach Abschluss einfrieren und separat unabhängig prüfen.",
   "checkpoint": {
-    "lastLocalCommit": "1fa2251bb7dc57d36ee9169cba7af6918d75c295",
-    "lastVerifiedRemoteCommit": "1fa2251bb7dc57d36ee9169cba7af6918d75c295",
-    "lastVerifiedPushAtUtc": "2026-10-03T07:42:37.362604+00:00",
+    "lastLocalCommit": "5d3a945768874875c1b5bbca770b56148c3ac636",
+    "lastVerifiedRemoteCommit": "5d3a945768874875c1b5bbca770b56148c3ac636",
+    "lastVerifiedPushAtUtc": "2026-10-03T08:11:15.121212+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-021.json"
+    "record": "reports/loop/push-022.json"
   },
-  "scientificStatus": "296 technische Identitäten/205 Restzeilen unverändert. FOUNDATION-v4 begrenzte Korrekturen durch Nachprüfer und Juror bestätigt, wissenschaftliche Planabnahme BLOCKIERT. A/B: gezielte Fehler in 52 Identitäten nach zwei tatsächlichen Nachprüfungen korrigiert, 61 Quellen-/Versionsreste offen. METHODS-v3: beide technischen Nachberichte vollständig ausgewertet, drei gezielte Korrekturen bestätigt; wissenschaftliche Verfahrens-/ESS-Abnahme bleibt offen. C: 43 öffentliche Annotationen in zwei unabhängigen Erstprüfungen. Keine ESS-Antwortdaten, A/B-Auswertung, Entblindung, endgültige Itemauswahl oder Tags; Claude-Forschungsreviews nicht ausgeführt, aktueller Zugang HTTP401. E: beide vollständigen Erstberichte ausgewertet; korrekte aktuelle Bindungen, Validatorlücken und zwei sichtbare Punktabweichungen angenommen, Reparatur offen. Kein empirischer ESS-Zugriff.",
-  "technicalRecord": "reports/loop/technical-checkpoint022.json",
+  "scientificStatus": "Setup/Phase0 und öffentliche Phase1-Vorbereitung, keine empirische ESS-Untersuchung. Grundlage296/205unverändert. FOUNDATION-v4 begrenzte Korrekturen durch5Fachreviews/Nachprüfer/Juror bestätigt; WissenschaftsplanBLOCKIERT. AB-v2/C-v2 und synthetischeMETHODS-v3 gezielteKorrekturen eng nachgeprüft. DESIGN-v2 undCLI-Metadaten-v2 gezielteDokumentkorrekturen nachzwei vollständigenNachberichten bestätigt. E-v2Runde1:2Builds/7alte+12neueMutationen ausgeführt,2unabhängigeNachprüfungenfehlen. PortableC-Erstprüfungen laufen; E9neuerOriginalbeleg nochunabhängigzuprüfen. KeineESS-Antwort/Designzeilen,A/B,ParteiLR,Entblindung,endgültigeItemauswahloderTags. Claude-Forschungsreviewsnichtausgeführt, zuletztZugangHTTP401.",
+  "technicalRecord": "reports/loop/technical-checkpoint023.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
     "reports/loop/technical-v2/web-check.json",
@@ -365,7 +386,8 @@
     "reports/loop/technical-post-ab-correction.json",
     "reports/loop/technical-checkpoint020.json",
     "reports/loop/technical-checkpoint021.json",
-    "reports/loop/technical-checkpoint022.json"
+    "reports/loop/technical-checkpoint022.json",
+    "reports/loop/technical-checkpoint023.json"
   ],
   "independentPreparations": [
     {
@@ -417,6 +439,14 @@
       "status": "DOCUMENTED_EXECUTION_STOPPED",
       "source": "reports/loop/authors/SOFTWARE-001.md",
       "scope": "Conda trotz register_envs=false neue leere ~/.conda/environments.txt erzeugt; weitere Conda-Aufrufe gestoppt, keine Löschung außerhalb Projekts; direkte Rscript--vanilla-Ausführung nur mit OS-Schreibbeschränkung vorbereitet."
+    },
+    {
+      "atUtc": "2026-10-03T08:35:25.541817+00:00",
+      "id": "E9-SEARCH-SNIPPET-001",
+      "source": "Agentmeldung /root/e9_source_boundary_author",
+      "event": "Breite öffentliche Dokumentensuche lieferte ungewollt Portal-/Erratum-Suchauszug mit öffentlichen Personenkennungen. Treffer nicht geöffnet; keine Antwortdaten untersucht oder Kennungen inArtefakteübernommen. Root begrenzt Suche auf konkreteOriginaldokumentlinks.",
+      "status": "Gemeldete Zugriffsgrenze, keine unbewiesene vollständige Root-Nachprüfung",
+      "identifiersStoredHere": false
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md"

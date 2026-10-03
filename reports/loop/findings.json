@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T08:09:52.427814+00:00",
+  "updatedAtUtc": "2026-10-03T08:35:25.541817+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2274,17 +2274,23 @@
       "severity": "niedrig",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "Historische Schutzmetadaten nennen ungeprüfte Read-Grenzen tested und in002b nicht vorhandenes safe-mode.",
       "evidence": "Originalexecution.json:8, argv und beide unabhängigen Read0/401-Extraktionen",
-      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "correctionState": "Runde1 durch zwei tatsächliche getrennte enge Original-/Metadaten-/Diffnachprüfungen bestätigt.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+        "status": "BESTANDEN",
+        "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
       "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
-      "decisionRecord": "reports/loop/CLAUDE-P02-v2-entscheidung.md",
-      "history": []
+      "decisionRecord": "reports/loop/CLAUDE-P02-v2-nachpruefentscheidung.md",
+      "history": [
+        {
+          "atUtc": "2026-10-03T08:35:25.541817+00:00",
+          "status": "NICHT_BESTANDEN",
+          "event": "Beide vollständigen frischen Nachberichte nach Runde1 gesammelt und gelesen."
+        }
+      ]
     },
     {
       "id": "CP-T01",
@@ -2292,17 +2298,23 @@
       "severity": "niedrig",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "Derselbe Read-Schutztextbefund.",
       "evidence": "Zweiter unabhängiger Erstbericht",
-      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "correctionState": "Runde1 durch zwei tatsächliche getrennte enge Original-/Metadaten-/Diffnachprüfungen bestätigt.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+        "status": "BESTANDEN",
+        "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
       "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
-      "decisionRecord": "reports/loop/CLAUDE-P02-v2-entscheidung.md",
-      "history": []
+      "decisionRecord": "reports/loop/CLAUDE-P02-v2-nachpruefentscheidung.md",
+      "history": [
+        {
+          "atUtc": "2026-10-03T08:35:25.541817+00:00",
+          "status": "NICHT_BESTANDEN",
+          "event": "Beide vollständigen frischen Nachberichte nach Runde1 gesammelt und gelesen."
+        }
+      ]
     },
     {
       "id": "D-S01",
@@ -2310,17 +2322,23 @@
       "severity": "mittel",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "Falscher Sachsen-Fehlbefund trotz explizitem Sachsen in gebundener Originalaufnahme.",
       "evidence": "germany-modal.json Geographical unit; eigene erneute sichtbare Aufnahme; Codebook484",
-      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "correctionState": "Runde1 durch zwei tatsächliche getrennte enge Original-/Metadaten-/Diffnachprüfungen bestätigt.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+        "status": "BESTANDEN",
+        "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
       "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
-      "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
-      "history": []
+      "decisionRecord": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
+      "history": [
+        {
+          "atUtc": "2026-10-03T08:35:25.541817+00:00",
+          "status": "NICHT_BESTANDEN",
+          "event": "Beide vollständigen frischen Nachberichte nach Runde1 gesammelt und gelesen."
+        }
+      ]
     },
     {
       "id": "D-M01",
@@ -2328,17 +2346,23 @@
       "severity": "mittel",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "Derselbe falsche Sachsen-Fehlbefund.",
       "evidence": "Methoden-Erstbericht und Originalquelle",
-      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "correctionState": "Runde1 durch zwei tatsächliche getrennte enge Original-/Metadaten-/Diffnachprüfungen bestätigt.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+        "status": "BESTANDEN",
+        "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
       "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
-      "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
-      "history": []
+      "decisionRecord": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
+      "history": [
+        {
+          "atUtc": "2026-10-03T08:35:25.541817+00:00",
+          "status": "NICHT_BESTANDEN",
+          "event": "Beide vollständigen frischen Nachberichte nach Runde1 gesammelt und gelesen."
+        }
+      ]
     },
     {
       "id": "D-S02",
@@ -2346,17 +2370,23 @@
       "severity": "mittel",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "P07 bezeichnet eigene nest-Option und methodische Einordnung als ESS-Codeempfehlung.",
       "evidence": "Weights1.2 Box5 PDF10; MethodenentwurfP07",
-      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "correctionState": "Runde1 durch zwei tatsächliche getrennte enge Original-/Metadaten-/Diffnachprüfungen bestätigt.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+        "status": "BESTANDEN",
+        "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
       "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
-      "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
-      "history": []
+      "decisionRecord": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
+      "history": [
+        {
+          "atUtc": "2026-10-03T08:35:25.541817+00:00",
+          "status": "NICHT_BESTANDEN",
+          "event": "Beide vollständigen frischen Nachberichte nach Runde1 gesammelt und gelesen."
+        }
+      ]
     },
     {
       "id": "D-M02",
@@ -2364,27 +2394,33 @@
       "severity": "niedrig",
       "decision": "angenommen",
       "repairRounds": 1,
-      "status": "NICHT_BESTANDEN",
+      "status": "BESTANDEN",
       "problem": "Derselbe Zuschreibungsbefund, ursprüngliche methodische Schwerebewertung niedrig erhalten.",
       "evidence": "Methoden-Erstbericht und WeightsBox5",
-      "correctionState": "Separate neue Autorenfassung gefroren; noch kein vollständiger unabhängiger Nachprüfstatus.",
+      "correctionState": "Runde1 durch zwei tatsächliche getrennte enge Original-/Metadaten-/Diffnachprüfungen bestätigt.",
       "verification": {
-        "status": "NICHT_GEPRÜFT",
-        "scope": "Nur benannte Dokumentkorrektur; zwei getrennte Nachprüfungen ausstehend"
+        "status": "BESTANDEN",
+        "scope": "Nur benannte Dokument-/Metadatenkorrektur, keine Design-/Read-/wissenschaftliche Abnahme."
       },
       "blocks": ["Darauf aufbauende konkrete Zuschreibung oder Tatsachenaussage"],
-      "decisionRecord": "reports/loop/DESIGN-003-v2-entscheidung.md",
-      "history": []
+      "decisionRecord": "reports/loop/DESIGN-003-v2-nachpruefentscheidung.md",
+      "history": [
+        {
+          "atUtc": "2026-10-03T08:35:25.541817+00:00",
+          "status": "NICHT_BESTANDEN",
+          "event": "Beide vollständigen frischen Nachberichte nach Runde1 gesammelt und gelesen."
+        }
+      ]
     },
     {
       "id": "E-R01",
       "severity": "mittel",
       "decision": "angenommen",
-      "repairRounds": 0,
+      "repairRounds": 1,
       "status": "NICHT_BESTANDEN",
       "problem": "Kohärent vertauschte Fragebogenlabels samt Belegen sowie sichtbare Listenpole passieren Autorenvalidator.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Noch keine Reparatur; beide Erstbewertungen unverändert erhalten.",
+      "correctionState": "Separate neue Fassung und Autoren-Zusatzcode gefroren, alle808Originalbelege unverändert; eigene7+12Mutationen und2Builds ausgeführt. Unabhängige Nachprüfung noch offen.",
       "verification": {
         "status": "NICHT_GEPRÜFT",
         "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
@@ -2397,11 +2433,11 @@
       "id": "E-R02",
       "severity": "mittel",
       "decision": "angenommen",
-      "repairRounds": 0,
+      "repairRounds": 1,
       "status": "NICHT_BESTANDEN",
       "problem": "Erforderliche Filter können entfernt und Filterwortlaut/Zuweisung kohärent falsch verändert werden, ohne Validatorfehler.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Noch keine Reparatur; beide Erstbewertungen unverändert erhalten.",
+      "correctionState": "Separate neue Fassung und Autoren-Zusatzcode gefroren, alle808Originalbelege unverändert; eigene7+12Mutationen und2Builds ausgeführt. Unabhängige Nachprüfung noch offen.",
       "verification": {
         "status": "NICHT_GEPRÜFT",
         "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
@@ -2414,11 +2450,11 @@
       "id": "E-S01",
       "severity": "niedrig",
       "decision": "angenommen",
-      "repairRounds": 0,
+      "repairRounds": 1,
       "status": "NICHT_BESTANDEN",
       "problem": "E12/E13 sichtbare Liste58 enthält nicht sichtbaren Schlusszeichenpunkt aus originaler Textlage.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Noch keine Reparatur; beide Erstbewertungen unverändert erhalten.",
+      "correctionState": "Separate neue Fassung und Autoren-Zusatzcode gefroren, alle808Originalbelege unverändert; eigene7+12Mutationen und2Builds ausgeführt. Unabhängige Nachprüfung noch offen.",
       "verification": {
         "status": "NICHT_GEPRÜFT",
         "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."
@@ -2431,11 +2467,11 @@
       "id": "E-R03",
       "severity": "niedrig",
       "decision": "angenommen",
-      "repairRounds": 0,
+      "repairRounds": 1,
       "status": "NICHT_BESTANDEN",
       "problem": "Derselbe sichtbare Schlusszeichenunterschied unabhängig bestätigt.",
       "evidence": "reports/loop/reviews/INVENTORY-004-E-sources.md; reports/loop/reviews/INVENTORY-004-E-repro.md, genaue Originalfundstellen und echte Gegenfälle",
-      "correctionState": "Noch keine Reparatur; beide Erstbewertungen unverändert erhalten.",
+      "correctionState": "Separate neue Fassung und Autoren-Zusatzcode gefroren, alle808Originalbelege unverändert; eigene7+12Mutationen und2Builds ausgeführt. Unabhängige Nachprüfung noch offen.",
       "verification": {
         "status": "NICHT_GEPRÜFT",
         "scope": "Separate Korrektur mit erneuten eigenen und zwei unabhängigen Prüfungen erforderlich."

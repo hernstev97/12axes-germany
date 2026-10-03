@@ -1,0 +1,10 @@
+{
+  "command": ["pnpm", "check"],
+  "startedAtUtc": "2026-10-03T08:35:26.271773+00:00",
+  "endedAtUtc": "2026-10-03T08:35:41.271241+00:00",
+  "exitCode": 0,
+  "logPath": "outputs/loop/checkpoint023/pnpm-check.log",
+  "logSha256": "af120c31050ba183e6f051ebd5cfbc9a02ddda9956b2b34382b446f7daaad3eb",
+  "status": "BESTANDEN",
+  "scope": "Technical checkpoint including scoped E-source semantic contract; no scientific/website/Claudeaccess acceptance"
+}
