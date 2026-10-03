@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T16:10:05.664907+00:00",
+  "updatedAtUtc": "2026-10-03T16:30:44.228375+00:00",
   "status": "RUNNING",
-  "phase": "Breite v2: historische Einzel- und Gruppenreferenzen begrenzt übernommen; Anzeige, Humanbindung und Kontrolldossier in Vorbereitung",
+  "phase": "Breite v2/v2.1: Bericht und Gruppenanzeige begrenzt geprüft; kleine responsive Korrektur und finale Humanbindung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -52,7 +52,8 @@
     "METHODOLOGY-PAGE-001 normal bounded first no blocking finding, source-link suggestions open",
     "Methodology doc page technical package: check043 exit0,5widths final nooverflow/axe0/localfont/1H1; actual anchor focus bounded,200percent/visiblefocus pending",
     "EMPIRICAL-V2-001 revision2 both targeted roles ACCEPTED_BOUNDED; EV2-SRC-F01 closed correction1; new data still unopened",
-    "analyseplan-v2 remote verified6702f187, alloldtagsunchanged;5actualprivatehistoricalruns exit0; PUI-R1–3 closed target1/browserbounded"
+    "analyseplan-v2 remote verified6702f187, alloldtagsunchanged;5actualprivatehistoricalruns exit0; PUI-R1–3 closed target1/browserbounded",
+    "GROUP-PRESENTATION-V21-001 original normal86pin first accepted bounded; actual26 native selections63available/111null,5widthaxe0; final responsive correction pending"
   ],
   "openTasks": [
     "Verified v2 freeze/tag/gate and actual5 separate historical runs",
@@ -65,8 +66,13 @@
     {
       "id": "ACCESS-CLAUDE",
       "status": "VERSCHOBEN_NICHT_GEPRÜFT",
-      "evidence": ["LIFE-93 Setup/Phase1/Phase7", "docs/auftrag-life-93-2026-10-03.md"],
-      "blocks": ["abschließende von Steven veranlasste Gesamtkontrolle"],
+      "evidence": [
+        "LIFE-93 Setup/Phase1/Phase7",
+        "docs/auftrag-life-93-2026-10-03.md"
+      ],
+      "blocks": [
+        "abschließende von Steven veranlasste Gesamtkontrolle"
+      ],
       "actionNeeded": "Keine eigenen Claude-Versuche. Steven führt Schlusskontrolle am vorbereiteten Stand aus.",
       "authenticated": null,
       "proof": "reports/loop/CLAUDE-P02-zugriffsbericht.md",
@@ -77,31 +83,41 @@
     {
       "id": "SETUP-ACCEPTANCE",
       "status": "NICHT_GEPRÜFT",
-      "blocks": ["formale Setup-Abnahme"],
+      "blocks": [
+        "formale Setup-Abnahme"
+      ],
       "actionNeeded": "Tatsächliche Branch-/Pflichtcheck-Regeln und erfolgreicher Verstoß-/sauberer Test-PR fehlen."
     },
     {
       "id": "PUBLIC-TAGS",
       "status": "BESTANDEN",
-      "blocks": ["empirischer Analysebeginn"],
+      "blocks": [
+        "empirischer Analysebeginn"
+      ],
       "actionNeeded": "Historische analyseplan-v1/erwartungsmodell-v1 vorA und modell-v1 vorB verifiziert; keine Erweiterungs-v2-Tags oder Datenfreigabe."
     },
     {
       "id": "HUMAN-RELEASE",
       "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
-      "blocks": ["öffentliche Freigabe"],
+      "blocks": [
+        "öffentliche Freigabe"
+      ],
       "actionNeeded": "Steven prüft konkrete Release-Fassung."
     },
     {
       "id": "HUMAN-COMPREHENSION",
       "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
-      "blocks": ["DONE"],
+      "blocks": [
+        "DONE"
+      ],
       "actionNeeded": "Fünf reale anonymisierte Antworten nach Deployment; keine Simulation."
     },
     {
       "id": "CLAUDE-REVIEWS",
       "status": "VERSCHOBEN_NICHT_GEPRÜFT",
-      "blocks": ["abschließende von Steven veranlasste Gesamtkontrolle"],
+      "blocks": [
+        "abschließende von Steven veranlasste Gesamtkontrolle"
+      ],
       "actionNeeded": "Keine eigenen Claude-Versuche. Steven führt Schlusskontrolle am vorbereiteten Stand aus."
     }
   ],
@@ -110,8 +126,8 @@
     "currentLocalTechnical": {
       "command": "pnpm check",
       "exitCode": 0,
-      "log": "outputs/loop/check-055.log",
-      "scope": "71 tests,typecheck,production build; science/humans separate"
+      "log": "outputs/loop/check-056.log",
+      "scope": "78 Angular tests,typecheck,handbook/schema/formatter,production build; sciences/humans separate"
     },
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Fünf historische v2-Einzelstudienläufe und 42 begrenzt geprüfte Einzelreferenzen; keine gemeinsame Produktvalidität, aktuelle Norm oder neue Administrationvalidierung.",
@@ -142,7 +158,7 @@
     "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
     "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding",
     "currentWebsiteCopy": "BESTANDEN_BEGRÄNZT: WB-001/002/003 targeted correction1 accepted; no broad research/release acceptance",
-    "currentWebsiteBrowser": "Public status v3,three pages/fivewidths nooverflow/axe0; actualfocus/200percent notverified",
+    "currentWebsiteBrowser": "Group63/111 exact in26selections;5widths sources open/closed axe0/nooverflow; native remount retained; GBP-ROOT-01 mobile select wrap correction pending; focus/200percent unverified",
     "actualAExport": "BESTANDEN begrenzte Schema-/Provenienz-/Lizenzkontrolle; keine Ergebnisvalidierung",
     "currentConfirmatoryTransition": "BESTANDEN_BEGRÄNZT vorB; actual B executed pending result review",
     "currentProductBreadth": "NICHT_BESTANDEN: historical narrow module does not satisfy broad product objective",
@@ -317,7 +333,8 @@
     "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1.md",
     "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1-decision.json",
     "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md",
-    "reports/loop/reviews/FINAL-DOSSIER-HUMAN-V21-001-first.md"
+    "reports/loop/reviews/FINAL-DOSSIER-HUMAN-V21-001-first.md",
+    "reports/loop/reviews/GROUP-PRESENTATION-V21-001-first.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -334,18 +351,7 @@
     "PRODUCT-BREADTH-001"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
-  "activeAgents": [
-    {
-      "id": "/root/angular_policy_draft",
-      "status": "RUNNING",
-      "scope": "Optional group UI/authentication author"
-    },
-    {
-      "id": "/root/breadth_data_instruments",
-      "status": "RUNNING",
-      "scope": "Public group report author"
-    }
-  ],
+  "activeAgents": [],
   "workPackages": [
     {
       "id": "LOOP-000",
@@ -600,24 +606,24 @@
       "decision": "reports/loop/PUBLIC-RESEARCH-STATUS-V2-001-entscheidung.md"
     }
   ],
-  "nextConcreteStep": "Prepare authenticated optional historical group display/report from actual public63 pairs; update public group status in same display package. Complete reproducibility/control dossier and targeted single-report attribution review. No Raw reruns or new selection.",
+  "nextConcreteStep": "Original86pin group presentation accepted bounded; preserve by checkpoint, correct GBP-ROOT-01 native select wrap only, same reviewer targeted check, actual affected browser, bind final Human script and finish control dossier. No new raw run/model/selection.",
   "checkpoint": {
-    "lastLocalCommit": "320e632e77c772f6474b6d9d7fe86e2ee01ba0c7",
-    "lastVerifiedRemoteCommit": "320e632e77c772f6474b6d9d7fe86e2ee01ba0c7",
-    "lastVerifiedPushAtUtc": "2026-10-03T16:05:15.610797+00:00",
+    "lastLocalCommit": "ccb431ddde7c139d7e7e6db1b968b25e3ab9818b",
+    "lastVerifiedRemoteCommit": "ccb431ddde7c139d7e7e6db1b968b25e3ab9818b",
+    "lastVerifiedPushAtUtc": "2026-10-03T16:10:08.182404+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-049.json",
+    "record": "reports/loop/push-050.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Dossier and humanaddendum ordinary accepted, pure formatting transfer saved; UI/group report authors active; final UI binding/review/technical checks pending"
+    "pendingPayload": "WIP group UI/report ordinary accepted, responsive select correction and final human UI/control binding pending"
   },
-  "scientificStatus": "Five private historical categorical candidates executed14:25:06–14:25:18UTC after verified new plan tag; no public numeric export. Two fresh same-family result roles running. No party semantic access.",
+  "scientificStatus": "43 original questions/8 content rubrics,42 reviewed historical single references,cttresa null; separate63 reviewed historical group pairs in ESS5/8/9,ESS10SC/11groups excluded. Two same-family role firsts and targeted fixes accepted bounded; actual Root byte/pair verification. No latent/common score,currentnorm,SE/CI,currentparty or new administration validation. Known-data CLI reproduction all8 exact, no independent download/alternative code.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -725,7 +731,9 @@
       "scope": "CommonMark+table AST exact equality; other39pins unchanged, targeted formatting passed",
       "evidence": "outputs/loop/repro-doc-format-transfer.json"
     },
-    "reports/loop/public-group-status-browser-technical.json"
+    "reports/loop/public-group-status-browser-technical.json",
+    "reports/loop/cli-reproduction-verification.json",
+    "reports/loop/group-presentation-browser-v1.json"
   ],
   "independentPreparations": [
     {
@@ -742,7 +750,9 @@
     },
     {
       "id": "PREP-REVIEW-SKILL",
-      "artifacts": [".claude/skills/life93-review/SKILL.md"],
+      "artifacts": [
+        ".claude/skills/life93-review/SKILL.md"
+      ],
       "status": "NICHT_GEPRÜFT",
       "criteria": "LIFE-93 Setup/Phase7: limited manifest-bound source/method/neutrality review; machine-readable findings; first ratings separated from PR-review; raw/B held back; no active GitHub setup or false model-family claim. Skill format and independent behavioural review required."
     },
@@ -768,13 +778,18 @@
       "id": "ESS-INVENTORY-final",
       "status": "author complete; transition review pending",
       "report": "reports/loop/authors/ESS-INVENTORY-final-proposal.md",
-      "files": ["data/inventar.csv", "data/item-core-v1.json"]
+      "files": [
+        "data/inventar.csv",
+        "data/item-core-v1.json"
+      ]
     },
     {
       "id": "ESS-GROUP-CONTRACT",
       "status": "source author complete; methods implementation/review pending",
       "report": "reports/loop/authors/ESS-GROUP-CONTRACT-proposal.md",
-      "files": ["data/group-source-contract.v1.entwurf.json"]
+      "files": [
+        "data/group-source-contract.v1.entwurf.json"
+      ]
     }
   ],
   "incidents": [
@@ -804,10 +819,14 @@
       "status": "DOCUMENTED_CORRECTED",
       "source": "reports/loop/reviews/POLICY-REFERENCE-V2-round1.md",
       "scope": "Root delegierte Runde1 versehentlich vor erfolgreicher Manifestbereitstellung. Erster Zugriff FileNotFoundError exit1; danach identischer Pfad mit echtem Hash geprüft. Kein Test-/Forschungsbefund, kein Datenzugriff."
+    },
+    {
+      "utc": "2026-10-03T16:26:49.556539+00:00",
+      "scope": "Read-only new manifest construction initially omitted pages/ segment in four paths; assert stopped before any writes. Correct actual pages paths,86-pin manifest created/authenticated. Public builder check0 followed rg no-match1 is an expected absence, not failed builder."
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md",
-  "executionStatus": "RUNNING_FIVE_PRIVATE_CANDIDATES_RESULT_REVIEWS",
+  "executionStatus": "RUNNING_FINAL_RESPONSIVE_CORRECTION_AND_DOSSIER_BINDING",
   "interruption": {
     "requestedAtUtc": "2026-10-03T09:02:07+00:00",
     "reason": "Steven ausdrücklich: aktuellen Arbeitsloop geordnet unterbrechen, keine neuen Pakete/Reviews; Projekt bleibt offen.",
@@ -885,7 +904,10 @@
     "fixedModel": "data/modell-v1.json",
     "fixedModelSha256": "466d7183c4be24e6c77227a0069c3be88bede2fef99ca76286ad440b545a6e28",
     "selectedModel": "M2",
-    "selectedScores": ["H", "ZF"],
+    "selectedScores": [
+      "H",
+      "ZF"
+    ],
     "BOpened": true,
     "comparisonFieldsOpened": false,
     "modelTag": "reports/loop/model-tag-v1.json",
@@ -896,7 +918,10 @@
     "exitCode": 0,
     "probeExitCode": 0,
     "selectedModel": "M2",
-    "retainedScores": ["H", "ZF"],
+    "retainedScores": [
+      "H",
+      "ZF"
+    ],
     "criteria": "CRITERIA_PASSED_PENDING_RESULT_REVIEW",
     "publicExport": "noch nicht erfolgt: separate technische Exportprüfung",
     "comparisonFieldsOpened": false,
@@ -975,12 +1000,12 @@
   },
   "empiricalPlanV2": {
     "path": "docs/empirie-plan-v2.entwurf.md",
-    "status": "FROZEN_EXECUTED_PRIVATE_PENDING_RESULT_REVIEW",
+    "status": "FROZEN_EXECUTED_REVIEWED42_PUBLIC_SINGLE_REFERENCES",
     "count": 43,
     "measurement": "separate original categorical responses, no global score or factor",
     "topics": 8,
-    "accessStatus": "selected43 DE categorical responses processed in5studies; no party semantic interpretation",
-    "remaining": "Two fresh result judgments and authentic per-study allowed-question decisions before numeric export.",
+    "accessStatus": "43 DE categorical questions processed across5studies; later allowed3-study party semantics separately planned/disclosed; exact8 CLI reproduction is known-data reaccess.",
+    "remaining": "New website administration/equivalence and overall product validity remain unvalidated; Claude/human/release external.",
     "localInputFilesAvailable": true,
     "contract": "data/analysevertrag.v2.entwurf.json",
     "contractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
@@ -1062,8 +1087,15 @@
     "sourceFirst": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
     "gate": "reports/loop/gates/pre-group-v21.json",
     "newPlanTag": "analyseplan-v2.1",
-    "allowedStudyIds": ["ESS5e03_6", "ESS8e02_3", "ESS9e03_3"],
-    "excludedStudyIds": ["ESS10SCe03_2", "ESS11e04_2"],
+    "allowedStudyIds": [
+      "ESS5e03_6",
+      "ESS8e02_3",
+      "ESS9e03_3"
+    ],
+    "excludedStudyIds": [
+      "ESS10SCe03_2",
+      "ESS11e04_2"
+    ],
     "sourcesFirst": "reports/loop/reviews/GROUP-V21-001-sources-first.md",
     "sourcesFirstSha256": "f9bec9e943a133b95bbd48a721d7d68cce037c80a457f76fc68b4c21a89da233",
     "rootDecision": "reports/loop/GROUP-V21-001-entscheidung.md",
@@ -1160,11 +1192,14 @@
     "decision": "reports/loop/PUBLIC-RESEARCH-STATUS-V2-001-entscheidung.md",
     "manifest": "reports/loop/packages/PUBLIC-RESEARCH-STATUS-V2-001/v3/manifest.json",
     "browser": "reports/loop/public-status-v2-browser-technical.json",
-    "pending": "New group publication status update in group display package"
+    "pending": "Current group status files included in accepted bounded GROUP-PRESENTATION-V21-001/v1; human/design/release pending."
   },
   "finalPreparationV2": {
     "dossierStatus": "ACCEPTED_BOUNDED_DOCS_AND_HUMAN_ADDENDUM",
-    "docs": ["docs/reproduktion-life93-v2.md", "docs/claude-schlusskontrolle-v2.md"],
+    "docs": [
+      "docs/reproduktion-life93-v2.md",
+      "docs/claude-schlusskontrolle-v2.md"
+    ],
     "humanAddendum": "docs/verstaendnistest-v2.1.entwurf.md",
     "humanExampleIds": "reports/loop/packages/COMPREHENSION-V21-001/v1/show-script-ids.json",
     "humanUIBinding": "PENDING_FINAL_GROUP_COMPONENT",
@@ -1174,5 +1209,26 @@
     "ordinaryReviewSha256": "9d4d3c162ace76b7245b02c1e15b264bd6763f0552bbc25a2627f8019dbd401e",
     "formatTransferManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v2/manifest.json",
     "rootDecision": "reports/loop/FINAL-DOSSIER-HUMAN-V21-001-entscheidung.md"
+  },
+  "cliReproduction": {
+    "status": "PASS_EXACT8_CANONICAL_CANDIDATES",
+    "record": "reports/loop/cli-reproduction-verification.json",
+    "isolatedWorktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-cli-reproduction-20261003",
+    "codeCommit": "ccb431ddde7c139d7e7e6db1b968b25e3ab9818b",
+    "newProcessIntervals": "single16:15:10–16:15:22/groups16:15:22–16:15:28UTC,both0",
+    "noOverwriteOriginal": true,
+    "noIndependentDownloadOrAlternativeCode": true,
+    "privateReplicaRetained": true
+  },
+  "groupPresentationV21": {
+    "status": "ACCEPTED_BOUNDED_FIRST_ROOT_RESPONSIVE_CORRECTION_PENDING",
+    "manifest": "reports/loop/packages/GROUP-PRESENTATION-V21-001/v1/manifest.json",
+    "manifestSha256": "d95b3522fe1e16a82d093f74d79f85a4e89e93de484f188970e611d2d1ecc914",
+    "review": "reports/loop/reviews/GROUP-PRESENTATION-V21-001-first.md",
+    "reviewSha256": "36691737a4038f908c08e7ec8b914eb9a94ff363ab446c733f6fd50b38924866",
+    "rootDecision": "reports/loop/GROUP-PRESENTATION-V21-001-entscheidung.md",
+    "report": "reports/phasen/03-politikprofil-v21-historische-gruppen.md",
+    "browserInitial": "reports/loop/group-presentation-browser-v1.json",
+    "openResponsiveFinding": "GBP-ROOT-01"
   }
 }

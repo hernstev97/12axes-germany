@@ -1,0 +1,11 @@
+# GROUP-PRESENTATION-V21-001: Rootentscheidung
+
+Stand 2026-10-03T16:30:44.228375+00:00. Die unabhängige normale Erstprüfung wird im Darstellungsumfang begrenzt angenommen. Root hat den vollständigen Originalbericht gelesen und anschließend alle 86 öffentlichen Pins tatsächlich nachgeprüft. Manifest v1: `d95b3522fe1e16a82d093f74d79f85a4e89e93de484f188970e611d2d1ecc914`; Erstbericht: `36691737a4038f908c08e7ec8b914eb9a94ff363ab446c733f6fd50b38924866`. Originale bleiben unverändert erhalten.
+
+Die historische Ergebnisprüfung und die tatsächliche Exportentscheidung bleiben vorgelagerte, gesonderte Schritte. Dieser Prüfer hat deren Berichtsprosa nicht gelesen. 63 öffentliche Paare, 111 Nullreferenzen, alle 26 Gruppen, die 42 Einzelreferenzen und ihre Grenzen wurden korrekt übertragen. Kein neues Ergebnis-, Neutralitäts-, Menschen-, Design- oder Releaseurteil. Gemeinsame Codex-Familie und mögliche gemeinsame Fehler bleiben.
+
+Root prüfte tatsächlich alle 26 Gruppenauswahlen im Browser: 63 kopierte Referenzen und 111 Nulls stimmen mit öffentlichen Bytes überein, andere Studien bleiben ohne Gruppenwerte und die Einzelreferenzen unverändert. Native Bearbeitung und Ergebnisrückkehr erhalten die gewählte Studie und Gruppe. Fünf Breiten, Quellenansicht offen/geschlossen: axe ohne Befunde, kein horizontaler Überlauf, eine H1. [Browserbeleg](group-presentation-browser-v1.json). Vollständiger Check056: Exit0, 78 Angular-Tests, Typecheck, Handbuch-/Schema-/Formatterprüfung und Produktionsbuild. Generator- und öffentlicher Berichtbytevergleich ebenfalls bestanden.
+
+Rootbefund GBP-ROOT-01 bleibt zunächst offen: Im nativen Studienfeld bei 320px wird die lange ausgewählte Beschriftung umgebrochen und die zweite Zeile vertikal angeschnitten. Die vollständige native Option und der separate Wahl-/Befragungszeittext sind vorhanden. Betroffen ist diese responsive Darstellung, nicht ein Ergebniswert. Die Originalprüffassung wird vor einer minimalen CSS-Korrektur gesichert; danach genau diesen Diff gezielt prüfen.
+
+Echte sichtbare Tastaturfokusdarstellung und200%-Browserzoom konnten über die vorhandenen T3-Steuerungen nicht bestätigt werden. Menschenprüfung, Claude-Schlusskontrolle, Design-/Rechte-/Releasefreigaben stehen aus.

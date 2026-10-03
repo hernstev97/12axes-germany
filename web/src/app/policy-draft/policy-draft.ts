@@ -12,6 +12,8 @@ import {
 } from '@angular/core';
 import { PolicyProfileSession, type PolicyAnswer } from '../research/policy-profile';
 import { type HistoricalReferenceInput, referenceState } from './historical-reference';
+import type { HistoricalGroupInput } from './group-reference-types';
+import { groupComparison, groupFieldworkLabel, groupReferenceState } from './group-reference';
 import {
   categoryLabel,
   POLICY_DRAFT_ITEMS,
@@ -40,6 +42,7 @@ type SkipReason = 'unspecified' | 'dont-know' | 'decline';
 })
 export class PolicyDraft {
   readonly historicalReferences = input<HistoricalReferenceInput | null>(null);
+  readonly historicalGroups = input<HistoricalGroupInput | null>(null);
   private readonly injector = inject(Injector);
   private readonly pageHeading = viewChild<ElementRef<HTMLElement>>('pageHeading');
   private readonly questionHeading = viewChild<ElementRef<HTMLElement>>('questionHeading');
@@ -56,6 +59,16 @@ export class PolicyDraft {
     decline: 'Keine Antwort geben',
   });
   protected readonly references = computed(() => referenceState(this.historicalReferences()));
+  protected readonly groups = computed(() => groupReferenceState(this.historicalGroups()));
+  protected readonly selectedGroupStudyId = signal('');
+  protected readonly selectedGroupId = signal('');
+  protected readonly selectedGroupStudy = computed(() =>
+    this.groups().studies.find((study) => study.id === this.selectedGroupStudyId()),
+  );
+  protected readonly selectedGroup = computed(() =>
+    this.selectedGroupStudy()?.groups.find((group) => group.id === this.selectedGroupId()),
+  );
+  protected readonly groupFieldworkLabel = groupFieldworkLabel;
   protected readonly answers = computed(
     () =>
       new Map(this.snapshot().responses.map((response) => [response.question.id, response.answer])),
@@ -168,6 +181,31 @@ export class PolicyDraft {
 
   protected referenceLabel(item: PolicyDraftItem, code: string): string {
     return categoryLabel(item, item.categories.find((category) => category.code === code)!);
+  }
+
+  protected setGroupStudy(event: Event): void {
+    const id = (event.target as HTMLSelectElement).value;
+    this.selectedGroupStudyId.set(this.groups().studies.some((study) => study.id === id) ? id : '');
+    this.selectedGroupId.set('');
+  }
+
+  protected setGroup(event: Event): void {
+    const id = (event.target as HTMLSelectElement).value;
+    this.selectedGroupId.set(
+      this.selectedGroupStudy()?.groups.some((group) => group.id === id) ? id : '',
+    );
+  }
+
+  protected groupComparisonFor(id: string) {
+    return groupComparison(this.groups(), this.selectedGroupStudyId(), this.selectedGroupId(), id);
+  }
+
+  protected groupDocumentLabel(id: string): string {
+    if (id.endsWith('-de-questionnaire')) return 'Deutscher Originalfragebogen';
+    if (id.endsWith('-political-parties-appendix')) return 'Offizielle Parteienappendix';
+    if (id === 'party-and-vote-original-codelists')
+      return 'Öffentliche API-Metadaten und Originalcodelisten';
+    return 'ESS-Nutzungsbedingungen';
   }
 
   protected percentage(share: number): string {

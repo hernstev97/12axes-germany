@@ -199,6 +199,160 @@
               werden keine Vergleichswerte angezeigt.
             </p>
           }
+          @if (groups().status === 'rejected') {
+            <p role="status" class="group-rejected">
+              Die übergebene Gruppenreferenz ist nicht der gebundene öffentliche Adapter. Es werden
+              keine Gruppenvergleiche angezeigt.
+            </p>
+          }
+          @if (groups().status === 'bound') {
+            <fieldset class="group-controls" aria-describedby="draft-group-limit">
+              <legend>Optionaler historischer Gruppenvergleich</legend>
+              <label for="draft-group-study">Historische Studie für den Vergleich</label>
+              <select
+                id="draft-group-study"
+                [value]="selectedGroupStudyId()"
+                (change)="setGroupStudy($event)"
+              >
+                <option value="" [selected]="selectedGroupStudyId() === ''">
+                  Keine Studie gewählt
+                </option>
+                @for (study of groups().studies; track study.id) {
+                  <option [value]="study.id" [selected]="selectedGroupStudyId() === study.id">
+                    {{ study.id }} · erinnerte Zweitstimme {{ study.election.year }}
+                  </option>
+                }
+              </select>
+              <label for="draft-vote-group">Vergleichsgruppe nach erinnerter Zweitstimme</label>
+              <select
+                id="draft-vote-group"
+                [value]="selectedGroupId()"
+                [disabled]="!selectedGroupStudy()"
+                (change)="setGroup($event)"
+              >
+                <option value="" [selected]="selectedGroupId() === ''">
+                  Keine Vergleichsgruppe gewählt
+                </option>
+                @for (group of selectedGroupStudy()?.groups ?? []; track group.id) {
+                  <option [value]="group.id" [selected]="selectedGroupId() === group.id">
+                    {{ group.label }}
+                  </option>
+                }
+              </select>
+            </fieldset>
+            <p id="draft-group-limit">
+              Die Auswahl bestimmt eine historische Vergleichsgruppe. Sie ist keine Angabe zur
+              eigenen Stimmabgabe und keine persönliche Parteizuordnung. Angezeigt werden getrennte
+              Antworten derselben Studie, keine Rangfolge, Nähe oder Punkte.
+            </p>
+            @if (selectedGroupStudy(); as study) {
+              <p class="meta group-time">
+                Erinnerte Bundestagswahl: {{ study.election.monthDe }} {{ study.election.year }}.
+                Tatsächliche Befragung: {{ groupFieldworkLabel(study) }} (CAPI/CAMI). Die Antworten
+                stammen aus dieser späteren Befragung, nicht vom Wahltag und nicht aus
+                Parteiprogrammen.
+              </p>
+              @if (selectedGroup(); as group) {
+                <p class="meta">
+                  Vergleichsgruppe: {{ group.label }}. Die erinnerte Zweitstimme wurde selbst
+                  angegeben, nicht extern überprüft.
+                </p>
+                @if (group.heterogeneousUnlabelledOther) {
+                  <p class="group-other-limit">
+                    „Other“ ist der heterogene, unbenannte Rest der ursprünglichen Liste. Er ist
+                    keine einzelne Partei. Freitext wurde nicht gelesen und wird nicht angezeigt.
+                  </p>
+                }
+              }
+              <p class="meta">
+                Die Studien richteten sich an Menschen ab 15 Jahren in Privathaushalten, unabhängig
+                von der Staatsangehörigkeit. Das ist keine verifizierte Wählerschaft. Wahljahre,
+                Erinnerungsabstände und Listen unterscheiden sich. Gruppen werden nicht über Studien
+                zusammengeführt. Gewichtung beseitigt diese Grenzen nicht.
+              </p>
+              @if (study.id === 'ESS8e02_3') {
+                <p class="group-coverage-limit">
+                  In München wurden keine Befragten erfasst. Gewichtung stellt die fehlenden
+                  Antworten nicht wieder her.
+                </p>
+              }
+              <details class="group-sources">
+                <summary>Quellen und Grenzen des Gruppenvergleichs</summary>
+                <p>
+                  {{ study.id }}, Datenausgabe {{ study.edition }}. Zweitstimmenvariable:
+                  {{ study.party2Variable }}. Originalfrage {{ study.originalQuestionId }},
+                  PDF-Seite(n) {{ study.originalQuestionPages.join(', ') }}. Druckcodes und
+                  API-/Dateicodes bleiben getrennt. Es wird keine allgemeine numerische Umcodierung
+                  angenommen.
+                </p>
+                @if (selectedGroup(); as group) {
+                  <p>
+                    Ursprünglicher Druckcode: {{ group.printedCodeDe }}. Gebundener API-/Dateicode:
+                    {{ group.party2Code }}. API-Label: {{ group.labelEnExactApi }}.
+                  </p>
+                }
+                @if (study.aliasBinding === 'WIP_ORDERED_FORM_AND_API_LABEL_ASSOCIATION') {
+                  <p>
+                    Bei ESS5 und ESS8 beruht die Zuordnung zur Zweitstimme auf der geordneten
+                    Originalfolge und den zusammenpassenden API-Labels „Germany 1“/„Germany 2“. Eine
+                    zusätzliche offizielle Konkordanz zum aktuellen Exportalias wurde nicht
+                    gefunden. Diese Bindung ist schwächer als der ausdrückliche Aliastext bei ESS9.
+                  </p>
+                } @else {
+                  <p>
+                    Die ESS9-Parteienappendix ordnet {{ study.party2Variable }} ausdrücklich der
+                    Zweitstimme zu (PDF-Seite {{ study.aliasSourcePage }}). Dokumentationsausgabe
+                    3.0 und Datenausgabe 3.3 bleiben getrennte Versionen.
+                  </p>
+                }
+                <p>
+                  Nur die ausdrücklich geprüften Paare werden angezeigt. Die vorab festgelegte
+                  100/5-Heuristik zur Basis und Zellbesetzung ist weder eine Präzisions- noch eine
+                  Anonymitätsvalidierung. Nicht freigegebene Paare bleiben ohne Referenzzahlen.
+                  Beide getrennten Prüferrollen gehörten zur Codex-Familie und können gemeinsame
+                  Fehler teilen. Menschliche Verständnis-, Design- und Releasefreigaben stehen aus.
+                </p>
+                <ul>
+                  <li>
+                    <a [href]="study.publicReferenceUrl"
+                      >Veröffentlichte historische Gruppenaggregate dieser Studie</a
+                    >
+                  </li>
+                  <li>
+                    <a [href]="study.publicReadmeUrl"
+                      >Beschreibung, Grenzen und Rechte der Gruppenaggregate</a
+                    >
+                  </li>
+                  <li>
+                    <a [href]="study.dataDoiUrl"
+                      >ESS-Datensatz {{ study.id }}, Ausgabe {{ study.edition }}</a
+                    >
+                  </li>
+                  <li><a [href]="study.documentationDoiUrl">ESS-Studiendokumentation</a></li>
+                  @for (document of study.documents; track document.id) {
+                    <li>
+                      <a [href]="document.publicUrl">{{ groupDocumentLabel(document.id) }}</a>
+                    </li>
+                  }
+                </ul>
+                <p>
+                  Daten: ESS ERIC und Sikt – Norwegian Agency for Shared Services in Education and
+                  Research. Daten stehen unter
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>,
+                  Dokumentation unter
+                  <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+                  <a href="https://europeansocialsurvey.org/contact/disclaimer"
+                    >ESS-Nutzungsbedingungen</a
+                  >. Diese Quellenangabe erteilt keine rechtsfachliche oder kommerzielle Freigabe.
+                </p>
+                <p class="meta">
+                  Änderungen an den Daten: Deutschlandauswahl, Auswahl historischer Fragen,
+                  Gruppierung nach erinnerter Zweitstimme und gewichtete Originalkategorieanteile.
+                  Es werden ausschließlich veröffentlichte Aggregate eingebunden, keine Rohdaten.
+                </p>
+              </details>
+            }
+          }
         </div>
       </div>
     </section>
@@ -291,6 +445,61 @@
                 } @else {
                   <p class="meta">
                     Historische Referenz für diese Einzelangabe noch nicht eingebunden.
+                  </p>
+                }
+                @let comparison = groupComparisonFor(item.id);
+                @if (comparison.status === 'available') {
+                  <div class="historical-reference group-reference">
+                    <h4>Historische Kategorieanteile der gewählten Vergleichsgruppe</h4>
+                    <p>
+                      {{ comparison.group.label }} · {{ comparison.study.id }}, Datenausgabe
+                      {{ comparison.study.edition }}. Erinnerte Zweitstimme:
+                      {{ comparison.study.election.monthDe }} {{ comparison.study.election.year }}.
+                      Befragung: {{ groupFieldworkLabel(comparison.study) }} (CAPI/CAMI).
+                    </p>
+                    <dl class="facts group-proportions">
+                      @for (category of comparison.reference.categories; track category.code) {
+                        <div [attr.data-category-code]="category.code">
+                          <dt>{{ referenceLabel(item, category.code) }}</dt>
+                          <dd>{{ percentage(category.proportion) }}</dd>
+                        </div>
+                      }
+                    </dl>
+                    <p class="meta">
+                      Gewichtung: {{ comparison.reference.weight }}. Nenner der Anteile ist die
+                      Summe der Gewichte gültiger Antworten dieser Frage in dieser Gruppe. Alle
+                      Fallzahlen sind ungewichtet. Die Gruppenbasis ersetzt den gültigen
+                      Frage-Nenner nicht.
+                    </p>
+                    <dl class="facts group-counts">
+                      <div>
+                        <dt>Gültige Antworten dieser Frage (n)</dt>
+                        <dd>{{ comparison.reference.validCount }}</dd>
+                      </div>
+                      <div>
+                        <dt>Gesamtbasis dieser Vergleichsgruppe</dt>
+                        <dd>{{ comparison.reference.totalCount }}</dd>
+                      </div>
+                      <div>
+                        <dt>Fehlende Antworten</dt>
+                        <dd>{{ comparison.reference.missingCount }}</dd>
+                      </div>
+                      <div>
+                        <dt>Nicht gestellte Frage</dt>
+                        <dd>{{ comparison.reference.notAskedCount }}</dd>
+                      </div>
+                    </dl>
+                  </div>
+                } @else if (comparison.status === 'other-study') {
+                  <p class="meta group-other-study">
+                    Kein passender Gruppenvergleich: Diese Originalfrage stammt aus einer anderen
+                    Studie als die gewählte Vergleichsgruppe. Studien werden nicht zusammengeführt.
+                  </p>
+                } @else if (comparison.status === 'unavailable') {
+                  <p class="meta group-unavailable">
+                    Für diese Gruppe und Originalfrage liegt keine freigegebene historische Referenz
+                    vor. Unzureichende Basis oder Zellbesetzung: keine Zahlenanzeige. Eine fehlende
+                    Referenz bedeutet weder null Prozent noch eine mittlere Position.
                   </p>
                 }
                 <app-policy-source-details [item]="item" [showOriginal]="true" />

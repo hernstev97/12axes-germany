@@ -132,3 +132,7 @@ SCF-P01/P02 gezielt durch dieselbe Quellenrolle begrenzt geschlossen. Alle65 akt
 ## Dossierannahme, 2026-10-03T16:10:05.664907+00:00
 
 Frische normale40Pin-Erstprüfung ohne sachliche Blocker abgeschlossen. Root vollständigen Bericht und aktuelle Pins geprüft. Reiner Prettier-Transfer einer Datei durch tatsächliche CommonMark-/Tabellentoken-Gleichheit dokumentiert, keine neue fachliche Prüfung. Humanplan bleibt vorbereitete Prüfung mit null realen Durchläufen; letzteUIbindung nach Gruppenkomponente. Weitere ausführbare Arbeit: Gruppenanzeige/-bericht und angemessene Darstellungsprüfung.
+
+## Checkpoint51: Gruppen-Darstellungsfassung und positive CLI-Reproduktion
+
+2026-10-03T16:30:44.228375+00:00: GROUP-PRESENTATION-V21-001/v1 an86Pins normal begrenzt angenommen; Root Originalbericht vollständig gelesen undPins verifiziert. Tatsächlicher Browser26Gruppen/63Werte/111Nulls korrekt,5Breitenaxe0/nooverflow. Ein responsiver Studientextbefund GBP-ROOT-01 wird nach unveränderter Sicherung minimal korrigiert und gezielt nachgeprüft. Check056exit0/78AngularTests. Positive getrennteCLI-Reproduktion beiderRunner im isoliertenWorktree,alle8kanonischenKandidatenexakt; sichereUmfangs-/Hashbelege in `reports/loop/cli-reproduction-verification.json`, keine unabhängigeDownloadprüfung. FinalesHumanskript/UIbinding und Kontrollstand folgen; realeMenschen/Claude/Design/Rechte/Release offen.

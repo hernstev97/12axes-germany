@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "status": "POSITIVE_ISOLATED_WORKTREE_CLI_REPRODUCTION_PASS_EXACT8_CANONICAL_CANDIDATES",
+  "verifiedAtUtc": "2026-10-03T16:16:25.835586+00:00",
+  "sourceWorktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
+  "sourceCommit": "ccb431ddde7c139d7e7e6db1b968b25e3ab9818b",
+  "isolatedWorktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-cli-reproduction-20261003",
+  "planBeforeAccess": "outputs/loop/cli-reproduction/plan-before-run.json",
+  "inputSetup": {
+    "publicCacheInputs": 44,
+    "groupRequiredPublicCacheInputs": 36,
+    "rawInputs": 5,
+    "method": "Hardlinks at exact existing manifest paths; no symlinks; raw remains exclusively data/raw. Original content and run files retained."
+  },
+  "executions": [
+    {
+      "name": "single",
+      "script": "scripts/run-policy-v2.py",
+      "pid": 3852945,
+      "startUtc": "2026-10-03T16:15:10.996956+00:00",
+      "endUtc": "2026-10-03T16:15:22.085813+00:00",
+      "exitCode": 0,
+      "privateLog": "outputs/loop/cli-reproduction/single-execution.log"
+    },
+    {
+      "name": "groups",
+      "script": "scripts/run-policy-groups-v21.py",
+      "pid": 3854220,
+      "startUtc": "2026-10-03T16:15:22.086160+00:00",
+      "endUtc": "2026-10-03T16:15:28.384444+00:00",
+      "exitCode": 0,
+      "privateLog": "outputs/loop/cli-reproduction/groups-execution.log"
+    }
+  ],
+  "results": [
+    {
+      "analysis": "policy-v2",
+      "studyId": "ESS5e03_6",
+      "originalRunBytesSha256": "b7a430ab14a9ae5b2f6537abd0fe968bb09d3b42bfdde9e21f0bba79d94426c6",
+      "replicaRunBytesSha256": "1d7ecb609fc2164e629b3cbc5272d535125f3d57563e814ca2ce19893f50d67a",
+      "candidateSha256": "d29d4acc6ff1a973d8bb920b0ba02afbadc7e7bd378e53374a9363e752945e33",
+      "canonicalCandidatesExactlyEqual": true,
+      "privateFileMode": "0600",
+      "privateDirectoryModes": "0700"
+    },
+    {
+      "analysis": "policy-v2",
+      "studyId": "ESS8e02_3",
+      "originalRunBytesSha256": "6ec04807e401aeb4c0c46dd833c676bb3700f235a5fdbb8c39cc7fd9f0e8d557",
+      "replicaRunBytesSha256": "61183267466dfdbb32c2229a7111198d6c020eb06d954065a6ef2edf5b0d92c0",
+      "candidateSha256": "0ca02b80692de3b04ce7733c2aca09c1a70e7d85aafc40632d39d99f07d8bca0",
+      "canonicalCandidatesExactlyEqual": true,
+      "privateFileMode": "0600",
+      "privateDirectoryModes": "0700"
+    },
+    {
+      "analysis": "policy-v2",
+      "studyId": "ESS9e03_3",
+      "originalRunBytesSha256": "2eda8b76f037fd089110dfe7412757a171d6eee7eed755aad78976a6e9c108a1",
+      "replicaRunBytesSha256": "184c1817ba1b283bcbc2917a84a733162c546eb9fba9e322d5b4dec00359a4c3",
+      "candidateSha256": "93258369d2f929aa990a11d6aae7dc442eb0d8525eaf6404290c2450f22fb125",
+      "canonicalCandidatesExactlyEqual": true,
+      "privateFileMode": "0600",
+      "privateDirectoryModes": "0700"
+    },
+    {
+      "analysis": "policy-v2",
+      "studyId": "ESS10SCe03_2",
+      "originalRunBytesSha256": "1b9546154b2ed3daecebf787f24e709e6e6009e69715f20baae5c4788032c79d",
+      "replicaRunBytesSha256": "15e7309e6300b53557d0260ea1929779098349fa9372306ae0338a4fb0d1f435",
+      "candidateSha256": "e2916511e06254185d3d0394d37fd29e68d225ca6996c16a9a4ac8b42ee5de55",
+      "canonicalCandidatesExactlyEqual": true,
+      "privateFileMode": "0600",
+      "privateDirectoryModes": "0700"
+    },
+    {
+      "analysis": "policy-v2",
+      "studyId": "ESS11e04_2",
+      "originalRunBytesSha256": "ffce2bd934da6ca789be619a70283ec8afd3dc9c3bce994c7d1d7b16e5f1ee82",
+      "replicaRunBytesSha256": "9303602aab407d189046cdf3623d21103dee6d730bcb82d6ef3dfa152a4d54b1",
+      "candidateSha256": "f36960ab75a2ac357d92b373013f51767a88aff98759061511b86dff6c3e05c2",
+      "canonicalCandidatesExactlyEqual": true,
+      "privateFileMode": "0600",
+      "privateDirectoryModes": "0700"
+    },
+    {
+      "analysis": "policy-groups-v21",
+      "studyId": "ESS5e03_6",
+      "originalRunBytesSha256": "424f617567186194611bfd5afd3ea7881eb54e7ca940d6495c10eede0494e600",
+      "replicaRunBytesSha256": "ac6161e2a3562e46f392e9910b13e7316eafe8fcc3bcfab10bcf9a7fc42625cd",
+      "candidateSha256": "94777a8c0e4924e0427e78958ee5fac1c825916c1af49d4bb6423cc2007730ec",
+      "canonicalCandidatesExactlyEqual": true,
+      "privateFileMode": "0600",
+      "privateDirectoryModes": "0700"
+    },
+    {
+      "analysis": "policy-groups-v21",
+      "studyId": "ESS8e02_3",
+      "originalRunBytesSha256": "62803a9433e6160402af8167cf6180a55a13258402f29813d7b4118c1f92ec1e",
+      "replicaRunBytesSha256": "701122efe94418bd7218b5b4ea228f2954ee0c284a501af8e552b2ba84e78296",
+      "candidateSha256": "733c197572904cf015a7e2e7f58f65f62ad8fd021a49ffe897fbac4155f3e942",
+      "canonicalCandidatesExactlyEqual": true,
+      "privateFileMode": "0600",
+      "privateDirectoryModes": "0700"
+    },
+    {
+      "analysis": "policy-groups-v21",
+      "studyId": "ESS9e03_3",
+      "originalRunBytesSha256": "48171dc07062dc331950be26605d1dcbbd6e5409a21d53049950267c2ffd8c09",
+      "replicaRunBytesSha256": "7a3925d0739341f39ace8c81d6a996087a9a60c6844575d0d3e19fcc7c5d404d",
+      "candidateSha256": "cf12662677918ca1c673c3d04bd1ec7c0a726cb8492afd2079df25d019b88266",
+      "canonicalCandidatesExactlyEqual": true,
+      "privateFileMode": "0600",
+      "privateDirectoryModes": "0700"
+    }
+  ],
+  "exposure": "Reaccessed already known v2 questions/weights and v2.1 party semantics for deterministic reproduction. No new unseen confirmation, selection, criteria, model or v1A/B/FULL/norm run. Original access receipts and published tags unchanged. New reproduction interval separately recorded.",
+  "limits": [
+    "Same frozen code and same input files on same machine; no independent original download or alternative-implementation/raw validation",
+    "Safe candidate hashes only, no rows/IDs/private values copied to this verification or Git",
+    "Private replica and ignored public inputs retained in isolated worktree, not committed or deleted",
+    "No public exports regenerated; actual original reviewed public outputs remain unchanged",
+    "No Human/Claude/design/release acceptance"
+  ]
+}

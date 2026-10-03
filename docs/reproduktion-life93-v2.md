@@ -1,6 +1,6 @@
 # LIFE-93 v2: lokale Reproduktion
 
-Fassung 0.1, Stand `2026-10-03T15:56:20.289903+00:00`. Dokumentations-WIP. Der Stand umfasst die öffentliche Gruppenentscheidung vom `2026-10-03T15:54:40.395473+00:00`; spätere Gruppenanzeige und Abnahmen ergänzt Root mit neuem Datum.
+Fassung 0.2, Nachtrag vom `2026-10-03T16:26:02.982794+00:00`. Die ursprüngliche Fassung 0.1 und ihre begrenzte Dokumentationsprüfung bleiben in Commit `320e632e77c772f6474b6d9d7fe86e2ee01ba0c7` erhalten. Dieser Nachtrag ergänzt tatsächlich ausgeführte Reproduktions- und Darstellungsbelege; Kriterien, Originalreceipts, Exporte und Tags bleiben unverändert.
 
 Der aktuelle [Breitenauftrag](auftrag-life-93-breite-2026-10-03.md) hat Vorrang vor der alten Analysefolge. v2 führt 43 Originalfragen in acht Inhaltsrubriken, ohne gemeinsamen Faktor oder Gesamtscore. 42 historische Einzelreferenzen sind veröffentlicht; `ESS10SCe03_2:cttresa` bleibt null. Die neue [Gruppenentscheidung](../reports/loop/policy-group-v21-export-decisions.json) veröffentlicht 63 einzelne historische Frage-Gruppen-Paare aus ESS5, ESS8 und ESS9. Die Gruppenanzeige ist damit noch nicht fertig oder freigegeben.
 
@@ -8,7 +8,9 @@ Der aktuelle [Breitenauftrag](auftrag-life-93-breite-2026-10-03.md) hat Vorrang 
 
 Die [v2-Receipts](../reports/loop/policy-v2-run-receipts.json) belegen fünf ausgeführte Bibliotheksläufe am 3. Oktober 2026, 14:25:06–14:25:18 UTC, jeweils Exitcode 0. Die [Gruppenreceipts](../reports/loop/group-v21-run-receipts.json) belegen drei private Bibliotheksläufe, 15:24:22–15:24:28 UTC, jeweils Exitcode 0. [Einzelzugriff](../reports/loop/policy-v2-access-disclosure.json) und [Gruppenzugriff](../reports/loop/group-v21-access-disclosure.json) benennen den jeweiligen Umfang und frühere Einsicht. Receipts beschreiben den Laufstand; spätere öffentliche Entscheidungen sind eigene Schritte.
 
-Die beiden unten genannten Runner bestehen den aktuellen `--help`-Aufruf. Ein positiver End-to-end-Lauf dieser CLI aus einem frischen Checkout wurde bisher **nicht durchgeführt**. Vorhandene positive Bibliotheksläufe, synthetische Tests und Hilfeausgabe ersetzen diesen Nachweis nicht. Diese Dokumentationsarbeit führt keinen Datenlauf oder öffentlichen Berichtbuild aus.
+Am 3. Oktober 2026 liefen beide CLI-Aufrufe in einem isolierten, zunächst outputfreien Git-Worktree aus Commit `ccb431ddde7c139d7e7e6db1b968b25e3ab9818b`: Einzelweg 16:15:10–16:15:22 UTC, Gruppenweg 16:15:22–16:15:28 UTC, beide Exit 0. Der [öffentliche Verifikationsbeleg](../reports/loop/cli-reproduction-verification.json) dokumentiert acht exakt gleiche kanonische Kandidaten, unveränderte Originalbytes und geschützte private Outputs. Zeitstempel unterscheiden die neuen Laufhüllen von den Originalen.
+
+Die Reproduktion verwendete dieselben fünf CSVs und 44 vorhandenen öffentlichen Cacheeingaben auf derselben Maschine, als Hardlinks an den vorgeschriebenen Pfaden. Ein gewöhnlicher Clone enthält diese Eingaben nicht. Das ist eine positive CLI-Reproduktion des eingefrorenen Rechenwegs, keine unabhängige offizielle Downloadprüfung, alternative Implementierung oder neue Ergebnisfreigabe. Bereits bekannte Fragen, Gewichte und zulässige Parteisemantik wurden erneut gelesen; neue unberührte Bestätigungsdaten werden nicht behauptet.
 
 ## Eingaben und Bindungen
 
@@ -57,7 +59,7 @@ Die Anleitung ergänzt keine Downloadberechtigung. Daten- und Dokumentationsbedi
 
 ## Künftiger lokaler Datenlauf
 
-Die folgenden Schritte sind eine Anleitung für eine gesondert vorbereitete Reproduktion, keine in diesem Dossier ausgeführte Analyse.
+Die folgenden Schritte beschreiben eine weitere gesondert vorbereitete Reproduktion. Der oben dokumentierte positive Lauf nutzte bereits einen solchen isolierten Worktree; Original- und Reproduktionsoutputs bleiben erhalten.
 
 1. Einen separaten Checkout des passenden Forschungssnapshots nutzen. Den bestehenden Arbeitsstand und seine privaten Outputs erhalten. Die lokal und auf `origin` gebundenen Plantags müssen auf die oben genannten Commits zeigen. Beide Runner prüfen dies selbst mit Git; der tatsächliche Lauf benötigt deshalb Git und Netzwerkzugang zum konfigurierten `origin`. `--help` beendet sich davor.
 2. Die erforderlichen privaten CSVs und öffentlichen Caches mit erlaubtem Zugang bereitstellen. Keine Rohdaten oder privaten Ergebnisse in Webapp, CI, Git, Agentenkontext oder öffentliche Logs kopieren. Die exakten manifestierten Bytes erhalten; andere API-Abrufe sind nicht automatisch Ersatz.
@@ -80,7 +82,7 @@ Alternativ akzeptiert `--study` eine der im jeweiligen Hilfeaufruf genannten Stu
 
 Die CLI verweigert vorhandene `run.json`-Dateien für ausgewählte Studien mit `existing_private_run_use_fresh_checkout`. Keine Umgehung durch Löschen, Umbenennen oder Überschreiben der historischen Outputs. Private Ergebnisse liegen unter `data/local/policy-v2/<study>/run.json` beziehungsweise `data/local/policy-groups-v21/<study>/run.json`; die Hüllen verlangen Verzeichnisse `0700` und Dateien `0600`. Sichere Receipts und tatsächliche Exitcodes getrennt sichern, ohne private Inhalte auszugeben.
 
-Fehlende Caches, falsche Pins, Gate-/Quellen-/Studienabweichungen oder vorhandene Outputs sind echte Abweisungen. Ein nicht gelaufener Fresh-checkout-Versuch bleibt offen. Die Runner geben nur private Kandidaten und sichere Receipts aus; Erfolg ist keine automatische Veröffentlichungsentscheidung.
+Fehlende Caches, falsche Pins, Gate-/Quellen-/Studienabweichungen oder vorhandene Outputs sind echte Abweisungen. Ein nicht ausgeführter weiterer Versuch darf nicht als bestanden gelten. Die Runner geben nur private Kandidaten und sichere Receipts aus; Erfolg ist keine automatische Veröffentlichungsentscheidung.
 
 ## Öffentliche Referenzen und Bericht
 
@@ -96,7 +98,13 @@ Der [thematische Einzelbericht](../reports/phasen/02-politikprofil-v2-methoden-u
 PYTHONDONTWRITEBYTECODE=1 python scripts/build-policy-v2-report.py --check
 ```
 
-Dieser Build benötigt zusätzlich die 30 öffentlichen Quellen-Caches aus `catalogue.sources[].cachedPath` des [Fragenkatalogs](../data/politikprofil-v2.fragen.entwurf.json), ihre `originalBytesSha256`, die im Skript gebundenen öffentlichen Methoden-/Review-/Entscheidungsbytes und Exportdateien. Ohne `--check` schreibt der Builder das Berichtsartefakt; vorhandene Berichte deshalb für eine Reproduktion nicht unbesehen überschreiben. Ein erfolgreicher Bytevergleich reproduziert die Darstellung öffentlicher Aggregate, keine Rohrechnung. Der Gruppenexport ist davon ein eigener Schritt; diese Anleitung behauptet keinen fertigen Gruppenbericht oder Gruppen-Webtest.
+Dieser Build benötigt zusätzlich die 30 öffentlichen Quellen-Caches aus `catalogue.sources[].cachedPath` des [Fragenkatalogs](../data/politikprofil-v2.fragen.entwurf.json), ihre `originalBytesSha256`, die im Skript gebundenen öffentlichen Methoden-/Review-/Entscheidungsbytes und Exportdateien. Ohne `--check` schreibt der Builder das Berichtsartefakt; vorhandene Berichte deshalb für eine Reproduktion nicht unbesehen überschreiben. Ein erfolgreicher Bytevergleich reproduziert die Darstellung öffentlicher Aggregate, keine Rohrechnung. Der [öffentliche Gruppenbericht](../reports/phasen/03-politikprofil-v21-historische-gruppen.md) ist ein eigener reiner Darstellungsweg. Sein tatsächlicher Bytevergleich bestand am 3. Oktober 2026:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python scripts/build-policy-group-report-v21.py --check
+```
+
+Er liest nur die feste öffentliche Allowlist im Skript, einschließlich authentisierter Bericht-/Entscheidungsbytes. Keine privaten Pfade aus Manifesten werden verfolgt. Der Gruppenbericht und die optionale Webanzeige erhalten eine zusammengehörige begrenzte Darstellungsprüfung; menschliche Verständnis- und Releasefreigaben folgen getrennt.
 
 ## Aussagegrenzen und Aktualisierung
 
@@ -106,4 +114,4 @@ Historische Wählergruppen beruhen auf erinnerter Wahlteilnahme und Zweitstimme 
 
 Die Codex-Erstrollen gehörten derselben Modellfamilie an. Übereinstimmung ist kein Neutralitätsbeweis, und die Ergebnisrollen haben keine unabhängige Roh-/Downloadreproduktion geleistet. Menschenverständnistest mit fünf realen Personen, Designzustimmung, sichtbarer Tastaturfokus, echte 200%-Zoomprüfung, Claude-Schlusskontrolle, konkrete Rechte-/kommerzielle Nutzungsprüfung und persönlicher Release bleiben offen.
 
-Root ergänzt hier später den Stand der Gruppenanzeige, gegebenenfalls einen eigenen reproduzierbaren Gruppenbericht und die tatsächlich abgeschlossenen menschlichen Prüfungen. Dafür Datum und Belegpfade ändern; die ursprünglichen Lauf-, Auswahl- und Nullgrenzen nicht rückwirkend umschreiben.
+Root ergänzt hier den endgültigen Stand der Gruppenanzeige und die später tatsächlich abgeschlossenen menschlichen Prüfungen. Dafür Datum und Belegpfade ändern; die ursprünglichen Lauf-, Auswahl- und Nullgrenzen nicht rückwirkend umschreiben.

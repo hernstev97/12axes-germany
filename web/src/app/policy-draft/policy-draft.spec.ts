@@ -1,6 +1,7 @@
 import { type ComponentFixture, TestBed } from '@angular/core/testing';
 import { PolicyDraft } from './policy-draft';
 import { REVIEWED_HISTORICAL_REFERENCES } from './reviewed-historical-references';
+import { REVIEWED_HISTORICAL_GROUPS } from './reviewed-historical-groups';
 
 describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   let fixture: ComponentFixture<PolicyDraft>;
@@ -73,6 +74,13 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   async function choose(code: string): Promise<void> {
     const radio = element.querySelector<HTMLInputElement>(`input[type="radio"][value="${code}"]`)!;
     radio.click();
+    await fixture.whenStable();
+  }
+
+  async function selectComparison(id: string, value: string): Promise<void> {
+    const select = element.querySelector<HTMLSelectElement>(`#${id}`)!;
+    select.value = value;
+    select.dispatchEvent(new Event('change'));
     await fixture.whenStable();
   }
 
@@ -322,5 +330,157 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     await fixture.whenStable();
     expect(element.querySelectorAll('.historical-reference')).toHaveLength(0);
     expect(element.querySelectorAll('.reference-withheld')).toHaveLength(0);
+  });
+
+  it('beginnt optional ohne Vergleichsgruppe und erhält alle ursprünglichen Parteien und Other in ihrer Reihenfolge', async () => {
+    await click('Zum Ergebnisentwurf');
+    expect(element.querySelector('#draft-group-study')).toBeNull();
+    fixture.componentRef.setInput('historicalGroups', REVIEWED_HISTORICAL_GROUPS);
+    await fixture.whenStable();
+    const studySelect = element.querySelector<HTMLSelectElement>('#draft-group-study')!;
+    const groupSelect = element.querySelector<HTMLSelectElement>('#draft-vote-group')!;
+    expect(studySelect.value).toBe('');
+    expect(groupSelect.value).toBe('');
+    expect(groupSelect.disabled).toBe(true);
+    expect(element.querySelectorAll('.group-reference')).toHaveLength(0);
+    for (const study of REVIEWED_HISTORICAL_GROUPS.studies) {
+      await selectComparison('draft-group-study', study.id);
+      const options = [...groupSelect.options].slice(1);
+      expect(options.map((option) => option.value)).toEqual(study.groups.map((group) => group.id));
+      expect(options.map((option) => option.textContent?.trim())).toEqual(
+        study.groups.map((group) => group.label),
+      );
+    }
+    expect([...groupSelect.options].map((option) => option.textContent?.trim())).toContain('NPD');
+    expect(groupSelect.options[groupSelect.options.length - 1]!.textContent?.trim()).toBe('Other');
+    expect(element.querySelectorAll('h1')).toHaveLength(1);
+    expect(element.querySelectorAll('section h2')).toHaveLength(9);
+  });
+
+  it('zeigt nur echte gleichstudienbezogene Gruppenanteile und den gültigen Fragenenner neben getrennten Missing-Fällen', async () => {
+    fixture.componentRef.setInput('historicalGroups', REVIEWED_HISTORICAL_GROUPS);
+    await click('Zum Ergebnisentwurf');
+    await selectComparison('draft-group-study', 'ESS9e03_3');
+    await selectComparison('draft-vote-group', 'ESS9e03_3:second_vote:1');
+    const actual = REVIEWED_HISTORICAL_GROUPS.studies[2]!.groups[0]!.questions[0]!.reference!;
+    const approved = element.querySelector<HTMLElement>(
+      '[data-question-id="ESS9e03_3:sofrdst"] .group-reference',
+    )!;
+    expect(approved.textContent).toContain('September 2017');
+    expect(approved.textContent).toContain('29.08.2018 bis 04.03.2019');
+    expect(approved.textContent).toContain('pspwght');
+    expect(
+      [...approved.querySelectorAll('[data-category-code]')].map((row) =>
+        row.getAttribute('data-category-code'),
+      ),
+    ).toEqual(actual.categories.map((category) => category.code));
+    const percent = new Intl.NumberFormat('de-DE', { style: 'percent', maximumFractionDigits: 1 });
+    expect(
+      [...approved.querySelectorAll('.group-proportions dd')].map((row) => row.textContent?.trim()),
+    ).toEqual(actual.categories.map((category) => percent.format(category.proportion)));
+    expect(
+      [...approved.querySelectorAll('.group-counts dd')].map((row) => row.textContent?.trim()),
+    ).toEqual(
+      [actual.validCount, actual.totalCount, actual.missingCount, actual.notAskedCount].map(String),
+    );
+    const withheld = element.querySelector<HTMLElement>('[data-question-id="ESS9e03_3:sofrwrk"]')!;
+    expect(withheld.querySelector('.group-reference')).toBeNull();
+    expect(withheld.querySelector('.group-unavailable')?.textContent).toContain(
+      'weder null Prozent noch eine mittlere Position',
+    );
+    expect(
+      element.querySelector('[data-question-id="ESS8e02_3:wrkprbf"] .group-other-study')
+        ?.textContent,
+    ).toContain('anderen Studie');
+  });
+
+  it('setzt beim Studienwechsel die Gruppe zurück und zeigt für Other keine Basis oder Prozentzahl', async () => {
+    fixture.componentRef.setInput('historicalGroups', REVIEWED_HISTORICAL_GROUPS);
+    await click('Zum Ergebnisentwurf');
+    await selectComparison('draft-group-study', 'ESS9e03_3');
+    await selectComparison('draft-vote-group', 'ESS9e03_3:second_vote:1');
+    expect(element.querySelectorAll('.group-reference')).toHaveLength(2);
+    await selectComparison('draft-group-study', 'ESS8e02_3');
+    expect(element.querySelector<HTMLSelectElement>('#draft-vote-group')!.value).toBe('');
+    expect(element.querySelectorAll('.group-reference')).toHaveLength(0);
+    await selectComparison('draft-vote-group', 'ESS8e02_3:second_vote:9');
+    expect(element.querySelectorAll('.group-reference')).toHaveLength(0);
+    expect(element.querySelectorAll('.group-counts')).toHaveLength(0);
+    expect(element.querySelectorAll('.group-proportions')).toHaveLength(0);
+    expect(element.querySelectorAll('.group-unavailable')).toHaveLength(10);
+    expect(element.querySelector('.group-other-limit')?.textContent).toContain(
+      'heterogene, unbenannte Rest',
+    );
+    expect(element.querySelector('.group-coverage-limit')?.textContent).toContain('In München');
+    expect(element.querySelector('.group-sources')?.textContent).toContain('schwächer als');
+    expect(
+      element.querySelector('.group-sources a[href="https://doi.org/10.21338/ess8e02_3"]'),
+    ).not.toBeNull();
+    expect(
+      element.querySelector(
+        '.group-sources a[href="https://creativecommons.org/licenses/by-nc-sa/4.0/"]',
+      ),
+    ).not.toBeNull();
+  });
+
+  it('unterdrückt ein eingeschleustes Gruppenobjekt und erhält die 42 unabhängigen Einzelreferenzen', async () => {
+    fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
+    fixture.componentRef.setInput('historicalGroups', structuredClone(REVIEWED_HISTORICAL_GROUPS));
+    await click('Zum Ergebnisentwurf');
+    expect(element.querySelector('.group-rejected')?.textContent).toContain(
+      'nicht der gebundene öffentliche Adapter',
+    );
+    expect(element.querySelector('#draft-group-study')).toBeNull();
+    expect(element.querySelectorAll('.group-reference')).toHaveLength(0);
+    expect(element.querySelectorAll('.historical-reference')).toHaveLength(42);
+  });
+
+  it('hält Gruppenwahl und Antworten in RAM unabhängig, auch beim Bearbeiten und Zurückgehen ohne URL, Speicher oder Netzwerk', async () => {
+    const storage = vi.spyOn(Storage.prototype, 'setItem');
+    const fetch = vi.spyOn(globalThis, 'fetch');
+    const locationBefore = window.location.href;
+    try {
+      fixture.componentRef.setInput('historicalGroups', REVIEWED_HISTORICAL_GROUPS);
+      await choose('4');
+      await click('Zur nächsten Frage');
+      await click('Diese Frage überspringen');
+      await click('Zum Ergebnisentwurf');
+      await selectComparison('draft-group-study', 'ESS9e03_3');
+      await selectComparison('draft-vote-group', 'ESS9e03_3:second_vote:5');
+      const groupSelect = element.querySelector<HTMLSelectElement>('#draft-vote-group')!;
+      groupSelect.focus();
+      headingInteractions = [];
+      await selectComparison('draft-vote-group', 'ESS9e03_3:second_vote:6');
+      expect(document.activeElement).toBe(groupSelect);
+      expect(headingInteractions).toEqual([]);
+      element
+        .querySelector<HTMLButtonElement>('[data-question-id="ESS9e03_3:sofrdst"] button')!
+        .click();
+      await fixture.whenStable();
+      expect(element.querySelector<HTMLInputElement>('input[value="4"]')!.checked).toBe(true);
+      await click('Zur nächsten Frage');
+      expect(element.textContent).toContain('Übersprungen');
+      await click('Zum Ergebnisentwurf');
+      expect(element.querySelector<HTMLSelectElement>('#draft-vote-group')!.value).toBe(
+        'ESS9e03_3:second_vote:6',
+      );
+      expect(
+        element.querySelector('[data-question-id="ESS9e03_3:sofrdst"]')?.textContent,
+      ).toContain('Gewählte Originalkategorie: Lehne ab');
+      expect(storage).not.toHaveBeenCalled();
+      expect(fetch).not.toHaveBeenCalled();
+      expect(window.location.href).toBe(locationBefore);
+      fixture.destroy();
+      fixture = TestBed.createComponent(PolicyDraft);
+      await fixture.whenStable();
+      element = fixture.nativeElement as HTMLElement;
+      fixture.componentRef.setInput('historicalGroups', REVIEWED_HISTORICAL_GROUPS);
+      await click('Zum Ergebnisentwurf');
+      expect(element.querySelector<HTMLSelectElement>('#draft-group-study')!.value).toBe('');
+      expect(element.textContent).toContain('0 beantwortet');
+    } finally {
+      storage.mockRestore();
+      fetch.mockRestore();
+    }
   });
 });

@@ -89,6 +89,20 @@ legend span {
   flex-basis: 100%;
   font-size: var(--size-ui);
 }
+.group-controls {
+  display: grid;
+  gap: 0.75rem;
+  margin-block: 1.5rem;
+}
+.group-controls label {
+  font-size: var(--size-ui);
+}
+.group-controls select {
+  width: 100%;
+}
+.group-sources {
+  margin-block: 1.5rem;
+}
 .overview-list {
   margin: 0;
   padding-left: 1.5rem;

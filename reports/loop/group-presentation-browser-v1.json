@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "status": "ROOT_BROWSER_BEFORE_RESPONSIVE_SELECT_CORRECTION",
+  "utc": "2026-10-03T16:26:49.486Z",
+  "browser": "T3 collaborative preview tab_2",
+  "url": "http://localhost:4314/forschungsentwurf",
+  "manifest": "reports/loop/packages/GROUP-PRESENTATION-V21-001/v1/manifest.json",
+  "oracle": {
+    "failures": [],
+    "localStorageKeys": [],
+    "scenarios": [
+      {
+        "group": "ESS5e03_6:second_vote:1",
+        "other": 37,
+        "study": "ESS5e03_6",
+        "unavailable": 2,
+        "valid": 4
+      },
+      {
+        "group": "ESS5e03_6:second_vote:2",
+        "other": 37,
+        "study": "ESS5e03_6",
+        "unavailable": 0,
+        "valid": 6
+      },
+      {
+        "group": "ESS5e03_6:second_vote:3",
+        "other": 37,
+        "study": "ESS5e03_6",
+        "unavailable": 1,
+        "valid": 5
+      },
+      {
+        "group": "ESS5e03_6:second_vote:4",
+        "other": 37,
+        "study": "ESS5e03_6",
+        "unavailable": 4,
+        "valid": 2
+      },
+      {
+        "group": "ESS5e03_6:second_vote:5",
+        "other": 37,
+        "study": "ESS5e03_6",
+        "unavailable": 2,
+        "valid": 4
+      },
+      {
+        "group": "ESS5e03_6:second_vote:6",
+        "other": 37,
+        "study": "ESS5e03_6",
+        "unavailable": 6,
+        "valid": 0
+      },
+      {
+        "group": "ESS5e03_6:second_vote:7",
+        "other": 37,
+        "study": "ESS5e03_6",
+        "unavailable": 6,
+        "valid": 0
+      },
+      {
+        "group": "ESS5e03_6:second_vote:8",
+        "other": 37,
+        "study": "ESS5e03_6",
+        "unavailable": 6,
+        "valid": 0
+      },
+      {
+        "group": "ESS8e02_3:second_vote:1",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 3,
+        "valid": 7
+      },
+      {
+        "group": "ESS8e02_3:second_vote:2",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 2,
+        "valid": 8
+      },
+      {
+        "group": "ESS8e02_3:second_vote:3",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 4,
+        "valid": 6
+      },
+      {
+        "group": "ESS8e02_3:second_vote:4",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 6,
+        "valid": 4
+      },
+      {
+        "group": "ESS8e02_3:second_vote:5",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 5,
+        "valid": 5
+      },
+      {
+        "group": "ESS8e02_3:second_vote:6",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 10,
+        "valid": 0
+      },
+      {
+        "group": "ESS8e02_3:second_vote:7",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 10,
+        "valid": 0
+      },
+      {
+        "group": "ESS8e02_3:second_vote:8",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 10,
+        "valid": 0
+      },
+      {
+        "group": "ESS8e02_3:second_vote:9",
+        "other": 33,
+        "study": "ESS8e02_3",
+        "unavailable": 10,
+        "valid": 0
+      },
+      {
+        "group": "ESS9e03_3:second_vote:1",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 2,
+        "valid": 2
+      },
+      {
+        "group": "ESS9e03_3:second_vote:2",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 2,
+        "valid": 2
+      },
+      {
+        "group": "ESS9e03_3:second_vote:3",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 3,
+        "valid": 1
+      },
+      {
+        "group": "ESS9e03_3:second_vote:4",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 3,
+        "valid": 1
+      },
+      {
+        "group": "ESS9e03_3:second_vote:5",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 1,
+        "valid": 3
+      },
+      {
+        "group": "ESS9e03_3:second_vote:6",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 1,
+        "valid": 3
+      },
+      {
+        "group": "ESS9e03_3:second_vote:7",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 4,
+        "valid": 0
+      },
+      {
+        "group": "ESS9e03_3:second_vote:8",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 4,
+        "valid": 0
+      },
+      {
+        "group": "ESS9e03_3:second_vote:9",
+        "other": 39,
+        "study": "ESS9e03_3",
+        "unavailable": 4,
+        "valid": 0
+      }
+    ],
+    "sessionStorageKeys": [],
+    "singleReferencesUnchanged": true,
+    "totalAvailable": 63,
+    "totalGroups": 26,
+    "totalNulls": 111,
+    "totalOtherStudy": 944,
+    "urlUnchanged": true,
+    "verifiedAtUtc": "2026-10-03T16:23:21.769Z"
+  },
+  "viewports": [
+    {
+      "documentWidth": 305,
+      "groupSourcesOpen": false,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:23:58.836Z",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "documentWidth": 305,
+      "groupSourcesOpen": true,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:01.246Z",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "documentWidth": 375,
+      "groupSourcesOpen": false,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:03.613Z",
+      "violations": [],
+      "width": 390
+    },
+    {
+      "documentWidth": 375,
+      "groupSourcesOpen": true,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:05.660Z",
+      "violations": [],
+      "width": 390
+    },
+    {
+      "documentWidth": 753,
+      "groupSourcesOpen": false,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:07.935Z",
+      "violations": [],
+      "width": 768
+    },
+    {
+      "documentWidth": 753,
+      "groupSourcesOpen": true,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:09.934Z",
+      "violations": [],
+      "width": 768
+    },
+    {
+      "documentWidth": 1265,
+      "groupSourcesOpen": false,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:12.209Z",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "documentWidth": 1265,
+      "groupSourcesOpen": true,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:14.253Z",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "documentWidth": 1521,
+      "groupSourcesOpen": false,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:16.466Z",
+      "violations": [],
+      "width": 1536
+    },
+    {
+      "documentWidth": 1521,
+      "groupSourcesOpen": true,
+      "h1": 1,
+      "height": 900,
+      "incomplete": [],
+      "overflow": false,
+      "publicReferenceCount": 4,
+      "selection": [
+        {
+          "id": "draft-group-study",
+          "value": "ESS5e03_6"
+        },
+        {
+          "id": "draft-vote-group",
+          "value": "ESS5e03_6:second_vote:1"
+        }
+      ],
+      "utc": "2026-10-03T16:24:18.688Z",
+      "violations": [],
+      "width": 1536
+    }
+  ],
+  "remount": {
+    "nativeEdit": "Originalfrage D18 in ESS5e03_6 bearbeiten",
+    "mobile320QuestionHeadingTop": 31.75,
+    "questionHeadingBottom": 61.9375,
+    "retainedStudy": "ESS5e03_6",
+    "retainedGroup": "ESS5e03_6:second_vote:1",
+    "all43StatesUntouched": true
+  },
+  "focusProbe": {
+    "activeId": "draft-vote-group",
+    "activeTag": "SELECT",
+    "documentHasFocus": false,
+    "focusVisible": false,
+    "outline": "rgb(30, 43, 36) none 3px",
+    "utc": "2026-10-03T16:24:32.875Z",
+    "viewport": {
+      "dpr": 1,
+      "h": 900,
+      "scale": 1,
+      "w": 1280
+    }
+  },
+  "zoomProbe": {
+    "before": {
+      "dpr": 1,
+      "h": 900,
+      "scale": 1,
+      "w": 1280
+    },
+    "after": {
+      "documentHasFocus": false,
+      "dpr": 1,
+      "h": 900,
+      "scale": 1,
+      "utc": "2026-10-03T16:24:33.628Z",
+      "w": 1280
+    }
+  },
+  "screenshots": [
+    {
+      "role": "desktop1280_native_select_focus_probe",
+      "url": "http://localhost:4314/forschungsentwurf",
+      "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-muslr6n5-3a0f318a.png"
+    },
+    {
+      "role": "mobile320_group_selection",
+      "url": "http://localhost:4314/forschungsentwurf",
+      "screenshotPath": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-muslrldq-02639fcf.png"
+    }
+  ],
+  "findings": [
+    {
+      "id": "GBP-ROOT-01",
+      "severity": "bounded responsive layout",
+      "scope": "Native historical study select at320",
+      "evidence": "Actual screenshot shows second wrapped text row vertically clipped; computed white-space normal,height48,padding10.4/13.6px. Accessible native option full, historical election/fieldtime separately visible. Correction pending original frozen ordinaryfirst."
+    }
+  ],
+  "limits": [
+    "DOM programmatic change events on real native selects, no framework state override",
+    "63 public proportions/counts checked after actual rendering, no raw estimation",
+    "axe/nooverflow not full accessibility/human/design/release approval",
+    "document.hasFocus false and :focus-visible false despite focused select; native Control+plus caused no measurable zoom; true keyboard visibility and200percent remain unverified"
+  ],
+  "technical": {
+    "globalCheck": "outputs/loop/check-056.log",
+    "exitCode": 0,
+    "angularTests": 78,
+    "groupGeneratorParity": 0,
+    "singleGeneratorParity": 0,
+    "publicGroupReportCheck": 0,
+    "productionSearch": "rg forbidden research/group markers returned1: expected no matches; report builder itself0"
+  }
+}
