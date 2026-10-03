@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 40,
+  "localCommit": "7b03f4c6ccc317a3968a1f9693a744c457f1f7e0",
+  "verifiedRemoteCommit": "7b03f4c6ccc317a3968a1f9693a744c457f1f7e0",
+  "verifiedAtUtc": "2026-10-03T14:12:54.091037+00:00",
+  "branch": "research/life-93-night-20261003",
+  "pushExitCode": 0,
+  "scan": "outputs/loop/breadth-checkpoint040-scan.json",
+  "technicalCheck": {
+    "command": "pnpm check",
+    "exitCode": 1,
+    "log": "outputs/loop/check-045.log",
+    "scope": "Formatting only failed; later stages not run. Original UI first preserved before correction."
+  },
+  "scientificAcceptance": false
+}

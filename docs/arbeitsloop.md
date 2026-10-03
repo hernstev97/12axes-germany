@@ -96,3 +96,7 @@ Nachtrag3.Oktober2026,13:25UTC: Vier zusätzliche Nutzer-CSV-Dateien bytegleich 
 Beide getrennten Ersturteile des20-Pin-Pakets EMPIRICAL-V2-001/v1 sind abgeschlossen. Methoden ACCEPTED_BOUNDED, Quellen NOT_ACCEPTED für EV2-SRC-F01. Originale bleiben erhalten; Quellenkorrektur und gezielte Nachprüfung, keine neue Gesamtauditpflicht. Neue v2-CSV-Header/Antworten/Marginals weiterhin ungeöffnet. Aktueller Fortsetzungsstand und Agentaufgaben stehen im Handoff; frühere Zeitstände hier sind historische Protokolle.
 
 Die lokale43-Fragen-Gestaltung liegt als eigener Vorschlag unter prototypes/policy-v2. Normale Erstprüfung identifizierte zwei begrenzte semantische Textbefunde und einen internen Generatorpin. Originale vor Korrekturen sichern; kein Forschungsstopp für diese UI-Befunde. Quellenübergang wird nur für19geänderte CAWI-/B25-Bindungsfelder gezielt nachgeprüft. Aktuelle Referenz-/Parteidaten nochgeschlossen.
+
+## Planannahme v2, 2026-10-03T14:23:20.016753+00:00
+
+Beide gezielten Rollen akzeptieren die22-Pin-Revision2 begrenzt; EV2-SRC-F01 geschlossen Korrekturrunde1. [Rootentscheidung](../reports/loop/EMPIRICAL-V2-001-entscheidung.md) bindet tatsächliche Berichtsbytes und Grenzen. Keine neuen v2-Header/Antworten/Marginals vor dieser Entscheidung. Neuer versionierter Tag und positiv gebundener Freeze/Gate sind die nächsten Voraussetzungen, danach fünf getrennte historische Auswertungen. Zwei frische Ergebnisrollen vor Aussagen/Export. Keine Claude-/menschliche/Releaseabnahme aus dieser Planannahme.

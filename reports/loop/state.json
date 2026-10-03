@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T14:12:22.386435+00:00",
+  "updatedAtUtc": "2026-10-03T14:23:20.016753+00:00",
   "status": "RUNNING",
-  "phase": "BROAD_V2_TARGETED_CORRECTIONS",
+  "phase": "BROAD_V2_PLAN_FREEZE",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -50,14 +50,15 @@
     "BI004 targeted first correction accepted in round2; D36 semantic precision accepted, no overall audit",
     "PP-001 targeted correction1 accepted, original failed reproduction oracles retained",
     "METHODOLOGY-PAGE-001 normal bounded first no blocking finding, source-link suggestions open",
-    "Methodology doc page technical package: check043 exit0,5widths final nooverflow/axe0/localfont/1H1; actual anchor focus bounded,200percent/visiblefocus pending"
+    "Methodology doc page technical package: check043 exit0,5widths final nooverflow/axe0/localfont/1H1; actual anchor focus bounded,200percent/visiblefocus pending",
+    "EMPIRICAL-V2-001 revision2 both targeted roles ACCEPTED_BOUNDED; EV2-SRC-F01 closed correction1; new data still unopened"
   ],
   "openTasks": [
-    "Strict v2 contract and source B25 scope decision before dependent analyses",
-    "Synthetic aggregator/gated I/O preparation plus two fresh preempirical transition reviewers",
-    "Version freeze/new gate then actual5 separate historical analyses and two result-transition reviewers",
-    "Method report, concrete broad test/results UI draft, browser/accessibility/runtime checks",
-    "Final Claude, human design/comprehension/release visibly pending"
+    "Verified v2 freeze/tag/gate and actual5 separate historical runs",
+    "Two fresh result roles and authenticated review-bound exports",
+    "v2.1 historical categorical voter-group contract/software/gates/analyses/results, no pooled scores",
+    "Methods report and concrete broad website with actual reviewed references; targeted UI review and browser checks",
+    "Human comprehension draft and Claude review dossier; actual Claude/design/comprehension/release pending"
   ],
   "dependencies": [
     {
@@ -107,9 +108,9 @@
     "mainIntegration": "BESTANDEN",
     "currentLocalTechnical": {
       "command": "pnpm check",
-      "exitCode": 1,
-      "log": "outputs/loop/check-045.log",
-      "scope": "Format stage failed after newly tracked original prototype; later stages not run. Last green check04431tests/build preserved."
+      "exitCode": 0,
+      "log": "outputs/loop/check-047.log",
+      "scope": "format/handbook/review schema/typecheck/31tests/build; no scientific acceptance"
     },
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Historische A/B-Kriterien berechnet; keine umfassende Produktvalidität. Breite v2 NICHT_GEPRÜFT.",
@@ -247,6 +248,20 @@
       "sha256": "be827e1bfa2073d0e84a069aadbff1950143f5f015ea36cdbaf40c8aba7c05dc",
       "scope": "pre-empirical v2 independent first",
       "decision": "NOT_ACCEPTED"
+    },
+    {
+      "role": "methods_reproducibility",
+      "path": "reports/loop/reviews/EMPIRICAL-V2-001-methods-round1.md",
+      "sha256": "8d1d2989ac6780d3a78bc2e987dbdfcdebf3b0ccb4c2610c43897ca6cfb798ef",
+      "decision": "ACCEPTED_BOUNDED",
+      "scope": "targeted revision2 pre-empirical review"
+    },
+    {
+      "role": "sources_constructs_fairness",
+      "path": "reports/loop/reviews/EMPIRICAL-V2-001-sources-round1.md",
+      "sha256": "77d6e6b0fb24b760d4368e5a0ef0db3cb8d5952d166c2d32ef0fcf773d35fe5a",
+      "decision": "ACCEPTED_BOUNDED",
+      "scope": "targeted revision2 pre-empirical review"
     }
   ],
   "blockingFindingIds": [
@@ -267,19 +282,23 @@
   "activeAgents": [
     {
       "name": "T3 preempirical_v2_methods",
-      "status": "RUNNING_TARGETED_ROUND1"
+      "status": "COMPLETED_TARGETED_ROUND1_ACCEPTED_BOUNDED"
     },
     {
       "name": "T3 preempirical_v2_sources",
+      "status": "COMPLETED_TARGETED_ROUND1_ACCEPTED_BOUNDED"
+    },
+    {
+      "name": "T3 policy_ui_reviewer",
       "status": "RUNNING_TARGETED_ROUND1"
     },
     {
       "name": "/root/breadth_topic_frame",
-      "status": "RUNNING_PURE_REPORT_AUTHOR"
+      "status": "RUNNING_COMPREHENSION_V2_DRAFT_AUTHOR_NO_RESPONSES"
     },
     {
       "name": "/root/breadth_data_instruments",
-      "status": "RUNNING_PUBLIC_GROUP_CONTRACT_AUTHOR_NO_ANSWERS"
+      "status": "RUNNING_GROUP_V21_CONTRACT_AUTHOR_NO_PARTY_RESPONSES"
     }
   ],
   "workPackages": [
@@ -530,24 +549,24 @@
       "tests": "13 synthetic Vitest tests author exit0"
     }
   ],
-  "nextConcreteStep": "Finish targeted22-pin source/method reports, freeze/tag/gate then5 separate studies. Correct only PUI-R1/R2/R3 after original proposal commit; format/preparation hashes and browser wrap followup, no full audit.",
+  "nextConcreteStep": "Commit accepted plan, create and verify new analyseplan-v2 tag; then exact freeze/gate and5 separate private historical runs. Two fresh result roles before export.",
   "checkpoint": {
-    "lastLocalCommit": "456cc2e18789a41b9e6f34e2dcdef495443b98a6",
-    "lastVerifiedRemoteCommit": "456cc2e18789a41b9e6f34e2dcdef495443b98a6",
-    "lastVerifiedPushAtUtc": "2026-10-03T14:00:16.720835+00:00",
+    "lastLocalCommit": "7b03f4c6ccc317a3968a1f9693a744c457f1f7e0",
+    "lastVerifiedRemoteCommit": "7b03f4c6ccc317a3968a1f9693a744c457f1f7e0",
+    "lastVerifiedPushAtUtc": "2026-10-03T14:12:54.091037+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-039.json",
+    "record": "reports/loop/push-040.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Original11-pin local UI proposal and original first report preserved before semantic/format corrections. Source correction19fields plus22-pin revision and authorsWIP. No v2 header/answers/marginals. Check045 format-stage exit1; other stages not run; original proposal formatting pending after version save."
+    "pendingPayload": "Accepted22-pin plan revision2 and two targeted reports; no v2 header/response/marginal exposure. Separate current UI corrections still under targeted review; group/report authors WIP not staged in science freeze."
   },
-  "scientificStatus": "43 categorical original items,8topics. Methods first ACCEPTED_BOUNDED; sources first NOT_ACCEPTED for two CAWI text bindings. No new v2 header/answer/marginal interpreted; v1 A/B known.",
+  "scientificStatus": "Current22-pin revision2 accepted bounded by two targeted Codex roles. No new v2 headers/answers/marginals yet; historical v1 A/B known. No result/product/release acceptance.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -667,7 +686,7 @@
     }
   ],
   "morningReport": "reports/morgenbericht-2026-10-03.md",
-  "executionStatus": "RUNNING_TARGETED_SOURCE_CORRECTION_AND_LOCAL_PROTOTYPE",
+  "executionStatus": "RUNNING_ACCEPTED_PLAN_FREEZE_BEFORE_NEW_V2_DATA",
   "interruption": {
     "requestedAtUtc": "2026-10-03T09:02:07+00:00",
     "reason": "Steven ausdrücklich: aktuellen Arbeitsloop geordnet unterbrechen, keine neuen Pakete/Reviews; Projekt bleibt offen.",
@@ -835,25 +854,40 @@
   },
   "empiricalPlanV2": {
     "path": "docs/empirie-plan-v2.entwurf.md",
-    "status": "FIRSTS_COMPLETE_TARGETED_SOURCE_CORRECTION_NO_GATE",
+    "status": "ACCEPTED_BOUNDED_PENDING_VERIFIED_TAG_AND_GATE",
     "count": 43,
     "measurement": "separate original categorical responses, no global score or factor",
     "topics": 8,
     "accessStatus": "no actual v2 answer import",
-    "remaining": "EV2-SRC-F01 correction and targeted recheck; separate version freeze/tag/positive gate before actual studies.",
+    "remaining": "Commit accepted plan, create and verify new analyseplan-v2 tag; then exact freeze/gate and5 separate private historical runs. Two fresh result roles before export.",
     "localInputFilesAvailable": true,
     "contract": "data/analysevertrag.v2.entwurf.json",
     "contractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
     "sourceB25Decision": "Historical static single response allowed after pre-empirical sources-role judgment; proposed new web postflow/CAWI downstream unknown explicitly not operational equivalence",
     "reviewManifest": "reports/loop/packages/EMPIRICAL-V2-001/v1/manifest.json",
-    "reviewManifestSha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c"
+    "reviewManifestSha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c",
+    "reviewDecision": "reports/loop/EMPIRICAL-V2-001-entscheidung.md",
+    "reviewers": [
+      {
+        "role": "methods_reproducibility",
+        "path": "reports/loop/reviews/EMPIRICAL-V2-001-methods-round1.md",
+        "sha256": "8d1d2989ac6780d3a78bc2e987dbdfcdebf3b0ccb4c2610c43897ca6cfb798ef",
+        "decision": "ACCEPTED_BOUNDED"
+      },
+      {
+        "role": "sources_constructs_fairness",
+        "path": "reports/loop/reviews/EMPIRICAL-V2-001-sources-round1.md",
+        "sha256": "77d6e6b0fb24b760d4368e5a0ef0db3cb8d5952d166c2d32ef0fcf773d35fe5a",
+        "decision": "ACCEPTED_BOUNDED"
+      }
+    ]
   },
   "sourceCatalogV2": {
     "path": "data/politikprofil-v2.fragen.entwurf.json",
     "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4",
     "report": "reports/loop/authors/BREADTH-CATALOG-004-WIP.md",
-    "status": "DRAFT_BOUND_NO_EMPIRICAL_GATE",
-    "remaining": "Original downstream CAWI execution unknown; bounded descriptive B25/new website decision documented before new answers. No absolute administration equivalence."
+    "status": "BOUND_STATIC_HISTORICAL_SCOPE_ACCEPTED_BOUNDED",
+    "remaining": "B25 original CAWI postflow and new web administration remain open; no operational equivalence."
   },
   "groupPreparationV2": {
     "status": "NEW_SEPARATE_V21_CONTRACT_IN_PREPARATION_NO_PARTY_HEADERS",
@@ -863,12 +897,14 @@
     "bindingReport": "reports/loop/authors/BREADTH-GROUP-BINDING-006-WIP.md"
   },
   "prototypeV2": {
-    "status": "FIRST_REVIEW_PUI_R1_R2_R3_OPEN",
+    "status": "PUI_R1_R2_R3_CORRECTED_TARGETED_ROUND1_RUNNING",
     "path": "prototypes/policy-v2/index.html",
     "author": "reports/loop/authors/POLICY-UI-DESIGN-WIP.md",
     "browserStatus": "BOUNDED_TEN_LAYOUT_AXE_CHECKS_AND_FLOW43",
     "historicalReferences": "No numbers included; not approved",
     "humanDesignRelease": "PENDING",
-    "technicalRecord": "reports/loop/policy-ui-technical-wip.json"
+    "technicalRecord": "reports/loop/policy-ui-technical-wip.json",
+    "correctionManifest": "reports/loop/packages/POLICY-UI-001/v2/manifest.json",
+    "correctionManifestSha256": "b82dfe72af5e0b9182d70276138f432b2dea0ed97fa40c3acc4863dd81b2a6e8"
   }
 }

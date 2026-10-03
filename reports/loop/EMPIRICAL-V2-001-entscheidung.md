@@ -1,0 +1,13 @@
+# EMPIRICAL-V2-001: Entscheidung zur Planfestschreibung
+
+2026-10-03T14:23:20.016753+00:00. Root hat beide vollständigen gezielten Nachberichte und die unveränderten Erstberichte gelesen. Die aktuelle Revision2 hat22 Artefakte; alle tatsächlichen Bytes stimmen mit Manifest `c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c` überein. [Methoden-Nachbericht](reviews/EMPIRICAL-V2-001-methods-round1.md), SHA256 `8d1d2989ac6780d3a78bc2e987dbdfcdebf3b0ccb4c2610c43897ca6cfb798ef`, und [Quellen-Nachbericht](reviews/EMPIRICAL-V2-001-sources-round1.md), SHA256 `77d6e6b0fb24b760d4368e5a0ef0db3cb8d5952d166c2d32ef0fcf773d35fe5a`, akzeptieren diese Fassung begrenzt. Ihre Ersturteile bleiben erhalten.
+
+EV2-SRC-F01 ist nach einer gezielten Korrekturrunde geschlossen: sechs vollständige CAWI-Demokratiestämme gegen Originalseiten geprüft. B25 bleibt für historische statische Einzelkategorien begrenzt; unbekannte originale CAWI-Weiterleitung, ausgelassene Folgefragen und neue Webadministration bleiben offen. Auswahl, Kategorien, Missing, Kriterien und Software sind durch diese Quellenkorrektur nicht geändert.
+
+Die geplante historische deskriptive Ausführung wird für43 getrennte Einzelangaben aus fünf Studien angenommen. Keine gemeinsame Skala, Personenverknüpfung, aktuelle Norm, persönliche Unsicherheit oder Parteizuordnung. Kriterien100/5 sind Anzeigeheuristiken, kein Präzisions- oder Anonymitätsnachweis. Gültige synthetische Erstprüfungen werden weitergenutzt; keine neue Gesamtprüfung für Metadaten.
+
+Vor dieser Entscheidung wurden keine neuen v2-Header, Antworten oder Marginals semantisch untersucht. Historische v1-A/B-Ergebnisse sind bekannt; ESS11-v2 ist daher sekundär und keine unberührte Bestätigung. Alte B/FULL/C/Norm/Gruppenfolge bleibt angehalten. Andere Vergleichsfelder werden durch das v2-Gate nicht freigegeben.
+
+Nächster Schritt: diese Forschungsfassung committen, neuen Tag `analyseplan-v2` regulär pushen und dessen Ziel samt Branchremote verifizieren. Danach separaten Freeze-/Gatebeleg an tatsächlichen Commit-, Manifest-, Vertrags- und Berichtshashes schreiben. Erst nach diesen Prüfungen darf der bestehende `run_study_reference` fünf getrennte private Kandidaten erzeugen. Zwei frische Ergebnisrollen und tatsächliche Reporthash-Verifikation sind vor Aussagen/Export erforderlich.
+
+Beide Prüfer und Root gehören zur selben Codex-Modellfamilie; gemeinsame Fehlerquellen bleiben möglich. Agentenübereinstimmung beweist keine Neutralität. Planannahme ist keine empirische Validierung, Produkt-, Rechts-, menschliche oder Releaseabnahme. Claude-Schlusskontrolle und menschliche Gestaltung/Verständnis/Release bleiben ausstehend.
