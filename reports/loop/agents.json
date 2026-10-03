@@ -1,0 +1,11 @@
+{
+  "model": {
+    "slug": "gpt-6.1-sol",
+    "reasoning": "ultra",
+    "internalVersion": "unknown",
+    "internalInstructions": "unknown",
+    "differentFamily": false
+  },
+  "maxConcurrentIncludingRoot": 4,
+  "calls": []
+}

@@ -16,3 +16,10 @@ reports/audit-recherche/issue-LIFE-93.md
 reports/audit-recherche/pruefauftrag-gemeinsam.md
 reports/audit-recherche/reviewer-*.md
 reports/audit-recherche/juror-*.md
+
+# Dauerhafte Originalaufträge und eingefrorene Prüfpakete bleiben unverändert.
+docs/auftrag-life-93-2026-10-03.md
+reports/loop/issue-2026-10-03.json
+reports/loop/issue-2026-10-03.md
+reports/loop/packages/
+reports/loop/reviews/

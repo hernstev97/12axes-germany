@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "updatedAtUtc": "2026-10-03T01:11:25.572959+00:00",
+  "findings": [
+    {
+      "id": "R1-F01",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "originalStatus": "nachgewiesene zu weite Formulierung",
+      "reason": "Die deutsche stratum-Korrektur ist für 3.0→4.0 belegt; daraus folgt keine pauschale Untauglichkeit von 4.0/4.1.",
+      "changedFilesOrIds": "docs/datenlage.md; B-ESS-001",
+      "evidence": "quellenbelege.json, ESS11-DATA, Abschnitt DOI and version information; Original erneut durch Hauptagent gelesen.",
+      "correctionState": "Versionswarnung korrigiert; technische Dateigleichheit weiterhin ungeprüft.",
+      "verification": {
+        "scope": "Originalabruf plus Versionsblockprüfung ausgeführt; formaler Korrekturcheck folgt.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "documented-error-or-ambiguity",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "closureScope": "Korrektur an eingefrorener alter Forschungsfassung durch Juror bestätigt",
+      "blocks": []
+    },
+    {
+      "id": "R2-F01",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "originalStatus": "spätere Anforderung",
+      "reason": "Bezugsrahmen und konkurrierende Erwartungen fehlen ausdrücklich. Auditrecherche des Reviewers ersetzt weder vollständige Abdeckung noch Itemzuordnung.",
+      "changedFilesOrIds": "docs/analyseanforderungen.md, Konstrukte; P02/R09",
+      "evidence": "reviewer-2-politikwissenschaft.md, R2-Q02–Q08 und R2-F01; fehlende drei Artefakte.",
+      "correctionState": "Offen; blockiert endgültige theoretische Item-/Modellwahl, nicht öffentliche Recherche.",
+      "verification": {
+        "scope": "Vorhandensein und Status jetzt prüfen; fachliche Themen-/Itemgegenprüfung erst nach Ausarbeitung.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": []
+    },
+    {
+      "id": "R2-F02",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "originalStatus": "begründete Unsicherheit",
+      "reason": "Forderungen, Wahrnehmungen, Bewertungen, Vertrauen und Werte können verschiedene Inhalte messen. Kein falsch aufgenommenes Item nachgewiesen.",
+      "changedFilesOrIds": "R07; P02; docs/analyseanforderungen.md",
+      "evidence": "reviewer-2-politikwissenschaft.md, R2-Q01/R2-Q06, Originalfragen S. 13–16/51–54.",
+      "correctionState": "Anforderung präzisiert; Grenzfallanwendung und endgültige Itemurteile offen.",
+      "verification": {
+        "scope": "Formaler Antworttypenvertrag jetzt; tatsächliche getrennte Itembewertung später.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": []
+    },
+    {
+      "id": "R2-F03",
+      "decision": "angenommen",
+      "severity": "erheblich für spätere Dimensions-/Textfreigabe",
+      "originalStatus": "spätere Anforderung",
+      "reason": "Rechenpolung beweist weder bipolare Bedeutung noch umfassende politische Orientierung. Unipolare Konstrukte brauchen entsprechende Texte.",
+      "changedFilesOrIds": "R19; P02/P06; B-CONT-001; docs/analyseanforderungen.md",
+      "evidence": "ALEXANDER-ETAL-2026, Challenges in measuring gender attitudes and sexism; Reviewer 2.",
+      "correctionState": "Anforderung präzisiert; konkrete Konstruktakten, Skalenenden und Texte fehlen.",
+      "verification": {
+        "scope": "Formale Begrenzung jetzt; Wortlaut-/Konstruktprüfung je späterer Dimension bleibt offen.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": ["dependent empirical claim/function"]
+    },
+    {
+      "id": "R2-F04",
+      "decision": "angenommen",
+      "severity": "mittel, bedingt durch PVQ-Aufnahme",
+      "originalStatus": "spätere bedingte Anforderung",
+      "reason": "Relative Wertpriorität darf nicht aus unvereinbar ausgewerteten absoluten Itemmitteln behauptet werden. Kein PVQ-Item ist ausgewählt.",
+      "changedFilesOrIds": "P08; B-CONT-002; docs/analyseanforderungen.md",
+      "evidence": "SCHWARTZ-ESS-VALUES, PDF-S. 17/30; Reviewer 2.",
+      "correctionState": "Bedingte Anforderung präzisiert; Aufnahme, Fehlermodell und Auswertung offen.",
+      "verification": {
+        "scope": "Vertragsgrenze jetzt prüfen; Volltext-/Formel-/empirische Prüfung erst bei Aufnahmeabsicht.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": []
+    },
+    {
+      "id": "R3-F01",
+      "decision": "angenommen",
+      "severity": "erheblich für konstruktbezogene Gruppenvergleiche",
+      "originalStatus": "spätere Anforderung",
+      "reason": "Ordinale beobachtete und latente Mittel brauchen zielbezogene Vergleichsregeln. Keine universelle strikte Invarianzforderung aus einer begrenzten Simulation ableiten.",
+      "changedFilesOrIds": "P09/P10; R15; B-METH-005; docs/analyseanforderungen.md",
+      "evidence": "TSE-LAI-ZHANG-2024, Observed mean comparison/Factor mean comparison; WU-ESTABROOK-2016, 2.2/10; Reviewer 3.",
+      "correctionState": "Anforderung präzisiert; Verfahren, Parameter und tatsächliche Invarianz offen.",
+      "verification": {
+        "scope": "Formaler Zielgrößenvertrag jetzt; synthetische Methoden-/Softwareprüfung und ESS-Tests später.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": ["dependent empirical claim/function"]
+    },
+    {
+      "id": "R3-F02",
+      "decision": "angenommen",
+      "severity": "erheblich für Teilantwort-Perzentile",
+      "originalStatus": "spätere Anforderung",
+      "reason": "Gleiche Mindestanzahl und 0–1-Bereich garantieren keine vergleichbare Norm bei unterschiedlichen Itemidentitäten.",
+      "changedFilesOrIds": "P05/P08; R14; docs/analyseanforderungen.md",
+      "evidence": "Reviewer 3, synthetische Gegenrechnung: 0.25 gegen Vollnorm und 0.75 gegen Teilnorm.",
+      "correctionState": "Anforderung präzisiert; zulässige Masken und Normmethode offen.",
+      "verification": {
+        "scope": "Synthetisches Gegenbeispiel erneut ausführen; keine Validierung einer zukünftigen Normlösung.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": ["dependent empirical claim/function"]
+    },
+    {
+      "id": "R3-F03",
+      "decision": "angenommen",
+      "severity": "mittel, optionale Rangfunktion",
+      "originalStatus": "spätere Anforderung",
+      "reason": "Gemeinsame Schätzabhängigkeit beeinflusst Rangunsicherheit; marginale Intervalle und Modellvarianten allein genügen nicht.",
+      "changedFilesOrIds": "P07/P11; R17; docs/analyseanforderungen.md",
+      "evidence": "Reviewer 3, mathematische Differenzvarianz mit Korrelation ±0.9.",
+      "correctionState": "Anforderung präzisiert; Rangverfahren und Präzisionsregeln offen.",
+      "verification": {
+        "scope": "Gegenrechnung erneut ausführen; spätere gemeinsame designgerechte Verfahren gesondert prüfen.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": []
+    },
+    {
+      "id": "R3-F04",
+      "decision": "angenommen",
+      "severity": "erheblich für Score-Reliabilität/persönliche Messbereiche",
+      "originalStatus": "spätere Anforderung",
+      "reason": "Kennwert und Messbereich müssen exportierten beobachteten Score betreffen. Der Green/Yang-Abstract ist keine geprüfte Intervallmethode.",
+      "changedFilesOrIds": "P06/P08; B-METH-006; docs/analyseanforderungen.md",
+      "evidence": "GREEN-YANG-2009 Abstract; B-METH-004; Reviewer 3.",
+      "correctionState": "Anforderung präzisiert; Volltext, Software, persönliches Fehlermodell und Webübertragung offen.",
+      "verification": {
+        "scope": "Formal Zielscore und Grenzen jetzt; methodische und empirische Prüfung später.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": ["dependent empirical claim/function"]
+    },
+    {
+      "id": "R4-F01",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "originalStatus": "begründete Unsicherheit",
+      "reason": "Parteibenannt ist enger/mehrdeutiger als Parteibezug. Generischer Bezug und Einleitung/Filter müssen berücksichtigt werden.",
+      "changedFilesOrIds": "R07; P02; docs/analyseanforderungen.md",
+      "evidence": "LIFE-93 Phase 1; Originalfragebogen B10 S. 7, B23 S. 9, B25 mit Filter S. 10; zusätzlich durch Hauptagent gelesen.",
+      "correctionState": "Wortlaut korrigiert; vollständige Grenzfall-/Itembewertung offen.",
+      "verification": {
+        "scope": "Wortlaut gegen Issue und Originalfundstellen erneut prüfen; Item-Erstbewertungen später.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "documented-error-or-ambiguity",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "closureScope": "Korrektur an eingefrorener alter Forschungsfassung durch Juror bestätigt",
+      "blocks": []
+    },
+    {
+      "id": "R4-F02",
+      "decision": "angenommen",
+      "severity": "mittel für spätere Textfreigabe",
+      "originalStatus": "spätere Anforderung",
+      "reason": "Ähnliches Thema und Form sind keine inhaltliche Äquivalenz. Sachliche Unterschiede dürfen nicht zur erzwungenen Symmetrie führen.",
+      "changedFilesOrIds": "P13; R19; docs/analyseanforderungen.md",
+      "evidence": "LIFE-93 Neutralitätsprüfungen; B34–B36 S. 13; Reviewer 4.",
+      "correctionState": "Vertragsanforderung präzisiert; konkrete Fälle, Schwellen und Textprüfung offen.",
+      "verification": {
+        "scope": "Formales Protokoll jetzt prüfen; konkrete Vergleichs-/Austauschprüfungen später.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": []
+    },
+    {
+      "id": "R5-F01",
+      "decision": "teilweise angenommen",
+      "severity": "mittel",
+      "originalStatus": "historische Nachprüfbarkeitslücke",
+      "reason": "Vollständige historische Runs sind nicht replaybar. Vorhandene Browserbelege wurden aber präzise lokal registriert; vollständiger App-Quellcode ist über den genannten Foundation-Commit zugänglich, nicht als Snapshotkopie. Neue Läufe ersetzen keine historischen Belege.",
+      "changedFilesOrIds": "Historischer Phasenbericht-Nachtrag; historische-belege.json; neue Run-Protokolle",
+      "evidence": "outputs/browser-checks.json und sieben registrierte lokale Artefakte; git HEAD 1a7b0c3, keine Web-Diffs; ursprüngliche fehlende Logs.",
+      "correctionState": "Teilweise korrigiert; historische Ausführung ohne vollständige Logs bleibt Autorangabe. Aktueller technischer Stand wird neu geprüft.",
+      "verification": {
+        "scope": "Neue technische/Schema/Strukturläufe mit Umgebung, Zeiten, gehashtem Prüfstand und Logs; kein Rückdatieren.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": []
+    },
+    {
+      "id": "R5-F02",
+      "decision": "teilweise angenommen",
+      "severity": "mittel",
+      "originalStatus": "historische Quellenrekonstruktionslücke",
+      "reason": "Problem anerkannt. Aktuelle tragende Versions-/Lizenzstellen neu mit Zeit, Hash und lokalem Vollbeleg gesichert. Ursprüngliche dynamische Portaltexte lassen sich dadurch nicht rückwirkend beweisen.",
+      "changedFilesOrIds": "quellenbelege.json; docs/quellen.json; lokale Quellenkopien",
+      "evidence": "Live-T3-Portalabruf 2026-10-03T00:29:38.127Z; direkter aktueller ESS-Disclaimer-HTML-Abruf; genaue Hashes im Beleg.",
+      "correctionState": "Aktueller zentraler Beleg gesichert; ursprüngliche sowie weitere dynamische Quellenstände teilweise offen.",
+      "verification": {
+        "scope": "Gesicherte Belege hashen und Originalstellen prüfen; historische Lücke ausdrücklich erhalten.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": []
+    },
+    {
+      "id": "R5-F03",
+      "decision": "angenommen",
+      "severity": "erheblich für zukünftige Unsicherheitsanzeige",
+      "originalStatus": "spätere Anforderung",
+      "reason": "Drei Unsicherheitsherkünfte müssen bis zum Score/Perzentil/Export getrennt bleiben. Kein bisher berechnetes Band als falsch nachgewiesen.",
+      "changedFilesOrIds": "R14/R17; P07/P08/P09/P12; model/README.md; docs/analyseanforderungen.md",
+      "evidence": "LIFE-93 Phase 3; Reviewer 5; ESS-WEIGHTS/B-METH-001; Reviewer 3.",
+      "correctionState": "Vertrag präzisiert; Verfahren, Konfidenzniveau soweit anwendbar und empirische Nachweise offen.",
+      "verification": {
+        "scope": "Formale Trennung jetzt prüfen; Herkunft separat variierende Simulationen und spätere Methodik-/Exportchecks offen.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "future-requirement-or-evidence-limit",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "closureScope": "Formale Anforderung präzisiert; tatsächliche spätere Untersuchung offen",
+      "blocks": ["dependent empirical claim/function"]
+    },
+    {
+      "id": "A-F01",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "originalStatus": "eigene zu weitgehende Prozessauslegung",
+      "reason": "Der Autor hatte vollständige methodische Planfreigabe pauschal zusätzlich zur Phase-0-Abnahme verlangt. Phase 0 fordert begründeten Plan und öffentlichen Tag; die späteren getrennten Itembewertungen bleiben verbindlich. Steven braucht keine Statistikabnahme zu übernehmen.",
+      "changedFilesOrIds": "Analyseplan-Startbedingung; Prüfregeln-Einleitung; E-20261003-07; AGENTS-Nachtrag",
+      "evidence": "Ausgangsfassung docs/analyseplan.md Schlussabschnitt; aktuelles LIFE-93 Phase 0 Abnahme und Phase 1; frühere Klärung im Gespräch.",
+      "correctionState": "Zusätzliche pauschale Startbedingung korrigiert; bestehende plan-/item-/analysespezifische Voraussetzungen nicht erfüllt erklärt.",
+      "verification": {
+        "scope": "Wortlaut gegen aktuelle Issue-Abschnitte prüfen; Juror soll diese Abgrenzung gesondert kontrollieren.",
+        "executionRecord": "04-korrekturpruefung.json sowie technische-pruefung.json; zukünftige Analysen bleiben offen"
+      },
+      "origin": "reports/audit-recherche/finding-entscheidungen.json",
+      "type": "documented-error-or-ambiguity",
+      "repairRounds": 1,
+      "status": "BESTANDEN",
+      "closureScope": "Korrektur an eingefrorener alter Forschungsfassung durch Juror bestätigt",
+      "blocks": []
+    }
+  ],
+  "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."
+}

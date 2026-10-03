@@ -6,6 +6,7 @@ coverage/
 .DS_Store
 *.log
 !reports/audit-recherche/*.log
+!reports/loop/**/*.log
 .env
 .env.*
 !.env.example

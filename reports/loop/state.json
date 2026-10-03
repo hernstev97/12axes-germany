@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "updatedAtUtc": "2026-10-03T01:11:25.572959+00:00",
+  "status": "RUNNING",
+  "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
+  "coordinator": "/root",
+  "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
+  "branch": "research/life-93-night-20261003",
+  "currentHead": "55a001881cea242b19255fdd2588a4ff9fbd5dd9",
+  "sourceIssue": {
+    "path": "reports/loop/issue-2026-10-03.json",
+    "updatedAt": "2026-10-02T22:07:24.510Z"
+  },
+  "assignment": "docs/auftrag-life-93-2026-10-03.md",
+  "completedTasks": [
+    {
+      "id": "MERGE-MAIN",
+      "proof": "reports/loop/000-main-integration.json",
+      "status": "BESTANDEN",
+      "scope": "main-Webdateien und Handbuch bytegleich; ursprüngliche Arbeit erhalten; keine umfassende Abnahme"
+    }
+  ],
+  "openTasks": [
+    "LOOP-000 integrations reviews and local check",
+    "LOOP-001 exact source inventory and competing theory",
+    "LOOP-002 concrete justified analysis plan and fail-closed infrastructure"
+  ],
+  "dependencies": [
+    {
+      "id": "ACCESS-CLAUDE",
+      "status": "BLOCKIERT",
+      "evidence": ["LIFE-93 Setup/Phase1/Phase7", "docs/auftrag-life-93-2026-10-03.md"],
+      "blocks": [
+        "endgültige Erstbewertungen",
+        "empirische Modellentwicklung und abhängige Freigaben"
+      ],
+      "actionNeeded": "Steven muss getrennten Claude-Zugriff und erforderliche Review-Einrichtung bereitstellen; keine Einrichtung durch Codex autorisiert."
+    },
+    {
+      "id": "SETUP-ACCEPTANCE",
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["formale Setup-Abnahme"],
+      "actionNeeded": "Tatsächliche Branch-/Pflichtcheck-Regeln und erfolgreicher Verstoß-/sauberer Test-PR fehlen."
+    },
+    {
+      "id": "PUBLIC-TAGS",
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["empirischer Analysebeginn"],
+      "actionNeeded": "Analyseplan und Erwartungsmodell vollständig begründen und erforderliche Prüfungen erfüllen; erst dann öffentliche Tags."
+    },
+    {
+      "id": "HUMAN-RELEASE",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "blocks": ["öffentliche Freigabe"],
+      "actionNeeded": "Steven prüft konkrete Release-Fassung."
+    },
+    {
+      "id": "HUMAN-COMPREHENSION",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "blocks": ["DONE"],
+      "actionNeeded": "Fünf reale anonymisierte Antworten nach Deployment; keine Simulation."
+    }
+  ],
+  "checks": {
+    "mainIntegration": "BESTANDEN",
+    "currentLocalTechnical": "NICHT_GEPRÜFT",
+    "currentIndependentIntegration": "NICHT_GEPRÜFT",
+    "empiricalValidation": "NICHT_GEPRÜFT",
+    "otherModelFamily": "BLOCKIERT"
+  },
+  "reviewReports": ["reports/audit-recherche/README.md", "reports/audit-recherche/juror-6.md"],
+  "blockingFindingIds": ["R2-F03", "R3-F01", "R3-F02", "R3-F04", "R5-F03"],
+  "repairRoundRegistry": "reports/loop/findings.json",
+  "activeAgents": [],
+  "workPackages": [
+    {
+      "id": "LOOP-000",
+      "status": "RUNNING",
+      "predefinedCriteria": "docs/arbeitsloop.md",
+      "artifacts": [
+        "reports/loop/000-main-integration.json",
+        "docs/auftrag-life-93-2026-10-03.md",
+        "docs/arbeitsloop.md"
+      ]
+    },
+    {
+      "id": "LOOP-001",
+      "status": "READY",
+      "predefinedCriteria": "docs/arbeitsloop.md"
+    },
+    {
+      "id": "LOOP-002",
+      "status": "READY",
+      "predefinedCriteria": "docs/arbeitsloop.md"
+    }
+  ],
+  "nextConcreteStep": "Erste Quellen-/Theorie-/Methodenautoren mit getrennten Dateien starten; LOOP-000 einfrieren und zwei Integrationsreviews ausführen.",
+  "checkpoint": {
+    "lastLocalCommit": "55a001881cea242b19255fdd2588a4ff9fbd5dd9",
+    "pushStatus": "NICHT_GEPRÜFT",
+    "intervalMinutes": 30,
+    "noPushToMain": true
+  },
+  "scientificStatus": "Kein endgültiges Inventar, keine Dimension, kein ESS-Import oder A/B-Split. Keine vollständige wissenschaftliche Abnahme."
+}
