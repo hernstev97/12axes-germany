@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "package": "FINAL-DOSSIER-HUMAN-V21-001/v2",
+  "createdUtc": "2026-10-03T16:08:32.886384+00:00",
+  "scope": "Pure Prettier transfer of reproduction-doc table spacing only; actual CommonMark+table token tree identical, prior ordinaryfirst valid. Other39pins byteidentical. No new scientific or human/repro/Claude/UI validation.",
+  "artifacts": [
+    {
+      "path": "docs/reproduktion-life93-v2.md",
+      "sha256": "83c63b42036cb089f1c1c1d7fb125f9b5f7847012c8f828bfe006b3327063c14"
+    },
+    {
+      "path": "docs/claude-schlusskontrolle-v2.md",
+      "sha256": "e7892c5eeacb3f8a5c0be43310496739afe390284b0d8cfce8204fde97dcb67f"
+    },
+    {
+      "path": "docs/verstaendnistest-v2.entwurf.md",
+      "sha256": "deaf970f15970f3bd68a3bd0494c5a304e611c491a79950ddfaa642e95e85a68"
+    },
+    {
+      "path": "docs/verstaendnistest-v2.1.entwurf.md",
+      "sha256": "3bcbb52603058146b050afdb417e7b0803ae3652e3cab769cec3c7ed31fa4d47"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "docs/auftrag-life-93-breite-2026-10-03.md",
+      "sha256": "d0a059efb9de65aec1be25b3c2d5fac3bcb61cb57b0d7af8e7d8f64ecb1fd5ed"
+    },
+    {
+      "path": "docs/lizenzen.md",
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb"
+    },
+    {
+      "path": "docs/empirie-plan-v2.entwurf.md",
+      "sha256": "2b0cd26f8fba81bbf520b9ae3411d623f9299c9ff707aacf681bde4c65a0439f"
+    },
+    {
+      "path": "docs/abdeckung-v2.md",
+      "sha256": "77ae3d328c4862d1396e72207e5e1401dfa4da1f57580315e973943d3dfad945"
+    },
+    {
+      "path": "data/analysevertrag.v2.entwurf.json",
+      "sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+    },
+    {
+      "path": "data/gruppenvertrag.v2.1.entwurf.json",
+      "sha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702"
+    },
+    {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+    },
+    {
+      "path": "reports/loop/policy-v2-run-receipts.json",
+      "sha256": "1d957ae0833f23ef34239f889bc9ce00771557c9e5ad096dfe6bd91f3709cfae"
+    },
+    {
+      "path": "reports/loop/policy-v2-access-disclosure.json",
+      "sha256": "61d346e08be6317c73878dc3221b6f399888b6de22ea7bb65cd5478dfc43f958"
+    },
+    {
+      "path": "reports/loop/group-v21-run-receipts.json",
+      "sha256": "e7d2dd5db68f953649d63adb0a13da88373354b7c09158462884239d1873d4c9"
+    },
+    {
+      "path": "reports/loop/group-v21-access-disclosure.json",
+      "sha256": "25476bdf5b6338e0c63ff6db050928c9a2859cbafcfe7b6a9b63af2e1db8dde6"
+    },
+    {
+      "path": "reports/loop/policy-v2-export-decisions.json",
+      "sha256": "a87f780a7219253f7f3773d051b7001f438b19b2fb2d0ee820fc22c1157a16df"
+    },
+    {
+      "path": "reports/loop/policy-group-v21-export-decisions.json",
+      "sha256": "544f31f83cac1e258ed13559c04373430a5ac0d792c4380421a32bb623ef42bc"
+    },
+    {
+      "path": "reports/loop/packages/EMPIRICAL-V2-001/v1/manifest.json",
+      "sha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c"
+    },
+    {
+      "path": "reports/loop/packages/EMPIRICAL-V2-001/v1/freeze.json",
+      "sha256": "a9a38fd5926ed3e83a1e335340991de21e8f25198e7544af42b6ba7382856c7a"
+    },
+    {
+      "path": "reports/loop/packages/GROUP-V21-001/v1/manifest.json",
+      "sha256": "73868d634da6a47fc7e5e72c858a4e93479785b892ffd6de65fda0c4243726a4"
+    },
+    {
+      "path": "reports/loop/packages/GROUP-V21-001/v1/freeze.json",
+      "sha256": "cfeb130f0975c6fab281c3a3eb1f7120f8667458d197f998cb1703211e061c09"
+    },
+    {
+      "path": "reports/loop/packages/GROUP-RESULTS-V21-001/v2/manifest.json",
+      "sha256": "47aa3e3f3cf6043cc81bf25bf6b1228bc007f4a12c3e2866337d91161f114382"
+    },
+    {
+      "path": "reports/loop/gates/pre-empirical-v2.json",
+      "sha256": "733ba8ba698e79c7f27fe06a8cc41dce0d3595e3ef15fb67ff2a2febd3e517b5"
+    },
+    {
+      "path": "reports/loop/gates/pre-group-v21.json",
+      "sha256": "7a695756ad4f9a05be31448559b8fcce7aadee686f8a25e47eb19768057dd8b2"
+    },
+    {
+      "path": "scripts/run-policy-v2.py",
+      "sha256": "992969063f3fcca73c4f44492cda5fff92621a323e11233df7df7d570f4f3740"
+    },
+    {
+      "path": "scripts/run-policy-groups-v21.py",
+      "sha256": "4a7dc196e05ec7a3d2a4c776c7806196a9cc53eefc37ccd63fb017f88735d33b"
+    },
+    {
+      "path": "scripts/build-policy-v2-report.py",
+      "sha256": "b9b335233abf4fadd7b6e3fa82f0c88b9d0a925ea2eb56882108a2701435c25e"
+    },
+    {
+      "path": "pipeline/policy_access_v2.py",
+      "sha256": "f2c26b2895f1730a344fde41fee63a960b9ff30f63a68a7beefb82a33e6366db"
+    },
+    {
+      "path": "pipeline/policy_group_access_v21.py",
+      "sha256": "a662e216c82085ab0a059056715ea880e3d9c63ba8ade9efaff2b5e7881a2f58"
+    },
+    {
+      "path": "data/reference-v2/README.md",
+      "sha256": "eb3d13cf1a423c3db43315a268eafa429ba92f8a579a89fe70f650c689fbd9d8"
+    },
+    {
+      "path": "data/reference-groups-v21/README.md",
+      "sha256": "60ba830a02d4371214c29627f255add74d22d70f8f268d83cbeb6c346500342f"
+    },
+    {
+      "path": "data/reference-v2/ESS5e03_6.json",
+      "sha256": "e489fe013d1cbd3d72b9ae816e422757ce8d34ae575d09f64df13a1750dc4bc6"
+    },
+    {
+      "path": "data/reference-v2/ESS8e02_3.json",
+      "sha256": "fb720cc18049f037ed86670bd76a51c3c1770342a61f5627b7afbfb127898ad7"
+    },
+    {
+      "path": "data/reference-v2/ESS9e03_3.json",
+      "sha256": "34e71b448c0c315cf9f19bda30628874c95464faf661813a65f25a3f9ad82be2"
+    },
+    {
+      "path": "data/reference-v2/ESS10SCe03_2.json",
+      "sha256": "e75dfbadcf68c14dce9d13c8a8a2dd1abc6e8a6e96618f960c8cd61c54bc3184"
+    },
+    {
+      "path": "data/reference-v2/ESS11e04_2.json",
+      "sha256": "453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721"
+    },
+    {
+      "path": "data/reference-groups-v21/ESS5e03_6.json",
+      "sha256": "343d06f921f5a943e742f304255726302b71162fb55d8c73b73d11f2f184b19a"
+    },
+    {
+      "path": "data/reference-groups-v21/ESS8e02_3.json",
+      "sha256": "fda4e3dab0546ba25ebb2c265d0d930830615697b023fce2075e41c6a562ff3a"
+    },
+    {
+      "path": "data/reference-groups-v21/ESS9e03_3.json",
+      "sha256": "a1e7f8b116da9d055ffffb2dc5eb2af04e43524962433a9b032f09cbd8b5d093"
+    }
+  ],
+  "previousManifestSha256": "6c63a6c53a86169c4dcd921349ad7d671a0fcd7a09f3ec58d2bc4a251223733c"
+}

@@ -14,9 +14,9 @@ Die beiden unten genannten Runner bestehen den aktuellen `--help`-Aufruf. Ein po
 
 Ein frischer Checkout allein reicht nicht. Benötigt wird ein Forschungssnapshot mit den aktuellen Runnern, den unveränderten eingefrorenen Artefakten und den folgenden lokal bereitgestellten Eingaben. Nur den alten Plantag auszuchecken garantiert nicht, dass später ergänzte CLI-Skripte vorhanden sind.
 
-| Weg | Verbindliche Dateien | Festgeschriebener Plan |
-| --- | --- | --- |
-| Einzelreferenzen v2 | [22-Pin-Manifest](../reports/loop/packages/EMPIRICAL-V2-001/v1/manifest.json), [Freeze](../reports/loop/packages/EMPIRICAL-V2-001/v1/freeze.json), [Zugriffsgate](../reports/loop/gates/pre-empirical-v2.json), [Analysevertrag](../data/analysevertrag.v2.entwurf.json) | `analyseplan-v2`, Commit `6702f187394aed903f04c03cf48b46708c2ff4e4` |
+| Weg                                  | Verbindliche Dateien                                                                                                                                                                                                                                                                             | Festgeschriebener Plan                                                |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------- |
+| Einzelreferenzen v2                  | [22-Pin-Manifest](../reports/loop/packages/EMPIRICAL-V2-001/v1/manifest.json), [Freeze](../reports/loop/packages/EMPIRICAL-V2-001/v1/freeze.json), [Zugriffsgate](../reports/loop/gates/pre-empirical-v2.json), [Analysevertrag](../data/analysevertrag.v2.entwurf.json)                         | `analyseplan-v2`, Commit `6702f187394aed903f04c03cf48b46708c2ff4e4`   |
 | Historische Zweitstimmengruppen v2.1 | [51-Pin-Manifest](../reports/loop/packages/GROUP-V21-001/v1/manifest.json), [Freeze](../reports/loop/packages/GROUP-V21-001/v1/freeze.json), [Zugriffsgate](../reports/loop/gates/pre-group-v21.json), [Gruppenvertrag](../data/gruppenvertrag.v2.1.entwurf.json) und derselbe v2-Analysevertrag | `analyseplan-v2.1`, Commit `c8fe45333c8be0bf9e8cfa84fe160509802e9184` |
 
 Die exakten SHA256 stehen je `artifacts[n].path` im jeweiligen Manifest, die Gate-Berichtpins unter `reviewers`, die CSV-Pins unter `studies[n].input.sha256` im Analysevertrag. Die Runner enthalten die erwarteten Manifest-, Vertrags- und Freezehashes als feste `PINS`. Abweichungen werden nicht durch neue Pins oder umbenannte Dateien übergangen.
@@ -25,13 +25,13 @@ Der Gruppenweg benötigt **alle 36 `outputs/`-Einträge des 51-Pin-Manifests** a
 
 Die fünf privaten CSVs gehören ausschließlich an diese Pfade:
 
-| Studie / Ausgabe | Vertraglicher Eingabepfad |
-| --- | --- |
-| ESS5 / 3.6 | `data/raw/ess5-ed3.6/ESS5e03_6.csv` |
-| ESS8 / 2.3 | `data/raw/ess8-ed2.3/ESS8e02_3.csv` |
-| ESS9 / 3.3 | `data/raw/ess9-ed3.3/ESS9e03_3.csv` |
-| ESS10-SC / 3.2 | `data/raw/ess10-sc-ed3.2/ESS10SCe03_2.csv` |
-| ESS11 / 4.2 | `data/raw/ess11-ed4.2/ESS11e04_2.csv` |
+| Studie / Ausgabe | Vertraglicher Eingabepfad                  |
+| ---------------- | ------------------------------------------ |
+| ESS5 / 3.6       | `data/raw/ess5-ed3.6/ESS5e03_6.csv`        |
+| ESS8 / 2.3       | `data/raw/ess8-ed2.3/ESS8e02_3.csv`        |
+| ESS9 / 3.3       | `data/raw/ess9-ed3.3/ESS9e03_3.csv`        |
+| ESS10-SC / 3.2   | `data/raw/ess10-sc-ed3.2/ESS10SCe03_2.csv` |
+| ESS11 / 4.2      | `data/raw/ess11-ed4.2/ESS11e04_2.csv`      |
 
 Für einen reinen Gruppenlauf werden davon nur ESS5/8/9 verarbeitet. Dateiname und Editionsetikett allein beweisen keine Herkunft. Hash, Bytezahl und die vorgeschriebene interne Deutschland-/Runden-/Editionsprüfung bleiben erforderlich; die unabhängige offizielle Download-/Rohreproduktion wird dadurch nicht behauptet.
 

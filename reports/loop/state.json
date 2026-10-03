@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T16:05:12.481817+00:00",
+  "updatedAtUtc": "2026-10-03T16:10:05.664907+00:00",
   "status": "RUNNING",
   "phase": "Breite v2: historische Einzel- und Gruppenreferenzen begrenzt übernommen; Anzeige, Humanbindung und Kontrolldossier in Vorbereitung",
   "coordinator": "/root",
@@ -316,7 +316,8 @@
     "reports/loop/reviews/PUBLIC-RESEARCH-STATUS-V2-001-round1.md",
     "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1.md",
     "reports/loop/reviews/GROUP-RESULTS-V21-001-methods-round1-decision.json",
-    "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md"
+    "reports/loop/reviews/RESULTS-V2-001-sources-presentation-p01-p02-round1.md",
+    "reports/loop/reviews/FINAL-DOSSIER-HUMAN-V21-001-first.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -343,11 +344,6 @@
       "id": "/root/breadth_data_instruments",
       "status": "RUNNING",
       "scope": "Public group report author"
-    },
-    {
-      "id": "/root/final_dossier_human_review",
-      "status": "RUNNING",
-      "scope": "Fresh ordinary40-pin dossier and human addendum review"
     }
   ],
   "workPackages": [
@@ -606,20 +602,20 @@
   ],
   "nextConcreteStep": "Prepare authenticated optional historical group display/report from actual public63 pairs; update public group status in same display package. Complete reproducibility/control dossier and targeted single-report attribution review. No Raw reruns or new selection.",
   "checkpoint": {
-    "lastLocalCommit": "d885a54e46aa9c1675f053b81ed503b0d79e3bdd",
-    "lastVerifiedRemoteCommit": "d885a54e46aa9c1675f053b81ed503b0d79e3bdd",
-    "lastVerifiedPushAtUtc": "2026-10-03T15:57:50.084691+00:00",
+    "lastLocalCommit": "320e632e77c772f6474b6d9d7fe86e2ee01ba0c7",
+    "lastVerifiedRemoteCommit": "320e632e77c772f6474b6d9d7fe86e2ee01ba0c7",
+    "lastVerifiedPushAtUtc": "2026-10-03T16:05:15.610797+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-048.json",
+    "record": "reports/loop/push-049.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "SCF-P01/P02 targeted closed and originals saved; dossier/humanaddendum/public status new group publication WIP under proper review. Group UI/report authors active; no Raw changes."
+    "pendingPayload": "Dossier and humanaddendum ordinary accepted, pure formatting transfer saved; UI/group report authors active; final UI binding/review/technical checks pending"
   },
   "scientificStatus": "Five private historical categorical candidates executed14:25:06–14:25:18UTC after verified new plan tag; no public numeric export. Two fresh same-family result roles running. No party semantic access.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -717,7 +713,19 @@
       "id": "public-catalogue-schema-probe",
       "exitCode": 1,
       "scope": "read-only KeyError questions; actual catalogue.items read next, no writes before exception"
-    }
+    },
+    {
+      "id": "dossier-format-prior",
+      "exitCode": 1,
+      "scope": "Prettier one reproduction-doc warning; combined shell later rg returned0, explicitly not a pass"
+    },
+    {
+      "id": "dossier-format-transfer",
+      "exitCode": 0,
+      "scope": "CommonMark+table AST exact equality; other39pins unchanged, targeted formatting passed",
+      "evidence": "outputs/loop/repro-doc-format-transfer.json"
+    },
+    "reports/loop/public-group-status-browser-technical.json"
   ],
   "independentPreparations": [
     {
@@ -1155,12 +1163,16 @@
     "pending": "New group publication status update in group display package"
   },
   "finalPreparationV2": {
-    "dossierStatus": "AUTHOR_COMPLETE_ORDINARY_FIRST_PENDING",
+    "dossierStatus": "ACCEPTED_BOUNDED_DOCS_AND_HUMAN_ADDENDUM",
     "docs": ["docs/reproduktion-life93-v2.md", "docs/claude-schlusskontrolle-v2.md"],
     "humanAddendum": "docs/verstaendnistest-v2.1.entwurf.md",
     "humanExampleIds": "reports/loop/packages/COMPREHENSION-V21-001/v1/show-script-ids.json",
     "humanUIBinding": "PENDING_FINAL_GROUP_COMPONENT",
     "humanRunsPerformed": 0,
-    "ordinaryManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v1/manifest.json"
+    "ordinaryManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v1/manifest.json",
+    "ordinaryReview": "reports/loop/reviews/FINAL-DOSSIER-HUMAN-V21-001-first.md",
+    "ordinaryReviewSha256": "9d4d3c162ace76b7245b02c1e15b264bd6763f0552bbc25a2627f8019dbd401e",
+    "formatTransferManifest": "reports/loop/packages/FINAL-DOSSIER-HUMAN-V21-001/v2/manifest.json",
+    "rootDecision": "reports/loop/FINAL-DOSSIER-HUMAN-V21-001-entscheidung.md"
   }
 }

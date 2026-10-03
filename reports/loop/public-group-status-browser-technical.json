@@ -1,0 +1,104 @@
+{
+  "createdUtc": "2026-10-03T16:06:20.827Z",
+  "scope": "Root current public group-export status, desktop1280/mobile320 after four own copy file changes; technical only",
+  "checks": [
+    {
+      "clientWidth": 1265,
+      "h1": 1,
+      "incomplete": 0,
+      "publicTestLink": false,
+      "scrollWidth": 1265,
+      "statusTexts": [
+        "Ziel ist ein wissenschaftlich fundierter Test zu unterschiedlichen politischen Themen in Deutschland. Die Forschungsfassung ordnet 43 Originalangaben aus fünf historischen Befragungen in acht Themenrubriken. Der geplante Test ist noch nicht öffentlich verfügbar.",
+        "Die aktuelle Forschungsfassung verwendet Originalfragen aus fünf getrennten historischen Studien des European Social Survey (ESS), einer repräsentativen wissenschaftlichen Befragung. Weitere Instrumente aus der German Longitudinal Election Study (GLES) und anderen Befragungen bleiben mögliche Ergänzungen.",
+        "Historische Gruppenreferenzen sind als Forschungsartefakte gesichert. Ihre Darstellung und das Verständnis der Ergebnisansicht werden noch geprüft."
+      ],
+      "url": "http://localhost:4311/",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "clientWidth": 305,
+      "h1": 1,
+      "incomplete": 0,
+      "publicTestLink": false,
+      "scrollWidth": 305,
+      "statusTexts": [
+        "Ziel ist ein wissenschaftlich fundierter Test zu unterschiedlichen politischen Themen in Deutschland. Die Forschungsfassung ordnet 43 Originalangaben aus fünf historischen Befragungen in acht Themenrubriken. Der geplante Test ist noch nicht öffentlich verfügbar.",
+        "Die aktuelle Forschungsfassung verwendet Originalfragen aus fünf getrennten historischen Studien des European Social Survey (ESS), einer repräsentativen wissenschaftlichen Befragung. Weitere Instrumente aus der German Longitudinal Election Study (GLES) und anderen Befragungen bleiben mögliche Ergänzungen.",
+        "Historische Gruppenreferenzen sind als Forschungsartefakte gesichert. Ihre Darstellung und das Verständnis der Ergebnisansicht werden noch geprüft."
+      ],
+      "url": "http://localhost:4311/",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "clientWidth": 1265,
+      "h1": 1,
+      "incomplete": 0,
+      "publicTestLink": false,
+      "scrollWidth": 1265,
+      "statusTexts": [
+        "12 Axes Deutschland bereitet einen Test zu unterschiedlichen politischen Themen in Deutschland vor. Die Forschungsfassung enthält 43 Originalangaben aus fünf historischen Studien. Der geplante Test ist noch nicht öffentlich verfügbar.",
+        "Als Forschungsfassung gesichert",
+        "Der breite Themenbericht ist als Forschungsfassung gesichert. Getrennte historische Gruppenreferenzen für ESS5, ESS8 und ESS9 sind nach zwei begrenzten Ergebnisprüfungen als Forschungsartefakte übernommen. Ihre Darstellung und menschliche Verständlichkeit bleiben zu prüfen. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen. Der Empirieplan v2 bindet Auswahl, Messform und Bewertungskriterien der Einzelreferenzen."
+      ],
+      "url": "http://localhost:4311/projekt",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "clientWidth": 305,
+      "h1": 1,
+      "incomplete": 0,
+      "publicTestLink": false,
+      "scrollWidth": 305,
+      "statusTexts": [
+        "12 Axes Deutschland bereitet einen Test zu unterschiedlichen politischen Themen in Deutschland vor. Die Forschungsfassung enthält 43 Originalangaben aus fünf historischen Studien. Der geplante Test ist noch nicht öffentlich verfügbar.",
+        "Als Forschungsfassung gesichert",
+        "Der breite Themenbericht ist als Forschungsfassung gesichert. Getrennte historische Gruppenreferenzen für ESS5, ESS8 und ESS9 sind nach zwei begrenzten Ergebnisprüfungen als Forschungsartefakte übernommen. Ihre Darstellung und menschliche Verständlichkeit bleiben zu prüfen. Die übrigen Studien erhalten dadurch keine Freigabe für Gruppenanalysen. Der Empirieplan v2 bindet Auswahl, Messform und Bewertungskriterien der Einzelreferenzen."
+      ],
+      "url": "http://localhost:4311/projekt",
+      "violations": [],
+      "width": 320
+    },
+    {
+      "clientWidth": 1265,
+      "h1": 1,
+      "incomplete": 0,
+      "publicTestLink": false,
+      "scrollWidth": 1265,
+      "statusTexts": [
+        "12 Axes Deutschland bereitet einen breiten Test zu politischen Einstellungen vor. Die Forschungsfassung ordnet 43 Originalangaben in acht Themenrubriken und hält die historischen Befragungsreferenzen getrennt. Der geplante Test ist noch nicht öffentlich verfügbar.",
+        "Die Forschungsfassung führt getrennte Einzelangaben mit den jeweiligen Originalantwortkategorien. Zustimmung, Wichtigkeit und nominale Auswahl beschreiben unterschiedliche Gegenstände. Eine gemeinsame Messstruktur oder einheitliche Polung wird nicht vorausgesetzt. Gesamtscores, Links-/Rechtspositionen und persönliche Unsicherheitsintervalle sind nicht vorgesehen.",
+        "Die A-/B-Antworten des historischen v1-Teilmoduls sind bekannt. Weitere Fragen derselben Personen liefern keine unberührte unabhängige Bestätigung. Historische Gruppenreferenzen haben eigene begrenzte Ergebnisprüfungen. Eine persönliche Zuordnung zu Parteien ist nicht vorgesehen.",
+        "Die fünf getrennten Einzelstudienläufe und die Berichtsfassung sind gesichert. Zwei getrennte Codex-Rollen haben 42 historische Einzelreferenzen in ihrem begrenzten Umfang geprüft. Der breite Themenbericht ist als Forschungsfassung gesichert.",
+        "Die getrennten historischen Gruppenreferenzen für ESS5, ESS8 und ESS9 sind nach zwei begrenzten Ergebnisprüfungen als Forschungsartefakte übernommen. Ihre Darstellung und menschliche Verständlichkeit bleiben zu prüfen. Für ESS10-SC oder ESS11 besteht keine Gruppenfreigabe. Historische Gruppenverteilungen beschreiben Antworten zur damaligen Befragungszeit nach erinnerter Zweitstimme. Sie sind keine heutigen Parteiprogramme und kein Gesamtmatch."
+      ],
+      "url": "http://localhost:4311/methodik",
+      "violations": [],
+      "width": 1280
+    },
+    {
+      "clientWidth": 305,
+      "h1": 1,
+      "incomplete": 0,
+      "publicTestLink": false,
+      "scrollWidth": 305,
+      "statusTexts": [
+        "12 Axes Deutschland bereitet einen breiten Test zu politischen Einstellungen vor. Die Forschungsfassung ordnet 43 Originalangaben in acht Themenrubriken und hält die historischen Befragungsreferenzen getrennt. Der geplante Test ist noch nicht öffentlich verfügbar.",
+        "Die Forschungsfassung führt getrennte Einzelangaben mit den jeweiligen Originalantwortkategorien. Zustimmung, Wichtigkeit und nominale Auswahl beschreiben unterschiedliche Gegenstände. Eine gemeinsame Messstruktur oder einheitliche Polung wird nicht vorausgesetzt. Gesamtscores, Links-/Rechtspositionen und persönliche Unsicherheitsintervalle sind nicht vorgesehen.",
+        "Die A-/B-Antworten des historischen v1-Teilmoduls sind bekannt. Weitere Fragen derselben Personen liefern keine unberührte unabhängige Bestätigung. Historische Gruppenreferenzen haben eigene begrenzte Ergebnisprüfungen. Eine persönliche Zuordnung zu Parteien ist nicht vorgesehen.",
+        "Die fünf getrennten Einzelstudienläufe und die Berichtsfassung sind gesichert. Zwei getrennte Codex-Rollen haben 42 historische Einzelreferenzen in ihrem begrenzten Umfang geprüft. Der breite Themenbericht ist als Forschungsfassung gesichert.",
+        "Die getrennten historischen Gruppenreferenzen für ESS5, ESS8 und ESS9 sind nach zwei begrenzten Ergebnisprüfungen als Forschungsartefakte übernommen. Ihre Darstellung und menschliche Verständlichkeit bleiben zu prüfen. Für ESS10-SC oder ESS11 besteht keine Gruppenfreigabe. Historische Gruppenverteilungen beschreiben Antworten zur damaligen Befragungszeit nach erinnerter Zweitstimme. Sie sind keine heutigen Parteiprogramme und kein Gesamtmatch."
+      ],
+      "url": "http://localhost:4311/methodik",
+      "violations": [],
+      "width": 320
+    }
+  ],
+  "limits": [
+    "actual visible keyboardfocus/200percent remain unverified",
+    "new research group component not included in this public page check"
+  ]
+}
