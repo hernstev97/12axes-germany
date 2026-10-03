@@ -93,3 +93,13 @@ Stevens anschließender Handbuchauftrag im Wortlaut:
 Stevens Abschlussauftrag im Wortlaut:
 
 > dann mach das noch und schiebs dann direkt zu main
+
+## 2026-10-03: Arbeitsloop, erste Integration und Entwürfe
+
+main 87eb549 wurde im isolierten Worktree zusammengeführt; alte Recherche und Audit bleiben erhalten. LOOP-000-v1 wurde von zwei tatsächlichen unabhängigen Codex-Subagents geprüft. Drei Regel-/Statusfehler sowie ein doppelter Befund wurden angenommen und mit unveränderter Ausgangsfassung dokumentiert. Nachprüfung v2 läuft; kein positives Gesamturteil behauptet. Ein eigener Browserbefund L000-A01 korrigiert die pauschale Lizenzbegründung des Rohdatenausschlusses. Original-Disclaimer erneut abgerufen.
+
+Drei separate Autoren arbeiten an Originalfragen, konkurrierender Theorie und Methoden. Der Theorieentwurf liegt vor; alle Item-/Modellentscheidungen bleiben offen. Codex-Laufzeit GPT-6.1-Sol/ultra, interne Revision/Vorgaben unbekannt; keine andere Modellfamilie fingiert. Tatsächliche Aufträge und Dateien stehen in reports/loop/agents.json und den Autoren-/Reviewberichten.
+
+Vorhandener Claude-CLI ist angemeldet. Der technische Test ohne Tools scheiterte am gemeldeten Sitzungslimit (Reset 06:10 Uhr Berlin); keine wissenschaftliche Prüfung durchgeführt. Keine Limitumgehung, keine System-/Kontoeinstellungen verändert.
+
+Die aktuelle lokale Browserroutine bestand für drei vorhandene Projektseiten, fünf Breiten, axe, Netzwerk/Speicher, Tastatur und Galerie. Eine Folgeprüfung des Handbuchguards scheiterte an Semikolons in zwei korrigierten Sätzen. Die Fehlfassung bleibt im Nachprüfpaket erhalten; nach Abschluss der unabhängigen Berichte wird gezielt korrigiert. Keine Ergebnisberechnung oder Testdatenübertragung existiert bzw. wurde freigegeben.

@@ -1,0 +1,10 @@
+{
+  "command": ["bash", "-c", "pnpm check:handbuch && pnpm typecheck && pnpm test && pnpm build"],
+  "startedAtUtc": "2026-10-03T01:47:54.109491+00:00",
+  "finishedAtUtc": "2026-10-03T01:47:54.509261+00:00",
+  "exitCode": 1,
+  "log": "reports/loop/technical-v2/web-check.log",
+  "logSha256": "a799b0d8027bc35fbb193a077bd7357c1358c7f256ad5102a0295788b1fc0243",
+  "status": "NICHT_BESTANDEN",
+  "scope": "Handbook guard/type/test/build, not global format check or scientific validity."
+}

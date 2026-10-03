@@ -1,0 +1,18 @@
+$ node scripts/check-browser.mjs -- http://127.0.0.1:4313
+geprüft / 1440×1000
+geprüft / 1024×768
+geprüft / 768×1024
+geprüft / 390×844
+geprüft / 320×720
+geprüft /projekt 1440×1000
+geprüft /projekt 1024×768
+geprüft /projekt 768×1024
+geprüft /projekt 390×844
+geprüft /projekt 320×720
+geprüft /gibt-es-nicht 1440×1000
+geprüft /gibt-es-nicht 1024×768
+geprüft /gibt-es-nicht 768×1024
+geprüft /gibt-es-nicht 390×844
+geprüft /gibt-es-nicht 320×720
+
+Browserprüfung bestanden: 3 Seiten, 5 Breiten, 200 % Zoom, Tastatur, Galerie. Screenshots in outputs/browser/.

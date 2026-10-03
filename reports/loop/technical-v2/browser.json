@@ -1,0 +1,11 @@
+{
+  "command": ["pnpm", "check:browser", "--", "http://127.0.0.1:4313"],
+  "startedAtUtc": "2026-10-03T01:47:52.905048+00:00",
+  "finishedAtUtc": "2026-10-03T01:49:12.302107+00:00",
+  "exitCode": 0,
+  "inputsUnchanged": true,
+  "log": "reports/loop/technical-v2/browser.log",
+  "logSha256": "849ab5d295a6431887a7b2cdb13806b681a671db416ee099b23be3e36e22f411",
+  "status": "BESTANDEN",
+  "scope": "Three placeholder pages, five viewports, axe, request/storage/runtime checks, keyboard and gallery. 640x400 CSS reflow approximates zoom; not a native browser zoom test. No test response/calculation flow exists."
+}

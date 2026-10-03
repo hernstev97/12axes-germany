@@ -21,3 +21,9 @@ Diese Recherche hat LIFE-93 nicht geändert. Der methodische Anspruch bleibt dok
 - E-20261003-06: Steven beauftragt fünf echte, getrennte Erstprüfer und anschließend einen sechsten Juror. Ausführung über das verfügbare Subagent-Tool, gleiche zugängliche Modellfamilie; keine Claude-Einrichtung. Tatsächliche Aufträge, Input-/Berichtshashes und Toolgrenzen stehen im [Auditprotokoll](../reports/audit-recherche/agent-protokoll.json).
 - E-20261003-07: Die pauschale zusätzliche Plan-Freigabe als Startbedingung war eine zu weitgehende eigene Auslegung. Phase 0 verlangt begründeten Plan und öffentlichen Tag; die getrennten Erstbewertungen gehören vor endgültige Auswahl/Modellarbeit. Keine fachliche Statistik-Abnahme durch Steven eingeführt. A-F01 dokumentiert Ausgangswortlaut, Belege, Änderung und Nachprüfung.
 - E-20261003-08: R1-F01 und R4-F01 korrigieren Versionsreichweite und Parteiausschluss. Die übrigen übernommenen Methodik-/Inhaltsanforderungen bleiben bis zur tatsächlich ausgeführten Prüfung offen. Ein geänderter Regeltext erfüllt keine empirische Abnahme.
+
+## 2026-10-03: Vollauftrag und LOOP-000
+
+Der gespeicherte Vollauftrag erweitert den Ausführungsumfang auf alle LIFE-93-Phasen, erhält aber deren methodische und menschliche Voraussetzungen. Keine erneute Beauftragung pro Phase erforderlich; keine automatische Veröffentlichung oder Merge. Eigenbranch-Checkpoints werden verifiziert gepusht.
+
+Vier Integrationsfindings und der zusätzliche Lizenzsatzbefund wurden angenommen; Begründungen, Quellen und Nachprüfungen in reports/loop/LOOP-000-entscheidungen.md. Die Handbuchpräzisierung erlaubt, einen tatsächlich ausgeführten begrenzten Methodenreview zu benennen; daraus entstehen weder empirische Evidenz noch Abnahme. Erstberichte und Ausgangsmanifeste unverändert erhalten.

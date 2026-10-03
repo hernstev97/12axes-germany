@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T01:51:21.204021+00:00",
+  "updatedAtUtc": "2026-10-03T01:44:12.685712+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
@@ -71,9 +71,7 @@
     "currentLocalTechnical": "NICHT_BESTANDEN",
     "currentIndependentIntegration": "NICHT_BESTANDEN",
     "empiricalValidation": "NICHT_GEPRÜFT",
-    "otherModelFamily": "BLOCKIERT",
-    "currentBrowserPlaceholderPages": "BESTANDEN",
-    "currentHandbookGuard": "NICHT_BESTANDEN"
+    "otherModelFamily": "BLOCKIERT"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -90,13 +88,13 @@
       "status": "RUNNING"
     },
     {
-      "name": "/root/loop002_author_methods",
-      "role": "methods-author",
+      "name": "/root/loop001_author_theory",
+      "role": "theory-author",
       "status": "RUNNING"
     },
     {
-      "name": "/root/loop000_recheck_guard",
-      "role": "independent-recheck",
+      "name": "/root/loop002_author_methods",
+      "role": "methods-author",
       "status": "RUNNING"
     }
   ],
@@ -132,10 +130,6 @@
     "noPushToMain": true,
     "record": "reports/loop/push-002.json"
   },
-  "scientificStatus": "Theorieentwürfe mit 14 Themen/14 Aussagen vorhanden; unabhängige Fachprüfung offen. Inventar/Methoden in Ausarbeitung. Keine endgültigen Dimensionen, ESS-Import, A/B oder Modelltags. Claude wegen Sitzungslimit blockiert.",
-  "technicalRecord": "reports/loop/000-technical.json",
-  "technicalRecords": [
-    "reports/loop/technical-v2/browser.json",
-    "reports/loop/technical-v2/web-check.json"
-  ]
+  "scientificStatus": "Kein endgültiges Inventar, keine Dimension, kein ESS-Import oder A/B-Split. Keine vollständige wissenschaftliche Abnahme.",
+  "technicalRecord": "reports/loop/000-technical.json"
 }

@@ -1,0 +1,25 @@
+{
+  "name": "12axes-germany",
+  "private": true,
+  "packageManager": "pnpm@11.23.0",
+  "engines": {
+    "node": "^24.15.0",
+    "pnpm": "11.x"
+  },
+  "scripts": {
+    "dev": "pnpm --filter politikprofil start --host 127.0.0.1 --port 4311",
+    "build": "pnpm --filter politikprofil build",
+    "typecheck": "pnpm --filter politikprofil typecheck",
+    "test": "pnpm --filter politikprofil test --watch=false",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:handbuch": "node scripts/check-handbuch.mjs",
+    "check:browser": "node scripts/check-browser.mjs",
+    "check": "pnpm format:check && pnpm check:handbuch && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "axe-core": "4.13.0",
+    "playwright-core": "1.62.1",
+    "prettier": "3.8.1"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "beforeUtc": "2026-10-03T01:47:52.904953+00:00",
+  "files": {
+    "web/src/main.ts": {
+      "sha256": "ecc610fb7d56c95a01a8aa6c274a63210d45b2944dd6b9a88b2c8f70b6351037",
+      "bytes": 219
+    },
+    "web/src/index.html": {
+      "sha256": "d3dcf44566fd2c05d92b9acdf0c9d0e570b472abd3edfa7ac4face20fc15657c",
+      "bytes": 603
+    },
+    "web/src/styles.scss": {
+      "sha256": "695afc2c43f15dcaf4ad0406a3bf9910d7b6b7f610e4e52516b72f624ba8cf11",
+      "bytes": 6542
+    },
+    "web/src/app/app.config.ts": {
+      "sha256": "27d0ce599330bc553a348427881c1a2636688a09f5ad598ccbe7317d3bcd521e",
+      "bytes": 449
+    },
+    "web/src/app/app.html": {
+      "sha256": "dac5494b1ad8339c9fca675ff09b243b4fb3dda9a286ab984f77bed40f6a56ac",
+      "bytes": 1729
+    },
+    "web/src/app/app.routes.ts": {
+      "sha256": "2f42fbebdbb80f6c82fe514831b15626cb79cb64bef1a9d3d0c10ae2bdc6c9d3",
+      "bytes": 596
+    },
+    "web/src/app/app.scss": {
+      "sha256": "5ad034daa84db2bb8bd36321f896602bed1c9a4d40a39ec4e3c781b876f0aaf4",
+      "bytes": 2512
+    },
+    "web/src/app/app.spec.ts": {
+      "sha256": "b41056b616f6de5620c554f342b5c3c39810aaf732336b742477550f4bab0157",
+      "bytes": 1758
+    },
+    "web/src/app/app.ts": {
+      "sha256": "386b021e8b318491386f2a3a19520bc49555836294df4a4b86ebf500e83b97a3",
+      "bytes": 1697
+    },
+    "web/src/app/art/art-figure.ts": {
+      "sha256": "3561dcfe04621e83aafebb417789803703f0bdb8aec9d272c462203c250252ad",
+      "bytes": 1694
+    },
+    "web/src/app/art/art-gallery.html": {
+      "sha256": "91233900db902a91d3a05997633cbf8e9d2b3c0fd5b29f44f958bd8abbd33d47",
+      "bytes": 2916
+    },
+    "web/src/app/art/art-gallery.scss": {
+      "sha256": "e568d404ac9caa4b4c0a22cf337ddcfbec55e5c5b8b8d80680a6700b225bcff9",
+      "bytes": 1959
+    },
+    "web/src/app/art/art-gallery.spec.ts": {
+      "sha256": "352ebce33205985b7fa75f88f458750ad62acbe2778c68548a319312c0cd3291",
+      "bytes": 5749
+    },
+    "web/src/app/art/art-gallery.ts": {
+      "sha256": "5892d4664acb95fa4c911526c7a5a398d09f3b2d6b6b6900afd270ce10a25e1d",
+      "bytes": 5402
+    },
+    "web/src/app/art/artwork.ts": {
+      "sha256": "3bbd89aa3fef36bab1ca6c6b4559d89b8d3d76d7843c3f2bc1af1fb92b51fbf1",
+      "bytes": 1059
+    },
+    "web/src/app/art/artworks.ts": {
+      "sha256": "18d2ea1c41ed01c9b26ace3bbbe043a34aca3eae5ca4ead347b66e593859d11c",
+      "bytes": 5719
+    },
+    "web/src/app/pages/home/home.html": {
+      "sha256": "0fcd3f36ab5122791d78a768ea74e898bf077a31d85cff69b8eec85748bd68d3",
+      "bytes": 5131
+    },
+    "web/src/app/pages/home/home.scss": {
+      "sha256": "a9b8a777a5c46147547b215de18657be3b6c4e77a192273e9d24b7b8ee300b94",
+      "bytes": 1133
+    },
+    "web/src/app/pages/home/home.ts": {
+      "sha256": "cdc1ae74bfeef8880af8ae25f44db946f71c6508b937483b2e0fb1c42af7ae82",
+      "bytes": 597
+    },
+    "web/src/app/pages/not-found/not-found.html": {
+      "sha256": "d2921c914e8ab0a01567b7c6e532812449c21242addb49cc5e9e93f916de8f74",
+      "bytes": 437
+    },
+    "web/src/app/pages/not-found/not-found.scss": {
+      "sha256": "ee52dd282bbe9c7f9c85525d9c8dbe247533a22756ff6106dd5827ab7305d828",
+      "bytes": 215
+    },
+    "web/src/app/pages/not-found/not-found.ts": {
+      "sha256": "75757705fe390ce4c65fadcbc9583d4e4acf011533540189bf067f63d9c23453",
+      "bytes": 496
+    },
+    "web/src/app/pages/project/project.html": {
+      "sha256": "4d426dfb130b9ffd962180ea82a67d76220422576aaab4f5ba6eb3451f0da514",
+      "bytes": 8133
+    },
+    "web/src/app/pages/project/project.scss": {
+      "sha256": "c4c50f7d7552e3978c02df643204217c0ddcb530044e7503099ef2d86d7dc6f2",
+      "bytes": 397
+    },
+    "web/src/app/pages/project/project.ts": {
+      "sha256": "d303afcc8f15a92703ebbaa9b4f898fb0c5e0d1ffd98becad6f48d3cac3deda1",
+      "bytes": 1753
+    },
+    "scripts/check-browser.mjs": {
+      "sha256": "263d30a412ce511cbf9ccb40309acfca0aa807179612d33a0d5c19842da7d171",
+      "bytes": 6826
+    },
+    "scripts/check-handbuch.mjs": {
+      "sha256": "0539a25f70c8f096b0e0a333929643a62bace767445200dee166ccacfdc97ce7",
+      "bytes": 6867
+    },
+    "package.json": {
+      "sha256": "250f1cf80c2717556600a8014fc947d1dd40bfae2409a11b501a45212d311a97",
+      "bytes": 818
+    },
+    "pnpm-lock.yaml": {
+      "sha256": "03b59df0485e8c0d463bb8090727372d578fa6c2c6553169af3a3a0748815cfd",
+      "bytes": 134768
+    }
+  },
+  "scope": "Current website technical/browser inputs only; no scientific acceptance"
+}

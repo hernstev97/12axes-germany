@@ -1,0 +1,13 @@
+{
+  "observedAtUtc": "2026-10-03T01:47:52.818846+00:00",
+  "t3Tab": "tab_8",
+  "initialSnapshot": "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-127-0-0-1-murqb258-c10ad09b.png",
+  "initialSnapshotStatus": "BESTANDEN",
+  "resizeStatus": "NICHT_BESTANDEN",
+  "resizeError": "Preview automation resize timed out after 15000ms.",
+  "evaluateStatus": "BLOCKIERT",
+  "evaluateError": "No preview automation host is available; tool explicitly says do not retry and recommends headless browser.",
+  "fallback": "Existing project script scripts/check-browser.mjs",
+  "firstFallbackResult": "BESTANDEN for observed page/accessibility/network/storage/gallery checks; markup changed near start, so full final frozen rerun required.",
+  "scientificScope": "No test or result function exists; no empirical/calculation/response transmission acceptance."
+}

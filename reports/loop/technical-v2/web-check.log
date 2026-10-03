@@ -1,0 +1,6 @@
+$ node scripts/check-handbuch.mjs
+Handbuch-Prüfung: 2 Abweichung(en)
+
+- web/src/app/pages/home/home.html: Semikolon im sichtbaren Text, zwei Aussagen werden zwei Sätze
+- web/src/app/pages/project/project.html: Semikolon im sichtbaren Text, zwei Aussagen werden zwei Sätze
+[ELIFECYCLE] Command failed with exit code 1.
