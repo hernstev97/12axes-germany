@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T02:33:38.322683+00:00",
+  "updatedAtUtc": "2026-10-03T03:03:17.455268+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -548,6 +548,211 @@
       "repairRounds": 1,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["LOOP-000 package acceptance"]
+    },
+    {
+      "id": "F-S01",
+      "origin": "reports/loop/reviews/FOUNDATION-001-sources.md",
+      "decision": "angenommen",
+      "severity": "niedrig",
+      "problem": "Präziser historischer Lesebereich",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["Quellenregister"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "F-P01",
+      "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "problem": "B37 misst keine Rücknahmepräferenz",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["EU-Interpretation"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "F-P02",
+      "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "problem": "Feste LR-Bereiche widersprechen Terzilen",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["P10 politische Gruppen"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "F-P03",
+      "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+      "decision": "angenommen",
+      "severity": "hoch / spätere Voraussetzung",
+      "problem": "Original-Konstruktalternativen und Widerspruch fehlen",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["Geschlechterkonstrukte"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "F-P04",
+      "origin": "reports/loop/reviews/FOUNDATION-001-politics.md",
+      "decision": "angenommen",
+      "severity": "hoch / spätere Voraussetzung",
+      "problem": "C30=55 und Anwendbarkeitsdomäne ungeklärt",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["Klimanorm/Interpretation"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "FM-F01",
+      "origin": "reports/loop/reviews/FOUNDATION-001-methods.md",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "problem": "Gleicher Terzilkonflikt wie F-P02",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["P10 politische Gruppen"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      },
+      "duplicateOf": "F-P02"
+    },
+    {
+      "id": "FM-F02",
+      "origin": "reports/loop/reviews/FOUNDATION-001-methods.md",
+      "decision": "angenommen",
+      "severity": "niedrig",
+      "problem": "Synthetischer Wert falsch gerundet",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["synthetische Textaussage"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "N-F01",
+      "origin": "reports/loop/reviews/FOUNDATION-001-neutrality.md",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "problem": "Antwortgegenstände durch Fallback falsch klassifiziert",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["Inventar/Itemauswahl"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "REPRO-F01",
+      "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "problem": "Wirksamer Lizenzinput nicht deterministisch gebunden",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["Inventar-Reproduktion"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "REPRO-F02",
+      "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+      "decision": "angenommen",
+      "severity": "mittel",
+      "problem": "Aufträge/historische Protokolle nicht eingefroren",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["Nachprüfbarkeit"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "REPRO-F03",
+      "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+      "decision": "angenommen",
+      "severity": "niedrig",
+      "problem": "Liste92-Locator fehlt ohne Statusfolge",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["Inventarbeleg"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
+    },
+    {
+      "id": "REPRO-F04",
+      "origin": "reports/loop/reviews/FOUNDATION-001-repro.md",
+      "decision": "angenommen",
+      "severity": "niedrig",
+      "problem": "Seitenauszug als itemexklusiver Block beschrieben",
+      "evidence": "Exakte Fundstellen und Originalbelege im unveränderten Erstbericht und im gleichnamigen Abschnitt von reports/loop/FOUNDATION-001-entscheidungen.md",
+      "reason": "Beleg einzeln geprüft; keine Mehrheitsentscheidung. Vollständige Begründung/Korrektur/Nachprüfung im Entscheidungsbericht.",
+      "repairRounds": 1,
+      "status": "NICHT_GEPRÜFT",
+      "blocks": ["Inventar-Provenienz"],
+      "correctionState": "Angenommen; Durchführung und unabhängige Nachprüfung offen",
+      "verification": {
+        "scope": "Benannte Korrektur und Originalfundstelle; keine Gesamtfreigabe",
+        "required": "Eigener erneuter Lauf, passende unabhängige Nachprüfung, unbeteiligter Juror"
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."

@@ -86,23 +86,25 @@
       "name": "/root/foundation_review_methods",
       "fork_turns": "none",
       "kind": "independent-first-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/FOUNDATION-001/v1/manifest.json",
       "manifestSha256": "213eec2fba90ae60594323f1e52c39ed77d49af4656f3eea481c6300ecc0c5bb",
       "report": "reports/loop/reviews/FOUNDATION-001-methods.md",
-      "actualPromptRecord": "Vollständiger tatsächlicher Spawnauftrag im eigenen Erstbericht; bis Abschluss Bericht noch ausstehend.",
-      "contextBoundary": "Gleiches eingefrorenes Paket/Issue, keine anderen Ersturteile/Verteidigung; nur eigener Bericht/Belege; shared-FS keine technische Sandbox."
+      "actualPromptRecord": "reports/loop/reviews/FOUNDATION-001-methods.md enthält vollständigen Startauftrag",
+      "contextBoundary": "Gleiches eingefrorenes Paket/Issue, keine anderen Ersturteile/Verteidigung; nur eigener Bericht/Belege; shared-FS keine technische Sandbox.",
+      "reportSha256": "998cc042c0ca340f33f61abb6ad097d78f5f131cfd3f48f329cd70cf5315d610"
     },
     {
       "name": "/root/foundation_review_neutrality",
       "fork_turns": "none",
       "kind": "independent-first-review",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/FOUNDATION-001/v1/manifest.json",
       "manifestSha256": "213eec2fba90ae60594323f1e52c39ed77d49af4656f3eea481c6300ecc0c5bb",
       "report": "reports/loop/reviews/FOUNDATION-001-neutrality.md",
-      "actualPromptRecord": "Vollständiger tatsächlicher Spawnauftrag im eigenen Erstbericht; bis Abschluss Bericht noch ausstehend.",
-      "contextBoundary": "Gleiches eingefrorenes Paket/Issue, keine anderen Ersturteile/Verteidigung; nur eigener Bericht/Belege; shared-FS keine technische Sandbox."
+      "actualPromptRecord": "reports/loop/reviews/FOUNDATION-001-neutrality.md enthält vollständigen Startauftrag",
+      "contextBoundary": "Gleiches eingefrorenes Paket/Issue, keine anderen Ersturteile/Verteidigung; nur eigener Bericht/Belege; shared-FS keine technische Sandbox.",
+      "reportSha256": "eff276904575624aeefcae8a63a616289aafa4d7ab5b385f91239299815b9e5b"
     },
     {
       "name": "/root/foundation_review_repro",
@@ -114,6 +116,48 @@
       "report": "reports/loop/reviews/FOUNDATION-001-repro.md",
       "actualPromptRecord": "Vollständiger tatsächlicher Spawnauftrag im eigenen Erstbericht; bis Abschluss Bericht noch ausstehend.",
       "contextBoundary": "Gleiches eingefrorenes Paket/Issue, keine anderen Ersturteile/Verteidigung; nur eigener Bericht/Belege; shared-FS keine technische Sandbox."
+    },
+    {
+      "name": "/root/loop000_v3_guard",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/LOOP-000/v3/manifest.json",
+      "manifestSha256": "82549de387004b65ddb1bb2cce2b51e95c5c0092ffc70512f819451d22ada467",
+      "report": "reports/loop/reviews/LOOP-000-v3-guard.md",
+      "actualPromptRecord": "Vollständiger Auftrag im eigenen Bericht, derzeit in Arbeit",
+      "contextBoundary": "v3+beide abgeschlossenen v2-Berichte/Entscheidungen, keine anderen v3-Berichte oder FOUNDATION-Forschung; nur eigene Fixture/Report; shared-FS"
+    },
+    {
+      "name": "/root/loop000_v3_browser",
+      "kind": "independent-recheck",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/LOOP-000/v3/manifest.json",
+      "manifestSha256": "82549de387004b65ddb1bb2cce2b51e95c5c0092ffc70512f819451d22ada467",
+      "report": "reports/loop/reviews/LOOP-000-v3-browser.md",
+      "actualPromptRecord": "Vollständiger Auftrag im eigenen Bericht, derzeit in Arbeit",
+      "contextBoundary": "v3+beide abgeschlossenen v2-Berichte/Entscheidungen, keine anderen v3-Berichte oder FOUNDATION-Forschung; nur eigene Fixture/Report; shared-FS"
+    },
+    {
+      "task_name": "prep001_review_methods",
+      "returnedTaskName": "/root/prep001_review_methods",
+      "fork_turns": "none",
+      "kind": "independent-preparation-review",
+      "status": "RUNNING",
+      "report": "reports/loop/reviews/PREP-001-methods.md",
+      "manifest": "reports/loop/packages/PREP-001/v1/manifest.json",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wird wortgetreu im eigenen Bericht gesichert; keine Rekonstruktion."
+    },
+    {
+      "task_name": "prep001_review_repro",
+      "returnedTaskName": "/root/prep001_review_repro",
+      "fork_turns": "none",
+      "kind": "independent-preparation-review",
+      "status": "RUNNING",
+      "report": "reports/loop/reviews/PREP-001-repro.md",
+      "manifest": "reports/loop/packages/PREP-001/v1/manifest.json",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wird wortgetreu im eigenen Bericht gesichert; keine Rekonstruktion."
     }
   ],
   "activeAdditionalAuthors": [
