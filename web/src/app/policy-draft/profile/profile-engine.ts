@@ -131,31 +131,31 @@ function statementFor(item: ProfileItem, code: string): ItemStatement {
   const form = rule.statement;
   let text: string;
   let answer = quoted(category.labelDe);
-  let dir: Direction | null = null;
+  let facing: Direction | null = null;
   switch (form.form) {
     case 'agreement': {
-      dir = direction(rule, item.id, code);
+      facing = direction(rule, item.id, code);
       const lead = {
         positive: 'Zustimmung zur Aussage',
         middle: 'Weder Zustimmung noch Ablehnung zur Aussage',
         negative: 'Ablehnung der Aussage',
-      }[dir];
+      }[facing];
       text = `${lead} ${quoted(form.statement)} ${chosen}.`;
       break;
     }
     case 'support-clause': {
-      dir = direction(rule, item.id, code);
+      facing = direction(rule, item.id, code);
       const lead = {
         positive: 'Dafür',
         middle: 'Weder dafür noch dagegen',
         negative: 'Dagegen',
-      }[dir];
+      }[facing];
       text = `${lead}, ${form.clause} ${chosen}.`;
       break;
     }
     case 'support-noun': {
-      dir = direction(rule, item.id, code);
-      const lead = { positive: 'Für', middle: 'Weder für noch gegen', negative: 'Gegen' }[dir];
+      facing = direction(rule, item.id, code);
+      const lead = { positive: 'Für', middle: 'Weder für noch gegen', negative: 'Gegen' }[facing];
       text = `${lead} ${form.nounPhrase} ${chosen}.`;
       break;
     }
@@ -189,7 +189,7 @@ function statementFor(item: ProfileItem, code: string): ItemStatement {
     text,
     answer,
     context: rule.context,
-    direction: dir,
+    direction: facing,
     code,
   });
 }
@@ -205,13 +205,13 @@ function directionSentences(statements: readonly ItemStatement[], support: boole
     ? { positive: 'Dafür', middle: 'Weder dafür noch dagegen', negative: 'Dagegen' }
     : { positive: 'Zustimmung', middle: 'Weder Zustimmung noch Ablehnung', negative: 'Ablehnung' };
   const order: readonly Direction[] = ['positive', 'middle', 'negative'];
-  const present = order.filter((dir) => statements.some((entry) => entry.direction === dir));
+  const present = order.filter((facing) => statements.some((entry) => entry.direction === facing));
   if (present.length === 1) {
     return [`Alle beantworteten Fragen dieses Blocks: ${labels[present[0]!]}.`];
   }
   return present.map(
-    (dir) =>
-      `${labels[dir]}: ${joinTitles(statements.filter((entry) => entry.direction === dir))}.`,
+    (facing) =>
+      `${labels[facing]}: ${joinTitles(statements.filter((entry) => entry.direction === facing))}.`,
   );
 }
 
@@ -255,9 +255,32 @@ function orderedLabelSentences(statements: readonly ItemStatement[]): string[] {
   return sentences;
 }
 
+/** Lists items per chosen label, in the original label order of the block's answer list. */
+function groupedLabelSentences(
+  statements: readonly ItemStatement[],
+  order: readonly string[],
+): string[] {
+  const codes = new Set(statements.map((statement) => statement.code));
+  if (codes.size === 1) {
+    return [`Alle beantworteten Fragen dieses Blocks: ${statements[0]!.answer}.`];
+  }
+  return order
+    .filter((code) => codes.has(code))
+    .map((code) => {
+      const members = statements.filter((statement) => statement.code === code);
+      return `${members[0]!.answer}: ${joinTitles(members)}.`;
+    });
+}
+
+function labelOrder(block: BlockRule, items: ReadonlyMap<string, ProfileItem>): readonly string[] {
+  const first = items.get(block.itemIds[0]!);
+  return first ? first.categories.map((category) => category.code) : [];
+}
+
 function blockStatement(
   block: BlockRule,
   statements: ReadonlyMap<string, ItemStatement>,
+  items: ReadonlyMap<string, ProfileItem>,
 ): BlockStatement | null {
   const answered = block.itemIds
     .map((id) => statements.get(id))
@@ -272,7 +295,9 @@ function blockStatement(
       ? directionSentences(answered, support)
       : block.pattern === 'scale-values'
         ? scaleSentences(answered)
-        : orderedLabelSentences(answered);
+        : block.pattern === 'grouped-labels'
+          ? groupedLabelSentences(answered, labelOrder(block, items))
+          : orderedLabelSentences(answered);
   return Object.freeze({
     blockId: block.id,
     title: block.title,
@@ -314,6 +339,7 @@ export function buildAnswerProfile(
   areas: readonly ProfileArea[],
   answers: ReadonlyMap<string, ProfileAnswer>,
 ): AnswerProfile {
+  const itemsById = new Map(items.map((item) => [item.id, item]));
   const statements = new Map<string, ItemStatement>();
   const withoutAnswer: { itemId: string; status: 'skipped' | 'untouched' }[] = [];
   for (const item of items) {
@@ -325,7 +351,7 @@ export function buildAnswerProfile(
     const areaItems = items.filter((item) => item.primaryTheme === area.id);
     const areaIds = new Set(areaItems.map((item) => item.id));
     const blocks = BLOCK_RULES.filter((block) => block.itemIds.every((id) => areaIds.has(id)))
-      .map((block) => blockStatement(block, statements))
+      .map((block) => blockStatement(block, statements, itemsById))
       .filter((block): block is BlockStatement => block !== null);
     const areaStatements = areaItems
       .map((item) => statements.get(item.id))

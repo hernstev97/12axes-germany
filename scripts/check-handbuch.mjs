@@ -126,6 +126,22 @@ if (existsSync(originalCatalogueFile)) {
   }
 }
 
+// Profilregeln zitieren Originalwortlaute in „…“. Wörtlich belegte Zitate aus dem
+// v2-Katalog oder der v2.2-Ergänzung sind von der Regel zum generischen Maskulinum
+// ausgenommen. Eigene Texte außerhalb der Zitate gelten weiterhin.
+const profileRulesFile = join(src, 'app/policy-draft/profile/profile-rules.ts');
+const originalWordings = [
+  'data/politikprofil-v2.fragen.entwurf.json',
+  'data/politikprofil-v2.2.ergaenzung.json',
+]
+  .filter((path) => existsSync(join(root, path)))
+  .flatMap((path) => JSON.parse(readFileSync(join(root, path), 'utf8')).items)
+  .map(({ wordingDe }) => wordingDe);
+const withoutVerbatimQuotes = (prose) =>
+  prose.replace(/„([^“]*)“/g, (quote, inner) =>
+    originalWordings.some((wording) => wording.includes(inner)) ? '' : quote,
+  );
+
 for (const file of sources) {
   const text = readFileSync(file, 'utf8');
   for (const [pattern, message] of forbiddenEverywhere) {
@@ -149,7 +165,9 @@ for (const file of sources) {
               (prose, literal) => prose.replaceAll(literal, ''),
               visible,
             )
-          : visible;
+          : file === profileRulesFile && message === 'generisches Maskulinum'
+            ? withoutVerbatimQuotes(visible)
+            : visible;
       const match = checked.match(pattern);
       if (match) {
         report(file, `${message} („${match[0]}“)`);

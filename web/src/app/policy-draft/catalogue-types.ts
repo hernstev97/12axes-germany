@@ -1,12 +1,15 @@
 /** Public ESS instrument metadata only. No respondent rows or estimates. */
 export interface PublicCategory {
   readonly code: string;
-  readonly printedCodeDe: string;
+  /** Null where the printed questionnaire does not bind a code unambiguously. */
+  readonly printedCodeDe: string | null;
   readonly labelDe: string;
   readonly labelEn: string;
   readonly isMissingApi: boolean;
   readonly semanticRole: string;
   readonly labelSourceRef: string;
+  /** False for categories the original interview did not read out (v2.2). */
+  readonly offeredOnWebsite?: boolean;
 }
 
 export interface PublicCodeBinding {
@@ -25,6 +28,10 @@ export interface PublicItem {
   readonly originalQuestionId: string;
   readonly wordingDe: string;
   readonly introductionsDe: readonly string[];
+  /** Definition points of a proposal printed on the original response list (v2.2). */
+  readonly definitionDe?: readonly string[];
+  /** Fixed context notes from the original questionnaire (v2.2). */
+  readonly contextNotes?: readonly string[];
   readonly responseStemDe: string | null;
   readonly situationDe: string | null;
   readonly instructionDe: string | null;

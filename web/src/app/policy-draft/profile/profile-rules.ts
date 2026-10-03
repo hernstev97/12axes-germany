@@ -59,6 +59,11 @@ const JUSTICE_CONTEXT =
 const ADMISSION_CONTEXT =
   'Wie vielen Menschen dieser Gruppe Deutschland erlauben sollte, hier zu leben. Die Frage nennt keine Gründe und keine Bedingungen.';
 
+const ELECTRICITY_CONTEXT =
+  'Gewünschte Menge des in Deutschland verbrauchten Stroms aus dieser Energiequelle. Erhoben 2016/17.';
+const ESS10_PANDEMIC_CONTEXT =
+  'Erhoben 2021/22. Die Frage gilt ausdrücklich für die Bekämpfung einer Pandemie.';
+
 export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
   'ESS9e03_3:sofrdst': {
     title: 'Gleichheit',
@@ -172,7 +177,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass Wahlen zum nationalen Parlament frei und fair sind',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass Wahlen zum nationalen Parlament frei und fair sind“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -181,7 +186,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass sich die verschiedenen politischen Parteien inhaltlich klar voneinander unterscheiden',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass sich die verschiedenen politischen Parteien inhaltlich klar voneinander unterscheiden“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -190,7 +195,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass die Medien das Recht haben, Kritik an der Regierung zu üben',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass die Medien das Recht haben, Kritik an der Regierung zu üben“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -199,7 +204,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass die Rechte von Minderheiten geschützt werden',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass die Rechte von Minderheiten geschützt werden“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -208,7 +213,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass die Bürger bei den wichtigsten politischen Sachfragen durch direkte Volksabstimmungen das letzte Wort haben',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass die Bürger bei den wichtigsten politischen Sachfragen durch direkte Volksabstimmungen das letzte Wort haben“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -217,7 +222,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass die Gerichte alle Menschen gleich behandeln',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass die Gerichte alle Menschen gleich behandeln“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -226,7 +231,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass Regierungsparteien bei Wahlen abgestraft werden, wenn sie schlechte Arbeit geleistet haben',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass Regierungsparteien bei Wahlen abgestraft werden, wenn sie schlechte Arbeit geleistet haben“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -235,7 +240,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass die Regierung alle Bürger vor Armut schützt',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass die Regierung alle Bürger vor Armut schützt“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -244,7 +249,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass die Regierung Maßnahmen ergreift, um Einkommensunterschiede zu verringern',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass die Regierung Maßnahmen ergreift, um Einkommensunterschiede zu verringern“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -253,7 +258,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass die Ansichten gewöhnlicher Menschen Vorrang vor den Ansichten der politischen Elite haben',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass die Ansichten gewöhnlicher Menschen Vorrang vor den Ansichten der politischen Elite haben“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -262,7 +267,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass sich der Wille des Volkes immer durchsetzt',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass sich der Wille des Volkes immer durchsetzt“',
     },
     context: DEMOCRACY_CONTEXT,
   },
@@ -271,7 +276,7 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     statement: {
       form: 'scale',
       subject:
-        'Wichtigkeit für die Demokratie im Allgemeinen, dass die wichtigsten Entscheidungen von den nationalen Regierungen getroffen werden und nicht von der Europäischen Union',
+        'Wichtigkeit für die Demokratie im Allgemeinen, „dass die wichtigsten Entscheidungen von den nationalen Regierungen getroffen werden und nicht von der Europäischen Union“',
     },
     context: `${DEMOCRACY_CONTEXT} Die Frage gehört zum Demokratieblock und steht im Profil unter europäischer Integration.`,
   },
@@ -461,5 +466,143 @@ export const ITEM_RULES: Readonly<Record<string, ItemRule>> = Object.freeze({
     },
     context: 'Geldstrafe für Unternehmen als Mittel.',
     directions: FOR_FIRST,
+  },
+  'ESS8e02_3:elgcoal': {
+    title: 'Kohle',
+    statement: { form: 'label', subject: 'Strom aus Kohle' },
+    context: ELECTRICITY_CONTEXT,
+  },
+  'ESS8e02_3:elgngas': {
+    title: 'Erdgas',
+    statement: { form: 'label', subject: 'Strom aus Erdgas' },
+    context: ELECTRICITY_CONTEXT,
+  },
+  'ESS8e02_3:elghydr': {
+    title: 'Wasserkraft',
+    statement: { form: 'label', subject: 'Strom aus Wasserkraft' },
+    context: ELECTRICITY_CONTEXT,
+  },
+  'ESS8e02_3:elgnuc': {
+    title: 'Atom- bzw. Kernkraft',
+    statement: { form: 'label', subject: 'Strom aus Atom- bzw. Kernkraft' },
+    context: `${ELECTRICITY_CONTEXT} Der Leistungsbetrieb der Kernkraftwerke in Deutschland endete im April 2023 (§ 7 Abs. 1e Atomgesetz).`,
+  },
+  'ESS8e02_3:elgsun': {
+    title: 'Sonnenenergie',
+    statement: { form: 'label', subject: 'Strom aus Sonnenenergie' },
+    context: ELECTRICITY_CONTEXT,
+  },
+  'ESS8e02_3:elgwind': {
+    title: 'Windkraft',
+    statement: { form: 'label', subject: 'Strom aus Windkraft' },
+    context: ELECTRICITY_CONTEXT,
+  },
+  'ESS8e02_3:elgbio': {
+    title: 'Biomasse',
+    statement: { form: 'label', subject: 'Strom aus Biomasse wie Holz, Pflanzen oder Tiermist' },
+    context: ELECTRICITY_CONTEXT,
+  },
+  'ESS8e02_3:gvrfgap': {
+    title: 'Großzügige Prüfung von Asylanträgen',
+    statement: {
+      form: 'agreement',
+      statement: 'Bei der Prüfung von Asylanträgen sollte der Staat großzügig sein.',
+    },
+    context:
+      'Asylanträge von Menschen, die Angst vor Verfolgung in ihrem Land haben. Erhoben 2016/17.',
+    directions: AGREE,
+  },
+  'ESS8e02_3:rfgbfml': {
+    title: 'Familiennachzug anerkannter Asylsuchender',
+    statement: {
+      form: 'agreement',
+      statement:
+        'Asylbewerber, deren Anträge bewilligt wurden, sollten das Recht haben, ihre engen Familienangehörigen nach Deutschland zu holen.',
+    },
+    context: 'Erhoben 2016/17. Die Frage unterscheidet nicht nach Schutzstatus.',
+    directions: AGREE,
+  },
+  'ESS8e02_3:basinc': {
+    title: 'Grundeinkommen',
+    statement: {
+      form: 'support-noun',
+      nounPhrase: 'ein solches Grundeinkommen in Deutschland',
+    },
+    context:
+      'Grundeinkommen mit allen sechs Merkmalen der Originalliste, darunter der Ersatz vieler bestehender Sozialleistungen und die Finanzierung über Steuern. Eine mittlere Antwort war nicht vorgesehen.',
+    directions: AGAINST_FIRST,
+  },
+  'ESS8e02_3:eusclbf': {
+    title: 'EU-weites Sozialleistungsprogramm',
+    statement: {
+      form: 'support-noun',
+      nounPhrase: 'ein solches EU-weites Sozialleistungsprogramm',
+    },
+    context:
+      'Programm mit allen drei Merkmalen der Originalliste, darunter höhere Beiträge reicherer EU-Länder. Eine mittlere Antwort war nicht vorgesehen.',
+    directions: AGAINST_FIRST,
+  },
+  'ESS10SCe03_2:panpriph': {
+    title: 'Pandemie: Gesundheit oder Wirtschaft',
+    statement: {
+      form: 'bipolar',
+      subject: 'Bei der Bekämpfung einer Pandemie vorrangig zu berücksichtigen',
+    },
+    context: ESS10_PANDEMIC_CONTEXT,
+  },
+  'ESS10SCe03_2:panmonpb': {
+    title: 'Pandemie: Überwachung oder Privatsphäre',
+    statement: {
+      form: 'bipolar',
+      subject: 'Bei der Bekämpfung einer Pandemie wichtiger',
+    },
+    context: ESS10_PANDEMIC_CONTEXT,
+  },
+  'ESS10SCe03_2:freehms': {
+    title: 'Freie Lebensführung von Schwulen und Lesben',
+    statement: {
+      form: 'agreement',
+      statement: 'Schwule und Lesben sollten ihr Leben so führen dürfen, wie sie es wollen.',
+    },
+    context: 'Allgemeines Prinzip. Erhoben 2021/22.',
+    directions: AGREE,
+  },
+  'ESS10SCe03_2:hmsacld': {
+    title: 'Gleiches Adoptionsrecht gleichgeschlechtlicher Paare',
+    statement: {
+      form: 'agreement',
+      statement:
+        'Schwule und lesbische Paare sollten die gleichen Rechte haben, Kinder zu adoptieren, wie Paare, die aus Mann und Frau bestehen.',
+    },
+    context: 'Erhoben 2021/22, nach der Eheöffnung für gleichgeschlechtliche Paare im Jahr 2017.',
+    directions: AGREE,
+  },
+  'ESS10SCe03_2:accalaw': {
+    title: 'Starke Führungsperson über dem Gesetz',
+    statement: {
+      form: 'scale',
+      subject: 'Akzeptanz einer starken Führungsperson für Deutschland, die über dem Gesetz steht',
+    },
+    context: 'Wie akzeptabel diese Vorstellung wäre. Erhoben 2021/22.',
+  },
+  'ESS10SCe03_2:loylead': {
+    title: 'Loyalität gegenüber der politischen Führung',
+    statement: {
+      form: 'agreement',
+      statement:
+        'Was Deutschland am meisten braucht, ist Loyalität gegenüber der politischen Führung.',
+    },
+    context: 'Allgemeine Aussage über Deutschland. Erhoben 2021/22.',
+    directions: AGREE,
+  },
+  'ESS5e03_6:prtyban': {
+    title: 'Verbot demokratiefeindlicher Parteien',
+    statement: {
+      form: 'agreement',
+      statement:
+        'Politische Parteien, die die Demokratie abschaffen wollen, sollten verboten werden',
+    },
+    context: 'Allgemeine Aussage, keine bestimmte Partei. Erhoben 2010/11.',
+    directions: AGREE,
   },
 });

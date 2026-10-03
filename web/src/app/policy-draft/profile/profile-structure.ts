@@ -4,7 +4,7 @@
  * is a project compilation across blocks or studies. Neither yields a value.
  */
 
-export type BlockPattern = 'directions' | 'scale-values' | 'ordered-labels';
+export type BlockPattern = 'directions' | 'scale-values' | 'ordered-labels' | 'grouped-labels';
 
 export interface BlockRule {
   readonly id: string;
@@ -114,6 +114,39 @@ export const BLOCK_RULES: readonly BlockRule[] = Object.freeze([
     basis:
       'Originalblock ESS11 E19–E22 mit gleicher Antwortliste. ESS11-Modulvorlage „Gender in Contemporary Europe“, S. 11–12 und 36–38.',
   },
+  {
+    id: 'electricity_sources',
+    title: 'Strom aus sieben Energiequellen',
+    itemIds: [
+      'ESS8e02_3:elgcoal',
+      'ESS8e02_3:elgngas',
+      'ESS8e02_3:elghydr',
+      'ESS8e02_3:elgnuc',
+      'ESS8e02_3:elgsun',
+      'ESS8e02_3:elgwind',
+      'ESS8e02_3:elgbio',
+    ],
+    pattern: 'grouped-labels',
+    note: 'Die Fragen erfassen die gewünschte Menge je Energiequelle. Sie nennen keine Kosten, keine Fristen und keinen Gesamtumfang der Stromerzeugung.',
+    basis:
+      'Originalblock ESS8 D4–D10 mit gleicher Einleitung und Liste 35. ESS8-Modulvorlage „Climate Change and Energy“.',
+  },
+  {
+    id: 'asylum',
+    title: 'Asyl',
+    itemIds: ['ESS8e02_3:gvrfgap', 'ESS8e02_3:rfgbfml'],
+    pattern: 'directions',
+    note: 'Die beiden Fragen betreffen die Prüfung von Asylanträgen und den Familiennachzug nach einer Anerkennung. Die Frage C43 dazwischen erfasst eine Wahrnehmung und ist nicht enthalten.',
+    basis: 'Originalblock ESS8 C42–C44 mit gleicher Einleitung und Liste 31.',
+  },
+  {
+    id: 'same_sex_couples',
+    title: 'Schwule und Lesben',
+    itemIds: ['ESS10SCe03_2:freehms', 'ESS10SCe03_2:hmsacld'],
+    pattern: 'directions',
+    note: 'Die eine Frage nennt ein allgemeines Prinzip, die andere ein bestimmtes Recht. Die Frage A48 dazwischen erfasst ein persönliches Gefühl und ist nicht enthalten.',
+    basis: 'Originalblock ESS10 A46–A49 mit gleicher Einleitung und Antwortliste.',
+  },
 ]);
 
 export const CROSS_REFERENCE_RULES: readonly CrossReferenceRule[] = Object.freeze([
@@ -158,6 +191,18 @@ export const CROSS_REFERENCE_RULES: readonly CrossReferenceRule[] = Object.freez
       'Die Fragen betreffen die Bindung an Recht und Behörden. Sie erfassen die Wichtigkeit gleicher Behandlung durch Gerichte für Demokratie im Allgemeinen (ESS10), Zustimmung zu allgemeinen Aussagen über Gesetze und Urteile (ESS5) und die eigene Pflicht gegenüber der Polizei (ESS5).',
   },
   {
+    id: 'leadership_and_law',
+    title: 'Politische Führung und Recht',
+    itemIds: [
+      'ESS10SCe03_2:accalaw',
+      'ESS10SCe03_2:loylead',
+      'ESS10SCe03_2:cttresa',
+      'ESS5e03_6:prtyban',
+    ],
+    context:
+      'Die Fragen betreffen die Bindung politischer Macht. Sie erfassen die Akzeptanz einer Führungsperson über dem Gesetz auf einer Skala von 0 bis 10 (ESS10), Zustimmung zu einer Aussage über Loyalität (ESS10), die Wichtigkeit gleicher Behandlung durch Gerichte für Demokratie im Allgemeinen (ESS10) und Zustimmung zum Verbot demokratiefeindlicher Parteien (ESS5, 2010/11).',
+  },
+  {
     id: 'work_and_family',
     title: 'Erwerbsarbeit und Kinderbetreuung',
     itemIds: ['ESS8e02_3:gvcldcr', 'ESS8e02_3:wrkprbf', 'ESS11e04_2:eqparlv'],
@@ -167,9 +212,14 @@ export const CROSS_REFERENCE_RULES: readonly CrossReferenceRule[] = Object.freez
   {
     id: 'european_union',
     title: 'Europäische Union',
-    itemIds: ['ESS10SCe03_2:vteurmmb', 'ESS10SCe03_2:keydec', 'ESS11e04_2:euftf'],
+    itemIds: [
+      'ESS10SCe03_2:vteurmmb',
+      'ESS10SCe03_2:keydec',
+      'ESS11e04_2:euftf',
+      'ESS8e02_3:eusclbf',
+    ],
     context:
-      'Die Fragen stellen drei verschiedene Aufgaben: eine hypothetische Abstimmung über die Mitgliedschaft (ESS10), die Wichtigkeit nationaler Entscheidungen für Demokratie im Allgemeinen (ESS10) und die Richtung der Einigung (ESS11).',
+      'Die Fragen stellen verschiedene Aufgaben: eine hypothetische Abstimmung über die Mitgliedschaft (ESS10), die Wichtigkeit nationaler Entscheidungen für Demokratie im Allgemeinen (ESS10), die Richtung der Einigung (ESS11) und ein bestimmtes gemeinsames Sozialleistungsprogramm (ESS8).',
   },
 ]);
 

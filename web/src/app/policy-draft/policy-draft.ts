@@ -22,6 +22,7 @@ import {
   type PolicyDraftItem,
 } from './policy-catalogue';
 import { PolicySourceDetails } from './policy-source-details';
+import { buildAnswerProfile, type ProfileAnswer } from './profile/profile-engine';
 
 type DraftView = 'questions' | 'overview' | 'results';
 type SkipReason = 'unspecified' | 'dont-know' | 'decline';
@@ -85,6 +86,15 @@ export class PolicyDraft {
       items: this.items.filter((item) => item.primaryTheme === rubric.id),
     }),
   );
+  protected readonly profile = computed(() =>
+    buildAnswerProfile(
+      this.items,
+      POLICY_RUBRICS,
+      new Map<string, ProfileAnswer>(
+        this.snapshot().responses.map((response) => [response.question.id, response.answer]),
+      ),
+    ),
+  );
   protected readonly counts = computed(() => {
     const responses = this.snapshot().responses;
     return {
@@ -93,6 +103,14 @@ export class PolicyDraft {
       untouched: responses.filter((response) => response.answer.status === 'untouched').length,
     };
   });
+
+  protected statementFor(id: string): string {
+    return (
+      this.profile()
+        .areas.flatMap((area) => area.statements)
+        .find((statement) => statement.itemId === id)?.text ?? ''
+    );
+  }
 
   protected stateLabel(answer: PolicyAnswer): string {
     return { untouched: 'Unberührt', answered: 'Beantwortet', skipped: 'Übersprungen' }[

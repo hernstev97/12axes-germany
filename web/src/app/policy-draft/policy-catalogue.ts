@@ -1,7 +1,8 @@
 import type { PolicyQuestion } from '../research/policy-profile';
 import type { PublicCategory, PublicItem, PublicStudy } from './catalogue-types';
-import { ITEM_MEANINGS } from './item-meanings';
+import { ITEM_RULES } from './profile/profile-rules';
 import { PUBLIC_CATALOGUE } from './public-catalogue';
+import { PUBLIC_CATALOGUE_V22 } from './public-catalogue-v22';
 
 export const POLICY_RUBRICS = Object.freeze([
   { id: 'economy_distribution', title: 'Wirtschaft und Verteilung' },
@@ -26,8 +27,11 @@ const numberedTypes = new Set([
 export interface PolicyDraftItem extends PublicItem {
   readonly study: PublicStudy;
   readonly title: string;
-  readonly meaning: string;
   readonly rubricTitle: string;
+  /** True for the 18 questions added by Analyseplan v2.2. */
+  readonly addedInV22: boolean;
+  /** Categories shown as answer options; excludes categories not read out originally. */
+  readonly offeredCategories: readonly PublicCategory[];
   readonly origin: string;
   readonly fieldworkLabel: string;
   readonly modesLabel: string;
@@ -44,7 +48,7 @@ function date(value: string): string {
 
 export function categoryLabel(item: PublicItem, category: PublicCategory): string {
   return numberedTypes.has(item.responseType) && !/^\d+$/.test(category.labelDe)
-    ? `${category.printedCodeDe}: ${category.labelDe}`
+    ? `${category.printedCodeDe ?? category.code}: ${category.labelDe}`
     : category.labelDe;
 }
 
@@ -56,12 +60,15 @@ function developmentNote(item: PublicItem): string {
     return 'Entwicklungsfassung B25: Die gebundene Papierfassung führt ursprünglich je nach Alternative zu B26 oder B28. Dieser Entwurf geht unabhängig von der Auswahl zur nächsten gewählten Frage und lässt B26–B29 aus. Eine ursprüngliche operative Weiterleitung oder CAWI-Äquivalenz ist damit nicht belegt.';
   }
   if (item.variable === 'hrshsnta') {
-    return 'Originalkontext 2010/2011: „heute“ bezeichnet die damalige Strafpraxis. Einzelansicht und Durchführung auf dieser Website sind eine neue Entwicklungsfassung.';
+    return 'Originalkontext 2010/2011: Für die damals Befragten bezeichnete „heute“ die Strafpraxis der Feldzeit. Wer jetzt antwortet, bezieht „heute“ auf die Gegenwart. Einzelansicht und Durchführung auf dieser Website sind eine neue Entwicklungsfassung.';
+  }
+  if (item.contextNotes?.length) {
+    return `Entwicklungsfassung: ${item.contextNotes.join(' ')} Radioauswahl, Überspringen und neue Zusammenstellung sind noch nicht als gleichwertige Durchführung geprüft.`;
   }
   return 'Entwicklungsfassung: Die gebundene nationale Papier- oder Interviewfassung bleibt als Originalkontext sichtbar. Radioauswahl, Überspringen und neue Zusammenstellung sind noch nicht als gleichwertige Durchführung geprüft.';
 }
 
-function adapt(item: PublicItem): PolicyDraftItem {
+function adapt(item: PublicItem, addedInV22: boolean): PolicyDraftItem {
   const study = PUBLIC_CATALOGUE.studies.find((entry) => entry.id === item.studyId)!;
   const name = study.id === 'ESS10SCe03_2' ? 'ESS10 Self-completion' : study.id.split('e')[0];
   const origin = `${name}, Datenausgabe ${study.edition}, Originalfrage ${item.originalQuestionId}`;
@@ -83,12 +90,16 @@ function adapt(item: PublicItem): PolicyDraftItem {
       ? [item.wordingDe, stem]
       : [stem, item.wordingDe]
     : [item.wordingDe];
-  const [title, meaning] = ITEM_MEANINGS[item.variable]!;
+  const title = ITEM_RULES[item.id]!.title;
+  const offeredCategories = Object.freeze(
+    item.categories.filter((category) => category.offeredOnWebsite !== false),
+  );
   return Object.freeze({
     ...item,
     study,
     title,
-    meaning,
+    addedInV22,
+    offeredCategories,
     origin,
     fieldworkLabel,
     modesLabel,
@@ -99,7 +110,7 @@ function adapt(item: PublicItem): PolicyDraftItem {
       id: item.id,
       primaryTheme: item.primaryTheme,
       // The public source explicitly binds these API/export codes to printed codes.
-      categories: Object.freeze(item.categories.map((category) => category.code)),
+      categories: Object.freeze(offeredCategories.map((category) => category.code)),
       source: Object.freeze({
         studyId: item.studyId,
         originalQuestionId: item.originalQuestionId,
@@ -123,7 +134,32 @@ for (const item of PUBLIC_CATALOGUE.items) {
   }
 }
 
-export const POLICY_DRAFT_ITEMS = Object.freeze(ordered.map(adapt));
+/** Analyseplan v2.2: each new question follows the last v2 question of its block or area. */
+const V22_AFTER: Readonly<Record<string, readonly string[]>> = {
+  'ESS8e02_3:eduunmp': ['ESS8e02_3:basinc'],
+  'ESS10SCe03_2:scchpldm': ['ESS10SCe03_2:accalaw', 'ESS10SCe03_2:loylead', 'ESS5e03_6:prtyban'],
+  'ESS5e03_6:rgbrklw': ['ESS10SCe03_2:panpriph', 'ESS10SCe03_2:panmonpb'],
+  'ESS11e04_2:euftf': ['ESS8e02_3:eusclbf'],
+  'ESS8e02_3:banhhap': [
+    'ESS8e02_3:elgcoal',
+    'ESS8e02_3:elgngas',
+    'ESS8e02_3:elghydr',
+    'ESS8e02_3:elgnuc',
+    'ESS8e02_3:elgsun',
+    'ESS8e02_3:elgwind',
+    'ESS8e02_3:elgbio',
+  ],
+  'ESS8e02_3:imsclbn': ['ESS8e02_3:gvrfgap', 'ESS8e02_3:rfgbfml'],
+  'ESS8e02_3:wrkprbf': ['ESS10SCe03_2:freehms', 'ESS10SCe03_2:hmsacld'],
+};
+const v22ById = new Map(PUBLIC_CATALOGUE_V22.items.map((item) => [item.id, item]));
+const merged: PolicyDraftItem[] = [];
+for (const item of ordered) {
+  merged.push(adapt(item, false));
+  for (const id of V22_AFTER[item.id] ?? []) merged.push(adapt(v22ById.get(id)!, true));
+}
+
+export const POLICY_DRAFT_ITEMS = Object.freeze(merged);
 export const POLICY_DRAFT_QUESTIONS = Object.freeze(
   POLICY_DRAFT_ITEMS.map((item) => item.question),
 );

@@ -5,6 +5,13 @@
     @for (introduction of item().introductionsDe; track $index) {
       <p>{{ introduction }}</p>
     }
+    @if (item().definitionDe?.length) {
+      <ul>
+        @for (point of item().definitionDe; track $index) {
+          <li>{{ point }}</li>
+        }
+      </ul>
+    }
     @if (item().situationDe) {
       <p>{{ item().situationDe }}</p>
     }
@@ -112,7 +119,17 @@
       @for (category of item().categories; track category.code) {
         <div>
           <dt>{{ category.labelDe }}</dt>
-          <dd>Druckcode {{ category.printedCodeDe }}; API-/Exportcode {{ category.code }}</dd>
+          <dd>
+            @if (category.printedCodeDe !== null) {
+              Druckcode {{ category.printedCodeDe }}.
+            } @else {
+              Gedruckter Code nicht eindeutig.
+            }
+            API-/Exportcode {{ category.code }}.
+            @if (category.offeredOnWebsite === false) {
+              Im Interview nicht vorgelesen, hier keine Antwortoption.
+            }
+          </dd>
         </div>
       }
     </dl>

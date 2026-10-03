@@ -2,6 +2,10 @@ import { type ComponentFixture, TestBed } from '@angular/core/testing';
 import { PolicyDraft } from './policy-draft';
 import { REVIEWED_HISTORICAL_REFERENCES } from './reviewed-historical-references';
 import { REVIEWED_HISTORICAL_GROUPS } from './reviewed-historical-groups';
+import { POLICY_DRAFT_ITEMS } from './policy-catalogue';
+
+const TOTAL = POLICY_DRAFT_ITEMS.length;
+const E35_INDEX = POLICY_DRAFT_ITEMS.findIndex((item) => item.id === 'ESS8e02_3:wrkprbf') + 1;
 
 describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   let fixture: ComponentFixture<PolicyDraft>;
@@ -133,9 +137,9 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   });
 
   it.each([
-    ['Zur nächsten Frage', 'Frage 3 von 43'],
-    ['Zur vorherigen Frage', 'Frage 1 von 43'],
-    ['Diese Frage überspringen', 'Frage 3 von 43'],
+    ['Zur nächsten Frage', `Frage 3 von ${TOTAL}`],
+    ['Zur vorherigen Frage', `Frage 1 von ${TOTAL}`],
+    ['Diese Frage überspringen', `Frage 3 von ${TOTAL}`],
   ])('Fokus und Scrollen folgen dem gerenderten Fragenwechsel durch %s', async (action, title) => {
     await click('Zur nächsten Frage');
     headingInteractions = [];
@@ -164,13 +168,13 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     },
   );
 
-  it('Fokus und Scrollen führen von der letzten Übersichtsfrage zur gerenderten Frage 43', async () => {
+  it('Fokus und Scrollen führen von der letzten Übersichtsfrage zur gerenderten letzten Frage', async () => {
     await click('Zur Fragenübersicht');
     headingInteractions = [];
     element.querySelector<HTMLButtonElement>('.overview-list li:last-child button')!.click();
     await fixture.whenStable();
     const heading = element.querySelector<HTMLElement>('#draft-question-title')!;
-    expect(heading.textContent).toContain('Frage 43 von 43');
+    expect(heading.textContent).toContain(`Frage ${TOTAL} von ${TOTAL}`);
     expectFocusedAndScrolled(heading);
   });
 
@@ -182,13 +186,13 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       .click();
     await fixture.whenStable();
     const heading = element.querySelector<HTMLElement>('#draft-question-title')!;
-    expect(heading.textContent).toContain('Frage 43 von 43');
+    expect(heading.textContent).toContain(`Frage ${E35_INDEX} von ${TOTAL}`);
     expect(element.textContent).toContain('Originalfrage E35');
     expectFocusedAndScrolled(heading);
   });
 
   it.each(['Zum Ergebnisentwurf', 'Diese Frage überspringen'])(
-    'Fokus und Scrollen führen nach Frage 43 durch %s zur Ergebnisüberschrift',
+    'Fokus und Scrollen führen nach der letzten Frage durch %s zur Ergebnisüberschrift',
     async (action) => {
       await openLastQuestion();
       headingInteractions = [];
@@ -245,7 +249,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expect(second.textContent).toContain('Grund dieser Entwurfssitzung: Weiß nicht');
     expect(second.textContent).toContain('keinem Missing-Code');
     expect(second.textContent).not.toContain('Gewählte Originalkategorie');
-    expect(element.querySelectorAll('.result-item')).toHaveLength(43);
+    expect(element.querySelectorAll('.result-item')).toHaveLength(TOTAL);
     second.querySelector('button')!.click();
     await fixture.whenStable();
     expect(element.querySelector('#draft-question-title')?.textContent).toContain('Frage 2');
@@ -436,7 +440,9 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expect(element.querySelectorAll('.group-reference')).toHaveLength(0);
     expect(element.querySelectorAll('.group-counts')).toHaveLength(0);
     expect(element.querySelectorAll('.group-proportions')).toHaveLength(0);
-    expect(element.querySelectorAll('.group-unavailable')).toHaveLength(10);
+    expect(element.querySelectorAll('.group-unavailable')).toHaveLength(
+      POLICY_DRAFT_ITEMS.filter((item) => item.studyId === 'ESS8e02_3').length,
+    );
     expect(element.querySelector('.group-other-limit')?.textContent).toContain(
       'heterogene, unbenannte Rest',
     );

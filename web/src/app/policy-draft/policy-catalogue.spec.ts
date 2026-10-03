@@ -1,15 +1,28 @@
 import { PolicyProfileInputError, PolicyProfileSession } from '../research/policy-profile';
 import { POLICY_DRAFT_ITEMS, POLICY_DRAFT_QUESTIONS, POLICY_RUBRICS } from './policy-catalogue';
 import { PUBLIC_CATALOGUE } from './public-catalogue';
+import { PUBLIC_CATALOGUE_V22 } from './public-catalogue-v22';
 
 describe('Öffentliche Originalbindung des Angular-Entwurfs', () => {
-  it('enthält den gepinnten öffentlichen 43-Fragen-Entwurf mit 315 ausdrücklich gebundenen Optionen', () => {
+  it('bietet die im Interview nicht vorgelesene Antwort zu Energiequellen nicht an', () => {
+    for (const item of POLICY_DRAFT_ITEMS.filter(
+      (entry) => entry.groupId === 'electricity_sources',
+    )) {
+      expect(item.categories.map((category) => category.code)).toContain('55');
+      expect(item.offeredCategories.map((category) => category.code)).not.toContain('55');
+      expect(item.question.categories).not.toContain('55');
+    }
+  });
+
+  it('enthält die gepinnten 43 v2-Fragen und 18 v2.2-Fragen mit 428 ausdrücklich gebundenen Optionen', () => {
     expect(PUBLIC_CATALOGUE.catalogueSha256).toBe(
       '5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4',
     );
-    expect(POLICY_DRAFT_ITEMS).toHaveLength(43);
-    expect(POLICY_DRAFT_ITEMS.reduce((count, item) => count + item.categories.length, 0)).toBe(315);
-    expect(new Set(POLICY_DRAFT_ITEMS.map((item) => item.id)).size).toBe(43);
+    expect(PUBLIC_CATALOGUE_V22.items).toHaveLength(18);
+    expect(POLICY_DRAFT_ITEMS).toHaveLength(61);
+    expect(POLICY_DRAFT_ITEMS.filter((item) => item.addedInV22)).toHaveLength(18);
+    expect(POLICY_DRAFT_ITEMS.reduce((count, item) => count + item.categories.length, 0)).toBe(428);
+    expect(new Set(POLICY_DRAFT_ITEMS.map((item) => item.id)).size).toBe(61);
     for (const item of POLICY_DRAFT_ITEMS) {
       expect(item.categories.map((category) => category.code)).toEqual(item.apiValidCodeOrder);
       expect(

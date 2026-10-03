@@ -73,6 +73,13 @@
             @for (introduction of item.introductionsDe; track $index) {
               <p>{{ introduction }}</p>
             }
+            @if (item.definitionDe?.length) {
+              <ul class="definition">
+                @for (point of item.definitionDe; track $index) {
+                  <li>{{ point }}</li>
+                }
+              </ul>
+            }
             @if (item.situationDe) {
               <p>{{ item.situationDe }}</p>
             }
@@ -91,7 +98,7 @@
                 <span>{{ wording }}</span>
               }
             </legend>
-            @for (category of item.categories; track optionKey(category.code)) {
+            @for (category of item.offeredCategories; track optionKey(category.code)) {
               <label class="answer-option">
                 <input
                   type="radio"
@@ -378,7 +385,7 @@
                 <p class="state">{{ stateLabel(answer) }}</p>
                 @if (answer.status === 'answered') {
                   <p>Gewählte Originalkategorie: {{ answerLabel(item, answer) }}</p>
-                  <p>{{ item.meaning }}</p>
+                  <p>{{ statementFor(item.id) }}</p>
                 } @else if (answer.status === 'skipped') {
                   <p>
                     Bewusst übersprungen. Grund dieser Entwurfssitzung: {{ skipLabel(item.id) }}.

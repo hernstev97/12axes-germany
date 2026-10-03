@@ -152,7 +152,7 @@ ITEMS = [
          stem=None, labels=AGAINST_FIRST,
          pages={'ess8-de-questionnaire': [44], 'ess8-de-showcards': [56]}, listLabel='Liste 55',
          notes=[]),
-    dict(variable='panpriph', study='ESS10SCe03_2', area='health_care', question='A1',
+    dict(variable='panpriph', study='ESS10SCe03_2', area='rights_security', question='A1',
          group='pandemic_tradeoffs', order=1, responseType='ordered_tradeoff', content='principle',
          wording='Ist es bei der Bekämpfung einer Pandemie wichtiger, die Gesundheit der '
                  'Bevölkerung oder die Wirtschaft vorrangig zu berücksichtigen?',
