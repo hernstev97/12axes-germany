@@ -107,6 +107,32 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     await fixture.whenStable();
   }
 
+  it('zeigt das erklärende Profil mit Blockmuster, Querbezug, markierter eigener Antwort und Lücken', async () => {
+    fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
+    await choose('1');
+    await click('Zur nächsten Frage');
+    await choose('5');
+    await click('Zum Ergebnisentwurf');
+    const block = element.querySelector<HTMLElement>('[data-block-id="justice_principles"]')!;
+    expect(block.textContent).toContain('Zustimmung: Gleichheit.');
+    expect(block.textContent).toContain('Ablehnung: Leistung.');
+    expect(block.textContent).toContain('kein Widerspruch');
+    const first = element.querySelector<HTMLElement>('[data-question-id="ESS9e03_3:sofrdst"]')!;
+    expect(first.querySelector('.profile-statement')?.textContent).toContain(
+      'Zustimmung zur Aussage „Eine Gesellschaft ist gerecht',
+    );
+    expect(first.querySelectorAll('.own-answer-label')).toHaveLength(1);
+    expect(first.querySelector('.same-category')?.textContent).toContain('Dieselbe Kategorie');
+    expect(element.querySelector('#draft-cross-title')).not.toBeNull();
+    expect(element.querySelectorAll('.profile-cross')).toHaveLength(0);
+    const uncovered = element.querySelector<HTMLElement>('.uncovered-areas')!;
+    expect(uncovered.textContent).toContain('Außen-, Verteidigungs- und Friedenspolitik');
+    expect(uncovered.textContent).toContain('Gesundheit und Pflege');
+    expect(element.querySelector('.area-scope')?.textContent).toContain('Nicht erfasst');
+    expect(element.textContent).not.toMatch(
+      /(?<!\p{L})(?:links|rechts|konservativ|liberal|populistisch)(?!\p{L})/iu,
+    );
+  });
   it('hält native Radios bei Eingaben schneller als ein Renderzyklus am Sitzungszustand', async () => {
     const radios = () => [...element.querySelectorAll<HTMLInputElement>('input[type="radio"]')];
     // Select and reset before Angular renders: the session ends untouched.
@@ -281,7 +307,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expect(element.textContent).toContain(
       'Texte und Ergebnisdarstellung wurden noch nicht mit Menschen',
     );
-    expect(element.querySelectorAll('section h2')).toHaveLength(9);
+    expect(element.querySelectorAll('section h2')).toHaveLength(11);
   });
 
   it('zeigt Druckcodes und bewahrt den zugeordneten Exportcode bei der Auswahl', async () => {
@@ -387,7 +413,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expect([...groupSelect.options].map((option) => option.textContent?.trim())).toContain('NPD');
     expect(groupSelect.options[groupSelect.options.length - 1]!.textContent?.trim()).toBe('Other');
     expect(element.querySelectorAll('h1')).toHaveLength(1);
-    expect(element.querySelectorAll('section h2')).toHaveLength(9);
+    expect(element.querySelectorAll('section h2')).toHaveLength(11);
   });
 
   it('zeigt nur echte gleichstudienbezogene Gruppenanteile und den gültigen Fragenenner neben getrennten Missing-Fällen', async () => {

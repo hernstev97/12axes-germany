@@ -22,7 +22,10 @@ import {
   type PolicyDraftItem,
 } from './policy-catalogue';
 import { PolicySourceDetails } from './policy-source-details';
+import { AREA_SCOPES, UNCOVERED_AREAS } from './profile/area-scope';
 import { buildAnswerProfile, type ProfileAnswer } from './profile/profile-engine';
+import { CROSS_REFERENCE_NOTE, MIDDLE_NOTE } from './profile/profile-structure';
+import { ITEM_RULES } from './profile/profile-rules';
 
 type DraftView = 'questions' | 'overview' | 'results';
 type SkipReason = 'unspecified' | 'dont-know' | 'decline';
@@ -104,12 +107,37 @@ export class PolicyDraft {
     };
   });
 
-  protected statementFor(id: string): string {
+  protected readonly middleNote = MIDDLE_NOTE;
+  protected readonly crossReferenceNote = CROSS_REFERENCE_NOTE;
+  protected readonly uncoveredAreas = UNCOVERED_AREAS;
+
+  protected statementFor(id: string) {
     return (
       this.profile()
         .areas.flatMap((area) => area.statements)
-        .find((statement) => statement.itemId === id)?.text ?? ''
+        .find((statement) => statement.itemId === id) ?? null
     );
+  }
+
+  protected areaProfile(id: string) {
+    return this.profile().areas.find((area) => area.areaId === id)!;
+  }
+
+  protected scopeFor(id: string) {
+    return AREA_SCOPES.find((scope) => scope.id === id) ?? null;
+  }
+
+  protected titlesFor(ids: readonly string[]): string {
+    return ids.map((id) => ITEM_RULES[id]!.title).join(', ');
+  }
+
+  /** Share of the own category; null without an answer or for a zero share. */
+  protected chosenShare(
+    answer: PolicyAnswer,
+    shares: readonly { readonly code: string; readonly share: number }[],
+  ): number | null {
+    if (answer.status !== 'answered') return null;
+    return shares.find((entry) => entry.code === answer.code)?.share ?? null;
   }
 
   protected stateLabel(answer: PolicyAnswer): string {

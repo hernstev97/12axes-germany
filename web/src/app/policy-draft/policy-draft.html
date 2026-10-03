@@ -16,7 +16,7 @@
       </h1>
       <p class="date">Stand: <span class="nowrap">3. Oktober 2026</span></p>
       <p class="lead">
-        43 Originalangaben aus fünf historischen Studien des
+        {{ items.length }} Originalfragen aus fünf historischen Befragungen des
         <a href="https://www.europeansocialsurvey.org/">European Social Survey</a> (ESS), einer
         repräsentativen wissenschaftlichen Befragung, bilden diesen Entwurf. Neue Zusammenstellung
         und Durchführung sind noch nicht freigegeben.
@@ -189,16 +189,17 @@
             getestet.
           </p>
           <p>
-            Diese Fassung zeigt getrennte Einzelangaben unter Themenrubriken. Sie berechnet keine
-            gemeinsamen Dimensionen und keinen politischen Gesamtwert.
+            Das Antwortprofil beschreibt die Antworten Frage für Frage, innerhalb von
+            Originalblöcken und in ausgewählten Querbezügen. Es berechnet keine Dimension und keinen
+            politischen Gesamtwert.
           </p>
           <p>
             Das Projekt ist weder validiert noch wissenschaftlich geprüft und kann keine Neutralität
             garantieren.
           </p>
           <p>
-            Eine Auswahl beschreibt nur die jeweilige Originalaussage. Sie ergibt keinen
-            persönlichen Unsicherheitsbereich, kein Parteimatch und keine aktuelle Bevölkerungsnorm.
+            Eine Antwort beschreibt nur die jeweilige Originalfrage. Sie ergibt keinen persönlichen
+            Unsicherheitsbereich, keine Parteizuordnung und keine aktuelle Bevölkerungsnorm.
           </p>
           @if (references().status === 'none') {
             <p>Historische Vergleichswerte sind in dieser Fassung noch nicht eingebunden.</p>
@@ -366,6 +367,47 @@
         </div>
       </div>
     </section>
+    <section class="section page-width" aria-labelledby="draft-profile-title">
+      <div class="grid">
+        <h2 id="draft-profile-title" class="section-title area-title">Überblick</h2>
+        <div class="prose area-body">
+          <p>
+            {{ profile().answered }} von {{ profile().total }} Fragen haben eine inhaltliche
+            Antwort. Das Profil besteht aus drei Arten von Aussagen: Einzelaussagen zu jeder
+            beantworteten Frage, Mustern innerhalb von Originalblöcken mit gleicher Antwortliste und
+            Querbezügen zwischen Fragen verschiedener Blöcke.
+          </p>
+          <dl class="facts profile-coverage">
+            @for (area of profile().areas; track area.areaId) {
+              <div>
+                <dt>{{ area.title }}</dt>
+                <dd>{{ area.answered }} von {{ area.total }} Fragen beantwortet</dd>
+              </div>
+            }
+          </dl>
+          <p class="meta">
+            Die Zahlen beschreiben, wie viele Fragen beantwortet wurden. Sie sind keine Werte und
+            keine Positionen.
+          </p>
+          @if (profile().usesMiddleCategory) {
+            <p class="middle-note">{{ middleNote }}</p>
+          }
+          <h3>Bereiche ohne eigene Fragen</h3>
+          <p>
+            Für diese Bereiche gibt es in den verfügbaren ESS-Daten keine oder fast keine passende
+            Frage. Die Lücken bleiben sichtbar und werden nicht durch eigene Fragen geschlossen.
+          </p>
+          <dl class="facts uncovered-areas">
+            @for (area of uncoveredAreas; track area.id) {
+              <div>
+                <dt>{{ area.title }}</dt>
+                <dd>{{ area.covered }} Nicht erfasst: {{ area.notCovered }}</dd>
+              </div>
+            }
+          </dl>
+        </div>
+      </div>
+    </section>
     @for (rubric of resultRubrics; track rubric.id) {
       <section class="section page-width" [attr.aria-labelledby]="'draft-result-' + rubric.id">
         <div class="grid">
@@ -373,10 +415,33 @@
             {{ rubric.title }}
           </h2>
           <div class="prose area-body">
+            @let area = areaProfile(rubric.id);
             <p class="meta">
-              Diese Rubrik ordnet konkrete Originalangaben. Sie ist keine bestätigte Dimension und
-              erhält keinen gemeinsamen Wert.
+              {{ area.answered }} von {{ area.total }} Fragen beantwortet. Der Bereich ordnet
+              Originalfragen. Er ist keine Messdimension und erhält keinen Wert.
             </p>
+            @if (scopeFor(rubric.id); as scope) {
+              <dl class="facts area-scope">
+                <div>
+                  <dt>Erfasst</dt>
+                  <dd>{{ scope.covered }}</dd>
+                </div>
+                <div>
+                  <dt>Nicht erfasst</dt>
+                  <dd>{{ scope.notCovered }}</dd>
+                </div>
+              </dl>
+            }
+            @for (block of area.blocks; track block.blockId) {
+              <section class="profile-block" [attr.data-block-id]="block.blockId">
+                <h3>{{ block.title }}</h3>
+                @for (sentence of block.sentences; track $index) {
+                  <p>{{ sentence }}</p>
+                }
+                <p class="meta">{{ block.note }}</p>
+                <p class="meta">Grundlage: {{ block.basis }}</p>
+              </section>
+            }
             @for (item of rubric.items; track item.id) {
               @let answer = answers().get(item.id)!;
               <article class="result-item" [attr.data-question-id]="item.id">
@@ -385,7 +450,10 @@
                 <p class="state">{{ stateLabel(answer) }}</p>
                 @if (answer.status === 'answered') {
                   <p>Gewählte Originalkategorie: {{ answerLabel(item, answer) }}</p>
-                  <p>{{ statementFor(item.id) }}</p>
+                  @if (statementFor(item.id); as statement) {
+                    <p class="profile-statement">{{ statement.text }}</p>
+                    <p class="meta">Kontext: {{ statement.context }}</p>
+                  }
                 } @else if (answer.status === 'skipped') {
                   <p>
                     Bewusst übersprungen. Grund dieser Entwurfssitzung: {{ skipLabel(item.id) }}.
@@ -408,10 +476,21 @@
                       Menschen ab 15 Jahren in Privathaushalten. Keine aktuelle Bevölkerungsnorm und
                       keine Referenz nur für Wahlberechtigte.
                     </p>
+                    @if (chosenShare(answer, reference.categoryShares); as share) {
+                      <p class="same-category">
+                        Dieselbe Kategorie wählten {{ percentage(share) }} der damals Befragten mit
+                        gültiger Antwort.
+                      </p>
+                    }
                     <dl class="facts">
                       @for (category of reference.categoryShares; track category.code) {
-                        <div>
-                          <dt>{{ referenceLabel(item, category.code) }}</dt>
+                        <div [class.own-answer]="isSelected(answer, category.code)">
+                          <dt>
+                            {{ referenceLabel(item, category.code) }}
+                            @if (isSelected(answer, category.code)) {
+                              <span class="own-answer-label">(eigene Antwort)</span>
+                            }
+                          </dt>
                           <dd>{{ percentage(category.share) }}</dd>
                         </div>
                       }
@@ -469,8 +548,16 @@
                     </p>
                     <dl class="facts group-proportions">
                       @for (category of comparison.reference.categories; track category.code) {
-                        <div [attr.data-category-code]="category.code">
-                          <dt>{{ referenceLabel(item, category.code) }}</dt>
+                        <div
+                          [attr.data-category-code]="category.code"
+                          [class.own-answer]="isSelected(answer, category.code)"
+                        >
+                          <dt>
+                            {{ referenceLabel(item, category.code) }}
+                            @if (isSelected(answer, category.code)) {
+                              <span class="own-answer-label">(eigene Antwort)</span>
+                            }
+                          </dt>
                           <dd>{{ percentage(category.proportion) }}</dd>
                         </div>
                       }
@@ -532,5 +619,36 @@
         </div>
       </section>
     }
+    <section class="section page-width" aria-labelledby="draft-cross-title">
+      <div class="grid">
+        <h2 id="draft-cross-title" class="section-title area-title">Querbezüge</h2>
+        <div class="prose area-body">
+          <p>{{ crossReferenceNote }}</p>
+          @for (entry of profile().crossReferences; track entry.id) {
+            <section class="profile-cross" [attr.data-cross-id]="entry.id">
+              <h3>{{ entry.title }}</h3>
+              <dl class="facts">
+                @for (answer of entry.answers; track answer.itemId) {
+                  <div>
+                    <dt>{{ answer.title }}</dt>
+                    <dd>{{ answer.answer }}</dd>
+                  </div>
+                }
+              </dl>
+              <p>{{ entry.context }}</p>
+              @if (entry.unansweredItemIds.length) {
+                <p class="meta">
+                  Ohne inhaltliche Antwort: {{ titlesFor(entry.unansweredItemIds) }}.
+                </p>
+              }
+            </section>
+          } @empty {
+            <p class="meta">
+              Ein Querbezug erscheint, sobald mindestens zwei seiner Fragen beantwortet sind.
+            </p>
+          }
+        </div>
+      </div>
+    </section>
   }
 </article>
