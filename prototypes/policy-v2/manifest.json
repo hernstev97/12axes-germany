@@ -1,0 +1,50 @@
+{
+  "scope": "Unpublished local design draft. Browser, human design approval and comprehension testing pending.",
+  "files": [
+    {
+      "path": "assets/libre-baskerville-latin-wght-normal.woff2",
+      "bytes": 33872,
+      "sha256": "22219fb90e3b9bd28debd1825fe8d9a0154a0e31f8b3fa601ac1a0a5aa5e6d1b"
+    },
+    {
+      "path": "assets/libre-baskerville-license.txt",
+      "bytes": 4541,
+      "sha256": "8490e863633e537100d6d18755d994ea30b0b44741876a17809d28becf45ce11"
+    },
+    {
+      "path": "catalogue.js",
+      "bytes": 116310,
+      "sha256": "3b897bad81058fbd525a1cf9fa04354f8d48ccc8ae5892e89496ad1552411785"
+    },
+    {
+      "path": "foundation.css",
+      "bytes": 6505,
+      "sha256": "97853bc6912eaa3a722b0ea3707f61aca418a77a7f69ec602aaca9a4a60dceca"
+    },
+    {
+      "path": "index.html",
+      "bytes": 6339,
+      "sha256": "1270f0c5faaeb3a1ba206f17c15a538206a475b3c9b4ca0332f4f7b6c69500f7"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 4046,
+      "sha256": "36a90d859e5b456e67085899262ed5f014130e76759a07f6f517841546a6d9aa"
+    },
+    {
+      "path": "prototype.css",
+      "bytes": 3209,
+      "sha256": "f0c0fde17a0a882a6899dcd10a98fc33376a3a6bbc9faad18f9415c6320aff73"
+    },
+    {
+      "path": "prototype.js",
+      "bytes": 24379,
+      "sha256": "1d56dbdc63cde53d3732c484bbb49c770a5b8fe295140d4290245faff14bea05"
+    },
+    {
+      "path": "source-binding.json",
+      "bytes": 890,
+      "sha256": "06a63a0672ec7f05020d50ceff6c47d2a2633d5d15f9d2bd6fe77492ae782245"
+    }
+  ]
+}

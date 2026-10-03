@@ -94,3 +94,5 @@ Nachtrag3.Oktober2026,13:25UTC: Vier zusätzliche Nutzer-CSV-Dateien bytegleich 
 ## Übergangsprüfung v2 am 3. Oktober 2026, etwa 14:00 UTC
 
 Beide getrennten Ersturteile des20-Pin-Pakets EMPIRICAL-V2-001/v1 sind abgeschlossen. Methoden ACCEPTED_BOUNDED, Quellen NOT_ACCEPTED für EV2-SRC-F01. Originale bleiben erhalten; Quellenkorrektur und gezielte Nachprüfung, keine neue Gesamtauditpflicht. Neue v2-CSV-Header/Antworten/Marginals weiterhin ungeöffnet. Aktueller Fortsetzungsstand und Agentaufgaben stehen im Handoff; frühere Zeitstände hier sind historische Protokolle.
+
+Die lokale43-Fragen-Gestaltung liegt als eigener Vorschlag unter prototypes/policy-v2. Normale Erstprüfung identifizierte zwei begrenzte semantische Textbefunde und einen internen Generatorpin. Originale vor Korrekturen sichern; kein Forschungsstopp für diese UI-Befunde. Quellenübergang wird nur für19geänderte CAWI-/B25-Bindungsfelder gezielt nachgeprüft. Aktuelle Referenz-/Parteidaten nochgeschlossen.

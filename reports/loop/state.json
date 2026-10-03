@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T13:59:33.034517+00:00",
+  "updatedAtUtc": "2026-10-03T14:12:22.386435+00:00",
   "status": "RUNNING",
-  "phase": "BROAD_V2_SOURCE_BINDING_CORRECTION",
+  "phase": "BROAD_V2_TARGETED_CORRECTIONS",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -107,9 +107,9 @@
     "mainIntegration": "BESTANDEN",
     "currentLocalTechnical": {
       "command": "pnpm check",
-      "exitCode": 0,
-      "log": "outputs/loop/check-044.log",
-      "scope": "format/handbook/review-schema/typecheck31tests/build; no empirical validation"
+      "exitCode": 1,
+      "log": "outputs/loop/check-045.log",
+      "scope": "Format stage failed after newly tracked original prototype; later stages not run. Last green check04431tests/build preserved."
     },
     "currentIndependentIntegration": "BI001–004 gezielt geschlossen; keine empirische/itembezogene Freigabe",
     "empiricalValidation": "Historische A/B-Kriterien berechnet; keine umfassende Produktvalidität. Breite v2 NICHT_GEPRÜFT.",
@@ -266,14 +266,20 @@
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
+      "name": "T3 preempirical_v2_methods",
+      "status": "RUNNING_TARGETED_ROUND1"
+    },
+    {
+      "name": "T3 preempirical_v2_sources",
+      "status": "RUNNING_TARGETED_ROUND1"
+    },
+    {
       "name": "/root/breadth_topic_frame",
-      "status": "RUNNING_SOURCE_CORRECTION_PROPOSAL_ONLY",
-      "report": "reports/loop/authors/CAWI-BINDING-CORRECTION-001-WIP.md"
+      "status": "RUNNING_PURE_REPORT_AUTHOR"
     },
     {
       "name": "/root/breadth_data_instruments",
-      "status": "RUNNING_PUBLIC_GROUP_BINDING_FOLLOWUP_ONLY",
-      "report": "reports/loop/authors/BREADTH-GROUP-BINDING-006-WIP.md"
+      "status": "RUNNING_PUBLIC_GROUP_CONTRACT_AUTHOR_NO_ANSWERS"
     }
   ],
   "workPackages": [
@@ -524,22 +530,22 @@
       "tests": "13 synthetic Vitest tests author exit0"
     }
   ],
-  "nextConcreteStep": "Preserve both original20-pin firsts; correct EV2-SRC-F01 CAWI context and clarify B25 scope, targeted sources recheck. Retain bounded methods acceptance. Then freeze/tag/gate before separate five historical runs.",
+  "nextConcreteStep": "Finish targeted22-pin source/method reports, freeze/tag/gate then5 separate studies. Correct only PUI-R1/R2/R3 after original proposal commit; format/preparation hashes and browser wrap followup, no full audit.",
   "checkpoint": {
-    "lastLocalCommit": "e3785ab4560e13a18547713ffbca5cc585d91a40",
-    "lastVerifiedRemoteCommit": "e3785ab4560e13a18547713ffbca5cc585d91a40",
-    "lastVerifiedPushAtUtc": "2026-10-03T13:38:51.377961+00:00",
+    "lastLocalCommit": "456cc2e18789a41b9e6f34e2dcdef495443b98a6",
+    "lastVerifiedRemoteCommit": "456cc2e18789a41b9e6f34e2dcdef495443b98a6",
+    "lastVerifiedPushAtUtc": "2026-10-03T14:00:16.720835+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-038.json",
+    "record": "reports/loop/push-039.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
     "finalVerificationRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8",
-    "pendingPayload": "Completed synthetic access/export libraries, original20-pin transition package and both first reports, ESS11 byte-identical local copy receipt, prototype author report and public group-source inventory WIP. No v2 answer access. Prototype/source caches locally ignored until reviewed promotion."
+    "pendingPayload": "Original11-pin local UI proposal and original first report preserved before semantic/format corrections. Source correction19fields plus22-pin revision and authorsWIP. No v2 header/answers/marginals. Check045 format-stage exit1; other stages not run; original proposal formatting pending after version save."
   },
   "scientificStatus": "43 categorical original items,8topics. Methods first ACCEPTED_BOUNDED; sources first NOT_ACCEPTED for two CAWI text bindings. No new v2 header/answer/marginal interpreted; v1 A/B known.",
   "technicalRecord": "reports/loop/technical-halt.json",
@@ -837,30 +843,32 @@
     "remaining": "EV2-SRC-F01 correction and targeted recheck; separate version freeze/tag/positive gate before actual studies.",
     "localInputFilesAvailable": true,
     "contract": "data/analysevertrag.v2.entwurf.json",
-    "contractSha256": "4194f3bb530f036b72a49a81e339779d9d9eed5530a32843acbe6f9697c42e5d",
+    "contractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
     "sourceB25Decision": "Historical static single response allowed after pre-empirical sources-role judgment; proposed new web postflow/CAWI downstream unknown explicitly not operational equivalence",
     "reviewManifest": "reports/loop/packages/EMPIRICAL-V2-001/v1/manifest.json",
-    "reviewManifestSha256": "eeae3bc1b81463b51ce2c0a1bf90f12b08aa01f125064e680d1f983df60c62f4"
+    "reviewManifestSha256": "c3abae78ae5425aa275ebd137a10c0a7d0c1cbb299828ba1f13d1789ac955f6c"
   },
   "sourceCatalogV2": {
     "path": "data/politikprofil-v2.fragen.entwurf.json",
-    "sha256": "38e68b2edfc0ecf9c0b1071bf7283d0ff2f366d3492afd0e71388432415195b9",
+    "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4",
     "report": "reports/loop/authors/BREADTH-CATALOG-004-WIP.md",
     "status": "DRAFT_BOUND_NO_EMPIRICAL_GATE",
     "remaining": "Original downstream CAWI execution unknown; bounded descriptive B25/new website decision documented before new answers. No absolute administration equivalence."
   },
   "groupPreparationV2": {
-    "status": "PUBLIC_SOURCE_INVENTORY_WIP_SEPARATE_V21_REQUIRED",
+    "status": "NEW_SEPARATE_V21_CONTRACT_IN_PREPARATION_NO_PARTY_HEADERS",
     "report": "reports/loop/authors/BREADTH-GROUP-SOURCES-005-WIP.md",
     "knownNewMargins": false,
-    "limits": "Printed/file-code differences and alias binding need explicit limits. No party headers/answers opened; v2 gate does not permit them."
+    "limits": "Printed/file-code differences and alias binding need explicit limits. No party headers/answers opened; v2 gate does not permit them.",
+    "bindingReport": "reports/loop/authors/BREADTH-GROUP-BINDING-006-WIP.md"
   },
   "prototypeV2": {
-    "status": "UNPUBLISHED_LOCAL_DESIGN_PROPOSAL_AUTHOR_COMPLETE",
-    "path": "outputs/loop/policy-ui-design-v2/index.html",
+    "status": "FIRST_REVIEW_PUI_R1_R2_R3_OPEN",
+    "path": "prototypes/policy-v2/index.html",
     "author": "reports/loop/authors/POLICY-UI-DESIGN-WIP.md",
-    "browserStatus": "PENDING",
+    "browserStatus": "BOUNDED_TEN_LAYOUT_AXE_CHECKS_AND_FLOW43",
     "historicalReferences": "No numbers included; not approved",
-    "humanDesignRelease": "PENDING"
+    "humanDesignRelease": "PENDING",
+    "technicalRecord": "reports/loop/policy-ui-technical-wip.json"
   }
 }

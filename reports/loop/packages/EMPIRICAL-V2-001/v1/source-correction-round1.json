@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "revision": 2,
+  "changedAtUtc": "2026-10-03T14:05:18.359125+00:00",
+  "originalPackageCommit": "456cc2e18789a41b9e6f34e2dcdef495443b98a6",
+  "originalManifestSha256": "eeae3bc1b81463b51ce2c0a1bf90f12b08aa01f125064e680d1f983df60c62f4",
+  "finding": "EV2-SRC-F01",
+  "sourcePdfSha256": "158004a89b1821e5202e6faf3c2101eae5e56e794d7c3fdbc3dca1c9d67c8425",
+  "physicalPdfPages": [
+    139,
+    140,
+    141,
+    142,
+    143,
+    146,
+    12,
+    13,
+    162
+  ],
+  "changes": [
+    {
+      "path": "/items/12/modeBinding/cawiWordingDe",
+      "before": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Medien das Recht haben, Kritik an der Regierung zu üben?",
+      "after": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Medien das Recht haben, Kritik an der Regierung zu üben?"
+    },
+    {
+      "path": "/items/12/modeBinding/cawiDifferenceFromPapi",
+      "before": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+      "after": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 139. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim."
+    },
+    {
+      "path": "/items/13/modeBinding/cawiWordingDe",
+      "before": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Rechte von Minderheiten geschützt werden?",
+      "after": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Rechte von Minderheiten geschützt werden?"
+    },
+    {
+      "path": "/items/13/modeBinding/cawiDifferenceFromPapi",
+      "before": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+      "after": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 140. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim."
+    },
+    {
+      "path": "/items/14/modeBinding/cawiWordingDe",
+      "before": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Bürger bei den wichtigsten politischen Sachfragen durch direkte Volksabstimmungen das letzte Wort haben?",
+      "after": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Bürger bei den wichtigsten politischen Sachfragen durch direkte Volksabstimmungen das letzte Wort haben?"
+    },
+    {
+      "path": "/items/14/modeBinding/cawiDifferenceFromPapi",
+      "before": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+      "after": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 141. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim."
+    },
+    {
+      "path": "/items/15/modeBinding/cawiWordingDe",
+      "before": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Gerichte alle Menschen gleich behandeln?",
+      "after": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Gerichte alle Menschen gleich behandeln?"
+    },
+    {
+      "path": "/items/15/modeBinding/cawiDifferenceFromPapi",
+      "before": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+      "after": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 142. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim."
+    },
+    {
+      "path": "/items/16/modeBinding/cawiWordingDe",
+      "before": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass Regierungsparteien bei Wahlen abgestraft werden, wenn sie schlechte Arbeit geleistet haben?",
+      "after": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass Regierungsparteien bei Wahlen abgestraft werden, wenn sie schlechte Arbeit geleistet haben?"
+    },
+    {
+      "path": "/items/16/modeBinding/cawiDifferenceFromPapi",
+      "before": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+      "after": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 143. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim."
+    },
+    {
+      "path": "/items/19/modeBinding/cawiWordingDe",
+      "before": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Ansichten gewöhnlicher Menschen Vorrang vor den Ansichten der politischen Elite haben?",
+      "after": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Ansichten gewöhnlicher Menschen Vorrang vor den Ansichten der politischen Elite haben?"
+    },
+    {
+      "path": "/items/19/modeBinding/cawiDifferenceFromPapi",
+      "before": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+      "after": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 146. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim."
+    },
+    {
+      "path": "/items/21/uncertainty/0/reason",
+      "before": "Original B26–B29 follow-ups omitted from fixed draft; no approved replacement administration.",
+      "after": "Original B26–B29 follow-ups are absent from the fixed draft. This open limitation concerns reproducing the original post-B25 sequence or approving a new web administration; static B25 content binding and a separate historical B25 category reference are distinct. No new administration or empirical/publication approval is certified."
+    },
+    {
+      "path": "/items/21/uncertainty/1/reason",
+      "before": "CAWI screenshot has no printed conditional execution rule. Original PAPI B26/B28 arrows are bound; conditional CAWI administration is not independently documented here.",
+      "after": "The static CAWI screenshot does not document conditional execution after B25. Original PAPI branches are visible on physical PDF page 12 (B26 below; B28 on page 13). This open limitation concerns original follow-up reproduction or a new web administration; it does not itself invalidate the separate static B25 wording/category binding or a historical single-question reference. No empirical/publication approval is certified."
+    },
+    {
+      "path": "/items/21/mappingNotes/0",
+      "before": "Original PAPI routes answer 1 to B26 and answer 2 to B28 (page 13). B26–B29 are deliberately absent from the fixed draft; this JSON does not certify a reproduced original post-B25 administration. API declares only 9 No answer as missing.",
+      "after": "Original PAPI B25 routes answer 1 to B26 below on physical PDF page 12 and answer 2 to B28 on page 13. B26–B29 are deliberately absent from the fixed draft. The open limitation concerns original follow-up reproduction or approval of a new web administration. Static B25 wording/categories and a separate historical B25 reference remain distinct tasks; no reproduced administration, empirical validity or publication approval is certified. API declares only 9 No answer as missing."
+    },
+    {
+      "path": "/remainingBindings/0/reason",
+      "before": "Original B26–B29 follow-ups omitted from fixed draft; no approved replacement administration.",
+      "after": "Original B26–B29 follow-ups are absent from the fixed draft. This open limitation concerns reproducing the original post-B25 sequence or approving a new web administration; static B25 content binding and a separate historical B25 category reference are distinct. No new administration or empirical/publication approval is certified."
+    },
+    {
+      "path": "/remainingBindings/0/blocks",
+      "before": "this_item_only",
+      "after": "original_followup_reproduction_or_new_web_administration_only"
+    },
+    {
+      "path": "/remainingBindings/1/reason",
+      "before": "CAWI screenshot has no printed conditional execution rule. Original PAPI B26/B28 arrows are bound; conditional CAWI administration is not independently documented here.",
+      "after": "The static CAWI screenshot does not document conditional execution after B25. Original PAPI branches are visible on physical PDF page 12 (B26 below; B28 on page 13). This open limitation concerns original follow-up reproduction or a new web administration; it does not itself invalidate the separate static B25 wording/category binding or a historical single-question reference. No empirical/publication approval is certified."
+    },
+    {
+      "path": "/remainingBindings/1/blocks",
+      "before": "this_item_only",
+      "after": "original_followup_reproduction_or_new_web_administration_only"
+    }
+  ],
+  "contractChangeOnly": "catalog.sha256",
+  "oldCatalogueSha256": "38e68b2edfc0ecf9c0b1071bf7283d0ff2f366d3492afd0e71388432415195b9",
+  "newCatalogueSha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4",
+  "newContractSha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b",
+  "criteriaCodesSelectionSoftwareChanged": false,
+  "newV2HeaderAnswerMarginalOpened": false,
+  "scope": "Source wording correction and B25 administration-boundary clarification before answers; historical firsts preserved. No original-equivalence, empirical or release approval."
+}

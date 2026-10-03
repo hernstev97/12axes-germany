@@ -3561,7 +3561,7 @@
           "contentCorrespondenceToPapi": "B3",
           "mappingBasis": "German wording/context + ordered category identity; no printed CAWI source-field code."
         },
-        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Medien das Recht haben, Kritik an der Regierung zu üben?",
+        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Medien das Recht haben, Kritik an der Regierung zu üben?",
         "cawiCategories": [
           {
             "code": "0",
@@ -3650,7 +3650,7 @@
         "cawiIntroductionsDe": [
           "Nun einige Fragen zur Demokratie. Nachher werden wir Sie fragen, wie die Demokratie in Deutschland funktioniert, zunächst möchten wir Sie aber bitten, darüber nachzudenken, wie wichtig aus Ihrer Sicht bestimmte Dinge für die Demokratie im Allgemeinen sind."
         ],
-        "cawiDifferenceFromPapi": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+        "cawiDifferenceFromPapi": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 139. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim.",
         "cawiObservedRoutingDe": "CAWI question screenshots are consecutive in original B1–B12 order. No item-specific filter/jump printed; controls read zurück/weiter.",
         "cawiInstrumentRevisionPrinted": null,
         "cawiSourceRef": "ess10-de-questionnaire"
@@ -3890,7 +3890,7 @@
           "contentCorrespondenceToPapi": "B4",
           "mappingBasis": "German wording/context + ordered category identity; no printed CAWI source-field code."
         },
-        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Rechte von Minderheiten geschützt werden?",
+        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Rechte von Minderheiten geschützt werden?",
         "cawiCategories": [
           {
             "code": "0",
@@ -3979,7 +3979,7 @@
         "cawiIntroductionsDe": [
           "Nun einige Fragen zur Demokratie. Nachher werden wir Sie fragen, wie die Demokratie in Deutschland funktioniert, zunächst möchten wir Sie aber bitten, darüber nachzudenken, wie wichtig aus Ihrer Sicht bestimmte Dinge für die Demokratie im Allgemeinen sind."
         ],
-        "cawiDifferenceFromPapi": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+        "cawiDifferenceFromPapi": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 140. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim.",
         "cawiObservedRoutingDe": "CAWI question screenshots are consecutive in original B1–B12 order. No item-specific filter/jump printed; controls read zurück/weiter.",
         "cawiInstrumentRevisionPrinted": null,
         "cawiSourceRef": "ess10-de-questionnaire"
@@ -4219,7 +4219,7 @@
           "contentCorrespondenceToPapi": "B5",
           "mappingBasis": "German wording/context + ordered category identity; no printed CAWI source-field code."
         },
-        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Bürger bei den wichtigsten politischen Sachfragen durch direkte Volksabstimmungen das letzte Wort haben?",
+        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Bürger bei den wichtigsten politischen Sachfragen durch direkte Volksabstimmungen das letzte Wort haben?",
         "cawiCategories": [
           {
             "code": "0",
@@ -4308,7 +4308,7 @@
         "cawiIntroductionsDe": [
           "Nun einige Fragen zur Demokratie. Nachher werden wir Sie fragen, wie die Demokratie in Deutschland funktioniert, zunächst möchten wir Sie aber bitten, darüber nachzudenken, wie wichtig aus Ihrer Sicht bestimmte Dinge für die Demokratie im Allgemeinen sind."
         ],
-        "cawiDifferenceFromPapi": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+        "cawiDifferenceFromPapi": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 141. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim.",
         "cawiObservedRoutingDe": "CAWI question screenshots are consecutive in original B1–B12 order. No item-specific filter/jump printed; controls read zurück/weiter.",
         "cawiInstrumentRevisionPrinted": null,
         "cawiSourceRef": "ess10-de-questionnaire"
@@ -4548,7 +4548,7 @@
           "contentCorrespondenceToPapi": "B6",
           "mappingBasis": "German wording/context + ordered category identity; no printed CAWI source-field code."
         },
-        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Gerichte alle Menschen gleich behandeln?",
+        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Gerichte alle Menschen gleich behandeln?",
         "cawiCategories": [
           {
             "code": "0",
@@ -4637,7 +4637,7 @@
         "cawiIntroductionsDe": [
           "Nun einige Fragen zur Demokratie. Nachher werden wir Sie fragen, wie die Demokratie in Deutschland funktioniert, zunächst möchten wir Sie aber bitten, darüber nachzudenken, wie wichtig aus Ihrer Sicht bestimmte Dinge für die Demokratie im Allgemeinen sind."
         ],
-        "cawiDifferenceFromPapi": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+        "cawiDifferenceFromPapi": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 142. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim.",
         "cawiObservedRoutingDe": "CAWI question screenshots are consecutive in original B1–B12 order. No item-specific filter/jump printed; controls read zurück/weiter.",
         "cawiInstrumentRevisionPrinted": null,
         "cawiSourceRef": "ess10-de-questionnaire"
@@ -4877,7 +4877,7 @@
           "contentCorrespondenceToPapi": "B7",
           "mappingBasis": "German wording/context + ordered category identity; no printed CAWI source-field code."
         },
-        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass Regierungsparteien bei Wahlen abgestraft werden, wenn sie schlechte Arbeit geleistet haben?",
+        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass Regierungsparteien bei Wahlen abgestraft werden, wenn sie schlechte Arbeit geleistet haben?",
         "cawiCategories": [
           {
             "code": "0",
@@ -4966,7 +4966,7 @@
         "cawiIntroductionsDe": [
           "Nun einige Fragen zur Demokratie. Nachher werden wir Sie fragen, wie die Demokratie in Deutschland funktioniert, zunächst möchten wir Sie aber bitten, darüber nachzudenken, wie wichtig aus Ihrer Sicht bestimmte Dinge für die Demokratie im Allgemeinen sind."
         ],
-        "cawiDifferenceFromPapi": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+        "cawiDifferenceFromPapi": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 143. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim.",
         "cawiObservedRoutingDe": "CAWI question screenshots are consecutive in original B1–B12 order. No item-specific filter/jump printed; controls read zurück/weiter.",
         "cawiInstrumentRevisionPrinted": null,
         "cawiSourceRef": "ess10-de-questionnaire"
@@ -5864,7 +5864,7 @@
           "contentCorrespondenceToPapi": "B10",
           "mappingBasis": "German wording/context + ordered category identity; no printed CAWI source-field code."
         },
-        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht ist, dass die Ansichten gewöhnlicher Menschen Vorrang vor den Ansichten der politischen Elite haben?",
+        "cawiWordingDe": "Bitte geben Sie an, wie wichtig es aus Ihrer Sicht für die Demokratie im Allgemeinen ist, dass die Ansichten gewöhnlicher Menschen Vorrang vor den Ansichten der politischen Elite haben?",
         "cawiCategories": [
           {
             "code": "0",
@@ -5953,7 +5953,7 @@
         "cawiIntroductionsDe": [
           "Nun einige Fragen zur Demokratie. Nachher werden wir Sie fragen, wie die Demokratie in Deutschland funktioniert, zunächst möchten wir Sie aber bitten, darüber nachzudenken, wie wichtig aus Ihrer Sicht bestimmte Dinge für die Demokratie im Allgemeinen sind."
         ],
-        "cawiDifferenceFromPapi": "CAWI abbreviates the individual stem by omitting \"für die Demokratie im Allgemeinen\"; the general-democracy introduction and both full response anchors remain explicit.",
+        "cawiDifferenceFromPapi": "CAWI repeats the full shared PAPI B1–B12 stem in the individual question, including \"für die Demokratie im Allgemeinen\"; no omission of this phrase is present on physical PDF page 146. PAPI presents the shared stem and ellipsis-prefixed item separately; CAWI joins them into one question. Both full response anchors remain explicit. Static wording correspondence only; no empirical mode-equivalence claim.",
         "cawiObservedRoutingDe": "CAWI question screenshots are consecutive in original B1–B12 order. No item-specific filter/jump printed; controls read zurück/weiter.",
         "cawiInstrumentRevisionPrinted": null,
         "cawiSourceRef": "ess10-de-questionnaire"
@@ -6456,16 +6456,16 @@
         {
           "field": "routing.draftPostItemRouting",
           "status": "incomplete",
-          "reason": "Original B26–B29 follow-ups omitted from fixed draft; no approved replacement administration."
+          "reason": "Original B26–B29 follow-ups are absent from the fixed draft. This open limitation concerns reproducing the original post-B25 sequence or approving a new web administration; static B25 content binding and a separate historical B25 category reference are distinct. No new administration or empirical/publication approval is certified."
         },
         {
           "field": "modeBinding.cawiOperationalConditionalRouting",
           "status": "incomplete",
-          "reason": "CAWI screenshot has no printed conditional execution rule. Original PAPI B26/B28 arrows are bound; conditional CAWI administration is not independently documented here."
+          "reason": "The static CAWI screenshot does not document conditional execution after B25. Original PAPI branches are visible on physical PDF page 12 (B26 below; B28 on page 13). This open limitation concerns original follow-up reproduction or a new web administration; it does not itself invalidate the separate static B25 wording/category binding or a historical single-question reference. No empirical/publication approval is certified."
         }
       ],
       "mappingNotes": [
-        "Original PAPI routes answer 1 to B26 and answer 2 to B28 (page 13). B26–B29 are deliberately absent from the fixed draft; this JSON does not certify a reproduced original post-B25 administration. API declares only 9 No answer as missing.",
+        "Original PAPI B25 routes answer 1 to B26 below on physical PDF page 12 and answer 2 to B28 on page 13. B26–B29 are deliberately absent from the fixed draft. The open limitation concerns original follow-up reproduction or approval of a new web administration. Static B25 wording/categories and a separate historical B25 reference remain distinct tasks; no reproduced administration, empirical validity or publication approval is certified. API declares only 9 No answer as missing.",
         "Categories use exported file codes; printed German form codes are retained separately. Missing labels are not substantive political options."
       ],
       "sourceRefs": [
@@ -10543,16 +10543,16 @@
     {
       "itemId": "ESS10SCe03_2:scchpldm",
       "field": "routing.draftPostItemRouting",
-      "reason": "Original B26–B29 follow-ups omitted from fixed draft; no approved replacement administration.",
+      "reason": "Original B26–B29 follow-ups are absent from the fixed draft. This open limitation concerns reproducing the original post-B25 sequence or approving a new web administration; static B25 content binding and a separate historical B25 category reference are distinct. No new administration or empirical/publication approval is certified.",
       "status": "incomplete",
-      "blocks": "this_item_only"
+      "blocks": "original_followup_reproduction_or_new_web_administration_only"
     },
     {
       "itemId": "ESS10SCe03_2:scchpldm",
       "field": "modeBinding.cawiOperationalConditionalRouting",
-      "reason": "CAWI screenshot has no printed conditional execution rule. Original PAPI B26/B28 arrows are bound; conditional CAWI administration is not independently documented here.",
+      "reason": "The static CAWI screenshot does not document conditional execution after B25. Original PAPI branches are visible on physical PDF page 12 (B26 below; B28 on page 13). This open limitation concerns original follow-up reproduction or a new web administration; it does not itself invalidate the separate static B25 wording/category binding or a historical single-question reference. No empirical/publication approval is certified.",
       "status": "incomplete",
-      "blocks": "this_item_only"
+      "blocks": "original_followup_reproduction_or_new_web_administration_only"
     }
   ],
   "codeGroupConvention": "notAskedCodes contains only API-declared Not applicable/Not asked codes. No such codes occur in these 43 lists. vteurmmb 65 is explicitly API-valid and remains an ineligibility answer, not an inferred routing skip. responseType describes the ordered or nominal question format; API measurementLevel is preserved separately and no score or statistical measurement model is inferred.",

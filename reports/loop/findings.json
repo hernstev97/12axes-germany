@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T13:59:33.034517+00:00",
+  "updatedAtUtc": "2026-10-03T14:12:22.386435+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2995,14 +2995,47 @@
       "origin": "reports/loop/reviews/EMPIRICAL-V2-001-sources-first.md",
       "decision": "angenommen",
       "severity": "erheblich",
-      "repairRounds": 0,
+      "repairRounds": 1,
       "status": "NICHT_BESTANDEN",
       "reason": "ESS10 B3 and B6 CAWI democracy-context stem incorrectly omitted and described as shortened; four related claims need targeted inspection.",
       "blocks": ["affected source bindings and dependent interpretation"],
-      "correctionState": "Author preparing source-only correction; no actual v2 data read.",
+      "correctionState": "19 source/scope fields corrected; targeted22-pin sources and methods rechecks running, no new v2 answers.",
       "verification": {
         "originalManifest": "eeae3bc1b81463b51ce2c0a1bf90f12b08aa01f125064e680d1f983df60c62f4"
       }
+    },
+    {
+      "id": "PUI-R1",
+      "origin": "reports/loop/reviews/POLICY-UI-001-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "Result title implies replacement instead of original more/less budget tradeoff",
+      "blocks": ["one result title"],
+      "correctionState": "Original11-pin UI proposal saved before targeted correction. No scientific/data gate blocked by this local UI finding."
+    },
+    {
+      "id": "PUI-R2",
+      "origin": "reports/loop/reviews/POLICY-UI-001-first.md",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "Three justice-principle explanations broaden original meaning",
+      "blocks": ["three result explanations"],
+      "correctionState": "Original11-pin UI proposal saved before targeted correction. No scientific/data gate blocked by this local UI finding."
+    },
+    {
+      "id": "PUI-R3",
+      "origin": "reports/loop/reviews/POLICY-UI-001-first.md",
+      "decision": "angenommen",
+      "severity": "begrenzt",
+      "repairRounds": 0,
+      "status": "NICHT_BESTANDEN",
+      "reason": "Internal prepare.py pin stale after Root changed generator worktree depth for tracked prototype",
+      "blocks": ["local prototype metadata"],
+      "correctionState": "Original11-pin UI proposal saved before targeted correction. No scientific/data gate blocked by this local UI finding."
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

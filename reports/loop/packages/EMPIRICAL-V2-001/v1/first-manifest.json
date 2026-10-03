@@ -5,11 +5,11 @@
   "artifacts": [
     {
       "path": "data/analysevertrag.v2.entwurf.json",
-      "sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+      "sha256": "4194f3bb530f036b72a49a81e339779d9d9eed5530a32843acbe6f9697c42e5d"
     },
     {
       "path": "data/politikprofil-v2.fragen.entwurf.json",
-      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+      "sha256": "38e68b2edfc0ecf9c0b1071bf7283d0ff2f366d3492afd0e71388432415195b9"
     },
     {
       "path": "docs/empirie-plan-v2.entwurf.md",
@@ -82,17 +82,6 @@
     {
       "path": "pipeline/tests/test_policy_export_v2.py",
       "sha256": "9eb80c2e96188ae9725285d32b0dd27b40d53a63c05a6a29e8190c4b079b1db3"
-    },
-    {
-      "path": "reports/loop/packages/EMPIRICAL-V2-001/v1/first-manifest.json",
-      "sha256": "eeae3bc1b81463b51ce2c0a1bf90f12b08aa01f125064e680d1f983df60c62f4"
-    },
-    {
-      "path": "reports/loop/packages/EMPIRICAL-V2-001/v1/source-correction-round1.json",
-      "sha256": "fe4b99cbe99a595924dc5228085d94f6c8b7df4a76483429c5f7cadd595568ed"
     }
-  ],
-  "revision": 2,
-  "updatedAtUtc": "2026-10-03T14:05:18.359125+00:00",
-  "originalManifest": "reports/loop/packages/EMPIRICAL-V2-001/v1/first-manifest.json"
+  ]
 }

@@ -1,0 +1,328 @@
+/* Existing web/src/styles.scss; font package imports replaced by a local font face. */
+:root {
+  color-scheme: light;
+  --paper: #f6f3eb;
+  --mat: #ebe6da;
+  --ink: #1e2b24;
+  --ink-hover: #33463b;
+  --muted: #4c574f;
+  --line: #d4d0c3;
+  --forest: #1f3a32;
+  --forest-line: #3d5a50;
+  --on-forest: #f2efe6;
+  --on-forest-muted: #c5cfc6;
+  --selection: #d5dfd2;
+  --hairline: rgb(30 43 36 / 12%);
+  --shadow-art: 0 1px 2px rgb(30 43 36 / 18%), 0 14px 28px -18px rgb(30 43 36 / 55%);
+  /* Nationalfarben laut Styleguide der Bundesregierung, siehe docs/assets.md */
+  --flag-black: #000;
+  --flag-red: #f00;
+  --flag-gold: #fc0;
+  --font-serif: 'Libre Baskerville Variable', 'Libre Baskerville', Baskerville, Georgia, serif;
+  /* Schriftgrößen: Startseitentitel > Seitentitel > Abschnittstitel > Fließtext > Kleintext */
+  --size-display: clamp(2.3rem, 4.4vw, 4rem);
+  --size-title: clamp(2.1rem, 3.6vw, 3.25rem);
+  --size-section: clamp(1.6rem, 2.4vw, 2.15rem);
+  --size-lead: 1.12rem;
+  --size-ui: 0.94rem;
+  --size-small: 0.84rem;
+  --size-brand: 1.25rem;
+  /* Raster: 12 Spalten in der Seitenbreite */
+  --page-width: 1240px;
+  --page-padding: clamp(1.25rem, 5vw, 4.5rem);
+  --gutter: clamp(1.5rem, 4vw, 4rem);
+  --section-space: clamp(3.5rem, 8vw, 6.5rem);
+  --section-space-dense: clamp(2.25rem, 4.5vw, 3.5rem);
+  --focus: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 106.25%;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+::selection {
+  color: var(--ink);
+  background: var(--selection);
+}
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
+/* Ziele von Sprunglinks erhalten den Fokus nur zur Orientierung von Hilfsmitteln. */
+[tabindex='-1']:focus {
+  outline: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+p {
+  text-wrap: pretty;
+}
+cite {
+  font-style: italic;
+}
+.page-width {
+  width: min(100% - var(--page-padding) * 2, var(--page-width));
+  margin-inline: auto;
+}
+.section {
+  padding-block: var(--section-space);
+  border-top: 1px solid var(--line);
+}
+/* Alle Mehrspalter liegen auf diesem Raster; die Bereiche benennen die erlaubten Aufteilungen. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: start;
+  gap: 2rem var(--gutter);
+}
+.area-title {
+  grid-column: 1 / span 5;
+}
+.area-body {
+  grid-column: 6 / -1;
+}
+.area-half {
+  grid-column: 1 / span 6;
+}
+.area-half-end {
+  grid-column: 7 / -1;
+}
+.area-figure {
+  grid-column: 8 / -1;
+}
+.area-figure-narrow {
+  grid-column: 9 / -1;
+}
+.area-text-wide {
+  grid-column: 1 / span 7;
+}
+.display-title {
+  font-size: var(--size-display);
+  line-height: 1.12;
+}
+.page-title {
+  font-size: var(--size-title);
+}
+.section-title {
+  font-size: var(--size-section);
+}
+.prose a {
+  hyphens: manual;
+}
+.prose > p {
+  margin: 0 0 1.1rem;
+}
+.prose > :last-child {
+  margin-bottom: 0;
+}
+.lead {
+  font-size: var(--size-lead);
+  line-height: 1.65;
+}
+.nowrap {
+  white-space: nowrap;
+}
+/* Dokumentseiten: Kopf, Brotkrumen, Datum, Inhaltsverzeichnis, engere Abschnitte */
+.doc .section {
+  padding-block: var(--section-space-dense);
+}
+.page-header {
+  padding-block: clamp(2rem, 5vw, 3.5rem) clamp(2.5rem, 5vw, 4rem);
+}
+.page-header .lead {
+  max-width: 36rem;
+  margin: 1.5rem 0 0;
+}
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  color: var(--muted);
+  font-size: var(--size-small);
+  list-style: none;
+}
+.breadcrumb li + li::before {
+  content: '/' / '';
+  margin-right: 0.5rem;
+}
+.date {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: var(--size-small);
+}
+.toc {
+  max-width: 30rem;
+  margin-top: 2.25rem;
+}
+.toc ol {
+  margin: 0;
+  padding: 0;
+  font-size: var(--size-ui);
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+.toc li {
+  border-bottom: 1px solid var(--line);
+}
+.toc a {
+  display: block;
+  padding-block: 0.5rem;
+  text-decoration: none;
+}
+.toc a:hover {
+  text-decoration: underline;
+}
+.facts + p {
+  margin-top: 1.5rem;
+}
+.button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  padding: 0.7rem 1.3rem;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  font-size: var(--size-ui);
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+.button.primary {
+  color: var(--paper);
+  background: var(--ink);
+}
+.button.primary:hover {
+  background: var(--ink-hover);
+}
+.text-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding-block: 0.4rem;
+}
+.facts {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+.facts > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.25rem 1.5rem;
+  padding-block: 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+.facts dt {
+  font-weight: 700;
+}
+.facts dd {
+  margin: 0;
+  color: var(--muted);
+}
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 0.5rem;
+  left: 1rem;
+  padding: 0.6rem 1rem;
+  color: var(--paper);
+  background: var(--ink);
+  transform: translateY(-180%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+[id] {
+  scroll-margin-top: 2rem;
+}
+@media (max-width: 860px) {
+  .grid > * {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 640px) {
+  :root {
+    --size-brand: 1.12rem;
+    font-size: 100%;
+  }
+  .facts > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  p,
+  li,
+  dd {
+    hyphens: auto;
+  }
+}
+/* Kennungen wie Versionen oder Fragen-IDs erben die Seitenschrift. */
+code {
+  font: inherit;
+  overflow-wrap: anywhere;
+}
+@media print {
+  .skip-link,
+  .site-header nav,
+  .controls,
+  .credit-link {
+    display: none !important;
+  }
+  .basis,
+  .site-footer {
+    --on-forest: var(--ink);
+    --on-forest-muted: var(--muted);
+    border-top: 1px solid var(--line);
+    background: none !important;
+  }
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+  figure,
+  .facts > div {
+    break-inside: avoid;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "source": "data/politikprofil-v2.fragen.entwurf.json",
+  "sourceSha256": "38e68b2edfc0ecf9c0b1071bf7283d0ff2f366d3492afd0e71388432415195b9",
+  "scope": "Public original instrument content only. No answer data, gates or access state copied.",
+  "itemCount": 43,
+  "primaryThemes": [
+    "economy_distribution",
+    "welfare",
+    "democracy_authority",
+    "rights_security",
+    "europe",
+    "climate_energy",
+    "migration",
+    "equality_family"
+  ],
+  "questionOrderRule": "Catalogue order, moving B12 keydec directly after B11 within full B1–B12.",
+  "originalStylesSha256": "695afc2c43f15dcaf4ad0406a3bf9910d7b6b7f610e4e52516b72f624ba8cf11",
+  "fontSha256": "22219fb90e3b9bd28debd1825fe8d9a0154a0e31f8b3fa601ac1a0a5aa5e6d1b",
+  "fontLicenseSha256": "8490e863633e537100d6d18755d994ea30b0b44741876a17809d28becf45ce11",
+  "networkRetrievals": false,
+  "responseDataRead": false
+}

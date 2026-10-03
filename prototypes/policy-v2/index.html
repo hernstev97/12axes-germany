@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Gestaltungsentwurf · 12 Axes Deutschland</title>
+    <link rel="stylesheet" href="./foundation.css" />
+    <link rel="stylesheet" href="./prototype.css" />
+    <script type="module" src="./prototype.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Inhalt</a>
+    <header class="draft-header page-width">
+      <p class="wordmark"><strong>12 Axes</strong> Deutschland</p>
+      <p class="draft-status">Gestaltungsentwurf · Prüfung ausstehend</p>
+      <p>Lokale Entwicklungsfassung. Kein freigegebener Test.</p>
+      <nav aria-label="Ansichten des Gestaltungsentwurfs">
+        <a id="questions-view" href="#fragen" aria-current="page">Fragenentwurf</a>
+        <a id="results-view" href="#ergebnis">Ergebnisentwurf</a>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <article class="doc">
+        <header class="page-header grid page-width">
+          <div class="area-text-wide">
+            <h1 id="page-title" class="page-title" tabindex="-1">Fragenentwurf</h1>
+            <p class="date">Stand: <span class="nowrap">3. Oktober 2026</span></p>
+            <p id="view-lead" class="lead">43 Originalangaben aus fünf historischen ESS-Studien bilden den Fragenentwurf. Die neue Zusammenstellung und ihre Durchführung sind noch nicht freigegeben.</p>
+            <p>Antworten bleiben nur im Arbeitsspeicher dieser geöffneten Seite. Neuladen verwirft die Sitzung.</p>
+          </div>
+        </header>
+        <div id="question-view">
+          <section class="section page-width">
+            <div class="grid">
+              <div class="area-title">
+                <h2 id="question-number" class="section-title"></h2>
+                <p id="question-theme"></p>
+                <p id="answer-status" class="state" role="status" aria-live="polite"></p>
+                <p id="question-origin" class="meta"></p>
+              </div>
+              <div class="prose area-body">
+                <div id="original-context"></div>
+                <p id="development-note" class="context-note"></p>
+                <fieldset id="answer-fieldset" aria-describedby="original-context development-note missing-note">
+                  <legend id="question-wording"></legend>
+                  <div id="answer-options"></div>
+                </fieldset>
+                <p id="missing-note" class="meta">Zahlen in einer Antwortliste bezeichnen Originalkategorien, keine Punkte. Weiß nicht oder keine Antwort geben gehören zum Überspringen. Sie sind keine politischen Antwortoptionen und keine Übernahme von Missing-Codes der Studie.</p>
+                <div class="skip-reason">
+                  <label for="skip-reason">Grund für das Überspringen, optional</label>
+                  <select id="skip-reason">
+                    <option value="unspecified">Keine Angabe</option>
+                    <option value="dont-know">Weiß nicht</option>
+                    <option value="decline">Keine Antwort geben</option>
+                  </select>
+                </div>
+                <nav class="question-actions" aria-label="Fragenablauf">
+                  <button id="previous" class="button" type="button">Zur vorherigen Frage</button>
+                  <button id="next" class="button primary" type="button">Zur nächsten Frage</button>
+                  <button id="skip" class="text-button" type="button">Frage überspringen</button>
+                </nav>
+                <p class="meta">Der Fortgang ohne Auswahl lässt die Frage unberührt. Eine Radioauswahl zählt als beantwortet; Überspringen kennzeichnet bewusst keine Angabe.</p>
+                <div id="question-sources"></div>
+              </div>
+            </div>
+          </section>
+          <section class="section page-width">
+            <div class="grid">
+              <h2 class="section-title area-title">Fragenübersicht</h2>
+              <div class="prose area-body">
+                <p>Die Übersicht nennt alle Originalfragen und ihren Zustand. Direkte Sprünge helfen der Entwurfsprüfung; der reguläre Fortgang erhält B1–B12 als zusammenhängende Gruppe.</p>
+                <details id="question-overview">
+                  <summary>Alle 43 Fragen und Antwortzustände</summary>
+                  <ol id="overview-list" class="overview-list"></ol>
+                </details>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div id="result-view" hidden></div>
+      </article>
+    </main>
+    <footer class="draft-footer section page-width prose">
+      <p>Das Projekt ist weder validiert noch wissenschaftlich geprüft und kann keine Neutralität garantieren.</p>
+      <p>Diese Website ist kein Angebot einer Behörde, einer Partei, des European Social Survey oder von 12 Axes. Das Projekt entsteht mit KI-Agenten. Fachleute haben es nicht begutachtet.</p>
+      <p>Originaldokumentation: European Social Survey European Research Infrastructure (ESS ERIC), Sikt. Deutsche Auszüge und Antwortkategorien unter <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Dieser lokale Entwurf ändert Anordnung und Darstellung. Politische Originalformulierungen bleiben erhalten; Quellen und Fassungen stehen bei jeder Frage.</p>
+      <p>ESS-Daten unter <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> sind getrennt lizenziert und hier nicht eingebunden. <a href="https://europeansocialsurvey.org/contact/disclaimer" target="_blank" rel="noopener noreferrer">ESS-Lizenzbedingungen</a>.</p>
+      <p>Lokale Schrift Libre Baskerville: <a href="./assets/libre-baskerville-license.txt">SIL Open Font License</a>.</p>
+    </footer>
+    <noscript><p class="page-width">Für die flüchtige Entwurfssitzung benötigt diese lokale Seite JavaScript.</p></noscript>
+  </body>
+</html>

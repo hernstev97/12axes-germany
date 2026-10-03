@@ -6,7 +6,7 @@
   "analysisPurpose": "historical_descriptive_secondary_analysis_no_new_latent_confirmation",
   "catalog": {
     "path": "data/politikprofil-v2.fragen.entwurf.json",
-    "sha256": "38e68b2edfc0ecf9c0b1071bf7283d0ff2f366d3492afd0e71388432415195b9"
+    "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
   },
   "selectionCount": 43,
   "topicCount": 8,

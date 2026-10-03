@@ -1,0 +1,168 @@
+{
+  "collectedAtNote": "Measurement actions occurred during the current local browser session; individual precise action timestamps were not captured.",
+  "scope": "Unpublished prototype; deterministic software exercise, no human or ESS responses and no population results.",
+  "artifactManifest": "reports/loop/packages/POLICY-UI-001/v1/manifest.json",
+  "resultWidths": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1425,
+      "font": true,
+      "h1": 1,
+      "incomplete": [],
+      "innerWidth": 1440,
+      "overflow": false,
+      "scrollWidth": 1425,
+      "violations": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "clientWidth": 1009,
+      "font": true,
+      "h1": 1,
+      "incomplete": [],
+      "innerWidth": 1024,
+      "overflow": false,
+      "scrollWidth": 1009,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "clientWidth": 753,
+      "font": true,
+      "h1": 1,
+      "incomplete": [],
+      "innerWidth": 768,
+      "overflow": false,
+      "scrollWidth": 753,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "clientWidth": 375,
+      "font": true,
+      "h1": 1,
+      "incomplete": [],
+      "innerWidth": 390,
+      "overflow": false,
+      "scrollWidth": 375,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "height": 720,
+      "clientWidth": 305,
+      "font": true,
+      "h1": 1,
+      "incomplete": [],
+      "innerWidth": 320,
+      "overflow": false,
+      "scrollWidth": 305,
+      "violations": []
+    }
+  ],
+  "questionWidths": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "clientWidth": 1425,
+      "incomplete": [],
+      "overflow": false,
+      "scrollWidth": 1425,
+      "violations": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "clientWidth": 1009,
+      "incomplete": [],
+      "overflow": false,
+      "scrollWidth": 1009,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "clientWidth": 753,
+      "incomplete": [],
+      "overflow": false,
+      "scrollWidth": 753,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "clientWidth": 375,
+      "incomplete": [],
+      "overflow": false,
+      "scrollWidth": 375,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "height": 720,
+      "clientWidth": 305,
+      "incomplete": [],
+      "overflow": false,
+      "scrollWidth": 305,
+      "violations": []
+    }
+  ],
+  "skipReturn": {
+    "active": "question-number",
+    "question": "Frage 2 von 43",
+    "resources": 5,
+    "selection": null,
+    "state": "Übersprungen"
+  },
+  "initialResult": {
+    "h1": 1,
+    "historicalPlaceholders": 103,
+    "items": 43,
+    "resourceCount": 5,
+    "rubrics": 8,
+    "states": {
+      "Beantwortet": 1,
+      "Unberührt": 41,
+      "Übersprungen": 1
+    },
+    "url": "http://localhost:4313/index.html"
+  },
+  "keyboardRadio": {
+    "active": "1",
+    "focusVisible": false,
+    "hasFocus": false,
+    "outline": "rgb(0, 0, 0) none 2.94118px",
+    "selected": "1",
+    "state": "Beantwortet"
+  },
+  "flow43": {
+    "b1ToB12": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11", "B12"],
+    "originCount": 43,
+    "resultItems": 43,
+    "totalResources": 6,
+    "url": "http://localhost:4313/index.html",
+    "visibleReferencePlaceholders": 43
+  },
+  "screenshots": [
+    "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musgoikb-2c40063b.png",
+    "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musgpac2-512f644b.png"
+  ],
+  "limitations": [
+    "document.hasFocus false; ArrowDown changed radio but visible keyboard focus NOT_VERIFIED",
+    "Actual200PercentBrowserZoom NOT_VERIFIED",
+    "Heading text at320 extends16.8px beyond content column while inside measured viewport; wrap improvement pending immutable UI first review",
+    "No actual references, no human design/understanding/release acceptance",
+    "No emulated reduced-motion evidence; no prototype animation code"
+  ],
+  "server": {
+    "port": 4313,
+    "sessionId": 77260,
+    "directory": "outputs/loop/policy-ui-design-v2",
+    "qaScript": "__qa__/axe.min.js local-only instrumentation, outside tracked design review pins"
+  },
+  "collectedAtUtc": "2026-10-03T14:09:53.728890+00:00"
+}
