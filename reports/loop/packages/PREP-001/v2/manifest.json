@@ -1,0 +1,129 @@
+{
+  "id": "PREP-001",
+  "version": 2,
+  "codeCommit": "2b19f8c6a424f002502ed1c00e3cf333d35db01b",
+  "overrideRule": "Frozen listed files are authoritative",
+  "modelConfiguration": null,
+  "sourceInputs": [
+    {
+      "path": "outputs/loop/design/portal-capture.json",
+      "sha256": "c67d91f51575396a8ac28f0b587da5c56693fc6723c86187f88c9da9e56c1f38",
+      "bytes": 6678,
+      "sourceUrl": "https://ess.sikt.no/en/study/412db4fe-c77a-4e98-8ea4-6c19007f551b",
+      "scope": "Public Germany Country Documentation/Sampling and Universe; no answer data"
+    },
+    {
+      "path": "outputs/loop/preparation-correction/schema.log",
+      "sha256": "70462e69c066eebac6c3162ed4202f5c7a91aa9e6265f3b17ab93902458c82ae",
+      "bytes": 2170,
+      "scope": "Synthetic schema/protocol check only"
+    },
+    {
+      "path": "outputs/loop/preparation-correction/schema.json",
+      "sha256": "00ce9e665eda984cfda29b654d31a5243b425ba19eda61770db4417abca841ed",
+      "bytes": 901,
+      "scope": "Synthetic schema/protocol check only"
+    },
+    {
+      "path": "outputs/loop/preparation-correction/codex-protocol-reading.json",
+      "sha256": "8e63cedf36572c8e0a5bf674635d3e6e08671fe51b349acce27e8fc57345d41c",
+      "bytes": 2315,
+      "scope": "Synthetic schema/protocol check only"
+    },
+    {
+      "path": "outputs/loop/version/ess11-4.2-capture.json",
+      "sha256": "ad77d489d255f9f14d6b4a97631572a422d755b386f7ffbd036e1377a2c50c93",
+      "bytes": 7880,
+      "scope": "Public release metadata only"
+    }
+  ],
+  "previousManifestSha256": "152785d06f322a1e95b6503b9b78ed2ff768373852899f4f027ab7f2c6add66a",
+  "frozenAtUtc": "2026-10-03T03:48:06.461835+00:00",
+  "files": {
+    "reports/loop/preparation-pruefauftrag.md": {
+      "sha256": "c16e9841cb7c002358a1c522b1b54edc33b8c5a88ff42feeb6f174c3c5b8895b",
+      "bytes": 2870
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "docs/handbuch.md": {
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a",
+      "bytes": 36004
+    },
+    "docs/verstaendnistest.entwurf.md": {
+      "sha256": "3264a72db722ac573595bcbcc8a03e299727aaa184abe6b31a60c74e2212c1a3",
+      "bytes": 7330
+    },
+    ".claude/skills/life93-review/SKILL.md": {
+      "sha256": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      "bytes": 5874
+    },
+    ".claude/skills/life93-review/references/urteil-schema.json": {
+      "sha256": "f86a46c805b0b07b6e73804f1e1780915fba5dbb8221504492f253884b275583",
+      "bytes": 7993
+    },
+    "docs/reviews/setup-vorbereitung.md": {
+      "sha256": "c579a248c090aa9188c4624a455176cf00173987f6de28725d507f4cdc923171",
+      "bytes": 3805
+    },
+    "reports/loop/LOOP-003-design-metadaten.json": {
+      "sha256": "ee56ce023b1fe4ca605b6e1d9e07e2da76fee1ce9595e5b5f516e4d6184eb618",
+      "bytes": 2219
+    },
+    "reports/loop/setup-access.json": {
+      "sha256": "5d60abd9b96ec8c4032100774a773f0cdc937c887496d99edb35e1aaba60227a",
+      "bytes": 939
+    },
+    "reports/loop/claude-access.json": {
+      "sha256": "f05261982e93d6286a2ab653cb9cfbe0e0f75edecdb14971a83bc78c0a9e2d46",
+      "bytes": 845
+    },
+    "reports/loop/PREP-001-v2-pruefauftrag.md": {
+      "sha256": "b8b882423687f9168428e6cefa2cfcb852eb3e5e0b5dff9f3fbad3e9c9bc8f28",
+      "bytes": 2991
+    },
+    "reports/loop/PREP-001-korrekturbericht.md": {
+      "sha256": "a2714d4a3b2304158359c7722c9413834b84704725600f4b03aa712511a4626c",
+      "bytes": 2574
+    },
+    "reports/loop/PREP-001-entscheidungen.md": {
+      "sha256": "556997421c851ab32cb4e495b5bfa30200f4f83e1e19b71eda2dfc5ffbd38400",
+      "bytes": 3644
+    },
+    "reports/loop/reviews/PREP-001-methods.md": {
+      "sha256": "58a47122c373af60575d436eec857ec9bc6a41c0bf87ad27447337e14e9b032f",
+      "bytes": 24242
+    },
+    "reports/loop/reviews/PREP-001-repro.md": {
+      "sha256": "5c12d63a093992d293adf7c8552f46208da26ddc23cc957a74a9abbee6a41d94",
+      "bytes": 27579
+    },
+    "scripts/check-review-schema.mjs": {
+      "sha256": "c82f89ea70b712b6048cfd1b67cd1c1c4cf653c79f6715c2b6fd9b7ae0798579",
+      "bytes": 4283
+    },
+    "package.json": {
+      "sha256": "2c8b7d9a037bdacec45ab6de11d34932872a7e32b8da4e87967f1d1a244c3cd2",
+      "bytes": 934
+    },
+    "pnpm-lock.yaml": {
+      "sha256": "f066cb926a6fa8af4afe0994a51afb2f36e194bfd5eb29ccf4d84f283dcaa390",
+      "bytes": 134829
+    },
+    "docs/ess-versionsabgleich.entwurf.md": {
+      "sha256": "e9f8c926588134ff337b49ce2753940ab4dd0ca565854fbfc7ec44c7a79ba458",
+      "bytes": 2062
+    }
+  },
+  "scope": "Dateifassung; keine Prüfung oder Freigabe aus Hashes ableiten"
+}

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T03:31:34.602635+00:00",
+  "updatedAtUtc": "2026-10-03T03:48:44.018181+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
+  "currentHead": "2b19f8c6a424f002502ed1c00e3cf333d35db01b",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -120,6 +120,16 @@
       "name": "/root/software001_author",
       "role": "software-author",
       "status": "RUNNING"
+    },
+    {
+      "name": "/root/foundation_v2_sources_politics",
+      "role": "independent-foundation-recheck",
+      "status": "RUNNING"
+    },
+    {
+      "name": "/root/foundation_v2_methods_repro",
+      "role": "independent-foundation-recheck",
+      "status": "RUNNING"
     }
   ],
   "workPackages": [
@@ -160,9 +170,9 @@
       "id": "PREP-001",
       "status": "RUNNING",
       "predefinedCriteria": "reports/loop/preparation-pruefauftrag.md",
-      "manifest": "reports/loop/packages/PREP-001/v1/manifest.json",
-      "manifestSha256": "152785d06f322a1e95b6503b9b78ed2ff768373852899f4f027ab7f2c6add66a",
-      "reviewStatus": "Zwei frische unabhängige Reviewer aktiv; keine Claude- oder menschliche Prüfung"
+      "manifest": "reports/loop/packages/PREP-001/v2/manifest.json",
+      "manifestSha256": "9d369a50091a81cdcb4fc4f928692d05cf3c43366eb8963bc2bfe761f49c4683",
+      "reviewStatus": "Zwei v1-Erstberichte vollständig; fünf Findings angenommen/korrigiert. v2 mit21Dateien/5SourceInputs eingefroren; zwei frische Nachprüfungen bei freien Slots."
     },
     {
       "id": "SOFTWARE-001",
@@ -171,15 +181,15 @@
       "scope": "Isolierte Laufzeit und reine synthetische ordinale Modelle; kein Rohdaten-/ESS-Modell"
     }
   ],
-  "nextConcreteStep": "FOUNDATION-v2-Belegchronologie kontrollieren, dann zwei unabhängige Korrekturprüfer starten; PREP-v2-Nachprüfung und isolierte Softwarefähigkeit parallel.",
+  "nextConcreteStep": "Beide FOUNDATION-v2-Berichte abschließen lassen, Findings entscheiden und neuen unbeteiligten Juror starten; PREP-v2-Nachprüfungen und SOFTWARE-Paket in freien Slots. Keine ESS-Antwortanalyse.",
   "checkpoint": {
-    "lastLocalCommit": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
-    "lastVerifiedRemoteCommit": "866a6c6fa0a1215ea743ccc6c969ec320224a80e",
-    "lastVerifiedPushAtUtc": "2026-10-03T03:04:42Z",
+    "lastLocalCommit": "2b19f8c6a424f002502ed1c00e3cf333d35db01b",
+    "lastVerifiedRemoteCommit": "2b19f8c6a424f002502ed1c00e3cf333d35db01b",
+    "lastVerifiedPushAtUtc": "2026-10-03T03:33:03Z",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-007.json"
+    "record": "reports/loop/push-008.json"
   },
   "scientificStatus": "FOUNDATION fünf Erstberichte abgeschlossen; zwölf Findings angenommen, korrigiert oder als ungelöste künftige Voraussetzung begrenzt. Neue42Dateien/101öffentlicheInputs eingefroren; unabhängige Nachprüfung/Juror offen. 296Inventarzeilen/205technische Restzeilen; keine Endauswahl, Rohantworten, A/B oder öffentlicheTags.",
   "technicalRecord": "reports/loop/000-technical.json",
@@ -220,6 +230,26 @@
       "artifacts": [".claude/skills/life93-review/SKILL.md"],
       "status": "NICHT_GEPRÜFT",
       "criteria": "LIFE-93 Setup/Phase7: limited manifest-bound source/method/neutrality review; machine-readable findings; first ratings separated from PR-review; raw/B held back; no active GitHub setup or false model-family claim. Skill format and independent behavioural review required."
+    },
+    {
+      "id": "ESS-VERSION-METADATA",
+      "artifact": "docs/ess-versionsabgleich.entwurf.md",
+      "status": "NICHT_GEPRÜFT",
+      "criteria": "VERSION-001 Original-Release-Metadaten4.2/4.1 und deutsche4.0-Stratumkorrektur; zwei unabhängige Nachprüfungen am PREP-v2-Paket, keine Rohdatenvergleichsbehauptung."
+    }
+  ],
+  "incidents": [
+    {
+      "id": "BROWSER-COOKIE-ACCESS",
+      "source": "reports/loop/reviews/LOOP-000-v3-browser.md",
+      "status": "DOCUMENTED",
+      "scope": "Vorhandene native Cookie-Werte versehentlich im Reviewerwerkzeugoutput; nicht in Dateien/Git übernommen, keine Wiederholung. Gemeinsamer Kontext ist keine Isolation."
+    },
+    {
+      "id": "SOFTWARE-CONDA-OUTSIDE-WRITE",
+      "status": "DOCUMENTED_EXECUTION_STOPPED",
+      "source": "reports/loop/authors/SOFTWARE-001.md (noch laufender Bericht)",
+      "scope": "Conda trotz register_envs=false neue leere ~/.conda/environments.txt erzeugt; weitere Conda-Aufrufe gestoppt, keine Löschung außerhalb Projekts; direkte Rscript--vanilla-Ausführung nur mit OS-Schreibbeschränkung vorbereitet."
     }
   ]
 }

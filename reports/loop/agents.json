@@ -200,6 +200,26 @@
       "report": "reports/loop/authors/SOFTWARE-001.md",
       "actualStartPrompt": "Vollständiger tatsächlicher Auftrag im eigenen Bericht, unverändert ab Abschluss",
       "reportSha256": null
+    },
+    {
+      "task_name": "foundation_v2_sources_politics",
+      "returnedTaskName": "/root/foundation_v2_sources_politics",
+      "kind": "independent-research-recheck",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/FOUNDATION-001/v2/manifest.json",
+      "report": "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht, nach Abschluss unverändert"
+    },
+    {
+      "task_name": "foundation_v2_methods_repro",
+      "returnedTaskName": "/root/foundation_v2_methods_repro",
+      "kind": "independent-research-recheck",
+      "fork_turns": "none",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/FOUNDATION-001/v2/manifest.json",
+      "report": "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Auftrag wortgetreu im eigenen Bericht, nach Abschluss unverändert"
     }
   ],
   "activeAdditionalAuthors": [
