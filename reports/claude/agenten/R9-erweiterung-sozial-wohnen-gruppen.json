@@ -1,0 +1,1009 @@
+{
+  "bericht": "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md",
+  "stand": "2026-10-04 (Recherche 03.10.2026, 22:30-23:20 UTC)",
+  "modell": "Claude Opus 5.5 (1M context), claude-opus-5-5[1m]",
+  "ergebnisblind": true,
+  "hinweis": "Ein Eintrag je Fragenkandidat. Einträge mit 'gesperrt' stützen sich nur auf R1-R7 (GESIS-Sperre). Einträge mit wortlautDe = null haben keinen öffentlich geprüften deutschen Originalwortlaut. Keine Antwortverteilungen.",
+  "kandidaten": [
+    {
+      "id": "R9-01",
+      "bereich": "Arbeit und Rente (Rentenfinanzierung)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q19 i",
+      "wortlautDe": null,
+      "antwortkategorien": "Mehrfachauswahl aus Liste a-l (zufällig rotiert); m 'I would not be willing to spend an extra 2% on any of these things' und n 'Can't choose / Don't know' fest und exklusiv",
+      "kontext": "Englischer Mastertext: Q19 item i. 'Old-age pensions' | Abschnitt 'Social policy preferences'; Stamm: 'Would you be willing to pay an additional 2% of your income in taxes/social contributions to benefit from better provision of and access to:'. Verbindet Politikpräferenz mit persönlicher Zahlungsbereitschaft; vorher Q16-Q17 (Fairness, Missbrauchsvermutung) und Q18 (Staat soll weniger/mehr tun).",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 7",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft"
+      ]
+    },
+    {
+      "id": "R9-02",
+      "bereich": "Arbeit und Rente (Grundsicherung)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q19 e",
+      "wortlautDe": null,
+      "antwortkategorien": "Mehrfachauswahl aus Liste a-l (zufällig rotiert); m 'I would not be willing to spend an extra 2% on any of these things' und n 'Can't choose / Don't know' fest und exklusiv",
+      "kontext": "Englischer Mastertext: Q19 item e. 'Income supports (e.g. minimum-income benefits, etc.)' | Abschnitt 'Social policy preferences'; Stamm: 'Would you be willing to pay an additional 2% of your income in taxes/social contributions to benefit from better provision of and access to:'. Verbindet Politikpräferenz mit persönlicher Zahlungsbereitschaft; vorher Q16-Q17 (Fairness, Missbrauchsvermutung) und Q18 (Staat soll weniger/mehr tun). Primärzuordnung eher Sozialstaat.",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 7",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft"
+      ]
+    },
+    {
+      "id": "R9-03",
+      "bereich": "Arbeit und Rente (Erwerbsdauer, Renteneintritt)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q23 a",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Strongly oppose, 2 Oppose, 3 Neither support nor oppose, 4 Support, 5 Strongly support, 6 Can't choose",
+      "kontext": "Englischer Mastertext: 'Population ageing may lead to worker shortages in the coming years. To what degree do you oppose or support the following measures to address worker shortages in your country?' item a. 'Encouraging longer working lives' | Prämisse im Fragestamm (Fachkräftemangel durch Alterung). Misst keine Haltung zur Regelaltersgrenze, sondern zu 'Encouraging'.",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 8",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Prämisse im Fragetext: nach Neutralitätsregeln nur mit sichtbarem Hinweis oder gar nicht"
+      ]
+    },
+    {
+      "id": "R9-04",
+      "bereich": "Arbeit und Rente (Arbeitszeit)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q27 e",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Strongly oppose ... 5 Strongly support, 6 Can't choose; Items a-l rotiert",
+      "kontext": "Englischer Mastertext: 'Governments can introduce measures aimed at helping workers and industries cope with the challenges created by digitalisation and technological change ... Keeping in mind how much they might cost as well as how you and your family might benefit, to what extent would you oppose or support the government taking the following actions as a response to digitalisation and technological change?' item e. 'Introducing a limit on (or lowering) working hours' | Kontext Digitalisierung und technologischer Wandel; Kosten-Nutzen-Abwägung im Stamm verlangt. Keine Frage zum deutschen Arbeitszeitgesetz (Tages- oder Wochenhöchstarbeitszeit).",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 10",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Bezug zur Streitfrage wöchentliche Höchstarbeitszeit nur indirekt"
+      ]
+    },
+    {
+      "id": "R9-05",
+      "bereich": "Arbeit und Rente (Arbeitslosenunterstützung, Grundsicherung)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q27 f",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Strongly oppose ... 5 Strongly support, 6 Can't choose",
+      "kontext": "Englischer Mastertext: Stamm wie Q27; item f. 'Making public benefits and services, such as unemployment benefits or minimum income programmes, more accessible and/or more generous to provide a better safety net for workers facing possible job loss' | Kontext Digitalisierung; Item enthält Zweckangabe ('to provide a better safety net ...').",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 10",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Zweckangabe im Item"
+      ]
+    },
+    {
+      "id": "R9-06",
+      "bereich": "Arbeit und Rente (Mindestlohn)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q34 a",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Strongly disagree ... 5 Strongly agree, 6 Can't choose; Items a-j rotiert",
+      "kontext": "Englischer Mastertext: 'To reduce or eliminate gender inequality and the gender pay gap, do you agree or disagree that governments should introduce or strengthen the following policies?' item a. 'Increase minimum wages as women are over-represented in low-wage jobs' | Begründung im Fragetext. Steht nach dem randomisierten Informationsexperiment Q31-Q33 (vier Gruppen, drei mit Informationsreiz zur Lohnlücke, eine Kontrollgruppe; Core PDF-S. 13). Vergleichbar wäre höchstens die Kontrollgruppe.",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 13-14",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Begründung im Fragetext und Experiment: nach Neutralitätsregeln nicht geeignet oder nur Kontrollgruppe mit Hinweis"
+      ]
+    },
+    {
+      "id": "R9-07",
+      "bereich": "Arbeit und Rente (Rente, Pflegezeiten)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q34 j",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Strongly disagree ... 5 Strongly agree, 6 Can't choose",
+      "kontext": "Englischer Mastertext: Stamm wie Q34; item j. 'Close income gaps among older people by adjusting pension systems to properly compensate care-related leave' | Nach Informationsexperiment Q31-Q33; Zielangabe im Stamm (Gleichstellung).",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 13-14",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "nur Kontrollgruppe ohne Informationsreiz vergleichbar"
+      ]
+    },
+    {
+      "id": "R9-08",
+      "bereich": "Arbeit und Rente (Mindestlohn)",
+      "erhebung": "GLES Panel 2026, Welle 34 (ZA10123 v1.0.0) – gesperrt",
+      "feldzeit": "23.03.-07.04.2026 (laut R3 3.1)",
+      "population": "wahlberechtigte deutsche Bevölkerung (laut R3 3.1)",
+      "stichprobe": "Quotenstichprobe aus Online-Panels, nicht probabilistisch (laut R3 3.1, R1 2)",
+      "modus": "CAWI",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": "kp34_2880aj",
+      "wortlautDe": "Der Mindestlohn in Deutschland sollte deutlich angehoben werden.",
+      "antwortkategorien": "1 ... 5 Zustimmungsskala laut R3 (Einzelkategorien in R1-R7 nicht dokumentiert)",
+      "kontext": "Issuebatterie; Kontext nur aus R3 4.1 bekannt; einseitig gerichtete Aussage",
+      "zugang": "GESIS-Datenarchiv, Zugangskategorie A (laut R3 3.1)",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "GLES-Panel; Wahl- und Parteifragen in R1-R7 nicht einzeln dokumentiert",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R3-themen-reichweite.md, Abschnitt 4.1 (Fundstelle W34-Dokumentation S. 50 laut R3)"
+      ],
+      "offenePunkte": [
+        "GESIS-Sperre (KI-Klausel § 4)",
+        "Quotenstichprobe",
+        "Antwortkategorien und Filter nicht selbst geprüft"
+      ]
+    },
+    {
+      "id": "R9-09",
+      "bereich": "Arbeit und Rente (Rente)",
+      "erhebung": "GLES Panel 2026, Welle 34 (ZA10123 v1.0.0) – gesperrt",
+      "feldzeit": "23.03.-07.04.2026 (laut R3 3.1)",
+      "population": "wahlberechtigte deutsche Bevölkerung",
+      "stichprobe": "Quotenstichprobe aus Online-Panels, nicht probabilistisch",
+      "modus": "CAWI",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": "in R3 4.2 nur als 'P34 CO' genannt; vollständiger Variablenname nicht dokumentiert",
+      "wortlautDe": null,
+      "antwortkategorien": "nicht dokumentiert",
+      "kontext": "R3 nennt nur das Kürzel als Beleg für die Streitfrage Rente, ohne Wortlaut",
+      "zugang": "GESIS-Datenarchiv, Zugangskategorie A",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "nicht dokumentiert",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R3-themen-reichweite.md, Abschnitt 4.2"
+      ],
+      "offenePunkte": [
+        "Wortlaut unbekannt",
+        "GESIS-Sperre",
+        "Quotenstichprobe"
+      ]
+    },
+    {
+      "id": "R9-10",
+      "bereich": "Arbeit und Rente (Bürgergeld/Grundsicherung)",
+      "erhebung": "GLES Querschnitt 2025 Nachwahl (ZA10100 v4.0.0) – gesperrt",
+      "feldzeit": "CAWI 24.02.-14.04.2025, Papier 24.02.-23.04.2025 (laut R2 2, R3 3.1)",
+      "population": "deutsche Staatsangehörige ab 16 Jahren mit Hauptwohnsitz in Deutschland",
+      "stichprobe": "mehrstufige Registerstichprobe, etwa ein Fünftel der Sample Points über Adressen der Deutschen Post (laut R1 2, R3 3.1)",
+      "modus": "CAWI und Papier (selbstausgefüllt)",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": "q27k (F69, Doku PDF-S. 159)",
+      "wortlautDe": "Das Bürgergeld sollte deutlich abgesenkt werden.",
+      "antwortkategorien": "1 'stimme voll und ganz zu' ... 5 'stimme überhaupt nicht zu', -99 (laut R2/R3)",
+      "kontext": "Issuebatterie 'Es gibt zu verschiedenen politischen Themen unterschiedliche Meinungen ...'; einseitig gerichtete Aussage; Rechtslage seit 01.07.2026 geändert (neue Grundsicherung)",
+      "zugang": "GESIS, Zugangskategorie Safeguarded - A",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "Nachwahlstudie zur Bundestagswahl 2025; Fragenummer und Wortlaut der Wahlfrage in R1-R7 nicht dokumentiert",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R2-themen-gesundheit-arbeit-wohnen.md, Abschnitt 4.2",
+        "reports/claude/agenten/R3-themen-reichweite.md, Abschnitt 4.2"
+      ],
+      "offenePunkte": [
+        "GESIS-Sperre",
+        "Bezugspunkt 'Bürgergeld' existiert seit 01.07.2026 so nicht mehr"
+      ]
+    },
+    {
+      "id": "R9-11",
+      "bereich": "Arbeit und Rente (Rente)",
+      "erhebung": "Politbarometer 2024 (ZA8974) und 2025 (ZA9151) – gesperrt",
+      "feldzeit": "09.01.-19.12.2024 bzw. 07.01.-11.12.2025, monatliche Wellen (laut R1 2)",
+      "population": "Wahlberechtigte Wohnbevölkerung (laut R3 3.1)",
+      "stichprobe": "Wahrscheinlichkeitsauswahl, Dual-Frame (laut R1 2, R3 3.1)",
+      "modus": "CATI, 2025 zusätzlich CAWI-Teilstichprobe",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "nicht eingesehen",
+      "kontext": "Laut DataCite-Themenliste (R2 4.2): 'Einstellung ... zu vorgezogenem Renteneintritt' (2024), 'präferierte Lösung der Finanzierung' und 'Fragen zum Rentenniveau' (2025). R3 2.3: viele Politbarometer-Fragen mit Gegenwartsbezug ('Zurzeit wird darüber diskutiert ...').",
+      "zugang": "GESIS, Zugangskategorie A",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "in R1-R7 nicht dokumentiert",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R2-themen-gesundheit-arbeit-wohnen.md, Abschnitte 2 und 4.2",
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md, Abschnitt 2"
+      ],
+      "offenePunkte": [
+        "Wortlaut, Monat, Filter unbekannt",
+        "GESIS-Sperre"
+      ]
+    },
+    {
+      "id": "R9-12",
+      "bereich": "Arbeit und Rente (Bürgergeld/Grundsicherung)",
+      "erhebung": "Politbarometer 2025 (ZA9151 v1.0.0) – gesperrt",
+      "feldzeit": "Wellen 2025",
+      "population": "Wahlberechtigte Wohnbevölkerung",
+      "stichprobe": "Wahrscheinlichkeitsauswahl, Dual-Frame",
+      "modus": "CATI/CAWI",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": "V41/V43 (laut R3 4.2)",
+      "wortlautDe": "Die Bundesregierung plant, die Regelungen beim Bürgergeld zu verschärfen (Einleitung laut R3; vollständiger Fragetext nicht dokumentiert)",
+      "antwortkategorien": "nicht dokumentiert",
+      "kontext": "Regierungsbezogene Rahmung; R3 5.3 empfiehlt solche Fragen nicht als Websitefrage",
+      "zugang": "GESIS, Zugangskategorie A",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "in R1-R7 nicht dokumentiert",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R3-themen-reichweite.md, Abschnitte 4.2 und 5.3"
+      ],
+      "offenePunkte": [
+        "GESIS-Sperre",
+        "Rahmung 'Die Bundesregierung plant'"
+      ]
+    },
+    {
+      "id": "R9-13",
+      "bereich": "Arbeit und Rente (Prioritätenliste)",
+      "fragenummer": "QB4 (SP546)",
+      "wortlautDe": "Welche der folgenden Themen sollten in Deutschland vorrangig angegangen werden? (u. a. 'Geringe Löhne', 'Unzureichende Alterseinkommen und Renten bzw. Pensionen')",
+      "antwortkategorien": "Liste, höchstens 3 Nennungen (laut R6 6.4)",
+      "kontext": "Prioritätenliste ohne Richtung; nach R6 6 nur genannt, weil sonst nichts vorliegt",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md, Abschnitt 6.4 (ZA8841_q_de S. 30)"
+      ],
+      "offenePunkte": [
+        "Keine Richtungspräferenz, kein Politikinstrument",
+        "Strukturprüfung der Kommissionstabellen durch getrennten Agenten nötig"
+      ],
+      "erhebung": "Eurobarometer 101.1 / Spezial-Eurobarometer 546 'Social Europe' (GESIS ZA8841)",
+      "feldzeit": "08.02.-26.02.2024 (laut R6 4)",
+      "population": "EU-Staatsangehörige ab 15 Jahren mit Wohnsitz in Deutschland (laut R6 4)",
+      "stichprobe": "mehrstufige Zufallsstichprobe (Random Route mit Zufallsstartpunkten), Ost und West getrennt gezogen",
+      "modus": "CAPI",
+      "fallzahl": "1.521 (laut R6 4)",
+      "zugang": "Kommission: nur Berichte, Datenanhänge und gewichtete Ergebnistabellen (nur mit Ergebnissen veröffentlicht); deutscher Fragebogen und Einzeldaten nur bei GESIS (gesperrt)",
+      "bedingungen": "Kommissionsdokumente: Beschluss 2011/833/EU und CC BY 4.0 laut rechtlichem Hinweis (R6 3.1); keine KI-Regel gefunden. Einzeldaten: GESIS § 4 (gesperrt).",
+      "wahlfrage": "keine Frage zur Bundestagswahl in den von R6 geprüften Fragebögen",
+      "ebene": "national"
+    },
+    {
+      "id": "R9-14",
+      "bereich": "Arbeit und Rente (Arbeitszeit, Sozialpolitik)",
+      "erhebung": "IAB-Online-Personenbefragung 'Arbeiten und Leben in Deutschland' (IAB-OPAL), Längsschnitt und Ad-hoc-Studien",
+      "feldzeit": "laufend, etwa alle drei bis vier Monate; konkrete Wellen 2024-2026 nicht geprüft",
+      "population": "erwerbsfähige Bevölkerung 18-65 Jahre ohne Selbständige und Beamte",
+      "stichprobe": "geschichtete Zufallsstichproben aus den administrativen Daten der Bundesagentur für Arbeit, Einladung zur Onlinebefragung",
+      "modus": "online",
+      "fallzahl": "im Durchschnitt etwa 8.500 Personen je Welle (IAB-Glossar)",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "nicht geprüft",
+      "kontext": "Laut IAB-Glossar Ad-hoc-Studien u. a. zur 'Aufhebung der Tageshöchstarbeitszeit'. Fragebögen nicht gefunden; Ergebnisartikel im IAB-Forum nicht geöffnet.",
+      "zugang": "Im Datenangebot des FDZ der BA im IAB (Personen- und Haushaltsdaten, Abruf 03.10.2026) nicht aufgeführt; Datenzugang unbekannt",
+      "bedingungen": "keine Bedingungen für IAB-OPAL gefunden; allgemeine FDZ-SUF-Regeln: nur Forschende wissenschaftlicher Einrichtungen, Nutzungsvertrag, Löschung nach Vertragsende (fdz.iab.de/en/data-access/scientific-use-files/); keine KI-Regel auf dieser Seite gefunden",
+      "wahlfrage": "nicht geprüft",
+      "ebene": "national",
+      "belege": [
+        "https://iab-forum.de/glossar/iab-online-personenbefragung-arbeiten-und-leben-in-deutschland-iab-opal/",
+        "https://fdz.iab.de/unsere-datenprodukte/personen-und-haushaltsdaten/"
+      ],
+      "offenePunkte": [
+        "Fragebögen und Wortlaute nicht gefunden",
+        "Population ohne Beamte, Selbständige, Nichterwerbsfähige und Personen über 65",
+        "Ergebnisse nur in IAB-Forum-Artikeln: Strukturprüfung durch getrennten Agenten nötig"
+      ]
+    },
+    {
+      "id": "R9-15",
+      "bereich": "Arbeit und Rente (Renteneintrittsalter)",
+      "erhebung": "Umfrage im Auftrag von ver.di, Juli 2026",
+      "feldzeit": "Juli 2026 (nur aus Suchmaschinen-Zusammenfassung)",
+      "population": "unbekannt",
+      "stichprobe": "unbekannt",
+      "modus": "unbekannt",
+      "fallzahl": "unbekannt",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "unbekannt",
+      "kontext": "Thema laut Suchergebnis: Kopplung der Regelaltersgrenze an die Lebenserwartung (Vorschlag der Alterssicherungskommission). Nur mit Ergebnissen veröffentlicht, Strukturprüfung durch getrennten Agenten nötig.",
+      "zugang": "nur Ergebnisveröffentlichung (nicht geöffnet)",
+      "bedingungen": "nicht geprüft",
+      "wahlfrage": "unbekannt",
+      "ebene": "national",
+      "belege": [
+        "Suchergebnis zu https://www.verdi.de/politik-gesellschaft/rente-deutschland (nicht geöffnet)"
+      ],
+      "offenePunkte": [
+        "Methode, Auftragnehmer, Wortlaut, Datenzugang unbekannt",
+        "Ergebnis wurde in der Suchmaschinen-Zusammenfassung ungefragt angezeigt und nicht verwendet"
+      ]
+    },
+    {
+      "id": "R9-16",
+      "bereich": "Arbeit und Rente / Sozialstaat (allgemein)",
+      "erhebung": "SozialstaatsRadar 2025 (DGB, Arbeitskammer Bremen, Arbeitskammer des Saarlandes)",
+      "feldzeit": "Ende 2024 (nur aus Suchmaschinen-Zusammenfassung)",
+      "population": "unbekannt",
+      "stichprobe": "unbekannt",
+      "modus": "unbekannt",
+      "fallzahl": "laut Suchergebnis 3.000 Befragte (nicht geprüft)",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "unbekannt",
+      "kontext": "Nur mit Ergebnissen veröffentlicht (Ergebnisberichte von DGB und Arbeitskammern), Strukturprüfung durch getrennten Agenten nötig. Auftraggeber sind Interessenvertretungen; das ist eine Herkunftsangabe.",
+      "zugang": "nur Ergebnisberichte (nicht geöffnet)",
+      "bedingungen": "nicht geprüft",
+      "wahlfrage": "unbekannt",
+      "ebene": "national",
+      "belege": [
+        "Suchergebnisse https://www.dgb.de/fileadmin/download_center/Studien/Sozialstaatsradar_2025.pdf und https://www.arbeitskammer.de/... (nicht geöffnet)"
+      ],
+      "offenePunkte": [
+        "Methode und Wortlaute unbekannt",
+        "Ergebnisse wurden in der Suchmaschinen-Zusammenfassung ungefragt angezeigt und nicht verwendet"
+      ]
+    },
+    {
+      "id": "R9-17",
+      "bereich": "Gesundheit und Pflege (Gesundheitsfinanzierung)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q19 g",
+      "wortlautDe": null,
+      "antwortkategorien": "Mehrfachauswahl aus Liste a-l (zufällig rotiert); m 'I would not be willing to spend an extra 2% on any of these things' und n 'Can't choose / Don't know' fest und exklusiv",
+      "kontext": "Englischer Mastertext: Q19 item g. 'Health services (e.g. public medical care, subsidised health insurance, mental health services, etc.)' | Abschnitt 'Social policy preferences'; Stamm: 'Would you be willing to pay an additional 2% of your income in taxes/social contributions to benefit from better provision of and access to:'. Verbindet Politikpräferenz mit persönlicher Zahlungsbereitschaft; vorher Q16-Q17 (Fairness, Missbrauchsvermutung) und Q18 (Staat soll weniger/mehr tun).",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 7",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Keine Frage zu Bürgerversicherung, Beitragsbemessung oder Zuzahlungen"
+      ]
+    },
+    {
+      "id": "R9-18",
+      "bereich": "Gesundheit und Pflege (Langzeitpflege)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q19 j",
+      "wortlautDe": null,
+      "antwortkategorien": "Mehrfachauswahl aus Liste a-l (zufällig rotiert); m 'I would not be willing to spend an extra 2% on any of these things' und n 'Can't choose / Don't know' fest und exklusiv",
+      "kontext": "Englischer Mastertext: Q19 item j. 'Long-term care services for older people (e.g. home, community-based and/or institutional care)' | Abschnitt 'Social policy preferences'; Stamm: 'Would you be willing to pay an additional 2% of your income in taxes/social contributions to benefit from better provision of and access to:'. Verbindet Politikpräferenz mit persönlicher Zahlungsbereitschaft; vorher Q16-Q17 (Fairness, Missbrauchsvermutung) und Q18 (Staat soll weniger/mehr tun).",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 7",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Keine Frage zu Eigenanteilen oder Pflegevollversicherung"
+      ]
+    },
+    {
+      "id": "R9-19",
+      "bereich": "Gesundheit und Pflege (Finanzierung)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q22 e",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Much higher, 2 Slightly higher, 3 Same as now, 4 Slightly lower, 5 Much lower, 6 Can't choose; Items rotiert",
+      "kontext": "Englischer Mastertext: Q22 item e. 'Increasing access to and affordability of health care' | Deutschland-Variante (Germany in der zweiten Länderliste): 'Suppose the current tax on inheritance were committed to be spent on a specific social programme. Would you prefer a higher, lower, or the same inheritance tax rate if the revenues were reserved (earmarked) for the following social outcome:'. Hypothetische Zweckbindung; verbindet Steuer- und Gesundheits-/Pflegepolitik. 'Same as now' setzt den Stand 2024 voraus.",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 8",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Primärzuordnung Steuern oder Gesundheit offen"
+      ]
+    },
+    {
+      "id": "R9-20",
+      "bereich": "Gesundheit und Pflege (Pflegefinanzierung)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q22 f",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Much higher, 2 Slightly higher, 3 Same as now, 4 Slightly lower, 5 Much lower, 6 Can't choose; Items rotiert",
+      "kontext": "Englischer Mastertext: Q22 item f. 'Increasing access to and affordability of long-term care' | Deutschland-Variante (Germany in der zweiten Länderliste): 'Suppose the current tax on inheritance were committed to be spent on a specific social programme. Would you prefer a higher, lower, or the same inheritance tax rate if the revenues were reserved (earmarked) for the following social outcome:'. Hypothetische Zweckbindung; verbindet Steuer- und Gesundheits-/Pflegepolitik.",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 8",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Primärzuordnung Steuern oder Pflege offen"
+      ]
+    },
+    {
+      "id": "R9-21",
+      "bereich": "Gesundheit und Pflege (EU-Ebene)",
+      "erhebung": "Standard-Eurobarometer 104.1 (GESIS ZA9130); Item auch in anderen Standardwellen",
+      "feldzeit": "09.10.-29.10.2025 (laut R6 4)",
+      "population": "EU-Staatsangehörige ab 15 Jahren mit Wohnsitz in Deutschland",
+      "stichprobe": "mehrstufige Zufallsstichprobe, Ost und West getrennt, Post-Stratifikation, kein Designgewicht veröffentlicht (laut R6 4)",
+      "modus": "CAPI",
+      "fallzahl": "1.516 (laut R6 4)",
+      "fragenummer": "QB1 (interne Kennung SE037)",
+      "wortlautDe": "Wie ist Ihre Meinung zu den folgenden Aussagen? Bitte sagen Sie für jede Aussage, ob Sie dafür oder dagegen sind. – Eine gemeinsame EU-Gesundheitspolitik",
+      "antwortkategorien": "Dafür / Dagegen; 'Weiß nicht' nur spontan (HIDESPECIAL CODE 999, laut R6 5)",
+      "kontext": "Batterie von 11 EU-Politikfeldern; betrifft die EU-Ebene, nicht deutsche Gesundheitspolitik",
+      "zugang": "Kommission: gewichtete Ergebnistabellen (Volumes) und Berichte, nur mit Ergebnissen; deutscher Fragebogen und Einzeldaten nur bei GESIS (gesperrt)",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, data.europa.eu-Lizenz 'European Commission reuse notice' (laut R6 3.1); keine KI-Regel gefunden. Einzeldaten GESIS § 4 (gesperrt).",
+      "wahlfrage": "keine Bundestagswahlfrage (R6 7)",
+      "ebene": "EU",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md, Abschnitte 4, 5, 6.3 (ZA9130_q_de S. 10)"
+      ],
+      "offenePunkte": [
+        "Strukturprüfung der Kommissionstabellen (Basis, 'Weiß nicht') durch getrennten Agenten",
+        "Geltungsbereich EU, nicht Bund"
+      ]
+    },
+    {
+      "id": "R9-22",
+      "bereich": "Gesundheit und Pflege (Pflegereform)",
+      "erhebung": "DAK-Pflegereport 2026, zwei Online-Befragungen des Instituts für Demoskopie Allensbach",
+      "feldzeit": "Oktober 2025 und Februar 2026 (nur aus Suchmaschinen-Zusammenfassung)",
+      "population": "unbekannt",
+      "stichprobe": "unbekannt (online)",
+      "modus": "online",
+      "fallzahl": "unbekannt",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "unbekannt",
+      "kontext": "Thema laut Suchergebnis: Erfahrungen, Einstellungen und Erwartungen zur Pflege und Vorstellungen zur Pflegereform. Nur mit Ergebnissen veröffentlicht, Strukturprüfung durch getrennten Agenten nötig.",
+      "zugang": "nur Ergebnisbericht der DAK (nicht geöffnet)",
+      "bedingungen": "nicht geprüft",
+      "wahlfrage": "unbekannt",
+      "ebene": "national",
+      "belege": [
+        "Suchergebnis https://www.dak.de/dak/unternehmen/reporte-forschung/dak-pflegereport-2026-pflegereform_168082 (nicht geöffnet)"
+      ],
+      "offenePunkte": [
+        "Stichprobenart (Quote oder Zufall) unbekannt",
+        "Wortlaute nur im Ergebnisbericht zu erwarten"
+      ]
+    },
+    {
+      "id": "R9-23",
+      "bereich": "ungeprüft (Sozialstaat; möglicherweise Gesundheit, Rente oder Wohnen)",
+      "erhebung": "Spezial-Eurobarometer 559 'Investing in fairness' (Eurobarometer 103.1)",
+      "feldzeit": "09.01.-04.02.2025 (Eurobarometer-Schnittstelle)",
+      "population": "EU-Staatsangehörige ab 15 Jahren (Standarddesign laut R6 4; für diese Welle nicht geprüft)",
+      "stichprobe": "Standarddesign mehrstufige Zufallsstichprobe (laut R6; für diese Welle nicht geprüft)",
+      "modus": "Face-to-face (Eurobarometer-Schnittstelle, Feld 'method')",
+      "fallzahl": "nicht geprüft",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "unbekannt",
+      "kontext": "Von R6 nicht erfasst. Die Kommission veröffentlicht nur Bericht, Zusammenfassung, Datenanhang, Factsheets und Infografik (keine Fragebogendatei). Nur mit Ergebnissen veröffentlicht, Strukturprüfung durch getrennten Agenten nötig. Deutscher Fragebogen nur bei GESIS (gesperrt).",
+      "zugang": "Kommission: Ergebnisdokumente und Tabellen (data.europa.eu, Datensatz s3223_103_1_sp559_eng, Lizenz COM_REUSE); Einzeldaten GESIS (gesperrt)",
+      "bedingungen": "Beschluss 2011/833/EU (laut R6 3.1); keine KI-Regel gefunden",
+      "wahlfrage": "keine Bundestagswahlfrage in Eurobarometer-Standardinstrumenten (R6 7); für diese Welle nicht geprüft",
+      "ebene": "EU",
+      "belege": [
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3223 (Felder fieldworkStartDate, fieldworkEndDate, method, deliverables)",
+        "https://data.europa.eu/api/hub/search/datasets/s3223_103_1_sp559_eng (Lizenzfeld)"
+      ],
+      "offenePunkte": [
+        "Themen und Fragen unbekannt",
+        "Strukturprüfung durch getrennten Agenten"
+      ]
+    },
+    {
+      "id": "R9-24",
+      "bereich": "Wohnen (Wohnraumförderung)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q19 f",
+      "wortlautDe": null,
+      "antwortkategorien": "Mehrfachauswahl aus Liste a-l (zufällig rotiert); m 'I would not be willing to spend an extra 2% on any of these things' und n 'Can't choose / Don't know' fest und exklusiv",
+      "kontext": "Englischer Mastertext: Q19 item f. 'Housing supports (e.g. social housing services, housing benefits, etc.)' | Abschnitt 'Social policy preferences'; Stamm: 'Would you be willing to pay an additional 2% of your income in taxes/social contributions to benefit from better provision of and access to:'. Verbindet Politikpräferenz mit persönlicher Zahlungsbereitschaft; vorher Q16-Q17 (Fairness, Missbrauchsvermutung) und Q18 (Staat soll weniger/mehr tun).",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 7",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Keine Frage zu Mietregulierung, Vergesellschaftung oder Grundsteuer"
+      ]
+    },
+    {
+      "id": "R9-25",
+      "bereich": "Wohnen (sozialer Wohnungsbau)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q30 g",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Strongly disagree, 2 Disagree, 3 Neither agree nor disagree, 4 Agree, 5 Strongly agree, 6 Can't choose; Items a-k rotiert",
+      "kontext": "Englischer Mastertext: Q30 item g. 'Increase the supply of social and affordable housing' | Stamm: 'Please indicate the extent to which you agree or disagree with the following statements: To offset the economic consequences of climate change policies, governments should introduce or strengthen policies to:'; an Klimapolitik gebunden; davor Q28-Q29 (Bewertung der Klimapolitik, Sorgen).",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 12",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Klimakontext im Stamm: kein allgemeines Wohnungsbau-Item"
+      ]
+    },
+    {
+      "id": "R9-26",
+      "bereich": "Wohnen (Wohnkostenzuschüsse)",
+      "erhebung": "OECD Risks that Matter (RTM) 2024, Kernfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "Q30 e",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Strongly disagree, 2 Disagree, 3 Neither agree nor disagree, 4 Agree, 5 Strongly agree, 6 Can't choose; Items a-k rotiert",
+      "kontext": "Englischer Mastertext: Q30 item e. 'Help individuals and families offset housing costs by providing subsidies/transfers to households to cover rising costs' | Stamm: 'Please indicate the extent to which you agree or disagree with the following statements: To offset the economic consequences of climate change policies, governments should introduce or strengthen policies to:'; an Klimapolitik gebunden; davor Q28-Q29 (Bewertung der Klimapolitik, Sorgen).",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Hintergrundfragebogen 2024 Frage 35: Wahlabsicht ('If a national election were held tomorrow, for which party would you vote?'), erhoben vor der Bundestagswahl vom 23.02.2025; keine Rückerinnerung",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf, PDF-S. 12",
+        "https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-risks-that-matter-rtm-survey/RTM-Call-for-Proposals-2027.pdf, PDF-S. 1"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft",
+        "Klimakontext im Stamm"
+      ]
+    },
+    {
+      "id": "R9-27",
+      "bereich": "Wohnen (Mietregulierung)",
+      "erhebung": "GLES Querschnitt 2025 Nachwahl (ZA10100 v4.0.0) – gesperrt",
+      "feldzeit": "CAWI 24.02.-14.04.2025, Papier 24.02.-23.04.2025",
+      "population": "deutsche Staatsangehörige ab 16 Jahren mit Hauptwohnsitz in Deutschland",
+      "stichprobe": "mehrstufige Registerstichprobe",
+      "modus": "CAWI und Papier",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": "q27i (Nw336, F61, Doku PDF-S. 144-145)",
+      "wortlautDe": "Der Staat sollte die Mietpreise stärker regulieren.",
+      "antwortkategorien": "(5) 'stimme überhaupt nicht zu' ... (1) 'stimme voll und ganz zu', (-99); kein Filter (laut R2 5.2)",
+      "kontext": "Einleitung 'Es gibt zu verschiedenen politischen Themen unterschiedliche Meinungen ...'; 'stärker' bezieht sich auf den Stand Frühjahr 2025; Verlängerung der Mietpreisbremse im Juni 2025 und Regierungsentwurf 'Mietrecht II' (29.04.2026) danach",
+      "zugang": "GESIS, Zugangskategorie Safeguarded - A",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "Nachwahlstudie zur Bundestagswahl 2025; Wahlfrage in R1-R7 nicht einzeln dokumentiert",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R2-themen-gesundheit-arbeit-wohnen.md, Abschnitt 5.2"
+      ],
+      "offenePunkte": [
+        "GESIS-Sperre",
+        "Reihenfolge der Ausprägungen 5 bis 1 in der Doku: Codierung prüfen (R2 5.2)"
+      ]
+    },
+    {
+      "id": "R9-28",
+      "bereich": "Wohnen (Mietregulierung)",
+      "erhebung": "GLES Rolling Cross-Section 2025 (ZA10101 v3.0.0) – gesperrt",
+      "feldzeit": "Vorwahl 06.01.-22.02.2025, Nachwahl 25.02.-31.03.2025 (laut R3 3.1)",
+      "population": "Wahlberechtigte in Privathaushalten (laut R3 3.1)",
+      "stichprobe": "laut R3 3.1 Ziehung aus dem PAYBACK-Panel; laut R1 2 (CESSDA) Wahrscheinlichkeitsauswahl – widersprüchlich dokumentiert",
+      "modus": "CAWI",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": "pre038b",
+      "wortlautDe": "Der Staat sollte die Mietpreise stärker regulieren. (gleicher Wortlaut wie G25 q27i laut Codex-Auszug, von R2 nicht selbst eingesehen)",
+      "antwortkategorien": "1-5 (laut R2)",
+      "kontext": "nur aus Codex-Auszug bekannt (R2 5.2)",
+      "zugang": "GESIS, Zugangskategorie A",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "in R1-R7 nicht dokumentiert",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R2-themen-gesundheit-arbeit-wohnen.md, Abschnitt 5.2",
+        "reports/claude/agenten/R3-themen-reichweite.md, Abschnitt 3.1"
+      ],
+      "offenePunkte": [
+        "GESIS-Sperre",
+        "Stichprobenart widersprüchlich",
+        "Wortlaut nicht im Original geprüft"
+      ]
+    },
+    {
+      "id": "R9-29",
+      "bereich": "Wohnen (Prioritätenliste)",
+      "fragenummer": "QB4 (SP546)",
+      "wortlautDe": "Welche der folgenden Themen sollten in Deutschland vorrangig angegangen werden? (u. a. 'Fehlende Sozialwohnungen sowie Obdachlosigkeit')",
+      "antwortkategorien": "Liste, höchstens 3 Nennungen",
+      "kontext": "Prioritätenliste ohne Richtung (R6 6.5)",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md, Abschnitt 6.5 (ZA8841_q_de S. 30)"
+      ],
+      "offenePunkte": [
+        "Keine Richtungspräferenz",
+        "Strukturprüfung der Kommissionstabellen durch getrennten Agenten"
+      ],
+      "erhebung": "Eurobarometer 101.1 / Spezial-Eurobarometer 546 'Social Europe' (GESIS ZA8841)",
+      "feldzeit": "08.02.-26.02.2024 (laut R6 4)",
+      "population": "EU-Staatsangehörige ab 15 Jahren mit Wohnsitz in Deutschland (laut R6 4)",
+      "stichprobe": "mehrstufige Zufallsstichprobe (Random Route mit Zufallsstartpunkten), Ost und West getrennt gezogen",
+      "modus": "CAPI",
+      "fallzahl": "1.521 (laut R6 4)",
+      "zugang": "Kommission: nur Berichte, Datenanhänge und gewichtete Ergebnistabellen (nur mit Ergebnissen veröffentlicht); deutscher Fragebogen und Einzeldaten nur bei GESIS (gesperrt)",
+      "bedingungen": "Kommissionsdokumente: Beschluss 2011/833/EU und CC BY 4.0 laut rechtlichem Hinweis (R6 3.1); keine KI-Regel gefunden. Einzeldaten: GESIS § 4 (gesperrt).",
+      "wahlfrage": "keine Frage zur Bundestagswahl in den von R6 geprüften Fragebögen",
+      "ebene": "national"
+    },
+    {
+      "id": "R9-30",
+      "bereich": "Wohnen (ungeprüft, Stadtentwicklung)",
+      "erhebung": "Flash-Eurobarometer 561 'Public opinion on urban challenges and investment in cities'",
+      "feldzeit": "26.03.-09.04.2025 (Eurobarometer-Schnittstelle)",
+      "population": "nicht geprüft",
+      "stichprobe": "nicht geprüft; Flash-Eurobarometer können Online-Quoten sein (R6 4 zu FL574)",
+      "modus": "Online (Eurobarometer-Schnittstelle, Feld 'method')",
+      "fallzahl": "nicht geprüft",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "unbekannt",
+      "kontext": "Ob Wohnkosten oder Wohnungspolitik vorkommen, ist ungeprüft. Keine Fragebogendatei bei der Kommission; nur mit Ergebnissen veröffentlicht, Strukturprüfung durch getrennten Agenten nötig.",
+      "zugang": "Kommission: Ergebnisdokumente, Datenanhang, Tabellen (data.europa.eu s3368_fl561_eng, Lizenz COM_REUSE)",
+      "bedingungen": "Beschluss 2011/833/EU (laut R6 3.1); keine KI-Regel gefunden",
+      "wahlfrage": "nicht geprüft",
+      "ebene": "EU",
+      "belege": [
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3368",
+        "https://data.europa.eu/api/hub/search/datasets/s3368_fl561_eng"
+      ],
+      "offenePunkte": [
+        "Stichprobenart",
+        "Themen",
+        "Geltungsbereich (städtische Investitionen, EU-Regionalpolitik)"
+      ]
+    },
+    {
+      "id": "R9-31",
+      "bereich": "Wählergruppen (Wahlbeteiligung)",
+      "erhebung": "ESS Runde 12, Deutschland",
+      "feldzeit": "ESS-weit 01.09.2025-15.05.2026; Feldstart spätestens 01.11.2025 (Survey Specification R12, PDF-S. 45); deutsche Feldtermine nicht veröffentlicht gefunden",
+      "population": "alle Personen ab 15 Jahren in Privathaushalten, unabhängig von Staatsangehörigkeit (ESS-Länderseite Deutschland; Specification PDF-S. 40)",
+      "stichprobe": "strikte Zufallsauswahl, zweistufig (Gemeinden, dann Personen aus Melderegistern) laut allgemeiner Beschreibung der ESS-Länderseite Deutschland (nicht rundenspezifisch); Erhebung durch Verian; Modusexperiment: zufällige Hälfte persönlich, Hälfte Selbstausfüller (Web/Papier)",
+      "modus": "CAPI und Selbstausfüller (Web und Papier), zufällig zugewiesen",
+      "fallzahl": "Vorgabe: effektive Fallzahl mindestens 800 je Modus, zusammen 1.600 (Specification PDF-S. 41); tatsächliche deutsche Fallzahl nicht veröffentlicht",
+      "fragenummer": "A26 (Quellfragebogen); Variable bisher 'vote'",
+      "wortlautDe": null,
+      "antwortkategorien": "1 Yes (weiter A27), 2 No, 3 Not eligible to vote, 7 (Refusal), 8 (Don't know); Refusal/Don't know nur F2F",
+      "kontext": "Quelltext: 'Some people don't vote nowadays for one reason or another. Did you vote in the last [country nationality] national election in [month/year]?' Fußnote 21: 'last national election': last election of a country's primary legislative assembly. Steht nach Vertrauensfragen A19-A25. Deutscher Vergleichswortlaut ESS11 B13: 'Manche Menschen gehen heutzutage aus verschiedenen Gründen nicht zur Wahl. Wie ist das bei Ihnen? Haben Sie bei der letzten Bundestagswahl im September 2021 gewählt?' Bezugswahl ESS12 Deutschland nach Feldfenster die Bundestagswahl vom 23.02.2025 (Schluss aus Feldzeit, nicht am deutschen Wortlaut geprüft).",
+      "zugang": "ESS Data Portal (Sikt), Konto; Erstveröffentlichung laut ESS-Meldung vom 30.09.2026 im Januar 2027 mit Poststratifikationsgewichten; zweite Veröffentlichung vorläufig April 2027 (Meldung 12.01.2026); ob Deutschland in der Erstveröffentlichung enthalten ist, ist nicht angegeben. Deutscher Fragebogen noch nicht veröffentlicht (HTTP 404 am 03.10.2026, 22:33 UTC).",
+      "bedingungen": "https://www.europeansocialsurvey.org/contact/disclaimer: 'European Social Survey data is licensed under CC BY-NC-SA 4.0'; 'European Social Survey documentation is licensed under CC BY-SA 4.0'; 'The data are available without restrictions, for not-for-profit purposes.'; 'ESS ERIC recommends that ESS datasets are not made available on external websites.' Keine Regel zu KI-Systemen auf dieser Seite gefunden; Portalbedingungen hinter der Anmeldung nicht gesehen.",
+      "wahlfrage": "Rückerinnerung an die Wahlteilnahme bei der letzten nationalen Parlamentswahl",
+      "ebene": "national",
+      "belege": [
+        "https://www.europeansocialsurvey.org/sites/default/files/2026-01/ESS12-source-questionnaire.pdf, PDF-S. 16 (gedruckt 15)",
+        "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf, PDF-S. 7",
+        "https://www.europeansocialsurvey.org/sites/default/files/2024-04/ESS012_projection_specification_v2.pdf, PDF-S. 41, 45"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut ESS12 und genannte Bezugswahl erst nach Veröffentlichung prüfbar",
+        "Moduseffekte zwischen CAPI und Selbstausfüller"
+      ]
+    },
+    {
+      "id": "R9-32",
+      "bereich": "Wählergruppen (Rückerinnerung Partei)",
+      "erhebung": "ESS Runde 12, Deutschland",
+      "feldzeit": "ESS-weit 01.09.2025-15.05.2026; Feldstart spätestens 01.11.2025 (Survey Specification R12, PDF-S. 45); deutsche Feldtermine nicht veröffentlicht gefunden",
+      "population": "alle Personen ab 15 Jahren in Privathaushalten, unabhängig von Staatsangehörigkeit (ESS-Länderseite Deutschland; Specification PDF-S. 40); gefragt nur bei A26 = 1",
+      "stichprobe": "strikte Zufallsauswahl, zweistufig (Gemeinden, dann Personen aus Melderegistern) laut allgemeiner Beschreibung der ESS-Länderseite Deutschland (nicht rundenspezifisch); Erhebung durch Verian; Modusexperiment: zufällige Hälfte persönlich, Hälfte Selbstausfüller (Web/Papier)",
+      "modus": "CAPI und Selbstausfüller (Web und Papier), zufällig zugewiesen",
+      "fallzahl": "Vorgabe: effektive Fallzahl mindestens 800 je Modus, zusammen 1.600 (Specification PDF-S. 41); tatsächliche deutsche Fallzahl nicht veröffentlicht",
+      "fragenummer": "A27 (Quellfragebogen); in Deutschland bisher geteilt in Erst- und Zweitstimme (ESS11 B14a/B14b; Variablen prtv?de1/prtv?de2)",
+      "wortlautDe": null,
+      "antwortkategorien": "länderspezifisch, höchstens 20 Parteien plus 'Other: please write in' (21), 77 (Refusal), 88 (Don't know)",
+      "kontext": "Quelltext: 'Which party did you vote for in the last [country nationality] national election in [month/year]?' Fußnote 22: Fragetext gegenüber Runde 11 geändert; Fußnote 24: länderspezifischer Wortlaut und Antwortliste. Deutscher Vergleichswortlaut ESS11 B14b: 'Und welche Partei haben Sie mit Ihrer Zweitstimme gewählt?' (Liste CDU/CSU, SPD, Die Linke, Bündnis 90/Die Grünen, FDP, AfD, Freie Wähler, Andere Partei).",
+      "zugang": "ESS Data Portal (Sikt), Konto; Erstveröffentlichung laut ESS-Meldung vom 30.09.2026 im Januar 2027 mit Poststratifikationsgewichten; zweite Veröffentlichung vorläufig April 2027 (Meldung 12.01.2026); ob Deutschland in der Erstveröffentlichung enthalten ist, ist nicht angegeben. Deutscher Fragebogen noch nicht veröffentlicht (HTTP 404 am 03.10.2026, 22:33 UTC).",
+      "bedingungen": "https://www.europeansocialsurvey.org/contact/disclaimer: 'European Social Survey data is licensed under CC BY-NC-SA 4.0'; 'European Social Survey documentation is licensed under CC BY-SA 4.0'; 'The data are available without restrictions, for not-for-profit purposes.'; 'ESS ERIC recommends that ESS datasets are not made available on external websites.' Keine Regel zu KI-Systemen auf dieser Seite gefunden; Portalbedingungen hinter der Anmeldung nicht gesehen.",
+      "wahlfrage": "Rückerinnerung an die Partei bei der letzten Bundestagswahl; für ESS12 Deutschland voraussichtlich 23.02.2025 (Schluss aus Feldzeit)",
+      "ebene": "national",
+      "belege": [
+        "https://www.europeansocialsurvey.org/sites/default/files/2026-01/ESS12-source-questionnaire.pdf, PDF-S. 17 (gedruckt 16)",
+        "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf, PDF-S. 8"
+      ],
+      "offenePunkte": [
+        "Ob ESS12 Deutschland wieder Erst- und Zweitstimme getrennt fragt und welche Parteien (u. a. BSW) gelistet sind, ist erst mit dem deutschen Fragebogen prüfbar",
+        "Code-Konkordanz Papier/Web/CAPI wie bei ESS10-SC und ESS11 (Gruppenvertrag v2.1, recodeBoundary) vor jeder Nutzung prüfen",
+        "Neue Gruppenreferenzen brauchen einen eigenen, versionierten und geprüften Plan"
+      ]
+    },
+    {
+      "id": "R9-33",
+      "bereich": "Wählergruppen (Parteinähe)",
+      "erhebung": "ESS Runde 12, Deutschland",
+      "feldzeit": "ESS-weit 01.09.2025-15.05.2026; Feldstart spätestens 01.11.2025 (Survey Specification R12, PDF-S. 45); deutsche Feldtermine nicht veröffentlicht gefunden",
+      "population": "alle Personen ab 15 Jahren in Privathaushalten, unabhängig von Staatsangehörigkeit (ESS-Länderseite Deutschland; Specification PDF-S. 40)",
+      "stichprobe": "strikte Zufallsauswahl, zweistufig (Gemeinden, dann Personen aus Melderegistern) laut allgemeiner Beschreibung der ESS-Länderseite Deutschland (nicht rundenspezifisch); Erhebung durch Verian; Modusexperiment: zufällige Hälfte persönlich, Hälfte Selbstausfüller (Web/Papier)",
+      "modus": "CAPI und Selbstausfüller (Web und Papier), zufällig zugewiesen",
+      "fallzahl": "Vorgabe: effektive Fallzahl mindestens 800 je Modus, zusammen 1.600 (Specification PDF-S. 41); tatsächliche deutsche Fallzahl nicht veröffentlicht",
+      "fragenummer": "A36, A37, A38 (Quellfragebogen)",
+      "wortlautDe": null,
+      "antwortkategorien": "A36: 1 Yes, 2 No, 7, 8; A37: länderspezifisch bis 20 Parteien, 21 Other, 77, 88; A38: Very close, Quite close, Not close, Not at all close, 7, 8",
+      "kontext": "A36 'Is there a particular political party you feel closer to than all the other parties?' Fußnote 33: 'Feel closer to': in the sense of the party one most identifies or sympathises with or is most attached to, regardless of how one votes. A37 'Which political party do you feel closest to?' A38 'How close do you feel to this party?' Gefragt an alle, auch Nicht-Wahlberechtigte.",
+      "zugang": "ESS Data Portal (Sikt), Konto; Erstveröffentlichung laut ESS-Meldung vom 30.09.2026 im Januar 2027 mit Poststratifikationsgewichten; zweite Veröffentlichung vorläufig April 2027 (Meldung 12.01.2026); ob Deutschland in der Erstveröffentlichung enthalten ist, ist nicht angegeben. Deutscher Fragebogen noch nicht veröffentlicht (HTTP 404 am 03.10.2026, 22:33 UTC).",
+      "bedingungen": "https://www.europeansocialsurvey.org/contact/disclaimer: 'European Social Survey data is licensed under CC BY-NC-SA 4.0'; 'European Social Survey documentation is licensed under CC BY-SA 4.0'; 'The data are available without restrictions, for not-for-profit purposes.'; 'ESS ERIC recommends that ESS datasets are not made available on external websites.' Keine Regel zu KI-Systemen auf dieser Seite gefunden; Portalbedingungen hinter der Anmeldung nicht gesehen.",
+      "wahlfrage": "Parteinähe (keine Wahlfrage)",
+      "ebene": "national",
+      "belege": [
+        "https://www.europeansocialsurvey.org/sites/default/files/2026-01/ESS12-source-questionnaire.pdf, PDF-S. 19-20 (gedruckt 18-19)"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut und Parteiliste offen"
+      ]
+    },
+    {
+      "id": "R9-34",
+      "bereich": "Wählergruppen (Parteineigung)",
+      "erhebung": "SOEP-Core 2024, Personenfragebogen (Stichproben A-R+M1-M2+M7)",
+      "feldzeit": "Erhebungsjahr 2024 (genaue Feldzeit nicht geprüft)",
+      "population": "Personen in Privathaushalten in Deutschland (DIW, SOEP-Core v41); Personenfragebogen für erwachsene Haushaltsmitglieder",
+      "stichprobe": "mehrstufige, regional gebündelte Zufallsstichproben (Random Walk oder Register) laut DIW-Editionsseite v41",
+      "modus": "laut DIW grundsätzlich persönliche Interviews; Feldversion des Fragebogens als Papierfassung dokumentiert",
+      "fallzahl": "nicht geprüft",
+      "fragenummer": "193, 194, 195 (Personenfragebogen 2024)",
+      "wortlautDe": "193 'Viele Leute in der Bundesrepublik neigen längere Zeit einer bestimmten Partei zu, obwohl sie auch ab und zu eine andere Partei wählen. Wie ist das bei Ihnen: Neigen Sie einer bestimmten Partei in Deutschland zu?' 194 'Welcher Partei neigen Sie zu?' 195 'Und wie stark neigen Sie dieser Partei zu?'",
+      "antwortkategorien": "193: Ja / Nein (weiter mit 196); 194: SPD, CDU, CSU, FDP, Bündnis 90 / Die Grünen, Die Linke, Freie Wähler, AfD, NPD / Republikaner / Die Rechte, Andere (BSW nicht gelistet); 195: Sehr stark, Ziemlich stark, Mäßig, Ziemlich schwach, Sehr schwach",
+      "kontext": "Abschnitt 'Einstellungen und Meinungen' nach politischem Interesse (192), vor Links-rechts-Selbsteinstufung (196). Keine Politikpräferenzfragen zu Rente, Gesundheit, Pflege oder Wohnen im Fragebogen 2024 gefunden.",
+      "zugang": "Daten nur über Datenweitergabevertrag mit dem DIW für Forschende an wissenschaftlichen Einrichtungen; 'Einzelpersonen (ohne Affiliation) kann kein Zugriff auf die SOEP-Daten gewährt werden.' Daten 2024 in SOEP-Core v41 (veröffentlicht 17.03.2026); Fragebogen öffentlich unter CC BY-SA 4.0 (SOEP Survey Paper 1591, PDF-S. 2)",
+      "bedingungen": "DIW Datenzugang (https://www.diw.de/de/diw_01.c.601584.de/datenzugang.html): 'Die Nutzung von SOEP-Daten in KI-Anwendungen oder zum Training von KI-Modellen ist gemäß unserer SOEP-Richtlinie zur Nutzung von KI und großen Sprachmodellen (LLMs) nicht gestattet.' Richtlinie (https://www.diw.de/de/diw_01.c.1019277.de/...): 'Derzeit dürfen Large Language Models (LLMs) und andere KI-Tools nicht verwendet werden, um SOEP-Daten zu verwalten, zu verarbeiten oder zu analysieren.' Erlaubt: 'Die Nutzung von LLMs mit öffentlich zugänglichen Dokumentationen, Codebüchern, studienbezogenen Metadaten sowie aggregierten Gruppen- oder Populationsschätzungen ist zulässig.' und LLM-erstellter Analysecode, 'solange keine SOEP-Mikrodaten an das LLM übermittelt oder hochgeladen werden'.",
+      "wahlfrage": "Parteineigung; erhoben vor der Bundestagswahl 2025; keine Rückerinnerung im Fragebogen 2024",
+      "ebene": "national",
+      "belege": [
+        "https://www.diw.de/documents/publikationen/73/diw_01.c.1004956.de/diw_ssp1591.pdf, PDF-S. 2 und 43",
+        "https://www.diw.de/de/diw_01.c.997276.de/edition/soep-core_v41eu__daten_1984-2024__eu-edition.html",
+        "https://www.diw.de/de/diw_01.c.601584.de/datenzugang.html",
+        "https://www.diw.de/de/diw_01.c.1019277.de/soep-richtlinie_zur_nutzung_von_ki_und_grossen_sprachmodellen__llms.html"
+      ],
+      "offenePunkte": [
+        "SOEP-Fragebogen 2025 noch nicht veröffentlicht: ob er eine Rückerinnerung an die Bundestagswahl 2025 enthält, ist offen",
+        "Projekt ohne wissenschaftliche Einrichtung: Vertragsfähigkeit offen",
+        "KI-Verarbeitung von Mikrodaten ausdrücklich nicht gestattet"
+      ]
+    },
+    {
+      "id": "R9-35",
+      "bereich": "Wählergruppen (Wahlabsicht)",
+      "erhebung": "OECD Risks that Matter 2024, Hintergrundfragebogen",
+      "feldzeit": "Deutschland: November bis Dezember 2024 (OECD Working Paper Nr. 324, laut R7 3.2); nächste Welle 2027, Feld Q1/Q2 2027 geplant",
+      "population": "18 bis 64 Jahre, in Deutschland lebend; keine Einschränkung nach Staatsangehörigkeit dokumentiert gefunden",
+      "stichprobe": "Online-Quotenstichprobe aus Access-Panels (Bilendi), nicht probabilistisch; Quoten nach Geschlecht, Alter, Einkommen, Bildung, Erwerbsstatus (R7 3.2; OECD Call for Proposals 2027, PDF-S. 1: 'quota-based, non-probability sampling')",
+      "modus": "online (CAWI), Sprache Deutsch; deutsche Fassung nicht veröffentlicht",
+      "fallzahl": "mindestens 1.000 je Land laut OECD Working Paper 324 (PDF-S. 14, laut R7); deutsche Fallzahl nicht gefunden",
+      "fragenummer": "35",
+      "wortlautDe": null,
+      "antwortkategorien": "länderspezifische Parteiliste (Deutschland: SPD, FDP, Die Linke, CDU/CSU, Bündnis 90/Die Grünen, AfD, Bündnis Sahra Wagenknecht) plus 'Other left-wing party', 'Other centre party', 'Other right-wing party', 'Other', 'I would not vote', 'I am not eligible to vote', 'Can't choose / Prefer not to say'",
+      "kontext": "Englischer Mastertext: 'If a national election were held tomorrow, for which party would you vote?' Abschnitt 'Other questions' nach dem Kernfragebogen.",
+      "zugang": "Englische Kern- und Hintergrundfragebögen öffentlich; Ergebnistabellen (Statlinks) öffentlich, nicht geöffnet; Public Use Microdata nur auf E-Mail-Anfrage bei der OECD",
+      "bedingungen": "PUF-Bedingungen nur als Zusammenfassung bekannt (Working Paper 324, PDF-S. 21-22, laut R7): 'users are prohibited from the presentation or publication of individual entries, even without direct reference to individual persons'. Allgemeine OECD-Bedingungen (https://www.oecd.org/en/about/terms-conditions.html, Wayback 02.10.2026, laut R7): 'most OECD written content published as of 1 July 2024 is licensed under ... CC BY 4.0'. Keine Regel zu KI-Systemen in diesen Texten gefunden; das ist weder Erlaubnis noch zusätzliche Genehmigungspflicht. Fragebogen 2024 ohne Lizenzvermerk.",
+      "wahlfrage": "Wahlabsicht (Sonntagsfrage) im November/Dezember 2024, vor der Bundestagswahl vom 23.02.2025",
+      "ebene": "national",
+      "belege": [
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Background-Questionnaire.pdf, PDF-S. 11 (Frage 35) und PDF-S. 15 (Parteiliste Deutschland)"
+      ],
+      "offenePunkte": [
+        "Deutscher Wortlaut nicht veröffentlicht; eigene Übersetzung wäre kein Originalwortlaut",
+        "Online-Quote 18-64: Zulässigkeit als Vergleich entscheidet Steven",
+        "PUF-Bedingungen im Wortlaut und zu KI bei der OECD erfragen (Nachricht nach außen, Freigabe Steven)",
+        "Deutsche Fallzahl und Gewichte für Deutschland ungeprüft"
+      ]
+    },
+    {
+      "id": "R9-36",
+      "bereich": "Wählergruppen (Rückerinnerung) – gesperrt",
+      "erhebung": "GLES Querschnitt 2025 Nachwahl (ZA10100 v4.0.0) und GLES RCS 2025 (ZA10101)",
+      "feldzeit": "Nachwahl: 24.02.-14./23.04.2025; RCS: 06.01.-31.03.2025 (laut R2/R3)",
+      "population": "Nachwahl: deutsche Staatsangehörige ab 16 Jahren; RCS: Wahlberechtigte in Privathaushalten",
+      "stichprobe": "Nachwahl: Registerstichprobe; RCS: widersprüchlich dokumentiert (PAYBACK-Panel laut R3, Wahrscheinlichkeitsauswahl laut CESSDA/R1)",
+      "modus": "CAWI/Papier bzw. CAWI",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "nicht dokumentiert",
+      "kontext": "Wahlstudie zur Bundestagswahl 2025; die Wahlentscheidung ist Kerngegenstand, Fragenummer und Wortlaut stehen aber nicht in R1-R7. Wegen GESIS-Sperre nicht geprüft.",
+      "zugang": "GESIS, Zugangskategorie Safeguarded - A; Daten veröffentlicht (v4.0.0 laut R2)",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "Rückerinnerung an die Bundestagswahl 2025 zu erwarten, nicht geprüft",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R2-themen-gesundheit-arbeit-wohnen.md, Abschnitt 2",
+        "reports/claude/agenten/R3-themen-reichweite.md, Abschnitt 3.1"
+      ],
+      "offenePunkte": [
+        "GESIS-Sperre",
+        "Population ohne Nicht-Staatsangehörige, anders als ESS"
+      ]
+    },
+    {
+      "id": "R9-37",
+      "bereich": "Wählergruppen – gesperrt",
+      "erhebung": "Politbarometer 2025 (ZA9151 v1.0.0)",
+      "feldzeit": "07.01.-11.12.2025 (laut R1 2)",
+      "population": "Wahlberechtigte Wohnbevölkerung",
+      "stichprobe": "Wahrscheinlichkeitsauswahl, Dual-Frame",
+      "modus": "CATI, CAWI-Teilstichprobe",
+      "fallzahl": "in R1-R7 nicht dokumentiert",
+      "fragenummer": null,
+      "wortlautDe": null,
+      "antwortkategorien": "nicht dokumentiert",
+      "kontext": "Parteifragen in R1-R7 nicht dokumentiert",
+      "zugang": "GESIS, Zugangskategorie A",
+      "bedingungen": "GESIS-Nutzungsbedingungen gültig ab 04.02.2026, § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (Wortlaut laut R2 Abschnitt 6 und R3 3.2, über Wayback 30.03.2026). Keine neuen Abrufe wegen GESIS-Sperre.",
+      "wahlfrage": "nicht dokumentiert",
+      "ebene": "national",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md, Abschnitt 2",
+        "reports/claude/agenten/R3-themen-reichweite.md, Abschnitt 3.1"
+      ],
+      "offenePunkte": [
+        "GESIS-Sperre"
+      ]
+    }
+  ]
+}
