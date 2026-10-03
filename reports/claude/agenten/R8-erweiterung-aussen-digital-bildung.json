@@ -1,0 +1,1374 @@
+{
+  "meta": {
+    "stand": "2026-10-04 (Recherche 03.10.2026, ca. 22:30–23:15 UTC)",
+    "rechtsrecherche": "Rechtsgrundlagen in ebeneBegruendung teils aus einer Rechtsrecherche eines weiteren, eng begrenzten Claude-Subagenten (Bericht Anhang D); Vertragstexte aus dem Cellar-Dienst des Amts für Veröffentlichungen.",
+    "auftrag": "reports/claude/auftraege/R8-erweiterung-aussen-digital-bildung.md mit R-erweiterung-gemeinsam.md",
+    "bericht": "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md",
+    "modell": "Claude Opus 5.5 (claude-opus-5-5[1m]) laut Laufzeitumgebung",
+    "hinweise": [
+      "Ergebnisblind: keine Antwortverteilungen oder Prozentwerte recherchiert oder übernommen.",
+      "GESIS-Sperre: keine Abrufe von GESIS-Servern; GESIS-Bestände nur mit Angaben aus R1–R7 und als gesperrt gekennzeichnet (Feld 'gesperrt').",
+      "Feld 'ebene' ist eine Liste aus 'national', 'EU', 'international'; zwei Einträge bedeuten, dass beide Ebenen entscheiden oder mitentscheiden. Begründung in 'ebeneBegruendung'.",
+      "Feld 'eignung' ist eine Einschätzung für einen Bevölkerungsvergleich ohne Wählergruppen, keine Abnahme.",
+      "wortlautDe ist null, wenn kein öffentlicher deutscher Wortlaut vorlag oder er nur in gesperrten Quellen steht; englische Quellwortlaute stehen dann in 'kontext' oder 'wortlautDe' bleibt null.",
+      "Quellen ohne prüfbare Einzelfragen stehen in 'quellenOhnePruefbareFragen'."
+    ]
+  },
+  "kandidaten": [
+    {
+      "id": "R8-EB-SE037-GSVP",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Item auch in allen Standardwellen 2024–2026, in EB 105.2 mit geändertem Wortlaut (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QB1 (interne Kennung SE037), Item 'gemeinsame Verteidigungs- und Sicherheitspolitik'; EB 105.2 QB2",
+      "wortlautDe": "EB 104.1: Einleitung 'Wie ist Ihre Meinung zu den folgenden Aussagen? Bitte sagen Sie für jede Aussage, ob Sie dafür oder dagegen sind.' Item: 'Eine gemeinsame Verteidigungs- und Sicherheitspolitik der EU-Mitgliedstaaten.' EB 105.2: 'Eine gemeinsame Sicherheits- und Verteidigungspolitik der Mitgliedstaaten' (Kennzeichen '(M)', geänderter Wortlaut).",
+      "antwortkategorien": "Dafür / Dagegen; 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Batterie mit elf Items zu gemeinsamen EU-Politiken (u. a. Außenpolitik, Einwanderung, Energie, Erweiterung, Euro, Klima). Keine Begründung im Fragetext. Zweistufiges Antwortformat.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Die Gemeinsame Sicherheits- und Verteidigungspolitik ist Teil der GASP (Art. 42 EUV); GSVP-Beschlüsse werden einstimmig gefasst (Art. 42 Abs. 4, Art. 31 Abs. 1 EUV), Deutschland stimmt also mit. 'Insbesondere die nationale Sicherheit fällt weiterhin in die alleinige Verantwortung der einzelnen Mitgliedstaaten.' (Art. 4 Abs. 2 EUV). Operative Ausgaben mit militärischen Bezügen gehen nicht zulasten des EU-Haushalts (Art. 41 Abs. 2 EUV). Die Frage betrifft damit eine EU-Politik, über deren Ausbau Deutschland mitentscheidet. Wortlaute nach Rechtsrecherche (Cellar, konsolidierte Fassung ABl. C 202 vom 7.6.2016).",
+      "eignung": "Begrenzt geeignet als Bevölkerungsvergleich ohne Wählergruppen: Zufallsstichprobe, aktuelle Feldzeit, kein Begründungstext. Einschränkungen: Grundsatzfrage ohne konkrete Maßnahme, nur zwei Kategorien, verborgenes 'Weiß nicht', Population EU-Staatsangehörige ab 15, persönliches Interview statt Selbstausfüllen; Wortlautwechsel zwischen 104.1 und 105.2 verlangt die Bindung an genau eine Welle. Für die nationale Verteidigungspolitik (Bundeswehr, Wehrdienst) kein Ersatz.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (EB 104.1 QB1, ZA9130_q_de S. 10; EB 105.2 QB2, ZA9144_q_de S. 12)",
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.7 (Batterie vollständig)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Kommissionstabellen für Deutschland (alle Kategorien, Basis, Gewicht) ergebnisblind prüfen; Rechte an der deutschen Fassung bei der Kommission klären; Welle festlegen (104.1 oder 105.2)."
+    },
+    {
+      "id": "R8-EB-SE037-GASP",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1) (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QB1 (SE037), Item 'gemeinsame Außenpolitik'",
+      "wortlautDe": "Einleitung wie SE037. Item: 'Eine gemeinsame Außenpolitik der Mitgliedstaaten der EU'",
+      "antwortkategorien": "Dafür / Dagegen; 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "wie R8-EB-SE037-GSVP",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "GASP nach Art. 24 Abs. 1 EUV: 'vom Europäischen Rat und vom Rat einstimmig festgelegt und durchgeführt'; Beschlüsse einstimmig (Art. 31 Abs. 1 EUV). Deutschland entscheidet im Rat mit; die Frage betrifft den Umfang gemeinsamer statt nationaler Außenpolitik.",
+      "eignung": "Begrenzt geeignet (Gründe wie SE037-GSVP). Gegenstand ist ein Integrationsprinzip, nicht eine konkrete außenpolitische Entscheidung; überschneidet sich mit dem Bereich Europäische Integration.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (ZA9130_q_de S. 10)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Wie SE037-GSVP; Zuordnung zum Bereich Außenpolitik oder Europäische Integration durch Steven.",
+      "grenzfall": "Überschneidung mit Europäischer Integration"
+    },
+    {
+      "id": "R8-EB-ST0350-1",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Batterie ST0350 in allen Standardwellen 2024–2026 (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD2 (ST0350), Item 1",
+      "wortlautDe": "Einleitung (EB 104.1 QD2): 'Die EU hat als Reaktion auf die russische Invasion in der Ukraine eine Reihe von Maßnahmen ergriffen. Inwieweit stimmen Sie jeder dieser Maßnahmen zu oder nicht zu?' Item: 'Verhängung von Wirtschaftssanktionen gegen die russische Regierung, russische Unternehmen und russische Bürger (einschließlich der Verwendung von eingefrorenen russischen Vermögenswerten, um die Unterstützung für die Ukraine zu finanzieren)'",
+      "antwortkategorien": "Zustimmungsskala von 'Stimme voll und ganz zu' bis 'Stimme überhaupt nicht zu' (Zwischenstufen in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Die Einleitung setzt eine Prämisse ('als Reaktion auf die russische Invasion') und fragt nach Zustimmung zu bereits ergriffenen EU-Maßnahmen, nicht nach künftigen Entscheidungen. Batterie in allen Standardwellen 97.5 bis 105.2; Itemwortlaute ändern sich zwischen Wellen. Bis EB 100.2 zusätzlich ein Item zum Sendeverbot für RT/Sputnik (vor 2024). Der Klammerzusatz zu den eingefrorenen Vermögenswerten ist ab EB 104.1 neu; das Item verbindet damit zwei Gegenstände.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Sanktionen setzen einen einstimmigen GASP-Beschluss voraus (Art. 31 Abs. 1 EUV); die Durchführungsverordnung erlässt der Rat 'mit qualifizierter Mehrheit' (Art. 215 Abs. 1 AEUV). Deutschland stimmt also mit. Über die Verwendung eingefrorener Vermögenswerte wird auf EU-Ebene entschieden.",
+      "eignung": "Eingeschränkt geeignet: Zufallsstichprobe und aktuelle Feldzeit, aber zwei Gegenstände in einem Item (Sanktionen und Vermögenswerte), Prämisse in der Einleitung, Bewertung bereits ergriffener Maßnahmen. Für einen Vergleich nur die Fassung einer einzigen Welle verwenden; ältere Fassungen ohne Zusatz sind nicht austauschbar.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (EB 104.1 QD2, ZA9130_q_de S. 18)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; ob die Doppelung im Item für das Profil vertretbar ist (Empfehlung: nicht verwenden oder als Doppelfrage kennzeichnen)."
+    },
+    {
+      "id": "R8-EB-ST0350-2",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1) (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD2 (ST0350), Item 2",
+      "wortlautDe": "Einleitung (EB 104.1 QD2): 'Die EU hat als Reaktion auf die russische Invasion in der Ukraine eine Reihe von Maßnahmen ergriffen. Inwieweit stimmen Sie jeder dieser Maßnahmen zu oder nicht zu?' Item: 'Finanzierung des Kaufs und der Lieferung von militärischer Ausrüstung für/an die Ukraine'",
+      "antwortkategorien": "Zustimmungsskala von 'Stimme voll und ganz zu' bis 'Stimme überhaupt nicht zu' (Zwischenstufen in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Die Einleitung setzt eine Prämisse ('als Reaktion auf die russische Invasion') und fragt nach Zustimmung zu bereits ergriffenen EU-Maßnahmen, nicht nach künftigen Entscheidungen. Batterie in allen Standardwellen 97.5 bis 105.2; Itemwortlaute ändern sich zwischen Wellen. Bis EB 100.2 zusätzlich ein Item zum Sendeverbot für RT/Sputnik (vor 2024).",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Gemeint ist die EU-Maßnahme (Finanzierung über EU-Instrumente wie die Europäische Friedensfazilität, Beschluss (GASP) 2021/509; GASP-Beschlüsse einstimmig nach Art. 31 Abs. 1 EUV; militärische Ausgaben nicht aus dem EU-Haushalt nach Art. 41 Abs. 2 EUV). Deutsche Waffenlieferungen als nationale Entscheidung (Genehmigung nach Kriegswaffenkontrollgesetz, Bundeshaushalt) fragt das Item nicht ab.",
+      "eignung": "Eingeschränkt geeignet als Vergleich zur EU-Ebene: Zufallsstichprobe, aktuelle Feldzeit; Prämisse in der Einleitung; bewertet eine bereits ergriffene Maßnahme. Nicht geeignet als Ersatz für eine Frage zu deutschen Waffenlieferungen (dort nur GLES q27e, gesperrt).",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (ZA9130_q_de S. 18)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; sichtbarer Hinweis 'EU-Maßnahme, nicht deutsche Lieferungen'."
+    },
+    {
+      "id": "R8-EB-ST0350-4",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1) (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD2 (ST0350), Item 4",
+      "wortlautDe": "Einleitung (EB 104.1 QD2): 'Die EU hat als Reaktion auf die russische Invasion in der Ukraine eine Reihe von Maßnahmen ergriffen. Inwieweit stimmen Sie jeder dieser Maßnahmen zu oder nicht zu?' Item: 'Bereitstellung finanzieller und humanitärer Unterstützung für die Ukraine'",
+      "antwortkategorien": "Zustimmungsskala von 'Stimme voll und ganz zu' bis 'Stimme überhaupt nicht zu' (Zwischenstufen in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Die Einleitung setzt eine Prämisse ('als Reaktion auf die russische Invasion') und fragt nach Zustimmung zu bereits ergriffenen EU-Maßnahmen, nicht nach künftigen Entscheidungen. Batterie in allen Standardwellen 97.5 bis 105.2; Itemwortlaute ändern sich zwischen Wellen. Bis EB 100.2 zusätzlich ein Item zum Sendeverbot für RT/Sputnik (vor 2024). Bis EB 102.2 lautete das Item nur 'finanzieller Unterstützung'; die Fassungen sind nicht austauschbar.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "EU-Hilfen aus EU-Mitteln; Deutschland wirkt im Rat und über seine Beiträge zum EU-Haushalt mit. Bilaterale deutsche Hilfe fragt das Item nicht ab.",
+      "eignung": "Eingeschränkt geeignet (Prämisse, bereits ergriffene Maßnahme, zwei Arten von Hilfe in einem Item).",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (ZA9130_q_de S. 18)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; Wellenbindung wegen Wortlautwechsel."
+    },
+    {
+      "id": "R8-EB-ST0350-5",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Item ab EB 99.4 (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD2 (ST0350), Item 5",
+      "wortlautDe": "Einleitung (EB 104.1 QD2): 'Die EU hat als Reaktion auf die russische Invasion in der Ukraine eine Reihe von Maßnahmen ergriffen. Inwieweit stimmen Sie jeder dieser Maßnahmen zu oder nicht zu?' Item: 'Gewährung des Bewerberstatus als potenzielles EU-Mitglied für die Ukraine'",
+      "antwortkategorien": "Zustimmungsskala von 'Stimme voll und ganz zu' bis 'Stimme überhaupt nicht zu' (Zwischenstufen in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Die Einleitung setzt eine Prämisse ('als Reaktion auf die russische Invasion') und fragt nach Zustimmung zu bereits ergriffenen EU-Maßnahmen, nicht nach künftigen Entscheidungen. Batterie in allen Standardwellen 97.5 bis 105.2; Itemwortlaute ändern sich zwischen Wellen. Bis EB 100.2 zusätzlich ein Item zum Sendeverbot für RT/Sputnik (vor 2024).",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Der Bewerberstatus wurde 2022 vom Europäischen Rat gewährt (Datum nach allgemeiner Kenntnis, nicht gesondert belegt); ein Beitritt setzt nach Art. 49 EUV einen einstimmigen Ratsbeschluss, die Zustimmung des Europäischen Parlaments und die Ratifikation durch alle Mitgliedstaaten voraus. Deutschland entscheidet also mit.",
+      "eignung": "Eingeschränkt geeignet: bewertet eine 2022 getroffene Entscheidung. Inhaltlich näher am Bereich Europäische Integration (Erweiterung); dort liegt mit SP564 QC5 eine direktere Frage (R8-EB-SP564-QC5-UA).",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (ZA9130_q_de S. 18)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Zuordnung zum Bereich; Struktur der Tabellen.",
+      "grenzfall": "Überschneidung mit Europäischer Integration"
+    },
+    {
+      "id": "R8-EB-ST0359-UA",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Batterie ST0359 in den Standardwellen 97.5–105.2 mit wechselnden Items (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD3 (ST0359)",
+      "wortlautDe": "Einleitung (EB 104.1 QD3): 'Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen oder nicht zustimmen.' Item: 'Die EU sollte die Ukraine unterstützen, bis dauerhaft gerechter Frieden herrscht' (ab EB 103.3)",
+      "antwortkategorien": "Zustimmungsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Folgt direkt auf die Batterie ST0350 zu EU-Maßnahmen gegen die russische Invasion. Laut R6 entfallen in EB 105.2 die Items 3 und 6–13 dieser Batterie; welche der hier genannten Items in EB 105.2 noch gestellt wurden, ist in R6 nicht eindeutig zugeordnet.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Gegenstand ist die Unterstützung durch die EU; ihre Instrumente beschließt der Rat, Deutschland stimmt mit.",
+      "eignung": "Eingeschränkt geeignet: wertende Zielformel im Item ('dauerhaft gerechter Frieden'), keine Angabe der Art der Unterstützung. Nur mit sichtbarem Hinweis auf die Formulierung.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (EB 104.1 QD3, ZA9130_q_de S. 19)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; Verfügbarkeit des Items in EB 105.2; Wellenbindung."
+    },
+    {
+      "id": "R8-EB-ST0359-ZUS",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Batterie ST0359 in den Standardwellen 97.5–105.2 mit wechselnden Items (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD3 (ST0359)",
+      "wortlautDe": "Einleitung (EB 104.1 QD3): 'Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen oder nicht zustimmen.' Item: 'Die Zusammenarbeit auf EU-Ebene sollte bei Verteidigungsfragen verstärkt werden'",
+      "antwortkategorien": "Zustimmungsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Folgt direkt auf die Batterie ST0350 zu EU-Maßnahmen gegen die russische Invasion. Laut R6 entfallen in EB 105.2 die Items 3 und 6–13 dieser Batterie; welche der hier genannten Items in EB 105.2 noch gestellt wurden, ist in R6 nicht eindeutig zugeordnet.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "EU-Zusammenarbeit in der GSVP (Art. 42 EUV) mit einstimmigen Ratsbeschlüssen; nationale Sicherheit bleibt Sache der Mitgliedstaaten (Art. 4 Abs. 2 EUV).",
+      "eignung": "Begrenzt geeignet: klare Richtungsaussage, aber einseitige Zustimmungsaussage ohne Gegenposition (Zustimmungstendenz möglich).",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (EB 104.1 QD3, ZA9130_q_de S. 19)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; Verfügbarkeit des Items in EB 105.2; Wellenbindung."
+    },
+    {
+      "id": "R8-EB-ST0359-GELD",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Batterie ST0359 in den Standardwellen 97.5–105.2 mit wechselnden Items (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD3 (ST0359)",
+      "wortlautDe": "Einleitung (EB 104.1 QD3): 'Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen oder nicht zustimmen.' Item: 'In der EU sollte mehr Geld für Verteidigung ausgegeben werden'",
+      "antwortkategorien": "Zustimmungsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Folgt direkt auf die Batterie ST0350 zu EU-Maßnahmen gegen die russische Invasion. Laut R6 entfallen in EB 105.2 die Items 3 und 6–13 dieser Batterie; welche der hier genannten Items in EB 105.2 noch gestellt wurden, ist in R6 nicht eindeutig zugeordnet.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Mehrdeutig: kann EU-Instrumente (z. B. SAFE-Darlehen bis 150 Mrd. Euro, Verordnung (EU) 2025/1106) oder die Summe der nationalen Verteidigungshaushalte in der EU meinen. Über den deutschen Verteidigungshaushalt entscheidet der Bundestag; die Schuldenregel nimmt seit März 2025 Verteidigungsausgaben über 1 % des BIP aus (Art. 109 Abs. 3, Art. 115 Abs. 2 GG, BGBl. 2025 I Nr. 94).",
+      "eignung": "Eingeschränkt geeignet: einzige aktuelle Ausgabenfrage zur Verteidigung mit Zufallsstichprobe außerhalb von GESIS, aber Bezug 'in der EU' statt Deutschland; darf nicht als Frage zum deutschen Verteidigungshaushalt gezeigt werden.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (EB 104.1 QD3, ZA9130_q_de S. 19)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; Verfügbarkeit des Items in EB 105.2; Wellenbindung."
+    },
+    {
+      "id": "R8-EB-ST0359-BESCH",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Batterie ST0359 in den Standardwellen 97.5–105.2 mit wechselnden Items (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD3 (ST0359)",
+      "wortlautDe": "Einleitung (EB 104.1 QD3): 'Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen oder nicht zustimmen.' Item: 'Die Beschaffung militärischer Ausrüstung durch die Mitgliedstaaten sollte besser koordiniert werden'",
+      "antwortkategorien": "Zustimmungsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Folgt direkt auf die Batterie ST0350 zu EU-Maßnahmen gegen die russische Invasion. Laut R6 entfallen in EB 105.2 die Items 3 und 6–13 dieser Batterie; welche der hier genannten Items in EB 105.2 noch gestellt wurden, ist in R6 nicht eindeutig zugeordnet.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Beschaffung ist Sache der Mitgliedstaaten; Koordination über EU-Instrumente und Agenturen. Beide Ebenen.",
+      "eignung": "Begrenzt geeignet: einseitige Zustimmungsaussage; technischer Gegenstand mit wenig Streit in Deutschland (Einschätzung, nicht belegt).",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (EB 104.1 QD3, ZA9130_q_de S. 19)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; Verfügbarkeit des Items in EB 105.2; Wellenbindung."
+    },
+    {
+      "id": "R8-EB-ST0359-PROD",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Batterie ST0359 in den Standardwellen 97.5–105.2 mit wechselnden Items (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QD3 (ST0359)",
+      "wortlautDe": "Einleitung (EB 104.1 QD3): 'Bitte geben Sie an, inwieweit Sie den folgenden Aussagen zustimmen oder nicht zustimmen.' Item: 'Die EU muss ihre Kapazitäten zur Produktion von militärischer Ausrüstung stärken'",
+      "antwortkategorien": "Zustimmungsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Folgt direkt auf die Batterie ST0350 zu EU-Maßnahmen gegen die russische Invasion. Laut R6 entfallen in EB 105.2 die Items 3 und 6–13 dieser Batterie; welche der hier genannten Items in EB 105.2 noch gestellt wurden, ist in R6 nicht eindeutig zugeordnet.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU"
+      ],
+      "ebeneBegruendung": "EU-Industriepolitik für Verteidigung; Umsetzung durch Unternehmen und Mitgliedstaaten.",
+      "eignung": "Begrenzt geeignet: einseitige Zustimmungsaussage mit 'muss'.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (EB 104.1 QD3, ZA9130_q_de S. 19)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; Verfügbarkeit des Items in EB 105.2; Wellenbindung."
+    },
+    {
+      "id": "R8-EB-ST0939-ZOLL",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Standard-Eurobarometer 105 (EB 105.2); auch EB 103.3, nicht in EB 104.1 (ZA9144 bei GESIS, gesperrt)",
+      "feldzeit": "DE 12.03.–01.04.2026 (EB 105.2 = Standard-Eurobarometer 105; EU-weit 12.03.–05.04.2026 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.515)",
+      "fallzahl": "1.515 (R6 Abschnitt 4)",
+      "fragenummer": "EB 105.2 QB12 (ST0939), Item 2",
+      "wortlautDe": "Item: 'Die EU sollte als Reaktion Zölle einführen, um ihre Interessen zu verteidigen (z. B. wenn andere Länder ihre Zölle auf Importe aus der EU erhöhen)'",
+      "antwortkategorien": "Antwortskala in R6 nicht zitiert; 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Einleitung der Batterie in R6 nicht zitiert. Das Item nennt den Anlass ('als Reaktion', Beispiel erhöhter Zölle anderer Länder) im Fragetext.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU"
+      ],
+      "ebeneBegruendung": "Die 'gemeinsame Handelspolitik' ist ausschließliche Zuständigkeit der EU (Art. 3 Abs. 1 lit. e AEUV); der Rat beschließt grundsätzlich mit qualifizierter Mehrheit (Art. 207 Abs. 4 AEUV). Deutschland kann Zölle nicht selbst festlegen; es wirkt nur im Rat mit.",
+      "eignung": "Eingeschränkt geeignet: Zufallsstichprobe, aktuelle Feldzeit; Anlass im Fragetext; reine EU-Zuständigkeit. Für Beziehungen zu den USA oder China als deutsche Politik kein Ersatz.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.1 (EB 105.2 QB12, ZA9144_q_de S. 17)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3613 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3613_105_2_std105_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Einleitung und Skala aus dem deutschen Fragebogen nachtragen (nur nach GESIS-Klärung oder über die Kommission); Struktur der Tabellen."
+    },
+    {
+      "id": "R8-EB-SP564-QC5-UA",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "Spezial-Eurobarometer 564 'Attitudes towards EU Enlargement' (EB 103.2) (ZA9127 bei GESIS, gesperrt)",
+      "feldzeit": "DE 19.02.–10.03.2025 (EB 103.2 mit SP564, SP565, SP566; EU-weit 18.02.–16.03.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.510)",
+      "fallzahl": "1.510 (R6)",
+      "fragenummer": "SP564 QC5, Länderitem Ukraine",
+      "wortlautDe": "'Wären Sie dafür oder dagegen, dass sie der EU beitreten, sobald sie alle Bedingungen für die Mitgliedschaft erfüllt haben?' (je Land, u. a. Ukraine). Einleitung und genaue Länderliste in R6 nicht zitiert.",
+      "antwortkategorien": "Dafür/Dagegen-Format laut Fragetext; genaue Kategorien in R6 nicht zitiert; 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Bedingung im Fragetext ('sobald sie alle Bedingungen ... erfüllt haben'). Vorausgehend QC3 zur Erweiterung allgemein.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Beitritt nach Art. 49 EUV: einstimmiger Ratsbeschluss nach Zustimmung des Europäischen Parlaments und Ratifikation durch alle Mitgliedstaaten (Rechtsrecherche); der innerdeutsche Ratifikationsweg ist nicht gesondert belegt.",
+      "eignung": "Begrenzt geeignet: Zufallsstichprobe, Feldzeit Februar/März 2025, klare Entscheidungsfrage mit Bedingung. Primär Bereich Europäische Integration; als außenpolitischer Bezug zur Ukraine nur Grenzfall.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.7 (SP564 QC5, ZA9127_q_de S. 49)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3413 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)"
+      ],
+      "offenePunkte": "Länderliste, Kategorien und Einleitung nachtragen; Zuordnung zum Bereich.",
+      "grenzfall": "primär Europäische Integration"
+    },
+    {
+      "id": "R8-EB-SP572-QB5-6",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Spezial-Eurobarometer 572 'The Digital Decade 2026' (EB 105.1) (ZA9143 bei GESIS, gesperrt)",
+      "feldzeit": "DE 05.02.–24.02.2026 (EB 105.1 mit SP572 Digital Decade 2026; EU-weit 05.02.–01.03.2026 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.513)",
+      "fallzahl": "1.513 (R6)",
+      "fragenummer": "SP572 QB5, Item 6",
+      "wortlautDe": "'Inwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu? Die EU sollte in den nächsten 10 Jahren mit EU-Mitgliedstaaten zusammenarbeiten, um … die Regulierung von Online-Plattformen zu stärken (z. B. soziale Online-Netzwerke, Marktplätze, App-Stores usw.)'",
+      "antwortkategorien": "Zustimmungsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Teil einer Batterie zu Zielen der EU für die nächsten zehn Jahre; die Auslassung '…' steht so in R6. Einseitige Zustimmungsaussage ohne Gegenposition.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Plattformregulierung erfolgt vor allem durch EU-Recht (Digital Services Act, Verordnung (EU) 2022/2065, gilt seit 17.02.2024); Durchsetzung teils national (Digitale-Dienste-Gesetz, BGBl. 2024 I Nr. 149; Bundesnetzagentur nach § 12 Abs. 1 DDG zuständige Behörde). Das Item nennt ausdrücklich EU und Mitgliedstaaten.",
+      "eignung": "Begrenzt geeignet: einzige aktuelle Bevölkerungsfrage mit Zufallsstichprobe außerhalb von GESIS zur Plattformregulierung; aber einseitige Zustimmungsaussage, Zehnjahresperspektive, keine Abwägung mit Meinungsfreiheit. Hassrede und Desinformation sind nicht gesondert benannt.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.2 (SP572 QB5 Item 6, ZA9143_q_de S. 18)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3682 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3682_105_1_sp572_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Vollständige Einleitung (Auslassung) und Kategorien; Struktur der Tabellen für Deutschland."
+    },
+    {
+      "id": "R8-EB-SP572-QB12-KI",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Spezial-Eurobarometer 572 'The Digital Decade 2026' (EB 105.1) (ZA9143 bei GESIS, gesperrt)",
+      "feldzeit": "DE 05.02.–24.02.2026 (EB 105.1 mit SP572 Digital Decade 2026; EU-weit 05.02.–01.03.2026 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.513)",
+      "fallzahl": "1.513 (R6)",
+      "fragenummer": "SP572 QB12",
+      "wortlautDe": "'Wenn Sie an künstliche Intelligenz (KI) denken, welche der folgenden Aussagen kommt Ihrer Meinung am nächsten?' – 'Die Entwicklung von KI sollte sorgfältig reguliert werden, um die Sicherheit zu gewährleisten, auch wenn dies bedeutet, dass KI- Entwickler/Innen gewissen Einschränkungen unterliegen.' / 'Die Entwicklung von KI sollte mit so wenigen Einschränkungen wie möglich erlaubt sein, auch wenn dies gewisse Sicherheitsrisiken mit sich bringt.'",
+      "antwortkategorien": "Zwei Aussagen zur Wahl; weitere Kategorien in R6 nicht zitiert; 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Nennt die Abwägung ausdrücklich in beiden Optionen (Sicherheit gegen Einschränkungen). Keine einseitige Begründung.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "KI-Regulierung erfolgt vor allem durch die KI-Verordnung (EU) 2024/1689, geändert durch Verordnung (EU) 2026/1744 (Verschiebung der Hochrisiko-Fristen); Marktaufsicht national (KI-Marktüberwachungsgesetz, BGBl. 2026 I Nr. 223, Bundesnetzagentur). Das Item nennt keine Ebene.",
+      "eignung": "Am besten geeignete gefundene Frage im Bereich: Zufallsstichprobe, Feldzeit Februar 2026, ausgewogene Abwägung, keine Ebene vorgegeben. Einschränkungen: Population EU-Staatsangehörige ab 15, CAPI, verborgenes 'Weiß nicht'.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.2 (SP572 QB12, ZA9143_q_de S. 21)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3682 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3682_105_1_sp572_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Struktur der Tabellen; Rechte am deutschen Wortlaut."
+    },
+    {
+      "id": "R8-EB-SP566-QE6-ALTER",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Spezial-Eurobarometer 566 'The Digital Decade 2025' (EB 103.2) (ZA9127 bei GESIS, gesperrt)",
+      "feldzeit": "DE 19.02.–10.03.2025 (EB 103.2 mit SP564, SP565, SP566; EU-weit 18.02.–16.03.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.510)",
+      "fallzahl": "1.510 (R6)",
+      "fragenummer": "SP566 QE6, Item Alterskontrolle",
+      "wortlautDe": "'Wie dringend sind Ihrer Meinung nach die Maßnahmen von öffentlichen Behörden zum Schutz von Kindern im Internet …?' – Item: 'Hinsichtlich der Einführung von Mechanismen zur Alterskontrolle, um Inhalte einzuschränken, die altersunangemessen sind'",
+      "antwortkategorien": "Dringlichkeitsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Die Frage setzt voraus, dass Maßnahmen nötig sind, und fragt nur nach deren Dringlichkeit. Kein Mindestalter für soziale Medien, sondern Alterskontrolle für altersunangemessene Inhalte.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Schutz Minderjähriger auf Plattformen nach Art. 28 DSA (EU, ohne feste Altersgrenze); Jugendmedienschutz in Deutschland nach JuSchG (Bund, § 24a) und Jugendmedienschutz-Staatsvertrag (Länder, Fassung des Sechsten Medienänderungsstaatsvertrags seit 01.12.2025). Der Fragetext nennt 'öffentliche Behörden' ohne Ebene.",
+      "eignung": "Eingeschränkt geeignet: Zufallsstichprobe, Feldzeit Februar/März 2025; aber Dringlichkeits- statt Pro-/Contra-Format und kein Bezug auf eine Altersgrenze für soziale Medien. Kein Ersatz für die Streitfrage 'Mindestalter für soziale Medien'.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.2 (SP566 QE6, ZA9127_q_de S. 97)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3362 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3362_103_2_sp566_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Vollständige Einleitung (Auslassung in R6) und Kategorien; Struktur der Tabellen."
+    },
+    {
+      "id": "R8-EB-SP566-QE4-7",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Spezial-Eurobarometer 566 'The Digital Decade 2025' (EB 103.2) (ZA9127 bei GESIS, gesperrt)",
+      "feldzeit": "DE 19.02.–10.03.2025 (EB 103.2 mit SP564, SP565, SP566; EU-weit 18.02.–16.03.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.510)",
+      "fallzahl": "1.510 (R6)",
+      "fragenummer": "SP566 QE4, Item 7",
+      "wortlautDe": "Item: 'Bekämpfung und Minimierung des Problems von Fake News und Desinformationen im Internet' (Einleitung in R6 nicht wörtlich zitiert; Wichtigkeit für Behörden)",
+      "antwortkategorien": "Wichtigkeitsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Wichtigkeitsfrage ohne Gegenposition; keine Abwägung mit Meinungsfreiheit.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Desinformation betrifft EU-Recht (DSA) und nationales Recht (Strafrecht, Medienaufsicht der Länder).",
+      "eignung": "Nicht geeignet als Positionsfrage: Wichtigkeit ohne Gegenposition misst keine Streitfrage. Höchstens als Kontext.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.2 (SP566 QE4 Item 7, ZA9127_q_de S. 96)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3362 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3362_103_2_sp566_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "–"
+    },
+    {
+      "id": "R8-EB-SE035-5-TECHSTEUER",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Standard-Eurobarometer 104 (EB 104.1); Item in EB 97.5 bis 104.1, nicht in 105.2 (ZA9130 bei GESIS, gesperrt)",
+      "feldzeit": "DE 09.–29.10.2025 (EB 104.1 = Standard-Eurobarometer 104; EU-weit 09.10.–03.11.2025 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.516)",
+      "fallzahl": "1.516 (R6 Abschnitt 4)",
+      "fragenummer": "EB 104.1 QB2 (SE035), Item 5",
+      "wortlautDe": "Item: 'Es sollte in der EU eine gerechte Besteuerung großer Technologieunternehmen geben'",
+      "antwortkategorien": "Zustimmungsskala (Kategorien und Einleitung in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Wertendes Wort 'gerechte' im Item; Zustimmung zu einem Grundsatz, keine konkrete Maßnahme.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Unternehmensbesteuerung ist überwiegend national; EU-Rahmen über Richtlinien (z. B. globale Mindeststeuer). In Deutschland prüft die Koalition 2025 eine Abgabe für Online-Plattformen, die Medieninhalte nutzen (Koalitionsvertrag 2025, Z. 3913–3914).",
+      "eignung": "Eingeschränkt geeignet: wertende Formulierung macht Ablehnung unwahrscheinlich und die Unterscheidungskraft gering (Einschätzung). Thematisch eher Wirtschaft und Verteilung.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.2 (EB 104.1 QB2, ZA9130_q_de S. 11)",
+        "Koalitionsvertrag 2025, https://www.cdu.de/app/uploads/2025/04/KoaV-2025-Gesamt-final-0424.pdf, PDF-S. 124, Z. 3913–3914",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3378 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3378_104_1_std104_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Einleitung und Kategorien nachtragen.",
+      "grenzfall": "Überschneidung mit Wirtschaft und Verteilung"
+    },
+    {
+      "id": "R8-EB-SE037-DBM",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Standard-Eurobarometer 105 (EB 105.2); Item in EB 97.5 bis 103.3 und 105.2 (ZA9144 bei GESIS, gesperrt)",
+      "feldzeit": "DE 12.03.–01.04.2026 (EB 105.2 = Standard-Eurobarometer 105; EU-weit 12.03.–05.04.2026 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.515)",
+      "fallzahl": "1.515 (R6 Abschnitt 4)",
+      "fragenummer": "EB 105.2 QB2 (SE037/SE034), Item 'digitaler Binnenmarkt'",
+      "wortlautDe": "Einleitung wie SE037. Item: 'Ein digitaler Binnenmarkt innerhalb der EU'",
+      "antwortkategorien": "Dafür / Dagegen; 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Batterie gemeinsamer EU-Politiken.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU"
+      ],
+      "ebeneBegruendung": "Binnenmarktrecht ist EU-Recht; Deutschland wirkt im Rat mit.",
+      "eignung": "Kaum geeignet: abstrakter Begriff ohne Streitgegenstand in der deutschen Debatte (Einschätzung).",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.2",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3613 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3613_105_2_std105_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Genaue Fragenummer in EB 105.2 nicht in R6 belegt."
+    },
+    {
+      "id": "R8-EB-SP554-QB11",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Spezial-Eurobarometer 554 'Artificial Intelligence and the future of work' (EB 101.4) (ZA8844 bei GESIS, gesperrt)",
+      "feldzeit": "DE 29.04.–21.05.2024 (EB 101.4 mit SP554; EU-weit 25.04.–15.05.2024 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "Modus für Deutschland in R6 nicht geprüft; Kommissions-Schnittstelle: Face-to-face",
+      "fallzahl": "1.603 (R6)",
+      "fragenummer": "SP554 QB11",
+      "wortlautDe": "Wichtigkeit von Regeln für KI am Arbeitsplatz, u. a. Items 'Verbot vollständig automatisierter Entscheidungsprozesse', 'Einschränkung der automatischen Überwachung von Beschäftigten' (Einleitung in R6 nicht wörtlich zitiert)",
+      "antwortkategorien": "Wichtigkeitsskala (Kategorien in R6 nicht zitiert); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Wichtigkeit ohne Gegenposition.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "KI-Verordnung (EU) und Plattformarbeits-Richtlinie (EU); Arbeitsrecht und Mitbestimmung national.",
+      "eignung": "Eingeschränkt geeignet: Wichtigkeitsformat; Feldzeit April/Mai 2024; Thema eher Arbeit als Digitalpolitik.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.2 (SP554 QB11, ZA8844_q_de S. 16)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3222 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)"
+      ],
+      "offenePunkte": "Modus Deutschland in EB 101.4 laut R6 nicht geprüft.",
+      "grenzfall": "Überschneidung mit Arbeit"
+    },
+    {
+      "id": "R8-EB-SP568-QC9",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Spezial-Eurobarometer 568 'Protecting and Promoting Democracy' (EB 103.4) (ZA9129 bei GESIS, gesperrt)",
+      "feldzeit": "DE 05.05.–26.05.2025 (EB 103.4 mit EP-Frühjahrsbefragung 2025, SP567, SP568)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6: CAPI 1.530)",
+      "fallzahl": "1.530 (R6)",
+      "fragenummer": "SP568 QC9",
+      "wortlautDe": null,
+      "antwortkategorien": "Wichtigkeitsskala laut R6; Kategorien nicht zitiert",
+      "kontext": "Laut R6 Wichtigkeit von Transparenzmaßnahmen im Online-Wahlkampf; deutscher Wortlaut in R6 nicht zitiert.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Transparenz politischer Werbung ist EU-rechtlich geregelt (Verordnung über politische Werbung); Wahlrecht national. Ebene im Fragetext nicht geprüft.",
+      "eignung": "Nicht prüfbar ohne Wortlaut; Wichtigkeitsformat spricht gegen eine Positionsfrage.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.2 (SP568 QC9, ZA9129_q_de S. 56)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3383 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)"
+      ],
+      "offenePunkte": "Deutschen Wortlaut erst nach GESIS-Klärung oder über die Kommission prüfbar."
+    },
+    {
+      "id": "R8-EB-SP557-QA7-OA",
+      "bereich": "Bildung und Forschung",
+      "erhebung": "Spezial-Eurobarometer 557 'European citizens’ knowledge and attitudes towards science and technology' (EB 102.1) (ZA8904 bei GESIS, gesperrt)",
+      "feldzeit": "DE 13.09.–04.10.2024 (EB 102.1 mit SP557; EU-weit 12.09.–10.10.2024 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6; CAVI nur in anderen Ländern)",
+      "fallzahl": "1.570 (R6)",
+      "fragenummer": "SP557 QA7, Item zu frei zugänglichen Forschungsergebnissen",
+      "wortlautDe": "Item: 'Die Ergebnisse öffentlich finanzierter Forschung, wie z. B. wissenschaftliche Artikel und Daten, sollten kostenlos online zur Verfügung gestellt werden'",
+      "antwortkategorien": "Fünfstufige Zustimmungsskala mit Mittelkategorie (R6); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Teil einer Aussagebatterie zu Wissenschaft (Einleitung in R6 nicht zitiert). Einseitige Zustimmungsaussage.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Open-Access-Vorgaben gibt es in EU-Förderprogrammen und bei Bund und Ländern (Hochschul- und Wissenschaftsrecht der Länder); kein einzelner Entscheidungsträger.",
+      "eignung": "Begrenzt geeignet: Zufallsstichprobe, Feldzeit September/Oktober 2024; aber Nischenthema ohne Bezug zu den Streitfragen Bund-Länder, BAföG oder Forschungsausgaben.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.6 (SP557 QA7, ZA8904_q_de S. 5)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3227 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3227_102_1_sp557_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Einleitung und Kategorien nachtragen; Struktur der Tabellen."
+    },
+    {
+      "id": "R8-EB-SP557-QA7-GRENZE",
+      "bereich": "Bildung und Forschung",
+      "erhebung": "Spezial-Eurobarometer 557 (EB 102.1) (ZA8904 bei GESIS, gesperrt)",
+      "feldzeit": "DE 13.09.–04.10.2024 (EB 102.1 mit SP557; EU-weit 12.09.–10.10.2024 laut Kommissions-Schnittstelle)",
+      "population": "Staatsangehörige des jeweiligen Landes und EU-Bürger der 27 Mitgliedstaaten, wohnhaft in Deutschland, ab 15 Jahren (R6 Abschnitt 4, nach GESIS-Metadaten und Technischer Spezifikation). Nicht die deutsche Wahlbevölkerung; weicht auch von der ESS-Population ab.",
+      "stichprobe": "Zufallsstichprobe: mehrstufig geschichtet, Zufallskoordinate, Random Route, Zufallsauswahl im Haushalt; Ost- und Westdeutschland getrennt gezogen (R6 Abschnitt 4). Gewichte: Post-Stratifikation nach Geschlecht×Alter, Region, Urbanisierung; kein Designgewicht; Deutschland-Gewicht w1de (R6 Abschnitt 4).",
+      "modus": "CAPI (R6; CAVI nur in anderen Ländern)",
+      "fallzahl": "1.570 (R6)",
+      "fragenummer": "SP557 QA7, Item zu Grenzen der Wissenschaft",
+      "wortlautDe": "Item: 'Es sollte keine Grenze geben, was Wissenschaft untersuchen darf'",
+      "antwortkategorien": "Fünfstufige Zustimmungsskala mit Mittelkategorie (R6); 'Weiß nicht' wird laut Forschungsnotizen nicht vorgelesen ('HIDESPECIAL CODE 999'), nur spontan erfasst (R6 Abschnitt 5).",
+      "kontext": "Grundsatzaussage zur Forschungsfreiheit; Einleitung in R6 nicht zitiert.",
+      "zugang": "Gewichtete Ergebnistabellen der Europäischen Kommission (data.europa.eu, Volumes A/AA/AP/AAP/B/BP/C/D; Struktur für Deutschland ungeprüft). Einzeldaten und deutsche Länderfragebögen nur über GESIS: gesperrt. Die Kommission veröffentlicht für keine Befragung 2024–2026 einen Fragebogen als eigene Datei (Eurobarometer-Schnittstelle, Lieferarten geprüft am 03.10.2026, 22:34 UTC).",
+      "bedingungen": "Kommission: Beschluss 2011/833/EU, Art. 4: Dokumente stehen 'für kommerzielle oder nichtkommerzielle Zwecke', 'gebührenfrei' und 'ohne Einzelbeantragung' zur Weiterverwendung; Art. 6 Abs. 2: Quellenangabe, keine verzerrte Darstellung, Haftungsausschluss (wörtlich nach R6 Abschnitt 3.1). Lizenzangabe der Tabellen auf data.europa.eu: 'COM_REUSE' (European Commission reuse notice), von mir für STD104, STD105, SP566, SP572 und SP557 am 03.10.2026, 22:46 UTC bestätigt. Eine Regel zu KI-Systemen habe ich in den Bedingungen der Kommission nicht gefunden (ebenso R6); das ist weder eine Erlaubnis noch eine zusätzliche Genehmigungspflicht. Einzeldaten bei GESIS: § 4 GESIS-Nutzungsbedingungen (gültig ab 04.02.2026): 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' (wörtlich nach R3/R6). Rechte an den deutschen Fragetexten laut GESIS-Vermerk bei der EU ('© European Communities', R6 Abschnitt 3.3); ausdrückliche Freigabe für die Website fehlt.",
+      "wahlfrage": "Keine Frage zur Bundestagswahl oder Wahlabsicht in den Standard- und Spezialwellen (R6 Abschnitt 1 und 7). Links-Rechts-Selbsteinstufung D1 in Standardwellen (R6). Wählergruppenvergleiche nicht möglich.",
+      "ebene": [
+        "national",
+        "EU"
+      ],
+      "ebeneBegruendung": "Prinzip der Wissenschaftsfreiheit (Art. 5 Abs. 3 GG; Art. 13 EU-Grundrechtecharta); keine konkrete Entscheidung einer Ebene. Berührt die Debatte um Zivilklauseln nur mittelbar.",
+      "eignung": "Eingeschränkt geeignet: Prinzipienfrage, keine Maßnahme; als Beleg für die Streitfrage 'Zivilklausel' nicht ausreichend.",
+      "stichprobenart": "Zufallsstichprobe",
+      "wortlautQuelle": "Deutscher Wortlaut wörtlich aus R6 übernommen (R6 hat den deutschen Länderfragebogen bei GESIS gelesen). Von mir wegen der GESIS-Sperre nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R6-eurobarometer.md Abschnitt 6.6 (ZA8904_q_de S. 5)",
+        "https://europa.eu/eurobarometer/api/survey/get/one?id=3227 (nur Metadaten: Feldzeit, Methode, Lieferarten; abgerufen 03.10.2026, 22:34 UTC)",
+        "https://data.europa.eu/api/hub/search/datasets/s3227_102_1_sp557_eng (Lizenzangabe COM_REUSE, abgerufen 03.10.2026, 22:46 UTC; Tabellen nicht geöffnet)"
+      ],
+      "offenePunkte": "Wie oben."
+    },
+    {
+      "id": "R8-GLES25-q27e",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES Querschnitt 2025 Nachwahl (ZA10100), GESIS: gesperrt",
+      "feldzeit": "CAWI 24.02.–14.04.2025, Papier 24.02.–23.04.2025 (nach R1)",
+      "population": "Personen mit deutscher Staatsangehörigkeit ab 16 Jahren, gemeldet mit Hauptwohnsitz in der Bundesrepublik Deutschland (ZA10100-Dokumentation PDF-S. 11, nach R1/R3)",
+      "stichprobe": "Zufallsstichprobe: mehrstufige Registerstichprobe mit Ost-Oversampling, etwa ein Fünftel der Sample Points über Adressen der Deutschen Post; 12 Gewichtungsvariablen (nach R1)",
+      "modus": "CAWI und Papier (Selbstausfüller)",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "q27e (Papier F63)",
+      "wortlautDe": "Einleitung 'Was halten Sie von folgenden Aussagen?'; Item '(E) Deutschland sollte die Lieferung von Waffen an die Ukraine beenden.'",
+      "antwortkategorien": "(1) stimme voll und ganz zu, (2) stimme eher zu, (3) teils/teils, (4) stimme eher nicht zu, (5) stimme überhaupt nicht zu; (-99) keine Angabe",
+      "kontext": "Batterie mit Items A–D zu anderen Themen (Anpassung an deutsche Kultur, gendergerechte Sprache, Staat und Wirtschaft, Einkommensunterschiede); kein Eingangsfilter dokumentiert. Formulierung als Beendigung.",
+      "zugang": "Einzeldaten über GESIS mit Registrierung (ZA10100 v4.0.0, doi:10.4232/5.ZA10100.4.0.0): gesperrt (GESIS-Sperre). Keine neuen Abrufe durch mich.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie Safeguarded – A.' (nach R1).",
+      "wahlfrage": "Nachwahlstudie zur Bundestagswahl 2025; die Fragenummer einer Wahlrückerinnerung ist in R1–R7 nicht dokumentiert und wurde wegen der GESIS-Sperre nicht geprüft.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Deutsche Waffenlieferungen sind eine Entscheidung der Bundesregierung (Genehmigung, Haushalt).",
+      "eignung": "Inhaltlich am besten passende aktuelle Frage zur deutschen Ukraine-Unterstützung mit Zufallsstichprobe und Wahlrückerinnerung in derselben Studie; gesperrt, bis GESIS eine KI-Ausnahme gewährt.",
+      "stichprobenart": "Zufallsstichprobe",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1 (R1 hat die GESIS-Dokumentation vor der Sperre gelesen); von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (ZA10100 PDF-S. 147)"
+      ],
+      "offenePunkte": "GESIS-Klärung; Wortlautrechte."
+    },
+    {
+      "id": "R8-GLES25-q27o",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES Querschnitt 2025 Nachwahl (ZA10100), GESIS: gesperrt",
+      "feldzeit": "CAWI 24.02.–14.04.2025, Papier 24.02.–23.04.2025 (nach R1)",
+      "population": "Personen mit deutscher Staatsangehörigkeit ab 16 Jahren, gemeldet mit Hauptwohnsitz in der Bundesrepublik Deutschland (ZA10100-Dokumentation PDF-S. 11, nach R1/R3)",
+      "stichprobe": "Zufallsstichprobe: mehrstufige Registerstichprobe mit Ost-Oversampling, etwa ein Fünftel der Sample Points über Adressen der Deutschen Post; 12 Gewichtungsvariablen (nach R1)",
+      "modus": "CAWI und Papier (Selbstausfüller)",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "q27o (Papier F73)",
+      "wortlautDe": "'(O) Deutschland sollte Israel weiterhin mit Waffen unterstützen' (ohne Schlusspunkt im Original)",
+      "antwortkategorien": "(1) stimme voll und ganz zu, (2) stimme eher zu, (3) teils/teils, (4) stimme eher nicht zu, (5) stimme überhaupt nicht zu; (-99) keine Angabe",
+      "kontext": "Batterie mit Items zu Wahlalter 16 und Gesetzen mit AfD-Stimmen. Formulierung als Fortsetzung.",
+      "zugang": "Einzeldaten über GESIS mit Registrierung (ZA10100 v4.0.0, doi:10.4232/5.ZA10100.4.0.0): gesperrt (GESIS-Sperre). Keine neuen Abrufe durch mich.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie Safeguarded – A.' (nach R1).",
+      "wahlfrage": "Nachwahlstudie zur Bundestagswahl 2025; die Fragenummer einer Wahlrückerinnerung ist in R1–R7 nicht dokumentiert und wurde wegen der GESIS-Sperre nicht geprüft.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Genehmigung von Rüstungsexporten durch die Bundesregierung (Kriegswaffenkontrollgesetz, Außenwirtschaftsrecht).",
+      "eignung": "Inhaltlich passend zur Streitfrage Rüstungsexporte (Wahl-O-Mat-These 15); sensibler Gegenstand; gesperrt. Zeitbezug: Feldzeit vor der Exportbeschränkung vom 08.08.2025, die zum 24.11.2025 aufgehoben wurde (Rechtsrecherche).",
+      "stichprobenart": "Zufallsstichprobe",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1 (R1 hat die GESIS-Dokumentation vor der Sperre gelesen); von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (ZA10100 PDF-S. 166)"
+      ],
+      "offenePunkte": "GESIS-Klärung; inhaltliche Entscheidung über die Aufnahme."
+    },
+    {
+      "id": "R8-GLES25-q170",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES Querschnitt 2025 Nachwahl (ZA10100), GESIS: gesperrt",
+      "feldzeit": "CAWI 24.02.–14.04.2025, Papier 24.02.–23.04.2025 (nach R1)",
+      "population": "Personen mit deutscher Staatsangehörigkeit ab 16 Jahren, gemeldet mit Hauptwohnsitz in der Bundesrepublik Deutschland (ZA10100-Dokumentation PDF-S. 11, nach R1/R3)",
+      "stichprobe": "Zufallsstichprobe: mehrstufige Registerstichprobe mit Ost-Oversampling, etwa ein Fünftel der Sample Points über Adressen der Deutschen Post; 12 Gewichtungsvariablen (nach R1)",
+      "modus": "CAWI und Papier (Selbstausfüller)",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "q170 (Papier F115)",
+      "wortlautDe": "'Es gibt Diskussionen, statt der ausgesetzten Wehrpflicht in Zukunft ein verpflichtendes Gesellschaftsjahr einzuführen. Demnach sollen junge Menschen ein Jahr lang Dienst wahlweise bei der Bundeswehr oder im sozialen Bereich leisten müssen. Inwieweit stimmen Sie diesem Vorschlag zu?'",
+      "antwortkategorien": "(1) stimme voll und ganz zu bis (5) stimme überhaupt nicht zu; (-99)",
+      "kontext": "Einleitender Kontextsatz ('Es gibt Diskussionen ...') beschreibt den Vorschlag; keine Begründung. Misst ein Gesellschaftsjahr mit Wahl zwischen Bundeswehr und sozialem Bereich, keine reine Wehrpflicht.",
+      "zugang": "Einzeldaten über GESIS mit Registrierung (ZA10100 v4.0.0, doi:10.4232/5.ZA10100.4.0.0): gesperrt (GESIS-Sperre). Keine neuen Abrufe durch mich.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie Safeguarded – A.' (nach R1).",
+      "wahlfrage": "Nachwahlstudie zur Bundestagswahl 2025; die Fragenummer einer Wahlrückerinnerung ist in R1–R7 nicht dokumentiert und wurde wegen der GESIS-Sperre nicht geprüft.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Wehrdienst regelt der Bund (Wehrpflichtgesetz, seit 01.01.2026 in der Fassung des Wehrdienst-Modernisierungsgesetzes, BGBl. 2025 I Nr. 370). Ob ein Gesellschaftsjahr mit sozialer Alternative eine Grundgesetzänderung bräuchte, habe ich nicht geprüft.",
+      "eignung": "Inhaltlich passend, aber nicht deckungsgleich mit dem Wehrdienst-Modernisierungsgesetz (in Kraft seit 01.01.2026: Bereitschaftserklärung, Musterung, Bedarfswehrpflicht nur durch weiteres Gesetz nach § 2a WPflG); Rechtslage hat sich seit der Feldzeit geändert; gesperrt.",
+      "stichprobenart": "Zufallsstichprobe",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1 (R1 hat die GESIS-Dokumentation vor der Sperre gelesen); von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (ZA10100 PDF-S. 241)"
+      ],
+      "offenePunkte": "GESIS-Klärung; sichtbarer Hinweis auf die geänderte Rechtslage."
+    },
+    {
+      "id": "R8-GLESP29-2880cf",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES-Panel 2025, Welle 29 (GESIS): gesperrt",
+      "feldzeit": "16.–30.01.2025 (ZA10118, nach R1; nur Vorabfassung des Frageprogramms geprüft)",
+      "population": "zur Bundestagswahl 2025 wahlberechtigte deutsche Bevölkerung (W29: 'mit Internetzugang')",
+      "stichprobe": "Nicht-Wahrscheinlichkeitsauswahl: Quotenstichprobe aus Online-Panels (nach R1)",
+      "modus": "CAWI",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "kp29_2880cf",
+      "wortlautDe": "'Deutschland sollte pro Jahr mindestens zwei Prozent seiner Wirtschaftsleistung für die Verteidigung ausgeben.'",
+      "antwortkategorien": "5 Stufen von (1) stimme überhaupt nicht zu bis (5) stimme voll und ganz zu",
+      "kontext": "Aussagebatterie; Zielmarke im Item.",
+      "zugang": "Einzeldaten über GESIS: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie A' (GLES-Panel, nach R1).",
+      "wahlfrage": "Panel zur Bundestagswahl 2025; Wahlfragen in R1 nicht einzeln belegt.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Bundeshaushalt; NATO-Zielmarke als Bezug.",
+      "eignung": "Inhaltlich passend (Verteidigungsausgaben Deutschlands), aber Quotenstichprobe, Vorabfassung, gesperrt; Zielmarke seit NATO-Gipfel 2025 überholt.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1; von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (W29 Vorabfassung PDF-S. 40)"
+      ],
+      "offenePunkte": "GESIS-Klärung; Entscheidung über Online-Quotenstichproben; W29 nur als Vorabfassung belegt."
+    },
+    {
+      "id": "R8-GLESP29-2880cz",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES-Panel 2025, Welle 29 (GESIS): gesperrt",
+      "feldzeit": "16.–30.01.2025 (ZA10118, nach R1; nur Vorabfassung des Frageprogramms geprüft)",
+      "population": "zur Bundestagswahl 2025 wahlberechtigte deutsche Bevölkerung (W29: 'mit Internetzugang')",
+      "stichprobe": "Nicht-Wahrscheinlichkeitsauswahl: Quotenstichprobe aus Online-Panels (nach R1)",
+      "modus": "CAWI",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "kp29_2880cz",
+      "wortlautDe": "'In Deutschland sollte eine Wehrpflicht gelten.'",
+      "antwortkategorien": "5 Stufen von (1) stimme überhaupt nicht zu bis (5) stimme voll und ganz zu",
+      "kontext": "Aussagebatterie.",
+      "zugang": "Einzeldaten über GESIS: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie A' (GLES-Panel, nach R1).",
+      "wahlfrage": "Panel zur Bundestagswahl 2025; Wahlfragen in R1 nicht einzeln belegt.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Wehrpflichtgesetz (Bund).",
+      "eignung": "Inhaltlich direkt passend; Quotenstichprobe, gesperrt.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1; von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (W29 Vorabfassung PDF-S. 40)"
+      ],
+      "offenePunkte": "GESIS-Klärung; Entscheidung über Online-Quotenstichproben; W29 nur als Vorabfassung belegt."
+    },
+    {
+      "id": "R8-GLESP29-2880bk",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES-Panel 2025, Welle 29 (GESIS): gesperrt",
+      "feldzeit": "16.–30.01.2025 (ZA10118, nach R1; nur Vorabfassung des Frageprogramms geprüft)",
+      "population": "zur Bundestagswahl 2025 wahlberechtigte deutsche Bevölkerung (W29: 'mit Internetzugang')",
+      "stichprobe": "Nicht-Wahrscheinlichkeitsauswahl: Quotenstichprobe aus Online-Panels (nach R1)",
+      "modus": "CAWI",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "kp29_2880bk",
+      "wortlautDe": "'Deutschland sollte gegenüber Russland weniger auf Kooperation und mehr auf Konfrontation setzen.'",
+      "antwortkategorien": "5 Stufen von (1) stimme überhaupt nicht zu bis (5) stimme voll und ganz zu",
+      "kontext": "Aussagebatterie.",
+      "zugang": "Einzeldaten über GESIS: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie A' (GLES-Panel, nach R1).",
+      "wahlfrage": "Panel zur Bundestagswahl 2025; Wahlfragen in R1 nicht einzeln belegt.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Außenpolitik der Bundesregierung.",
+      "eignung": "Inhaltlich passend; Quotenstichprobe, gesperrt.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1; von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (W29 Vorabfassung PDF-S. 36)"
+      ],
+      "offenePunkte": "GESIS-Klärung; Entscheidung über Online-Quotenstichproben; W29 nur als Vorabfassung belegt."
+    },
+    {
+      "id": "R8-GLESP-2880cl",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES-Panel 2025, Welle 30 (GESIS): gesperrt",
+      "feldzeit": "12.–22.02.2025 (ZA10119, nach R1)",
+      "population": "zur Bundestagswahl 2025 wahlberechtigte deutsche Bevölkerung (W29: 'mit Internetzugang')",
+      "stichprobe": "Nicht-Wahrscheinlichkeitsauswahl: Quotenstichprobe aus Online-Panels (nach R1)",
+      "modus": "CAWI",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "kp30_2880cl (auch kp29_2880cl)",
+      "wortlautDe": "'Deutschland sollte sich bei der Unterstützung der Ukraine besser zurückhalten, damit wir nicht auch angegriffen werden.'",
+      "antwortkategorien": "5 Stufen von (1) stimme überhaupt nicht zu bis (5) stimme voll und ganz zu",
+      "kontext": "Begründung im Item ('damit wir nicht auch angegriffen werden'); zwei Gegenstände in einem Satz.",
+      "zugang": "Einzeldaten über GESIS: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie A' (GLES-Panel, nach R1).",
+      "wahlfrage": "Panel zur Bundestagswahl 2025; Wahlfragen in R1 nicht einzeln belegt.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Außen- und Verteidigungspolitik der Bundesregierung.",
+      "eignung": "Nicht geeignet wegen Begründung im Fragetext; zudem Quotenstichprobe und gesperrt.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1; von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (W29 PDF-S. 36; W30 PDF-S. 53)"
+      ],
+      "offenePunkte": "GESIS-Klärung; Entscheidung über Online-Quotenstichproben; W29 nur als Vorabfassung belegt."
+    },
+    {
+      "id": "R8-GLESP30-1200",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES-Panel 2025, Welle 30 (GESIS): gesperrt",
+      "feldzeit": "12.–22.02.2025 (ZA10119, nach R1)",
+      "population": "zur Bundestagswahl 2025 wahlberechtigte deutsche Bevölkerung (W29: 'mit Internetzugang')",
+      "stichprobe": "Nicht-Wahrscheinlichkeitsauswahl: Quotenstichprobe aus Online-Panels (nach R1)",
+      "modus": "CAWI",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "kp30_1200",
+      "wortlautDe": "'Und jetzt geht es um Deutschlands Haltung zu den Sanktionen gegen Russland. Manche meinen, Deutschland sollte die Sanktionen gegen Russland lockern. Andere meinen, Deutschland sollte die Sanktionen gegen Russland verschärfen. Wie ist Ihre Meinung zu diesem Thema?'",
+      "antwortkategorien": "7 Punkte, Endpunkte 'lockern' (1) / 'verschärfen' (7)",
+      "kontext": "Zweiseitige Positionsfrage mit beiden Polen im Text.",
+      "zugang": "Einzeldaten über GESIS: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie A' (GLES-Panel, nach R1).",
+      "wahlfrage": "Panel zur Bundestagswahl 2025; Wahlfragen in R1 nicht einzeln belegt.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Sanktionen beschließt der Rat der EU einstimmig; die Frage nennt Deutschlands Haltung.",
+      "eignung": "Gutes Format (zweiseitig), aber Quotenstichprobe und gesperrt.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1; von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (W30 PDF-S. 49)"
+      ],
+      "offenePunkte": "GESIS-Klärung; Entscheidung über Online-Quotenstichproben; W29 nur als Vorabfassung belegt."
+    },
+    {
+      "id": "R8-GLESP30-1203",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES-Panel 2025, Welle 30 (GESIS): gesperrt",
+      "feldzeit": "12.–22.02.2025 (ZA10119, nach R1)",
+      "population": "zur Bundestagswahl 2025 wahlberechtigte deutsche Bevölkerung (W29: 'mit Internetzugang')",
+      "stichprobe": "Nicht-Wahrscheinlichkeitsauswahl: Quotenstichprobe aus Online-Panels (nach R1)",
+      "modus": "CAWI",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "kp30_1203 (auch kp29_1203)",
+      "wortlautDe": "'Und welche Meinung haben Sie persönlich zum Thema ‚Waffenlieferungen an die Ukraine‘?'",
+      "antwortkategorien": "7 Punkte, (1) Befürwortung, (7) Ablehnung",
+      "kontext": "Positionsfrage ohne Begründung.",
+      "zugang": "Einzeldaten über GESIS: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie A' (GLES-Panel, nach R1).",
+      "wahlfrage": "Panel zur Bundestagswahl 2025; Wahlfragen in R1 nicht einzeln belegt.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Deutsche Lieferungen (Bundesregierung).",
+      "eignung": "Inhaltlich passend; Quotenstichprobe, gesperrt.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1; von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (W30 PDF-S. 51; W29 PDF-S. 34)"
+      ],
+      "offenePunkte": "GESIS-Klärung; Entscheidung über Online-Quotenstichproben; W29 nur als Vorabfassung belegt."
+    },
+    {
+      "id": "R8-GLESP30-2880ah",
+      "bereich": "Außen-, Verteidigungs- und Friedenspolitik",
+      "erhebung": "GLES-Panel 2025, Welle 30 (GESIS): gesperrt",
+      "feldzeit": "12.–22.02.2025 (ZA10119, nach R1)",
+      "population": "zur Bundestagswahl 2025 wahlberechtigte deutsche Bevölkerung (W29: 'mit Internetzugang')",
+      "stichprobe": "Nicht-Wahrscheinlichkeitsauswahl: Quotenstichprobe aus Online-Panels (nach R1)",
+      "modus": "CAWI",
+      "fallzahl": "in R1–R7 nicht angegeben",
+      "fragenummer": "kp30_2880ah",
+      "wortlautDe": "'(AH) Deutschland sollte die Einfuhr von Waren aus anderen Ländern einschränken.'",
+      "antwortkategorien": "5 Stufen von (1) stimme überhaupt nicht zu bis (5) stimme voll und ganz zu",
+      "kontext": "Batterie mit Items zu Globalisierung (V, AG) und Auslandsinvestitionen (AI).",
+      "zugang": "Einzeldaten über GESIS: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6). Studie: 'Daten und Dokumente sind für die wissenschaftliche, studentische und nicht kommerzielle Nutzung freigegeben: Zugangskategorie A' (GLES-Panel, nach R1).",
+      "wahlfrage": "Panel zur Bundestagswahl 2025; Wahlfragen in R1 nicht einzeln belegt.",
+      "ebene": [
+        "EU",
+        "national"
+      ],
+      "ebeneBegruendung": "Handelspolitik ist ausschließliche EU-Zuständigkeit (Art. 3 Abs. 1 lit. e AEUV); das Item nennt Deutschland als Akteur.",
+      "eignung": "Eingeschränkt: Akteur im Item entspricht nicht der Zuständigkeit; Quotenstichprobe, gesperrt.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1; von mir nicht erneut geprüft.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2 (W30 PDF-S. 54)"
+      ],
+      "offenePunkte": "GESIS-Klärung; Entscheidung über Online-Quotenstichproben; W29 nur als Vorabfassung belegt."
+    },
+    {
+      "id": "R8-ISSP24-Q28ab",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "ISSP 2024 'Digital Societies' (ZA10020 v1.0.0), Deutschland enthalten; GESIS: gesperrt",
+      "feldzeit": "Deutsche Feldzeit in R1–R7 nicht belegt",
+      "population": "nicht geprüft",
+      "stichprobe": "nicht geprüft",
+      "modus": "nicht geprüft",
+      "fallzahl": "nicht geprüft",
+      "fragenummer": "Q28a/b (Source Questionnaire)",
+      "wortlautDe": null,
+      "antwortkategorien": "Q28: 'Definitely should have right' … 'Definitely should not have right', 'Can't choose' (englisch, R1)",
+      "kontext": "Q28b weicht laut Quellfragebogen von ISSP 2016 Q11b ab.",
+      "zugang": "Einzeldaten über GESIS/ISSP mit Registrierung: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6).",
+      "wahlfrage": "nicht geprüft",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Befugnisse staatlicher Behörden in Deutschland (Bundes- und Landesrecht).",
+      "eignung": "Inhaltlich passend für Überwachung und Datenschutz; deutscher Wortlaut, Feldzeit und Stichprobe ungeprüft; gesperrt.",
+      "stichprobenart": "nicht geprüft",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1 (englischer Source Questionnaire, PDF-S. 17).",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 5.2",
+        "https://issp.org/wp-content/uploads/2023/12/ISSP2024_final-source-questionnaire.pdf (nach R1, von mir nicht erneut geöffnet)"
+      ],
+      "offenePunkte": "Deutsche Fassung, Feldzeit, Population und Modus erst nach GESIS-Klärung prüfbar."
+    },
+    {
+      "id": "R8-ISSP24-Q27",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "ISSP 2024 'Digital Societies' (ZA10020 v1.0.0), Deutschland enthalten; GESIS: gesperrt",
+      "feldzeit": "Deutsche Feldzeit in R1–R7 nicht belegt",
+      "population": "nicht geprüft",
+      "stichprobe": "nicht geprüft",
+      "modus": "nicht geprüft",
+      "fallzahl": "nicht geprüft",
+      "fragenummer": "Q27 (Source Questionnaire)",
+      "wortlautDe": null,
+      "antwortkategorien": "siehe Wortlaut",
+      "kontext": "Zuständigkeitsfrage zum Datenschutz.",
+      "zugang": "Einzeldaten über GESIS/ISSP mit Registrierung: gesperrt.",
+      "bedingungen": "GESIS-Nutzungsbedingungen (gültig ab 04.02.2026) § 4: 'Die Nutzung von KI-Systemen für die Verarbeitung der Datenbasis, die dem Nutzer / der Nutzerin von GESIS bereitgestellt wird, ist verboten.' Ausnahmen nur auf Anfrage (wörtlich nach R3/R6).",
+      "wahlfrage": "nicht geprüft",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Befugnisse staatlicher Behörden in Deutschland (Bundes- und Landesrecht).",
+      "eignung": "Inhaltlich passend für Überwachung und Datenschutz; deutscher Wortlaut, Feldzeit und Stichprobe ungeprüft; gesperrt.",
+      "stichprobenart": "nicht geprüft",
+      "gesperrt": true,
+      "wortlautQuelle": "Nach R1 (englischer Source Questionnaire, PDF-S. 17).",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 5.2",
+        "https://issp.org/wp-content/uploads/2023/12/ISSP2024_final-source-questionnaire.pdf (nach R1, von mir nicht erneut geöffnet)"
+      ],
+      "offenePunkte": "Deutsche Fassung, Feldzeit, Population und Modus erst nach GESIS-Klärung prüfbar."
+    },
+    {
+      "id": "R8-DNR25-Q1_social_2025",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Reuters Institute Digital News Report 2025 (Erhebung durch YouGov; deutsche Partnerinstitution nicht geprüft)",
+      "feldzeit": "Mitte Januar bis Ende Februar 2025 (alle Märkte; Methodenseite). Deutsche Feldtage nicht ausgewiesen; überschneidet sich mit dem Wahlkampf zur Bundestagswahl am 23.02.2025.",
+      "population": "Online-Bevölkerung (Methodenseite: Ergebnisse 'representative of the online population'); Altersgrenze für Deutschland auf der Methodenseite nicht ausgewiesen",
+      "stichprobe": "Online-Quotenstichprobe aus YouGov-Panels: Quoten nach Alter, Geschlecht, Region und Bildung; in einem Teil der Märkte zusätzlich politische Quoten nach Wahlentscheidung bei der letzten nationalen Wahl (ob Deutschland darunter ist, nicht ausgewiesen); Gewichtung auf Zensus-/Branchenziele. Methodenseite: 'it is not possible to compute a conventional margin of error'.",
+      "modus": "CAWI",
+      "fallzahl": "Für Deutschland auf der Methodenseite nicht gefunden",
+      "fragenummer": "Q1_social_2025",
+      "wortlautDe": null,
+      "antwortkategorien": "Englischer Export: 'Social media/video networks are removing too much' / '… about the right amount' / '… too little' / 'Don’t know'",
+      "kontext": "Englischer Quellwortlaut (UK-Export): 'Thinking about how social media and online video networks sometimes remove content that is deemed harmful or offensive (in addition to content that is illegal), which comes closest to your view? Please select one option.' Basis laut Export 'All', kein Länderfilter angezeigt. Fragt nach dem Handeln der Plattformen, nicht nach staatlicher Regulierung.",
+      "zugang": "Fragebogen (englischer UK-Export) öffentlich als PDF; Ergebnisse in Bericht und Länderseiten (nicht geöffnet); Datentabellen laut Suchergebnis auf Anfrage für Forschende; Einzeldaten nicht öffentlich gefunden.",
+      "bedingungen": "Bericht 2026 laut Oxford University Research Archive: '© Reuters Institute for the Study of Journalism. This work is licensed under CC BY 4.0.' (https://ora.ox.ac.uk/objects/uuid:bdec3e82-9aee-4301-9556-9d908881c74a, abgerufen 03.10.2026, 22:39 UTC); Bericht 2025 dort mit '©2025 Reuters Institute for the Study of Journalism' und den ORA-Nutzungsbedingungen, ohne CC-Lizenz. Für den Fragebogen selbst habe ich keinen Lizenzvermerk gefunden. Der Link 'Terms of use' der Website führt auf die Datenschutzerklärung. Eine Regel zu KI-Systemen habe ich nicht gefunden; daraus folgt weder Erlaubnis noch zusätzliche Genehmigungspflicht.",
+      "wahlfrage": "Im Fragebogen nur Links-Rechts-Selbsteinstufung (Q1F, sieben Stufen). Eine Wahlfrage steht nicht im Fragebogen; politische Quoten beruhen laut Methodenseite auf der Wahlentscheidung bei der letzten nationalen Wahl, vermutlich aus Panel-Profildaten (nicht belegt).",
+      "ebene": [
+        "international",
+        "EU"
+      ],
+      "ebeneBegruendung": "Gegenstand ist die Moderationspraxis privater Plattformen; der Rechtsrahmen dafür ist vor allem der Digital Services Act (EU).",
+      "eignung": "Eingeschränkt: zweiseitiges Format (zu viel/zu wenig) zur Inhaltsmoderation, aber Online-Quotenstichprobe, kein öffentlicher deutscher Wortlaut, Gegenstand Plattformverhalten statt staatlicher Regel.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "wortlautQuelle": "Englischer UK-Export des Fragebogens, selbst gelesen.",
+      "belege": [
+        "https://reutersinstitute.politics.ox.ac.uk/sites/default/files/2025-06/DNR%202025%20UK%20questionnaire%20export%20%28ENG%29.pdf (PDF-S. 27; abgerufen 03.10.2026, 22:38 UTC; SHA-256 77fe382e…)",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2025/methodology (abgerufen 22:38 UTC)"
+      ],
+      "offenePunkte": "Deutscher Wortlaut und ob die Frage in Deutschland gestellt wurde; deutsche Fallzahl; Zugang zu Tabellen; Rechte am Fragebogen."
+    },
+    {
+      "id": "R8-DNR26-Q_PSM_Attitude",
+      "bereich": "Medien und Digitalpolitik",
+      "erhebung": "Reuters Institute Digital News Report 2026 (YouGov)",
+      "feldzeit": "Mitte Januar bis Ende Februar 2026 (alle Märkte; Methodenseite)",
+      "population": "Online-Bevölkerung; deutsche Altersgrenze nicht ausgewiesen",
+      "stichprobe": "Online-Quotenstichprobe wie 2025; politische Quoten in 13 Märkten",
+      "modus": "CAWI",
+      "fallzahl": "Für Deutschland nicht gefunden",
+      "fragenummer": "Q_PSM_Attitude",
+      "wortlautDe": null,
+      "antwortkategorien": "Englisch: Very positive / Somewhat positive / Neither positive nor negative / Somewhat negative / Very negative / Don’t know",
+      "kontext": "Englischer Quellwortlaut: 'Overall, do you think that news provided by public service broadcasters (e.g. BBC) has a positive or negative effect on life in your country?' Danach Mehrfachauswahl positiver und negativer Aspekte (Q_PSM_PositiveAspects, Q_PSM_NegativeAspects).",
+      "zugang": "Fragebogen öffentlich (englischer Export); sonst wie DNR 2025.",
+      "bedingungen": "Bericht 2026 laut Oxford University Research Archive: '© Reuters Institute for the Study of Journalism. This work is licensed under CC BY 4.0.' (https://ora.ox.ac.uk/objects/uuid:bdec3e82-9aee-4301-9556-9d908881c74a, abgerufen 03.10.2026, 22:39 UTC); Bericht 2025 dort mit '©2025 Reuters Institute for the Study of Journalism' und den ORA-Nutzungsbedingungen, ohne CC-Lizenz. Für den Fragebogen selbst habe ich keinen Lizenzvermerk gefunden. Der Link 'Terms of use' der Website führt auf die Datenschutzerklärung. Eine Regel zu KI-Systemen habe ich nicht gefunden; daraus folgt weder Erlaubnis noch zusätzliche Genehmigungspflicht.",
+      "wahlfrage": "Nur Links-Rechts-Selbsteinstufung Q1F im Fragebogen.",
+      "ebene": [
+        "national"
+      ],
+      "ebeneBegruendung": "Öffentlich-rechtlicher Rundfunk ist in Deutschland Ländersache (Staatsverträge).",
+      "eignung": "Nicht geeignet als Positionsfrage: Bewertung der Wirkung, keine Frage zu Rundfunkbeitrag, Auftrag oder Finanzierung. Nur als Ausschluss dokumentiert.",
+      "stichprobenart": "Online-Quotenstichprobe (keine Zufallsstichprobe)",
+      "wortlautQuelle": "Englischer Export, selbst gelesen.",
+      "belege": [
+        "https://reutersinstitute.politics.ox.ac.uk/sites/default/files/2026-06/DNR%202026%20Questionnaire.pdf (PDF-S. 4–5; abgerufen 03.10.2026, 22:38 UTC; SHA-256 c6f62120…)"
+      ],
+      "offenePunkte": "–",
+      "ausgeschlossen": "Bewertung, keine Präferenz"
+    }
+  ],
+  "quellenOhnePruefbareFragen": [
+    {
+      "quelle": "ESS Runde 12 (2025/26)",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik",
+        "Medien und Digitalpolitik",
+        "Bildung und Forschung"
+      ],
+      "ergebnis": "keine Fragenkandidaten",
+      "feldzeit": "ESS-weit September 2025 bis 15.05.2026 (ESS-Meldung 10.03.2025, nach R7); deutsche Feldtage nicht veröffentlicht gefunden",
+      "population": "ab 15 Jahren in Privathaushalten (bisherige Runden, nach R7)",
+      "stichprobe": "Zufallsstichprobe; eingebettetes Modusexperiment: zufällige Zuweisung zu persönlichem Interview oder Selbstausfüller (Web und Papier)",
+      "modus": "CAPI oder Web/Papier (Experiment)",
+      "fallzahl": "für Deutschland nicht veröffentlicht",
+      "wahlfrage": "A26/A27: 'Which party did you vote for in the last [country nationality] national election in [month/year]?' (Quellfragebogen PDF-S. 16–17; länderspezifische Antwortliste); A36–A38 Parteinähe. Für eine deutsche Feldzeit zwischen September 2025 und Mai 2026 wäre die letzte nationale Wahl die Bundestagswahl vom 23.02.2025 (Folgerung; deutscher Wortlaut unveröffentlicht).",
+      "zugang": "Daten laut ESS ab Januar 2027 (ESS-Meldung, abgerufen 22:33 UTC); deutscher Fragebogen unter dem üblichen Pfad HTTP 404 (22:33 UTC)",
+      "grund": "Quellfragebogen (06.02.2025, SHA-256 d5f768fa…) enthält zu den drei Bereichen nur Vertrauen in die Vereinten Nationen (A25), Bewertung des Bildungssystems (A44), Medien- und Internetnutzung; Rotationsmodule 'Wellbeing' und 'Immigration'. Keine Präferenzfrage.",
+      "belege": [
+        "https://www.europeansocialsurvey.org/sites/default/files/2026-01/ESS12-source-questionnaire.pdf (PDF-S. 2, 16–17, 22; abgerufen 22:32 UTC)",
+        "https://www.europeansocialsurvey.org/news/article/initial-round-12-data-release-scheduled-early-2027 (22:33 UTC)",
+        "reports/claude/agenten/R7-weitere-quellen.md Abschnitt 3.1"
+      ]
+    },
+    {
+      "quelle": "ZMSBw-Bevölkerungsbefragung 2025 (Forschungsbericht 139)",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik"
+      ],
+      "ergebnis": "nur mit Ergebnissen veröffentlicht, Strukturprüfung durch getrennten Agenten nötig; Einzeldaten bei GESIS (gesperrt)",
+      "feldzeit": "11.04.–17.05.2025",
+      "population": "'deutschsprachige und in Privathaushalten lebende Bevölkerung ab 16 Jahren' (PDF-S. 95)",
+      "stichprobe": "'Repräsentative, mehrfach geschichtete Zufallsstichprobe nach dem Random-Route-Verfahren'; gewichtet nach Alter, Geschlecht, Bildung und Ortsgröße; Ausschöpfung 50 Prozent (PDF-S. 95)",
+      "modus": "CAPI (Ipsos GmbH)",
+      "fallzahl": "2.049 Nettointerviews (PDF-S. 95)",
+      "wahlfrage": "im Methodenkapitel nicht genannt; nicht geprüft",
+      "zugang": "Bericht öffentlich (© ZMSBw 2025 laut R7); Daten werden 'der Forschung allgemein im Datenarchiv des GESIS zur Verfügung gestellt' (PDF-S. 94): gesperrt",
+      "grund": "Spezifischstes deutsches Instrument mit Zufallsstichprobe. Inhaltsverzeichnis (PDF-S. 3): Russlandbild und militärische Unterstützung für die Ukraine; Verteidigungsausgaben und Personalumfang; Landes- und Bündnisverteidigung; Wehrdienst und Verteidigungsbereitschaft; Einstellungen zu den USA und zur europäischen Verteidigungszusammenarbeit; Aufgaben und Einsätze der Bundeswehr; Außenpolitische Einstellungen. Kein Fragebogenanhang; Wortlaute nur in den Ergebniskapiteln (nicht geöffnet). Ein Bericht zur Befragung 2026 wurde nicht gefunden (Live-Seite nicht erreichbar, Wayback-Verzeichnis).",
+      "belege": [
+        "http://web.archive.org/web/20260827154631id_/https://zms.bundeswehr.de/resource/blob/5990826/a096758210c3e9f9e699a8cbb7cc8aa2/zmsbw-forschungsbericht-139-bevoelkerungsbefragung-2025-data.pdf (SHA-256 277a5b23…, identisch mit R7; nur PDF-S. 3 und 94–96 gelesen; 22:37 UTC)"
+      ]
+    },
+    {
+      "quelle": "Körber-Stiftung, The Berlin Pulse 2025/26 (und 2024/25)",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik"
+      ],
+      "ergebnis": "nur mit Ergebnissen veröffentlicht, Strukturprüfung durch getrennten Agenten nötig",
+      "feldzeit": "15.–26.09.2025 (nach R7)",
+      "population": "laut Suchergebnis Wahlberechtigte ab 18 Jahren (nicht selbst geprüft)",
+      "stichprobe": "Zufallsstichprobe, telefonisch (CATI), forsa (nach R7)",
+      "modus": "CATI",
+      "fallzahl": "1.503 (nach R7)",
+      "wahlfrage": "nicht geprüft",
+      "zugang": "Bericht und laut Suchergebnis ein forsa-Tabellenband mit Ergebnissen; Datensatz nicht gefunden (R7)",
+      "bedingungen": "Impressum Körber-Stiftung (abgerufen 22:37 UTC): 'Alle Texte, Bilder, Grafiken und das Layout dieser Website unterliegen dem Urheberrecht der Körber-Stiftung oder Dritter. Jegliche Vervielfältigung, Weitergabe oder sonstige Nutzung ist nur mit Quellenangabe (Körber-Stiftung) und – soweit erforderlich – nach vorheriger Zustimmung der Rechteinhaber zulässig.' Keine KI-Regel gefunden.",
+      "grund": "Fragewortlaute nur zusammen mit Ergebnissen; Ausgabe 2024/25 vorhanden (Suchergebnis), Methode nicht geprüft.",
+      "belege": [
+        "https://koerber-stiftung.de/impressum/ (22:37 UTC)",
+        "reports/claude/agenten/R7-weitere-quellen.md Abschnitt 3.7"
+      ]
+    },
+    {
+      "quelle": "Munich Security Index 2025 und 2026 (Münchner Sicherheitskonferenz, Kekst CNC)",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik"
+      ],
+      "ergebnis": "Kernindex misst Risikowahrnehmungen (ausgeschlossener Fragetyp); Zusatzfragen nur mit Ergebnissen veröffentlicht",
+      "feldzeit": "MSI 2025: 14.–29.11.2024; MSI 2026: November 2025 (beides nur Suchergebnis)",
+      "population": "laut Suchergebnis rund 1.000 Personen je Land (G7 und BICS)",
+      "stichprobe": "laut Suchergebnis Online-Panels mit geschichteten Quoten (Geschlecht, Alter, Wohnort, Bildung, Einkommen): Online-Quotenstichprobe",
+      "modus": "CAWI (nur Suchergebnis)",
+      "fallzahl": "rund 1.000 je Land (MSC-Seite)",
+      "wahlfrage": "nicht geprüft",
+      "zugang": "nur Bericht mit Ergebnissen; kein Datensatz gefunden",
+      "bedingungen": "Impressum MSC (abgerufen 22:37 UTC): 'Eine Vervielfältigung oder Verwendung des Inhalts in anderen elektronischen oder gedruckten Publikationen ist, abgesehen von der unten dargestellten erlaubten Nutzung ohne die ausdrückliche Zustimmung durch die Stiftung Münchner Sicherheitskonferenz (gemeinnützige) GmbH nicht gestattet.' Keine KI-Regel gefunden.",
+      "grund": "MSC-Seite: 'The MSI consists of a core index of questions on risk perceptions … and a set of additional questions relevant to security policy that may vary from year to year.'",
+      "belege": [
+        "https://securityconference.org/en/publications/munich-security-index/ (22:36 UTC)",
+        "https://securityconference.org/impressum/ (22:37 UTC)"
+      ]
+    },
+    {
+      "quelle": "Pew Research Center, Global Attitudes Survey 2025 und 2026",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik",
+        "Medien und Digitalpolitik"
+      ],
+      "ergebnis": "nur mit Ergebnissen veröffentlicht (Toplines), Strukturprüfung durch getrennten Agenten nötig; Daten nur mit Konto",
+      "feldzeit": "27.02.–11.04.2025; 09.02.–16.04.2026 (nach R7)",
+      "population": "Erwachsene ab 18 (nach R7)",
+      "stichprobe": "Zufallsstichprobe: RDD Festnetz und Mobilfunk (nach R7)",
+      "modus": "Telefon",
+      "fallzahl": "1.006 (2025), 1.004 (2026) (nach R7)",
+      "wahlfrage": "nicht geprüft",
+      "zugang": "Konto und Zustimmung zu den Bedingungen nötig (nach R7)",
+      "grund": "Fragetexte öffentlich nur in Topline-Dokumenten mit Ergebnissen; kein deutscher Fragebogen gefunden (R7).",
+      "belege": [
+        "reports/claude/agenten/R7-weitere-quellen.md Abschnitt 3.3"
+      ]
+    },
+    {
+      "quelle": "Friedrich-Ebert-Stiftung, Security Radar 2025",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik"
+      ],
+      "ergebnis": "nur mit Ergebnissen veröffentlicht; Methode nur aus Suchergebnis",
+      "feldzeit": "September 2024 (Suchergebnis)",
+      "population": "Wohnbevölkerung in 14 Ländern, darunter Deutschland (Suchergebnis)",
+      "stichprobe": "nicht geprüft",
+      "modus": "für Deutschland nicht geprüft (Ipsos Public Affairs)",
+      "fallzahl": "nicht geprüft",
+      "wahlfrage": "nicht geprüft",
+      "zugang": "Bericht",
+      "grund": "Bericht nicht geöffnet.",
+      "belege": [
+        "https://library.fes.de/pdf-files/bueros/wien/21865.pdf (nur als Suchergebnis gesehen, nicht geöffnet)"
+      ]
+    },
+    {
+      "quelle": "Politbarometer 2024 und 2025 (Forschungsgruppe Wahlen; Daten bei GESIS)",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik"
+      ],
+      "ergebnis": "gesperrt; Wortlaute in R1 nicht eingesehen",
+      "feldzeit": "2024 und 2025, Monatswellen (nach R1)",
+      "population": "'Wahlberechtigte Wohnbevölkerung' (nach R3)",
+      "stichprobe": "Wahrscheinlichkeitsauswahl, Dual-Frame (nach R1/R3)",
+      "modus": "CATI und CAWI",
+      "fallzahl": "nicht geprüft",
+      "wahlfrage": "nicht geprüft",
+      "zugang": "GESIS: gesperrt",
+      "grund": "Laut CESSDA-Abstracts (nach R1) Fragen zu höheren Verteidigungsausgaben, Wiedereinführung der Wehrpflicht, Militärhilfe und Waffenlieferungen an die Ukraine, US-Zollpolitik (2025) sowie Pflichtjahr und westliche Militärhilfe (2024); viele Fragen nur in einzelnen Monatswellen.",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 3.2"
+      ]
+    },
+    {
+      "quelle": "GLES-Panel 2026, Welle 34 (GESIS)",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik"
+      ],
+      "ergebnis": "gesperrt; Angabe zu Verteidigungsausgaben/Wehrpflicht in W34 laut R1 unbelegt",
+      "feldzeit": "23.03.–07.04.2026 (nach R3)",
+      "population": "wahlberechtigte deutsche Bevölkerung",
+      "stichprobe": "Quotenstichprobe (nach R3)",
+      "modus": "CAWI",
+      "fallzahl": "nicht geprüft",
+      "wahlfrage": "nicht geprüft",
+      "zugang": "GESIS: gesperrt",
+      "grund": "Vorabfragebogen bei GESIS (R1: HTTP 403).",
+      "belege": [
+        "reports/claude/agenten/R1-themen-aussen-bildung-digital.md Abschnitt 7",
+        "reports/claude/agenten/R3-themen-reichweite.md Abschnitt 3.1"
+      ]
+    },
+    {
+      "quelle": "Eurobarometer: weitere Befragungen 2024–2026 mit Bezug zu den drei Bereichen",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik",
+        "Medien und Digitalpolitik",
+        "Bildung und Forschung"
+      ],
+      "ergebnis": "Fragebögen nur bei GESIS (gesperrt) oder in Kommissionsberichten mit Ergebnissen; nicht geprüft",
+      "feldzeit": "siehe Liste",
+      "population": "EU-Staatsangehörige ab 15 (Standard/Spezial); Flash laut Schnittstelle online",
+      "stichprobe": "Standard/Spezial Zufall; Flash online, Stichprobenart nicht geprüft (für FL574 laut R6 Quote)",
+      "modus": "siehe Liste",
+      "fallzahl": "nicht geprüft",
+      "wahlfrage": "keine Bundestagswahlfrage (R6)",
+      "zugang": "wie Eurobarometer-Einträge",
+      "grund": "Liste nach Kommissions-Schnittstelle (nur Metadaten, 22:34 UTC): FL574 'The European Union in Defence and Space' (05.–11.01.2026, online); FL579 'Impact of excessive screen time and social media on young people’s mental health' (30.03.–16.04.2026, online); FL564 'Future needs in digital education' (07.–14.05.2025, online); FL014EP 'Social Media Survey 2025' (11.–18.06.2025, online); SP544 'Europeans' attitudes on trade and EU trade policy' (12.01.–04.02.2024, face-to-face); SP551 'The digital decade' (04.–24.03.2024); SP560 'e-Communications and Digital Single Market' (09.01.–04.02.2025); SP563 'The Charter of Fundamental Rights' (18.02.–16.03.2025); SP569 'Attractiveness of Vocational Education and Training' (01.–30.11.2025; laut R6 nur Bewertungen); EP-Befragungen EB047EP (09.01.–04.02.2025), EB049EP (06.–30.11.2025), EB050EP (09.04.–04.05.2026), alle face-to-face. Für keine dieser Befragungen veröffentlicht die Kommission einen Fragebogen als eigene Datei.",
+      "belege": [
+        "https://europa.eu/eurobarometer/api/survey/get/latest?nb=400 und …/get/one?id=<ID> (22:33–22:34 UTC; Beschreibungs- und keyFindings-Felder nicht ausgegeben)"
+      ]
+    },
+    {
+      "quelle": "ifo Bildungsbarometer 2024 und 2025",
+      "bereiche": [
+        "Bildung und Forschung",
+        "Medien und Digitalpolitik"
+      ],
+      "ergebnis": "nur mit Ergebnissen veröffentlicht, Strukturprüfung durch getrennten Agenten nötig; Daten nur 2014–2021 über EBDC",
+      "feldzeit": "2025: Mai und Juni 2025 (Suchergebnis)",
+      "population": "2025: 2.982 Erwachsene von 18 bis 69 Jahren und 1.033 Jugendliche von 14 bis 17 Jahren (Suchergebnis)",
+      "stichprobe": "Online-Access-Panels, gewichtet nach Alter, Geschlecht, Bundesland, Schulabschluss und Erwerbsstatus (Suchergebnis; für 2014–2021 nach R7): Online-Quotenstichprobe",
+      "modus": "CAWI (Erhebung 2025 durch konkret mafo, Suchergebnis)",
+      "fallzahl": "siehe Population",
+      "wahlfrage": "nicht geprüft",
+      "zugang": "Datensätze 2014–2021 im LMU-ifo EBDC 'zur wissenschaftlichen Nutzung' mit Vertrag (Seite Wößmann, 22:40 UTC; R7); neuere Wellen nicht zugänglich gefunden",
+      "grund": "Thema 2025 laut Titel des Ergebnisartikels: soziale Medien und Smartphones ('Zwischen Likes und Lernen: Was Jugendliche und Erwachsene über Social Media denken'). Fragewortlaute nur im Ergebnisartikel (ifo Schnelldienst), nicht geöffnet; ifo-Website mit Bot-Prüfung. Umfrageexperimente mit Informationsvarianten (Suchergebnis; R7).",
+      "belege": [
+        "https://sites.google.com/view/woessmann/forschung/%C3%B6ffentliche-meinung/daten (22:40 UTC)",
+        "reports/claude/agenten/R7-weitere-quellen.md Abschnitt 3.6 c"
+      ]
+    },
+    {
+      "quelle": "Initiative D21, D21-Digital-Index 2024/25",
+      "bereiche": [
+        "Medien und Digitalpolitik"
+      ],
+      "ergebnis": "nur mit Ergebnissen veröffentlicht; Ausgabe 2025/26 nicht gefunden",
+      "feldzeit": "August 2023 bis Juli 2024 (Suchergebnis)",
+      "population": "deutschsprachige Bevölkerung ab 14 Jahren in Privathaushalten (Suchergebnis)",
+      "stichprobe": "geschichtete Zufallsstichprobe (Suchergebnis)",
+      "modus": "CAPI und CAWI (Suchergebnis)",
+      "fallzahl": "34.257 Strukturinterviews, 7.237 Vertiefungsinterviews (Suchergebnis)",
+      "wahlfrage": "nicht geprüft",
+      "zugang": "nur Bericht (PDF); Seite 2025-26 HTTP 404 (22:40 UTC)",
+      "bedingungen": "Impressum D21 (22:47 UTC): 'Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung der*des Autor*in nicht gestattet.' Keine KI-Regel gefunden.",
+      "grund": "Kein separater Fragebogen; Schwerpunkt digitale Kompetenzen und Nutzung (Einschätzung nach Titel, nicht geprüft).",
+      "belege": [
+        "https://initiatived21.de/publikationen/d21-digital-index (22:40 UTC)",
+        "https://initiatived21.de/impressum (22:47 UTC)"
+      ]
+    },
+    {
+      "quelle": "Weitere geprüfte oder verworfene Kandidaten",
+      "bereiche": [
+        "Außen-, Verteidigungs- und Friedenspolitik",
+        "Medien und Digitalpolitik",
+        "Bildung und Forschung"
+      ],
+      "ergebnis": "nicht geeignet oder nicht prüfbar",
+      "grund": "Wissenschaftsbarometer 2025 (CAWI 04.–18.07.2025, Payback-Online-Panel, Quote, n=2.011, nur Suchergebnis; frühere Wellen laut Suchergebnis bei GESIS: gesperrt; Ergebnisbroschüre). TechnikRadar 2025 (acatech/Körber; 'online-repräsentativ' laut Suchergebnis; nur Ergebnisse). Mainzer Langzeitstudie Medienvertrauen (CATI, Verian, 04.11.–07.12.2024, n=1.203, ab 18, nur Suchergebnis): misst Vertrauen und Medienkritik, ausgeschlossener Fragetyp. Vodafone Stiftung: Jugendstudie 2025 nur 14- bis 20-Jährige (infratest dimap, 28.04.–18.05.2025, n=1.046; Projektseite 22:41 UTC), internationale Online-Befragung 2018 außerhalb des Zeitraums. Bertelsmann Stiftung 'Verunsicherte Öffentlichkeit' (online, Oktober 2023, nur Suchergebnis): außerhalb des Zeitraums. ESS Runde 13 (Feld September 2027 bis Mai 2028): vorgeschlagene Frage N1 zu Militär- gegen Sozialausgaben laut Modulantrag (R7), außerhalb des Zeitraums. Nicht geprüft: wahrscheinlichkeitsbasierte Online-Panels wie GESIS Panel (GESIS-Bestand, gesperrt) und German Internet Panel, ARD-DeutschlandTrend, Allensbach, ECFR, eupinions (R7), Bitkom.",
+      "belege": [
+        "https://www.vodafone-stiftung.de/jugendstudie-2025-social-media/ (22:41 UTC)",
+        "reports/claude/agenten/R7-weitere-quellen.md"
+      ]
+    }
+  ]
+}

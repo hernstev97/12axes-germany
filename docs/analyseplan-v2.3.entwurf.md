@@ -77,7 +77,7 @@ Die Auswahl ist ergebnisblind. Die Auswahlrolle liest nur Fragebögen, Methoden-
 
 ## 8 Sichtbarkeit der Gruppenvergleiche
 
-In den Referenzen v2.2 tragen von den Wählergruppenpaaren mit Zahlen 6 von 43 Paaren bei Skalen von 0 bis 10, 22 von 45 bei vier Antwortstufen, 58 von 139 bei fünf und 10 von 63 bei sechs Kategorien. Grundlage sind nur die öffentlichen Status in `data/reference-v2.2/`. Kleine Gruppen und lange Skalen verlieren ihre Vergleiche häufiger, weil eine einzelne Kategorie mit eins bis vier Fällen die ganze Referenz sperrt. Welche Parteien zu welchem Thema erscheinen, hängt dadurch von Gruppengröße und Skalenlänge ab (V2-F14).
+Von den Wählergruppenpaaren der Referenzen v2.2 tragen Zahlen: 6 von 43 bei Skalen von 0 bis 10, 22 von 45 bei vier Antwortstufen, 58 von 139 bei fünf und 10 von 63 bei sechs Kategorien. Grundlage sind nur die öffentlichen Status in `data/reference-v2.2/`. Kleine Gruppen und lange Skalen verlieren ihre Vergleiche häufiger, weil eine einzelne Kategorie mit eins bis vier Fällen die ganze Referenz sperrt. Welche Parteien zu welchem Thema erscheinen, hängt dadurch von Gruppengröße und Skalenlänge ab (V2-F14).
 
 Optionen, keine davon ist beschlossen:
 
@@ -104,7 +104,49 @@ Empfehlung: A beibehalten, B und C in der Planprüfung bewerten lassen. Eine Än
 
 ## 11 Kandidaten
 
-KANDIDATEN
+Grundlage: `reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json` (37 Kandidaten) und `R9-erweiterung-sozial-wohnen-gruppen.json` (37 Kandidaten). Die Auswahl unten wendet die Regeln aus Abschnitt 4 an, ohne Kenntnis von Ergebnissen. Alle Kandidaten sind Forschungsentwürfe. Keiner ist in den Test aufgenommen.
+
+### 11.1 Stufe 1: Eurobarometer-Tabellen der Kommission (Klasse T)
+
+Voraussetzungen: Stevens Freigabe des Tabellenwegs, positive Strukturprüfung S1 nach Abschnitt 6 und 10, geklärte Rechte an den deutschen Wortlauten (Anfrage an das Eurobarometer-Team). Die deutschen Wortlaute stammen aus R6, das sie den GESIS-Fragebögen entnommen hat. Population: EU-Staatsangehörige ab 15 Jahren in Deutschland, persönliches Interview, „Weiß nicht“ nur spontan erfasst.
+
+| Kandidat               | Bereich                                    | Welle, Feldzeit Deutschland             | Gegenstand                                                                             | Ebene                           | Hinweis in der Ansicht                                                 |
+| ---------------------- | ------------------------------------------ | --------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------- |
+| R8-EB-SE037-GSVP       | Außen-, Verteidigungs- und Friedenspolitik | EB 104.1, 9.–29. Oktober 2025           | gemeinsame Verteidigungs- und Sicherheitspolitik der EU-Mitgliedstaaten, dafür/dagegen | EU, Deutschland im Rat          | Entscheidung auf EU-Ebene                                              |
+| R8-EB-SE037-GASP       | Außen-, Verteidigungs- und Friedenspolitik | EB 104.1, 9.–29. Oktober 2025           | gemeinsame Außenpolitik der Mitgliedstaaten der EU, dafür/dagegen                      | EU, Deutschland im Rat          | Entscheidung auf EU-Ebene                                              |
+| R8-EB-ST0359-ZUS       | Außen-, Verteidigungs- und Friedenspolitik | EB 104.1, 9.–29. Oktober 2025           | Zusammenarbeit auf EU-Ebene bei Verteidigungsfragen verstärken, Zustimmung             | EU, Deutschland im Rat          | Entscheidung auf EU-Ebene                                              |
+| R8-EB-ST0359-GELD      | Außen-, Verteidigungs- und Friedenspolitik | EB 104.1, 9.–29. Oktober 2025           | mehr Geld für Verteidigung „in der EU“, Zustimmung                                     | offen                           | Ebene offen: EU-Haushalt oder Summe der Mitgliedstaaten                |
+| R8-EB-ST0350-2         | Außen-, Verteidigungs- und Friedenspolitik | EB 104.1, 9.–29. Oktober 2025           | EU-Finanzierung militärischer Ausrüstung für die Ukraine, Zustimmung                   | EU, Deutschland im Rat          | bereits beschlossene EU-Maßnahme                                       |
+| R8-EB-SP564-QC5-UA     | Europäische Integration                    | EB 103.2, 19. Februar–10. März 2025     | Beitritt der Ukraine, sobald alle Bedingungen erfüllt sind, dafür/dagegen              | EU, Ratifikation in Deutschland | Bedingung im Fragetext                                                 |
+| R8-EB-SP572-QB12-KI    | Medien und Digitalpolitik                  | EB 105.1, 5.–24. Februar 2026           | KI sorgfältig regulieren oder möglichst wenig einschränken, zwei Aussagen              | keine Ebene genannt             | –                                                                      |
+| R8-EB-SP572-QB5-6      | Medien und Digitalpolitik                  | EB 105.1, 5.–24. Februar 2026           | Regulierung von Online-Plattformen stärken, Zustimmung                                 | EU mit Mitgliedstaaten          | Entscheidung auf EU-Ebene                                              |
+| R8-EB-SP557-QA7-OA     | Bildung und Forschung                      | EB 102.1, 13. September–4. Oktober 2024 | Ergebnisse öffentlich finanzierter Forschung kostenlos online, Zustimmung              | keine Ebene genannt             | –                                                                      |
+| R8-EB-SP557-QA7-GRENZE | Bildung und Forschung                      | EB 102.1, 13. September–4. Oktober 2024 | keine Grenze für wissenschaftliche Forschung, Zustimmung                               | keine Ebene genannt             | Prinzip, keine Maßnahme                                                |
+| R9-21                  | Gesundheit und Pflege                      | EB 104.1, 9.–29. Oktober 2025           | gemeinsame EU-Gesundheitspolitik, dafür/dagegen                                        | EU                              | Entscheidung auf EU-Ebene, deckt nationale Gesundheitspolitik nicht ab |
+
+Nicht vorgeschlagen, mit Grund nach Abschnitt 4: ST0350 Item 1 (zwei Gegenstände), ST0350 Item 4 (zwei Hilfearten), ST0350 Item 5 (Bewerberstatus von 2022, ersetzt durch SP564 QC5), ST0359 „bis dauerhaft gerechter Frieden herrscht“ (wertende Zielformel), ST0359 Beschaffung und Produktion (höchstens drei Fragen zum engen Gegenstand EU-Verteidigung: GSVP, Zusammenarbeit, Ausgaben), ST0939 Gegenzölle (Anlass im Fragetext), SE035 Item 5 („gerechte“ Besteuerung, wertend), SE037 digitaler Binnenmarkt (abstrakter Begriff), SP566 QE6 und QE4 sowie SP554 QB11 (Dringlichkeit oder Wichtigkeit ohne Gegenposition), SP568 QC9 (Wortlaut fehlt), SP546 QB4 von Februar 2024 (Prioritätenliste ohne Richtung).
+
+Diese elf Fragen verkleinern Lücken nur auf EU-Ebene. Wehrdienst, deutscher Verteidigungshaushalt, deutsche Waffenlieferungen, Rüstungsexporte, Rundfunkbeitrag, IP-Adressen, Gesichtserkennung, Mindestalter für soziale Medien, Bildungsföderalismus, BAföG, Kita, Rente, Pflege, Mieten und Grundsteuer bleiben offen.
+
+### 11.2 Stufe 2: ESS Runde 12 (Klasse Z), frühestens ab Januar 2027
+
+Voraussetzungen: Veröffentlichung der Daten und des deutschen Fragebogens, ergebnisblinde Prüfung von Wortlaut, Parteiliste und Codes je Modus (persönliches Interview und Selbstausfüller), danach ein Gruppenvertrag v2.3.
+
+- Aktuelle Referenzen für Profilfragen, die ESS12 wiederholt: laut R3 und R9 `gincdif`, `euftf`, `imsmetn`, `imdfetn`, `impcntr`, `hmsacld`, `vteurmmb`. Sie stehen getrennt neben den historischen Referenzen (Abschnitt 5).
+- Wählergruppen nach der Rückerinnerung an die Bundestagswahl vom 23. Februar 2025 (Quellfragebogen A26 und A27). Der Bezug auf diese Wahl folgt aus dem Feldfenster und ist am deutschen Wortlaut noch zu prüfen.
+- ESS12 enthält keine Präferenzfrage für die sechs Bereiche (R8 Abschnitt 7, R9 Abschnitt 6.1).
+
+### 11.3 Stufe 3: Online-Quotenstichproben (Klasse Q), nur nach Stevens Grundsatzentscheidung
+
+OECD Risks that Matter 2024 (Deutschland November bis Dezember 2024, 18 bis 64 Jahre, Online-Quote, Fragebogen nur englisch). Ohne Prämisse oder Begründung im Fragetext sind nur die Fragen Q19 g (Gesundheit), Q19 i (Renten), Q19 j (Langzeitpflege), Q19 f (Wohnen) und Q19 e (Mindestsicherung): Bereitschaft, 2 % des Einkommens zusätzlich für bessere Leistungen zu zahlen, als Mehrfachauswahl. Sie messen eine Zahlungsbereitschaft, keine Haltung zu einem deutschen Gesetz. Nicht vorgeschlagen: Q23 a (Prämisse), Q27 e (Kosten-Nutzen-Vorgabe), Q27 f (Zweckangabe), Q34 a und j (Begründung im Text, nach Informationsexperiment). Reuters Digital News Report 2025 und 2026 nur, wenn ein deutscher Wortlaut belegt ist.
+
+### 11.4 Stufe 4: GESIS-Bestände, nur nach einer Ausnahme nach § 4
+
+GLES Querschnitt 2025 Nachwahl q27e (Waffenlieferungen an die Ukraine), q27o (Waffen an Israel), q170 (Gesellschaftsdienst statt Wehrpflicht), q27i (Mietregulierung); GLES-Panel 2025/26 (Quotenstichprobe, Klasse Q) zu Verteidigungsausgaben, Wehrpflicht, Russland, Mindestlohn; Politbarometer 2024/25; ISSP 2024 „Digital Societies“; ZMSBw-Daten 2025. GLES q27k („Das Bürgergeld sollte deutlich abgesenkt werden.“) bezieht sich seit dem 1. Juli 2026 auf einen überholten Rechtsstand und wäre nur mit Zeitvermerk denkbar.
+
+### 11.5 Nicht weiter verfolgt
+
+SOEP (KI-Verarbeitung ausdrücklich untersagt), ifo Bildungsbarometer (Vertrag nur für wissenschaftliche Einrichtungen, Daten bis 2021), EIB (Veröffentlichung ohne Erlaubnis untersagt), ZQP (automatisiertes Lesen untersagt), Quellen, die Fragen nur mit Ergebnissen veröffentlichen (ZMSBw-Bericht, Berlin Pulse, Pew, DAK-Pflegereport, ver.di, SozialstaatsRadar), solange Steven sie nicht ausdrücklich zulässt.
 
 ## 12 Stopps
 

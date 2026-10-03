@@ -86,3 +86,15 @@ Für die sechs Lücken bleibt die Bewertung aus der Matrix bestehen. Medien und 
 5. **Anfragen bei OECD, EBDC (ifo), ZMSBw, RIFS und ein Pew-Konto** sind Nachrichten nach außen oder Zustimmungen zu Bedingungen. Sie brauchen Stevens Freigabe.
 
 Jede neue Quelle bräuchte danach einen eigenen, vorab festgelegten und geprüften Plan, bevor jemand Werte sieht.
+
+## Nachtrag vom 4. Oktober 2026: Erweiterungspaket 2025/26
+
+Drei weitere ergebnisblinde Rechercheberichte von Claude-Subagents prüfen Erhebungen der Jahre 2024 bis 2026: [R8](../reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md) für Außen-, Digital- und Bildungspolitik, [R9](../reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md) für Arbeit und Rente, Gesundheit und Pflege, Wohnen sowie die Wählergruppen, [R10](../reports/claude/agenten/R10-quellenblocker.md) für die Nutzungsbedingungen jeder Quelle. Beide Berichte trennen geltende Rechtslage, politische Vorschläge und Erhebungen.
+
+**Befund.** Für keinen der sechs Bereiche gibt es außerhalb von GESIS eine Zufallsstichprobe der Jahre 2024 bis 2026, die eine konkrete deutsche Streitfrage mit öffentlichem deutschem Wortlaut misst. Die Bewertung der Matrix bleibt. Aktuelle Fragen mit Zufallsstichprobe außerhalb von GESIS stehen nur im Eurobarometer und betreffen fast alle die EU-Ebene. ESS Runde 12 enthält keine Präferenzfrage zu den sechs Bereichen, aber die Rückerinnerung an die Bundestagswahl vom 23. Februar 2025.
+
+**Seit der Matrix geänderte Rechtslage (Auswahl, Belege in R8 und R9).** Neues Wehrdienstgesetz seit 1. Januar 2026; neue Grundsicherung für Arbeitsuchende seit 1. Juli 2026; Tariftreuegesetz seit 1. Mai 2026; Mindestlohn 13,90 Euro seit 1. Januar 2026; GKV-Beitragssatzstabilisierungsgesetz seit 30. Juli 2026. Vorgeschlagen, aber nicht beschlossen: Empfehlungen der Alterssicherungskommission vom 23. Juni 2026, Pflegeneuordnungsgesetz (Kabinett 30. September 2026), „Mietrecht II“, Speicherung von IP-Adressen, Altersgrenzen für soziale Medien. Fragen aus früheren Erhebungen beziehen sich teils auf einen überholten Stand.
+
+**Rechte.** Nur der ESS erlaubt alle geplanten Nutzungen per Lizenz. Ausdrücklich verboten ist die KI-Verarbeitung von Einzeldaten bei GESIS, beim UK Data Service und beim SOEP. Die Eurobarometer-Tabellen der Kommission dürfen verarbeitet und veröffentlicht werden. Die Rechte an ihren deutschen Fragewortlauten sind ungeklärt (R10).
+
+Die Kandidaten, Auswahlregeln und Vergleichsregeln stehen im [Analyseplan v2.3 (Entwurf)](analyseplan-v2.3.entwurf.md), die Entscheidungen für Steven in der [Entscheidungsvorlage](entscheidungsvorlage-erweiterung-v1.entwurf.md). Kein Kandidat ist in den Test aufgenommen.
