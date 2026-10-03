@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: de-DE
+tone_instructions: 'Schreibe konkret und sachlich. Nenne Fundstelle, Auswirkung und einen prüfbaren Vorschlag.'
+reviews:
+  profile: assertive
+  high_level_summary: true
+  review_status: true
+  poem: false
+  sequence_diagrams: false
+  path_filters:
+    - '!pnpm-lock.yaml'
+    - '!.agents/skills/**'
+    - '!web/public/art/**'
+    - '!web/public/fonts/**'
+  path_instructions:
+    - path: 'web/**'
+      instructions: >-
+        Prüfe Angular- und TypeScript-Code, Tastaturbedienung, Fokusführung,
+        responsive Darstellung, Laufzeitfehler und unnötige externe Anfragen.
+        Die Website ist derzeit eine Grundlage ohne fertigen Test.
+        Beanstande erfundene Ergebnisse oder Aussagen, die einen bereits
+        validierten Politiktest suggerieren. Gestaltung, Texte, Bilder und
+        Barrierefreiheit müssen docs/handbuch.md folgen; beanstande Abweichungen
+        mit Kapitelangabe. Beanstande Bundesadler, Bundesdienstflagge,
+        Flaggenstab oder andere Zeichen, die ein amtliches Angebot nahelegen.
+        Beachte docs/project.md.
+    - path: 'web/src/app/art/**'
+      instructions: >-
+        Jedes Gemälde braucht einen Abschnitt in docs/assets.md mit
+        Commons-Link, Kennzeichnung, SHA-256, Provenienz und Verarbeitung.
+        Titel, Datierung und Sammlung müssen mit docs/assets.md übereinstimmen.
+        Prüfe die Auswahlregeln aus docs/handbuch.md, Kapitel 6.
+    - path: 'docs/**'
+      instructions: >-
+        Prüfe gegen docs/pruefregeln.md, docs/analyseplan.md und docs/belegregister.md.
+        Jeder tragende Anspruch braucht eine genaue Fundstelle und einen ehrlichen
+        Prüfstatus. Unterscheide Quellenbefund, eigenes Ergebnis, Modellentscheidung
+        und Annahme. Beanstande erfundene Abnahmen, unbegründete Schwellen und
+        Gleichsetzung von technischem Review mit methodischer Validierung.
+        Quellen nur im tatsächlich zugänglichen Umfang als geprüft behandeln.
+        Nutze das Finding-Format aus docs/reviews/README.md mit Regel-/Beleg-ID,
+        Problem, Nachweis, Auswirkung und überprüfbarer Abhilfe. Die methodische
+        Freigabe und andere Modellfamilie sind derzeit offen.
+    - path: 'pipeline/**'
+      instructions: >-
+        Beachte docs/pruefregeln.md und den freigegebenen Analyseplan, falls vorhanden.
+        Prüfe Versionen, Zugriffstrennung A/B und Wahl-/Lagerfelder, originale
+        Kodierungen, Missing-Behandlung, ordinale Verfahren, Gewichte und
+        Stichprobendesign. Keine Rohdaten in Review-Ausgaben kopieren.
+        Prüfe deterministische Reproduktion und generierte statt handgeschriebene
+        Ergebnisse. Findings nach docs/reviews/README.md; kein bestandenes
+        methodisches Gate aus fehlenden oder übersprungenen Prüfungen ableiten.
+    - path: 'model/**'
+      instructions: >-
+        Prüfe Provenienz, Version/Hash, Beleg-IDs, freigegebene Itemzuordnung und Polung,
+        Normierung, Missing-/Mindestantwortregeln, Unsicherheit und Interpretationsgrenzen.
+        Das Modell ist ein eigenes Projektartefakt, keine ESS-Freigabe.
+        Prüfe Python-/Browserparität anhand synthetischer Fälle. Beachte R13–R18
+        in docs/pruefregeln.md; Findings nach docs/reviews/README.md.
+    - path: 'reports/**'
+      instructions: >-
+        Prüfe, ob Prüfstand und geprüfter Commit/Artefakt-Hash stimmen, Ergebnisse
+        reproduzierbar generiert sind und wesentliche Findings nachgeprüft wurden.
+        Offene Quellen-, methodische und Verständnisprüfungen getrennt ausweisen.
+        Keine ausgelassene Prüfung als bestanden und keinen CodeRabbit-Lauf als
+        nachgewiesene andere Modellfamilie ausgeben. Nutze docs/reviews/README.md.
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    auto_pause_after_reviewed_commits: 0

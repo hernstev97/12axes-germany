@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T01:43:40.836915+00:00",
+  "updatedAtUtc": "2026-10-03T01:11:25.572959+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -301,78 +301,6 @@
       "status": "BESTANDEN",
       "closureScope": "Korrektur an eingefrorener alter Forschungsfassung durch Juror bestätigt",
       "blocks": []
-    },
-    {
-      "id": "L000-I01",
-      "decision": "angenommen",
-      "severity": "mittel",
-      "problem": "Zwei widersprüchliche Prüfstatusvokabulare",
-      "evidence": "docs/pruefregeln.md:9",
-      "origin": "reports/loop/reviews/LOOP-000-integration.md",
-      "reason": "Befund durch Vergleich der eingefrorenen Regel-/UI-Stellen mit aktuellem Auftrag belegt.",
-      "correctionState": "docs/pruefregeln.md v0.3 verwendet die fünf Auftragstatus und grenzt alte historische Status ab.",
-      "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "verification": {
-        "scope": "Unabhängige Nachprüfung der neuen Fassung ausstehend; für UI zusätzlich tatsächliche Browser- und technische Prüfungen.",
-        "executionRecord": null
-      },
-      "blocks": ["LOOP-000 package acceptance"],
-      "duplicateOf": null
-    },
-    {
-      "id": "L000-I02",
-      "decision": "angenommen",
-      "severity": "mittel",
-      "problem": "Pauschaler Ausschluss methodischer KI-Prüfung",
-      "evidence": "docs/handbuch.md:263",
-      "origin": "reports/loop/reviews/LOOP-000-integration.md",
-      "reason": "Befund durch Vergleich der eingefrorenen Regel-/UI-Stellen mit aktuellem Auftrag belegt.",
-      "correctionState": "Begrenzter Methodenreview ist benennbar; technische Checks und KI-Übereinstimmung ersetzen weder empirische Evidenz noch Abnahme.",
-      "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "verification": {
-        "scope": "Unabhängige Nachprüfung der neuen Fassung ausstehend; für UI zusätzlich tatsächliche Browser- und technische Prüfungen.",
-        "executionRecord": null
-      },
-      "blocks": ["LOOP-000 package acceptance"],
-      "duplicateOf": null
-    },
-    {
-      "id": "L000-I03",
-      "decision": "angenommen",
-      "severity": "niedrig",
-      "problem": "Veralteter nächster Arbeitsschritt in der UI",
-      "evidence": "web/src/app/pages/home/home.html:127; web/src/app/pages/project/project.html:119",
-      "origin": "reports/loop/reviews/LOOP-000-integration.md",
-      "reason": "Befund durch Vergleich der eingefrorenen Regel-/UI-Stellen mit aktuellem Auftrag belegt.",
-      "correctionState": "Nächster Schritt Originalfragen und begründeter Analyseplan; KI-Audit und fehlende empirische Modellprüfung ausdrücklich getrennt.",
-      "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "verification": {
-        "scope": "Unabhängige Nachprüfung der neuen Fassung ausstehend; für UI zusätzlich tatsächliche Browser- und technische Prüfungen.",
-        "executionRecord": null
-      },
-      "blocks": ["LOOP-000 package acceptance"],
-      "duplicateOf": null
-    },
-    {
-      "id": "L000-P01",
-      "decision": "angenommen",
-      "severity": "mittel",
-      "problem": "Gleicher Statuskonflikt wie L000-I01",
-      "evidence": "reports/loop/reviews/LOOP-000-provenance.md",
-      "origin": "reports/loop/reviews/LOOP-000-provenance.md",
-      "reason": "Befund durch Vergleich der eingefrorenen Regel-/UI-Stellen mit aktuellem Auftrag belegt.",
-      "correctionState": "Gemeinsame Korrektur mit L000-I01; beide ursprünglichen Kennungen bleiben erhalten.",
-      "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "verification": {
-        "scope": "Unabhängige Nachprüfung der neuen Fassung ausstehend; für UI zusätzlich tatsächliche Browser- und technische Prüfungen.",
-        "executionRecord": null
-      },
-      "blocks": ["LOOP-000 package acceptance"],
-      "duplicateOf": "L000-I01"
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."

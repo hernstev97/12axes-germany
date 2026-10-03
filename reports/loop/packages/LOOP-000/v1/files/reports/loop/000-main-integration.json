@@ -1,0 +1,16 @@
+{
+  "kind": "main-integration-check",
+  "performedAtUtc": "2026-10-03T01:06:39.818710+00:00",
+  "sourceResearchCommit": "be8fa31ec902941707e0f39f10d0785457a75175",
+  "incomingMainCommit": "87eb549c7b601630c9efdce1825b1f6ae9e3cdc0",
+  "mergeCommit": "55a001881cea242b19255fdd2588a4ff9fbd5dd9",
+  "allMainWebFilesByteIdentical": true,
+  "mainWebFilesChecked": 61,
+  "handbookAssetsValidationByteIdentical": true,
+  "conflictsResolved": [
+    ".coderabbit.yaml: UI and scientific instructions retained",
+    "docs/ki-protokoll.md: both histories retained"
+  ],
+  "originalUncommittedWork": "unchanged; backup outputs/loop/bootstrap-20261003T010447Z in original project",
+  "scope": "Isolierter Worktree; kein Rohdateninhalt, kein Push/Merge zu main."
+}

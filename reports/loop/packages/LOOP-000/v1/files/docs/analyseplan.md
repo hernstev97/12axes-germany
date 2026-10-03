@@ -54,7 +54,3 @@ Die anwendbaren P-Entscheidungen werden mit Fundstellen, konkreten Parametern, P
 Vor endgültiger Itemauswahl und empirischer Modellarbeit müssen zusätzlich die vorgeschriebenen getrennten Erstbewertungen, der vollständige Katalog, Themenrahmen und das Erwartungsmodell vorliegen. Die Entscheidung „nur CodeRabbit; methodische Freigabe offen“ und dieses Audit derselben Modellfamilie erfüllen den Nachweis einer anderen Modellfamilie nicht. Erhebliche offene Findings blockieren ihren abhängigen Schritt; unabhängige Quellen- und Planarbeit geht weiter.
 
 Die [zusätzlichen Analyseanforderungen](analyseanforderungen.md) aus dem Audit konkretisieren den Entwurf. Keine der dort geforderten empirischen Prüfungen ist bereits durchgeführt oder bestanden. Noch kein Plan-/Erwartungs-/Modell-Tag.
-
-## Fortschreibung im Gesamtauftrag
-
-Der [dauerhafte Auftrag](auftrag-life-93-2026-10-03.md) umfasst inzwischen alle Phasen und die Vorbereitung der erforderlichen getrennten Prüfpakete. Die frühere Entscheidung für ausschließlich CodeRabbit war eine Grenze des vorherigen Arbeitsschritts. Die Claude-Erstbewertungen, Reviews und Setup-Abnahme bleiben weiterhin echte Voraussetzungen. Der vorhandene CLI-Zugriff ist derzeit durch ein Providerlimit blockiert; der [Loopzustand](../reports/loop/state.json) nennt Beleg und Wiederaufnahmezeitpunkt. Dieser Abschnitt setzt keinen Planparameter fest und erteilt keine Analysefreigabe.

@@ -1,0 +1,199 @@
+{
+  "id": "LOOP-000-v1",
+  "frozenAtUtc": "2026-10-03T01:13:38.863167+00:00",
+  "codeCommit": "002fb8e28b57559179692668d3abd89b1d852082",
+  "incomingMainCommit": "87eb549c7b601630c9efdce1825b1f6ae9e3cdc0",
+  "analysisPlanVersion": "Entwurf 0.2",
+  "sourceCatalog": "docs/quellen.json v0.2",
+  "dataVersion": "ESS11 4.2 (keine Antwortanalyse)",
+  "rawDataSha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+  "rawHashCheck": "Tatsächlich ausgeführt, nur Byte-Hash, kein Originaldownload-Abgleich",
+  "modelConfiguration": null,
+  "generatedScientificArtifacts": [],
+  "files": {
+    "AGENTS.md": {
+      "sha256": "ccf07493ac34e1d63cfa018580f13443d96373b9ede0907754f487f9ed535d7c",
+      "bytes": 4003
+    },
+    ".coderabbit.yaml": {
+      "sha256": "4653e70257a4300f0cf681e3b101e70c9cce6804a200f8461577849a64b4f444",
+      "bytes": 3902
+    },
+    ".gitignore": {
+      "sha256": "70185f0fb96acf60284587b27d18b5dcdfe4a3142dce66745f82baebd8af8fcd",
+      "bytes": 266
+    },
+    ".prettierignore": {
+      "sha256": "05668f95f09b82cc944a2b22ceed0f7b6f8565b672c811c334911a30e02469bf",
+      "bytes": 734
+    },
+    "README.md": {
+      "sha256": "fc47832ac649d4ba5be0d3873f1866aaddd526faed3a3567e372a850d9993551",
+      "bytes": 3723
+    },
+    "docs/project.md": {
+      "sha256": "984e5f63d2b7ff056fb192cd978b8df4cbf042772e0327cf5e66fff835b9245b",
+      "bytes": 5627
+    },
+    "docs/ki-protokoll.md": {
+      "sha256": "2bfda42619a7c142435fe5e3c9e267340b9e46b0bb927472c662d5a5a08964c2",
+      "bytes": 12068
+    },
+    "docs/handbuch.md": {
+      "sha256": "7f925d600355abed2a9ad78ca9618a657e8c400e13646069430a142beb8d7b4a",
+      "bytes": 35774
+    },
+    "docs/assets.md": {
+      "sha256": "d9e454e2159fd5ddbf1534fd7716974a632589dc7e02b3d3904d5eeec84ca018",
+      "bytes": 19050
+    },
+    "docs/validation.md": {
+      "sha256": "c665e659e56abdf03f9ce3dfd6d33290cec21afec36006f70b218cd700b4f13b",
+      "bytes": 5945
+    },
+    "docs/arbeitsloop.md": {
+      "sha256": "1708046381a81b85db60d99e082165e87039d83ea838c209f42604ab09b83172",
+      "bytes": 6363
+    },
+    "docs/auftrag-life-93-2026-10-03.md": {
+      "sha256": "beb4f2313454fd0d8c0fab7dd6243dbc9616a18335d9254fcbb09d74b459bdf6",
+      "bytes": 17471
+    },
+    "docs/analyseplan.md": {
+      "sha256": "0041e3fadd4e1e029b92b90e75d6aeaaf9722b5a4baf78582a00dce7b215d426",
+      "bytes": 13132
+    },
+    "docs/analyseanforderungen.md": {
+      "sha256": "f94a4bc01c571af966e9269a674632f8a19cba3db0a5c8be0bddade27be7795b",
+      "bytes": 8485
+    },
+    "docs/pruefregeln.md": {
+      "sha256": "ec912000faa055b1ce1673f9f440a8b2e11e10ff27764a4aae713b942d44f803",
+      "bytes": 22731
+    },
+    "docs/belegregister.md": {
+      "sha256": "fa93c16bf26c8b21ced068bc60c51b4fa76767ac8449a92552499b32c97e5533",
+      "bytes": 15117
+    },
+    "docs/lizenzen.md": {
+      "sha256": "b5b0303ec23bc4bbc8dba1f59994c9ccd7cd90c76474157399cf78d616753dcb",
+      "bytes": 4845
+    },
+    "docs/entscheidungen.md": {
+      "sha256": "0ffb361d8eb9b72c2ad7821106f8c05836ba023e7cf4cd2682a63c62fa0cdd38",
+      "bytes": 4520
+    },
+    "docs/quellen.json": {
+      "sha256": "f58e4556f877aeccf65707548d8aa4cdb4fa2848863b20f1a318ee783dcef41d",
+      "bytes": 11864
+    },
+    "reports/loop/000-main-integration.json": {
+      "sha256": "f4d4e2e1fa17fa12d9eab225f11feeaecfe23e1f9f3bb9fe710fe5d0fa223758",
+      "bytes": 750
+    },
+    "reports/loop/issue-2026-10-03.json": {
+      "sha256": "cadd6e17bd31207d5661f50d855062f605bc160f2e28588cc1e87673ba4ccb8f",
+      "bytes": 38742
+    },
+    "reports/loop/issue-2026-10-03.md": {
+      "sha256": "7c369ffe6b48487855b621f2c52af7a21923849289de049aba6f067fafc0a397",
+      "bytes": 37196
+    },
+    "reports/loop/state.json": {
+      "sha256": "052fbc61830fee11bd7f51ef6c3544dbf96f61a718897854c32ef1d43118de49",
+      "bytes": 4263
+    },
+    "reports/loop/findings.json": {
+      "sha256": "faee86f7f44bcd9102723956a632a5c7016064a98cfdde90a6b5809738d5919a",
+      "bytes": 18884
+    },
+    "reports/loop/push-001.json": {
+      "sha256": "aa6f667bc24b53751525b62bc04c2f3f5b15f636bb1044abc72c24d07a31e778",
+      "bytes": 305
+    },
+    "package.json": {
+      "sha256": "250f1cf80c2717556600a8014fc947d1dd40bfae2409a11b501a45212d311a97",
+      "bytes": 818
+    },
+    ".github/workflows/ci.yml": {
+      "sha256": "86a55ffa82ac4cdc2e13012d92e74aefaf4f3757af3293ac03cf3971a537b2ea",
+      "bytes": 606
+    }
+  },
+  "unchangedCodeFilesAtCommit": {
+    "scripts/check-browser.mjs": "263d30a412ce511cbf9ccb40309acfca0aa807179612d33a0d5c19842da7d171",
+    "scripts/check-handbuch.mjs": "0539a25f70c8f096b0e0a333929643a62bace767445200dee166ccacfdc97ce7",
+    "scripts/encode-artwork.sh": "e8cb43ebb7e22f0e4046a8654758f731d5acfaf03b26897023aa3a9c07e70e58",
+    "web/.gitignore": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+    "web/.vscode/extensions.json": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+    "web/angular.json": "35f40a258df726ac1bb2017abe36480aa14e000ec2ec33d40eefa2ddc748460f",
+    "web/package.json": "77db8383e6c64f65fe04638c46ba3b7f9b40040d95f0ad3ced1471fb475d60f7",
+    "web/public/art/blechen-daecher-1200.webp": "61bc192b235ea732a6a683b66951fc59fed1a7e37be49ba975aa2d1eb75a1a09",
+    "web/public/art/blechen-daecher-480.webp": "d02f1df9f50764ee081cf2552bb22ba9d80f0cbf2d63fe48e9e275981fd80ae7",
+    "web/public/art/blechen-daecher-800.webp": "0ab4751d54f9dd3e3020ec335b5c17c99e0c2fd0e5f5dc93b260d1490a561f57",
+    "web/public/art/carus-dresden-1200.webp": "bc1ca048b4894c2b73ef16dde91c8f5ed550f97a4c07966a6bf2ab085f3e12f8",
+    "web/public/art/carus-dresden-480.webp": "fc20314540b774e2a47f252272b3add5dc895cc83ec310bf346a30df2d790a10",
+    "web/public/art/carus-dresden-800.webp": "445377fe880951cafa0e2e93ac022b5eccd922801d30f564220faac1e896da12",
+    "web/public/art/friedrich-fenster-1200.webp": "2262a3675d66b1961de1e6987cab097c5a4641e041323100321c1a0e763eaa04",
+    "web/public/art/friedrich-fenster-480.webp": "6d3fe59d5b4b67c6f37ad39b5cf97aadcd291b373ee6af14c3799dcb1a15c450",
+    "web/public/art/friedrich-fenster-800.webp": "46f3c33a56df05cb69b51258640d1dfd2e68f66df1515cd0dd473e230b13576c",
+    "web/public/art/friedrich-greifswald-1200.webp": "6a2f096e2f46679ca71f357a223860d0926e95ab33b833ee721729f0f9d8d96d",
+    "web/public/art/friedrich-greifswald-480.webp": "838af0cba7a7e2d7c9f0abc7db8ce9e913bfcae3005b981662d76602afe61b1b",
+    "web/public/art/friedrich-greifswald-800.webp": "4b689a5818359670e0270e6423bc871281786036e4fd9133fedfeb4de5977bde",
+    "web/public/art/friedrich-kreidefelsen-1200.webp": "818cf4a051ce368e585406d2e351c4f71fd0e083fee4132e425989040d6a36f7",
+    "web/public/art/friedrich-kreidefelsen-480.webp": "937853d92173b9b241dcc46404f687479797dc4f1f685f80710927ca6c3795b1",
+    "web/public/art/friedrich-kreidefelsen-800.webp": "70ced5f12aebd5ae0346a6f993850c3e0e3c00f389180a33cb02524968d23fc6",
+    "web/public/art/friedrich-moench-1200.webp": "d14bcb35886e4e44191c8600f3903f7d2007c0a800d50bd290c74a1c351fdc53",
+    "web/public/art/friedrich-moench-480.webp": "af99addda9459d81df7ac3eac28245c6eb9c3bb9100802bd706c74395a65caef",
+    "web/public/art/friedrich-moench-800.webp": "d5216734c0122e843c75f988acbe20a4cb3db63979304c7574c2d31a5d927601",
+    "web/public/art/friedrich-riesengebirge-1200.webp": "4ee1a0e940c79cd62910ab13121233ad1e41600a5d5da74dfc5f9c80fac93685",
+    "web/public/art/friedrich-riesengebirge-480.webp": "143f15031733831c8a3bce015f75022f8f832c772acaee31090f51cf488c1a8a",
+    "web/public/art/friedrich-riesengebirge-800.webp": "842c5a91e4f139ae8e231c69f17b2261d9f03dda5c6675cafbf3f0ecf22bc98f",
+    "web/public/art/richter-schreckenstein-1200.webp": "54e6603f022ab7441bd11bb112b34846dd5e5b1dcd484c41c06f6cc7cecb2750",
+    "web/public/art/richter-schreckenstein-480.webp": "5e2dc060e88624f6730f3643530256f42ab263a328a873fdb0c75e9194e16504",
+    "web/public/art/richter-schreckenstein-800.webp": "9140ed44327a789378a57ff9f8ed198e8c80b3fbe82365f60c24f8418b4843b0",
+    "web/public/art/schwind-morgenstunde-1200.webp": "35d5151512b29d9a6ccec1070b55fe5e3f9f940e0afc65a60203256c20baf5fc",
+    "web/public/art/schwind-morgenstunde-480.webp": "7355fd572a26b654816460a3d645b89d168476b3ec92cd2a02927d5cf1f0fce6",
+    "web/public/art/schwind-morgenstunde-800.webp": "54eebc0664df9b3a94fce3084b4f7283a025f8e6fb4fa2dc6cd813ab25c91447",
+    "web/public/favicon.svg": "70add7356218bf992d430d9b5fcaaf2b27d6554802f3252e8c574b8d2cfbdd84",
+    "web/public/fonts/licenses/libre-baskerville.txt": "8490e863633e537100d6d18755d994ea30b0b44741876a17809d28becf45ce11",
+    "web/src/app/app.config.ts": "27d0ce599330bc553a348427881c1a2636688a09f5ad598ccbe7317d3bcd521e",
+    "web/src/app/app.html": "dac5494b1ad8339c9fca675ff09b243b4fb3dda9a286ab984f77bed40f6a56ac",
+    "web/src/app/app.routes.ts": "2f42fbebdbb80f6c82fe514831b15626cb79cb64bef1a9d3d0c10ae2bdc6c9d3",
+    "web/src/app/app.scss": "5ad034daa84db2bb8bd36321f896602bed1c9a4d40a39ec4e3c781b876f0aaf4",
+    "web/src/app/app.spec.ts": "b41056b616f6de5620c554f342b5c3c39810aaf732336b742477550f4bab0157",
+    "web/src/app/app.ts": "386b021e8b318491386f2a3a19520bc49555836294df4a4b86ebf500e83b97a3",
+    "web/src/app/art/art-figure.ts": "3561dcfe04621e83aafebb417789803703f0bdb8aec9d272c462203c250252ad",
+    "web/src/app/art/art-gallery.html": "91233900db902a91d3a05997633cbf8e9d2b3c0fd5b29f44f958bd8abbd33d47",
+    "web/src/app/art/art-gallery.scss": "e568d404ac9caa4b4c0a22cf337ddcfbec55e5c5b8b8d80680a6700b225bcff9",
+    "web/src/app/art/art-gallery.spec.ts": "352ebce33205985b7fa75f88f458750ad62acbe2778c68548a319312c0cd3291",
+    "web/src/app/art/art-gallery.ts": "5892d4664acb95fa4c911526c7a5a398d09f3b2d6b6b6900afd270ce10a25e1d",
+    "web/src/app/art/artwork.ts": "3bbd89aa3fef36bab1ca6c6b4559d89b8d3d76d7843c3f2bc1af1fb92b51fbf1",
+    "web/src/app/art/artworks.ts": "18d2ea1c41ed01c9b26ace3bbbe043a34aca3eae5ca4ead347b66e593859d11c",
+    "web/src/app/pages/home/home.html": "771928f4656f9380897c60f3602e0aaf112a2876a0d85a1d91ef19b4dd64bf99",
+    "web/src/app/pages/home/home.scss": "a9b8a777a5c46147547b215de18657be3b6c4e77a192273e9d24b7b8ee300b94",
+    "web/src/app/pages/home/home.ts": "cdc1ae74bfeef8880af8ae25f44db946f71c6508b937483b2e0fb1c42af7ae82",
+    "web/src/app/pages/not-found/not-found.html": "d2921c914e8ab0a01567b7c6e532812449c21242addb49cc5e9e93f916de8f74",
+    "web/src/app/pages/not-found/not-found.scss": "ee52dd282bbe9c7f9c85525d9c8dbe247533a22756ff6106dd5827ab7305d828",
+    "web/src/app/pages/not-found/not-found.ts": "75757705fe390ce4c65fadcbc9583d4e4acf011533540189bf067f63d9c23453",
+    "web/src/app/pages/project/project.html": "663a1ed6c372dee813f9f3d77770ed35dd32631c2d8cf1acda9cb2170f9416df",
+    "web/src/app/pages/project/project.scss": "c4c50f7d7552e3978c02df643204217c0ddcb530044e7503099ef2d86d7dc6f2",
+    "web/src/app/pages/project/project.ts": "26e0b5c0f6c60aa2461ffd5659c201cd8a170fe4cac6b871acea19f50b900c81",
+    "web/src/index.html": "d3dcf44566fd2c05d92b9acdf0c9d0e570b472abd3edfa7ac4face20fc15657c",
+    "web/src/main.ts": "ecc610fb7d56c95a01a8aa6c274a63210d45b2944dd6b9a88b2c8f70b6351037",
+    "web/src/styles.scss": "695afc2c43f15dcaf4ad0406a3bf9910d7b6b7f610e4e52516b72f624ba8cf11",
+    "web/tsconfig.app.json": "73644210146f8c2f7fac8504404fe21c36a9650df7587ba9e971fc36e5138f4f",
+    "web/tsconfig.json": "b6445b51aafffbe2fed1026bbe83c8bdf1f9194c928f6bad0db9bad66fa10b4a",
+    "web/tsconfig.spec.json": "7aeb8799d7e1d086d16d7b238769f664cfa73b3d135318df5dcc441fdc6a7e87"
+  },
+  "reviewScope": "main-Integration, Schutz bisheriger Arbeit, Stand/Prüfstatus und Anweisungskoherenz; keine wissenschaftliche Gesamtfreigabe",
+  "criteria": [
+    "main Webdateien bytegleich",
+    "Handbuch und Quellenarbeit erhalten",
+    "keine Rohdaten veröffentlicht",
+    "alte wissenschaftliche Hashabnahmen nicht auf geänderte aktive Fassung übertragen",
+    "Scope, Claude-, Tags-, Menschengates ehrlich",
+    "keine widersprüchlichen aktiven Anweisungen oder toten aktiven Dokumentlinks"
+  ],
+  "isolation": "Fresh agent contexts and instructed file scope; shared user/filesystem not a security sandbox"
+}

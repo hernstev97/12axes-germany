@@ -260,7 +260,7 @@ Drei Zeilen: Künstler; `<cite>Titel</cite>`, Datierung; Sammlung als „Museum,
 - Präsens nur für das, was es gibt. Geplantes mit „soll“, „sollen“, „geplant“ oder „vorgesehen“.
 - Nichts erfinden: keine Fragen, Dimensionen, Dimensionsnamen, Werte, Bearbeitungszeiten, Termine oder Gütesiegel. Zahlen nur, wenn sie belegt sind; Analysezahlen nie von Hand.
 - Nie „validiert“, „wissenschaftlich geprüft“, „neutral“ oder „objektiv“ als Eigenschaft des Projekts. Die Standardformel lautet: „Das Projekt ist weder validiert noch wissenschaftlich geprüft und kann keine Neutralität garantieren.“
-- Technische Prüfungen, CI und KI-Übereinstimmung ersetzen keine methodische Evidenz oder Abnahme. Ein KI-Review zu Methoden darf seinen tatsächlich geprüften Umfang und Befund nennen. Er ersetzt weder empirische Nachweise noch die vorgeschriebenen getrennten Erstbewertungen und Reviews; er ist keine Begutachtung durch Fachleute.
+- Technische Prüfungen, CI und KI-Reviews sind keine methodische Prüfung und werden nie so dargestellt.
 - Belegquellen für Projektfakten sind `docs/project.md`, `AGENTS.md` und LIFE-93. Ändert sich der Stand, ändern sich Faktenlisten und Datumszeilen im selben PR.
 
 ### 7.3 Begriffe

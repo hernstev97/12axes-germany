@@ -1,6 +1,6 @@
 # Review-Protokoll
 
-Stand 2026-10-03: CodeRabbit ist der einzige vorgesehene Review-Dienst. Ein PR-/CodeRabbit-Review dieses Pakets liegt nicht vor. Der neuere lokale KI-Audit-Auftrag ist unten getrennt dokumentiert. Die methodische Freigabe ist offen; dieses Format organisiert Findings und ersetzt keine getrennten Erstbewertungen.
+Stand 2026-10-03: Der [dauerhafte Gesamtauftrag](../auftrag-life-93-2026-10-03.md) verlangt die Reviews aus LIFE-93 und wiederkehrende unabhängige Codex-Kontrollen. CodeRabbit bleibt technischer PR-Dienst. Die vorgeschriebenen Claude-Erstbewertungen und Claude-Reviews fehlen weiterhin. Ein vorhandener, angemeldeter Claude-CLI-Zugriff wurde geprüft, scheiterte aber am Providerlimit; [Beleg](../../reports/loop/claude-access.json). Dieses Format ersetzt keine getrennten Erstbewertungen.
 
 ## Auftrag an CodeRabbit
 
@@ -33,7 +33,7 @@ Ein aktualisierter PR braucht eine erneute Prüfung der relevanten Änderungen u
 
 ## Offene methodische Abnahme
 
-Für die in LIFE-93 geforderten Urteilsaufgaben fehlen weiterhin überprüfbare Erstbewertungen aus einer anderen Modellfamilie und methodische Reviews. Es wird vorerst kein zusätzlicher Review-Auftrag vorbereitet. Wenn dieses Verfahren später eingerichtet wird, muss es R08 erfüllen. Mehrere CodeRabbit-Kommentare oder Codex-Sessions werden nicht nachträglich als dieser Nachweis umbenannt.
+Für die in LIFE-93 geforderten Urteilsaufgaben fehlen weiterhin überprüfbare Erstbewertungen aus einer anderen Modellfamilie und methodische Reviews. Der aktuelle Gesamtauftrag erlaubt die Vorbereitung der erforderlichen begrenzten Prüfpakete. Tatsächliche Erstbewertungen müssen R08 erfüllen; der GitHub-Review-Workflow und persönliche Setup-Schritte bleiben offene Voraussetzungen. Mehrere CodeRabbit-Kommentare oder Codex-Sessions werden nicht nachträglich als dieser Nachweis umbenannt.
 
 ## Lokales KI-Audit vom 2026-10-03
 

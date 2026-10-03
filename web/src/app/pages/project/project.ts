@@ -22,7 +22,8 @@ export class Project {
     { label: 'Vergleichswerte', value: 'Noch nicht berechnet' },
     {
       label: 'Methodische Prüfungen',
-      value: 'Noch keine. Fachleute haben das Projekt nicht begutachtet.',
+      value:
+        'Ein KI-Audit hat Teile des Rechercheentwurfs geprüft. Eine empirische Modellprüfung fehlt.',
     },
     { label: 'Verständlichkeit', value: 'Noch nicht mit Menschen geprüft' },
     { label: 'Methodischer Freigabeprozess', value: 'Noch nicht eingerichtet' },

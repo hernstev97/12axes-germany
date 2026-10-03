@@ -1,0 +1,2537 @@
+{
+  "source": "tatsächlich angebotene Root-Tools bei LOOP-Start; individuelle Nutzung in Agentberichten",
+  "tools": [
+    {
+      "name": "apply_patch",
+      "description": "The `apply_patch` tool can be used to edit files. This is a FREEFORM tool, so do not wrap the patch in JSON."
+    },
+    {
+      "name": "clock__curr_time",
+      "description": "Tools for reading and waiting on time."
+    },
+    {
+      "name": "create_goal",
+      "description": "Create a goal only when explicitly requested by the user or system/developer instructions; do not infer goals from ordinary tasks."
+    },
+    {
+      "name": "exec_command",
+      "description": "Runs a command in a PTY, returning output or a session ID for ongoing interaction."
+    },
+    {
+      "name": "get_goal",
+      "description": "Get the current goal for this thread, including status, budgets, token and elapsed-time usage, and remaining token budget."
+    },
+    {
+      "name": "image_gen__imagegen",
+      "description": "Tools in the image_gen namespace."
+    },
+    {
+      "name": "list_mcp_resource_templates",
+      "description": "Lists resource templates provided by MCP servers. Parameterized resource templates allow servers to share data that takes parameters and provides context to language models, such as files, database schemas, or application-specific information. Prefer resource templates over web search when possible."
+    },
+    {
+      "name": "list_mcp_resources",
+      "description": "Lists resources provided by MCP servers. Resources allow servers to share data that provides context to language models, such as files, database schemas, or application-specific information. Prefer resources over web search when possible."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_attach_automation_to_page",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_create_canvas",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_create_controller_automation",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_create_page",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_create_page_visualization",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_create_presentation",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_create_space",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_create_spreadsheet",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_edit_page",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_find_pages",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_get_artifact_execution_status",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_get_page_auto_update",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_get_page_sharing",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_get_sharing_availability",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_get_space",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_get_space_sharing",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_inspect_page_reference",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_list_page_automations",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_list_page_comments",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_list_pages",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_list_spaces",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_manage_page_comment",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_move_page",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_patch_page",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_progress_update",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_read_page",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_read_page_changes",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_read_page_reference",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_read_page_transcript",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_reply_page_comment",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_run_page_auto_update",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_search_sharing_recipients",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_set_page_auto_update",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_trash_page",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_update_page_sharing",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_update_space_sharing",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__chatgpt_space_write_page_reference",
+      "description": "Read, search, create, and edit pages and spaces in ChatGPT Space, within your current account."
+    },
+    {
+      "name": "mcp__codex_apps__check24_chatgpt_tools_search_moto_tires",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_chatgpt_tools_search_rims",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_chatgpt_tools_search_tires",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_energie_show_tariff_proposals",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_flight_mcpd_showflightoffers",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_hotel_search_hotels",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_hundehaftpflichtversicherung_search_dog_liability_tariffs",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_pauschalreise_travel_search_packages",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_pferdehaftpflichtversicherung_search_horse_liability_tariffs",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_production_get_insurance_advice",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_rentalcar_gpt_search_rentalcar",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__check24_sim_only_search_mobile_tariffs",
+      "description": "Compare Travel, Insurance, ..."
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_execute_document_command",
+      "description": "Use Codex Document Control to find connected document sessions, inspect the tools supported by a selected session, and execute one supported tool against that session. Call `list_document_sessions` first to choose the intended connected session, call `get_document_tool_schemas` before constructing tool arguments, then call `execute_document_command` with a caller-stable `idempotency_key`. Use this only for connected Codex document control; do not use it for general spreadsheet, presentation, or document tasks without a connected document session."
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_get_document_tool_schemas",
+      "description": "Use Codex Document Control to find connected document sessions, inspect the tools supported by a selected session, and execute one supported tool against that session. Call `list_document_sessions` first to choose the intended connected session, call `get_document_tool_schemas` before constructing tool arguments, then call `execute_document_command` with a caller-stable `idempotency_key`. Use this only for connected Codex document control; do not use it for general spreadsheet, presentation, or document tasks without a connected document session."
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_list_document_sessions",
+      "description": "Use Codex Document Control to find connected document sessions, inspect the tools supported by a selected session, and execute one supported tool against that session. Call `list_document_sessions` first to choose the intended connected session, call `get_document_tool_schemas` before constructing tool arguments, then call `execute_document_command` with a caller-stable `idempotency_key`. Use this only for connected Codex document control; do not use it for general spreadsheet, presentation, or document tasks without a connected document session."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_bootstrap",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_environments_list",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_environments_search",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_findings_close",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_findings_get",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_findings_list",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_github_get",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_github_repositories",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_github_search",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_usage_get",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_workflow_cancel",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_workflow_definition",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_workflow_get",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_workflow_launch",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_workflow_list",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_workflow_output",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_defense_factory_workflow_repositories",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__codex_security_cloud_open_defense_factory",
+      "description": "Run security scans, investigate findings, and manage workflows for the current workspace."
+    },
+    {
+      "name": "mcp__codex_apps__convex_add_convex_to_existing_project",
+      "description": "Build and scale apps"
+    },
+    {
+      "name": "mcp__codex_apps__convex_get_convex_scaling_guidance",
+      "description": "Build and scale apps"
+    },
+    {
+      "name": "mcp__codex_apps__convex_get_runbook",
+      "description": "Build and scale apps"
+    },
+    {
+      "name": "mcp__codex_apps__convex_start_convex_app",
+      "description": "Build and scale apps"
+    },
+    {
+      "name": "mcp__codex_apps__figma_add_code_connect_map",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_create_generative_plugin",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_create_new_file",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_create_shader",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_download_assets",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_export_video",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_generate_deck",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_generate_diagram",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_generate_figma_design",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_code_connect_map",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_code_connect_suggestions",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_context_for_code_connect",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_design_context",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_figjam",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_generative_plugin",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_libraries",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_metadata",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_motion_context",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_screenshot",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_shader",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_get_variable_defs",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_list_file_components_for_code_connect",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_list_file_shaders",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_list_generative_plugins",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_list_shaders",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_open_figma_mcp_app_in_thread",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_search_design_system",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_send_code_connect_mappings",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_update_generative_plugin",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_update_shader",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_upload_assets",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_use_figma",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_cancel_tool_run",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_find_model",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_get_model_run_output",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_get_tool_inputs",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_get_tool_run_output",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_list_tools",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_run_model",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_run_tool",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_weave_upload_asset",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__figma_whoami",
+      "description": "Create designs, ship to code"
+    },
+    {
+      "name": "mcp__codex_apps__github_add_comment_to_issue",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_add_issue_assignees",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_add_issue_labels",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_add_reaction_to_issue_comment",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_add_reaction_to_pr",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_add_reaction_to_pr_review_comment",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_add_review_to_pr",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_compare_commits",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_convert_pull_request_to_draft",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_create_blob",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_create_branch",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_create_commit",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_create_file",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_create_issue",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_create_pull_request",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_create_tree",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_delete_file",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_dismiss_pull_request_review",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_download_user_content",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_download_workflow_artifact",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_enable_auto_merge",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_blob",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_commit",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_commit_workflow_runs",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_file",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_issue",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_issue_comments",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_pr",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_pr_comments",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_pr_file_patch",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_pr_patch",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_workflow_job_logs",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_workflow_job_steps",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_workflow_run_artifacts",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_fetch_workflow_run_jobs",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_commit_combined_status",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_issue_comment_reactions",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_pr_diff",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_pr_info",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_pr_reactions",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_pr_review_comment_reactions",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_profile",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_repo",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_repo_collaborator_permission",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_user_login",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_get_users_recent_prs_in_repo",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_label_pr",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_installations",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_installed_accounts",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_pr_changed_filenames",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_pull_request_review_threads",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_pull_request_reviews",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_recent_issues",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_repositories",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_repositories_by_affiliation",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_repositories_by_installation",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_user_org_memberships",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_list_user_orgs",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_lock_issue_conversation",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_mark_pull_request_ready_for_review",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_merge_pull_request",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_issue_assignees",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_issue_label",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_pull_request_reviewers",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_reaction_from_issue_comment",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_reaction_from_pr",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_remove_reaction_from_pr_review_comment",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_reply_to_review_comment",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_request_pull_request_reviewers",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_rerun_failed_workflow_run_jobs",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_rerun_workflow_job",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_resolve_review_thread",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_search",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_search_branches",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_search_commits",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_search_installed_repositories_streaming",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_search_installed_repositories_v2",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_search_issues",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_search_prs",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_search_repositories",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_unlock_issue_conversation",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_unresolve_review_thread",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_update_file",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_update_issue",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_update_issue_comment",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_update_pull_request",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_update_ref",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__github_update_review_comment",
+      "description": "Access repositories, issues, and pull requests. Required for some features such as Codex"
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_apply_suggestion",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_approve_merge_request",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_attach_scan_profile",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_batch_apply_suggestions",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_cancel_merge_when_pipeline_succeeds",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_cancel_pipeline",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_cherry_pick_commit",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_compare_refs",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_branch",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_commit",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_issue",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_issue_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_merge_request",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_merge_request_discussion",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_merge_request_discussion_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_merge_request_draft_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_merge_request_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_merge_request_pipeline",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_pipeline",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_repository_file",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_work_item",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_create_work_item_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_delete_merge_request_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_delete_pipeline",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_delete_repository_file",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_download_project_upload",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_branch",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_commit",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_current_user",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_graph_schema",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_graph_status",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_group",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_issue",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_job",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_job_trace",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_latest_pipeline",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request_approval_rule",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request_approval_state",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request_approvals",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request_changes",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request_head_pipeline",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request_mention_suggestions",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request_merge_ref",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_merge_request_raw_diffs",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_orbit_status",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_pipeline",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_pipeline_test_report_summary",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_profile",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_project",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_query_dsl_schema",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_release",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_repository_blob",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_repository_file",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_repository_file_blame",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_repository_file_raw",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_saved_view_work_items",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_tag",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_get_work_item",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_link_work_items",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_branches",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_commit_diff",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_commit_statuses",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_commits",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_group_issues",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_group_projects",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_group_wikis",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_group_work_items",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_groups",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_issue_discussions",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_issue_links",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_issue_notes",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_issues",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_jobs",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_approval_rules",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_closing_issues",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_commits",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_diffs",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_discussions",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_note_permissions",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_notes",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_pipelines",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_request_reviewers",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_merge_requests",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_pipeline_bridges",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_pipeline_jobs",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_pipelines",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_project_inherited_members",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_project_issues",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_project_labels",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_project_members",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_project_merge_requests",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_project_milestones",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_project_wikis",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_projects",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_releases",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_repository_tree",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_tags",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_todos",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_users",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_work_item_children",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_work_item_links",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_work_item_notes",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_list_work_item_types",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_merge_merge_request",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_play_job",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_publish_all_merge_request_draft_notes",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_publish_merge_request_draft_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_query_graph",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_rebase_merge_request",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_request_merge_request_changes",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_resolve_merge_request_discussion",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_retry_job",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_retry_pipeline",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_revert_commit",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_search",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_search_project",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_set_merge_request_draft",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_unapprove_merge_request",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_issue",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_issue_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_merge_request",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_merge_request_discussion_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_merge_request_draft_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_merge_request_note",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_pipeline_metadata",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_repository_file",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gitlab_update_work_item",
+      "description": "Bring your GitLab workflow into ChatGPT."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_apply_labels_to_emails",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_archive_emails",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_batch_modify_email",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_batch_read_email",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_batch_read_email_threads",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_bulk_label_matching_emails",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_create_draft",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_create_label",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_delete_emails",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_forward_emails",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_get_profile",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_list_drafts",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_list_labels",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_read_attachment",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_read_email",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_read_email_thread",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_search_email_ids",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_search_emails",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_send_draft",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_send_email",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__gmail_update_draft",
+      "description": "Gmail tools for label counts, searching and reading emails/threads/attachments, reviewing drafts, and explicit mail changes like send, draft, forward, archive, Trash, and label actions."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_batch_read_event",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_create_event",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_delete_event",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_fetch",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_get_availability",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_get_colors",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_get_profile",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_list_calendars",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_list_event_labels",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_read_event",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_respond_event",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_search",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_search_events",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_set_event_label_silently",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_calendar_update_event",
+      "description": "Google Calendar tools for searching/reading events, checking availability before scheduling, reading colors, and explicit calendar changes: create/update/delete events or respond to invitations."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_batch_update_document",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_batch_update_presentation",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_batch_update_spreadsheet",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_bulk_update_file_comments",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_copy_file",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_create_file",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_create_folder",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_create_presentation_from_template",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_delete_file",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_duplicate_sheet_in_new_spreadsheet",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_export_file",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_fetch",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_fetch_file_revision",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_find_document_text_range",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document_comments",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document_paragraph_range",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document_tables",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_document_text",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_file_comments",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_file_metadata",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation_comments",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation_outline",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation_tables",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_presentation_text",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_profile",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_slide",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_slide_thumbnail",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_spreadsheet_cells",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_spreadsheet_comments",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_spreadsheet_metadata",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_get_spreadsheet_range",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_import_document",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_import_presentation",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_import_spreadsheet",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_list_drives",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_list_file_revisions",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_list_folder",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_recent_documents",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_search",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_search_spreadsheet_rows",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_share_file",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_update_file",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__google_drive_upload_file",
+      "description": "Search and work with files from Google Drive, Docs, Sheets, and Slides."
+    },
+    {
+      "name": "mcp__codex_apps__hotline_get_local_hotline",
+      "description": "Look up local helpline information for the user based on country inferred from the conversation. You must use this tool before providing a suicide or self-harm helpline; do not use web search or guess."
+    },
+    {
+      "name": "mcp__codex_apps__linear_create_attachment",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_create_attachment_from_upload",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_create_initiative_label",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_create_issue_label",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_attachment",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_comment",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_customer",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_customer_need",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_diff_comment",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_delete_status_update",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_extract_images",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_fetch",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_agent_skill",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_attachment",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_diff",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_diff_threads",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_document",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_initiative",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_issue",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_issue_status",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_milestone",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_notifications",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_project",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_release",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_release_note",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_status_updates",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_team",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_template",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_user",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_get_workspace",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_agent_skills",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_comments",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_customers",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_cycles",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_diffs",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_documents",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_initiative_labels",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_initiatives",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_issue_labels",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_issue_statuses",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_issues",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_milestones",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_project_labels",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_projects",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_release_notes",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_release_pipelines",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_releases",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_teams",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_templates",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_list_users",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_mark_notification",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_merge_diff",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_prepare_attachment_upload",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_resolve_diff_thread",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_comment",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_customer",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_customer_need",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_diff_comment",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_document",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_initiative",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_initiative_label",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_issue",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_issue_label",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_milestone",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_project",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_project_label",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_release",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_release_note",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_save_status_update",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_search",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_search_documentation",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_share_issue",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_submit_diff_review",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__linear_unshare_issue",
+      "description": "Plan and build products"
+    },
+    {
+      "name": "mcp__codex_apps__pets_adopt",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_create_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_delete_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_get_pet_download_link",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_list_pets",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_prepare_pet_upload",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_select_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_share_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_unshare_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_update_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__pets_validate_pet_spritesheet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps."
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_get_app_permissions",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the user did not request a plugin. Search before claiming a service is unavailable or suggesting manual workarounds. Do not suggest plugins for native web search, image generation, memory, or sites unless a specific external provider or missing capability is needed."
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_get_plugin_dependencies",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the user did not request a plugin. Search before claiming a service is unavailable or suggesting manual workarounds. Do not suggest plugins for native web search, image generation, memory, or sites unless a specific external provider or missing capability is needed."
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_search_plugins",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the user did not request a plugin. Search before claiming a service is unavailable or suggesting manual workarounds. Do not suggest plugins for native web search, image generation, memory, or sites unless a specific external provider or missing capability is needed."
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_suggest_plugins",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the user did not request a plugin. Search before claiming a service is unavailable or suggesting manual workarounds. Do not suggest plugins for native web search, image generation, memory, or sites unless a specific external provider or missing capability is needed."
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_uninstall_app",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the user did not request a plugin. Search before claiming a service is unavailable or suggesting manual workarounds. Do not suggest plugins for native web search, image generation, memory, or sites unless a specific external provider or missing capability is needed."
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_update_app_permissions",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the user did not request a plugin. Search before claiming a service is unavailable or suggesting manual workarounds. Do not suggest plugins for native web search, image generation, memory, or sites unless a specific external provider or missing capability is needed."
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_family_info",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only can_update_in_chat=true and submit the exact change for explicit user approval."
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_parental_controls",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only can_update_in_chat=true and submit the exact change for explicit user approval."
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_trusted_contact",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only can_update_in_chat=true and submit the exact change for explicit user approval."
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_prepare_parental_control_update",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only can_update_in_chat=true and submit the exact change for explicit user approval."
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_update_parental_control",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only can_update_in_chat=true and submit the exact change for explicit user approval."
+    },
+    {
+      "name": "mcp__codex_apps__sites_add_custom_domain",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_change_site_slug",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_create_schedule",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_create_site",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_create_source_repository_write_credential",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_deploy_private_site_version",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_deploy_site_version",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_generate_siwc_bypass_token",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_deployment_status",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_environment_variables",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site_version",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site_worker_logs",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_custom_domains",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_site_versions",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_sites",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_read_database_overview",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_read_database_table_rows",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_refresh_custom_domain_status",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_remove_custom_domain",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_save_site_version",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_save_version_and_deploy_private",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_environment_variables",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_site_access",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_site_metadata",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector for site creation, runtime environment variables, versions, production deployments, and access controls. Read .openai/hosting.json before creating a site and reuse its project_id when present. Treat Sites IDs and cursors as opaque: copy them exactly from .openai/hosting.json or Sites responses as applicable, and never invent, reformat, derive, or substitute them. Never call create_site more than once for the same local site. Push the exact source state before saving a version. commit_sha must identify that pushed state, and any archive must be built from it. Deploy only saved versions; every Sites deployment URL is production. Inspect deployment status when the initial result is non-terminal or the user asks for progress. Publish after creating or editing a site by default, including on subsequent turns, unless the user explicitly requested local-only work, a saved version without deployment, or no publishing. New sites start private. Preserve the site's current audience unless the user explicitly requests a different audience. Use the private operation for known owner-private sites and let it enforce owner-only access. Runtime tool approvals and backend access checks still apply without a separate conversational deployment confirmation."
+    },
+    {
+      "name": "mcp__codex_apps__supabase_apply_migration",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_confirm_cost",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_create_branch",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_create_project",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_delete_branch",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_deploy_edge_function",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_execute_sql",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_generate_typescript_types",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_advisors",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_cost",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_edge_function",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_organization",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_project",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_project_url",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_get_publishable_keys",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_branches",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_edge_functions",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_extensions",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_migrations",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_organizations",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_projects",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_list_tables",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_merge_branch",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_pause_project",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_query_logs",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_rebase_branch",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_reset_branch",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_restore_project",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__supabase_search_docs",
+      "description": "Manage and query databases"
+    },
+    {
+      "name": "mcp__codex_apps__vercel_add_toolbar_reaction",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_change_toolbar_thread_resolve_status",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_check_domain_availability_and_price",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_deploy_to_vercel",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_edit_toolbar_message",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_access_to_vercel_url",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_agent_run",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_agent_run_trace",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_bulk_price",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_deployment",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_deployment_build_logs",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_domain_price",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_project",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_runtime_errors",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_runtime_logs",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_tld",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_tld_price",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_get_toolbar_thread",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_import_claude_design_from_url",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_agent_run_projects",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_agent_runs",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_deployments",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_projects",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_supported_tlds",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_teams",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_list_toolbar_threads",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_reply_to_toolbar_thread",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_search_domains",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_search_vercel_documentation",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__codex_apps__vercel_web_fetch_vercel_url",
+      "description": "Provides access to documentation search for a specific hosting and deployment platform and tools to manage its projects and deployments, including listing projects, deployments, build logs, and creating temporary authenticated share URLs or fetching protected deployment URLs. Also supports deploying the current project through the platform’s API, listing teams, and checking domain availability and pricing."
+    },
+    {
+      "name": "mcp__node_repl__js",
+      "description": "Use `js` for `node_repl` execution with persistent, redeclarable top-level bindings, `js_reset` to clear bindings, and `js_add_node_module_dir` to add package directories."
+    },
+    {
+      "name": "mcp__node_repl__js_add_node_module_dir",
+      "description": "Use `js` for `node_repl` execution with persistent, redeclarable top-level bindings, `js_reset` to clear bindings, and `js_add_node_module_dir` to add package directories."
+    },
+    {
+      "name": "mcp__node_repl__js_reset",
+      "description": "Use `js` for `node_repl` execution with persistent, redeclarable top-level bindings, `js_reset` to clear bindings, and `js_add_node_module_dir` to add package directories."
+    },
+    {
+      "name": "mcp__t3_code__device_close",
+      "description": "Remove a device from this thread's Device panel. Pass shutdown=true to also power the simulator or emulator off."
+    },
+    {
+      "name": "mcp__t3_code__device_list",
+      "description": "List iOS Simulators and Android Emulators on this environment's device hosts, which platforms each host can run, and which devices are already open in this thread's Device panel. Call this before device_open when you do not know a device id."
+    },
+    {
+      "name": "mcp__t3_code__device_open",
+      "description": "Open a simulator or emulator for this thread: boots it if needed, starts its live stream, and shows it in the user's Device panel so they can watch. Returns the agent-device CLI invocation pinned to the device; drive the device with that CLI afterwards."
+    },
+    {
+      "name": "mcp__t3_code__device_screenshot",
+      "description": "Capture the current screen of an open device as a PNG image. Use it to see what the user sees; for taps and text use the agent-device CLI."
+    },
+    {
+      "name": "mcp__t3_code__link_pull_request",
+      "description": "Register every pull request you open for this thread, including each layer of a stack, right after creating it. Links a pull request to this thread so T3 Code tracks it, shows its status beside the thread, and settles the thread when it merges. Pass the URL, or repository plus number. Linking an already-linked pull request succeeds with alreadyLinked=true."
+    },
+    {
+      "name": "mcp__t3_code__list_thread_pull_requests",
+      "description": "List the pull requests linked to this thread with their last known host state, and how they chain into stacks (bottom to top). Register every pull request you open for this thread, including each layer of a stack, right after creating it."
+    },
+    {
+      "name": "mcp__t3_code__preview_click",
+      "description": "Click exactly one target in the tab selected by tabId, or this agent session's current tab when omitted. Prefer a Playwright locator; selector accepts legacy CSS; x and y must be supplied together."
+    },
+    {
+      "name": "mcp__t3_code__preview_evaluate",
+      "description": "Evaluate JavaScript in the tab selected by tabId, or this agent session's current tab when omitted. Returns {value} with a serializable result up to 64 KB; the expression may mutate page state."
+    },
+    {
+      "name": "mcp__t3_code__preview_navigate",
+      "description": "Navigate a collaborative browser tab. Pass tabId to target a specific tab, plus {url:'https://t3.chat'} for a website or {target:{kind:'environment-port',port:5173}} for a dev server. Exactly one of url or target is required."
+    },
+    {
+      "name": "mcp__t3_code__preview_open",
+      "description": "Initialize a collaborative browser tab and open its thread-bound inline preview by default. Set open=false for background-only automation. Pass tabId to reuse a specific existing tab, set reuseExistingTab=false to create another tab, or omit both to use this agent session's current tab."
+    },
+    {
+      "name": "mcp__t3_code__preview_press",
+      "description": "Press one keyboard key in the tab selected by tabId, or this agent session's current tab when omitted. Examples: {key:'Enter'}, {key:'Escape'}, or {key:'a',modifiers:['Meta']}."
+    },
+    {
+      "name": "mcp__t3_code__preview_recording_start",
+      "description": "Start recording the collaborative browser tab selected by tabId, or this agent session's current tab when omitted."
+    },
+    {
+      "name": "mcp__t3_code__preview_recording_stop",
+      "description": "Stop recording the collaborative browser tab selected by tabId, or this agent session's current tab when omitted, and transfer the compressed recording once (up to 50 MiB) to an evidence file readable in this agent's environment. Returns its environment-local path after transfer succeeds."
+    },
+    {
+      "name": "mcp__t3_code__preview_resize",
+      "description": "Resize a collaborative browser tab, optionally selected by tabId. Use {mode:'fill'}, {mode:'freeform',width:1024,height:768}, or {mode:'preset',preset:'iphone-12-pro',orientation:'portrait'}. This changes CSS layout breakpoints without changing the desktop browser user agent."
+    },
+    {
+      "name": "mcp__t3_code__preview_scroll",
+      "description": "Scroll the tab selected by tabId, or this agent session's current tab when omitted. Positive deltaY scrolls down and positive deltaX scrolls right; a locator/selector targets a container."
+    },
+    {
+      "name": "mcp__t3_code__preview_set_appearance",
+      "description": "Emulate prefers-color-scheme in a collaborative browser tab, optionally selected by tabId. Use {colorScheme:'dark'} or {colorScheme:'light'} to preview the page in that appearance, and {colorScheme:'system'} to clear the override and follow the OS appearance."
+    },
+    {
+      "name": "mcp__t3_code__preview_snapshot",
+      "description": "Inspect a page before interacting. Pass tabId to inspect a specific tab; omit it to use this agent session's current tab. Returns page state, semantic elements, diagnostics, action history, and a PNG screenshot. The text is capped near 20 KB and lists what it omitted; use preview_evaluate to read more. Set includeImage=false for text-only output with the same page metadata. Set save=true to also write the PNG to disk and get screenshotPath back; with includeImage=false, save=true returns only the url and screenshotPath. Embed that path in your reply as ![alt](screenshotPath) so the user sees it. This is the only way to show the user a screenshot; the image in the tool result is not saved anywhere."
+    },
+    {
+      "name": "mcp__t3_code__preview_status",
+      "description": "Report whether a collaborative browser tab is automation-capable, including its URL, title, visibility, loading state, viewport mode, and measured CSS-pixel size. Pass tabId to inspect a specific tab; omit it to use this agent session's current tab."
+    },
+    {
+      "name": "mcp__t3_code__preview_type",
+      "description": "Insert literal text into one input in the tab selected by tabId, or this agent session's current tab when omitted. Prefer a Playwright locator; set clear=true to replace existing text."
+    },
+    {
+      "name": "mcp__t3_code__preview_wait_for",
+      "description": "Wait in the tab selected by tabId, or this agent session's current tab when omitted, until all supplied locator, selector, text, and URL conditions match."
+    },
+    {
+      "name": "mcp__t3_code__unlink_pull_request",
+      "description": "Remove a pull request link from this thread, for example after closing a pull request you opened by mistake. Pass the URL, or repository plus number. Unlinking a pull request that is not linked succeeds with wasLinked=false."
+    },
+    {
+      "name": "read_mcp_resource",
+      "description": "Read a specific resource from an MCP server given the server name and resource URI."
+    },
+    {
+      "name": "request_plugin_install",
+      "description": "# Suggest a recommended plugin installation"
+    },
+    {
+      "name": "update_goal",
+      "description": "Update the existing goal."
+    },
+    {
+      "name": "view_image",
+      "description": "View a local image file from the filesystem when visual inspection is needed. Use this for images already available on disk."
+    },
+    {
+      "name": "web__run",
+      "description": "Tools in the web namespace."
+    },
+    {
+      "name": "write_stdin",
+      "description": "Writes characters to an existing unified exec session and returns recent output."
+    }
+  ]
+}

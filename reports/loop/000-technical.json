@@ -1,0 +1,7 @@
+{
+  "command": ["pnpm", "check"],
+  "startedAtUtc": "2026-10-03T01:15:57.982966+00:00",
+  "finishedAtUtc": "2026-10-03T01:15:59.600083+00:00",
+  "exitCode": 1,
+  "scope": "Aktive main-Integration; Format, Handbuchskript, Typen, vorhandene Tests, Build. Keine Methoden-/Browserabnahme."
+}

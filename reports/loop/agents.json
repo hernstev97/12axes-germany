@@ -7,5 +7,64 @@
     "differentFamily": false
   },
   "maxConcurrentIncludingRoot": 4,
-  "calls": []
+  "calls": [
+    {
+      "task_name": "loop000_review_integration",
+      "kind": "independent-review",
+      "report": "reports/loop/reviews/LOOP-000-integration.md",
+      "message": "Du bist unabhängiger Reviewer für LOOP-000 (Integration des aktuellen main und dauerhafter LIFE-93-Zustand), kein Autor. Arbeite ausschließlich im Worktree /home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003, nicht im ursprünglichen Repo. Frischer Kontext; keine anderen Reviewerberichte oder Autorenverteidigung lesen, keine weiteren Agents. Prüfpaket: reports/loop/packages/LOOP-000/v1/manifest.json und files/. Lies dort Auftrag, AGENTS, Arbeitsloop und Issue. Prüfe exakt diese eingefrorene Fassung, hashes selbst verifizieren. Autoraktive Dateien können später weitergehen: nicht als Inputwechsel des Snapshots deuten. Für Code ausschließlich Commit 002fb8e28b57559179692668d3abd89b1d852082 und die im Manifest benannten Dateien nutzen. Auftrag: kontrolliere main-Integration und Schutz der vorhandenen UI, beider Dokumentationshistorien und Reviewregeln; aktive Instruktionen/Projektfakten und Verweise auf inzwischen ersetzte Design-Dateien; git-Diff zur main-UI; tatsächliche lokale/remote Commitbezüge, keine Interpretation von Technik als Methodik. Suche Fehler, aber keine Fehlerquote. Rohantwortdaten, B, gesperrte Partei-/Lagerwerte nicht lesen; nur Git-Ausschluss und gegebene Hashmetadaten. Wissenschaftliche Gesamtfreigabe ist nicht Auftrag. Dein einziger Schreibort im Repo ist reports/loop/reviews/LOOP-000-integration.md. Jede Beanstandung: stabile ID L000-I01 usw., genaue Aussage/Entscheidung, Problem, überprüfbarer Beleg mit Datei/Zeile oder Commit, Folge, begründeter Schweregrad, konkrete Korrektur und Nachprüfung; Vermutungen markieren. Dokumentiere tatsächlich genutzte/angebotene Werkzeuge, Modellinfo aus Laufzeit (gpt-6.1-sol, ultra geerbt; intern unbekannt), tatsächlich ausgeführte Checks und Zugangsgrenzen. Wenn ein Check fehlt, NICHT_GEPRÜFT. Erstbericht nicht nachträglich ändern. Eigene Berichtdatei vor Abschluss isoliert formatieren (Ignorepfad ggf. /dev/null nur für deine Datei). Sende Pfad, SHA-256, Abschluss und Kurzbefund.",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/loop000_review_integration",
+      "status": "COMPLETED",
+      "reportSha256": "11b7c3911feb48c09cc10c5052dc95db4367e4b4077471af23bf5c8edf1f8cee"
+    },
+    {
+      "task_name": "loop000_review_provenance",
+      "kind": "independent-review",
+      "report": "reports/loop/reviews/LOOP-000-provenance.md",
+      "message": "Du bist unabhängiger Reviewer für LOOP-000 (Nachprüfbarkeit, Grenzen und neuer dauerhafter LIFE-93-Zustand), kein Autor. Arbeite ausschließlich im Worktree /home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003, nicht im ursprünglichen Repo. Frischer Kontext; keine anderen Reviewerberichte oder Autorenverteidigung lesen, keine weiteren Agents. Prüfpaket: reports/loop/packages/LOOP-000/v1/manifest.json und files/. Lies dort Auftrag, AGENTS, Arbeitsloop und Issue. Prüfe exakt die eingefrorene Fassung und hashes selbst. Autoraktive Dateien können später weitergehen. Auftrag: kontrolliere Nachvollziehbarkeit Ausgangsfassung/Audit und Zusammenführung, vereinbarte Phasen/Abnahmen, Codex vs erforderliche Claude-Erstbewertungen, Status- und Abhängigkeitstreue, Reparaturrunden und die Trennung tatsächlicher Checks von geplanten; keine Übertragung alter manifestgebundener grüner Prüfungen auf neues main; Datenschutz und Ausschluss Rohdaten. Prüfe auch Reproduzierbarkeit des gespeicherten Arbeitsstandes, erste Push-Verifikation, Grenzen gemeinsamer Modellfamilie und Dateirechte. Nur dokumentierte alte Prüfbelege aus Paket bzw Commit 002fb8e28b57559179692668d3abd89b1d852082 zugänglich prüfen; keine anderen aktuellen Reviewerberichte. Rohantwortdaten, B oder gesperrte Partei-/Lagerwerte nicht lesen; nur vorhandene Hashmetadaten/Git-Ausschluss. Dein einziger Schreibort im Repo ist reports/loop/reviews/LOOP-000-provenance.md. Jede Beanstandung: ID L000-P01 usw., exact Aussage, Problem, Fundstelle Datei/Zeile/Commit, Wirkung, begründeter Schweregrad, Abhilfe und konkrete Nachprüfung; offene Frage als solche. Kein vorgeschriebenes Finding, kein Peer Review/Validitätsnachweis. Modell- und Werkzeugangaben, Zeiten und tatsächlich ausgeführte Checks dokumentieren; ausgefallene Checks NICHT_GEPRÜFT. Bericht isoliert formatieren (ggf. /dev/null Ignorepfad ausschließlich für deine eigene Datei), nach Abschluss nicht ändern. Abschluss mit Pfad, SHA-256 und Kurzbefund melden.",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/loop000_review_provenance",
+      "status": "COMPLETED",
+      "reportSha256": "03a3525892f5bae628b5305b8500b0f599861e5b8b1728d0b4e4e404ad887229"
+    },
+    {
+      "task_name": "loop001_author_inventory",
+      "kind": "source-author",
+      "report": "reports/loop/authors/LOOP-001-inventar.md",
+      "message": "Du bist abgegrenzter Quellen-/Inventar-Autor für LIFE-93, noch kein Reviewer und keine Claude-Erstbewertung. CWD für jede Shell explizit /home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003. Lies AGENTS.md, docs/arbeitsloop.md, gespeicherten Auftrag und reports/loop/issue-2026-10-03.md, docs/analyseanforderungen.md und bestehende Quellenliste. Erstelle den vollständigen deutschen Originalfragenbestand der ausgewählten ESS11-Runde als ENTWURF ohne endgültige Itemauswahl/Polung. Nutze ausschließlich offizielle öffentlich zugängliche Fragebogen- und Variablendokumentation. Kein ESS-Rohdateninhalt, keine IDs, A/B oder politische Verteilungen; Metadaten und Originalfragen einschließlich Parteibezug zum Ausschluss dürfen gelesen werden. Portal Analysis/Variable-Verteilungen nicht öffnen. Lies PDF-Skill, prüfe wichtige Seiten auch visuell. Zielartefakte ausschließlich data/inventar.entwurf.csv, data/inventar.provenienz.json, pipeline/inventar.py (oder begrenztes eigenes inventory/ Unterverzeichnis) und reports/loop/authors/LOOP-001-inventar.md. Öffentlich kopierte Fragewortlaute nur im Umfang geklärter ESS-Dokumentationslizenz, kein vollständiger PDF in Git; Downloads/Caches unter outputs/loop/inventory/. Vor Änderungen dort eigene Ausgangs-/Provenienzbelege. CSV: Frage-ID, ESS-Variable oder ausdrücklich offene Zuordnung, exakter deutscher Wortlaut, Antwortkategorien, Missingcodes soweit offiziell belegt, Filter/Einleitung, PDF-/gedruckte Seite, Quellen-ID/hash, Antwortgegenstand/-typ, vorläufiger Eignungsstatus ENTWURF/offen mit Ausschlussgrund wenn nach Issue eindeutig. Keine automatisch endgültig angenommene Auswahl und keine Kenntnis fremder Urteile. Alle Einstellungen/Werte als Kandidaten einschließen, nicht nur erwartete Themen; klar relevante ausgeschlossene Wissens/Verhaltens/Regierungs-/Parteifragen nachvollziehbar erfassen. Schreibe einen reproduzierbaren Aufbau-/Wortlautabgleich; keine Behauptung vollständig wenn Quelle/Zuordnung nicht vollständig erfasst. Fragebogen-Kontext und Kategorien nicht verlieren, keine Umformulierungen. Belege konkrete Fundstellen/Hashes und prüfe tatsächliche Parserresultate. Report enthält Abdeckung, Lücken, Abweichungen und tatsächliche Checks/Toolmodell. Andere docs, Modell, Website und gemeinsamen Loopzustand nicht verändern; kein Commit/Push selbst. Falls gesamte Runde im verfügbaren Kontext nicht tragfähig vollständig wird, sichere den belegten Teil und exakte Restliste, keine erfundene Vollständigkeit. Nicht vor substanziellen Artefakten beenden. Keine zusätzlichen Subagents. Abschluss mit Dateipfaden, Hashes und offenem Rest melden.",
+      "fork_turns": "none",
+      "returnedTaskName": "/root/loop001_author_inventory",
+      "status": "RUNNING"
+    }
+  ],
+  "activeAdditionalAuthors": [
+    {
+      "name": "/root/loop001_author_theory",
+      "fork_turns": "none",
+      "kind": "theory-author",
+      "assignedFiles": [
+        "docs/themenabdeckung.entwurf.md",
+        "docs/erwartungsmodell.entwurf.md",
+        "data/theorie-quellen.json",
+        "reports/loop/authors/LOOP-001-theorie.md"
+      ],
+      "status": "RUNNING",
+      "contextBoundary": "Auftrag/Issue/aktive Regeln; keine anderen Reviewerurteile oder Rohdaten. Vollständiger Spawnauftrag wird separat gesichert."
+    },
+    {
+      "name": "/root/loop002_author_methods",
+      "fork_turns": "none",
+      "kind": "methods-author",
+      "assignedFiles": [
+        "docs/analyseplan-methoden.entwurf.md",
+        "data/methoden-quellen.json",
+        "pipeline/synthetic/",
+        "reports/loop/synthetic/",
+        "reports/loop/authors/LOOP-002-methoden.md"
+      ],
+      "status": "RUNNING",
+      "contextBoundary": "Auftrag/Issue/aktive Regeln; keine anderen Reviewerurteile oder ESS-Daten. Vollständiger Spawnauftrag wird separat gesichert."
+    }
+  ]
 }

@@ -42,11 +42,3 @@ Es gibt noch keinen Fragenkatalog, keine Analyse, keine Bewertung und keine Verg
 Als Nächstes können der vollständige deutsche Fragenbestand und die Literatur zu Themenabdeckung und Prüfverfahren recherchiert werden. Endgültige Auswahl und empirische Untersuchung warten auf die erforderlichen Gegenprüfungen und den vollständig begründeten, öffentlich eingefrorenen Analyseplan. Fehlende Review-Abnahmen bleiben sichtbar. Der erste Teilbericht steht unter [reports/phasen/00-recherche-2026-10-03.md](../reports/phasen/00-recherche-2026-10-03.md).
 
 Die Korrekturen und offenen Anforderungen des Audits stehen in [analyseanforderungen.md](analyseanforderungen.md). Der vollständige Fragenkatalog und Deutschland-Themenrahmen bleiben die nächste Arbeit; das Audit liefert keine fertig geprüften Dimensionen.
-
-## Dauerhafter Gesamtauftrag und Arbeitsloop
-
-Der [Auftrag vom 2026-10-03](auftrag-life-93-2026-10-03.md) umfasst nun alle Phasen. Der [Arbeitsloop](arbeitsloop.md) und [gespeicherte Zustand](../reports/loop/state.json) führen Aufgaben, abhängige Stopps, tatsächliche Reviews und verifizierte Branch-Pushes. Die alte Umfangsbegrenzung auf ausschließlich Recherche und CodeRabbit gilt für den neuen Auftrag nicht mehr. Vorgeschriebene Claude-Prüfungen werden dadurch nicht als erfüllt erklärt.
-
-Das neue main mit Claudes UI und Handbuch wurde im eigenen Worktree zusammengeführt. Die unveränderte Übernahme ist im [Integrationsbeleg](../reports/loop/000-main-integration.json) dokumentiert. Zwei unabhängige Reviews bestätigten Integrität und Erhaltung; ihre Status-/Textbefunde werden in einer eigenen Korrekturfassung bearbeitet.
-
-Claude Code ist bereits installiert und angemeldet. Der erste beschränkte Zugriffstest scheiterte am Anbieter-Sitzungslimit; [Protokoll](../reports/loop/claude-access.json). Kein Review oder Itemurteil fand dabei statt. Github-Reviewworkflow, Branchschutz und Setup-Abnahme bleiben offen. Quellenbestand, Theorie und Methodenparameter werden in getrennten Entwürfen erarbeitet. Noch keine empirische ESS-Analyse.
