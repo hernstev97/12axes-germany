@@ -1,5 +1,6 @@
 import type { PolicyQuestion } from '../research/policy-profile';
 import type { PublicCategory, PublicItem, PublicStudy } from './catalogue-types';
+import { DISPLAY_ADDITIONS } from './display-additions';
 import { ITEM_RULES } from './profile/profile-rules';
 import { PUBLIC_CATALOGUE } from './public-catalogue';
 import { PUBLIC_CATALOGUE_V22 } from './public-catalogue-v22';
@@ -52,7 +53,22 @@ export function categoryLabel(item: PublicItem, category: PublicCategory): strin
     : category.labelDe;
 }
 
+/** ESS10 PAPI p. 1 asks for answers as things stood during the pandemic (V2-F02, plan v2.2 section 3). */
+const ESS10_INSTRUCTION =
+  'Bitte beantworten Sie alle Fragen nach dem heutigen Stand der Dinge, auch wenn dieser durch die Pandemie anders ist als sonst.';
+
 function developmentNote(item: PublicItem): string {
+  const notes = [baseDevelopmentNote(item)];
+  if (item.studyId === 'ESS10SCe03_2' && !notes[0]!.includes(ESS10_INSTRUCTION)) {
+    notes.push(
+      `ESS10 bat die Befragten 2021/22 auf der ersten Fragebogenseite: „${ESS10_INSTRUCTION}“`,
+    );
+  }
+  notes.push(...(DISPLAY_ADDITIONS[item.id]?.notes ?? []));
+  return notes.join(' ');
+}
+
+function baseDevelopmentNote(item: PublicItem): string {
   if (democracyIds.has(item.id)) {
     return 'Entwicklungsfassung: B1–B12 bleiben in der Originalreihenfolge zusammen. Die vollständige Einleitung nennt nachfolgende Fragen zur Funktionsweise der Demokratie; B13–B24 fehlen in diesem Entwurf. Einzelansicht und Gesamtfragebogenkontext sind neu. B12 erscheint im Ergebnis unter europäischer Integration.';
   }
@@ -68,7 +84,15 @@ function developmentNote(item: PublicItem): string {
   return 'Entwicklungsfassung: Die gebundene nationale Papier- oder Interviewfassung bleibt als Originalkontext sichtbar. Radioauswahl, Überspringen und neue Zusammenstellung sind noch nicht als gleichwertige Durchführung geprüft.';
 }
 
-function adapt(item: PublicItem, addedInV22: boolean): PolicyDraftItem {
+function adapt(bound: PublicItem, addedInV22: boolean): PolicyDraftItem {
+  const addition = DISPLAY_ADDITIONS[bound.id];
+  const item: PublicItem = addition
+    ? {
+        ...bound,
+        introductionsDe: [...(addition.introductionsBefore ?? []), ...bound.introductionsDe],
+        responseStemDe: addition.responseStemDe ?? bound.responseStemDe,
+      }
+    : bound;
   const study = PUBLIC_CATALOGUE.studies.find((entry) => entry.id === item.studyId)!;
   const name = study.id === 'ESS10SCe03_2' ? 'ESS10 Self-completion' : study.id.split('e')[0];
   const origin = `${name}, Datenausgabe ${study.edition}, Originalfrage ${item.originalQuestionId}`;

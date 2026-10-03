@@ -6,6 +6,7 @@ import {
   type AnswerProfile,
   type ProfileAnswer,
 } from './profile-engine';
+import { ITEM_RULES } from './profile-rules';
 import { BLOCK_RULES, CROSS_REFERENCE_RULES } from './profile-structure';
 
 // Synthetic technical answer combinations (Profilregeln v1, T01–T30).
@@ -387,5 +388,35 @@ describe('descriptive answer profile', () => {
         expect(ownWording(text)).not.toMatch(/(?<!\p{L})(?:Sie|du|dein\p{L}*|Ihr\p{L}*)(?!\p{L})/u);
       }
     }
+  });
+});
+
+describe('Zitierte Originalaussagen', () => {
+  const normal = (text: string) =>
+    text
+      .replace(/[…„“"]/g, '')
+      .replace(/\s+/g, ' ')
+      .replace(/[.?!]\s*$/, '')
+      .trim();
+
+  it('stehen wörtlich im gebundenen Katalog (Fragetext, Stamm oder Einleitung)', () => {
+    const mismatches: string[] = [];
+    let checked = 0;
+    for (const item of POLICY_DRAFT_ITEMS) {
+      const rule = ITEM_RULES[item.id]!;
+      if (rule.statement.form !== 'agreement') continue;
+      checked++;
+      const source = normal(
+        [
+          ...item.introductionsDe,
+          item.responseStemDe ?? '',
+          item.wordingDe,
+          item.situationDe ?? '',
+        ].join(' '),
+      );
+      if (!source.includes(normal(rule.statement.statement))) mismatches.push(item.id);
+    }
+    expect(checked).toBeGreaterThan(10);
+    expect(mismatches).toEqual([]);
   });
 });

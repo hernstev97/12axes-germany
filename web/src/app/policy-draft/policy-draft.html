@@ -163,6 +163,7 @@
                 <button type="button" (click)="edit(item.id)">
                   Frage {{ $index + 1 }}: {{ item.origin }}
                 </button>
+                <p>{{ item.title }}</p>
                 <p>{{ item.wordingDe }}</p>
                 <p class="meta">{{ stateLabel(answers().get(item.id)!) }}</p>
               </li>
@@ -246,7 +247,7 @@
                 </option>
                 @for (group of selectedGroupStudy()?.groups ?? []; track group.id) {
                   <option [value]="group.id" [selected]="selectedGroupId() === group.id">
-                    {{ group.label }}
+                    {{ groupLabel(group) }}
                   </option>
                 }
               </select>
@@ -265,13 +266,24 @@
               </p>
               @if (selectedGroup(); as group) {
                 <p class="meta">
-                  Vergleichsgruppe: {{ group.label }}. Die erinnerte Zweitstimme wurde selbst
+                  Vergleichsgruppe: {{ groupLabel(group) }}. Die erinnerte Zweitstimme wurde selbst
                   angegeben, nicht extern überprüft.
                 </p>
+                @if (groupCoverage(); as coverage) {
+                  <p class="meta group-coverage">
+                    Für diese Gruppe zeigt der Entwurf Anteile zu {{ coverage.available }} von
+                    {{ coverage.total }} Fragen dieser Studie. Bei den übrigen Fragen hat die Gruppe
+                    weniger als 100 gültige Antworten oder eine Antwortkategorie mit ein bis vier
+                    Fällen. Welche Parteien zu welchem Thema erscheinen, hängt deshalb von der
+                    Gruppengröße in der jeweiligen Befragung ab.
+                  </p>
+                }
                 @if (group.heterogeneousUnlabelledOther) {
                   <p class="group-other-limit">
-                    „Other“ ist der heterogene, unbenannte Rest der ursprünglichen Liste. Er ist
-                    keine einzelne Partei. Freitext wurde nicht gelesen und wird nicht angezeigt.
+                    „Andere Partei (heterogener Rest)“ ist der heterogene, unbenannte Rest der
+                    ursprünglichen Liste. Der deutsche Fragebogen sah dafür „Andere Partei“ zum
+                    Eintragen vor, die ESS-Metadaten nennen die Kategorie „Other“. Sie ist keine
+                    einzelne Partei. Freitext wurde nicht gelesen und wird nicht angezeigt.
                   </p>
                 }
               }
@@ -572,7 +584,7 @@
                   <div class="historical-reference group-reference">
                     <h4>Historische Kategorieanteile der gewählten Vergleichsgruppe</h4>
                     <p>
-                      {{ comparison.group.label }} · {{ comparison.study.id }}, Datenausgabe
+                      {{ groupLabel(comparison.group) }} · {{ comparison.study.id }}, Datenausgabe
                       {{ comparison.study.edition }}. Erinnerte Zweitstimme:
                       {{ comparison.study.election.monthDe }} {{ comparison.study.election.year }}.
                       Befragung: {{ groupFieldworkLabel(comparison.study) }} (CAPI/CAMI).

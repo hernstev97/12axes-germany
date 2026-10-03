@@ -567,11 +567,15 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       const options = [...groupSelect.options].slice(1);
       expect(options.map((option) => option.value)).toEqual(study.groups.map((group) => group.id));
       expect(options.map((option) => option.textContent?.trim())).toEqual(
-        study.groups.map((group) => group.label),
+        study.groups.map((group) =>
+          group.heterogeneousUnlabelledOther ? 'Andere Partei (heterogener Rest)' : group.label,
+        ),
       );
     }
     expect([...groupSelect.options].map((option) => option.textContent?.trim())).toContain('NPD');
-    expect(groupSelect.options[groupSelect.options.length - 1]!.textContent?.trim()).toBe('Other');
+    expect(groupSelect.options[groupSelect.options.length - 1]!.textContent?.trim()).toBe(
+      'Andere Partei (heterogener Rest)',
+    );
     expect(element.querySelectorAll('h1')).toHaveLength(1);
     expect(element.querySelectorAll('section h2')).toHaveLength(11);
   });
@@ -631,6 +635,10 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     );
     expect(element.querySelector('.group-other-limit')?.textContent).toContain(
       'heterogene, unbenannte Rest',
+    );
+    expect(element.querySelector('.group-other-limit')?.textContent).toContain('„Other“');
+    expect(element.querySelector('.group-coverage')?.textContent).toMatch(
+      /Anteile zu 0 von \d+ Fragen dieser Studie/,
     );
     expect(element.querySelector('.group-coverage-limit')?.textContent).toContain('In München');
     expect(element.querySelector('.group-sources')?.textContent).toContain('schwächer als');

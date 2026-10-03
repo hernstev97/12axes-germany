@@ -61,6 +61,35 @@ describe('Öffentliche Originalbindung des Angular-Entwurfs', () => {
     expect(POLICY_RUBRICS).toHaveLength(8);
   });
 
+  it('ergänzt belegte Originalkontexte nur in der Anzeige (V2-F01, F08, F12, F17)', () => {
+    const byId = new Map(POLICY_DRAFT_ITEMS.map((item) => [item.id, item]));
+    for (const id of ['ESS8e02_3:bnlwinc', 'ESS8e02_3:eduunmp', 'ESS8e02_3:wrkprbf']) {
+      expect(byId.get(id)!.introductionsDe[0]).toContain('Rahmenbedingungen');
+      expect(byId.get(id)!.developmentNote).toContain('PDF-Seite 41');
+    }
+    expect(byId.get('ESS8e02_3:eduunmp')!.introductionsDe[1]).toContain('feste Geldsumme');
+    expect(byId.get('ESS8e02_3:gvslvol')!.displayWording.join(' ')).toContain('erstens');
+    for (const id of ['ESS8e02_3:gvslvue', 'ESS8e02_3:gvcldcr']) {
+      expect(byId.get(id)!.displayWording.join(' ')).not.toContain('erstens');
+      expect(byId.get(id)!.developmentNote).toContain('lässt „erstens“ bei E7 und E8 weg');
+    }
+    expect(byId.get('ESS10SCe03_2:imsmetn')!.developmentNote).toContain('race or ethnic group');
+    expect(byId.get('ESS8e02_3:rfgbfml')!.developmentNote).toContain('§ 104 Abs. 14');
+    const bound = PUBLIC_CATALOGUE.items.find((item) => item.id === 'ESS8e02_3:bnlwinc')!;
+    expect(bound.introductionsDe).toEqual([]);
+  });
+
+  it('zeigt die Pandemie-Anleitung von ESS10 bei jeder ESS10-Frage genau einmal (V2-F02)', () => {
+    const ess10 = POLICY_DRAFT_ITEMS.filter((item) => item.studyId === 'ESS10SCe03_2');
+    expect(ess10.length).toBeGreaterThan(0);
+    for (const item of ess10) {
+      expect(item.developmentNote.split('nach dem heutigen Stand der Dinge')).toHaveLength(2);
+    }
+    for (const item of POLICY_DRAFT_ITEMS.filter((entry) => entry.studyId !== 'ESS10SCe03_2')) {
+      expect(item.developmentNote).not.toContain('Pandemie');
+    }
+  });
+
   it('bindet Druckcodes an Exportcodes und weist echte Missing-Codes als Antwort zurück', () => {
     const item = POLICY_DRAFT_ITEMS.find((entry) => entry.variable === 'euftf')!;
     expect(item.categories[0]).toMatchObject({ printedCodeDe: '00', code: '0' });

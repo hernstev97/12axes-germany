@@ -1,7 +1,8 @@
 /**
  * Rule tables for the descriptive answer profile (Profilregeln v1).
  * Texts are project wording. Quoted parts and dass-clauses follow the German
- * ESS originals; deviations are listed in docs/profilregeln-v1.md.
+ * ESS originals. profile-engine.spec.ts checks that every quoted agreement
+ * statement appears verbatim in the bound catalogue.
  * Direction comes from these explicit tables, never from code numbers alone.
  */
 

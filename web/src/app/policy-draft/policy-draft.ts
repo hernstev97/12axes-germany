@@ -12,7 +12,7 @@ import {
 } from '@angular/core';
 import { PolicyProfileSession, type PolicyAnswer } from '../research/policy-profile';
 import { type HistoricalReferenceInput, referenceState } from './historical-reference';
-import type { HistoricalGroupInput } from './group-reference-types';
+import type { HistoricalGroupInput, HistoricalVoteGroup } from './group-reference-types';
 import { groupComparison, groupFieldworkLabel, groupReferenceState } from './group-reference';
 import {
   categoryLabel,
@@ -101,6 +101,14 @@ export class PolicyDraft {
     this.selectedGroupStudy()?.groups.find((group) => group.id === this.selectedGroupId()),
   );
   protected readonly groupFieldworkLabel = groupFieldworkLabel;
+  /** Questions of the selected study with group shares, for the visibility note (V2-F14). */
+  protected readonly groupCoverage = computed(() => {
+    const study = this.selectedGroupStudy();
+    if (!study || !this.selectedGroup()) return null;
+    const ids = this.items.filter((item) => item.studyId === study.id).map((item) => item.id);
+    const available = ids.filter((id) => this.groupComparisonFor(id).status === 'available');
+    return { available: available.length, total: ids.length };
+  });
   protected readonly answers = computed(
     () =>
       new Map(this.snapshot().responses.map((response) => [response.question.id, response.answer])),
@@ -363,6 +371,11 @@ export class PolicyDraft {
       },
       intervals: entry,
     };
+  }
+
+  /** The residual list category appears as „Andere Partei“ in the questionnaires (V2-F13). */
+  protected groupLabel(group: HistoricalVoteGroup): string {
+    return group.heterogeneousUnlabelledOther ? 'Andere Partei (heterogener Rest)' : group.label;
   }
 
   protected groupInterval(entry: EntryV22 | undefined, code: string) {
