@@ -159,3 +159,24 @@ Steven beauftragte im Wortlaut:
 Root: Codex über T3 Code, Laufzeitkennung `gpt-6.1-sol`, Reasoning `ultra`. Zwei getrennte Codex-Teilagenten prüften begrenzt UI-Fokusstellen beziehungsweise den technischen Browserchecker; eigene Erstberichte und gezielte Nachberichte in `reports/loop/reviews/TECHNICAL-FOCUS-ZOOM-001-*`. Gleiche Modellfamilie, keine Garantie unabhängiger Fehlerquellen oder Neutralität. Keine wissenschaftliche Gesamtprüfung.
 
 T3 meldete zunächst `document.hasFocus=false` und unveränderten Zoom trotz Shortcuts, später ausdrücklich fehlenden Automation-Host bei `preview_open`. Diese Versuche sind keine Passnachweise. Der zulässige lokale Chromium-Ersatzweg wurde zusätzlich ausdrücklich von Steven bestätigt. Keine globale Installation oder Browseränderung in einem bestehenden persönlichen Profil. Tatsächliche Browser-/Bild-/Fehlerbelege stehen einmalig im [technischen Bericht](../reports/loop/technical-focus-zoom-001.md). Eine axe-Kontrastregel bleibt automatisch unvollständig; tatsächliche gezielte Farb-/Sichtprüfung dokumentiert. Null reale Menschen, kein neuer Roh-/Antwortdatenzugriff, kein Claude-Zugang oder Deployment.
+
+## 2026-10-03: Übernahme und Fortsetzung durch Claude
+
+- Agent: Claude über T3 Code (Claude Agent SDK). Modellkennung laut Laufzeit: `claude-opus-5-5[1m]`. Eine interne Modellversion und nicht zugängliche Anbieter-Vorgaben sind unbekannt.
+- Thread: `60cbaa36-abf8-49ac-9ba7-5a60e3aff64d` („Politiktest wissenschaftlich fundieren“). Branch `research/life-93-claude-20261003`, abgezweigt von Codex-Stand `e9898fb`.
+- Werkzeuge: Shell und Dateibearbeitung, Linear (Lesen von LIFE-93, ein Stopp-Kommentar), T3-Code-Werkzeuge (Lesen des Codex-Threads, Delegation an Codex), Websuche, öffentliche ESS-Metadaten-API, lokales Chromium über `playwright-core`.
+- Subagents: Claude-Subagents für Themenrecherche (R1–R3), Profilform (R4), unabhängige Kontrollrechnung (V1), Quellen- und Fairnessprüfung (V2), technische Prüfung (T1) und das Auslesen der Nachrichten im Codex-Thread. Codex-Prüfer (`gpt-6.1-sol`) für die getrennten Prüfungen des Plans v2.2 (P1, P2, Nachprüfungen). Alle Aufträge stehen im Wortlaut unter `reports/claude/auftraege/`, alle Berichte unverändert unter `reports/claude/agenten/`, `reports/claude/kontrollrechnung/` und `reports/claude/pruefungen/`.
+
+Stevens Auftrag im Wortlaut:
+
+> https://linear.app/kiumu-app/issue/LIFE-93/politiktest-fur-deutschland-wissenschaftlich-fundieren-und-transparent
+>
+> Mach hier weiter, alles steht im Issue
+
+Während der Übernahme ergänzte Steven den Issue um die Abschnitte 2a bis 2c und schrieb:
+
+> lies den issue noch einmal. es wurde grade noch eine kleine änderung gemacht
+
+Zugriff und Exposition: Claude und die Prüfer lasen keine Antwortverteilungen der 19 neuen Fragen vor der Festschreibung von Plan v2.2. Gelesen wurden Spaltennamen der lokalen CSV-Dateien und öffentliche ESS-Metadaten. Die Kontrollrechnung V1 las die lokalen CSV-Dateien mit eigenem Code und gab nur Vergleichsergebnisse aus. In ihren ersten Terminalausgaben standen Zählungen von Wahl- und Parteistatus, aus denen sich ein zurückgehaltener Wert von eins bis vier hätte ableiten lassen. Diese Ausgaben gelangten in keine Berichtsdatei. Sie liegen im lokalen Werkzeugcache der Claude-Sitzung. Rechercheagenten berichten ungefragt angezeigte Ergebniszahlen anderer Befragungen in Suchmaschinen-Zusammenfassungen. Sie wurden nicht verwendet.
+
+Übereinstimmung zwischen Claude- und Codex-Agenten ist kein Neutralitätsnachweis. Claude hat Plan v2.2, Profilregeln und Rechenweg selbst verfasst. Die Codex-Prüfungen sind KI-Reviews einer anderen Modellfamilie, keine Begutachtung durch Fachleute.
