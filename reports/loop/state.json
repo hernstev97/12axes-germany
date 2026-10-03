@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T04:53:58.661791+00:00",
+  "updatedAtUtc": "2026-10-03T05:06:36.464804+00:00",
   "status": "RUNNING",
   "phase": "Setup/Phase-0-Planarbeit und unabhängige Phase-1-Quellenvorbereitung",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
-  "currentHead": "5641f8103a9de703c71d01fb2688ebcc5cf82c31",
+  "currentHead": "7fda92dacc225817340b3e6231b8b50340bbe49f",
   "sourceIssue": {
     "path": "reports/loop/issue-2026-10-03.json",
     "updatedAt": "2026-10-02T22:07:24.510Z"
@@ -21,10 +21,10 @@
     }
   ],
   "openTasks": [
-    "FOUNDATION v3: zwei unabhängige Typ-/Reproduzierbarkeitsprüfungen und neuer unbeteiligter Juror",
-    "PREP v2: leere Inputnamen unter bestehenden Finding-IDs in Runde 2 reparieren und nachprüfen",
-    "SOFTWARE: beide Erstberichte einsammeln; belegte IOCTL-Aussage korrigieren und nachprüfen",
-    "Claude: tatsächliche getrennte Forschungsbewertungen nach erfolgreichem Zugriff vorbereiten; persönliches Setup offen"
+    "FOUNDATION-v4: vollständigen Jurorbericht lesen und evidenzbasiert entscheiden",
+    "SOFTWARE-v2: zwei unabhängige Korrektur-/tatsächliche Claude-Protokollberichte einsammeln",
+    "INVENTORY-002-AB: vollständige öffentliche Kategorien-/Filterergänzung einfrieren und zweifach unabhängig prüfen",
+    "Analyseplan: offene Methodennachweise und getrennte Claude-Forschungsbewertungen; kein Rohdatenzugriff vor Abnahme"
   ],
   "dependencies": [
     {
@@ -110,7 +110,8 @@
     "reports/loop/reviews/SOFTWARE-001-repro.md",
     "reports/loop/reviews/FOUNDATION-001-v3-types.md",
     "reports/loop/reviews/FOUNDATION-001-v3-repro.md",
-    "reports/loop/reviews/PREP-001-v3-schema.md"
+    "reports/loop/reviews/PREP-001-v3-schema.md",
+    "reports/loop/reviews/PREP-001-v3-binding.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -135,13 +136,13 @@
       "status": "RUNNING"
     },
     {
-      "name": "/root/prep_v3_binding",
-      "role": "independent-preparation-and-formal-reference-recheck",
+      "name": "/root/inventory002_ab_author",
+      "role": "public-source-author",
       "status": "RUNNING"
     },
     {
-      "name": "/root/inventory002_ab_author",
-      "role": "public-source-author",
+      "name": "/root/software_v2_boundary",
+      "role": "independent-software-correction-and-actual-Claude-protocol-review",
       "status": "RUNNING"
     }
   ],
@@ -176,16 +177,18 @@
       "predefinedCriteria": "reports/loop/foundation-pruefauftrag.md",
       "manifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
       "manifestSha256": "440b0db6b60763443e6c8d1e6e7a3e9363a947940d918697eb8ba5c7d28d9677",
-      "reviewWaves": "Fünf Erstberichte, zwei v2- und zwei v3-Nachberichte abgeschlossen; N-F01-Typreparatur begrenzt bestätigt; historischer Referenzfehler separat korrigiert. Juror und formale Referenznachprüfung aktiv.",
+      "reviewWaves": "Fünf Erstberichte und je zwei v2/v3-Nachberichte abgeschlossen. Formale v4-Referenznachprüfung BESTANDEN; unabhängiger Juror schreibt Abschlussbericht.",
       "decisions": "reports/loop/FOUNDATION-001-nachpruefentscheidung.md"
     },
     {
       "id": "PREP-001",
-      "status": "RUNNING",
+      "status": "READY_FOR_APPROVAL",
       "predefinedCriteria": "reports/loop/preparation-pruefauftrag.md",
       "manifest": "reports/loop/packages/PREP-001/v3/manifest.json",
       "manifestSha256": "f597f90b6419e33f24075eed5fabd057ece45a7630f56d4335a134e8a091d284",
-      "reviewStatus": "Runde2 korrigiert,20Ajv-Fälle und vollständiger Appcheck ausgeführt; erste v3-Nachprüfung läuft, zweite bei freiem Slot."
+      "reviewStatus": "Zwei unabhängige v3-Nachprüfungen abgeschlossen; formale Mindestbelegkorrektur in Runde2 BESTANDEN. Reales Setup/Workflow und wissenschaftliche Gesamtfreigabe nicht übernommen.",
+      "decision": "reports/loop/PREP-001-runde2-entscheidung.md",
+      "closureScope": "Vorbereitung und formaler Review-Schema-Vertrag; keine vollständige Setup-Abnahme"
     },
     {
       "id": "SOFTWARE-001",
@@ -195,7 +198,7 @@
       "manifest": "reports/loop/packages/SOFTWARE-001/v2/manifest.json",
       "manifestSha256": "c88656c49ce561b9d57d2e1975ef82dabeb9b745fbefb14cda1e1d415f8a5ddf",
       "authorStatus": "COMPLETED",
-      "reviewStatus": "Beide Erstberichte vollständig; IOCTL-Beschreibung durch Autor korrigiert und neue Probe ausgeführt. Zwei unabhängige Korrektur-/Claude-Protokollchecks bei freien Slots.",
+      "reviewStatus": "Zwei Erstberichte abgeschlossen; v2-Korrektur-/Claude-Protokoll-Erstprüfung aktiv; zweiter unabhängiger Prüfer nach freiem Slot.",
       "setupStatus": "NICHT_BESTANDEN; dokumentierter Außenwrite",
       "authorCorrectionStatus": "COMPLETED"
     },
@@ -207,19 +210,25 @@
       "author": "/root/inventory002_ab_author"
     }
   ],
-  "nextConcreteStep": "PREP-v3 beide vollständigen Berichte zusammenführen; FOUNDATION-Juror abschließen; SOFTWARE-v2 zwei unabhängige Korrektur-/Protokollprüfer; öffentliche A/B-Inventarergänzung weiterführen. Keine ESS-Antwortanalyse.",
+  "nextConcreteStep": "FOUNDATION-Juror abschließen; bei freiem Slot zweiten SOFTWARE-v2-Prüfer starten; öffentliche A/B-Inventarergänzung einfrieren und prüfen. Synthetische Designmethoden nur mit eigenem Vorabplan; keine ESS-Antwortanalyse.",
   "checkpoint": {
-    "lastLocalCommit": "5641f8103a9de703c71d01fb2688ebcc5cf82c31",
-    "lastVerifiedRemoteCommit": "5641f8103a9de703c71d01fb2688ebcc5cf82c31",
-    "lastVerifiedPushAtUtc": "2026-10-03T04:39:40.870283+00:00",
+    "lastLocalCommit": "7fda92dacc225817340b3e6231b8b50340bbe49f",
+    "lastVerifiedRemoteCommit": "7fda92dacc225817340b3e6231b8b50340bbe49f",
+    "lastVerifiedPushAtUtc": "2026-10-03T05:06:36.464804+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-012.json",
-    "intervalOverrunNote": "Checkpoint nach Kontextkompaktierung erst nach 30-Minuten-Frist begonnen (03:53:14 bis mindestens04:25UTC). Verspätung dokumentiert; eigene Änderungen sofort gesichert."
+    "record": "reports/loop/push-013.json",
+    "intervalOverrunNote": "Checkpoint nach Kontextkompaktierung erst nach 30-Minuten-Frist begonnen (03:53:14 bis mindestens04:25UTC). Verspätung dokumentiert; eigene Änderungen sofort gesichert.",
+    "lastPushCompletedAtUtcApproximate": "2026-10-03T04:57:00Z"
   },
   "scientificStatus": "296 technische Inventarzeilen/205 offene Restzeilen. Fünf FOUNDATION-Erstberichte, zwei Nachberichte; N-F01 Runde2 korrigiert und erneut eingefroren, unabhängige Prüfung offen. Keine semantische Vollabnahme, Endauswahl, Rohantworten, A/B oder Tags.",
-  "technicalRecord": "reports/loop/000-technical.json",
+  "technicalRecord": {
+    "path": "outputs/loop/software-correction-coordinator/app-check.json",
+    "logSha256": "5a735c588d0ce2c79ba5a79dfe85318bbca21d0f9cd58e9fbdc5283dbec31826",
+    "status": "BESTANDEN",
+    "scope": "Tatsächlicher lokaler pnpm check 04:53:59–04:54:11 UTC; 9 Angular-,20 Schema-Checks,Typecheck,Build,Handbuch. Kein Forschungs-/Browser-Gesamturteil."
+  },
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
     "reports/loop/technical-v2/web-check.json",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T04:53:58.661791+00:00",
+  "updatedAtUtc": "2026-10-03T05:06:36.464804+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -1174,17 +1174,20 @@
       "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
       "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
       "repairRounds": 2,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "Konkreter Rest leere Inputnamen voll angenommen; Namensschema korrigiert,20synthetische Fälle ausgeführt; unabhängige v3-Nachprüfung offen.",
-      "blocks": ["Betroffene PREP-Abnahme"],
+      "status": "BESTANDEN",
+      "correctionState": "Runde2 formaler Mindestbeleg-/Namensvertrag durch zwei tatsächliche unabhängige v3-Prüfungen bestätigt; echte Dateiidentität und semantischer Workflow bleiben getrennt.",
+      "blocks": [],
       "duplicateOf": null,
       "verification": {
-        "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+        "scope": "Begrenzter formaler Mindestbelegvertrag; kein Workflow-/Forschungs-/Menschentest",
         "required": "Zwei unabhängige Nachprüfungen",
         "independentReports": [
-          "reports/loop/reviews/PREP-001-v2-methods.md",
-          "reports/loop/reviews/PREP-001-v2-repro.md"
-        ]
+          "reports/loop/reviews/PREP-001-v3-schema.md",
+          "reports/loop/reviews/PREP-001-v3-binding.md"
+        ],
+        "manifest": "reports/loop/packages/PREP-001/v3/manifest.json",
+        "manifestSha256": "f597f90b6419e33f24075eed5fabd057ece45a7630f56d4335a134e8a091d284",
+        "status": "BESTANDEN"
       },
       "history": [
         {
@@ -1208,8 +1211,35 @@
               "required": "Zwei unabhängige Nachprüfungen"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:06:36.464804+00:00",
+          "previousRecord": {
+            "id": "PREP-M-01",
+            "reportFindingId": "PREP-M-01",
+            "origin": "reports/loop/reviews/PREP-001-methods.md",
+            "problem": "Schema lässt unbelegten Erfolg zu",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+            "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+            "repairRounds": 2,
+            "status": "NICHT_GEPRÜFT",
+            "correctionState": "Konkreter Rest leere Inputnamen voll angenommen; Namensschema korrigiert,20synthetische Fälle ausgeführt; unabhängige v3-Nachprüfung offen.",
+            "blocks": ["Betroffene PREP-Abnahme"],
+            "duplicateOf": null,
+            "verification": {
+              "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+              "required": "Zwei unabhängige Nachprüfungen",
+              "independentReports": [
+                "reports/loop/reviews/PREP-001-v2-methods.md",
+                "reports/loop/reviews/PREP-001-v2-repro.md"
+              ]
+            }
+          }
         }
-      ]
+      ],
+      "decisionEvidence": "reports/loop/PREP-001-runde2-entscheidung.md"
     },
     {
       "id": "PREP-M-02",
@@ -1365,17 +1395,20 @@
       "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
       "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
       "repairRounds": 2,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "Konkreter Rest leere Inputnamen voll angenommen; Namensschema korrigiert,20synthetische Fälle ausgeführt; unabhängige v3-Nachprüfung offen.",
-      "blocks": ["Betroffene PREP-Abnahme"],
+      "status": "BESTANDEN",
+      "correctionState": "Runde2 formaler Mindestbeleg-/Namensvertrag durch zwei tatsächliche unabhängige v3-Prüfungen bestätigt; echte Dateiidentität und semantischer Workflow bleiben getrennt.",
+      "blocks": [],
       "duplicateOf": "PREP-M-01",
       "verification": {
-        "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+        "scope": "Begrenzter formaler Mindestbelegvertrag; kein Workflow-/Forschungs-/Menschentest",
         "required": "Zwei unabhängige Nachprüfungen",
         "independentReports": [
-          "reports/loop/reviews/PREP-001-v2-methods.md",
-          "reports/loop/reviews/PREP-001-v2-repro.md"
-        ]
+          "reports/loop/reviews/PREP-001-v3-schema.md",
+          "reports/loop/reviews/PREP-001-v3-binding.md"
+        ],
+        "manifest": "reports/loop/packages/PREP-001/v3/manifest.json",
+        "manifestSha256": "f597f90b6419e33f24075eed5fabd057ece45a7630f56d4335a134e8a091d284",
+        "status": "BESTANDEN"
       },
       "history": [
         {
@@ -1399,8 +1432,35 @@
               "required": "Zwei unabhängige Nachprüfungen"
             }
           }
+        },
+        {
+          "savedAtUtc": "2026-10-03T05:06:36.464804+00:00",
+          "previousRecord": {
+            "id": "PREP-R-F02",
+            "reportFindingId": "R-F02",
+            "origin": "reports/loop/reviews/PREP-001-repro.md",
+            "problem": "Unbelegter/widersprüchlicher Schemerfolg",
+            "severity": "mittel",
+            "decision": "angenommen",
+            "reason": "Begründete Einzelfallentscheidung in reports/loop/PREP-001-entscheidungen.md; tatsächliche Gegenfälle in beiden Erstberichten",
+            "evidence": "Genaue Schema-/Skill-/Protokollfundstellen und tatsächliche Fixtures im originalen Erstbericht",
+            "repairRounds": 2,
+            "status": "NICHT_GEPRÜFT",
+            "correctionState": "Konkreter Rest leere Inputnamen voll angenommen; Namensschema korrigiert,20synthetische Fälle ausgeführt; unabhängige v3-Nachprüfung offen.",
+            "blocks": ["Betroffene PREP-Abnahme"],
+            "duplicateOf": "PREP-M-01",
+            "verification": {
+              "scope": "Formaler Vertrag und Text-/Änderungsprotokoll; kein Claude-/Menschentest",
+              "required": "Zwei unabhängige Nachprüfungen",
+              "independentReports": [
+                "reports/loop/reviews/PREP-001-v2-methods.md",
+                "reports/loop/reviews/PREP-001-v2-repro.md"
+              ]
+            }
+          }
         }
-      ]
+      ],
+      "decisionEvidence": "reports/loop/PREP-001-runde2-entscheidung.md"
     },
     {
       "id": "SW-ENV-004",

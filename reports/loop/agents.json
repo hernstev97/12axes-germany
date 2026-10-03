@@ -328,10 +328,11 @@
       "returnedTaskName": "/root/prep_v3_binding",
       "fork_turns": "none",
       "kind": "independent-preparation-and-formal-reference-recheck",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/reviews/PREP-001-v3-binding.md",
       "manifest": "reports/loop/packages/PREP-001/v3/manifest.json",
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext"
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext",
+      "reportSha256": "7740ac6959e26d12c3cad82595240814d667b472f6557ffae9541f9e7da78d2a"
     },
     {
       "task_name": "inventory002_ab_author",
@@ -342,6 +343,17 @@
       "report": "reports/loop/authors/INVENTORY-002-AB.md",
       "manifest": null,
       "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext"
+    },
+    {
+      "task_name": "software_v2_boundary",
+      "returnedTaskName": "/root/software_v2_boundary",
+      "fork_turns": "none",
+      "kind": "independent-correction-and-actual-Claude-protocol-review",
+      "status": "RUNNING",
+      "manifest": "reports/loop/packages/SOFTWARE-001/v2/manifest.json",
+      "manifestSha256": "c88656c49ce561b9d57d2e1975ef82dabeb9b745fbefb14cda1e1d415f8a5ddf",
+      "report": "reports/loop/reviews/SOFTWARE-001-v2-boundary.md",
+      "actualStartPrompt": "Vollständiger tatsächlicher Spawnauftrag wortgetreu im eigenen Bericht, frischer begrenzter Kontext."
     }
   ],
   "activeAdditionalAuthors": [
