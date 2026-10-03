@@ -1,5 +1,6 @@
 import { type ComponentFixture, TestBed } from '@angular/core/testing';
 import { PolicyDraft } from './policy-draft';
+import { REVIEWED_HISTORICAL_REFERENCES } from './reviewed-historical-references';
 
 describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   let fixture: ComponentFixture<PolicyDraft>;
@@ -138,5 +139,42 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expect(element.querySelector('[role="status"]')?.textContent).toContain(
       'passt nicht zu den gebundenen Originalquellen',
     );
+  });
+
+  it('zeigt die 42 echten Einzelreferenzen mit getrennten Fallzahlen und hält cttresa ohne Zahlen', async () => {
+    fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
+    await click('Zum Ergebnisentwurf');
+    expect(element.querySelectorAll('.historical-reference')).toHaveLength(42);
+    const withheld = element.querySelector<HTMLElement>(
+      '[data-question-id="ESS10SCe03_2:cttresa"]',
+    )!;
+    expect(withheld.querySelector('.historical-reference')).toBeNull();
+    expect(withheld.querySelector('.reference-counts')).toBeNull();
+    expect(withheld.querySelector('.reference-withheld')?.textContent).toContain(
+      'bleibt wegen unzureichender',
+    );
+    const actual = REVIEWED_HISTORICAL_REFERENCES.references.find(
+      (reference) => reference.questionId === 'ESS11e04_2:euftf',
+    )!;
+    const displayed = element.querySelector<HTMLElement>(
+      '[data-question-id="ESS11e04_2:euftf"] .historical-reference',
+    )!;
+    expect(displayed.textContent).toContain('9. Mai 2023 bis 21. Dezember 2023');
+    expect(displayed.textContent).toContain('pspwght');
+    const counts = [...displayed.querySelectorAll('.reference-counts dd')].map((count) =>
+      count.textContent?.trim(),
+    );
+    expect(counts).toEqual(
+      [
+        actual.validUnweightedN,
+        actual.totalUnweightedN,
+        actual.missingUnweightedN,
+        actual.notAskedUnweightedN,
+      ].map(String),
+    );
+    fixture.componentRef.setInput('historicalReferences', null);
+    await fixture.whenStable();
+    expect(element.querySelectorAll('.historical-reference')).toHaveLength(0);
+    expect(element.querySelectorAll('.reference-withheld')).toHaveLength(0);
   });
 });

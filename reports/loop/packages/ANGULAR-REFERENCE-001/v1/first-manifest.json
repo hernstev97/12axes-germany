@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "package": "ANGULAR-REFERENCE-001/v1",
+  "scope": "Ordinary readonly integration/presentation review; upstream first-review reports may only be hashed for generator authentication, never read as guidance or defense. No raw/local, other author/review/state access.",
+  "artifacts": [
+    {
+      "path": "data/analysevertrag.v2.entwurf.json",
+      "sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+    },
+    {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+    },
+    {
+      "path": "data/reference-v2/ESS10SCe03_2.json",
+      "sha256": "e75dfbadcf68c14dce9d13c8a8a2dd1abc6e8a6e96618f960c8cd61c54bc3184"
+    },
+    {
+      "path": "data/reference-v2/ESS11e04_2.json",
+      "sha256": "453d8ce3273c9e29bb08a49be6e69da46591e3d1ed89f306051b085c511ec721"
+    },
+    {
+      "path": "data/reference-v2/ESS5e03_6.json",
+      "sha256": "e489fe013d1cbd3d72b9ae816e422757ce8d34ae575d09f64df13a1750dc4bc6"
+    },
+    {
+      "path": "data/reference-v2/ESS8e02_3.json",
+      "sha256": "fb720cc18049f037ed86670bd76a51c3c1770342a61f5627b7afbfb127898ad7"
+    },
+    {
+      "path": "data/reference-v2/ESS9e03_3.json",
+      "sha256": "34e71b448c0c315cf9f19bda30628874c95464faf661813a65f25a3f9ad82be2"
+    },
+    {
+      "path": "data/reference-v2/README.md",
+      "sha256": "a2917e6b57c59e96298345e526e9311de82b1422cfbb9a8bb1cfabc0684ba57c"
+    },
+    {
+      "path": "docs/auftrag-life-93-breite-2026-10-03.md",
+      "sha256": "d0a059efb9de65aec1be25b3c2d5fac3bcb61cb57b0d7af8e7d8f64ecb1fd5ed"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "package.json",
+      "sha256": "451c9de3c5e0b647361bfbc749717712b895b822a04f84433288d19eb29a27f7"
+    },
+    {
+      "path": "pipeline/policy_export_v2.py",
+      "sha256": "27b225b5975f0c321f08adbfa7ccab4e03dae8421f3987d0e104cf4945d0437a"
+    },
+    {
+      "path": "reports/loop/policy-v2-export-decisions.json",
+      "sha256": "a87f780a7219253f7f3773d051b7001f438b19b2fb2d0ee820fc22c1157a16df"
+    },
+    {
+      "path": "reports/loop/reviews/RESULTS-V2-001-methods-decision.json",
+      "sha256": "765db3005c736174a3d1f9819ab212917ce50d6143059b8cfce2dac3f6f67806"
+    },
+    {
+      "path": "reports/loop/reviews/RESULTS-V2-001-methods-first.md",
+      "sha256": "1bb14ba2dba3d57612d66c5a50c29ce049606e8fddb062ff6b616f56b60462ee"
+    },
+    {
+      "path": "reports/loop/reviews/RESULTS-V2-001-sources-decision.json",
+      "sha256": "e5c3a730dc6cf71e5b788d4251c109b86a7d510684bf945b17ceaa6e48306065"
+    },
+    {
+      "path": "reports/loop/reviews/RESULTS-V2-001-sources-first.md",
+      "sha256": "7a2814359b94ab3a73dd22a090b2a10c6b51db6cc243d8586e8ae15bfdc580e8"
+    },
+    {
+      "path": "scripts/check-handbuch.mjs",
+      "sha256": "27433f6b7f4b0f01df722ff4143fd2f8577aea7233bf3849414e1c1ab06fd1f5"
+    },
+    {
+      "path": "web/angular.json",
+      "sha256": "91c9042107b35de10321454587d64abbd7cd18cd25ea345319dd0378b8337ed8"
+    },
+    {
+      "path": "web/src/app/app.html",
+      "sha256": "dac5494b1ad8339c9fca675ff09b243b4fb3dda9a286ab984f77bed40f6a56ac"
+    },
+    {
+      "path": "web/src/app/app.routes.ts",
+      "sha256": "d1ad2dc6a5abd0f51aa0a14c79210d9709c19f272af0efca275719bf4cd925b1"
+    },
+    {
+      "path": "web/src/app/app.scss",
+      "sha256": "5ad034daa84db2bb8bd36321f896602bed1c9a4d40a39ec4e3c781b876f0aaf4"
+    },
+    {
+      "path": "web/src/app/app.ts",
+      "sha256": "386b021e8b318491386f2a3a19520bc49555836294df4a4b86ebf500e83b97a3"
+    },
+    {
+      "path": "web/src/app/policy-draft/catalogue-types.ts",
+      "sha256": "b49719267f9f66570abd3f5fd5246da8699c8e7e47fc9b01dc41c0ad3a6df5a9"
+    },
+    {
+      "path": "web/src/app/policy-draft/generate-reviewed-references.mjs",
+      "sha256": "72d2970f297e860c7375bce2dbe3cf9d7a81cc28e40766f3af2bdc8861aa5e04"
+    },
+    {
+      "path": "web/src/app/policy-draft/historical-reference.spec.ts",
+      "sha256": "1d81f050380cd735829ac52d27101cec1d428e823793a407acbd8e4684cdfb5d"
+    },
+    {
+      "path": "web/src/app/policy-draft/historical-reference.ts",
+      "sha256": "58eb05517a43a4d3ea0a62c20f06c39857ca242e50748d3bce1a0f17a33683ab"
+    },
+    {
+      "path": "web/src/app/policy-draft/item-meanings.ts",
+      "sha256": "d55eb84799d1b99fc348e25a1bb2356594477e3d3c5b2f212d0764d4dcc8b4a3"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-catalogue.spec.ts",
+      "sha256": "48d35677640fd43e794843360c4b516a190010c76912ffb8273a8cf54333c2ca"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-catalogue.ts",
+      "sha256": "640f6470bddce074d034c5ed9a18174c95e4447fb2f3c3ba6e8848a36192c984"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.html",
+      "sha256": "4d8396cebf97fd60441c989dccd020a44369e089858ec2510c191a0a1dc628f5"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.scss",
+      "sha256": "430edaab7e76c934492fa66197fbafcd42200beca03265f1c565e7a162c9e313"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.spec.ts",
+      "sha256": "e9cd038e558357e7a07157dbf1c18e3682b074c373fe2a7ad6d5331a9f426f09"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.ts",
+      "sha256": "cc5f6122faa183d9e9e46bb1bef65ae6d6d0831e91bfb1de257eba57d68ec725"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-source-details.html",
+      "sha256": "75ee3fcd461a8831a1a678b3e3e867dde2a00f0cf4de27f201da03699b184796"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-source-details.scss",
+      "sha256": "98ba630fb6527743e449750fbffde418f28b5993a208e37455205aec2c997f8b"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-source-details.ts",
+      "sha256": "add8b2721004e120d71e7574d119bdd2ec84b5373c7b2b497d53e74e46a2f659"
+    },
+    {
+      "path": "web/src/app/policy-draft/public-catalogue.ts",
+      "sha256": "7a6a3a1ffeba3a976f9c1e07fb1dbd061098e5c5ea347f80303f1750a0fdf8e6"
+    },
+    {
+      "path": "web/src/app/policy-draft/reference-binding.ts",
+      "sha256": "07a928b852be0abb47025ecd2aa64af3c9db32fd36b3c564716dbed55ab69dfb"
+    },
+    {
+      "path": "web/src/app/policy-draft/reference-generator.test.mjs",
+      "sha256": "0165d5d945ec01061e87dfb5c40ba22b6efd758c308bf967ecd3090d437676f9"
+    },
+    {
+      "path": "web/src/app/policy-draft/reviewed-historical-references.ts",
+      "sha256": "4a305618c23d8f9059782b364387e741616b399961989a1bd6448b1014520bcb"
+    },
+    {
+      "path": "web/src/app/policy-draft/verify-public-catalogue.mjs",
+      "sha256": "b9156684e80949abbd4223708334159a5945b226ed674b6f158f072ed80450f7"
+    },
+    {
+      "path": "web/src/app/research-preview.routes.dev.ts",
+      "sha256": "e8557fe29e2ae2d5dcff9dc93e9ac9709d1e82c501d84ff5c0401ed3a3ed121b"
+    },
+    {
+      "path": "web/src/app/research-preview.routes.ts",
+      "sha256": "d9bda2c42f9c8edec6f02ab7a3d5dd71df6c8e5afe91fe3f33f8b4e1d3bb341a"
+    },
+    {
+      "path": "web/src/app/research-preview/policy-preview.ts",
+      "sha256": "e8ad26279a5f966852ec1f0f72b53018770d580a8a2964768e0fc710170b3296"
+    },
+    {
+      "path": "web/src/styles.scss",
+      "sha256": "695afc2c43f15dcaf4ad0406a3bf9910d7b6b7f610e4e52516b72f624ba8cf11"
+    }
+  ]
+}

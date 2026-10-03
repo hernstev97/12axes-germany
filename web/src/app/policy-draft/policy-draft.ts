@@ -161,6 +161,11 @@ export class PolicyDraft {
     return state.status === 'bound' ? (state.references.get(id) ?? null) : null;
   }
 
+  protected unavailableReferenceFor(id: string) {
+    const state = this.references();
+    return state.status === 'bound' ? (state.unavailable.get(id) ?? null) : null;
+  }
+
   protected referenceLabel(item: PolicyDraftItem, code: string): string {
     return categoryLabel(item, item.categories.find((category) => category.code === code)!);
   }

@@ -7,6 +7,7 @@ import {
 } from './historical-reference';
 import { POLICY_DRAFT_ITEMS } from './policy-catalogue';
 import { PUBLIC_CATALOGUE } from './public-catalogue';
+import { REVIEWED_HISTORICAL_REFERENCES } from './reviewed-historical-references';
 
 // Entirely synthetic category shares for a technical adapter test. No release,
 // scientific validity, or actual reference distribution is asserted by this fixture.
@@ -29,6 +30,9 @@ function syntheticInput(): HistoricalReferenceInput {
     weight: 'pspwght',
     denominator: 'valid_item_responses',
     validUnweightedN: 101,
+    totalUnweightedN: 109,
+    missingUnweightedN: 5,
+    notAskedUnweightedN: 3,
     // Reverse order deliberately, proving category identity rather than index matching.
     categoryShares: item.categories
       .map((category) => ({ code: category.code, share: category.code === '9' ? 1 : 0 }))
@@ -38,6 +42,45 @@ function syntheticInput(): HistoricalReferenceInput {
 }
 
 describe('Historische Referenzeingabe ohne eingebundene Zahlen', () => {
+  it('bindet die echte öffentliche Eingabe mit 42 Referenzen und einem ausdrücklichen Null-Eintrag', () => {
+    const state = bindHistoricalReferences(REVIEWED_HISTORICAL_REFERENCES);
+    expect(state.status).toBe('bound');
+    if (state.status !== 'bound') throw Error('Reviewed public input did not bind');
+    expect(state.references.size).toBe(42);
+    expect(state.references.has('ESS10SCe03_2:cttresa')).toBe(false);
+    expect(state.unavailable.get('ESS10SCe03_2:cttresa')).toEqual({
+      questionId: 'ESS10SCe03_2:cttresa',
+      reference: null,
+      reason: 'withheld_base_or_cell_count',
+    });
+    expect(Object.isFrozen(REVIEWED_HISTORICAL_REFERENCES)).toBe(true);
+    expect(Object.isFrozen(REVIEWED_HISTORICAL_REFERENCES.references)).toBe(true);
+    expect(Object.isFrozen(REVIEWED_HISTORICAL_REFERENCES.references[0]!.categoryShares[0])).toBe(
+      true,
+    );
+  });
+
+  it('weist eine falsche Fallzahlzerlegung und einen numerischen Ersatz für null zurück', () => {
+    const input = syntheticInput();
+    expect(() =>
+      bindHistoricalReferences({
+        ...input,
+        references: [{ ...input.references[0]!, totalUnweightedN: 101 }],
+      }),
+    ).toThrow(HistoricalReferenceInputError);
+    expect(() =>
+      bindHistoricalReferences({
+        ...REVIEWED_HISTORICAL_REFERENCES,
+        unavailableReferences: [
+          {
+            questionId: 'ESS10SCe03_2:cttresa',
+            reference: 0,
+            reason: 'withheld_base_or_cell_count',
+          },
+        ],
+      } as unknown as HistoricalReferenceInput),
+    ).toThrow(HistoricalReferenceInputError);
+  });
   it('lässt fehlende Referenzen leer und erkennt Kategorien unabhängig von der Listenfolge', () => {
     expect(bindHistoricalReferences(null)).toEqual({ status: 'none' });
     const result = bindHistoricalReferences(syntheticInput());

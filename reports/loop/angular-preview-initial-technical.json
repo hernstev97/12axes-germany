@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "scope": "Root initial local Angular preview only; independent first still running, no human/design/release acceptance",
+  "route": "http://localhost:4314/forschungsentwurf",
+  "serverSession": 69187,
+  "observed": {
+    "referenceCount": 42,
+    "unavailableQuestion": "ESS10SCe03_2:cttresa",
+    "unavailableMessage": "Insufficient basis or cell count; no reference numbers",
+    "resultAxe": {
+      "version": "4.13.0",
+      "violations": 0,
+      "incomplete": 0,
+      "viewport": [1280, 800]
+    },
+    "lastResultEdit": {
+      "activeElement": "H2",
+      "activeText": " Frage 43 von 43 ",
+      "question": " Frage 43 von 43 ",
+      "questionBottom": -355.109375,
+      "questionTop": -391.34375,
+      "scrollY": 1188,
+      "view": " Fragenentwurf ",
+      "viewportHeight": 800
+    },
+    "visibleKeyboardFocus": {
+      "status": "NOT_VERIFIED",
+      "documentHasFocus": false,
+      "focusVisible": false,
+      "nativeTabMovedToSkipLink": true
+    },
+    "actual200PercentZoom": {
+      "status": "NOT_VERIFIED",
+      "attempt": "Native Control plus +",
+      "before": {
+        "dpr": 1,
+        "innerWidth": 1280,
+        "visualViewportScale": 1
+      },
+      "after": {
+        "dpr": 1,
+        "innerWidth": 1280,
+        "visualViewportScale": 1
+      },
+      "cssZoomNotUsed": true
+    }
+  },
+  "failures": [
+    {
+      "id": "AUI-ROOT-01",
+      "severity": "substantial usability",
+      "description": "Last result native edit focuses question heading above viewport; h2 top -391.34375, bottom -355.109375 at scrollY1188; focused does not mean visible",
+      "status": "OPEN",
+      "screenshots": [
+        "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musiu7at-82605785.png",
+        "/home/stevenh/.t3/userdata/browser-artifacts/browser-screenshot-localhost-musiudkc-a74bedd5.png"
+      ]
+    },
+    {
+      "description": "First native locator used visible button text rather than actual aria-label; click failed and was corrected with observed unique accessible name",
+      "scope": "QA locator attempt, no content correction"
+    }
+  ],
+  "observedAtUtc": "2026-10-03T15:03:44.725239+00:00"
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T14:49:15.344151+00:00",
+  "updatedAtUtc": "2026-10-03T15:10:02.635527+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -3146,6 +3146,21 @@
       "status": "OPEN_LIMIT",
       "reason": "Same-family agreement and aggregate checks are not independent raw empirical reproduction",
       "blocks": []
+    },
+    {
+      "id": "AUI-ROOT-01",
+      "origin": "reports/loop/angular-preview-initial-technical.json",
+      "severity": "erheblich Bedienung",
+      "decision": "angenommen",
+      "repairRounds": 0,
+      "status": "OPEN",
+      "reason": "Native final result edit focuses heading outside viewport; original AR-L01 explicitly left browser open",
+      "blocks": ["Question edit usability completion"],
+      "verification": {
+        "headingTopPx": -391.34375,
+        "headingBottomPx": -355.109375,
+        "scrollY": 1188
+      }
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests.\n2026-10-03: ausdrücklicher Nutzerhalt, kein neues Audit. Neue Nachberichte gesichert, Root-Endauswertung offen; keine Findings/rundenzählungen zurückgesetzt."

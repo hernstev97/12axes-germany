@@ -16,7 +16,8 @@
     "check:handbuch": "node scripts/check-handbuch.mjs",
     "check:browser": "node scripts/check-browser.mjs",
     "check": "pnpm format:check && pnpm check:handbuch && pnpm check:review-schema && pnpm typecheck && pnpm test && pnpm build",
-    "check:review-schema": "node scripts/check-review-schema.mjs"
+    "check:review-schema": "node scripts/check-review-schema.mjs",
+    "dev:research": "pnpm --filter politikprofil start --configuration research --host 127.0.0.1 --port 4314"
   },
   "devDependencies": {
     "ajv": "8.20.0",

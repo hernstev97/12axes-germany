@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { RESEARCH_PREVIEW_ROUTES } from './research-preview.routes';
 
 export const routes: Routes = [
   {
@@ -18,6 +19,7 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/methodology/methodology').then((module) => module.MethodologyPage),
   },
+  ...RESEARCH_PREVIEW_ROUTES,
   {
     path: '**',
     title: 'Seite nicht gefunden · 12 Axes Deutschland',

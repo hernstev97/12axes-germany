@@ -3,9 +3,9 @@ import { POLICY_DRAFT_ITEMS } from './policy-catalogue';
 import { PUBLIC_CATALOGUE } from './public-catalogue';
 
 /**
- * A future caller supplies separately released, aggregate-only artifacts.
+ * A caller supplies separately reviewed, aggregate-only artifacts.
  * Shape/source validation is technical and does not grant publication approval.
- * No estimates or release flags are embedded in this draft.
+ * No release flags are inferred from the input shape.
  */
 export interface HistoricalCategoryReference {
   readonly questionId: string;
@@ -24,12 +24,22 @@ export interface HistoricalCategoryReference {
   readonly weight: 'pspwght';
   readonly denominator: 'valid_item_responses';
   readonly validUnweightedN: number;
+  readonly totalUnweightedN: number;
+  readonly missingUnweightedN: number;
+  readonly notAskedUnweightedN: number;
   readonly categoryShares: readonly { readonly code: string; readonly share: number }[];
+}
+
+export interface HistoricalUnavailableReference {
+  readonly questionId: string;
+  readonly reference: null;
+  readonly reason: 'withheld_base_or_cell_count';
 }
 
 export interface HistoricalReferenceInput {
   readonly catalogueSha256: string;
   readonly references: readonly HistoricalCategoryReference[];
+  readonly unavailableReferences?: readonly HistoricalUnavailableReference[];
 }
 
 export type HistoricalReferenceState =
@@ -38,6 +48,7 @@ export type HistoricalReferenceState =
   | {
       readonly status: 'bound';
       readonly references: ReadonlyMap<string, HistoricalCategoryReference>;
+      readonly unavailable: ReadonlyMap<string, HistoricalUnavailableReference>;
     };
 
 export class HistoricalReferenceInputError extends Error {
@@ -99,6 +110,9 @@ function reference(value: unknown, item: PolicyDraftItem): HistoricalCategoryRef
     ...Object.keys(identity),
     'instrumentSourceIds',
     'validUnweightedN',
+    'totalUnweightedN',
+    'missingUnweightedN',
+    'notAskedUnweightedN',
     'categoryShares',
   ]);
   for (const [key, expected] of Object.entries(identity)) {
@@ -115,6 +129,13 @@ function reference(value: unknown, item: PolicyDraftItem): HistoricalCategoryRef
   }
   const n = input['validUnweightedN'];
   if (typeof n !== 'number' || !Number.isSafeInteger(n) || n < 1) return fail();
+  const total = input['totalUnweightedN'];
+  const missing = input['missingUnweightedN'];
+  const notAsked = input['notAskedUnweightedN'];
+  for (const count of [total, missing, notAsked]) {
+    if (typeof count !== 'number' || !Number.isSafeInteger(count) || count < 0) return fail();
+  }
+  if (total !== n + (missing as number) + (notAsked as number)) return fail();
   const shares = denseArray(input['categoryShares']);
   if (shares.length !== item.categories.length) return fail();
   const byCode = new Map<string, number>();
@@ -143,6 +164,9 @@ function reference(value: unknown, item: PolicyDraftItem): HistoricalCategoryRef
     ...identity,
     instrumentSourceIds: Object.freeze(expectedSources),
     validUnweightedN: n,
+    totalUnweightedN: total as number,
+    missingUnweightedN: missing as number,
+    notAskedUnweightedN: notAsked as number,
     // Display order follows the bound instrument; matching always uses original codes.
     categoryShares: Object.freeze(
       item.categories.map((category) =>
@@ -156,7 +180,12 @@ export function bindHistoricalReferences(
   value: HistoricalReferenceInput | null,
 ): HistoricalReferenceState {
   if (value === null) return Object.freeze({ status: 'none' });
-  const input = object(value, ['catalogueSha256', 'references']);
+  const optional = Object.prototype.hasOwnProperty.call(value, 'unavailableReferences');
+  const input = object(value, [
+    'catalogueSha256',
+    'references',
+    ...(optional ? ['unavailableReferences'] : []),
+  ]);
   if (input['catalogueSha256'] !== PUBLIC_CATALOGUE.catalogueSha256) return fail();
   const references = new Map<string, HistoricalCategoryReference>();
   for (const entry of denseArray(input['references'])) {
@@ -169,7 +198,25 @@ export function bindHistoricalReferences(
     if (!item || references.has(item.id)) return fail();
     references.set(item.id, reference(entry, item));
   }
-  return Object.freeze({ status: 'bound', references });
+  const unavailable = new Map<string, HistoricalUnavailableReference>();
+  for (const entry of optional ? denseArray(input['unavailableReferences']) : []) {
+    const missingReference = object(entry, ['questionId', 'reference', 'reason']);
+    const id = missingReference['questionId'];
+    if (
+      typeof id !== 'string' ||
+      !POLICY_DRAFT_ITEMS.some((item) => item.id === id) ||
+      references.has(id) ||
+      unavailable.has(id) ||
+      missingReference['reference'] !== null ||
+      missingReference['reason'] !== 'withheld_base_or_cell_count'
+    )
+      return fail();
+    unavailable.set(
+      id,
+      Object.freeze({ questionId: id, reference: null, reason: 'withheld_base_or_cell_count' }),
+    );
+  }
+  return Object.freeze({ status: 'bound', references, unavailable });
 }
 
 export function referenceState(value: HistoricalReferenceInput | null): HistoricalReferenceState {

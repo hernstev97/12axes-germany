@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "checkpoint": 43,
+  "localCommit": "7b12a62da2fa4b9d8be3e12fb0678daae45c2025",
+  "verifiedRemoteCommit": "7b12a62da2fa4b9d8be3e12fb0678daae45c2025",
+  "verifiedAtUtc": "2026-10-03T14:50:03.267969+00:00",
+  "branch": "research/life-93-night-20261003",
+  "pushExitCode": 0,
+  "scan": "outputs/loop/breadth-checkpoint043-scan.json",
+  "technicalCheck": {
+    "command": "pnpm check",
+    "exitCode": 0,
+    "log": "outputs/loop/check-049.log",
+    "tests": 54
+  },
+  "whitespaceCheck": {
+    "initialExitCode": null,
+    "reason": "One trailing source-document whitespace in generated technical appendix",
+    "correctedExitCode": 0,
+    "initialSubcommandStatus": "Failure diagnostic observed; status not separately captured before following stat command"
+  },
+  "scientificAcceptance": "42 bounded historical item exports only; Angular/group WIP and human/Claude/release pending"
+}

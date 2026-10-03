@@ -52,6 +52,17 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "research": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/research-preview.routes.ts",
+                  "with": "src/app/research-preview.routes.dev.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -64,6 +75,9 @@
             },
             "development": {
               "buildTarget": "politikprofil:build:development"
+            },
+            "research": {
+              "buildTarget": "politikprofil:build:research"
             }
           },
           "defaultConfiguration": "development"

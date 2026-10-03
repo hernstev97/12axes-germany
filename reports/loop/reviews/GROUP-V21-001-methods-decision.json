@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "role": "methods_reproducibility",
+  "reviewManifestSha256": "73868d634da6a47fc7e5e72c858a4e93479785b892ffd6de65fda0c4243726a4",
+  "decision": "ACCEPTED_BOUNDED",
+  "allowedStudyIds": [
+    "ESS5e03_6",
+    "ESS8e02_3",
+    "ESS9e03_3",
+    "ESS10SCe03_2",
+    "ESS11e04_2"
+  ],
+  "concreteFindingIds": [
+    "GROUP-V21-METHODS-L01",
+    "GROUP-V21-METHODS-L02",
+    "GROUP-V21-METHODS-L03",
+    "GROUP-V21-METHODS-L04",
+    "GROUP-V21-METHODS-L05"
+  ]
+}

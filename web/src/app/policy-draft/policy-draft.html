@@ -253,10 +253,28 @@
                       }
                     </dl>
                     <p class="meta">
-                      Gewichtung: pspwght. Der Nenner umfasst nur gültige Antworten auf diese Frage.
-                      Ungewichtete Zahl gültiger Antworten: {{ reference.validUnweightedN }}.
+                      Gewichtung: {{ reference.weight }}. Die Anteile beziehen sich auf die Summe
+                      der Gewichte gültiger Antworten dieser Frage. Die Fallzahlen sind ungewichtet.
                       Stichproben-, Nichtantwort-, Zeit- und Modusgrenzen bleiben bestehen.
                     </p>
+                    <dl class="facts reference-counts">
+                      <div>
+                        <dt>Gültige Antworten (n)</dt>
+                        <dd>{{ reference.validUnweightedN }}</dd>
+                      </div>
+                      <div>
+                        <dt>Gesamtbasis Deutschland</dt>
+                        <dd>{{ reference.totalUnweightedN }}</dd>
+                      </div>
+                      <div>
+                        <dt>Fehlende Antworten</dt>
+                        <dd>{{ reference.missingUnweightedN }}</dd>
+                      </div>
+                      <div>
+                        <dt>Nicht gestellte Frage</dt>
+                        <dd>{{ reference.notAskedUnweightedN }}</dd>
+                      </div>
+                    </dl>
                     @if (item.studyId === 'ESS8e02_3') {
                       <p>
                         In München wurden keine Befragten erfasst. Gewichtung stellt die fehlenden
@@ -264,6 +282,12 @@
                       </p>
                     }
                   </div>
+                } @else if (unavailableReferenceFor(item.id)) {
+                  <p class="meta reference-withheld">
+                    Die historische Referenz für diese Originalfrage bleibt wegen unzureichender
+                    Basis oder Zellbesetzung zurückgehalten. Es werden keine Referenzzahlen
+                    angezeigt.
+                  </p>
                 } @else {
                   <p class="meta">
                     Historische Referenz für diese Einzelangabe noch nicht eingebunden.

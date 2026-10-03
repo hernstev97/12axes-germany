@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "package": "COMPREHENSION-V2-001/v1",
+  "scope": "Six-question qualitative human comprehension protocol only; no people/data access, implementation/empirical/release acceptance",
+  "artifacts": [
+    {
+      "path": "docs/verstaendnistest-v2.entwurf.md",
+      "sha256": "deaf970f15970f3bd68a3bd0494c5a304e611c491a79950ddfaa642e95e85a68"
+    },
+    {
+      "path": "docs/verstaendnistest.entwurf.md",
+      "sha256": "3264a72db722ac573595bcbcc8a03e299727aaa184abe6b31a60c74e2212c1a3"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "docs/auftrag-life-93-breite-2026-10-03.md",
+      "sha256": "d0a059efb9de65aec1be25b3c2d5fac3bcb61cb57b0d7af8e7d8f64ecb1fd5ed"
+    },
+    {
+      "path": "data/politikprofil-v2.fragen.entwurf.json",
+      "sha256": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4"
+    },
+    {
+      "path": "data/analysevertrag.v2.entwurf.json",
+      "sha256": "8e3d1c006bf8d7a568e37b358c3dce14e49b7feed6ae8a8d82f6f1f9e0935e6b"
+    },
+    {
+      "path": "pipeline/policy_export_v2.py",
+      "sha256": "27b225b5975f0c321f08adbfa7ccab4e03dae8421f3987d0e104cf4945d0437a"
+    }
+  ]
+}
