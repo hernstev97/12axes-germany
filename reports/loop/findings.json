@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T10:02:23.938912+00:00",
+  "updatedAtUtc": "2026-10-03T10:23:29.323667+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -2561,13 +2561,15 @@
       "severity": "erheblich",
       "reason": "Float-Designcodeparse verändert mathematische Schlüssel; exakte Decimal-Normalisierung",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "V2 Runde1 umgesetzt; gezielte unabhängige Nachprüfung läuft",
+      "status": "BESTANDEN",
+      "correctionState": "v2 targeted89/89synthetic assertions passed; round1 unchanged; only metadata scope",
       "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
       "blocks": ["technical-design-import"],
       "verification": {
-        "scope": "targeted round1, synthetics only",
-        "executionRecord": "reports/loop/packages/DESIGN-METADATA-001/v2/manifest.json"
+        "scope": "Targeted v2 technical metadata import only; actual metadata output separately recorded",
+        "report": "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
+        "reportSha256": "99a06a5f9ab8f12e8dee9e16000271136163612404d74478cf04566bb1fddd96",
+        "actualMetadata": "reports/phasen/00-designmetadaten-2026-10-03.json"
       }
     },
     {
@@ -2577,13 +2579,15 @@
       "severity": "bedingt",
       "reason": "Ablagegrenze allein garantiert keine Eigentümerrechte; neuer0700/0600Ordner",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "V2 Runde1 umgesetzt; gezielte unabhängige Nachprüfung läuft",
+      "status": "BESTANDEN",
+      "correctionState": "v2 targeted89/89synthetic assertions passed; round1 unchanged; only metadata scope",
       "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
       "blocks": ["technical-design-import"],
       "verification": {
-        "scope": "targeted round1, synthetics only",
-        "executionRecord": "reports/loop/packages/DESIGN-METADATA-001/v2/manifest.json"
+        "scope": "Targeted v2 technical metadata import only; actual metadata output separately recorded",
+        "report": "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
+        "reportSha256": "99a06a5f9ab8f12e8dee9e16000271136163612404d74478cf04566bb1fddd96",
+        "actualMetadata": "reports/phasen/00-designmetadaten-2026-10-03.json"
       }
     },
     {
@@ -2593,13 +2597,15 @@
       "severity": "bedingt",
       "reason": "Separater Digest/Leseopen kann verschiedene Bytes treffen; unveränderliches interpretiertes Bytebild",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "V2 Runde1 umgesetzt; gezielte unabhängige Nachprüfung läuft",
+      "status": "BESTANDEN",
+      "correctionState": "v2 targeted89/89synthetic assertions passed; round1 unchanged; only metadata scope",
       "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
       "blocks": ["technical-design-import"],
       "verification": {
-        "scope": "targeted round1, synthetics only",
-        "executionRecord": "reports/loop/packages/DESIGN-METADATA-001/v2/manifest.json"
+        "scope": "Targeted v2 technical metadata import only; actual metadata output separately recorded",
+        "report": "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
+        "reportSha256": "99a06a5f9ab8f12e8dee9e16000271136163612404d74478cf04566bb1fddd96",
+        "actualMetadata": "reports/phasen/00-designmetadaten-2026-10-03.json"
       }
     },
     {
@@ -2609,13 +2615,30 @@
       "severity": "gering",
       "reason": "Traversalprüfung erfolgte nach mkdir; Normalisierung vor allen Nebenwirkungen",
       "repairRounds": 1,
-      "status": "NICHT_GEPRÜFT",
-      "correctionState": "V2 Runde1 umgesetzt; gezielte unabhängige Nachprüfung läuft",
+      "status": "BESTANDEN",
+      "correctionState": "v2 targeted89/89synthetic assertions passed; round1 unchanged; only metadata scope",
       "changedFilesOrIds": "pipeline/design_audit_v2.py; docs/designaudit-v2-vertrag.md",
       "blocks": [],
       "verification": {
-        "scope": "targeted round1, synthetics only",
-        "executionRecord": "reports/loop/packages/DESIGN-METADATA-001/v2/manifest.json"
+        "scope": "Targeted v2 technical metadata import only; actual metadata output separately recorded",
+        "report": "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
+        "reportSha256": "99a06a5f9ab8f12e8dee9e16000271136163612404d74478cf04566bb1fddd96",
+        "actualMetadata": "reports/phasen/00-designmetadaten-2026-10-03.json"
+      }
+    },
+    {
+      "id": "META-SPLIT-001",
+      "origin": "reports/phasen/00-designmetadaten-2026-10-03.json",
+      "decision": "angenommen",
+      "severity": "erheblich",
+      "reason": "Two real strata have2PSUs; prior min4 whole-strata A/B split cannot operate in all25strata",
+      "repairRounds": 0,
+      "status": "NICHT_GEPRÜFT",
+      "correctionState": "Author proposes reserveC4PSUs and conditional fixed floor/ceil split on23strata; included in concrete draft, awaiting transition reviews",
+      "blocks": ["full-DE-empirical-split-claim"],
+      "verification": {
+        "author": "reports/loop/authors/ESS-SPLIT-resume-proposal.md",
+        "scope": "real metadata fact; synthetic contract and public sources; no answers"
       }
     }
   ],

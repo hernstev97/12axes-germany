@@ -50,3 +50,7 @@ Steven hat den Haltepunkt ausdrücklich beendet und den geänderten Ablauf beauf
 ## Quellenabschluss nach Wiederaufnahme
 
 2026-10-03: C-v2 und der ergänzte feste E-v3-Regressionsguard gezielt unabhängig bestätigt. Historische Pakete/Erstberichte unverändert; Findings und Korrekturrunden im Zustand. Quellen- und synthetische Methodenautoren liefern die kompakte Phase0-Prüffassung. Noch keine ESS-Antwortanalyse, Itemauswahl- oder Messmodellfreigabe. Aktuelle nächste Schritte und Agent-Schreibgrenzen im [Handoff](../reports/loop/handoff.md).
+
+## Empirische Voraussetzungen nach Metadatenprüfung
+
+Der tatsächliche begrenzte Metadatenimport und die beiden Item-Ersturteile sind abgeschlossen. Zwei Strata mit je zwei PSUs verhindern den bisherigen unbeschränkten A/B-Vertrag. Der neue Splitvorschlag und der konkrete [Empirieplan](empirie-plan-v1.entwurf.md) sind vor Antwortzugriff zu prüfen. Das Neunerbinding und das ganze Screeninginventar erhalten Originalberichte, Dissense und bekannte Quelldefekte. Keine Quellen- oder technischen Abnahmen als Messgüte ausgeben. Der aktuelle A-Importer hat noch kein positives Übergangsgate; B/C und Vergleichsfelder bleiben zurückgehalten.

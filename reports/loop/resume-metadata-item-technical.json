@@ -1,0 +1,28 @@
+{
+  "scope": "Completed metadata and independent initial item judgment package; draft plan/access code WIP",
+  "pnpmCheck": {
+    "exitCode": 0,
+    "log": "outputs/loop/resume-checkpoint-028.log",
+    "atUtc": "2026-10-03T10:32:00Z"
+  },
+  "syntheticAccessTests": {
+    "command": "python -m unittest pipeline.tests.test_empirical_access -v",
+    "tests": 6,
+    "passed": 6,
+    "noEssRows": true
+  },
+  "actualPrepareAttempt": {
+    "exitCode": 2,
+    "result": "fixed missing-gate stop before source read; no split/import"
+  },
+  "scientificAcceptance": false,
+  "uiChangeScope": "Excluded active website author files; no browser claim for active changes",
+  "atUtc": "2026-10-03T10:30:03.704016+00:00",
+  "ordinalCheckpoint": "Active author sources saved as WIP; no coordinator numeric acceptance or transition review",
+  "initialGitDiffCheck": {
+    "exitCode": 2,
+    "reason": "Original hashed CSVs use standard CRLF; default check reports CR as trailing whitespace",
+    "bytesChanged": false
+  },
+  "gitDiffCheckPolicy": "per-command cr-at-eol; original CSVs unchanged"
+}

@@ -1,0 +1,1486 @@
+{
+  "schema_version": "ess-core-integrated42-public-binding-v1",
+  "created_utc": "2026-10-03T10:29:37.896399+00:00",
+  "status": "PUBLIC_METADATA_BINDING_ONLY_NOT_EMPIRICAL_IMPORT_OR_ELIGIBILITY_APPROVAL",
+  "scope": "Nine core fields bound to official integrated ESS11e4.2 search metadata only; no responses, counts, tabulations, person identifiers or model results.",
+  "file_binding": {
+    "name": "ESS11e04_2",
+    "metadata_version": 179,
+    "curated_version": "4.2",
+    "citation": {
+      "internationalIdentifier": "10.21338/ess11e04_2",
+      "internationalIdentifierUrl": "https://doi.org/10.21338/ess11e04_2",
+      "date": "2026-07-02T00:00:00Z"
+    },
+    "source": {
+      "name": "file-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:29:37.091186+00:00",
+      "finished_utc": "2026-10-03T10:29:37.575893+00:00",
+      "http_status": 200,
+      "request_sha256": "8e8620a9bba485629ffed330d26622f9578bd17bf62f967f49acce1559b994d9",
+      "response_sha256": "3b5baf7c4c2342ecfbf2129f0a4537a95aaf13c93761c3b54ab57ffab53d8e82",
+      "response_bytes": 65181,
+      "request_path": "outputs/loop/resume-group-contract/core-version/sources/file-metadata-request.json",
+      "response_path": "outputs/loop/resume-group-contract/core-version/sources/file-metadata.json"
+    }
+  },
+  "core_contract": {
+    "path": "data/item-core-v1.json",
+    "sha256": "01dee3b72d72c074e2bf913b4791e8016acce591de3fffa120ab40eae2fb1b3e",
+    "comparison_fields": "variable, allowed_values, integrated_file_missing_codes, public codebook source locations; embedded item judgments and scoring proposals not reused."
+  },
+  "cb41_reference": {
+    "pdf_sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+    "text_sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+    "source_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+    "edition": "4.1"
+  },
+  "items": [
+    {
+      "item_id": "B34",
+      "variable": "freehms",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 2,
+      "data_type": "INTEGER",
+      "label_en_original": "Gays and lesbians free to live life as they wish",
+      "location_original": "B33-36",
+      "question_en_original": "Using this card, please say to what extent you agree or disagree with each of the following statements. Gay men and lesbians should be free to live their own life as they wish.",
+      "description_original": {
+        "en": null
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "CARD 14",
+      "post_question_original": {
+        "en": null
+      },
+      "post_question_string_original": "READ OUT EACH STATEMENT",
+      "valid_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "missing_values": [
+        7,
+        8,
+        9
+      ],
+      "code_list_original": [
+        {
+          "value": "1",
+          "label_en_original": "Agree strongly",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "Agree",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "Neither agree nor disagree",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "Disagree",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "label_en_original": "Disagree strongly",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "8",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "9",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 13,
+          "printed_page": 13
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 13,
+          "pdf_page": 14,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "Keine führenden Nullen in Fragebogencodes"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 63,
+          "printed_page": 62,
+          "location_original": "B33-36",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            63
+          ],
+          "printed_pages": [
+            62
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      },
+      "cb41_text_section_sha256": "e09af518819e2aaa4013d58d0e90699f7956fb70f3a7b9bb5fb6dd9d3e16c054",
+      "source_binding": {
+        "name": "freehms-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.578835+00:00",
+        "finished_utc": "2026-10-03T10:29:37.759483+00:00",
+        "http_status": 200,
+        "request_sha256": "403c5a992a241ac37f4b860cb797a09ed6a1b90e15c2dcaac3ef3db6a891c6c6",
+        "response_sha256": "c63b28029ee083b1dcb8351c83bfd1026e8d3c729465f23ab92a6779cdaca428",
+        "response_bytes": 1230,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/freehms-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/freehms-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          6
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    },
+    {
+      "item_id": "B35",
+      "variable": "hmsfmlsh",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 2,
+      "data_type": "INTEGER",
+      "label_en_original": "Ashamed if close family member gay or lesbian",
+      "location_original": "B33-36",
+      "question_en_original": "Using this card, please say to what extent you agree or disagree with each of the following statements. If a close family member was a gay man or a lesbian, I would feel ashamed.",
+      "description_original": {
+        "en": null
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "CARD 14",
+      "post_question_original": {
+        "en": null
+      },
+      "post_question_string_original": "READ OUT EACH STATEMENT",
+      "valid_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "missing_values": [
+        7,
+        8,
+        9
+      ],
+      "code_list_original": [
+        {
+          "value": "1",
+          "label_en_original": "Agree strongly",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "Agree",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "Neither agree nor disagree",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "Disagree",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "label_en_original": "Disagree strongly",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "8",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "9",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 13,
+          "printed_page": 13
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 13,
+          "pdf_page": 14,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "Keine führenden Nullen in Fragebogencodes"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 63,
+          "printed_page": 62,
+          "location_original": "B33-36",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            63,
+            64
+          ],
+          "printed_pages": [
+            62,
+            63
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      },
+      "cb41_text_section_sha256": "8d699047bd54fc9ce51f7d8502622fcfbc858712e751816acccd0873bc066c22",
+      "source_binding": {
+        "name": "hmsfmlsh-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.579969+00:00",
+        "finished_utc": "2026-10-03T10:29:37.731545+00:00",
+        "http_status": 200,
+        "request_sha256": "75c187e98a8ba3fdc3b772425d1de9eff611bdc29cb62a9e619cc1c13362fa9e",
+        "response_sha256": "922fd03c15242073fc1e997dcde89e3ddf1bb5e4f539f0ae33ad6366868a9080",
+        "response_bytes": 1230,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/hmsfmlsh-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/hmsfmlsh-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          6
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    },
+    {
+      "item_id": "B36",
+      "variable": "hmsacld",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 2,
+      "data_type": "INTEGER",
+      "label_en_original": "Gay and lesbian couples right to adopt children",
+      "location_original": "B33-36",
+      "question_en_original": "Using this card, please say to what extent you agree or disagree with each of the following statements. Gay male and lesbian couples should have the same rights to adopt children as straight couples.",
+      "description_original": {
+        "en": null
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "CARD 14",
+      "post_question_original": {
+        "en": null
+      },
+      "post_question_string_original": "READ OUT EACH STATEMENT",
+      "valid_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "missing_values": [
+        7,
+        8,
+        9
+      ],
+      "code_list_original": [
+        {
+          "value": "1",
+          "label_en_original": "Agree strongly",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "Agree",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "Neither agree nor disagree",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "Disagree",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "label_en_original": "Disagree strongly",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "8",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "9",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 13,
+          "printed_page": 13
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 13,
+          "pdf_page": 14,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "Keine führenden Nullen in Fragebogencodes"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 64,
+          "printed_page": 63,
+          "location_original": "B33-36",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            64
+          ],
+          "printed_pages": [
+            63
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "1": "Agree strongly",
+        "2": "Agree",
+        "3": "Neither agree nor disagree",
+        "4": "Disagree",
+        "5": "Disagree strongly"
+      },
+      "cb41_text_section_sha256": "c7f44b4f81022c2c285a83e180ffa635e7afdf7355fafe543dfa7e2da095970e",
+      "source_binding": {
+        "name": "hmsacld-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.580645+00:00",
+        "finished_utc": "2026-10-03T10:29:37.734537+00:00",
+        "http_status": 200,
+        "request_sha256": "b4441c9ccfd7b08a02200539e5de431d7c03f908c34b12b328447dc501b9a645",
+        "response_sha256": "915cfd6553a22cc99cb06a3116dde3c6d8b4fc9c073c6c5e5e591cfffdf8ccff",
+        "response_bytes": 1252,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/hmsacld-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/hmsacld-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          6
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    },
+    {
+      "item_id": "B40",
+      "variable": "imsmetn",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 3,
+      "data_type": "INTEGER",
+      "label_en_original": "Allow many/few immigrants of same race/ethnic group as majority",
+      "location_original": "B40",
+      "question_en_original": "Now, using this card, to what extent do you think [country] should allow people of the same race or ethnic group as most [country]'s people to come and live here?",
+      "description_original": {
+        "en": "INTRODUCTION TO QUESTIONS B40-B45: Now some questions about people from other countries coming to live in [country]."
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "CARD 18",
+      "post_question_original": null,
+      "post_question_string_original": null,
+      "valid_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "missing_values": [
+        7,
+        8,
+        9
+      ],
+      "code_list_original": [
+        {
+          "value": "1",
+          "label_en_original": "Allow many to come and live here",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "Allow some",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "Allow a few",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "Allow none",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "8",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "9",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 15,
+          "printed_page": 15
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 16,
+          "pdf_page": 17,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "Keine führenden Nullen in Fragebogencodes"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 65,
+          "printed_page": 64,
+          "location_original": "B40",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            65,
+            66
+          ],
+          "printed_pages": [
+            64,
+            65
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "1": "Allow many to come and live here",
+        "2": "Allow some",
+        "3": "Allow a few",
+        "4": "Allow none"
+      },
+      "cb41_text_section_sha256": "3074f028633ff2a4dfea2f86e2bbf8f7ca0893318034ea45fdab05c9aaa61998",
+      "source_binding": {
+        "name": "imsmetn-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.581549+00:00",
+        "finished_utc": "2026-10-03T10:29:37.805183+00:00",
+        "http_status": 200,
+        "request_sha256": "4351ddff8988af52a7bf0148dc72786d2fe8c7d9516f41f9b006a28cbb083832",
+        "response_sha256": "2c188c9a30d43477eb5f1817876745e8368230d5a8ad63ede2653a5ccaffb89b",
+        "response_bytes": 1248,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/imsmetn-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/imsmetn-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          6
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    },
+    {
+      "item_id": "B41",
+      "variable": "imdfetn",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 2,
+      "data_type": "INTEGER",
+      "label_en_original": "Allow many/few immigrants of different race/ethnic group from majority",
+      "location_original": "B41",
+      "question_en_original": "How about people of a different race or ethnic group from most [country] people?",
+      "description_original": {
+        "en": null
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "STILL CARD 18",
+      "post_question_original": {
+        "en": null
+      },
+      "post_question_string_original": "Still use this card.",
+      "valid_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "missing_values": [
+        7,
+        8,
+        9
+      ],
+      "code_list_original": [
+        {
+          "value": "1",
+          "label_en_original": "Allow many to come and live here",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "Allow some",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "Allow a few",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "Allow none",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "8",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "9",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 15,
+          "printed_page": 15
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 16,
+          "pdf_page": 17,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "Keine führenden Nullen in Fragebogencodes"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 66,
+          "printed_page": 65,
+          "location_original": "B41",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            66
+          ],
+          "printed_pages": [
+            65
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "1": "Allow many to come and live here",
+        "2": "Allow some",
+        "3": "Allow a few",
+        "4": "Allow none"
+      },
+      "cb41_text_section_sha256": "c4e36b9596a1335d4c763c7d8293f53d101d19735623fd8d06319f86f62c0fe0",
+      "source_binding": {
+        "name": "imdfetn-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.582436+00:00",
+        "finished_utc": "2026-10-03T10:29:37.734777+00:00",
+        "http_status": 200,
+        "request_sha256": "6d93a64754b68761d06845385ded6143addc3fb645588f33fca12536bfbbbc9e",
+        "response_sha256": "6768052d91ab0a8dbaad1fd83c479442e1a5fa81ba6a581a8d1bb971e0e9a3e3",
+        "response_bytes": 1090,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/imdfetn-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/imdfetn-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          6
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    },
+    {
+      "item_id": "B42",
+      "variable": "impcntr",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 2,
+      "data_type": "INTEGER",
+      "label_en_original": "Allow many/few immigrants from poorer countries outside Europe",
+      "location_original": "B42",
+      "question_en_original": "How about people from the poorer countries outside Europe?",
+      "description_original": {
+        "en": null
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "STILL CARD 18",
+      "post_question_original": {
+        "en": null
+      },
+      "post_question_string_original": "Use the same card.",
+      "valid_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "missing_values": [
+        7,
+        8,
+        9
+      ],
+      "code_list_original": [
+        {
+          "value": "1",
+          "label_en_original": "Allow many to come and live here",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "Allow some",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "Allow a few",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "Allow none",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "8",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "9",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 15,
+          "printed_page": 15
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 16,
+          "pdf_page": 17,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "Keine führenden Nullen in Fragebogencodes"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 66,
+          "printed_page": 65,
+          "location_original": "B42",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            66
+          ],
+          "printed_pages": [
+            65
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "1": "Allow many to come and live here",
+        "2": "Allow some",
+        "3": "Allow a few",
+        "4": "Allow none"
+      },
+      "cb41_text_section_sha256": "6b833cfa77edfbae2d95162388d3d1374efcc69597a210338b0cb0fcf954b9ea",
+      "source_binding": {
+        "name": "impcntr-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.732746+00:00",
+        "finished_utc": "2026-10-03T10:29:37.845858+00:00",
+        "http_status": 200,
+        "request_sha256": "4cd7b277ea41d0df5711ebcabb28b89a5dddc6873bc6a7f2d99bacf5d0f87c1e",
+        "response_sha256": "58df3dda9912dac67e27c13dd178ac0d9f4ba3caa0a83da13bdd3472fd759769",
+        "response_bytes": 1058,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/impcntr-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/impcntr-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          6
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    },
+    {
+      "item_id": "B43",
+      "variable": "imbgeco",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 1,
+      "data_type": "INTEGER",
+      "label_en_original": "Immigration bad or good for country's economy",
+      "location_original": "B43",
+      "question_en_original": "Would you say it is generally bad or good for [country]'s economy that people come to live here from other countries?",
+      "description_original": {
+        "en": null
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "CARD 19",
+      "post_question_original": {
+        "en": null
+      },
+      "post_question_string_original": "Please use this card.",
+      "valid_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "missing_values": [
+        77,
+        88,
+        99
+      ],
+      "code_list_original": [
+        {
+          "value": "0",
+          "label_en_original": "Bad for the economy",
+          "is_missing": false
+        },
+        {
+          "value": "1",
+          "label_en_original": "1",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "2",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "3",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "4",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "label_en_original": "5",
+          "is_missing": false
+        },
+        {
+          "value": "6",
+          "label_en_original": "6",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "7",
+          "is_missing": false
+        },
+        {
+          "value": "8",
+          "label_en_original": "8",
+          "is_missing": false
+        },
+        {
+          "value": "9",
+          "label_en_original": "9",
+          "is_missing": false
+        },
+        {
+          "value": "10",
+          "label_en_original": "Good for the economy",
+          "is_missing": false
+        },
+        {
+          "value": "77",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "88",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "99",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 16,
+          "printed_page": 16
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 17,
+          "pdf_page": 18,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "00–09 im Fragebogen, 0–9 auf der Karte"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 66,
+          "printed_page": 65,
+          "location_original": "B43",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            66,
+            67
+          ],
+          "printed_pages": [
+            65,
+            66
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "0": "Bad for the economy",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Good for the economy"
+      },
+      "cb41_text_section_sha256": "a1cba7d727f01ef9117a5cd3d492085dd80f7a76ab8ac7825f56ec9580e2e62b",
+      "source_binding": {
+        "name": "imbgeco-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.735511+00:00",
+        "finished_utc": "2026-10-03T10:29:37.837363+00:00",
+        "http_status": 200,
+        "request_sha256": "fe1140b7f1c6a8b9068ab5addb3d4e6e16814d6385d201308155d0b8135487cb",
+        "response_sha256": "5d825f3d9a2a1d77daa3c953bd2133719c03bbcfb28f7cee843104f9cc157937",
+        "response_bytes": 1499,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/imbgeco-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/imbgeco-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          66
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    },
+    {
+      "item_id": "B44",
+      "variable": "imueclt",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 1,
+      "data_type": "INTEGER",
+      "label_en_original": "Country's cultural life undermined or enriched by immigrants",
+      "location_original": "B44",
+      "question_en_original": "And, using this card, would you say that [country]'s cultural life is generally undermined or enriched by people coming to live here from other countries?",
+      "description_original": {
+        "en": null
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "CARD 20",
+      "post_question_original": null,
+      "post_question_string_original": null,
+      "valid_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "missing_values": [
+        77,
+        88,
+        99
+      ],
+      "code_list_original": [
+        {
+          "value": "0",
+          "label_en_original": "Cultural life undermined",
+          "is_missing": false
+        },
+        {
+          "value": "1",
+          "label_en_original": "1",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "2",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "3",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "4",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "label_en_original": "5",
+          "is_missing": false
+        },
+        {
+          "value": "6",
+          "label_en_original": "6",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "7",
+          "is_missing": false
+        },
+        {
+          "value": "8",
+          "label_en_original": "8",
+          "is_missing": false
+        },
+        {
+          "value": "9",
+          "label_en_original": "9",
+          "is_missing": false
+        },
+        {
+          "value": "10",
+          "label_en_original": "Cultural life enriched",
+          "is_missing": false
+        },
+        {
+          "value": "77",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "88",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "99",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 16,
+          "printed_page": 16
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 18,
+          "pdf_page": 19,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "00–09 im Fragebogen, 0–9 auf der Karte"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 67,
+          "printed_page": 66,
+          "location_original": "B44",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            67
+          ],
+          "printed_pages": [
+            66
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "0": "Cultural life undermined",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Cultural life enriched"
+      },
+      "cb41_text_section_sha256": "8b6f7e9151f50637e45d1c57cfe95417e4a3a62f685f07ee2476b6a30aca7515",
+      "source_binding": {
+        "name": "imueclt-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.736592+00:00",
+        "finished_utc": "2026-10-03T10:29:37.848599+00:00",
+        "http_status": 200,
+        "request_sha256": "d967de8fee26178ea24e1b31c66d9a928722fc58a730bc8a7ad0ae12bcaf8464",
+        "response_sha256": "57707c650a4af7b065827b52c82c63b572c62d457f6bf6dfed46f3c3a40ddd4b",
+        "response_bytes": 1532,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/imueclt-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/imueclt-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          66
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    },
+    {
+      "item_id": "B45",
+      "variable": "imwbcnt",
+      "status": "PUBLIC42_CODING_BINDING_MATCH",
+      "checks": {
+        "field_identity": true,
+        "integer_type": true,
+        "complete_code_list": true,
+        "allowed_values_equal_core": true,
+        "missing_values_equal_core": true,
+        "location_equal_cb41_source_pin": true,
+        "english_labels_equal_public_cb41_frame": true
+      },
+      "metadata_version": 1,
+      "data_type": "INTEGER",
+      "label_en_original": "Immigrants make country worse or better place to live",
+      "location_original": "B45",
+      "question_en_original": "Is [country] made a worse or a better place to live by people coming to live here from other countries?",
+      "description_original": {
+        "en": null
+      },
+      "process_description_original": null,
+      "filter_original": null,
+      "pre_question_original": {
+        "en": null
+      },
+      "pre_question_string_original": "CARD 21",
+      "post_question_original": {
+        "en": null
+      },
+      "post_question_string_original": "Please use this card.",
+      "valid_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "missing_values": [
+        77,
+        88,
+        99
+      ],
+      "code_list_original": [
+        {
+          "value": "0",
+          "label_en_original": "Worse place to live",
+          "is_missing": false
+        },
+        {
+          "value": "1",
+          "label_en_original": "1",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "label_en_original": "2",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "label_en_original": "3",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "label_en_original": "4",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "label_en_original": "5",
+          "is_missing": false
+        },
+        {
+          "value": "6",
+          "label_en_original": "6",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "label_en_original": "7",
+          "is_missing": false
+        },
+        {
+          "value": "8",
+          "label_en_original": "8",
+          "is_missing": false
+        },
+        {
+          "value": "9",
+          "label_en_original": "9",
+          "is_missing": false
+        },
+        {
+          "value": "10",
+          "label_en_original": "Better place to live",
+          "is_missing": false
+        },
+        {
+          "value": "77",
+          "label_en_original": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "88",
+          "label_en_original": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "99",
+          "label_en_original": "No answer",
+          "is_missing": true
+        }
+      ],
+      "core_source_location": {
+        "questionnaire": {
+          "source_id": "ESS11-DE-QUESTIONNAIRE",
+          "pdf_page": 16,
+          "printed_page": 16
+        },
+        "showcard": {
+          "source_id": "ESS11-DE-SHOWCARDS",
+          "card": 19,
+          "pdf_page": 20,
+          "printed_page": null,
+          "verification": "Vorhandene visuelle Originallektüre des Autors belegt Kartenwortlabels; Codes und Missing stammen aus dem Fragebogen",
+          "zero_padding": "00–09 im Fragebogen, 0–9 auf der Karte"
+        },
+        "codebook": {
+          "source_id": "ESS11-CODEBOOK",
+          "edition": "4.1",
+          "pdf_page": 67,
+          "printed_page": 66,
+          "location_original": "B45",
+          "mapping_status": "Belegter Autorenabgleich am deutschen Wortlaut und öffentlicher Location; keine offizielle deutsche Einzelzuordnungsdatei, kein 4.2-Importvertrag",
+          "pdf_pages": [
+            67,
+            68
+          ],
+          "printed_pages": [
+            66,
+            67
+          ],
+          "range_note": "The previous original package cited the start page. Continuation pages for question text or categories are explicitly added here; the historical citation is preserved in original_package_snapshot."
+        }
+      },
+      "cb41_expected_labels": {
+        "0": "Worse place to live",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "Better place to live"
+      },
+      "cb41_text_section_sha256": "784adb442bb7aa5d8469e06b6941806a489bf51ad5dd83286fb5f94135592ce8",
+      "source_binding": {
+        "name": "imwbcnt-metadata",
+        "url": "https://api.nsd.no/graphql",
+        "method": "POST metadata-only GraphQL query",
+        "started_utc": "2026-10-03T10:29:37.760225+00:00",
+        "finished_utc": "2026-10-03T10:29:37.884736+00:00",
+        "http_status": 200,
+        "request_sha256": "404229b09d4b38d7952f7391ef19a3829afb33c32ce86f8f021fed78961cb2d6",
+        "response_sha256": "2b568ea6f7f149d989976c2b05041af9e8ed967ad32a6e001daa0937949c22c9",
+        "response_bytes": 1493,
+        "request_path": "outputs/loop/resume-group-contract/core-version/sources/imwbcnt-metadata-request.json",
+        "response_path": "outputs/loop/resume-group-contract/core-version/sources/imwbcnt-metadata.json"
+      },
+      "nonresponse_mapping_claim": "Official4.2 value definitions matched, not observed data occurrences.",
+      "not_applicable_limit": {
+        "core_generic_protocol_codes": [
+          66
+        ],
+        "codes_in_this42_variable": [],
+        "policy": "Generic protocol6/66 is not thereby a documented code for these variables. Unknown or blank runtime tokens remain separate import QA; no structural skip invented."
+      },
+      "label_comparison_limit": "Exact public English codebook-frame labels verified. German original labels are separately pinned in item-core; no English/German string equality or national CAPI certification claimed."
+    }
+  ],
+  "missing_target_fields": [],
+  "summary": {
+    "items_compared": 9,
+    "all_match": true
+  },
+  "preserved_completed_artifacts": {
+    "reports/loop/authors/ESS-GROUP-CONTRACT-proposal.md": "8ef6bb020f6debfbc0674e6b4480d0918a0c2651571b87399426c088acebe0c5",
+    "data/group-source-contract.v1.entwurf.json": "df6b808c8191f42c450bfc4206863df24768d8b10f589598e84fc1f18e3ec929"
+  },
+  "rights": {
+    "attribution": "European Social Survey ERIC / The ESS Data Archive. Official ESS11 integrated4.2 metadata and Appendix A7 Codebook4.1. Exact request/response hashes and date per field.",
+    "documentation_license": "CC BY-SA4.0",
+    "documentation_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Structured public metadata extraction and comparison flags by12 Axes Deutschland; no source wording or eligibility alteration, no ESS endorsement.",
+    "separate_data_license": "CC BY-NC-SA4.0. No respondent data included."
+  },
+  "open_limits": [
+    "No actual CSV parsing, header/value occurrence inspection or person-level filter checks performed.",
+    "English public metadata does not certify German CAPI implementation, web-mode transfer, scoring, eligibility or measurement quality.",
+    "No new scientific approval; prior core and completed group artifacts unchanged."
+  ]
+}

@@ -1,0 +1,1290 @@
+{
+  "contract_id": "ESS-GROUP-CONTRACT-v1-entwurf",
+  "status": "author_proposal_not_plan_fixed_not_empirically_passed",
+  "date": "2026-10-03",
+  "scope": "public documentation and metadata only; no ESS responses, tabulations or person identifiers",
+  "datafile": {
+    "name": "ESS11e04_2",
+    "curated_version": "4.2",
+    "public_metadata_version": 179,
+    "doi": "10.21338/ess11e04_2",
+    "country_filter": {
+      "variable": "cntry",
+      "equals": "DE"
+    },
+    "reference_population": "Persons aged 15+ resident in private households in Germany, regardless of nationality, citizenship, language or legal status; actual survey response domains are narrower.",
+    "fieldwork_start": "2023-05-09",
+    "fieldwork_end": "2023-12-21",
+    "mode": "face-to-face",
+    "codebook_edition": "4.1",
+    "country_report_edition": "4.0",
+    "edition_comparison": "4.2 metadata resolves target value labels and missing flags directly. Published 4.1/4.2 change notes do not list a German target-field change; this is no row-level file-identity proof."
+  },
+  "fields": {
+    "agea": {
+      "metadata_version": 3,
+      "data_type": "INTEGER",
+      "location": "F3_1b",
+      "source_label": "Age of respondent, calculated",
+      "source_question": "Age of respondent, calculated",
+      "source_filter": null,
+      "description": {
+        "en": "All countries: Variable has been subject to anonymisation. For more information see section on Country documentation. Montenegro: Fieldwork error. For more information see section on Country documentation."
+      },
+      "code_list": [
+        {
+          "value": "999",
+          "source_label": "Not available",
+          "is_missing": true
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/agea-metadata.json",
+      "metadata_response_sha256": "62fe536475ac74d6743b9d599fe7e1130f58f4170f68d6a1c3fbc1e8a6f99337",
+      "metadata_request_sha256": "68f047dad3c664643d28ad7de00489ba03defa378c2c077f620a1d18336296d4",
+      "code_list_pagination_complete": true
+    },
+    "gndr": {
+      "metadata_version": 2,
+      "data_type": "INTEGER",
+      "location": "F2_1",
+      "source_label": "Gender",
+      "source_question": "CODE SEX, respondent",
+      "source_filter": null,
+      "description": {
+        "en": null
+      },
+      "code_list": [
+        {
+          "value": "1",
+          "source_label": "Male",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "source_label": "Female",
+          "is_missing": false
+        },
+        {
+          "value": "9",
+          "source_label": "No answer",
+          "is_missing": true
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/gndr-metadata.json",
+      "metadata_response_sha256": "a2bf819cbf6a6545c38f149c62950dd17a1c16b527a74a71147382e59affe947",
+      "metadata_request_sha256": "3e1641a8481ce7a33d268d3116ad3acd4a8fbf8aa5662563705cb2b2a2652bab",
+      "code_list_pagination_complete": true
+    },
+    "eisced": {
+      "metadata_version": 5,
+      "data_type": "INTEGER",
+      "location": "F15",
+      "source_label": "Highest level of education, ES - ISCED",
+      "source_question": "Generated variable: Highest level of education, ES - ISCED",
+      "source_filter": null,
+      "description": {
+        "en": "European survey version of ISCED. Recoded from the ESS harmonised variable EDULVLB. Netherlands: Questionnaire error. For further details, please see appendix A1 Education  under Documents.\n\nGermany, Italy, Montenegro, Poland, Portugal: Change in underlying variables. For more information see appendix A1 under Documents. Montenegro: Instrument error. For more information see section on Country documentation."
+      },
+      "code_list": [
+        {
+          "value": "0",
+          "source_label": "Not possible to harmonise into ES-ISCED",
+          "is_missing": false
+        },
+        {
+          "value": "1",
+          "source_label": "ES-ISCED I , less than lower secondary",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "source_label": "ES-ISCED II, lower secondary",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "source_label": "ES-ISCED IIIb, lower tier upper secondary",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "source_label": "ES-ISCED IIIa, upper tier upper secondary",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "source_label": "ES-ISCED IV, advanced vocational, sub-degree",
+          "is_missing": false
+        },
+        {
+          "value": "6",
+          "source_label": "ES-ISCED V1, lower tertiary education, BA level",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "source_label": "ES-ISCED V2, higher tertiary education, >= MA level",
+          "is_missing": false
+        },
+        {
+          "value": "55",
+          "source_label": "Other",
+          "is_missing": false
+        },
+        {
+          "value": "77",
+          "source_label": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "88",
+          "source_label": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "99",
+          "source_label": "No answer",
+          "is_missing": true
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/eisced-metadata.json",
+      "metadata_response_sha256": "d5fe8477e8f734d72a41b927546f61f22bf552b8ae66493ec7917c27a66c8dfd",
+      "metadata_request_sha256": "7a2dba35c624e024e89c2e5f94a7f44ffa1d31aafdf18182a89b0c90cac21dd9",
+      "code_list_pagination_complete": true
+    },
+    "regunit": {
+      "metadata_version": 1,
+      "data_type": "INTEGER",
+      "location": "R11",
+      "source_label": "Regional unit",
+      "source_question": "Level of regional unit",
+      "source_filter": null,
+      "description": {
+        "en": null
+      },
+      "code_list": [
+        {
+          "value": "1",
+          "source_label": "NUTS level 1",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "source_label": "NUTS level 2",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "source_label": "NUTS level 3",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "source_label": "Regional unit not part of the NUTS nomenclature",
+          "is_missing": false
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/regunit-metadata.json",
+      "metadata_response_sha256": "1ac0a8fad9ada4c8fc265e576058ab39c25b716a883d99be2043d5442f81aadd",
+      "metadata_request_sha256": "67d3874cf6bfe4a94f1a064885ee5ade34113486dc4a05d38eb13e3cac2d8bbb",
+      "code_list_pagination_complete": true
+    },
+    "region": {
+      "metadata_version": 11,
+      "data_type": "STRING",
+      "location": "R1",
+      "source_label": "Region, [country]",
+      "source_question": "Region (Country)",
+      "source_filter": null,
+      "description": {
+        "en": "Germany: Anonymisation. For more information see section on Country documentation."
+      },
+      "code_list": [
+        {
+          "value": "DE1",
+          "source_label": "Baden-Württemberg",
+          "is_missing": false
+        },
+        {
+          "value": "DE2",
+          "source_label": "Bayern",
+          "is_missing": false
+        },
+        {
+          "value": "DE3",
+          "source_label": "Berlin",
+          "is_missing": false
+        },
+        {
+          "value": "DE4",
+          "source_label": "Brandenburg",
+          "is_missing": false
+        },
+        {
+          "value": "DE5",
+          "source_label": "Bremen",
+          "is_missing": false
+        },
+        {
+          "value": "DE6",
+          "source_label": "Hamburg",
+          "is_missing": false
+        },
+        {
+          "value": "DE7",
+          "source_label": "Hessen",
+          "is_missing": false
+        },
+        {
+          "value": "DE8",
+          "source_label": "Mecklenburg-Vorpommern",
+          "is_missing": false
+        },
+        {
+          "value": "DE9",
+          "source_label": "Niedersachsen",
+          "is_missing": false
+        },
+        {
+          "value": "DEA",
+          "source_label": "Nordrhein-Westfalen",
+          "is_missing": false
+        },
+        {
+          "value": "DEB",
+          "source_label": "Rheinland-Pfalz",
+          "is_missing": false
+        },
+        {
+          "value": "DEC",
+          "source_label": "Saarland",
+          "is_missing": false
+        },
+        {
+          "value": "DED",
+          "source_label": "Sachsen",
+          "is_missing": false
+        },
+        {
+          "value": "DEE",
+          "source_label": "Sachsen-Anhalt",
+          "is_missing": false
+        },
+        {
+          "value": "DEF",
+          "source_label": "Schleswig-Holstein",
+          "is_missing": false
+        },
+        {
+          "value": "DEG",
+          "source_label": "Thüringen",
+          "is_missing": false
+        },
+        {
+          "value": "99999",
+          "source_label": "Not available",
+          "is_missing": true
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/region-metadata.json",
+      "metadata_response_sha256": "0366e183fc61d55cdf46f5600acc410f650ccb5752d0074c86f71982d38ab145",
+      "metadata_request_sha256": "79d22f8b5b13216cd8fafac90506810f38bfaff75b8ab9dd994d0a3d5cdf17d2",
+      "code_list_pagination_complete": true
+    },
+    "lrscale": {
+      "metadata_version": 1,
+      "data_type": "INTEGER",
+      "location": "B26",
+      "source_label": "Placement on left right scale",
+      "source_question": "In politics people sometimes talk of 'left' and 'right'. Using this card, where would you place yourself on this scale, where 0 means the left and 10 means the right?",
+      "source_filter": null,
+      "description": {
+        "en": null
+      },
+      "code_list": [
+        {
+          "value": "0",
+          "source_label": "Left",
+          "is_missing": false
+        },
+        {
+          "value": "1",
+          "source_label": "1",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "source_label": "2",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "source_label": "3",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "source_label": "4",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "source_label": "5",
+          "is_missing": false
+        },
+        {
+          "value": "6",
+          "source_label": "6",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "source_label": "7",
+          "is_missing": false
+        },
+        {
+          "value": "8",
+          "source_label": "8",
+          "is_missing": false
+        },
+        {
+          "value": "9",
+          "source_label": "9",
+          "is_missing": false
+        },
+        {
+          "value": "10",
+          "source_label": "Right",
+          "is_missing": false
+        },
+        {
+          "value": "77",
+          "source_label": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "88",
+          "source_label": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "99",
+          "source_label": "No answer",
+          "is_missing": true
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/lrscale-metadata.json",
+      "metadata_response_sha256": "5fb7e01ccdb47c46b7496babe6803899e9ba1404207934a3e730037a1a9db0e0",
+      "metadata_request_sha256": "1d6e2b263535dbd26effca54148f2b135568457af1be107f1d2b9087e1fe19e6",
+      "code_list_pagination_complete": true
+    },
+    "vote": {
+      "metadata_version": 1,
+      "data_type": "INTEGER",
+      "location": "B13",
+      "source_label": "Voted last national election",
+      "source_question": "Some people don't vote nowadays for one reason or another. Did you vote in the last [country] national election in [month/year]?",
+      "source_filter": null,
+      "description": {
+        "en": null
+      },
+      "code_list": [
+        {
+          "value": "1",
+          "source_label": "Yes",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "source_label": "No",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "source_label": "Not eligible to vote",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "source_label": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "8",
+          "source_label": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "9",
+          "source_label": "No answer",
+          "is_missing": true
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/vote-metadata.json",
+      "metadata_response_sha256": "94f37fed580069d7e223beaad95f3ba6732ac11f371a39022d884053326ed059",
+      "metadata_request_sha256": "4ca4da24c4aacf0d72bcdfaed7c4314337e7b9b72270d628e639fd7234f59010",
+      "code_list_pagination_complete": true
+    },
+    "prtvgde1": {
+      "metadata_version": 2,
+      "data_type": "INTEGER",
+      "location": "B14DE1",
+      "source_label": "Party voted for in last national election 1, Germany",
+      "source_question": "Which party did you vote for in that election? (Germany 1)",
+      "source_filter": {
+        "en": null
+      },
+      "description": {
+        "en": "[Country-specific codes]"
+      },
+      "code_list": [
+        {
+          "value": "1",
+          "source_label": "Christian Democratic Union/Christian Social Union (CDU/CSU)",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "source_label": "Social Democratic Party (SPD)",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "source_label": "The Left (Die Linke)",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "source_label": "Alliance 90/The Greens (Bündnis 90/Die Grünen)",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "source_label": "Free Democratic Party (FDP) ",
+          "is_missing": false
+        },
+        {
+          "value": "6",
+          "source_label": "Alternative for Germany (AFD)",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "source_label": "Free Voters (Freie Wähler)",
+          "is_missing": false
+        },
+        {
+          "value": "8",
+          "source_label": "Grassroots Democratic Party of Germany (dieBasis)",
+          "is_missing": false
+        },
+        {
+          "value": "9",
+          "source_label": "Party for Labour, Rule of Law, Animal Protection, Promotion of Elites and Grassroots Democratic Initiative (Die PARTEI)",
+          "is_missing": false
+        },
+        {
+          "value": "55",
+          "source_label": "Other",
+          "is_missing": false
+        },
+        {
+          "value": "66",
+          "source_label": "Not applicable",
+          "is_missing": true
+        },
+        {
+          "value": "77",
+          "source_label": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "88",
+          "source_label": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "99",
+          "source_label": "No answer",
+          "is_missing": true
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/prtvgde1-metadata.json",
+      "metadata_response_sha256": "8f7ac178ec3be22f237885b0c4ca96b60216a19b57738103dcbb7bdfbde6fa0f",
+      "metadata_request_sha256": "666a9f52efcac5da65b60a72ce888ceaba56355a473bccc9245cc08c971352c4",
+      "code_list_pagination_complete": true
+    },
+    "prtvgde2": {
+      "metadata_version": 2,
+      "data_type": "INTEGER",
+      "location": "B14DE2",
+      "source_label": "Party voted for in last national election 2, Germany",
+      "source_question": "Which party did you vote for in that election? (Germany 2)",
+      "source_filter": {
+        "en": null
+      },
+      "description": {
+        "en": "[Country-specific codes]"
+      },
+      "code_list": [
+        {
+          "value": "1",
+          "source_label": "Christian Democratic Union/Christian Social Union (CDU/CSU)",
+          "is_missing": false
+        },
+        {
+          "value": "2",
+          "source_label": "Social Democratic Party (SPD)",
+          "is_missing": false
+        },
+        {
+          "value": "3",
+          "source_label": "The Left (Die Linke)",
+          "is_missing": false
+        },
+        {
+          "value": "4",
+          "source_label": "Alliance 90/The Greens (Bündnis 90/Die Grünen)",
+          "is_missing": false
+        },
+        {
+          "value": "5",
+          "source_label": "Free Democratic Party (FDP) ",
+          "is_missing": false
+        },
+        {
+          "value": "6",
+          "source_label": "Alternative for Germany (AFD)",
+          "is_missing": false
+        },
+        {
+          "value": "7",
+          "source_label": "Free Voters (Freie Wähler)",
+          "is_missing": false
+        },
+        {
+          "value": "8",
+          "source_label": "Grassroots Democratic Party of Germany (dieBasis)",
+          "is_missing": false
+        },
+        {
+          "value": "9",
+          "source_label": "Party for Labour, Rule of Law, Animal Protection, Promotion of Elites and Grassroots Democratic Initiative (Die PARTEI)",
+          "is_missing": false
+        },
+        {
+          "value": "55",
+          "source_label": "Other",
+          "is_missing": false
+        },
+        {
+          "value": "66",
+          "source_label": "Not applicable",
+          "is_missing": true
+        },
+        {
+          "value": "77",
+          "source_label": "Refusal",
+          "is_missing": true
+        },
+        {
+          "value": "88",
+          "source_label": "Don't know",
+          "is_missing": true
+        },
+        {
+          "value": "99",
+          "source_label": "No answer",
+          "is_missing": true
+        }
+      ],
+      "metadata_only_response_path": "outputs/loop/resume-group-contract/sources/prtvgde2-metadata.json",
+      "metadata_response_sha256": "d21aa5a95ad1930ec770e2ea44c66b32c664f4e1b2eb3c9b6faf99f54cb1bc81",
+      "metadata_request_sha256": "00ec07d0a3d1a5527193d5e4c3f3ae20cbd792ac69b6793131cf22a7863ab58e",
+      "code_list_pagination_complete": true
+    }
+  },
+  "source_locations": {
+    "agea": [
+      "GC-Q01 PDF222/print221 F3_1b",
+      "public agea metadata v3; 999 Not available",
+      "study universe metadata 15+",
+      "GC-Q09 B4.2 PDF/print11: birth years <=1933 recoded to1933 for fieldwork starting2023"
+    ],
+    "gndr": [
+      "GC-Q01 PDF219/print218 F2_1",
+      "GC-Q02 PDF/print55–56 F2",
+      "public gndr metadata v2"
+    ],
+    "eisced": [
+      "GC-Q01 PDF242/print241 F15",
+      "GC-Q07 PDF/print4–6: ES-ISCED definition/mapping;42–44 German bridge",
+      "public eisced metadata v5"
+    ],
+    "region": [
+      "GC-Q01 PDF466/print465 R1, NUTS code hierarchy PDF473–486",
+      "GC-Q03 PDF/print86",
+      "public region metadata v11 and regunit v1"
+    ],
+    "lrscale": [
+      "GC-Q01 PDF59–60/print58–59 B26",
+      "GC-Q02 PDF/print11 B26",
+      "public lrscale metadata v1"
+    ],
+    "party": [
+      "GC-Q02 PDF/print7–8 B13/B14a/B14b",
+      "GC-Q01 PDF21–22/print20–21 B14DE1/B14DE2",
+      "GC-Q08 PDF/print36 Z1.2: election2021; party names only",
+      "public vote metadata v1, prtvgde1/2 metadata v2"
+    ]
+  },
+  "groups": {
+    "age": {
+      "variable": "agea",
+      "valid_value_rule": "finite integer >=15, except999; do not invent an exact released maximum from this documentation",
+      "source_range_limit": "No complete numerical upper constraint is provided by the queried agea code list. Birth-year anonymisation is documented, but no exact agea top-code is asserted.",
+      "candidate_bins": [
+        {
+          "id": "age15_29",
+          "inclusive_min": 15,
+          "inclusive_max": 29
+        },
+        {
+          "id": "age30_44",
+          "inclusive_min": 30,
+          "inclusive_max": 44
+        },
+        {
+          "id": "age45_59",
+          "inclusive_min": 45,
+          "inclusive_max": 59
+        },
+        {
+          "id": "age60plus",
+          "inclusive_min": 60,
+          "inclusive_max": null
+        }
+      ],
+      "excluded_missing_codes": [
+        "999"
+      ],
+      "under15_action": "fail eligibility/import QA; do not silently reclassify",
+      "bin_origin": "own pre-data grouping choice, not ESS original agegroup"
+    },
+    "survey_sex": {
+      "variable": "gndr",
+      "groups": [
+        {
+          "id": "male",
+          "values": [
+            "1"
+          ],
+          "label": "Im ESS als männlich erfasst"
+        },
+        {
+          "id": "female",
+          "values": [
+            "2"
+          ],
+          "label": "Im ESS als weiblich erfasst"
+        }
+      ],
+      "excluded_missing_codes": [
+        "9"
+      ],
+      "interpretation": "Binary recorded survey sex; does not measure gender identity or represent every gender. Original question refusal7 is not an integrated4.2 valid code."
+    },
+    "education": {
+      "variable": "eisced",
+      "groups": [
+        {
+          "id": "lower",
+          "values": [
+            "1",
+            "2"
+          ],
+          "label": "Bis Sekundarstufe I, ES-ISCED I/II"
+        },
+        {
+          "id": "upper_secondary",
+          "values": [
+            "3",
+            "4"
+          ],
+          "label": "Sekundarstufe II, ES-ISCED IIIb/IIIa"
+        },
+        {
+          "id": "advanced_vocational_or_tertiary",
+          "values": [
+            "5",
+            "6",
+            "7"
+          ],
+          "label": "Fortgeschrittene berufliche oder tertiäre Bildung, ES-ISCED IV/V1/V2"
+        }
+      ],
+      "excluded_substantive_unclassifiable_codes": [
+        "0",
+        "55"
+      ],
+      "excluded_missing_codes": [
+        "77",
+        "88",
+        "99"
+      ],
+      "interpretation": "Own three-bin pooling of ES-ISCED codes. It is not a claim that ordinary ISCED levels1/2,3/4,5–7 map to these same bins. ES-ISCED5 includes sub-degree advanced vocational education."
+    },
+    "regionalEastWest": {
+      "variable": "region",
+      "require_regunit": "1",
+      "groups": [
+        {
+          "id": "east_five_states",
+          "values": [
+            "DE4",
+            "DE8",
+            "DED",
+            "DEE",
+            "DEG"
+          ],
+          "label": "Fünf ostdeutsche Bundesländer ohne Berlin"
+        },
+        {
+          "id": "west_ten_states",
+          "values": [
+            "DE1",
+            "DE2",
+            "DE5",
+            "DE6",
+            "DE7",
+            "DE9",
+            "DEA",
+            "DEB",
+            "DEC",
+            "DEF"
+          ],
+          "label": "Zehn westdeutsche Bundesländer ohne Berlin"
+        },
+        {
+          "id": "berlin",
+          "values": [
+            "DE3"
+          ],
+          "label": "Berlin"
+        }
+      ],
+      "excluded_missing_codes": [
+        "99999"
+      ],
+      "unmapped_values": "Any other value, including DE, DEZ, DEP or finer NUTS code, remains unclassified; stop this grouping for incompatible German regional metadata instead of prefix guessing.",
+      "interpretation": "Residence region at survey, not childhood socialisation or identity. Berlin is not assigned east or west. Country report rules out federal-state representativity; no separate representative state profile. East/west domains still need design precision and scope checks."
+    },
+    "lr_approx_weighted_thirds": {
+      "variable": "lrscale",
+      "valid_values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "excluded_missing_codes": [
+        "77",
+        "88",
+        "99"
+      ],
+      "unlock_after": "fixed and reviewed model, scoring, labels and grouping algorithm; no LR answers before that gate",
+      "reference_for_cutpoints": "All Germany15+ cases meeting fixed design eligibility and valid lrscale, before conditioning on score-item completeness; analysis weight anweight",
+      "algorithm": "For every integer pair0<=a<b<=9 with positive weighted mass in0..a,a+1..b,b+1..10, calculate L=(F(a)-1/3)^2+(F(b)-2/3)^2. Choose minimum L; exact ties choose lexicographically smallest(a,b). Save a,b once; preserve every whole category tie. If no feasible pair or nonpositive/nonfinite weights, suppress this grouping. Do not tune to scores, party results or precision.",
+      "groups": [
+        "Unterer Bereich der historischen Links-rechts-Selbsteinstufung",
+        "Mittlerer Bereich der historischen Links-rechts-Selbsteinstufung",
+        "Oberer Bereich der historischen Links-rechts-Selbsteinstufung"
+      ],
+      "interpretation": "Approximately weighted thirds of self-placement, not equal sized groups, party blocs or named ideology dimensions. Numerical cutpoints are still unknown."
+    },
+    "historical_second_vote": {
+      "variable": "prtvgde2",
+      "filter": "vote==1",
+      "valid_values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "55"
+      ],
+      "excluded_missing_codes": [
+        "66",
+        "77",
+        "88",
+        "99"
+      ],
+      "structural_missing": "66 Not applicable is kept distinct; B14 is asked only when vote1. vote2 includes invalid/blank ballots per national interviewer instruction. vote3 means not eligible.",
+      "other55": "Heterogeneous other-party category; no invented party name or single ideology. Gate/suppress separately.",
+      "first_vote_policy": "prtvgde1 is B14a first vote for candidate-party, not substituted or pooled with second vote.",
+      "consistency_rule": "Named party/Other with vote!=1 is a filter inconsistency; quarantine/error for this grouping. No vote imputation from party field.",
+      "interpretation": "Retrospective self-reported second vote at Bundestag electionSeptember2021, interviewedMay–December2023. No current electorate, voting intention, verified vote or electoral population claim."
+    }
+  },
+  "missing_policy": {
+    "empty_or_null": "unclassified system missing; distinct from named response nonresponse codes; never zero or midpoint",
+    "unknown_codes": "fail schema QA for that field; do not import questionnaire refusal codes into integrated4.2 silently",
+    "nonresponse_separation": "Retain refusal, dont-know, no-answer, not-available, not-applicable and substantive-unclassifiable statuses until disclosure-reviewed aggregation; no response rows exported",
+    "score_domain": "Identical fixed nine-item complete-response mask for the first proposed comparison. Missing group value excludes only that group-family domain; it does not change another grouping or the national model dataset.",
+    "population_claim": "Without separately supported response/missing assumptions, descriptive statistics describe the historical complete-response domain. Design intervals do not cure nonresponse or recall bias."
+  },
+  "comparison_contract": {
+    "descriptive_response_means": {
+      "candidate": "Fixed observed0–1 scores or individual response means, design weighted ratio estimates and full shared-PSU covariance; label as historical reported responses.",
+      "requires": [
+        "fixed item identities and direction",
+        "design moment/score covariance implementation verified",
+        "precision gates satisfied",
+        "human product/text approval of narrow descriptive display"
+      ],
+      "does_not_require_for_its_narrow_estimand": "Latent construct comparability is not asserted. This alternative needs an explicit scope decision, not an automatic product replacement."
+    },
+    "construct_or_latent_profiles": {
+      "current_status": "not approved; candidate full-strict model-conditional path below; suppress if its prerequisites/gates fail",
+      "requires": [
+        "identified common structure",
+        "valid full cross-group moment covariance and joint inference",
+        "full strict ordinal restriction stages correctly parameterised and tested",
+        "pre-fixed all-item strict common-metric link and its limitations, no answer-selected anchors",
+        "positive equivalence of unrestricted configural curves after strict-model linking, with full joint covariance of both fits",
+        "adequate group information and calibrated precision"
+      ],
+      "external_anchor_status": "No externally validated ESS anchor is established. Full strict identified invariance remains testable as a model-conditional restriction system; lack of external anchors does not by itself block that standard conditional path.",
+      "identification_limit": "Common affine shifts/scales affecting all items can be observationally indistinguishable from latent factor mean/variance shifts. Passing strict restrictions and curve equivalence cannot resolve this or establish absolute population construct equality.",
+      "partial_invariance_policy": "No partial-invariance rescue or answer-selected invariant anchor if full strict gates fail; suppress affected construct comparison, retain justified descriptive response means only.",
+      "forbidden_shortcuts": [
+        "non-significant difference implies equivalence",
+        "fully equal model score functions imply empirical equivalence",
+        "synthetic anchors imply valid ESS anchors",
+        "partial scalar invariance justifies observed ordinal score means automatically"
+      ]
+    },
+    "precision_candidates": {
+      "minimum_complete_raw_cases": 50,
+      "maximum_95pct_design_CI_halfwidth_on_0_1_scale": 0.05,
+      "origin": "Own product precision budgets, not literature cutoffs or passed requirements. Coordinator decides before dependent access; minimum count alone does not pass."
+    },
+    "prohibited_exports": [
+      "ranked party list",
+      "party closeness aggregate",
+      "distance/match aggregate",
+      "overall match percentage",
+      "latent/political construct profile without gates",
+      "current voter assertions",
+      "representative Bundesland profiles"
+    ]
+  },
+  "method_gap_candidate": {
+    "status": "mathematical implementation proposal; no new model-fit test implemented or calibrated in this source package",
+    "joint_covariance": "Stack group moment influence contributions, sum inside original shared PSU, centre within original stratum; retain full crossblocks in V_m and zero contributions for empty domains.",
+    "parameter_sandwich": "With public D=lavTech(fit,delta), tangent basisZ from linear equality constraints and exact fittingW, A=DZ; K_theta=(A^T W A)^-1 A^T W; K_beta=Z K_theta; V_beta=K_beta V_m K_beta^T. Check order, rank, normalization and admissibility first.",
+    "joint_fit": "P=I-AK; Q=r^TWr; U=P^TWP. Under first-order joint normal moment approximation, Q has law sum_l lambda_l*chi_square1, lambda eigenvalues of V_m^(1/2) U V_m^(1/2). Preserve crossblocks; no inversion of V_m and no naive native scaled chi-square subtraction.",
+    "numerical_option": "Gaussian/eigenvalue simulation with declared seed/draw count and binomial Monte Carlo interval, or verified quadratic-form CDF. Approximation to survey sampling remains asymptotic; do not call exact finite-sample ESS test.",
+    "joint_restrictions": "For testable equality contrasts in correctly identified common parameterization, joint Wald q=c(theta)^T [C V_theta C^T]^-1 c(theta), chi_square_rank limit; rank deficient or unidentifiable contrast blocks the test. Do not include mere identification restrictions as tested substantives.",
+    "nested_fit_option": "With same fixed W and nested moment manifolds, compare Q_restricted-Q_unrestricted. Under restricted null evaluate both tangent spaces at its same implied-moment point after exact reparameterisation; eigenvalues of V_m^(1/2)(U_restricted-U_unrestricted)V_m^(1/2) give first-order weighted-chi-square law. Verify tangent nesting and positive-semidefinite difference; do not subtract independently scaled native tests.",
+    "ordinal_identification": "semTools0.5-9 measEq.syntax ID.catWu.Estabrook.2016, THETA, std.lv; regenerate each stage threshold/loading/intercept/residual constraints and release no-longer-needed identification constraints. Wu does not solve arbitrary partial invariance.",
+    "conditional_unrestricted_curve_equivalence": {
+      "fits": "Unrestricted identified configuralC and full strictS on same moments and groups; reference group fixed before answers; reference factor mean0/variance1, other strict factor means/variances free.",
+      "curve": "At fixed common eta=x, evaluate configural group curve at z_g=(x-mu_g_strict)/sqrt(psi_g_strict), using that group configural thresholds/loadings/intercept/residual normalization. Form observed0–1 score curve and all predetermined group-pair differences.",
+      "why_not_tautology": "Only mu/psi linking comes from strictS. Item functions come from unrestrictedC; strict equality does not force these configural curve differences to0.",
+      "joint_delta": "Stack K_beta_C and K_beta_S and compute V_stack=K_stack V_m K_stack^T, including between-fit covariance. Differentiate contrasts through configural item parameters and strict mu/sqrt(psi); no independent-fit SE.",
+      "candidate_raster": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "positive_gate_candidate": "For all pre-fixed group-pair/retained-score/raster contrasts compute U=max(|Delta|+t_(1-.05/(2L),design_df)*SE). Require U<.05, adequate information, valid calibration and full strict fit/restriction gates. Margin/raster are own conditional display budgets, not literature thresholds. No claim outside raster.",
+      "scope": "Conditional on strict all-item linking and chosen normal-probit structure. Common affine DIF remains unidentifiable, and evidence beyond the measured content is not claimed."
+    },
+    "real_prerequisites": [
+      "independent moment-IF/design covariance evidence",
+      "checked D/W/constraint orientation and sample normalization",
+      "synthetic multigroup ordinal fit/restriction calibration for sharedPSUs and sparsity",
+      "joint configural/strict curve-Jacobian and positive equivalence calibration",
+      "failure consequences fixed before empirical group access"
+    ]
+  },
+  "sources": [
+    {
+      "id": "GC-Q01",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "started_utc": "2026-10-03T10:16:04.087050+00:00",
+      "finished_utc": "2026-10-03T10:16:04.413563+00:00",
+      "status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a7_e04_1.pdf",
+      "content_type": "application/pdf",
+      "etag": "0x8DE52850A069CFA",
+      "last_modified": "Tue, 13 Jan 2026 09:20:48 GMT",
+      "bytes": 2162997,
+      "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+      "local_file": "sources/ESS11_appendix_a7_e04_1.pdf",
+      "pdftotext_exit": 0,
+      "text_sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+      "pdf_pages": 552
+    },
+    {
+      "id": "GC-Q02",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "started_utc": "2026-10-03T10:16:04.088623+00:00",
+      "finished_utc": "2026-10-03T10:16:04.387224+00:00",
+      "status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/germany/ESS11_questionnaires_DE.pdf",
+      "content_type": "application/pdf",
+      "etag": "0x8DC892FEFB6992F",
+      "last_modified": "Mon, 10 Jun 2024 09:30:15 GMT",
+      "bytes": 1304009,
+      "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+      "local_file": "sources/ESS11_questionnaires_DE.pdf",
+      "pdftotext_exit": 0,
+      "text_sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+      "pdf_pages": 100
+    },
+    {
+      "id": "GC-Q03",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_country_documentation_report_e04.pdf",
+      "started_utc": "2026-10-03T10:16:04.089090+00:00",
+      "finished_utc": "2026-10-03T10:16:04.409792+00:00",
+      "status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_country_documentation_report_e04.pdf",
+      "content_type": "application/pdf",
+      "etag": "0x8DE2759F6B8D91C",
+      "last_modified": "Wed, 19 Nov 2025 10:54:07 GMT",
+      "bytes": 2510948,
+      "sha256": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+      "local_file": "sources/ESS11_country_documentation_report_e04.pdf",
+      "pdftotext_exit": 0,
+      "text_sha256": "e20158146ded51aba75cce8a29e322d4f2ec73f88cbf91f08a14788c3942c833",
+      "pdf_pages": 293
+    },
+    {
+      "id": "GC-Q04",
+      "url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+      "started_utc": "2026-10-03T10:16:04.095168+00:00",
+      "finished_utc": "2026-10-03T10:16:04.325112+00:00",
+      "status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/sites/default/files/2024-01/ESS%20Round%2011%20Source%20Questionnaire_FINAL_Alert%2004.pdf",
+      "content_type": "application/pdf",
+      "etag": "\"130b49-60fb0ccc9e5bf;65b0da9f3ad79",
+      "last_modified": "Wed, 24 Jan 2024 13:11:24 GMT",
+      "bytes": 1248073,
+      "sha256": "68aa307825e0ff12ee1ef62952aeadd7cbf90fd592e5791bb5a10efc809e1227",
+      "local_file": "sources/ESS11_source_questionnaire.pdf",
+      "pdftotext_exit": 0,
+      "text_sha256": "bbff24b518da84b017b92b2f2eccad470d5567f540c48f08e09bd28b4ba8ceb7",
+      "pdf_pages": 102
+    },
+    {
+      "id": "GC-Q05",
+      "url": "https://ess.sikt.no/en/datafile/242aaa39-3bbb-40f5-98bf-bfb1ce53d8ef",
+      "started_utc": "2026-10-03T10:16:04.096506+00:00",
+      "finished_utc": "2026-10-03T10:16:04.374134+00:00",
+      "status": 200,
+      "final_url": "https://ess.sikt.no/en/datafile/242aaa39-3bbb-40f5-98bf-bfb1ce53d8ef",
+      "content_type": "text/html; charset=UTF-8",
+      "etag": "\"f827f6d5f21e402eb761464c40bfeb6d-ssl-df\"",
+      "last_modified": null,
+      "bytes": 1667,
+      "sha256": "1c58f0249552f5cc6d710994bbd44a334607431798b0ab1c1747057b22b79730",
+      "local_file": "sources/ESS11e4_2-portal.html"
+    },
+    {
+      "id": "GC-Q06",
+      "url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "started_utc": "2026-10-03T10:16:04.097770+00:00",
+      "finished_utc": "2026-10-03T10:16:04.249188+00:00",
+      "status": 200,
+      "final_url": "https://www.europeansocialsurvey.org/contact/disclaimer",
+      "content_type": "text/html; charset=UTF-8",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 168665,
+      "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+      "local_file": "sources/ESS-disclaimer.html"
+    },
+    {
+      "id": "GC-M01",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5458787/",
+      "started_utc": "2026-10-03T10:16:04.250727+00:00",
+      "finished_utc": "2026-10-03T10:16:04.592121+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5458787/",
+      "content_type": "text/html; charset=utf-8",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 374244,
+      "sha256": "6a3a9470ea4cd8071b76173b5704d24cc9d79538b31506921c4314f307bcf1f6",
+      "local_file": "sources/wu-estabrook-2016.html"
+    },
+    {
+      "id": "GC-M02",
+      "url": "https://cran.r-project.org/web/packages/semTools/semTools.pdf",
+      "started_utc": "2026-10-03T10:16:04.374981+00:00",
+      "finished_utc": "2026-10-03T10:16:04.658720+00:00",
+      "status": 200,
+      "final_url": "https://cran.r-project.org/web/packages/semTools/semTools.pdf",
+      "content_type": "application/pdf",
+      "etag": "\"a0b50-656869ca9f59c\"",
+      "last_modified": "Mon, 13 Jul 2026 23:40:14 GMT",
+      "bytes": 658256,
+      "sha256": "486d54175cd873598a414a2a32e43eaf86a29c8ddb584579b8a45df15c3a8a9e",
+      "local_file": "sources/semTools.pdf",
+      "pdftotext_exit": 0,
+      "text_sha256": "0b8e7b406aad571d007f1c99c79d51e1df5b304f8f52c3cfb5ff603eec96d76d",
+      "pdf_pages": 170
+    },
+    {
+      "id": "GC-M03",
+      "url": "https://lavaan.ugent.be/tutorial/inspect.html",
+      "started_utc": "2026-10-03T10:16:04.575635+00:00",
+      "finished_utc": "2026-10-03T10:16:04.739467+00:00",
+      "status": 200,
+      "final_url": "https://lavaan.ugent.be/tutorial/inspect.html",
+      "content_type": "text/html",
+      "etag": "\"bd57-656ca48381f8c-br\"",
+      "last_modified": "Fri, 17 Jul 2026 08:24:15 GMT",
+      "bytes": 48471,
+      "sha256": "285064097607edd85cc0ce87316fb660a2f8251942e86dd0c06d72df38e574f5",
+      "local_file": "sources/lavaan-lavInspect.html"
+    },
+    {
+      "id": "GC-Q07",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a1_e04_1.pdf",
+      "started_utc": "2026-10-03T10:18:57.059727+00:00",
+      "finished_utc": "2026-10-03T10:18:57.424168+00:00",
+      "status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a1_e04_1.pdf",
+      "content_type": "application/pdf",
+      "bytes": 3438912,
+      "sha256": "162a1b99c7bd61233f6f28b59e2f9e860b43ef2305c58bc20d96a25096c560da",
+      "local_file": "sources/ESS11_appendix_a1_e04_1.pdf",
+      "pdftotext_exit": 0,
+      "pdf_pages": 136
+    },
+    {
+      "id": "GC-Q08",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a3_e04.pdf",
+      "started_utc": "2026-10-03T10:18:57.060090+00:00",
+      "finished_utc": "2026-10-03T10:18:57.491362+00:00",
+      "status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/survey/ESS11_appendix_a3_e04.pdf",
+      "content_type": "application/pdf",
+      "bytes": 5255341,
+      "sha256": "2fae36160109a35614b327eb3d25f80eda36a8085a3a51fb829069f206784992",
+      "local_file": "sources/ESS11_appendix_a3_e04.pdf",
+      "pdftotext_exit": 0,
+      "pdf_pages": 138
+    },
+    {
+      "id": "GC-Q09",
+      "url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/source/ESS11_data_protocol_e01_5.pdf",
+      "started_utc": "2026-10-03T10:18:57.060425+00:00",
+      "finished_utc": "2026-10-03T10:18:57.457773+00:00",
+      "status": 200,
+      "final_url": "https://stessrelpubprodwe.blob.core.windows.net/data/round11/fieldwork/source/ESS11_data_protocol_e01_5.pdf",
+      "content_type": "application/pdf",
+      "bytes": 3796179,
+      "sha256": "b5176742b84ab503070e21f7ffaa9ff1a126e1e0e39354c25d810dd80eda77f7",
+      "local_file": "sources/ESS11_data_protocol_e01_5.pdf",
+      "pdftotext_exit": 0,
+      "pdf_pages": 99
+    },
+    {
+      "id": "GC-M04",
+      "url": "https://www.statmodel.com/download/GstrucMissingRevision.pdf",
+      "started_utc": "2026-10-03T10:18:57.060756+00:00",
+      "finished_utc": "2026-10-03T10:18:57.841712+00:00",
+      "status": 200,
+      "final_url": "https://www.statmodel.com/download/GstrucMissingRevision.pdf",
+      "content_type": "application/pdf",
+      "bytes": 148705,
+      "sha256": "b96f788895e55ec7cfd54ee093d0effd74ac697a2f38e45da8014f99e7978d00",
+      "local_file": "sources/GstrucMissingRevision.pdf",
+      "pdftotext_exit": 0,
+      "pdf_pages": 10
+    },
+    {
+      "name": "file-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:50.994015+00:00",
+      "finished_utc": "2026-10-03T10:17:51.412868+00:00",
+      "status": 200,
+      "bytes": 65181,
+      "request_sha256": "8e8620a9bba485629ffed330d26622f9578bd17bf62f967f49acce1559b994d9",
+      "sha256": "3b5baf7c4c2342ecfbf2129f0a4537a95aaf13c93761c3b54ab57ffab53d8e82"
+    },
+    {
+      "name": "prtvgde2-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.416457+00:00",
+      "finished_utc": "2026-10-03T10:17:51.522513+00:00",
+      "status": 200,
+      "bytes": 1821,
+      "request_sha256": "00ec07d0a3d1a5527193d5e4c3f3ae20cbd792ac69b6793131cf22a7863ab58e",
+      "sha256": "d21aa5a95ad1930ec770e2ea44c66b32c664f4e1b2eb3c9b6faf99f54cb1bc81"
+    },
+    {
+      "name": "gndr-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.418097+00:00",
+      "finished_utc": "2026-10-03T10:17:51.567781+00:00",
+      "status": 200,
+      "bytes": 617,
+      "request_sha256": "3e1641a8481ce7a33d268d3116ad3acd4a8fbf8aa5662563705cb2b2a2652bab",
+      "sha256": "a2bf819cbf6a6545c38f149c62950dd17a1c16b527a74a71147382e59affe947"
+    },
+    {
+      "name": "prtvgde1-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.415835+00:00",
+      "finished_utc": "2026-10-03T10:17:51.569399+00:00",
+      "status": 200,
+      "bytes": 1821,
+      "request_sha256": "666a9f52efcac5da65b60a72ce888ceaba56355a473bccc9245cc08c971352c4",
+      "sha256": "8f7ac178ec3be22f237885b0c4ca96b60216a19b57738103dcbb7bdfbde6fa0f"
+    },
+    {
+      "name": "lrscale-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.417294+00:00",
+      "finished_utc": "2026-10-03T10:17:51.573408+00:00",
+      "status": 200,
+      "bytes": 1476,
+      "request_sha256": "1d6e2b263535dbd26effca54148f2b135568457af1be107f1d2b9087e1fe19e6",
+      "sha256": "5fb7e01ccdb47c46b7496babe6803899e9ba1404207934a3e730037a1a9db0e0"
+    },
+    {
+      "name": "vote-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.414567+00:00",
+      "finished_utc": "2026-10-03T10:17:51.575060+00:00",
+      "status": 200,
+      "bytes": 953,
+      "request_sha256": "4ca4da24c4aacf0d72bcdfaed7c4314337e7b9b72270d628e639fd7234f59010",
+      "sha256": "94f37fed580069d7e223beaad95f3ba6732ac11f371a39022d884053326ed059"
+    },
+    {
+      "name": "agea-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.523551+00:00",
+      "finished_utc": "2026-10-03T10:17:51.612404+00:00",
+      "status": 200,
+      "bytes": 731,
+      "request_sha256": "68f047dad3c664643d28ad7de00489ba03defa378c2c077f620a1d18336296d4",
+      "sha256": "62fe536475ac74d6743b9d599fe7e1130f58f4170f68d6a1c3fbc1e8a6f99337"
+    },
+    {
+      "name": "eisced-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.570078+00:00",
+      "finished_utc": "2026-10-03T10:17:51.685024+00:00",
+      "status": 200,
+      "bytes": 1973,
+      "request_sha256": "7a2dba35c624e024e89c2e5f94a7f44ffa1d31aafdf18182a89b0c90cac21dd9",
+      "sha256": "d5fe8477e8f734d72a41b927546f61f22bf552b8ae66493ec7917c27a66c8dfd"
+    },
+    {
+      "name": "edulvlb-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.568317+00:00",
+      "finished_utc": "2026-10-03T10:17:51.684989+00:00",
+      "status": 200,
+      "bytes": 4229,
+      "request_sha256": "49b10a42d3368f7019989b00ca8a8512c73475f685dc724c9c18d3e627c5b0cd",
+      "sha256": "d8e936df0dcf571cb7b0e286d90a5278b1b6a648320b6b615453b56f77ea58ee"
+    },
+    {
+      "name": "regunit-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.573922+00:00",
+      "finished_utc": "2026-10-03T10:17:51.685333+00:00",
+      "status": 200,
+      "bytes": 752,
+      "request_sha256": "67d3874cf6bfe4a94f1a064885ee5ade34113486dc4a05d38eb13e3cac2d8bbb",
+      "sha256": "1ac0a8fad9ada4c8fc265e576058ab39c25b716a883d99be2043d5442f81aadd"
+    },
+    {
+      "name": "region-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:17:51.575525+00:00",
+      "finished_utc": "2026-10-03T10:17:51.935496+00:00",
+      "status": 200,
+      "bytes": 179883,
+      "request_sha256": "79d22f8b5b13216cd8fafac90506810f38bfaff75b8ab9dd994d0a3d5cdf17d2",
+      "sha256": "0366e183fc61d55cdf46f5600acc410f650ccb5752d0074c86f71982d38ab145"
+    },
+    {
+      "name": "study-metadata",
+      "url": "https://api.nsd.no/graphql",
+      "method": "POST metadata-only GraphQL query",
+      "started_utc": "2026-10-03T10:18:41.027115+00:00",
+      "finished_utc": "2026-10-03T10:18:41.336350+00:00",
+      "status": 200,
+      "bytes": 4920,
+      "request_sha256": "ea4b5a4da1accc7fec7be995518c11bdd00c9c0c1b82de2380849c40a94988f2",
+      "sha256": "533c489370d560c8737815c2254cd2003504289caf7d942ca3084d524b8d7086"
+    },
+    {
+      "name": "portal-env.js",
+      "url": "https://ess.sikt.no/env.js",
+      "status": 200,
+      "utc": "2026-10-03T10:17:08.359719+00:00",
+      "sha256": "193f32c6f6fe196a744b0acc66eb1f72d66eb243291ff29437d54e5feb8d13b6",
+      "bytes": 104
+    },
+    {
+      "name": "portal-index.js",
+      "url": "https://ess.sikt.no/assets/index-Db1MnlBi.js",
+      "status": 200,
+      "utc": "2026-10-03T10:17:08.506492+00:00",
+      "sha256": "c987bd6683ad06ad7d2375336c39c96808ae8b2c03335446afe48b1b6bcbe1b8",
+      "bytes": 2967512
+    },
+    {
+      "url": "https://www.statmodel.com/download/webnotes/mplusnote72.pdf",
+      "status": 200,
+      "utc": "2026-10-03T10:20:18.107521+00:00",
+      "sha256": "35461f784f7a4cd58091132110df0d71faf736321b51f80c29be263132043468",
+      "bytes": 312246
+    }
+  ],
+  "rights": {
+    "ESS_documentation": "ESS ERIC / ESS Data Archive; official documentation licensed CC BY-SA4.0; exact request snapshots remain in own excluded outputs.",
+    "ESS_data": "CC BY-NC-SA4.0; no respondent data redistributed in this contract.",
+    "own_grouping_and_methods": "Authored grouping choices/derivations labelled as proposals; artifact publication rights and attribution still reviewed per docs/lizenzen.md.",
+    "literature": "Wu/Estabrook PMC fulltext published version; Asparouhov author-hosted publisher proof contains Do Not Copy watermark. Sources linked and bounded paraphrases only; do not assume ESS license applies."
+  },
+  "access_disclosure": [
+    "All official API calls query search metadata only, never analysis/tabulation endpoints.",
+    "AppendixA3 p36 extraction incidentally displayed public2021 election percentages. They are not ESS response counts; no percentages retained in this contract.",
+    "No raw/local response file, B split, persons or party/LR response distribution opened."
+  ]
+}

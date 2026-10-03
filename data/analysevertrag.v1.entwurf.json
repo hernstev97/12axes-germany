@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "status": "ENTWURF_VOR_UEBERGANGSPRUEFUNG_KEINE_ANALYSEFREIGABE",
+  "dataset": {
+    "round": 11,
+    "edition": "4.2",
+    "production_date": "02.07.2026",
+    "country": "DE",
+    "sha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+    "path": "data/raw/ess11-ed4.2/ESS11e04_2.csv",
+    "doi": "https://doi.org/10.21338/ess11e04_2"
+  },
+  "items": [
+    "B34",
+    "B35",
+    "B36",
+    "B40",
+    "B41",
+    "B42",
+    "B43",
+    "B44",
+    "B45"
+  ],
+  "item_contract": "data/item-core-v1.json",
+  "groups_contract": "data/group-source-contract.v1.entwurf.json",
+  "split": {
+    "minimum_psus_per_development_stratum": 4,
+    "excluded_strata": "reserve_C_until_after_model_freeze_and_B_review",
+    "seed": 2026100301,
+    "rng": "Python3.14.7 random.Random MT19937 shuffle",
+    "sorting": "numeric strata then numeric PSU codes, one common generator",
+    "arm_A": "first floor(G_h/2) PSUs after permutation",
+    "arm_B": "remaining PSUs",
+    "weight": "anweight/(m_arm_h/G_h)",
+    "retry": false
+  },
+  "design": {
+    "estimator": "WR Ultimate-PSU stratified Taylor; approximation",
+    "psu": "psu",
+    "stratum": "stratum",
+    "weight": "anweight",
+    "fpc": null,
+    "singleton": "stop",
+    "zero_domain_psus": "retain",
+    "weight_estimation_uncertainty": "not included"
+  },
+  "mask": {
+    "primary": "all nine valid original answers",
+    "imputation": null,
+    "personal_partial_scores": false,
+    "lexical_missing": [
+      "",
+      "NA",
+      "NaN",
+      "."
+    ],
+    "unknown_codes": "stop",
+    "missing_population_transfer_max_bound_width_percentile_points": 5
+  },
+  "ordinal": {
+    "R": "4.5.3",
+    "lavaan": "0.7.2",
+    "pbivnorm": "0.6.0",
+    "semTools": "0.5.9",
+    "moment_adapter": "pipeline/ordinal/adapter_v2.R",
+    "primary_parameterization": "theta",
+    "estimator": "Fixed identity ULS moment metric, survey-weighted moments and observed-Jacobian full design covariance",
+    "efa_factors": [
+      1,
+      2,
+      3
+    ],
+    "rotation": "geomin",
+    "rstarts": 30,
+    "geomin_epsilon": 0.001,
+    "rotation_seed": 2026100313,
+    "rotation_repeat_seed": 2026100314,
+    "rotation_sensitivity": "oblimin",
+    "rotation_reproduction_max_absolute_difference": 0.0001,
+    "metric": "fixed identity for all fits; native DWLS metric diagnostic only",
+    "support": "pipeline/ordinal/support.R"
+  },
+  "models": {
+    "M1": {
+      "ALL": [
+        "B34",
+        "B35",
+        "B36",
+        "B40",
+        "B41",
+        "B42",
+        "B43",
+        "B44",
+        "B45"
+      ]
+    },
+    "M2": {
+      "H": [
+        "B34",
+        "B35",
+        "B36"
+      ],
+      "ZF": [
+        "B40",
+        "B41",
+        "B42",
+        "B43",
+        "B44",
+        "B45"
+      ]
+    },
+    "M3": {
+      "H": [
+        "B34",
+        "B35",
+        "B36"
+      ],
+      "Z": [
+        "B40",
+        "B41",
+        "B42"
+      ],
+      "F": [
+        "B43",
+        "B44",
+        "B45"
+      ]
+    }
+  },
+  "selection": {
+    "minimum_accepted_scores": 2,
+    "order": [
+      "M2",
+      "M3"
+    ],
+    "M1": "diagnostic only, insufficient number of dimensions",
+    "efa": "every item strongest absolute loading on expected factor and positive after content orientation; no unresolved tie/rotation contradiction",
+    "cross_loadings_or_correlated_residual_repairs": false,
+    "B_item_changes": false
+  },
+  "criteria": {
+    "scope": "Own preregistered requirements, not universal validity cutoffs",
+    "alpha": 0.05,
+    "rms_polychoric_residual_one_sided_upper95_max": 0.1,
+    "positive_loading_simultaneous_lower95": "greater than zero; Bonferroni within score",
+    "factor_correlation_upper95": "less than one",
+    "observed_equalweight_score_reliability_lower95_min_exclusive": 0.5,
+    "item_variance_contribution_upper95_max": 0.5,
+    "score_sensitivity_difference": 0.05,
+    "percentile_sensitivity_difference_points": 5,
+    "sensitivity_affected_weight_fraction": 0.05,
+    "group_minimum_complete_cases": 50,
+    "group_mean95_max_halfwidth": 0.05,
+    "boundary_or_undefined_intervals": "no positive precision claim",
+    "group_minimum_contributing_psus": 10
+  },
+  "score": {
+    "raw": "equalweight mean of original category mappings in item contract",
+    "percentile": "100*(weight_below + 0.5*weight_tied)/total_reference_weight",
+    "reference": "all-nine-complete Full-DE historical ESS11; whole target population claim conditional on missing/transfer gates",
+    "personal_uncertainty": null,
+    "sensitivities": [
+      "unweighted",
+      "pspwght",
+      "weighted item z",
+      "latent factor score",
+      "each leave-one-out item",
+      "oblimin",
+      "missing worst case"
+    ],
+    "external_round_replication": "not yet available"
+  },
+  "comparisons": {
+    "latent_construct_profiles": "blocked without identified source-supported invariance/anchor and full joint design covariance",
+    "descriptive_response_means": "separate narrow statement, precision gates and human display decision",
+    "party_order": "alphabetical",
+    "closeness_ranking": false,
+    "overall_match_percentage": false
+  },
+  "gates": {
+    "before_A": [
+      "fresh methods/repro Codex review",
+      "fresh sources/construct/fairness Codex review",
+      "remote analyseplan-v1",
+      "remote erwartungsmodell-v1"
+    ],
+    "before_B": [
+      "remote modell-v1",
+      "two fresh transition reviews"
+    ],
+    "before_political_fields": [
+      "fixed names and group source contract",
+      "B completed"
+    ],
+    "before_result_statements": [
+      "two fresh transition reviews"
+    ],
+    "Claude": "final control by Steven, outstanding",
+    "human_design_comprehension_release": "outstanding"
+  }
+}

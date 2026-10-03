@@ -1,0 +1,274 @@
+{
+  "kind": "DOCUMENT_JUDGMENT_AGREEMENT; no respondent data or validity result",
+  "initialCsvPins": {
+    "sources": "efeed8790f2c0ee34b21ab1b087d812e8971e4fcb967b80ee1d4bf8adf9eeb56",
+    "methods": "c5a0be5ffffbe65bafca137f882514e4a2a89c43bbb52b83031da890d67c6921"
+  },
+  "all296": {
+    "nIdentities": 296,
+    "table": {
+      "JA": {
+        "JA": 88,
+        "NEIN": 0,
+        "UNKLAR": 15
+      },
+      "NEIN": {
+        "JA": 0,
+        "NEIN": 181,
+        "UNKLAR": 0
+      },
+      "UNKLAR": {
+        "JA": 0,
+        "NEIN": 1,
+        "UNKLAR": 11
+      }
+    },
+    "same": 280,
+    "observedAgreement": 0.9459459459459459,
+    "expectedAgreement": 0.48299397370343317,
+    "cohensKappa": 0.8954479226455914,
+    "undefinedReason": null
+  },
+  "potentialAttitudeSubset": {
+    "selection": "Supplementary, union of non-NEIN first judgments; conditional on judgments, not an independent accuracy sample",
+    "nIdentities": 115,
+    "table": {
+      "JA": {
+        "JA": 88,
+        "NEIN": 0,
+        "UNKLAR": 15
+      },
+      "NEIN": {
+        "JA": 0,
+        "NEIN": 0,
+        "UNKLAR": 0
+      },
+      "UNKLAR": {
+        "JA": 0,
+        "NEIN": 1,
+        "UNKLAR": 11
+      }
+    },
+    "same": 99,
+    "observedAgreement": 0.8608695652173913,
+    "expectedAgreement": 0.7089603024574669,
+    "cohensKappa": 0.5219537542218758,
+    "undefinedReason": null
+  },
+  "dissent": [
+    {
+      "id": "B2",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Bewertung der Offenheit des politischen Systems. Regierung ist hier der allgemeine institutionelle Handlungsbezug; keine Beurteilung einer amtierenden Bundesregierung.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 5; B2; Listenheft Liste 5 / PDF S. 6"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Der Hauptgegenstand ist das politische System, der Bezugspunkt aber die Regierung und Menschen wie die befragte Person. Institutionelle Bewertung und persönliche politische Wirksamkeit beziehungsweise Regierungsbezug bleiben ohne engere Grenzregel mehrdeutig. Keine automatische Gleichsetzung mit Wissen.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 5, Originalblock B2; Listenheft Liste 5, PDF-Seite 6"
+      }
+    },
+    {
+      "id": "C9",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Emotionale Orientierung zu einem politischen/gesellschaftlichen Bezugsraum. Geringe Verbundenheit enthält keine Ablehnung und keine benannte Gegenideologie.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 19; C9; Listenheft Liste 24 / PDF S. 25"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Gefühlsmäßige Zugehörigkeit kann persönliche Orientierung oder bloß affektive Identität bezeichnen. Der Originalwortlaut nennt keine gewünschte politische Regel und keine Wertpriorität; deshalb keine feste Aufnahmeentscheidung. Geringe Verbundenheit ist keine Gegenideologie.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 19, Originalblock C9; Listenheft Liste 24, PDF-Seite 25"
+      }
+    },
+    {
+      "id": "C10",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Emotionale Orientierung zu einem politischen/gesellschaftlichen Bezugsraum. Geringe Verbundenheit enthält keine Ablehnung und keine benannte Gegenideologie.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 20; C10; Listenheft Liste 24 / PDF S. 25"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Gefühlsmäßige Zugehörigkeit kann persönliche Orientierung oder bloß affektive Identität bezeichnen. Der Originalwortlaut nennt keine gewünschte politische Regel und keine Wertpriorität; deshalb keine feste Aufnahmeentscheidung. Geringe Verbundenheit ist keine Gegenideologie.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 20, Originalblock C10; Listenheft Liste 24, PDF-Seite 25"
+      }
+    },
+    {
+      "id": "C30",
+      "sources": {
+        "eignung": "UNKLAR",
+        "begruendung": "Der Gegenstand ist eine physikalische Ursachenzuschreibung, wird aber als eigener Klimaglaube erfragt. Ob dies unter ausgeschlossene Wissensfragen oder unter Haltung zur gesellschaftlichen Klimadebatte fällt, bleibt inhaltlich unklar. 55 ist gültiger Inhalt, kein höherer Ursachenpol.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 25,26; C30; Listenheft Liste 27 / PDF S. 28"
+      },
+      "methods": {
+        "eignung": "NEIN",
+        "begruendung": "Erhebt eine Behauptung über die tatsächlichen Ursachen des Klimawandels, keine gewünschte Regel oder Wertpriorität. Wissens-/Ursachengegenstand. 55 bedeutet, dass kein Klimawandel angenommen wird, nicht einen hohen Ursachenanteil.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 26, Originalblock C30; Listenheft Liste 27, PDF-Seite 28"
+      }
+    },
+    {
+      "id": "C35",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung gesellschaftlichen beziehungsweise staatlichen Klimahandelns. Keine objektive Wissenslösung und keine eigene Handlung werden erfragt; Vertrauen in kollektives Handeln ist hier eine Haltung zur Klimadebatte. Parallelformulierungen über Zufallsgruppen sind keine neuen unabhängigen Gegenstände.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 28; C35; Listenheft Liste 30 / PDF S. 31"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose des künftigen Verhaltens anderer Menschen. Keine eigene Handlung und keine automatisch richtige Wissensantwort, aber auch kein ausdrücklich gewünschter gesellschaftlicher Zustand oder Wert. Das Item ist eine Variantenfrage zur Fragebogenqualität, keine zusätzliche unabhängige Dimension.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 28, Originalblock C35; Listenheft Liste 30, PDF-Seite 31"
+      }
+    },
+    {
+      "id": "C36",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung gesellschaftlichen beziehungsweise staatlichen Klimahandelns. Keine objektive Wissenslösung und keine eigene Handlung werden erfragt; Vertrauen in kollektives Handeln ist hier eine Haltung zur Klimadebatte. Parallelformulierungen über Zufallsgruppen sind keine neuen unabhängigen Gegenstände.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 28; C36; Listenheft Liste 30 / PDF S. 31"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose künftiger staatlicher Maßnahmen. Keine Präferenz für Maßnahmen und keine Prüfung eines benannten amtierenden Kabinetts; politische Erwartung und Tatsachenprognose bleiben inhaltlich mehrdeutig. Das Item ist eine Variantenfrage zur Fragebogenqualität, keine zusätzliche unabhängige Dimension.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 28, Originalblock C36; Listenheft Liste 30, PDF-Seite 31"
+      }
+    },
+    {
+      "id": "C38",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung gesellschaftlichen beziehungsweise staatlichen Klimahandelns. Keine objektive Wissenslösung und keine eigene Handlung werden erfragt; Vertrauen in kollektives Handeln ist hier eine Haltung zur Klimadebatte. Parallelformulierungen über Zufallsgruppen sind keine neuen unabhängigen Gegenstände.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 29; C38; Listenheft Liste 31 / PDF S. 32"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose des künftigen Verhaltens anderer Menschen. Keine eigene Handlung und keine automatisch richtige Wissensantwort, aber auch kein ausdrücklich gewünschter gesellschaftlicher Zustand oder Wert. Das Item ist eine Variantenfrage zur Fragebogenqualität, keine zusätzliche unabhängige Dimension.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 29, Originalblock C38; Listenheft Liste 31, PDF-Seite 32"
+      }
+    },
+    {
+      "id": "C39",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung gesellschaftlichen beziehungsweise staatlichen Klimahandelns. Keine objektive Wissenslösung und keine eigene Handlung werden erfragt; Vertrauen in kollektives Handeln ist hier eine Haltung zur Klimadebatte. Parallelformulierungen über Zufallsgruppen sind keine neuen unabhängigen Gegenstände.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 29; C39; Listenheft Liste 31 / PDF S. 32"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose künftiger staatlicher Maßnahmen. Keine Präferenz für Maßnahmen und keine Prüfung eines benannten amtierenden Kabinetts; politische Erwartung und Tatsachenprognose bleiben inhaltlich mehrdeutig. Das Item ist eine Variantenfrage zur Fragebogenqualität, keine zusätzliche unabhängige Dimension.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 29, Originalblock C39; Listenheft Liste 31, PDF-Seite 32"
+      }
+    },
+    {
+      "id": "C41",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung gesellschaftlichen beziehungsweise staatlichen Klimahandelns. Keine objektive Wissenslösung und keine eigene Handlung werden erfragt; Vertrauen in kollektives Handeln ist hier eine Haltung zur Klimadebatte. Parallelformulierungen über Zufallsgruppen sind keine neuen unabhängigen Gegenstände.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 30; C41; Listenheft Liste 32 / PDF S. 33"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose des künftigen Verhaltens anderer Menschen. Keine eigene Handlung und keine automatisch richtige Wissensantwort, aber auch kein ausdrücklich gewünschter gesellschaftlicher Zustand oder Wert. Das Item ist eine Variantenfrage zur Fragebogenqualität, keine zusätzliche unabhängige Dimension.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 30, Originalblock C41; Listenheft Liste 32, PDF-Seite 33"
+      }
+    },
+    {
+      "id": "C42",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung gesellschaftlichen beziehungsweise staatlichen Klimahandelns. Keine objektive Wissenslösung und keine eigene Handlung werden erfragt; Vertrauen in kollektives Handeln ist hier eine Haltung zur Klimadebatte. Parallelformulierungen über Zufallsgruppen sind keine neuen unabhängigen Gegenstände.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 2,30; C42; Listenheft Liste 32 / PDF S. 33"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose künftiger staatlicher Maßnahmen. Keine Präferenz für Maßnahmen und keine Prüfung eines benannten amtierenden Kabinetts; politische Erwartung und Tatsachenprognose bleiben inhaltlich mehrdeutig. Das Item ist eine Variantenfrage zur Fragebogenqualität, keine zusätzliche unabhängige Dimension.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 30|31, Originalblock C42; Listenheft Liste 32, PDF-Seite 33"
+      }
+    },
+    {
+      "id": "I2",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung kollektiven oder staatlichen Klimahandelns; politische/gesellschaftliche Haltung, keine eigene Handlung und kein Wissenstest. Wiederholung zur Fragebogenqualitätsprüfung, kein neuer unabhängiger Gegenstand.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 93; I2; Listenheft Liste 90 / PDF S. 95"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose des künftigen Verhaltens anderer Menschen. Keine eigene Handlung und keine automatisch richtige Wissensantwort, aber auch kein ausdrücklich gewünschter gesellschaftlicher Zustand oder Wert. Inhaltlich dieselbe Grenzentscheidung wie die entsprechenden C-Varianten; der Qualitätstest-Vorspann erzeugt weder ein weiteres Konstrukt noch allein einen Verwaltungsausschluss.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 93, Originalblock I2; Listenheft Liste 90, PDF-Seite 95"
+      }
+    },
+    {
+      "id": "I3",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung kollektiven oder staatlichen Klimahandelns; politische/gesellschaftliche Haltung, keine eigene Handlung und kein Wissenstest. Wiederholung zur Fragebogenqualitätsprüfung, kein neuer unabhängiger Gegenstand.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 93; I3; Listenheft Liste 90 / PDF S. 95"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose künftiger staatlicher Maßnahmen. Keine Präferenz für Maßnahmen und keine Prüfung eines benannten amtierenden Kabinetts; politische Erwartung und Tatsachenprognose bleiben inhaltlich mehrdeutig. Inhaltlich dieselbe Grenzentscheidung wie die entsprechenden C-Varianten; der Qualitätstest-Vorspann erzeugt weder ein weiteres Konstrukt noch allein einen Verwaltungsausschluss.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 93|94, Originalblock I3; Listenheft Liste 90, PDF-Seite 95"
+      }
+    },
+    {
+      "id": "I5",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung kollektiven oder staatlichen Klimahandelns; politische/gesellschaftliche Haltung, keine eigene Handlung und kein Wissenstest. Wiederholung zur Fragebogenqualitätsprüfung, kein neuer unabhängiger Gegenstand.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 94; I5; Listenheft Liste 91 / PDF S. 96"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose des künftigen Verhaltens anderer Menschen. Keine eigene Handlung und keine automatisch richtige Wissensantwort, aber auch kein ausdrücklich gewünschter gesellschaftlicher Zustand oder Wert. Inhaltlich dieselbe Grenzentscheidung wie die entsprechenden C-Varianten; der Qualitätstest-Vorspann erzeugt weder ein weiteres Konstrukt noch allein einen Verwaltungsausschluss.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 94, Originalblock I5; Listenheft Liste 91, PDF-Seite 96"
+      }
+    },
+    {
+      "id": "I6",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung kollektiven oder staatlichen Klimahandelns; politische/gesellschaftliche Haltung, keine eigene Handlung und kein Wissenstest. Wiederholung zur Fragebogenqualitätsprüfung, kein neuer unabhängiger Gegenstand.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 94; I6; Listenheft Liste 91 / PDF S. 96"
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose künftiger staatlicher Maßnahmen. Keine Präferenz für Maßnahmen und keine Prüfung eines benannten amtierenden Kabinetts; politische Erwartung und Tatsachenprognose bleiben inhaltlich mehrdeutig. Inhaltlich dieselbe Grenzentscheidung wie die entsprechenden C-Varianten; der Qualitätstest-Vorspann erzeugt weder ein weiteres Konstrukt noch allein einen Verwaltungsausschluss.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 94|95, Originalblock I6; Listenheft Liste 91, PDF-Seite 96"
+      }
+    },
+    {
+      "id": "I8",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung kollektiven oder staatlichen Klimahandelns; politische/gesellschaftliche Haltung, keine eigene Handlung und kein Wissenstest. Wiederholung zur Fragebogenqualitätsprüfung, kein neuer unabhängiger Gegenstand.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 95; I8; Listenheft Liste 92 / PDF S. "
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose des künftigen Verhaltens anderer Menschen. Keine eigene Handlung und keine automatisch richtige Wissensantwort, aber auch kein ausdrücklich gewünschter gesellschaftlicher Zustand oder Wert. Inhaltlich dieselbe Grenzentscheidung wie die entsprechenden C-Varianten; der Qualitätstest-Vorspann erzeugt weder ein weiteres Konstrukt noch allein einen Verwaltungsausschluss.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 95|96, Originalblock I8; Listenheft Liste 92, PDF-Seite 97"
+      }
+    },
+    {
+      "id": "I9",
+      "sources": {
+        "eignung": "JA",
+        "begruendung": "Subjektive Erwartung kollektiven oder staatlichen Klimahandelns; politische/gesellschaftliche Haltung, keine eigene Handlung und kein Wissenstest. Wiederholung zur Fragebogenqualitätsprüfung, kein neuer unabhängiger Gegenstand.",
+        "fundstelle": "ESS11-DE Fragebogen PDF S. 96; I9; Listenheft Liste 92 / PDF S. "
+      },
+      "methods": {
+        "eignung": "UNKLAR",
+        "begruendung": "Prognose künftiger staatlicher Maßnahmen. Keine Präferenz für Maßnahmen und keine Prüfung eines benannten amtierenden Kabinetts; politische Erwartung und Tatsachenprognose bleiben inhaltlich mehrdeutig. Inhaltlich dieselbe Grenzentscheidung wie die entsprechenden C-Varianten; der Qualitätstest-Vorspann erzeugt weder ein weiteres Konstrukt noch allein einen Verwaltungsausschluss.",
+        "fundstelle": "ESS11-DE Fragebogen PDF/gedruckte Seiten 96|97, Originalblock I9; Listenheft Liste 92, PDF-Seite 97"
+      }
+    }
+  ],
+  "sameNumericalDirectionCategory": 293,
+  "limits": [
+    "Same Codex model family; shared errors possible; no correctness/neutrality/validity proof",
+    "Administrative identities and parallel gender/PVQ versions affect margins and repeated content",
+    "Equal numerical direction categories alone do not establish equal semantic poles"
+  ]
+}

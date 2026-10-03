@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T10:02:23.938912+00:00",
+  "updatedAtUtc": "2026-10-03T10:30:03.704016+00:00",
   "status": "RUNNING",
-  "phase": "Phase0: exakter Designvertrag, getrennte Item-Ersturteile und empirischer Plan",
+  "phase": "Phase0: Metadatenimport und getrennte Item-Ersturteile abgeschlossen; konkreter Analysevertrag und Software WIP",
   "coordinator": "/root",
   "worktree": "/home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003",
   "branch": "research/life-93-night-20261003",
@@ -22,13 +22,16 @@
     "DESIGN-003/v2 gezielte Quellen-/Zuschreibungskorrekturen nach zwei vollständigen frischen Nachberichten bestätigt",
     "CLAUDE-P02/v2 begrenzte Metadatenkorrektur nach zwei vollständigen Nachberichten bestätigt; tatsächlicherRead/Zugang nicht freigegeben",
     "RC-R01 independently verified under amended policy",
-    "E-v3 fixed-document context/card guard independently verified; E-R02 round2 and E2-S01/E2-R01 bounded closure"
+    "E-v3 fixed-document context/card guard independently verified; E-R02 round2 and E2-S01/E2-R01 bounded closure",
+    "DM-R01–04 bounded targeted correction passed; actual metadata-only import exit0, 2420DE/25strata/500PSUs; min4 condition fails in two strata",
+    "ITEM-FIRST-001 two independent initial ratings completed and preserved; all296 kappa0.8954479226455914; not accuracy/validity",
+    "ESS-SPLIT source author completed; fixed floor/ceil conditional split proposal, not plan approval"
   ],
   "openTasks": [
-    "Close P01–P13 using bounded source/method proposals and two separate initial ratings/transition reviews",
-    "Implement version-bound ordinal moment/design adapter and preregistered rules before ESS analysis",
-    "Empirical development then model freeze before B; comparisons remain withheld",
-    "Website/test-result design acceptance, Claude final control and real human tests remain pending"
+    "Integrate final core/screening and exact group source contract; close concrete plan and software before two major transition reviews",
+    "Freeze public plan/expectations after reviews; protected A empirical development then model freeze before B gate",
+    "One-time B, whole-DE transfer, allowed comparisons and result interpretation reviews",
+    "Methods/website from actual evidence; concrete design acceptance, Claude final control and real human tests remain pending"
   ],
   "dependencies": [
     {
@@ -91,7 +94,11 @@
     "foundationScientificPlanAcceptance": "BLOCKIERT",
     "claudeReadBoundary": "NICHT_GEPRÜFT",
     "haltBackup": "BESTANDEN",
-    "haltTechnical": "BESTANDEN"
+    "haltTechnical": "BESTANDEN",
+    "currentDesignMetadataTechnical": "BESTANDEN",
+    "currentEmpiricalTransition": "NICHT_GEPRÜFT",
+    "itemFirstJudgments": "BESTANDEN as completed separate judgments; not correctness",
+    "claudeCurrentPrerequisite": "IN_DIESER_PHASE_NICHT_ERFORDERLICH; final control outstanding"
   },
   "reviewReports": [
     "reports/audit-recherche/README.md",
@@ -153,7 +160,11 @@
     "reports/loop/reviews/INVENTORY-004-E-v2-repro.md",
     "reports/loop/reviews/REPRO-003-C-v2-code.md",
     "reports/loop/reviews/REPRO-003-C-resume-recheck.md",
-    "reports/loop/reviews/INVENTORY-004-E-v3-targeted.md"
+    "reports/loop/reviews/INVENTORY-004-E-v3-targeted.md",
+    "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md",
+    "reports/loop/reviews/ITEM-FIRST-001-methods.md",
+    "reports/loop/reviews/ITEM-FIRST-001-sources.md",
+    "reports/loop/reviews/ITEM-FIRST-001-sources-errata.md"
   ],
   "blockingFindingIds": [
     "R2-F03",
@@ -163,37 +174,37 @@
     "R5-F03",
     "F-P03",
     "F-P04",
-    "SW-ENV-004",
-    "DM-R01",
-    "DM-R02",
-    "DM-R03"
+    "SW-ENV-004"
   ],
   "repairRoundRegistry": "reports/loop/findings.json",
   "activeAgents": [
     {
-      "name": "/root/design_metadata_review",
-      "role": "targeted technical reviewer round1; no real inputs",
+      "name": "/root/ordinal_support_author",
+      "role": "author observed DWLS/design support, synthetic only",
       "writes": [
-        "outputs/loop/resume-design-meta-review-v2/",
-        "reports/loop/reviews/DESIGN-METADATA-001-v2-targeted.md"
+        "pipeline/ordinal/support.R",
+        "pipeline/ordinal/test-support.R",
+        "pipeline/ordinal/run_r.py",
+        "reports/loop/authors/ESS-ORDINAL-SUPPORT-proposal.md",
+        "outputs/loop/resume-ordinal-support/"
       ]
     },
     {
-      "name": "/root/item_first_sources",
-      "role": "independent item first rater1; original public corpus only",
+      "name": "/root/group_contract_sources",
+      "role": "completed group source contract; bounded core4.2 metadata supplement in progress",
       "writes": [
-        "outputs/loop/item-first-sources/",
-        "reports/loop/reviews/ITEM-FIRST-001-sources.csv",
-        "reports/loop/reviews/ITEM-FIRST-001-sources.md"
+        "data/core-integrated-4.2-binding.json",
+        "reports/loop/authors/ESS-CORE-VERSION-binding.md",
+        "outputs/loop/resume-group-contract/core-version/"
       ]
     },
     {
-      "name": "/root/item_first_methods",
-      "role": "independent item first rater2; original public corpus only",
+      "name": "/root/website_methods_author",
+      "role": "author existing approved project documentation only; source copy review and browser pending",
       "writes": [
-        "outputs/loop/item-first-methods/",
-        "reports/loop/reviews/ITEM-FIRST-001-methods.csv",
-        "reports/loop/reviews/ITEM-FIRST-001-methods.md"
+        "web/src/app/pages/project/",
+        "reports/loop/authors/WEBSITE-METHODS-resume-proposal.md",
+        "outputs/loop/resume-website-methods/"
       ]
     }
   ],
@@ -385,17 +396,40 @@
       "reviewStatus": "Autorenentwurf fertig, 47 begrenzte Autorenkontrollen laut gespeichertem Ergebnis. Originalmatch86 gefunden, keine unabhängige Erstprüfung/Rootannahme. Kein Root-Prüfpaket eingefroren; Autorindex lokal gesichert.",
       "authorReportSha256": "b25bd01ce8107b25ae19123b134a57c6b453347293463e0d8811f58fec0cd6fb",
       "executionStatus": "PAUSED_BY_USER"
+    },
+    {
+      "id": "DESIGN-METADATA-001",
+      "status": "DONE",
+      "scope": "Metadata-only technical access; actual output, not methodological design approval",
+      "reviewStatus": "v2 targeted89/89synthetic assertions; DM-R01–04 bounded closure round1",
+      "report": "reports/phasen/00-designmetadaten-2026-10-03.json"
+    },
+    {
+      "id": "ITEM-FIRST-001",
+      "status": "DONE",
+      "scope": "Two separate initial source judgments all296; same Codex family",
+      "report": "reports/loop/ITEM-FIRST-001-agreement.json",
+      "finalSelectionStatus": "proposal; needs pre-empirical reviews"
+    },
+    {
+      "id": "EMPIRICAL-PLAN-001",
+      "status": "WIP",
+      "scope": "concrete P01–P13 and protected access software",
+      "plan": "docs/empirie-plan-v1.entwurf.md",
+      "configuration": "data/analysevertrag.v1.entwurf.json",
+      "accessCode": "pipeline/empirical_access.py",
+      "reviewStatus": "not reviewed; no empirical access"
     }
   ],
-  "nextConcreteStep": "Targeted v2 metadata check then root-only private design audit; reconcile two item first ratings, fix executable P01–P13 plan and get two transition reviews before any answer analysis.",
+  "nextConcreteStep": "Complete observed-DWLS support and public source contracts; pin compact pre-empirical review package and obtain two fresh independent transition judgments. No response import or tags yet.",
   "checkpoint": {
     "lastLocalCommit": "git:HEAD",
-    "lastVerifiedRemoteCommit": "47fdba0e5464321745b894554e82a733ea91d75b",
-    "lastVerifiedPushAtUtc": "2026-10-03T09:43:56.406676+00:00",
+    "lastVerifiedRemoteCommit": "0f7f2f01afafec1fa39d277efd1a92832d2c3151",
+    "lastVerifiedPushAtUtc": "2026-10-03T10:03:16.456416+00:00",
     "pushStatus": "BESTANDEN",
     "intervalMinutes": 30,
     "noPushToMain": true,
-    "record": "reports/loop/push-026.json",
+    "record": "reports/loop/push-027.json",
     "haltRecord": "outputs/loop/halt-checkpoint/final-push.json",
     "receiptPolicy": "Commit/push receipt is written after actual remote comparison and included in the next checkpoint. git:HEAD resolves the current committed payload.",
     "finalCheckpointCommit": "git:HEAD",
@@ -403,7 +437,7 @@
     "savedPayloadCommit": "43ebe72c958e551920ea9b642c9c9d735e635f6c",
     "resumeBaseCommit": "610543fa34d3a9772403c8e38f34f23645d692d8"
   },
-  "scientificStatus": "Sources C/E targeted corrections complete in bounded documentation scope. Two source/method author proposals available. No empirical ESS development, B access, comparison exposure or scientific release acceptance.",
+  "scientificStatus": "Actual design metadata only. All9 core eligible in both independent source first judgments; selection/model still proposed. No A/B/C response interpretation, political data exposure or scientific release acceptance.",
   "technicalRecord": "reports/loop/technical-halt.json",
   "technicalRecords": [
     "reports/loop/technical-v2/browser.json",
@@ -469,6 +503,18 @@
       "record": "reports/loop/claude-protocol-001-execution.json",
       "response": "reports/loop/claude-protocol-001-result.json",
       "observedJudgment": "BLOCKIERT; missing prerequisites; no scientific claim"
+    },
+    {
+      "id": "ESS-INVENTORY-final",
+      "status": "author complete; transition review pending",
+      "report": "reports/loop/authors/ESS-INVENTORY-final-proposal.md",
+      "files": ["data/inventar.csv", "data/item-core-v1.json"]
+    },
+    {
+      "id": "ESS-GROUP-CONTRACT",
+      "status": "source author complete; methods implementation/review pending",
+      "report": "reports/loop/authors/ESS-GROUP-CONTRACT-proposal.md",
+      "files": ["data/group-source-contract.v1.entwurf.json"]
     }
   ],
   "incidents": [
@@ -540,5 +586,11 @@
     "family": "Codex; same model family; shared error sources possible",
     "claude": "deferred final control, never passed",
     "jurorRequired": false
+  },
+  "blockingFindingScopes": {
+    "F-P03": "excluded gender domain remains blocked; not nine core hypothesis",
+    "F-P04": "excluded climate domain remains blocked; not nine core hypothesis",
+    "SW-ENV-004": "historical installer/full-locality claim remains false; no new installer",
+    "META-SPLIT-001": "new conditional23strata/reserveC proposal awaits pre-empirical review"
   }
 }
