@@ -1,0 +1,9 @@
+{
+  "verifiedAtUtc": "2026-10-03T18:43:15.572670+00:00",
+  "branch": "research/life-93-night-20261003",
+  "localCommit": "3d247c36742f864721b89c748037ddbc2a84e2e2",
+  "remoteCommit": "3d247c36742f864721b89c748037ddbc2a84e2e2",
+  "method": "git ls-remote --exit-code origin refs/heads/research/life-93-night-20261003",
+  "status": "PASS",
+  "scope": "Technical payload and actual stop/check records saved; no scientific/human/release approval"
+}
