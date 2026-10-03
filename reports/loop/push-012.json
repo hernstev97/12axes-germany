@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "commit": "5641f8103a9de703c71d01fb2688ebcc5cf82c31",
+  "branch": "research/life-93-night-20261003",
+  "remote": "origin",
+  "verifiedRemoteCommit": "5641f8103a9de703c71d01fb2688ebcc5cf82c31",
+  "verifiedAtUtc": "2026-10-03T04:39:40.870283+00:00",
+  "status": "BESTANDEN",
+  "method": "git push then exact git ls-remote branch comparison",
+  "note": "WIP second schema correction frozen; independent recheck pending. No secrets/raw data/main push."
+}

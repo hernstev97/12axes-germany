@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAtUtc": "2026-10-03T04:30:31.485785+00:00",
+  "updatedAtUtc": "2026-10-03T04:53:58.661791+00:00",
   "findings": [
     {
       "id": "R1-F01",
@@ -939,7 +939,7 @@
       "repairRounds": 2,
       "status": "NICHT_GEPRÜFT",
       "blocks": ["Inventar/Itemauswahl"],
-      "correctionState": "D2–D19 Einzeltypen in Runde2 korrigiert;30Tests undZweicache-Reproduktion ausgeführt; zwei v3-Nachberichte und Juror offen.",
+      "correctionState": "Begrenzte Runde2-Typkorrektur durch beide v3-Berichte bestätigt; großer Juror offen; alle205Restzeilen weiterhin offen.",
       "verification": {
         "scope": "Geänderte Claim/Formel/Quelle plus konkrete Grenzen; keine empirische Freigabe",
         "executionRecord": "reports/loop/FOUNDATION-001-korrekturbericht.md",
@@ -949,7 +949,12 @@
           "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md"
         ],
         "boundedV2CorrectionCheck": "NICHT_BESTANDEN",
-        "currentManifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json"
+        "currentManifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json",
+        "boundedV3CorrectionCheck": "BESTANDEN",
+        "independentV3Reports": [
+          "reports/loop/reviews/FOUNDATION-001-v3-types.md",
+          "reports/loop/reviews/FOUNDATION-001-v3-repro.md"
+        ]
       },
       "history": [
         {
@@ -1430,8 +1435,22 @@
         "gebundene Kernelquelle1029–1033/1363–1377; run-r-direct.py38–55"
       ],
       "reason": "Konkreter Rechtevektor und Originalquelle tragen die Beanstandung; keine schädliche Geräteoperation beobachtet.",
-      "correctionState": "Separater begrenzter Korrekturautor aktiv; alte Protokolle unverändert.",
+      "correctionState": "Getrennte Autorenkorrektur und sichere Probe ausgeführt, neue v2-Fassung eingefroren; zwei unabhängige Nachprüfungen offen.",
       "blocks": ["unkorrigierte IOCTL-Schutzbehauptung"]
+    },
+    {
+      "id": "FOUNDATION-PROV-01",
+      "severity": "mittel",
+      "decision": "angenommen",
+      "status": "NICHT_GEPRÜFT",
+      "repairRounds": 1,
+      "problem": "Vier historische SourceInput-Hashes standen neben wiederverwendeten Livepfaden; v3-Dateikopien korrekt gebunden, pauschale157Hashgleichheit falsch.",
+      "origin": "reports/loop/reviews/FOUNDATION-001-v3-types.md; formal auch v3-repro bestätigt",
+      "evidence": "Beide vollständige v3-Berichte und originaler v3-Manifestbereich; exakte altenHashes stimmen mitv2/files.",
+      "reason": "Konkrete Pfad/Byte-Gegenprüfung, keineMehrheitsentscheidung.",
+      "correctionState": "Neuev4historischeInputpfade ausdrücklichv2/files;alle47v3Dateiwerteunverändert;158hashes und155bereitgestellteBytefelderdurchRootgeprüft; unabhängigeFormalprüfung/Juroraktiv.",
+      "blocks": ["Pauschale vollständigeSourceInput-Bindungderv3Livepfade"],
+      "decisionRecord": "reports/loop/FOUNDATION-001-nachpruefentscheidung.md"
     }
   ],
   "notes": "Ursprüngliche IDs und Entscheidungen erhalten. Frühere Korrekturen sind manifestgebunden; Anforderungen sind keine gescheiterten empirischen Tests."

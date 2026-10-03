@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LIFE-93 begrenztes KI-Urteil, Entwurf 0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "mode",
+    "task",
+    "scope",
+    "manifestSha256",
+    "status",
+    "execution",
+    "checks",
+    "findings",
+    "limits"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "mode": {
+      "enum": ["ERSTBEWERTUNG", "PR_REVIEW", "NACHPRUEFUNG", "SYNTHETISCHE_SKILLPRUEFUNG"]
+    },
+    "task": {
+      "$ref": "#/$defs/text"
+    },
+    "scope": {
+      "$ref": "#/$defs/text"
+    },
+    "manifestSha256": {
+      "type": ["string", "null"],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "$ref": "#/$defs/status"
+    },
+    "execution": {
+      "type": "object",
+      "required": [
+        "provider",
+        "model",
+        "modelEvidence",
+        "internalRevision",
+        "internalInstructions",
+        "tools",
+        "prompt",
+        "inputHashes"
+      ],
+      "properties": {
+        "provider": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modelEvidence": {
+          "$ref": "#/$defs/text"
+        },
+        "internalRevision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "internalInstructions": {
+          "const": null
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "prompt": {
+          "$ref": "#/$defs/text"
+        },
+        "inputHashes": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/text"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "scope", "status", "evidence", "requiredInScope"],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/text"
+          },
+          "scope": {
+            "$ref": "#/$defs/text"
+          },
+          "status": {
+            "$ref": "#/$defs/status"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/text"
+            }
+          },
+          "requiredInScope": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "BESTANDEN"
+                }
+              },
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "evidence": {
+                  "minItems": 1,
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          }
+        ]
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "problem",
+          "evidence",
+          "impact",
+          "severity",
+          "severityReason",
+          "correction",
+          "recheck",
+          "certainty",
+          "blocksScope",
+          "state"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/text"
+          },
+          "claim": {
+            "$ref": "#/$defs/text"
+          },
+          "problem": {
+            "$ref": "#/$defs/text"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/text"
+            },
+            "minItems": 1
+          },
+          "impact": {
+            "$ref": "#/$defs/text"
+          },
+          "severity": {
+            "enum": ["niedrig", "mittel", "erheblich"]
+          },
+          "severityReason": {
+            "$ref": "#/$defs/text"
+          },
+          "correction": {
+            "$ref": "#/$defs/text"
+          },
+          "recheck": {
+            "$ref": "#/$defs/text"
+          },
+          "certainty": {
+            "enum": ["BELEGT", "VERMUTUNG", "OFFENE_FRAGE"]
+          },
+          "blocksScope": {
+            "type": "boolean"
+          },
+          "state": {
+            "enum": ["OFFEN", "KORRIGIERT", "AUSSERHALB_SCOPE"]
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "state": {
+                  "enum": ["KORRIGIERT", "AUSSERHALB_SCOPE"]
+                }
+              },
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "blocksScope": {
+                  "const": false
+                }
+              },
+              "type": "object"
+            }
+          }
+        ]
+      }
+    },
+    "ratings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "limits": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    }
+  },
+  "$defs": {
+    "status": {
+      "enum": [
+        "BESTANDEN",
+        "NICHT_BESTANDEN",
+        "NICHT_GEPRÜFT",
+        "BLOCKIERT",
+        "IN_DIESER_PHASE_NICHT_ERFORDERLICH"
+      ]
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "BESTANDEN"
+          }
+        },
+        "type": "object"
+      },
+      "then": {
+        "properties": {
+          "manifestSha256": {
+            "type": "string"
+          },
+          "execution": {
+            "properties": {
+              "inputHashes": {
+                "minProperties": 1,
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "checks": {
+            "minItems": 1,
+            "allOf": [
+              {
+                "contains": {
+                  "properties": {
+                    "requiredInScope": {
+                      "const": true
+                    },
+                    "status": {
+                      "const": "BESTANDEN"
+                    }
+                  },
+                  "required": ["requiredInScope", "status"],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "not": {
+                  "contains": {
+                    "properties": {
+                      "requiredInScope": {
+                        "const": true
+                      },
+                      "status": {
+                        "not": {
+                          "const": "BESTANDEN"
+                        }
+                      }
+                    },
+                    "required": ["requiredInScope", "status"],
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            ],
+            "type": "array"
+          },
+          "findings": {
+            "not": {
+              "contains": {
+                "properties": {
+                  "blocksScope": {
+                    "const": true
+                  },
+                  "state": {
+                    "const": "OFFEN"
+                  }
+                },
+                "required": ["blocksScope", "state"],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

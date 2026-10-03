@@ -286,29 +286,62 @@
       "returnedTaskName": "/root/foundation_v3_repro",
       "fork_turns": "none",
       "kind": "independent-foundation-recheck",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/FOUNDATION-001/v3/manifest.json",
       "report": "reports/loop/reviews/FOUNDATION-001-v3-repro.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im eigenen Bericht, frischer begrenzter Kontext"
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im eigenen Bericht, frischer begrenzter Kontext",
+      "reportSha256": "9c75013915a4e2006b08bd79f3501969b2bd24d800fd02223d1b32851e99a586"
     },
     {
       "task_name": "software001_correction",
       "returnedTaskName": "/root/software001_correction",
       "fork_turns": "none",
       "kind": "bounded-correction-author",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "report": "reports/loop/SOFTWARE-001-korrekturbericht.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im Bericht; kennt beide abgeschlossene Erstberichte"
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im Bericht; kennt beide abgeschlossene Erstberichte",
+      "reportSha256": "e1c98ef0f0803ec14d0c78e6aa0b9bbaff0329d6a09f493ffc97a1af3002090e"
     },
     {
       "task_name": "prep_v3_schema",
       "returnedTaskName": "/root/prep_v3_schema",
       "fork_turns": "none",
       "kind": "independent-preparation-recheck",
-      "status": "RUNNING",
+      "status": "COMPLETED",
       "manifest": "reports/loop/packages/PREP-001/v3/manifest.json",
       "report": "reports/loop/reviews/PREP-001-v3-schema.md",
-      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im eigenen Bericht; frischer begrenzter Kontext"
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag im eigenen Bericht; frischer begrenzter Kontext",
+      "reportSha256": "b3a1222fec7003388c15fab1404897f0d88beda1d7e28ff180bf168600019c97"
+    },
+    {
+      "task_name": "foundation_juror",
+      "returnedTaskName": "/root/foundation_juror",
+      "fork_turns": "none",
+      "kind": "independent-big-audit-juror",
+      "status": "RUNNING",
+      "report": "reports/loop/reviews/FOUNDATION-001-juror.md",
+      "manifest": "reports/loop/packages/FOUNDATION-001/v4/manifest.json",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext"
+    },
+    {
+      "task_name": "prep_v3_binding",
+      "returnedTaskName": "/root/prep_v3_binding",
+      "fork_turns": "none",
+      "kind": "independent-preparation-and-formal-reference-recheck",
+      "status": "RUNNING",
+      "report": "reports/loop/reviews/PREP-001-v3-binding.md",
+      "manifest": "reports/loop/packages/PREP-001/v3/manifest.json",
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext"
+    },
+    {
+      "task_name": "inventory002_ab_author",
+      "returnedTaskName": "/root/inventory002_ab_author",
+      "fork_turns": "none",
+      "kind": "public-source-author",
+      "status": "RUNNING",
+      "report": "reports/loop/authors/INVENTORY-002-AB.md",
+      "manifest": null,
+      "actualStartPrompt": "Vollständiger tatsächlicher Startauftrag wortgetreu im eigenen Bericht; frischer begrenzter Kontext"
     }
   ],
   "activeAdditionalAuthors": [
@@ -344,6 +377,19 @@
       "message": "Du bist ein abgegrenzter Methoden-/Statistikautor für LIFE-93, kein Reviewer. CWD ausdrücklich /home/stevenh/projects/.worktrees/12axes-germany/life93-night-20261003. Lies AGENTS, docs/arbeitsloop.md, dauerhaften Auftrag, gesichertes Issue und docs/analyseplan.md, docs/analyseanforderungen.md sowie Quellen-/Belegregister. Keine aktuellen Reviewerurteile oder anderen Autorenbewertungen. Keine ESS-Rohantworten, Personenfelder, B, Wahl-/LR-Werte, Verteilungen, Portal-Analysis. Nur offizielles Design-/Variablenmetadatenmaterial und Primärmethodenliteratur. Erstelle docs/analyseplan-methoden.entwurf.md, eigenes data/methoden-quellen.json und reports/loop/authors/LOOP-002-methoden.md; ggf ausdrücklich synthetische Kalibrierungsskripte unter pipeline/synthetic/ und aggregate synthetische Resultate unter reports/loop/synthetic/. Bestehenden Analyseplan/Quellenkatalog/andere gemeinsame Dateien nicht ändern. Ziel: P01–P13 zu konkreten, begründeten, prüfbaren Vorschlägen ausarbeiten, nicht pauschale Konventionen. Zufallssplit mit Clusterabhängigkeit, Gewichtung/Design in ordinaler EFA/CFA und Invarianz, fehlende Werte und erlaubte Itemmasken, beobachteter 0–1-Score vs latenter, passende Reliabilität und persönliche Unsicherheit, designgerechte Referenzunsicherheit/gemeinsame Kovarianz, Itemdominanz/Stabilität und Mindestfallzahl plus Präzision mit Konsequenzen. Falls begründeter Ausschluss einer optionalen Rangfunktion/Teilantworten/PVQ einfacher tragfähig ist, als zu prüfende Begrenzung kennzeichnen, keine vorgeschriebenen Kernfunktionen oder Itemauswahl eigenmächtig ändern. Konkrete Parameter, Eingaben, Regel, Folge bei Scheitern/Nichtprüfbarkeit, Annahmen, Primärfundstellen und Softwarefähigkeit je Entscheidung. Überprüfe tatsächlich unterstützte Tools/Software an offiziellen Dokumenten; nichts global installieren, keine Sicherheitsumgehung. Reale Verfahren nicht als bestanden, synthetische Simulationen nur als Kalibrierungsbeleg unter dokumentierten Szenarien. Fehlende Evidenz/Konflikte ausdrücklich offen; keine passende Methode erfinden, nur um Tabelle fertig zu füllen. Originalquellen vollständig im behaupteten Umfang selbst lesen; nicht zugängliche Volltexte unvollständig geprüft. Aussage-IDs L-METH-001 etc., DOI/URL, Fundstelle/Geltungsbereich/Gegenbeleg und Cachehash. Caches ausschließlich outputs/loop/methods/, keine Fremdvolltexte in Git. Im Report festhalten, ob jeder Planparameter wirklich entscheidungsreif ist und was konkret fehlt; kein öffentlicher Tag/empirischer Analysebeginn oder wissenschaftliche Freigabe. Keine weitere Agents, kein Commit/Push und keine Website oder zentralen Zustandsdateien ändern. Konkrete substanzielle Artefakte erstellen und mit Hashes melden.",
       "report": "reports/loop/authors/LOOP-002-methoden.md",
       "reportSha256": "efd050a592ca11444cfb8bb8a39d596690bdd74f8219fd4661f4a86e6cc3af53"
+    }
+  ],
+  "actualExternalModelCalls": [
+    {
+      "id": "CLAUDE-PROTOCOL-001",
+      "method": "installed CLI fresh restricted print process",
+      "record": "reports/loop/claude-protocol-001-execution.json",
+      "prompt": "reports/loop/claude-protocol-001-auftrag.txt",
+      "response": "reports/loop/claude-protocol-001-result.json",
+      "scope": "One artificial negative prerequisite case, not required research first rating",
+      "model": "claude-opus-5-5",
+      "auxiliaryModelObserved": "claude-haiku-4-5-20251001",
+      "internalRevision": null
     }
   ]
 }

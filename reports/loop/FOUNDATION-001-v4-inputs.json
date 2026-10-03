@@ -1,0 +1,1297 @@
+{
+  "paths": [
+    "AGENTS.md",
+    "docs/auftrag-life-93-2026-10-03.md",
+    "docs/arbeitsloop.md",
+    "reports/loop/issue-2026-10-03.md",
+    "reports/loop/foundation-pruefauftrag.md",
+    "docs/analyseplan.md",
+    "docs/analyseanforderungen.md",
+    "docs/pruefregeln.md",
+    "docs/lizenzen.md",
+    "docs/datenlage.md",
+    "docs/quellen.json",
+    "docs/belegregister.md",
+    "docs/themenabdeckung.entwurf.md",
+    "docs/erwartungsmodell.entwurf.md",
+    "docs/analyseplan-methoden.entwurf.md",
+    "data/inventar.entwurf.csv",
+    "data/inventar.provenienz.json",
+    "data/theorie-quellen.json",
+    "data/methoden-quellen.json",
+    "pipeline/inventar.py",
+    "pipeline/synthetic/methoden_kalibrierung.py",
+    "reports/loop/synthetic/LOOP-002-methoden-kalibrierung.json",
+    "reports/loop/authors/LOOP-001-inventar.md",
+    "reports/loop/authors/LOOP-001-theorie.md",
+    "reports/loop/authors/LOOP-002-methoden.md",
+    "reports/loop/FOUNDATION-001-entscheidungen.md",
+    "reports/loop/FOUNDATION-001-korrekturbericht.md",
+    "reports/loop/FOUNDATION-001-v2-pruefauftrag.md",
+    "reports/loop/authors/FOUNDATION-001-inventar-korrektur.md",
+    "pipeline/tests/test_inventar.py",
+    "pipeline/synthetic/planvertraege.py",
+    "pipeline/tests/test_planvertraege.py",
+    "docs/konstruktakten.entwurf.md",
+    "docs/deutschland-literatur.entwurf.md",
+    "reports/loop/reviews/FOUNDATION-001-sources.md",
+    "reports/loop/reviews/FOUNDATION-001-politics.md",
+    "reports/loop/reviews/FOUNDATION-001-methods.md",
+    "reports/loop/reviews/FOUNDATION-001-neutrality.md",
+    "reports/loop/reviews/FOUNDATION-001-repro.md",
+    "reports/loop/authors/LOOP-001-inventar-auftrag.txt",
+    "reports/loop/authors/LOOP-001-theorie-auftrag.txt",
+    "reports/loop/authors/LOOP-002-methoden-auftrag.txt",
+    "reports/loop/reviews/FOUNDATION-001-v2-sources-politics.md",
+    "reports/loop/reviews/FOUNDATION-001-v2-methods-repro.md",
+    "reports/loop/FOUNDATION-001-runde2-pruefauftrag.md",
+    "reports/loop/FOUNDATION-001-runde2-entscheidungen.md",
+    "reports/loop/FOUNDATION-001-runde2-korrekturbericht.md",
+    "reports/loop/reviews/FOUNDATION-001-v3-types.md",
+    "reports/loop/reviews/FOUNDATION-001-v3-repro.md",
+    "reports/loop/FOUNDATION-001-nachpruefentscheidung.md"
+  ],
+  "metadata": {
+    "packageId": "FOUNDATION-001-v3",
+    "codeCommit": "5641f8103a9de703c71d01fb2688ebcc5cf82c31",
+    "inputNotice": "Frozen bytes override commit; no raw source opened",
+    "analysisPlanVersion": "Entwurf0.2 plus method/theory/inventory author drafts 2026-10-03",
+    "rawData": {
+      "version": "ESS11 edition4.2 CSV local, not read",
+      "sha256": "4b0bfa73fa86bcf9f868b0a6145f96504a40d7e3f2deeb3e822555993ab32dc8",
+      "hashVerificationScope": "Prior bytehash only, not official-download identity"
+    },
+    "metadataVersions": {
+      "questionnaire": "DE ESS11 2023",
+      "showcards": "DE ESS11 2023",
+      "codebook": "4.1",
+      "countryReport": "4.0",
+      "weightingGuide": "1.2"
+    },
+    "modelConfiguration": null,
+    "software": {
+      "Python": "3.14.7",
+      "Poppler": "26.08.0",
+      "Rscript": "not installed",
+      "Mplus": "not installed"
+    },
+    "criteria": "reports/loop/FOUNDATION-001-v2-pruefauftrag.md",
+    "scientificPrerequisites": "Claude initial ratings/reviews, setup, full inventory and decisive plan still open; no data access authorised by this audit.",
+    "previousManifestSha256": "b590aaa05137b86e44854468324c85e5aef34718677216db18aeaefaf8d83df4",
+    "acceptanceScope": "Corrections/draft source/method contracts, no empirical/phase acceptance",
+    "sourceInputs": [
+      {
+        "sourceId": "ESS11-DE-QUESTIONNAIRE",
+        "path": "outputs/loop/theory/ESS11_questionnaires_DE.pdf",
+        "kind": "original_pdf",
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "bytes": 1304009,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "ESS11-DE-QUESTIONNAIRE",
+        "path": "outputs/loop/theory/ESS11_questionnaires_DE.layout.txt",
+        "kind": "poppler_text",
+        "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+        "bytes": 213698,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "ESS11-CODEBOOK",
+        "path": "outputs/loop/theory/ESS11_appendix_a7_e04_1.pdf",
+        "kind": "original_pdf",
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "bytes": 2162997,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "ESS11-CODEBOOK",
+        "path": "outputs/loop/theory/ESS11_appendix_a7_e04_1.layout.txt",
+        "kind": "poppler_text",
+        "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+        "bytes": 1074155,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "THEO-GG-20261003",
+        "path": "outputs/loop/theory/GG-2026.html",
+        "kind": "original_html",
+        "sha256": "8df99989fc820e2d3f6c11be5a208fc84dc8edb79b60fd53826ab83fac8a7eca",
+        "bytes": 305445,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "8df99989fc820e2d3f6c11be5a208fc84dc8edb79b60fd53826ab83fac8a7eca",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "THEO-GG-20261003",
+        "path": "outputs/loop/theory/GG-2026.txt",
+        "kind": "decoded_iso8859_1_text",
+        "sha256": "30dfeb86c3458702021078829e778767b312b959f2409cf7f2f5e10d7ff3fe09",
+        "bytes": 192141,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "30dfeb86c3458702021078829e778767b312b959f2409cf7f2f5e10d7ff3fe09",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "GLES-RCS-2025",
+        "path": "outputs/loop/theory/GLES-RCS-2025.web-extract.json",
+        "kind": "web_tool_original_text_extract",
+        "sha256": "df0403d0314b5c960696fe7b653e16a3e56b1d2448686da1d04ef91a071b3cac",
+        "bytes": 22479,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "df0403d0314b5c960696fe7b653e16a3e56b1d2448686da1d04ef91a071b3cac",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "GLES-RCS-2025",
+        "path": "outputs/loop/theory/GLES-RCS-2025.html",
+        "kind": "failed_http_403_response",
+        "sha256": "c3bc9e0b2de1246cb4c59c48216ed9304b640e182add1ffb8115d8cb76804411",
+        "bytes": 5767,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "c3bc9e0b2de1246cb4c59c48216ed9304b640e182add1ffb8115d8cb76804411",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "KRIESI-ETAL-2006",
+        "path": "outputs/loop/theory/KRIESI-ETAL-2006.theory-web-extract.json",
+        "kind": "web_tool_original_text_extract",
+        "sha256": "cf24c9e69dbe6cc317185cf211a65fce5fccc3cb5548e354c6c513615d7a27b3",
+        "bytes": 17889,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "cf24c9e69dbe6cc317185cf211a65fce5fccc3cb5548e354c6c513615d7a27b3",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "KRIESI-ETAL-2006",
+        "path": "outputs/loop/theory/KRIESI-ETAL-2006.web-extract.json",
+        "kind": "web_tool_original_text_extract",
+        "sha256": "01825d45a3fb7608adaea768d2963d6f03fc24ee5232dfa9f17b003cb9e0e07d",
+        "bytes": 31771,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "01825d45a3fb7608adaea768d2963d6f03fc24ee5232dfa9f17b003cb9e0e07d",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "KRIESI-ETAL-2006",
+        "path": "outputs/loop/theory/KRIESI-ETAL-2006.html",
+        "kind": "failed_http_403_response",
+        "sha256": "4c7d02c6066cd8085aeee3c5c7aa6b95394d8759bbbec795d7a7c8f83e951c7e",
+        "bytes": 5686,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "4c7d02c6066cd8085aeee3c5c7aa6b95394d8759bbbec795d7a7c8f83e951c7e",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "DEVRIES-HAKHVERDIAN-LANCEE-2013",
+        "path": "outputs/loop/theory/DEVRIES-HAKHVERDIAN-LANCEE-2013.pdf",
+        "kind": "author_hosted_publisher_pdf",
+        "sha256": "92f4f928381ddb5d5f2a02b4a04206428319b061db3818fe7af6efe5588ec3d5",
+        "bytes": 368825,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "92f4f928381ddb5d5f2a02b4a04206428319b061db3818fe7af6efe5588ec3d5",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "EVANS-HEATH-LALLJEE-1996",
+        "path": "outputs/loop/theory/EVANS-HEATH-LALLJEE-1996.pdf",
+        "kind": "academic_hosted_publisher_pdf",
+        "sha256": "d683a1091150c77ba83fd1fc422c8fb9f25c1b1d37bdfe890915d65dbf53e293",
+        "bytes": 2187448,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "d683a1091150c77ba83fd1fc422c8fb9f25c1b1d37bdfe890915d65dbf53e293",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "MALKA-LELKES-SOTO-2019",
+        "path": "outputs/loop/theory/MALKA-LELKES-SOTO-2019.pdf",
+        "kind": "author_hosted_first_view_pdf",
+        "sha256": "99d1fac8556c76451d4379937c085088c27bafed8d2d9b853a31bb25d6008c1a",
+        "bytes": 1028283,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "99d1fac8556c76451d4379937c085088c27bafed8d2d9b853a31bb25d6008c1a",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "CONVERSE-1964-2006",
+        "path": "outputs/loop/theory/CONVERSE-1964-2006.pdf",
+        "kind": "university_hosted_reprint_pdf",
+        "sha256": "aa6561226163383de80f100c42c7c90775ad61e810d7de81dae63c4cb2aec994",
+        "bytes": 4213899,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "aa6561226163383de80f100c42c7c90775ad61e810d7de81dae63c4cb2aec994",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "SCHWARTZ-ESS-VALUES",
+        "path": "outputs/loop/theory/SCHWARTZ-ESS-VALUES.pdf",
+        "kind": "official_ess_pdf",
+        "sha256": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+        "bytes": 411213,
+        "publishCopy": false,
+        "actualSha256AtFreeze": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "ESS-WEIGHTS",
+        "path": "outputs/loop/methods/ESS-WEIGHTS.pdf",
+        "sha256": "6b9c04b70b8f231de1b9040e4afcfc9387fc95e4a1d15ec0496aa7638f8528e5",
+        "bytes": 200908,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "6b9c04b70b8f231de1b9040e4afcfc9387fc95e4a1d15ec0496aa7638f8528e5",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "ESS11-COUNTRY",
+        "path": "outputs/loop/methods/ESS11-COUNTRY.pdf",
+        "sha256": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+        "bytes": 2510948,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "007be2a877890997332f227ee7a21229bdeb3a991c7d17d4d0dd1b38a519d850",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "ASPAROUHOV-2005",
+        "path": "outputs/loop/methods/ASPAROUHOV-2005.pdf",
+        "sha256": "35461f784f7a4cd58091132110df0d71faf736321b51f80c29be263132043468",
+        "bytes": 312246,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "35461f784f7a4cd58091132110df0d71faf736321b51f80c29be263132043468",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "MPLUS-15",
+        "path": "outputs/loop/methods/MPLUS-15.html",
+        "sha256": "7ccae8a2871cf5698be27096688998128909a295e0392a8c4226f39876b2fc60",
+        "bytes": 318955,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "7ccae8a2871cf5698be27096688998128909a295e0392a8c4226f39876b2fc60",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "MPLUS-16",
+        "path": "outputs/loop/methods/MPLUS-16.html",
+        "sha256": "a3ec4f2bc2821c919e18dfe6c7251e5c06f95e68c2120badab7dc29487f84117",
+        "bytes": 268595,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "a3ec4f2bc2821c919e18dfe6c7251e5c06f95e68c2120badab7dc29487f84117",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "MPLUS-1",
+        "path": "outputs/loop/methods/MPLUS-1.html",
+        "sha256": "ba483d7d0ae90b7fc0a07b5a51e55616c92c7f4fb7b5c0f657270edf4a951102",
+        "bytes": 42977,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "ba483d7d0ae90b7fc0a07b5a51e55616c92c7f4fb7b5c0f657270edf4a951102",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "LAVAAN-CATEGORICAL",
+        "path": "outputs/loop/methods/LAVAAN-CATEGORICAL.html",
+        "sha256": "a542339d7c76fee89aba243f98e149c7e4cb0253d9e93f6a95023f7c8ecb9d02",
+        "bytes": 34308,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "a542339d7c76fee89aba243f98e149c7e4cb0253d9e93f6a95023f7c8ecb9d02",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "LAVAAN-0.7",
+        "path": "outputs/loop/methods/LAVAAN-0.7.html",
+        "sha256": "f33d679703f935f10c0b1a7b153eb54c4473ddf890a0f06d1c6ff062b231c6cc",
+        "bytes": 30176,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "f33d679703f935f10c0b1a7b153eb54c4473ddf890a0f06d1c6ff062b231c6cc",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "TSE-LAI-ZHANG-HTML",
+        "path": "outputs/loop/methods/TSE-LAI-ZHANG-HTML.html",
+        "sha256": "7b4589491d934487f6bde3f8b43d40fdcbd3033dfa378c44f750f5416bed33cf",
+        "bytes": 557666,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "7b4589491d934487f6bde3f8b43d40fdcbd3033dfa378c44f750f5416bed33cf",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "WU-ESTABROOK-ORIGINAL",
+        "path": "outputs/loop/methods/WU-ESTABROOK-ORIGINAL.html",
+        "sha256": "32cf963946fa00970a18612d37c5bbc49347fd244329a1ee832b82eea9575730",
+        "bytes": 374244,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "32cf963946fa00970a18612d37c5bbc49347fd244329a1ee832b82eea9575730",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "SEMTOOLS-MANUAL",
+        "path": "outputs/loop/methods/SEMTOOLS-MANUAL.pdf",
+        "sha256": "486d54175cd873598a414a2a32e43eaf86a29c8ddb584579b8a45df15c3a8a9e",
+        "bytes": 658256,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "486d54175cd873598a414a2a32e43eaf86a29c8ddb584579b8a45df15c3a8a9e",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "GREEN-YANG-ABSTRACT",
+        "path": "outputs/loop/methods/GREEN-YANG-ABSTRACT.html",
+        "sha256": "e99ae06dbe51b1350c8550aac3c43ed14f1652cc2a6f9d9c13cf71c079d70a0e",
+        "bytes": 828075,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "e99ae06dbe51b1350c8550aac3c43ed14f1652cc2a6f9d9c13cf71c079d70a0e",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "LUMLEY",
+        "path": "outputs/loop/methods/LUMLEY.pdf",
+        "sha256": "9ad8e83a56830607ff338de5b2076c3bd25c67670d49fd663b17998eb257991a",
+        "bytes": 503960,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "9ad8e83a56830607ff338de5b2076c3bd25c67670d49fd663b17998eb257991a",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "SURVEY-MANUAL",
+        "path": "outputs/loop/methods/SURVEY-MANUAL.pdf",
+        "sha256": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c",
+        "bytes": 547598,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "87b0ea7088e0dfd587b4c4efacd38db68db8268a986a130c1a868ce2088bac2c",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "RAO-WU-YUE",
+        "path": "outputs/loop/methods/RAO-WU-YUE.pdf",
+        "sha256": "0ef8606ccf283ce73cedca4e9d2062713ccd19c937c074ef496f98d947e19cc7",
+        "bytes": 526012,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "0ef8606ccf283ce73cedca4e9d2062713ccd19c937c074ef496f98d947e19cc7",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "WOLF-ETAL",
+        "path": "outputs/loop/methods/WOLF-ETAL.html",
+        "sha256": "9b42aae1b14918b7a993ab5d25f10c18bb409e8d336ba2c04efcf36b5031690e",
+        "bytes": 179741,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "9b42aae1b14918b7a993ab5d25f10c18bb409e8d336ba2c04efcf36b5031690e",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "SCHWARTZ",
+        "path": "outputs/loop/methods/SCHWARTZ.pdf",
+        "sha256": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+        "bytes": 411213,
+        "kind": "cached_public_original_or_explicit_abstract",
+        "actualSha256AtFreeze": "b5aaa9e2f2acdb6de41efc1b9bbaa34285b89d65a5f935391b67c7b367e1bf39",
+        "hashMatches": true
+      },
+      {
+        "sourceId": "ESS11-DE-QUESTIONNAIRE",
+        "path": "outputs/loop/inventory/ESS11_questionnaires_DE.pdf",
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "actualSha256AtFreeze": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "hashMatches": true,
+        "kind": "official_original_document",
+        "publishCopy": false
+      },
+      {
+        "sourceId": "ESS11-DE-SHOWCARDS",
+        "path": "outputs/loop/inventory/ESS11_showcards_DE.pdf",
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "actualSha256AtFreeze": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "hashMatches": true,
+        "kind": "official_original_document",
+        "publishCopy": false
+      },
+      {
+        "sourceId": "ESS11-CODEBOOK",
+        "path": "outputs/loop/inventory/ESS11_appendix_a7_e04_1.pdf",
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "actualSha256AtFreeze": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "hashMatches": true,
+        "kind": "official_original_document",
+        "publishCopy": false
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory/check-build.json",
+        "sha256": "4f5e9ff660c3ca9bbc78af1787fe167d0de579c56cbf8bfc2044b6fc3dccc1e7",
+        "bytes": 41025,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory/check-current.json",
+        "sha256": "4f5e9ff660c3ca9bbc78af1787fe167d0de579c56cbf8bfc2044b6fc3dccc1e7",
+        "bytes": 41025,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory/visual-checks.json",
+        "sha256": "57475bfd3c9b476bceec6770dd82d0150b2acb1fcc6bd16e7c21cf3de0ea6a2d",
+        "bytes": 11989,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/theory/catalog-parsed.json",
+        "sha256": "328e2d5f0b25ba804d206b23565e64e9f8fab1188edee372905cdaf239865694",
+        "bytes": 45741,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/theory/structural-check.json",
+        "sha256": "666b9c7ea7df36f337596d35f7392e6ce2ba36da4902d582a66be7afa2629d6f",
+        "bytes": 332,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/evidence-hashes.json",
+        "sha256": "e0964a48dea52ac271b6b4fb0c850fe88037d52fc43a0f36894917c08526f129",
+        "bytes": 15079,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/foundation-correction/verification.json",
+        "sha256": "7f526036dfe8a05e5885abddaf9e19bec3bfd794bddcb9243941e28573079799",
+        "bytes": 2387,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/foundation-correction/plan-contracts.log",
+        "sha256": "f9d859c63b186df7321a4a00d66ce94add0d0de53bf41c05414e63fcd406495a",
+        "bytes": 883,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/foundation-correction/method-simulation.log",
+        "sha256": "92995ed86b93cd6844e993a0a5fcc940bcf10c78c5d4f7721a106978d90461a2",
+        "bytes": 193,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/foundation-correction/reports/loop/synthetic/LOOP-002-methoden-kalibrierung.json",
+        "sha256": "13ce08142ece64920ee6313d89764bf276a17d027c9b813c3d458fcafb4d05e9",
+        "bytes": 12546,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/theory-correction/find-001.json",
+        "sha256": "25f42f05b38911d34b94aefbc81342633625f182803aec761a12af8f87716071",
+        "bytes": 17679,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/theory-correction/find-002.json",
+        "sha256": "7f464af964ad78d518eab5865940b4b9eccff2b91c7d471534ec98b8e7b0fce7",
+        "bytes": 19001,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/foundation-politics/ESS11-gender-module-design-final.pdf",
+        "sha256": "091bea628cec0b15a84f66204e06ca4136b0dd9c799b45fea2b51fb5f2cb52a7",
+        "bytes": 624216,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/build-clean.log",
+        "sha256": "013e57b311ba041c9a0574682a2307c271a7b58a42f1ebd74cd144779899861a",
+        "bytes": 136,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/build-target.log",
+        "sha256": "013e57b311ba041c9a0574682a2307c271a7b58a42f1ebd74cd144779899861a",
+        "bytes": 136,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/check-target.log",
+        "sha256": "84b1ebdc6f8699e0a9d9b065b8333519daae0a6fa9495e8bebc598729318404d",
+        "bytes": 71,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/ESS11_appendix_a7_e04_1.pdf",
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "bytes": 2162997,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/ESS11_questionnaires_DE.pdf",
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "bytes": 1304009,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/ESS11_showcards_DE.pdf",
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "bytes": 2210799,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/check-build.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/check-current.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/codebook.layout.txt",
+        "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+        "bytes": 1074155,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/ess-disclaimer.html",
+        "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+        "bytes": 168665,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/questionnaire.bbox.html",
+        "sha256": "cf596357ed4ea4da014e3f49a45ea302298ebf9dbceb2752b1aeed1f14e77e0d",
+        "bytes": 2637070,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/clean-public-cache/showcards.layout.txt",
+        "sha256": "525461ad810e078a0b7f63e381be50a99ad35551f435cd6988ddde0f2b01dc51",
+        "bytes": 94266,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/disclaimer.original-text.txt",
+        "sha256": "105686364f62b9216fb37b4fd2c8449826bb670ba112f494a71ab052b51c7363",
+        "bytes": 36286,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/fallback-before.json",
+        "sha256": "2052c42d94dde6ec66813568451ff407bd5a349796d87bde4ba0c99c0707c11c",
+        "bytes": 261980,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/fetch-clean.log",
+        "sha256": "8d4eea722c2e19d7c4db3510bfd4afd725aef299497e49979a5bbaf8cfeed87e",
+        "bytes": 1496,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/frozen-identity-end.json",
+        "sha256": "1a147b020c1f1c4cb0712068c1c1a7fe44b5d459477b4e95e1970912a2a616d9",
+        "bytes": 7831,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/input-hashes.json",
+        "sha256": "001e6effe024b92f961b5cb5c4338c5d6101e849d014b28b9d330be5adcfe1c0",
+        "bytes": 3264,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/original-reading-pages.txt",
+        "sha256": "e98ed24913a435f299823565c45fbc740e207aeb0738261f63fdbc20d56e1426",
+        "bytes": 49561,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/questionnaire-p13.png",
+        "sha256": "e0db061e7d99daa15af969725d7d5000b66e64154647e855af953529fb292f16",
+        "bytes": 87866,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/questionnaire-p37.png",
+        "sha256": "5af8d12f2af1b9c8684a2715096d61ae16f087a94d089bc5aa382253f3efc627",
+        "bytes": 165037,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/questionnaire-p48.png",
+        "sha256": "60e3f6152386543b656204b2e93a55ac469b8afb365a58860c748859a9dd4e41",
+        "bytes": 140903,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/questionnaire.layout.txt",
+        "sha256": "c466be8a95f486c4e5913d769942477fa618575531d6e6a27e42c69e342af224",
+        "bytes": 213698,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/rebuilt.csv",
+        "sha256": "89d2c4611d44faee3e44d27e66e5e68550a5611112cf2cf63f96fa5d8a8b84f3",
+        "bytes": 2375704,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/rebuilt.provenance.json",
+        "sha256": "89c75a95f2da2610396d25fd7428f51d213a71446a5abba50eed73a28fd4ecb7",
+        "bytes": 70318,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-build.log",
+        "sha256": "013e57b311ba041c9a0574682a2307c271a7b58a42f1ebd74cd144779899861a",
+        "bytes": 136,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-check.log",
+        "sha256": "84b1ebdc6f8699e0a9d9b065b8333519daae0a6fa9495e8bebc598729318404d",
+        "bytes": 71,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-fetch.log",
+        "sha256": "8d4eea722c2e19d7c4db3510bfd4afd725aef299497e49979a5bbaf8cfeed87e",
+        "bytes": 1496,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/ESS11_appendix_a7_e04_1.pdf",
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "bytes": 2162997,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/ESS11_questionnaires_DE.pdf",
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "bytes": 1304009,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/ESS11_showcards_DE.pdf",
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "bytes": 2210799,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/check-build.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/check-current.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/codebook.layout.txt",
+        "sha256": "4c4b95a742c5570591ed447e7f1d6c1d6a3a8d6cb5c83b0e45bd76487e4ce308",
+        "bytes": 1074155,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/ess-disclaimer.html",
+        "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+        "bytes": 168665,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/questionnaire.bbox.html",
+        "sha256": "cf596357ed4ea4da014e3f49a45ea302298ebf9dbceb2752b1aeed1f14e77e0d",
+        "bytes": 2637070,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-public-cache/showcards.layout.txt",
+        "sha256": "525461ad810e078a0b7f63e381be50a99ad35551f435cd6988ddde0f2b01dc51",
+        "bytes": 94266,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay-result.json",
+        "sha256": "9d2c5c90197f2abe337c884b84e3ad9969f790f3a1357ec3c56d3309ccb6e1d8",
+        "bytes": 40376,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay.csv",
+        "sha256": "89d2c4611d44faee3e44d27e66e5e68550a5611112cf2cf63f96fa5d8a8b84f3",
+        "bytes": 2375704,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/replay.provenance.json",
+        "sha256": "89c75a95f2da2610396d25fd7428f51d213a71446a5abba50eed73a28fd4ecb7",
+        "bytes": 70318,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/report-format-check.log",
+        "sha256": "17aa973d3f004560237d9a95171210b0671deff23d61628eecf7322ff5938f20",
+        "bytes": 66,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/report-format.log",
+        "sha256": "c365332067fafdad2db884b9bd574ca5d72c8ba81ef3d2e267094869b78f0781",
+        "bytes": 63,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/reproduce.log",
+        "sha256": "47d06bc6a98b6d82741d3ef27c377323eb57e0d6dff4b7eeb17f504094548b00",
+        "bytes": 665,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/reproduce.py",
+        "sha256": "28400f431aed8b55ca64a7b1f7c3db6e0095ee3af4ce27db0985b73a29871763",
+        "bytes": 3443,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/reproduction-comparison.json",
+        "sha256": "fd018984cec94a0ca83533ca682706636679b82579d8840af53dd6bbac0564c0",
+        "bytes": 177049,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/showcards-p97.png",
+        "sha256": "cf36d12e438a9a7bee165e5790f82cc4ec3e7703ccff87784a245e5c784e8286",
+        "bytes": 28604,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/showcards.layout.txt",
+        "sha256": "525461ad810e078a0b7f63e381be50a99ad35551f435cd6988ddde0f2b01dc51",
+        "bytes": 94266,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "outputs/loop/inventory-repair/unit-tests.log",
+        "sha256": "be65a9de928dbd4715d391a6c44f9ea328a45fbda3f03b67db85226d26686352",
+        "bytes": 2486,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "reports/loop/packages/FOUNDATION-001/v2/files/pipeline/inventar.py",
+        "sha256": "84ff2e1c2868170ef6cf9ecdb050d2d26a802e57c7c324ae938bb8fa951c615e",
+        "bytes": 56580,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers; historical v2 reference explicitly pinned; current bytes bound in v4/files",
+        "historicalLivePath": "pipeline/inventar.py"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "reports/loop/packages/FOUNDATION-001/v2/files/pipeline/tests/test_inventar.py",
+        "sha256": "0d61d2d42ddc16f8ca8d6ff3b9155e14a0ae1c903ffc2027ad0fc23235914e85",
+        "bytes": 6956,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers; historical v2 reference explicitly pinned; current bytes bound in v4/files",
+        "historicalLivePath": "pipeline/tests/test_inventar.py"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "reports/loop/packages/FOUNDATION-001/v2/files/data/inventar.entwurf.csv",
+        "sha256": "89d2c4611d44faee3e44d27e66e5e68550a5611112cf2cf63f96fa5d8a8b84f3",
+        "bytes": 2375704,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers; historical v2 reference explicitly pinned; current bytes bound in v4/files",
+        "historicalLivePath": "data/inventar.entwurf.csv"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "reports/loop/packages/FOUNDATION-001/v2/files/data/inventar.provenienz.json",
+        "sha256": "89c75a95f2da2610396d25fd7428f51d213a71446a5abba50eed73a28fd4ecb7",
+        "bytes": 70318,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers; historical v2 reference explicitly pinned; current bytes bound in v4/files",
+        "historicalLivePath": "data/inventar.provenienz.json"
+      },
+      {
+        "sourceId": "CORRECTION-PUBLIC-OR-SYNTHETIC",
+        "path": "reports/loop/authors/FOUNDATION-001-inventar-korrektur.md",
+        "sha256": "0db0f33a37c5100cba3bd1249e8248b0a9045b5fddbd13c89287bd2c20af874e",
+        "bytes": 26556,
+        "publishCopy": false,
+        "scope": "Public original, derivative, synthetic or actual execution log; not raw answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/execution.json",
+        "sha256": "e65a8191e391567c192abacc4171f0fbe9d3e23bc6e57ea85cebb110b50c48f8",
+        "bytes": 10176,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/reproduce.py",
+        "sha256": "ac3a4d2bebd4859f3ca4e3c2847ca47b512e040e10cd0506508084e25a9e0079",
+        "bytes": 2337,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/app-check.log",
+        "sha256": "52af4772457e0e40cda411d63eb9673ffed3e8d14cd252e430cc8230bdea68a3",
+        "bytes": 367,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/app-check-2.json",
+        "sha256": "6b15fb79b64e657d86d5b98d12ab60916ab1c31b12c050b95d0d9455e2a04323",
+        "bytes": 440,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/app-check-2.log",
+        "sha256": "fbbcc0fcabecf9c699f2d597c99622c04f707b633d42132cfa0c0fa2365b716c",
+        "bytes": 4025,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-repair/root-types-pages32-39.txt",
+        "sha256": "68e05fb4f83c5e46133e6dd13d4b54814e36d4d572f7e7387e23ef43ceb4a4f0",
+        "bytes": 17918,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-repair/root-types-pages35-38.txt",
+        "sha256": "405a76f182ff6aa96b1af7083e1682790c57819fe42b4899ed4012e68e686c22",
+        "bytes": 9089,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/foundation-v2-methods/evidence-hashes.json",
+        "sha256": "fc570868dffc2e0c1a718a97159680710e725452cdfd8317cdb013bff166a582",
+        "bytes": 14072,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/foundation-v2-sources/completion.json",
+        "sha256": "0eede8c7bef0761e0693d26f5f401c50ad66d4245f423556f66f7010edffb717",
+        "bytes": 4399,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/python-tests.log",
+        "sha256": "cb73dbac8f6da0ea4d9ad582e18e7cef95a65aac8916480fbacbecb147ef5f00",
+        "bytes": 5150,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/fetch.log",
+        "sha256": "8d4eea722c2e19d7c4db3510bfd4afd725aef299497e49979a5bbaf8cfeed87e",
+        "bytes": 1496,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/build.log",
+        "sha256": "82782655d4e526aec00583fd9554fe097153098fd32464e909e7f2f7418b2e87",
+        "bytes": 136,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/check.log",
+        "sha256": "84b1ebdc6f8699e0a9d9b065b8333519daae0a6fa9495e8bebc598729318404d",
+        "bytes": 71,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/tests-timed.log",
+        "sha256": "15d73634e38800b8b2cd903071e5ca1bab74a0204334d176596df72e2fbb033f",
+        "bytes": 5150,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache-fetch.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache-build.log",
+        "sha256": "82782655d4e526aec00583fd9554fe097153098fd32464e909e7f2f7418b2e87",
+        "bytes": 136,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache-check.log",
+        "sha256": "84b1ebdc6f8699e0a9d9b065b8333519daae0a6fa9495e8bebc598729318404d",
+        "bytes": 71,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache-fetch.log",
+        "sha256": "8d4eea722c2e19d7c4db3510bfd4afd725aef299497e49979a5bbaf8cfeed87e",
+        "bytes": 1496,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache-build.log",
+        "sha256": "82782655d4e526aec00583fd9554fe097153098fd32464e909e7f2f7418b2e87",
+        "bytes": 136,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache-check.log",
+        "sha256": "84b1ebdc6f8699e0a9d9b065b8333519daae0a6fa9495e8bebc598729318404d",
+        "bytes": 71,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/rebuilt.provenance.json",
+        "sha256": "8ffb46807fae172e08eeadf6de676168176c9082a94fe111ca2ebfcd92757bd6",
+        "bytes": 70582,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay.provenance.json",
+        "sha256": "8ffb46807fae172e08eeadf6de676168176c9082a94fe111ca2ebfcd92757bd6",
+        "bytes": 70582,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache/ESS11_questionnaires_DE.pdf",
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "bytes": 1304009,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache/ESS11_showcards_DE.pdf",
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "bytes": 2210799,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache/ESS11_appendix_a7_e04_1.pdf",
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "bytes": 2162997,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache/ess-disclaimer.html",
+        "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+        "bytes": 168665,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache/check-build.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/public-cache/check-current.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache/ESS11_questionnaires_DE.pdf",
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "bytes": 1304009,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache/ESS11_showcards_DE.pdf",
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "bytes": 2210799,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache/ESS11_appendix_a7_e04_1.pdf",
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "bytes": 2162997,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache/ess-disclaimer.html",
+        "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+        "bytes": 168665,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache/check-build.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2/replay-public-cache/check-current.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/tests-timed.log",
+        "sha256": "15d73634e38800b8b2cd903071e5ca1bab74a0204334d176596df72e2fbb033f",
+        "bytes": 5150,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache-fetch.log",
+        "sha256": "8d4eea722c2e19d7c4db3510bfd4afd725aef299497e49979a5bbaf8cfeed87e",
+        "bytes": 1496,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache-build.log",
+        "sha256": "5d8ee58a077d8855b8220d38c5b9a9bfb0ac4b331925ac395886c0c3a34c5b82",
+        "bytes": 136,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache-check.log",
+        "sha256": "84b1ebdc6f8699e0a9d9b065b8333519daae0a6fa9495e8bebc598729318404d",
+        "bytes": 71,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache-fetch.log",
+        "sha256": "8d4eea722c2e19d7c4db3510bfd4afd725aef299497e49979a5bbaf8cfeed87e",
+        "bytes": 1496,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache-build.log",
+        "sha256": "5d8ee58a077d8855b8220d38c5b9a9bfb0ac4b331925ac395886c0c3a34c5b82",
+        "bytes": 136,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache-check.log",
+        "sha256": "84b1ebdc6f8699e0a9d9b065b8333519daae0a6fa9495e8bebc598729318404d",
+        "bytes": 71,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/rebuilt.provenance.json",
+        "sha256": "533a12c517ac49f869aea1fbc09dc86e3c1dfe7ef9bc7b05018b5a49ba753aa6",
+        "bytes": 70582,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay.provenance.json",
+        "sha256": "533a12c517ac49f869aea1fbc09dc86e3c1dfe7ef9bc7b05018b5a49ba753aa6",
+        "bytes": 70582,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/execution.json",
+        "sha256": "7706ba02fd75063f3b8e4eb954fde809d85239288a6bbc65c4f42e030d16ee1c",
+        "bytes": 10211,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache/ESS11_questionnaires_DE.pdf",
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "bytes": 1304009,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache/ESS11_showcards_DE.pdf",
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "bytes": 2210799,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache/ESS11_appendix_a7_e04_1.pdf",
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "bytes": 2162997,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache/ess-disclaimer.html",
+        "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+        "bytes": 168665,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache/check-build.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/public-cache/check-current.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache/ESS11_questionnaires_DE.pdf",
+        "sha256": "be6fbca3efbe18a062a6ae96d242a7f79e02b511bd5fcf03d448943bb3a5ae75",
+        "bytes": 1304009,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache/ESS11_showcards_DE.pdf",
+        "sha256": "786d1a3df9d9a9002b83be15ae57462fd3e56042befd510278fcbac45af4b3ca",
+        "bytes": 2210799,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache/ESS11_appendix_a7_e04_1.pdf",
+        "sha256": "b41e285845f0df030c7a588a14643e2414ab2b588781fbd1c1fb2ac0daddbe35",
+        "bytes": 2162997,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache/ess-disclaimer.html",
+        "sha256": "8e0ded72241b48a730b9ac7f85508f0198407a4d43dcb1f14a0a159744db586d",
+        "bytes": 168665,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache/check-build.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/inventory-round2b/replay-public-cache/check-current.json",
+        "sha256": "f6006e05aafa58dfac981cacbbd6b9e8816d47857469e6d7ec601f0d6226287f",
+        "bytes": 29637,
+        "scope": "Public original documentation/synthetic correction commands and first independent reports; no ESS answers"
+      },
+      {
+        "path": "outputs/loop/foundation-v3-repro/hash-after.json",
+        "sha256": "16902db8a1127b311949356f69ccd37e475735730d9d3c937b408081dd965b84",
+        "bytes": 99073,
+        "scope": "Actual v3 independent input-hash evidence"
+      }
+    ],
+    "repairRound": 2,
+    "repairScope": "N-F01 D2–D19 original response tasks only; not full inventory or empirical approval",
+    "version": 4,
+    "provenanceRepairRound": 1,
+    "provenanceFinding": "FOUNDATION-PROV-01",
+    "scientificArtifactsUnchangedFromV3": true
+  }
+}

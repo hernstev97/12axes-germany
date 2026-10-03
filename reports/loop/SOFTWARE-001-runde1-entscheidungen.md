@@ -1,0 +1,11 @@
+# SOFTWARE-001: Entscheidungen nach den beiden Erstberichten
+
+Beide unabhängigen Erstberichte wurden vollständig gelesen, bevor die Forschungsgrundlage oder ihre Schutzbeschreibung korrigiert wurde. Die engen numerischen Befunde und die fehlende native Stratifikation werden anhand von Originalcode und eigenen Rechnungen der Prüfer angenommen. Eine Reliabilitätsausgabe und Invarianzsyntax bleiben API-Befunde, keine validierte vollständige Messkette.
+
+SW-ENV-004, SOFTWARE-M-01 und SOFTWARE-001-REPRO-01 bezeichnen dieselbe tatsächliche ursprüngliche Setupverletzung. Vollständig angenommen, erheblich für die verbindliche Einrichtungsgrenze. Der negative ursprüngliche Status bleibt NICHT_BESTANDEN; keine Außenbereinigung oder Wiederholung von Conda. Die späteren engen direkten R-Prüfungen heilen ihn nicht.
+
+SOFTWARE-001-REPRO-02 wird vollständig angenommen, mittel: ioctl-dev fehlte im behandelten Rechtevektor. Daraus folgt keine beobachtete schädliche Geräteoperation und keine Widerlegung der numerischen Befunde. Eine neue getrennte Ausführungsfassung beschreibt nur die tatsächlich behandelten Dateirechte. Originale Launcher, Logs und Urteile bleiben unverändert. Die eigene sichere Runtimeprobe und ein separater Commandvergleich sind ausgeführt; zwei unabhängige Korrekturprüfungen stehen aus.
+
+Zusätzlich liegt ein tatsächlicher Claude-Protokollfall CASE-P01 vor. Claude Code 2.1.288 wurde mit claude-opus-5-5 in frischem Kontext, leerem Werkzeugpool und enger Kindprozess-Schreibgrenze ausgeführt. Die Laufzeit meldet dieses Hauptmodell sowie auxiliary Haiku. Die explizit übergebene Skill führte bei absichtlich fehlendem Manifest und Belegen zu BLOCKIERT, ohne erfundene Lektüre oder Menschenantwort. Der komplette Auftrag und das ursprüngliche Urteil werden erhalten; die tatsächliche Schemaausführung ist dokumentiert. Dieser einzelne künstliche Negativfall ist kein Skill-Loadernachweis, Forschungsreview, getrenntes Itemurteil, menschlicher Test oder GitHub-Workflow. Seine unabhängige Protokollkontrolle wird mit der technischen Korrekturprüfung beauftragt; die Umfänge bleiben getrennt.
+
+Kein erhebliches Finding wurde verworfen. Wissenschaftliche, organisatorische, Browser-, Menschen- und Releasevoraussetzungen bleiben offen. Eine neue Hashbindung ist keine inhaltliche Freigabe.
