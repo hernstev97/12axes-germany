@@ -512,10 +512,13 @@
                         eigenen Antwort. Nahe 0 und 100 % kann er die tatsächliche Unsicherheit
                         unterschätzen.
                       </p>
-                    } @else if (!designStudy(item.studyId)) {
+                    } @else {
                       <p class="meta interval-missing">
-                        Für diese Befragung ist kein Unsicherheitsbereich berechnet. Die Datei mit
-                        dem Stichprobendesign liegt dem Projekt nicht vor.
+                        Für diese Referenz ist kein 95-%-Bereich angegeben. Ein fehlender Bereich
+                        bedeutet keine Unsicherheit von null.
+                        @if (designStudy(item.studyId) === false) {
+                          Die Datei mit dem Stichprobendesign liegt dem Projekt nicht vor.
+                        }
                       </p>
                     }
                     <p class="meta">
@@ -598,6 +601,14 @@
                         </div>
                       }
                     </dl>
+                    @if (comparison.intervals?.reference?.interval) {
+                      <p class="meta interval-note">
+                        Der 95-%-Bereich beschreibt die Unsicherheit durch die Zufallsstichprobe der
+                        damaligen Befragung in dieser Gruppe unter vereinfachenden Annahmen. Er
+                        enthält keine Unsicherheit durch den zeitlichen Abstand, Nichtteilnahme oder
+                        den neuen Fragekontext. Er ist kein Test auf Unterschiede zwischen Gruppen.
+                      </p>
+                    }
                     <p class="meta">
                       Gewichtung: {{ comparison.reference.weight }}. Nenner der Anteile ist die
                       Summe der Gewichte gültiger Antworten dieser Frage in dieser Gruppe. Alle

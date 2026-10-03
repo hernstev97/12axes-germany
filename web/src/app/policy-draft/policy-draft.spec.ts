@@ -31,7 +31,30 @@ const SYNTHETIC_V22: ReferencesV22 = {
           },
         },
       ],
-      groups: [],
+      groups: [
+        {
+          groupId: 'ESS9e03_3:second_vote:1',
+          pairs: [
+            {
+              questionId: 'ESS9e03_3:sofrdst',
+              status: 'reviewed_historical_reference',
+              reference: {
+                validCount: 300,
+                totalCount: 305,
+                missingCount: 5,
+                notAskedCount: 0,
+                categories: ['1', '2', '3', '4', '5'].map((code) => ({
+                  code,
+                  proportion: 0.2,
+                  lower: 0.12,
+                  upper: 0.3,
+                })),
+                interval: { degreesOfFreedom: 89, strata: 89, psus: 178 },
+              },
+            },
+          ],
+        },
+      ],
     },
     {
       study: 'ESS8e02_3',
@@ -213,6 +236,16 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     );
     expect(pair).not.toBeNull();
     expect(pair!.querySelectorAll('[data-category-code]')).toHaveLength(6);
+    expect(pair!.querySelector('.interval-note')).toBeNull();
+    await selectComparison('draft-group-study', 'ESS9e03_3');
+    await selectComparison('draft-vote-group', 'ESS9e03_3:second_vote:1');
+    const ess9Pair = element.querySelector<HTMLElement>(
+      '[data-question-id="ESS9e03_3:sofrdst"] .group-reference',
+    )!;
+    expect(ess9Pair.querySelectorAll('.interval').length).toBe(5);
+    expect(ess9Pair.querySelector('.interval-note')?.textContent).toContain(
+      'kein Test auf Unterschiede zwischen Gruppen',
+    );
   }, 20_000);
   it('T30: zeigt bei zurückgehaltener Referenz keine Zahlen, behält aber die eigene Aussage', async () => {
     fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
@@ -246,6 +279,9 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       'Zustimmung zur Aussage „Eine Gesellschaft ist gerecht',
     );
     expect(first.querySelectorAll('.own-answer-label')).toHaveLength(1);
+    const missing = first.querySelector('.interval-missing')?.textContent ?? '';
+    expect(missing).toContain('keine Unsicherheit von null');
+    expect(missing).not.toContain('Stichprobendesign');
     expect(first.querySelector('.same-category')?.textContent).toContain('Dieselbe Kategorie');
     expect(element.querySelector('#draft-cross-title')).not.toBeNull();
     expect(element.querySelectorAll('.profile-cross')).toHaveLength(0);

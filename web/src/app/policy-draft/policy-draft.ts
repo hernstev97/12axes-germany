@@ -53,7 +53,6 @@ interface ReferenceView {
 }
 
 /** Studies whose data files contain a complete sampling design (Analyseplan v2.2, 4.1). */
-const DESIGN_STUDIES = new Set(['ESS9e03_3', 'ESS10SCe03_2', 'ESS11e04_2']);
 type SkipReason = 'unspecified' | 'dont-know' | 'decline';
 
 /**
@@ -307,8 +306,10 @@ export class PolicyDraft {
     return null;
   }
 
-  protected designStudy(studyId: string): boolean {
-    return DESIGN_STUDIES.has(studyId);
+  /** Whether the bound v2.2 export has a complete sampling design for the study; null if unknown. */
+  protected designStudy(studyId: string): boolean | null {
+    const study = this.referencesV22()?.studies.find((candidate) => candidate.study === studyId);
+    return study ? study.designAvailable : null;
   }
 
   protected referenceLabel(item: PolicyDraftItem, code: string): string {

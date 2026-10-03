@@ -32,6 +32,13 @@ def pct(value: float | None) -> str:
     return f'{value * 100:.1f} %'.replace('.', ',')
 
 
+def design_label(document: dict) -> str:
+    if not document['designAvailable']:
+        return 'nicht vollständig'
+    source = document.get('designSource')
+    return f'SDDF-Datei `{Path(source["path"]).name}`' if source else 'in den Daten'
+
+
 def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -60,7 +67,11 @@ def build(reference_dir: Path) -> str:
         f'- Abgleich mit v2: {receipt["consistencyWithPublishedV2"]}',
         f'- Unabhängige Gegenprobe der Anteile: {receipt["independentCrossCheck"]["shares"]}',
         f'- Unabhängige Gegenprobe der Standardfehler: {receipt["independentCrossCheck"]["standardErrors"]}',
-        '- Ergebnisprüfung vor dem Export: `reports/claude/pruefungen/E1-ergebnis-v22.md` (KI-Review, Codex).',
+        f'- Designlauf für ESS5 und ESS8 mit den SDDF-Dateien: SHA-256 `{receipt["designRun"]["designRunSha256"]}`, '
+        f'Exitcode {receipt["designRun"]["exitCode"]}.',
+        f'- Unabhängige Gegenprobe der ESS5/ESS8-Bereiche: {receipt["designRun"]["independentCrossCheck"]}',
+        '- Ergebnisprüfungen vor dem Export (KI-Reviews, Codex): `reports/claude/pruefungen/E1-ergebnis-v22.md` '
+        'und `reports/claude/pruefungen/E1-runde2-ergebnis-v22.md`.',
         '',
         'Exportdateien:',
         '',
@@ -72,14 +83,15 @@ def build(reference_dir: Path) -> str:
         '',
         '## Stichprobenunsicherheit',
         '',
-        'Für Befragungen mit vollständigem Stichprobendesign in den Daten enthält jede '
+        'Für Befragungen mit vollständigem Stichprobendesign in den Daten oder in der Designdatei '
+        '(SDDF) enthält jede '
         'veröffentlichte Kategorie einen 95-%-Bereich (Taylor-Linearisierung, Logit-Intervall, '
         'Design-Freiheitsgrade). Er beschreibt nur die Unsicherheit durch die damalige '
         'Zufallsstichprobe unter vereinfachenden Annahmen, nicht den Zeitabstand, den Modus, '
         'Nichtteilnahme oder den neuen Fragekontext. Nahe 0 und 100 % kann er die tatsächliche '
         'Unsicherheit unterschätzen.',
         '',
-        '| Befragung | Design in den Daten | Strata | PSUs | Freiheitsgrade | Einzelreferenzen mit Bereich |',
+        '| Befragung | Stichprobendesign | Strata | PSUs | Freiheitsgrade | Einzelreferenzen mit Bereich |',
         '| --- | --- | --- | --- | --- | --- |',
     ]
     for sid in STUDIES:
@@ -88,7 +100,7 @@ def build(reference_dir: Path) -> str:
                          if q['reference'] and q['reference']['interval']]
         design = with_interval[0]['reference']['interval'] if with_interval else None
         lines.append(
-            f'| {STUDY_NAMES[sid]} | {"ja" if document["designAvailable"] else "nein, SDDF fehlt"} | '
+            f'| {STUDY_NAMES[sid]} | {design_label(document)} | '
             f'{design["strata"] if design else "–"} | {design["psus"] if design else "–"} | '
             f'{design["degreesOfFreedom"] if design else "–"} | {len(with_interval)} |')
     lines += [

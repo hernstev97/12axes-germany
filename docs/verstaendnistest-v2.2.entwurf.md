@@ -28,7 +28,7 @@ Die Leitung zeigt eine technische Zustandsvorführung wie in 0.1 und 0.2, ohne e
 
 1. zwei beantwortete Fragen desselben Originalblocks mit unterschiedlichen Antworten, sodass ein Blocksatz erscheint,
 2. zwei beantwortete Fragen eines Querbezugs aus verschiedenen Befragungen,
-3. eine beantwortete Frage aus ESS9, ESS10 oder ESS11 mit 95-%-Bereichen und eine aus ESS5 oder ESS8 ohne Bereich,
+3. eine beantwortete Frage mit 95-%-Bereichen und eine beantwortete Frage, deren historische Referenz nach der Regel 100/5 ohne Zahlen bleibt (seit den SDDF-Dateien vom 3. Oktober 2026 haben alle fünf Studien ein vollständiges Stichprobendesign),
 4. die Übersicht mit „Bereiche ohne eigene Fragen“ und je Bereich „Erfasst“ und „Nicht erfasst“.
 
 Die Auswahl folgt der Katalogreihenfolge, nicht einer politischen Bewertung. Die Antwortzustände sind technische Zustände, keine simulierte Person. Die Bindung der gezeigten UI-Fassung erfolgt wie in 0.2 mit Bytehashes in einem eigenen Paket, sobald Steven Gestaltung und Vorführung billigt.
