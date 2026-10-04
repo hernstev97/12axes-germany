@@ -10,7 +10,7 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude für Steven. Jede Entscheidung n
 | 2   | Eurobarometer-Tabellen der Kommission zulassen                | Ja, für die neun geprüften Fragen in Plan v2.3 Abschnitt 11.1, nach Planprüfung und Klärung des Wortlauts | Freigabe, eine E-Mail (Entwurf 3) |
 | 3   | Online-Quotenstichproben als Vergleich                        | Vorerst nein                                                                                              | keine                             |
 | 4   | Textvorschläge für Statushinweis, Meta-Beschreibung, Handbuch | Annehmen wie empfohlen                                                                                    | Durchsicht von fünf Vorschlägen   |
-| 5   | ESS12 nach Veröffentlichung vorbereiten                       | Ja, ohne weiteren Schritt bis Januar 2027                                                                 | keine                             |
+| 5   | ESS12 nach Veröffentlichung vorbereiten                       | Ja, sobald die deutsche Ausgabe tatsächlich vorliegt                                                      | keine                             |
 
 ## 1 GESIS-Ausnahme
 
@@ -24,21 +24,21 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude für Steven. Jede Entscheidung n
 
 ## 2 Eurobarometer-Tabellen der Kommission
 
-**Lage.** Die Weiterverwendungsregel der Kommission erlaubt die Verarbeitung der veröffentlichten Tabellen und die Veröffentlichung von Anteilen mit Quellenangabe (R10 Klasse C). Die Rechte an den deutschen Fragewortlauten sind ungeklärt (Klasse B), weil die Kommission die deutschen Fragebögen nicht selbst veröffentlicht. Die Fragen betreffen fast alle Politik der EU, nicht Entscheidungen Deutschlands. Wählergruppen sind nicht möglich. Ein Bevölkerungsvergleich mit EU-Staatsangehörigen ab 15 Jahren in Deutschland ist als eigener, begrenzter Vergleich vertretbar (R10 Abschnitt 5.2). Die Strukturprüfung S1 zeigt: Die Tabellen enthalten Deutschland gesamt, alle Kategorien und „Weiß nicht“ einzeln, aber keine ungewichtete Basis je Frage und keine Gewichtungsvariable. Plan v2.3 Abschnitt 6 legt deshalb fest, dass nur Fragen an alle Befragten in Frage kommen, mit der Interviewzahl als Basis und dem beschriebenen Gewichtungsverfahren. Der deutsche Datenanhang der Kommission enthält deutsche Fragetexte, was die Rechtefrage zu den Wortlauten entschärfen könnte.
+**Lage.** Die Weiterverwendungsregel der Kommission erlaubt die Verarbeitung der veröffentlichten Tabellen und die Veröffentlichung von Anteilen mit Quellenangabe (R10 Klasse C). Die Rechte an den deutschen Fragewortlauten sind ungeklärt (Klasse B), weil die Kommission die deutschen Fragebögen nicht selbst veröffentlicht. Von den neun vorgeschlagenen Fragen betreffen sechs Entscheidungen auf EU-Ebene, eine einen EU-Beitritt mit Zustimmung Deutschlands, eine nennt keine Ebene (KI-Regulierung), eine ist mehrdeutig (Verteidigungsausgaben „in der EU“). Keine betrifft eine Entscheidung allein Deutschlands. Wählergruppen sind nicht möglich. Ein Bevölkerungsvergleich mit EU-Staatsangehörigen ab 15 Jahren in Deutschland ist als eigener, begrenzter Vergleich vertretbar (R10 Abschnitt 5.2). Die Strukturprüfung S1 zeigt: Die Tabellen enthalten Deutschland gesamt, alle Kategorien und „Weiß nicht“ einzeln, aber keine ungewichtete Basis je Frage und keine Gewichtungsvariable. Plan v2.3 Abschnitt 6 legt deshalb fest: Nur Fragen an alle Befragten kommen in Frage, und Zahlen erscheinen standardmäßig erst, wenn das Eurobarometer-Team Fragebasis und Umgang mit fehlenden Antworten geklärt hat. Ohne Klärung bräuchte es Stevens ausdrückliche Freigabe mit einem festgelegten Hinweis auf diese Grenze. Der deutsche Datenanhang der Kommission enthält deutsche Fragetexte, was die Rechtefrage zu den Wortlauten entschärfen könnte.
 
 **Optionen.** A: zulassen für die neun Fragen aus Plan v2.3 Abschnitt 11.1, deren Tabellen S1 geprüft hat, nach Planprüfung und mit Wortlaut aus dem deutschen Datenanhang der Kommission oder nach Rechteanfrage (Entwurf 3). Zwei weitere Fragen (SP557) brauchen zuerst eine Strukturprüfung. B: zulassen ohne deutsche Wortlaute, nur mit Verweis. B scheidet nach den Projektregeln aus, weil die Ansicht den Originalwortlaut zeigt. C: nicht zulassen.
 
-**Empfehlung: A.** Die Fragen schließen keine nationale Lücke, geben dem Profil aber aktuelle Vergleiche zur EU-Ebene für Außen-, Digital-, Bildungs- und Gesundheitspolitik, mit Zufallsstichprobe und klarer Kennzeichnung der Ebene.
+**Empfehlung: A, zusammen mit der Anfrage an das Eurobarometer-Team.** Die Fragen schließen keine nationale Lücke, geben dem Profil aber aktuelle Vergleiche zu EU-Entscheidungen und allgemeinen Präferenzen in Außen-, Digital- und Gesundheitspolitik, mit Zufallsstichprobe und Kennzeichnung des Geltungsbereichs. Ohne Antwort des Teams empfehle ich, keine Zahlen zu zeigen.
 
 **Folgen.** Planprüfung, Festschreibung, zweifache Übertragung der Werte, Ergebnisprüfung, Exportentscheidung wie in v2.2. Die Themenabdeckung führt die Fragen getrennt als „EU-Ebene“.
 
 ## 3 Online-Quotenstichproben
 
-**Lage.** Die breitesten aktuellen Fragen zu Rente, Gesundheit, Pflege und Wohnen außerhalb von GESIS stehen in OECD Risks that Matter 2024: Online-Quote, nur 18 bis 64 Jahre, Fragebogen nur englisch, viele Fragen mit Prämisse (R9). Ohne Prämisse bleiben fünf Fragen zur Zahlungsbereitschaft. Für Quoten gibt es keine designbasierte Unsicherheit.
+**Lage.** Die breitesten aktuellen Fragen zu Rente, Gesundheit, Pflege und Wohnen außerhalb von GESIS stehen in OECD Risks that Matter 2024: Online-Quote, nur 18 bis 64 Jahre, Fragebogen nur englisch, viele Fragen mit Prämisse oder Begründung (R9). Nach den Regeln des Plans bleibt eine Frage: die Zahlungsbereitschaft von 2 % des Einkommens für bessere Leistungen, mit zehn Items zu Bildung, Beschäftigung, Arbeitslosigkeit, Mindestsicherung, Wohnen, Gesundheit, Behinderung, Rente, Pflege und Nahverkehr (Mehrfachauswahl). Für Quoten gibt es keine designbasierte Unsicherheit.
 
 **Optionen.** A: vorerst nicht zulassen. B: zulassen mit sichtbarer Kennzeichnung und ohne Bereich, dann OECD-Anfrage (Entwurf 4).
 
-**Empfehlung: A.** Alle bisherigen Vergleiche beruhen auf Zufallsstichproben mit Unsicherheitsbereich. Die fünf verbleibenden Fragen messen eine Zahlungsbereitschaft, keine Haltung zu deutschen Streitfragen. Der Gewinn steht in keinem Verhältnis zum Bruch mit diesem Grundsatz.
+**Empfehlung: A.** Alle bisherigen Vergleiche beruhen auf Zufallsstichproben mit Unsicherheitsbereich. Die verbleibende Frage misst eine Zahlungsbereitschaft, keine Haltung zu deutschen Streitfragen, und ein nicht gewähltes Item ist keine Ablehnung. Der Gewinn steht in keinem Verhältnis zum Bruch mit diesem Grundsatz.
 
 ## 4 Texte
 
@@ -48,9 +48,9 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude für Steven. Jede Entscheidung n
 
 ## 5 ESS Runde 12
 
-**Lage.** ESS12 ist der einzige nicht gesperrte Weg zu Wählergruppen nach der Bundestagswahl 2025 und zu aktuellen Referenzen für sieben vorhandene Profilfragen (R9). Daten und deutscher Fragebogen sind für Januar 2027 angekündigt.
+**Lage.** ESS12 ist der einzige nicht gesperrte Weg zu Wählergruppen nach der Bundestagswahl 2025 und zu aktuellen Referenzen für sieben vorhandene Profilfragen (R9). Die ESS kündigt die erste Datenveröffentlichung voraussichtlich für Januar 2027 an. Ob Deutschland und der deutsche Fragebogen dazugehören, ist nicht bestätigt.
 
-**Empfehlung.** Zustimmung, dass nach der Veröffentlichung ein ergebnisblinder Gruppenvertrag v2.3 entsteht und geprüft wird. Bis dahin ist nichts zu tun. Steven muss die Daten dann wie bisher über sein ESS-Konto herunterladen.
+**Empfehlung.** Zustimmung, dass nach der tatsächlichen Veröffentlichung der deutschen Ausgabe ein ergebnisblinder ESS12-Vertrag entsteht und geprüft wird. Er legt unter anderem fest, ob persönliche Interviews und Selbstausfüller getrennt oder begründet zusammen ausgewertet werden. Bis dahin ist nichts zu tun. Steven muss die Daten dann wie bisher über sein ESS-Konto herunterladen.
 
 ## Weitere, nachrangige Entscheidungen
 

@@ -57,7 +57,7 @@ Jede Anfrage beschreibt das Projekt gleich: nichtkommerzieller Forschungsprototy
 > I am preparing a non-profit online questionnaire on political attitudes in Germany that compares answers with aggregate results for Germany from published surveys. It stores no answers and its methods are public (https://github.com/hernstev97/12axes-germany). Published Eurobarometer tables are reused under Commission Decision 2011/833/EU or CC BY 4.0 with attribution.
 >
 > 1. Are the German national questionnaires of Standard and Special Eurobarometer surveys covered by the same reuse rules, so that the German question wording may be shown next to the results? Where can they be obtained from the Commission?
-> 2. In the published volumes, do the figures for Germany refer to the whole of Germany with the national weight, and are unweighted bases and spontaneous “don't know” answers reported separately?
+> 2. In the published volumes, do the figures for Germany refer to the whole of Germany with the national weight? What is the unweighted number of respondents who answered each question in Germany, and how are refusals and other item non-response treated in the published shares?
 > 3. Is the mode of interview for Germany documented per wave (face-to-face, video interviews)?
 >
 > Kind regards,
