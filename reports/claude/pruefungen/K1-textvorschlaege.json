@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "mode": "PR_REVIEW",
+  "task": "K1: Paketprüfung der Textvorschläge TEXTE-V1-001",
+  "scope": "Inhalt, Untertitel, Handbuch und Auftragsgrenzen von docs/vorschlaege-texte-v1.entwurf.md, Entwurf 1, anhand der manifestgebundenen Grundlagen und der ausdrücklich erlaubten ESS-Stichprobenseite.",
+  "manifestSha256": "db73175592234f12bd366857b7597f5db5ec8254189da6f7e2ab6908ff8dd2a8",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "T3-Code-Laufzeit nennt gpt-6.1-sol mit high reasoning effort im Codex harness. Keine zusätzliche Anbieterabfrage.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "web.run (open und search_query; direkte Seitenabrufe schlugen dort fehl)",
+      "Python-Standardbibliothek: pathlib, json, hashlib, re, urllib.request, importlib.util",
+      "Python subprocess: git show des expliziten ursprünglichen Git-Stands zur erneuten nur lesenden Artefaktbindung"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/K1-textvorschlaege.md` (SHA-256 `646923d8007cc843204996d8d643b52cb2776130bc231041da3b68665aca4e45`). Arbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`. Prüffassung: Manifest `reports/claude/pruefungen/TEXTE-V1-001-manifest.json` mit SHA-256 `db73175592234f12bd366857b7597f5db5ec8254189da6f7e2ab6908ff8dd2a8`, Branch-Stand `bb760f3cbbe38f1173b96bca4d0537233cfb36a8`. Prüfe beide Hashes vor Beginn. Schreibe ausschließlich `reports/claude/pruefungen/K1-textvorschlaege.md` und `reports/claude/pruefungen/K1-textvorschlaege.json`. Keine Commits, keine anderen Dateien, keine Nachrichten. Antworte am Ende kurz mit Gesamturteil und Liste der Findings.",
+    "inputHashes": {
+      "docs/vorschlaege-texte-v1.entwurf.md": "f1ed0b3844096c9af5e0c56064ed75b6b2b1918be7a6223053e3d829f82b2b2a",
+      "docs/handbuch.md": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/project.md": "2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a",
+      "web/src/index.html": "d3dcf44566fd2c05d92b9acdf0c9d0e570b472abd3edfa7ac4face20fc15657c",
+      "web/src/app/policy-draft/policy-draft.html": "f25712dc8d6fbd85c5d93fa4c6db8c006fe5132282db06f922733fd9e2c94b2a",
+      "web/src/app/policy-draft/policy-catalogue.ts": "acde504fa6f0b815d93c66a842d1a25270092713ea898df97b9e8617388a6193",
+      "web/src/app/policy-draft/profile/area-scope.ts": "4ed439fd3a1d9b9d030f8ed33b9a4d55916d07cc694bcf8a3aec6f86d338a1b1",
+      "reports/claude/agenten/V2-urteil.json": "622e6961b36655943f126ffa25eb7758e3d7b025fa3a1b6275630beb673d02cf",
+      "reports/claude/agenten/T1-technik-browser.md": "3bba4b1112db99f9938104ba82b17fdfb552d57657a5440ea4827ce7f88e3636",
+      "reports/claude/auftraege/K1-textvorschlaege.md": "646923d8007cc843204996d8d643b52cb2776130bc231041da3b68665aca4e45",
+      "reports/claude/pruefungen/TEXTE-V1-001-manifest.json": "db73175592234f12bd366857b7597f5db5ec8254189da6f7e2ab6908ff8dd2a8",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9",
+      "https://www.europeansocialsurvey.org/methodology/sampling": "b590ff5edc7a0c260be9e6c76c4b3063b1b2d69d98b4c40d87242777d4595cd3",
+      "docs/project.md@abschliessende-Live-Pruefung": "a4a5736e1e2263bfbcbec82ade86e1190540a9523fe96e1214fb2e008b5c1c5e"
+    }
+  },
+  "checks": [
+    {
+      "id": "K1-C01",
+      "scope": "Auftrag, Manifest, Branch-Stand und alle elf gebundenen Artefakte",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Auftragsha256 646923d8007cc843204996d8d643b52cb2776130bc231041da3b68665aca4e45; Manifestsha256 db73175592234f12bd366857b7597f5db5ec8254189da6f7e2ab6908ff8dd2a8",
+        "HEAD bb760f3cbbe38f1173b96bca4d0537233cfb36a8, Branch research/life-93-claude-20261003; anfänglich saubere Arbeitskopie",
+        "Alle elf SHA-256 stimmen. Der Manifestcommit e429f0c7abfcc9d442340ab3a59d3a63a5fd9f30 ist ein früherer Paketstand, kein abweichender Artefakthash.",
+        "Am Ende wechselte HEAD auf 5a6485964026a25f8ee7d149570ba0a16223dce3 und docs/project.md hatte SHA-256 a4a5736e1e2263bfbcbec82ade86e1190540a9523fe96e1214fb2e008b5c1c5e. Alle elf Artefakte aus dem ausdrücklich vorgegebenen Git-Stand wurden deshalb erneut per git show gehasht und stimmen mit dem Manifest überein. Das Urteil bleibt ausschließlich an diesen ursprünglichen Stand gebunden."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-C02",
+      "scope": "Sachliche Richtigkeit und tatsächliche Behebung der Textprobleme",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "Variante A des Statushinweises und die neuen Begriffe Profil, Bereich und Dimension stimmen mit Profilregeln v1 und Plan v2.2 überein.",
+        "K1-F01: freie Lebensführung ist nicht auf Paarrechte beschränkt. K1-F03: eigene-Modell-Zeile bleibt widersprüchlich. K1-F04: Zukunftsvariante benennt spätere Herkunft nicht vollständig."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-C03",
+      "scope": "Begründung zur ESS-Stichprobenziehung anhand der ausdrücklich erlaubten Originalseite",
+      "status": "BESTANDEN",
+      "evidence": [
+        "https://www.europeansocialsurvey.org/methodology/ess-methodology/sampling leitet auf https://www.europeansocialsurvey.org/methodology/sampling weiter. Direkter Python-Abruf am 2026-10-04 erfolgreich, HTML-SHA-256 b590ff5edc7a0c260be9e6c76c4b3063b1b2d69d98b4c40d87242777d4595cd3.",
+        "Die Seite nennt Zufallsauswahl in jeder Stufe, das Verbot von Quoten und Ersetzung sowie Anforderungen an die Zielpopulation. Dies belegt das geforderte Verfahren, keine eigene Prüfung der erreichten Abdeckung durch das Projekt. Variante A ist sachlich vertretbar."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-C04",
+      "scope": "Alle acht vorgeschlagenen Bereichsuntertitel anhand von policy-catalogue.ts, area-scope.ts und Plan v2.2",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "K1-F01 und K1-F02: Gleichstellung/Familie und Demokratie/Autorität benötigen Korrekturen.",
+        "Die sechs übrigen Untertitel benennen vorhandene Gegenstände und sind als knappe Übersichten neben Erfasst/Nicht erfasst ausreichend. Sie sind keine vollständige Wiedergabe aller Fragebedingungen."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-C05",
+      "scope": "Handbuch, Status, Sprache, Typografie und Metadaten der vorgeschlagenen öffentlichen Texte",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "Meta A hat 141 Zeichen, Meta B 151, beide beginnen mit dem Namen und nennen die Nichtverfügbarkeit.",
+        "Keine direkte Anrede, kein generisches Maskulinum, keine Semikolonketten und keine politische Wertung in den vorgeschlagenen neuen Website-Texten.",
+        "K1-F03 und K1-F05: Handbuchkorrektur bleibt unvollständig; Meta B stellt eine geplante Funktion ins Präsens."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-C06",
+      "scope": "Grenzen des Vorschlags, Entscheidungshoheit und Einführung neuer Messformen oder Gestaltung",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Entwurf Zeile 3 erklärt Stevens Entscheidung und die Nichtumsetzung der Vorschläge; Zeilen 81–84 kennzeichnen zwei bereits umgesetzte Änderungen gesondert.",
+        "Keine neue Achse, kein Gesamtwert und kein politisches Personenetikett. Untertitel sind beschreibender Zusatztext; die Empfehlung erteilt keine Freigabe zur Gestaltung oder Umsetzung.",
+        "Änderungen der Pflichttexte bleiben Vorschläge. Die vorhandene Wortlautvorgabe aus Handbuch 7.7 gilt bis zu Stevens Entscheidung."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-C07",
+      "scope": "Übereinstimmung der abschließenden Live-Arbeitskopie mit dem ursprünglichen Prüfpaket",
+      "status": "BLOCKIERT",
+      "evidence": [
+        "Nur docs/project.md weicht im Live-Arbeitsverzeichnis vom Manifest ab: erwartet 2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a; tatsächlich a4a5736e1e2263bfbcbec82ade86e1190540a9523fe96e1214fb2e008b5c1c5e. Die zehn übrigen Artefakte, Auftrag und Manifest stimmen weiterhin.",
+        "Ein erlaubter Git-Diff dieser Projektdatei zeigte eine Ergänzung zum Stand des Plans v2.3. Diese fremde Änderung wird nicht bewertet. Die verlangte ursprüngliche Fassung bleibt vollständig aus Git überprüfbar und trägt die K1-Inhaltsprüfung."
+      ],
+      "requiredInScope": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "K1-F01",
+      "claim": "Abschnitt 5, Zeile 77: „Gleichstellungsmittel, Familienleistungen, Rechte gleichgeschlechtlicher Paare“.",
+      "problem": "Der Untertitel verengt freie Lebensführung von Schwulen und Lesben auf Paarrechte. Außerdem fehlt das normative Prinzip zum Vorrang von Männern bei knappen Arbeitsplätzen. Dieses Prinzip ist kein Gleichstellungsmittel und keine Familienleistung.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:77",
+        "web/src/app/policy-draft/profile/area-scope.ts:69–74",
+        "docs/analyseplan-v2.2.md:44 (freehms, hmsacld, mnrgtjb)",
+        "web/src/app/policy-draft/policy-catalogue.ts:177 (Einfügung dieser drei Fragen)"
+      ],
+      "impact": "Der Untertitel beschreibt einen vorhandenen Gegenstand zu eng und verdeckt eine eigenständige Frage zur Gleichberechtigung.",
+      "severity": "mittel",
+      "severityReason": "Direkt vorgeschlagener sichtbarer Text verschiebt die Reichweite einer Frage und lässt ein zusätzlich aufgenommenes politisches Prinzip weg. Die Originalfragen und die Auswertung bleiben unberührt.",
+      "correction": "Die Zeile ersetzen durch: „Gleichstellungsmittel, Gleichberechtigung bei knappen Arbeitsplätzen, Familienleistungen, freie Lebensführung von Schwulen und Lesben, Adoptionsrecht gleichgeschlechtlicher Paare“. Eine kürzere Fassung muss dieselben Gegenstände erhalten.",
+      "recheck": "Die neue Zeile gegen area-scope.ts und Plan 3.2 prüfen: freie Lebensführung darf keine Partnerschaft voraussetzen, mnrgtjb muss erkennbar sein, hmsacld muss als Adoptionsrecht erhalten bleiben.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "K1-F02",
+      "claim": "Abschnitt 5, Zeile 72: „Demokratieverständnis, Mehrheit und Regierung, Führung und Gesetz“.",
+      "problem": "Das Verbot demokratiefeindlicher Parteien fehlt als eigener Gegenstand. „Demokratieverständnis“ benennt im bestehenden Bereich die Wichtigkeit von Demokratiemerkmalen und macht diese zusätzliche Maßnahme nicht erkennbar.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:72",
+        "web/src/app/policy-draft/profile/area-scope.ts:30–35",
+        "docs/analyseplan-v2.2.md:45 (ESS5 B32 prtyban)",
+        "web/src/app/policy-draft/policy-catalogue.ts:164 (prtyban wird eingefügt)"
+      ],
+      "impact": "Der Untertitel erfüllt seine vorgesehene Funktion als Beschreibung des tatsächlich erfassten Inhalts nur teilweise.",
+      "severity": "mittel",
+      "severityReason": "Die Auslassung betrifft einen eigenständigen Gegenstand der Erweiterung v2.2, nicht bloß eine Detailbedingung innerhalb eines schon benannten Fragenblocks.",
+      "correction": "Den Untertitel ersetzen durch: „Wichtigkeit von Demokratiemerkmalen, Regierung und Mehrheitsmeinung, Führung, Loyalität und Gesetz, Verbot demokratiefeindlicher Parteien“.",
+      "recheck": "Mit area-scope.ts und der Einfügung von accalaw, loylead und prtyban abgleichen. Die Formulierung muss eine Frage nach Parteienverboten nennen, ohne eine politische Position zu bewerten.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "K1-F03",
+      "claim": "Abschnitt 3 empfiehlt die drei neuen Begriffszeilen als Korrektur des Handbuchs ohne Dimensionen.",
+      "problem": "Die unmittelbar betroffene Zeile „eigenes Modell“ bleibt unerwähnt und schreibt weiterhin „Auswahl, Dimensionen, Auswertung und Deutung durch das Projekt“. Nach Übernahme der drei vorgeschlagenen Zeilen bliebe damit eine widersprüchliche Vorgabe in derselben Begriffstabelle stehen.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:31–45",
+        "docs/handbuch.md:278",
+        "docs/profilregeln-v1.md, Abschnitt „Warum ein beschreibendes Profil ohne Werte“",
+        "docs/vorschlaege-texte-v1.entwurf.md:13 (Auswahl, Ordnung und Auswertung)"
+      ],
+      "impact": "Der Vorschlag behebt den benannten Widerspruch des Handbuchs nicht vollständig.",
+      "severity": "niedrig",
+      "severityReason": "Eine zusätzliche Begriffszeile ist zu korrigieren. Der empfohlene Ergebnis-Statushinweis selbst enthält bereits keine Dimensionen mehr.",
+      "correction": "Abschnitt 3 um eine vierte Zeile ergänzen: „eigenes Modell | Auswahl, Ordnung, Auswertung und Deutung durch das Projekt | Modell des ESS“.",
+      "recheck": "Die vollständige Tabelle 7.3 nach der vorgeschlagenen Übernahme lesen. Dimensionen dürfen nur als bedingte, in dieser Fassung nicht vorhandene Messform beschrieben sein.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "K1-F04",
+      "claim": "Abschnitt 1, Variante B, Zeilen 14–16: „wissenschaftlichen Befragungen, derzeit dem European Social Survey“; B erst nach Freigabe einer weiteren Quelle.",
+      "problem": "Die für mehrere Quellen gedachte Variante benennt nach ihrer eigenen Übernahmebedingung weiterhin nur den ESS als aktuelle Herkunft. Sobald Fragen oder Vergleichsdaten einer weiteren Quelle tatsächlich einfließen, ist diese Herkunftsangabe unvollständig. Eine bloße Freigabe einer Quelle sagt außerdem noch nicht, dass sie im gezeigten Bestand verwendet wird.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:9–16",
+        "docs/analyseplan-v2.2.md:29 (Herkunft der gegenwärtigen Fragen)",
+        "docs/project.md, Abschnitt „Aktueller Stand“, Fragen und offene Quellenentscheidungen"
+      ],
+      "impact": "Die Zukunftsvariante löst das ausdrücklich benannte Problem einer späteren Herkunft außerhalb des ESS nicht zuverlässig.",
+      "severity": "niedrig",
+      "severityReason": "Die empfohlene gegenwärtige Variante A ist richtig. Betroffen ist eine ausdrücklich zurückgestellte Alternative.",
+      "correction": "B als auszufüllende Vorlage kennzeichnen: „Fragen und Vergleichsdaten stammen aus den jeweils angegebenen wissenschaftlichen Befragungen.“ Als Übernahmebedingung tatsächliche Einbindung freigegebener Quellen nennen. Werden Quellen stattdessen im Pflichttext aufgezählt, dort alle tatsächlich verwendeten Quellen nennen.",
+      "recheck": "Bei späterer Übernahme die Herkunftsangabe gegen den dann gebundenen Fragen- und Referenzbestand prüfen. Eine Quellenfreigabe allein darf keine Nutzung behaupten.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "K1-F05",
+      "claim": "Abschnitt 2, empfohlene Variante B, Zeile 27: „Er beschreibt Antworten Frage für Frage und ist noch nicht verfügbar.“",
+      "problem": "„Er“ bezieht sich auf den geplanten Test. Dessen beabsichtigtes Verhalten steht im Präsens, obwohl Handbuch 7.2 geplante Funktionen mit „soll“, „geplant“ oder „vorgesehen“ verlangt. Der vorhandene Forschungsentwurf wird in dieser Meta-Beschreibung nicht als Bezug genannt.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:27–29",
+        "docs/handbuch.md:260 (7.2: Präsens nur für Vorhandenes)",
+        "docs/project.md, Abschnitt „Aktueller Stand“ (lokaler Forschungsentwurf, Test in Vorbereitung)"
+      ],
+      "impact": "Die empfohlene Meta-Beschreibung hält die Statusregel für den noch nicht verfügbaren Test nicht durchgehend ein.",
+      "severity": "niedrig",
+      "severityReason": "Name, Nichtverfügbarkeit und Zeichengrenze sind korrekt. Eine kleine sprachliche Änderung genügt.",
+      "correction": "B ersetzen durch: „12 Axes Deutschland plant einen Test zu politischen Einstellungen in Deutschland. Er soll Antworten Frage für Frage beschreiben und ist noch nicht verfügbar.“ Diese Fassung hat 157 Zeichen.",
+      "recheck": "Unicode-Zeichen ohne äußere Anführungszeichen zählen: 157, also höchstens 160. Namen am Anfang, Nichtverfügbarkeit und „soll“ für die geplante Beschreibung prüfen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    }
+  ],
+  "limits": [
+    "Begrenztes KI-Review der Textvorschläge, keine methodische Validierung, Begutachtung durch Fachleute, Neutralitätsgarantie, Abnahme oder Veröffentlichungsfreigabe.",
+    "Der Auftrag nennt den Modus Paketprüfung. Das Urteilsschema enthält diesen Wert nicht. PR_REVIEW ist die hier verwendete Schema-Kategorie für das Review eines bestehenden Pakets, ohne Prüfung einer konkreten Pull Request und ohne Umdeutung in eine unabhängige wissenschaftliche Erstbewertung.",
+    "Die elf Manifestartefakte wurden gehasht. V2-urteil.json und T1-technik-browser.md wurden ausschließlich zur Hashprüfung als Bytes gelesen, nicht als Bewertungsgrundlage. Die im Entwurf und Plan selbst erwähnten früheren Findings sind sichtbar, wurden aber nicht als eigene Prüfergebnisse übernommen.",
+    "policy-catalogue.ts bindet Fragen durch Imports. Die importierten öffentlichen Kataloge und die Originalfragebögen gehören nicht zum Manifest und wurden nicht geöffnet. Der Inhaltsabgleich nutzt die gebundene Bereichsbeschreibung und Plan 3.2; keine erneute Prüfung sämtlicher Originalwortlaute.",
+    "Kein Zugriff auf data/raw/, data/local/, outputs/ oder data/reference-*, keine Antwortverteilungen und keine GESIS-Server. Die Aussage zu München in ESS8 wurde nicht anhand des ursprünglichen Stichprobendokuments nachgeprüft. Die erfolgreiche ESS-Seitenprüfung betrifft das allgemeine Verfahren.",
+    "LIFE-93 wurde nicht live abgerufen. Der Pflichttextabgleich verwendet die im Prüfpaket überlieferte Fassung und Handbuch 7.7. Eine spätere Änderung des Wortlauts benötigt Stevens Entscheidung.",
+    "Abschnitt 6 ist eine Statusnotiz, kein neuer Textvorschlag. Die Erklärung der 95-%-Bereiche ist in der gebundenen HTML-Vorlage erkennbar; die konkrete historische Umsetzung der Restgruppenbeschriftung und ihr Datum sind ohne die nicht freigegebenen Adapter/Verlaufsquellen nicht vollständig nachgeprüft.",
+    "Ein vorgeschriebener Memory-Suchlauf zeigte Einträge früherer begrenzter Reviews und einzelne historische Statusangaben. Keine verlinkte Reviewdatei wurde geöffnet, kein früheres Urteil für diesen Befund verwendet. Memory diente nur als Erinnerung an Hashbindung und Schreibgrenzen; alle aktuellen Feststellungen wurden am Paket geprüft.",
+    "Nur die zwei verlangten Berichte werden geschrieben. Keine Commits, Tags, Pushes, externen Nachrichten oder Implementierungsänderungen. Keine pnpm-/Browser-/Pipelineprüfung, weil der Auftrag nur Berichtsausgaben erlaubt und keine Implementierung oder sichtbare Seite geändert wird.",
+    "jsonschema ist nicht installiert. Das JSON wird mit einem eigenen nur lesenden Python-Validator gegen die im vorgegebenen Schema verwendeten Schlüsselwörter geprüft. Dies ist eine formale Kontrolle, keine zusätzliche inhaltliche Prüfung.",
+    "Während der Prüfung wurde der gemeinsame Branch außerhalb dieses Prüfauftrags fortgeschrieben. Die Live-Arbeitskopie am Ende ist deshalb nicht mehr vollständig das Paket. Es gab keine eigene Änderung oder Rücksetzung dieser Dateien. Eine neue Fassung benötigt ein neues passendes Manifest; die fünf Textfindings und das Gesamturteil betreffen ausschließlich die anfangs geprüfte und anschließend aus Git erneut gebundene Fassung bb760f3cbbe38f1173b96bca4d0537233cfb36a8."
+  ]
+}
