@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "P4 Runde 3, PLAN-V23-003, Analyseplan v2.3 Entwurf 0.4: P4-V23-F01 und unmittelbare Änderungsfolgen.",
+  "scope": "Gezielte Nachprüfung von P4-V23-F01 sowie Methoden und Reproduzierbarkeit der Änderungen seit f2c8d0d. Keine vollständige neue Planprüfung und keine Prüfung der Rolle P5.",
+  "manifestSha256": "96b20f220f8757a24ce880eee106e9fa7cd2aca3c234410786acd32d7a6a347d",
+  "status": "BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "Laufzeitmetadaten: T3 Code, Codex-Harness, gpt-6.1-sol mit high reasoning effort. Konkrete interne Modellrevision nicht belegt.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "functions.exec_command",
+      "functions.apply_patch",
+      "git",
+      "sha256sum",
+      "cat",
+      "rg",
+      "sed",
+      "nl",
+      "wc",
+      "Python 3 Standardbibliothek, Inline-Validator"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/P4-runde3-plan-v23.md` (SHA-256 `d9e089f03ed323137fc259782a96186c5334bf9dd2e06c0e9159ccef11d5780f`). Arbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`. Prüffassung: Manifest `reports/claude/pruefungen/PLAN-V23-003-manifest.json` mit SHA-256 `96b20f220f8757a24ce880eee106e9fa7cd2aca3c234410786acd32d7a6a347d`, Commit `f169a1dbc704ef50bb94f8babeb0fe55a9a7f49d`. Prüfe beide Hashes vor Beginn. Schreibe ausschließlich `reports/claude/pruefungen/P4-runde3-methoden-v23.md` und `reports/claude/pruefungen/P4-runde3-methoden-v23.json`. Keine Commits, keine anderen Dateien, keine Nachrichten. Antworte am Ende kurz mit Gesamturteil und Stand von P4-V23-F01.",
+    "inputHashes": {
+      "docs/analyseplan-v2.3.entwurf.md": "c8af28353e85161e617aa1f29ed65afb5cedfc34350c6e8fde0aef8ca8114bef",
+      "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md": "43a38f7ce21c19d7194a214805057aec7f8476f3df7cd7bd49d2dbbc4aad0bd8",
+      "docs/abdeckung-v2.2.md": "544deeb3055ffb174d8e3c97f6f4e5b6a640c8502113462cd3b6bcee6cb5e8f9",
+      "docs/quellenanfragen-v1.entwurf.md": "d9a4b0b67a73a1669ad07fed7461237cb08c0df0b0f1eacb02b4918a2727e972",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md": "6830b4172d606b47fc6f00214fba09d776790143c85c01529b7c33256691c24b",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json": "23e27dd8c2c1e359fe62ff5df058fef4de749dce95ca1e6da44cec6839e49fa2",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md": "42aaa648a36557d33b6bb316aff007f5f79f92779aa4875acdc74516c70ba5c3",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.json": "71e012d3b460917269153d261a4565f6bfbb34627220ee2cf14d8abf1af272d6",
+      "reports/claude/agenten/R10-quellenblocker.md": "65d79b32748197923c9614c7e8e85f19b06f516fa0cff869dbb7d3cf2f228885",
+      "reports/claude/agenten/R10-quellenblocker.json": "8e15381892d91f62094c68573bb32148a5df21daf24ad11415549ef94861439a",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md": "15b2851d4e383a50ae064b566b1f2d6419180d3899f20007b49c07fe607295c0",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json": "f563bc2f138d67a00a9cf8fbfd80580dd3e842108d17231b44efb241edbc9575",
+      "reports/claude/agenten/R5-wvs.md": "a163be6d448ab5f9e14b54293f355a2e0cea3c19d37e92a4d0021e8af7afc969",
+      "reports/claude/agenten/R6-eurobarometer.md": "58b08b2af20d70261e95e7d0d815d4c083d95e0879cef5ee864c6ee05e84e8bb",
+      "reports/claude/agenten/R7-weitere-quellen.md": "4e795f355ccd359613949a2e307f46150f31506cf817b51f1a4e232405f6fcd5",
+      "reports/claude/auftraege/R-erweiterung-gemeinsam.md": "56970a37d162e3996cace441b4f41c44d7e4e3bfd408d008c13e3f9ba0898ccd",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "reports/claude/pruefungen/P4-methoden-v23.md": "e1aecf135e7bb3cf3a56a55459b25f24f3f09a4349e788278fefc20568292355",
+      "reports/claude/pruefungen/P4-methoden-v23.json": "2b6df5d37b09bc481cafce926e36e4827c842147910e93a51abe1c346d18462d",
+      "reports/claude/pruefungen/P4-runde2-methoden-v23.md": "4c7e509df82136784262d87e29281ab039f5eded359d94c1db5bf420b8b0b5f8",
+      "reports/claude/pruefungen/P4-runde2-methoden-v23.json": "f2d541fcf8bca2d1d215e9d11f4ddb139b48a708637d0b432c965d8cca38df4b",
+      "reports/claude/auftraege/P4-runde3-plan-v23.md": "d9e089f03ed323137fc259782a96186c5334bf9dd2e06c0e9159ccef11d5780f",
+      "reports/claude/pruefungen/PLAN-V23-003-manifest.json": "96b20f220f8757a24ce880eee106e9fa7cd2aca3c234410786acd32d7a6a347d",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "docs/project.md": "2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9"
+    }
+  },
+  "checks": [
+    {
+      "id": "P4-R3-PIN",
+      "scope": "Auftrags-/Manifesthash, 23 erlaubte Manifestartefakte und Auftragscommit",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "sha256sum: Auftrag d9e089f03ed323137fc259782a96186c5334bf9dd2e06c0e9159ccef11d5780f; Manifest 96b20f220f8757a24ce880eee106e9fa7cd2aca3c234410786acd32d7a6a347d.",
+        "Python: ALL_ALLOWED_MANIFEST_PINS_OK 23; COMMIT_MATCH_FOR_ALLOWED_ARTIFACTS True.",
+        "git branch --show-current: research/life-93-claude-20261003; git rev-parse HEAD: f169a1dbc704ef50bb94f8babeb0fe55a9a7f49d; Ausgangsstatus sauber."
+      ]
+    },
+    {
+      "id": "P4-R3-F01",
+      "scope": "Korrektur der unbekannten Fragebasis und Missing-/Nennerregel",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:118-132: Frageuniversum, Tabellenbasis, Interviewzahl, ungewichtete Fragebasis und Missing-Regel getrennt; Standardstopp und enger Ausnahmehinweis.",
+        "docs/analyseplan-v2.3.entwurf.md:132-137: keine unbelegte Nennerbehauptung oder ESS-Nennervergleich; keine Umrechnung, keine Normierung, keine selbst berechnete Unsicherheit.",
+        "reports/claude/pruefungen/P4-methoden-v23.md:66-88 und P4-runde2-methoden-v23.md:32-47: ursprüngliche Beanstandung und verlangte gezielte Korrektur.",
+        "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md:12-14,158-163: ungewichtete Fragebasis und Missing-Regel nicht dokumentiert.",
+        "docs/quellenanfragen-v1.entwurf.md:59-60: genau diese offenen Angaben werden angefragt.",
+        "Synthetische Gegenprobe ohne reale Daten: Frageuniversum 100, Verweigerungen 10, Weiß nicht 10 lassen Nenner 100 oder 90 zu; der neue Hinweis behauptet keinen der beiden."
+      ]
+    },
+    {
+      "id": "P4-R3-DELTA",
+      "scope": "Unmittelbare Methoden- und Reproduzierbarkeitsfolgen der Änderungen von Entwurf 0.4",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "git diff f2c8d0d -- docs/: Änderungen am Hauptplan, an der Entscheidungsvorlage und der Abdeckung gezielt geprüft.",
+        "docs/analyseplan-v2.3.entwurf.md:53-58,78-80,98-106,215-230: fehlender deutscher Originalwortlaut hält Kandidaten zurück; eigene Übersetzung ist kein Ersatz; zehn Q19-Items bleiben gesperrt; unveränderte Mehrfachauswahlregel.",
+        "docs/analyseplan-v2.3.entwurf.md:78,201; reports/claude/agenten/R6-eurobarometer.md:204; R8-erweiterung-aussen-digital-bildung.json, id R8-EB-SP568-QC9: Ausschluss wegen Wichtigkeitsformat ausdrücklich laut R6/R8; keine neue Aufnahme trotz fehlendem Wortlaut.",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:27-41 und docs/abdeckung-v2.2.md:99: Kennzeichnung je Frage statt pauschaler EU-Zuordnung; Q19 als zurückgestellt; keine Zusammenführung von Populationen oder Referenzen.",
+        "docs/analyseplan-v2.3.entwurf.md:104-106,131-148,173-177: Register, Blindheitsgrenzen, doppelte Übertragung, Designgrenzen, ESS12-Vertrag und Freigabefolge bleiben erhalten. Keine neuen Findings im benannten Änderungsumfang."
+      ]
+    },
+    {
+      "id": "P4-R3-LATER",
+      "scope": "Tatsächliche Quellklärung, Registerfestschreibung, Übertragung, empirische Ergebnisprüfung, Browser und Freigaben",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "requiredInScope": false,
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:5-9,104,131-137,173-177: spätere Voraussetzungen und Prüfungen; diese Nachprüfung führt sie nicht aus."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "P4-V23-F01",
+      "claim": "Historisches Finding: Interviewzahl/Frageuniversum wurden mit der auswertbaren Fragebasis gleichgesetzt; in Runde 2 behauptete der Ausnahmehinweis weiterhin einen Nenner aus allen Befragten und einen bestimmten Unterschied zum ESS.",
+      "problem": "Der ursprüngliche Fehler ist in Fassung 0.4 behoben. Abschnitt 6 Nr. 3 beschreibt jetzt nur publizierte Anteile/Kategorien und benennt die unbekannte Fragebasis sowie Verweigerungen und sonstiges Missing. Das Frageuniversum bleibt eine getrennte Quellenangabe.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:118-132: Frageuniversum, Tabellenbasis, Interviewzahl, ungewichtete Fragebasis und Missing-Regel getrennt; Standardstopp und enger Ausnahmehinweis.",
+        "docs/analyseplan-v2.3.entwurf.md:132-137: keine unbelegte Nennerbehauptung oder ESS-Nennervergleich; keine Umrechnung, keine Normierung, keine selbst berechnete Unsicherheit.",
+        "reports/claude/pruefungen/P4-methoden-v23.md:66-88 und P4-runde2-methoden-v23.md:32-47: ursprüngliche Beanstandung und verlangte gezielte Korrektur.",
+        "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md:12-14,158-163: ungewichtete Fragebasis und Missing-Regel nicht dokumentiert.",
+        "docs/quellenanfragen-v1.entwurf.md:59-60: genau diese offenen Angaben werden angefragt.",
+        "Synthetische Gegenprobe ohne reale Daten: Frageuniversum 100, Verweigerungen 10, Weiß nicht 10 lassen Nenner 100 oder 90 zu; der neue Hinweis behauptet keinen der beiden."
+      ],
+      "impact": "Der Plan schreibt keine Veröffentlichung einer unbelegten Nennerregel mehr vor. Eine Ausnahmeübernahme benötigt weiter Stevens ausdrückliche Freigabe; der Standardweg zeigt bis zur Klärung keine Zahlen.",
+      "severity": "mittel",
+      "severityReason": "Historischer Schweregrad der geplanten fehlerhaften Metadatenbehauptung aus Runde 1/2. Kein verbliebener Fehler dieses Findings im nachgeprüften Text und keine neue Zahlenveröffentlichung.",
+      "correction": "Keine weitere Plankorrektur für F01 erforderlich. Den Hinweis aus Abschnitt 6 Nr. 3 bei einer später ausdrücklich freigegebenen Anzeige unverändert übernehmen; eine bestimmte Nennerregel erst nach dokumentierter Klärung behaupten.",
+      "recheck": "Runde 3: Abschnitt 6 Nr. 3, Metadatentrennung, Standardstopp und unmittelbare Verweise an P4-Vorberichten/S1/Anfrage geprüft. Textassertionen und synthetische Gegenprobe bestanden. P4-V23-F01 ist KORRIGIERT.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "P4-V23-F01",
+      "correctionStatus": "KORRIGIERT",
+      "round": 3
+    },
+    {
+      "id": "P4-V23-F02 bis F06",
+      "correctionStatus": "KORRIGIERT laut Runde 2; unverändert erhalten, keine erneute Vollprüfung",
+      "round": 3
+    }
+  ],
+  "limits": [
+    "Begrenzte Nachprüfung von P4-V23-F01 und unmittelbaren Methoden-/Reproduzierbarkeitsfolgen der Änderungen 0.3 zu 0.4. Keine neue Gesamtprüfung; P4-F02 bis F06 werden nicht neu abgenommen.",
+    "Kein Urteil über P5-Findings. Keine P5-Berichte geöffnet oder gehasht. Ihre Pfade im Manifest und die Autorzusammenfassung im erlaubten Plan/Diff waren sichtbar.",
+    "Keine Dateien unter data/raw/, data/local/ oder outputs/ gelesen. Keine data/reference-* Dateien geöffnet; keine lokalen Antwortverteilungen oder externen Ergebnistabellen gelesen, keine GESIS-Server aufgerufen.",
+    "Kein Abruf von Originalquellen in diesem Lauf. F01 wird an Plantext, P4-Vorberichten, gepinntem Strukturbericht S1 und Anfrage geprüft. SP568 QC9 nur als ausdrücklich R6/R8 zugeschriebene Ausschlussgrundlage geprüft; deutsche Originalskala nicht unabhängig bestätigt.",
+    "Manifest enthält 27 Artefakte, davon 23 ohne P5. Nur diese 23 wurden vor der abschließenden Bewertung gegen ihre Manifesthashes und den genannten Commit gebunden; vier P5-Artefakte absichtlich ausgelassen. Weitere Eingaben separat gehasht.",
+    "Der commit-Eintrag des Manifests ist 42b6068b22a0c4fd413c4dac65ed6675b4192d6a; der Auftrag nennt f169a1dbc704ef50bb94f8babeb0fe55a9a7f49d. Alle 23 zulässigen Manifestartefakte sind am genannten Auftragscommit bytegleich; die authentifizierte Manifestnotiz und der Hauptplan nennen Entwurf 0.4.",
+    "Mehrere Sammelausgaben wurden gekürzt; Hauptplan, F01 und tragende Fundstellen wurden anschließend gezielt erneut gelesen. Andere Teile der Vorberichte dienen nur als Kontext.",
+    "Memory-Register nur für prozedurale Grenzen konsultiert, keine Rolloutberichte geöffnet. Daraus stammt kein fachliches Urteil über v2.3.",
+    "Keine technische Sandbox behauptet. Hash-/JSON-Funktionen lesen Datei-Bytes; das ist keine vollständige Inhaltsprüfung.",
+    "Kein pnpm check, Pipeline- oder Browserlauf, keine Implementierung geändert. Nur eigene Prüfberichte, gezielte Textassertionen, synthetische Gegenprobe, Schema-/Urteilsprüfung und Hashkontrollen.",
+    "JSONSchema-Bibliothek nicht installiert; kein Installationsversuch. Formale Kontrolle mit einem Inline-Validator für sämtliche im vorliegenden Schema verwendeten Validierungsregeln.",
+    "BESTANDEN gilt nur für diesen Plan-Nachprüfungsumfang. Keine empirische Validierung, Neutralitäts-, Humanexperten-, Produkt-, Quellen-, Export- oder Releasefreigabe. Stevens Entscheidungen und spätere Prüfungen bleiben Voraussetzungen.",
+    "Nur die zwei autorisierten Ausgabedateien geschrieben. Keine Commits, Tags, Pushes, Delegation oder Nachrichten an Dritte.",
+    "Während der Abschlusskontrolle wechselte HEAD durch fremde parallele Arbeit auf d70a91302aa7b47f5827c2b71b3576a56cbfdcf5. Die zwei P5-Runde-3-Dateien wurden zusätzlich als fremde untracked Pfade sichtbar, ohne Inhaltszugriff. Alle 31 gebundenen Eingabehashes blieben unverändert. Der erste Abschlussprüflauf bestand Schema, drei negative Schemaproben, Urteilskonsistenz und Hashvergleich, scheiterte danach an seiner zu strengen Assertion eines unveränderten HEAD. Danach wurde die konkrete Artefaktbindung statt HEAD-Stabilität kontrolliert; keine eigene Commitoperation."
+  ]
+}

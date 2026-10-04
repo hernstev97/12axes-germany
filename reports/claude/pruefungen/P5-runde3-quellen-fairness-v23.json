@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "P5 Runde 3: Quellen, Konstrukte und Fairness des Plans v2.3",
+  "scope": "PLAN-V23-003, Entwurf 0.4: nur P5-V23-F02, P5-V23-F05 und unmittelbar durch die Änderungen von Fassung 0.4 eingeführte Quellen-, Konstrukt- und Fairnessfehler.",
+  "manifestSha256": "96b20f220f8757a24ce880eee106e9fa7cd2aca3c234410786acd32d7a6a347d",
+  "status": "BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "T3-Code-Laufzeitangabe: Codex-Harness, gpt-6.1-sol, high reasoning effort. Keine nachgewiesene interne Modellrevision.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "web.run open",
+      "sha256sum",
+      "git (nur lesend)",
+      "rg",
+      "cat",
+      "nl",
+      "sed",
+      "wc",
+      "python3 (Standardbibliothek; Schreibziele nur die zwei Berichte)",
+      "urllib.request (OECD-PDF im Arbeitsspeicher)",
+      "pdftotext (stdin/stdout)"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/P5-runde3-plan-v23.md` (SHA-256 `229e8fc53500591958cc6d0bd2ea5691d5f9ea584c28359f08ef7cf19e12def8`). Arbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`. Prüffassung: Manifest `reports/claude/pruefungen/PLAN-V23-003-manifest.json` mit SHA-256 `96b20f220f8757a24ce880eee106e9fa7cd2aca3c234410786acd32d7a6a347d`, Commit `f169a1dbc704ef50bb94f8babeb0fe55a9a7f49d`. Prüfe beide Hashes vor Beginn. Schreibe ausschließlich `reports/claude/pruefungen/P5-runde3-quellen-fairness-v23.md` und `reports/claude/pruefungen/P5-runde3-quellen-fairness-v23.json`. Keine Commits, keine anderen Dateien, keine Nachrichten. Antworte am Ende kurz mit Gesamturteil und Stand von P5-V23-F02 und P5-V23-F05.\n\nDer ergänzende vollständige Auftrag wurde aus der oben gepinnten Auftragsdatei gelesen.",
+    "inputHashes": {
+      "docs/analyseplan-v2.3.entwurf.md": "c8af28353e85161e617aa1f29ed65afb5cedfc34350c6e8fde0aef8ca8114bef",
+      "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md": "43a38f7ce21c19d7194a214805057aec7f8476f3df7cd7bd49d2dbbc4aad0bd8",
+      "docs/abdeckung-v2.2.md": "544deeb3055ffb174d8e3c97f6f4e5b6a640c8502113462cd3b6bcee6cb5e8f9",
+      "docs/quellenanfragen-v1.entwurf.md": "d9a4b0b67a73a1669ad07fed7461237cb08c0df0b0f1eacb02b4918a2727e972",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md": "6830b4172d606b47fc6f00214fba09d776790143c85c01529b7c33256691c24b",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json": "23e27dd8c2c1e359fe62ff5df058fef4de749dce95ca1e6da44cec6839e49fa2",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md": "42aaa648a36557d33b6bb316aff007f5f79f92779aa4875acdc74516c70ba5c3",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.json": "71e012d3b460917269153d261a4565f6bfbb34627220ee2cf14d8abf1af272d6",
+      "reports/claude/agenten/R10-quellenblocker.md": "65d79b32748197923c9614c7e8e85f19b06f516fa0cff869dbb7d3cf2f228885",
+      "reports/claude/agenten/R10-quellenblocker.json": "8e15381892d91f62094c68573bb32148a5df21daf24ad11415549ef94861439a",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md": "15b2851d4e383a50ae064b566b1f2d6419180d3899f20007b49c07fe607295c0",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json": "f563bc2f138d67a00a9cf8fbfd80580dd3e842108d17231b44efb241edbc9575",
+      "reports/claude/agenten/R5-wvs.md": "a163be6d448ab5f9e14b54293f355a2e0cea3c19d37e92a4d0021e8af7afc969",
+      "reports/claude/agenten/R6-eurobarometer.md": "58b08b2af20d70261e95e7d0d815d4c083d95e0879cef5ee864c6ee05e84e8bb",
+      "reports/claude/agenten/R7-weitere-quellen.md": "4e795f355ccd359613949a2e307f46150f31506cf817b51f1a4e232405f6fcd5",
+      "reports/claude/auftraege/R-erweiterung-gemeinsam.md": "56970a37d162e3996cace441b4f41c44d7e4e3bfd408d008c13e3f9ba0898ccd",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "reports/claude/pruefungen/P5-quellen-fairness-v23.md": "bbd1b5cd21370863d95bdb3d1056ae9634ed52554d253189d30fa0e05e69f25d",
+      "reports/claude/pruefungen/P5-quellen-fairness-v23.json": "d5393faca0fdaf80ac906621b94fc0dad498b25ce1877d0220ef650d4f1d8878",
+      "reports/claude/pruefungen/P5-runde2-quellen-fairness-v23.md": "1ca5f460dd6303e7b85043c2ceb057b71d3430e4b1eb8dfe461e826e89b19ef9",
+      "reports/claude/pruefungen/P5-runde2-quellen-fairness-v23.json": "36b0a23d1c292d7ea8528cb4c7d02d85b4cfe4dc5c57fa2c0b48cf0dbd73cb8d",
+      "/home/stevenh/.codex/memories/skills/bounded-pinned-review/SKILL.md": "0e77a5f081bc588972fddd6e848d39fe5ae05fcf4e2833c3ef704221e90536c6",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "reports/claude/pruefungen/PLAN-V23-003-manifest.json": "96b20f220f8757a24ce880eee106e9fa7cd2aca3c234410786acd32d7a6a347d",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      "docs/project.md": "2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a",
+      "reports/claude/auftraege/P5-runde3-plan-v23.md": "229e8fc53500591958cc6d0bd2ea5691d5f9ea584c28359f08ef7cf19e12def8",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf": "5672381901f57dcc2ee3e76a9b0716b6c418c3a69e1e85b804e29bb2c343ae10"
+    }
+  },
+  "checks": [
+    {
+      "id": "P5-R3-PINS",
+      "scope": "Identität des Auftrags und der zulässigen Paketartefakte",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Auftrag und Manifest entsprechen den extern vorgegebenen SHA-256-Pins.",
+        "Alle 23 zulässigen Artefaktpins vor Bewertung und bei Berichtserstellung identisch; vier P4-Artefakte weder geöffnet noch gehasht.",
+        "Start-HEAD f169a1dbc704ef50bb94f8babeb0fe55a9a7f49d; manifest.commit 42b6068b22a0c4fd413c4dac65ed6675b4192d6a ist Vorfahr. Bewertet werden die gepinnten Bytes von Entwurf 0.4."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-V23-F02-R3",
+      "scope": "Gezielte Nachprüfung P5-V23-F02",
+      "status": "BESTANDEN",
+      "evidence": [
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:27-33",
+        "docs/abdeckung-v2.2.md:83,94,100",
+        "docs/analyseplan-v2.3.entwurf.md:84-90,189-203",
+        "KORRIGIERT. Entscheidungsvorlage Zeile 33 verlangt jetzt den Geltungsbereich je Frage nach 4.4. Plan 11.1 und Abdeckungsnachtrag stimmen damit überein: sechs EU-Entscheidungen, ein EU-Beitritt mit Zustimmung Deutschlands, eine KI-Präferenz ohne Ebene, eine mehrdeutige Ausgabenfrage. Beide zurückgestellten Forschungsprinzipien bleiben ohne Ebene. Der historische Text wird für v2.3 ausdrücklich begrenzt. Nationale Kernlücken werden weiterhin nicht als geschlossen bezeichnet."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-V23-F05-R3",
+      "scope": "Gezielte Nachprüfung P5-V23-F05",
+      "status": "BESTANDEN",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:49-58,98-106,215-230",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:37-41",
+        "docs/quellenanfragen-v1.entwurf.md:78-80",
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf#page=7",
+        "KORRIGIERT. Abschnitt 4.6 trennt belegte Sachbedingungen 1 bis 6 und 8 von offenen Freigaben/Klärungen nach Nr. 7 sowie Abschnitten 6/10. Fehlender deutscher Originalwortlaut verlangt Zurückstellung und wird durch eigene Übersetzung nicht erfüllt. Alle zehn OECD-Q19-Items b-j und l sind in 11.3 einzeln zurückgestellt; Entscheidungsvorlage Zeile 37 übernimmt diesen Status. Wortlautbeleg, Rechte und Quotenentscheidung bleiben getrennte spätere Voraussetzungen."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R3-STATUS",
+      "scope": "Unmittelbare Quellen-/Fairnessfolgen des geänderten Statusmodells",
+      "status": "BESTANDEN",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:53,57,78-80,98-106,134,215-230,240-244",
+        "Kein automatischer Aufstieg ohne Wortlautbeleg. Fehlende heilbare Bedingung führt zur Zurückstellung; ein belegtes Ausschlussformat bleibt ausgeschlossen. Die Quellenstopps und das eingefrorene Itemregister bleiben erhalten."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R3-QC9",
+      "scope": "Dokumentarische Tragfähigkeit der neuen Ausschlussbegründung für SP568 QC9",
+      "status": "BESTANDEN",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:78,201,271",
+        "reports/claude/agenten/R6-eurobarometer.md:204 nennt Wichtigkeit von Transparenzmaßnahmen, mit Frage-/Seitenbezug ZA9129_q_de S. 56.",
+        "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json: kandidaten[id=R8-EB-SP568-QC9].antwortkategorien/kontext/eignung; keine Kategorien zitiert, wortlautDe null, R8 stützt sich auf R6.",
+        "Der Formatgrund passt zur gemeinsamen Regel 4.3. Die fehlende deutsche Fassung wird weiterhin genannt. Kein neuer belegter Fehler; keine unabhängige Originalauthentifizierung."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R3-QC9-ORIGINAL",
+      "scope": "Erneute direkte Authentifizierung von deutschem QC9-Feldtext und vollständiger Antwortliste",
+      "status": "NICHT_GEPRÜFT",
+      "evidence": [
+        "Kein GESIS-Zugriff; im erlaubten Paket kein vollständiger deutscher QC9-Wortlaut und keine zitierte Kategorienliste. Dies begrenzt den dokumentarischen Check."
+      ],
+      "requiredInScope": false
+    },
+    {
+      "id": "P5-R3-NEUE-FEHLER",
+      "scope": "Unmittelbare Änderungen 0.3 zu 0.4 im P5-Umfang",
+      "status": "BESTANDEN",
+      "evidence": [
+        "git diff f2c8d0d -- docs/: Änderungen nur an Plan, Entscheidungsvorlage und Abdeckung.",
+        "Geltungsbereich, OECD-Status und Wortlaut-/Formatunterscheidung geprüft. Der neue Hinweis in Abschnitt 6 Nr. 3 behauptet keinen bekannten Nenner und trennt Frageuniversum von auswertbarer Basis. Kein neuer belegter Quellen-, Konstrukt- oder Fairnessfehler festgestellt; kein P4-Methodenurteil."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R3-INTEGRITAET",
+      "scope": "Abschließende Integrität und Schreibumfang",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Alle gebundenen lokalen Inputhashes und Vorgängerberichte nach Schreiben gegen execution.inputHashes geprüft.",
+        "Eigene Schreibvorgänge ausschließlich in den zwei beauftragten P5-Runde-3-Dateien. Zusätzlich während des Abschlusschecks fremde untracked P4-Runde-3-Pfade sichtbar; keine Inhalte gelesen. Keine Commits, Tags, Pushes, externen Nachrichten oder Delegation."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R3-JSON",
+      "scope": "Formale Prüfung des eigenen Urteils",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Eigene Prüfung der im Urteilsschema verwendeten JSON-Schema-Keywords im Arbeitsspeicher sowie Urteils-/Finding-Konsistenzprüfung. Python jsonschema und CLI check-jsonschema/ajv nicht verfügbar."
+      ],
+      "requiredInScope": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "P5-V23-F02",
+      "claim": "Die Entscheidungsvorlage gibt weiterhin vor: Die Themenabdeckung führt die Fragen getrennt als EU-Ebene.",
+      "problem": "Plan und Lage/Empfehlung der Entscheidungsvorlage korrigieren die pauschale Zuordnung; die verbindlich formulierte Folge in Zeile 33 bleibt falsch für die allgemeine KI-Präferenz und die offene Ebene der Verteidigungsausgaben.",
+      "evidence": [
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:27-33",
+        "docs/abdeckung-v2.2.md:83,94,100",
+        "docs/analyseplan-v2.3.entwurf.md:84-90,189-203"
+      ],
+      "impact": "Die nachgelagerte Themenabdeckung kann die im Plan korrigierten Konstrukte erneut auf EU-Entscheidungen verengen. Der geprüfte Interpretationsumfang bleibt blockiert.",
+      "severity": "mittel",
+      "severityReason": "Der Fehler betrifft die Reichweite der Interpretation und ist vor der Bindung an Ergebnis- und Abdeckungstexte zu korrigieren. Die einzelnen Tabellenhinweise begrenzen ihn bereits.",
+      "correction": "In der Folge der Entscheidungsvorlage dieselben Geltungsbereiche wie in 4.4/11.1 verlangen. Allgemeine und mehrdeutige Fragen getrennt kennzeichnen. Die frühere pauschale Eurobarometer-Aussage der historischen Matrix für v2.3 ausdrücklich begrenzen; keine historische Fassung überschreiben.",
+      "recheck": "Runde 3, Fassung 0.4: KORRIGIERT. Entscheidungsvorlage Zeile 33 verlangt jetzt den Geltungsbereich je Frage nach 4.4. Plan 11.1 und Abdeckungsnachtrag stimmen damit überein: sechs EU-Entscheidungen, ein EU-Beitritt mit Zustimmung Deutschlands, eine KI-Präferenz ohne Ebene, eine mehrdeutige Ausgabenfrage. Beide zurückgestellten Forschungsprinzipien bleiben ohne Ebene. Der historische Text wird für v2.3 ausdrücklich begrenzt. Nationale Kernlücken werden weiterhin nicht als geschlossen bezeichnet.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P5-V23-F05",
+      "claim": "Abschnitt 4.6 definiert vorgeschlagen als alle Bedingungen erfüllt, Freigaben offen; Abschnitt 11.3 bezeichnet zehn OECD-Q19-Items als vorgeschlagen.",
+      "problem": "Neu eingeführter Statuswiderspruch: 4.1 Nr. 3 verlangt den belegten deutschen Originalwortlaut samt vollständiger Antwortliste und Kontext. 11.3 stellt zugleich fest, dass der Fragebogen nur englisch vorliegt. Die deutschen Originalfeldtexte fehlen weiterhin; das ist eine fehlende Sachvoraussetzung und keine bloß ausstehende Freigabe. Nach 4.6 wären diese inhaltlichen Kandidaten zurückgestellt.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:49-58,98-106,215-230",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:37-41",
+        "docs/quellenanfragen-v1.entwurf.md:78-80",
+        "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf#page=7"
+      ],
+      "impact": "Das neue Statusmodell stellt eine nicht erfüllte Wortlautbedingung als erfüllt dar und erschwert die spätere Prüfung des eingefrorenen Itemregisters. Die übergeordneten Auswertungs- und Quellenstopps bleiben bestehen; kein tatsächlicher unerlaubter Abruf oder Export wurde festgestellt.",
+      "severity": "mittel",
+      "severityReason": "Belegter Widerspruch in der neu eingeführten Kandidatenentscheidung, die die Erfüllung der Quellen- und Wortlautregeln anzeigen soll. Vor Festschreibung zu korrigieren, aber kein Nachweis eines bereits erfolgten Daten- oder Veröffentlichungsverstoßes.",
+      "correction": "Die zehn OECD-Items als inhaltlich geeignete, zurückgestellte Kandidaten mit fehlendem deutschen Feldwortlaut kennzeichnen. Alternativ den Status vorgeschlagen ausdrücklich nur als inhaltlichen Vorschlag definieren und jede offene Sachvoraussetzung separat binden. 4.1 Nr. 3 und die Aufnahmesperre erhalten; keine eigene Übersetzung zum Originalwortlaut erklären.",
+      "recheck": "Runde 3, Fassung 0.4: KORRIGIERT. Abschnitt 4.6 trennt belegte Sachbedingungen 1 bis 6 und 8 von offenen Freigaben/Klärungen nach Nr. 7 sowie Abschnitten 6/10. Fehlender deutscher Originalwortlaut verlangt Zurückstellung und wird durch eigene Übersetzung nicht erfüllt. Alle zehn OECD-Q19-Items b-j und l sind in 11.3 einzeln zurückgestellt; Entscheidungsvorlage Zeile 37 übernimmt diesen Status. Wortlautbeleg, Rechte und Quotenentscheidung bleiben getrennte spätere Voraussetzungen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    }
+  ],
+  "ratings": [
+    {
+      "findingId": "P5-V23-F02",
+      "round": 3,
+      "correctionStatus": "KORRIGIERT",
+      "blocksScope": false
+    },
+    {
+      "findingId": "P5-V23-F05",
+      "round": 3,
+      "correctionStatus": "KORRIGIERT",
+      "blocksScope": false
+    }
+  ],
+  "limits": [
+    "BESTANDEN gilt ausschließlich für die gezielte P5-Runde-3-Nachprüfung von PLAN-V23-003, Entwurf 0.4: F02, F05 und unmittelbare Änderungen zu Quellen, Konstrukten und Fairness. Kein neuer Gesamtaudit.",
+    "Keine empirische Validierung, juristische Gesamtprüfung, menschliche Begutachtung, Neutralitätsgarantie, Aktivierungs-, Export-, Veröffentlichungs- oder Releasefreigabe. Frühere F01/F03/F04 werden nicht erneut bewertet.",
+    "Kein Zugriff auf P4-Berichte, aktuelle andere Prüfrolle, Rohdaten, private Ergebnisse, outputs/, data/reference-* oder externe Ergebnistabellen. Historische P4-Statushinweise im erlaubten Plan wurden nicht als eigenes Urteil übernommen.",
+    "QC9 ist nur anhand der gepinnten R6-/R8-Quellenangaben geprüft. R8 ist keine unabhängige Bestätigung von R6. Kein direkter deutscher Original-/Kategorienabgleich. Die Aussage nur englisch bedeutet hier: im Paket nur englischer OECD-Quellfragebogen belegt, nicht Nachweis, dass nie eine deutsche Feldfassung existierte.",
+    "HEAD wurde während der Prüfung fremd auf d70a91302aa7b47f5827c2b71b3576a56cbfdcf5 gesetzt. Pfadvergleich nennt nur reports/claude/fortsetzung-2026-10-04.md; dessen Inhalt wurde nicht gelesen. Paketpins unverändert.",
+    "Einige große Toolausgaben waren gekürzt; maßgebliche Passagen wurden gezielt erneut gelesen. Kein fehlgeschlagener Quellenabruf. Keine automatisierte technische Zugriffssandbox; Grenzen durch Pfad-/Quellenauswahl eingehalten.",
+    "Python jsonschema nicht installiert, check-jsonschema/ajv nicht gefunden. Eigene Schema-Strukturprüfung; keine Installation und keine zusätzlichen QA-Dateien. pnpm check und Pipeline-/Browserprüfungen nicht ausgeführt: ausschließlich Berichtserstellung, keine Implementierungsänderung; Auftrag erlaubt nur zwei Dateischreibvorgänge.",
+    "Gedächtnisdateien nur für Prüfverfahren und Umfangsgrenzen, nicht als fachliche Planbelege genutzt. Anbieterinterne Revision und Regeln unbekannt.",
+    "Der erste Abschluss-Scopecheck endete mit Exit 1, weil er fälschlich nur die eigenen zwei untracked Dateien im gesamten gemeinsamen Worktree erwartete. Parallel erschienen P4-runde3-methoden-v23.md/.json. Nur diese Pfade wurden sichtbar, kein Inhalt gelesen oder gehasht. Der korrigierte Scopecheck erlaubt diese fremden Pfade und prüft den eigenen Schreibumfang; kein Paketfehler."
+  ]
+}
