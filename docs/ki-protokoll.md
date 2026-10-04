@@ -200,7 +200,7 @@ Dazu folgte die Ausgabe des externen KI-Reviews (GPT-6.1-Sol) zu World Values Su
 ## 2026-10-04: Fortsetzung ohne Stevens Mitwirkung
 
 - Agent: Claude über T3 Code, Modellkennung laut Laufzeit `claude-opus-5-5[1m]`. Branch `research/life-93-claude-20261003`, Ausgangsstand `b5a53ff`.
-- Subagents: Claude-Subagents R8, R9, R10 (Recherche, ergebnisblind) und S1 (getrennte technische Rolle für Tabellenstruktur, ohne Werte an die Auswahlrolle). R8 startete selbst einen eng begrenzten Unteragenten zur Rechtslage; zeitweise liefen damit vier statt höchstens drei Agenten. Codex-Prüfer (`gpt-6.1-sol`, hohe Denktiefe): T2 und T2 Runde 2 für das technische Paket, P4 und P5 für den Planentwurf v2.3.
+- Subagents: Claude-Subagents R8, R9, R10 (Recherche, ergebnisblind) und S1 (getrennte technische Rolle für Tabellenstruktur, ohne Werte an die Auswahlrolle). R8 startete selbst einen eng begrenzten Unteragenten zur Rechtslage; zeitweise liefen damit vier statt höchstens drei Agenten. Codex-Prüfer (`gpt-6.1-sol`, hohe Denktiefe): T2 und T2 Runde 2 für das technische Paket, P4 und P5 für den Planentwurf v2.3 in drei Runden (Fassung 0.2 und 0.3 nicht bestanden, Fassung 0.4 bestanden), K1 für den Inhalt der Textvorschläge.
 - Isolierte Abhängigkeiten ohne Systemänderung: `uv`-Umgebung `outputs/claude/venv-readstat` (pyreadstat, pandas, openpyxl), WebKit-Build unter `outputs/claude/pw-browsers` (startet ohne Systembibliotheken nicht, nicht genutzt).
 
 Stevens Auftrag im Wortlaut:

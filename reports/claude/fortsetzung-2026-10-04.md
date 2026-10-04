@@ -6,7 +6,7 @@ Verfasst von Claude (Modellkennung laut Laufzeit `claude-opus-5-5[1m]`). Branch 
 
 - **Technische Prüfgrenzen geschlossen.** Die ESS5-Designdatei ist zum zweiten Mal unabhängig dekodiert, mit ReadStat statt des eigenen Lesers: alle Felder in allen 3031 Zeilen gleich, Standardfehler ohne Abweichung. Der Produktionsbuild ist im Browser geprüft, die öffentlichen Seiten mit echtem 200-%-Zoom. Der Forschungsentwurf ist zusätzlich in Firefox geprüft. WebKit ließ sich ohne Systemänderung nicht starten.
 - **Forschungsentwurf verbessert.** Die Erklärung der 95-%-Bereiche steht einmal je Ansicht, wie Plan v2.2 es verlangt. Fehlende Bereiche sind je Kategorie und bei Gruppenvergleichen markiert. Die Erklärung nennt auch Messfehler einzelner Antworten.
-- **Erweiterungspaket 2025/26 vorbereitet, nicht umgesetzt.** Für keinen der sechs fehlenden Bereiche gibt es außerhalb von GESIS eine Zufallsstichprobe der Jahre 2024 bis 2026 mit öffentlichem deutschem Wortlaut zu einer nationalen Streitfrage. Möglich sind neun Eurobarometer-Fragen, die meisten zu Entscheidungen auf EU-Ebene, nach Freigabe und Klärung der Fragebasis, und ESS12 mit Wählergruppen nach der Bundestagswahl 2025, sobald die deutsche Ausgabe veröffentlicht ist. Der [Analyseplan v2.3](../../docs/analyseplan-v2.3.entwurf.md) ist ein geprüfter Entwurf, keine Freigabe zur Auswertung.
+- **Erweiterungspaket 2025/26 vorbereitet, nicht umgesetzt.** Für keinen der sechs fehlenden Bereiche gibt es außerhalb von GESIS eine Zufallsstichprobe der Jahre 2024 bis 2026 mit öffentlichem deutschem Wortlaut zu einer nationalen Streitfrage. Möglich sind neun Eurobarometer-Fragen, die meisten zu Entscheidungen auf EU-Ebene, nach Freigabe und Klärung der Fragebasis, und ESS12 mit Wählergruppen nach der Bundestagswahl 2025, sobald die deutsche Ausgabe veröffentlicht ist. Der [Analyseplan v2.3](../../docs/analyseplan-v2.3.entwurf.md) hat in Fassung 0.4 beide Planprüfungen bestanden, nach drei Runden. Er bleibt ein Entwurf und ist keine Freigabe zur Auswertung.
 - **Quellenblocker präzisiert.** Je Quelle und Nutzung steht fest, ob sie ausdrücklich verboten, ungeklärt oder durch eine Lizenz erlaubt ist (R10).
 - **Für Steven vorbereitet:** Entscheidungsvorlage mit fünf Entscheidungen, vier Anfrageentwürfe, fünf Textvorschläge.
 
@@ -36,7 +36,17 @@ Nicht durchführbar bleiben physische Smartphones, Touch auf echten Geräten, Sc
 4. Online-Quotenstichproben (OECD Risks that Matter) decken Rente, Gesundheit, Pflege und Wohnen ab, aber nur mit Zahlungsbereitschaft, englischem Wortlaut und ohne Zufallsstichprobe. Die zehn inhaltlich passenden Items sind zurückgestellt, solange kein deutscher Feldwortlaut belegt ist.
 5. Die Rechtslage hat sich seit der Matrix geändert, etwa neues Wehrdienstgesetz, neue Grundsicherung, Mindestlohn 13,90 Euro. Nachgetragen in `docs/abdeckung-v2.2.md`.
 
-**Plan.** [Analyseplan v2.3, Entwurf 0.4](../../docs/analyseplan-v2.3.entwurf.md): Quellenklassen Z, T und Q mit eigenen Anzeigeregeln, getrennte Populationen, keine Trendaussagen zwischen historischen und aktuellen Vergleichen, Rollen für Auswahl und Struktur, Regeln für Wählergruppen 2025, Optionen zur Sichtbarkeit der Gruppenvergleiche, Kandidaten in vier Stufen. PLANPRUEFUNG
+**Plan.** [Analyseplan v2.3, Entwurf 0.4](../../docs/analyseplan-v2.3.entwurf.md): Quellenklassen Z, T und Q mit eigenen Anzeigeregeln, getrennte Populationen, keine Trendaussagen zwischen historischen und aktuellen Vergleichen, Rollen für Auswahl und Struktur, Regeln für Wählergruppen 2025, Optionen zur Sichtbarkeit der Gruppenvergleiche, Kandidaten in vier Stufen.
+
+**Planprüfung.** Zwei getrennte Codex-Rollen (P4 Methoden und Reproduzierbarkeit, P5 Quellen, Konstrukte und Fairness) in drei Runden:
+
+| Runde | Fassung | P4                             | P5                                      | Offene Punkte danach                                                                                                                         |
+| ----- | ------- | ------------------------------ | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | 0.2     | nicht bestanden, sechs Befunde | nicht bestanden, vier Befunde           | alle in Fassung 0.3 bearbeitet                                                                                                               |
+| 2     | 0.3     | nicht bestanden, F01 teilweise | nicht bestanden, F02 teilweise, F05 neu | Nennerangabe im Ausnahmeweg, pauschale „EU-Ebene“ in der Entscheidungsvorlage, OECD-Items trotz fehlendem deutschem Wortlaut „vorgeschlagen“ |
+| 3     | 0.4     | bestanden                      | bestanden                               | keine                                                                                                                                        |
+
+Runde 3 war eine gezielte Nachprüfung der verbliebenen Befunde, keine neue Gesamtprüfung. Berichte: `reports/claude/pruefungen/P4-*-v23.*` und `P5-*-v23.*`. Der Plan bleibt ein Entwurf ohne Tag. Festgeschrieben wird er erst nach Stevens Quellenfreigabe und mit einem geprüften Itemregister (Plan 4.6).
 
 ## 4 Forschungsentwurf und Texte
 
@@ -52,7 +62,8 @@ Neue Rohdatenzugriffe: zweite Dekodierung der ESS5-Designdatei und Wiederholung 
 
 - Alle Prüfungen sind KI-Reviews. Die Recherche stammt von Claude-Subagents, die Prüfungen von Codex.
 - R8 startete einen eigenen Unteragenten zur Rechtslage. Zeitweise liefen dadurch vier statt höchstens drei Agenten.
-- Die deutschen Eurobarometer-Wortlaute im Plan stammen aus R6, das sie aus GESIS-Fragebögen übernommen hat. Der deutsche Datenanhang der Kommission enthält dieselben Texte nach einer Stichprobe; je Frage ist das noch zu prüfen.
+- Die deutschen Eurobarometer-Wortlaute im Plan stammen aus R6, das sie aus GESIS-Fragebögen übernommen hat. Der deutsche Datenanhang der Kommission enthält dieselben Texte nach einer Stichprobe; je Frage ist das noch zu prüfen. Das Itemregister (Plan 4.6) braucht diesen Anhang. Er enthält auch Ergebnisse, deshalb wartet das Register auf Stevens Entscheidung zum Tabellenweg.
+- Der Ausschluss von SP568 QC9 stützt sich nur auf die Formatangabe in R6 und R8, nicht auf den deutschen Originalfragebogen.
 - WebKit, physische Geräte und menschliche Screenreader-Tests fehlen.
 - Die Rechtslage in R8 und R9 beruht teils auf Fachpresse und ist dort markiert. Das ist keine Rechtsberatung.
 
