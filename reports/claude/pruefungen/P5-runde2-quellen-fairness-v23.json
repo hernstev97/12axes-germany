@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "P5 Runde 2: gezielte Nachprüfung PLAN-V23-002, Quellen, Konstrukte und Fairness",
+  "scope": "P5-V23-F01 bis F04 und neue Fehler ihrer Korrekturen in Plan v2.3 Entwurf 0.3; Festschreibungsfähigkeit ausschließlich in diesem Umfang",
+  "manifestSha256": "647b8d9c46d6d30aea2d89c1d4ab8762b5b8b13b3221c4c78ed70d711e49b50d",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "T3-Code-Laufzeitangabe: Codex harness, gpt-6.1-sol, high reasoning effort. Keine unabhängig nachgewiesene interne Modellrevision.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "web.run",
+      "Python 3 hashlib/json/urllib.request/subprocess",
+      "pdftotext über stdin/stdout",
+      "Node.js, Ajv Draft 2020-12, Prettier, ausschließlich für die zwei Ergebnisdateien"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/P5-runde2-plan-v23.md vollständig (SHA-256 des Auftrags: 7b57dc629bbbdfbfe0b80abf1475d53cb866a68574681ad148491c1dcf73750a). Arbeitsverzeichnis ist dieser Worktree. Prüffassung: Manifest reports/claude/pruefungen/PLAN-V23-002-manifest.json mit SHA-256 647b8d9c46d6d30aea2d89c1d4ab8762b5b8b13b3221c4c78ed70d711e49b50d; prüfe ihn und die Dateihashes vor Beginn. Stand beim Auftrag: HEAD f2c8d0d7770a2df17ded4ccdbbd1e10d3d85ad67 auf research/life-93-claude-20261003. Lies keine Antwortverteilungen und öffne keine Ergebnistabellen externer Quellen; keine GESIS-Server. Schreibe nur die beiden im Auftrag genannten Ergebnisdateien. Keine Commits, Pushes, Tags oder Nachrichten. Nichts unter data/raw/, data/local/ oder outputs/ lesen. Am Ende fasse Gesamturteil und Stand der Findings in wenigen Sätzen zusammen.\n\nVollständiger Datei-Auftrag:\n# Auftrag P5 Runde 2: gezielte Nachprüfung des Planentwurfs v2.3 (Quellen, Konstrukte und Fairness)\n\nDu bist ein frischer Prüfagent (Codex, OpenAI) im Projekt „12 Axes Deutschland“ (Linear LIFE-93). Die Prüfung P5 von Fassung 0.2 des Analyseplans v2.3 (`reports/claude/pruefungen/P5-quellen-fairness-v23.md` und `.json`) war NICHT_BESTANDEN mit den Findings P5-V23-F01 bis P5-V23-F04. Claude hat Fassung 0.3 geschrieben. Abschnitt 13 des Plans nennt die Korrekturen. Prüfe gezielt, ob jedes Finding behoben ist und ob die Korrekturen neue Fehler einführen. Keine vollständige neue Prüfung. Deine Rolle: Quellen, Konstrukte und Fairness. Eine zweite Rolle prüft getrennt; ihr Urteil zu Runde 2 erhältst du nicht.\n\nArbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`, Branch `research/life-93-claude-20261003`. Prüffassung: Manifest `reports/claude/pruefungen/PLAN-V23-002-manifest.json`; seinen SHA-256 nennt die Nachricht des Auftraggebers. Prüfe vor Beginn die Hashes. Lies `.claude/skills/life93-review/SKILL.md` und das Urteilsschema. Modus: gezielte Nachprüfung (Runde 2). Die Findings und Urteile beider Rollen aus Runde 1 darfst du lesen.\n\nRegeln: Schreibe nur `reports/claude/pruefungen/P5-runde2-quellen-fairness-v23.md` und `.json`. Keine anderen Dateien ändern, keine Commits, Tags oder Nachrichten. Nichts unter `data/raw/`, `data/local/` oder `outputs/` lesen. Keine Antwortverteilungen lesen (`data/reference-*` nur nach den Regeln aus Runde 1), keine Ergebnistabellen externer Quellen, keine GESIS-Server. Primärquellen außerhalb von GESIS (Fragebögen, Lizenzen, Gesetze) darfst du öffnen.\n\nAusgabe: Bericht und JSON-Urteil mit dem Stand jedes Findings (KORRIGIERT, TEILWEISE, OFFEN) und gegebenenfalls neuen Findings. Am Ende: gelesene Dateien mit Hash, ausgeführte Befehle, Modell laut Laufzeit.\n",
+    "inputHashes": {
+      "docs/analyseplan-v2.3.entwurf.md": "95ea58c0485b4acb980662cd1d5511d855b511ae0adce0c218a912bca205a5db",
+      "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md": "dacfb5d58a1ce12f60cb3b244273dadd1388aaf1fb375e2e1bb5bae39cc6c66f",
+      "docs/abdeckung-v2.2.md": "f9ec753734d4348728b15c5cd7f152fe15df2b7d8db4206c24ec898604a9ac9b",
+      "docs/quellenanfragen-v1.entwurf.md": "d9a4b0b67a73a1669ad07fed7461237cb08c0df0b0f1eacb02b4918a2727e972",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md": "6830b4172d606b47fc6f00214fba09d776790143c85c01529b7c33256691c24b",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json": "23e27dd8c2c1e359fe62ff5df058fef4de749dce95ca1e6da44cec6839e49fa2",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md": "42aaa648a36557d33b6bb316aff007f5f79f92779aa4875acdc74516c70ba5c3",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.json": "71e012d3b460917269153d261a4565f6bfbb34627220ee2cf14d8abf1af272d6",
+      "reports/claude/agenten/R10-quellenblocker.md": "65d79b32748197923c9614c7e8e85f19b06f516fa0cff869dbb7d3cf2f228885",
+      "reports/claude/agenten/R10-quellenblocker.json": "8e15381892d91f62094c68573bb32148a5df21daf24ad11415549ef94861439a",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md": "15b2851d4e383a50ae064b566b1f2d6419180d3899f20007b49c07fe607295c0",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json": "f563bc2f138d67a00a9cf8fbfd80580dd3e842108d17231b44efb241edbc9575",
+      "reports/claude/agenten/R5-wvs.md": "a163be6d448ab5f9e14b54293f355a2e0cea3c19d37e92a4d0021e8af7afc969",
+      "reports/claude/agenten/R6-eurobarometer.md": "58b08b2af20d70261e95e7d0d815d4c083d95e0879cef5ee864c6ee05e84e8bb",
+      "reports/claude/agenten/R7-weitere-quellen.md": "4e795f355ccd359613949a2e307f46150f31506cf817b51f1a4e232405f6fcd5",
+      "reports/claude/auftraege/R-erweiterung-gemeinsam.md": "56970a37d162e3996cace441b4f41c44d7e4e3bfd408d008c13e3f9ba0898ccd",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "reports/claude/pruefungen/P4-methoden-v23.md": "e1aecf135e7bb3cf3a56a55459b25f24f3f09a4349e788278fefc20568292355",
+      "reports/claude/pruefungen/P4-methoden-v23.json": "2b6df5d37b09bc481cafce926e36e4827c842147910e93a51abe1c346d18462d",
+      "reports/claude/pruefungen/P5-quellen-fairness-v23.md": "bbd1b5cd21370863d95bdb3d1056ae9634ed52554d253189d30fa0e05e69f25d",
+      "reports/claude/pruefungen/P5-quellen-fairness-v23.json": "d5393faca0fdaf80ac906621b94fc0dad498b25ce1877d0220ef650d4f1d8878",
+      "reports/claude/auftraege/P5-runde2-plan-v23.md": "7b57dc629bbbdfbfe0b80abf1475d53cb866a68574681ad148491c1dcf73750a",
+      "reports/claude/pruefungen/PLAN-V23-002-manifest.json": "647b8d9c46d6d30aea2d89c1d4ab8762b5b8b13b3221c4c78ed70d711e49b50d",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "docs/project.md": "2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "reports/claude/auftraege/P5-plan-v23-quellen-fairness.md": "fc392d6199546c89eaafec41447ba5be0fdcf35bc78bcf045a0aef6868746fa1",
+      "package.json": "451c9de3c5e0b647361bfbc749717712b895b822a04f84433288d19eb29a27f7",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9",
+      "https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf": "5672381901f57dcc2ee3e76a9b0716b6c418c3a69e1e85b804e29bb2c343ae10",
+      "https://www.europeansocialsurvey.org/news/article/initial-round-12-data-release-scheduled-early-2027": "fd1f7663ca6e3a2e5d1daacfa291b41f8804824c3e807b6c570554a793ea4b96"
+    }
+  },
+  "checks": [
+    {
+      "id": "P5-R2-C01",
+      "scope": "Auftrag, Manifest und 23 Dateipins",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Auftraghash 7b57dc629bbbdfbfe0b80abf1475d53cb866a68574681ad148491c1dcf73750a; Manifesthash 647b8d9c46d6d30aea2d89c1d4ab8762b5b8b13b3221c4c78ed70d711e49b50d; alle 23 Pins vor Bewertung und vor Schreiben identisch.",
+        "Start-HEAD f2c8d0d7770a2df17ded4ccdbbd1e10d3d85ad67, research/life-93-claude-20261003; sauberer Start. Manifest.commit c7adf473b29343b86766eb25a87b9f752960616f ist ältere Paketbasis; Manifestnote sagt noch Entwurf 0.2. Geprüfte gehashte Planbytes sind Entwurf 0.3."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R2-C02",
+      "scope": "Gezielte Nachprüfung P5-V23-F01",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Runde 2: Die frühere unbegründete Unterscheidung ist korrigiert. 4.2 a trennt die Feststellung bereits ergriffener Maßnahmen von 4.2 b, einer einseitigen Zweckbegründung im Zollitem. QB12 nennt Kosten beider Alternativen. Q19 macht den eigenen Preis und den Leistungsgewinn ausdrücklich zum gemessenen Gegenstand. Q27 e wird nicht mehr wegen seiner Kosten-Nutzen-Abwägung ausgeschlossen, sondern wegen des engeren Digitalisierungsanlasses nach 4.1 Nr. 2/4.2 f. Dieser Anlass entspricht keiner eigens benannten Arbeitszeit-Unterlücke der Matrix. Damit sind die ursprünglich beanstandeten Unterschiede anhand einer gemeinsamen Regel nachvollziehbar. Die Neubewertung ist keine Schätzung eines Framingeffekts und kein Neutralitätsnachweis."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R2-C03",
+      "scope": "Gezielte Nachprüfung P5-V23-F02",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "Runde 2, TEILWEISE: Plan 4.4/11.1 und die Lage/Empfehlung der Entscheidungsvorlage unterscheiden die Ebenen korrekt. Die neun vorgeschlagenen Items sind richtig als sechs EU-Entscheidungen, ein Beitritt, eine allgemeine Präferenz und eine mehrdeutige Frage gezählt; beide zurückgestellten Forschungsprinzipien nennen keine Ebene. Entscheidungsvorlage Zeile 33 verlangt jedoch weiterhin, die Fragen in der Themenabdeckung getrennt als EU-Ebene zu führen. Das würde gerade die korrigierte Unterscheidung wieder verlieren. Die alte pauschale Aussage in Abdeckung Zeile 83 bleibt historische Grundlage; der v2.3-Plan muss sie ausdrücklich begrenzen, ohne die historische Matrix umzuschreiben."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R2-C04",
+      "scope": "Gezielte Nachprüfung P5-V23-F03",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Runde 2: b/c sind aufgenommen; die Liste enthält nun zehn Items b-j und l. a/k sind mit 4.1 Nr. 2 ausgeschlossen statt stillschweigend ausgelassen. Die Matrix benennt bei Familie bereits Kinderbetreuung/Elternleistungen, bei Sicherheit Polizei/Strafen; sie führt dort keine eigene Lücke für allgemeinen Ausbau dieser Leistungen. Die Kita-Pflicht in der Bildungslücke ist ein anderer Gegenstand als allgemeine Familienleistungen. Eine andere Auswahl wäre fachlich diskutierbar, aber der ursprüngliche unbegründete Fünfer- und Vollständigkeitsfehler ist behoben. Entscheidungsvorlage und Mehrfachauswahlgrenze sind angeglichen. Das bestätigt die inhaltliche Liste, nicht den neuen Status vorgeschlagen; dazu F05."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R2-C05",
+      "scope": "Gezielte Nachprüfung P5-V23-F04",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Runde 2: Beide Dokumente nennen den erwarteten ersten Datenrelease, bestätigen Deutschland und deutschen Fragebogen zu diesem Termin ausdrücklich nicht und binden den Beginn an die tatsächlich veröffentlichte deutsche Ausgabe. Die Originalmeldung kündigt den Ersttermin an, ohne eine entsprechende deutsche Zusage. Korrigiert im benannten Umfang; keine Vorhersage eines tatsächlichen Releases."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R2-C06",
+      "scope": "Neue Fehler in den Korrekturen: Kandidatenstatus",
+      "status": "NICHT_BESTANDEN",
+      "evidence": [
+        "P5-V23-F05; 4.1 Nr. 3 und 4.6 widersprechen dem vorgeschlagen-Status der OECD-Liste in 11.3."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "P5-R2-C07",
+      "scope": "Andere Urteilsteile aus Runde 1 und fremde Runde-2-Prüfung",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "evidence": [
+        "Keine neue Gesamtprüfung; übrige alten Urteile nicht erneuert. P4-Runde-1-Dateien nur gehasht, keine Inhalte gelesen; kein P4-Runde-2-Zugriff."
+      ],
+      "requiredInScope": false
+    },
+    {
+      "id": "P5-R2-C08",
+      "scope": "Gesamtcheck, Rechenweg, Produktbrowser, Empirie und Veröffentlichung",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "evidence": [
+        "Nur zwei eigene Reviewdateien werden erzeugt. Kein Rechencode und keine UI verändert. pnpm check nicht ausgeführt: Paketcheck umfasst Produkttests/Build und globale Dateiprüfungen; die ausdrücklichen Antwortverteilungs-, Pfad- und Schreibgrenzen des Auftrags gehen vor. Eigene Dateien werden separat nach Schema und Format geprüft."
+      ],
+      "requiredInScope": false
+    },
+    {
+      "id": "P5-R2-C09",
+      "scope": "Formale Kontrolle der eigenen zwei Ergebnisdateien und abschließende Eingabebindung",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Ajv Draft 2020-12: JSON schema-konform; Prettier im Speicher: beide Dateien format-konform.",
+        "33 lokale inputHashes einschließlich aller 23 Manifestartefakte nach Berichtserstellung unverändert; beide externen Originalhashes beim direkten Abruf bestätigt.",
+        "Abschließender Git-Status nennt ausschließlich die beiden beauftragten neuen Ergebnisdateien; HEAD weiterhin f2c8d0d7770a2df17ded4ccdbbd1e10d3d85ad67."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "P5-V23-F01",
+      "claim": "Plan v2.3 schließt ST0939 wegen des Anlasses im Fragetext und OECD Q27 e wegen der Kosten-Nutzen-Vorgabe aus, behält aber ST0350 Item 2 und SP572 QB12 bei.",
+      "problem": "Abschnitt 4 Nr. 4 erlaubt gekennzeichnete Begründungen und Prämissen und schließt nur wertende Prämissen aus. Der Ausschlussgrund 'Anlass' für Gegenzölle wird weder als wertend erklärt noch von der ebenfalls reaktionsbezogenen Einleitung der ausgewählten Ukraine-Finanzierung abgegrenzt. Ebenso fehlt die Abgrenzung einer unzulässigen Kosten-Nutzen-Vorgabe (Q27 e) von den zulässigen Abwägungen in QB12 und Q19. Der Auswahlmaßstab ist damit nicht durchgängig nachvollziehbar. Die Kontexte sind verschieden; dieser Befund behauptet nicht, sie seien identisch.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:60-73,188,190,196,210,225",
+        "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json: kandidaten[id=R8-EB-ST0350-2], kandidaten[id=R8-EB-ST0939-ZOLL], kandidaten[id=R8-EB-SP572-QB12-KI], jeweils wortlautDe/kontext",
+        "reports/claude/agenten/R6-eurobarometer.md:176-198",
+        "OECD-Kernfragebogen 2024, PDF-S. 7 und 10; https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf"
+      ],
+      "impact": "Die belegte Auswahl bietet Zustimmung zu militärischer Unterstützung an, verwirft aber die Gegenstandsfrage zu defensiven Zöllen mit einem Maßstab, dessen Anwendung auf die ausgewählte Frage unklar bleibt. Bei Arbeitszeitpolitik wird eine Kostenabwägung verworfen, bei KI und Sozialausgaben zugelassen. Das verhindert die Bestätigung gleicher Auswahlstandards; Richtung und Größe eines empirischen Framingeffekts wurden nicht geprüft.",
+      "severity": "erheblich",
+      "severityReason": "Die Gleichbehandlung politischer Gegenstände und die Regeln vor Ergebnissicht gehören zum Kern dieses Planreviews. Es geht um die Auswahlentscheidung, nicht bloß um einen fehlenden Hinweis.",
+      "correction": "Vor Festschreibung eine gemeinsame Regel für sachlichen Anlass, wertende Prämisse, bedingte Präferenz und ausdrücklich zweiseitige Abwägung festlegen. Die vier Fälle und Q19 anhand dieser Regel begründen und die Auswahl gegebenenfalls ändern. Alternativ betroffene Kandidaten zurückstellen. Ein Hinweis allein behebt einen nach der neuen Regel tatsächlich unzulässigen Frame nicht.",
+      "recheck": "Runde 2: Die frühere unbegründete Unterscheidung ist korrigiert. 4.2 a trennt die Feststellung bereits ergriffener Maßnahmen von 4.2 b, einer einseitigen Zweckbegründung im Zollitem. QB12 nennt Kosten beider Alternativen. Q19 macht den eigenen Preis und den Leistungsgewinn ausdrücklich zum gemessenen Gegenstand. Q27 e wird nicht mehr wegen seiner Kosten-Nutzen-Abwägung ausgeschlossen, sondern wegen des engeren Digitalisierungsanlasses nach 4.1 Nr. 2/4.2 f. Dieser Anlass entspricht keiner eigens benannten Arbeitszeit-Unterlücke der Matrix. Damit sind die ursprünglich beanstandeten Unterschiede anhand einer gemeinsamen Regel nachvollziehbar. Die Neubewertung ist keine Schätzung eines Framingeffekts und kein Neutralitätsnachweis.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P5-V23-F02",
+      "claim": "Die Entscheidungsvorlage gibt weiterhin vor: Die Themenabdeckung führt die Fragen getrennt als EU-Ebene.",
+      "problem": "Plan und Lage/Empfehlung der Entscheidungsvorlage korrigieren die pauschale Zuordnung; die verbindlich formulierte Folge in Zeile 33 bleibt falsch für die allgemeine KI-Präferenz und die offene Ebene der Verteidigungsausgaben.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:83-91,184-198",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:27-33",
+        "docs/abdeckung-v2.2.md:83,94",
+        "reports/claude/agenten/R6-eurobarometer.md:198,231"
+      ],
+      "impact": "Die nachgelagerte Themenabdeckung kann die im Plan korrigierten Konstrukte erneut auf EU-Entscheidungen verengen. Der geprüfte Interpretationsumfang bleibt blockiert.",
+      "severity": "mittel",
+      "severityReason": "Der Fehler betrifft die Reichweite der Interpretation und ist vor der Bindung an Ergebnis- und Abdeckungstexte zu korrigieren. Die einzelnen Tabellenhinweise begrenzen ihn bereits.",
+      "correction": "In der Folge der Entscheidungsvorlage dieselben Geltungsbereiche wie in 4.4/11.1 verlangen. Allgemeine und mehrdeutige Fragen getrennt kennzeichnen. Die frühere pauschale Eurobarometer-Aussage der historischen Matrix für v2.3 ausdrücklich begrenzen; keine historische Fassung überschreiben.",
+      "recheck": "Runde 2, TEILWEISE: Plan 4.4/11.1 und die Lage/Empfehlung der Entscheidungsvorlage unterscheiden die Ebenen korrekt. Die neun vorgeschlagenen Items sind richtig als sechs EU-Entscheidungen, ein Beitritt, eine allgemeine Präferenz und eine mehrdeutige Frage gezählt; beide zurückgestellten Forschungsprinzipien nennen keine Ebene. Entscheidungsvorlage Zeile 33 verlangt jedoch weiterhin, die Fragen in der Themenabdeckung getrennt als EU-Ebene zu führen. Das würde gerade die korrigierte Unterscheidung wieder verlieren. Die alte pauschale Aussage in Abdeckung Zeile 83 bleibt historische Grundlage; der v2.3-Plan muss sie ausdrücklich begrenzen, ohne die historische Matrix umzuschreiben.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P5-V23-F03",
+      "claim": "Bei OECD RTM 2024 seien 'nur' Q19 g, i, j, f und e ohne Prämisse oder Begründung verfügbar; die Entscheidungsvorlage spricht von fünf verbleibenden Fragen.",
+      "problem": "Der Originalfragebogen hat für Q19 a-l denselben Stamm zur Bereitschaft, zusätzliche 2 % des Einkommens für bessere Leistungen und Zugang zu zahlen. Q19 b (Bildung) und Q19 c (Beschäftigungsunterstützung) stehen unter genau demselben Stamm und passen zu ausdrücklich benannten Lücken. Für ihren Ausschluss gibt es keine Begründung. Die Primärquelle trägt deshalb weder die Vollständigkeitsbehauptung 'nur' noch die auf fünf Fragen reduzierte Nutzenabwägung.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:210-225",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:37-41",
+        "docs/abdeckung-v2.2.md:24-37",
+        "OECD-Kernfragebogen 2024, PDF-S. 7, Q19 a-n; https://webfs.oecd.org/els-com/RtM/OECD-Risks-That-Matter-2024-Core-Questionnaire.pdf"
+      ],
+      "impact": "Steven erhält eine unvollständige Darstellung der inhaltlichen Option für Bildung und Arbeit. Ob die erweiterte Liste die begründete Entscheidung gegen Quotenvergleiche ändert, ist offen; Alter, Quotenstichprobe und fehlender deutscher Originalwortlaut bleiben dieselben Grenzen.",
+      "severity": "mittel",
+      "severityReason": "Ein direkt nachprüfbarer Vollständigkeitsfehler betrifft Fragenauswahl und Entscheidungsvorlage. Er kann ohne Ergebniszugriff korrigiert werden.",
+      "correction": "Mindestens Q19 b und c nach denselben Auswahlregeln prüfen und als Kandidaten oder mit konkretem Ausschlussgrund dokumentieren. Die absolute Fünferbehauptung und die Nutzenabwägung berichtigen. Die fünf vorhandenen Items nicht automatisch aktivieren; bei Mehrfachauswahl 'nicht ausgewählt' nicht als Ablehnung oder fehlende Zahlungsbereitschaft für den Einzelbereich auslegen.",
+      "recheck": "Runde 2: b/c sind aufgenommen; die Liste enthält nun zehn Items b-j und l. a/k sind mit 4.1 Nr. 2 ausgeschlossen statt stillschweigend ausgelassen. Die Matrix benennt bei Familie bereits Kinderbetreuung/Elternleistungen, bei Sicherheit Polizei/Strafen; sie führt dort keine eigene Lücke für allgemeinen Ausbau dieser Leistungen. Die Kita-Pflicht in der Bildungslücke ist ein anderer Gegenstand als allgemeine Familienleistungen. Eine andere Auswahl wäre fachlich diskutierbar, aber der ursprüngliche unbegründete Fünfer- und Vollständigkeitsfehler ist behoben. Entscheidungsvorlage und Mehrfachauswahlgrenze sind angeglichen. Das bestätigt die inhaltliche Liste, nicht den neuen Status vorgeschlagen; dazu F05.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P5-V23-F04",
+      "claim": "ESS12-Daten und deutscher Fragebogen seien für Januar 2027 angekündigt.",
+      "problem": "Die ESS-Mitteilung vom 30. September 2026 kündigt die erste Datenveröffentlichung voraussichtlich für Januar 2027 an. Sie verspricht weder die Aufnahme Deutschlands in diese Erstveröffentlichung noch den deutschen Fragebogen zu diesem Termin. R9 benennt diese Unsicherheit bereits.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:200-205",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:51-53",
+        "ESS-Meldung vom 30.09.2026, Haupttext; https://www.europeansocialsurvey.org/news/article/initial-round-12-data-release-scheduled-early-2027"
+      ],
+      "impact": "Die Entscheidungsvorlage erweckt eine zu sichere Terminannahme für den deutschen Aktualisierungsweg. Die positiven Voraussetzungen in Plan 11.2 verhindern aber einen verfrühten Zugriff oder Export.",
+      "severity": "niedrig",
+      "severityReason": "Terminpräzisierung ohne Aufhebung eines Schutzgatters; kein eigenständiger Blocker des Planentwurfs.",
+      "correction": "'Erste ESS12-Datenveröffentlichung voraussichtlich Januar 2027; Deutschland und deutscher Fragebogen zu diesem Termin nicht bestätigt' schreiben. Den Beginn an die tatsächlich vorhandene deutsche Ausgabe binden.",
+      "recheck": "Runde 2: Beide Dokumente nennen den erwarteten ersten Datenrelease, bestätigen Deutschland und deutschen Fragebogen zu diesem Termin ausdrücklich nicht und binden den Beginn an die tatsächlich veröffentlichte deutsche Ausgabe. Die Originalmeldung kündigt den Ersttermin an, ohne eine entsprechende deutsche Zusage. Korrigiert im benannten Umfang; keine Vorhersage eines tatsächlichen Releases.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P5-V23-F05",
+      "claim": "Abschnitt 4.6 definiert vorgeschlagen als alle Bedingungen erfüllt, Freigaben offen; Abschnitt 11.3 bezeichnet zehn OECD-Q19-Items als vorgeschlagen.",
+      "problem": "Neu eingeführter Statuswiderspruch: 4.1 Nr. 3 verlangt den belegten deutschen Originalwortlaut samt vollständiger Antwortliste und Kontext. 11.3 stellt zugleich fest, dass der Fragebogen nur englisch vorliegt. Die deutschen Originalfeldtexte fehlen weiterhin; das ist eine fehlende Sachvoraussetzung und keine bloß ausstehende Freigabe. Nach 4.6 wären diese inhaltlichen Kandidaten zurückgestellt.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:49-57,97-99,208-225",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:37-39",
+        "docs/quellenanfragen-v1.entwurf.md:76-79"
+      ],
+      "impact": "Das neue Statusmodell stellt eine nicht erfüllte Wortlautbedingung als erfüllt dar und erschwert die spätere Prüfung des eingefrorenen Itemregisters. Die übergeordneten Auswertungs- und Quellenstopps bleiben bestehen; kein tatsächlicher unerlaubter Abruf oder Export wurde festgestellt.",
+      "severity": "mittel",
+      "severityReason": "Belegter Widerspruch in der neu eingeführten Kandidatenentscheidung, die die Erfüllung der Quellen- und Wortlautregeln anzeigen soll. Vor Festschreibung zu korrigieren, aber kein Nachweis eines bereits erfolgten Daten- oder Veröffentlichungsverstoßes.",
+      "correction": "Die zehn OECD-Items als inhaltlich geeignete, zurückgestellte Kandidaten mit fehlendem deutschen Feldwortlaut kennzeichnen. Alternativ den Status vorgeschlagen ausdrücklich nur als inhaltlichen Vorschlag definieren und jede offene Sachvoraussetzung separat binden. 4.1 Nr. 3 und die Aufnahmesperre erhalten; keine eigene Übersetzung zum Originalwortlaut erklären.",
+      "recheck": "Neue gepinnte Fassung: Statusdefinition mit OECD-Liste und Entscheidungsvorlage abgleichen. Für jeden nicht belegten Wortlaut muss der offene Status sichtbar bleiben, bis ein vollständiges Originalregister tatsächlich geprüft ist.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    }
+  ],
+  "ratings": [
+    {
+      "findingId": "P5-V23-F01",
+      "round": 2,
+      "correctionStatus": "KORRIGIERT",
+      "origin": "RUNDE_1",
+      "blocksScope": false
+    },
+    {
+      "findingId": "P5-V23-F02",
+      "round": 2,
+      "correctionStatus": "TEILWEISE",
+      "origin": "RUNDE_1",
+      "blocksScope": true
+    },
+    {
+      "findingId": "P5-V23-F03",
+      "round": 2,
+      "correctionStatus": "KORRIGIERT",
+      "origin": "RUNDE_1",
+      "blocksScope": false
+    },
+    {
+      "findingId": "P5-V23-F04",
+      "round": 2,
+      "correctionStatus": "KORRIGIERT",
+      "origin": "RUNDE_1",
+      "blocksScope": false
+    },
+    {
+      "findingId": "P5-V23-F05",
+      "round": 2,
+      "correctionStatus": "OFFEN",
+      "origin": "NEU_IN_RUNDE_2",
+      "blocksScope": true
+    }
+  ],
+  "limits": [
+    "Gezielte Nachprüfung von P5-V23-F01 bis F04 und neuen Fehlern der Korrekturen. Keine vollständige neue Quellen-, Rechts-, Konstrukt- oder Fairnessprüfung.",
+    "NICHT_BESTANDEN betrifft nur Festschreibung im P5-Runde-2-Umfang. Keine empirische Validierung, kein Neutralitätsnachweis, keine juristische, menschliche, Produkt-, Export- oder Releasefreigabe.",
+    "Keine Antwortverteilungen, externen Ergebnistabellen, GESIS-Server oder Dateien unter data/raw/, data/local/ oder outputs/ gelesen. Auch data/reference-* nicht geöffnet; keine Statusausnahme genutzt.",
+    "Deutsche Eurobarometer-Originale nicht erneut authentifiziert; gezielter semantischer Abgleich an gepinnten R6/R8 und S1-Strukturbericht. Vollständige deutsche Feldtexte bleiben spätere Voraussetzungen; S1 bestätigt nur eine Wortlautstichprobe.",
+    "OECD-Fragebogen direkt an Primärquelle gelesen und SHA-256 bestätigt. Q19-Nichtauswahl bleibt keine Ablehnung; m/n sind exklusive Optionen und müssen vor Integration in die vollständige Originalantwortliste gebunden werden.",
+    "ESS-Seite scheiterte zweimal über web.open mit Internal Error. Direkter HTTPS-Abruf per urllib.request gelang; HTML-Hash stimmt mit der Runde-1-Quelle überein. Keine Dateien für Downloads geschrieben.",
+    "Mehrere gebündelte Werkzeugausgaben wurden gekürzt. Bewertungsrelevante Stellen und verpflichtende Basisregeln wurden in kleineren Ausschnitten erneut ausgegeben. Hashprüfung aller Bytes ist kein vollständiges Inhaltsreview.",
+    "Leichter Memory-Abgleich nur zum Verfahren begrenzter Reviews, MEMORY.md:52-55. Keine alten fachlichen Urteile oder Rollout-Dateien als Entscheidungsbeleg gelesen.",
+    "Das Urteilsschema lässt im Finding-state keinen Wert TEILWEISE zu. F02 steht deshalb schema-konform als OFFEN und wird in ratings mit correctionStatus TEILWEISE sowie in recheck ausdrücklich als teilweise korrigiert geführt.",
+    "Auftrag und Manifest sind authentifiziert. Die veraltete Entwurf-0.2-Manifestnotiz ist eine Metadatenungenauigkeit, kein Bytebindungsfehler. Historische P5-Erstberichte bleiben unverändert."
+  ]
+}

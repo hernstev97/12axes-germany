@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "P4 Runde 2: gezielte Nachprüfung Plan v2.3, Methoden und Reproduzierbarkeit",
+  "scope": "PLAN-V23-002, Entwurf 0.3: Korrekturen von P4-V23-F01 bis F06 und unmittelbar durch sie eingeführte Fehler; keine neue Gesamtprüfung.",
+  "manifestSha256": "647b8d9c46d6d30aea2d89c1d4ab8762b5b8b13b3221c4c78ed70d711e49b50d",
+  "status": "NICHT_BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "T3-Code-Laufzeitangabe: Codex harness, gpt-6.1-sol, high reasoning effort. Keine konkrete interne Modellrevision nachgewiesen.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "apply_patch"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/P4-runde2-plan-v23.md vollständig (SHA-256 des Auftrags: 5ba3a41e78dd8a65c1b6a7a4b8849d4ce12b8e93fa34c80fcce06971c5ac8585). Arbeitsverzeichnis ist dieser Worktree. Prüffassung: Manifest reports/claude/pruefungen/PLAN-V23-002-manifest.json mit SHA-256 647b8d9c46d6d30aea2d89c1d4ab8762b5b8b13b3221c4c78ed70d711e49b50d; prüfe ihn und die Dateihashes vor Beginn. Stand beim Auftrag: HEAD f2c8d0d7770a2df17ded4ccdbbd1e10d3d85ad67 auf research/life-93-claude-20261003. Für die Nachprüfung von P4-V23-F06 darfst du wie in Runde 1 nur die Felder status und die Kategorienzahl aus data/reference-v2.2 zählen, ohne Anteile, Bereiche oder Fallzahlen auszugeben. Schreibe nur die beiden im Auftrag genannten Ergebnisdateien. Keine Commits, Pushes, Tags oder Nachrichten. Nichts unter data/raw/, data/local/ oder outputs/ lesen. Am Ende fasse Gesamturteil und Stand der Findings in wenigen Sätzen zusammen.",
+    "inputHashes": {
+      "docs/analyseplan-v2.3.entwurf.md": "95ea58c0485b4acb980662cd1d5511d855b511ae0adce0c218a912bca205a5db",
+      "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md": "dacfb5d58a1ce12f60cb3b244273dadd1388aaf1fb375e2e1bb5bae39cc6c66f",
+      "docs/abdeckung-v2.2.md": "f9ec753734d4348728b15c5cd7f152fe15df2b7d8db4206c24ec898604a9ac9b",
+      "docs/quellenanfragen-v1.entwurf.md": "d9a4b0b67a73a1669ad07fed7461237cb08c0df0b0f1eacb02b4918a2727e972",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md": "6830b4172d606b47fc6f00214fba09d776790143c85c01529b7c33256691c24b",
+      "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json": "23e27dd8c2c1e359fe62ff5df058fef4de749dce95ca1e6da44cec6839e49fa2",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md": "42aaa648a36557d33b6bb316aff007f5f79f92779aa4875acdc74516c70ba5c3",
+      "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.json": "71e012d3b460917269153d261a4565f6bfbb34627220ee2cf14d8abf1af272d6",
+      "reports/claude/agenten/R10-quellenblocker.md": "65d79b32748197923c9614c7e8e85f19b06f516fa0cff869dbb7d3cf2f228885",
+      "reports/claude/agenten/R10-quellenblocker.json": "8e15381892d91f62094c68573bb32148a5df21daf24ad11415549ef94861439a",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md": "15b2851d4e383a50ae064b566b1f2d6419180d3899f20007b49c07fe607295c0",
+      "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json": "f563bc2f138d67a00a9cf8fbfd80580dd3e842108d17231b44efb241edbc9575",
+      "reports/claude/agenten/R5-wvs.md": "a163be6d448ab5f9e14b54293f355a2e0cea3c19d37e92a4d0021e8af7afc969",
+      "reports/claude/agenten/R6-eurobarometer.md": "58b08b2af20d70261e95e7d0d815d4c083d95e0879cef5ee864c6ee05e84e8bb",
+      "reports/claude/agenten/R7-weitere-quellen.md": "4e795f355ccd359613949a2e307f46150f31506cf817b51f1a4e232405f6fcd5",
+      "reports/claude/auftraege/R-erweiterung-gemeinsam.md": "56970a37d162e3996cace441b4f41c44d7e4e3bfd408d008c13e3f9ba0898ccd",
+      "data/gruppenvertrag.v2.1.entwurf.json": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702",
+      "reports/claude/pruefungen/P4-methoden-v23.md": "e1aecf135e7bb3cf3a56a55459b25f24f3f09a4349e788278fefc20568292355",
+      "reports/claude/pruefungen/P4-methoden-v23.json": "2b6df5d37b09bc481cafce926e36e4827c842147910e93a51abe1c346d18462d",
+      "reports/claude/pruefungen/P5-quellen-fairness-v23.md": "bbd1b5cd21370863d95bdb3d1056ae9634ed52554d253189d30fa0e05e69f25d",
+      "reports/claude/pruefungen/P5-quellen-fairness-v23.json": "d5393faca0fdaf80ac906621b94fc0dad498b25ce1877d0220ef650d4f1d8878",
+      "reports/claude/auftraege/P4-runde2-plan-v23.md": "5ba3a41e78dd8a65c1b6a7a4b8849d4ce12b8e93fa34c80fcce06971c5ac8585",
+      "reports/claude/pruefungen/PLAN-V23-002-manifest.json": "647b8d9c46d6d30aea2d89c1d4ab8762b5b8b13b3221c4c78ed70d711e49b50d",
+      "reports/claude/auftraege/P4-plan-v23-methoden.md": "8dc91913011c4713d86b1bbada75570307f2d446247f9d2fb5a748510b85bed2",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "docs/project.md": "2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9",
+      "data/politikprofil-v2.fragen.entwurf.json": "5fe6b93513151e07399840a3a9c1b6222be0fe90b6b98b0997e31dfde89422e4",
+      "data/politikprofil-v2.2.ergaenzung.json": "c4b0d97aeaf10868001199cb3f7f135a6fb8ec28d63b58f7f222ff7e0acd71ac",
+      "data/reference-v2.2/ESS10SCe03_2.json": "43322d3d8de64b106b7b4336215c30e9575ba58654224cfba860ab97ebfa7a2a",
+      "data/reference-v2.2/ESS11e04_2.json": "a9955368600a474ca40cf71b8d58c0cdf7eccaf6c6f73c7fe724540ab82916da",
+      "data/reference-v2.2/ESS5e03_6.json": "77012bf09c1994e1414104408d01c8d132c2778c1bc18ce3b4e60ddcf520bc34",
+      "data/reference-v2.2/ESS8e02_3.json": "93191d2e37f1bd4ab114c41f25bfcc5ce77d5d2ed83a74a2cfd5a8be103e6ef4",
+      "data/reference-v2.2/ESS9e03_3.json": "ef93e28ae52592a6d90499017d6c89ab35c78d7205b1573377874774d5dbe9c7"
+    }
+  },
+  "checks": [
+    {
+      "id": "P4-R2-PINS",
+      "scope": "Auftrag, Manifest und alle 23 gebundenen Artefakte",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "Auftrags-SHA-256 5ba3a41e78dd8a65c1b6a7a4b8849d4ce12b8e93fa34c80fcce06971c5ac8585 und Manifest-SHA-256 647b8d9c46d6d30aea2d89c1d4ab8762b5b8b13b3221c4c78ed70d711e49b50d stimmen.",
+        "Alle 23 Artefakthashes vor Beginn bestätigt; Abschlussvergleich hält Eingaben und Erstberichte unverändert."
+      ]
+    },
+    {
+      "id": "P4-R2-F01",
+      "scope": "Gezielte Nachprüfung P4-V23-F01",
+      "status": "NICHT_BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:117-127: Frageuniversum und gewichtete Tabellenbasis getrennt; ungewichtete Fragebasis und Missing-Regel unbekannt; Standardstopp und Ausnahmehinweis.",
+        "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md:12-14,158-163: fehlende ungewichtete Fragebasis und fehlende Dokumentation zum Umgang mit fehlenden Antworten.",
+        "docs/quellenanfragen-v1.entwurf.md, Entwurf 3 Frage 2: auswertbare Fragebasis und Behandlung von Verweigerung/Item-Nonresponse werden erst angefragt.",
+        "Synthetische Gegenprobe: identisches Frageuniversum und dieselbe Weiß-nicht-Kategorie können mit Einschluss oder Ausschluss von Item-Verweigerungen im Nenner vereinbar sein. Keine realen Befragungsdaten."
+      ]
+    },
+    {
+      "id": "P4-R2-F02",
+      "scope": "Gezielte Nachprüfung P4-V23-F02",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:128-131.",
+        "Synthetischer Protokoll-Durchgang: DE/DEE-Verwechslung scheitert an der Landbindung; vertauschte Kategorien am Zellabgleich; fehlende Weiß-nicht-Zeile an Vollständigkeit; eine Rundungssumme ungleich 100 darf bei unveränderter Originaldarstellung bestehen bleiben."
+      ]
+    },
+    {
+      "id": "P4-R2-F03",
+      "scope": "Gezielte Nachprüfung P4-V23-F03",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:66-81,93-101,180-196.",
+        "reports/claude/agenten/R6-eurobarometer.md:176-191: dokumentierte Texte von ST0350, ST0359 und ST0939.",
+        "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md:222-242: betroffene Kandidaten und Grenzen.",
+        "docs/analyseplan-v2.3.entwurf.md:129,168-172: Wortlaut-/Wellenbindung, Register, Prüfung und Festschreibung vor Wertübertragung."
+      ]
+    },
+    {
+      "id": "P4-R2-F04",
+      "scope": "Gezielte Nachprüfung P4-V23-F04",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:139-143,202-205.",
+        "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md:315-321: vorab zu bindende Modusentscheidung.",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md, Abschnitt 5: ergebnisblinder ESS12-Vertrag nach tatsächlicher deutscher Veröffentlichung."
+      ]
+    },
+    {
+      "id": "P4-R2-F05",
+      "scope": "Gezielte Nachprüfung P4-V23-F05",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:153-157.",
+        "Synthetische Wiederholung des Gegenbeispiels aus Runde 1: Gesamtzahl 100, sichtbare Zelle 98, zwei positive verdeckte Zellen jeweils eins bis vier; die einzig mögliche Aufteilung ist eins/eins. Kein realer Datensatz verwendet."
+      ]
+    },
+    {
+      "id": "P4-R2-F06",
+      "scope": "Gezielte Nachprüfung P4-V23-F06",
+      "status": "BESTANDEN",
+      "requiredInScope": true,
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:147-149.",
+        "Erlaubte Statusprojektion erneut ausgeführt: 4 Kategorien 22/45, 5 Kategorien 58/139, 6 Kategorien 10/63, 11 Kategorien 6/43 verfügbare Gruppenpaare. Das sind Statuszählungen, keine Befragten- oder Zellfallzahlen.",
+        "Nur questionId/groupId zur Zuordnung und Duplikatkontrolle, status sowie Kategorienanzahl aus den beiden Katalogen inhaltlich genutzt; keine Verteilungsfelder ausgewertet."
+      ]
+    },
+    {
+      "id": "P4-R2-LATER",
+      "scope": "Reale Tabellenübertragung, ESS12-Vertrag/Empirie, B/C-Aktivierung, UI und Veröffentlichung",
+      "status": "IN_DIESER_PHASE_NICHT_ERFORDERLICH",
+      "requiredInScope": false,
+      "evidence": [
+        "Gegenstand ist ausschließlich die Korrektur des Planentwurfs. Spätere Umsetzungen und Freigaben bleiben ausdrücklich offen."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "P4-V23-F01",
+      "claim": "Abschnitt 6 Nr. 3: „Anteile wie veröffentlicht, bezogen auf alle Befragten einschließlich ‚Weiß nicht‘.“ Danach: „Der Nenner unterscheidet sich vom ESS, wo nur gültige Antworten zählen.“",
+      "problem": "Runde 1 beanstandete die Gleichsetzung von Interviewzahl, Frageuniversum und Fragebasis sowie eine unbelegte Missing-/Nennerregel. Fassung 0.3 trennt die Metadaten und sperrt Zahlen standardmäßig bis zur Klärung. Der ausdrücklich erlaubte Ausnahmeweg schreibt aber weiter eine gesicherte Nennerregel für alle Befragten vor, obwohl derselbe Abschnitt Item-Missing und die auswertbare Fragebasis als unbekannt bezeichnet. Ein Frageuniversum „All respondents“ und eine Weiß-nicht-Zeile belegen diese genaue Rechenbasis nicht. Auch der bestimmte Nennervergleich mit ESS geht über den dokumentierten Stand hinaus.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:117-127: Frageuniversum und gewichtete Tabellenbasis getrennt; ungewichtete Fragebasis und Missing-Regel unbekannt; Standardstopp und Ausnahmehinweis.",
+        "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md:12-14,158-163: fehlende ungewichtete Fragebasis und fehlende Dokumentation zum Umgang mit fehlenden Antworten.",
+        "docs/quellenanfragen-v1.entwurf.md, Entwurf 3 Frage 2: auswertbare Fragebasis und Behandlung von Verweigerung/Item-Nonresponse werden erst angefragt.",
+        "Synthetische Gegenprobe: identisches Frageuniversum und dieselbe Weiß-nicht-Kategorie können mit Einschluss oder Ausschluss von Item-Verweigerungen im Nenner vereinbar sein. Keine realen Befragungsdaten."
+      ],
+      "impact": "Eine Freigabe ohne Klärung könnte weiterhin eine unbekannte Nennerregel als bekannt veröffentlichen. Der Hinweis auf unbekanntes Missing hebt die erste, bestimmte Aussage nicht auf. Der Standardweg ohne Zahlen ist ausreichend begrenzt.",
+      "severity": "mittel",
+      "severityReason": "Der Fehler ist auf den festgelegten Hinweis des ausdrücklich vorgesehenen Ausnahmewegs begrenzt. Er betrifft eine geplante Metadatenbehauptung; neue Zahlen wurden nicht übertragen oder veröffentlicht.",
+      "correction": "Im Ausnahmehinweis nur die dokumentierte Darstellung benennen: „Anteile und Kategorien wie veröffentlicht, einschließlich der Kategorie ‚Weiß nicht‘. Die genaue auswertbare Fragebasis und der Umgang mit Verweigerungen und sonstigen fehlenden Antworten sind nicht dokumentiert.“ Das Frageuniversum separat als Quellenangabe kennzeichnen. „Bezogen auf alle Befragten“ und den bestimmten Nennervergleich mit ESS entfernen oder erst nach einer dokumentierten Klärung verwenden. Keine Umrechnung auf gültige Antworten.",
+      "recheck": "Nur Abschnitt 6 Nr. 3 und die unmittelbaren Verweise erneut lesen. Der Ausnahmeweg darf weder die genaue Fragebasis noch Ein-/Ausschluss von Verweigerungen behaupten. Der Standardstopp und die Unterscheidung von Wellenmetadatum und Fragebasis müssen erhalten bleiben.",
+      "certainty": "BELEGT",
+      "blocksScope": true,
+      "state": "OFFEN"
+    },
+    {
+      "id": "P4-V23-F02",
+      "claim": "Abschnitt 6 Nr. 7 operationalisiert die zwei unabhängigen Übertragungen.",
+      "problem": "Der Mangel aus Runde 1 ist korrigiert: dieselben gepinnten Originaldateien, zweite Übertragung ohne Einsicht in die erste, möglichst andere Methode, Bindung je Zelle, vollständiger Abgleich und Sperre bei jeder Abweichung mit erhaltenen Fassungen sind festgelegt. Nr. 4 verbietet Normierung auf 100; Nr. 7 verbietet Handkorrektur.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:128-131.",
+        "Synthetischer Protokoll-Durchgang: DE/DEE-Verwechslung scheitert an der Landbindung; vertauschte Kategorien am Zellabgleich; fehlende Weiß-nicht-Zeile an Vollständigkeit; eine Rundungssumme ungleich 100 darf bei unveränderter Originaldarstellung bestehen bleiben."
+      ],
+      "impact": "Der angekündigte Kontrollschritt ist auf Planebene reproduzierbar beschrieben. Tatsächliche unabhängige Übertragungen und ihre Ergebnisse sind spätere Prüfgegenstände.",
+      "severity": "mittel",
+      "severityReason": "Schweregrad des ursprünglichen Findings bleibt als historische Einordnung erhalten; im geprüften Plantext besteht dieser Mangel nicht mehr.",
+      "correction": "Für diesen Finding keine weitere Plankorrektur erforderlich. Das Verfahren später an den freigegebenen Originaldateien nachweisbar durchführen.",
+      "recheck": "Gezielte Prüfung von Nr. 4 und Nr. 7 bestanden. Der synthetische Durchgang prüft die Regeln, keinen bestehenden Extraktor.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P4-V23-F03",
+      "claim": "Abschnitte 4.2 bis 4.6 binden die Auswahlbegründungen, Status und späteren Inhaltsentscheidungen.",
+      "problem": "Die in Runde 1 fehlenden Kriterien sind ergänzt. ST0939 wird wegen eines einseitig begründenden Zwecks ausgeschlossen; ST0350-2 bleibt wegen eines sachlichen Anlasses zulässig. Weitere Ausschlüsse besitzen eigene Kriterien. Die Dreierauswahl priorisiert verschiedene Seiten eines Gegenstands gegenüber Instrumentdetails. Ein vollständiges Itemregister wird mit dem Plan geprüft und festgeschrieben; ergebnisexponierte technische Rollen dürfen nur vorab festgelegte Strukturfehler melden.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:66-81,93-101,180-196.",
+        "reports/claude/agenten/R6-eurobarometer.md:176-191: dokumentierte Texte von ST0350, ST0359 und ST0939.",
+        "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md:222-242: betroffene Kandidaten und Grenzen.",
+        "docs/analyseplan-v2.3.entwurf.md:129,168-172: Wortlaut-/Wellenbindung, Register, Prüfung und Festschreibung vor Wertübertragung."
+      ],
+      "impact": "Die konkret beanstandeten Entscheidungen sind aus den jetzt genannten Regeln nachvollziehbar. Das ist kein allgemeiner Neutralitätsnachweis und keine neue Vollprüfung der Kandidaten.",
+      "severity": "mittel",
+      "severityReason": "Historischer Schweregrad; die ursprünglichen Regelbindungs- und Protokollmängel sind im gezielten Prüfbereich behoben.",
+      "correction": "Keine weitere Korrektur für dieses Finding. Das vollständige Register bleibt eine ausdrückliche Voraussetzung der späteren Festschreibung; seine tatsächliche Erstellung und Quellenidentität sind noch nicht geprüft.",
+      "recheck": "ST0939/ST0350, Dreierauswahl, Ausschlusskriterien, Kandidatenstatus und Rollengrenzen gezielt nachgeprüft. Fehlender deutscher Wortlaut hält eine Frage zurück; eine nicht eindeutig passende Welle erfüllt den Tabellenweg nicht. Keine neue Auswahlentscheidung nach Ergebnissen zulässig.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P4-V23-F04",
+      "claim": "Der spätere ESS12-Vertrag bindet Modi und Rechenbedingungen vor neuer Antwortinspektion.",
+      "problem": "Der fehlende verbindliche Stopp aus Runde 1 ist ergänzt. Abschnitt 7 verlangt einen eigenen versionierten, getrennt geprüften und getaggten Vertrag vor jeder Einsicht in neue Antworten. Er muss Modustrennung oder begründete Zusammenfassung, Zielpopulation, Design-/Poststratifikationsgewichte, Missing/Filter je Modus, Kategorienidentität, Parteiencodes und Ausfallregel festlegen. Das gilt ausdrücklich auch für Einzelreferenzen.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:139-143,202-205.",
+        "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md:315-321: vorab zu bindende Modusentscheidung.",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md, Abschnitt 5: ergebnisblinder ESS12-Vertrag nach tatsächlicher deutscher Veröffentlichung."
+      ],
+      "impact": "Codegleichheit allein erlaubt jetzt keine gemeinsame Referenz. Der Plan behauptet weder fertige deutsche Instrumente noch eine geprüfte Effektgröße des Modus.",
+      "severity": "mittel",
+      "severityReason": "Historischer Schweregrad; der beanstandete fehlende Vertragspunkt ist als ausdrückliche Voraussetzung ergänzt.",
+      "correction": "Keine weitere Korrektur für dieses Finding. Der tatsächliche ESS12-Vertrag und die deutsche Zweitstimmenbindung brauchen später ihre eigene Prüfung.",
+      "recheck": "Verbindlichen Vertragstext, Zeitpunkt vor jeder Einsicht und Geltung für Gruppen und Einzelreferenzen geprüft. Die deutsche Ausgabe bleibt Voraussetzung, Wahlabsicht und Parteinähe bleiben ausgeschlossen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P4-V23-F05",
+      "claim": "B bleibt offen; C braucht getrennte Präzisions- und Offenlegungskonzepte.",
+      "problem": "Die Beanstandung aus Runde 1 ist auf Planebene korrigiert. B nennt jetzt alle Rand-/Ergänzungsangaben und bestreitet ausdrücklich, dass zwei verdeckte Zellen allein schützen. Anteil, Gewichtssumme und ungewichtete Fallzahl werden unterschieden. C ersetzt Offenlegungsschutz nicht durch Präzision. Beide Alternativen brauchen einen eigenen festgeschriebenen Plan und Exportprüfungen.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:153-157.",
+        "Synthetische Wiederholung des Gegenbeispiels aus Runde 1: Gesamtzahl 100, sichtbare Zelle 98, zwei positive verdeckte Zellen jeweils eins bis vier; die einzig mögliche Aufteilung ist eins/eins. Kein realer Datensatz verwendet."
+      ],
+      "impact": "Der Entwurf behauptet keine ausreichende Schutzgarantie mehr. B/C bleiben unbeschlossen und sind durch dieses Urteil nicht zur Aktivierung freigegeben.",
+      "severity": "mittel",
+      "severityReason": "Historischer Schweregrad der Beschreibung einer späteren Alternative; der aktuelle A-Weg war schon in Runde 1 nicht dadurch blockiert.",
+      "correction": "Für den aktuellen A-Weg keine weitere Korrektur. Ein späterer B/C-Plan muss Schutz und Präzision getrennt begründen und synthetische Rückrechnungsprüfungen einschließlich mehrerer Veröffentlichungen bestehen.",
+      "recheck": "Neue Begrenzungen gelesen; synthetisches Restmengen-Gegenbeispiel erneut ausgeführt. Kein Schutzalgorithmus und keine reale Veröffentlichung geprüft.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "P4-V23-F06",
+      "claim": "Abschnitt 8 trennt Statusbeobachtung und Regelmechanismus.",
+      "problem": "Die in Runde 1 überzogene Ursachenaussage ist entfernt. Der kombinierte Status wird ausdrücklich als nicht nach Sperrgründen auflösbar beschrieben. Gruppengröße und Skalenlänge heißen plausible, mit diesen Zählungen nicht getrennt geprüfte Einflussgrößen; die verschiedenen Fragen und Studien werden genannt.",
+      "evidence": [
+        "docs/analyseplan-v2.3.entwurf.md:147-149.",
+        "Erlaubte Statusprojektion erneut ausgeführt: 4 Kategorien 22/45, 5 Kategorien 58/139, 6 Kategorien 10/63, 11 Kategorien 6/43 verfügbare Gruppenpaare. Das sind Statuszählungen, keine Befragten- oder Zellfallzahlen.",
+        "Nur questionId/groupId zur Zuordnung und Duplikatkontrolle, status sowie Kategorienanzahl aus den beiden Katalogen inhaltlich genutzt; keine Verteilungsfelder ausgewertet."
+      ],
+      "impact": "Die Beobachtung trägt jetzt keine isolierte Ursache oder Aussage über konkrete Gruppenstärken und Zell-Sperrgründe mehr.",
+      "severity": "mittel",
+      "severityReason": "Historischer Schweregrad; Zählungen und begrenzte Interpretation stimmen im erlaubten Umfang.",
+      "correction": "Keine weitere Korrektur für dieses Finding.",
+      "recheck": "Alle vier erwarteten Zählungen und eindeutigen Gruppenpaar-IDs bestätigt; korrigierten Absatz mit den Informationsgrenzen dieser Projektion verglichen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "P4-V23-F01",
+      "correctionStatus": "TEILWEISE",
+      "round": 2
+    },
+    {
+      "id": "P4-V23-F02",
+      "correctionStatus": "KORRIGIERT",
+      "round": 2
+    },
+    {
+      "id": "P4-V23-F03",
+      "correctionStatus": "KORRIGIERT",
+      "round": 2
+    },
+    {
+      "id": "P4-V23-F04",
+      "correctionStatus": "KORRIGIERT",
+      "round": 2
+    },
+    {
+      "id": "P4-V23-F05",
+      "correctionStatus": "KORRIGIERT",
+      "round": 2
+    },
+    {
+      "id": "P4-V23-F06",
+      "correctionStatus": "KORRIGIERT",
+      "round": 2
+    }
+  ],
+  "limits": [
+    "Gezielte Nachprüfung des manifestgebundenen Entwurfs 0.3, keine vollständige neue Prüfung. Gesamturteil NICHT_BESTANDEN wegen des ausgeführten negativen Checks zu F01. F02 bis F06 sind auf Planebene korrigiert. Keine wissenschaftliche, empirische, Neutralitäts-, Produkt- oder Releasefreigabe.",
+    "Das Schema kennt TEILWEISE nicht als findings.state. F01 bleibt dort OFFEN und blocksScope=true. ratings enthält für jede ursprüngliche ID den vom Auftrag geforderten correctionStatus, für F01 TEILWEISE.",
+    "Manifest-Notiz nennt noch Entwurf 0.2 und commit c7adf473b29343b86766eb25a87b9f752960616f. Die authentifizierten Artefaktbytes binden tatsächlich Entwurf 0.3; der vorgegebene Ausgangs-HEAD ist f2c8d0d7770a2df17ded4ccdbbd1e10d3d85ad67. Keine stille Aktualisierung des Manifests.",
+    "Keine Dateien unter data/raw/, data/local/ oder outputs/ gelesen. Keine externen Ergebnistabellen oder GESIS-Server geöffnet. Keine Commits, Pushes, Tags, Nachrichten an Dritte, Delegation oder Veröffentlichungen.",
+    "Für F06 wurden ausschließlich Status und Kategorienanzahl ausgewertet, IDs nur zur Verknüpfung und Duplikatkontrolle. Hashfunktion und JSON-Decoder lesen ganze Datei-Bytes; übrige Felder wurden nicht inhaltlich ausgewertet oder ausgegeben. Keine technische Sandbox oder absolute Betriebssystemblindheit behauptet.",
+    "Originalquellen nicht neu abgerufen. Prüfung der konkreten Textkorrekturen gegen die gepinnten S1-, R6-, R8- und R9-Fundstellen; keine neue Vollprüfung von Fragebögen, Tabellen, Lizenzen, Gesetzen oder Quellenhistorie. Tatsächliche Blindheit und zukünftige Register-/Gate-Implementierung nicht nachgewiesen.",
+    "Runde-1-P4-Berichte gelesen. P5-Runde-1-Berichte waren erlaubt, wurden aber nur gehasht. Kein Urteil der zweiten Rolle zu Runde 2 gelesen.",
+    "Memory-Register nur für allgemeine Prüfgrenzen durchsucht; Suchtreffer enthielten Namen und Statuslabels älterer anderer Pakete. Keine Rollouts oder alten Berichte geöffnet und keine Urteile als fachliche Grundlage übernommen. Die Forschungsaussagen dieses Berichts wurden an aktuellen Paketdateien geprüft.",
+    "Mehrere Sammelausgaben wurden gekürzt; die für die Findings tragenden Stellen und verpflichtenden Kontextdateien anschließend in kleineren Abschnitten gelesen. Ein cat-Versuch mit reports/claude/auftraege/P4-plan-v23.md scheiterte, weil der Dateiname falsch war; der tatsächliche Runde-1-Auftrag P4-plan-v23-methoden.md wurde danach gelesen.",
+    "jsonschema ist in der verwendeten Python-Umgebung nicht installiert. Keine Installation, keine dritte Datei. Formale Kontrolle mit einem Inline-Prüfer für sämtliche im vorliegenden Schema verwendeten Validierungsregeln und mit negativen Urteilskontrollen.",
+    "Kein pnpm check, Pipeline- oder Browserlauf: nur zwei Prüfberichte geschrieben; allgemeine Projektchecks könnten den ausdrücklich gesperrten Lese- und Schreibumfang überschreiten. Gezielte Urteilskontrolle und Hashvergleich ersetzen keine Projekt-, Browser- oder empirische Prüfung."
+  ]
+}
