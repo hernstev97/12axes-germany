@@ -1,6 +1,6 @@
 # Fortsetzungsbericht LIFE-93 vom 4. Oktober 2026
 
-Verfasst von Claude (Modellkennung laut Laufzeit `claude-opus-5-5[1m]`). Branch `research/life-93-claude-20261003`, Ausgangsstand `b5a53ff`, Endstand ENDSTAND. Auftrag: Stevens Nachricht vom 4. Oktober 2026 (Wortlaut in `docs/ki-protokoll.md`), ohne seine Mitwirkung weiterzuarbeiten. Dieser Bericht ergänzt den [Abschlussbericht](abschlusspruefung.md), der unverändert bleibt. Er ist ein KI-Bericht, keine Begutachtung durch Fachleute und keine Freigabe. Nichts wurde gemergt, veröffentlicht oder versendet.
+Verfasst von Claude (Modellkennung laut Laufzeit `claude-opus-5-5[1m]`). Branch `research/life-93-claude-20261003`, Ausgangsstand `b5a53ff`, Endstand: der Commit, der diesen Bericht abschließt, direkt nach `c171e7d`. Auftrag: Stevens Nachricht vom 4. Oktober 2026 (Wortlaut in `docs/ki-protokoll.md`), ohne seine Mitwirkung weiterzuarbeiten. Dieser Bericht ergänzt den [Abschlussbericht](abschlusspruefung.md), der unverändert bleibt. Er ist ein KI-Bericht, keine Begutachtung durch Fachleute und keine Freigabe. Nichts wurde gemergt, veröffentlicht oder versendet.
 
 ## 1 Ergebnis in Kürze
 
@@ -8,7 +8,7 @@ Verfasst von Claude (Modellkennung laut Laufzeit `claude-opus-5-5[1m]`). Branch 
 - **Forschungsentwurf verbessert.** Die Erklärung der 95-%-Bereiche steht einmal je Ansicht, wie Plan v2.2 es verlangt. Fehlende Bereiche sind je Kategorie und bei Gruppenvergleichen markiert. Die Erklärung nennt auch Messfehler einzelner Antworten.
 - **Erweiterungspaket 2025/26 vorbereitet, nicht umgesetzt.** Für keinen der sechs fehlenden Bereiche gibt es außerhalb von GESIS eine Zufallsstichprobe der Jahre 2024 bis 2026 mit öffentlichem deutschem Wortlaut zu einer nationalen Streitfrage. Möglich sind neun Eurobarometer-Fragen, die meisten zu Entscheidungen auf EU-Ebene, nach Freigabe und Klärung der Fragebasis, und ESS12 mit Wählergruppen nach der Bundestagswahl 2025, sobald die deutsche Ausgabe veröffentlicht ist. Der [Analyseplan v2.3](../../docs/analyseplan-v2.3.entwurf.md) hat in Fassung 0.4 beide Planprüfungen bestanden, nach drei Runden. Er bleibt ein Entwurf und ist keine Freigabe zur Auswertung.
 - **Quellenblocker präzisiert.** Je Quelle und Nutzung steht fest, ob sie ausdrücklich verboten, ungeklärt oder durch eine Lizenz erlaubt ist (R10).
-- **Für Steven vorbereitet:** Entscheidungsvorlage mit fünf Entscheidungen, vier Anfrageentwürfe, fünf Textvorschläge.
+- **Für Steven vorbereitet:** Entscheidungsvorlage mit fünf Entscheidungen, vier Anfrageentwürfe, fünf Textvorschläge. Die Textvorschläge haben nach einer Korrekturrunde eine inhaltliche KI-Prüfung bestanden.
 
 ## 2 Technische Prüfgrenzen
 
@@ -50,8 +50,8 @@ Runde 3 war eine gezielte Nachprüfung der verbliebenen Befunde, keine neue Gesa
 
 ## 4 Forschungsentwurf und Texte
 
-- Erklärung der Bereiche einmal je Ansicht, fehlende Bereiche markiert, Messfehler genannt.
-- [Textvorschläge](../../docs/vorschlaege-texte-v1.entwurf.md) für Statushinweis, Meta-Beschreibung, Handbuchbegriffe, „repräsentativ“ und Untertitel der Bereiche. Nicht umgesetzt.
+- Erklärung der 95-%-Bereiche einmal je Ansicht, fehlende 95-%-Bereiche markiert, Messfehler genannt.
+- [Textvorschläge](../../docs/vorschlaege-texte-v1.entwurf.md) für Statushinweis, Meta-Beschreibung, Handbuchbegriffe, „repräsentativ“ und Untertitel der Bereiche. Nicht umgesetzt. Codex hat den Inhalt geprüft (K1): Entwurf 1 war nicht bestanden, mit fünf Befunden. Zwei Untertitel ließen gemessene Gegenstände weg oder verengten sie, eine Handbuchzeile nannte noch Dimensionen, die Zukunftsvariante des Statushinweises nannte die Quellen unvollständig, die Meta-Beschreibung stellte den geplanten Test ins Präsens. Entwurf 2 hat die gezielte Nachprüfung bestanden (`reports/claude/pruefungen/K1-*`).
 - Analyse der Sichtbarkeit: Die Regel 100/5 lässt bei Skalen von 0 bis 10 nur 6 von 43 Gruppenpaaren mit Zahlen, bei vier oder fünf Stufen deutlich mehr. Optionen im Planentwurf, Abschnitt 8.
 
 ## 5 Datenzugriff

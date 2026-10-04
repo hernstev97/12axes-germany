@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "mode": "NACHPRUEFUNG",
+  "task": "K1 Runde 2: gezielte Nachprüfung der Textvorschläge",
+  "scope": "TEXTE-V1-002, Entwurf 2 von docs/vorschlaege-texte-v1.entwurf.md und Abschnitt 4 von docs/entscheidungsvorlage-erweiterung-v1.entwurf.md: K1-F01 bis K1-F05 und neue Fehler durch ihre Korrekturen. Branch-Stand c171e7d8d7ebc984b03e2803f7ca25d6fd2a6217.",
+  "manifestSha256": "85f12b2f0bfc134723c092f8709904ac8fd9237dfcc11f2b93f7da2fae33248f",
+  "status": "BESTANDEN",
+  "execution": {
+    "provider": "OpenAI",
+    "model": "gpt-6.1-sol",
+    "modelEvidence": "Explizite Laufzeitangabe der T3-Code-/Codex-Harness-Sitzung: gpt-6.1-sol, high reasoning effort. Keine nachgewiesene konkrete interne Modellrevision.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "functions.exec",
+      "exec_command",
+      "bash",
+      "git",
+      "sha256sum",
+      "rg",
+      "cat",
+      "nl",
+      "sed",
+      "wc",
+      "Python 3 (Standardbibliothek; Here-Documents)"
+    ],
+    "prompt": "Act as the review sub-agent for this task.\n\nLies und befolge den Auftrag in `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c/reports/claude/auftraege/K1-runde2-textvorschlaege.md` (SHA-256 `02740dafbd8a63bc8a094b71599245166c4528f1ff666c5742bb3560e9b2a323`). Arbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`. Prüffassung: Manifest `reports/claude/pruefungen/TEXTE-V1-002-manifest.json` mit SHA-256 `85f12b2f0bfc134723c092f8709904ac8fd9237dfcc11f2b93f7da2fae33248f`, Branch-Stand `c171e7d8d7ebc984b03e2803f7ca25d6fd2a6217`. Prüfe beide Hashes vor Beginn. Schreibe ausschließlich `reports/claude/pruefungen/K1-runde2-textvorschlaege.md` und `reports/claude/pruefungen/K1-runde2-textvorschlaege.json`. Keine Commits, keine anderen Dateien, keine Nachrichten. Antworte am Ende kurz mit Gesamturteil und Stand von K1-F01 bis K1-F05.",
+    "inputHashes": {
+      "docs/vorschlaege-texte-v1.entwurf.md": "7c999b421d1745e058c7b12af847c100e1710411fec9a7f65289cd585bd482a6",
+      "docs/handbuch.md": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a",
+      "docs/profilregeln-v1.md": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23",
+      "docs/analyseplan-v2.2.md": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8",
+      "docs/project.md": "a4a5736e1e2263bfbcbec82ade86e1190540a9523fe96e1214fb2e008b5c1c5e",
+      "web/src/index.html": "d3dcf44566fd2c05d92b9acdf0c9d0e570b472abd3edfa7ac4face20fc15657c",
+      "web/src/app/policy-draft/policy-draft.html": "f25712dc8d6fbd85c5d93fa4c6db8c006fe5132282db06f922733fd9e2c94b2a",
+      "web/src/app/policy-draft/policy-catalogue.ts": "acde504fa6f0b815d93c66a842d1a25270092713ea898df97b9e8617388a6193",
+      "web/src/app/policy-draft/profile/area-scope.ts": "4ed439fd3a1d9b9d030f8ed33b9a4d55916d07cc694bcf8a3aec6f86d338a1b1",
+      "reports/claude/agenten/V2-urteil.json": "622e6961b36655943f126ffa25eb7758e3d7b025fa3a1b6275630beb673d02cf",
+      "reports/claude/agenten/T1-technik-browser.md": "3bba4b1112db99f9938104ba82b17fdfb552d57657a5440ea4827ce7f88e3636",
+      "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md": "00c61383702c3603ec93d24fbe79bd28e2ed7c89fb4c5bf9d9577cd1260543c2",
+      "reports/claude/pruefungen/K1-textvorschlaege.md": "89124250b7283bf541bf408275297b83006308be7532faaccdb5f41e0523f3d8",
+      "reports/claude/pruefungen/K1-textvorschlaege.json": "e9ceb4aa333b8980ad4eadde6275d8bdb61425166e18119279e4cb0b5d561eba",
+      "reports/claude/auftraege/K1-runde2-textvorschlaege.md": "02740dafbd8a63bc8a094b71599245166c4528f1ff666c5742bb3560e9b2a323",
+      "reports/claude/pruefungen/TEXTE-V1-002-manifest.json": "85f12b2f0bfc134723c092f8709904ac8fd9237dfcc11f2b93f7da2fae33248f",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      ".agents/skills/unslop/SKILL.md": "c72b079bfa1f6be1df92c73f4599fee23d911270b7424aa92f5f03f1cf61fa56",
+      "docs/abdeckung-v2.2.md": "544deeb3055ffb174d8e3c97f6f4e5b6a640c8502113462cd3b6bcee6cb5e8f9",
+      "docs/pruefregeln.md": "29ea917323119b70cf39aae8db9560e435efbcaba4827df4f837be4d2f28d233",
+      "/home/stevenh/.codex/memories/MEMORY.md": "76f2f657085b44e17509620a780b027f403f3a78b1071635fd413784c995f9e9"
+    }
+  },
+  "checks": [
+    {
+      "id": "K1-R2-C01",
+      "scope": "Auftrag, Manifest, Branch-Stand und alle 14 Manifestartefakte",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Auftrag und Manifest vor Beginn gegen die extern genannten SHA-256 bestätigt; HEAD c171e7d8d7ebc984b03e2803f7ca25d6fd2a6217, Branch research/life-93-claude-20261003; Arbeitskopie anfänglich sauber.",
+        "Alle 14 Artefakthashes stimmen. Manifestcommit de024e3b02ff35ccd79e5d3f19407305dcafc499 ist der frühere Paketstand; die verlangte aktuelle Fassung ist über die Artefakthashes gebunden."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-R2-C02",
+      "scope": "Gezielte Nachprüfung K1-F01",
+      "status": "BESTANDEN",
+      "evidence": [
+        "KORRIGIERT. Abgleich mit Bereichsabdeckung, Plan 3.2 und Katalogeinfügung ausgeführt. Freie Lebensführung setzt keine Partnerschaft voraus; das Adoptionsrecht bleibt gesondert erkennbar. Keine neue Messform oder Personenbewertung.",
+        "docs/vorschlaege-texte-v1.entwurf.md:78,91: Gleichberechtigung bei knappen Arbeitsplätzen, freie Lebensführung von Schwulen und Lesben und Adoptionsrecht gleichgeschlechtlicher Paare stehen als getrennte Gegenstände im Untertitel.",
+        "web/src/app/policy-draft/profile/area-scope.ts:69–74; docs/analyseplan-v2.2.md:44; docs/abdeckung-v2.2.md:35; web/src/app/policy-draft/policy-catalogue.ts:177 binden mnrgtjb, freehms und hmsacld."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-R2-C03",
+      "scope": "Gezielte Nachprüfung K1-F02",
+      "status": "BESTANDEN",
+      "evidence": [
+        "KORRIGIERT. Gegen Bereichsbeschreibung, Plan und Katalogeinfügung geprüft. Die Stichwortliste bleibt eine knappe Übersicht neben Erfasst/Nicht erfasst und ersetzt keinen Originalwortlaut.",
+        "docs/vorschlaege-texte-v1.entwurf.md:73,92: Wichtigkeit von Demokratiemerkmalen, Regierung und Mehrheitsmeinung, Führung, Loyalität und Gesetz sowie Verbot demokratiefeindlicher Parteien.",
+        "web/src/app/policy-draft/profile/area-scope.ts:30–35; docs/analyseplan-v2.2.md:45; docs/abdeckung-v2.2.md:29; web/src/app/policy-draft/policy-catalogue.ts:164 binden accalaw, loylead und prtyban."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-R2-C04",
+      "scope": "Gezielte Nachprüfung K1-F03",
+      "status": "BESTANDEN",
+      "evidence": [
+        "KORRIGIERT. Gesamte vorhandene Tabelle 7.3 mit den vorgeschlagenen Ersetzungen abgeglichen. Dimension wird nur bedingt für eine spätere geprüfte gemeinsame Messung beschrieben und ist in dieser Fassung nicht vorhanden. Umsetzung des Handbuchs bleibt offen.",
+        "docs/vorschlaege-texte-v1.entwurf.md:44,46,93: eigenes Modell = Auswahl, Ordnung, Auswertung und Deutung durch das Projekt; ausdrückliche Ersetzung der alten Dimensionszeile.",
+        "docs/handbuch.md:266–287, insbesondere 272,273,278; docs/profilregeln-v1.md:5–9,75–81; docs/analyseplan-v2.2.md:13–21.",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:47 empfiehlt auch die Zeile eigenes Modell."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-R2-C05",
+      "scope": "Gezielte Nachprüfung K1-F04",
+      "status": "BESTANDEN",
+      "evidence": [
+        "KORRIGIERT für die Vorlage und die Übernahmeregel. Die gesonderten Rechte- und Planvoraussetzungen gelten weiter. Bei späterer Umsetzung muss die Quellenkennzeichnung am dann gebundenen Bestand geprüft werden; dieser Zukunftscheck ist hier nicht ausgeführt.",
+        "docs/vorschlaege-texte-v1.entwurf.md:14–16,94: Vorlage für mehrere Quellen; Quellenangabe je Frage und jedem Vergleich; alternativ Aufzählung aller tatsächlich verwendeten Quellen; tatsächliche Einbindung statt bloßer Freigabe.",
+        "docs/project.md:7–14; docs/analyseplan-v2.2.md:29; docs/abdeckung-v2.2.md:88,102: gegenwärtiger ESS-Bestand und weitere Kandidaten ohne Aufnahme.",
+        "docs/vorschlaege-texte-v1.entwurf.md:3,16 und docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:47 belassen Empfehlung A und Stevens Entscheidung."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-R2-C06",
+      "scope": "Gezielte Nachprüfung K1-F05",
+      "status": "BESTANDEN",
+      "evidence": [
+        "KORRIGIERT. Länge und Statusmerkmale mit Python geprüft; die Formulierungen gegen Handbuch 7.2 und 7.6 gelesen. B hat 157 Unicode-Zeichen.",
+        "docs/vorschlaege-texte-v1.entwurf.md:26–29,95: A enthält beschreiben soll; B enthält Er soll Antworten Frage für Frage beschreiben und ist noch nicht verfügbar.",
+        "Unicode-Zählung ohne äußere Anführungszeichen: A = 147, B = 157; beide ≤ 160. Beide beginnen mit 12 Axes Deutschland und nennen die Nichtverfügbarkeit.",
+        "docs/handbuch.md:260,310; docs/project.md:11,14; web/src/index.html:8–11 als unveränderte Umsetzungsfundstelle."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-R2-C07",
+      "scope": "Neue Fehler durch Korrekturen und Angleichung von Abschnitt 4 der Entscheidungsvorlage",
+      "status": "BESTANDEN",
+      "evidence": [
+        "git diff bb760f3 -- docs/vorschlaege-texte-v1.entwurf.md docs/entscheidungsvorlage-erweiterung-v1.entwurf.md: nur Korrekturen, korrigierte Zeichenzahlen, angeglichene Empfehlung und Änderungsnotizen.",
+        "Entscheidungsvorlage:43–47 empfiehlt Statushinweis A, Meta B und alle vier Begriffszeilen einschließlich eigenes Modell. Die Behauptung der Korrektur ist für K1-F01 bis F05 in dieser Nachprüfung bestätigt.",
+        "Keine durch die Änderungen neu eingeführten Fehler festgestellt. Neue Untertitel bleiben Gegenstandslisten, neue Begriffe bleiben ohne aktuelle Messdimension, B bleibt eine bedingte Vorlage. Steven entscheidet; nichts wird dadurch umgesetzt."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "K1-R2-C08",
+      "scope": "Erhaltung der gebundenen Eingaben und der ursprünglichen K1-Berichte",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Abschließende SHA-256-Kontrolle aller 22 gelesenen Dateien bestätigt unveränderte Eingaben; alle 14 Manifestartefakte, Auftrag, Manifest und erste K1-Berichte erhalten. HEAD bleibt c171e7d8d7ebc984b03e2803f7ca25d6fd2a6217.",
+        "Während der Prüfung erschien eine fremde Änderung an reports/claude/fortsetzung-2026-10-04.md in git status. Sie wurde weder geöffnet noch bearbeitet und gehört nicht zum Prüfpaket."
+      ],
+      "requiredInScope": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "K1-F01",
+      "severity": "mittel",
+      "claim": "Untertitel Gleichstellungs- und Familienpolitik, Entwurf 2, Zeile 78.",
+      "problem": "Runde 1: Freie Lebensführung wurde auf Paarrechte verengt; das normative Prinzip zu knappen Arbeitsplätzen fehlte.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:78,91: Gleichberechtigung bei knappen Arbeitsplätzen, freie Lebensführung von Schwulen und Lesben und Adoptionsrecht gleichgeschlechtlicher Paare stehen als getrennte Gegenstände im Untertitel.",
+        "web/src/app/policy-draft/profile/area-scope.ts:69–74; docs/analyseplan-v2.2.md:44; docs/abdeckung-v2.2.md:35; web/src/app/policy-draft/policy-catalogue.ts:177 binden mnrgtjb, freehms und hmsacld."
+      ],
+      "impact": "Die Verengung und die Auslassung sind im Textvorschlag behoben. Der Untertitel beschreibt Gegenstände, ohne eine Antwort zu bewerten.",
+      "severityReason": "Ursprünglich mittel wegen Verschiebung und Auslassung eigenständiger Inhalte im sichtbaren Text; historische Einstufung bleibt erhalten.",
+      "correction": "Entwurf 2 ersetzt die Paarrechts-Sammelformulierung und nennt das Arbeitsplatzprinzip ausdrücklich.",
+      "recheck": "KORRIGIERT. Abgleich mit Bereichsabdeckung, Plan 3.2 und Katalogeinfügung ausgeführt. Freie Lebensführung setzt keine Partnerschaft voraus; das Adoptionsrecht bleibt gesondert erkennbar. Keine neue Messform oder Personenbewertung.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "K1-F02",
+      "severity": "mittel",
+      "claim": "Untertitel Demokratie und politische Autorität, Entwurf 2, Zeile 73.",
+      "problem": "Runde 1: Das Verbot demokratiefeindlicher Parteien fehlte als eigenständiger Gegenstand.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:73,92: Wichtigkeit von Demokratiemerkmalen, Regierung und Mehrheitsmeinung, Führung, Loyalität und Gesetz sowie Verbot demokratiefeindlicher Parteien.",
+        "web/src/app/policy-draft/profile/area-scope.ts:30–35; docs/analyseplan-v2.2.md:45; docs/abdeckung-v2.2.md:29; web/src/app/policy-draft/policy-catalogue.ts:164 binden accalaw, loylead und prtyban."
+      ],
+      "impact": "Die Gegenstandsübersicht enthält jetzt auch die Parteienverbotsfrage. Sie bewertet weder Befürwortung noch Ablehnung.",
+      "severityReason": "Ursprünglich mittel wegen Auslassung eines eigenständigen Erweiterungsgegenstands; historische Einstufung bleibt erhalten.",
+      "correction": "Entwurf 2 nennt Parteienverbot ausdrücklich und präzisiert Demokratiemerkmale und Loyalität.",
+      "recheck": "KORRIGIERT. Gegen Bereichsbeschreibung, Plan und Katalogeinfügung geprüft. Die Stichwortliste bleibt eine knappe Übersicht neben Erfasst/Nicht erfasst und ersetzt keinen Originalwortlaut.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "K1-F03",
+      "severity": "niedrig",
+      "claim": "Vorgeschlagene Begriffstabelle und Empfehlung in Abschnitt 3, Zeilen 39–46.",
+      "problem": "Runde 1: Die Dimensionsvorgabe in der bestehenden Zeile eigenes Modell blieb trotz der übrigen Begriffskorrekturen stehen.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:44,46,93: eigenes Modell = Auswahl, Ordnung, Auswertung und Deutung durch das Projekt; ausdrückliche Ersetzung der alten Dimensionszeile.",
+        "docs/handbuch.md:266–287, insbesondere 272,273,278; docs/profilregeln-v1.md:5–9,75–81; docs/analyseplan-v2.2.md:13–21.",
+        "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:47 empfiehlt auch die Zeile eigenes Modell."
+      ],
+      "impact": "Die vorgeschlagene Übernahme lässt in Tabelle 7.3 keine unbedingte Dimensionsvorgabe für das aktuelle Profil zurück.",
+      "severityReason": "Ursprünglich niedrig: eine zusätzliche Begriffszeile, kein Fehler an Fragen oder Auswertung.",
+      "correction": "Vierte Begriffszeile ergänzt und ihre Ersetzung ausdrücklich erklärt. ESS-bezogene Zeilen werden erst bei tatsächlich eingebundener zusätzlicher Quelle angepasst.",
+      "recheck": "KORRIGIERT. Gesamte vorhandene Tabelle 7.3 mit den vorgeschlagenen Ersetzungen abgeglichen. Dimension wird nur bedingt für eine spätere geprüfte gemeinsame Messung beschrieben und ist in dieser Fassung nicht vorhanden. Umsetzung des Handbuchs bleibt offen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "K1-F04",
+      "severity": "niedrig",
+      "claim": "Zukunftsvariante B des Statushinweises und ihre Übernahmebedingung, Zeilen 14–16.",
+      "problem": "Runde 1: B nannte für einen künftigen Mehrquellenbestand weiterhin nur ESS; Quellenfreigabe und tatsächliche Nutzung waren nicht getrennt.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:14–16,94: Vorlage für mehrere Quellen; Quellenangabe je Frage und jedem Vergleich; alternativ Aufzählung aller tatsächlich verwendeten Quellen; tatsächliche Einbindung statt bloßer Freigabe.",
+        "docs/project.md:7–14; docs/analyseplan-v2.2.md:29; docs/abdeckung-v2.2.md:88,102: gegenwärtiger ESS-Bestand und weitere Kandidaten ohne Aufnahme.",
+        "docs/vorschlaege-texte-v1.entwurf.md:3,16 und docs/entscheidungsvorlage-erweiterung-v1.entwurf.md:47 belassen Empfehlung A und Stevens Entscheidung."
+      ],
+      "impact": "B kann einen späteren Mehrquellenbestand beschreiben, ohne ausschließlich ESS als Herkunft auszugeben oder Freigabe mit Nutzung gleichzusetzen.",
+      "severityReason": "Ursprünglich niedrig, da ausschließlich die zurückgestellte Zukunftsvariante betroffen war.",
+      "correction": "B ist ausdrücklich eine Vorlage mit vollständiger Quellenkennzeichnung; Voraussetzung ist tatsächliche Einbindung einer weiteren Quelle.",
+      "recheck": "KORRIGIERT für die Vorlage und die Übernahmeregel. Die gesonderten Rechte- und Planvoraussetzungen gelten weiter. Bei späterer Umsetzung muss die Quellenkennzeichnung am dann gebundenen Bestand geprüft werden; dieser Zukunftscheck ist hier nicht ausgeführt.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    },
+    {
+      "id": "K1-F05",
+      "severity": "niedrig",
+      "claim": "Meta-Beschreibungen A und B, Zeilen 26–29, insbesondere empfohlenes B.",
+      "problem": "Runde 1: Das beabsichtigte Beschreiben durch den geplanten Test stand in B im Präsens.",
+      "evidence": [
+        "docs/vorschlaege-texte-v1.entwurf.md:26–29,95: A enthält beschreiben soll; B enthält Er soll Antworten Frage für Frage beschreiben und ist noch nicht verfügbar.",
+        "Unicode-Zählung ohne äußere Anführungszeichen: A = 147, B = 157; beide ≤ 160. Beide beginnen mit 12 Axes Deutschland und nennen die Nichtverfügbarkeit.",
+        "docs/handbuch.md:260,310; docs/project.md:11,14; web/src/index.html:8–11 als unveränderte Umsetzungsfundstelle."
+      ],
+      "impact": "Beide Meta-Varianten kennzeichnen das Verhalten als geplant und halten die Metadatenvorgaben ein.",
+      "severityReason": "Ursprünglich niedrig: lokale sprachliche Statuskorrektur; Name und Nichtverfügbarkeit waren schon richtig.",
+      "correction": "soll in beiden Varianten; Zeichenzahlen entsprechend angepasst.",
+      "recheck": "KORRIGIERT. Länge und Statusmerkmale mit Python geprüft; die Formulierungen gegen Handbuch 7.2 und 7.6 gelesen. B hat 157 Unicode-Zeichen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "KORRIGIERT"
+    }
+  ],
+  "limits": [
+    "Nur gezielte Nachprüfung von K1-F01 bis K1-F05 und neuen Fehlern ihrer Korrekturen einschließlich Abschnitt 4 der Entscheidungsvorlage; keine vollständige neue Prüfung des Textpakets.",
+    "BESTANDEN gilt für die Textvorschläge im gebundenen Entwurf 2. Keine Umsetzung, methodische Validierung, Begutachtung durch Fachleute, Neutralitätsgarantie, Produktabnahme oder Veröffentlichungsfreigabe. Stevens Entscheidungen bleiben offen.",
+    "V2-urteil.json und T1-technik-browser.md nur als Bytes gehasht; keine inhaltliche Nutzung fremder Urteile. K1 Runde 1 wurde zur gezielten Findingnachprüfung gelesen.",
+    "Kein Zugriff auf data/raw/, data/local/, outputs/ oder data/reference-*, keine Antwortverteilungen, keine GESIS-Server und keine externen Nachrichten.",
+    "Originalfragebögen und importierte Katalogdateien nicht geöffnet. Gegenstandsabgleich nutzt die gebundenen Bereichsbeschreibungen, Katalogeinfügungen und Plan 3.2; keine erneute Originalwortlaut- oder empirische Prüfung.",
+    "Keine neue Fundstellenprüfung des unveränderten ESS-Stichprobenabschnitts, keine erneute Prüfung der Statusnotizen in Abschnitt 6 und keine Bewertung der übrigen Erweiterungsentscheidungen. Keine Live-Abfrage von LIFE-93 oder anderen externen Quellen.",
+    "docs/abdeckung-v2.2.md und docs/pruefregeln.md zusätzlich zum Manifest gemäß den bereitgestellten AGENTS.md-Regeln gelesen und gehasht. Ihre übrigen Aussagen sind nicht neu auditiert.",
+    "Memory-Suche nur für Hashbindung, Erhaltung historischer Berichte und Umfangsgrenzen. Keine verlinkten Memory-Reviews geöffnet und keine historischen Urteile als Ergebnisgrundlage übernommen.",
+    "Mehrere Sammelausgaben waren abgeschnitten. Fehlende relevante Grundlagen und Fundstellen wurden in kleineren Ausgaben nachgelesen. Nicht benötigte Ausführungsprotokolle des ersten K1-Berichts wurden nicht vollständig nachgelesen.",
+    "Keine pnpm-, Pipeline- oder Browserprüfung: ausschließlich Berichtsausgaben sind erlaubt; keine Implementierung oder sichtbare Oberfläche wurde geändert. Technische und Browserakzeptanz werden nicht behauptet.",
+    "jsonschema nicht installiert. JSON formal mit einem nur lesenden Python-Validator für die Schlüsselwörter des vorgegebenen Schemas geprüft; keine Installation und keine Änderung am Schema.",
+    "Während der Prüfung entstand eine fremde Änderung an reports/claude/fortsetzung-2026-10-04.md außerhalb des Pakets. Keine Einsicht oder Änderung; die gebundenen Eingaben und HEAD blieben unverändert."
+  ]
+}
