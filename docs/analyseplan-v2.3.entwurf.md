@@ -1,6 +1,6 @@
 # Analyseplan v2.3: Erweiterung 2025/26 (Entwurf)
 
-ENTWURF 0.3 vom 4. Oktober 2026, verfasst von Claude (Anthropic) im Auftrag von Steven. Fassung 0.1 entstand aus den Rechercheberichten R8 bis R10. Fassung 0.2 legte nach der Strukturprüfung S1 (`reports/claude/agenten/S1-strukturpruefung-eurobarometer.md`) Regeln für Tabellen ohne Basis je Frage fest. Fassung 0.2 erhielt zwei getrennte Codex-Prüfungen (Prüfpaket `PLAN-V23-001`, `reports/claude/pruefungen/P4-methoden-v23.*` und `P5-quellen-fairness-v23.*`). Beide waren nicht bestanden. Fassung 0.3 setzt ihre Korrekturen um; Abschnitt 13 nennt sie. S1 hat nur Struktur, Basen und Methodenangaben gemeldet. Ergebniswerte kennt die Auswahlrolle weiterhin nicht.
+ENTWURF 0.4 vom 4. Oktober 2026, verfasst von Claude (Anthropic) im Auftrag von Steven. Fassung 0.1 entstand aus den Rechercheberichten R8 bis R10. Fassung 0.2 legte nach der Strukturprüfung S1 (`reports/claude/agenten/S1-strukturpruefung-eurobarometer.md`) Regeln für Tabellen ohne Basis je Frage fest. Fassung 0.2 erhielt zwei getrennte Codex-Prüfungen (Prüfpaket `PLAN-V23-001`, `reports/claude/pruefungen/P4-methoden-v23.*` und `P5-quellen-fairness-v23.*`). Beide waren nicht bestanden. Fassung 0.3 setzte ihre Korrekturen um. Die gezielte Nachprüfung von Fassung 0.3 (Prüfpaket `PLAN-V23-002`, `reports/claude/pruefungen/P4-runde2-methoden-v23.*` und `P5-runde2-quellen-fairness-v23.*`) war in beiden Rollen nicht bestanden, mit drei verbliebenen mittleren Befunden. Fassung 0.4 korrigiert sie; Abschnitt 13 nennt alle Korrekturen. S1 hat nur Struktur, Basen und Methodenangaben gemeldet. Ergebniswerte kennt die Auswahlrolle weiterhin nicht.
 
 Dieser Entwurf ist nicht festgeschrieben. Er erlaubt keine Auswertung, keinen Datenabruf und keine Aufnahme neuer Fragen in den Test. Voraussetzungen für jede Auswertung nach diesem Plan:
 
@@ -75,10 +75,9 @@ Der Unterschied zwischen ST0350 Item 2 und ST0939: Die ST0350-Einleitung stellt 
 ### 4.3 Weitere Ausschlusskriterien
 
 - **Zwei Gegenstände:** Das Item fragt nach zwei Maßnahmen oder Objekten, die man verschieden beantworten könnte (ST0350 Item 1: Sanktionen und eingefrorene Vermögenswerte; Item 4: finanzielle und humanitäre Hilfe).
-- **Format ohne Gegenposition:** Wichtigkeit oder Dringlichkeit einer Maßnahme, bei der Ablehnung nicht ausdrückbar ist (SP566 QE4, QE6, SP554 QB11), oder eine Prioritätenliste ohne Richtung (SP546 QB4).
+- **Format ohne Gegenposition:** Wichtigkeit oder Dringlichkeit einer Maßnahme, bei der Ablehnung nicht ausdrückbar ist (SP566 QE4, QE6, SP554 QB11, laut R6 auch SP568 QC9), oder eine Prioritätenliste ohne Richtung (SP546 QB4).
 - **Unerklärter Fachbegriff:** Der Gegenstand ist ein Fachbegriff, dessen Inhalt aus dem Wortlaut nicht hervorgeht (SE037 „digitaler Binnenmarkt“).
 - **Überholter Gegenstand:** Die Frage betrifft eine abgeschlossene Entscheidung, zu der eine neuere Frage vorliegt (ST0350 Item 5, Bewerberstatus der Ukraine von 2022; ersetzt durch SP564 QC5).
-- **Wortlaut fehlt:** Der deutsche Wortlaut ist nicht belegt (SP568 QC9).
 
 ### 4.4 Geltungsbereich
 
@@ -96,7 +95,13 @@ Vorrang haben Fragen, die verschiedene Seiten des Gegenstands abdecken, vor Frag
 
 ### 4.6 Status und Itemregister
 
-Jeder Kandidat hat genau einen Status: **vorgeschlagen** (alle Bedingungen erfüllt, Freigaben offen), **zurückgestellt** (eine benannte Bedingung ist noch nicht geprüft) oder **ausgeschlossen** (mit Regel). Vor jeder Übertragung von Werten entsteht ein eingefrorenes Itemregister je vorgeschlagenem Kandidaten mit Welle, Frage- und Itemnummer, vollständigem deutschem Wortlaut, Einleitung, Antwortkategorien, Kontext nach 4.2, Geltungsbereich nach 4.4 und Status. Das Register wird mit dem Plan geprüft und festgeschrieben.
+Jeder Kandidat hat genau einen Status:
+
+- **vorgeschlagen:** Die Bedingungen 4.1 Nr. 1 bis 6 und 8 sind mit Quelle belegt. Offen sind nur Freigaben und Klärungen nach 4.1 Nr. 7 und den Abschnitten 6 und 10.
+- **zurückgestellt:** Eine benannte Bedingung aus 4.1 ist noch nicht geprüft oder noch nicht erfüllt, kann aber durch eine Quelle, Anfrage oder Prüfung erfüllt werden. Der offene Punkt steht beim Kandidaten. Fehlt der deutsche Originalwortlaut (4.1 Nr. 3), bleibt die Frage zurückgestellt, bis eine offizielle deutsche Fassung vorliegt und geprüft ist. Eine eigene Übersetzung gilt nie als Originalwortlaut.
+- **ausgeschlossen:** Eine Regel aus 4.1 bis 4.5 schließt die Frage aus. Die Regel steht beim Kandidaten.
+
+Vor jeder Übertragung von Werten entsteht ein eingefrorenes Itemregister je vorgeschlagenem Kandidaten mit Welle, Frage- und Itemnummer, vollständigem deutschem Wortlaut, Einleitung, Antwortkategorien, Kontext nach 4.2, Geltungsbereich nach 4.4 und Status. Das Register wird mit dem Plan geprüft und festgeschrieben.
 
 Die Auswahl ist ergebnisblind. Die Auswahlrolle liest nur Fragebögen, Methoden- und Rechtsdokumente. Enthält eine Quelle die Fragen nur zusammen mit Ergebnissen, prüft eine getrennte technische Rolle die Struktur nach Abschnitt 10. Technische Rollen, die Ergebnisse gesehen haben, melden nur vorab festgelegte Strukturfehler und treffen keine Inhaltsentscheidung. Neue Inhaltsentscheidungen brauchen eine neue ergebnisblinde Prüfung. Keine Frage wird nach Sichtung ihrer Ergebnisse aufgenommen, entfernt, umgepolt oder einem anderen Bereich zugeordnet.
 
@@ -124,7 +129,7 @@ Die Auswahl ist ergebnisblind. Die Auswahlrolle liest nur Fragebögen, Methoden-
   Die Interviewzahl ist nur ein Merkmal der Welle. Sie wird nicht als Basis der einzelnen Frage ausgegeben. Daraus folgt:
   1. Nur Fragen, die laut Tabelle allen Befragten gestellt wurden, aus Wellen mit persönlichem Interview in Deutschland. Gefilterte Fragen und Online-Befragungen (etwa Flash-Eurobarometer) scheiden aus.
   2. **Standard: keine Zahlen**, solange die ungewichtete Basis je Frage und der Umgang mit fehlenden Antworten nicht geklärt sind. Die Anfrage an das Eurobarometer-Team (Entwurf 3 in `docs/quellenanfragen-v1.entwurf.md`) soll das klären.
-  3. Ohne Klärung darf Steven die Übernahme der veröffentlichten Anteile ausdrücklich unter dieser Grenze freigeben. Dann nennt die Ansicht: „Anteile wie veröffentlicht, bezogen auf alle Befragten einschließlich ‚Weiß nicht‘. Wie viele Befragte diese Frage tatsächlich beantwortet haben und wie fehlende Antworten behandelt wurden, ist nicht veröffentlicht.“ Der Nenner unterscheidet sich vom ESS, wo nur gültige Antworten zählen. Kein Umrechnen auf gültige Antworten.
+  3. Ohne Klärung darf Steven die Übernahme der veröffentlichten Anteile ausdrücklich unter dieser Grenze freigeben. Dann nennt die Ansicht: „Anteile und Kategorien wie veröffentlicht, einschließlich der Kategorie ‚Weiß nicht‘. Die genaue auswertbare Fragebasis und der Umgang mit Verweigerungen und sonstigen fehlenden Antworten sind nicht dokumentiert.“ Das Frageuniversum („Base: All respondents“) steht getrennt als Quellenangabe. Kein Umrechnen auf gültige Antworten und kein Vergleich der Nenner mit dem ESS, solange die Fragebasis nicht dokumentiert ist.
   4. Die Tabellen speichern ganze Prozentpunkte. Die Ansicht zeigt sie ohne Nachkommastelle und nennt das. Keine Normierung auf 100.
   5. Der deutsche Wortlaut stammt aus dem deutschen Datenanhang der Kommission zur selben Welle und wird je Frage im Itemregister (4.6) festgehalten. Fehlt er dort, ist die Frage zurückgestellt, bis die Rechte am Wortlaut geklärt sind.
   6. Je Frage gilt die jüngste Welle mit persönlichem Interview, in der die Tabelle eindeutig zur Fragenummer des deutschen Fragebogens passt.
@@ -193,7 +198,7 @@ Voraussetzungen: Stevens Freigabe des Tabellenwegs, Klärung oder ausdrückliche
 | R8-EB-SP557-QA7-OA     | Bildung und Forschung                      | EB 102.1, 13. September–4. Oktober 2024 | Ergebnisse öffentlich finanzierter Forschung kostenlos online, Zustimmung              | ohne Ebene                                     | –                              | zurückgestellt: Strukturprüfung fehlt |
 | R8-EB-SP557-QA7-GRENZE | Bildung und Forschung                      | EB 102.1, 13. September–4. Oktober 2024 | keine Grenze für wissenschaftliche Forschung, Zustimmung                               | ohne Ebene                                     | –                              | zurückgestellt: Strukturprüfung fehlt |
 
-Ausgeschlossen, mit Regel: ST0350 Item 1 und Item 4 (4.3 zwei Gegenstände), ST0350 Item 5 (4.3 überholter Gegenstand), ST0359 „bis dauerhaft gerechter Frieden herrscht“ (4.2 c), ST0359 Beschaffung und Produktion (4.5), ST0939 Gegenzölle (4.2 b, Zweckangabe), SE035 Item 5 (4.2 c, „gerechte“), SE037 digitaler Binnenmarkt (4.3 Fachbegriff), SP566 QE4 und QE6, SP554 QB11, SP546 QB4 (4.3 Format ohne Gegenposition), SP568 QC9 (4.3 Wortlaut fehlt).
+Ausgeschlossen, mit Regel: ST0350 Item 1 und Item 4 (4.3 zwei Gegenstände), ST0350 Item 5 (4.3 überholter Gegenstand), ST0359 „bis dauerhaft gerechter Frieden herrscht“ (4.2 c), ST0359 Beschaffung und Produktion (4.5), ST0939 Gegenzölle (4.2 b, Zweckangabe), SE035 Item 5 (4.2 c, „gerechte“), SE037 digitaler Binnenmarkt (4.3 Fachbegriff), SP566 QE4 und QE6, SP554 QB11, SP546 QB4 und SP568 QC9 (4.3 Format ohne Gegenposition; bei SP568 QC9 Wichtigkeitsskala laut R6 und R8, deutscher Wortlaut zudem nicht belegt).
 
 Reichweite: Sechs vorgeschlagene Fragen betreffen Entscheidungen auf EU-Ebene, eine eine EU-Entscheidung mit Zustimmung Deutschlands, eine nennt keine Ebene, eine ist mehrdeutig. Die zurückgestellten SP557-Fragen nennen keine Ebene. Keine dieser Fragen schließt eine nationale Kernlücke: Wehrdienst, deutscher Verteidigungshaushalt, deutsche Waffenlieferungen, Rüstungsexporte, Rundfunkbeitrag, IP-Adressen, Gesichtserkennung, Mindestalter für soziale Medien, Bildungsföderalismus, BAföG, Kita, Rente, Pflege, Mieten und Grundsteuer bleiben offen.
 
@@ -207,20 +212,20 @@ Die ESS kündigt die erste Datenveröffentlichung der Runde 12 voraussichtlich f
 
 ### 11.3 Stufe 3: Online-Quotenstichproben (Klasse Q), nur nach Stevens Grundsatzentscheidung
 
-OECD Risks that Matter 2024: Deutschland November bis Dezember 2024, 18 bis 64 Jahre, Online-Quote, Fragebogen nur englisch. Kandidat ist Q19 mit dem gemeinsamen Stamm „Would you be willing to pay an additional 2% of your income in taxes/social contributions to benefit from better provision of and access to:“ als Mehrfachauswahl, Items in zufälliger Reihenfolge (Rahmung e). Vorgeschlagen sind die Items, die eine Lücke betreffen:
+OECD Risks that Matter 2024: Deutschland November bis Dezember 2024, 18 bis 64 Jahre, Online-Quote, Fragebogen nur englisch. Kandidat ist Q19 mit dem gemeinsamen Stamm „Would you be willing to pay an additional 2% of your income in taxes/social contributions to benefit from better provision of and access to:“ als Mehrfachauswahl, Items in zufälliger Reihenfolge (Rahmung e). Die Items, die eine Lücke betreffen, erfüllen die Bedingungen 4.1 Nr. 1, 2, 4 bis 6 und 8. Sie sind zurückgestellt, weil ihr deutscher Feldwortlaut nicht belegt ist (4.1 Nr. 3). Der englische Quellfragebogen ersetzt ihn nicht, eine eigene Übersetzung ebenso wenig. Weitere offene Punkte sind die Nutzungsbedingungen der Mikrodaten (4.1 Nr. 7) und Stevens Grundsatzentscheidung zu Klasse Q.
 
-| Item | Gegenstand                                | Bereich                     |
-| ---- | ----------------------------------------- | --------------------------- |
-| b    | Education services and supports           | Bildung und Forschung       |
-| c    | Employment supports                       | Arbeit und Rente            |
-| d    | Unemployment supports                     | Arbeit und Rente            |
-| e    | Income supports (minimum-income benefits) | Arbeit und Rente            |
-| f    | Housing supports                          | Wohnen                      |
-| g    | Health services                           | Gesundheit und Pflege       |
-| h    | Disability/incapacity-related supports    | Gesundheit und Pflege       |
-| i    | Old-age pensions                          | Arbeit und Rente            |
-| j    | Long-term care services for older people  | Gesundheit und Pflege       |
-| l    | Public transportation                     | Klima und Energie (Verkehr) |
+| Item | Gegenstand                                | Bereich                     | Status                                       |
+| ---- | ----------------------------------------- | --------------------------- | -------------------------------------------- |
+| b    | Education services and supports           | Bildung und Forschung       | zurückgestellt: deutscher Feldwortlaut fehlt |
+| c    | Employment supports                       | Arbeit und Rente            | zurückgestellt: deutscher Feldwortlaut fehlt |
+| d    | Unemployment supports                     | Arbeit und Rente            | zurückgestellt: deutscher Feldwortlaut fehlt |
+| e    | Income supports (minimum-income benefits) | Arbeit und Rente            | zurückgestellt: deutscher Feldwortlaut fehlt |
+| f    | Housing supports                          | Wohnen                      | zurückgestellt: deutscher Feldwortlaut fehlt |
+| g    | Health services                           | Gesundheit und Pflege       | zurückgestellt: deutscher Feldwortlaut fehlt |
+| h    | Disability/incapacity-related supports    | Gesundheit und Pflege       | zurückgestellt: deutscher Feldwortlaut fehlt |
+| i    | Old-age pensions                          | Arbeit und Rente            | zurückgestellt: deutscher Feldwortlaut fehlt |
+| j    | Long-term care services for older people  | Gesundheit und Pflege       | zurückgestellt: deutscher Feldwortlaut fehlt |
+| l    | Public transportation                     | Klima und Energie (Verkehr) | zurückgestellt: deutscher Feldwortlaut fehlt |
 
 Ausgeschlossen nach 4.1 Nr. 2: a (Familienleistungen, keine dokumentierte Lücke) und k (öffentliche Sicherheit, keine dokumentierte Lücke). Q19 misst eine Zahlungsbereitschaft für bessere Leistungen, keine Haltung zu einem deutschen Gesetz. Ein nicht ausgewähltes Item ist keine Ablehnung (Abschnitt 6). Ausgeschlossen: Q20 (4.2 b, „in order to support the poor“), Q23 a (4.2 b, Begründung mit dem Fachkräftemangel im Stamm), Q27 e (4.2 f), Q27 f (4.2 b), Q34 a (4.2 b und 4.1 Nr. 8) und Q34 j (4.1 Nr. 8, nach Informationsexperiment). Reuters Digital News Report 2025 und 2026 nur, wenn ein deutscher Wortlaut belegt ist.
 
@@ -238,7 +243,9 @@ SOEP (KI-Verarbeitung ausdrücklich untersagt), ifo Bildungsbarometer (Vertrag n
 - Fehlt für eine Quelle die Freigabe, bleibt ihr Bereich sichtbar als Lücke.
 - Zeigt die technische Prüfung, dass eine Tabelle die Bedingungen aus Abschnitt 6 nicht erfüllt, entfällt die Frage ohne Ersatz aus derselben Quelle nach Ergebnissicht.
 
-## 13 Korrekturen nach der Prüfung von Fassung 0.2
+## 13 Korrekturen nach den Prüfungen
+
+### 13.1 Nach der Prüfung von Fassung 0.2 (Runde 1)
 
 | Finding    | Korrektur in Fassung 0.3                                                                                                                                                                                                                                                      |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -252,3 +259,13 @@ SOEP (KI-Verarbeitung ausdrücklich untersagt), ifo Bildungsbarometer (Vertrag n
 | P5-V23-F02 | Abschnitte 4.4 und 11.1: Kennzeichnung nach Wortlaut statt nach Herkunft, Reichweite der Kandidaten nach Geltungsbereich aufgeschlüsselt.                                                                                                                                     |
 | P5-V23-F03 | Abschnitt 11.3: alle Items von Q19 nach denselben Regeln geprüft, zehn Items vorgeschlagen, zwei mit Grund ausgeschlossen; Mehrfachauswahl nicht als Ablehnung auszulegen.                                                                                                    |
 | P5-V23-F04 | Abschnitt 11.2: erste ESS12-Veröffentlichung voraussichtlich Januar 2027, Deutschland nicht bestätigt; Beginn an die tatsächliche deutsche Ausgabe gebunden.                                                                                                                  |
+
+### 13.2 Nach der Nachprüfung von Fassung 0.3 (Runde 2)
+
+Runde 2 bestätigte P4-V23-F02 bis F06 sowie P5-V23-F01, F03 und F04 als korrigiert. Offen blieben:
+
+| Finding    | Stand Runde 2 | Korrektur in Fassung 0.4                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ---------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| P4-V23-F01 | teilweise     | Abschnitt 6 Nr. 3: Der Hinweis im Ausnahmeweg nennt nur die dokumentierte Darstellung („Anteile und Kategorien wie veröffentlicht“) und sagt, dass Fragebasis und Umgang mit fehlenden Antworten nicht dokumentiert sind. „Bezogen auf alle Befragten“ und der Nennervergleich mit dem ESS sind entfernt. Das Frageuniversum steht getrennt als Quellenangabe.                                                                                       |
+| P5-V23-F02 | teilweise     | Entscheidungsvorlage, Punkt 2, Folgen: Geltungsbereich je Frage nach 4.4 statt pauschal „EU-Ebene“. `docs/abdeckung-v2.2.md`: Nachtrag begrenzt die frühere pauschale Aussage zum Eurobarometer für v2.3. Der frühere Text bleibt unverändert.                                                                                                                                                                                                       |
+| P5-V23-F05 | neu           | Abschnitt 4.6: Status vorgeschlagen nur bei belegten Bedingungen 4.1 Nr. 1 bis 6 und 8. Fehlender deutscher Originalwortlaut führt zur Zurückstellung, eigene Übersetzung zählt nie. Abschnitt 11.3: die zehn OECD-Items als zurückgestellt mit fehlendem deutschem Feldwortlaut. Abschnitt 4.3: „Wortlaut fehlt“ ist kein eigener Ausschlussgrund mehr. SP568 QC9 bleibt ausgeschlossen, jetzt wegen des Formats ohne Gegenposition laut R6 und R8. |

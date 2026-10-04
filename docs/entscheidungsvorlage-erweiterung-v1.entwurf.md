@@ -1,6 +1,6 @@
 # Entscheidungsvorlage: Erweiterung 2025/26 und offene Texte
 
-ENTWURF 1, 4. Oktober 2026, verfasst von Claude für Steven. Jede Entscheidung nennt Optionen, eine begründete Empfehlung, die Folgen und den Aufwand für Steven. Nichts davon ist entschieden. Grundlagen: [Analyseplan v2.3 (Entwurf)](analyseplan-v2.3.entwurf.md), [Themenabdeckung v2.2 mit Nachträgen](abdeckung-v2.2.md), [Quellenanfragen](quellenanfragen-v1.entwurf.md), [Textvorschläge](vorschlaege-texte-v1.entwurf.md) und die Berichte R8, R9, R10 und S1 unter `reports/claude/agenten/`.
+ENTWURF 2, 4. Oktober 2026, verfasst von Claude für Steven, abgeglichen mit Fassung 0.4 des Analyseplans v2.3. Jede Entscheidung nennt Optionen, eine begründete Empfehlung, die Folgen und den Aufwand für Steven. Nichts davon ist entschieden. Grundlagen: [Analyseplan v2.3 (Entwurf)](analyseplan-v2.3.entwurf.md), [Themenabdeckung v2.2 mit Nachträgen](abdeckung-v2.2.md), [Quellenanfragen](quellenanfragen-v1.entwurf.md), [Textvorschläge](vorschlaege-texte-v1.entwurf.md) und die Berichte R8, R9, R10 und S1 unter `reports/claude/agenten/`.
 
 ## Kurz: die fünf Entscheidungen mit der größten Wirkung
 
@@ -30,11 +30,11 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude für Steven. Jede Entscheidung n
 
 **Empfehlung: A, zusammen mit der Anfrage an das Eurobarometer-Team.** Die Fragen schließen keine nationale Lücke, geben dem Profil aber aktuelle Vergleiche zu EU-Entscheidungen und allgemeinen Präferenzen in Außen-, Digital- und Gesundheitspolitik, mit Zufallsstichprobe und Kennzeichnung des Geltungsbereichs. Ohne Antwort des Teams empfehle ich, keine Zahlen zu zeigen.
 
-**Folgen.** Planprüfung, Festschreibung, zweifache Übertragung der Werte, Ergebnisprüfung, Exportentscheidung wie in v2.2. Die Themenabdeckung führt die Fragen getrennt als „EU-Ebene“.
+**Folgen.** Planprüfung, Festschreibung, zweifache Übertragung der Werte, Ergebnisprüfung, Exportentscheidung wie in v2.2. Die Themenabdeckung führt jede Frage getrennt mit ihrem Geltungsbereich nach Plan v2.3 Abschnitt 4.4: sechs als Entscheidung auf EU-Ebene, den Beitritt der Ukraine als EU-Entscheidung mit Zustimmung Deutschlands, die KI-Frage ohne Ebene und die Frage zu Verteidigungsausgaben „in der EU“ mit offener Ebene.
 
 ## 3 Online-Quotenstichproben
 
-**Lage.** Die breitesten aktuellen Fragen zu Rente, Gesundheit, Pflege und Wohnen außerhalb von GESIS stehen in OECD Risks that Matter 2024: Online-Quote, nur 18 bis 64 Jahre, Fragebogen nur englisch, viele Fragen mit Prämisse oder Begründung (R9). Nach den Regeln des Plans bleibt eine Frage: die Zahlungsbereitschaft von 2 % des Einkommens für bessere Leistungen, mit zehn Items zu Bildung, Beschäftigung, Arbeitslosigkeit, Mindestsicherung, Wohnen, Gesundheit, Behinderung, Rente, Pflege und Nahverkehr (Mehrfachauswahl). Für Quoten gibt es keine designbasierte Unsicherheit.
+**Lage.** Die breitesten aktuellen Fragen zu Rente, Gesundheit, Pflege und Wohnen außerhalb von GESIS stehen in OECD Risks that Matter 2024: Online-Quote, nur 18 bis 64 Jahre, Fragebogen nur englisch, viele Fragen mit Prämisse oder Begründung (R9). Nach den Regeln des Plans bleibt inhaltlich eine Frage: die Zahlungsbereitschaft von 2 % des Einkommens für bessere Leistungen, mit zehn Items zu Bildung, Beschäftigung, Arbeitslosigkeit, Mindestsicherung, Wohnen, Gesundheit, Behinderung, Rente, Pflege und Nahverkehr (Mehrfachauswahl). Sie ist zurückgestellt, weil ihr deutscher Feldwortlaut nicht belegt ist (Plan v2.3 Abschnitt 11.3). Für Quoten gibt es keine designbasierte Unsicherheit.
 
 **Optionen.** A: vorerst nicht zulassen. B: zulassen mit sichtbarer Kennzeichnung und ohne Bereich, dann OECD-Anfrage (Entwurf 4).
 
