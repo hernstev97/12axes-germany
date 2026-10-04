@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "package": "PLAN-V23-002",
+  "supersedes": "PLAN-V23-001",
+  "commit": "c7adf473b29343b86766eb25a87b9f752960616f",
+  "note": "Prüffassung des Analyseplans v2.3 (Entwurf 0.2). Öffentliche Statusdateien unter data/reference-v2.2/ sind nur für Abschnitt 8 nötig und enthalten Antwortverteilungen; Prüfer lesen dort ausschließlich die Felder status.",
+  "artifacts": [
+    {
+      "path": "docs/analyseplan-v2.3.entwurf.md",
+      "sha256": "95ea58c0485b4acb980662cd1d5511d855b511ae0adce0c218a912bca205a5db"
+    },
+    {
+      "path": "docs/entscheidungsvorlage-erweiterung-v1.entwurf.md",
+      "sha256": "dacfb5d58a1ce12f60cb3b244273dadd1388aaf1fb375e2e1bb5bae39cc6c66f"
+    },
+    {
+      "path": "docs/abdeckung-v2.2.md",
+      "sha256": "f9ec753734d4348728b15c5cd7f152fe15df2b7d8db4206c24ec898604a9ac9b"
+    },
+    {
+      "path": "docs/quellenanfragen-v1.entwurf.md",
+      "sha256": "d9a4b0b67a73a1669ad07fed7461237cb08c0df0b0f1eacb02b4918a2727e972"
+    },
+    {
+      "path": "docs/analyseplan-v2.2.md",
+      "sha256": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8"
+    },
+    {
+      "path": "docs/profilregeln-v1.md",
+      "sha256": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23"
+    },
+    {
+      "path": "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.md",
+      "sha256": "6830b4172d606b47fc6f00214fba09d776790143c85c01529b7c33256691c24b"
+    },
+    {
+      "path": "reports/claude/agenten/R8-erweiterung-aussen-digital-bildung.json",
+      "sha256": "23e27dd8c2c1e359fe62ff5df058fef4de749dce95ca1e6da44cec6839e49fa2"
+    },
+    {
+      "path": "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.md",
+      "sha256": "42aaa648a36557d33b6bb316aff007f5f79f92779aa4875acdc74516c70ba5c3"
+    },
+    {
+      "path": "reports/claude/agenten/R9-erweiterung-sozial-wohnen-gruppen.json",
+      "sha256": "71e012d3b460917269153d261a4565f6bfbb34627220ee2cf14d8abf1af272d6"
+    },
+    {
+      "path": "reports/claude/agenten/R10-quellenblocker.md",
+      "sha256": "65d79b32748197923c9614c7e8e85f19b06f516fa0cff869dbb7d3cf2f228885"
+    },
+    {
+      "path": "reports/claude/agenten/R10-quellenblocker.json",
+      "sha256": "8e15381892d91f62094c68573bb32148a5df21daf24ad11415549ef94861439a"
+    },
+    {
+      "path": "reports/claude/agenten/S1-strukturpruefung-eurobarometer.md",
+      "sha256": "15b2851d4e383a50ae064b566b1f2d6419180d3899f20007b49c07fe607295c0"
+    },
+    {
+      "path": "reports/claude/agenten/S1-strukturpruefung-eurobarometer.json",
+      "sha256": "f563bc2f138d67a00a9cf8fbfd80580dd3e842108d17231b44efb241edbc9575"
+    },
+    {
+      "path": "reports/claude/agenten/R5-wvs.md",
+      "sha256": "a163be6d448ab5f9e14b54293f355a2e0cea3c19d37e92a4d0021e8af7afc969"
+    },
+    {
+      "path": "reports/claude/agenten/R6-eurobarometer.md",
+      "sha256": "58b08b2af20d70261e95e7d0d815d4c083d95e0879cef5ee864c6ee05e84e8bb"
+    },
+    {
+      "path": "reports/claude/agenten/R7-weitere-quellen.md",
+      "sha256": "4e795f355ccd359613949a2e307f46150f31506cf817b51f1a4e232405f6fcd5"
+    },
+    {
+      "path": "reports/claude/auftraege/R-erweiterung-gemeinsam.md",
+      "sha256": "56970a37d162e3996cace441b4f41c44d7e4e3bfd408d008c13e3f9ba0898ccd"
+    },
+    {
+      "path": "data/gruppenvertrag.v2.1.entwurf.json",
+      "sha256": "9cd6b94e0f8edeb861d008a31c87439304cc71839a6348f1415b12ba30ef4702"
+    },
+    {
+      "path": "reports/claude/pruefungen/P4-methoden-v23.md",
+      "sha256": "e1aecf135e7bb3cf3a56a55459b25f24f3f09a4349e788278fefc20568292355"
+    },
+    {
+      "path": "reports/claude/pruefungen/P4-methoden-v23.json",
+      "sha256": "2b6df5d37b09bc481cafce926e36e4827c842147910e93a51abe1c346d18462d"
+    },
+    {
+      "path": "reports/claude/pruefungen/P5-quellen-fairness-v23.md",
+      "sha256": "bbd1b5cd21370863d95bdb3d1056ae9634ed52554d253189d30fa0e05e69f25d"
+    },
+    {
+      "path": "reports/claude/pruefungen/P5-quellen-fairness-v23.json",
+      "sha256": "d5393faca0fdaf80ac906621b94fc0dad498b25ce1877d0220ef650d4f1d8878"
+    }
+  ]
+}

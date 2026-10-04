@@ -1,0 +1,9 @@
+# Auftrag P5 Runde 2: gezielte Nachprüfung des Planentwurfs v2.3 (Quellen, Konstrukte und Fairness)
+
+Du bist ein frischer Prüfagent (Codex, OpenAI) im Projekt „12 Axes Deutschland“ (Linear LIFE-93). Die Prüfung P5 von Fassung 0.2 des Analyseplans v2.3 (`reports/claude/pruefungen/P5-quellen-fairness-v23.md` und `.json`) war NICHT_BESTANDEN mit den Findings P5-V23-F01 bis P5-V23-F04. Claude hat Fassung 0.3 geschrieben. Abschnitt 13 des Plans nennt die Korrekturen. Prüfe gezielt, ob jedes Finding behoben ist und ob die Korrekturen neue Fehler einführen. Keine vollständige neue Prüfung. Deine Rolle: Quellen, Konstrukte und Fairness. Eine zweite Rolle prüft getrennt; ihr Urteil zu Runde 2 erhältst du nicht.
+
+Arbeitsverzeichnis: `/home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c`, Branch `research/life-93-claude-20261003`. Prüffassung: Manifest `reports/claude/pruefungen/PLAN-V23-002-manifest.json`; seinen SHA-256 nennt die Nachricht des Auftraggebers. Prüfe vor Beginn die Hashes. Lies `.claude/skills/life93-review/SKILL.md` und das Urteilsschema. Modus: gezielte Nachprüfung (Runde 2). Die Findings und Urteile beider Rollen aus Runde 1 darfst du lesen.
+
+Regeln: Schreibe nur `reports/claude/pruefungen/P5-runde2-quellen-fairness-v23.md` und `.json`. Keine anderen Dateien ändern, keine Commits, Tags oder Nachrichten. Nichts unter `data/raw/`, `data/local/` oder `outputs/` lesen. Keine Antwortverteilungen lesen (`data/reference-*` nur nach den Regeln aus Runde 1), keine Ergebnistabellen externer Quellen, keine GESIS-Server. Primärquellen außerhalb von GESIS (Fragebögen, Lizenzen, Gesetze) darfst du öffnen.
+
+Ausgabe: Bericht und JSON-Urteil mit dem Stand jedes Findings (KORRIGIERT, TEILWEISE, OFFEN) und gegebenenfalls neuen Findings. Am Ende: gelesene Dateien mit Hash, ausgeführte Befehle, Modell laut Laufzeit.
