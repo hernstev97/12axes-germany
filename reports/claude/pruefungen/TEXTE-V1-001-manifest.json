@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "package": "TEXTE-V1-001",
+  "commit": "e429f0c7abfcc9d442340ab3a59d3a63a5fd9f30",
+  "note": "Inhaltliche Prüfung der Textvorschläge, Entwurf 1. Prüfgegenstand ist nur docs/vorschlaege-texte-v1.entwurf.md; die übrigen Dateien sind Grundlage. Keine Antwortverteilungen nötig.",
+  "artifacts": [
+    {
+      "path": "docs/vorschlaege-texte-v1.entwurf.md",
+      "sha256": "f1ed0b3844096c9af5e0c56064ed75b6b2b1918be7a6223053e3d829f82b2b2a"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "34e62abe5024bd035a52dd7efae3ca392f86422b298ef32ba720e12563dca17a"
+    },
+    {
+      "path": "docs/profilregeln-v1.md",
+      "sha256": "3f235f026588baba350a477012be9c29d533d397e58ec813572a3d5475b4bc23"
+    },
+    {
+      "path": "docs/analyseplan-v2.2.md",
+      "sha256": "13b052a9e58fac20f55b21a430a3d92738b1be6e1da5648c8ac3c6f9a87638d8"
+    },
+    {
+      "path": "docs/project.md",
+      "sha256": "2ff27e5aa553ea2307bd4d28da436991c5ebb3b019f316d9aae95ee81d57696a"
+    },
+    {
+      "path": "web/src/index.html",
+      "sha256": "d3dcf44566fd2c05d92b9acdf0c9d0e570b472abd3edfa7ac4face20fc15657c"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.html",
+      "sha256": "f25712dc8d6fbd85c5d93fa4c6db8c006fe5132282db06f922733fd9e2c94b2a"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-catalogue.ts",
+      "sha256": "acde504fa6f0b815d93c66a842d1a25270092713ea898df97b9e8617388a6193"
+    },
+    {
+      "path": "web/src/app/policy-draft/profile/area-scope.ts",
+      "sha256": "4ed439fd3a1d9b9d030f8ed33b9a4d55916d07cc694bcf8a3aec6f86d338a1b1"
+    },
+    {
+      "path": "reports/claude/agenten/V2-urteil.json",
+      "sha256": "622e6961b36655943f126ffa25eb7758e3d7b025fa3a1b6275630beb673d02cf"
+    },
+    {
+      "path": "reports/claude/agenten/T1-technik-browser.md",
+      "sha256": "3bba4b1112db99f9938104ba82b17fdfb552d57657a5440ea4827ce7f88e3636"
+    }
+  ]
+}
