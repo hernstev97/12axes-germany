@@ -44,7 +44,7 @@ ENTWURF 2, 4. Oktober 2026, verfasst von Claude für Steven, abgeglichen mit Fas
 
 **Lage.** Der Pflichttext aus LIFE-93 Phase 6, die Meta-Beschreibung und die Begriffstabelle des Handbuchs kündigen Dimensionen an, die das Profil begründet nicht hat. „Repräsentativ“ behauptet eine geprüfte Eigenschaft der erreichten Stichproben. Die Bereichsnamen versprechen mehr, als die Fragen abdecken.
 
-**Empfehlung.** Die Varianten aus [vorschlaege-texte-v1.entwurf.md](vorschlaege-texte-v1.entwurf.md) übernehmen: Statushinweis A, Meta-Beschreibung B, neue Begriffe Profil, Bereich und Dimension, „wissenschaftliche Befragung auf Grundlage von Zufallsstichproben“, Untertitel der Bereiche. Die Umsetzung braucht nach Stevens Entscheidung etwa eine Stunde Agentenarbeit und eine Textprüfung.
+**Empfehlung.** Die Varianten aus [vorschlaege-texte-v1.entwurf.md](vorschlaege-texte-v1.entwurf.md) übernehmen: Statushinweis A, Meta-Beschreibung B, Begriffe Profil, Bereich, Dimension und eigenes Modell, „wissenschaftliche Befragung auf Grundlage von Zufallsstichproben“, Untertitel der Bereiche. Eine inhaltliche KI-Prüfung (K1) ergab fünf Befunde, die Entwurf 2 der Vorschläge korrigiert. Die Umsetzung braucht nach Stevens Entscheidung etwa eine Stunde Agentenarbeit und eine Textprüfung.
 
 ## 5 ESS Runde 12
 

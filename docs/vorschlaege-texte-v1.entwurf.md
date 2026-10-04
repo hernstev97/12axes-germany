@@ -1,6 +1,6 @@
 # Vorschläge für offene Beschriftungen und Pflichttexte
 
-ENTWURF 1, 4. Oktober 2026, verfasst von Claude. Nichts davon ist umgesetzt. Steven entscheidet, weil es Pflichttexte aus LIFE-93, Regeln des Handbuchs oder die Benennung von Bereichen betrifft. Jeder Vorschlag nennt die Fundstelle, das Problem mit Beleg, Varianten und eine Empfehlung. Grundlage sind die Findings V2-F04, V2-F11 und V2-F15 (`reports/claude/agenten/V2-urteil.json`) und T1 Abschnitt 4 (`reports/claude/agenten/T1-technik-browser.md`).
+ENTWURF 2, 4. Oktober 2026, verfasst von Claude, überarbeitet nach der inhaltlichen Prüfung K1 (`reports/claude/pruefungen/K1-textvorschlaege.md`). Nichts davon ist umgesetzt. Steven entscheidet, weil es Pflichttexte aus LIFE-93, Regeln des Handbuchs oder die Benennung von Bereichen betrifft. Jeder Vorschlag nennt die Fundstelle, das Problem mit Beleg, Varianten und eine Empfehlung. Grundlage sind die Findings V2-F04, V2-F11 und V2-F15 (`reports/claude/agenten/V2-urteil.json`) und T1 Abschnitt 4 (`reports/claude/agenten/T1-technik-browser.md`).
 
 ## 1 Statushinweis auf Ergebnisseiten (V2-F11)
 
@@ -11,9 +11,9 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude. Nichts davon ist umgesetzt. Ste
 **Varianten.**
 
 - A (kleinste Änderung): „Forschungsprototyp. Fragen und Vergleichsdaten stammen aus dem European Social Survey, Auswahl, Ordnung und Auswertung sind ein eigenes Modell dieses Projekts. Analyse und Website wurden mit KI erstellt und nicht von Fachleuten begutachtet. Code und Auswertung sind öffentlich.“
-- B (offen für weitere Quellen): „Forschungsprototyp. Fragen und Vergleichsdaten stammen aus wissenschaftlichen Befragungen, derzeit dem European Social Survey. Auswahl, Ordnung und Auswertung sind ein eigenes Modell dieses Projekts. Analyse und Website wurden mit KI erstellt und nicht von Fachleuten begutachtet. Code und Auswertung sind öffentlich.“
+- B (Vorlage für mehrere Quellen): „Forschungsprototyp. Fragen und Vergleichsdaten stammen aus den jeweils angegebenen wissenschaftlichen Befragungen. Auswahl, Ordnung und Auswertung sind ein eigenes Modell dieses Projekts. Analyse und Website wurden mit KI erstellt und nicht von Fachleuten begutachtet. Code und Auswertung sind öffentlich.“ Die Ansicht muss dann bei jeder Frage und jedem Vergleich die Quelle nennen. Zählt der Pflichttext die Quellen stattdessen auf, nennt er alle tatsächlich verwendeten.
 
-**Empfehlung.** A jetzt. B erst, wenn eine weitere Quelle tatsächlich freigegeben ist.
+**Empfehlung.** A jetzt. B erst, wenn Fragen oder Vergleichsdaten einer weiteren Quelle tatsächlich eingebunden sind. Eine Freigabe allein genügt nicht.
 
 ## 2 Meta-Beschreibung (T1 Abschnitt 4)
 
@@ -23,10 +23,10 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude. Nichts davon ist umgesetzt. Ste
 
 **Varianten.**
 
-- A (141 Zeichen): „12 Axes Deutschland plant einen Test zu politischen Einstellungen, der die Antworten Frage für Frage beschreibt. Er ist noch nicht verfügbar.“
-- B (151 Zeichen): „12 Axes Deutschland plant einen Test zu politischen Einstellungen in Deutschland. Er beschreibt Antworten Frage für Frage und ist noch nicht verfügbar.“
+- A (147 Zeichen): „12 Axes Deutschland plant einen Test zu politischen Einstellungen, der die Antworten Frage für Frage beschreiben soll. Er ist noch nicht verfügbar.“
+- B (157 Zeichen): „12 Axes Deutschland plant einen Test zu politischen Einstellungen in Deutschland. Er soll Antworten Frage für Frage beschreiben und ist noch nicht verfügbar.“
 
-**Empfehlung.** B, weil sie Deutschland nennt.
+**Empfehlung.** B, weil sie Deutschland nennt. Beide Varianten beschreiben den geplanten Test mit „soll“, wie Handbuch 7.2 es verlangt.
 
 ## 3 Begriffe „Profil“ und „Dimension“ im Handbuch
 
@@ -36,13 +36,14 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude. Nichts davon ist umgesetzt. Ste
 
 **Vorschlag.**
 
-| Begriff   | Verwendung                                                                                           | Nicht                   |
-| --------- | ---------------------------------------------------------------------------------------------------- | ----------------------- |
-| Profil    | Ergebnis: Beschreibung der eigenen Antworten mit historischen Vergleichen                            | Typ, Persönlichkeit     |
-| Bereich   | Ordnung der Fragen für Lesende, mit „Erfasst“ und „Nicht erfasst“                                    | Dimension, Achse, Skala |
-| Dimension | nur für eine geprüfte gemeinsame Messung nach eigenem Plan. In der aktuellen Fassung nicht vorhanden | Bereich, Rubrik         |
+| Begriff        | Verwendung                                                                                           | Nicht                   |
+| -------------- | ---------------------------------------------------------------------------------------------------- | ----------------------- |
+| Profil         | Ergebnis: Beschreibung der eigenen Antworten mit historischen Vergleichen                            | Typ, Persönlichkeit     |
+| Bereich        | Ordnung der Fragen für Lesende, mit „Erfasst“ und „Nicht erfasst“                                    | Dimension, Achse, Skala |
+| Dimension      | nur für eine geprüfte gemeinsame Messung nach eigenem Plan. In der aktuellen Fassung nicht vorhanden | Bereich, Rubrik         |
+| eigenes Modell | Auswahl, Ordnung, Auswertung und Deutung durch das Projekt                                           | Modell des ESS          |
 
-**Empfehlung.** Übernehmen, weil das Handbuch sonst eine Struktur vorschreibt, die das Projekt begründet nicht verwendet.
+**Empfehlung.** Übernehmen, weil das Handbuch sonst eine Struktur vorschreibt, die das Projekt begründet nicht verwendet. Die Zeile „eigenes Modell“ ersetzt die bisherige Zeile mit „Dimensionen“. Die Zeilen „Bevölkerung“ und „Vergleichsdaten“ nennen nur den ESS. Sie wären erst zu ändern, wenn eine weitere Quelle tatsächlich eingebunden ist.
 
 ## 4 „Repräsentative wissenschaftliche Befragung“ (V2-F15)
 
@@ -65,16 +66,16 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude. Nichts davon ist umgesetzt. Ste
 
 **Varianten.** A: Namen behalten und einen Untertitel ergänzen, der den tatsächlichen Inhalt nennt. B: Namen durch engere Namen ersetzen. A hält die Namen der Themenabdeckung stabil, auch wenn später Fragen hinzukommen.
 
-| Bereich                              | Vorgeschlagener Untertitel                                                     |
-| ------------------------------------ | ------------------------------------------------------------------------------ |
-| Wirtschaft und Verteilung            | Gerechtigkeitsprinzipien und Umverteilung                                      |
-| Sozialstaat                          | Staatliche Verantwortung, Zielgruppen von Leistungen, Grundeinkommen           |
-| Demokratie und politische Autorität  | Demokratieverständnis, Mehrheit und Regierung, Führung und Gesetz              |
-| Bürgerrechte und Sicherheit          | Pflichten gegenüber Polizei und Gesetz, Strafen, Abwägungen in einer Pandemie  |
-| Europäische Integration              | Mitgliedschaft, Entscheidungsebene, Richtung der Einigung, EU-Sozialprogramm   |
-| Klima und Energie                    | Klimamaßnahmen und Energiequellen für Strom                                    |
-| Migration                            | Zuwanderung nach Herkunft, Sozialrechte, Asyl                                  |
-| Gleichstellungs- und Familienpolitik | Gleichstellungsmittel, Familienleistungen, Rechte gleichgeschlechtlicher Paare |
+| Bereich                              | Vorgeschlagener Untertitel                                                                                                                                                         |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Wirtschaft und Verteilung            | Gerechtigkeitsprinzipien und Umverteilung                                                                                                                                          |
+| Sozialstaat                          | Staatliche Verantwortung, Zielgruppen von Leistungen, Grundeinkommen                                                                                                               |
+| Demokratie und politische Autorität  | Wichtigkeit von Demokratiemerkmalen, Regierung und Mehrheitsmeinung, Führung, Loyalität und Gesetz, Verbot demokratiefeindlicher Parteien                                          |
+| Bürgerrechte und Sicherheit          | Pflichten gegenüber Polizei und Gesetz, Strafen, Abwägungen in einer Pandemie                                                                                                      |
+| Europäische Integration              | Mitgliedschaft, Entscheidungsebene, Richtung der Einigung, EU-Sozialprogramm                                                                                                       |
+| Klima und Energie                    | Klimamaßnahmen und Energiequellen für Strom                                                                                                                                        |
+| Migration                            | Zuwanderung nach Herkunft, Sozialrechte, Asyl                                                                                                                                      |
+| Gleichstellungs- und Familienpolitik | Gleichstellungsmittel, Gleichberechtigung bei knappen Arbeitsplätzen, Familienleistungen, freie Lebensführung von Schwulen und Lesben, Adoptionsrecht gleichgeschlechtlicher Paare |
 
 **Empfehlung.** A. Umsetzung als zusätzliche Zeile unter dem Bereichsnamen im Forschungsentwurf, ohne neue Gestaltungsmuster.
 
@@ -82,3 +83,13 @@ ENTWURF 1, 4. Oktober 2026, verfasst von Claude. Nichts davon ist umgesetzt. Ste
 
 - Restgruppe der Parteiliste: „Andere Partei (heterogener Rest)“ statt „Other“, mit Erklärung beider Bezeichnungen (V2-F13). Umgesetzt am 3. Oktober 2026. Steven kann das zurücknehmen.
 - Erklärung der 95-%-Bereiche einmal je Ansicht statt an jeder Referenz (Plan v2.2, 4.3). Umgesetzt am 4. Oktober 2026.
+
+## 7 Korrekturen nach der Prüfung K1
+
+| Finding | Korrektur in Entwurf 2                                                                                                                                 |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| K1-F01  | Untertitel Gleichstellungs- und Familienpolitik nennt die Frage zu knappen Arbeitsplätzen und die freie Lebensführung getrennt vom Adoptionsrecht.     |
+| K1-F02  | Untertitel Demokratie und politische Autorität nennt die Wichtigkeit von Demokratiemerkmalen, Loyalität und das Verbot demokratiefeindlicher Parteien. |
+| K1-F03  | Abschnitt 3: Zeile „eigenes Modell“ ohne Dimensionen. Hinweis auf die Zeilen, die nur den ESS nennen.                                                  |
+| K1-F04  | Abschnitt 1: B als Vorlage mit Quellenangabe je Frage. Bedingung ist die tatsächliche Einbindung einer weiteren Quelle.                                |
+| K1-F05  | Abschnitt 2: beide Varianten mit „soll“.                                                                                                               |
