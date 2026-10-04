@@ -31,12 +31,12 @@ Nicht durchführbar bleiben physische Smartphones, Touch auf echten Geräten, Sc
 **Befunde.**
 
 1. Für die sechs Bereiche fehlen außerhalb von GESIS aktuelle Zufallsstichproben zu nationalen Streitfragen. GESIS-Bestände (GLES 2025, Politbarometer, ISSP 2024, ZMSBw) enthalten solche Fragen, bleiben aber gesperrt.
-2. Das Eurobarometer liefert aktuelle Fragen mit Zufallsstichprobe, fast alle zur EU-Ebene. Neun Fragen erfüllen die Auswahlregeln und die Tabellenstruktur: gemeinsame Verteidigungs- und Außenpolitik, Zusammenarbeit und Ausgaben für Verteidigung in der EU, EU-Finanzierung militärischer Ausrüstung für die Ukraine, Beitritt der Ukraine, KI-Regulierung, Plattformregulierung, gemeinsame Gesundheitspolitik. Zwei Forschungsfragen brauchen noch eine Strukturprüfung.
+2. Das Eurobarometer liefert aktuelle Fragen mit Zufallsstichprobe, die meisten zu Entscheidungen auf EU-Ebene. Neun Fragen erfüllen die Auswahlregeln und die Tabellenstruktur: gemeinsame Verteidigungs- und Außenpolitik, Zusammenarbeit und Ausgaben für Verteidigung in der EU, EU-Finanzierung militärischer Ausrüstung für die Ukraine, Beitritt der Ukraine, KI-Regulierung, Plattformregulierung, gemeinsame Gesundheitspolitik. Jede Frage trägt ihren Geltungsbereich: sechs Entscheidungen auf EU-Ebene, der Beitritt der Ukraine als EU-Entscheidung mit Zustimmung Deutschlands, KI-Regulierung ohne Ebene, Verteidigungsausgaben „in der EU“ mit offener Ebene. Zwei Forschungsfragen brauchen noch eine Strukturprüfung.
 3. ESS12 enthält keine Frage zu den sechs Bereichen, aber die Rückerinnerung an die Bundestagswahl vom 23. Februar 2025. Die erste Datenveröffentlichung ist voraussichtlich für Januar 2027 angekündigt. Ob Deutschland dazugehört, ist nicht bestätigt.
-4. Online-Quotenstichproben (OECD Risks that Matter) decken Rente, Gesundheit, Pflege und Wohnen ab, aber nur mit Zahlungsbereitschaft, englischem Wortlaut und ohne Zufallsstichprobe.
+4. Online-Quotenstichproben (OECD Risks that Matter) decken Rente, Gesundheit, Pflege und Wohnen ab, aber nur mit Zahlungsbereitschaft, englischem Wortlaut und ohne Zufallsstichprobe. Die zehn inhaltlich passenden Items sind zurückgestellt, solange kein deutscher Feldwortlaut belegt ist.
 5. Die Rechtslage hat sich seit der Matrix geändert, etwa neues Wehrdienstgesetz, neue Grundsicherung, Mindestlohn 13,90 Euro. Nachgetragen in `docs/abdeckung-v2.2.md`.
 
-**Plan.** [Analyseplan v2.3, Entwurf 0.2](../../docs/analyseplan-v2.3.entwurf.md): Quellenklassen Z, T und Q mit eigenen Anzeigeregeln, getrennte Populationen, keine Trendaussagen zwischen historischen und aktuellen Vergleichen, Rollen für Auswahl und Struktur, Regeln für Wählergruppen 2025, Optionen zur Sichtbarkeit der Gruppenvergleiche, Kandidaten in vier Stufen. PLANPRUEFUNG
+**Plan.** [Analyseplan v2.3, Entwurf 0.4](../../docs/analyseplan-v2.3.entwurf.md): Quellenklassen Z, T und Q mit eigenen Anzeigeregeln, getrennte Populationen, keine Trendaussagen zwischen historischen und aktuellen Vergleichen, Rollen für Auswahl und Struktur, Regeln für Wählergruppen 2025, Optionen zur Sichtbarkeit der Gruppenvergleiche, Kandidaten in vier Stufen. PLANPRUEFUNG
 
 ## 4 Forschungsentwurf und Texte
 
@@ -59,7 +59,7 @@ Neue Rohdatenzugriffe: zweite Dekodierung der ESS5-Designdatei und Wiederholung 
 ## 7 Entscheidungen, die danach von Steven gebraucht werden
 
 1. **GESIS um eine Ausnahme nach § 4 bitten** (Entwurf 1 in `docs/quellenanfragen-v1.entwurf.md`). Empfehlung: ja. Nur das kann nationale Fragen zu Verteidigung, Rente, Pflege und Wohnen öffnen.
-2. **Eurobarometer-Tabellen der Kommission für neun EU-Fragen zulassen.** Empfehlung: ja, als getrennt gekennzeichneter Vergleich zur EU-Ebene, nach der Planprüfung.
+2. **Eurobarometer-Tabellen der Kommission für neun Fragen zulassen.** Empfehlung: ja, als getrennter Bevölkerungsvergleich mit dem Geltungsbereich jeder Frage, zusammen mit der Anfrage an das Eurobarometer-Team (Entwurf 3). Ohne dessen Antwort zur Fragebasis keine Zahlen.
 3. **Online-Quotenstichproben.** Empfehlung: vorerst nein.
 4. **Textvorschläge** annehmen oder ändern (Statushinweis, Meta-Beschreibung, Handbuchbegriffe, „repräsentativ“, Untertitel).
 5. Unverändert offen: Gestaltung von Test und Ergebnis, Verständnistest mit fünf Personen, Setup-Abnahme, Freigabe von Merge und Deployment.
