@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "package": "UI-FRAGEANSICHT-001",
+  "commit": "9fe7fe2fb04b8c9fba72de3c095d767f139081fc",
+  "note": "Neue Frageansicht des lokalen Forschungsentwurfs vom 5. Oktober 2026. Prüfgegenstand: policy-question, policy-progress, die Änderungen an policy-draft, die Prüfskripte und der neue Abschnitt in Kapitel 4 des Handbuchs. Katalog, Quellenkomponente, styles.scss, AGENTS.md, Protokoll und Validierung sind Grundlage. Keine Antwortverteilungen nötig.",
+  "artifacts": [
+    {
+      "path": "web/src/app/policy-draft/policy-question.ts",
+      "sha256": "d3010ba9f35796c9b71f06b8edf041ef31cab29e3f3fac368ade8e1f16d2a89c"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-question.html",
+      "sha256": "0c366348acf118a7e8c26b7b324d84fbf17079508466eb27e2be35dd31849cd7"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-question.scss",
+      "sha256": "1c410a804563cb5faeb647d000d00be5fd73d1e15ab9d3b9d828c9161215bee1"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-progress.ts",
+      "sha256": "b6523b56df78582f759c1cab35489726cf1c2a6487b819be136cb9516749c738"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-progress.html",
+      "sha256": "b1bd0d2847229eba97702fef8029c5afba807f823e25cdbed97782020cfc72c5"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-progress.scss",
+      "sha256": "36d8af93f94b7f8f3677da63a2952035862e81326fa2a719dbaacc29b7a89ac3"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.ts",
+      "sha256": "c7b856978e8963a85e66f58f6727ca09b8ee209c2f00bbfe285a5cf8d2246cab"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.html",
+      "sha256": "a8816686f8c8e47bd197874ec280912dea47c742b7dc137a2b05a726ee59d08e"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.scss",
+      "sha256": "f9ef36fbdd035d097bba3d9d2a81058c857a9e9123939cd2fdd0f991cc20a9bd"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-draft.spec.ts",
+      "sha256": "dea5d913a60c554cd99bfdd0949d68558586df020ab96544b21460151a8e93c8"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-catalogue.ts",
+      "sha256": "acde504fa6f0b815d93c66a842d1a25270092713ea898df97b9e8617388a6193"
+    },
+    {
+      "path": "web/src/app/policy-draft/policy-source-details.html",
+      "sha256": "3ebaf5bf8145005ad9706ce42bacd8660cffb15daf152ae4001da4ccf539fdb2"
+    },
+    {
+      "path": "web/src/styles.scss",
+      "sha256": "695afc2c43f15dcaf4ad0406a3bf9910d7b6b7f610e4e52516b72f624ba8cf11"
+    },
+    {
+      "path": "scripts/check-research-browser.mjs",
+      "sha256": "f2733d8c4b305f562fe960fcd29a88e3bbb13b19c4f4b42ae74a52352f8f8e79"
+    },
+    {
+      "path": "scripts/check-research-engines.mjs",
+      "sha256": "b58a7c1c9ecc1526b2e005130768c73f1493c1ecd5c8c571349d67739af430b5"
+    },
+    {
+      "path": "docs/handbuch.md",
+      "sha256": "aa243c82ea6a21b6cc856738578341519b49e4251acc4c7356813e681b2adc23"
+    },
+    {
+      "path": "docs/ki-protokoll.md",
+      "sha256": "08bd4f9a86c415301e98b0960e5bdba92e1b8cb78164b51aa8d1aa4c87e96cd3"
+    },
+    {
+      "path": "docs/validation.md",
+      "sha256": "8dc2a1d08da649562454677dd48533995b78e1f1dcabe00dddaea160b75a2cd6"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "6d405f6baff0b692edf657dae09c933b3ef978e2f3a98d3caaf14dc7666f627f"
+    }
+  ]
+}
