@@ -21,6 +21,7 @@ import {
   POLICY_RUBRICS,
   type PolicyDraftItem,
 } from './policy-catalogue';
+import { PolicyQuestion, type SkipReason } from './policy-question';
 import { PolicySourceDetails } from './policy-source-details';
 import { AREA_SCOPES, UNCOVERED_AREAS } from './profile/area-scope';
 import { buildAnswerProfile, type ProfileAnswer } from './profile/profile-engine';
@@ -52,9 +53,6 @@ interface ReferenceView {
   readonly hasIntervals: boolean;
 }
 
-/** Studies whose data files contain a complete sampling design (Analyseplan v2.2, 4.1). */
-type SkipReason = 'unspecified' | 'dont-know' | 'decline';
-
 /**
  * Unrouted preparation. Requires the existing App shell and global styles.
  * Session answers remain in this instance's RAM. No output emits answers, no
@@ -64,7 +62,7 @@ type SkipReason = 'unspecified' | 'dont-know' | 'decline';
 @Component({
   selector: 'app-policy-draft',
   standalone: true,
-  imports: [PolicySourceDetails],
+  imports: [PolicyQuestion, PolicySourceDetails],
   templateUrl: './policy-draft.html',
   styleUrl: './policy-draft.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -81,15 +79,15 @@ export class PolicyDraft {
     ),
   );
   private readonly injector = inject(Injector);
+  private readonly host: HTMLElement = inject(ElementRef).nativeElement;
   private readonly pageHeading = viewChild<ElementRef<HTMLElement>>('pageHeading');
-  private readonly questionHeading = viewChild<ElementRef<HTMLElement>>('questionHeading');
-  private readonly answerFieldset = viewChild<ElementRef<HTMLFieldSetElement>>('answerFieldset');
   private readonly session = new PolicyProfileSession(POLICY_DRAFT_QUESTIONS);
   protected readonly snapshot = signal(this.session.snapshot());
   protected readonly view = signal<DraftView>('questions');
   protected readonly items = POLICY_DRAFT_ITEMS;
-  protected readonly categoryLabel = categoryLabel;
   protected readonly skipReason = signal<SkipReason>('unspecified');
+  /** Session setting only; like the answers it is neither stored nor sent. */
+  protected readonly autoAdvance = signal(true);
   private readonly skipReasons = signal<ReadonlyMap<string, SkipReason>>(new Map());
   protected readonly skipLabels: Readonly<Record<SkipReason, string>> = Object.freeze({
     unspecified: 'Keine Angabe',
@@ -200,11 +198,6 @@ export class PolicyDraft {
     return categoryLabel(item, item.categories.find((category) => category.code === answer.code)!);
   }
 
-  /** Recreates the radio inputs for each question instead of reusing them. */
-  protected optionKey(code: string): string {
-    return `${this.currentItem().id}:${code}`;
-  }
-
   protected isSelected(answer: PolicyAnswer, code: string): boolean {
     return answer.status === 'answered' && answer.code === code;
   }
@@ -218,13 +211,6 @@ export class PolicyDraft {
     this.session.answer(id, code);
     this.clearSkipReason(id);
     this.update();
-  }
-
-  protected setSkipReason(event: Event): void {
-    const value = (event.target as HTMLSelectElement).value;
-    if (value === 'unspecified' || value === 'dont-know' || value === 'decline') {
-      this.skipReason.set(value);
-    }
   }
 
   protected skip(): void {
@@ -426,7 +412,7 @@ export class PolicyDraft {
   private syncRadios(): void {
     afterNextRender(
       () => {
-        const fieldset = this.answerFieldset()?.nativeElement;
+        const fieldset = this.host.querySelector('#draft-answer-fieldset');
         if (!fieldset) return;
         const answer = this.currentAnswer();
         for (const input of fieldset.querySelectorAll<HTMLInputElement>('input[type="radio"]')) {
@@ -440,8 +426,10 @@ export class PolicyDraft {
   private focus(target: 'page' | 'question'): void {
     afterNextRender(
       () => {
-        const heading = (target === 'page' ? this.pageHeading() : this.questionHeading())
-          ?.nativeElement;
+        const heading =
+          target === 'page'
+            ? this.pageHeading()?.nativeElement
+            : this.host.querySelector<HTMLElement>('#draft-question-title');
         if (!heading) return;
         heading.focus({ preventScroll: true });
         // Focus alone can leave the rendered target above the viewport after an edit.

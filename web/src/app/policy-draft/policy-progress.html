@@ -1,0 +1,20 @@
+<div class="progress-row">
+  <h2 id="draft-question-title" class="progress-title" tabindex="-1">
+    Frage {{ position() }} von {{ total() }}
+  </h2>
+  <label class="advance">
+    <input
+      id="draft-auto-advance"
+      type="checkbox"
+      role="switch"
+      [checked]="autoAdvance()"
+      (change)="toggle($event)"
+    />
+    <span>Nach einer Antwort automatisch zur nächsten Frage</span>
+  </label>
+</div>
+<progress [value]="processed()" [max]="total()" aria-label="Bearbeitete Fragen"></progress>
+<p class="meta" aria-live="polite">
+  {{ counts().answered }} beantwortet, {{ counts().skipped }} übersprungen,
+  {{ counts().untouched }} unberührt.
+</p>

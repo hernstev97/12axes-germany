@@ -226,3 +226,17 @@ Stevens Auftrag im Wortlaut:
 > Ändere keine globalen Systemeinstellungen oder Repository-Schutzregeln. Kein Merge, Deployment, Force-Push oder Löschen fremder Arbeit. Beende den Lauf erst, wenn die ausführbaren Pakete abgeschlossen sind oder nachvollziehbar blockieren. Hinterlasse einen Fortsetzungsbericht mit tatsächlichen Ergebnissen, verbleibenden Grenzen und den wenigen konkreten Entscheidungen, die danach wirklich von mir benötigt werden.
 
 Zugriff und Exposition: Die Rohdatenzugriffe stehen in `reports/claude/datenzugriff.md`. Die Auswahlrolle (Claude) hat keine Ergebniswerte externer Erhebungen gesehen. S1 hat Ergebnistabellen der Kommission geöffnet und nur Struktur, Basen und Methodenangaben gemeldet. Rechercheagenten berichten ungefragt angezeigte Ergebnisbruchstücke in Suchzusammenfassungen; sie wurden nicht verwendet.
+
+## 2026-10-05: Unteraufgabe LIFE-96 und neue Frageansicht
+
+- Agent: Claude über T3 Code, Modellkennung laut Laufzeit `claude-opus-5-5[1m]`. Branch `research/life-93-claude-20261003`, Ausgangsstand `9489579`.
+- Linear: Unteraufgabe [LIFE-96](https://linear.app/kiumu-app/issue/LIFE-96/12-axes-deutschland-stand-lucken-und-weg-zu-einem-wertvollen-test) unter LIFE-93 mit Stand, Grenzen, Wegen zu einem nützlicheren Test, Entscheidungen für Steven und Arbeit ohne seine Entscheidung. Auf ausdrücklichen Wunsch von Steven angelegt.
+- Oberfläche: neue Komponenten `app-policy-progress` und `app-policy-question` für die Frageansicht des Forschungsentwurfs. Fragen, Antwortlisten, Einleitungen, Quellenangaben und Sitzungslogik bleiben unverändert. Neue sichtbare Texte sind nur die Beschriftung des Schalters „Nach einer Antwort automatisch zur nächsten Frage“ und der Name „Bearbeitete Fragen“ des Fortschrittsbalkens.
+
+Stevens Auftrag im Wortlaut:
+
+> okay, wir müssen erstmal in einer unteraufgabe zur aktuellen linear aufgabe festhalten, was noch zu tun ist und wie das projekt besser und tatsächlich wertvoll werden kann. die aktuelle aufgabe ist schon massiv lang und kaum noch von einem menschen zu lesen. halte das alles da bitte einmal fest.
+>
+> und dann müssen wir die seite mit den fragen einmal redesignen. [Bildschirmfoto eines anderen Fragebogens: Frage in einer Karte, Fortschrittsbalken, Schalter für automatisches Weiterschalten] ich fände so eine ansicht eigentlich ganz gut. also mittig von der seite, autoprogress beim auswählen der antwort und ein fortschrittsbalken. aber natürlich noch in der designsprache der webseite. details zu den fragen (z.b. herkunft der frage oder Originalkontext, Version und Quellen) können dann unter diesem feld unauffällig untergebracht werden. den grund des überspringens finde ich gut, das sollten wir beibehalten.
+
+Abweichungen vom Bildschirmfoto mit Grund: keine grünen Haken und roten Kreuze an den Antworten, weil sie Zustimmung und Ablehnung werten würden; keine Kategorie-Plakette mit Symbol und keine große Ziffer als Schmuck (Handbuch, Kapitel 1); die Originaleinleitung bleibt in der Karte, weil viele Fragen ohne sie nicht wie im Original beantwortbar sind; der Schalter steht vor den Antworten statt zwischen den Schaltflächen, damit der automatische Wechsel vor der ersten Auswahl angekündigt ist.

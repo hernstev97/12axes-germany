@@ -1,0 +1,124 @@
+@let current = item();
+<app-policy-progress
+  [position]="position()"
+  [total]="total()"
+  [counts]="counts()"
+  [autoAdvance]="autoAdvance()"
+  (autoAdvanceChange)="setAutoAdvance($event)"
+/>
+
+<div class="card">
+  <p class="card-head">
+    <span class="rubric">{{ current.rubricTitle }}</span>
+    <span class="meta">{{ stateLabel(answer()) }}</span>
+  </p>
+  @if (hasContext()) {
+    <div id="draft-original-context" class="context">
+      @for (introduction of current.introductionsDe; track $index) {
+        <p>{{ introduction }}</p>
+      }
+      @if (current.definitionDe?.length) {
+        <ul>
+          @for (point of current.definitionDe; track $index) {
+            <li>{{ point }}</li>
+          }
+        </ul>
+      }
+      @if (current.situationDe) {
+        <p>{{ current.situationDe }}</p>
+      }
+    </div>
+  }
+  <fieldset
+    id="draft-answer-fieldset"
+    [attr.aria-describedby]="
+      hasContext() ? 'draft-original-context draft-development-note' : 'draft-development-note'
+    "
+    (keydown)="handleKey($event, true)"
+    (keyup)="handleKey($event, false)"
+  >
+    <legend>
+      @for (wording of current.displayWording; track $index) {
+        <span>{{ wording }}</span>
+      }
+    </legend>
+    @if (scale(); as scaleView) {
+      <div class="options scale">
+        @for (option of scaleView.options; track optionKey(option.code)) {
+          <label class="answer-option">
+            <input
+              type="radio"
+              name="draft-original-answer"
+              [value]="option.code"
+              [checked]="isSelected(option.code)"
+              (change)="answerChosen.emit(option.code)"
+              (click)="confirm(option.code)"
+            />
+            <span
+              >{{ option.number }}<span class="scale-text">{{ option.text }}</span></span
+            >
+          </label>
+        }
+      </div>
+      <p class="scale-ends" aria-hidden="true">
+        <span>{{ scaleView.options[0]!.number }}: {{ scaleView.start }}</span>
+        <span>{{ scaleView.options.at(-1)!.number }}: {{ scaleView.end }}</span>
+      </p>
+    } @else {
+      <div class="options">
+        @for (category of current.offeredCategories; track optionKey(category.code)) {
+          <label class="answer-option">
+            <input
+              type="radio"
+              name="draft-original-answer"
+              [value]="category.code"
+              [checked]="isSelected(category.code)"
+              (change)="answerChosen.emit(category.code)"
+              (click)="confirm(category.code)"
+            />
+            <span>{{ categoryLabel(current, category) }}</span>
+          </label>
+        }
+      </div>
+    }
+  </fieldset>
+  <button
+    type="button"
+    class="quiet"
+    (click)="request('reset')"
+    [disabled]="answer().status === 'untouched'"
+  >
+    Auswahl zurücksetzen
+  </button>
+  <div class="skip-controls">
+    <label for="draft-skip-reason">Grund für das Überspringen in dieser Sitzung</label>
+    <select id="draft-skip-reason" [value]="skipReason()" (change)="setSkipReason($event)">
+      <option value="unspecified">Keine Angabe</option>
+      <option value="dont-know">Weiß nicht</option>
+      <option value="decline">Keine Antwort geben</option>
+    </select>
+    <button type="button" (click)="request('skip')">Diese Frage überspringen</button>
+  </div>
+</div>
+
+<div class="question-controls">
+  <button type="button" (click)="request('previous')" [disabled]="position() === 1">
+    Zur vorherigen Frage
+  </button>
+  <button type="button" (click)="request('next')">
+    {{ isLast() ? 'Zum Ergebnisentwurf' : 'Zur nächsten Frage' }}
+  </button>
+</div>
+
+<div class="notes">
+  <p class="meta">{{ current.origin }}</p>
+  @if (!hasContext()) {
+    <p class="meta">Der Katalog enthält für diese Einzelangabe keine zusätzliche Einleitung.</p>
+  }
+  <p id="draft-development-note" class="meta">{{ current.developmentNote }}</p>
+  <p class="meta">
+    Überspringen ist keine politische Antwort und wird keinem Missing-Code der Originalstudie
+    gleichgesetzt.
+  </p>
+  <app-policy-source-details [item]="current" />
+</div>

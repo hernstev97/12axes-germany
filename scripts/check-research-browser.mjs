@@ -255,6 +255,12 @@ try {
       await page.locator('#main-content').evaluate((e) => e === document.activeElement),
       true,
     );
+    // The single-step checks below run with the automatic change switched off by keyboard.
+    const autoAdvance = page.locator('#draft-auto-advance');
+    assert.ok(await autoAdvance.isChecked(), 'auto-advance starts on');
+    await tabTo(autoAdvance, record, 'auto-advance switch');
+    await page.keyboard.press('Space');
+    assert.equal(await autoAdvance.isChecked(), false, 'auto-advance switched off');
     await tabTo(page.locator('input[name=draft-original-answer]').first(), record, 'first radio');
     await shot('question-radio', record);
     await page.keyboard.press('Space');
@@ -277,7 +283,10 @@ try {
     await page.keyboard.press('Enter');
     await page.waitForFunction(() => document.activeElement.id === 'draft-question-title');
     assert.ok(await reset.isDisabled());
-    assert.equal(await page.locator('input:checked').count(), 0);
+    assert.equal(await page.locator('input[name=draft-original-answer]:checked').count(), 0);
+    // From the question heading, the switch for the automatic change comes before the answers.
+    await page.keyboard.press('Tab');
+    assert.equal(await autoAdvance.evaluate((e) => e === document.activeElement), true);
     await page.keyboard.press('Tab');
     assert.equal(
       await page
@@ -506,6 +515,37 @@ try {
       `${record.label}: nothing stored`,
     );
     loaded = false;
+    // Automatic change on a fresh page: arrow keys only select, Space and a click confirm.
+    await page.goto(`${base}/forschungsentwurf`);
+    await page.getByRole('heading', { name: 'Fragenentwurf', exact: true }).waitFor();
+    assert.ok(await page.locator('#draft-auto-advance').isChecked(), 'auto-advance on after load');
+    await page.locator('#draft-question-title').focus();
+    await tabTo(page.locator('input[name=draft-original-answer]').first(), record, 'auto radio');
+    await page.keyboard.press('ArrowDown');
+    await page.waitForTimeout(800);
+    assert.equal(
+      (await page.locator('#draft-question-title').innerText()).trim(),
+      `Frage 1 von ${total}`,
+      'arrow keys do not advance',
+    );
+    await page.keyboard.press('Space');
+    await page.waitForFunction(
+      (n) =>
+        document.activeElement.id === 'draft-question-title' &&
+        document.activeElement.textContent.trim() === `Frage 2 von ${n}`,
+      total,
+    );
+    await page.locator('label.answer-option').first().click();
+    await page.waitForFunction(
+      (n) =>
+        document.activeElement.id === 'draft-question-title' &&
+        document.activeElement.textContent.trim() === `Frage 3 von ${n}`,
+      total,
+    );
+    await layout('after automatic change', record);
+    await audit('after automatic change', record);
+    await shot('after-automatic-change', record);
+    record.autoAdvance = 'arrow keys select without change; Space and click advance';
     console.log(
       `${record.label}: ${total} questions, results, overview, ${record.keyboardFocusChecks} focus checks, ${record.axe.length} axe checks, no request or storage after load PASS`,
     );

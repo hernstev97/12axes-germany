@@ -1,6 +1,6 @@
-<article class="doc">
+<article class="doc" [class.question-mode]="view() === 'questions'">
   <header class="page-header grid page-width">
-    <div class="area-text-wide">
+    <div class="area-text-wide header-content">
       <h1 #pageHeading class="page-title" tabindex="-1">
         @switch (view()) {
           @case ('questions') {
@@ -48,103 +48,32 @@
           Zum Ergebnisentwurf
         </button>
       </nav>
-      <p class="meta" aria-live="polite">
-        {{ counts().answered }} beantwortet, {{ counts().skipped }} übersprungen,
-        {{ counts().untouched }} unberührt.
-      </p>
+      @if (view() !== 'questions') {
+        <p class="meta" aria-live="polite">
+          {{ counts().answered }} beantwortet, {{ counts().skipped }} übersprungen,
+          {{ counts().untouched }} unberührt.
+        </p>
+      }
     </div>
   </header>
 
   @if (view() === 'questions') {
-    @let item = currentItem();
     <section class="section page-width" aria-labelledby="draft-question-title">
-      <div class="grid">
-        <div class="area-title">
-          <h2 #questionHeading id="draft-question-title" class="section-title" tabindex="-1">
-            Frage {{ currentIndex() + 1 }} von {{ items.length }}
-          </h2>
-          <p>{{ item.rubricTitle }}</p>
-          <p class="meta">{{ item.origin }}</p>
-          <p class="meta">{{ stateLabel(currentAnswer()) }}</p>
-        </div>
-        <div class="area-body prose">
-          <div id="draft-original-context" class="original-context">
-            <h3>Originalkontext</h3>
-            @for (introduction of item.introductionsDe; track $index) {
-              <p>{{ introduction }}</p>
-            }
-            @if (item.definitionDe?.length) {
-              <ul class="definition">
-                @for (point of item.definitionDe; track $index) {
-                  <li>{{ point }}</li>
-                }
-              </ul>
-            }
-            @if (item.situationDe) {
-              <p>{{ item.situationDe }}</p>
-            }
-            @if (!item.introductionsDe.length && !item.situationDe) {
-              <p class="meta">
-                Der Katalog enthält für diese Einzelangabe keine zusätzliche Einleitung.
-              </p>
-            }
-          </div>
-          <fieldset
-            #answerFieldset
-            aria-describedby="draft-original-context draft-development-note"
-          >
-            <legend>
-              @for (wording of item.displayWording; track $index) {
-                <span>{{ wording }}</span>
-              }
-            </legend>
-            @for (category of item.offeredCategories; track optionKey(category.code)) {
-              <label class="answer-option">
-                <input
-                  type="radio"
-                  name="draft-original-answer"
-                  [value]="category.code"
-                  [checked]="isSelected(currentAnswer(), category.code)"
-                  (change)="select(category.code)"
-                />
-                <span>{{ categoryLabel(item, category) }}</span>
-              </label>
-            }
-          </fieldset>
-          <p id="draft-development-note" class="meta">{{ item.developmentNote }}</p>
-          <div class="question-controls">
-            <button type="button" (click)="previous()" [disabled]="currentIndex() === 0">
-              Zur vorherigen Frage
-            </button>
-            <button type="button" (click)="next()">
-              {{
-                currentIndex() === items.length - 1 ? 'Zum Ergebnisentwurf' : 'Zur nächsten Frage'
-              }}
-            </button>
-            <button
-              type="button"
-              (click)="resetAnswer()"
-              [disabled]="currentAnswer().status === 'untouched'"
-            >
-              Auswahl zurücksetzen
-            </button>
-          </div>
-          <div class="skip-controls">
-            <label for="draft-skip-reason">Grund für das Überspringen in dieser Sitzung</label>
-            <select id="draft-skip-reason" [value]="skipReason()" (change)="setSkipReason($event)">
-              <option value="unspecified">Keine Angabe</option>
-              <option value="dont-know">Weiß nicht</option>
-              <option value="decline">Keine Antwort geben</option>
-            </select>
-            <button type="button" (click)="skip()">Diese Frage überspringen</button>
-          </div>
-          <p class="meta">
-            Überspringen ist keine politische Antwort und wird keinem Missing-Code der
-            Originalstudie gleichgesetzt.
-          </p>
-          <app-policy-source-details [item]="item" />
-        </div>
-      </div>
+      <app-policy-question
+        [item]="currentItem()"
+        [answer]="currentAnswer()"
+        [position]="currentIndex() + 1"
+        [total]="items.length"
+        [counts]="counts()"
+        [skipReason]="skipReason()"
+        [(autoAdvance)]="autoAdvance"
+        (answerChosen)="select($event)"
+        (skipReasonChanged)="skipReason.set($event)"
+        (skipRequested)="skip()"
+        (resetRequested)="resetAnswer()"
+        (previousRequested)="previous()"
+        (nextRequested)="next()"
+      />
     </section>
   }
 

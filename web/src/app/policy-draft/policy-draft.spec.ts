@@ -3,6 +3,7 @@ import { PolicyDraft } from './policy-draft';
 import { REVIEWED_HISTORICAL_REFERENCES } from './reviewed-historical-references';
 import { REVIEWED_HISTORICAL_GROUPS } from './reviewed-historical-groups';
 import { POLICY_DRAFT_ITEMS } from './policy-catalogue';
+import { AUTO_ADVANCE_DELAY_MS } from './policy-question';
 import type { ReferencesV22 } from './reference-v22';
 
 // Synthetic v2.2 aggregates for display logic only. Not survey results.
@@ -158,6 +159,8 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     fixture = TestBed.createComponent(PolicyDraft);
     await fixture.whenStable();
     element = fixture.nativeElement as HTMLElement;
+    // These tests check single steps. The automatic change has its own block below.
+    await setAutoAdvance(false);
   });
 
   afterEach(() => {
@@ -181,6 +184,12 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   async function choose(code: string): Promise<void> {
     const radio = element.querySelector<HTMLInputElement>(`input[type="radio"][value="${code}"]`)!;
     radio.click();
+    await fixture.whenStable();
+  }
+
+  async function setAutoAdvance(on: boolean): Promise<void> {
+    const toggle = element.querySelector<HTMLInputElement>('#draft-auto-advance')!;
+    if (toggle.checked !== on) toggle.click();
     await fixture.whenStable();
   }
 
@@ -329,7 +338,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     headingInteractions = [];
     await click('Auswahl zurücksetzen');
     expect(reset.disabled).toBe(true);
-    expect(element.querySelector('input:checked')).toBeNull();
+    expect(element.querySelector('input[type="radio"]:checked')).toBeNull();
     expectFocusedAndScrolled(element.querySelector<HTMLElement>('#draft-question-title')!);
   });
 
@@ -727,4 +736,115 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       fetch.mockRestore();
     }
   }, 20_000);
+
+  describe('automatischer Wechsel nach einer Antwort', () => {
+    const heading = () => element.querySelector<HTMLElement>('#draft-question-title')!;
+    const radio = (code: string) =>
+      element.querySelector<HTMLInputElement>(`input[type="radio"][value="${code}"]`)!;
+
+    async function afterDelay(): Promise<void> {
+      await new Promise((resolve) => setTimeout(resolve, AUTO_ADVANCE_DELAY_MS + 50));
+      await fixture.whenStable();
+    }
+
+    beforeEach(async () => {
+      await setAutoAdvance(true);
+      headingInteractions = [];
+    });
+
+    it('ist zu Beginn eingeschaltet und als Schalter vor den Antworten beschriftet', async () => {
+      const fresh = TestBed.createComponent(PolicyDraft);
+      await fresh.whenStable();
+      const toggle = (fresh.nativeElement as HTMLElement).querySelector<HTMLInputElement>(
+        '#draft-auto-advance',
+      )!;
+      expect(toggle.checked).toBe(true);
+      expect(toggle.getAttribute('role')).toBe('switch');
+      expect(toggle.closest('label')?.textContent?.trim()).toBe(
+        'Nach einer Antwort automatisch zur nächsten Frage',
+      );
+      const firstRadio = (fresh.nativeElement as HTMLElement).querySelector('input[type="radio"]')!;
+      expect(toggle.compareDocumentPosition(firstRadio) & Node.DOCUMENT_POSITION_FOLLOWING).toBe(
+        Node.DOCUMENT_POSITION_FOLLOWING,
+      );
+      fresh.destroy();
+    });
+
+    it('wechselt nach einer Auswahl mit kurzer Pause zur nächsten Frage und behält die Antwort', async () => {
+      await choose('2');
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+      await afterDelay();
+      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+      expectFocusedAndScrolled(heading());
+      await click('Zur vorherigen Frage');
+      expect(radio('2').checked).toBe(true);
+    });
+
+    it('wechselt auch beim erneuten Bestätigen einer schon gewählten Antwort', async () => {
+      await choose('2');
+      await afterDelay();
+      await click('Zur vorherigen Frage');
+      radio('2').click();
+      await afterDelay();
+      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+    });
+
+    it('wählt mit Pfeiltasten ohne Wechsel', async () => {
+      const fieldset = element.querySelector('#draft-answer-fieldset')!;
+      fieldset.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true }));
+      radio('3').click();
+      fieldset.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown', bubbles: true }));
+      await afterDelay();
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+      expect(radio('3').checked).toBe(true);
+      expect(headingInteractions).toEqual([]);
+    });
+
+    it('bestätigt eine mit Pfeiltasten gewählte Antwort mit Leertaste oder Eingabetaste', async () => {
+      for (const key of [' ', 'Enter']) {
+        const fieldset = element.querySelector('#draft-answer-fieldset')!;
+        fieldset.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true }));
+        radio('2').click();
+        fieldset.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown', bubbles: true }));
+        await fixture.whenStable();
+        radio('2').dispatchEvent(new KeyboardEvent('keyup', { key, bubbles: true }));
+        await afterDelay();
+        expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+        await click('Zur vorherigen Frage');
+      }
+    });
+
+    it('bleibt ausgeschaltet stehen und bricht einen laufenden Wechsel ab', async () => {
+      await choose('2');
+      await setAutoAdvance(false);
+      await afterDelay();
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+      await choose('3');
+      await afterDelay();
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+    });
+
+    it('wechselt nicht, wenn die Auswahl vor Ablauf der Pause zurückgesetzt wird', async () => {
+      await choose('2');
+      await click('Auswahl zurücksetzen');
+      await afterDelay();
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+      expect(element.querySelector('input[type="radio"]:checked')).toBeNull();
+    });
+
+    it('springt nach einem schnellen Klick auf die nächste Frage nicht doppelt', async () => {
+      await choose('2');
+      await click('Zur nächsten Frage');
+      await afterDelay();
+      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+    });
+
+    it('wechselt nach der letzten Frage nicht von selbst zum Ergebnisentwurf', async () => {
+      await openLastQuestion();
+      element.querySelector<HTMLInputElement>('input[type="radio"]')!.click();
+      await afterDelay();
+      expect(heading().textContent).toContain(`Frage ${TOTAL} von ${TOTAL}`);
+      expect(element.querySelector('h1')?.textContent).toContain('Fragenentwurf');
+    });
+  });
 });

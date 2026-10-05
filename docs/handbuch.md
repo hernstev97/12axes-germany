@@ -56,24 +56,24 @@ Die Gestaltungswerte des Seitenlayouts stehen als CSS-Variablen in `web/src/styl
 
 ### Farben
 
-| Variable            | Wert                 | Einsatz                                                |
-| ------------------- | -------------------- | ------------------------------------------------------ |
-| `--paper`           | `#f6f3eb`            | Seitenhintergrund                                      |
-| `--mat`             | `#ebe6da`            | Passepartout der Galerie                               |
-| `--ink`             | `#1e2b24`            | Text, Titel, Primärschaltfläche, Rahmen                |
-| `--ink-hover`       | `#33463b`            | Hover der Primärschaltfläche                           |
-| `--muted`           | `#4c574f`            | Nebentext: Bildunterschrift, Datum, Status, Brotkrumen |
-| `--line`            | `#d4d0c3`            | Trennlinien, Rahmen der Galerie-Schaltflächen          |
-| `--forest`          | `#1f3a32`            | dunkle Fläche und Fußzeile                             |
-| `--forest-line`     | `#3d5a50`            | Unterstreichung in der Fußzeile                        |
-| `--on-forest`       | `#f2efe6`            | Text auf `--forest`                                    |
-| `--on-forest-muted` | `#c5cfc6`            | Nebentext auf `--forest`                               |
-| `--selection`       | `#d5dfd2`            | Textauswahl                                            |
-| `--hairline`        | Tinte mit 12 %       | Haarlinie um die Flagge                                |
-| `--shadow-art`      | zwei weiche Schatten | Gemälde in der Galerie                                 |
-| `--focus`           | `var(--ink)`         | Fokusrahmen; auf `--forest` auf `--on-forest` setzen   |
+| Variable            | Wert                 | Einsatz                                                                                                          |
+| ------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `--paper`           | `#f6f3eb`            | Seitenhintergrund                                                                                                |
+| `--mat`             | `#ebe6da`            | Passepartout der Galerie, gewählte Antwort im Forschungsentwurf                                                  |
+| `--ink`             | `#1e2b24`            | Text, Titel, Primärschaltfläche, Rahmen                                                                          |
+| `--ink-hover`       | `#33463b`            | Hover der Primärschaltfläche                                                                                     |
+| `--muted`           | `#4c574f`            | Nebentext: Bildunterschrift, Datum, Status, Brotkrumen                                                           |
+| `--line`            | `#d4d0c3`            | Trennlinien, Rahmen der Galerie-Schaltflächen, Rahmen von Fragekarte und Antworten, Spur des Fortschrittsbalkens |
+| `--forest`          | `#1f3a32`            | dunkle Fläche und Fußzeile, Oberkante der Fragekarte                                                             |
+| `--forest-line`     | `#3d5a50`            | Unterstreichung in der Fußzeile                                                                                  |
+| `--on-forest`       | `#f2efe6`            | Text auf `--forest`                                                                                              |
+| `--on-forest-muted` | `#c5cfc6`            | Nebentext auf `--forest`                                                                                         |
+| `--selection`       | `#d5dfd2`            | Textauswahl                                                                                                      |
+| `--hairline`        | Tinte mit 12 %       | Haarlinie um die Flagge                                                                                          |
+| `--shadow-art`      | zwei weiche Schatten | Gemälde in der Galerie                                                                                           |
+| `--focus`           | `var(--ink)`         | Fokusrahmen; auf `--forest` auf `--on-forest` setzen                                                             |
 
-Gemessene Kontraste: `--ink` auf `--paper` 13,3 : 1, `--muted` auf `--paper` 6,8 : 1, `--muted` auf `--mat` 6,1 : 1, `--on-forest` auf `--forest` 10,7 : 1, `--on-forest-muted` auf `--forest` 7,7 : 1, `--paper` auf `--ink-hover` 9,1 : 1. `--line` (1,4 : 1) ist nur Linie und trägt keine Information.
+Gemessene Kontraste: `--ink` auf `--paper` 13,3 : 1, `--muted` auf `--paper` 6,8 : 1, `--muted` auf `--mat` 6,1 : 1, `--on-forest` auf `--forest` 10,7 : 1, `--on-forest-muted` auf `--forest` 7,7 : 1, `--paper` auf `--ink-hover` 9,1 : 1, `--ink` auf `--mat` 11,8 : 1 (gewählte Antwort), `--ink` auf `--line` 9,5 : 1 (Fortschrittsbalken). `--line` (1,4 : 1) ist nur Linie und trägt keine Information.
 
 Neue Farben gibt es nur nach Absprache. Farben von Parteien oder politischen Lagern sind tabu. Farben für Ergebnisse und Antworten sind noch nicht festgelegt.
 
@@ -145,6 +145,20 @@ Jede Seite hat dieselbe Hülle aus `web/src/app/app.html`: Sprunglink, Kopf mit 
 **Fehlerseite.** H1, ein Satz, eine Primärschaltfläche „Zur Startseite“, ein Gemälde.
 
 **Test und Ergebnis.** Noch nicht gestaltet. Bis Steven eine Gestaltung freigibt, gelten nur diese Leitplanken: kein sichtbarer Teststart, bevor ein freigegebener Test existiert (`AGENTS.md`); keine Gemälde; Text, Antworten und Fortschritt im Vordergrund; keine Flaggen-, Partei- oder Lagerfarben; der Statushinweis aus LIFE-93, Phase 6, steht auf jeder Ergebnisseite.
+
+**Frageansicht des Forschungsentwurfs** (`app-policy-progress` und `app-policy-question`). Steven hat sie am 5. Oktober 2026 für den lokalen Forschungsentwurf vorgegeben. Sie ist keine Freigabe von Test oder Ergebnis.
+
+- Kopf des Entwurfs, Fortschritt und Frage stehen mittig in einer Spalte von höchstens 46 rem.
+- Über der Frage steht der Fortschritt. Er besteht aus „Frage n von N“ als H2 und Fokusziel, dem Schalter „Nach einer Antwort automatisch zur nächsten Frage“, einem Balken für bearbeitete Fragen und der Zählzeile. Bearbeitet heißt beantwortet oder übersprungen.
+- Die Fragekarte hat einen Rahmen in `--line` und eine Oberkante von 3 px in `--forest`. Sie hat keinen Schatten und keine Rundung.
+- In der Karte stehen Bereich und Status, dann die Originaleinleitung in `--muted`. Danach folgt die Frage als `legend`, dann die Antworten als native Radios in gerahmten Zeilen.
+- Die gewählte Antwort hat einen Rahmen in `--ink` und die Fläche `--mat`. Antworten haben keine Symbole und keine Farben, die Zustimmung oder Ablehnung werten.
+- Nummerierte 0–10-Listen stehen ab 640 px Breite in einer Zeile. Ihre Endbeschriftungen stehen darunter und bleiben Teil des Namens jeder Antwort. Bei geringerer Breite stehen sie untereinander.
+- Unter den Antworten stehen „Auswahl zurücksetzen“ und das Überspringen mit Grund.
+- Unter der Karte stehen „Zur vorherigen Frage“ und „Zur nächsten Frage“. Bei der letzten Frage heißt die zweite Schaltfläche „Zum Ergebnisentwurf“. Danach folgen unauffällig Herkunft, Entwicklungshinweis und „Originalkontext, Version und Quellen“.
+- Der automatische Wechsel ist zu Beginn eingeschaltet. Nach Klick, Tippen oder Leertaste folgt nach 350 ms die nächste Frage, und der Fokus geht auf die H2. Pfeiltasten wählen nur aus. Nach der letzten Frage wechselt die Ansicht nicht von selbst.
+- Der Schalter steht vor den Antworten. So ist der Wechsel angekündigt, bevor jemand antwortet (WCAG 3.2.2).
+- Beim Wechsel gibt es keinen Übergang und keine Animation.
 
 ### Neue Seite anlegen
 

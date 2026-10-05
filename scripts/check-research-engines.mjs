@@ -165,6 +165,9 @@ async function check(engineName, setting) {
     await overflow('question 1');
     await storageCheck('question 1');
     await axeCheck('question 1');
+    // Single steps first; the automatic change is checked at the end.
+    assert.ok(await page.locator('#draft-auto-advance').isChecked(), 'auto-advance starts on');
+    await page.locator('#draft-auto-advance').uncheck();
 
     // Keyboard: the first radio gets a visible focus ring.
     await page.locator('#draft-question-title').focus();
@@ -327,6 +330,28 @@ async function check(engineName, setting) {
     await headingFocused(`Frage ${total} von ${total}`);
     assert.equal(await checked().count(), 1, 'distant edit keeps answer');
     step('overview edit to last question');
+
+    // Automatic change: a click and Space confirm, arrow keys only select.
+    await page.locator('#draft-auto-advance').check();
+    await button('Zur vorherigen Frage').click();
+    await headingFocused(`Frage ${total - 1} von ${total}`);
+    await options_().first().click();
+    await headingFocused(`Frage ${total} von ${total}`);
+    await button('Zur vorherigen Frage').click();
+    await headingFocused(`Frage ${total - 1} von ${total}`);
+    await checked().focus();
+    await page.keyboard.press('ArrowDown');
+    await page.waitForTimeout(800);
+    assert.equal(
+      (await page.locator('#draft-question-title').innerText()).trim(),
+      `Frage ${total - 1} von ${total}`,
+      'arrow keys do not advance',
+    );
+    await page.keyboard.press('Space');
+    await headingFocused(`Frage ${total} von ${total}`);
+    await overflow('after automatic change');
+    await axeCheck('after automatic change');
+    step('automatic change: click and Space advance, arrow keys do not');
 
     assert.deepEqual(errors, [], 'page errors');
     assert.deepEqual(late, [], 'requests after load');

@@ -1,6 +1,6 @@
 # Projektstand und Entscheidungen
 
-Stand: 2026-10-03, nach der Übernahme durch Claude.
+Stand: 2026-10-05, nach der Übernahme durch Claude.
 
 ## Aktueller Stand
 
@@ -12,6 +12,7 @@ Am 3. Oktober 2026 hat Claude (Anthropic) den Codex-Stand `e9898fb` nach dem Nac
 - **Themenabdeckung.** Die [Matrix v2.2](abdeckung-v2.2.md) beschreibt 14 Bereiche. Acht sind teilweise abgedeckt. Arbeit und Rente, Gesundheit und Pflege, Wohnen, Außen-, Verteidigungs- und Friedenspolitik, Bildung und Forschung sowie Medien und Digitalpolitik haben keine oder fast keine eigene Frage. Geeignete Fragen liegen vor allem bei GESIS. Die GESIS-Nutzungsbedingungen verbieten die Verarbeitung mit KI-Systemen ohne Ausnahme. Eine Stopp-Meldung in LIFE-93 nennt Steven die Optionen. Der Nachtrag zur Matrix bewertet WVS, Eurobarometer und weitere Quellen.
 - **Abschluss.** Der [Abschlussbericht](../reports/claude/abschlusspruefung.md) nennt geprüfte, behobene und offene Punkte und einen Vorschlag zur Abnahme.
 - **Fortsetzung vom 4. Oktober 2026.** Technische Prüfgrenzen geschlossen (zweite SPSS-Dekodierung, Produktionsbuild, echter 200-%-Zoom, Firefox). Erweiterungspaket 2025/26 als [Analyseplan v2.3 (Entwurf)](analyseplan-v2.3.entwurf.md), Fassung 0.4 nach drei Prüfrunden bestanden, nicht festgeschrieben, mit [Entscheidungsvorlage](entscheidungsvorlage-erweiterung-v1.entwurf.md), [Quellenanfragen](quellenanfragen-v1.entwurf.md) und [Textvorschlägen](vorschlaege-texte-v1.entwurf.md), alles unentschieden. Bericht: [Fortsetzungsbericht](../reports/claude/fortsetzung-2026-10-04.md).
+- **Frageansicht vom 5. Oktober 2026.** Nach Stevens Vorgabe zeigt der lokale Forschungsentwurf jede Frage mittig in einer Karte. Darüber stehen Position, Fortschrittsbalken und ein Schalter für den automatischen Wechsel nach einer Antwort. Herkunft, Version und Quellen stehen unauffällig darunter. Das Überspringen mit Grund bleibt. Das Muster steht im [Handbuch](handbuch.md), Kapitel 4. Es ist keine Freigabe von Test oder Ergebnis. Stand, Lücken und Wege zu einem nützlicheren Test fasst die Unteraufgabe [LIFE-96](https://linear.app/kiumu-app/issue/LIFE-96/12-axes-deutschland-stand-lucken-und-weg-zu-einem-wertvollen-test) kurz zusammen.
 - **Offen bei Steven.** Klärung mit GESIS und weiteren Quellen (WVSA, Eurobarometer-Team), Gestaltung von Test und Ergebnis, Bereichs- und Rubriknamen, Verständnistest mit fünf Personen, Rechte und Veröffentlichung.
 
 Die folgenden Abschnitte dokumentieren frühere Entscheidungen. Wo sie einen älteren Stand beschreiben, ist das vermerkt.
