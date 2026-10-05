@@ -184,6 +184,28 @@ async function tabTo(locator, record, label) {
   throw Error(`Tab target not reached: ${label}`);
 }
 
+async function shiftTabTo(locator, record, label) {
+  for (let count = 0; count < 40; count++) {
+    await page.keyboard.press('Shift+Tab');
+    if (await locator.evaluate((element) => element === document.activeElement)) {
+      await focus(record, label);
+      return;
+    }
+  }
+  throw Error(`Shift+Tab target not reached: ${label}`);
+}
+
+function headingFocused(text, prefix = false) {
+  return page.waitForFunction(
+    ([expected, startsWith]) => {
+      const element = document.activeElement;
+      const value = element?.id === 'draft-question-title' ? element.textContent.trim() : '';
+      return startsWith ? value.startsWith(expected) : value === expected;
+    },
+    [text, prefix],
+  );
+}
+
 async function audit(label, record) {
   if (!(await page.evaluate(() => !!window.axe))) await page.addScriptTag({ content: axe });
   const result = await page.evaluate(async () => {
@@ -243,24 +265,49 @@ try {
     await page.getByRole('heading', { name: 'Fragenentwurf', exact: true }).waitFor();
     await page.waitForLoadState('networkidle');
     loaded = true;
-    const total = Number(
-      (await page.locator('#draft-question-title').innerText()).match(/^Frage 1 von (\d+)$/)[1],
-    );
     record.zoom = await zoom(factor);
-    record.measured = await layout('question 1', record);
+    record.measured = await layout('start', record);
     assert.equal(record.measured.width, width / factor);
+    await audit('start', record);
     await tabTo(page.locator('.skip-link'), record, 'skip link');
     await page.keyboard.press('Enter');
     assert.equal(
       await page.locator('#main-content').evaluate((e) => e === document.activeElement),
       true,
     );
+    // Start screen, then the introduction of the first question block on its own screen.
+    await tabTo(
+      page.getByRole('button', { name: 'Zu den Fragen', exact: true }),
+      record,
+      'start button',
+    );
+    await page.keyboard.press('Enter');
+    await headingFocused('Einleitung zu Frage 1', true);
+    assert.equal(await page.locator('input[name=draft-original-answer]').count(), 0);
+    await layout('introduction 1', record);
+    await audit('introduction 1', record);
+    await shot('introduction', record);
     // The single-step checks below run with the automatic change switched off by keyboard.
     const autoAdvance = page.locator('#draft-auto-advance');
     assert.ok(await autoAdvance.isChecked(), 'auto-advance starts on');
     await tabTo(autoAdvance, record, 'auto-advance switch');
     await page.keyboard.press('Space');
     assert.equal(await autoAdvance.isChecked(), false, 'auto-advance switched off');
+    await tabTo(
+      page.getByRole('button', { name: 'Zu Frage 1', exact: true }),
+      record,
+      'question 1',
+    );
+    await page.keyboard.press('Enter');
+    const firstHeading = await (
+      await page.waitForFunction(() => {
+        const element = document.activeElement;
+        const text = element?.id === 'draft-question-title' ? element.textContent.trim() : '';
+        return /^Frage 1 von \d+$/.test(text) ? text : null;
+      })
+    ).jsonValue();
+    const total = Number(firstHeading.match(/^Frage 1 von (\d+)$/)[1]);
+    await layout('question 1', record);
     await tabTo(page.locator('input[name=draft-original-answer]').first(), record, 'first radio');
     await shot('question-radio', record);
     await page.keyboard.press('Space');
@@ -278,11 +325,12 @@ try {
       originalCode,
     );
     await focus(record, 'radio arrow navigation');
+    // The reset button appears in the card head once there is an answer, before the options.
     const reset = page.getByRole('button', { name: 'Auswahl zurücksetzen', exact: true });
-    await tabTo(reset, record, 'reset button');
+    await shiftTabTo(reset, record, 'reset button');
     await page.keyboard.press('Enter');
     await page.waitForFunction(() => document.activeElement.id === 'draft-question-title');
-    assert.ok(await reset.isDisabled());
+    assert.equal(await reset.count(), 0);
     assert.equal(await page.locator('input[name=draft-original-answer]:checked').count(), 0);
     // From the question heading, the switch for the automatic change comes before the answers.
     await page.keyboard.press('Tab');
@@ -317,27 +365,34 @@ try {
     await tabTo(questionSources.first(), record, 'close question sources');
     await page.keyboard.press('Enter');
     assert.equal(await questionSources.first().evaluate((e) => e.parentElement.open), false);
-    // Return to the question through the view button without changing the answer.
-    await tabTo(
-      page.getByRole('button', { name: 'Zu den Fragen', exact: true }),
-      record,
-      'question view',
-    );
-    await page.keyboard.press('Enter');
+    // Back to the question controls without changing the answer.
+    await shiftTabTo(page.locator('#draft-skip-reason'), record, 'back to skip reason');
+    record.introductions = 1;
     for (let question = 1; question <= total; question++) {
       await page.waitForFunction(
-        (n) =>
-          document.querySelector('#draft-question-title')?.textContent.trim() ===
-          `Frage ${n[0]} von ${n[1]}`,
+        (n) => {
+          const text = document.querySelector('#draft-question-title')?.textContent.trim() ?? '';
+          return (
+            text === `Frage ${n[0]} von ${n[1]}` || text.startsWith(`Einleitung zu Frage ${n[0]}`)
+          );
+        },
         [question, total],
       );
       if (question > 1) {
-        await page.waitForFunction(
-          (n) =>
-            document.activeElement.id === 'draft-question-title' &&
-            document.activeElement.textContent.trim() === `Frage ${n[0]} von ${n[1]}`,
-          [question, total],
-        );
+        const heading = (await page.locator('#draft-question-title').innerText()).trim();
+        if (heading.startsWith('Einleitung')) {
+          // Moving forward into a new block shows its original introduction first.
+          await headingFocused(heading);
+          record.introductions++;
+          await layout(`introduction ${question}`, record);
+          await tabTo(
+            page.getByRole('button', { name: `Zu Frage ${question}`, exact: true }),
+            record,
+            `introduction to question ${question}`,
+          );
+          await page.keyboard.press('Enter');
+        }
+        await headingFocused(`Frage ${question} von ${total}`);
         assert.ok(
           await page.locator('#draft-question-title').evaluate((e) => {
             const rect = e.getBoundingClientRect();
@@ -355,7 +410,7 @@ try {
         );
         await page.keyboard.press('Space');
         await tabTo(
-          page.getByRole('button', { name: 'Zur vorherigen Frage', exact: true }),
+          page.getByRole('button', { name: 'Vorherige Frage', exact: true }),
           record,
           'previous question',
         );
@@ -367,7 +422,7 @@ try {
           total,
         );
         await tabTo(
-          page.getByRole('button', { name: 'Zur nächsten Frage', exact: true }),
+          page.getByRole('button', { name: 'Nächste Frage', exact: true }),
           record,
           'return to second question',
         );
@@ -383,16 +438,17 @@ try {
         await tabTo(page.locator('#draft-skip-reason'), record, 'skip reason');
         await page.keyboard.press('ArrowDown');
         await tabTo(
-          page.getByRole('button', { name: 'Diese Frage überspringen', exact: true }),
+          page.getByRole('button', { name: 'Frage überspringen', exact: true }),
           record,
           'skip button',
         );
       } else {
         const next = page.getByRole('button', {
-          name: question === total ? 'Zum Ergebnisentwurf' : 'Zur nächsten Frage',
+          name: question === total ? 'Zum Ergebnisentwurf' : 'Nächste Frage',
           exact: true,
         });
-        const target = question === total ? next.last() : next;
+        // On the last question the card control comes before the view link of the same name.
+        const target = question === total ? next.first() : next;
         await tabTo(target, record, `next from question ${question}`);
       }
       await page.keyboard.press('Enter');
@@ -491,7 +547,7 @@ try {
       }),
     );
     await page.keyboard.press('Tab');
-    await focus(record, 'last question radio after distant edit');
+    await focus(record, 'first control after distant edit');
     await shot('last-question-focus', record);
     record.privacy = {
       requestsAfterLoad: [...lateRequests],
@@ -518,8 +574,21 @@ try {
     // Automatic change on a fresh page: arrow keys only select, Space and a click confirm.
     await page.goto(`${base}/forschungsentwurf`);
     await page.getByRole('heading', { name: 'Fragenentwurf', exact: true }).waitFor();
+    await tabTo(
+      page.getByRole('button', { name: 'Zu den Fragen', exact: true }),
+      record,
+      'auto: start button',
+    );
+    await page.keyboard.press('Enter');
+    await headingFocused('Einleitung zu Frage 1', true);
     assert.ok(await page.locator('#draft-auto-advance').isChecked(), 'auto-advance on after load');
-    await page.locator('#draft-question-title').focus();
+    await tabTo(
+      page.getByRole('button', { name: 'Zu Frage 1', exact: true }),
+      record,
+      'auto: question 1',
+    );
+    await page.keyboard.press('Enter');
+    await headingFocused(`Frage 1 von ${total}`);
     await tabTo(page.locator('input[name=draft-original-answer]').first(), record, 'auto radio');
     await page.keyboard.press('ArrowDown');
     await page.waitForTimeout(800);
@@ -545,9 +614,15 @@ try {
     await layout('after automatic change', record);
     await audit('after automatic change', record);
     await shot('after-automatic-change', record);
-    record.autoAdvance = 'arrow keys select without change; Space and click advance';
+    // After the last question of a block the next introduction follows.
+    await page.locator('label.answer-option').first().click();
+    await headingFocused(`Frage 4 von ${total}`);
+    await page.locator('label.answer-option').first().click();
+    await headingFocused('Einleitung zu Frage 5', true);
+    record.autoAdvance =
+      'arrow keys select without change; Space and click advance; block end leads to introduction';
     console.log(
-      `${record.label}: ${total} questions, results, overview, ${record.keyboardFocusChecks} focus checks, ${record.axe.length} axe checks, no request or storage after load PASS`,
+      `${record.label}: start, ${record.introductions} introductions, ${total} questions, results, overview, ${record.keyboardFocusChecks} focus checks, ${record.axe.length} axe checks, no request or storage after load PASS`,
     );
   }
   assert.deepEqual(errors, [], 'page errors');

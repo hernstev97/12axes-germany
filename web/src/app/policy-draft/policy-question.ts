@@ -21,8 +21,9 @@ export const AUTO_ADVANCE_DELAY_MS = 350;
 const SCALE_LABEL = /^(\d+)(: .+)?$/;
 
 /**
- * One question of the local draft: progress, answer options, skipping and sources.
- * Holds no answers. Every change is emitted to PolicyDraft, which owns the session.
+ * One screen of the local draft: either the original introduction of a question block or a
+ * single question with progress, answer options, skipping and sources. Holds no answers.
+ * Every change is emitted to PolicyDraft, which owns the session.
  */
 @Component({
   selector: 'app-policy-question',
@@ -40,6 +41,9 @@ export class PolicyQuestion {
   readonly total = input.required<number>();
   readonly counts = input.required<DraftCounts>();
   readonly skipReason = input.required<SkipReason>();
+  /** One-based questions that share the current introduction, or null without one. */
+  readonly block = input<{ readonly start: number; readonly end: number } | null>(null);
+  readonly introShown = input(false);
   readonly autoAdvance = model(true);
   readonly answerChosen = output<string>();
   readonly skipReasonChanged = output<SkipReason>();
@@ -47,25 +51,34 @@ export class PolicyQuestion {
   readonly resetRequested = output<void>();
   readonly previousRequested = output<void>();
   readonly nextRequested = output<void>();
+  readonly introRequested = output<void>();
+  readonly introClosed = output<void>();
 
   protected readonly categoryLabel = categoryLabel;
   protected readonly isLast = computed(() => this.position() === this.total());
-  protected readonly hasContext = computed(
-    () =>
-      this.item().introductionsDe.length > 0 ||
-      !!this.item().definitionDe?.length ||
-      !!this.item().situationDe,
-  );
+  protected readonly heading = computed(() => {
+    const block = this.block();
+    if (!this.introShown() || !block) return `Frage ${this.position()} von ${this.total()}`;
+    return block.end > block.start
+      ? `Einleitung zu Frage ${block.start} bis ${block.end}`
+      : `Einleitung zu Frage ${block.start}`;
+  });
   /**
-   * Numbered 0–10 lists can be shown as one row. Each label keeps its original
-   * text; only the end descriptions move below the row on wide screens.
+   * 0–10 lists are shown as a row of numbers. Each label keeps its original text in the
+   * accessible name; the end descriptions stand visibly below the row. Text ends without a
+   * number in the label use the code printed in the German original form.
    */
   protected readonly scale = computed(() => {
     const item = this.item();
     if (item.offeredCategories.length < 7) return null;
     const options = item.offeredCategories.map((category) => {
-      const match = SCALE_LABEL.exec(categoryLabel(item, category));
-      return match ? { code: category.code, number: match[1]!, text: match[2] ?? '' } : null;
+      const label = categoryLabel(item, category);
+      const match = SCALE_LABEL.exec(label);
+      if (match) return { code: category.code, number: match[1]!, text: match[2] ?? '' };
+      const printed = category.printedCodeDe;
+      return printed !== null && /^\d+$/.test(printed)
+        ? { code: category.code, number: printed, text: `: ${label}` }
+        : null;
     });
     if (options.some((option) => option === null)) return null;
     const valid = options as { code: string; number: string; text: string }[];
@@ -81,12 +94,6 @@ export class PolicyQuestion {
 
   constructor() {
     inject(DestroyRef).onDestroy(() => this.cancelAdvance());
-  }
-
-  protected stateLabel(answer: PolicyAnswer): string {
-    return { untouched: 'Unberührt', answered: 'Beantwortet', skipped: 'Übersprungen' }[
-      answer.status
-    ];
   }
 
   /** Recreates the radio inputs for each question instead of reusing them. */
@@ -152,13 +159,15 @@ export class PolicyQuestion {
     }
   }
 
-  protected request(action: 'skip' | 'reset' | 'previous' | 'next'): void {
+  protected request(action: 'skip' | 'reset' | 'previous' | 'next' | 'intro' | 'question'): void {
     this.cancelAdvance();
     ({
       skip: this.skipRequested,
       reset: this.resetRequested,
       previous: this.previousRequested,
       next: this.nextRequested,
+      intro: this.introRequested,
+      question: this.introClosed,
     })[action].emit();
   }
 

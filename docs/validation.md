@@ -91,3 +91,19 @@ Geprüft von Claude im Auftrag von Steven. Technische Prüfungen und Browserbeob
   - Bei 320 Pixel Breite ragte Frage 8 mit „Kinderbetreuungsmöglichkeiten“ 33 bis 35 Pixel über den Rand. Der Fragetext hat jetzt volle Breite und unter 640 Pixel Silbentrennung. Eine Nachprüfung aller 62 Fragen bei 320 und 390 Pixel ergab keinen Überlauf.
 - **Sichtprüfung.** Aufnahmen bei 1440, 390 und 320 Pixel angesehen: Frage mittig, Karte mit Oberkante, gewählte Antwort hervorgehoben, 0–10-Liste ab 640 Pixel in einer Zeile mit Endbeschriftungen, darunter untereinander.
 - **Nicht durchführbar.** Physische Smartphones, Screenreader mit Menschen, Hochkontrastmodus auf echten Geräten und Safari bzw. WebKit. Ob der automatische Wechsel Menschen hilft oder stört, zeigt erst ein Test mit Menschen.
+
+### Nachtrag am selben Abend: Startbildschirm, Einleitungsbildschirme, kompakter Fragebildschirm
+
+Nach Stevens zweiter Vorgabe neu geprüft. Technische Prüfungen und Browserbeobachtungen, keine wissenschaftliche Abnahme und keine Designfreigabe.
+
+- **Technische Prüfungen.** `pnpm check` mit Exit 0: 129 Tests, darunter Start, Einleitungen und automatischer Wechsel, Build ohne Budgetwarnung.
+- **Chromium mit echtem Zoom.** `node scripts/check-research-browser.mjs http://127.0.0.1:4314`, Chromium 151, dieselben neun Bedingungen. Nur mit der Tastatur: Startbildschirm, 24 Einleitungsbildschirme, alle 62 Fragen, Ergebnis, Gruppenvergleich und Übersicht. Auf einer neu geladenen Seite gilt: Pfeiltasten wählen ohne Wechsel; Leertaste und Mausklick wechseln zur nächsten Frage; nach der letzten Frage eines Blocks folgt dessen Einleitung. Alle neun Bedingungen bestanden: 1026 Fokusprüfungen, 846 Überlaufprüfungen ohne waagerechten Bildlauf, 72 axe-Läufe ohne Verstoß. Wie am 3. Oktober 2026 meldet ein axe-Lauf bei 768 Pixel mit aufgeklappten Quellen die Kontrastregel als unvollständig, nicht als Verstoß. Zwei gezielte Nachstellungen dieses Zustands ergaben keinen unvollständigen Befund. Nach dem Laden gab es keine Anfrage, und es wurde nichts gespeichert.
+- **Chromium und Firefox.** Forschungsbuild, `node scripts/check-research-engines.mjs http://127.0.0.1:4321`. Chromium 151 und Firefox 155 bei 1440 × 1000 und 390 × 844 bestanden: Start, alle 24 Einleitungen und 62 Fragen, Ergebnis, Gruppenvergleich, Übersicht und automatischer Wechsel. WebKit startet weiterhin nicht.
+- **Platz ohne Scrollen.** Gemessen ab der Überschrift „Frage n von 62“ bis unter die Schaltflächen, mit 8 Pixel Abstand, bei abgeschaltetem automatischem Wechsel. Nach jedem Wechsel steht diese Überschrift oben im Fenster.
+  - 1440 × 1000: alle 62 Fragen.
+  - 1024 × 768: alle bis auf Frage 52 und 56. Sie haben die längsten Texte.
+  - 390 × 844: alle bis auf Frage 23, 36, 52 und 56. Frage 23 ist 1 Pixel zu lang.
+  - 320 × 720: keine Frage passt ganz, hier bleibt Scrollen nötig.
+  - Die Einleitungsbildschirme vor Frage 11 und 38 haben lange Definitionen und brauchen bei 1024 × 768 und auf dem Smartphone Scrollen.
+- **Sichtprüfung.** Startbildschirm, Einleitungsbildschirm, Fünferliste und 0–10-Reihe bei 1440, 1024, 390 und 320 Pixel angesehen.
+- **Nicht durchführbar.** Physische Smartphones, Screenreader mit Menschen, Hochkontrastmodus auf echten Geräten, Safari und WebKit. Ob Einleitungsbildschirme und automatischer Wechsel Menschen helfen oder stören, zeigt erst ein Test mit Menschen.

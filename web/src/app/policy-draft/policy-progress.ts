@@ -6,7 +6,7 @@ export interface DraftCounts {
   readonly untouched: number;
 }
 
-/** Position, processed questions and the switch for the automatic change. */
+/** Screen heading, processed questions and the switch for the automatic change. */
 @Component({
   selector: 'app-policy-progress',
   standalone: true,
@@ -15,8 +15,7 @@ export interface DraftCounts {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PolicyProgress {
-  /** One-based position in the catalogue. */
-  readonly position = input.required<number>();
+  readonly heading = input.required<string>();
   readonly total = input.required<number>();
   readonly counts = input.required<DraftCounts>();
   readonly autoAdvance = input.required<boolean>();

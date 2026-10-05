@@ -35,7 +35,32 @@ import {
 } from './reference-v22';
 import { ITEM_RULES } from './profile/profile-rules';
 
-type DraftView = 'questions' | 'overview' | 'results';
+type DraftView = 'start' | 'questions' | 'overview' | 'results';
+
+/** Zero-based range of consecutive questions that share one original introduction. */
+interface ContextBlock {
+  readonly start: number;
+  readonly end: number;
+}
+
+function contextKey(item: PolicyDraftItem): string {
+  return [...item.introductionsDe, '', ...(item.definitionDe ?? [])].join('\n').trim();
+}
+
+/** Per question: its block, or null when the catalogue has no introduction for it. */
+function contextBlocks(items: readonly PolicyDraftItem[]): readonly (ContextBlock | null)[] {
+  const blocks: (ContextBlock | null)[] = [];
+  let start = 0;
+  while (start < items.length) {
+    const key = contextKey(items[start]!);
+    let end = start;
+    while (key && end + 1 < items.length && contextKey(items[end + 1]!) === key) end++;
+    const block = key ? Object.freeze({ start, end }) : null;
+    for (let index = start; index <= end; index++) blocks.push(block);
+    start = end + 1;
+  }
+  return Object.freeze(blocks);
+}
 
 /** One historical single reference as displayed, from v2 or v2.2, with optional intervals. */
 interface ReferenceView {
@@ -83,8 +108,12 @@ export class PolicyDraft {
   private readonly pageHeading = viewChild<ElementRef<HTMLElement>>('pageHeading');
   private readonly session = new PolicyProfileSession(POLICY_DRAFT_QUESTIONS);
   protected readonly snapshot = signal(this.session.snapshot());
-  protected readonly view = signal<DraftView>('questions');
+  protected readonly view = signal<DraftView>('start');
   protected readonly items = POLICY_DRAFT_ITEMS;
+  private readonly blocks = contextBlocks(POLICY_DRAFT_ITEMS);
+  /** The original introduction is its own screen before the first question of its block. */
+  protected readonly introShown = signal(false);
+  private readonly introducedBlocks = new Set<number>();
   protected readonly skipReason = signal<SkipReason>('unspecified');
   /** Session setting only; like the answers it is neither stored nor sent. */
   protected readonly autoAdvance = signal(true);
@@ -122,6 +151,11 @@ export class PolicyDraft {
   );
   protected readonly currentItem = computed(() => this.items[this.currentIndex()]!);
   protected readonly currentAnswer = computed(() => this.answers().get(this.currentItem().id)!);
+  /** One-based block of the current question for display, or null without introduction. */
+  protected readonly currentBlock = computed(() => {
+    const block = this.blocks[this.currentIndex()];
+    return block ? { start: block.start + 1, end: block.end + 1 } : null;
+  });
   protected readonly resultRubrics = POLICY_RUBRICS.map((rubric) =>
     Object.freeze({
       ...rubric,
@@ -230,6 +264,7 @@ export class PolicyDraft {
 
   protected previous(): void {
     this.session.previous();
+    this.introShown.set(false);
     this.update();
     this.focus('question');
   }
@@ -241,20 +276,44 @@ export class PolicyDraft {
     } else {
       this.session.next();
       this.update();
+      this.introduceBlock();
       this.focus('question');
     }
   }
 
+  /** Direct jumps open the question itself; its introduction stays one click away. */
   protected edit(id: string): void {
     this.session.goTo(id);
     this.update();
+    this.introShown.set(false);
     this.view.set('questions');
     this.focus('question');
   }
 
   protected show(view: DraftView): void {
     this.view.set(view);
-    this.focus('page');
+    if (view === 'questions') {
+      this.introShown.set(false);
+      this.introduceBlock();
+      this.focus('question');
+    } else {
+      this.focus('page');
+    }
+  }
+
+  protected setIntro(shown: boolean): void {
+    this.introShown.set(shown);
+    this.focus('question');
+  }
+
+  /** Moving forward onto the first question of a block shows its introduction once per session. */
+  private introduceBlock(): void {
+    const index = this.currentIndex();
+    const block = this.blocks[index];
+    if (block && block.start === index && !this.introducedBlocks.has(index)) {
+      this.introducedBlocks.add(index);
+      this.introShown.set(true);
+    }
   }
 
   protected referenceFor(id: string): ReferenceView | null {

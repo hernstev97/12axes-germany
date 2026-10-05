@@ -44,13 +44,28 @@ select:focus-visible,
   padding-inline: 0;
   border-color: transparent;
 }
-.question-mode .header-content {
+.start-mode .header-content {
   grid-column: 1 / -1;
   justify-self: center;
   width: min(100%, 46rem);
 }
-.question-mode .page-header {
-  padding-bottom: 0;
+.start-action {
+  margin-block: 2rem 0.5rem;
+}
+.question-stage {
+  padding-block: 1.25rem var(--section-space-dense);
+}
+.question-exit {
+  width: min(100%, 46rem);
+  margin-inline: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 .meta {
   color: var(--muted);

@@ -159,8 +159,11 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     fixture = TestBed.createComponent(PolicyDraft);
     await fixture.whenStable();
     element = fixture.nativeElement as HTMLElement;
+    // Start screen, then the introduction of questions 1 to 4, then question 1.
+    await click('Zu den Fragen');
     // These tests check single steps. The automatic change has its own block below.
     await setAutoAdvance(false);
+    await click('Zu Frage 1');
   });
 
   afterEach(() => {
@@ -287,7 +290,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   it('zeigt das erklärende Profil mit Blockmuster, Querbezug, markierter eigener Antwort und Lücken', async () => {
     fixture.componentRef.setInput('historicalReferences', REVIEWED_HISTORICAL_REFERENCES);
     await choose('1');
-    await click('Zur nächsten Frage');
+    await click('Nächste Frage');
     await choose('5');
     await click('Zum Ergebnisentwurf');
     const block = element.querySelector<HTMLElement>('[data-block-id="justice_principles"]')!;
@@ -315,21 +318,21 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   });
   it('hält native Radios bei Eingaben schneller als ein Renderzyklus am Sitzungszustand', async () => {
     const radios = () => [...element.querySelectorAll<HTMLInputElement>('input[type="radio"]')];
-    // Select and reset before Angular renders: the session ends untouched.
-    radios()[0]!.click();
+    await choose('1');
+    // Select again and reset before Angular renders: the session ends untouched.
+    radios()[1]!.click();
     const reset = [...element.querySelectorAll('button')].find(
       (button) => button.textContent?.trim() === 'Auswahl zurücksetzen',
     )!;
-    reset.disabled = false;
     reset.click();
     await fixture.whenStable();
     expect(radios().some((radio) => radio.checked)).toBe(false);
     // Select and move on before Angular renders: the next question starts unchecked.
     radios()[1]!.click();
-    await click('Zur nächsten Frage');
+    await click('Nächste Frage');
     expect(radios().some((radio) => radio.checked)).toBe(false);
   });
-  it('Zurücksetzen führt den Fokus vom danach deaktivierten Button zur Frage', async () => {
+  it('Zurücksetzen führt den Fokus vom danach entfernten Button zur Frage', async () => {
     await choose('1');
     const reset = [...element.querySelectorAll('button')].find(
       (button) => button.textContent?.trim() === 'Auswahl zurücksetzen',
@@ -337,17 +340,17 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     reset.focus();
     headingInteractions = [];
     await click('Auswahl zurücksetzen');
-    expect(reset.disabled).toBe(true);
+    expect(reset.isConnected).toBe(false);
     expect(element.querySelector('input[type="radio"]:checked')).toBeNull();
     expectFocusedAndScrolled(element.querySelector<HTMLElement>('#draft-question-title')!);
   });
 
   it.each([
-    ['Zur nächsten Frage', `Frage 3 von ${TOTAL}`],
-    ['Zur vorherigen Frage', `Frage 1 von ${TOTAL}`],
-    ['Diese Frage überspringen', `Frage 3 von ${TOTAL}`],
+    ['Nächste Frage', `Frage 3 von ${TOTAL}`],
+    ['Vorherige Frage', `Frage 1 von ${TOTAL}`],
+    ['Frage überspringen', `Frage 3 von ${TOTAL}`],
   ])('Fokus und Scrollen folgen dem gerenderten Fragenwechsel durch %s', async (action, title) => {
-    await click('Zur nächsten Frage');
+    await click('Nächste Frage');
     headingInteractions = [];
     await click(action);
     const heading = element.querySelector<HTMLElement>('#draft-question-title')!;
@@ -356,21 +359,32 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   });
 
   it.each([
-    ['Zu den Fragen', 'Zur Fragenübersicht', 'Fragenübersicht'],
-    ['Zu den Fragen', 'Zum Ergebnisentwurf', 'Ergebnisentwurf'],
-    ['Zur Fragenübersicht', 'Zu den Fragen', 'Fragenentwurf'],
-    ['Zur Fragenübersicht', 'Zum Ergebnisentwurf', 'Ergebnisentwurf'],
-    ['Zum Ergebnisentwurf', 'Zu den Fragen', 'Fragenentwurf'],
-    ['Zum Ergebnisentwurf', 'Zur Fragenübersicht', 'Fragenübersicht'],
+    ['den Fragen', null, 'Zur Fragenübersicht', 'Fragenübersicht'],
+    ['den Fragen', null, 'Zum Ergebnisentwurf', 'Ergebnisentwurf'],
+    ['der Übersicht', 'Zur Fragenübersicht', 'Zum Ergebnisentwurf', 'Ergebnisentwurf'],
+    ['dem Ergebnis', 'Zum Ergebnisentwurf', 'Zur Fragenübersicht', 'Fragenübersicht'],
   ])(
     'Fokus und Scrollen folgen der gerenderten Ansichtsüberschrift von %s durch %s',
-    async (fromAction, action, title) => {
-      await click(fromAction);
+    async (_from, fromAction, action, title) => {
+      if (fromAction) await click(fromAction);
       headingInteractions = [];
       await click(action);
       const heading = element.querySelector<HTMLElement>('h1')!;
       expect(heading.textContent).toContain(title);
       expectFocusedAndScrolled(heading);
+    },
+  );
+
+  it.each(['Zur Fragenübersicht', 'Zum Ergebnisentwurf'])(
+    'Fokus und Scrollen führen von %s zurück zur gerenderten Frage',
+    async (fromAction) => {
+      await click(fromAction);
+      headingInteractions = [];
+      await click('Zu den Fragen');
+      const heading = element.querySelector<HTMLElement>('#draft-question-title')!;
+      expect(heading.textContent).toContain(`Frage 1 von ${TOTAL}`);
+      expectFocusedAndScrolled(heading);
+      expect(element.querySelector('h1')?.textContent).toContain('Fragenentwurf');
     },
   );
 
@@ -397,7 +411,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expectFocusedAndScrolled(heading);
   });
 
-  it.each(['Zum Ergebnisentwurf', 'Diese Frage überspringen'])(
+  it.each(['Zum Ergebnisentwurf', 'Frage überspringen'])(
     'Fokus und Scrollen führen nach der letzten Frage durch %s zur Ergebnisüberschrift',
     async (action) => {
       await openLastQuestion();
@@ -423,14 +437,14 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
 
   it('behält Originalauswahl beim Zurückgehen und bearbeitet sie ohne andere Antworten zu ändern', async () => {
     await choose('2');
-    await click('Zur nächsten Frage');
+    await click('Nächste Frage');
     expect(element.querySelector('#draft-question-title')?.textContent).toContain('Frage 2');
     expect(document.activeElement?.id).toBe('draft-question-title');
     await choose('5');
-    await click('Zur vorherigen Frage');
+    await click('Vorherige Frage');
     expect(element.querySelector<HTMLInputElement>('input[value="2"]')?.checked).toBe(true);
     await choose('1');
-    await click('Zur nächsten Frage');
+    await click('Nächste Frage');
     expect(element.querySelector<HTMLInputElement>('input[value="5"]')?.checked).toBe(true);
     await click('Zum Ergebnisentwurf');
     expect(element.querySelector('[data-question-id="ESS9e03_3:sofrdst"]')?.textContent).toContain(
@@ -443,11 +457,11 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
   });
 
   it('trennt unberührt und bewusst übersprungen, ermöglicht Teilresultat und Bearbeitung', async () => {
-    await click('Zur nächsten Frage');
+    await click('Nächste Frage');
     const reason = element.querySelector<HTMLSelectElement>('#draft-skip-reason')!;
     reason.value = 'dont-know';
     reason.dispatchEvent(new Event('change'));
-    await click('Diese Frage überspringen');
+    await click('Frage überspringen');
     await click('Zum Ergebnisentwurf');
     const first = element.querySelector<HTMLElement>('[data-question-id="ESS9e03_3:sofrdst"]')!;
     const second = element.querySelector<HTMLElement>('[data-question-id="ESS9e03_3:sofrwrk"]')!;
@@ -473,9 +487,10 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     expect(element.querySelector('fieldset legend')?.textContent).toContain(
       'Einkommen und Vermögen',
     );
-    expect(element.querySelector('fieldset')?.getAttribute('aria-describedby')).toContain(
-      'draft-original-context',
+    expect(element.querySelector('fieldset')?.getAttribute('aria-describedby')).toBe(
+      'draft-development-note',
     );
+    expect(element.textContent).not.toContain('Nun einige Fragen zur Gesellschaft');
     expect(
       element.querySelectorAll('input[type="radio"][name="draft-original-answer"]'),
     ).toHaveLength(5);
@@ -512,8 +527,8 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     const fetch = vi.spyOn(globalThis, 'fetch');
     const locationBefore = window.location.href;
     await choose('4');
-    await click('Zur nächsten Frage');
-    await click('Diese Frage überspringen');
+    await click('Nächste Frage');
+    await click('Frage überspringen');
     await click('Zum Ergebnisentwurf');
     expect(storage).not.toHaveBeenCalled();
     expect(fetch).not.toHaveBeenCalled();
@@ -695,8 +710,8 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     try {
       fixture.componentRef.setInput('historicalGroups', REVIEWED_HISTORICAL_GROUPS);
       await choose('4');
-      await click('Zur nächsten Frage');
-      await click('Diese Frage überspringen');
+      await click('Nächste Frage');
+      await click('Frage überspringen');
       await click('Zum Ergebnisentwurf');
       await selectComparison('draft-group-study', 'ESS9e03_3');
       await selectComparison('draft-vote-group', 'ESS9e03_3:second_vote:5');
@@ -711,7 +726,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
         .click();
       await fixture.whenStable();
       expect(element.querySelector<HTMLInputElement>('input[value="4"]')!.checked).toBe(true);
-      await click('Zur nächsten Frage');
+      await click('Nächste Frage');
       expect(element.textContent).toContain('Übersprungen');
       await click('Zum Ergebnisentwurf');
       expect(element.querySelector<HTMLSelectElement>('#draft-vote-group')!.value).toBe(
@@ -755,15 +770,20 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     it('ist zu Beginn eingeschaltet und als Schalter vor den Antworten beschriftet', async () => {
       const fresh = TestBed.createComponent(PolicyDraft);
       await fresh.whenStable();
-      const toggle = (fresh.nativeElement as HTMLElement).querySelector<HTMLInputElement>(
-        '#draft-auto-advance',
-      )!;
+      const freshElement = fresh.nativeElement as HTMLElement;
+      for (const text of ['Zu den Fragen', 'Zu Frage 1']) {
+        [...freshElement.querySelectorAll('button')]
+          .find((button) => button.textContent?.trim() === text)!
+          .click();
+        await fresh.whenStable();
+      }
+      const toggle = freshElement.querySelector<HTMLInputElement>('#draft-auto-advance')!;
       expect(toggle.checked).toBe(true);
       expect(toggle.getAttribute('role')).toBe('switch');
       expect(toggle.closest('label')?.textContent?.trim()).toBe(
         'Nach einer Antwort automatisch zur nächsten Frage',
       );
-      const firstRadio = (fresh.nativeElement as HTMLElement).querySelector('input[type="radio"]')!;
+      const firstRadio = freshElement.querySelector('input[type="radio"]')!;
       expect(toggle.compareDocumentPosition(firstRadio) & Node.DOCUMENT_POSITION_FOLLOWING).toBe(
         Node.DOCUMENT_POSITION_FOLLOWING,
       );
@@ -776,14 +796,14 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       await afterDelay();
       expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
       expectFocusedAndScrolled(heading());
-      await click('Zur vorherigen Frage');
+      await click('Vorherige Frage');
       expect(radio('2').checked).toBe(true);
     });
 
     it('wechselt auch beim erneuten Bestätigen einer schon gewählten Antwort', async () => {
       await choose('2');
       await afterDelay();
-      await click('Zur vorherigen Frage');
+      await click('Vorherige Frage');
       radio('2').click();
       await afterDelay();
       expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
@@ -810,7 +830,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
         radio('2').dispatchEvent(new KeyboardEvent('keyup', { key, bubbles: true }));
         await afterDelay();
         expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
-        await click('Zur vorherigen Frage');
+        await click('Vorherige Frage');
       }
     });
 
@@ -834,7 +854,7 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
 
     it('springt nach einem schnellen Klick auf die nächste Frage nicht doppelt', async () => {
       await choose('2');
-      await click('Zur nächsten Frage');
+      await click('Nächste Frage');
       await afterDelay();
       expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
     });
@@ -845,6 +865,99 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       await afterDelay();
       expect(heading().textContent).toContain(`Frage ${TOTAL} von ${TOTAL}`);
       expect(element.querySelector('h1')?.textContent).toContain('Fragenentwurf');
+    });
+
+    it('führt nach der letzten Frage eines Blocks zur Einleitung des nächsten', async () => {
+      for (const code of ['1', '2', '3', '4']) {
+        await choose(code);
+        await afterDelay();
+      }
+      expect(heading().textContent?.trim()).toBe('Einleitung zu Frage 5');
+      expect(element.querySelector('input[type="radio"]')).toBeNull();
+    });
+  });
+
+  describe('Start und Einleitungen', () => {
+    const heading = () => element.querySelector<HTMLElement>('#draft-question-title')!;
+
+    it('beginnt mit einem eigenen Startbildschirm ohne Fragen', async () => {
+      const fresh = TestBed.createComponent(PolicyDraft);
+      await fresh.whenStable();
+      const freshElement = fresh.nativeElement as HTMLElement;
+      expect(freshElement.querySelector('h1')?.textContent?.trim()).toBe('Fragenentwurf');
+      expect(freshElement.textContent).toContain('Originalfragen aus fünf historischen');
+      expect(freshElement.textContent).toContain('speichert und überträgt keine Antworten');
+      expect(freshElement.querySelector('input[type="radio"]')).toBeNull();
+      expect(freshElement.querySelector('#draft-question-title')).toBeNull();
+      const start = [...freshElement.querySelectorAll('button')].filter(
+        (button) => button.textContent?.trim() === 'Zu den Fragen',
+      );
+      expect(start).toHaveLength(1);
+      expect(start[0]!.classList).toContain('primary');
+      fresh.destroy();
+    });
+
+    it('zeigt die Originaleinleitung vor dem ersten Block auf einem eigenen Bildschirm', async () => {
+      const fresh = TestBed.createComponent(PolicyDraft);
+      await fresh.whenStable();
+      const freshElement = fresh.nativeElement as HTMLElement;
+      [...freshElement.querySelectorAll('button')]
+        .find((button) => button.textContent?.trim() === 'Zu den Fragen')!
+        .click();
+      await fresh.whenStable();
+      const introHeading = freshElement.querySelector<HTMLElement>('#draft-question-title')!;
+      expect(introHeading.textContent?.trim()).toBe('Einleitung zu Frage 1 bis 4');
+      expect(document.activeElement).toBe(introHeading);
+      expect(freshElement.textContent).toContain('Nun einige Fragen zur Gesellschaft');
+      expect(freshElement.querySelector('input[type="radio"]')).toBeNull();
+      expect(freshElement.querySelectorAll('h1')).toHaveLength(1);
+      fresh.destroy();
+    });
+
+    it('zeigt eine Einleitung beim Vorwärtsgehen einmal und dann die Frage direkt', async () => {
+      for (let question = 1; question < 4; question++) await click('Nächste Frage');
+      expect(heading().textContent).toContain(`Frage 4 von ${TOTAL}`);
+      headingInteractions = [];
+      await click('Nächste Frage');
+      expect(heading().textContent?.trim()).toBe('Einleitung zu Frage 5');
+      expectFocusedAndScrolled(heading());
+      await click('Vorherige Frage');
+      expect(heading().textContent).toContain(`Frage 4 von ${TOTAL}`);
+      await click('Nächste Frage');
+      expect(heading().textContent).toContain(`Frage 5 von ${TOTAL}`);
+    });
+
+    it('öffnet die Einleitung zur aktuellen Frage und kehrt zu ihr zurück', async () => {
+      await click('Nächste Frage');
+      await click('Einleitung zu dieser Frage anzeigen');
+      expect(heading().textContent?.trim()).toBe('Einleitung zu Frage 1 bis 4');
+      expect(element.textContent).toContain('Nun einige Fragen zur Gesellschaft');
+      headingInteractions = [];
+      await click('Zu Frage 2');
+      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+      expectFocusedAndScrolled(heading());
+    });
+
+    it('springt aus der Übersicht direkt zur Frage, auch am Anfang eines Blocks', async () => {
+      await click('Zur Fragenübersicht');
+      element.querySelectorAll<HTMLButtonElement>('.overview-list li button')[4]!.click();
+      await fixture.whenStable();
+      expect(heading().textContent).toContain(`Frage 5 von ${TOTAL}`);
+      expect(element.querySelector('input[type="radio"]')).not.toBeNull();
+    });
+
+    it('zeigt Auswahl zurücksetzen nur, wenn es etwas zurückzusetzen gibt', async () => {
+      const reset = () =>
+        [...element.querySelectorAll('button')].filter(
+          (button) => button.textContent?.trim() === 'Auswahl zurücksetzen',
+        );
+      expect(reset()).toHaveLength(0);
+      await choose('2');
+      expect(reset()).toHaveLength(1);
+      await click('Frage überspringen');
+      await click('Vorherige Frage');
+      expect(element.querySelector('.card-head')?.textContent).toContain('Übersprungen');
+      expect(reset()).toHaveLength(1);
     });
   });
 });

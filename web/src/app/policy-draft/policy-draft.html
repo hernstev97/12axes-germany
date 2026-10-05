@@ -1,64 +1,7 @@
-<article class="doc" [class.question-mode]="view() === 'questions'">
-  <header class="page-header grid page-width">
-    <div class="area-text-wide header-content">
-      <h1 #pageHeading class="page-title" tabindex="-1">
-        @switch (view()) {
-          @case ('questions') {
-            Fragenentwurf
-          }
-          @case ('overview') {
-            Fragenübersicht
-          }
-          @case ('results') {
-            Ergebnisentwurf
-          }
-        }
-      </h1>
-      <p class="date">Stand: <span class="nowrap">3. Oktober 2026</span></p>
-      <p class="lead">
-        {{ items.length }} Originalfragen aus fünf historischen Befragungen des
-        <a href="https://www.europeansocialsurvey.org/">European Social Survey</a> (ESS), einer
-        repräsentativen wissenschaftlichen Befragung, bilden diesen Entwurf. Neue Zusammenstellung
-        und Durchführung sind noch nicht freigegeben.
-      </p>
-      <p class="meta">
-        Antworten bleiben im Arbeitsspeicher dieser Sitzung. Beim Schließen oder Neuladen gehen sie
-        verloren. Dieser Entwurf speichert und überträgt keine Antworten.
-      </p>
-      <nav class="draft-navigation" aria-label="Ansichten des Entwurfs">
-        <button
-          type="button"
-          [attr.aria-current]="view() === 'questions' ? 'page' : null"
-          (click)="show('questions')"
-        >
-          Zu den Fragen
-        </button>
-        <button
-          type="button"
-          [attr.aria-current]="view() === 'overview' ? 'page' : null"
-          (click)="show('overview')"
-        >
-          Zur Fragenübersicht
-        </button>
-        <button
-          type="button"
-          [attr.aria-current]="view() === 'results' ? 'page' : null"
-          (click)="show('results')"
-        >
-          Zum Ergebnisentwurf
-        </button>
-      </nav>
-      @if (view() !== 'questions') {
-        <p class="meta" aria-live="polite">
-          {{ counts().answered }} beantwortet, {{ counts().skipped }} übersprungen,
-          {{ counts().untouched }} unberührt.
-        </p>
-      }
-    </div>
-  </header>
-
+<article class="doc" [class.start-mode]="view() === 'start'">
   @if (view() === 'questions') {
-    <section class="section page-width" aria-labelledby="draft-question-title">
+    <h1 #pageHeading class="visually-hidden" tabindex="-1">Fragenentwurf</h1>
+    <section class="page-width question-stage" aria-labelledby="draft-question-title">
       <app-policy-question
         [item]="currentItem()"
         [answer]="currentAnswer()"
@@ -66,6 +9,8 @@
         [total]="items.length"
         [counts]="counts()"
         [skipReason]="skipReason()"
+        [block]="currentBlock()"
+        [introShown]="introShown()"
         [(autoAdvance)]="autoAdvance"
         (answerChosen)="select($event)"
         (skipReasonChanged)="skipReason.set($event)"
@@ -73,8 +18,75 @@
         (resetRequested)="resetAnswer()"
         (previousRequested)="previous()"
         (nextRequested)="next()"
+        (introRequested)="setIntro(true)"
+        (introClosed)="setIntro(false)"
       />
+      <nav class="draft-navigation question-exit" aria-label="Ansichten des Entwurfs">
+        <button type="button" (click)="show('overview')">Zur Fragenübersicht</button>
+        <button type="button" (click)="show('results')">Zum Ergebnisentwurf</button>
+      </nav>
     </section>
+  } @else {
+    <header class="page-header grid page-width">
+      <div class="area-text-wide header-content">
+        <h1 #pageHeading class="page-title" tabindex="-1">
+          @switch (view()) {
+            @case ('start') {
+              Fragenentwurf
+            }
+            @case ('overview') {
+              Fragenübersicht
+            }
+            @case ('results') {
+              Ergebnisentwurf
+            }
+          }
+        </h1>
+        <p class="date">Stand: <span class="nowrap">3. Oktober 2026</span></p>
+        <p class="lead">
+          {{ items.length }} Originalfragen aus fünf historischen Befragungen des
+          <a href="https://www.europeansocialsurvey.org/">European Social Survey</a> (ESS), einer
+          repräsentativen wissenschaftlichen Befragung, bilden diesen Entwurf. Neue Zusammenstellung
+          und Durchführung sind noch nicht freigegeben.
+        </p>
+        <p class="meta">
+          Antworten bleiben im Arbeitsspeicher dieser Sitzung. Beim Schließen oder Neuladen gehen
+          sie verloren. Dieser Entwurf speichert und überträgt keine Antworten.
+        </p>
+        @if (view() === 'start') {
+          <p class="start-action">
+            <button type="button" class="button primary" (click)="show('questions')">
+              Zu den Fragen
+            </button>
+          </p>
+        }
+        <nav class="draft-navigation" aria-label="Ansichten des Entwurfs">
+          @if (view() !== 'start') {
+            <button type="button" (click)="show('questions')">Zu den Fragen</button>
+          }
+          <button
+            type="button"
+            [attr.aria-current]="view() === 'overview' ? 'page' : null"
+            (click)="show('overview')"
+          >
+            Zur Fragenübersicht
+          </button>
+          <button
+            type="button"
+            [attr.aria-current]="view() === 'results' ? 'page' : null"
+            (click)="show('results')"
+          >
+            Zum Ergebnisentwurf
+          </button>
+        </nav>
+        @if (view() !== 'start') {
+          <p class="meta" aria-live="polite">
+            {{ counts().answered }} beantwortet, {{ counts().skipped }} übersprungen,
+            {{ counts().untouched }} unberührt.
+          </p>
+        }
+      </div>
+    </header>
   }
 
   @if (view() === 'overview') {

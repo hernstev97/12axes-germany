@@ -144,11 +144,31 @@ async function check(engineName, setting) {
     );
     assert.deepEqual(violations, [], `${engineName} ${setting.label} ${label}: axe`);
   }
-  async function headingFocused(text) {
+  async function headingFocused(text, prefix = false) {
     await page.waitForFunction(
-      (expected) => document.activeElement?.textContent?.trim() === expected,
-      text,
+      ([expected, startsWith]) => {
+        const value = document.activeElement?.textContent?.trim() ?? '';
+        return startsWith ? value.startsWith(expected) : value === expected;
+      },
+      [text, prefix],
     );
+  }
+  // Moving forward into a new block shows its original introduction first.
+  async function arriveAt(question, total) {
+    await page.waitForFunction(
+      (n) => {
+        const value = document.activeElement?.textContent?.trim() ?? '';
+        return (
+          value === `Frage ${n[0]} von ${n[1]}` || value.startsWith(`Einleitung zu Frage ${n[0]}`)
+        );
+      },
+      [question, total],
+    );
+    if ((await page.locator('#draft-question-title').innerText()).startsWith('Einleitung')) {
+      record.introductions = (record.introductions ?? 0) + 1;
+      await button(`Zu Frage ${question}`).click();
+      await headingFocused(`Frage ${question} von ${total}`);
+    }
   }
   const checked = () => page.locator('input[name=draft-original-answer]:checked');
   const options_ = () => page.locator('label.answer-option');
@@ -158,6 +178,18 @@ async function check(engineName, setting) {
     await page.goto(`${base}/forschungsentwurf`, { waitUntil: 'networkidle' });
     await page.getByRole('heading', { name: 'Fragenentwurf', exact: true }).waitFor();
     loaded = true;
+    await overflow('start');
+    await axeCheck('start');
+    assert.equal(await page.locator('input[name=draft-original-answer]').count(), 0, 'start');
+    await button('Zu den Fragen').click();
+    await headingFocused('Einleitung zu Frage 1', true);
+    await overflow('introduction 1');
+    await axeCheck('introduction 1');
+    // Single steps first; the automatic change is checked at the end.
+    assert.ok(await page.locator('#draft-auto-advance').isChecked(), 'auto-advance starts on');
+    await page.locator('#draft-auto-advance').uncheck();
+    await button('Zu Frage 1').click();
+    await headingFocused('Frage 1 von', true);
     const total = Number(
       (await page.locator('#draft-question-title').innerText()).match(/von (\d+)$/)[1],
     );
@@ -165,9 +197,6 @@ async function check(engineName, setting) {
     await overflow('question 1');
     await storageCheck('question 1');
     await axeCheck('question 1');
-    // Single steps first; the automatic change is checked at the end.
-    assert.ok(await page.locator('#draft-auto-advance').isChecked(), 'auto-advance starts on');
-    await page.locator('#draft-auto-advance').uncheck();
 
     // Keyboard: the first radio gets a visible focus ring.
     await page.locator('#draft-question-title').focus();
@@ -211,7 +240,7 @@ async function check(engineName, setting) {
         answered++;
       } else if (question === 2) {
         await page.selectOption('#draft-skip-reason', 'dont-know');
-        await button('Diese Frage überspringen').click();
+        await button('Frage überspringen').click();
         skipped++;
         await headingFocused(`Frage 3 von ${total}`);
         step('question 2 skipped with reason');
@@ -241,10 +270,10 @@ async function check(engineName, setting) {
           .nth(question % count)
           .click();
         answered++;
-        await button('Zur vorherigen Frage').click();
+        await button('Vorherige Frage').click();
         await headingFocused(`Frage 4 von ${total}`);
         assert.equal(await checked().count(), 1, 'answer kept after going back');
-        await button('Zur nächsten Frage').click();
+        await button('Nächste Frage').click();
         await headingFocused(`Frage 5 von ${total}`);
         assert.equal(await checked().count(), 1, 'answer kept after returning');
         step('back and forward keeps answers');
@@ -255,10 +284,10 @@ async function check(engineName, setting) {
         answered++;
       }
       const next =
-        question === total ? button('Zum Ergebnisentwurf').last() : button('Zur nächsten Frage');
+        question === total ? button('Zum Ergebnisentwurf').first() : button('Nächste Frage');
       await next.click();
       if (question < total) {
-        await headingFocused(`Frage ${question + 1} von ${total}`);
+        await arriveAt(question + 1, total);
         await page.waitForFunction(
           () => document.querySelectorAll('input[name=draft-original-answer]:checked').length === 0,
           null,
@@ -333,11 +362,11 @@ async function check(engineName, setting) {
 
     // Automatic change: a click and Space confirm, arrow keys only select.
     await page.locator('#draft-auto-advance').check();
-    await button('Zur vorherigen Frage').click();
+    await button('Vorherige Frage').click();
     await headingFocused(`Frage ${total - 1} von ${total}`);
     await options_().first().click();
     await headingFocused(`Frage ${total} von ${total}`);
-    await button('Zur vorherigen Frage').click();
+    await button('Vorherige Frage').click();
     await headingFocused(`Frage ${total - 1} von ${total}`);
     await checked().focus();
     await page.keyboard.press('ArrowDown');
