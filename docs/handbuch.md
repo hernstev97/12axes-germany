@@ -146,19 +146,37 @@ Jede Seite hat dieselbe Hülle aus `web/src/app/app.html`: Sprunglink, Kopf mit 
 
 **Test und Ergebnis.** Noch nicht gestaltet. Bis Steven eine Gestaltung freigibt, gelten nur diese Leitplanken: kein sichtbarer Teststart, bevor ein freigegebener Test existiert (`AGENTS.md`); keine Gemälde; Text, Antworten und Fortschritt im Vordergrund; keine Flaggen-, Partei- oder Lagerfarben; der Statushinweis aus LIFE-93, Phase 6, steht auf jeder Ergebnisseite.
 
-**Ablauf des Forschungsentwurfs** (`app-policy-draft`, `app-policy-progress`, `app-policy-question`). Steven hat ihn am 5. Oktober 2026 für den lokalen Forschungsentwurf vorgegeben. Er ist keine Freigabe von Test oder Ergebnis. Das Beantworten soll so fokussiert wie möglich sein und möglichst ohne Scrollen gehen.
+**Ablauf des Forschungsentwurfs** (`app-policy-draft`, `app-policy-progress`, `app-policy-question`). Er gilt nur für den lokalen Forschungsentwurf und ist keine Freigabe von Test oder Ergebnis.
+
+Steven hat am 5. Oktober 2026 vorgegeben:
+
+- ein eigener Startbildschirm vor den Fragen,
+- die Originaleinleitung als eigener Bildschirm vor ihrem Frageblock,
+- die Frage mittig, mit Fortschrittsbalken und automatischem Wechsel nach einer Antwort,
+- Herkunft, Originalkontext, Version und Quellen unauffällig unter der Frage,
+- das Überspringen mit Grund bleibt,
+- das Beantworten so fokussiert wie möglich und möglichst ohne Scrollen.
+
+Die folgenden Einzelheiten hat Claude festgelegt. Sie gelten, bis Steven die Gestaltung von Test und Ergebnis entscheidet (Kapitel 11).
 
 - **Startbildschirm.** H1 „Fragenentwurf“, Datumszeile, Lead und Speicherhinweis stehen mittig in einer Spalte von höchstens 46 rem. Darunter folgt die Primärschaltfläche „Zu den Fragen“, dann die Textschaltflächen „Zur Fragenübersicht“ und „Zum Ergebnisentwurf“.
-- **Einleitungsbildschirm.** Fragen, die nacheinander dieselbe Originaleinleitung haben, bilden einen Block. Vor dem ersten Block und beim Vorwärtsgehen in einen neuen Block steht die Einleitung auf einem eigenen Bildschirm, je Block einmal in der Sitzung. Die Überschrift lautet „Einleitung zu Frage n bis m“, die Einleitung steht in Lead-Größe. Unter der Karte stehen „Vorherige Frage“ und „Zu Frage n“. Rückwärts und bei Sprüngen aus Übersicht oder Ergebnis erscheint die Frage direkt. Die Einleitung öffnet dann „Einleitung zu dieser Frage anzeigen“ unter der Karte.
-- **Fragebildschirm.** Er hat keinen sichtbaren Seitenkopf, die H1 „Fragenentwurf“ ist nur für Hilfsmittel lesbar. Oben steht der Fortschritt: „Frage n von N“ als H2 und Fokusziel, der Schalter „Nach einer Antwort automatisch zur nächsten Frage“, ein Balken für bearbeitete Fragen und die Zählzeile. Bearbeitet heißt beantwortet oder übersprungen. Bis 640 px ist die Zählzeile nur für Hilfsmittel lesbar.
+- **Einleitungsbildschirm.** Fragen, die nacheinander dieselbe Originaleinleitung haben, bilden einen Block. Vor dem ersten Block und beim Vorwärtsgehen in einen neuen Block steht die Einleitung auf einem eigenen Bildschirm, je Block einmal in der Sitzung. Oben stehen Fortschritt und Schalter wie auf dem Fragebildschirm. Die H2 lautet „Einleitung zu Frage n bis m“, bei einem Block aus einer Frage „Einleitung zu Frage n“. Die Einleitung steht in Lead-Größe. Unter der Karte stehen „Vorherige Frage“ und „Zu Frage n“. Rückwärts und bei Sprüngen aus Übersicht oder Ergebnis erscheint die Frage direkt. Die Einleitung öffnet dann die Schaltfläche „Einleitung zu dieser Frage anzeigen“ unter der Karte.
+- **Fragebildschirm.** Er hat keinen sichtbaren Seitenkopf, die H1 „Fragenentwurf“ ist nur für Hilfsmittel lesbar. Oben steht der Fortschritt: „Frage n von N“ als H2 in 1 rem fett und als Fokusziel, der Schalter „Nach einer Antwort automatisch zur nächsten Frage“, ein Balken für bearbeitete Fragen und die Zählzeile. Bearbeitet heißt beantwortet oder übersprungen. Bis 640 px ist die Zählzeile nur für Hilfsmittel lesbar. Die H2 entsteht je Bildschirm neu, damit Hilfsmittel den Fokuswechsel ansagen.
 - Die Karte hat einen Rahmen in `--line` und eine Oberkante von 3 px in `--forest`. Sie hat keinen Schatten und keine Rundung.
-- In der Karte steht oben der Bereich. Dahinter steht „Übersprungen“, wenn die Frage übersprungen wurde. Rechts steht „Auswahl zurücksetzen“, sobald es eine Antwort oder ein Überspringen gibt. Danach folgen eine fragebezogene Situationsbeschreibung, falls vorhanden, die Frage als `legend` und die Antworten als native Radios in gerahmten Zeilen. Am Ende steht das Überspringen mit Grund und der Schaltfläche „Frage überspringen“.
-- Die gewählte Antwort hat einen Rahmen in `--ink` und die Fläche `--mat`. Antworten haben keine Symbole und keine Farben, die Zustimmung oder Ablehnung werten.
-- 0–10-Listen stehen als Zahlenreihe: ab 640 px in einer Zeile, darunter in zwei Zeilen zu sechs und fünf. Die Endbeschriftungen stehen sichtbar darunter und bleiben Teil des Namens jeder Antwort. Endbeschriftungen ohne Zahl erhalten den Code aus dem deutschen Originalfragebogen.
-- Unter der Karte stehen „Vorherige Frage“ und „Nächste Frage“. Bei der letzten Frage heißt die zweite Schaltfläche „Zum Ergebnisentwurf“. Die Schaltfläche nach vorn ist ausgefüllt wie eine Primärschaltfläche, weil sie zum nächsten Bildschirm führt. Danach folgen unauffällig der Link zur Einleitung, Herkunft, Entwicklungshinweis, „Originalkontext, Version und Quellen“ und die Textschaltflächen „Zur Fragenübersicht“ und „Zum Ergebnisentwurf“.
-- Der automatische Wechsel ist zu Beginn eingeschaltet. Nach Klick, Tippen, Leertaste oder Eingabetaste folgt nach 350 ms der nächste Bildschirm, und der Fokus geht auf die H2. Pfeiltasten wählen nur aus. Nach der letzten Frage wechselt die Ansicht nicht von selbst.
+- In der Karte steht oben der Bereich, dahinter „Übersprungen“, wenn die Frage übersprungen wurde. Danach folgen eine fragebezogene Situationsbeschreibung, falls vorhanden, und die Frage als `legend` in `clamp(1.15rem, 2vw, 1.4rem)`. Dann kommen die Antworten als native Radios in gerahmten Zeilen, am Ende das Überspringen mit Grund und „Frage überspringen“. Gibt es eine Antwort oder ein Überspringen, folgt dahinter „Auswahl zurücksetzen“. Es steht unter den Antworten, damit sein Erscheinen keine Antwort verschiebt.
+- Die gewählte Antwort hat einen Rahmen in `--ink` und die Fläche `--mat`. Der Wechsel geschieht ohne Übergang. Antworten haben keine Symbole und keine Farben, die Zustimmung oder Ablehnung werten.
+- 0–10-Listen stehen als Zahlenreihe: über 640 px in einer Zeile, sonst in zwei Zeilen zu sechs und fünf, die zweite rechtsbündig. Die Endbeschriftungen stehen sichtbar darunter und bleiben Teil des Namens der beiden Endantworten. Die übrigen Antworten heißen wie im Katalog nach ihrer Zahl. Endbeschriftungen ohne Zahl erhalten den Code aus dem deutschen Originalfragebogen.
+- Unter der Karte stehen „Vorherige Frage“ und „Nächste Frage“. Bei der letzten Frage heißt die zweite Schaltfläche „Zum Ergebnisentwurf“. Die Schaltfläche nach vorn ist ausgefüllt wie eine Primärschaltfläche, weil sie zum nächsten Bildschirm führt (Ausnahme zu Kapitel 5).
+- Danach folgen unauffällig:
+  - die Schaltfläche zur Einleitung,
+  - Herkunft und Entwicklungshinweis,
+  - der Satz „Überspringen ist keine politische Antwort …“,
+  - „Originalkontext, Version und Quellen“,
+  - die Textschaltflächen „Zur Fragenübersicht“ und „Zum Ergebnisentwurf“.
+- Der automatische Wechsel ist zu Beginn eingeschaltet. Nach Klick, Tippen, Leertaste oder Eingabetaste auf einer gewählten Antwort folgt nach 350 ms der nächste Bildschirm, und der Fokus geht auf die H2. Pfeiltasten wählen nur aus. Nach der letzten Frage wechselt die Ansicht nicht von selbst.
 - Der Schalter steht vor den Antworten. So ist der Wechsel angekündigt, bevor jemand antwortet (WCAG 3.2.2).
 - Beim Wechsel gibt es keinen Übergang und keine Animation.
+- Bei erzwungenen Farben zeigt der Schalter die native Darstellung. Der Fortschrittsbalken behält seine Farben, weil sonst Spur und Wert gleich aussähen.
 
 ### Neue Seite anlegen
 
@@ -183,7 +201,7 @@ Jede Seite hat dieselbe Hülle aus `web/src/app/app.html`: Sprunglink, Kopf mit 
 
 **Fließtext** (`.prose`). Absätze mit höchstens fünf Sätzen. Links im Fließtext sind unterstrichen.
 
-**Primärschaltfläche** (`.button.primary`). Rechteckig, Radius 2 px, mindestens 48 px hoch, ohne Symbol oder Pfeil. Höchstens eine je Bildschirmhöhe, nur für Wege zu einer anderen Seite. Eine zweite, gleichwertige Schaltfläche daneben gibt es nicht; für weitere Wege gibt es Textlinks.
+**Primärschaltfläche** (`.button.primary`). Rechteckig, Radius 2 px, mindestens 48 px hoch, ohne Symbol oder Pfeil. Höchstens eine je Bildschirmhöhe, nur für Wege zu einer anderen Seite. Eine zweite, gleichwertige Schaltfläche daneben gibt es nicht; für weitere Wege gibt es Textlinks. Ausnahme bis zu Stevens Entscheidung: die ausgefüllte Schaltfläche nach vorn im Ablauf des Forschungsentwurfs (Kapitel 4).
 
 **Textlink** (`.text-link`). Unter einem Absatzblock, etwa „Zum ausführlichen Projektstand“ oder „Quellcode auf GitHub“. Externe Links haben kein Symbol; der Linktext nennt das Ziel.
 
@@ -388,5 +406,5 @@ Eine Änderung an Oberfläche oder Text ist fertig, wenn alle Punkte erledigt si
 
 - Ob der Name mit dem Autor von 12 Axes abgestimmt wird, entscheidet Steven.
 - Ob und wie die Website eine verantwortliche Person nennt, entscheidet Steven.
-- Die Gestaltung von Test- und Ergebnisseiten steht aus.
+- Die Gestaltung von Test- und Ergebnisseiten steht aus. Dazu gehören die Einzelheiten, die Claude im Ablauf des Forschungsentwurfs festgelegt hat (Kapitel 4), etwa die ausgefüllte Schaltfläche nach vorn, die Pause von 350 ms und die Einleitung einmal je Block.
 - „Wanderer über dem Nebelmeer“ kommt nur zurück, wenn die Hamburger Kunsthalle die Provenienz als unbedenklich einstuft.

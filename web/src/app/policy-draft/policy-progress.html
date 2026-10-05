@@ -1,5 +1,8 @@
 <div class="progress-row">
-  <h2 id="draft-question-title" class="progress-title" tabindex="-1">{{ heading() }}</h2>
+  <!-- A new element per screen, so that moving focus to it is always announced. -->
+  @for (title of [heading()]; track title) {
+    <h2 id="draft-question-title" class="progress-title" tabindex="-1">{{ title }}</h2>
+  }
   <label class="advance">
     <input
       id="draft-auto-advance"

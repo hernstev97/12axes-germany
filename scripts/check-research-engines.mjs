@@ -378,9 +378,22 @@ async function check(engineName, setting) {
     );
     await page.keyboard.press('Space');
     await headingFocused(`Frage ${total} von ${total}`);
+    // Enter on an option chosen with the arrow keys confirms it as well.
+    await button('Vorherige Frage').click();
+    await headingFocused(`Frage ${total - 1} von ${total}`);
+    await checked().focus();
+    await page.keyboard.press('ArrowUp');
+    await page.waitForTimeout(800);
+    assert.equal(
+      (await page.locator('#draft-question-title').innerText()).trim(),
+      `Frage ${total - 1} von ${total}`,
+      'arrow keys do not advance',
+    );
+    await page.keyboard.press('Enter');
+    await headingFocused(`Frage ${total} von ${total}`);
     await overflow('after automatic change');
     await axeCheck('after automatic change');
-    step('automatic change: click and Space advance, arrow keys do not');
+    step('automatic change: click, Space and Enter advance, arrow keys do not');
 
     assert.deepEqual(errors, [], 'page errors');
     assert.deepEqual(late, [], 'requests after load');

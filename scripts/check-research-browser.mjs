@@ -325,9 +325,9 @@ try {
       originalCode,
     );
     await focus(record, 'radio arrow navigation');
-    // The reset button appears in the card head once there is an answer, before the options.
+    // The reset button appears after the skip controls once there is an answer.
     const reset = page.getByRole('button', { name: 'Auswahl zurücksetzen', exact: true });
-    await shiftTabTo(reset, record, 'reset button');
+    await tabTo(reset, record, 'reset button');
     await page.keyboard.press('Enter');
     await page.waitForFunction(() => document.activeElement.id === 'draft-question-title');
     assert.equal(await reset.count(), 0);

@@ -757,17 +757,146 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
     const radio = (code: string) =>
       element.querySelector<HTMLInputElement>(`input[type="radio"][value="${code}"]`)!;
 
-    async function afterDelay(): Promise<void> {
-      await new Promise((resolve) => setTimeout(resolve, AUTO_ADVANCE_DELAY_MS + 50));
-      await fixture.whenStable();
+    // Fake timers (Handbuch, Kapitel 9). After each step the clock moves RENDER_MS further,
+    // so that the zoneless scheduler renders what a timer callback changed.
+    const RENDER_MS = 20;
+
+    async function advance(ms = 0): Promise<void> {
+      await vi.advanceTimersByTimeAsync(ms);
+      await vi.advanceTimersByTimeAsync(RENDER_MS);
+    }
+
+    async function press(text: string): Promise<void> {
+      [...element.querySelectorAll('button')]
+        .find((button) => button.textContent?.trim() === text)!
+        .click();
+      await advance();
+    }
+
+    async function pick(code: string): Promise<void> {
+      radio(code).click();
+      await advance();
     }
 
     beforeEach(async () => {
       await setAutoAdvance(true);
+      vi.useFakeTimers();
       headingInteractions = [];
     });
 
-    it('ist zu Beginn eingeschaltet und als Schalter vor den Antworten beschriftet', async () => {
+    afterEach(() => {
+      vi.useRealTimers();
+    });
+
+    it('wechselt erst nach Ablauf der Pause zur nächsten Frage und behält die Antwort', async () => {
+      await pick('2');
+      // pick() and advance() each add RENDER_MS: the clock now stands 1 ms before the pause ends.
+      await advance(AUTO_ADVANCE_DELAY_MS - 2 * RENDER_MS - 1);
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+      expect(headingInteractions).toEqual([]);
+      await advance(1);
+      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+      expectFocusedAndScrolled(heading());
+      await press('Vorherige Frage');
+      expect(radio('2').checked).toBe(true);
+    });
+
+    it('wechselt auch beim erneuten Bestätigen einer schon gewählten Antwort', async () => {
+      await pick('2');
+      await advance(AUTO_ADVANCE_DELAY_MS);
+      await press('Vorherige Frage');
+      radio('2').click();
+      await advance(AUTO_ADVANCE_DELAY_MS);
+      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+    });
+
+    it('wählt mit Pfeiltasten ohne Wechsel', async () => {
+      const fieldset = element.querySelector('#draft-answer-fieldset')!;
+      fieldset.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true }));
+      radio('3').click();
+      fieldset.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown', bubbles: true }));
+      await advance(AUTO_ADVANCE_DELAY_MS * 2);
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+      expect(radio('3').checked).toBe(true);
+      expect(headingInteractions).toEqual([]);
+    });
+
+    it('bestätigt eine mit Pfeiltasten gewählte Antwort mit Leertaste oder Eingabetaste', async () => {
+      for (const key of [' ', 'Enter']) {
+        const fieldset = element.querySelector('#draft-answer-fieldset')!;
+        fieldset.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true }));
+        radio('2').click();
+        fieldset.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown', bubbles: true }));
+        await advance();
+        radio('2').dispatchEvent(new KeyboardEvent('keyup', { key, bubbles: true }));
+        await advance(AUTO_ADVANCE_DELAY_MS);
+        expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+        await press('Vorherige Frage');
+      }
+    });
+
+    it('bleibt ausgeschaltet stehen und bricht einen laufenden Wechsel ab', async () => {
+      await pick('2');
+      element.querySelector<HTMLInputElement>('#draft-auto-advance')!.click();
+      await advance(AUTO_ADVANCE_DELAY_MS * 2);
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+      await pick('3');
+      await advance(AUTO_ADVANCE_DELAY_MS * 2);
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+    });
+
+    it.each([
+      ['Auswahl zurücksetzen', `Frage 1 von ${TOTAL}`],
+      ['Einleitung zu dieser Frage anzeigen', 'Einleitung zu Frage 1 bis 4'],
+      ['Nächste Frage', `Frage 2 von ${TOTAL}`],
+    ])('bricht den Wechsel durch %s ab und springt nicht doppelt', async (action, title) => {
+      await pick('2');
+      await press(action);
+      await advance(AUTO_ADVANCE_DELAY_MS * 2);
+      expect(heading().textContent?.trim()).toContain(title);
+    });
+
+    it('bricht den Wechsel durch Vorherige Frage ab', async () => {
+      await press('Nächste Frage');
+      await pick('2');
+      await press('Vorherige Frage');
+      await advance(AUTO_ADVANCE_DELAY_MS * 2);
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+    });
+
+    it('bricht den Wechsel durch den Wechsel in eine andere Ansicht ab', async () => {
+      await pick('2');
+      await press('Zur Fragenübersicht');
+      await advance(AUTO_ADVANCE_DELAY_MS * 2);
+      expect(element.querySelector('h1')?.textContent).toContain('Fragenübersicht');
+      await press('Zu den Fragen');
+      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
+    });
+
+    it('wechselt nach der letzten Frage nicht von selbst zum Ergebnisentwurf', async () => {
+      await press('Zur Fragenübersicht');
+      element.querySelector<HTMLButtonElement>('.overview-list li:last-child button')!.click();
+      await advance();
+      element.querySelector<HTMLInputElement>('input[type="radio"]')!.click();
+      await advance(AUTO_ADVANCE_DELAY_MS * 2);
+      expect(heading().textContent).toContain(`Frage ${TOTAL} von ${TOTAL}`);
+      expect(element.querySelector('h1')?.textContent).toContain('Fragenentwurf');
+    });
+
+    it('führt nach der letzten Frage eines Blocks zur Einleitung des nächsten', async () => {
+      for (const code of ['1', '2', '3', '4']) {
+        await pick(code);
+        await advance(AUTO_ADVANCE_DELAY_MS);
+      }
+      expect(heading().textContent?.trim()).toBe('Einleitung zu Frage 5');
+      expect(element.querySelector('input[type="radio"]')).toBeNull();
+    });
+  });
+
+  describe('Start und Einleitungen', () => {
+    const heading = () => element.querySelector<HTMLElement>('#draft-question-title')!;
+
+    it('schaltet den automatischen Wechsel zu Beginn ein und kündigt ihn vor den Antworten an', async () => {
       const fresh = TestBed.createComponent(PolicyDraft);
       await fresh.whenStable();
       const freshElement = fresh.nativeElement as HTMLElement;
@@ -790,95 +919,23 @@ describe('Unrouteter Angular-Fragen- und Ergebnisentwurf', () => {
       fresh.destroy();
     });
 
-    it('wechselt nach einer Auswahl mit kurzer Pause zur nächsten Frage und behält die Antwort', async () => {
+    it('legt Auswahl zurücksetzen hinter die Antworten, damit nichts verrutscht', async () => {
       await choose('2');
-      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
-      await afterDelay();
-      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
-      expectFocusedAndScrolled(heading());
-      await click('Vorherige Frage');
-      expect(radio('2').checked).toBe(true);
+      const reset = [...element.querySelectorAll('button')].find(
+        (button) => button.textContent?.trim() === 'Auswahl zurücksetzen',
+      )!;
+      const lastRadio = [...element.querySelectorAll('input[type="radio"]')].at(-1)!;
+      expect(lastRadio.compareDocumentPosition(reset) & Node.DOCUMENT_POSITION_FOLLOWING).toBe(
+        Node.DOCUMENT_POSITION_FOLLOWING,
+      );
     });
 
-    it('wechselt auch beim erneuten Bestätigen einer schon gewählten Antwort', async () => {
-      await choose('2');
-      await afterDelay();
-      await click('Vorherige Frage');
-      radio('2').click();
-      await afterDelay();
-      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
-    });
-
-    it('wählt mit Pfeiltasten ohne Wechsel', async () => {
-      const fieldset = element.querySelector('#draft-answer-fieldset')!;
-      fieldset.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true }));
-      radio('3').click();
-      fieldset.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown', bubbles: true }));
-      await afterDelay();
-      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
-      expect(radio('3').checked).toBe(true);
-      expect(headingInteractions).toEqual([]);
-    });
-
-    it('bestätigt eine mit Pfeiltasten gewählte Antwort mit Leertaste oder Eingabetaste', async () => {
-      for (const key of [' ', 'Enter']) {
-        const fieldset = element.querySelector('#draft-answer-fieldset')!;
-        fieldset.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true }));
-        radio('2').click();
-        fieldset.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown', bubbles: true }));
-        await fixture.whenStable();
-        radio('2').dispatchEvent(new KeyboardEvent('keyup', { key, bubbles: true }));
-        await afterDelay();
-        expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
-        await click('Vorherige Frage');
-      }
-    });
-
-    it('bleibt ausgeschaltet stehen und bricht einen laufenden Wechsel ab', async () => {
-      await choose('2');
-      await setAutoAdvance(false);
-      await afterDelay();
-      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
-      await choose('3');
-      await afterDelay();
-      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
-    });
-
-    it('wechselt nicht, wenn die Auswahl vor Ablauf der Pause zurückgesetzt wird', async () => {
-      await choose('2');
-      await click('Auswahl zurücksetzen');
-      await afterDelay();
-      expect(heading().textContent).toContain(`Frage 1 von ${TOTAL}`);
-      expect(element.querySelector('input[type="radio"]:checked')).toBeNull();
-    });
-
-    it('springt nach einem schnellen Klick auf die nächste Frage nicht doppelt', async () => {
-      await choose('2');
+    it('erzeugt die Überschrift je Bildschirm neu, damit der Fokuswechsel angesagt wird', async () => {
+      const first = heading();
       await click('Nächste Frage');
-      await afterDelay();
-      expect(heading().textContent).toContain(`Frage 2 von ${TOTAL}`);
+      expect(heading()).not.toBe(first);
+      expect(document.activeElement).toBe(heading());
     });
-
-    it('wechselt nach der letzten Frage nicht von selbst zum Ergebnisentwurf', async () => {
-      await openLastQuestion();
-      element.querySelector<HTMLInputElement>('input[type="radio"]')!.click();
-      await afterDelay();
-      expect(heading().textContent).toContain(`Frage ${TOTAL} von ${TOTAL}`);
-      expect(element.querySelector('h1')?.textContent).toContain('Fragenentwurf');
-    });
-
-    it('führt nach der letzten Frage eines Blocks zur Einleitung des nächsten', async () => {
-      for (const code of ['1', '2', '3', '4']) {
-        await choose(code);
-        await afterDelay();
-      }
-      expect(heading().textContent?.trim()).toBe('Einleitung zu Frage 5');
-      expect(element.querySelector('input[type="radio"]')).toBeNull();
-    });
-  });
-
-  describe('Start und Einleitungen', () => {
-    const heading = () => element.querySelector<HTMLElement>('#draft-question-title')!;
 
     it('beginnt mit einem eigenen Startbildschirm ohne Fragen', async () => {
       const fresh = TestBed.createComponent(PolicyDraft);

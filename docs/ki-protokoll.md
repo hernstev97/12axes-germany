@@ -246,3 +246,15 @@ Stevens zweite Vorgabe vom selben Abend im Wortlaut, zu zwei Bildschirmfotos der
 > bild 1 sollte ein eigener screen vor dem starten des quizzes sein. also weg von der fragen-ansicht. und hier [Bildschirmfoto der Karte mit durchgestrichener Einleitung] der text auch ein screen vor dem jeweiligen themenbereich. das beantworten der fragen muss so fokussiert wie möglich sein und am besten ohne scrollen funktionieren.
 
 Umsetzung: Startbildschirm, eigener Einleitungsbildschirm vor jedem Block aufeinanderfolgender Fragen mit derselben Originaleinleitung (24 Blöcke bei 62 Fragen), Fragebildschirm ohne sichtbaren Seitenkopf. „Auswahl zurücksetzen“ erscheint nur bei einer Antwort, die Schaltflächen heißen kürzer „Vorherige Frage“, „Nächste Frage“ und „Frage überspringen“, damit die Frage auf dem Smartphone möglichst ohne Scrollen passt. Die erste KI-Review U1 lief auf der überholten Fassung und wurde ohne Bericht abgebrochen. Ein Codex-Prüfer war wegen der Nutzungsgrenze bis zum 10. Oktober 2026 nicht verfügbar.
+
+KI-Review U1 zum Frageablauf (Claude-Subagent, dieselbe Modellfamilie wie der Autor, weil Codex bis zum 10. Oktober 2026 nicht verfügbar ist): BESTANDEN mit sechs niedrigen Findings, Bericht `reports/claude/pruefungen/U1-frageablauf.md`. Korrekturen:
+
+- **U1-F01:** Tests zum automatischen Wechsel mit Fake-Timern, Grenze 1 ms vor Ablauf der Pause, drei weitere Abbruchwege.
+- **U1-F02:** Fortschrittsbalken bei erzwungenen Farben sichtbar.
+- **U1-F03:** „Auswahl zurücksetzen“ unter den Antworten, damit nichts verrutscht.
+- **U1-F04:** Die H2 entsteht je Bildschirm neu.
+- **U1-F05 und U1-F06:** Handbuch präzisiert, Stevens Vorgaben von Claudes Umsetzungsentscheidungen getrennt, Ausnahme in Kapitel 5 und offene Entscheidung in Kapitel 11 eingetragen.
+
+Berichtigung zum Eintrag oben: „Auswahl zurücksetzen“ erscheint nicht nur bei einer Antwort, sondern auch nach dem Überspringen.
+
+Nicht übernommen: Die Review meint, `pnpm check` prüfe die Stilbudgets der neuen Komponenten nicht. Der Produktionsbuild in `pnpm check` hat am 5. Oktober 2026 aber eine Budgetwarnung für `policy-question.scss` ausgegeben. Die Budgets werden also geprüft, obwohl die Komponenten nicht im ausgelieferten Bundle landen.

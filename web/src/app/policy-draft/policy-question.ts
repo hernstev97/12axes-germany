@@ -124,26 +124,19 @@ export class PolicyQuestion {
       target.type === 'radio' &&
       target.checked
     ) {
-      this.confirm(target.value);
+      this.confirm();
     }
   }
 
   /** A click, tap or Space confirms an option; with auto-advance on, the next question follows. */
-  protected confirm(code: string): void {
+  protected confirm(): void {
     this.cancelAdvance();
     if (this.arrowNavigation || !this.autoAdvance() || this.isLast()) return;
     const id = this.item().id;
+    // Every other change of the selection restarts or cancels this timer.
     this.advanceTimer = setTimeout(() => {
       this.advanceTimer = undefined;
-      const answer = this.answer();
-      if (
-        this.autoAdvance() &&
-        this.item().id === id &&
-        answer.status === 'answered' &&
-        answer.code === code
-      ) {
-        this.nextRequested.emit();
-      }
+      if (this.autoAdvance() && this.item().id === id) this.nextRequested.emit();
     }, AUTO_ADVANCE_DELAY_MS);
   }
 

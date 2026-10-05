@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "mode": "PR_REVIEW",
+  "task": "U1 (neu): Prüfung des Frageablaufs im lokalen Forschungsentwurf nach reports/claude/auftraege/U1-frageablauf.md, Checks C01 bis C07. Der Auftrag nennt den Modus Paketprüfung; das Schema kennt diesen Wert nicht, deshalb PR_REVIEW.",
+  "scope": "Paket UI-FRAGEANSICHT-002 (Manifestcommit ea84b936f26d1782f26f21fbe00c007f3498713b, geprüft auf HEAD 001dfa3b9b742da75b892c4cc131f2e89ed9a0ee): app-policy-question, app-policy-progress, die Änderungen an app-policy-draft seit 9489579, scripts/check-research-browser.mjs, scripts/check-research-engines.mjs und der Abschnitt „Ablauf des Forschungsentwurfs“ in Kapitel 4 von docs/handbuch.md. Nur Codeprüfung und pnpm check, keine eigene Browser- oder Screenreaderbeobachtung. Keine Fragenauswahl, keine Vergleichswerte, keine Methodik.",
+  "manifestSha256": "36a0aad0363521742fdbffda9879f9747aaebe36e74a44335a00c6b7796a7acf",
+  "status": "BESTANDEN",
+  "execution": {
+    "provider": "Anthropic",
+    "model": "claude-opus-5-5[1m]",
+    "modelEvidence": "Laufzeitangabe der Claude-Code-Subagent-Sitzung: Modellname Opus 5.5 (1M context), Modellkennung claude-opus-5-5[1m]. Keine nachgewiesene interne Revision. Der Prüfer gehört zur selben Modellfamilie wie der Autor (Claude). Codex war laut Auftraggeber bis zum 10. Oktober 2026 nicht verfügbar. Gemeinsame blinde Flecken mit dem Autor sind möglich.",
+    "internalRevision": null,
+    "internalInstructions": null,
+    "tools": [
+      "Bash",
+      "Read",
+      "Write",
+      "Skill anthropic-skills:unslop (Berichtstext)",
+      "git",
+      "sha256sum",
+      "grep",
+      "node 24.21.0 (Code über Standardeingabe, Auswertung der Katalogliterale, keine Datei geschrieben)",
+      "python3 (WCAG-Kontraste; fontTools 4.66.1 für Laufweiten)",
+      "pnpm check",
+      "pnpm check:review-schema",
+      "Ajv 2020 (Validierung dieses Urteils, Code über Standardeingabe)"
+    ],
+    "prompt": "Du bist ein frischer Prüfagent im Projekt „12 Axes Deutschland“. Arbeitsverzeichnis: /home/stevenh/.t3/worktrees/12axes-germany/t3code-794dd32c (Branch research/life-93-claude-20261003).\n\nDein Auftrag steht vollständig in reports/claude/auftraege/U1-frageablauf.md (SHA-256 07e2d3b24caae8969f6dfc166114659c2cac2da7ffbc982c78f8599a5e0a8746). Das Umfangsmanifest ist reports/claude/pruefungen/UI-FRAGEANSICHT-002-manifest.json mit SHA-256 36a0aad0363521742fdbffda9879f9747aaebe36e74a44335a00c6b7796a7acf. Prüfe beide Hashes und alle Artefakt-Hashes im Manifest vor Beginn (sha256sum) und brich mit BLOCKIERT ab, wenn sie nicht stimmen.\n\nPrüferrolle: Codex ist bis zum 10. Oktober 2026 nicht verfügbar (Nutzungsgrenze). Du bist ein frischer Claude-Subagent (Anthropic) aus derselben Modellfamilie wie der Autor. Halte das im Bericht und im JSON fest: gemeinsame blinde Flecken mit dem Autor sind möglich. Prüfe deshalb besonders kritisch und unabhängig; verlasse dich nicht auf Kommentare oder Behauptungen im Code oder in der Dokumentation, sondern lies die tatsächliche Umsetzung (Templates, TypeScript, SCSS, Tests).\n\nLies zuerst den Auftrag, dann .claude/skills/life93-review/SKILL.md und das Urteilsschema .claude/skills/life93-review/references/urteil-schema.json, und befolge sie genau. Sieh dir zum Format ein vorhandenes Urteil an, etwa reports/claude/pruefungen/K1-runde2-textvorschlaege.json (nur das Format, nicht dessen Inhalt bewerten). Prüfe dein JSON am Ende mit `pnpm check:review-schema`; falls das Skript nur feste Dateien prüft, nutze `pnpm check`.\n\nSchreibe ausschließlich reports/claude/pruefungen/U1-frageablauf.md und reports/claude/pruefungen/U1-frageablauf.json. Keine anderen Dateien ändern, keine Commits, keine Nachrichten. Nichts unter data/raw/, data/local/, data/reference-* oder outputs/ lesen. Die Dateien web/src/app/policy-draft/reviewed-*.ts nicht öffnen. Keine Browser- oder Datenskripte ausführen und keine Server starten.\n\nDeine letzte Antwort fasst in höchstens 25 Zeilen zusammen: Pfad der Berichtsdateien, Gesamturteil, Checks mit Status, Findings mit ID, Schweregrad und Fundstelle, offene Punkte.",
+    "inputHashes": {
+      "AGENTS.md": "6d405f6baff0b692edf657dae09c933b3ef978e2f3a98d3caaf14dc7666f627f",
+      "reports/claude/auftraege/U1-frageablauf.md": "07e2d3b24caae8969f6dfc166114659c2cac2da7ffbc982c78f8599a5e0a8746",
+      "reports/claude/pruefungen/UI-FRAGEANSICHT-002-manifest.json": "36a0aad0363521742fdbffda9879f9747aaebe36e74a44335a00c6b7796a7acf",
+      ".claude/skills/life93-review/SKILL.md": "90e44b1ce3aa31f5c7e00a91af7516e06a2dec930ba83e0ea1cd5b51714255a6",
+      ".claude/skills/life93-review/references/urteil-schema.json": "5d36a1dfca3bc656a4b38d8da25051173aaaafebbaff7ed27e3c30451148dba9",
+      "reports/claude/pruefungen/K1-runde2-textvorschlaege.json": "f97cbb8cba5492afa96255d09d4e47d8bdb51552a79b4cd0bade98efea2017c7",
+      "docs/handbuch.md": "37e7b59ee3ea87e059003643795320d96f65d8a93565a9f191c4261484f6602c",
+      "docs/project.md": "4d23f28649d83b4333af382723b831c16b5e52cf5412a0ff2ef4e0dfa493287d",
+      "docs/ki-protokoll.md": "2731797ea7690d69cdf25112bb763e10c419169541ab4b8c5e2f3ee3c229ba8f",
+      "docs/validation.md": "2cd3c640d6837dcf06c960b46e7cf1c95c106a0ef3bdcf7cbba075accac8a28e",
+      "web/src/app/policy-draft/policy-question.ts": "96503c5bc65a367756047f645cc204c11f1872dd07c7092842a23905e2343486",
+      "web/src/app/policy-draft/policy-question.html": "05aace4e07dce9e04a94e1c1ba488e4664f94ace36aaaa771093816806b516ae",
+      "web/src/app/policy-draft/policy-question.scss": "8343eb8407246e62aa31af9a7b5a0d3655e108f29c08c99bf771c81d445b33dc",
+      "web/src/app/policy-draft/policy-progress.ts": "2cc9baf04f1c0486b19d90798955885f0b2d644ff115d5f8cdd241994a0fdcc0",
+      "web/src/app/policy-draft/policy-progress.html": "8aecfacfd14c6c1689d419f8fc44c07f8579c48eb91551d0c2dbd41b9c095c77",
+      "web/src/app/policy-draft/policy-progress.scss": "fdfbc9fe472e083fb12ec92aeaae75bc93cf2eaf0da954c766d28a9592ad06c2",
+      "web/src/app/policy-draft/policy-draft.ts": "181831dba2ffba8455d48dfc8f06b23792ab8d8734565d4d9a71b2d6bcfbeb61",
+      "web/src/app/policy-draft/policy-draft.html": "248befd05b80225e144af525098134946cb8cdd48e6d24e5912bc740c59a92a4",
+      "web/src/app/policy-draft/policy-draft.scss": "1c2d3c22f5483b3ca2bf8af5444a215b4d182b8fae6c587c1526517e90e22862",
+      "web/src/app/policy-draft/policy-draft.spec.ts": "93407223492e0dcfe8adc0b699225b0b9de26f315896d710fe9f39e32e558f68",
+      "web/src/app/policy-draft/policy-catalogue.ts": "acde504fa6f0b815d93c66a842d1a25270092713ea898df97b9e8617388a6193",
+      "web/src/app/policy-draft/policy-source-details.html": "3ebaf5bf8145005ad9706ce42bacd8660cffb15daf152ae4001da4ccf539fdb2",
+      "web/src/app/policy-draft/policy-source-details.ts": "add8b2721004e120d71e7574d119bdd2ec84b5373c7b2b497d53e74e46a2f659",
+      "web/src/app/policy-draft/policy-source-details.scss": "98ba630fb6527743e449750fbffde418f28b5993a208e37455205aec2c997f8b",
+      "web/src/styles.scss": "695afc2c43f15dcaf4ad0406a3bf9910d7b6b7f610e4e52516b72f624ba8cf11",
+      "scripts/check-research-browser.mjs": "3709963e5723cc39f1753131478070ec1c3083daf079219aaaa3115560fa02c6",
+      "scripts/check-research-engines.mjs": "875c1f2ccce3efd3f30136ea4486c14a2ec453983359d8566635361f351ea9d5",
+      "scripts/check-review-schema.mjs": "2575997f720f0c440fc54a9ccc15a2bd8c8fb69638dab8c03cf8b9fdaf810166",
+      "scripts/check-handbuch.mjs": "ebb9815ee0341fab5ad8aa58f01dec459dcdc08b75ca87f5a81707bab50e2813",
+      "web/src/app/research-preview/policy-preview.ts": "c59ee36a05b1addfe8bac56f69df024865c89b3ee5137e75d927d43d183e6e1b",
+      "web/src/app/research-preview.routes.ts": "d9bda2c42f9c8edec6f02ab7a3d5dd71df6c8e5afe91fe3f33f8b4e1d3bb341a",
+      "web/src/app/research-preview.routes.dev.ts": "e8557fe29e2ae2d5dcff9dc93e9ac9709d1e82c501d84ff5c0401ed3a3ed121b",
+      "web/angular.json": "91c9042107b35de10321454587d64abbd7cd18cd25ea345319dd0378b8337ed8",
+      "web/src/app/research/policy-profile.ts": "28906eb1533bb953b43bed75a4995c907b71398f1ffcd63271c82cfdace05998",
+      "web/src/app/policy-draft/display-additions.ts": "3c8e4ab19577749d1cbb877dd1b13907911feab9f2c866ded64579db48de1565",
+      "web/src/app/policy-draft/catalogue-types.ts": "2599cfdf5c77ed912a85926b4e37a025b7d3661d1085749d27dbb5dc8be42822",
+      "web/src/app/policy-draft/public-catalogue.ts": "7a6a3a1ffeba3a976f9c1e07fb1dbd061098e5c5ea347f80303f1750a0fdf8e6",
+      "web/src/app/policy-draft/public-catalogue-v22.ts": "bc99055a10fb559cf2802d9a579ef3f07a3c8a77bdcc8556a2b08655d9d499cf",
+      "web/src/app/app.html": "dac5494b1ad8339c9fca675ff09b243b4fb3dda9a286ab984f77bed40f6a56ac",
+      "web/src/app/art/art-gallery.spec.ts": "352ebce33205985b7fa75f88f458750ad62acbe2778c68548a319312c0cd3291",
+      "package.json": "451c9de3c5e0b647361bfbc749717712b895b822a04f84433288d19eb29a27f7",
+      "web/node_modules/@fontsource-variable/libre-baskerville/files/libre-baskerville-latin-wght-normal.woff2": "22219fb90e3b9bd28debd1825fe8d9a0154a0e31f8b3fa601ac1a0a5aa5e6d1b"
+    }
+  },
+  "checks": [
+    {
+      "id": "U1-C00",
+      "scope": "Voraussetzungen: Auftrag, Manifest, Artefakthashes, sauberer Stand",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Auftrag 07e2d3b2… und Manifest 36a0aad0… vor Beginn mit sha256sum bestätigt; alle 19 Artefakthashes stimmen.",
+        "Manifestcommit ea84b93, HEAD 001dfa3; git diff ea84b93 HEAD ändert nur das Manifest und reports/claude/auftraege/auftraege.sha256. Arbeitskopie vor und nach der Prüfung sauber bis auf die beiden Berichtsdateien."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C01",
+      "scope": "Inhalt unverändert: Wortlaut, Antworten, Einleitungen, Definitionen, Situationen, Entwicklungshinweis, Quellen, Blockbildung, Namen der Zahlenreihe, gedruckte Codes",
+      "status": "BESTANDEN",
+      "evidence": [
+        "policy-question.html:10–25, 47–49, 58–100, 131–137 zeigen nur Katalogfelder; policy-catalogue.ts und policy-source-details.* sind seit 9489579 unverändert.",
+        "Eigener Nachbau von Reihenfolge und Blöcken aus den Katalogliteralen: 62 Fragen, 24 Blöcke, Block 1 = Frage 1–4; deckt sich mit contextBlocks (policy-draft.ts:46–63). Jede Frage mit Einleitung oder Definition hat einen Block und damit die Schaltfläche „Einleitung zu dieser Frage anzeigen“ (policy-question.html:124–130).",
+        "Zahlenreihe: nur die 22 Listen mit elf angebotenen Kategorien erreichen die Schwelle; alle 22 werden Reihe; keine mittlere Antwort trägt Text; zugänglicher Name = categoryLabel oder printedCodeDe + Label; keine erfundenen Codes. B37 zeigt „00“ und „1“–„10“ wie im Katalog."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C02",
+      "scope": "Ablauf Start, Einleitung, Frage; automatischer Wechsel, Ankündigung, Tasten, letzte Frage, Abbruch, Fokus",
+      "status": "BESTANDEN",
+      "evidence": [
+        "view beginnt mit 'start' (policy-draft.ts:111); show/next/previous/edit/introduceBlock (:265–317) entsprechen Kapitel 4: vorwärts je Block einmal, rückwärts und bei Sprüngen direkt.",
+        "Schalter vor den Antworten im DOM (policy-question.html:2–8 vor :50), Voreinstellung an (policy-draft.ts:119).",
+        "handleKey/confirm (policy-question.ts:114–148): Pfeiltasten sperren den Klick, Leertaste und Eingabetaste bestätigen ein gewähltes Radio über keyup, jede Bestätigung löscht den vorherigen Timer; letzte Frage startet keinen Timer (:134).",
+        "Abbruch durch request() (:162–172), setAutoAdvance (:150–153) und DestroyRef (:95–97); erneute Prüfung beim Ablauf (:139–146). Kein Weg zum doppelten Sprung gefunden.",
+        "Fokus auf #draft-question-title bzw. H1 des Ergebnisentwurfs nach jedem Wechsel (policy-draft.ts:485–499). Ob Hilfsmittel den Wechsel überall ansagen, bleibt offen (U1-F04)."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C03",
+      "scope": "Barrierefreiheit im Code: H1, Rollen und Namen, aria-describedby, Reihenfolge, Fokus, Zielgrößen, Kontrast, Zählzeile, erzwungene Farben, Bewegung",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Genau eine H1 je Ansicht (policy-draft.html:3 bzw. :32), app.html ohne H1; keine übersprungene Ebene in der Frageansicht.",
+        "Schalter input checkbox role=switch mit Label; progress mit aria-label „Bearbeitete Fragen“; native Radios in fieldset/legend; aria-describedby nur auf vorhandene IDs (policy-question.html:48–54, 132).",
+        "DOM-Reihenfolge = sichtbare Reihenfolge; „Auswahl zurücksetzen“ vor den Antworten erfüllt WCAG 2.4.3 (Verschiebung siehe U1-F03).",
+        "Fokusrahmen 2 px/4 px für Schaltflächen, Radios, Auswahlliste, Schalter, summary; Zielgrößen 40–48 px.",
+        "Kontraste nach WCAG-Formel: ink/paper 13,28; paper/ink-hover 9,11; ink/mat 11,82; ink/line 9,54; muted/paper 6,80; forest/paper 11,08.",
+        "Zählzeile bis 640 px mit Clip-Muster, weiter aria-live (policy-progress.scss:73–82). Kein Übergang beim Wechsel, scrollIntoView instant, reduzierte Bewegung global.",
+        "Teilpunkt erzwungene Farben nur eingeschränkt: Schalter berücksichtigt (policy-progress.scss:44–48), Fortschrittsbalken vermutlich unsichtbar (U1-F02, nicht blockierend, kein nachgewiesener WCAG-AA-Verstoß)."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C04",
+      "scope": "Handbuch: Variablen, Farben, Schriften, verbotene Muster, Schaltflächentexte, Übereinstimmung von Kapitel 4 mit der Umsetzung",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Komponentenstile nutzen nur var(--…), transparent und none; keine Farbwerte, keine font-family; check:handbuch grün.",
+        "Schaltflächentexte nennen Ziel oder Handlung; keine verbotenen Muster aus Kapitel 1 und 7; eine Primärschaltfläche auf dem Startbildschirm.",
+        "Kapitel 4 (handbuch.md:149–161) stimmt im Kern mit Template und SCSS überein, einschließlich der ausgefüllten Schaltfläche nach vorn. Ungenauigkeiten und die nicht eingetragene Frageschriftgröße: U1-F05; Konflikt mit Kapitel 5 und Zuschreibung an Steven: U1-F06."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C05",
+      "scope": "Neutrale Darstellung der Antworten",
+      "status": "BESTANDEN",
+      "evidence": [
+        "Katalogreihenfolge, gleiche Gestaltung aller Antworten, keine Vorauswahl, Hervorhebung nur über :has(input:checked) (policy-question.scss:104–124), gleich gestaltete Endbeschriftungen, keine Symbole oder wertenden Farben."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C06",
+      "scope": "Datenschutz: Antworten, Schalterzustand und gesehene Einleitungen nur im Arbeitsspeicher",
+      "status": "BESTANDEN",
+      "evidence": [
+        "grep in den geänderten Dateien und policy-profile.ts ohne Treffer für Storage, fetch, HttpClient, WebSocket, Router, history, location.",
+        "autoAdvance und introducedBlocks sind Instanzfelder (policy-draft.ts:115–119); keine Formulare, keine Links in den neuen Templates; Tests prüfen Storage.setItem, fetch und location (policy-draft.spec.ts:525–538, 706–753); Route nur im lokalen Forschungsbuild."
+      ],
+      "requiredInScope": true
+    },
+    {
+      "id": "C07",
+      "scope": "Unit-Tests für Start, Einleitungen und automatischen Wechsel; keine Abschwächung bestehender Prüfungen in den beiden Skripten",
+      "status": "BESTANDEN",
+      "evidence": [
+        "policy-draft.spec.ts:770–877 (automatischer Wechsel), :883–898 (Start), :900–961 (Einleitungen); pnpm check: 129 Tests bestanden.",
+        "Skriptänderungen gleichwertig: reset.isDisabled() → reset.count() === 0, input:checked → Radio-Selektor, .last() → .first() wegen neuer DOM-Reihenfolge; Fokus-, Überlauf-, axe- und Datenschutzprüfungen bleiben, axe-Läufe je Bedingung 5 → 8.",
+        "Grenzen ohne Abschwächung: neuer Abschnitt im Browserskript liegt außerhalb des Datenschutzfensters (loaded = false), Eingabetaste und erzwungene Farben ohne Browserprüfung; Tests mit echten Timern und drei fehlenden Abbruchwegen (U1-F01)."
+      ],
+      "requiredInScope": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "U1-F01",
+      "claim": "Die Unit-Tests zum automatischen Wechsel prüfen die Pause und alle Abbruchwege.",
+      "problem": "afterDelay wartet real 400 ms statt mit Fake-Timern, entgegen Handbuch Kapitel 9. Negativtests prüfen nur einen Zeitpunkt nach Ablauf; nicht getestet sind kein Wechsel vor 350 ms sowie der Abbruch durch „Vorherige Frage“, „Einleitung zu dieser Frage anzeigen“ und die Ansichtsnavigation. Die Eingabetaste ist nur synthetisch geprüft.",
+      "evidence": [
+        "web/src/app/policy-draft/policy-draft.spec.ts:760–763 und :755–878",
+        "docs/handbuch.md:373 „Zeitabhängige Tests nutzen Fake-Timer.“",
+        "web/src/app/art/art-gallery.spec.ts nutzt vi.useFakeTimers",
+        "Abbruchwege im Code: web/src/app/policy-draft/policy-question.ts:95–97, 162–172"
+      ],
+      "impact": "Die Funktion ist im Code richtig, eine spätere Änderung der Pause oder eines Abbruchwegs fiele aber nicht sicher auf.",
+      "severity": "niedrig",
+      "severityReason": "Betrifft Prüfstärke und eine Handbuchregel für Tests, nicht das Verhalten der Oberfläche.",
+      "correction": "vi.useFakeTimers() im describe-Block; advanceTimersByTimeAsync(AUTO_ADVANCE_DELAY_MS - 1) ohne und +1 mit Wechsel; Tests für die drei fehlenden Abbruchwege.",
+      "recheck": "Spec-Diff lesen und pnpm check ausführen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "U1-F02",
+      "claim": "Die Darstellung im Modus für erzwungene Farben ist berücksichtigt.",
+      "problem": "Der Fortschrittsbalken hat appearance: none, border: 0 und nur Hintergrundfarben; eine Regel für erzwungene Farben gibt es nur für den Schalter. Browser ersetzen Autorenhintergründe dort durch Systemfarben, Spur und Wert werden vermutlich gleich und der Balken unsichtbar. Bis 640 px, auch bei 1280 px mit 200 % Zoom, ist die Zählzeile zugleich nur für Hilfsmittel lesbar. Kein Skript emuliert erzwungene Farben.",
+      "evidence": [
+        "web/src/app/policy-draft/policy-progress.scss:49–66 (progress), :44–48 (nur Schalter), :73–82 (Zählzeile)",
+        "scripts/check-research-browser.mjs und scripts/check-research-engines.mjs: grep nach forced findet nur reducedMotion",
+        "docs/validation.md, Abschnitt 5. Oktober 2026: Hochkontrastmodus als nicht durchführbar genannt"
+      ],
+      "impact": "Sichtbar bliebe nur „Frage n von N“, nicht die Zahl bearbeiteter Fragen. Ein Verstoß gegen WCAG 2.2 AA ist nicht nachgewiesen.",
+      "severity": "niedrig",
+      "severityReason": "Ergänzende Fortschrittsinformation in einem selten genutzten Darstellungsmodus; die Position bleibt sichtbar.",
+      "correction": "In @media (forced-colors: active) den Balken sichtbar machen, etwa appearance: auto oder Rahmen und Wert in Systemfarben (CanvasText, Highlight); page.emulateMedia({ forcedColors: 'active' }) mit Aufnahme im Browserskript.",
+      "recheck": "Chromium mit emulierten erzwungenen Farben bei 1440 und 390 px: Balken bei 0, einigen und allen bearbeiteten Fragen sichtbar.",
+      "certainty": "VERMUTUNG",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "U1-F03",
+      "claim": "„Auswahl zurücksetzen“ erscheint rechts im Kartenkopf, sobald es eine Antwort gibt (Kapitel 4).",
+      "problem": "Der Kartenkopf bricht um. Nach den Laufweiten der lokalen Libre Baskerville (fontTools, ohne Kerning) passt die Schaltfläche (152,6 px Text) bei 390 px (316 px Karteninhalt) nur neben drei der acht Bereichsnamen. In fünf Bereichen mit 40 der 62 Fragen, bei 360 und 320 px in sechs Bereichen mit 50 Fragen, rückt sie in eine eigene Zeile. Frage und Antworten verschieben sich im Moment der ersten Auswahl rechnerisch um etwa 29 px nach unten. Wer per Tab kommt, hört die Schaltfläche vor der Frage.",
+      "evidence": [
+        "web/src/app/policy-draft/policy-question.html:36–46",
+        "web/src/app/policy-draft/policy-question.scss:48–55, 62–70",
+        "Breitenrechnung mit web/node_modules/@fontsource-variable/libre-baskerville/files/libre-baskerville-latin-wght-normal.woff2"
+      ],
+      "impact": "Die angetippte Antwort wandert auf dem Smartphone unter dem Finger weg; bei ausgeschaltetem Wechsel oder schneller Korrektur kann ein zweiter Tipp eine andere Antwort treffen. Die Platzmessung in docs/validation.md nennt nicht, ob mit gewählter Antwort gemessen wurde.",
+      "severity": "niedrig",
+      "severityReason": "Bedienkomfort ohne Inhaltsänderung; Verschiebung nur berechnet, nicht im Browser beobachtet.",
+      "correction": "Platz von Anfang an freihalten, etwa die Schaltfläche immer rendern und ohne Auswahl mit visibility: hidden ausblenden, oder in eine eigene Zeile bzw. neben „Frage überspringen“ setzen; Lage im Handbuch festhalten.",
+      "recheck": "Bei 390 und 320 px mit ausgeschaltetem Wechsel für eine Frage aus „Demokratie und politische Autorität“ die Oberkante der ersten Antwort vor und nach der ersten Auswahl messen; erwartet keine Verschiebung.",
+      "certainty": "VERMUTUNG",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "U1-F04",
+      "claim": "Der Fokus geht nach jedem Wechsel auf die Überschrift des neuen Bildschirms.",
+      "problem": "Fokusziel ist immer dasselbe H2-Element in app-policy-progress, das beim Wechsel bestehen bleibt. Liegt der Fokus schon darauf, löst focus() kein Fokusereignis aus. Das tritt ein, wenn Klick oder Tippen das Radio nicht fokussiert, wie in Safari und Firefox unter macOS. WebKit wurde nicht geprüft, jsdom kann es nicht zeigen.",
+      "evidence": [
+        "web/src/app/policy-draft/policy-progress.html:2",
+        "web/src/app/policy-draft/policy-draft.ts:485–499",
+        "docs/validation.md: WebKit startet nicht"
+      ],
+      "impact": "Möglicherweise sagt VoiceOver den neuen Bildschirm nach einem automatischen Wechsel durch Tippen nicht an. Unbelegt.",
+      "severity": "niedrig",
+      "severityReason": "Mögliche fehlende Ansage für eine Gruppe von Hilfsmitteln; activeElement stimmt, das Verhalten ist nicht beobachtet.",
+      "correction": "Mit WebKit und VoiceOver prüfen; falls bestätigt, die H2 vor focus() entfokussieren oder die Überschrift je Bildschirm neu erzeugen.",
+      "recheck": "Safari oder iOS mit VoiceOver: nach Tippen auf eine Antwort wird „Frage 2 von 62, Überschrift“ angesagt.",
+      "certainty": "OFFENE_FRAGE",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "U1-F05",
+      "claim": "Kapitel 4 beschreibt das Muster so, wie es umgesetzt ist; das Protokoll beschreibt die Umsetzung richtig.",
+      "problem": "Die Frage (legend) hat clamp(1.15rem, 2vw, 1.4rem), eine Stufe außerhalb der Größenskala; die H2 „Frage n von N“ ist 1 rem fett ohne .section-title (Kapitel 5). Einzelfrage-Blöcke heißen „Einleitung zu Frage n“, Kapitel 4 nennt nur „n bis m“. „Link zur Einleitung“ ist eine Schaltfläche. „Teil des Namens jeder Antwort“ gilt nur für die Endantworten. Der Satz zum Überspringen unter der Karte und Fortschritt mit Schalter auf dem Einleitungsbildschirm fehlen im Muster. Das Protokoll sagt, „Auswahl zurücksetzen“ erscheine nur bei einer Antwort; sie erscheint auch nach dem Überspringen.",
+      "evidence": [
+        "docs/handbuch.md:89–99, 149–161, 180",
+        "web/src/app/policy-draft/policy-question.scss:94; web/src/app/policy-draft/policy-progress.scss:11–15",
+        "web/src/app/policy-draft/policy-question.ts:59–65; web/src/app/policy-draft/policy-question.html:43–45, 125–127, 133–136",
+        "docs/ki-protokoll.md, Abschnitt 2026-10-05; web/src/app/policy-draft/policy-draft.spec.ts:949–961"
+      ],
+      "impact": "Wer nach dem Handbuch nachbaut, erhält eine andere Frageschrift und andere Überschriften. Funktion und Inhalt sind nicht betroffen.",
+      "severity": "niedrig",
+      "severityReason": "Dokumentationsgenauigkeit; das Muster stimmt im Kern.",
+      "correction": "Schriftgröße der Frage und Stil der Fortschritts-H2 in Kapitel 3 oder 4 eintragen oder eine vorhandene Stufe nehmen; Kapitel 4 an den genannten Stellen genauer fassen; Protokollsatz in einem neuen Eintrag berichtigen.",
+      "recheck": "Handbuch-Diff gegen Templates und SCSS lesen.",
+      "certainty": "BELEGT",
+      "blocksScope": false,
+      "state": "OFFEN"
+    },
+    {
+      "id": "U1-F06",
+      "claim": "„Steven hat ihn am 5. Oktober 2026 für den lokalen Forschungsentwurf vorgegeben.“ und „Die Schaltfläche nach vorn ist ausgefüllt wie eine Primärschaltfläche, weil sie zum nächsten Bildschirm führt.“ (handbuch.md:149, 158)",
+      "problem": "Kapitel 5 erlaubt die Primärschaltfläche „nur für Wege zu einer anderen Seite“, „nur“ ist nach Kapitel 0 Pflicht; Kapitel 5 verweist nicht auf die Ausnahme. Stevens Wortlaut deckt Startbildschirm, Einleitungsbildschirm, mittige Frage, automatischen Wechsel, Fortschrittsbalken, unauffällige Quellen und Überspringen mit Grund. Ausgefüllte Vorwärtsschaltfläche, 350 ms, Einleitung je Block einmal, direkte Frage bei Rückwärts und Sprung sowie die verborgene Zählzeile sind Umsetzungsentscheidungen; eine Abstimmung mit Steven nach Kapitel 0 ist nicht belegt.",
+      "evidence": [
+        "docs/handbuch.md:8, 10, 149, 158, 186",
+        "docs/ki-protokoll.md, Abschnitt 2026-10-05 (Stevens Wortlaut)"
+      ],
+      "impact": "Zwei Handbuchregeln widersprechen sich bei der Vorwärtsschaltfläche; Autorentscheidungen lesen sich wie Stevens Vorgaben.",
+      "severity": "niedrig",
+      "severityReason": "Regel- und Zuständigkeitsfrage im lokalen Forschungsentwurf; die Umsetzung entspricht der Beschreibung.",
+      "correction": "Steven bestätigt die Einzelheiten, oder Kapitel 4 trennt seine Vorgaben von den Umsetzungsentscheidungen; Kapitel 5 nennt die Ausnahme.",
+      "recheck": "Kapitel 4 und 5 und das Protokoll lesen.",
+      "certainty": "OFFENE_FRAGE",
+      "blocksScope": false,
+      "state": "OFFEN"
+    }
+  ],
+  "limits": [
+    "KI-Review durch einen Claude-Subagenten aus derselben Modellfamilie wie der Autor; Codex war bis zum 10. Oktober 2026 nicht verfügbar. Gemeinsame blinde Flecken sind möglich. Übereinstimmung ist kein Neutralitäts- oder Qualitätsnachweis. Eine zweite Prüfung durch eine andere Modellfamilie steht aus.",
+    "BESTANDEN gilt nur für die Codeprüfung des benannten Pakets. Keine methodische Validierung, keine Begutachtung durch Fachleute, keine Design-, Test- oder Releasefreigabe. Verständnistest und Gestaltungsentscheidungen bleiben bei Steven.",
+    "Keine eigene Browser-, Screenreader- oder Geräteprüfung; keine Browser- oder Datenskripte, kein Server. Die Browserbeobachtungen in docs/validation.md sind Angaben des Autors und nicht wiederholt. U1-F02, U1-F03 und U1-F04 brauchen eine solche Prüfung.",
+    "Block- und Zahlenreihenlogik mit eigenem Node-Code über die Katalogliterale nachgerechnet (nur Metadaten, keine Antwortdaten); das ist eine Gegenrechnung, kein Lauf der Angular-Komponente. Breiten für U1-F03 aus den Laufweiten der Variablenschrift bei 400 und 700 ohne Kerning.",
+    "web/src/app/policy-draft/reviewed-*.ts nicht geöffnet; pnpm check führt Tests aus, die sie importieren. Nicht gelesen: data/raw/, data/local/, data/reference-*, outputs/, Analyseplan, Abdeckung, Profil- und Prüfregeln (Methodik außerhalb des Auftrags). Keine anderen Prüfberichte gelesen; K1-runde2-textvorschlaege.json nur als Formatvorlage.",
+    "pnpm check baut nur die öffentliche Fassung ohne Forschungskomponenten, und die Konfiguration research hat keine Budgets; Stilbudgets der neuen Komponenten sind damit nicht technisch geprüft. Die SCSS-Dateien liegen unter 4 kB.",
+    "pnpm check lief mit Exit 0 (129 Tests in 10 Dateien, Build), Ausgabe nach /tmp/u1-pnpm-check.log; der Build schreibt nach web/dist/ (von Git ausgenommen). scripts/check-review-schema.mjs prüft nur synthetische Fälle; dieses Urteil wurde zusätzlich mit Ajv 2020 gegen urteil-schema.json validiert. Die Schema-Kontrolle belegt keine fachliche Richtigkeit.",
+    "Modus PR_REVIEW gewählt, weil das Schema den im Auftrag genannten Modus Paketprüfung nicht kennt."
+  ]
+}

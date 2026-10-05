@@ -45,7 +45,6 @@ p {
   color: var(--muted);
   font-size: var(--size-small);
 }
-.card-head,
 .question-controls {
   display: flex;
   flex-wrap: wrap;
@@ -61,11 +60,6 @@ p {
 }
 .card-head {
   margin-bottom: 0.75rem;
-  font-size: var(--size-small);
-}
-.card-head .quiet {
-  min-height: 40px;
-  margin-block: -0.6rem;
   font-size: var(--size-small);
 }
 .rubric {
@@ -110,9 +104,6 @@ legend span {
   border: 1px solid var(--line);
   border-radius: 2px;
   cursor: pointer;
-  transition:
-    border-color 160ms ease,
-    background-color 160ms ease;
 }
 .answer-option:hover {
   border-color: var(--ink);
@@ -160,7 +151,7 @@ legend span {
 .scale-ends span + span {
   text-align: right;
 }
-@media (min-width: 640px) {
+@media (min-width: 641px) {
   .scale {
     grid-template-columns: none;
     grid-auto-columns: minmax(0, 1fr);
@@ -179,6 +170,10 @@ legend span {
   }
   .skip-controls label {
     flex-basis: 100%;
+  }
+  /* Second row of the number grid ends under the right end description. */
+  .scale > :nth-child(7) {
+    grid-column-start: 2;
   }
 }
 .quiet {
@@ -200,7 +195,7 @@ legend span {
 .skip-controls select {
   flex: 1 1 8rem;
   min-width: 0;
-  max-width: 14rem;
+  max-width: 12rem;
 }
 .question-controls {
   margin-block: 1rem 1.5rem;

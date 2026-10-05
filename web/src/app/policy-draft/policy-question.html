@@ -33,17 +33,12 @@
   </div>
 } @else {
   <div class="card">
-    <div class="card-head">
-      <p>
-        <span class="rubric">{{ current.rubricTitle }}</span>
-        @if (answer().status === 'skipped') {
-          <span class="meta"> · Übersprungen</span>
-        }
-      </p>
-      @if (answer().status !== 'untouched') {
-        <button type="button" class="quiet" (click)="request('reset')">Auswahl zurücksetzen</button>
+    <p class="card-head">
+      <span class="rubric">{{ current.rubricTitle }}</span>
+      @if (answer().status === 'skipped') {
+        <span class="meta"> · Übersprungen</span>
       }
-    </div>
+    </p>
     @if (current.situationDe) {
       <p id="draft-situation" class="situation">{{ current.situationDe }}</p>
     }
@@ -70,7 +65,7 @@
                 [value]="option.code"
                 [checked]="isSelected(option.code)"
                 (change)="answerChosen.emit(option.code)"
-                (click)="confirm(option.code)"
+                (click)="confirm()"
               />
               <span
                 >{{ option.number }}<span class="scale-text">{{ option.text }}</span></span
@@ -92,7 +87,7 @@
                 [value]="category.code"
                 [checked]="isSelected(category.code)"
                 (change)="answerChosen.emit(category.code)"
-                (click)="confirm(category.code)"
+                (click)="confirm()"
               />
               <span>{{ categoryLabel(current, category) }}</span>
             </label>
@@ -108,6 +103,10 @@
         <option value="decline">Keine Antwort geben</option>
       </select>
       <button type="button" (click)="request('skip')">Frage überspringen</button>
+      <!-- Below the options, so that its appearance never moves an answer under the pointer. -->
+      @if (answer().status !== 'untouched') {
+        <button type="button" class="quiet" (click)="request('reset')">Auswahl zurücksetzen</button>
+      }
     </div>
   </div>
 
